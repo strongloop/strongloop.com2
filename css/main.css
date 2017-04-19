@@ -913,7 +913,7 @@ li > dl {
 .c-masthead {
     padding: 2rem 0;
     background: #62b220;
-    background-image: url("/images/intro-bg-3.jpg");
+    background-image: url("../images/intro-bg-3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -957,7 +957,7 @@ li > dl {
     display: inline-block;
     margin: 0 1rem 0 0;
     content: "";
-    background: url("/images/strongloop-by-ibm-sm.png");
+    background: url("../images/strongloop-by-ibm-sm.png");
 }
 
 @media (max-width:567px) {
