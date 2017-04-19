@@ -1,14 +1,14 @@
 - title: 'Get Started'
-  url: /get-started
+  url: ./get-started
 
 - title: 'Register'
-  url: /register
+  url: ./register
 
 - title: 'Blog'
-  url: /strongblog
+  url: ./strongblog
 
 - title: 'Events'
-  url: /events
+  url: ./events
 
 - title: 'About'
-  url: /about
+  url: ./about
