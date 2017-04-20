@@ -945,8 +945,8 @@ li > dl {
 }
 
 .c-masthead ._logo::before {
-    width: 214px;
-    height: 52px;
+    width: 220px;
+    height: 53px;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -o-box-flex: 1;
