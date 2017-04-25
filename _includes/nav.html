@@ -2,8 +2,8 @@
 <nav class="_nav js-masthead-nav">
   <ul class="_nav-list js-nav-list">
     {% for item in items %}
-    <li class="_nav-item {% if page.title == item.title %}-active{% endif %}">
-      <a href="{{ item.url }}">{{item.title}}</a>
+    <li class="_nav-item {% if page.url contains item.url %}-active{% endif %}">
+      <a href="{{base}}{{ item.url }}">{{item.title}}</a>
     </li>
     {% endfor %}
   </ul>

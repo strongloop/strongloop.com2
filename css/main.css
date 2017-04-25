@@ -80,9 +80,11 @@ table thead tr th {
     padding: 1rem;
 }
 
+/*
 table tbody tr:nth-child(odd) {
     background: rgba(0,0,0,0.1);
 }
+*/
 
 table tbody td {
     padding: 1rem;
@@ -318,11 +320,6 @@ p {
 
 code {
     display: inline-block;
-    padding: 0 4px;
-    border: 1px solid rgba(255,255,255,0.25);
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    background: rgba(0,0,0,0.25);
 }
 
 strong {

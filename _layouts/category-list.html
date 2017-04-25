@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<main class="c-content">
+  <section class="c-section">
+    <div class="c-container -padded">
+      <h1 class="c-heading -h2">Posts in {{page.tagName}} Category</h1>
+    </div>
+  </section>
+  <section class="c-section x-greylight">
+    <div class="c-container -padded">
+      <div class="c-grid">
+        <div class="_col -col-1-1">
+          {% include taglogic.html %}
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

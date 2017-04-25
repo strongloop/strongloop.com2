@@ -1,0 +1,31 @@
+---
+title: Blog Posts Archive
+layout: page
+permalink: /all-posts
+---
+
+<section class="c-section">
+  <div class="c-container -padded">
+    <div class="c-grid">
+      <div class="_col -col-3-4">
+        <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%b %-d, %Y" }}
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="_col -col-1-4">
+        <h2>Blog Categories</h2>
+        <ul>
+        {% for tag in site.data.tags.allowed-tags %}
+          <li>
+            <a href="{{ "tag_" | append: tag | append: ".html" | replace: " ", "-" }}">{{tag}}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

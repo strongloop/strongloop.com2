@@ -1,0 +1,16 @@
+<table><thead><tr><th>Title</th><th>Excerpt</th></tr></thead>
+  <tbody>
+  {% assign thisTag = page.tagName %}
+
+  {% for post in site.posts %}
+    {% for tag in post.categories %}
+        {% if tag == thisTag %}
+        <tr><td><a href="{{ post.url }}">{{post.title}}</a></td>
+            <td>{% if post.excerpt %} {{ post.summary | strip_html | strip_newlines | truncate: 160 }} {% else %}
+              {{ post.content | truncatewords: 50 | strip_html }} {% endif %}</td>
+        </tr>
+        {% endif %}
+     {% endfor %}
+   {% endfor %}
+   </tbody>
+</table>
