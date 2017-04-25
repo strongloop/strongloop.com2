@@ -100,9 +100,4 @@ defaults:
 
 # these are defaults used for the frontmatter for these file types
 
-
-# description: "Documentation for the LoopBack framework"
-# the description is used in the feed.xml file
-
-# needed for sitemap.xml file only
-url: http://strongloop.com/
+url: https://strongloop.github.io/strongloop.com/

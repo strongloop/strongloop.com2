@@ -1,11 +1,11 @@
 - title: 'Newsletter'
-  url: /newsletter
+  url: newsletter
 
 - title: 'Blog'
-  url: /blog
+  url: blog
 
 - title: 'Events'
-  url: /events
+  url: events
 
 - title: 'About'
-  url: /about
+  url: about

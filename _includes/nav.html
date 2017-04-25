@@ -3,7 +3,7 @@
   <ul class="_nav-list js-nav-list">
     {% for item in items %}
     <li class="_nav-item {% if page.url contains item.url %}-active{% endif %}">
-      <a href="{{base}}{{ item.url }}">{{item.title}}</a>
+      <a class="no_icon" href="{{home}}/{{ item.url }}">{{item.title}}</a>
     </li>
     {% endfor %}
   </ul>
