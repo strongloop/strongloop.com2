@@ -1,9 +1,10 @@
 {% assign items = site.data.nav %}
+<a href="{{site.url}}" class="_logo x-flex-v no_icon" ></a>
 <nav class="_nav js-masthead-nav">
   <ul class="_nav-list js-nav-list">
     {% for item in items %}
     <li class="_nav-item {% if page.url contains item.url %}-active{% endif %}">
-      <a class="no_icon" href="{{home}}/{{ item.url }}">{{item.title}}</a>
+      <a class="no_icon" href="{{site.url}}/{{ item.url }}">{{item.title}}</a>
     </li>
     {% endfor %}
   </ul>

@@ -1,7 +1,3 @@
-
-$('#mysidebar').height($(".nav").height());
-
-
 $( document ).ready(function() {
 
     // activate tooltips. although this is a bootstrap js function, it must be activated this way in your theme.
@@ -46,9 +42,10 @@ $(function() {
         }
     });
 
-    setupSidebarTreeNav();
+    //setupSidebarTreeNav();
 });
 
+/*
 function setupSidebarTreeNav(){
 
     //hide all non-active nav-lists:
@@ -77,3 +74,4 @@ function setupSidebarTreeNav(){
       // $(this).parent().children('ul.nav-list').toggle(200);
     });
 }
+*/

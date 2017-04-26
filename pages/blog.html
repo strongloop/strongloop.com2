@@ -1,49 +1,26 @@
 ---
-title: Blog Posts
+title: StrongLoop Blog
 layout: page
 permalink: /blog
 ---
 
-<section class="c-section">
+<section class="c-section x-green">
   <div class="c-container -padded">
     <div class="c-grid">
-      <div class="_col -col-3-4">
-        <p>See <a href="./all-posts">All posts</a>
-        </p>
-
-{% assign years = site.data.years %}
-{% for year in (2013..2017) reversed %}
-  <h2>{{ year }}</h2>
-  <p>Posts:</p>
-  <ul>
-  {% for post in site.posts %}
-
-    {% assign post_year = post.date | date: "%Y"% %}
-    {% capture sYear %}{{year}}{% endcapture %}
-
-    {% if sYear == post_year %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%b %-d, %Y" }}
-      </li>
-    {% endif %}
-
-  {% endfor %}
-  </ul>
-  <br/>
-{% endfor %}
-
-      </div>
-
-      <div class="_col -col-1-4">
-        <h2>Blog Categories</h2>
-        <ul>
-        {% for tag in site.data.tags.allowed-tags %}
-          <li>
-            <a href="{{ "tag_" | append: tag | append: ".html" | replace: " ", "-" }}">{{tag}}</a>
-          </li>
+      <div class="_col -col-4-5">
+        {% for post in site.posts reversed limit:5 %}
+            <h4 class="c-heading -h3"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <p class="author"> by {{ post.author }} - {{ post.date | date: "%b %-d, %Y" }}</p>
+            <div class="excerpt">
+              {{post.excerpt}}
+              <p><a href="{{ post.url }}">More...</a>
+            </div>
+            <hr class="faded">
         {% endfor %}
-        </ul>
       </div>
+
+      {% include blog-sidebar.html %}
+
     </div>
   </div>
 </section>

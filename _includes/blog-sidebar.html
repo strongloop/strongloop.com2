@@ -1,0 +1,11 @@
+<div class="_col -col-1-5">
+  <p>Categories:</p>
+  <ul>
+    <li><a href="./blog-archives">All posts</a></li>
+  {% for tag in site.data.tags.allowed-tags %}
+    <li>
+      <a href="{{ "tag_" | append: tag | append: ".html" | replace: " ", "-" }}">{{tag}}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>

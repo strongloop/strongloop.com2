@@ -6,7 +6,7 @@
     {% for tag in post.categories %}
         {% if tag == thisTag %}
         <tr><td><a href="{{ post.url }}">{{post.title}}</a></td>
-            <td>{% if post.excerpt %} {{ post.summary | strip_html | strip_newlines | truncate: 160 }} {% else %}
+            <td style="font-size: 80%;">{% if post.excerpt %} {{ post.excerpt | strip_html | strip_newlines | truncate: 250 }} <a href="{{ post.url }}">More</a> {% else %}
               {{ post.content | truncatewords: 50 | strip_html }} {% endif %}</td>
         </tr>
         {% endif %}

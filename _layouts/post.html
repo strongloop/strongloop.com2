@@ -1,14 +1,15 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<section class="c-section x-green">
+  <div class="c-container -padded">
+    <div class="c-grid">
+      <div class="_col -col-1-1">
+        <h1 class="c-heading -h3">{{ page.title }}</h1>
+        {% if page.author %}<p class="author">by {{ page.author }}</p>{% endif %}
 
-    <header class="post-header">
-      <h1 class="c-heading -h3">{{ page.title }}</h1>
-      <p class="post-meta"><time>{{ page.date | date: "%b %-d, %Y" }}</time>
-        {% if page.author %}<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <span itemprop="name">/ {{ page.author }}</span>{% endif %}
-        {% if page.categories != null %}/
+        <p class="post-meta"><time>{{ page.date | date: "%b %-d, %Y" }}</time>
+          {% if page.categories != null %}/
             {% assign projectTags = site.data.tags.allowed-tags %}
             {% for tag in page.categories %}
               {% if projectTags contains tag %}
@@ -16,16 +17,28 @@ layout: default
               {% endif %}
             {% endfor %}
           {% endif %}
-
-      </p>
-    </header>
-
-    <div class="post-content">
-
-      {% if post.excerpt %}
-        <div class="summary">{{post.excerpt}}</div>
-      {% endif %}
-
-      {{ content }}
+      </div>
     </div>
+  </div>
+</section>
+
+    <section class="c-section x-lightgreen">
+      <div class="c-container">
+        <div class="c-grid">
+          <div class="_col -col-1-1">
+            <div class="post-content x-lightgreen">
+              {% if post.excerpt %}
+                <div class="summary">{{post.excerpt}}</div>
+              {% endif %}
+
+              {{ content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
 </article>
+-->

@@ -1,13 +1,14 @@
 ---
-title: Blog Posts Archive
+title: StrongLoop Blog Archive (All Posts)
 layout: page
-permalink: /all-posts
+permalink: /all-blog-posts
 ---
 
 <section class="c-section">
   <div class="c-container -padded">
     <div class="c-grid">
-      <div class="_col -col-3-4">
+
+      <div class="_col -col-4-5 blog-archive">
         <ul>
         {% for post in site.posts %}
           <li>
@@ -16,16 +17,9 @@ permalink: /all-posts
         {% endfor %}
         </ul>
       </div>
-      <div class="_col -col-1-4">
-        <h2>Blog Categories</h2>
-        <ul>
-        {% for tag in site.data.tags.allowed-tags %}
-          <li>
-            <a href="{{ "tag_" | append: tag | append: ".html" | replace: " ", "-" }}">{{tag}}</a>
-          </li>
-        {% endfor %}
-        </ul>
-      </div>
+
+      {% include blog-sidebar.html %}
+
     </div>
   </div>
 </section>

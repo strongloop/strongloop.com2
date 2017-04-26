@@ -13,35 +13,6 @@ caption,tbody,tfoot,thead,tr,th,td {
     vertical-align: baseline;
 }
 
-body {
-    line-height: 1;
-    color: #000;
-    background: #fff;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-table {
-    border-collapse: separate;
-    border-spacing: 0;
-    vertical-align: middle;
-}
-
-caption,
-th,
-td {
-    text-align: left;
-    font-weight: normal;
-    vertical-align: middle;
-}
-
-a img {
-    border: none;
-}
-
 html,
 body {
     height: 100%;
@@ -49,9 +20,21 @@ body {
 }
 
 body {
+    line-height: 1;
+    background: #7dbd33;
+    color: #000;
     margin: 0;
     padding: 0;
-    background: #2e2e2e;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+
+a img {
+    border: none;
 }
 
 img {
@@ -63,42 +46,6 @@ img {
     img {
         margin: 1.5rem 0;
     }
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-table thead tr {
-    background: rgba(0,0,0,0.2);
-}
-
-table thead tr th {
-    text-align: left;
-    padding: 1rem;
-}
-
-/*
-table tbody tr:nth-child(odd) {
-    background: rgba(0,0,0,0.1);
-}
-*/
-
-table tbody td {
-    padding: 1rem;
-    text-align: left;
-    vertical-align: top;
-    border-left: 1px solid rgba(0,0,0,0.1);
-}
-
-table tbody td:first-child {
-    border-left: none;
-}
-
-table tbody td:last-child {
-    border-right: none;
 }
 
 .x-img-span {
@@ -146,6 +93,10 @@ table tbody td:last-child {
 
 .x-green {
     background: #6cb333;
+}
+
+.x-lightgreen {
+  background: #7dbd33;
 }
 
 .x-hide {
@@ -260,7 +211,7 @@ html {
 }
 
 body {
-    color: #dedede;
+    color: #000;
     font: 1rem/1.5 'Ubuntu',serif;
     font-style: normal;
     font-weight: 300;
@@ -279,7 +230,7 @@ body {
 .c-heading.-h1,
 .c-heading.-h2,
 .c-heading.-h3 {
-    color: #fff;
+    color: #000;
     font-weight: 500;
 }
 
@@ -288,14 +239,14 @@ body {
 }
 
 .c-heading.-h2 {
-    font-size: 2.618rem;
+    font-size: 2rem;
+    padding-top: 2rem;
 }
 
 .c-heading.-h3 {
     font-size: 1.854rem;
 }
 
-.c-heading.-h4,
 .c-heading.-h5,
 .c-heading.-h6 {
     color: #808080;
@@ -304,6 +255,7 @@ body {
 
 .c-heading.-h4 {
     font-size: 1.618rem;
+    font-weight: 400;
 }
 
 .c-heading.-h5 {
@@ -331,7 +283,7 @@ blockquote {
 }
 
 a {
-    color: #a6e573;
+    color: #305016; /* #6cb333;*/
     font-weight: 400;
     text-decoration: none;
     -webkit-transition-property: normalize('transition-property',color,webkit);
@@ -660,7 +612,7 @@ li > dl {
     min-height: 1rem;
     margin: 1rem 0;
     padding: .5rem 0;
-    background: #2e2e2e;
+    background: #6cb333; /* #2e2e2e;*/
     color: #fff;
     text-align: center;
 }
@@ -909,8 +861,11 @@ li > dl {
 
 .c-masthead {
     padding: 2rem 0;
+    /*
     background: #62b220;
     background-image: url("../images/intro-bg-3.jpg");
+    */
+    background: #fff;
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -1014,14 +969,15 @@ li > dl {
 }
 
 .c-masthead ._nav ._nav-list ._nav-item a {
-    color: #d8f2c2;
+    color: #487722; /* #2e2e2e;*/
     font-weight: 300;
 }
 
 .c-masthead ._nav ._nav-list ._nav-item:hover a,
 .c-masthead ._nav ._nav-list ._nav-item:focus a,
 .c-masthead ._nav ._nav-list ._nav-item.-active a {
-    color: #fff;
+  color: #3c631c;
+  font-weight: 500;
 }
 
 .c-masthead ._menu {
@@ -1082,6 +1038,7 @@ li > dl {
     right: 0;
     position: absolute;
     background: #2e2e2e;
+    #6cb333
     z-index: 0;
 }
 
@@ -1160,7 +1117,7 @@ li > dl {
     width: 100%;
     min-height: 100%;
     position: relative;
-    background: #2e2e2e;
+    background: #999;
     -webkit-box-shadow: 0 0 .5rem rgba(0,0,0,0.5);
     box-shadow: 0 0 .5rem rgba(0,0,0,0.5);
     -webkit-transform: translateX(0);
@@ -1232,28 +1189,6 @@ li > dl {
     z-index: 100;
 }
 
-pre.cli {
-    margin: 1rem 0;
-    padding: 1rem;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    overflow: auto;
-    border: none;
-    font-family: 'Ubuntu Mono',Courier,monospace;
-    background: rgba(0,0,0,0.35);
-}
-
-pre.cli .input {
-    color: #96dd22;
-}
-
-pre.cli .prompt {
-    color: #48d2e5
-}
-
 pre[class*="language-"] {
     width: 100%;
     margin: 1rem 0;
@@ -1288,65 +1223,4 @@ code[class*="language-"] {
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
     background: rgba(0,0,0,0.35);
-}
-
-/** Added for RSS feed in "resources" **/
-
-.feedcontainer {
-  display: block;
-  margin-bottom: 25px;
-}
-
-.feedcontainer li {
-  line-height: 1.5em;
-}
-
-/** Comparison table **/
-
-table.comp {
-  width: 50rem;
-}
-
-th#feature {
-    width: 6rem;
-}
-
-table.comp td {
-    width: 8rem;
-}
-table.comp, table.comp tr td, table.comp tr th {
-    border: 1px solid #6e6e6e;
-}
-
-table.comp tr th {
-    font-size: 90%;
-    font-weight: bold;
-    padding: 10px;
-    background-color: #193819;
-    text-align: center;
-}
-
-table.comp tr td {
-    font-size: 80%;
-    padding: 10px 5px 10px 5px;
-}
-
-td.col1 {
-    background-color: #193819;
-}
-
-#feature {
-    background-color: #002200;
-}
-
-.devborder {
-    border: 1px dashed red;
-}
-
-.ni-img {
-    max-width: 200px;
-}
-
-.border-img {
-    border: 1px solid #000;
 }
