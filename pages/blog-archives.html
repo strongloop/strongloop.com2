@@ -17,7 +17,7 @@ permalink: /blog-archives
 
           {% if sYear == post_year %}
             <li>
-              <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%b %-d, %Y" }}
+              <a class="no_icon" href="{{site.url}}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%b %-d, %Y" }}
             </li>
           {% endif %}
 
