@@ -4,7 +4,7 @@ title: IBM and StrongLoop Are Returning to Gluecon and Presenting Sessions
 date: 2017-04-20T08:00:36+00:00
 author: Dave Whiteley
 guid: https://strongloop.com/?p=29214
-permalink: /strongblog/ibm-and-strongloop-are-returning-to-gluecon/
+permalink: /blog/ibm-and-strongloop-are-returning-to-gluecon/
 inline_featured_image:
   - "0"
 categories:
