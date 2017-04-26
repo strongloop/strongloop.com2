@@ -13,7 +13,7 @@ layout: default
             {% assign projectTags = site.data.tags.allowed-tags %}
             {% for tag in page.categories %}
               {% if projectTags contains tag %}
-                <a href="{{site.url}}/{{ "tag_" | append: tag | append: ".html" | replace: " ", "-" }}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+                <a href="{{ "tag_" | append: tag | append: ".html" | replace: " ", "-" }}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
               {% endif %}
             {% endfor %}
           {% endif %}

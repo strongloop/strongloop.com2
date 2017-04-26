@@ -108,7 +108,7 @@ Now our interpretation states that a `Natural` for our application includes any 
 
 Take a moment to come up with a clear and concise interpretation of the coordinate example above before continuing on.
 
-## 3. Examples 
+## 3. Examples
 
 Examples provide more explanation of a data definition, if it would be helpful. Depending on whether type is self-defining. For an enumeration like `TrafficLight`, all the possible examples are already encapsulated in the type comment so examples are not necessary. In the same way, a simple atomic type like `Natural` documents its cases.
 
