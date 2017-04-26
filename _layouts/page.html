@@ -4,7 +4,7 @@ layout: default
 <main class="c-content">
   <section class="c-section x-green">
     <div class="c-container">
-      <h2 class="c-heading -h2">{{page.title}}</h2>
+      {% if page.title %}<h2 class="c-heading -h2">{{page.title}}</h2>{% endif %}
     </div>
   </section>
   {{ content }}
