@@ -8,14 +8,14 @@ permalink: /blog
   <div class="c-container -padded">
     <div class="c-grid">
       <div class="_col -col-4-5">
-        {% for post in site.posts reversed limit:5 %}
-            <h4 class="c-heading -h3"><a href="{{ post.url }}">{{ post.title }}</a></h4>
-            <p class="author"> by {{ post.author }} - {{ post.date | date: "%b %-d, %Y" }}</p>
-            <div class="excerpt">
-              {{post.excerpt}}
-              <p><a href="{{ post.url }}">More...</a>
-            </div>
-            <hr class="faded">
+        {% for post in site.posts limit:5 %}
+          <h4 class="c-heading -h3"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+          <p class="author"> by {{ post.author }} - {{ post.date | date: "%b %-d, %Y" }}</p>
+          <div class="excerpt">
+            {{post.excerpt}}
+            <p><a href="{{ post.url }}">More...</a>
+          </div>
+          <hr class="faded">
         {% endfor %}
       </div>
 
