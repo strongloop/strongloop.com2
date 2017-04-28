@@ -8,4 +8,3 @@ categories:
 layout: redirected
 redirect_to: https://developer.ibm.com/open/2016/10/11/new-life-for-loopback-docs/
 ---
-This blog post has moved to [https://developer.ibm.com/open/2016/10/11/new-life-for-loopback-docs/](https://developer.ibm.com/open/2016/10/11/new-life-for-loopback-docs/).
