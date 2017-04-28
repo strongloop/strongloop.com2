@@ -75,15 +75,15 @@ soap.createClient(url, options, function(err, client) {
 The above service invocation creates this request envelope:
 
 ```js
-&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"&gt;
-  &lt;soap:Header/&gt;
-  &lt;soap:Body&gt;
-    &lt;ns1:GetQuote xmlns:ns1="http://www.webserviceX.NET/"&gt;
-      &lt;ns1:symbol&gt;IBM&lt;/ns1:symbol&gt;
-    &lt;/ns1:GetQuote&gt;
-  &lt;/soap:Body&gt;
-&lt;/soap:Envelope&gt;
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header/>
+  <soap:Body>
+    <ns1:GetQuote xmlns:ns1="http://www.webserviceX.NET/">
+      <ns1:symbol>IBM</ns1:symbol>
+    </ns1:GetQuote>
+  </soap:Body>
+</soap:Envelope>
 ```
 
 The SOAP client object (client in the above example) provides numerous other methods for interacting with a SOAP service; [see the README](https://github.com/strongloop/strong-soap#client) for details.

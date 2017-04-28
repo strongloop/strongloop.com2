@@ -14,7 +14,7 @@ If you read our recent [blog on multi-app enhancements](https://strongloop.com/s
 
 This post outlines challenges with Docker, especially when you are “Dockerizing” your Node applications, demonstrates some failed attempts at trimming it down, and shows how you can use StrongLoop Process Manager to containerize your Node apps with a drastically reduced footprint!
   
-<img class="aligncenter size-full wp-image-25355" src="https://strongloop.com/wp-content/uploads/2015/06/slplusdocker.png" alt="slplusdocker" width="493" height="206" srcset="https://strongloop.com/wp-content/uploads/2015/06/slplusdocker.png 493w, https://strongloop.com/wp-content/uploads/2015/06/slplusdocker-300x125.png 300w, https://strongloop.com/wp-content/uploads/2015/06/slplusdocker-450x188.png 450w" sizes="(max-width: 493px) 100vw, 493px" />
+<img class="aligncenter size-full wp-image-25355" src="{{site.url}}/blog-assets/2015/06/slplusdocker.png" alt="slplusdocker" width="493" height="206"  />
 
 ## **Containerizing Apps The Hard Way**
 

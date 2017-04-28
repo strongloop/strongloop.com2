@@ -38,7 +38,7 @@ I&#8217;m going to assume you&#8217;ve got Git, Node and npm already, but you&#8
 
 Let&#8217;s begin by first creating a microservice using the awesomeness that is LoopBack. I&#8217;m going to assume some basic knowledge of LoopBack. If any of this doesn&#8217;t make sense, spend some time over at the [docs](http://loopback.io/doc/) to become a bit more acquainted. You can provision a new LoopBack app by using `lb app` at the command line. Select version 3 and the template that includes the Notes API and in-memory datasource.
 
-<img class="aligncenter size-full wp-image-29048" src="https://strongloop.com/wp-content/uploads/2017/03/blogpost1-1.png" alt="blogpost1" width="650" height="245" srcset="https://strongloop.com/wp-content/uploads/2017/03/blogpost1-1.png 650w, https://strongloop.com/wp-content/uploads/2017/03/blogpost1-1-300x113.png 300w, https://strongloop.com/wp-content/uploads/2017/03/blogpost1-1-450x170.png 450w" sizes="(max-width: 650px) 100vw, 650px" />
+<img class="aligncenter size-full wp-image-29048" src="{{site.url}}/blog-assets/2017/03/blogpost1-1.png" alt="blogpost1" width="650" height="245"  />
 
 Next, we&#8217;ll create a simple service by building a model. The model will involve the most important thing you can create an API for &#8211; cats. I named it &#8220;cat&#8221; and defined three properties:
 
@@ -72,11 +72,11 @@ Fire up the server, open the explorer, and use the `POST /cats` tester to create
 
 After you&#8217;ve made a few cats, then do a quick test of the `GET /cats` endpoint to ensure you&#8217;ve got data.
 
-<img class="aligncenter size-full wp-image-29050" src="https://strongloop.com/wp-content/uploads/2017/03/blogpost2.png" alt="blogpost2" width="650" height="511" srcset="https://strongloop.com/wp-content/uploads/2017/03/blogpost2.png 650w, https://strongloop.com/wp-content/uploads/2017/03/blogpost2-300x236.png 300w, https://strongloop.com/wp-content/uploads/2017/03/blogpost2-450x354.png 450w" sizes="(max-width: 650px) 100vw, 650px" />
+<img class="aligncenter size-full wp-image-29050" src="{{site.url}}/blog-assets/2017/03/blogpost2.png" alt="blogpost2" width="650" height="511"  />
 
 ## Part Two
 
-<img class="aligncenter size-full wp-image-29074" src="https://strongloop.com/wp-content/uploads/2017/03/1m8q3b.jpg" alt="1m8q3b" width="550" height="298"  />
+<img class="aligncenter size-full wp-image-29074" src="{{site.url}}/blog-assets/2017/03/1m8q3b.jpg" alt="1m8q3b" width="550" height="298"  />
 
 Alright &#8211; now that we&#8217;ve got the basic API working via LoopBack, it&#8217;s time to start working with the API Connect tooling. From the command line, first run this command:
 
@@ -92,11 +92,11 @@ apic edit
 
 This will fire up the visual designer. The first time you run this, you&#8217;ll be asked to login with Bluemix. This is free, and again, a one time requirement.
 
-<img class="aligncenter size-full wp-image-29075" src="https://strongloop.com/wp-content/uploads/2017/03/apic1.png" alt="apic1" width="650" height="530"  />
+<img class="aligncenter size-full wp-image-29075" src="{{site.url}}/blog-assets/2017/03/apic1.png" alt="apic1" width="650" height="530"  />
 
 After that, you&#8217;re dropped into the main API Designer:
 
-<img class="aligncenter size-full wp-image-29076" src="https://strongloop.com/wp-content/uploads/2017/03/apic2.png" alt="apic2" width="650" height="571" />
+<img class="aligncenter size-full wp-image-29076" src="{{site.url}}/blog-assets/2017/03/apic2.png" alt="apic2" width="650" height="571" />
 
 So, there&#8217;s quite a bit you can do here, but our first focus will just be to ensure we can run APIs via the gateway.
 
@@ -104,23 +104,23 @@ At the very bottom of the page, you&#8217;ll see a &#8220;Play&#8221; arrow and 
 
 The APIs tab (which should be your current tab) represents the APIs that API Connect recognized from the LoopBack application. Clicking on it loads details for every single API supported by our application. Click the &#8220;Assemble&#8221; tab to switch.
 
-<img class="aligncenter size-full wp-image-29077" src="https://strongloop.com/wp-content/uploads/2017/03/apic3.png" alt="apic3" width="650" height="571"  />
+<img class="aligncenter size-full wp-image-29077" src="{{site.url}}/blog-assets/2017/03/apic3.png" alt="apic3" width="650" height="571"  />
 
 What you have here is a visual tool to work with policies. A policy is simply a way to define how APIs are used. LoopBack, by default, is 100% open. Any API can be used at any time. API Connect allows for much more fine grained control over API access. You can do some pretty interesting stuff including modifying results, proxying to different APIs based on input, and so on. Right now the policy simply has an &#8220;invoke&#8221; item, which means, &#8220;run an API call&#8221;. Nice and simple. Click the test button (a right-facing arrow above and to the left of the invoke item). API Connect will now prompt you to run a particular API call. This is a rather large list, but scroll down until you see `get /cats`:
 
-<img class="aligncenter size-full wp-image-29078" src="https://strongloop.com/wp-content/uploads/2017/03/apic4.png" alt="apic4" width="650" height="571"  />
+<img class="aligncenter size-full wp-image-29078" src="{{site.url}}/blog-assets/2017/03/apic4.png" alt="apic4" width="650" height="571"  />
 
 There&#8217;s a lot of options you can tweak, but for now, just scroll down that left column and click that Invoke button at the bottom.
 
 Most likely you will get this error:
 
-<img class="aligncenter size-full wp-image-29079" src="https://strongloop.com/wp-content/uploads/2017/03/apic5.png" alt="apic5" width="650" height="570" />
+<img class="aligncenter size-full wp-image-29079" src="{{site.url}}/blog-assets/2017/03/apic5.png" alt="apic5" width="650" height="570" />
 
 By default, the local API Connect gateway uses a fake certificate and the browser complains about it. Open that link in a new tab and select the option to accept the certificate. (This will be different depending on which browser you are using.) This is not something that will happen in production and is simply an issue you have to go through when working locally. (It bugs me too.)
 
 If you run the invoke operation again though, you should see this:
 
-<img class="aligncenter size-full wp-image-29080" src="https://strongloop.com/wp-content/uploads/2017/03/apic6.png" alt="apic6" width="650" height="1012" />
+<img class="aligncenter size-full wp-image-29080" src="{{site.url}}/blog-assets/2017/03/apic6.png" alt="apic6" width="650" height="1012" />
 
 Woot! Notice that the result header includes information about rate limits. This is a default rule set up by API Connect out of the box and yes, you can tweak that to fit your needs. All we&#8217;ve done here though is verify that we can run the local LoopBack API via the gateway. Now let&#8217;s have some fun.
 
@@ -188,9 +188,9 @@ module.exports = function (config) {
     // this function is run once per transaction assuming
     // the policy is executed as part of an Assembly
 
-    context.message.body.forEach( (ob) =&gt; {
+    context.message.body.forEach( (ob) => {
         //loop over BAD_KEYS and delete
-        BAD_KEYS.forEach( (key) =&gt; {
+        BAD_KEYS.forEach( (key) => {
             delete ob[key];
         });
     });
@@ -216,11 +216,11 @@ As you can guess, this is how I let API Connect know where my custom policies ar
 
 Ok, almost there! Back in the API Connect editor, you may need to restart the server and reload the browser, but return to the Assemble tab. You should now see your new policy in the left hand column. You can click and drag it to the right of the invoke tab:
 
-<img class="aligncenter size-full wp-image-29085" src="https://strongloop.com/wp-content/uploads/2017/03/apic7.png" alt="apic7" width="650" height="693"  />
+<img class="aligncenter size-full wp-image-29085" src="{{site.url}}/blog-assets/2017/03/apic7.png" alt="apic7" width="650" height="693"  />
 
 Finally, click to reload the gateway server. When it&#8217;s done, try invoking the Cat API again.
 
-<img class="aligncenter size-full wp-image-29086" src="https://strongloop.com/wp-content/uploads/2017/03/apic8.png" alt="apic8" width="650" height="561" />
+<img class="aligncenter size-full wp-image-29086" src="{{site.url}}/blog-assets/2017/03/apic8.png" alt="apic8" width="650" height="561" />
 
 Voila! No SSN! And while this is a rather trivial example (which can be done in a JavaScript-policy node actually, no need for a custom policy), it hopefully gives you an idea of the control you have over your APIs with API Connect and the new open source microgateway! And, if you want to use the API Microgateway independent of API Connect, you can do so by cloning the [repo on GitHub](https://github.com/strongloop/microgateway) and following the directions on the README, or just npm install microgateway.
 

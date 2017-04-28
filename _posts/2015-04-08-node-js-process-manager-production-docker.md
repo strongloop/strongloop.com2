@@ -11,9 +11,9 @@ categories:
 ---
 We are excited to announce the immediate availability of a new version of the [StrongLoop Process Manager](http://strong-pm.io) with enhanced remote and local run capabilities, Docker support, Nginx load balancing and enhanced security.
 
-<img class="aligncenter  wp-image-24246" src="https://strongloop.com/wp-content/uploads/2015/04/docker.png" alt="docker" width="549" height="132" srcset="https://strongloop.com/wp-content/uploads/2015/04/docker.png 975w, https://strongloop.com/wp-content/uploads/2015/04/docker-300x72.png 300w, https://strongloop.com/wp-content/uploads/2015/04/docker-705x169.png 705w, https://strongloop.com/wp-content/uploads/2015/04/docker-450x108.png 450w" sizes="(max-width: 549px) 100vw, 549px" />
+<img class="aligncenter  wp-image-24246" src="{{site.url}}/blog-assets/2015/04/docker.png" alt="docker" width="549" height="132"  />
 
-<img class="aligncenter  wp-image-24255" src="https://strongloop.com/wp-content/uploads/2015/04/ijebjihe-1030x215.png" alt="ijebjihe" width="359" height="75" srcset="https://strongloop.com/wp-content/uploads/2015/04/ijebjihe-1030x215.png 1030w, https://strongloop.com/wp-content/uploads/2015/04/ijebjihe-300x63.png 300w, https://strongloop.com/wp-content/uploads/2015/04/ijebjihe-1500x313.png 1500w, https://strongloop.com/wp-content/uploads/2015/04/ijebjihe-705x147.png 705w, https://strongloop.com/wp-content/uploads/2015/04/ijebjihe-450x94.png 450w" sizes="(max-width: 359px) 100vw, 359px" />
+<img class="aligncenter  wp-image-24255" src="{{site.url}}/blog-assets/2015/04/ijebjihe-1030x215.png" alt="ijebjihe" width="359" height="75"  />
 
 &nbsp;
 
@@ -25,7 +25,7 @@ Key features include : Multi-host remote deployment , SSH/Auth support, Docker 
 
 If you are a Node developer like me, you’ve already come to discover that applications start as a single process running on a core within their host. On a four-core host, you&#8217;re obviously not taking advantage of all the compute resources available by only utilizing one out of four cores. In this scenario, the StrongLoop Process Manager will automatically cluster your Node application creating a master process and worker processes with one worker per core, by default. This is what would be referred to as “vertically scaling” your app on a single host, as a unit of scale.
 
-<img class="aligncenter size-large wp-image-24291" src="https://strongloop.com/wp-content/uploads/2015/04/vertical-scaling1-1030x260.png" alt="vertical scaling" width="1030" height="260" srcset="https://strongloop.com/wp-content/uploads/2015/04/vertical-scaling1-1030x260.png 1030w, https://strongloop.com/wp-content/uploads/2015/04/vertical-scaling1-300x76.png 300w, https://strongloop.com/wp-content/uploads/2015/04/vertical-scaling1-1500x378.png 1500w, https://strongloop.com/wp-content/uploads/2015/04/vertical-scaling1-705x178.png 705w, https://strongloop.com/wp-content/uploads/2015/04/vertical-scaling1-450x113.png 450w, https://strongloop.com/wp-content/uploads/2015/04/vertical-scaling1.png 1567w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-24291" src="{{site.url}}/blog-assets/2015/04/vertical-scaling1-1030x260.png" alt="vertical scaling" width="1030" height="260"  />
 
 <!--more-->
 
@@ -33,7 +33,7 @@ If you are a Node developer like me, you’ve already come to discover that appl
 
 Now that you&#8217;re utilizing all the computing resources on the machine, you are ready to scale out by replicating the same unit of scale multiple times, so that in effect have multiple units that act as one large distributed application. In other words, take the single StrongLoop Process Manager running on a host and spin up multiple hosts running a Process Manager and distribute the load among the many Process Managers.
 
-<img class="aligncenter size-large wp-image-24333" src="https://strongloop.com/wp-content/uploads/2015/04/horizontal-scaling2-1030x731.png" alt="horizontal scaling2" width="1030" height="731" srcset="https://strongloop.com/wp-content/uploads/2015/04/horizontal-scaling2-1030x731.png 1030w, https://strongloop.com/wp-content/uploads/2015/04/horizontal-scaling2-300x213.png 300w, https://strongloop.com/wp-content/uploads/2015/04/horizontal-scaling2-1500x1064.png 1500w, https://strongloop.com/wp-content/uploads/2015/04/horizontal-scaling2-260x185.png 260w, https://strongloop.com/wp-content/uploads/2015/04/horizontal-scaling2-705x500.png 705w, https://strongloop.com/wp-content/uploads/2015/04/horizontal-scaling2-450x319.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-24333" src="{{site.url}}/blog-assets/2015/04/horizontal-scaling2-1030x731.png" alt="horizontal scaling2" width="1030" height="731"  />
 
 ## **Why StrongLoop Process Manager?**
 
@@ -68,17 +68,17 @@ For more detailed information on how these features work, please refer to the [S
 
 On any one given host you can use the \`slc\` command line tool to control your application through the StrongLoop Process Manager. For example:
 
-<img class="aligncenter size-full wp-image-24213" src="https://strongloop.com/wp-content/uploads/2015/04/managing-at-scale.png" alt="managing-at-scale" width="975" height="490" srcset="https://strongloop.com/wp-content/uploads/2015/04/managing-at-scale.png 975w, https://strongloop.com/wp-content/uploads/2015/04/managing-at-scale-300x151.png 300w, https://strongloop.com/wp-content/uploads/2015/04/managing-at-scale-705x354.png 705w, https://strongloop.com/wp-content/uploads/2015/04/managing-at-scale-450x226.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24213" src="{{site.url}}/blog-assets/2015/04/managing-at-scale.png" alt="managing-at-scale" width="975" height="490"  />
 
 As mentioned, StrongLoop Arc ties together the Process Manager hosts to give you a unified console to operate a given application.
 
-<img class="aligncenter size-large wp-image-24256" src="https://strongloop.com/wp-content/uploads/2015/04/Process_Mgr_Arc-1030x488.jpg" alt="Process_Mgr_Arc" width="1030" height="488" srcset="https://strongloop.com/wp-content/uploads/2015/04/Process_Mgr_Arc-1030x488.jpg 1030w, https://strongloop.com/wp-content/uploads/2015/04/Process_Mgr_Arc-300x142.jpg 300w, https://strongloop.com/wp-content/uploads/2015/04/Process_Mgr_Arc-1500x710.jpg 1500w, https://strongloop.com/wp-content/uploads/2015/04/Process_Mgr_Arc-705x334.jpg 705w, https://strongloop.com/wp-content/uploads/2015/04/Process_Mgr_Arc-450x213.jpg 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-24256" src="{{site.url}}/blog-assets/2015/04/Process_Mgr_Arc-1030x488.jpg" alt="Process_Mgr_Arc" width="1030" height="488"  />
 
 ## **Monolithic Distributed Apps**
 
 If every StrongLoop Process Manager is running the exact same code, you have the benefit of a full redundancy of all functions running on every unit of scale. You would typically round-robin or use some other load balancing algorithm to distribute the request among the Process Managers based on things like overall CPU load of the host. The drawback to this is that when you make a change to the application you have to update all hosts.
 
-<img class="aligncenter size-large wp-image-24334" src="https://strongloop.com/wp-content/uploads/2015/04/monolithic-distributed2-1030x455.png" alt="monolithic distributed2" width="1030" height="455" srcset="https://strongloop.com/wp-content/uploads/2015/04/monolithic-distributed2-1030x455.png 1030w, https://strongloop.com/wp-content/uploads/2015/04/monolithic-distributed2-300x132.png 300w, https://strongloop.com/wp-content/uploads/2015/04/monolithic-distributed2-1500x662.png 1500w, https://strongloop.com/wp-content/uploads/2015/04/monolithic-distributed2-705x311.png 705w, https://strongloop.com/wp-content/uploads/2015/04/monolithic-distributed2-450x199.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-24334" src="{{site.url}}/blog-assets/2015/04/monolithic-distributed2-1030x455.png" alt="monolithic distributed2" width="1030" height="455"  />
 
 ## **Microservices Based Distributed Apps**
 
@@ -88,7 +88,7 @@ _What if those hosts provided services or APIs that were fully self contained al
 
 Imagine how quickly and easily you could iterate on your application with such a clean separation of concerns! If we step into our time-machine for a second, we’ll remember that this was the dream of service-oriented architecture [SOA](http://en.wikipedia.org/wiki/Service-oriented_architecture), which has largely remained unrealized. Why? Because you couldn&#8217;t decouple backends enough to be able to update services discretely. Node and frameworks like [LoopBack](http://loopback.io/) have made this much easier.  [LoopBack](http://loopback.io/) provides connectors to make it easy to connect to multiple backend stores at the same time. With its model-driven development and aggregation capabilities, it&#8217;s now possible to take a subset of hosts and have them act as a pool that performs a set of services divided by your application domain.  If those services need to be changed, you can update just that designated pool without affecting the rest of the application.
 
-<img class="aligncenter size-large wp-image-24342" src="https://strongloop.com/wp-content/uploads/2015/04/microservices4-1030x468.png" alt="microservices4" width="1030" height="468" srcset="https://strongloop.com/wp-content/uploads/2015/04/microservices4-1030x468.png 1030w, https://strongloop.com/wp-content/uploads/2015/04/microservices4-300x136.png 300w, https://strongloop.com/wp-content/uploads/2015/04/microservices4-1500x681.png 1500w, https://strongloop.com/wp-content/uploads/2015/04/microservices4-705x320.png 705w, https://strongloop.com/wp-content/uploads/2015/04/microservices4-450x204.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-24342" src="{{site.url}}/blog-assets/2015/04/microservices4-1030x468.png" alt="microservices4" width="1030" height="468"  />
 
 ## **What&#8217;s Next?**
 

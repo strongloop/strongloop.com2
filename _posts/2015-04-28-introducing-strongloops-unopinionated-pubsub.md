@@ -61,7 +61,7 @@ client.on('message', function(topic, msg) {
 Any other client connected to the same broker (or bridge) can publish messages to all other connected clients:
 
 ```js
-someOtherClient.publish('node-chat', 'Hello world! We &lt;3 Node.js!');
+someOtherClient.publish('node-chat', 'Hello world! We <3 Node.js!');
 
 ```
 
@@ -77,7 +77,7 @@ You can read more about the client API on the Github repository.
 
 This diagram illustrates how messages flow between clients, bridges, servers and brokers. The blue arrows represent a message published to a topic. The green arrow represents the message being sent to a subscriber. In the next section we’ll see how to actually create a bridge.
 
-<img class="aligncenter size-large wp-image-24582" src="https://strongloop.com/wp-content/uploads/2015/04/pubsub-1030x698.png" alt="pubsub" width="1030" height="698" srcset="https://strongloop.com/wp-content/uploads/2015/04/pubsub-1030x698.png 1030w, https://strongloop.com/wp-content/uploads/2015/04/pubsub-300x203.png 300w, https://strongloop.com/wp-content/uploads/2015/04/pubsub-705x478.png 705w, https://strongloop.com/wp-content/uploads/2015/04/pubsub-450x305.png 450w, https://strongloop.com/wp-content/uploads/2015/04/pubsub.png 1174w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-24582" src="{{site.url}}/blog-assets/2015/04/pubsub-1030x698.png" alt="pubsub" width="1030" height="698"  />
 
 ## **Brokers and Bridges Make it All Unopinionated**
 
@@ -87,7 +87,7 @@ In some cases, clients should not connect directly to a message broker. The `Bri
 
 Bridges also allow clients to connect to brokers over a protocol that the broker may not natively support. For example, a client can connect to the proxy using one protocol (eg. MQTT) and the bridge will connect to the broker using another (eg. STOMP).
 
-<img class="aligncenter size-full wp-image-24583" src="https://strongloop.com/wp-content/uploads/2015/04/pubsub2.png" alt="pubsub2" width="976" height="639" srcset="https://strongloop.com/wp-content/uploads/2015/04/pubsub2.png 976w, https://strongloop.com/wp-content/uploads/2015/04/pubsub2-300x196.png 300w, https://strongloop.com/wp-content/uploads/2015/04/pubsub2-705x462.png 705w, https://strongloop.com/wp-content/uploads/2015/04/pubsub2-450x295.png 450w" sizes="(max-width: 976px) 100vw, 976px" />
+<img class="aligncenter size-full wp-image-24583" src="{{site.url}}/blog-assets/2015/04/pubsub2.png" alt="pubsub2" width="976" height="639"  />
 
 Here’s a short example of setting up a simple bridge. This would forward messages between MQTT clients and a [Mosquitto](http://mosquitto.org/) server.
 

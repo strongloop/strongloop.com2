@@ -43,7 +43,7 @@ categories:
 </p>
 
 <p class="graf--p">
-  <img class="aligncenter size-full wp-image-25666" src="https://strongloop.com/wp-content/uploads/2015/07/babel.png" alt="babel" width="400" height="400" srcset="https://strongloop.com/wp-content/uploads/2015/07/babel.png 2854w, https://strongloop.com/wp-content/uploads/2015/07/babel-80x80.png 80w, https://strongloop.com/wp-content/uploads/2015/07/babel-300x300.png 300w, https://strongloop.com/wp-content/uploads/2015/07/babel-1030x1030.png 1030w, https://strongloop.com/wp-content/uploads/2015/07/babel-36x36.png 36w, https://strongloop.com/wp-content/uploads/2015/07/babel-180x180.png 180w, https://strongloop.com/wp-content/uploads/2015/07/babel-1500x1500.png 1500w, https://strongloop.com/wp-content/uploads/2015/07/babel-705x705.png 705w, https://strongloop.com/wp-content/uploads/2015/07/babel-120x120.png 120w, https://strongloop.com/wp-content/uploads/2015/07/babel-450x450.png 450w, https://strongloop.com/wp-content/uploads/2015/07/babel-150x150.png 150w" sizes="(max-width: 400px) 100vw, 400px" />
+  <img class="aligncenter size-full wp-image-25666" src="{{site.url}}/blog-assets/2015/07/babel.png" alt="babel" width="400" height="400"  />
 </p>
 
 <blockquote class="graf--blockquote">
@@ -213,7 +213,7 @@ runApp()
 
 ```js
 export default function sleep (ms) {
-  return new Promise(resolve =&gt; setTimeout(resolve, ms))
+  return new Promise(resolve => setTimeout(resolve, ms))
 }
 ```
 
@@ -261,7 +261,7 @@ test('sleep', async function (t) {
   let start = Date.now()
   await sleep(20)
   let end = Date.now()
-  t.ok(end - start &gt;= 20, 'takes about 20 milliseconds')
+  t.ok(end - start >= 20, 'takes about 20 milliseconds')
 })
 ```
 
@@ -414,9 +414,9 @@ npm run build
 </p>
 
 ```js
-modules/index.js -&gt; build/index.js
-modules/utils/__tests__/sleep-test.js -&gt; build/utils/__tests__/sleep-test.js
-modules/utils/sleep.js -&gt; build/utils/sleep.js
+modules/index.js -> build/index.js
+modules/utils/__tests__/sleep-test.js -> build/utils/__tests__/sleep-test.js
+modules/utils/sleep.js -> build/utils/sleep.js
 ```
 
 <p class="graf--p">

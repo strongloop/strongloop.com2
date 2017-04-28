@@ -132,7 +132,7 @@ All but the simplest Node.js applications and modules contain a configuration fi
   "version": "0.1.0",
   "dependencies": {
     "express": "0.4.2",
-    "mongodb": "&gt; 1.2"
+    "mongodb": "> 1.2"
   }
 }
 ```js

@@ -12,7 +12,7 @@ Code Rally Challenge is a fun racing game designed to help you improve your Java
   
 <!--more-->
 
-[<img class="aligncenter size-medium wp-image-26893" src="https://strongloop.com/wp-content/uploads/2016/02/deskcrop1-300x259.png" alt="deskcrop1" width="300" height="259" srcset="https://strongloop.com/wp-content/uploads/2016/02/deskcrop1-300x259.png 300w, https://strongloop.com/wp-content/uploads/2016/02/deskcrop1-450x388.png 450w, https://strongloop.com/wp-content/uploads/2016/02/deskcrop1.png 592w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2016/02/deskcrop1.png)
+[<img class="aligncenter size-medium wp-image-26893" src="{{site.url}}/blog-assets/2016/02/deskcrop1-300x259.png" alt="deskcrop1" width="300" height="259"  />]({{site.url}}/blog-assets/2016/02/deskcrop1.png)
   
 Peter McCaffrey, IBM&#8217;s Application Platform Marketing Director, gave us the low-down on the game:
 

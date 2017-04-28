@@ -18,7 +18,7 @@ categories:
 
 What&#8217;s LoopBack? It&#8217;s an open source API server powered by Node for connecting devices and apps to data and services.
 
-[<img class="aligncenter size-full wp-image-14996" alt="loopback_logo" src="https://strongloop.com/wp-content/uploads/2014/04/loopback_logo.png" width="1590" height="498" srcset="https://strongloop.com/wp-content/uploads/2014/04/loopback_logo.png 1590w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-300x94.png 300w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-1030x323.png 1030w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-1500x470.png 1500w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-705x221.png 705w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-450x141.png 450w" sizes="(max-width: 1590px) 100vw, 1590px" />](https://strongloop.com/wp-content/uploads/2014/04/loopback_logo.png)
+[<img class="aligncenter size-full wp-image-14996" alt="loopback_logo" src="{{site.url}}/blog-assets/2014/04/loopback_logo.png" width="1590" height="498"  />]({{site.url}}/blog-assets/2014/04/loopback_logo.png)
 
 <!--more-->
 
@@ -108,7 +108,7 @@ CartItem.sum(1, function(err, total) {
 
 // call a built in remote method
 CartItem.find(function(err, items) {
-  console.log(items); // =&gt; [] of items in the server’s memory db
+  console.log(items); // => [] of items in the server’s memory db
 });
 ```
 

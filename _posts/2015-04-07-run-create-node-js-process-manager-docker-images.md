@@ -15,7 +15,7 @@ In case you missed it, we recently [announced a new version](https://strongloop.
 
 One of the coolest features of the new release is support for Docker.
 
-<img class="aligncenter size-full wp-image-24246" src="https://strongloop.com/wp-content/uploads/2015/04/docker.png" alt="docker" width="975" height="234" srcset="https://strongloop.com/wp-content/uploads/2015/04/docker.png 975w, https://strongloop.com/wp-content/uploads/2015/04/docker-300x72.png 300w, https://strongloop.com/wp-content/uploads/2015/04/docker-705x169.png 705w, https://strongloop.com/wp-content/uploads/2015/04/docker-450x108.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24246" src="{{site.url}}/blog-assets/2015/04/docker.png" alt="docker" width="975" height="234"  />
 
 In this blog post I am going to show you how to install and use the offical StrongLoop Process Manager Docker image. Let’s get started shall we?
 

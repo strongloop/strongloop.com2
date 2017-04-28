@@ -15,7 +15,7 @@ Ever wonder what the backend for your [Xamarin](http://xamarin.com/) App should 
 
 I had speed dated Node.js a bit due to it’s non-blocking IO design, capabilities to handle extreme concurrency and the simplicity of code and runtime. But, I was married to wcf services and my divorce with ASP .Net web services  (primarily SOAP) still gives me nightmares. I knew SOAP and XML over HTTP didn’t cut it for mobile performance and I needed REST. If I were building in Angular, JSON would have been even more ideal, but REST would do for Xamarin&#8230;if I could find a powerful Node.js backend framework to generate REST API very quickly, handle complex ORM with distributed data and services, as well as provide an mBaaS plus real time capabilities, I would take the plunge.
 
-<img class="aligncenter size-full wp-image-25685" src="https://strongloop.com/wp-content/uploads/2015/08/1_moon_print.jpg" alt="1_moon_print" width="600" height="434" srcset="https://strongloop.com/wp-content/uploads/2015/08/1_moon_print.jpg 600w, https://strongloop.com/wp-content/uploads/2015/08/1_moon_print-300x217.jpg 300w, https://strongloop.com/wp-content/uploads/2015/08/1_moon_print-450x326.jpg 450w" sizes="(max-width: 600px) 100vw, 600px" />
+<img class="aligncenter size-full wp-image-25685" src="{{site.url}}/blog-assets/2015/08/1_moon_print.jpg" alt="1_moon_print" width="600" height="434"  />
 
 <p style="text-align: center;">
   <em>A small step for Node&#8230;a giant leap for mobile!</em>
@@ -27,13 +27,13 @@ It’s a tall ask, but there exists an open source framework in the Node ecosyst
 > 
 > &nbsp;
 
-<img class="aligncenter size-full wp-image-25740" src="https://strongloop.com/wp-content/uploads/2015/08/xampluslb.png" alt="xampluslb" width="1418" height="183" srcset="https://strongloop.com/wp-content/uploads/2015/08/xampluslb.png 1418w, https://strongloop.com/wp-content/uploads/2015/08/xampluslb-300x39.png 300w, https://strongloop.com/wp-content/uploads/2015/08/xampluslb-1030x133.png 1030w, https://strongloop.com/wp-content/uploads/2015/08/xampluslb-705x91.png 705w, https://strongloop.com/wp-content/uploads/2015/08/xampluslb-450x58.png 450w" sizes="(max-width: 1418px) 100vw, 1418px" />
+<img class="aligncenter size-full wp-image-25740" src="{{site.url}}/blog-assets/2015/08/xampluslb.png" alt="xampluslb" width="1418" height="183"  />
 
 ## **Show me how!** 
 
 I like practical stories and this is one which I can closely relate to. I am building my backend APIs that will feed data and services to my Xamarin App. But my Microsoft SQL Server DBA friend tells me that I can’t have access to our production database (yet). On the API team, we are thinking of going with MongoDB as the backend datasource, but a lot of business data currently resides in SQL Server and my services need to talk seamlessly to both. Also my API needs to be the front end for some 3rd party REST APIs which have object relationships with my data based services. In the following sections, we will quickly stand up a simple REST API and integrate it with Xamarin via a [ToDo sample app](https://github.com/strongloop/loopback-example-xamarin). For detailed use cases and to know what else you could do with this powerful framework, please visit [loopback documentation.](http://docs.strongloop.com/display/public/LB/LoopBack)
 
-[<img class="aligncenter size-full wp-image-25646" src="https://strongloop.com/wp-content/uploads/2015/07/4.png" alt="4" width="793" height="407" srcset="https://strongloop.com/wp-content/uploads/2015/07/4.png 793w, https://strongloop.com/wp-content/uploads/2015/07/4-300x154.png 300w, https://strongloop.com/wp-content/uploads/2015/07/4-705x362.png 705w, https://strongloop.com/wp-content/uploads/2015/07/4-450x231.png 450w" sizes="(max-width: 793px) 100vw, 793px" />](https://strongloop.com/wp-content/uploads/2015/07/4.png)
+[<img class="aligncenter size-full wp-image-25646" src="{{site.url}}/blog-assets/2015/07/4.png" alt="4" width="793" height="407"  />]({{site.url}}/blog-assets/2015/07/4.png)
 
 <!--more-->
 
@@ -204,7 +204,7 @@ Web server listening at: http://0.0.0.0:3000/
 
 We can now hit the provided URL, inspect and test the auto-generated CRUD in the [Swagger 2.0](https://strongloop.com/strongblog/enterprise-api-swagger-2-0-loopback/) compliant interface. For non-CRUD methods, we will need to add the Swagger middleware to serve the custom method.
 
-<img class="aligncenter size-large wp-image-25693" src="https://strongloop.com/wp-content/uploads/2015/08/4_Explorer_Simple-1030x612.jpg" alt="4_Explorer_Simple" width="1030" height="612" srcset="https://strongloop.com/wp-content/uploads/2015/08/4_Explorer_Simple-1030x612.jpg 1030w, https://strongloop.com/wp-content/uploads/2015/08/4_Explorer_Simple-300x178.jpg 300w, https://strongloop.com/wp-content/uploads/2015/08/4_Explorer_Simple-1500x891.jpg 1500w, https://strongloop.com/wp-content/uploads/2015/08/4_Explorer_Simple-705x419.jpg 705w, https://strongloop.com/wp-content/uploads/2015/08/4_Explorer_Simple-450x267.jpg 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-25693" src="{{site.url}}/blog-assets/2015/08/4_Explorer_Simple-1030x612.jpg" alt="4_Explorer_Simple" width="1030" height="612"  />
 
 You may have noticed that the User Model and all its API endpoints including CRUD, filtering, change event, Login, Logout, Reset, Access Token, etc are auto-generated as it has a built in model of LoopBack. However, we are not going to use the default user model, rather implement our own by extending the base class.
 
@@ -296,7 +296,7 @@ You can see that now we have additionally created a foreign key dependency in th
 
 The API explorer shows and executes relationship based queries :
 
-<img class="aligncenter size-large wp-image-25696" src="https://strongloop.com/wp-content/uploads/2015/08/5_Explorer_Relation-1030x790.jpg" alt="5_Explorer_Relation" width="1030" height="790" srcset="https://strongloop.com/wp-content/uploads/2015/08/5_Explorer_Relation-1030x790.jpg 1030w, https://strongloop.com/wp-content/uploads/2015/08/5_Explorer_Relation-300x230.jpg 300w, https://strongloop.com/wp-content/uploads/2015/08/5_Explorer_Relation-1500x1150.jpg 1500w, https://strongloop.com/wp-content/uploads/2015/08/5_Explorer_Relation-705x541.jpg 705w, https://strongloop.com/wp-content/uploads/2015/08/5_Explorer_Relation-450x345.jpg 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-25696" src="{{site.url}}/blog-assets/2015/08/5_Explorer_Relation-1030x790.jpg" alt="5_Explorer_Relation" width="1030" height="790"  />
 
 &nbsp;
 
@@ -370,7 +370,7 @@ StrongLoop Arc is running here: http://localhost:52992/#/
 
 ```
 
-<img class="aligncenter size-large wp-image-25699" src="https://strongloop.com/wp-content/uploads/2015/08/7_Arc_Landing-1030x333.jpg" alt="7_Arc_Landing" width="1030" height="333" srcset="https://strongloop.com/wp-content/uploads/2015/08/7_Arc_Landing-1030x333.jpg 1030w, https://strongloop.com/wp-content/uploads/2015/08/7_Arc_Landing-300x97.jpg 300w, https://strongloop.com/wp-content/uploads/2015/08/7_Arc_Landing-1500x486.jpg 1500w, https://strongloop.com/wp-content/uploads/2015/08/7_Arc_Landing-705x228.jpg 705w, https://strongloop.com/wp-content/uploads/2015/08/7_Arc_Landing-450x146.jpg 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-25699" src="{{site.url}}/blog-assets/2015/08/7_Arc_Landing-1030x333.jpg" alt="7_Arc_Landing" width="1030" height="333"  />
 
 &nbsp;
 
@@ -394,19 +394,19 @@ loopback-connector-mssql@2.2.0 node_modules/loopback-connector-mssql
 
 Now I can setup the connection settings for SQL Server by adding a new Data Source and test the connection from my Node application to SQL Server.
 
-<img class="aligncenter size-large wp-image-25701" src="https://strongloop.com/wp-content/uploads/2015/08/8_Composer_1-1030x615.jpg" alt="8_Composer_1" width="1030" height="615" srcset="https://strongloop.com/wp-content/uploads/2015/08/8_Composer_1-1030x615.jpg 1030w, https://strongloop.com/wp-content/uploads/2015/08/8_Composer_1-300x179.jpg 300w, https://strongloop.com/wp-content/uploads/2015/08/8_Composer_1-1500x895.jpg 1500w, https://strongloop.com/wp-content/uploads/2015/08/8_Composer_1-705x421.jpg 705w, https://strongloop.com/wp-content/uploads/2015/08/8_Composer_1-450x269.jpg 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-25701" src="{{site.url}}/blog-assets/2015/08/8_Composer_1-1030x615.jpg" alt="8_Composer_1" width="1030" height="615"  />
 
 &nbsp;
 
 After that, I modify the TodoTask model and change the associated backend from db(objectdb) to SQL Server.
 
-<img class="aligncenter size-large wp-image-25702" src="https://strongloop.com/wp-content/uploads/2015/08/8_Composer_2-1030x586.jpg" alt="8_Composer_2" width="1030" height="586" srcset="https://strongloop.com/wp-content/uploads/2015/08/8_Composer_2-1030x586.jpg 1030w, https://strongloop.com/wp-content/uploads/2015/08/8_Composer_2-300x171.jpg 300w, https://strongloop.com/wp-content/uploads/2015/08/8_Composer_2-1500x853.jpg 1500w, https://strongloop.com/wp-content/uploads/2015/08/8_Composer_2-705x401.jpg 705w, https://strongloop.com/wp-content/uploads/2015/08/8_Composer_2-450x256.jpg 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-25702" src="{{site.url}}/blog-assets/2015/08/8_Composer_2-1030x586.jpg" alt="8_Composer_2" width="1030" height="586"  />
 
 &nbsp;
 
 And finally, after saving the model, I can press the “Migrate Model” button, which will automigrate both the schema and data to SQL Server. In case there is existing data or just changes to the schema, auto-update is run instead of auto-migrate to make alterations instead of a drop and re-create.
 
-<img class="aligncenter size-large wp-image-25703" src="https://strongloop.com/wp-content/uploads/2015/08/8_Composer_3-1030x644.jpg" alt="8_Composer_3" width="1030" height="644" srcset="https://strongloop.com/wp-content/uploads/2015/08/8_Composer_3-1030x644.jpg 1030w, https://strongloop.com/wp-content/uploads/2015/08/8_Composer_3-300x188.jpg 300w, https://strongloop.com/wp-content/uploads/2015/08/8_Composer_3-1500x938.jpg 1500w, https://strongloop.com/wp-content/uploads/2015/08/8_Composer_3-705x441.jpg 705w, https://strongloop.com/wp-content/uploads/2015/08/8_Composer_3-450x281.jpg 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-25703" src="{{site.url}}/blog-assets/2015/08/8_Composer_3-1030x644.jpg" alt="8_Composer_3" width="1030" height="644"  />
 
 &nbsp;
 
@@ -466,11 +466,11 @@ npm install will download all the application dependencies and build it local to
 ```js
 $ cd bin
 $ node lb-xm ../../Server/server/server.js forms
-&gt;&gt; SDK Generator.
-&gt;&gt; Server parsed, templating code...
-&gt;&gt; Parsing for Xamarin-Forms compatibility...
-&gt;&gt; Writing CS file: output/LBXamarinSDK.cs...
-&gt;&gt; Done.
+>> SDK Generator.
+>> Server parsed, templating code...
+>> Parsing for Xamarin-Forms compatibility...
+>> Writing CS file: output/LBXamarinSDK.cs...
+>> Done.
 
 ```
 
@@ -514,11 +514,11 @@ $ cp LBXamarinSDK.cs ../../../Client/Todo\ App/TodoApp/TodoApp/
 
 Launch Xamarin Studio and open the Todo App solution file and test the iOS app as follows:
 
-<img class="aligncenter size-large wp-image-25705" src="https://strongloop.com/wp-content/uploads/2015/08/9_Launch_Xamarin-1030x329.jpg" alt="9_Launch_Xamarin" width="1030" height="329" srcset="https://strongloop.com/wp-content/uploads/2015/08/9_Launch_Xamarin-1030x329.jpg 1030w, https://strongloop.com/wp-content/uploads/2015/08/9_Launch_Xamarin-300x96.jpg 300w, https://strongloop.com/wp-content/uploads/2015/08/9_Launch_Xamarin-1500x479.jpg 1500w, https://strongloop.com/wp-content/uploads/2015/08/9_Launch_Xamarin-705x225.jpg 705w, https://strongloop.com/wp-content/uploads/2015/08/9_Launch_Xamarin-450x144.jpg 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-25705" src="{{site.url}}/blog-assets/2015/08/9_Launch_Xamarin-1030x329.jpg" alt="9_Launch_Xamarin" width="1030" height="329"  />
 
 &nbsp;
 
-<img class="aligncenter size-large wp-image-25706" src="https://strongloop.com/wp-content/uploads/2015/08/10_Xamarin_ConfigureIP-1030x572.jpg" alt="10_Xamarin_ConfigureIP" width="1030" height="572" srcset="https://strongloop.com/wp-content/uploads/2015/08/10_Xamarin_ConfigureIP-1030x572.jpg 1030w, https://strongloop.com/wp-content/uploads/2015/08/10_Xamarin_ConfigureIP-300x167.jpg 300w, https://strongloop.com/wp-content/uploads/2015/08/10_Xamarin_ConfigureIP-1500x833.jpg 1500w, https://strongloop.com/wp-content/uploads/2015/08/10_Xamarin_ConfigureIP-705x392.jpg 705w, https://strongloop.com/wp-content/uploads/2015/08/10_Xamarin_ConfigureIP-450x250.jpg 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-25706" src="{{site.url}}/blog-assets/2015/08/10_Xamarin_ConfigureIP-1030x572.jpg" alt="10_Xamarin_ConfigureIP" width="1030" height="572"  />
 
 &nbsp;
 
@@ -526,17 +526,17 @@ In the LBXamarinSDK.cs file, please update the IP address to that of the host on
 
 We go through a User Signup and Login process, next we can add multiple todos for any particular day/time. The todos then show up in our calendar. In the use case below, we have entered “eat pizza” and “drink water” as two Todo Tasks. These are added successfully into my calendar.
 
-<img class=" size-medium wp-image-25707 alignnone" src="https://strongloop.com/wp-content/uploads/2015/08/11_Step1_App_Launch-190x300.jpg" alt="11_Step1_App_Launch" width="190" height="300" srcset="https://strongloop.com/wp-content/uploads/2015/08/11_Step1_App_Launch-190x300.jpg 190w, https://strongloop.com/wp-content/uploads/2015/08/11_Step1_App_Launch-448x705.jpg 448w, https://strongloop.com/wp-content/uploads/2015/08/11_Step1_App_Launch-450x709.jpg 450w, https://strongloop.com/wp-content/uploads/2015/08/11_Step1_App_Launch.jpg 640w" sizes="(max-width: 190px) 100vw, 190px" />    <img class=" size-medium wp-image-25708 alignnone" src="https://strongloop.com/wp-content/uploads/2015/08/11_Step2_App_Signup-191x300.jpg" alt="11_Step2_App_Signup" width="191" height="300" srcset="https://strongloop.com/wp-content/uploads/2015/08/11_Step2_App_Signup-191x300.jpg 191w, https://strongloop.com/wp-content/uploads/2015/08/11_Step2_App_Signup-449x705.jpg 449w, https://strongloop.com/wp-content/uploads/2015/08/11_Step2_App_Signup-450x707.jpg 450w, https://strongloop.com/wp-content/uploads/2015/08/11_Step2_App_Signup.jpg 640w" sizes="(max-width: 191px) 100vw, 191px" />    <img class=" size-medium wp-image-25709 alignnone" src="https://strongloop.com/wp-content/uploads/2015/08/11_Step4_App_AddTask-192x300.jpg" alt="11_Step4_App_AddTask" width="192" height="300" srcset="https://strongloop.com/wp-content/uploads/2015/08/11_Step4_App_AddTask-192x300.jpg 192w, https://strongloop.com/wp-content/uploads/2015/08/11_Step4_App_AddTask-452x705.jpg 452w, https://strongloop.com/wp-content/uploads/2015/08/11_Step4_App_AddTask-450x702.jpg 450w, https://strongloop.com/wp-content/uploads/2015/08/11_Step4_App_AddTask.jpg 646w" sizes="(max-width: 192px) 100vw, 192px" />
+<img class=" size-medium wp-image-25707 alignnone" src="{{site.url}}/blog-assets/2015/08/11_Step1_App_Launch-190x300.jpg" alt="11_Step1_App_Launch" width="190" height="300"  />    <img class=" size-medium wp-image-25708 alignnone" src="{{site.url}}/blog-assets/2015/08/11_Step2_App_Signup-191x300.jpg" alt="11_Step2_App_Signup" width="191" height="300"  />    <img class=" size-medium wp-image-25709 alignnone" src="{{site.url}}/blog-assets/2015/08/11_Step4_App_AddTask-192x300.jpg" alt="11_Step4_App_AddTask" width="192" height="300"  />
 
 &nbsp;
 
-<img class=" size-medium wp-image-25710 alignnone" src="https://strongloop.com/wp-content/uploads/2015/08/11_Step5_Pizza-190x300.jpg" alt="11_Step5_Pizza" width="190" height="300" srcset="https://strongloop.com/wp-content/uploads/2015/08/11_Step5_Pizza-190x300.jpg 190w, https://strongloop.com/wp-content/uploads/2015/08/11_Step5_Pizza-447x705.jpg 447w, https://strongloop.com/wp-content/uploads/2015/08/11_Step5_Pizza-450x709.jpg 450w, https://strongloop.com/wp-content/uploads/2015/08/11_Step5_Pizza.jpg 642w" sizes="(max-width: 190px) 100vw, 190px" />    <img class=" size-medium wp-image-25711 alignnone" src="https://strongloop.com/wp-content/uploads/2015/08/11_Step6_Water-191x300.jpg" alt="11_Step6_Water" width="191" height="300" srcset="https://strongloop.com/wp-content/uploads/2015/08/11_Step6_Water-191x300.jpg 191w, https://strongloop.com/wp-content/uploads/2015/08/11_Step6_Water-450x706.jpg 450w, https://strongloop.com/wp-content/uploads/2015/08/11_Step6_Water.jpg 644w" sizes="(max-width: 191px) 100vw, 191px" />    <img class=" size-medium wp-image-25712 alignnone" src="https://strongloop.com/wp-content/uploads/2015/08/11_Step7_both-192x300.jpg" alt="11_Step7_both" width="192" height="300" srcset="https://strongloop.com/wp-content/uploads/2015/08/11_Step7_both-192x300.jpg 192w, https://strongloop.com/wp-content/uploads/2015/08/11_Step7_both-452x705.jpg 452w, https://strongloop.com/wp-content/uploads/2015/08/11_Step7_both-450x702.jpg 450w, https://strongloop.com/wp-content/uploads/2015/08/11_Step7_both.jpg 644w" sizes="(max-width: 192px) 100vw, 192px" />
+<img class=" size-medium wp-image-25710 alignnone" src="{{site.url}}/blog-assets/2015/08/11_Step5_Pizza-190x300.jpg" alt="11_Step5_Pizza" width="190" height="300"  />    <img class=" size-medium wp-image-25711 alignnone" src="{{site.url}}/blog-assets/2015/08/11_Step6_Water-191x300.jpg" alt="11_Step6_Water" width="191" height="300"  />    <img class=" size-medium wp-image-25712 alignnone" src="{{site.url}}/blog-assets/2015/08/11_Step7_both-192x300.jpg" alt="11_Step7_both" width="192" height="300"  />
 
 &nbsp;
 
 Now, if we go on the LoopBack API explorer (after authenticating using the same credentials) we get an access token, which can be set on the header and used to perform queries corresponding to the Todo Tasks for “<skar@strongloop.com>”. We can see the corresponding entries from the SQL Server database displayed in our API results on the backend as well.
 
-<img class="  wp-image-25713 alignnone" src="https://strongloop.com/wp-content/uploads/2015/08/12_User_Login-300x270.jpg" alt="12_User_Login" width="358" height="323" srcset="https://strongloop.com/wp-content/uploads/2015/08/12_User_Login-300x270.jpg 300w, https://strongloop.com/wp-content/uploads/2015/08/12_User_Login-1030x926.jpg 1030w, https://strongloop.com/wp-content/uploads/2015/08/12_User_Login-705x634.jpg 705w, https://strongloop.com/wp-content/uploads/2015/08/12_User_Login.jpg 1440w" sizes="(max-width: 358px) 100vw, 358px" />    <img class="  wp-image-25714 alignnone" src="https://strongloop.com/wp-content/uploads/2015/08/12_Query_Todo-268x300.jpg" alt="12_Query_Todo" width="357" height="399" srcset="https://strongloop.com/wp-content/uploads/2015/08/12_Query_Todo-268x300.jpg 268w, https://strongloop.com/wp-content/uploads/2015/08/12_Query_Todo-921x1030.jpg 921w, https://strongloop.com/wp-content/uploads/2015/08/12_Query_Todo-630x705.jpg 630w, https://strongloop.com/wp-content/uploads/2015/08/12_Query_Todo-450x503.jpg 450w, https://strongloop.com/wp-content/uploads/2015/08/12_Query_Todo.jpg 1302w" sizes="(max-width: 357px) 100vw, 357px" />
+<img class="  wp-image-25713 alignnone" src="{{site.url}}/blog-assets/2015/08/12_User_Login-300x270.jpg" alt="12_User_Login" width="358" height="323"  />    <img class="  wp-image-25714 alignnone" src="{{site.url}}/blog-assets/2015/08/12_Query_Todo-268x300.jpg" alt="12_Query_Todo" width="357" height="399"  />
 
 ## **What’s next?**
 

@@ -24,11 +24,11 @@ categories:
 ---
 StrongLoop is pleased to announce the 1.0.0 release of the [LoopBack PostgreSQL Connector](https://github.com/strongloop/loopback-connector-postgresql), that enables LoopBack powered applications to access PostgreSQL databases. The PostgreSQL connector is a new member of the LoopBack connector family. It supports the same model APIs as other LoopBack database connectors for create, read, update, and delete (CRUD) operations, synchronization, and discovery.
 
-<img class="aligncenter size-full wp-image-16084" alt="postgresql" src="https://strongloop.com/wp-content/uploads/2014/05/postgresql.jpeg" width="252" height="200" />
+<img class="aligncenter size-full wp-image-16084" alt="postgresql" src="{{site.url}}/blog-assets/2014/05/postgresql.jpeg" width="252" height="200" />
 
 What&#8217;s [LoopBack](http://loopback.io/doc/index.html)? It&#8217;s an open-source API server for Node.js applications. It enables mobile apps to connect to enterprise data through models that use pluggable [data sources and connectors](https://apidocs.strongloop.com/loopback-datasource-juggler/). Connectors provide connectivity to backend systems such as databases. Models are in turn exposed to mobile devices through REST APIs and client SDKs.
 
-<img class="aligncenter size-full wp-image-14996" alt="loopback_logo" src="https://strongloop.com/wp-content/uploads/2014/04/loopback_logo.png" width="1590" height="498" srcset="https://strongloop.com/wp-content/uploads/2014/04/loopback_logo.png 1590w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-300x94.png 300w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-1030x323.png 1030w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-1500x470.png 1500w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-705x221.png 705w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-450x141.png 450w" sizes="(max-width: 1590px) 100vw, 1590px" />
+<img class="aligncenter size-full wp-image-14996" alt="loopback_logo" src="{{site.url}}/blog-assets/2014/04/loopback_logo.png" width="1590" height="498"  />
 
 This blog will explore this new PostgreSQL connector using a simple example.<!--more-->
 

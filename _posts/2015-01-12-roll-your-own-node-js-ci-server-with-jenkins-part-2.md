@@ -30,7 +30,7 @@ Let’s look at setting up a new project in Jenkins.
 First, create a new Jenkins project by selecting “New Item” from the navigation sidebar **(1)**. Then, enter a name **(2)** for the project and choose “Build a free-style software project” **(3)**. Lastly, click “OK” **(4)** to configure it:
 
 <p style="text-align: center">
-  <a href="https://strongloop.com/wp-content/uploads/2015/01/Project1.png"><img class="aligncenter  wp-image-22438" src="https://strongloop.com/wp-content/uploads/2015/01/Project1.png" alt="" width="680" height="506" srcset="https://strongloop.com/wp-content/uploads/2015/01/Project1.png 1260w, https://strongloop.com/wp-content/uploads/2015/01/Project1-300x223.png 300w, https://strongloop.com/wp-content/uploads/2015/01/Project1-1030x765.png 1030w, https://strongloop.com/wp-content/uploads/2015/01/Project1-705x524.png 705w, https://strongloop.com/wp-content/uploads/2015/01/Project1-450x334.png 450w" sizes="(max-width: 680px) 100vw, 680px" /></a>
+  <a href="{{site.url}}/blog-assets/2015/01/Project1.png"><img class="aligncenter  wp-image-22438" src="{{site.url}}/blog-assets/2015/01/Project1.png" alt="" width="680" height="506"  /></a>
 </p>
 
 After submitting, the main project configuration page appears. We will frequent this page in the remainder of the tutorial.
@@ -42,19 +42,19 @@ The first thing we will configure is our GitHub repository. We have a fictional 
 On the current _Project Configuration Page_ head to the “Source Code Management” section and select “Git” **(1)**. Then, enter your project repository URL **(2)** and select the credentials for GitHub **(3)** from the dropdown. The remaining defaults are good:
 
 <p style="text-align: center">
-  <a href="https://strongloop.com/wp-content/uploads/2015/01/Project2.png"><img class="aligncenter  wp-image-22439" src="https://strongloop.com/wp-content/uploads/2015/01/Project2.png" alt="" width="734" height="264" srcset="https://strongloop.com/wp-content/uploads/2015/01/Project2.png 1360w, https://strongloop.com/wp-content/uploads/2015/01/Project2-300x107.png 300w, https://strongloop.com/wp-content/uploads/2015/01/Project2-1030x369.png 1030w, https://strongloop.com/wp-content/uploads/2015/01/Project2-450x161.png 450w" sizes="(max-width: 734px) 100vw, 734px" /></a>
+  <a href="{{site.url}}/blog-assets/2015/01/Project2.png"><img class="aligncenter  wp-image-22439" src="{{site.url}}/blog-assets/2015/01/Project2.png" alt="" width="734" height="264"  /></a>
 </p>
 
 Under “Build Triggers” **(1)**, check “Build when a change is pushed to GitHub”. Then, click “Save” **(2)**:
 
 <p style="text-align: center">
-  <a href="https://strongloop.com/wp-content/uploads/2015/01/Project3.png"><img class="aligncenter  wp-image-22440" src="https://strongloop.com/wp-content/uploads/2015/01/Project3.png" alt="" width="682" height="338" srcset="https://strongloop.com/wp-content/uploads/2015/01/Project3.png 1264w, https://strongloop.com/wp-content/uploads/2015/01/Project3-300x148.png 300w, https://strongloop.com/wp-content/uploads/2015/01/Project3-1030x510.png 1030w, https://strongloop.com/wp-content/uploads/2015/01/Project3-450x222.png 450w" sizes="(max-width: 682px) 100vw, 682px" /></a>
+  <a href="{{site.url}}/blog-assets/2015/01/Project3.png"><img class="aligncenter  wp-image-22440" src="{{site.url}}/blog-assets/2015/01/Project3.png" alt="" width="682" height="338"  /></a>
 </p>
 
 Let’s expose `node` and `npm` as well so we can execute all our tests from the shell. To do this, scroll down to “Build Environment” and check “Provide Node & npm bin/ folder to PATH” **(1)**. Then, select the desired Node installation **(2) **and save **(3)**.
 
 <p style="text-align: center">
-  <a href="https://strongloop.com/wp-content/uploads/2015/01/Project3a.png"><img class="aligncenter  wp-image-22441" src="https://strongloop.com/wp-content/uploads/2015/01/Project3a.png" alt="" width="685" height="318" srcset="https://strongloop.com/wp-content/uploads/2015/01/Project3a.png 1268w, https://strongloop.com/wp-content/uploads/2015/01/Project3a-300x139.png 300w, https://strongloop.com/wp-content/uploads/2015/01/Project3a-1030x477.png 1030w, https://strongloop.com/wp-content/uploads/2015/01/Project3a-450x208.png 450w" sizes="(max-width: 685px) 100vw, 685px" /></a>
+  <a href="{{site.url}}/blog-assets/2015/01/Project3a.png"><img class="aligncenter  wp-image-22441" src="{{site.url}}/blog-assets/2015/01/Project3a.png" alt="" width="685" height="318"  /></a>
 </p>
 
 Now our project is configured to: pull from our GitHub repo, build whenever we push a new commit to `master`, and use Node.
@@ -62,7 +62,7 @@ Now our project is configured to: pull from our GitHub repo, build whenever we p
 Let’s try it out by clicking “Build Now” **(1)** on the _Main Project Page_ (you are staring at it). You will see a progress bar start rolling in the “Build History” section. This progress bar will eventually be based on the time your _last_ build took. If everything is peachy, you’ll see a blue orb **(2)** indicating a successful build:
 
 <p style="text-align: center">
-  <a href="https://strongloop.com/wp-content/uploads/2015/01/Project4.png"><img class="aligncenter  wp-image-22442" src="https://strongloop.com/wp-content/uploads/2015/01/Project4.png" alt="" width="682" height="509" srcset="https://strongloop.com/wp-content/uploads/2015/01/Project4.png 1264w, https://strongloop.com/wp-content/uploads/2015/01/Project4-300x223.png 300w, https://strongloop.com/wp-content/uploads/2015/01/Project4-1030x767.png 1030w, https://strongloop.com/wp-content/uploads/2015/01/Project4-450x335.png 450w" sizes="(max-width: 682px) 100vw, 682px" /></a>
+  <a href="{{site.url}}/blog-assets/2015/01/Project4.png"><img class="aligncenter  wp-image-22442" src="{{site.url}}/blog-assets/2015/01/Project4.png" alt="" width="682" height="509"  /></a>
 </p>
 
 Of course, the project isn’t too interesting at this point. We basically installed Node (if it hadn’t been already), checked out the lastest `master` and exited. Let’s start adding some useful reports.
@@ -82,7 +82,7 @@ npm install tape istanbul --save-dev
 Then, let’s add an npm script that will generate test and coverage output. The script will formatted as such:
 
 ```js
-istanbul cover [test command] &gt; test.tap && istanbul report clover
+istanbul cover [test command] > test.tap && istanbul report clover
 ```
 
 In our case, since `tape` outputs TAP by default, the [test command] will be:
@@ -97,14 +97,14 @@ Pulling it all together, we use the following `ci-test` script in the jenkins-
 
 ```js
 "scripts": {
-    "ci-test": "istanbul cover tape \"test/*-test.js\" &gt; test.tap && istanbul report clover"
+    "ci-test": "istanbul cover tape \"test/*-test.js\" > test.tap && istanbul report clover"
 }
 ```
 
 With this code on GitHub, switch over to Jenkins and visit the _Project Configuration Page_ again. This time we are going to add a build step by visiting the “Build” section, clicking the “Add Build Step” dropdown and selecting “Execute shell”:
 
 <p style="text-align: center">
-  <a href="https://strongloop.com/wp-content/uploads/2015/01/Project5.png"><img class="aligncenter  wp-image-22443" src="https://strongloop.com/wp-content/uploads/2015/01/Project5.png" alt="" width="452" height="175" srcset="https://strongloop.com/wp-content/uploads/2015/01/Project5.png 836w, https://strongloop.com/wp-content/uploads/2015/01/Project5-300x116.png 300w, https://strongloop.com/wp-content/uploads/2015/01/Project5-450x174.png 450w" sizes="(max-width: 452px) 100vw, 452px" /></a>
+  <a href="{{site.url}}/blog-assets/2015/01/Project5.png"><img class="aligncenter  wp-image-22443" src="{{site.url}}/blog-assets/2015/01/Project5.png" alt="" width="452" height="175"  /></a>
 </p>
 
 This will allow you to run arbitrary commands on the shell. Add the following commands in the text area that appears.
@@ -117,13 +117,13 @@ npm run ci-test || :
 Head down to the “Post-build actions” and add a “Publish TAP Results” **(1)** from the dropdown. Then, add the `test.tap` output we create from our `ci-test`script to the “Test results” input **(2)**:
 
 <p style="text-align: center">
-  <a href="https://strongloop.com/wp-content/uploads/2015/01/Project6.png"><img class="aligncenter  wp-image-22444" src="https://strongloop.com/wp-content/uploads/2015/01/Project6.png" alt="" width="744" height="302" srcset="https://strongloop.com/wp-content/uploads/2015/01/Project6.png 1378w, https://strongloop.com/wp-content/uploads/2015/01/Project6-300x121.png 300w, https://strongloop.com/wp-content/uploads/2015/01/Project6-1030x417.png 1030w, https://strongloop.com/wp-content/uploads/2015/01/Project6-450x182.png 450w" sizes="(max-width: 744px) 100vw, 744px" /></a>
+  <a href="{{site.url}}/blog-assets/2015/01/Project6.png"><img class="aligncenter  wp-image-22444" src="{{site.url}}/blog-assets/2015/01/Project6.png" alt="" width="744" height="302"  /></a>
 </p>
 
 Next, add the action “Publish Clover Coverage Report” **(1)** to the “Post-build actions” dropdown. Then, add “coverage” as the “Clover report directory” **(2) **as `istanbul` uses that folder for default:
 
 <p style="text-align: center">
-  <a href="https://strongloop.com/wp-content/uploads/2015/01/Project7.png"><img class="aligncenter  wp-image-22445" src="https://strongloop.com/wp-content/uploads/2015/01/Project7.png" alt="" width="685" height="406" srcset="https://strongloop.com/wp-content/uploads/2015/01/Project7.png 1268w, https://strongloop.com/wp-content/uploads/2015/01/Project7-300x177.png 300w, https://strongloop.com/wp-content/uploads/2015/01/Project7-1030x610.png 1030w, https://strongloop.com/wp-content/uploads/2015/01/Project7-450x266.png 450w" sizes="(max-width: 685px) 100vw, 685px" /></a>
+  <a href="{{site.url}}/blog-assets/2015/01/Project7.png"><img class="aligncenter  wp-image-22445" src="{{site.url}}/blog-assets/2015/01/Project7.png" alt="" width="685" height="406"  /></a>
 </p>
 
 Notice there are a lot of options to determine the health of the build. You may want to adjust those depending on the makeup of your project to be more “Stormy” when coverage isn’t met.
@@ -131,7 +131,7 @@ Notice there are a lot of options to determine the health of the build. You may 
 Now that coverage and test reports are integrated, let’s **save** our configuration and click “Run Build” again on the _Main Project Page_. After that builds, we can _refresh_ the Project page to start seeing results:
 
 <p style="text-align: center">
-  <a href="https://strongloop.com/wp-content/uploads/2015/01/Project8.png"><img class="aligncenter  wp-image-22446" src="https://strongloop.com/wp-content/uploads/2015/01/Project8.png" alt="" width="760" height="341" srcset="https://strongloop.com/wp-content/uploads/2015/01/Project8.png 1406w, https://strongloop.com/wp-content/uploads/2015/01/Project8-300x134.png 300w, https://strongloop.com/wp-content/uploads/2015/01/Project8-1030x462.png 1030w, https://strongloop.com/wp-content/uploads/2015/01/Project8-450x202.png 450w" sizes="(max-width: 760px) 100vw, 760px" /></a>
+  <a href="{{site.url}}/blog-assets/2015/01/Project8.png"><img class="aligncenter  wp-image-22446" src="{{site.url}}/blog-assets/2015/01/Project8.png" alt="" width="760" height="341"  /></a>
 </p>
 
 As you run more builds, the _Main Project Page_ graphs will also change. Let’s add code style reporting.
@@ -158,27 +158,27 @@ Let’s add a `ci-lint` script next to our `ci-test` to run the linting and 
 
 ```js
 "scripts": {
-    "ci-test": "istanbul cover tape \"test/*-test.js\" &gt; test.tap && istanbul report clover",
-    "ci-lint": "eslint -f checkstyle index.js &gt; checkstyle-result.xml"
+    "ci-test": "istanbul cover tape \"test/*-test.js\" > test.tap && istanbul report clover",
+    "ci-lint": "eslint -f checkstyle index.js > checkstyle-result.xml"
 }
 ```
 
 Now, let’s switch over to Jenkins and visit the _Project Configuration Page_ again for our _Test Project_. We’ll add `npm run ci-lint || :` to our shell execution:
 
 <p style="text-align: center">
-  <a href="https://strongloop.com/wp-content/uploads/2015/01/Project10.png"><img class="aligncenter  wp-image-22448" src="https://strongloop.com/wp-content/uploads/2015/01/Project10.png" alt="" width="545" height="167" srcset="https://strongloop.com/wp-content/uploads/2015/01/Project10.png 1008w, https://strongloop.com/wp-content/uploads/2015/01/Project10-300x92.png 300w, https://strongloop.com/wp-content/uploads/2015/01/Project10-450x138.png 450w" sizes="(max-width: 545px) 100vw, 545px" /></a>
+  <a href="{{site.url}}/blog-assets/2015/01/Project10.png"><img class="aligncenter  wp-image-22448" src="{{site.url}}/blog-assets/2015/01/Project10.png" alt="" width="545" height="167"  /></a>
 </p>
 
 Next, add another post-build action called “Publish Checkstyle analysis results” **(1)**. Since we are using the default output filename in `ci-lint`, we can click “Save” **(2)**:
 
-<a style="text-align: center" href="https://strongloop.com/wp-content/uploads/2015/01/Project9.png"><img class="aligncenter  wp-image-22447" src="https://strongloop.com/wp-content/uploads/2015/01/Project9.png" alt="" width="680" height="355" srcset="https://strongloop.com/wp-content/uploads/2015/01/Project9.png 1260w, https://strongloop.com/wp-content/uploads/2015/01/Project9-300x156.png 300w, https://strongloop.com/wp-content/uploads/2015/01/Project9-1030x536.png 1030w, https://strongloop.com/wp-content/uploads/2015/01/Project9-450x234.png 450w" sizes="(max-width: 680px) 100vw, 680px" /></a>
+<a style="text-align: center" href="{{site.url}}/blog-assets/2015/01/Project9.png"><img class="aligncenter  wp-image-22447" src="{{site.url}}/blog-assets/2015/01/Project9.png" alt="" width="680" height="355"  /></a>
 
 Just like the Coverage plugin discussed above, there are many ways to configure the health of builds based on which warning or error thresholds are exceeded in the “Advanced” settings for this plugin. Adjust this as it makes sense for your project.
 
 Now click “Run Build” again on the _Main Project Page_. After that builds, we can _refresh_ the Project page and we’ll see more results:
 
 <p style="text-align: center">
-  <a href="https://strongloop.com/wp-content/uploads/2015/01/Project11.png"><img class="aligncenter  wp-image-22449" src="https://strongloop.com/wp-content/uploads/2015/01/Project11.png" alt="" width="1123" height="778" srcset="https://strongloop.com/wp-content/uploads/2015/01/Project11.png 2080w, https://strongloop.com/wp-content/uploads/2015/01/Project11-300x207.png 300w, https://strongloop.com/wp-content/uploads/2015/01/Project11-1030x713.png 1030w, https://strongloop.com/wp-content/uploads/2015/01/Project11-1500x1038.png 1500w, https://strongloop.com/wp-content/uploads/2015/01/Project11-450x311.png 450w" sizes="(max-width: 1123px) 100vw, 1123px" /></a>
+  <a href="{{site.url}}/blog-assets/2015/01/Project11.png"><img class="aligncenter  wp-image-22449" src="{{site.url}}/blog-assets/2015/01/Project11.png" alt="" width="1123" height="778"  /></a>
 </p>
 
 Pretty sweet, huh? Let’s bring it back to our GitHub project by adding a status badge.
@@ -188,13 +188,13 @@ Pretty sweet, huh? Let’s bring it back to our GitHub project by adding a statu
 Click the “Embeddable Build Status” icon in the project sidebar to reveal embeddable markup. Copy and paste the relevant format for your readme file. Make sure to copy the _unprotected_ markup so it can be accessed anonymously:
 
 <p style="text-align: center">
-  <a href="https://strongloop.com/wp-content/uploads/2015/01/Project12.png"><img class="aligncenter  wp-image-22450" src="https://strongloop.com/wp-content/uploads/2015/01/Project12.png" alt="" width="476" height="119" srcset="https://strongloop.com/wp-content/uploads/2015/01/Project12.png 882w, https://strongloop.com/wp-content/uploads/2015/01/Project12-300x74.png 300w, https://strongloop.com/wp-content/uploads/2015/01/Project12-450x112.png 450w" sizes="(max-width: 476px) 100vw, 476px" /></a>
+  <a href="{{site.url}}/blog-assets/2015/01/Project12.png"><img class="aligncenter  wp-image-22450" src="{{site.url}}/blog-assets/2015/01/Project12.png" alt="" width="476" height="119"  /></a>
 </p>
 
 Add that snippet to your readme for this result:
 
 <p style="text-align: center">
-  <a href="https://strongloop.com/wp-content/uploads/2015/01/Project13.png"><img class="aligncenter  wp-image-22451" src="https://strongloop.com/wp-content/uploads/2015/01/Project13.png" alt="" width="444" height="77" srcset="https://strongloop.com/wp-content/uploads/2015/01/Project13.png 822w, https://strongloop.com/wp-content/uploads/2015/01/Project13-300x52.png 300w, https://strongloop.com/wp-content/uploads/2015/01/Project13-450x78.png 450w" sizes="(max-width: 444px) 100vw, 444px" /></a>
+  <a href="{{site.url}}/blog-assets/2015/01/Project13.png"><img class="aligncenter  wp-image-22451" src="{{site.url}}/blog-assets/2015/01/Project13.png" alt="" width="444" height="77"  /></a>
 </p>
 
 ## Where we do go from here?
@@ -222,6 +222,6 @@ Check out the [production best practices ](http://strongloop.com/strongblog/nod
 
 [Push button build and deploy](http://docs.strongloop.com/display/ARC/Build+and+Deploy) have also been featured in [StrongLoop Arc](http://strongloop.com/node-js/arc/), the graphical UI for end to end lifecycle management of Node.js applications and APIs.
 
-[<img class="aligncenter size-large wp-image-21570" src="https://strongloop.com/wp-content/uploads/2014/12/Build_Deploy-1030x528.jpg" alt="Build_Deploy" width="1030" height="528" srcset="https://strongloop.com/wp-content/uploads/2014/12/Build_Deploy-1030x528.jpg 1030w, https://strongloop.com/wp-content/uploads/2014/12/Build_Deploy-300x153.jpg 300w, https://strongloop.com/wp-content/uploads/2014/12/Build_Deploy-1500x769.jpg 1500w, https://strongloop.com/wp-content/uploads/2014/12/Build_Deploy-450x230.jpg 450w" sizes="(max-width: 1030px) 100vw, 1030px" />](https://strongloop.com/wp-content/uploads/2014/12/Build_Deploy.jpg)
+[<img class="aligncenter size-large wp-image-21570" src="{{site.url}}/blog-assets/2014/12/Build_Deploy-1030x528.jpg" alt="Build_Deploy" width="1030" height="528"  />]({{site.url}}/blog-assets/2014/12/Build_Deploy.jpg)
 
 Continual enhancements have been requested by the community and are being planned for more distributed and scaled deployments in Arc.

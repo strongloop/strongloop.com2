@@ -109,7 +109,7 @@ function double(n) { return 0 }
 
 <blockquote class="graf graf--blockquote">
   <p>
-    <em class="markup--em markup--blockquote-em">For JavaScript, falsy or empty values work well for stub return values. So a good base for a number type is </em><code class="markup--code markup--blockquote-code">&lt;em class="markup--em markup--blockquote-em">0&lt;/em></code><em class="markup--em markup--blockquote-em">, for a Boolean type<em class="markup--em markup--blockquote-em">a good base </em>is </em><code class="markup--code markup--blockquote-code">&lt;em class="markup--em markup--blockquote-em">false&lt;/em></code><em class="markup--em markup--blockquote-em">, for a string<em class="markup--em markup--blockquote-em">a good base </em>is </em><code class="markup--code markup--blockquote-code">&lt;em class="markup--em markup--blockquote-em">""&lt;/em></code><em class="markup--em markup--blockquote-em">, for an array<em class="markup--em markup--blockquote-em">a good base </em>is</em> <code class="markup--code markup--blockquote-code">[]</code><em class="markup--em markup--blockquote-em">, etc.</em>
+    <em class="markup--em markup--blockquote-em">For JavaScript, falsy or empty values work well for stub return values. So a good base for a number type is </em><code class="markup--code markup--blockquote-code"><em class="markup--em markup--blockquote-em">0</em></code><em class="markup--em markup--blockquote-em">, for a Boolean type<em class="markup--em markup--blockquote-em">a good base </em>is </em><code class="markup--code markup--blockquote-code"><em class="markup--em markup--blockquote-em">false</em></code><em class="markup--em markup--blockquote-em">, for a string<em class="markup--em markup--blockquote-em">a good base </em>is </em><code class="markup--code markup--blockquote-code"><em class="markup--em markup--blockquote-em">""</em></code><em class="markup--em markup--blockquote-em">, for an array<em class="markup--em markup--blockquote-em">a good base </em>is</em> <code class="markup--code markup--blockquote-code">[]</code><em class="markup--em markup--blockquote-em">, etc.</em>
   </p>
 </blockquote>
 
@@ -221,6 +221,6 @@ function double(n) { return n * 2}
     Write a function called <em class="markup--em markup--li-em">first</em> that takes an array of values and returns the first one. If the array is empty, it should return null. Note: you should use the any type (<code class="markup--code markup--li-code">{}</code>) in your <code class="markup--code markup--li-code">@return</code> tag.
   </li>
   <li class="graf graf--li">
-    Write a function called <em class="markup--em markup--li-em">dashString</em> that takes an array of string values (<code class="markup--code markup--li-code">{Array.&lt;string&gt;}</code>) and joins them together with dashes. If the array is empty, you should return an empty string.
+    Write a function called <em class="markup--em markup--li-em">dashString</em> that takes an array of string values (<code class="markup--code markup--li-code">{Array.<string>}</code>) and joins them together with dashes. If the array is empty, you should return an empty string.
   </li>
 </ol>

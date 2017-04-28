@@ -41,7 +41,7 @@ I will give a brief walkthrough of how to instance your StrongLoop Suite Amazon 
 
 &nbsp;
 
-[<img class="alignnone  wp-image-6685" alt="ami-install" src="https://strongloop.com/wp-content/uploads/2013/09/ami-install.png" width="558" height="363" />](https://strongloop.com/wp-content/uploads/2013/09/ami-install.png)
+[<img class="alignnone  wp-image-6685" alt="ami-install" src="{{site.url}}/blog-assets/2013/09/ami-install.png" width="558" height="363" />]({{site.url}}/blog-assets/2013/09/ami-install.png)
 
 3. Select the Region and provisioning.
 
@@ -78,7 +78,7 @@ A pre-configured LoopBack server is bundled in the repo so if you want to develo
 
 &nbsp;
 
-[<img class="alignnone  wp-image-6700" alt="Screen Shot -Explorer" src="https://strongloop.com/wp-content/uploads/2013/09/Screen-Shot-Explorer.png" width="820" height="501" />](https://strongloop.com/wp-content/uploads/2013/09/Screen-Shot-Explorer.png)
+[<img class="alignnone  wp-image-6700" alt="Screen Shot -Explorer" src="{{site.url}}/blog-assets/2013/09/Screen-Shot-Explorer.png" width="820" height="501" />]({{site.url}}/blog-assets/2013/09/Screen-Shot-Explorer.png)
 
 Since we want to build a custom mBaaS on Amazon EC2 we will just use the mobile iOS XCode project to build our iPhone client app and we will create a new LoopBack MBaaS instance on our newly created Amazon EC2 instance.
 
@@ -119,13 +119,13 @@ in the AppDelegate.m.  Change the &#8216;localhost&#8217; address to point to y
 
 Hit command R in XCode and walk through the walk the guide application instructions.
 
-[<img class="alignnone  wp-image-6707" alt="app-ios-gettingstarted-welcome" src="https://strongloop.com/wp-content/uploads/2013/09/app-ios-gettingstarted-welcome.png" width="238" height="446" />](https://strongloop.com/wp-content/uploads/2013/09/app-ios-gettingstarted-welcome.png)[<img class="alignnone  wp-image-6704" alt="app-ios-gettingstarted-1" src="https://strongloop.com/wp-content/uploads/2013/09/app-ios-gettingstarted-1.png" width="238" height="446" />](https://strongloop.com/wp-content/uploads/2013/09/app-ios-gettingstarted-1.png)[<img class="alignnone  wp-image-6705" alt="app-ios-gettingstarted-2" src="https://strongloop.com/wp-content/uploads/2013/09/app-ios-gettingstarted-2.png" width="238" height="446" />](https://strongloop.com/wp-content/uploads/2013/09/app-ios-gettingstarted-2.png)[<img class="alignnone  wp-image-6706" alt="app-ios-gettingstarted-3" src="https://strongloop.com/wp-content/uploads/2013/09/app-ios-gettingstarted-3.png" width="238" height="446" />](https://strongloop.com/wp-content/uploads/2013/09/app-ios-gettingstarted-3.png)
+[<img class="alignnone  wp-image-6707" alt="app-ios-gettingstarted-welcome" src="{{site.url}}/blog-assets/2013/09/app-ios-gettingstarted-welcome.png" width="238" height="446" />]({{site.url}}/blog-assets/2013/09/app-ios-gettingstarted-welcome.png)[<img class="alignnone  wp-image-6704" alt="app-ios-gettingstarted-1" src="{{site.url}}/blog-assets/2013/09/app-ios-gettingstarted-1.png" width="238" height="446" />]({{site.url}}/blog-assets/2013/09/app-ios-gettingstarted-1.png)[<img class="alignnone  wp-image-6705" alt="app-ios-gettingstarted-2" src="{{site.url}}/blog-assets/2013/09/app-ios-gettingstarted-2.png" width="238" height="446" />]({{site.url}}/blog-assets/2013/09/app-ios-gettingstarted-2.png)[<img class="alignnone  wp-image-6706" alt="app-ios-gettingstarted-3" src="{{site.url}}/blog-assets/2013/09/app-ios-gettingstarted-3.png" width="238" height="446" />]({{site.url}}/blog-assets/2013/09/app-ios-gettingstarted-3.png)
 
 &nbsp;
 
 If you would like to find some more examples on how to integrate native iOS applications with LoopBack make sure and check out the <a href="http://github.com/strongloop-community/loopback-examples-ios" target="_blank">http://github.com/strongloop-community/loopback-examples-ios</a>, where you will find a UITableView, MapView and custom method call samples.
 
-[<img class="alignnone  wp-image-6709" alt="Screen Shot -app-ios-mapview" src="https://strongloop.com/wp-content/uploads/2013/09/Screen-Shot-app-ios-mapview.png" width="238" height="446" />](https://strongloop.com/wp-content/uploads/2013/09/Screen-Shot-app-ios-mapview.png)
+[<img class="alignnone  wp-image-6709" alt="Screen Shot -app-ios-mapview" src="{{site.url}}/blog-assets/2013/09/Screen-Shot-app-ios-mapview.png" width="238" height="446" />]({{site.url}}/blog-assets/2013/09/Screen-Shot-app-ios-mapview.png)
 
 Now that you have your StrongLoop Suite (StrongNode, StrongOps and LoopBack) up and configured you can start building out your mobile client application. You can identify ‘hot spots’ and latency with StrongOps or <a href="http://blog.strongloop.com/monitoring-stress-testing-nodejs-apps/" target="_blank">look for stress inside your node.js server application code</a>. You can customize your services and data by extending the open source Node LoopBack API tier with custom code or NPM modules from the community.
 

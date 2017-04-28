@@ -12,15 +12,15 @@ categories:
 ---
 > tldr; Callbacks have a [lousy error-handling story](http://strongloop.com/strongblog/robust-node-applications-error-handling/). Promises [are better](http://strongloop.com/strongblog/promises-in-node-js-with-q-an-alternative-to-callbacks/). Marry the built-in error handling in Express with promises and significantly lower the chances of an uncaught exception. Promises are native ES6, can be used with generators, and ES7 proposals like [`async/await`](https://github.com/tc39/ecmascript-asyncawait) through compilers like [Babel](http://babeljs.io).
 
-This article focuses on effective ways to capture and handle errors using [error-handling middleware](https://github.com/tc39/ecmascript-asyncawait) in Express[[1]](#foot1 "see footnote"){#fref1.footnote}. The article also includes a sample repository of these concepts on [GitHub](https://github.com/strongloop-community/express-example-error-handling).
+This article focuses on effective ways to capture and handle errors using [error-handling middleware](https://github.com/tc39/ecmascript-asyncawait) in Express[[1]](#foot1 "see footnote"). The article also includes a sample repository of these concepts on [GitHub](https://github.com/strongloop-community/express-example-error-handling).
 
-<img class="aligncenter size-full wp-image-24476" src="https://strongloop.com/wp-content/uploads/2015/04/zfY6lL7eFa-3000x3000.png" alt="zfY6lL7eFa-3000x3000" width="465" height="141" srcset="https://strongloop.com/wp-content/uploads/2015/04/zfY6lL7eFa-3000x3000.png 465w, https://strongloop.com/wp-content/uploads/2015/04/zfY6lL7eFa-3000x3000-300x91.png 300w, https://strongloop.com/wp-content/uploads/2015/04/zfY6lL7eFa-3000x3000-450x136.png 450w" sizes="(max-width: 465px) 100vw, 465px" />
+<img class="aligncenter size-full wp-image-24476" src="{{site.url}}/blog-assets/2015/04/zfY6lL7eFa-3000x3000.png" alt="zfY6lL7eFa-3000x3000" width="465" height="141"  />
 
 First, let’s look at what Express handles out of the box and then we will look at using promises, promise generators and ES7 `async/await` to simplify things further.
 
 <!--more-->
 
-## **Express has built-in synchronous handling** {#expresshasbuilt-insynchronoushandling}
+## **Express has built-in synchronous handling** 
 
 By default, Express will catch any exception thrown within the initial _synchronous_ execution of a route and pass it along to the next error-handling middleware:
 
@@ -71,7 +71,7 @@ Still, this isn’t bulletproof. There are two problems with this approach:
   1. You must explicitly handle _every_ `error` argument.
   2. Implicit exceptions aren’t handled (like trying to access a property that isn’t available on the `data` object).
 
-## **Asynchronous error propagation with promises** {#asynchronouserrorpropagationwithpromises}
+## **Asynchronous error propagation with promises** 
 
 [Promises](http://strongloop.com/strongblog/promises-in-node-js-with-q-an-alternative-to-callbacks/) handle any exception (explicit and implicit) within asynchronous code blocks (inside `then`) like Express does for us in synchronous code blocks. Just add `.catch(next)` to the end of promise chains.
 
@@ -97,9 +97,9 @@ Now all errors asynchronous and synchronous get propagated to the error middlewa
 
 Well, almost. Promises are a decent asynchronous primitive, but they are kinda verbose despite the welcomed error propagation. Let’s fix this using promise generators.
 
-## **Cleaner code with generators** {#cleanercodewithgenerators}
+## **Cleaner code with generators** 
 
-If you use [io.js](http://iojs.org) or Node `>=0.12`, you can improve on this workflow using native [generators](https://strongloop.com/strongblog/how-to-generators-node-js-yield-use-cases/)[[2]](#foot2 "see footnote"){#fref2.footnote}. For this, let’s use a helper to make promise generators called `Bluebird.coroutine`.
+If you use [io.js](http://iojs.org) or Node `>=0.12`, you can improve on this workflow using native [generators](https://strongloop.com/strongblog/how-to-generators-node-js-yield-use-cases/)[[2]](#foot2 "see footnote"). For this, let’s use a helper to make promise generators called `Bluebird.coroutine`.
 
 > This example uses [bluebird](https://github.com/petkaantonov/bluebird), but promise generators exist in all the major promise libraries
 
@@ -140,14 +140,14 @@ This is pretty clean and reads well. All normal control structures (like `if/els
 
 Let’s look next at the ES7 `async/await` proposal and clean things up even more.
 
-## **Using ES7 async/await** {#usinges7asyncawait}
+## **Using ES7 async/await** 
 
 The [`async/await` proposal](https://github.com/tc39/ecmascript-asyncawait) behaves just like a promise generator but it can be used in more places (like class methods and arrow functions).
 
 We still need a `wrap` function but it’s simpler as we don’t need `Bluebird.coroutine` or generators. Below is semantically the same as the previous `wrap` function, written in ES6:
 
 ```js
-let wrap = fn =&gt; (...args) =&gt; fn(...args).catch(args[2])
+let wrap = fn => (...args) => fn(...args).catch(args[2])
 ```
 
 Then, we make routes like this:
@@ -164,7 +164,7 @@ Then, we make routes like this:
 Or with arrow functions:
 
 ```js
-app.get('/', wrap(async (req, res) =&gt; { ... }))
+app.get('/', wrap(async (req, res) => { ... }))
 ```
 
 Now, to run this code, you will need the [Babel](http://babeljs.io) JavaScript compiler. There are many ways to use Babel with Node, but to keep things simple, install the `babel-node` command by running:
@@ -181,12 +181,12 @@ Then run your app using:
 
 > Bonus: Since this code compiles to ES5, you can use this solution with older versions of Node.
 
-## **Throw me a party!** {#throwmeaparty}
+## **Throw me a party!** 
 
 With error handling covered both synchronously and asynchronously you can develop Express code differently. Mainly, **DO** use `throw`. The intent of `throw` is clear. If you use `throw` it will bypass execution until it hits a `catch`. In other words, it will behave just like `throw` in synchronous code. You can use `throw` and `try/catch` meaningfully again with promises, promise generators, and `async/await`:
 
 ```js
-app.get('/', wrap(async (req, res) =&gt; {
+app.get('/', wrap(async (req, res) => {
   if (!req.params.id) {
     throw new BadRequestError('Missing Id')
   }
@@ -212,7 +212,7 @@ app.use(function (err, req, res, next) {
 })
 ```
 
-## **Caveats** {#caveats}
+## **Caveats** 
 
 There are two caveats with this approach:
 
@@ -220,14 +220,14 @@ There are two caveats with this approach:
   2. Event emitters (like streams) can still cause uncaught exceptions. So make sure you are handling the `error` event properly.
 
 ```js
-app.get('/', wrap(async (req, res, next) =&gt; {
+app.get('/', wrap(async (req, res, next) => {
   let company = await getCompanyById(req.query.id)
   let stream = getLogoStreamById(company.id)
   stream.on('error', next).pipe(res)
 }))
 ```
 
-## **Alternatives to promises** {#alternativestopromises}
+## **Alternatives to promises** 
 
 An alternative to promises is to capture errors using generators and [thunks](http://en.wikipedia.org/wiki/Thunk). One way to accomplish this is using [co](https://github.com/tj/co) and a `wrap` function like [co-express](https://github.com/mciparelli/co-express).
 

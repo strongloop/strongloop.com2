@@ -60,7 +60,7 @@ Install the StrongLoop CLI tools on your local development machine.
 
 In your application directory run \`slc arc\`, opening it by default in a web browser window.
 
-<img class="aligncenter size-full wp-image-24240" src="https://strongloop.com/wp-content/uploads/2015/04/express-2.png" alt="express-2" width="975" height="261" srcset="https://strongloop.com/wp-content/uploads/2015/04/express-2.png 975w, https://strongloop.com/wp-content/uploads/2015/04/express-2-300x80.png 300w, https://strongloop.com/wp-content/uploads/2015/04/express-2-705x189.png 705w, https://strongloop.com/wp-content/uploads/2015/04/express-2-450x120.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24240" src="{{site.url}}/blog-assets/2015/04/express-2.png" alt="express-2" width="975" height="261"  />
 
 ## **Build & Deploy**
 
@@ -70,7 +70,7 @@ You can now deploy your Express application by building a \`tar\` file or using 
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-24241" src="https://strongloop.com/wp-content/uploads/2015/04/express-3.png" alt="express-3" width="975" height="446" srcset="https://strongloop.com/wp-content/uploads/2015/04/express-3.png 975w, https://strongloop.com/wp-content/uploads/2015/04/express-3-300x137.png 300w, https://strongloop.com/wp-content/uploads/2015/04/express-3-705x322.png 705w, https://strongloop.com/wp-content/uploads/2015/04/express-3-450x206.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24241" src="{{site.url}}/blog-assets/2015/04/express-3.png" alt="express-3" width="975" height="446"  />
 
 &nbsp;
 
@@ -80,7 +80,7 @@ Once your app is deployed successfully, switch to the “Process Manager” tab.
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-24242" src="https://strongloop.com/wp-content/uploads/2015/04/express-4.png" alt="express-4" width="975" height="332" srcset="https://strongloop.com/wp-content/uploads/2015/04/express-4.png 975w, https://strongloop.com/wp-content/uploads/2015/04/express-4-300x102.png 300w, https://strongloop.com/wp-content/uploads/2015/04/express-4-705x240.png 705w, https://strongloop.com/wp-content/uploads/2015/04/express-4-450x153.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24242" src="{{site.url}}/blog-assets/2015/04/express-4.png" alt="express-4" width="975" height="332"  />
 
 ## **Multi-clustered application**
 
@@ -88,7 +88,7 @@ If you want to run your app on multiple servers, you can create Droplets from th
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-24243" src="https://strongloop.com/wp-content/uploads/2015/04/express-5.png" alt="express-5" width="975" height="388" srcset="https://strongloop.com/wp-content/uploads/2015/04/express-5.png 975w, https://strongloop.com/wp-content/uploads/2015/04/express-5-300x119.png 300w, https://strongloop.com/wp-content/uploads/2015/04/express-5-705x281.png 705w, https://strongloop.com/wp-content/uploads/2015/04/express-5-450x179.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24243" src="{{site.url}}/blog-assets/2015/04/express-5.png" alt="express-5" width="975" height="388"  />
 
 &nbsp;
 

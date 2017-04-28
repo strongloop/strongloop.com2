@@ -167,7 +167,7 @@ By default, the demo application uses an in-memory database to store application
   </p>
   
   <p>
-    <code>&lt;a href="http://localhost:3010">http://localhost:3010&lt;/a></code>
+    <code><a href="http://localhost:3010">http://localhost:3010</a></code>
   </p>
   
   <p dir="ltr">

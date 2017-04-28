@@ -150,7 +150,7 @@ OpenSSL 1.0.1e 11 Feb 2013
   </p>
   
   ```js
-$ openssl s_client  -reconnect -port 3000 2&gt;&1 
+$ openssl s_client  -reconnect -port 3000 2>&1 
 | grep "^(New|Reused)"
 New, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
 Reused, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
@@ -168,7 +168,7 @@ Reused, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
   </p>
   
   ```js
-$ openssl s_client  -reconnect -port 3000 2&gt;&1 -no_ticket 
+$ openssl s_client  -reconnect -port 3000 2>&1 -no_ticket 
 | grep "^(New|Reused)"
 New, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
 Reused, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384

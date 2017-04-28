@@ -80,7 +80,7 @@ public class Program {
     static int i = 0;
     static void DoSomething() {
         Console.WriteLine("Doing something...");
-        e.WillYouDo(() =&gt; {
+        e.WillYouDo(() => {
             results += (i++).ToString();
         });
         Console.WriteLine(results);

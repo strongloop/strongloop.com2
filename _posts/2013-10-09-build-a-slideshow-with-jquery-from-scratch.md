@@ -53,13 +53,13 @@ After pondering briefly about what steps would be required of a slideshow, I cam
 </h2>
 
 ```js
-&lt;div id="slideshow"&gt;
-    &lt;img class="slide" src="img/puppy1.jpg" /&gt;
-    &lt;img class="slide" src="img/puppy2.jpg" /&gt;
-    &lt;img class="slide" src="img/puppy3.jpg" /&gt;
-    &lt;img class="slide" src="img/puppy4.jpg" /&gt;
-    &lt;img class="slide" src="img/puppy5.jpg" /&gt;
-&lt;/div&gt;
+<div id="slideshow">
+    <img class="slide" src="img/puppy1.jpg" />
+    <img class="slide" src="img/puppy2.jpg" />
+    <img class="slide" src="img/puppy3.jpg" />
+    <img class="slide" src="img/puppy4.jpg" />
+    <img class="slide" src="img/puppy5.jpg" />
+</div>
 ```
 
 <p>
@@ -108,7 +108,7 @@ After pondering briefly about what steps would be required of a slideshow, I cam
             j,
             slides =  $("#slideshow .slide"),
             slidesLen = slides.length - 1;
-        for (i = 0, j = 9999; i &lt; slides.length; i += 1, j -= 1) {
+        for (i = 0, j = 9999; i < slides.length; i += 1, j -= 1) {
             $(slides[i]).css("z-index", j);
         }
         return {
@@ -164,7 +164,7 @@ var slideshow = (function () {
         j,
         slides =  $("#slideshow .slide"),
         slidesLen = slides.length - 1;
-    for (i = 0, j = 9999; i &lt; slides.length; i += 1, j -= 1) {
+    for (i = 0, j = 9999; i < slides.length; i += 1, j -= 1) {
         $(slides[i]).css("z-index", j);
     }
 }());
@@ -230,7 +230,7 @@ slidesLen = slides.length - 1;
 </p>
 
 ```js
-for (i = 0, j = 9999; i &lt; slides.length; i += 1, j -= 1) {
+for (i = 0, j = 9999; i < slides.length; i += 1, j -= 1) {
         $(slides[i]).css("z-index", j);
     }
 ```

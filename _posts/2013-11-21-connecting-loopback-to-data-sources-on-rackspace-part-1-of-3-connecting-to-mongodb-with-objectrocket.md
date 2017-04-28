@@ -14,7 +14,7 @@ categories:
 ## <span style="font-size: 1.5em;">MongoDB and LoopBack Node on Rackspace</span>
 
 <p style="text-align: center;">
-  <a href="https://strongloop.com/wp-content/uploads/2013/11/ObjectRocketHiRez-3.png"><img class="aligncenter  wp-image-10504" alt="ObjectRocketHiRez (3)" src="https://strongloop.com/wp-content/uploads/2013/11/ObjectRocketHiRez-3.png" width="550" height="284" /></a>
+  <a href="{{site.url}}/blog-assets/2013/11/ObjectRocketHiRez-3.png"><img class="aligncenter  wp-image-10504" alt="ObjectRocketHiRez (3)" src="{{site.url}}/blog-assets/2013/11/ObjectRocketHiRez-3.png" width="550" height="284" /></a>
 </p>
 
 Data brings mobile applications to life and [MongoDB](http://www.mongodb.org/) is often a preferred choice for mobile first data. MongoDB&#8217;s powerful document-oriented database combined with [Rackspace&#8217;s MongoDB as a service platform ObjectRocket](http://www.objectrocket.com/) makes it easy to give your mobile stack a fast and reliable persistent data store in a matter of minutes.

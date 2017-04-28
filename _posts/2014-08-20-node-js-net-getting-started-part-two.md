@@ -38,15 +38,15 @@ The `hello.ejs` view rendered from the single route controller above would loo
 
 &nbsp;
 
-<pre lang="ejs"><code>&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;EJS scample&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Hello, &lt;%= name %&gt;&lt;/h1&gt;
-    &lt;p&gt;The date is &lt;%= date %&gt;&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<pre lang="ejs"><code><html>
+<head>
+    <title>EJS scample</title>
+</head>
+<body>
+    <h1>Hello, <%= name %></h1>
+    <p>The date is <%= date %></p>
+</body>
+</html>
 </code>
 ```
 

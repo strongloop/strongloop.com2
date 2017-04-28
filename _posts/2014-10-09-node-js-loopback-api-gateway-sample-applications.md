@@ -53,7 +53,7 @@ The architecture is illustrated in the diagram below.
 
 <!--more-->
 
-<img class="aligncenter size-full wp-image-20524" src="https://strongloop.com/wp-content/uploads/2014/10/loopback-api-gateway.png" alt="loopback-api-gateway" width="910" height="507" srcset="https://strongloop.com/wp-content/uploads/2014/10/loopback-api-gateway.png 910w, https://strongloop.com/wp-content/uploads/2014/10/loopback-api-gateway-300x167.png 300w, https://strongloop.com/wp-content/uploads/2014/10/loopback-api-gateway-705x393.png 705w, https://strongloop.com/wp-content/uploads/2014/10/loopback-api-gateway-450x251.png 450w" sizes="(max-width: 910px) 100vw, 910px" />
+<img class="aligncenter size-full wp-image-20524" src="{{site.url}}/blog-assets/2014/10/loopback-api-gateway.png" alt="loopback-api-gateway" width="910" height="507"  />
 
 ## **Build the gateway application**
 
@@ -237,23 +237,23 @@ Open a browser and point to http://localhost:3000. You will see the browser to b
 
 The home page below shows multiple options to try out the oAuth 2.0 grant types. Let&#8217;s start with the [explicit flow](http://tools.ietf.org/html/rfc6749#section-4.2).
 
-<img class="aligncenter size-full wp-image-20536" src="https://strongloop.com/wp-content/uploads/2014/10/home.png" alt="home" width="486" height="244" srcset="https://strongloop.com/wp-content/uploads/2014/10/home.png 486w, https://strongloop.com/wp-content/uploads/2014/10/home-300x150.png 300w, https://strongloop.com/wp-content/uploads/2014/10/home-450x225.png 450w" sizes="(max-width: 486px) 100vw, 486px" />
+<img class="aligncenter size-full wp-image-20536" src="{{site.url}}/blog-assets/2014/10/home.png" alt="home" width="486" height="244"  />
   
 Now you need to log in as the resource owner.
 
-<img class="aligncenter size-full wp-image-20537" src="https://strongloop.com/wp-content/uploads/2014/10/login.png" alt="login" width="231" height="178" />
+<img class="aligncenter size-full wp-image-20537" src="{{site.url}}/blog-assets/2014/10/login.png" alt="login" width="231" height="178" />
   
 The following dialog requests permission from the resource owner (user) to approve the access by the client application.
 
-<img class="aligncenter size-full wp-image-20538" src="https://strongloop.com/wp-content/uploads/2014/10/decision.png" alt="decision" width="491" height="292" srcset="https://strongloop.com/wp-content/uploads/2014/10/decision.png 491w, https://strongloop.com/wp-content/uploads/2014/10/decision-300x178.png 300w, https://strongloop.com/wp-content/uploads/2014/10/decision-450x267.png 450w" sizes="(max-width: 491px) 100vw, 491px" />
+<img class="aligncenter size-full wp-image-20538" src="{{site.url}}/blog-assets/2014/10/decision.png" alt="decision" width="491" height="292"  />
   
 Click &#8220;Allow&#8221;. The browser will be redirected to the callback page.
 
-<img class="aligncenter size-full wp-image-20539" src="https://strongloop.com/wp-content/uploads/2014/10/callback.png" alt="callback" width="1030" height="263" srcset="https://strongloop.com/wp-content/uploads/2014/10/callback.png 1030w, https://strongloop.com/wp-content/uploads/2014/10/callback-300x76.png 300w, https://strongloop.com/wp-content/uploads/2014/10/callback-450x114.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-full wp-image-20539" src="{{site.url}}/blog-assets/2014/10/callback.png" alt="callback" width="1030" height="263"  />
   
 The callback page builds the links with the access token. Click on &#8216;Calling /api/notes&#8217;.
 
-<img class="aligncenter size-full wp-image-20540" src="https://strongloop.com/wp-content/uploads/2014/10/notes.png" alt="notes" width="747" height="262" srcset="https://strongloop.com/wp-content/uploads/2014/10/notes.png 747w, https://strongloop.com/wp-content/uploads/2014/10/notes-300x105.png 300w, https://strongloop.com/wp-content/uploads/2014/10/notes-450x157.png 450w" sizes="(max-width: 747px) 100vw, 747px" />
+<img class="aligncenter size-full wp-image-20540" src="{{site.url}}/blog-assets/2014/10/notes.png" alt="notes" width="747" height="262"  />
 
 ## **Test out rate limiting**
 
@@ -276,7 +276,7 @@ node server/scripts/jwt-client-auth.js
 The second command requests an access token using a JWT token as the assertion type.
 
 ```js
-node server/scripts/jwt-client-auth.js &lt;authorization code&gt;
+node server/scripts/jwt-client-auth.js <authorization code>
 ```
 
 ##  **Summary** 

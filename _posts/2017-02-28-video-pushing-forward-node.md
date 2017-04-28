@@ -14,7 +14,7 @@ The StrongLoop and IBM team attended [Node Interactive](https://strongloop.com/s
 
 <!--more-->
 
-[<img class="aligncenter size-medium wp-image-28257" src="https://strongloop.com/wp-content/uploads/2016/09/Node-Interactive-NA-300x170.png" alt="Node Interactive NA" width="300" height="170" srcset="https://strongloop.com/wp-content/uploads/2016/09/Node-Interactive-NA-300x170.png 300w, https://strongloop.com/wp-content/uploads/2016/09/Node-Interactive-NA.png 435w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2016/09/Node-Interactive-NA.png)
+[<img class="aligncenter size-medium wp-image-28257" src="{{site.url}}/blog-assets/2016/09/Node-Interactive-NA-300x170.png" alt="Node Interactive NA" width="300" height="170"  />]({{site.url}}/blog-assets/2016/09/Node-Interactive-NA.png)
 
 IBM and Node.js are helping businesses solve their large developer problems with cutting edge applications. As a result, developers may be curious how they can take advantage of this framework. IBM Master Inventors, lead developers and software engineers explain how Node.js and the Node community come together and build stronger applications, APIs and micro-services.
 

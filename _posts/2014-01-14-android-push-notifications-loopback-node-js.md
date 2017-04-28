@@ -183,7 +183,7 @@ The second helper method registers the device with the GCM server, updates the i
 
 ```js
 private void registerInBackground(final LocalInstallation installation) {
-    new AsyncTask&lt;Void, Void, Exception>() {
+    new AsyncTask<Void, Void, Exception>() {
         @Override
         protected Exception doInBackground(final Void... params) {
             try {

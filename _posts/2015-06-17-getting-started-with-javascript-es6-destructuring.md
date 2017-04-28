@@ -10,7 +10,7 @@ categories:
   - How-To
   - JavaScript Language
 ---
-<img src="https://strongloop.com/wp-content/uploads/2015/06/es6-destructuring.jpg" alt="" width="100%" />
+<img src="{{site.url}}/blog-assets/2015/06/es6-destructuring.jpg" alt="" width="100%" />
 
 Lets take a closer look at the new syntax that ES6 brings to help with more explicit variable and argument declaration and assignment. The current state of affairs is pretty straight forward: on the left hand side you have a variable name, on the right you have an expression which, among other things, can be an array: `[ ]` or an object literal: `{ }`. Destructuring assignment allows us to have an expression like variable declaration on the left hand side describing which values to extract from the right hand side. Sounds a bit confusing? Lets look at the specific examples.
 

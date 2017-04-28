@@ -11,7 +11,7 @@ categories:
 ---
 Recently, Dennis Ashby (IBM Worldwide Director, IBM API Connect Solutions) hosted a webcast telling StrongLoop and LoopBack users everything to know about the new release of StrongLoop. [IBM API Connect](http://www-03.ibm.com/software/products/en/api-connect) is a comprehensive management solution that covers all aspects of the API lifecycle, and we are excited to be able to show people what it can do.<!--more-->
 
-[<img class="aligncenter size-medium wp-image-27323" src="https://strongloop.com/wp-content/uploads/2016/04/SL-APIC-Webinar-300x103.png" alt="SL APIC Webinar" width="300" height="103" srcset="https://strongloop.com/wp-content/uploads/2016/04/SL-APIC-Webinar-300x103.png 300w, https://strongloop.com/wp-content/uploads/2016/04/SL-APIC-Webinar-450x154.png 450w, https://strongloop.com/wp-content/uploads/2016/04/SL-APIC-Webinar.png 670w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2016/04/SL-APIC-Webinar.png)
+[<img class="aligncenter size-medium wp-image-27323" src="{{site.url}}/blog-assets/2016/04/SL-APIC-Webinar-300x103.png" alt="SL APIC Webinar" width="300" height="103"  />]({{site.url}}/blog-assets/2016/04/SL-APIC-Webinar.png)
 
 That webcast is now available for on demand viewing. Simply [register](https://engage.vevent.com/index.jsp?eid=556&seid=83789) and you will have access to learn all about API Connect.
 

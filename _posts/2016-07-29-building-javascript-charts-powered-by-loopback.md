@@ -24,7 +24,7 @@ First, let&#8217;s look at the data model that will power our API. A little-know
 
 From that model LoopBack generated a complete REST API for all my Enterprise Cat API needs.
 
-[<img class="aligncenter size-full wp-image-27796" src="https://strongloop.com/wp-content/uploads/2016/07/cat11.jpg" alt="cat1" width="750" height="546" srcset="https://strongloop.com/wp-content/uploads/2016/07/cat11.jpg 750w, https://strongloop.com/wp-content/uploads/2016/07/cat11-300x218.jpg 300w, https://strongloop.com/wp-content/uploads/2016/07/cat11-705x513.jpg 705w, https://strongloop.com/wp-content/uploads/2016/07/cat11-450x328.jpg 450w" sizes="(max-width: 750px) 100vw, 750px" />](https://strongloop.com/wp-content/uploads/2016/07/cat11.jpg)
+[<img class="aligncenter size-full wp-image-27796" src="{{site.url}}/blog-assets/2016/07/cat11.jpg" alt="cat1" width="750" height="546"  />]({{site.url}}/blog-assets/2016/07/cat11.jpg)
 
 Next I updated my datasource to persist data to the file system. The default LoopBack datasource is [in-memory](https://docs.strongloop.com/display/LB/Memory+connector), but I tweaked it to persist data to the file system. While not suitable for production, this is a great way to save test data when you restart your application. Just edit the **datasources.json** file and add a &#8220;file&#8221; key to the &#8220;db&#8221; block:
 
@@ -76,7 +76,7 @@ app.get('/makecats', function(req, res) {
    }
 
    //make 25 cats
-   for(var i=0;i&lt;25;i++) {
+   for(var i=0;i<25;i++) {
      var cat = {
        name:randomName(),
        color:randomColor(),
@@ -95,7 +95,7 @@ app.get('/makecats', function(req, res) {
 
 I ran this a few times to generate a bit over 100 cats, and then hit my API to ensure it worked correctly:
 
-[<img class="aligncenter size-full wp-image-27797" src="https://strongloop.com/wp-content/uploads/2016/07/cat2.jpg" alt="cat2" width="750" height="317" srcset="https://strongloop.com/wp-content/uploads/2016/07/cat2.jpg 750w, https://strongloop.com/wp-content/uploads/2016/07/cat2-300x127.jpg 300w, https://strongloop.com/wp-content/uploads/2016/07/cat2-705x298.jpg 705w, https://strongloop.com/wp-content/uploads/2016/07/cat2-450x190.jpg 450w" sizes="(max-width: 750px) 100vw, 750px" />](https://strongloop.com/wp-content/uploads/2016/07/cat2.jpg)
+[<img class="aligncenter size-full wp-image-27797" src="{{site.url}}/blog-assets/2016/07/cat2.jpg" alt="cat2" width="750" height="317"  />]({{site.url}}/blog-assets/2016/07/cat2.jpg)
 
 Note the **limit** filter I placed in the URL above to keep the result set a bit smaller. LoopBack supports [filtering, limiting, sorting](https://docs.strongloop.com/display/LB/Querying+data), and other useful data manipulations.
 
@@ -111,28 +111,28 @@ http://localhost:3000/api/cats/count?where[gender]=Male
 Now let&#8217;s build the app. The HTML part is going to be simple:  just a `<div>` to render the chart and `<script>` tags to include  the various JavaScript libraries I&#8217;m using. (Note &#8211; this code, and the other snippets, are not complete applications. You can download the attachment to get complete samples.)
 
 ```js
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta charset="utf-8"&gt;
-  &lt;title&gt;Cats Chart&lt;/title&gt;
-  &lt;meta name="description" content=""&gt;
-  &lt;meta name="viewport" content="width=device-width"&gt;
-  &lt;style&gt;
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cats Chart</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <style>
   div#chart_div {
     width:400px;
     height:400px;
   }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div id="chart_div"&gt;&lt;/div&gt;
+  </style>
+</head>
+<body>
+  <div id="chart_div"></div>
 
-  &lt;script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"&gt;&lt;/script&gt;
-  &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"&gt;&lt;/script&gt;
-  &lt;script type="text/javascript" src="js/app.js"&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
 
 ```
 
@@ -186,7 +186,7 @@ There&#8217;s a bit more going on here, so let&#8217;s take it bit by bit. Firs
 
 The real magic happens in `drawChart` where I set up the chart, tell it what data to use, and then render it. The result is a pretty little pie chart:
 
-<img class="aligncenter size-full wp-image-27799" src="https://strongloop.com/wp-content/uploads/2016/07/cat3.jpg" alt="cat3" width="500" height="513" srcset="https://strongloop.com/wp-content/uploads/2016/07/cat3.jpg 500w, https://strongloop.com/wp-content/uploads/2016/07/cat3-292x300.jpg 292w, https://strongloop.com/wp-content/uploads/2016/07/cat3-36x36.jpg 36w, https://strongloop.com/wp-content/uploads/2016/07/cat3-450x462.jpg 450w" sizes="(max-width: 500px) 100vw, 500px" />
+<img class="aligncenter size-full wp-image-27799" src="{{site.url}}/blog-assets/2016/07/cat3.jpg" alt="cat3" width="500" height="513"  />
 
 Remember, I&#8217;m using most of the defaults from Google but if I wanted to, I could customize this a lot more. Now let&#8217;s kick it up a notch. How about building a chart for cat breeds?
 
@@ -214,7 +214,7 @@ module.exports = function(Cat) {
 
 Once added, I can then request it just like any other REST API:
 
-<img class="aligncenter size-full wp-image-27801" src="https://strongloop.com/wp-content/uploads/2016/07/cat4.jpg" alt="cat4" width="750" height="317" srcset="https://strongloop.com/wp-content/uploads/2016/07/cat4.jpg 750w, https://strongloop.com/wp-content/uploads/2016/07/cat4-300x127.jpg 300w, https://strongloop.com/wp-content/uploads/2016/07/cat4-705x298.jpg 705w, https://strongloop.com/wp-content/uploads/2016/07/cat4-450x190.jpg 450w" sizes="(max-width: 750px) 100vw, 750px" />
+<img class="aligncenter size-full wp-image-27801" src="{{site.url}}/blog-assets/2016/07/cat4.jpg" alt="cat4" width="750" height="317"  />
 
 Now I have a way to fetch breeds and I know how to filter and count, so I can just make one HTTP request for each breed. While I was okay with the &#8220;small&#8221; Callback Hell for gender, this would be way too deep to be manageable, so instead I&#8217;ll handle it using Deferred and Promises with jQuery. Here&#8217;s how I fetch the data and handle knowing when all the calls are done:
 
@@ -228,7 +228,7 @@ $.get('http://localhost:3000/api/cats/breeds').then(function(result) {
   });
 
   $.when.apply($, defs).then(function() {
-    for(var i=0;i&lt;breeds.length;i++) {
+    for(var i=0;i<breeds.length;i++) {
       var count = arguments[i][0].count;
       breedCount[breeds[i]] = count;
     }
@@ -275,8 +275,8 @@ function drawBreedChart() {
 
 And the result:
 
-<img class="aligncenter size-full wp-image-27802" src="https://strongloop.com/wp-content/uploads/2016/07/cat5.jpg" alt="cat5" width="500" height="509" srcset="https://strongloop.com/wp-content/uploads/2016/07/cat5.jpg 500w, https://strongloop.com/wp-content/uploads/2016/07/cat5-80x80.jpg 80w, https://strongloop.com/wp-content/uploads/2016/07/cat5-295x300.jpg 295w, https://strongloop.com/wp-content/uploads/2016/07/cat5-36x36.jpg 36w, https://strongloop.com/wp-content/uploads/2016/07/cat5-450x458.jpg 450w" sizes="(max-width: 500px) 100vw, 500px" />
+<img class="aligncenter size-full wp-image-27802" src="{{site.url}}/blog-assets/2016/07/cat5.jpg" alt="cat5" width="500" height="509"  />
 
 And that&#8217;s it. You can, of course, go much deeper, and of course build different types of charts. You can even use WebSockets and update your charts in real-time. Let me know in the [LoopBack forum](https://groups.google.com/forum/#!forum/loopbackjs) if you&#8217;ve used charting with LoopBack.
 
-[Download the Client-Side Code](https://strongloop.com/wp-content/uploads/2016/07/Archive.zip)
+[Download the Client-Side Code]({{site.url}}/blog-assets/2016/07/Archive.zip)

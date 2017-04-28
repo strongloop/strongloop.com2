@@ -12,7 +12,7 @@ categories:
 ---
 In late 2013, the team behind Express.js announced a new framework called [Koa](http://koajs.com). It uses some features that require an unstable dev version of Node, but in this post I&#8217;ll show you how easy it is give it a try both locally and on Heroku.
 
-[<img class="aligncenter size-full wp-image-15514" alt="koa.js" src="https://strongloop.com/wp-content/uploads/2014/04/Screen-Shot-2014-04-11-at-7.49.09-AM.png" width="469" height="248" />](https://strongloop.com/wp-content/uploads/2014/04/Screen-Shot-2014-04-11-at-7.49.09-AM.png)
+[<img class="aligncenter size-full wp-image-15514" alt="koa.js" src="{{site.url}}/blog-assets/2014/04/Screen-Shot-2014-04-11-at-7.49.09-AM.png" width="469" height="248" />]({{site.url}}/blog-assets/2014/04/Screen-Shot-2014-04-11-at-7.49.09-AM.png)
 
 ## **Before We Start**
 

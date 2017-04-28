@@ -20,7 +20,7 @@ We&#8217;re proud to announce the upcoming release of IBM API Connect, a complet
 
 Using automated, model-driven tools in API Connect, developers can easily discover existing APIs and back-end data sources and create new APIs and microservices based on Node.js and Java runtimes—all managed from a single unified console. As a result, API developers can be more productive, shorten development cycles and work with IT departments to safely and securely access Enterprise data via self-service portals.
 
-[<img class="aligncenter size-medium wp-image-26879" src="https://strongloop.com/wp-content/uploads/2016/02/apiconnect_logo-300x240.png" alt="API Connect" width="300" height="240" />](https://strongloop.com/wp-content/uploads/2016/02/apiconnect_logo.png)
+[<img class="aligncenter size-medium wp-image-26879" src="{{site.url}}/blog-assets/2016/02/apiconnect_logo-300x240.png" alt="API Connect" width="300" height="240" />]({{site.url}}/blog-assets/2016/02/apiconnect_logo.png)
 
 ## What can API Connect do for you?
 

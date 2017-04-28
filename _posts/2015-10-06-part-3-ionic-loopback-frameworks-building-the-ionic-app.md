@@ -79,11 +79,11 @@ _<span style="font-weight: 400;">TLDR; </span>_[_<span style="font-weight: 400;"
 
 <span style="font-weight: 400;">Once you have the starter app, run `</span><span style="font-weight: 400;">ionic serve &#8211;lab`</span><span style="font-weight: 400;">. This will start Ionic&#8217;s powerful CLI and launch a browser that has a side-by-side view of how your app will look on iOS and on Android. The CLI should look like the below picture.</span>
 
-[<img class="aligncenter wp-image-26168 size-full" src="https://strongloop.com/wp-content/uploads/2015/10/image04.png" alt="image04" width="573" height="370" srcset="https://strongloop.com/wp-content/uploads/2015/10/image04.png 573w, https://strongloop.com/wp-content/uploads/2015/10/image04-300x194.png 300w, https://strongloop.com/wp-content/uploads/2015/10/image04-450x291.png 450w" sizes="(max-width: 573px) 100vw, 573px" />](https://strongloop.com/wp-content/uploads/2015/10/image04.png)
+[<img class="aligncenter wp-image-26168 size-full" src="{{site.url}}/blog-assets/2015/10/image04.png" alt="image04" width="573" height="370"  />]({{site.url}}/blog-assets/2015/10/image04.png)
 
 <span style="font-weight: 400;">The browser should look like the below picture.</span>
 
-[<img class="aligncenter size-full wp-image-26169" src="https://strongloop.com/wp-content/uploads/2015/10/image05.png" alt="image05" width="868" height="846" srcset="https://strongloop.com/wp-content/uploads/2015/10/image05.png 868w, https://strongloop.com/wp-content/uploads/2015/10/image05-300x292.png 300w, https://strongloop.com/wp-content/uploads/2015/10/image05-36x36.png 36w, https://strongloop.com/wp-content/uploads/2015/10/image05-705x687.png 705w, https://strongloop.com/wp-content/uploads/2015/10/image05-450x439.png 450w" sizes="(max-width: 868px) 100vw, 868px" />](https://strongloop.com/wp-content/uploads/2015/10/image05.png)
+[<img class="aligncenter size-full wp-image-26169" src="{{site.url}}/blog-assets/2015/10/image05.png" alt="image05" width="868" height="846"  />]({{site.url}}/blog-assets/2015/10/image05.png)
 
 ## **Including Your Directives in Ionic**
 
@@ -113,10 +113,10 @@ _<span style="font-weight: 400;">TLDR; </span>_[_<span style="font-weight: 400;"
 <span style="font-weight: 400;">The `</span><span style="font-weight: 400;">www`</span> <span style="font-weight: 400;">directory is the root directory for your Ionic app. You might have noticed that it has an `</span><span style="font-weight: 400;">index.html` </span><span style="font-weight: 400;">file &#8211; this is the root HTML file for your Ionic app. Now that you&#8217;ve installed your dependencies, add the below `</span><span style="font-weight: 400;">script`</span> <span style="font-weight: 400;">tags to `</span><span style="font-weight: 400;">index.html`</span> <span style="font-weight: 400;">to include `ngResource`, moment, and your stopwatch directives.</span>
 
 ```js
-&lt;script src="js/angular-resource/angular-resource.js"&gt;&lt;/script&gt;
-&lt;script src="js/moment/moment.js"&gt;&lt;/script&gt;
-&lt;script src="js/directives/index.js"&gt;&lt;/script&gt;
-&lt;script src="js/templates/index.js"&gt;&lt;/script&gt;
+<script src="js/angular-resource/angular-resource.js"></script>
+<script src="js/moment/moment.js"></script>
+<script src="js/directives/index.js"></script>
+<script src="js/templates/index.js"></script>
 ```
 
 <span style="font-weight: 400;">Your Ionic app also has a main AngularJS module, defined in `</span><span style="font-weight: 400;">www/js/app.js`</span><span style="font-weight: 400;">. Add the &#8216;core&#8217; (from `</span><span style="font-weight: 400;">directives/index.js`</span><span style="font-weight: 400;">) and &#8216;templates&#8217; (from `</span><span style="font-weight: 400;">templates/index.js`</span><span style="font-weight: 400;">) modules to the </span><span style="font-weight: 400;">starter </span><span style="font-weight: 400;">module&#8217;s list of dependencies.</span>
@@ -128,7 +128,7 @@ angular.module('starter',
 
 <span style="font-weight: 400;">Now that you&#8217;ve properly included your AngularJS modules, you should be able to </span>[<span style="font-weight: 400;">include the `</span><span style="font-weight: 400;">timer` </span><span style="font-weight: 400;">directive in your app&#8217;s dashboard tab as shown in this GitHub diff</span>](https://github.com/vkarpov15/stopwatch-example/commit/9bfec6bc4bb5237ca9d5c4704041c641706c64b2#diff-5)<span style="font-weight: 400;">. You should then see your timer directive in your `</span><span style="font-weight: 400;">ionic serve &#8211;lab`</span> <span style="font-weight: 400;">window as shown below.</span>
 
-[<img class="aligncenter size-full wp-image-26171" src="https://strongloop.com/wp-content/uploads/2015/10/image02.png" alt="image02" width="828" height="851" srcset="https://strongloop.com/wp-content/uploads/2015/10/image02.png 828w, https://strongloop.com/wp-content/uploads/2015/10/image02-292x300.png 292w, https://strongloop.com/wp-content/uploads/2015/10/image02-36x36.png 36w, https://strongloop.com/wp-content/uploads/2015/10/image02-686x705.png 686w, https://strongloop.com/wp-content/uploads/2015/10/image02-450x463.png 450w" sizes="(max-width: 828px) 100vw, 828px" />](https://strongloop.com/wp-content/uploads/2015/10/image02.png)
+[<img class="aligncenter size-full wp-image-26171" src="{{site.url}}/blog-assets/2015/10/image02.png" alt="image02" width="828" height="851"  />]({{site.url}}/blog-assets/2015/10/image02.png)
 
 ## **Tying It All Together**
 
@@ -175,11 +175,11 @@ _<span style="font-weight: 400;">TLDR; </span>_[_<span style="font-weight: 400;"
 
 <span style="font-weight: 400;">Once you&#8217;ve configured the HTTP interceptor and added Facebook login, your `</span><span style="font-weight: 400;">timer`</span> <span style="font-weight: 400;">and `</span><span style="font-weight: 400;">timeList` </span><span style="font-weight: 400;">directives should work as written. You can start your timer, save it, and then see your timer results in the &#8216;account&#8217; tab.</span>
 
-[<img class="aligncenter size-full wp-image-26172" src="https://strongloop.com/wp-content/uploads/2015/10/image03.png" alt="image03" width="393" height="725" srcset="https://strongloop.com/wp-content/uploads/2015/10/image03.png 393w, https://strongloop.com/wp-content/uploads/2015/10/image03-163x300.png 163w, https://strongloop.com/wp-content/uploads/2015/10/image03-382x705.png 382w" sizes="(max-width: 393px) 100vw, 393px" />](https://strongloop.com/wp-content/uploads/2015/10/image03.png)
+[<img class="aligncenter size-full wp-image-26172" src="{{site.url}}/blog-assets/2015/10/image03.png" alt="image03" width="393" height="725"  />]({{site.url}}/blog-assets/2015/10/image03.png)
 
-[<img class="aligncenter size-full wp-image-26173" src="https://strongloop.com/wp-content/uploads/2015/10/image01.png" alt="image01" width="390" height="719" srcset="https://strongloop.com/wp-content/uploads/2015/10/image01.png 390w, https://strongloop.com/wp-content/uploads/2015/10/image01-163x300.png 163w, https://strongloop.com/wp-content/uploads/2015/10/image01-382x705.png 382w" sizes="(max-width: 390px) 100vw, 390px" />](https://strongloop.com/wp-content/uploads/2015/10/image01.png)
+[<img class="aligncenter size-full wp-image-26173" src="{{site.url}}/blog-assets/2015/10/image01.png" alt="image01" width="390" height="719"  />]({{site.url}}/blog-assets/2015/10/image01.png)
 
-[<img class="aligncenter size-full wp-image-26174" src="https://strongloop.com/wp-content/uploads/2015/10/image00.png" alt="image00" width="404" height="712" srcset="https://strongloop.com/wp-content/uploads/2015/10/image00.png 404w, https://strongloop.com/wp-content/uploads/2015/10/image00-170x300.png 170w, https://strongloop.com/wp-content/uploads/2015/10/image00-400x705.png 400w" sizes="(max-width: 404px) 100vw, 404px" />](https://strongloop.com/wp-content/uploads/2015/10/image00.png)
+[<img class="aligncenter size-full wp-image-26174" src="{{site.url}}/blog-assets/2015/10/image00.png" alt="image00" width="404" height="712"  />]({{site.url}}/blog-assets/2015/10/image00.png)
 
 ## **Moving On**
 

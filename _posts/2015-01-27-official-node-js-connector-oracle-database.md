@@ -17,7 +17,7 @@ Releasing source code on GitHub is itself big news for the Oracle Database devel
 
 StrongLoop is one player with feet in both Node and Oracle communities. They have supported and given advice on the development of `node-oracledb`, even though it seemingly competes with their [own driver](https://github.com/strongloop/strong-oracle). What `node-oracledb` actually does is let StrongLoop focus their efforts in making products like the [LoopBack](http://loopback.io/) framework and the [StrongLoop Arc](http://strongloop.com/node-js/arc/) GUI and platform even more successful. The maintenance of the database access layer can now transition to Oracle, where their expertise is, freeing StrongLoop to add value above it.
 
-<img class="aligncenter size-full wp-image-22968" alt="oracle2" src="https://strongloop.com/wp-content/uploads/2015/01/oracle2.jpg" width="590" height="414" srcset="https://strongloop.com/wp-content/uploads/2015/01/oracle2.jpg 590w, https://strongloop.com/wp-content/uploads/2015/01/oracle2-300x211.jpg 300w, https://strongloop.com/wp-content/uploads/2015/01/oracle2-450x316.jpg 450w" sizes="(max-width: 590px) 100vw, 590px" />
+<img class="aligncenter size-full wp-image-22968" alt="oracle2" src="{{site.url}}/blog-assets/2015/01/oracle2.jpg" width="590" height="414"  />
 
 ## **Technology**
 
@@ -97,7 +97,7 @@ oracledb.getConnection(
     connection.execute(
       "SELECT department_id, department_name "
     + "FROM departments "
-    + "WHERE department_id &lt; 70 "
+    + "WHERE department_id < 70 "
     + "ORDER BY department_id",
       function(err, result)
       {
@@ -127,7 +127,7 @@ Query results can be fetched as objects by setting an output format property. 
 connection.execute(
       "SELECT department_id, department_name "
     + "FROM departments "
-    + "WHERE department_id &lt; 70 "
+    + "WHERE department_id < 70 "
     + "ORDER BY department_id",
       [], // A bind parameter (here empty) is required when setting properties
       {outFormat: oracledb.OBJECT},
@@ -156,7 +156,7 @@ The driver allows binding by name or position. The next examples shows binding
 connection.execute(
       "SELECT department_id, department_name "
     + "FROM departments "
-    + "WHERE department_id &lt; :id "
+    + "WHERE department_id < :id "
     + "ORDER BY department_id",
       [70],
       function(err, result)

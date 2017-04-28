@@ -37,7 +37,7 @@ Go to the Security Credentials page:
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2013/08/eb-1.png"><img class="alignnone size-medium wp-image-19194" alt="eb 1" src="https://strongloop.com/wp-content/uploads/2013/08/eb-1-300x192.png" width="300" height="192" /></a>
+  <a href="{{site.url}}/blog-assets/2013/08/eb-1.png"><img class="alignnone size-medium wp-image-19194" alt="eb 1" src="{{site.url}}/blog-assets/2013/08/eb-1-300x192.png" width="300" height="192" /></a>
 </p>
 
 <p dir="ltr">
@@ -126,7 +126,7 @@ $ npm install
   You can also then go and check out <a href="http://strongloop.com/#dashboard">the StrongOps console</a> to see if your new app is showing up. As you can see below, our Express app has a heartbeat.
 </p>
 
-<span style="font-size: 13px;"><a href="https://strongloop.com/wp-content/uploads/2013/08/eb-2.png"><img class="alignnone size-medium wp-image-19195" alt="eb 2" src="https://strongloop.com/wp-content/uploads/2013/08/eb-2-300x174.png" width="300" height="174" /></a></span>
+<span style="font-size: 13px;"><a href="{{site.url}}/blog-assets/2013/08/eb-2.png"><img class="alignnone size-medium wp-image-19195" alt="eb 2" src="{{site.url}}/blog-assets/2013/08/eb-2-300x174.png" width="300" height="174" /></a></span>
 
 <span style="font-size: 13px;">Now, add the next three lines to your .gitignore file to skip things we don&#8217;t need to store in git:</span>
 
@@ -210,11 +210,11 @@ $ eb start
   There&#8217;s also a handy button to go and see the default EB app that&#8217;s been installed:
 </p>
 
-[<img class="alignnone size-medium wp-image-19196" alt="eb 3" src="https://strongloop.com/wp-content/uploads/2013/08/eb-3-300x165.png" width="300" height="165" />](https://strongloop.com/wp-content/uploads/2013/08/eb-3.png)
+[<img class="alignnone size-medium wp-image-19196" alt="eb 3" src="{{site.url}}/blog-assets/2013/08/eb-3-300x165.png" width="300" height="165" />]({{site.url}}/blog-assets/2013/08/eb-3.png)
 
 Let&#8217;s take a look at that:
 
-[<img class="alignnone size-medium wp-image-19197" alt="eb 4" src="https://strongloop.com/wp-content/uploads/2013/08/eb-4-300x163.png" width="300" height="163" />](https://strongloop.com/wp-content/uploads/2013/08/eb-4.png)
+[<img class="alignnone size-medium wp-image-19197" alt="eb 4" src="{{site.url}}/blog-assets/2013/08/eb-4-300x163.png" width="300" height="163" />]({{site.url}}/blog-assets/2013/08/eb-4.png)
 
 <p dir="ltr">
   Now, let&#8217;s upload our own express app that we added StrongOps to:
@@ -248,7 +248,7 @@ Writing objects: 100% (16/16), 2.42 KiB, done.
 Total 16 (delta 0), reused 0 (delta 0)
 remote:
 To <a href="about:blank">https://</a>.….
-* [new branch]   HEAD -&gt; master
+* [new branch]   HEAD -> master
 ```
 
 <p dir="ltr">
@@ -267,7 +267,7 @@ To <a href="about:blank">https://</a>.….
   Once it&#8217;s up, check out your application again via the &#8220;View Running Version&#8221; button.
 </p>
 
-[<img class="alignnone size-medium wp-image-19198" alt="eb 5" src="https://strongloop.com/wp-content/uploads/2013/08/eb-5-300x162.png" width="300" height="162" />](https://strongloop.com/wp-content/uploads/2013/08/eb-5.png)
+[<img class="alignnone size-medium wp-image-19198" alt="eb 5" src="{{site.url}}/blog-assets/2013/08/eb-5-300x162.png" width="300" height="162" />]({{site.url}}/blog-assets/2013/08/eb-5.png)
 
 <p dir="ltr">
   Hooray, it&#8217;s the default Express app!
@@ -278,7 +278,7 @@ To <a href="about:blank">https://</a>.….
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2013/08/eb-final.png"><img class="alignnone size-medium wp-image-19199" alt="eb final" src="https://strongloop.com/wp-content/uploads/2013/08/eb-final-300x174.png" width="300" height="174" /></a>
+  <a href="{{site.url}}/blog-assets/2013/08/eb-final.png"><img class="alignnone size-medium wp-image-19199" alt="eb final" src="{{site.url}}/blog-assets/2013/08/eb-final-300x174.png" width="300" height="174" /></a>
 </p>
 
 <p dir="ltr">

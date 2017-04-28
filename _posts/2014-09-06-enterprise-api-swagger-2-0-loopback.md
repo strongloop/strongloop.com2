@@ -12,15 +12,15 @@ categories:
 ---
 The [Swagger 2.0](http://swagger.io/index.html) specification was [officially released today](http://www.marketwatch.com/story/reverb-announces-swagger-20-a-next-generation-interface-to-connect-apis-and-cloud-services-2014-09-08?reflink=MW_news_stmp) and at StrongLoop we are excited to announce that [LoopBack](http://strongloop.com/node-js/loopback/) is the first Node.js framework to support Swagger 2.0. Using LoopBack you can now take a Swagger 1.2 _or_ 2.0 specification and automatically scaffold a Node-powered REST API. This should be especially useful for any developer wanting to easily describe their APIs using the leading enterprise standard for API specification and implement them in Node.js. Developers now have the ultimate flexibility in starting from a &#8220;bottoms up&#8221; approach &#8211; building APIs from existing data sources or a &#8220;top down&#8221; approach &#8211; starting with the leading enterprise API specification and scaffolding up a backend of generated models.
 
-## A community effort {#what-is-loopback}
+## A community effort 
 
 We were invited by the project lead [Tony Tam](https://twitter.com/fehguy), to participate in the Swagger 2.0 workgroup a few months ago, which also included other leading API vendors like Apigee, 3Scale, PayPal and Microsoft.  The Swagger 2.0 specification is a great win in the effort to build APIs for the enterprise and to describe them in a uniform way so that they can be utilized by end users and developers. We&#8217;d like to congratulate everyone on all the hard work that went into this release!
 
-## What is Swagger? {#what-is-swagger}
+## What is Swagger? 
 
 If you are new to [Swagger](https://github.com/reverb/swagger-spec), it defines a standard, language-agnostic interface to REST APIs which allows both humans and computers to discover and understand the capabilities of the service without access to source code, documentation, or through network traffic inspection.
 
-## What is LoopBack? {#what-is-loopback}
+## What is LoopBack? 
 
 If you are new to LoopBack, it is an open source Node.js API framework from StrongLoop. It is built on top of Express optimized for mobile, web, and other devices. LoopBack makes it really easy and productive for developers to:
 
@@ -43,9 +43,9 @@ If you are new to LoopBack, it is an open source Node.js API framework from Stro
   <span style="font-size: 18px;">Consume services and data using JavaScript, iOS & Android SDKs</span>
 </li>
 
-## LoopBack + Swagger = API business {#loopback-swagger-api-business}
+## LoopBack + Swagger = API business 
 
-<img class="aligncenter size-full wp-image-19853" src="https://strongloop.com/wp-content/uploads/2014/09/loopback-swagger-integration.png" alt="loopback-swagger-integration" width="740" height="443" srcset="https://strongloop.com/wp-content/uploads/2014/09/loopback-swagger-integration.png 740w, https://strongloop.com/wp-content/uploads/2014/09/loopback-swagger-integration-300x179.png 300w, https://strongloop.com/wp-content/uploads/2014/09/loopback-swagger-integration-450x269.png 450w" sizes="(max-width: 740px) 100vw, 740px" />
+<img class="aligncenter size-full wp-image-19853" src="{{site.url}}/blog-assets/2014/09/loopback-swagger-integration.png" alt="loopback-swagger-integration" width="740" height="443"  />
 
 LoopBack has come with a Swagger based API explorer since day one in order to provide instant visibility for REST APIs exposed by LoopBack models. So far with LoopBack, most developers define models and implement the API logic in Node.js. The JavaScript methods are annotated with remoting metadata so that they can be exposed as REST APIs. LoopBack publishes such definitions as Swagger specs in JSON format. The API explorer creates an API playground based on the specs.
 
@@ -63,15 +63,15 @@ For more information, see:
 
 <http://docs.strongloop.com/display/LB/Getting+Started+with+LoopBack>
 
-### Create a loopback application {#create-a-loopback-application}
+### Create a loopback application 
 
 The first step is to create a blank LoopBack application.
 
     slc loopback
 
-<img class="aligncenter size-full wp-image-19856" src="https://strongloop.com/wp-content/uploads/2014/09/loopback-1.png" alt="loopback (1)" width="969" height="436" srcset="https://strongloop.com/wp-content/uploads/2014/09/loopback-1.png 969w, https://strongloop.com/wp-content/uploads/2014/09/loopback-1-300x134.png 300w, https://strongloop.com/wp-content/uploads/2014/09/loopback-1-450x202.png 450w" sizes="(max-width: 969px) 100vw, 969px" />
+<img class="aligncenter size-full wp-image-19856" src="{{site.url}}/blog-assets/2014/09/loopback-1.png" alt="loopback (1)" width="969" height="436"  />
 
-### Generate APIs from swagger spec {#generate-apis-from-swagger-spec}
+### Generate APIs from swagger spec 
 
 Now let’s try to generate APIs from Swagger specs.
 
@@ -82,17 +82,17 @@ When prompted, first provide a url to the swagger spec. In this demo, we use:
 
 <a href="https://raw.githubusercontent.com/wordnik/swagger-spec/master/examples/v2.0/json/petstore-simple.json" target="_blank" rel="noreferrer">https://raw.githubusercontent.com/wordnik/swagger-spec/master/examples/v2.0/json/petstore-simple.json</a>
 
-<img class="aligncenter size-full wp-image-19857" src="https://strongloop.com/wp-content/uploads/2014/09/loopback-swagger.png" alt="loopback-swagger" width="1126" height="264" srcset="https://strongloop.com/wp-content/uploads/2014/09/loopback-swagger.png 1126w, https://strongloop.com/wp-content/uploads/2014/09/loopback-swagger-300x70.png 300w, https://strongloop.com/wp-content/uploads/2014/09/loopback-swagger-1030x241.png 1030w, https://strongloop.com/wp-content/uploads/2014/09/loopback-swagger-450x105.png 450w" sizes="(max-width: 1126px) 100vw, 1126px" />
+<img class="aligncenter size-full wp-image-19857" src="{{site.url}}/blog-assets/2014/09/loopback-swagger.png" alt="loopback-swagger" width="1126" height="264"  />
 
 The generator loads the spec and discovers models and apis. It then prompts youto select from the list of models to be created.
 
-<img class="aligncenter size-full wp-image-19858" src="https://strongloop.com/wp-content/uploads/2014/09/loopback-swagger-full.png" alt="loopback-swagger-full" width="1128" height="698" srcset="https://strongloop.com/wp-content/uploads/2014/09/loopback-swagger-full.png 1128w, https://strongloop.com/wp-content/uploads/2014/09/loopback-swagger-full-300x185.png 300w, https://strongloop.com/wp-content/uploads/2014/09/loopback-swagger-full-1030x637.png 1030w, https://strongloop.com/wp-content/uploads/2014/09/loopback-swagger-full-450x278.png 450w" sizes="(max-width: 1128px) 100vw, 1128px" />
+<img class="aligncenter size-full wp-image-19858" src="{{site.url}}/blog-assets/2014/09/loopback-swagger-full.png" alt="loopback-swagger-full" width="1128" height="698"  />
 
-### Check the project {#check-the-project}
+### Check the project 
 
 The models and corresponding JS files are generated into the `server/models` folder:
 
-<img class="aligncenter size-full wp-image-19859" src="https://strongloop.com/wp-content/uploads/2014/09/demo-project.png" alt="demo-project" width="327" height="439" srcset="https://strongloop.com/wp-content/uploads/2014/09/demo-project.png 327w, https://strongloop.com/wp-content/uploads/2014/09/demo-project-223x300.png 223w" sizes="(max-width: 327px) 100vw, 327px" />
+<img class="aligncenter size-full wp-image-19859" src="{{site.url}}/blog-assets/2014/09/demo-project.png" alt="demo-project" width="327" height="439"  />
 
   * `server/model-config.json`: Config for all models
   * `server/models`: 
@@ -107,7 +107,7 @@ The models and corresponding JS files are generated into the `server/models` fol
 
 Please note `pet/newPet/errorModel` models are now connected to the database selected.
 
-### Run the application {#run-the-application}
+### Run the application 
 
 To run the application:
 
@@ -115,17 +115,17 @@ To run the application:
 
 Open your browser and points to <http://localhost:3000/explorer>.
 
-<img class="aligncenter size-full wp-image-19860" src="https://strongloop.com/wp-content/uploads/2014/09/explorer-api.png" alt="explorer-api" width="1108" height="524" srcset="https://strongloop.com/wp-content/uploads/2014/09/explorer-api.png 1108w, https://strongloop.com/wp-content/uploads/2014/09/explorer-api-300x141.png 300w, https://strongloop.com/wp-content/uploads/2014/09/explorer-api-1030x487.png 1030w, https://strongloop.com/wp-content/uploads/2014/09/explorer-api-450x212.png 450w" sizes="(max-width: 1108px) 100vw, 1108px" />
+<img class="aligncenter size-full wp-image-19860" src="{{site.url}}/blog-assets/2014/09/explorer-api.png" alt="explorer-api" width="1108" height="524"  />
 
 As you see, the API endpoints defined by the Swagger spec is now available from LoopBack!
 
 You’ll also see a list of models generated too. As illustrated below, these models have the full CRUD capabilities and can be attached any of the databases that LoopBack supports.
 
-<img class="aligncenter size-full wp-image-19861" src="https://strongloop.com/wp-content/uploads/2014/09/explorer-model.png" alt="explorer-model" width="1082" height="537" srcset="https://strongloop.com/wp-content/uploads/2014/09/explorer-model.png 1082w, https://strongloop.com/wp-content/uploads/2014/09/explorer-model-300x148.png 300w, https://strongloop.com/wp-content/uploads/2014/09/explorer-model-1030x511.png 1030w, https://strongloop.com/wp-content/uploads/2014/09/explorer-model-450x223.png 450w" sizes="(max-width: 1082px) 100vw, 1082px" />
+<img class="aligncenter size-full wp-image-19861" src="{{site.url}}/blog-assets/2014/09/explorer-model.png" alt="explorer-model" width="1082" height="537"  />
 
 Let’s give it a try:
 
-<img class="aligncenter size-full wp-image-19862" src="https://strongloop.com/wp-content/uploads/2014/09/api-error.png" alt="api-error" width="1068" height="795" srcset="https://strongloop.com/wp-content/uploads/2014/09/api-error.png 1068w, https://strongloop.com/wp-content/uploads/2014/09/api-error-300x223.png 300w, https://strongloop.com/wp-content/uploads/2014/09/api-error-1030x766.png 1030w, https://strongloop.com/wp-content/uploads/2014/09/api-error-450x334.png 450w" sizes="(max-width: 1068px) 100vw, 1068px" />
+<img class="aligncenter size-full wp-image-19862" src="{{site.url}}/blog-assets/2014/09/api-error.png" alt="api-error" width="1068" height="795"  />
 
 Hmm, you get an error saying the api is not implemented. That is expected as the generated method is just a skeleton!
 

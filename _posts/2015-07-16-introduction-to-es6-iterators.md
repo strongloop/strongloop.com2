@@ -55,7 +55,7 @@ table[Symbol.iterator] = function () {
   return {
     next: function () {
       return {
-        value: keys[index], done: index++ &gt;= keys.length
+        value: keys[index], done: index++ >= keys.length
       };
     }
   }
@@ -79,7 +79,7 @@ table[Symbol.iterator] = function () {
       }
       
       return {
-        value: keys[index], done: index++ &gt;= keys.length
+        value: keys[index], done: index++ >= keys.length
       };
     }
   }

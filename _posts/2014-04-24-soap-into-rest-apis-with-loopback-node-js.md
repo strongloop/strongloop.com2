@@ -13,7 +13,7 @@ Nowadays, “web services” often means REST (Representational state transfer) 
 
 As an API server to glue existing and new data sources, [LoopBack](http://strongloop.com/mobile-application-development/loopback/) is designed to facilitate your backend data integration.  With the release of [loopback-connector-soap](https://github.com/strongloop/loopback-connector-soap) module, you can now easily consume SOAP web services and transform them into REST APIs.
 
-[<img class="aligncenter size-full wp-image-14996" alt="loopback_logo" src="https://strongloop.com/wp-content/uploads/2014/04/loopback_logo.png" width="1590" height="498" srcset="https://strongloop.com/wp-content/uploads/2014/04/loopback_logo.png 1590w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-300x94.png 300w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-1030x323.png 1030w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-1500x470.png 1500w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-705x221.png 705w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-450x141.png 450w" sizes="(max-width: 1590px) 100vw, 1590px" />](https://strongloop.com/wp-content/uploads/2014/04/loopback_logo.png)
+[<img class="aligncenter size-full wp-image-14996" alt="loopback_logo" src="{{site.url}}/blog-assets/2014/04/loopback_logo.png" width="1590" height="498"  />]({{site.url}}/blog-assets/2014/04/loopback_logo.png)
 
 In this blog, I’ll walk you through the steps to connect to an existing SOAP web service and transform it into a REST API. The example code is available [here](http://github.com/strongloop/loopback-connector-soap/blob/master/example/weather-rest.js.). It uses a public SOAP-based weather service from [here](http://wsf.cdyne.com/WeatherWS/Weather.asmx).
 
@@ -47,12 +47,12 @@ SOAP web services are formally described using [WSDL](http://www.w3.org/TR/wsdl)
 </li>
 
 ```js
-&lt;wsdl:service name="Weather">
-        &lt;wsdl:port name="WeatherSoap" binding="tns:WeatherSoap">
-            &lt;soap:address location="http://wsf.cdyne.com/WeatherWS/Weather.asmx" />
-        &lt;/wsdl:port>
+<wsdl:service name="Weather">
+        <wsdl:port name="WeatherSoap" binding="tns:WeatherSoap">
+            <soap:address location="http://wsf.cdyne.com/WeatherWS/Weather.asmx" />
+        </wsdl:port>
         ...
-    &lt;/wsdl:service>
+    </wsdl:service>
 
 ```
 
@@ -140,7 +140,7 @@ node example/weather-rest
 
 Open <http://localhost:3000/explorer>
 
-[<img class="aligncenter size-full wp-image-15646" alt="weatherservices" src="https://strongloop.com/wp-content/uploads/2014/04/weatherservices.png" width="1093" height="766" />](https://strongloop.com/wp-content/uploads/2014/04/weatherservices.png)
+[<img class="aligncenter size-full wp-image-15646" alt="weatherservices" src="{{site.url}}/blog-assets/2014/04/weatherservices.png" width="1093" height="766" />]({{site.url}}/blog-assets/2014/04/weatherservices.png)
 
 You can also test the REST API through direct URLs:
 

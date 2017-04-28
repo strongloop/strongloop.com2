@@ -28,7 +28,7 @@ categories:
   <strong>Convention over Configuration</strong>
 </h2>
 
- <img src="https://strongloop.com/wp-content/uploads/2014/07/watch1.jpg" alt="tumblr_lvfxf8hHJg1qf7jblo3_1280.jpg" width="282px;" height="217px;" /><img src="https://strongloop.com/wp-content/uploads/2014/07/watch2.jpg" alt="Vacheron Constantin Métiers d’Art Mécaniques Ajourées movement 1.jpg" width="297px;" height="214px;" />
+ <img src="{{site.url}}/blog-assets/2014/07/watch1.jpg" alt="tumblr_lvfxf8hHJg1qf7jblo3_1280.jpg" width="282px;" height="217px;" /><img src="{{site.url}}/blog-assets/2014/07/watch2.jpg" alt="Vacheron Constantin Métiers d’Art Mécaniques Ajourées movement 1.jpg" width="297px;" height="214px;" />
 
 <p dir="ltr">
   Convention over configuration (also known as coding by convention) seeks to decrease the number of decisions that <a href="http://en.wikipedia.org/wiki/Software_developer">developers</a> need to make, gaining simplicity, but not necessarily losing flexibility. This means a developer only needs to specify unconventional aspects of the application. For example, if there&#8217;s a class <code>Sale</code> in the model, the corresponding table in the database is called <code>sales</code> by default. It is only if one deviates from this convention, such as calling the table <code>sale</code>, or <code>product_sold</code> that one needs to write code regarding these names.
@@ -83,7 +83,7 @@ categories:
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2014/07/Object-Relationship-Mapping.png"><img class="aligncenter size-full wp-image-26750" src="https://strongloop.com/wp-content/uploads/2014/07/Object-Relationship-Mapping.png" alt="Object Relationship Mapping" width="590" height="405" srcset="https://strongloop.com/wp-content/uploads/2014/07/Object-Relationship-Mapping.png 590w, https://strongloop.com/wp-content/uploads/2014/07/Object-Relationship-Mapping-300x206.png 300w, https://strongloop.com/wp-content/uploads/2014/07/Object-Relationship-Mapping-450x309.png 450w" sizes="(max-width: 590px) 100vw, 590px" /></a>
+  <a href="{{site.url}}/blog-assets/2014/07/Object-Relationship-Mapping.png"><img class="aligncenter size-full wp-image-26750" src="{{site.url}}/blog-assets/2014/07/Object-Relationship-Mapping.png" alt="Object Relationship Mapping" width="590" height="405"  /></a>
 </p>
 
 <p dir="ltr">
@@ -106,7 +106,7 @@ categories:
 
 &nbsp;
 
-[<img class="aligncenter size-full wp-image-26751" src="https://strongloop.com/wp-content/uploads/2014/07/Object-Datasource-Mapping-ODM-mongoose.png" alt="Object Datasource Mapping (ODM) mongoose" width="600" height="261" srcset="https://strongloop.com/wp-content/uploads/2014/07/Object-Datasource-Mapping-ODM-mongoose.png 600w, https://strongloop.com/wp-content/uploads/2014/07/Object-Datasource-Mapping-ODM-mongoose-300x131.png 300w, https://strongloop.com/wp-content/uploads/2014/07/Object-Datasource-Mapping-ODM-mongoose-450x196.png 450w" sizes="(max-width: 600px) 100vw, 600px" />](https://strongloop.com/wp-content/uploads/2014/07/Object-Datasource-Mapping-ODM-mongoose.png)
+[<img class="aligncenter size-full wp-image-26751" src="{{site.url}}/blog-assets/2014/07/Object-Datasource-Mapping-ODM-mongoose.png" alt="Object Datasource Mapping (ODM) mongoose" width="600" height="261"  />]({{site.url}}/blog-assets/2014/07/Object-Datasource-Mapping-ODM-mongoose.png)
 
 <p dir="ltr">
   Traditionally, Data Models deal with entities at the persistence level. Like how the classes in the Object Model will get stored in the database, in which tables etc. So, Data Model deals with Table schema, relationship between different tables (PKs, FKs) etc.
@@ -124,7 +124,7 @@ categories:
 
 &nbsp;
 
-[<img class="aligncenter size-full wp-image-26752" src="https://strongloop.com/wp-content/uploads/2014/07/modelling-Pitfall.png" alt="modelling Pitfall" width="283" height="249" />](https://strongloop.com/wp-content/uploads/2014/07/modelling-Pitfall.png)
+[<img class="aligncenter size-full wp-image-26752" src="{{site.url}}/blog-assets/2014/07/modelling-Pitfall.png" alt="modelling Pitfall" width="283" height="249" />]({{site.url}}/blog-assets/2014/07/modelling-Pitfall.png)
 
 <p dir="ltr">
   ORM can have a few rough edges in the case of &#8220;Logic Intensive Systems&#8221; i.e. systems that perform complex calculations, make optimizations, determinations, decisions, etc. This makes persistence easier by locking the object model to the database model that can make writing and consuming the business logic harder. For example, in a system that uses business objects that are basically codegen&#8217;d one to one from a legacy codebase with 400+ tables, the temptation and driver for codegen&#8217;ing the business objects is obvious (400+ tables).
@@ -153,7 +153,7 @@ ODM on the other hand is proprietary to each type of NoSQL backend like MongoDB 
   Introducing Loopback
 </h2>
 
-[<img class="aligncenter size-full wp-image-26753" src="https://strongloop.com/wp-content/uploads/2014/07/loopback-logo-sm.png" alt="loopback-logo-sm" width="194" height="200" srcset="https://strongloop.com/wp-content/uploads/2014/07/loopback-logo-sm.png 194w, https://strongloop.com/wp-content/uploads/2014/07/loopback-logo-sm-36x36.png 36w" sizes="(max-width: 194px) 100vw, 194px" />](https://strongloop.com/wp-content/uploads/2014/07/loopback-logo-sm.png)
+[<img class="aligncenter size-full wp-image-26753" src="{{site.url}}/blog-assets/2014/07/loopback-logo-sm.png" alt="loopback-logo-sm" width="194" height="200"  />]({{site.url}}/blog-assets/2014/07/loopback-logo-sm.png)
 
 &nbsp;
 
@@ -174,7 +174,7 @@ ODM on the other hand is proprietary to each type of NoSQL backend like MongoDB 
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2014/07/loopback-3-components-diagram.png"><img class="aligncenter size-full wp-image-26754" src="https://strongloop.com/wp-content/uploads/2014/07/loopback-3-components-diagram.png" alt="loopback 3 components diagram" width="595" height="193" srcset="https://strongloop.com/wp-content/uploads/2014/07/loopback-3-components-diagram.png 595w, https://strongloop.com/wp-content/uploads/2014/07/loopback-3-components-diagram-300x97.png 300w, https://strongloop.com/wp-content/uploads/2014/07/loopback-3-components-diagram-450x146.png 450w" sizes="(max-width: 595px) 100vw, 595px" /></a>
+  <a href="{{site.url}}/blog-assets/2014/07/loopback-3-components-diagram.png"><img class="aligncenter size-full wp-image-26754" src="{{site.url}}/blog-assets/2014/07/loopback-3-components-diagram.png" alt="loopback 3 components diagram" width="595" height="193"  /></a>
 </p>
 
   * Models that represent business data and behavior.
@@ -197,7 +197,7 @@ ODM on the other hand is proprietary to each type of NoSQL backend like MongoDB 
 
 ## **Creating Models**
 
-[<img class="aligncenter size-full wp-image-26755" src="https://strongloop.com/wp-content/uploads/2014/07/cretaing-models-ADN_animation.gif" alt="creating models ADN_animation" width="181" height="313" />](https://strongloop.com/wp-content/uploads/2014/07/cretaing-models-ADN_animation.gif)
+[<img class="aligncenter size-full wp-image-26755" src="{{site.url}}/blog-assets/2014/07/cretaing-models-ADN_animation.gif" alt="creating models ADN_animation" width="181" height="313" />]({{site.url}}/blog-assets/2014/07/cretaing-models-ADN_animation.gif)
 
 &nbsp;
 
@@ -216,7 +216,7 @@ ODM on the other hand is proprietary to each type of NoSQL backend like MongoDB 
 </p>
 
 <p dir="ltr">
-  By default, the REST APIs are mounted to <code>/&lt;Model.settings.plural | pluralized(Model.modelName)&gt;</code>, for example, <code>/locations</code>, to the base URL such as <a href="http://localhost:3000/">http://localhost:3000/</a>.  LoopBack provides a number of <a href="http://docs.strongloop.com/display/LB/Using+built-in+models">built-in models</a> that have REST APIs.  See the <a href="http://docs.strongloop.com/display/LB/REST+API">REST API</a> docs for more information.
+  By default, the REST APIs are mounted to <code>/<Model.settings.plural | pluralized(Model.modelName)></code>, for example, <code>/locations</code>, to the base URL such as <a href="http://localhost:3000/">http://localhost:3000/</a>.  LoopBack provides a number of <a href="http://docs.strongloop.com/display/LB/Using+built-in+models">built-in models</a> that have REST APIs.  See the <a href="http://docs.strongloop.com/display/LB/REST+API">REST API</a> docs for more information.
 </p>
 
 <h2 dir="ltr">
@@ -470,7 +470,7 @@ ODM on the other hand is proprietary to each type of NoSQL backend like MongoDB 
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2014/07/belongs-to.png-version1modificationDate1384386009000apiv2.png"><img class="aligncenter size-full wp-image-26756" src="https://strongloop.com/wp-content/uploads/2014/07/belongs-to.png-version1modificationDate1384386009000apiv2.png" alt="belongs-to.png-version=1&modificationDate=1384386009000&api=v2" width="437" height="122" srcset="https://strongloop.com/wp-content/uploads/2014/07/belongs-to.png-version1modificationDate1384386009000apiv2.png 437w, https://strongloop.com/wp-content/uploads/2014/07/belongs-to.png-version1modificationDate1384386009000apiv2-300x84.png 300w" sizes="(max-width: 437px) 100vw, 437px" /></a>
+  <a href="{{site.url}}/blog-assets/2014/07/belongs-to.png-version1modificationDate1384386009000apiv2.png"><img class="aligncenter size-full wp-image-26756" src="{{site.url}}/blog-assets/2014/07/belongs-to.png-version1modificationDate1384386009000apiv2.png" alt="belongs-to.png-version=1&modificationDate=1384386009000&api=v2" width="437" height="122"  /></a>
 </p>
 
 <p dir="ltr">
@@ -486,7 +486,7 @@ ODM on the other hand is proprietary to each type of NoSQL backend like MongoDB 
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2014/07/has-many.png-version1modificationDate1384386032000apiv2.png"><img class="aligncenter size-full wp-image-26757" src="https://strongloop.com/wp-content/uploads/2014/07/has-many.png-version1modificationDate1384386032000apiv2.png" alt="has-many.png-version=1&modificationDate=1384386032000&api=v2" width="456" height="133" srcset="https://strongloop.com/wp-content/uploads/2014/07/has-many.png-version1modificationDate1384386032000apiv2.png 456w, https://strongloop.com/wp-content/uploads/2014/07/has-many.png-version1modificationDate1384386032000apiv2-300x88.png 300w, https://strongloop.com/wp-content/uploads/2014/07/has-many.png-version1modificationDate1384386032000apiv2-450x131.png 450w" sizes="(max-width: 456px) 100vw, 456px" /></a>
+  <a href="{{site.url}}/blog-assets/2014/07/has-many.png-version1modificationDate1384386032000apiv2.png"><img class="aligncenter size-full wp-image-26757" src="{{site.url}}/blog-assets/2014/07/has-many.png-version1modificationDate1384386032000apiv2.png" alt="has-many.png-version=1&modificationDate=1384386032000&api=v2" width="456" height="133"  /></a>
 </p>
 
 <p dir="ltr">
@@ -500,7 +500,7 @@ ODM on the other hand is proprietary to each type of NoSQL backend like MongoDB 
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2014/07/has-many-through.png-version1modificationDate1384386049000apiv2.png"><img class="aligncenter size-full wp-image-26759" src="https://strongloop.com/wp-content/uploads/2014/07/has-many-through.png-version1modificationDate1384386049000apiv2.png" alt="has-many-through.png-version=1&modificationDate=1384386049000&api=v2" width="589" height="179" srcset="https://strongloop.com/wp-content/uploads/2014/07/has-many-through.png-version1modificationDate1384386049000apiv2.png 589w, https://strongloop.com/wp-content/uploads/2014/07/has-many-through.png-version1modificationDate1384386049000apiv2-300x91.png 300w, https://strongloop.com/wp-content/uploads/2014/07/has-many-through.png-version1modificationDate1384386049000apiv2-450x137.png 450w" sizes="(max-width: 589px) 100vw, 589px" /></a>
+  <a href="{{site.url}}/blog-assets/2014/07/has-many-through.png-version1modificationDate1384386049000apiv2.png"><img class="aligncenter size-full wp-image-26759" src="{{site.url}}/blog-assets/2014/07/has-many-through.png-version1modificationDate1384386049000apiv2.png" alt="has-many-through.png-version=1&modificationDate=1384386049000&api=v2" width="589" height="179"  /></a>
 </p>
 
 <p dir="ltr">
@@ -516,14 +516,14 @@ ODM on the other hand is proprietary to each type of NoSQL backend like MongoDB 
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2014/07/has-and-belongs-to-many.png-version1modificationDate1384386077000apiv2.png"><img class="aligncenter size-full wp-image-26758" src="https://strongloop.com/wp-content/uploads/2014/07/has-and-belongs-to-many.png-version1modificationDate1384386077000apiv2.png" alt="has-and-belongs-to-many.png-version=1&modificationDate=1384386077000&api=v2" width="595" height="185" srcset="https://strongloop.com/wp-content/uploads/2014/07/has-and-belongs-to-many.png-version1modificationDate1384386077000apiv2.png 595w, https://strongloop.com/wp-content/uploads/2014/07/has-and-belongs-to-many.png-version1modificationDate1384386077000apiv2-300x93.png 300w, https://strongloop.com/wp-content/uploads/2014/07/has-and-belongs-to-many.png-version1modificationDate1384386077000apiv2-450x140.png 450w" sizes="(max-width: 595px) 100vw, 595px" /></a>
+  <a href="{{site.url}}/blog-assets/2014/07/has-and-belongs-to-many.png-version1modificationDate1384386077000apiv2.png"><img class="aligncenter size-full wp-image-26758" src="{{site.url}}/blog-assets/2014/07/has-and-belongs-to-many.png-version1modificationDate1384386077000apiv2.png" alt="has-and-belongs-to-many.png-version=1&modificationDate=1384386077000&api=v2" width="595" height="185"  /></a>
 </p>
 
 You can define a model declaratively in models.json and you can programmatically define and extend models using the `Model` class.
 
 ## **Data sources and connectors**
 
-[<img class="aligncenter size-full wp-image-26760" src="https://strongloop.com/wp-content/uploads/2014/07/datasource-connector.png-version1modificationDate1384303105000apiv2.png" alt="datasource-connector.png-version=1&modificationDate=1384303105000&api=v2" width="300" height="259" />](https://strongloop.com/wp-content/uploads/2014/07/datasource-connector.png-version1modificationDate1384303105000apiv2.png)
+[<img class="aligncenter size-full wp-image-26760" src="{{site.url}}/blog-assets/2014/07/datasource-connector.png-version1modificationDate1384303105000apiv2.png" alt="datasource-connector.png-version=1&modificationDate=1384303105000&api=v2" width="300" height="259" />]({{site.url}}/blog-assets/2014/07/datasource-connector.png-version1modificationDate1384303105000apiv2.png)
 
 &nbsp;
 
@@ -574,7 +574,7 @@ You can define a model declaratively in models.json and you can programmatically
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2014/07/SL_MicroServices.png"><img class="aligncenter size-full wp-image-26761" src="https://strongloop.com/wp-content/uploads/2014/07/SL_MicroServices.png" alt="SL_MicroServices" width="624px;" height="471px;" srcset="https://strongloop.com/wp-content/uploads/2014/07/SL_MicroServices.png 1530w, https://strongloop.com/wp-content/uploads/2014/07/SL_MicroServices-300x226.png 300w, https://strongloop.com/wp-content/uploads/2014/07/SL_MicroServices-1030x777.png 1030w, https://strongloop.com/wp-content/uploads/2014/07/SL_MicroServices-1500x1131.png 1500w, https://strongloop.com/wp-content/uploads/2014/07/SL_MicroServices-705x532.png 705w, https://strongloop.com/wp-content/uploads/2014/07/SL_MicroServices-450x339.png 450w" sizes="(max-width: 1530px) 100vw, 1530px" /></a>
+  <a href="{{site.url}}/blog-assets/2014/07/SL_MicroServices.png"><img class="aligncenter size-full wp-image-26761" src="{{site.url}}/blog-assets/2014/07/SL_MicroServices.png" alt="SL_MicroServices" width="624px;" height="471px;"  /></a>
 </p>
 
 <p dir="ltr">

@@ -23,7 +23,7 @@ _Then there were these long-running Node processes on our production servers
 Node memory leaks happen. Usually they occur in production where processes experience the weight of their purpose and a mandate for uptime. Thankfully, the core of Node is becoming more and more resilient to leaks. However, between our code and the modules we include, leaks still happen and it’s good to be prepared to handle them.
 
 <div id="attachment_7785" style="width: 584px" class="wp-caption aligncenter">
-  <a href="https://strongloop.com/wp-content/uploads/2013/10/0-N_FfMFoOMR9RRl4T.png"><img class="size-full wp-image-7785" alt="A runaway Node process" src="https://strongloop.com/wp-content/uploads/2013/10/0-N_FfMFoOMR9RRl4T.png" width="574" height="37" /></a>
+  <a href="{{site.url}}/blog-assets/2013/10/0-N_FfMFoOMR9RRl4T.png"><img class="size-full wp-image-7785" alt="A runaway Node process" src="{{site.url}}/blog-assets/2013/10/0-N_FfMFoOMR9RRl4T.png" width="574" height="37" /></a>
   
   <p class="wp-caption-text">
     A runaway Node process
@@ -63,7 +63,7 @@ heapdump.writeSnapshot()
 The second way is to send a **<span style="color: gray;">SIGUSR2</span>** signal to the process (UNIX only):
 
 ```js
-kill -USR2 &lt;pid>
+kill -USR2 <pid>
 ```
 
 Snapshots are written to your current working directory with a timestamp like _heapdump-179641052.37605.heapsnapshot_. There will also be xxxx_.log_ of the same name written containing stats about the heap when the snapshot was taken.
@@ -81,7 +81,7 @@ process.chdir('/path/to/writeable/dir')
 When you have taken a snapshot, load the xxxx_.heapsnapshot_ file into Chrome Dev Tools by heading to the **Profiles** tab, right-clicking the **Profiles** pane and selecting **Load**:
 
 <div id="attachment_7783" style="width: 858px" class="wp-caption aligncenter">
-  <a href="https://strongloop.com/wp-content/uploads/2013/10/0-9NFdFBViTQxhDbBu.png"><img class="size-full wp-image-7783" alt="Right-click Profiles pane in Dev Tools to load a snapshot from disk" src="https://strongloop.com/wp-content/uploads/2013/10/0-9NFdFBViTQxhDbBu.png" width="848" height="436" /></a>
+  <a href="{{site.url}}/blog-assets/2013/10/0-9NFdFBViTQxhDbBu.png"><img class="size-full wp-image-7783" alt="Right-click Profiles pane in Dev Tools to load a snapshot from disk" src="{{site.url}}/blog-assets/2013/10/0-9NFdFBViTQxhDbBu.png" width="848" height="436" /></a>
   
   <p class="wp-caption-text">
     Right-click Profiles pane in Dev Tools to load a snapshot from disk
@@ -91,7 +91,7 @@ When you have taken a snapshot, load the xxxx_.heapsnapshot_ file into Chrome D
 Then, you are able to view the contents using the tools:
 
 <div id="attachment_7784" style="width: 860px" class="wp-caption aligncenter">
-  <a href="https://strongloop.com/wp-content/uploads/2013/10/0-GE1kMwJYjZnOpsjb.png"><img class="size-full wp-image-7784" alt="Heap snapshot tools in Dev Tools" src="https://strongloop.com/wp-content/uploads/2013/10/0-GE1kMwJYjZnOpsjb.png" width="850" height="457" /></a>
+  <a href="{{site.url}}/blog-assets/2013/10/0-GE1kMwJYjZnOpsjb.png"><img class="size-full wp-image-7784" alt="Heap snapshot tools in Dev Tools" src="{{site.url}}/blog-assets/2013/10/0-GE1kMwJYjZnOpsjb.png" width="850" height="457" /></a>
   
   <p class="wp-caption-text">
     Heap snapshot tools in Dev Tools
@@ -130,7 +130,7 @@ var nextMBThreshold = 0 <strong>(1)</strong>
 ```js
 setInterval(function () {
   var memMB = process.memoryUsage().rss / 1048576 <strong>(2)</strong>
-  if (memMB &gt; nextMBThreshold) { <strong>(3)</strong>
+  if (memMB > nextMBThreshold) { <strong>(3)</strong>
     heapdump.writeSnapshot()
     nextMBThreshold += 100
   }

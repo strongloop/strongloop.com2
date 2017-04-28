@@ -23,7 +23,7 @@ First, I&#8217;d like to tell you a little bit about me.
 My dad came home with an Commodore Amiga when I was very young. He brought it home for himself and didn&#8217;t think I&#8217;d take to it. I did, though, and he and my mom both knew I&#8217;d do something with computers after seeing me interact with it. Fun fact: One of my first memories is playing as Mr. Miyagi from _The Karate Kid_ trying to catch a fly with chopsticks.
 
 <div id="attachment_28505" style="width: 307px" class="wp-caption alignright">
-  <a href="https://strongloop.com/wp-content/uploads/2016/12/photo1.png"><img class="wp-image-28505 size-medium" src="https://strongloop.com/wp-content/uploads/2016/12/photo1-297x300.png" alt="photo1" width="297" height="300" srcset="https://strongloop.com/wp-content/uploads/2016/12/photo1-297x300.png 297w, https://strongloop.com/wp-content/uploads/2016/12/photo1-80x80.png 80w, https://strongloop.com/wp-content/uploads/2016/12/photo1-36x36.png 36w, https://strongloop.com/wp-content/uploads/2016/12/photo1-698x705.png 698w, https://strongloop.com/wp-content/uploads/2016/12/photo1-120x120.png 120w, https://strongloop.com/wp-content/uploads/2016/12/photo1-450x454.png 450w, https://strongloop.com/wp-content/uploads/2016/12/photo1.png 734w" sizes="(max-width: 297px) 100vw, 297px" /></a>
+  <a href="{{site.url}}/blog-assets/2016/12/photo1.png"><img class="wp-image-28505 size-medium" src="{{site.url}}/blog-assets/2016/12/photo1-297x300.png" alt="photo1" width="297" height="300"  /></a>
   
   <p class="wp-caption-text">
     Me, when I figured out that Yeoman could generate JavaScript code automatically.

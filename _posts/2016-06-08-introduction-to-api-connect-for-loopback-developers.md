@@ -19,7 +19,7 @@ While LoopBack will continue on as an active open-source framework (that’s not
 
 API Connect offers features to manage the API lifecycle, as demonstrated by the graphic below:
 
-[<img class="aligncenter size-medium wp-image-27535" src="https://strongloop.com/wp-content/uploads/2016/06/API_Connect_Circle_1-300x300.png" alt="API_Connect_Circle_1" width="300" height="300" srcset="https://strongloop.com/wp-content/uploads/2016/06/API_Connect_Circle_1-300x300.png 300w, https://strongloop.com/wp-content/uploads/2016/06/API_Connect_Circle_1-80x80.png 80w, https://strongloop.com/wp-content/uploads/2016/06/API_Connect_Circle_1-36x36.png 36w, https://strongloop.com/wp-content/uploads/2016/06/API_Connect_Circle_1-180x180.png 180w, https://strongloop.com/wp-content/uploads/2016/06/API_Connect_Circle_1-120x120.png 120w, https://strongloop.com/wp-content/uploads/2016/06/API_Connect_Circle_1-150x150.png 150w, https://strongloop.com/wp-content/uploads/2016/06/API_Connect_Circle_1.png 347w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2016/06/API_Connect_Circle_1.png)
+[<img class="aligncenter size-medium wp-image-27535" src="{{site.url}}/blog-assets/2016/06/API_Connect_Circle_1-300x300.png" alt="API_Connect_Circle_1" width="300" height="300"  />]({{site.url}}/blog-assets/2016/06/API_Connect_Circle_1.png)
 
 The [IBM API Connect page](http://www-03.ibm.com/software/products/en/api-connect) provides additional information on these four capabilities:
 
@@ -255,17 +255,17 @@ apic edit
 
 You’ll be presented with a Bluemix login screen:
 
-[<img class="aligncenter size-medium wp-image-27499" src="https://strongloop.com/wp-content/uploads/2016/06/Bluemix-login-300x186.png" alt="Bluemix login" width="300" height="186" srcset="https://strongloop.com/wp-content/uploads/2016/06/Bluemix-login-300x186.png 300w, https://strongloop.com/wp-content/uploads/2016/06/Bluemix-login-450x279.png 450w, https://strongloop.com/wp-content/uploads/2016/06/Bluemix-login.png 511w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2016/06/Bluemix-login.png)
+[<img class="aligncenter size-medium wp-image-27499" src="{{site.url}}/blog-assets/2016/06/Bluemix-login-300x186.png" alt="Bluemix login" width="300" height="186"  />]({{site.url}}/blog-assets/2016/06/Bluemix-login.png)
 
 Login with your Bluemix credentials, or click **Register for IBM Bluemix** to sign up. Once you log in, the API Designer will open in your default browser:
 
-[<img class="aligncenter size-medium wp-image-27501" src="https://strongloop.com/wp-content/uploads/2016/06/API-Designer-browser-300x101.png" alt="API Designer browser" width="300" height="101" srcset="https://strongloop.com/wp-content/uploads/2016/06/API-Designer-browser-300x101.png 300w, https://strongloop.com/wp-content/uploads/2016/06/API-Designer-browser-705x238.png 705w, https://strongloop.com/wp-content/uploads/2016/06/API-Designer-browser-450x152.png 450w, https://strongloop.com/wp-content/uploads/2016/06/API-Designer-browser.png 789w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2016/06/API-Designer-browser.png)
+[<img class="aligncenter size-medium wp-image-27501" src="{{site.url}}/blog-assets/2016/06/API-Designer-browser-300x101.png" alt="API Designer browser" width="300" height="101"  />]({{site.url}}/blog-assets/2016/06/API-Designer-browser.png)
 
 The API Designer editor looks pretty different from StrongLoop Arc, doesn’t it? But it actually does some of the same things. Notice the four main tabs at the top: **Products**, **APIs**, **Models**, and **Data Sources**. You should be familiar with models and data sources from LoopBack; they are the basic building blocks of a LoopBack app, so let’s start there.
 
 Click on **Models**:
 
-[<img class="aligncenter size-medium wp-image-27504" src="https://strongloop.com/wp-content/uploads/2016/06/Click-on-models-300x123.png" alt="Click on models" width="300" height="123" srcset="https://strongloop.com/wp-content/uploads/2016/06/Click-on-models-300x123.png 300w, https://strongloop.com/wp-content/uploads/2016/06/Click-on-models-705x289.png 705w, https://strongloop.com/wp-content/uploads/2016/06/Click-on-models.png 787w, https://strongloop.com/wp-content/uploads/2016/06/Click-on-models-450x185.png 450w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2016/06/Click-on-models.png)
+[<img class="aligncenter size-medium wp-image-27504" src="{{site.url}}/blog-assets/2016/06/Click-on-models-300x123.png" alt="Click on models" width="300" height="123"  />]({{site.url}}/blog-assets/2016/06/Click-on-models.png)
 
 This looks a bit more familiar. These are the three LoopBack models in the app, namely **CoffeeShop**, **Review**, and **Reviewer**. Click on any of them to see the properties in the model and other LoopBack model settings.
 
@@ -277,7 +277,7 @@ _APIs_ simply represent your API definitions as encapsulated with the Swagger (O
 
 Click **APIs**, then click **loopback-getting-started-intermediate** to view its details.
 
-[<img class="aligncenter size-medium wp-image-27506" src="https://strongloop.com/wp-content/uploads/2016/06/click-loopback-getting-started-intermediate-300x232.png" alt="click loopback-getting-started-intermediate" width="300" height="232" srcset="https://strongloop.com/wp-content/uploads/2016/06/click-loopback-getting-started-intermediate-300x232.png 300w, https://strongloop.com/wp-content/uploads/2016/06/click-loopback-getting-started-intermediate-705x545.png 705w, https://strongloop.com/wp-content/uploads/2016/06/click-loopback-getting-started-intermediate-450x348.png 450w, https://strongloop.com/wp-content/uploads/2016/06/click-loopback-getting-started-intermediate.png 784w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2016/06/click-loopback-getting-started-intermediate.png)
+[<img class="aligncenter size-medium wp-image-27506" src="{{site.url}}/blog-assets/2016/06/click-loopback-getting-started-intermediate-300x232.png" alt="click loopback-getting-started-intermediate" width="300" height="232"  />]({{site.url}}/blog-assets/2016/06/click-loopback-getting-started-intermediate.png)
 
 Scroll down the left-hand navigation to browse through all the things you can set in the API definition. Click **Source** in the top bar to view the Swagger source; you’ll see the content of the `loopback-getting-started-intermediate.yaml` file.
 

@@ -60,7 +60,7 @@ paths:
     put:
       tags:
         - note
-      summary: &gt;-
+      summary: >-
         Update an existing model instance or insert a new one into the data
         source.
       operationId: note.upsert
@@ -117,19 +117,19 @@ Now let&#8217;s reverse it. If you have an existing Swagger document, you can im
 
 This command is more interactive than the previous one. When you run it, it will ask for either a URL or relative file:
 
-<img class="aligncenter size-full wp-image-27891" src="https://strongloop.com/wp-content/uploads/2016/08/sw1.jpg" alt="sw1" width="460" height="52" srcset="https://strongloop.com/wp-content/uploads/2016/08/sw1.jpg 460w, https://strongloop.com/wp-content/uploads/2016/08/sw1-300x34.jpg 300w, https://strongloop.com/wp-content/uploads/2016/08/sw1-450x51.jpg 450w" sizes="(max-width: 460px) 100vw, 460px" />
+<img class="aligncenter size-full wp-image-27891" src="{{site.url}}/blog-assets/2016/08/sw1.jpg" alt="sw1" width="460" height="52"  />
 
 After you&#8217;ve specified what Swagger definition you want to use, it will scan it and determine what models can be generated from it:
 
-<img class="aligncenter size-full wp-image-27892" src="https://strongloop.com/wp-content/uploads/2016/08/sw2.jpg" alt="sw2" width="604" height="113" srcset="https://strongloop.com/wp-content/uploads/2016/08/sw2.jpg 604w, https://strongloop.com/wp-content/uploads/2016/08/sw2-300x56.jpg 300w, https://strongloop.com/wp-content/uploads/2016/08/sw2-450x84.jpg 450w" sizes="(max-width: 604px) 100vw, 604px" />
+<img class="aligncenter size-full wp-image-27892" src="{{site.url}}/blog-assets/2016/08/sw2.jpg" alt="sw2" width="604" height="113"  />
 
 You&#8217;ll then be prompted to select a data source to associate with the models:
 
-<img class="aligncenter size-full wp-image-27893" src="https://strongloop.com/wp-content/uploads/2016/08/sw3.jpg" alt="sw3" width="631" height="80" srcset="https://strongloop.com/wp-content/uploads/2016/08/sw3.jpg 631w, https://strongloop.com/wp-content/uploads/2016/08/sw3-300x38.jpg 300w, https://strongloop.com/wp-content/uploads/2016/08/sw3-450x57.jpg 450w" sizes="(max-width: 631px) 100vw, 631px" />
+<img class="aligncenter size-full wp-image-27893" src="{{site.url}}/blog-assets/2016/08/sw3.jpg" alt="sw3" width="631" height="80"  />
 
 When you&#8217;ve selected that, the tool will take over and give you a log of what it has done:
 
-<img class="aligncenter size-full wp-image-27894" src="https://strongloop.com/wp-content/uploads/2016/08/sw4.jpg" alt="sw4" width="650" height="224" srcset="https://strongloop.com/wp-content/uploads/2016/08/sw4.jpg 650w, https://strongloop.com/wp-content/uploads/2016/08/sw4-300x103.jpg 300w, https://strongloop.com/wp-content/uploads/2016/08/sw4-450x155.jpg 450w" sizes="(max-width: 650px) 100vw, 650px" />
+<img class="aligncenter size-full wp-image-27894" src="{{site.url}}/blog-assets/2016/08/sw4.jpg" alt="sw4" width="650" height="224"  />
 
 One thing you may miss it in the output above: the tool generates models in the `server/models` folder, not the `common/models` folder. You could move them if you want.
 

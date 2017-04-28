@@ -11,7 +11,7 @@ categories:
 ---
 ## Getting Started with LoopBack on Cloud Foundry
 
-[<img class="alignnone size-medium wp-image-19068" alt="cloud_foundry_logo" src="https://strongloop.com/wp-content/uploads/2013/09/cloud_foundry_logo-300x300.png" width="300" height="300" />](https://strongloop.com/wp-content/uploads/2013/09/cloud_foundry_logo.png)
+[<img class="alignnone size-medium wp-image-19068" alt="cloud_foundry_logo" src="{{site.url}}/blog-assets/2013/09/cloud_foundry_logo-300x300.png" width="300" height="300" />]({{site.url}}/blog-assets/2013/09/cloud_foundry_logo.png)
 
 <span style="font-size: 13px;">Most mobile developers want to focus on the front-end of their apps and not get caught up in having to figure out how to write a backend, connect it to data sources or worse how to manage and scale it. By deploying StrongLoop’s </span><a style="font-size: 13px;" href="http://strongloop.com/strongloop-suite/loopback/">LoopBack</a> <span style="font-size: 13px;">mobile backend-as-a-service (</span><a style="font-size: 13px;" href="http://en.wikipedia.org/wiki/Backend_as_a_service">mBaaS</a><span style="font-size: 13px;">) on </span><a style="font-size: 13px;" href="http://www.cloudfoundry.com/">Cloud Foundry</a> <span style="font-size: 13px;">it’s possible to take advantage of an open, private mBaaS on an open and scalable platform-as-a-service.</span>
 
@@ -84,7 +84,7 @@ categories:
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2013/09/StrongLoop-Web-Downloads.png"><img class="alignnone size-full wp-image-7322" alt="StrongLoop-Web-Downloads" src="https://strongloop.com/wp-content/uploads/2013/09/StrongLoop-Web-Downloads.png" width="443" height="242" /></a>
+  <a href="{{site.url}}/blog-assets/2013/09/StrongLoop-Web-Downloads.png"><img class="alignnone size-full wp-image-7322" alt="StrongLoop-Web-Downloads" src="{{site.url}}/blog-assets/2013/09/StrongLoop-Web-Downloads.png" width="443" height="242" /></a>
 </p>
 
 <p dir="ltr">
@@ -124,7 +124,7 @@ $slc install`
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2013/09/LoopBack-Explorer-Products-Post.png"><img class="alignnone  wp-image-7313" alt="LoopBack-Explorer-Products-Post" src="https://strongloop.com/wp-content/uploads/2013/09/LoopBack-Explorer-Products-Post.png" width="478" height="317" /></a>
+  <a href="{{site.url}}/blog-assets/2013/09/LoopBack-Explorer-Products-Post.png"><img class="alignnone  wp-image-7313" alt="LoopBack-Explorer-Products-Post" src="{{site.url}}/blog-assets/2013/09/LoopBack-Explorer-Products-Post.png" width="478" height="317" /></a>
 </p>
 
 <p dir="ltr">
@@ -147,13 +147,13 @@ _adapter = [LBRESTAdapter adapterWithURL:[NSURL URLWithString:@&#8221;http://loc
 
 Hit command R in XCode and walk through the walk the guide application instructions.
 
-[<img class="alignnone size-full wp-image-7326" alt="Sample-getting-started-ios-all" src="https://strongloop.com/wp-content/uploads/2013/09/Sample-getting-started-ios-all.png" width="501" height="238" />](https://strongloop.com/wp-content/uploads/2013/09/Sample-getting-started-ios-all.png)
+[<img class="alignnone size-full wp-image-7326" alt="Sample-getting-started-ios-all" src="{{site.url}}/blog-assets/2013/09/Sample-getting-started-ios-all.png" width="501" height="238" />]({{site.url}}/blog-assets/2013/09/Sample-getting-started-ios-all.png)
 
 &nbsp;
 
 If you would like to find some more examples on how to integrate native iOS applications with LoopBack make sure and check out the <a href="http://github.com/strongloop-community/loopback-examples-ios" target="_blank">http://github.com/strongloop-community/loopback-examples-ios</a> , where you will find a UITableView, MapView and custom method call samples.
 
-[<img class="alignnone size-full wp-image-7327" alt="sample-examples-ios-all" src="https://strongloop.com/wp-content/uploads/2013/09/sample-examples-ios-all.png" width="380" height="223" />](https://strongloop.com/wp-content/uploads/2013/09/sample-examples-ios-all.png)
+[<img class="alignnone size-full wp-image-7327" alt="sample-examples-ios-all" src="{{site.url}}/blog-assets/2013/09/sample-examples-ios-all.png" width="380" height="223" />]({{site.url}}/blog-assets/2013/09/sample-examples-ios-all.png)
 
 If you are using a cross platform mobile tool such as Appcelerator Titanium ( javascript) or Xamarin ( c# )  make sure and check out our other examples at [github.com/strongloop-community](http://github.com/strongloop-community) .
 

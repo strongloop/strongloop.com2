@@ -20,7 +20,7 @@ To add a navigation control to your app:
   2. Click **Editor > Embed In > Navigation Controller**. This will add a Navigation Item under the Books Collection View Controller, as shown below.
   3. Select the new Navigation Item and name it &#8220;Books Collection&#8221; in the attribute inspector.
 
-[<img class="alignnone size-medium wp-image-19123" alt="navigation" src="https://strongloop.com/wp-content/uploads/2014/03/navigation-300x188.png" width="300" height="188" />](https://strongloop.com/wp-content/uploads/2014/03/navigation.png)
+[<img class="alignnone size-medium wp-image-19123" alt="navigation" src="{{site.url}}/blog-assets/2014/03/navigation-300x188.png" width="300" height="188" />]({{site.url}}/blog-assets/2014/03/navigation.png)
   
 <!--more-->
 
@@ -33,7 +33,7 @@ To add the interface elements that enable a user to add a book:
   3. In the attribute inspector change **Identifier** to **Add**, as shown below.
   4. Right click the Add bar button and Control-drag the circle next to action to the Books Collection View Controller. Select &#8216;modal&#8217; as action.
 
-[<img class="alignnone size-medium wp-image-19124" alt="Modal" src="https://strongloop.com/wp-content/uploads/2014/03/Modal-300x187.png" width="300" height="187" />](https://strongloop.com/wp-content/uploads/2014/03/Modal.png)
+[<img class="alignnone size-medium wp-image-19124" alt="Modal" src="{{site.url}}/blog-assets/2014/03/Modal-300x187.png" width="300" height="187" />]({{site.url}}/blog-assets/2014/03/Modal.png)
 
 ## **Add another View Controller**
 
@@ -42,7 +42,7 @@ When the user clicks the &#8220;+&#8221; button you want the app to show a scree
   1. Drag a **View Controller** element from the Object Library into the storyboard.
   2. Name this View Controller &#8220;Add Book&#8221;.
   
-    [<img class="alignnone size-medium wp-image-19125" alt="AddBook" src="https://strongloop.com/wp-content/uploads/2014/03/AddBook-300x188.png" width="300" height="188" />](https://strongloop.com/wp-content/uploads/2014/03/AddBook.png)
+    [<img class="alignnone size-medium wp-image-19125" alt="AddBook" src="{{site.url}}/blog-assets/2014/03/AddBook-300x188.png" width="300" height="188" />]({{site.url}}/blog-assets/2014/03/AddBook.png)
   3. Now connect the &#8220;+&#8221; button from the Books Collection View Controller to this screen: Control-dragg the &#8220;+&#8221; button from the **Books Collection View Controller** to the** Add Books View Controller**. This creates a segue.
   4. Select **modal** as segue type.
   5. Implement the segue action by adding the following code to `ViewController.m`:
@@ -83,7 +83,7 @@ Add a Done and Cancel button to the Add Books screen as follows:
   5. Select **unwindToList** as **Segue Action**.
   6. Repeat the above two steps for the **Cancel** button.
 
-.[<img class="alignnone size-medium wp-image-19126" alt="Addbook cancel" src="https://strongloop.com/wp-content/uploads/2014/03/Addbook-cancel-300x188.png" width="300" height="188" />](https://strongloop.com/wp-content/uploads/2014/03/Addbook-cancel.png)
+.[<img class="alignnone size-medium wp-image-19126" alt="Addbook cancel" src="{{site.url}}/blog-assets/2014/03/Addbook-cancel-300x188.png" width="300" height="188" />]({{site.url}}/blog-assets/2014/03/Addbook-cancel.png)
 
 <strong style="font-size: 1.5em;">Add new class files</strong>
 
@@ -98,11 +98,11 @@ Add a new class for the Add Book ViewController as follows:
 
 Connect the AddNewBookViewController class to the View Controller for Add New Book.
 
-[<img class="alignnone size-medium wp-image-19127" alt="Class" src="https://strongloop.com/wp-content/uploads/2014/03/Class-300x188.png" width="300" height="188" />](https://strongloop.com/wp-content/uploads/2014/03/Class.png)
+[<img class="alignnone size-medium wp-image-19127" alt="Class" src="{{site.url}}/blog-assets/2014/03/Class-300x188.png" width="300" height="188" />]({{site.url}}/blog-assets/2014/03/Class.png)
 
 Add Text Fields from the Object Library to the Add View Screen. Add one Text Field for each of the five properties: title, author, description, totalPages and genre. Your screen should look like the screenshot below:
 
-[<img class="alignnone size-medium wp-image-19128" alt="title" src="https://strongloop.com/wp-content/uploads/2014/03/title-300x188.png" width="300" height="188" />](https://strongloop.com/wp-content/uploads/2014/03/title.png)
+[<img class="alignnone size-medium wp-image-19128" alt="title" src="{{site.url}}/blog-assets/2014/03/title-300x188.png" width="300" height="188" />]({{site.url}}/blog-assets/2014/03/title.png)
 
 To connect the Text fields to your view controller:
 
@@ -113,7 +113,7 @@ In the dialog that appears, for Name, type &#8220;titleField.&#8221;
 
 Leave the rest of the options as they are. Your screen should look like this:
 
-[<img class="alignnone size-medium wp-image-19129" alt="titleField" src="https://strongloop.com/wp-content/uploads/2014/03/titleField-300x190.png" width="300" height="190" />](https://strongloop.com/wp-content/uploads/2014/03/titleField.png)
+[<img class="alignnone size-medium wp-image-19129" alt="titleField" src="{{site.url}}/blog-assets/2014/03/titleField-300x190.png" width="300" height="190" />]({{site.url}}/blog-assets/2014/03/titleField.png)
 
 Do the same for the other text fields.
 
@@ -123,7 +123,7 @@ To connect the Done button to your view controller:
   2. Control-drag from the Done button on your canvas to the code display in the editor on the right, stopping the drag at the line just below your `textField` properties in `AddNewBookViewController<code>.m`</code>.
   3. In the dialog that appears, for Name, type &#8220;doneButton.&#8221;Leave the rest of the options as they are. Your dialog should look like this:
 
-[<img class="alignnone size-medium wp-image-19130" alt="Done" src="https://strongloop.com/wp-content/uploads/2014/03/Done-300x188.png" width="300" height="188" />](https://strongloop.com/wp-content/uploads/2014/03/Done.png)
+[<img class="alignnone size-medium wp-image-19130" alt="Done" src="{{site.url}}/blog-assets/2014/03/Done-300x188.png" width="300" height="188" />]({{site.url}}/blog-assets/2014/03/Done.png)
 
 &nbsp;
 
@@ -168,7 +168,7 @@ Now add functionality to the class to save the book when the user adds one:
         [messageAlert show];
     };
     if (sender != self.doneButton) return;
-    if (self.titleField.text.length &gt; 0) {
+    if (self.titleField.text.length > 0) {
         NSLog(@"%@",self.titleField.text);
         LBModelRepository *newBook = [[AppDelegate adapter] repositoryWithModelName:prototypeName];
         //create new LBModel of type

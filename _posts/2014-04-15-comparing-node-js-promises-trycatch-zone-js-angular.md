@@ -114,7 +114,7 @@ categories:
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2014/04/not-useful.gif"><img class="aligncenter size-medium wp-image-27790" src="https://strongloop.com/wp-content/uploads/2014/04/not-useful-300x169.gif" alt="not useful" width="300" height="169" /></a>
+  <a href="{{site.url}}/blog-assets/2014/04/not-useful.gif"><img class="aligncenter size-medium wp-image-27790" src="{{site.url}}/blog-assets/2014/04/not-useful-300x169.gif" alt="not useful" width="300" height="169" /></a>
 </p>
 
 <p dir="ltr">

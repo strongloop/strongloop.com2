@@ -16,7 +16,7 @@ If our goal is to map a sequence of events over time (file creation or modificat
 
 This post loosely follows the demo project [here](https://github.com/Sequoia/rx-static-blog-example/blob/master/index.js), so if you prefer to look at all the code at once (or run it) you can do so.
 
-## What is RX.js {#what-is-rx-js}
+## What is RX.js 
 
 Observables can be confusing so reading [a more detailed intro](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) is advisable. I&#8217;ll give a simplified explanation of Observables that is inadequate to understand them fully, but will hopefully be enough for this blog post!
 
@@ -72,17 +72,17 @@ const o = Rx.Observable.create(function subscribe(subscriber) {
 When you want to use the results of a Promise, you attach a function via `.then`. With an Observable, when you wish to use the results to produce side effects, you attach an &#8220;Observer&#8221; via `.subscribe`:
 
 ```js
-myPromise.then(foo =&gt; console.log('foo is %s', foo))
- .catch(e =&gt; console.error(e));
+myPromise.then(foo => console.log('foo is %s', foo))
+ .catch(e => console.error(e));
 
 myObservable.subscribe({
-  next: foo =&gt; console.log('next foo is %s', foo),
-  error: e =&gt; console.error(e),
-  complete: () =&gt; console.log('All done! No more foo.')
+  next: foo => console.log('next foo is %s', foo),
+  error: e => console.error(e),
+  complete: () => console.log('All done! No more foo.')
 })
 ```
 
-### Observers and Subscribers {#observers-and-subscribers}
+### Observers and Subscribers 
 
 In the style of programming with Observables that RX.js allows, tasks are often conceptualized as being composed of two parts: Observables (inputs), and Subscriptions or side effects (outputs). Side effects describe what you want to ultimately _do_ with the values from an observable.
 
@@ -104,7 +104,7 @@ The Observables we can map to each of these goals are:
 
 Each of these two Observables will be composed of or created as a result of other Observables. As we build these up, we&#8217;ll learn about different methods Rx.js has for creating and transforming Observables. Let&#8217;s begin!
 
-## Goal 1: Write Posts {#goal-1-write-posts}
+## Goal 1: Write Posts 
 
 We know each of our Observables should emit based on file changes and additions, so we&#8217;ll start by creating an Observable of file changes and additions called `changesAndAdditions$`. The [`chokidar`](https://github.com/paulmillr/chokidar) module can be used to create an event emitter that emits `change` and `add` events on filesystem changes, so let&#8217;s start there:
 
@@ -128,7 +128,7 @@ Now `newFiles$` will emit a new value (a filename) when `dirWatcher` emits an `a
 const changesAndAdditions$ = newFiles$.merge(changedFiles$);
 ```
 
-### Mapping Filename to File Contents {#mapping-filename-to-file-contents}
+### Mapping Filename to File Contents 
 
 To get the file contents, we can `.map` the name of the file to the contents of that file by using a function that reads files. But reading a file (typically) an asynchronous operation. If we were using Promises, we might write a function that takes a filename and returns a Promise that will emit the file contents. Similarly, using Observables, we use a function that takes a filename and returns an Observable that will emit the file&#8217;s contents.
 
@@ -140,10 +140,10 @@ const readFileAsObservable = Rx.Observable.bindNodeCallback(fs.readFile);
 
 const fileContents$ = changesAndAdditions$
   .map(readFileAsObservable) // map filename observable of file contents
-  .mergeAll();               // Unwrap Observable&lt;"file contents"&gt; to get "file contents"
+  .mergeAll();               // Unwrap Observable<"file contents"> to get "file contents"
 
 fileContents$
-  .subscribe(content =&gt; console.log(content)); // log contents of each file
+  .subscribe(content => console.log(content)); // log contents of each file
 ```
 
 Now we&#8217;ll log the contents of each file as it is created or changed. Let&#8217;s take a closer look at our use of `.mergeAll`: `readFileAsObservable` is a function that takes a `String` (filename) as input and returns an `Observable<String>` (an observable of the &#8220;file contents&#8221; string).
@@ -154,7 +154,7 @@ We don&#8217;t actually want an _Observable_ of file contents, we want **filenam
 
 _NB: Mapping a value to an observable then unwrapping that inner observable as we&#8217;ve done here is an extremely common operation in Rx.js, and can be achieved using the [`.mergeMap(fn)`](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeMap) shorthand, which is the equivalent of `.map(fn).mergeAll()`._
 
-### Emitting Only When Contents is Changed {#emitting-only-when-contents-is-changed}
+### Emitting Only When Contents is Changed 
 
 When our script starts, `newFiles$` will emit each filename once when `chokidar` first scans our `_posts` directory, and this will be merged into `changesAndAdditions$`. While editing a post in your text editor, each time you &#8220;save&#8221; the Markdown file, `changedFiles$` will emit the filename, _regardless of whether the contents of the file actually changed_. If you hit `^S` ten times in a row, `changesAndAdditions$` will emit that filename 10 times and we&#8217;ll read the file 10 times.
 
@@ -163,7 +163,7 @@ If the file contents hasn&#8217;t changed, we don&#8217;t want to send it down t
 ```js
 const latestFileContents$ = fileContents$.distinctUntilChanged();
 
-latestFileContents$.subscribe(content =&gt; console.log(content));
+latestFileContents$.subscribe(content => console.log(content));
 ```
 
 Now we&#8217;ll only see file contents logged if it&#8217;s different from the last contents that were emitted. There&#8217;s a logic problem here, however. Consider the following scenario:
@@ -199,19 +199,19 @@ Because we want one observable of file changes _per file_, we must perform the &
 
 ```js
 // for each added file...  
-const latestFileContents$ = newFiles$.map(addedName =&gt; {
+const latestFileContents$ = newFiles$.map(addedName => {
 
   // 1. create Observable of file changes...
   const singleFileChangesAndAdditions$ = changedFiles$
   // ...only taking those for THIS file
-    .filter(changedName =&gt; changedName === addedName)
+    .filter(changedName => changedName === addedName)
   // 2. emit filename once to start (on "add")
     .startWith(addedName);
 
   const singleFileLatestContents$ = singleFileChangesAndAdditions$
   // 3. map the filename to an observable of the file contents
-    .map(filename =&gt; readFileAsObservable(filename, 'utf-8'))
-  // 4. Merge the Observable&lt;Observable&gt; to Observable
+    .map(filename => readFileAsObservable(filename, 'utf-8'))
+  // 4. Merge the Observable<Observable> to Observable
     .mergeAll()
   // 5. don't emit unless the file contents actually changed
     .distinctUntilChanged();
@@ -232,7 +232,7 @@ Because we go `Observable<String>` to `Observable<Observable<String>>` twice, we
 
 Since we have one `singleFileChangesAndAdditions$` observable _per file added_, we are able to perform the &#8220;map filename to contents and compare with last value&#8221; check _per file_. `latestFileContents$` can still be consumed as it was before.
 
-### Templating and Writing HTML to Disk {#templating-and-writing-html-to-disk}
+### Templating and Writing HTML to Disk 
 
 That was a lot, but it&#8217;s the bulk of the Rx.js logic for our &#8220;write blog posts&#8221; goal. Now that we have an Observable that emits the contents of our Markdown blog posts each time they change, we can map that over our frontmatter, markdown parsing, template, and write-to-disk functions much as we did before with Promises. We&#8217;ll start by creating a few utility functions as before:
 
@@ -265,7 +265,7 @@ function writePost(post){
   var outfile = path.join(__dirname, 'out', `${post.slug}.html`);
   writeFileAsObservable(outfile, post.rendered)
     .subscribe({
-      next: () =&gt; console.log('wrote ' + outfile),
+      next: () => console.log('wrote ' + outfile),
       error: console.error
     });
 }
@@ -285,11 +285,11 @@ latestFileContents$
 
 Now we have a working, Rx.js version of our Static Site Generator that does the same as it did with Promises, but with built-in file watch and rebuild!
 
-<img class="aligncenter" src="https://strongloop.com/wp-content/uploads/2016/11/rx-post-writer.gif" alt="animated gif illustrating running application live-updating output HTML on markdown edits" />
+<img class="aligncenter" src="{{site.url}}/blog-assets/2016/11/rx-post-writer.gif" alt="animated gif illustrating running application live-updating output HTML on markdown edits" />
 
 On to our next goal, the index page&#8230;
 
-## Goal 2: Write Index Page with Latest Post Metadata {#goal-2-write-index-page-with-latest-post-metadata}
+## Goal 2: Write Index Page with Latest Post Metadata 
 
 Our index page template, `index.pug`:
 
@@ -318,7 +318,7 @@ The data our template expects must be structured thus:
 }
 ```
 
-### An Observable of Post Metadata {#an-observable-of-post-metadata}
+### An Observable of Post Metadata 
 
 Earlier, we mapped the `latestFileContents$` over the `frontmatter` function. We need to use that Observable for our index page as well, so let&#8217;s modify our code from above to capture that Observable and set it aside:
 
@@ -362,7 +362,7 @@ When post two is updated and saved, its metadata will be sent to `.scan` again, 
 }
 ```
 
-### Transforming the Data for Pug. {#transforming-the-data-for-pug-}
+### Transforming the Data for Pug. 
 
 We now have an object with an entry for each post, but this does not match the format we outlined above (`{ posts : [ post, post, post ] }`). In the next two steps we can transform the object into an array and then insert it into a wrapper object:
 
@@ -384,7 +384,7 @@ const indexTemplateData$ = metadataMap$
   })
 ```
 
-### Reducing Repetition and Noise {#reducing-repetition-and-noise}
+### Reducing Repetition and Noise 
 
 Now we get have an Observable that emits the latest listing of post metadata, formatted for the `index.pug` template, on each add or change event. This isn&#8217;t quite what we want, however, for two reasons.
 
@@ -416,7 +416,7 @@ const distinctDebouncedITD$ = distinctITD$
 
 This probably isn&#8217;t _the_ most graceful solution, but when `indexTemplateData$` gets its initial flood of emissions, `distinctDebouncedITD$` will only emit once, once it&#8217;s finished.
 
-### Writing the Index Page {#writing-the-index-page}
+### Writing the Index Page 
 
 The only thing left is to pass the values from `distinctDebouncedITD$` to the template rendering function then write the results to disk:
 
@@ -427,7 +427,7 @@ function writeIndexPage(indexPage){
   var outfile = path.join(__dirname, 'out', 'index.html');
   writeFileAsObservable(outfile, indexPage)
     .subscribe({
-      next: () =&gt; console.log('wrote ' + outfile),
+      next: () => console.log('wrote ' + outfile),
       error: console.error
     });
 }
@@ -439,10 +439,10 @@ postsListing$
 
 Now `index.html` will be rewritten when we edit a post, but _only if the metadata changed_:
 
-<img class="aligncenter" src="https://strongloop.com/wp-content/uploads/2016/11/rx-index-writer.gif" alt="animated gif illustrating running application live-updating index page but only with metadata changes" />
+<img class="aligncenter" src="{{site.url}}/blog-assets/2016/11/rx-index-writer.gif" alt="animated gif illustrating running application live-updating index page but only with metadata changes" />
 
 That&#8217;s it!
 
-## Conclusion and Next Steps {#conclusion-and-next-steps}
+## Conclusion and Next Steps 
 
 If you made it this far, congratulations! My goal was not to explain each Rx.js concept introduced herein in detail, but to walk through the process of using Rx.js to complete a real-world programming task. I hope this was useful! If this post has piqued your interest, I highly recommend running the full version of the code this post was based on, which you can find in [this repository](https://github.com/Sequoia/rx-static-blog-example). As always, if you have any questions or Rx.js corrections please feel free to [contact me](https://twitter.com/_sequoia). Happy coding!

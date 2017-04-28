@@ -13,7 +13,7 @@ _**Editor&#8217;s Note:** This month we are introducing you to IBM’s StrongLoo
 Ten things about Erin McKean, who joined the StrongLoop/IBM team back in October:
 
 <div id="attachment_28609" style="width: 310px" class="wp-caption aligncenter">
-  <a href="https://strongloop.com/wp-content/uploads/2017/01/erin.jpeg"><img class="wp-image-28609 size-medium" title="picture credit: CC-BY George Hall" src="https://strongloop.com/wp-content/uploads/2017/01/erin-300x240.jpeg" alt="erin" width="300" height="240" srcset="https://strongloop.com/wp-content/uploads/2017/01/erin-300x240.jpeg 300w, https://strongloop.com/wp-content/uploads/2017/01/erin-768x614.jpeg 768w, https://strongloop.com/wp-content/uploads/2017/01/erin-705x564.jpeg 705w, https://strongloop.com/wp-content/uploads/2017/01/erin-450x360.jpeg 450w, https://strongloop.com/wp-content/uploads/2017/01/erin.jpeg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/blog-assets/2017/01/erin.jpeg"><img class="wp-image-28609 size-medium" title="picture credit: CC-BY George Hall" src="{{site.url}}/blog-assets/2017/01/erin-300x240.jpeg" alt="erin" width="300" height="240"  /></a>
   
   <p class="wp-caption-text">
     picture credit: CC-BY George Hall

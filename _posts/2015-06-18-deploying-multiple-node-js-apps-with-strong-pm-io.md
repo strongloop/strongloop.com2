@@ -12,7 +12,7 @@ categories:
 ---
 We recently introduced [Strongloop Process Manager](https://strongloop.com/strongblog/node-js-process-manager-cluster-load-balancer/) and how to build, deploy and manage your processes in production. Since then, StrongLoop has been working to take StrongLoop PM to its its next level. In our series of ongoing incremental improvements, here is the newest addition: the ability to deploy multiple apps with process manager to handle real-world deployment scenarios.
 
-<img class="aligncenter size-full wp-image-25323" src="https://strongloop.com/wp-content/uploads/2015/06/Screen-Shot-2015-06-17-at-2.48.37-PM.png" alt="Screen Shot 2015-06-17 at 2.48.37 PM" width="700" height="352" srcset="https://strongloop.com/wp-content/uploads/2015/06/Screen-Shot-2015-06-17-at-2.48.37-PM.png 700w, https://strongloop.com/wp-content/uploads/2015/06/Screen-Shot-2015-06-17-at-2.48.37-PM-300x151.png 300w, https://strongloop.com/wp-content/uploads/2015/06/Screen-Shot-2015-06-17-at-2.48.37-PM-450x226.png 450w" sizes="(max-width: 700px) 100vw, 700px" />
+<img class="aligncenter size-full wp-image-25323" src="{{site.url}}/blog-assets/2015/06/Screen-Shot-2015-06-17-at-2.48.37-PM.png" alt="Screen Shot 2015-06-17 at 2.48.37 PM" width="700" height="352"  />
 
 While conceptually simple, going multi-app affects everything. The status output, the deploy and control commands, all need to be extended so it’s possible to qualify the app to which the command applies. So here’s a quick walk-through of the changes to the commands. This blog assumes that you are all already familiar with StrongLoop PM and its tools, if not, see <http://strong-pm.io/prod>.
 

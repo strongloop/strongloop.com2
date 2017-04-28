@@ -113,19 +113,19 @@ Karma isn&#8217;t just useful for testing isolated JavaScript. With [ngScenario]
 Suppose you want to test [the following page](https://github.com/vkarpov15/karma-demo/blob/master/lib/sample.html), which uses the `sample.js` file from the previous section to display the number &#8220;42&#8221; on the page.
 
 ```js
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;script type="text/javascript" src="/sample.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript"&gt;
+<html>
+  <head>
+    <script type="text/javascript" src="/sample.js"></script>
+    <script type="text/javascript">
       function onLoad() {
         document.getElementById('content').innerHTML = theAnswer();
       }
-    &lt;/script&gt;
-  &lt;/head&gt;
-  &lt;body onload="onLoad()"&gt;
-    &lt;div id="content"&gt;&lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+    </script>
+  </head>
+  <body onload="onLoad()">
+    <div id="content"></div>
+  </body>
+</html>
 ```
 
 In order to serve this page and the `sample.js` file, you need an HTTP server. You can put together a simple one using [express](https://www.npmjs.com/package/express) as shown below.
@@ -330,7 +330,7 @@ module.exports = function(config) {
 This is all you need to do. Karma handles setting up an SSH tunnel for you, so the Sauce browser can make real requests to your local server.
 
 ```js
-$ env SAUCE_USERNAME=&lt;username here&gt; env SAUCE_ACCESS_KEY=&lt;API key here&gt; ./node_modules/karma/bin/karma start test/karma.sauce.conf.js 
+$ env SAUCE_USERNAME=<username here> env SAUCE_ACCESS_KEY=<API key here> ./node_modules/karma/bin/karma start test/karma.sauce.conf.js 
 WARN [proxy]: proxy "http://localhost:3000" normalized to "http://localhost:3000/"
 WARN [karma]: Port 8080 in use
 INFO [karma]: Karma v0.12.31 server started at http://localhost:8081/__karma__/

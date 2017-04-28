@@ -16,7 +16,7 @@ StrongLoop is excited to announce a new version of the LoopBack Android SDK 1.3.
 
 What’s [LoopBack](http://loopback.io)? It’s an open-source API server for Node.js applications. It enables mobile apps to connect to enterprise data through models that use pluggable [data sources and connectors](http://docs.strongloop.com/display/LB/Data+sources+and+connectors). Connectors provide connectivity to backend systems such as databases. Models are in turn exposed to mobile devices through REST APIs and client SDKs.
 
-## **User authentication** {#What'snewinLoopBackAndroidSDK1.3-Userauthentication}
+## **User authentication** 
 
 User authentication and authorization are important for many applications.  The LoopBack Android SDK provides classes that make it easy to connect an Android client app to a server application using LoopBack&#8217;s authentication and authorization model: <a href="http://apidocs.strongloop.com/loopback-android/api/index.html?com/strongloop/android/loopback/User.html" rel="nofollow">User</a>, that represents on the client a user instance on the server, and <a href="http://apidocs.strongloop.com/loopback-android/api/index.html?com/strongloop/android/loopback/UserRepository.html" rel="nofollow">UserRepository</a>.
 
@@ -26,14 +26,14 @@ To get started:<!--more-->
   <span style="font-size: 18px;">Enable authentication in your loopback server as described in the <a href="http://docs.strongloop.com/display/LB/Access+control+tutorial">Access control tutorial</a>.</span>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Create an instance of <code>UserRepository&lt;User&gt;</code>: </span>
+  <span style="font-size: 18px;">Create an instance of <code>UserRepository<User></code>: </span>
 </li>
 
 ```js
 RestAdapter restAdapter = // get the global adapter object
 
-UserRepository&lt;User&gt; userRepo =
-    restAdapter.createRepository(UserRepository&lt;User&gt;.class);
+UserRepository<User> userRepo =
+    restAdapter.createRepository(UserRepository<User>.class);
 ```
 
 <li style="margin-left: 2em;">
@@ -41,7 +41,7 @@ UserRepository&lt;User&gt; userRepo =
 </li>
 
 ```js
-userRepo.findCurrentUser(new ObjectCallback&lt;User&gt;() {
+userRepo.findCurrentUser(new ObjectCallback<User>() {
 
  @Override public void onSuccess(User user) {
         if (user != null) {
@@ -60,7 +60,7 @@ userRepo.findCurrentUser(new ObjectCallback&lt;User&gt;() {
 ```js
 userRepo.loginUser("user@example.com", "password",
 
- new UserRepository&lt;User&gt;.LoginCallback() {
+ new UserRepository<User>.LoginCallback() {
         @Override public void onSuccess(AccessToken token, User user) {
             // user was logged in
         }
@@ -87,7 +87,7 @@ if (currentUser != null) {
 
 Refer to the LoopBack Android SDK <a href="http://docs.strongloop.com/display/LB/Android+SDK#AndroidSDK-Usersandauthentication" rel="nofollow">documentation</a> for more information.
 
-## **Working with files** {#What'snewinLoopBackAndroidSDK1.3-Workingwithfiles}
+## **Working with files** 
 
 SDK version 1.3 adds support for working with files using the <a href="http://docs.strongloop.com/display/LB/Storage+service" rel="nofollow">LoopBack storage service</a>.  The storage service makes it easy to upload and download files to cloud storage providers and the server local file system. It supports the following providers:
 
@@ -109,7 +109,7 @@ SDK version 1.3 adds support for working with files using the <a href="http://d
 
 Let&#8217;s illustrate the client API on a hypothetical application for submitting insurance claims. To submit a claim, one has to attach documents proving the validity of the claim, such as pictures of the damaged property.
 
-## **Solution design** {#What'snewinLoopBackAndroidSDK1.3-Solutiondesign}
+## **Solution design** 
 
 The LoopBack server will track claims using a `Claim` model. Supporting documents will be stored in a storage service.  There will be one container for every claim record.
 
@@ -117,14 +117,14 @@ The Android application will enable user to view documents attached to a claim a
 
 Refer to the blog post <a href="http://strongloop.com/strongblog/managing-nodejs-loopback-storage-service-provider/" rel="nofollow">Managing Objects in LoopBack with the Storage Provider of Your Choice</a> for instructions on how to setup storage service in your LoopBack application.
 
-## **Creating a new claim** {#What'snewinLoopBackAndroidSDK1.3-Creatinganewclaim}
+## **Creating a new claim** 
 
 To avoid extra checks further down the line, the app will create the container when the user enters a new claim in the system as shown below:
 
 ```js
 ContainerRepository containerRepo = adapter.createRepository(ContainerRepository.class);
 
-containerRepo.create(claim.getId().toString(), new ObjectCallback&lt;Container&gt;() {
+containerRepo.create(claim.getId().toString(), new ObjectCallback<Container>() {
     @Override
     public void onSuccess(Container container) {
         // container was created, save it
@@ -152,10 +152,10 @@ containerRepo.create(claim.getId().toString(), new ObjectCallback&lt;Container
 </div>
 
 ```js
-activity.getContainer().getAllFiles(new ListCallback&lt;File&gt;() {
+activity.getContainer().getAllFiles(new ListCallback<File>() {
 
     @Override
-    public void onSuccess(List&lt;File&gt; remoteFiles) {
+    public void onSuccess(List<File> remoteFiles) {
         // populate the UI with documents
     }
 
@@ -209,7 +209,7 @@ camera.takePicture(
             String fileName = UUID.randomUUID().toString() + ".jpg";
 
             activity.getContainer().upload(fileName, data, "image/jpeg",
-                new ObjectCallback&lt;File&gt;() {
+                new ObjectCallback<File>() {
                     @Override
                     public void onSuccess(File remoteFile) {
                         // Update GUI - add remoteFile to the list of documents
@@ -232,7 +232,7 @@ camera.takePicture(
   </p>
 </div>
 
-## **What&#8217;s Next?** {#What'snewinLoopBackAndroidSDK1.3-What'snext}
+## **What&#8217;s Next?** 
 
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;">Download the SDK bundle for Eclipse: <a href="http://81b70ddedaf4b27b1592-b5e75689411476c98957e7dab0242f50.r56.cf2.rackcdn.com/loopback-android-1.3.0-eclipse-bundle.zip" rel="nofollow">loopback-android-1.3.0-eclipse-bundle.zip</a></span>

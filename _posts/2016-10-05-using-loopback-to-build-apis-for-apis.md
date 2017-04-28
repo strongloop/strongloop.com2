@@ -37,7 +37,7 @@ For the name, let&#8217;s call it `swapi`. Our demo is going to make use of the 
 
 When prompted to select the connector, scroll down to the REST connector:
 
-<img class="aligncenter size-full wp-image-27962" src="https://strongloop.com/wp-content/uploads/2016/09/sbblog-1.jpg" alt="sbblog" width="600" height="276" srcset="https://strongloop.com/wp-content/uploads/2016/09/sbblog-1.jpg 600w, https://strongloop.com/wp-content/uploads/2016/09/sbblog-1-300x138.jpg 300w, https://strongloop.com/wp-content/uploads/2016/09/sbblog-1-450x207.jpg 450w" sizes="(max-width: 600px) 100vw, 600px" />
+<img class="aligncenter size-full wp-image-27962" src="{{site.url}}/blog-assets/2016/09/sbblog-1.jpg" alt="sbblog" width="600" height="276"  />
 
 Next it will prompt you for the base URL for the API. Here is where things can get tricky. The Star Wars API supports a number of different end points for movies, ships, characters, and more. You&#8217;ll want to specify one particular end point. Why?
 
@@ -47,7 +47,7 @@ For the REST connector, we need to point to one API and match it up with one par
 
 According to the Star Wars API documentation, we can get a list of spaceships using this URL: `http://swapi.co/api/spaceships`. So let&#8217;s use that for the connector URL value. For the rest of the prompts, just accept the defaults.
 
-<img class="aligncenter size-full wp-image-27964" src="https://strongloop.com/wp-content/uploads/2016/09/swblog2.jpg" alt="swblog2" width="600" height="157" srcset="https://strongloop.com/wp-content/uploads/2016/09/swblog2.jpg 600w, https://strongloop.com/wp-content/uploads/2016/09/swblog2-300x79.jpg 300w, https://strongloop.com/wp-content/uploads/2016/09/swblog2-450x118.jpg 450w" sizes="(max-width: 600px) 100vw, 600px" />
+<img class="aligncenter size-full wp-image-27964" src="{{site.url}}/blog-assets/2016/09/swblog2.jpg" alt="swblog2" width="600" height="157"  />
 
 At this point, your `datasources.json` file should look something like this:
 
@@ -105,21 +105,21 @@ The template aspect defines a lot of different parts of how we&#8217;ll call the
 
 To expose our remote API as a local API, we need to add a model. Since we&#8217;re working with the starship aspect of the Star Wars API, let&#8217;s create a new model called spaceship. When asked what connector to use, select `swapi`.
 
-<img class="aligncenter size-full wp-image-27965" src="https://strongloop.com/wp-content/uploads/2016/09/swblog3.jpg" alt="swblog3" width="426" height="136" srcset="https://strongloop.com/wp-content/uploads/2016/09/swblog3.jpg 426w, https://strongloop.com/wp-content/uploads/2016/09/swblog3-300x96.jpg 300w" sizes="(max-width: 426px) 100vw, 426px" />
+<img class="aligncenter size-full wp-image-27965" src="{{site.url}}/blog-assets/2016/09/swblog3.jpg" alt="swblog3" width="426" height="136"  />
 
 Then be sure to use Model as the base class, _not_ PersistedModel.
 
-<img class="aligncenter size-full wp-image-27966" src="https://strongloop.com/wp-content/uploads/2016/09/swblog4.jpg" alt="swblog4" width="517" height="246" srcset="https://strongloop.com/wp-content/uploads/2016/09/swblog4.jpg 517w, https://strongloop.com/wp-content/uploads/2016/09/swblog4-300x143.jpg 300w, https://strongloop.com/wp-content/uploads/2016/09/swblog4-450x214.jpg 450w" sizes="(max-width: 517px) 100vw, 517px" />
+<img class="aligncenter size-full wp-image-27966" src="{{site.url}}/blog-assets/2016/09/swblog4.jpg" alt="swblog4" width="517" height="246"  />
 
 Take the rest of the defaults and don&#8217;t create any properties.
 
 Now fire up your LoopBack server (or restart it if was already running) and then open your API Explorer, you&#8217;ll see the new model:
 
-<img class="aligncenter size-full wp-image-27968" src="https://strongloop.com/wp-content/uploads/2016/09/swblog5.jpg" alt="swblog5" width="600" height="199" srcset="https://strongloop.com/wp-content/uploads/2016/09/swblog5.jpg 600w, https://strongloop.com/wp-content/uploads/2016/09/swblog5-300x100.jpg 300w, https://strongloop.com/wp-content/uploads/2016/09/swblog5-450x149.jpg 450w" sizes="(max-width: 600px) 100vw, 600px" />
+<img class="aligncenter size-full wp-image-27968" src="{{site.url}}/blog-assets/2016/09/swblog5.jpg" alt="swblog5" width="600" height="199"  />
 
 Woot! We&#8217;ve added an API that proxies to another API and our users are none the wiser. If you test it, you&#8217;ll see the results:
 
-<img class="aligncenter size-full wp-image-27970" src="https://strongloop.com/wp-content/uploads/2016/09/swblog6.jpg" alt="swblog6" width="600" height="583" srcset="https://strongloop.com/wp-content/uploads/2016/09/swblog6.jpg 600w, https://strongloop.com/wp-content/uploads/2016/09/swblog6-300x292.jpg 300w, https://strongloop.com/wp-content/uploads/2016/09/swblog6-36x36.jpg 36w, https://strongloop.com/wp-content/uploads/2016/09/swblog6-450x437.jpg 450w" sizes="(max-width: 600px) 100vw, 600px" />
+<img class="aligncenter size-full wp-image-27970" src="{{site.url}}/blog-assets/2016/09/swblog6.jpg" alt="swblog6" width="600" height="583"  />
 
 Notice there is an array of ships. That isn&#8217;t exactly what the remote API returns. You can see for yourself by going here: `http://swapi.co/api/starships/`
 

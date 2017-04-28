@@ -16,7 +16,7 @@ When people build REST APIs with Express, testing and documentation are often an
 
 You may have seen the testing pyramid before:
 
-<img class="aligncenter size-full wp-image-23837" src="https://strongloop.com/wp-content/uploads/2015/03/pyramid.png" alt="pyramid" width="975" height="703" srcset="https://strongloop.com/wp-content/uploads/2015/03/pyramid.png 975w, https://strongloop.com/wp-content/uploads/2015/03/pyramid-300x216.png 300w, https://strongloop.com/wp-content/uploads/2015/03/pyramid-705x508.png 705w, https://strongloop.com/wp-content/uploads/2015/03/pyramid-450x324.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-23837" src="{{site.url}}/blog-assets/2015/03/pyramid.png" alt="pyramid" width="975" height="703"  />
 
 The components of the testing pyramid are described below.
 
@@ -131,7 +131,7 @@ var header = require('fs').readFileSync('./header.md').toString();
 var mdOutput = header + '\n\n';
 
 // For each describe() block
-for (var i = 0; i &lt; blocks.length; ++i) {
+for (var i = 0; i < blocks.length; ++i) {
   var describe = blocks[i];
   mdOutput += '## ' + describe.contents + '\n\n';
   mdOutput += describe.comments[0] ?
@@ -141,7 +141,7 @@ for (var i = 0; i &lt; blocks.length; ++i) {
   // This test file only has it() blocks underneath a
   // describe() block, so just loop through all the
   // it() calls.
-  for (var j = 0; j &lt; describe.blocks.length; ++j) {
+  for (var j = 0; j < describe.blocks.length; ++j) {
     var it = describe.blocks[j];
     mdOutput += '#### It ' + it.contents + '\n\n';
     mdOutput += it.comments[0] ?
@@ -254,7 +254,7 @@ $ node-debug _mocha
 
 Here is a snapshot of Node-Inspector in flight. To know more, read [documentation](http://docs.strongloop.com/display/SLC/Using+Node+Inspector "Node Debugging")
 
-<img class="aligncenter size-full wp-image-23865" src="https://strongloop.com/wp-content/uploads/2015/03/Debugger.png" alt="Debugger" width="807" height="626" srcset="https://strongloop.com/wp-content/uploads/2015/03/Debugger.png 807w, https://strongloop.com/wp-content/uploads/2015/03/Debugger-300x233.png 300w, https://strongloop.com/wp-content/uploads/2015/03/Debugger-450x349.png 450w" sizes="(max-width: 807px) 100vw, 807px" />
+<img class="aligncenter size-full wp-image-23865" src="{{site.url}}/blog-assets/2015/03/Debugger.png" alt="Debugger" width="807" height="626"  />
 
 <span style="line-height: 1.5;">
 
@@ -267,5 +267,5 @@ Here is a snapshot of Node-Inspector in flight. To know more, read [documentatio
     StrongLoop Arc is a graphical UI for the <a href="http://strongloop.com/node-js/api-platform/">StrongLoop API Platform</a>, which includes LoopBack, that complements the <a href="http://docs.strongloop.com/pages/viewpage.action?pageId=3834790">slc command line tools</a> for developing APIs quickly and getting them connected to data. Arc also includes tools for building, profiling and monitoring Node apps. It takes just a few simple steps to <a href="http://strongloop.com/get-started/">get started</a>!
   </p>
   
-  <img class="aligncenter size-large wp-image-21950" src="https://strongloop.com/wp-content/uploads/2014/12/Arc_Monitoring_Metrics-1030x593.jpg" alt="Arc_Monitoring_Metrics" width="1030" height="593" />
+  <img class="aligncenter size-large wp-image-21950" src="{{site.url}}/blog-assets/2014/12/Arc_Monitoring_Metrics-1030x593.jpg" alt="Arc_Monitoring_Metrics" width="1030" height="593" />
 </div></span>

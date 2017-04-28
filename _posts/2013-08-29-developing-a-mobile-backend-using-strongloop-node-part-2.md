@@ -8,7 +8,7 @@ permalink: /strongblog/developing-a-mobile-backend-using-strongloop-node-part-2/
 categories:
   - Mobile
 ---
-## Overview {#docs-internal-guid-299ee28f-c1b0-d5a6-b2ca-9050f1fad3c5}
+## Overview 
 
 <p dir="ltr">
   In <a href="http://blog.strongloop.com/developing-a-mobile-backend-using-strongloop-node/">part 1</a> of this blog series we discussed the technologies that we will be using to create an SMS aware mobile application with a node.js backend: <a href="http://www.strongloop.com">StrongNode</a>, <a href="http://www.mongodb.org">MongoDB</a>, <a href="http://www.appcelerator.com">Titanium</a>, and <a href="http://www.twilio.com">Twilio</a>.  We also created our first StrongNode application called mobilebackend and deployed the application to our local running slnode server.  In this blog post, we will take a deeper look at the source code and create a REST API for storing and retrieving information for our mobile application.  We will also learn how to create a MongoDB datastore using the popular MongoLab service which provides free MongoDB hosting in the public cloud.

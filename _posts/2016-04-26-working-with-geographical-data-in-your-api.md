@@ -43,31 +43,31 @@ First, let&#8217;s start with a simple model &#8211; the Cat.
 
 Our cat model is incredibly simple &#8211; one property represents the name and one the location. As you can see, the type is set to geopoint. How do we use it? If you open up the LoopBack Explorer and navigate to the /Cats POST operation, you&#8217;ll see the model definition:
 
-<img class="aligncenter size-full wp-image-27257" src="https://strongloop.com/wp-content/uploads/2016/04/shot12.jpg" alt="shot1" width="800" height="525" srcset="https://strongloop.com/wp-content/uploads/2016/04/shot12.jpg 800w, https://strongloop.com/wp-content/uploads/2016/04/shot12-300x197.jpg 300w, https://strongloop.com/wp-content/uploads/2016/04/shot12-705x463.jpg 705w, https://strongloop.com/wp-content/uploads/2016/04/shot12-450x295.jpg 450w" sizes="(max-width: 800px) 100vw, 800px" />
+<img class="aligncenter size-full wp-image-27257" src="{{site.url}}/blog-assets/2016/04/shot12.jpg" alt="shot1" width="800" height="525"  />
 
 The expectation is an object containing lat and lng values, representing latitude and longitude. Once you have data, using it becomes pretty trivial. For our first demo, we&#8217;ll make use of the [Google Static Map API](https://developers.google.com/maps/documentation/static-maps/). This is the lesser well-known version of the Google Maps API that is useful when you just need to display a simple map without all the fancy JavaScript doodads. The Static Map API isn&#8217;t even really an API &#8211; it&#8217;s really just a particular way of forming a URL that will generate different types of maps.
 
 So given that we have a few cats (trust me, I do), let&#8217;s build a demo to map them on the planet. First, the HTML:
 
 ```js
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-	&lt;head&gt;
-		&lt;meta charset="utf-8"&gt;
-		&lt;title&gt;&lt;/title&gt;
-		&lt;meta name="description" content=""&gt;
-		&lt;meta name="viewport" content="width=device-width"&gt;
-	&lt;/head&gt;
-	&lt;body&gt;
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
 
-		&lt;h1&gt;Map Demo&lt;/h1&gt;
+		<h1>Map Demo</h1>
 		
-		&lt;img id="map"&gt;&lt;/img&gt;
+		<img id="map"></img>
 		
-		&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"&gt;&lt;/script&gt;
-		&lt;script src="js/map.js"&gt;&lt;/script&gt;
-	&lt;/body&gt;
-&lt;/html&gt;
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/map.js"></script>
+	</body>
+</html>
 
 ```
 
@@ -96,7 +96,7 @@ So literally all we do is ask for all the cats and then iterate over each to get
 
 The result, with no real formatting or design work, is still pretty cool considering how little work we needed to do:
 
-<img class="aligncenter size-full wp-image-27267" src="https://strongloop.com/wp-content/uploads/2016/04/shot3.jpg" alt="shot3" width="700" height="771" srcset="https://strongloop.com/wp-content/uploads/2016/04/shot3.jpg 700w, https://strongloop.com/wp-content/uploads/2016/04/shot3-272x300.jpg 272w, https://strongloop.com/wp-content/uploads/2016/04/shot3-640x705.jpg 640w, https://strongloop.com/wp-content/uploads/2016/04/shot3-450x496.jpg 450w" sizes="(max-width: 700px) 100vw, 700px" />
+<img class="aligncenter size-full wp-image-27267" src="{{site.url}}/blog-assets/2016/04/shot3.jpg" alt="shot3" width="700" height="771"  />
 
 Woot! Of course, you probably want to do a bit more with your geographical data than just map it. LoopBack provides out of the box for two types of operations you can do:
 
@@ -165,26 +165,26 @@ In case you&#8217;re curious, you can change the unit of measurement. The [Geopo
 Let&#8217;s build a new version of our client-side code that uses fancy HTML5 Geolocation (we can&#8217;t really call that fancy anymore) to figure out the user&#8217;s location and return Cats near them. As before, we&#8217;ll start with the HTML.
 
 ```js
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-	&lt;head&gt;
-		&lt;meta charset="utf-8"&gt;
-		&lt;title&gt;&lt;/title&gt;
-		&lt;meta name="description" content=""&gt;
-		&lt;meta name="viewport" content="width=device-width"&gt;
-	&lt;/head&gt;
-	&lt;body&gt;
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
 
-		&lt;h1&gt;Cats near you?&lt;/h1&gt;
+		<h1>Cats near you?</h1>
 		
-		&lt;div id="status"&gt;
+		<div id="status">
 			Attempting to find your location...
-		&lt;/div&gt;
+		</div>
 		
-		&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"&gt;&lt;/script&gt;
-		&lt;script src="js/near.js"&gt;&lt;/script&gt;
-	&lt;/body&gt;
-&lt;/html&gt;
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/near.js"></script>
+	</body>
+</html>
 
 ```
 
@@ -201,14 +201,14 @@ $(document).ready(function() {
 		$.get('/api/Cats/?filter[where][location][near]='+pos.coords.latitude+','+pos.coords.longitude+'&filter[where][location][maxDistance]=20', function(res) {
 			
 			if(res.length === 0) {
-				$status.html('Sorry, but no cats are by you. I has a sad. Here, have this cat.&lt;br/&gt;&lt;img src=\'/img/sadcat.png\'&gt;');
+				$status.html('Sorry, but no cats are by you. I has a sad. Here, have this cat.<br/><img src=\'/img/sadcat.png\'>');
 				return;
 			}
-			var result = 'I found these cats:&lt;ul&gt;';
+			var result = 'I found these cats:<ul>';
 			res.forEach(function(cat) {
-				result += '&lt;li&gt;'+cat.name+'&lt;/li&gt;';
+				result += '<li>'+cat.name+'</li>';
 			});
-			result += '&lt;/ul&gt;';
+			result += '</ul>';
 			$status.html(result);
 
 		});
@@ -224,6 +224,6 @@ The app begins by using the [geolocation API](https://developer.mozilla.org/en-U
 
 The incredibly beautiful output of this demo can be seen here:
 
-<img class="aligncenter size-full wp-image-27269" src="https://strongloop.com/wp-content/uploads/2016/04/shot4.jpg" alt="shot4" width="464" height="286" srcset="https://strongloop.com/wp-content/uploads/2016/04/shot4.jpg 464w, https://strongloop.com/wp-content/uploads/2016/04/shot4-300x185.jpg 300w, https://strongloop.com/wp-content/uploads/2016/04/shot4-450x277.jpg 450w" sizes="(max-width: 464px) 100vw, 464px" />
+<img class="aligncenter size-full wp-image-27269" src="{{site.url}}/blog-assets/2016/04/shot4.jpg" alt="shot4" width="464" height="286"  />
 
 I hope you&#8217;ve found this interesting, and you can find the full source code here: <https://github.com/cfjedimaster/StrongLoopDemos/tree/master/geotest>

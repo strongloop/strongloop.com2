@@ -141,7 +141,7 @@ This will launch the API Designer in your default browser. You&#8217;ll need to 
 
 Next, open the model editor by clicking the &#8216;Models&#8217; button in the top nav.
 
-[<img class="aligncenter wp-image-27519 size-full" src="https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.26.24-PM.png" alt="Screen Shot 2016-06-03 at 3.26.24 PM" width="526" height="168" srcset="https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.26.24-PM.png 526w, https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.26.24-PM-300x96.png 300w, https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.26.24-PM-450x144.png 450w" sizes="(max-width: 526px) 100vw, 526px" />](https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.26.24-PM.png)
+[<img class="aligncenter wp-image-27519 size-full" src="{{site.url}}/blog-assets/2016/06/Screen-Shot-2016-06-03-at-3.26.24-PM.png" alt="Screen Shot 2016-06-03 at 3.26.24 PM" width="526" height="168"  />]({{site.url}}/blog-assets/2016/06/Screen-Shot-2016-06-03-at-3.26.24-PM.png)
 
 You&#8217;ll see a list that contains the `note` model that came with the API, as well as the `cat` model we just created.
 
@@ -159,7 +159,7 @@ Pretty much everything we need for our `dog` model is already defined by default
 
 All we need to do now is make sure all our dogs are required to have names. To do this, click the **&#8220;+&#8221;** icon at the top of the **Properties** section, and enter the settings for a &#8220;name&#8221; property.
 
-[<img class="aligncenter wp-image-27520 size-full" style="border: #CCCCCC 1px solid;" src="https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.29.07-PM.png" alt="Screen Shot 2016-06-03 at 3.29.07 PM" width="739" height="541" srcset="https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.29.07-PM.png 739w, https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.29.07-PM-300x220.png 300w, https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.29.07-PM-705x516.png 705w, https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.29.07-PM-450x329.png 450w" sizes="(max-width: 739px) 100vw, 739px" />](https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.29.07-PM.png)
+[<img class="aligncenter wp-image-27520 size-full" style="border: #CCCCCC 1px solid;" src="{{site.url}}/blog-assets/2016/06/Screen-Shot-2016-06-03-at-3.29.07-PM.png" alt="Screen Shot 2016-06-03 at 3.29.07 PM" width="739" height="541"  />]({{site.url}}/blog-assets/2016/06/Screen-Shot-2016-06-03-at-3.29.07-PM.png)
 
 See? Way better than cats.
 
@@ -167,11 +167,11 @@ See? Way better than cats.
 
 Now that we have a couple data models defined and exposed via our API, we can test it by sending HTTP requests to it. To start the API running locally, just click the **Play** button at the bottom of the API Connect API Designer.
 
-[<img class="aligncenter wp-image-27521 size-full" style="border: #CCCCCC 1px solid;" src="https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.43.30-PM.png" alt="Screen Shot 2016-06-03 at 3.43.30 PM" width="131" height="38" />](https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.43.30-PM.png)
+[<img class="aligncenter wp-image-27521 size-full" style="border: #CCCCCC 1px solid;" src="{{site.url}}/blog-assets/2016/06/Screen-Shot-2016-06-03-at-3.43.30-PM.png" alt="Screen Shot 2016-06-03 at 3.43.30 PM" width="131" height="38" />]({{site.url}}/blog-assets/2016/06/Screen-Shot-2016-06-03-at-3.43.30-PM.png)
 
 Once the API is running, the URL of your API will be displayed next to **Application**.
 
-[<img class="aligncenter wp-image-27522 size-full" style="border: #CCCCCC 1px solid;" src="https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.43.46-PM.png" alt="Screen Shot 2016-06-03 at 3.43.46 PM" width="680" height="35" srcset="https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.43.46-PM.png 680w, https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.43.46-PM-300x15.png 300w, https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.43.46-PM-450x23.png 450w" sizes="(max-width: 680px) 100vw, 680px" />](https://strongloop.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-03-at-3.43.46-PM.png)
+[<img class="aligncenter wp-image-27522 size-full" style="border: #CCCCCC 1px solid;" src="{{site.url}}/blog-assets/2016/06/Screen-Shot-2016-06-03-at-3.43.46-PM.png" alt="Screen Shot 2016-06-03 at 3.43.46 PM" width="680" height="35"  />]({{site.url}}/blog-assets/2016/06/Screen-Shot-2016-06-03-at-3.43.46-PM.png)
 
 You can send HTTP requests to your API with your favorite client (I like cURL or [Postman](https://www.getpostman.com/)) with the base path `/api/<model_name>`.
 

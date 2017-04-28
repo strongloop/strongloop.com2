@@ -22,7 +22,7 @@ The LoopBack Gateway is open source and is the “minimum viable product” (MVP
 
 An _API gateway_ externalizes, secures, and manages APIs. It is an intermediary between API consumers (clients) and backend API providers (API servers).
   
-<img class="aligncenter size-full wp-image-20504" src="https://strongloop.com/wp-content/uploads/2014/10/sfc9JmbeCAVvU_T4BnqpiqA-1.png" alt="api gateway 2" width="622" height="107" srcset="https://strongloop.com/wp-content/uploads/2014/10/sfc9JmbeCAVvU_T4BnqpiqA-1.png 622w, https://strongloop.com/wp-content/uploads/2014/10/sfc9JmbeCAVvU_T4BnqpiqA-1-300x52.png 300w, https://strongloop.com/wp-content/uploads/2014/10/sfc9JmbeCAVvU_T4BnqpiqA-1-450x77.png 450w" sizes="(max-width: 622px) 100vw, 622px" />
+<img class="aligncenter size-full wp-image-20504" src="{{site.url}}/blog-assets/2014/10/sfc9JmbeCAVvU_T4BnqpiqA-1.png" alt="api gateway 2" width="622" height="107"  />
 
 In this intermediary position, the API gateway performs several functions depending on the needs of the enterprise, as summarized in the table below.
 

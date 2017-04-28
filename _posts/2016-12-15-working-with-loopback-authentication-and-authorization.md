@@ -25,15 +25,15 @@ You can find the full source code for my application here: <https://github.com/c
 
 The application is a simple, lightweight Twitter clone. The main page (well, only page) is a &#8220;wall&#8221; of posts from users:
 
-<img class="aligncenter size-full wp-image-28349" src="https://strongloop.com/wp-content/uploads/2016/11/article1.png" alt="article1" width="600" height="515" srcset="https://strongloop.com/wp-content/uploads/2016/11/article1.png 600w, https://strongloop.com/wp-content/uploads/2016/11/article1-300x258.png 300w, https://strongloop.com/wp-content/uploads/2016/11/article1-450x386.png 450w" sizes="(max-width: 600px) 100vw, 600px" />
+<img class="aligncenter size-full wp-image-28349" src="{{site.url}}/blog-assets/2016/11/article1.png" alt="article1" width="600" height="515"  />
 
 On top is a simple Login/Register link where user can register for the site:
 
-<img class="aligncenter size-full wp-image-28350" src="https://strongloop.com/wp-content/uploads/2016/11/article2.png" alt="article2" width="600" height="384" srcset="https://strongloop.com/wp-content/uploads/2016/11/article2.png 600w, https://strongloop.com/wp-content/uploads/2016/11/article2-300x192.png 300w, https://strongloop.com/wp-content/uploads/2016/11/article2-450x288.png 450w" sizes="(max-width: 600px) 100vw, 600px" />
+<img class="aligncenter size-full wp-image-28350" src="{{site.url}}/blog-assets/2016/11/article2.png" alt="article2" width="600" height="384"  />
 
 Once logged in, users can then write their own posts and delete their older posts. (I was originally going to support edits as well, but felt like that was overkill. The API, however, supports locking down edits to your own content.)
 
-<img class="aligncenter size-full wp-image-28351" src="https://strongloop.com/wp-content/uploads/2016/11/article3.png" alt="article3" width="600" height="326" srcset="https://strongloop.com/wp-content/uploads/2016/11/article3.png 600w, https://strongloop.com/wp-content/uploads/2016/11/article3-300x163.png 300w, https://strongloop.com/wp-content/uploads/2016/11/article3-450x245.png 450w" sizes="(max-width: 600px) 100vw, 600px" />
+<img class="aligncenter size-full wp-image-28351" src="{{site.url}}/blog-assets/2016/11/article3.png" alt="article3" width="600" height="326"  />
 
 And that&#8217;s it. If you&#8217;re curious about the design, I decided to give [Bootstrap 4](https://v4-alpha.getbootstrap.com/) a spin. Let&#8217;s now take a look at the application in-depth.
 
@@ -128,7 +128,7 @@ Now that we know the properties of our **Post** model, let&#8217;s discuss the A
 
 You can use the command line to add these ACLs by using `slc loopback:acl`. The command line will prompt you for what you want to lock down. Here&#8217;s an example of locking down everything as we described in step 1.
 
-<img class="aligncenter size-full wp-image-28401" src="https://strongloop.com/wp-content/uploads/2016/11/authposta.png" alt="authposta" width="964" height="185" srcset="https://strongloop.com/wp-content/uploads/2016/11/authposta.png 964w, https://strongloop.com/wp-content/uploads/2016/11/authposta-300x58.png 300w, https://strongloop.com/wp-content/uploads/2016/11/authposta-768x147.png 768w, https://strongloop.com/wp-content/uploads/2016/11/authposta-705x135.png 705w, https://strongloop.com/wp-content/uploads/2016/11/authposta-450x86.png 450w" sizes="(max-width: 964px) 100vw, 964px" />
+<img class="aligncenter size-full wp-image-28401" src="{{site.url}}/blog-assets/2016/11/authposta.png" alt="authposta" width="964" height="185"  />
 
 The next result is simply a modification to your JSON file for your model. Here&#8217;s the complete list of ACLs defined for **Post**:
 
@@ -168,7 +168,7 @@ The next result is simply a modification to your JSON file for your model. Here&
 
 I&#8217;m going to assume that this is pretty readable as is. Remember, you don&#8217;t have to use the CLI if you don&#8217;t want to. You can always just edit the JSON file directly. Once you&#8217;ve done this, and restarted, you should do some quick testing in the Explorer. Begin by trying to read **Posts** &#8211; it should be allowed since the ACL says $everyone can do so. Then try to create a new post via `POST /posts`. You should get an error:
 
-<img class="aligncenter wp-image-28402" src="https://strongloop.com/wp-content/uploads/2016/11/authpostb.png" alt="authpostb" width="446" height="289" srcset="https://strongloop.com/wp-content/uploads/2016/11/authpostb.png 523w, https://strongloop.com/wp-content/uploads/2016/11/authpostb-300x194.png 300w, https://strongloop.com/wp-content/uploads/2016/11/authpostb-450x292.png 450w" sizes="(max-width: 446px) 100vw, 446px" />
+<img class="aligncenter wp-image-28402" src="{{site.url}}/blog-assets/2016/11/authpostb.png" alt="authpostb" width="446" height="289"  />
 
 At this point, you can test registering and logging in, with the API Explorer. Our &#8220;real&#8221; app has this of course, but assume for now you haven&#8217;t built that yet. This can be done by testing the `POST /appusers` endpoint and sending in credentials of the form:
 
@@ -233,16 +233,16 @@ function loadPosts() {
 		res.forEach(function(p) {
 			var btnText = '';
 			if(p.creator.id === userid) {
-				btnText = `&lt;button class="btn btn-danger deletePost" data-id="${p.id}"&gt;Delete&lt;/button&gt;`;
+				btnText = `<button class="btn btn-danger deletePost" data-id="${p.id}">Delete</button>`;
 			}
 			var card = `
-&lt;div class="card post" data-postid="${p.id}" data-creatorid="${p.creator.id}"&gt;
-  &lt;div class="card-block"&gt;
-    &lt;h4 class="card-title"&gt;${p.creator.email} on ${niceDate(p.created)}&lt;/h4&gt;
-    &lt;p class="card-text"&gt;${p.text}&lt;/p&gt;
-	&lt;span class='btnArea'&gt;${btnText}&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+<div class="card post" data-postid="${p.id}" data-creatorid="${p.creator.id}">
+  <div class="card-block">
+    <h4 class="card-title">${p.creator.email} on ${niceDate(p.created)}</h4>
+    <p class="card-text">${p.text}</p>
+	<span class='btnArea'>${btnText}</span>
+  </div>
+</div>
 			`;
 			html += card;
 			//console.dir(p);
@@ -264,16 +264,16 @@ function doRegister(e) {
 	e.preventDefault();
 	console.log('doRegister');
 	var errors = '';
-	if($email2.val() === '') errors += 'Email is required.&lt;br/&gt;';
-	if($password2.val() === '') errors += 'Password is required.&lt;br/&gt;';
-	if($password2c.val() != $password2.val()) errors += 'Confirmation password didn`t match.&lt;br/&gt;';
+	if($email2.val() === '') errors += 'Email is required.<br/>';
+	if($password2.val() === '') errors += 'Password is required.<br/>';
+	if($password2c.val() != $password2.val()) errors += 'Confirmation password didn`t match.<br/>';
 	if(errors != '') {
 		$registerErrorBlock.html(`
-		&lt;div class="alert alert-danger" role="alert"&gt;
-		&lt;strong&gt;Please correct these errors:&lt;/strong&gt;&lt;br/&gt;${errors}
-		&lt;/div&gt;`);
+		<div class="alert alert-danger" role="alert">
+		<strong>Please correct these errors:</strong><br/>${errors}
+		</div>`);
 	} else {
-		$registerErrorBlock.html('&lt;em&gt;Stand by - trying to register...');
+		$registerErrorBlock.html('<em>Stand by - trying to register...');
 		var user = { email:$email2.val(), password:$password2.val()};
 		$.post('/api/appusers', user).then(function(res) {
 			//success, now immediately followup with a login
@@ -293,9 +293,9 @@ function doRegister(e) {
 			console.log(error);
 			// for now, assume only error is dupe
 			$registerErrorBlock.html(`
-			&lt;div class="alert alert-danger" role="alert"&gt;
-			&lt;strong&gt;Please correct these errors:&lt;/strong&gt;&lt;br/&gt;Sorry, but that email already exists.
-			&lt;/div&gt;`);
+			<div class="alert alert-danger" role="alert">
+			<strong>Please correct these errors:</strong><br/>Sorry, but that email already exists.
+			</div>`);
 
 		});
 	}

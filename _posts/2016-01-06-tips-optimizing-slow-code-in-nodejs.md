@@ -13,25 +13,25 @@ Node.js programs can be slow due to CPU or IO bound operations. On the CPU side,
 
 In this article, we will focus on identifying and optimizing CPU heavy operations in our codebase. We will explore taking profiles of our production application in order to analyze them and make changes to improve efficiency.<!--more-->
 
-Avoiding heavy CPU usage is especially important for servers[[1]](1 "see footnote"){#fnref:1.footnote} due to Node&#8217;s single-threaded nature. Time spent on the CPU takes away time for servicing other requests. If you notice your application is responding slowly and the CPU is consistently higher for the process, profiling your application helps find bottlenecks and bring your program back to a speedy state.
+Avoiding heavy CPU usage is especially important for servers[[1]](1 "see footnote") due to Node&#8217;s single-threaded nature. Time spent on the CPU takes away time for servicing other requests. If you notice your application is responding slowly and the CPU is consistently higher for the process, profiling your application helps find bottlenecks and bring your program back to a speedy state.
 
-## Profiling applications {#profilingapplications}
+## Profiling applications 
 
 Duplicating sluggish application issues that occur in production is hard and time consuming. Thankfully, you don&#8217;t have to do that. You can gather profile data on the production servers themselves to analyze offline. Let&#8217;s look at a few ways to do that.
 
-### Using kernel level tools {#usingkernelleveltools}
+### Using kernel level tools 
 
 First, you can use kernel level tools, such as DTrace (Solaris, BSD), perf (Linux), and XPerf (Windows), to gather stack traces from running processes and then generate [flame graphs](http://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html). Kernel level profiling has minimal impact on a running process. Flame graphs are generated as SVG with the ability to zoom in and out of the call stacks. Yunong Xiao from Netflix has an excellent [talk](https://www.youtube.com/watch?v=O1YP8QP9gLA) and [post](http://yunong.io/2015/11/23/generating-node-js-flame-graphs/) for Linux perf to learn more about this technique. If you need to maintain high throughput in your production application, use this method.
 
 <div id="attachment_26631" style="width: 1850px" class="wp-caption aligncenter">
-  <a href="https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.06.17-AM.png"><img class="wp-image-26631 size-full" src="https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.06.17-AM.png" alt="Screen Shot 2016-01-03 at 10.06.17 AM" width="1840" height="760" srcset="https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.06.17-AM.png 1840w, https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.06.17-AM-300x124.png 300w, https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.06.17-AM-1030x425.png 1030w, https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.06.17-AM-1500x620.png 1500w, https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.06.17-AM-705x291.png 705w, https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.06.17-AM-450x186.png 450w" sizes="(max-width: 1840px) 100vw, 1840px" /></a>
+  <a href="{{site.url}}/blog-assets/2015/12/Screen-Shot-2016-01-03-at-10.06.17-AM.png"><img class="wp-image-26631 size-full" src="{{site.url}}/blog-assets/2015/12/Screen-Shot-2016-01-03-at-10.06.17-AM.png" alt="Screen Shot 2016-01-03 at 10.06.17 AM" width="1840" height="760"  /></a>
   
   <p class="wp-caption-text">
     Source: https://cloudup.com/cE3eGxFHGif
   </p>
 </div>
 
-### Using the V8 profiler {#usingthev8profiler}
+### Using the V8 profiler 
 
 Another option is tapping into the [V8 profiler](https://github.com/node-inspector/v8-profiler) directly. This method shares the same process with your application, so it could impact performance. For that reason, only run the profiler when you experience the problem in order to capture the relevant output. The perk of this method: you can use all of Chrome&#8217;s profiling tools with the generated output (including flame graphs) to investigate.
 
@@ -77,9 +77,9 @@ The output is written to a file in the current working directory for the process
 
 Once you&#8217;ve collected your profile data, [load it up](https://docs.strongloop.com/display/SLC/CPU+profiling#CPUprofiling-ViewingCPUprofiledata) it in the Chrome Dev Tools and start [analyzing](https://developers.google.com/web/tools/chrome-devtools/profile/rendering-tools/js-execution?hl=en)!
 
-[<img class="aligncenter size-full wp-image-26636" src="https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.28.02-AM.png" alt="" width="1968" height="788" srcset="https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.28.02-AM.png 1968w, https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.28.02-AM-300x120.png 300w, https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.28.02-AM-1030x412.png 1030w, https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.28.02-AM-1500x601.png 1500w, https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.28.02-AM-705x282.png 705w, https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.28.02-AM-450x180.png 450w" sizes="(max-width: 1968px) 100vw, 1968px" />](https://strongloop.com/wp-content/uploads/2015/12/Screen-Shot-2016-01-03-at-10.28.02-AM.png)
+[<img class="aligncenter size-full wp-image-26636" src="{{site.url}}/blog-assets/2015/12/Screen-Shot-2016-01-03-at-10.28.02-AM.png" alt="" width="1968" height="788"  />]({{site.url}}/blog-assets/2015/12/Screen-Shot-2016-01-03-at-10.28.02-AM.png)
 
-### Using a process manager {#usingaprocessmanager}
+### Using a process manager 
 
 Although utilizing the V8 profiler directly is powerful and customizable, it does invade your code base and adds another dependency to your project which may not be desirable. An alternative is to use a process manager that can wrap your application with tools when you need them. One option is the `slc` command-line tool from StrongLoop.
 
@@ -132,7 +132,7 @@ This will write a file to disk:
 
 And that&#8217;s it. You can load it into Chrome just like the V8 profiler.
 
-## Making the right choice {#makingtherightchoice}
+## Making the right choice 
 
 In this article, I presented three options for capturing production CPU usage in Node. So which one should you use? Here are some thoughts to help narrow down that decision:
 
@@ -142,7 +142,7 @@ In this article, I presented three options for capturing production CPU usage in
   4. I can&#8217;t have performance impacted in my application: use kernel tools.
   5. I want my applications ready for profiling without having to instrument each one: use a process manager.
 
-## Take things further with StrongLoop Arc and Tracing {#takethingsfurtherwithstronglooparcandtracing}
+## Take things further with StrongLoop Arc and Tracing 
 
 StrongLoop provides a visual suite of tools for profiling and monitoring production application called [StrongLoop Arc](https://strongloop.com/node-js/arc/). The Arc Tracing module enables developers to analyze performance and execution of Node applications through: resource consumption timelines, trace sequences, asynchronous and synchronous waterfall views as well as flame graphs. These tools instrument IO calls like databases as well as CPU time to help pinpoint where your application is spending its time. To check out more specifics of the Arc Tracing module, see our [documentation](https://docs.strongloop.com/display/SLC/Tracing).
 

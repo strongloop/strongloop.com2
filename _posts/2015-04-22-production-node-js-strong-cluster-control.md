@@ -10,7 +10,7 @@ categories:
 ---
 ## **Introduction**
 
-<img src="https://strongloop.com/wp-content/uploads/2015/03/strong-cluster-control.gif" alt="" width="100%" />
+<img src="{{site.url}}/blog-assets/2015/03/strong-cluster-control.gif" alt="" width="100%" />
 
 “A single instance of Node runs in a single thread”. That’s how the [official documentation](https://nodejs.org/api/cluster.html) opens up. What this really means is that any given Node.js process can only take advantage of one CPU core on your server. If you have a processor with 6 cores, only one will really be doing all the work.
 
@@ -37,7 +37,7 @@ var http = require('http');
 var numCPUs = require('os').cpus().length;
 
 if (cluster.isMaster) {
-  for (var i = 0; i &lt; numCPUs; i++) {
+  for (var i = 0; i < numCPUs; i++) {
     cluster.fork(); // create a worker
   }
 

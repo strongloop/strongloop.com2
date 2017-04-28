@@ -13,7 +13,7 @@ This is part one of a four-part tutorial on setting up a mobile backend as a ser
 
 What&#8217;s [LoopBack](http://docs.strongloop.com/loopback)? It&#8217;s an open-source API server for Node.js applications. It enables mobile apps to connect to enterprise data through models that use pluggable [data sources and connectors](http://docs.strongloop.com/loopback-datasource-juggler/#loopback-datasource-and-connector-guide). Connectors provide connectivity to backend systems such as databases. Models are in turn exposed to mobile devices through REST APIs and client SDKs.
 
-<img class="aligncenter size-full wp-image-14996" alt="loopback_logo" src="https://strongloop.com/wp-content/uploads/2014/04/loopback_logo.png" width="1590" height="498" srcset="https://strongloop.com/wp-content/uploads/2014/04/loopback_logo.png 1590w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-300x94.png 300w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-1030x323.png 1030w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-1500x470.png 1500w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-705x221.png 705w, https://strongloop.com/wp-content/uploads/2014/04/loopback_logo-450x141.png 450w" sizes="(max-width: 1590px) 100vw, 1590px" />
+<img class="aligncenter size-full wp-image-14996" alt="loopback_logo" src="{{site.url}}/blog-assets/2014/04/loopback_logo.png" width="1590" height="498"  />
 
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;">Part one shows how to use slc to create a backend service on Amazon to send push notifications to different iOS devices</span>
@@ -43,7 +43,7 @@ Push notifications enable server applications (known as _providers_ in push pa
 
 The following diagram illustrates how it works.
 
-[<img class="alignnone size-full wp-image-16408" alt="Push notification service" src="https://strongloop.com/wp-content/uploads/2014/05/Push-notification-service1.png" width="941" height="214" />](https://strongloop.com/wp-content/uploads/2014/05/Push-notification-service1.png)
+[<img class="alignnone size-full wp-image-16408" alt="Push notification service" src="{{site.url}}/blog-assets/2014/05/Push-notification-service1.png" width="941" height="214" />]({{site.url}}/blog-assets/2014/05/Push-notification-service1.png)
 
 The components involved on the server are:
 
@@ -267,10 +267,10 @@ POST http://localhost:3010/api/installations
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;"><span style="font-size: 18px;">Send out the push notification.  LoopBack provides two Node.js methods to select devices and send notifications to them:</span></span> <ul>
     <li style="margin-left: 2em;">
-      <span style="font-size: 18px;"><code>&lt;a href="http://apidocs.strongloop.com/loopback-push-notification/#pushmanagernotifybyidinstallationid-notification-cb" rel="nofollow">notifyById()&lt;/a></code>: Select a device by registration ID and send a notification to it.</span>
+      <span style="font-size: 18px;"><code><a href="http://apidocs.strongloop.com/loopback-push-notification/#pushmanagernotifybyidinstallationid-notification-cb" rel="nofollow">notifyById()</a></code>: Select a device by registration ID and send a notification to it.</span>
     </li>
     <li style="margin-left: 2em;">
-      <span style="font-size: 18px;"><code>&lt;a href="http://apidocs.strongloop.com/loopback-push-notification/#pushmanagernotifybyqueryinstallationquery-notification-cb" rel="nofollow">notifyByQuery()&lt;/a></code>: Get a list of devices using a query (same as the <strong>where</strong> property for <code>Installation.find()</code>) and send a notification to all of them.</span>
+      <span style="font-size: 18px;"><code><a href="http://apidocs.strongloop.com/loopback-push-notification/#pushmanagernotifybyqueryinstallationquery-notification-cb" rel="nofollow">notifyByQuery()</a></code>: Get a list of devices using a query (same as the <strong>where</strong> property for <code>Installation.find()</code>) and send a notification to all of them.</span>
     </li>
   </ul>
   

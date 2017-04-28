@@ -255,19 +255,19 @@ Environment variables can be set in different ways depending on your deployment 
 
 Define environment variables in Bluemix as shown here:
 
-[<img class="aligncenter size-medium wp-image-27316" src="https://strongloop.com/wp-content/uploads/2016/04/bluemix-envvars-300x123.png" alt="bluemix-envvars" width="300" height="123" srcset="https://strongloop.com/wp-content/uploads/2016/04/bluemix-envvars-300x123.png 300w, https://strongloop.com/wp-content/uploads/2016/04/bluemix-envvars-1030x422.png 1030w, https://strongloop.com/wp-content/uploads/2016/04/bluemix-envvars-705x289.png 705w, https://strongloop.com/wp-content/uploads/2016/04/bluemix-envvars-450x184.png 450w, https://strongloop.com/wp-content/uploads/2016/04/bluemix-envvars.png 1047w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2016/04/bluemix-envvars.png)
+[<img class="aligncenter size-medium wp-image-27316" src="{{site.url}}/blog-assets/2016/04/bluemix-envvars-300x123.png" alt="bluemix-envvars" width="300" height="123"  />]({{site.url}}/blog-assets/2016/04/bluemix-envvars.png)
 
 #### **Heroku**
 
 You can define environment variables in Heroku as settings as shown here:
 
-[<img class="aligncenter size-medium wp-image-27317" src="https://strongloop.com/wp-content/uploads/2016/04/heroku-envvar-settings-300x110.png" alt="heroku-envvar-settings" width="300" height="110" srcset="https://strongloop.com/wp-content/uploads/2016/04/heroku-envvar-settings-300x110.png 300w, https://strongloop.com/wp-content/uploads/2016/04/heroku-envvar-settings-845x313.png 845w, https://strongloop.com/wp-content/uploads/2016/04/heroku-envvar-settings-705x258.png 705w, https://strongloop.com/wp-content/uploads/2016/04/heroku-envvar-settings-450x165.png 450w, https://strongloop.com/wp-content/uploads/2016/04/heroku-envvar-settings.png 855w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2016/04/heroku-envvar-settings.png)
+[<img class="aligncenter size-medium wp-image-27317" src="{{site.url}}/blog-assets/2016/04/heroku-envvar-settings-300x110.png" alt="heroku-envvar-settings" width="300" height="110"  />]({{site.url}}/blog-assets/2016/04/heroku-envvar-settings.png)
 
 You can also define environment variables with `.env` file; for example:
 
 ```js
 ##.env
-MYSQL_CONNECTION_STRING=mysql://&lt;username&gt;:&lt;password&gt;@&lt;host&gt;:3306/dbname
+MYSQL_CONNECTION_STRING=mysql://<username>:<password>@<host>:3306/dbname
 ```
 
 ### Setting environment variables at runtime
@@ -275,7 +275,7 @@ MYSQL_CONNECTION_STRING=mysql://&lt;username&gt;:&lt;password&gt;@&lt;host&gt;:3
 You can also set environment variables when you run your app; for example:
 
 ```js
-MYSQL_CONNECTION_STRING=mysql://&lt;username&gt;:&lt;passwd&gt;@&lt;host&gt;:3306/dbname node
+MYSQL_CONNECTION_STRING=mysql://<username>:<passwd>@<host>:3306/dbname node
 ```
 
 ### Application settings in config.json
@@ -285,7 +285,7 @@ When an environment variable is not set, you can assign application settings in 
 ```js
 //config.json
 {
-  "MYSQL_CONNECTION_STRING": "mysql://&lt;username&gt;&lt;password&gt;@&lt;host&gt;3306/dbname"
+  "MYSQL_CONNECTION_STRING": "mysql://<username><password>@<host>3306/dbname"
   //this gets resolved via `app.get('MYSQL_CONNECTION_STRING')`
 }
 ```

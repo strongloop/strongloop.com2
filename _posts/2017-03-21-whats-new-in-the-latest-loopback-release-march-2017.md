@@ -12,7 +12,7 @@ categories:
 ---
 The last LTS releases for [LoopBack](http://loopback.io/) were a couple of months ago. In January, the team updated **loopback-datasource-juggler** and **strong-remoting.**** ** The team implemented several changes into the open source framework this month as well. Curious about what the changes in the latest LoopBack release? Miroslav Bajtos provided a rundown of what&#8217;s new in the latest LoopBack release &#8211; 2.38.1 (LTS):
 
-[<img class="aligncenter wp-image-26753 size-full" src="https://strongloop.com/wp-content/uploads/2014/07/loopback-logo-sm.png" alt="What's New Latest LoopBack Release March 2017" width="194" height="200"  />](https://strongloop.com/wp-content/uploads/2014/07/loopback-logo-sm.png)
+[<img class="aligncenter wp-image-26753 size-full" src="{{site.url}}/blog-assets/2014/07/loopback-logo-sm.png" alt="What's New Latest LoopBack Release March 2017" width="194" height="200"  />]({{site.url}}/blog-assets/2014/07/loopback-logo-sm.png)
 
 <!--more-->
 

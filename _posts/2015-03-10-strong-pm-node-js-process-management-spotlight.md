@@ -12,7 +12,7 @@ categories:
 ---
 I want to take a moment and talk a little bit about deploying your Node.js application. This subject in general is pretty well defined but there aren’t that many tools out there written for Node. I’ve seen Node.js applications deployed by Capistrano, and yes, it does work but as a JavaScript developer that just doesn’t sit well with me and I would prefer something closer to home, something that lives and breathes my infrastructure, something that’s written in the language I’m very well familiar with and when things go wrong I can actually comprehend the error messages without extensive research.
 
-<img class="aligncenter size-full wp-image-23820" src="https://strongloop.com/wp-content/uploads/2015/03/indiana-jones-sand-bag.gif" alt="indiana-jones-sand-bag" width="480" height="253" />
+<img class="aligncenter size-full wp-image-23820" src="{{site.url}}/blog-assets/2015/03/indiana-jones-sand-bag.gif" alt="indiana-jones-sand-bag" width="480" height="253" />
 
 ## **Introducing strong-pm**
 
@@ -75,7 +75,7 @@ On the server:
             </h2>
             
             <p>
-              <img class="aligncenter size-large wp-image-23274" src="https://strongloop.com/wp-content/uploads/2014/12/API_Compose-1030x587.jpg" alt="API_Compose" width="1030" height="587" srcset="https://strongloop.com/wp-content/uploads/2014/12/API_Compose-1030x587.jpg 1030w, https://strongloop.com/wp-content/uploads/2014/12/API_Compose-300x171.jpg 300w, https://strongloop.com/wp-content/uploads/2014/12/API_Compose-1500x855.jpg 1500w, https://strongloop.com/wp-content/uploads/2014/12/API_Compose-450x256.jpg 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+              <img class="aligncenter size-large wp-image-23274" src="{{site.url}}/blog-assets/2014/12/API_Compose-1030x587.jpg" alt="API_Compose" width="1030" height="587"  />
             </p>
             
             <p>

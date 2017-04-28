@@ -57,7 +57,7 @@ When you call a generator function, the return value is a generator object, or g
   ​console​.log(html);
 };
 const​ generator = generatorFunction();
-// Prints an object: `{ value: &lt;Superagent Request&gt;, done: false }`
+// Prints an object: `{ value: <Superagent Request>, done: false }`
 console​.log(generator.next());
 // Throws an error:
 // `TypeError: Cannot read property 'text' of undefined`
@@ -67,7 +67,7 @@ console​.log(generator.next());
 The ​\`next()\`​ function executes the generator up to the next \`​yield​\` or \`​return\` statement. It returns an object with 2 properties: the value that was yielded or returned, and whether the generator is exhausted. The most exciting part of the \`​next()\`​ function is that it can take a parameter, and that parameter becomes the return value for the \`​yield​\` statement in the generator function.
 
 <pre class="lang:default decode:true " >const​ generator = generatorFunction();
-// Prints an object: `{ value: &lt;Superagent Request&gt;, done: false }`
+// Prints an object: `{ value: <Superagent Request>, done: false }`
 console​.log(generator.next({ text: ​'test'​ }));
 // Will print out 'test', because
 // `yield superagent.get('http://google.com')` becomes
@@ -115,7 +115,7 @@ It&#8217;s important to note that you can call \`​next()\`​ asynchronously. 
       ​return​;
     }
     ​// Point 1: assume the yielded value is a promise
-    res.value.then((v) =&gt; next(null, v), (error) =&gt; next(error));
+    res.value.then((v) => next(null, v), (error) => next(error));
   }
 };
 co(​function​*() {

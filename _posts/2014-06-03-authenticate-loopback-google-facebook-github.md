@@ -110,10 +110,10 @@ Properties of the `UserIdentity` model are:
   <span style="font-size: 18px;"><code>{*} userId</code>: The LoopBack user id</span>
 </li>
 <li style="margin-left: 2em;">
-  <code>&lt;code>&lt;span style="font-size: 18px;">&lt;code>{Date} created</code>: The created date</span></code></code>
+  <code><code><span style="font-size: 18px;"><code>{Date} created</code>: The created date</span></code></code>
 </li>
 <li style="margin-left: 2em;">
-  <code>&lt;code>&lt;code>&lt;code>&lt;span style="font-size: 18px;">&lt;code>{Date} modified</code>: The last modified date</span></code></code></code></code>
+  <code><code><code><code><span style="font-size: 18px;"><code>{Date} modified</code>: The last modified date</span></code></code></code></code>
 </li>
 
 <h2 dir="ltr">

@@ -78,7 +78,7 @@ Follow these steps to create an iOS single view application:
 
 From the LoopBack iOS SDK, drag `Loopback.Framework` to the Frameworks directory in your application.
 
-[<img class="alignnone size-medium wp-image-19114" alt="AddLoopback" src="https://strongloop.com/wp-content/uploads/2014/03/AddLoopback-300x188.png" width="300" height="188" />](https://strongloop.com/wp-content/uploads/2014/03/AddLoopback.png)
+[<img class="alignnone size-medium wp-image-19114" alt="AddLoopback" src="{{site.url}}/blog-assets/2014/03/AddLoopback-300x188.png" width="300" height="188" />]({{site.url}}/blog-assets/2014/03/AddLoopback.png)
 
 Import the Loopback framework into your app. Edit `booksAppDelegate.h` and add lines 2 and 7 as shown below:
 
@@ -124,13 +124,13 @@ static LBRESTAdapter * _adapter = nil;
 
 **Create the first screen for the application. **Click on **Main.storyboard** in the File Navigator to see an empty View Controller. Name this View Controller &#8220;Books Collection&#8221; by double clicking on it or adding a name in the **Title** field, shown highlighted in the following figure:
 
-[<img class="alignnone size-medium wp-image-19115" alt="SNP-1" src="https://strongloop.com/wp-content/uploads/2014/03/SNP-1-300x180.png" width="300" height="180" />](https://strongloop.com/wp-content/uploads/2014/03/SNP-1.png)
+[<img class="alignnone size-medium wp-image-19115" alt="SNP-1" src="{{site.url}}/blog-assets/2014/03/SNP-1-300x180.png" width="300" height="180" />]({{site.url}}/blog-assets/2014/03/SNP-1.png)
 
 **Design the Books Collection Screen. **Click on the box icon to list the Object Library items and drag a **Button** from the selection panel to the View Controller, near the bottom and centered horizontally. Change the **Title** field of the button from &#8220;Button&#8221; to &#8220;Refresh.&#8221;
 
 Select and drag a **Table View** to the View Controller. Add a **Table View Cell** to the Table View.  Click on the Table View Cell and enter &#8220;BookCell&#8221; as the **Identifier**. You will use this later. The View Controller should look like the screenshot below. Make sure the file hierarchy in the second panel is same as the screenshot.
 
-[<img class="alignnone size-medium wp-image-19116" alt="Screen1" src="https://strongloop.com/wp-content/uploads/2014/03/Screen1-300x188.png" width="300" height="188" />](https://strongloop.com/wp-content/uploads/2014/03/Screen1.png)
+[<img class="alignnone size-medium wp-image-19116" alt="Screen1" src="{{site.url}}/blog-assets/2014/03/Screen1-300x188.png" width="300" height="188" />]({{site.url}}/blog-assets/2014/03/Screen1.png)
 
 Connect the elements in the screen with the View Controller class: Select the Refresh button in your View Controller, hold Control and drag it into the `ViewController.m` right before `@end`. Name it &#8220;actionGetBooks&#8221; and click **Connect**, as shown below.  This will insert code that looks like this:
 
@@ -145,21 +145,21 @@ Connect the elements in the screen with the View Controller class: Select the Re
   </tr>
 </table>
 
-[<img class="alignnone size-medium wp-image-19117" alt="SNP-3" src="https://strongloop.com/wp-content/uploads/2014/03/SNP-3-300x180.png" width="300" height="180" />](https://strongloop.com/wp-content/uploads/2014/03/SNP-3.png)
+[<img class="alignnone size-medium wp-image-19117" alt="SNP-3" src="{{site.url}}/blog-assets/2014/03/SNP-3-300x180.png" width="300" height="180" />]({{site.url}}/blog-assets/2014/03/SNP-3.png)
 
 Define the TableView property by control-dragging into the `ViewController.h` file, as illustrated below.
 
-[<img class="alignnone size-medium wp-image-19118" alt="SNP-4" src="https://strongloop.com/wp-content/uploads/2014/03/SNP-4-300x180.png" width="300" height="180" />](https://strongloop.com/wp-content/uploads/2014/03/SNP-4.png)
+[<img class="alignnone size-medium wp-image-19118" alt="SNP-4" src="{{site.url}}/blog-assets/2014/03/SNP-4-300x180.png" width="300" height="180" />]({{site.url}}/blog-assets/2014/03/SNP-4.png)
 
 Define `*myTable` by control-dragging into `ViewController.m`, as illustrated below.
 
-[<img class="alignnone size-medium wp-image-19119" alt="myTable" src="https://strongloop.com/wp-content/uploads/2014/03/myTable-300x194.png" width="300" height="194" />](https://strongloop.com/wp-content/uploads/2014/03/myTable.png)
+[<img class="alignnone size-medium wp-image-19119" alt="myTable" src="{{site.url}}/blog-assets/2014/03/myTable-300x194.png" width="300" height="194" />]({{site.url}}/blog-assets/2014/03/myTable.png)
 
 Set outlets for the TableView by control-dragging them to the View Controller.
 
 In the second pane, right-click on Table View. Under Outlets, click on dataSource and drag it to the Books View Controller. Click on delegate and also drag it to the Books View Controller.
 
-.[<img class="alignnone size-medium wp-image-19120" alt="View Controller" src="https://strongloop.com/wp-content/uploads/2014/03/View-Controller-300x187.png" width="300" height="187" />](https://strongloop.com/wp-content/uploads/2014/03/View-Controller.png)
+.[<img class="alignnone size-medium wp-image-19120" alt="View Controller" src="{{site.url}}/blog-assets/2014/03/View-Controller-300x187.png" width="300" height="187" />]({{site.url}}/blog-assets/2014/03/View-Controller.png)
 
 Implement the &#8216;actionGetBook&#8217; function.
 
@@ -267,7 +267,7 @@ Call getBooks from the actionGetBooks function defined in Step 4.
 
 At this point you should be able to build your app and get the list of books. Build the app and run it on a simulator. Click **Refresh** and you should be able to see the list of books.
 
-[<img class="alignnone size-full wp-image-19121" alt="List of books" src="https://strongloop.com/wp-content/uploads/2014/03/List-of-books.png" width="184" height="300" />](https://strongloop.com/wp-content/uploads/2014/03/List-of-books.png)
+[<img class="alignnone size-full wp-image-19121" alt="List of books" src="{{site.url}}/blog-assets/2014/03/List-of-books.png" width="184" height="300" />]({{site.url}}/blog-assets/2014/03/List-of-books.png)
 
 ## **What’s next?**
 

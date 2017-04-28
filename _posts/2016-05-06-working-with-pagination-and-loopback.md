@@ -17,19 +17,19 @@ Pagination is simply the process of presenting a large set of data to the user o
 
 If you simply run the GET method on the Person API, you&#8217;ll get the ginormous JSON packet back. This just confirms that &#8211; by default &#8211; the API does no filtering on size. As an example of how bad that could be, check out the size of the request in Firefox below:
 
-<img class="aligncenter size-full wp-image-27328" src="https://strongloop.com/wp-content/uploads/2016/04/shot13.jpg" alt="shot1" width="750" height="464" srcset="https://strongloop.com/wp-content/uploads/2016/04/shot13.jpg 750w, https://strongloop.com/wp-content/uploads/2016/04/shot13-300x186.jpg 300w, https://strongloop.com/wp-content/uploads/2016/04/shot13-705x436.jpg 705w, https://strongloop.com/wp-content/uploads/2016/04/shot13-450x278.jpg 450w" sizes="(max-width: 750px) 100vw, 750px" />
+<img class="aligncenter size-full wp-image-27328" src="{{site.url}}/blog-assets/2016/04/shot13.jpg" alt="shot1" width="750" height="464"  />
 
 LoopBack provides two filters to help manage this and provide pagination. The first is limit. By appending filter[limit]=X to our URL, we can limit the result set to a sensible size.
 
-<img class="aligncenter size-full wp-image-27329" src="https://strongloop.com/wp-content/uploads/2016/04/shot2.jpg" alt="shot2" width="750" height="464" srcset="https://strongloop.com/wp-content/uploads/2016/04/shot2.jpg 750w, https://strongloop.com/wp-content/uploads/2016/04/shot2-300x186.jpg 300w, https://strongloop.com/wp-content/uploads/2016/04/shot2-705x436.jpg 705w, https://strongloop.com/wp-content/uploads/2016/04/shot2-450x278.jpg 450w" sizes="(max-width: 750px) 100vw, 750px" />
+<img class="aligncenter size-full wp-image-27329" src="{{site.url}}/blog-assets/2016/04/shot2.jpg" alt="shot2" width="750" height="464"  />
 
 Woot! Much better. That&#8217;s displaying the first ten records. So how do you get the _next_ ten? One more filter &#8211; skip. By adding filter[skip]=X to the query, I can tell LoopBack to start returning results after the Xth row. Here&#8217;s an example of that:
 
-<img class="aligncenter size-full wp-image-27330" src="https://strongloop.com/wp-content/uploads/2016/04/shot31.jpg" alt="shot3" width="750" height="464" srcset="https://strongloop.com/wp-content/uploads/2016/04/shot31.jpg 750w, https://strongloop.com/wp-content/uploads/2016/04/shot31-300x186.jpg 300w, https://strongloop.com/wp-content/uploads/2016/04/shot31-705x436.jpg 705w, https://strongloop.com/wp-content/uploads/2016/04/shot31-450x278.jpg 450w" sizes="(max-width: 750px) 100vw, 750px" />
+<img class="aligncenter size-full wp-image-27330" src="{{site.url}}/blog-assets/2016/04/shot31.jpg" alt="shot3" width="750" height="464"  />
 
 Woot! (Again!) But we&#8217;re not quite done yet. How do we know when to stop paging? If you tell LoopBack to skip past the end of the result set, you simply get back an empty array. In theory your front end could stop displaying &#8220;Next&#8221;-style UI at that result, but if you wanted to provide the user feedback on how many pages exist, you would be out of luck. Luckily, LoopBack comes to the rescue again. Every API will have a Count method out of the box, as demonstrated below.
 
-<img class="aligncenter size-full wp-image-27331" src="https://strongloop.com/wp-content/uploads/2016/04/shot41.jpg" alt="shot4" width="750" height="497" srcset="https://strongloop.com/wp-content/uploads/2016/04/shot41.jpg 750w, https://strongloop.com/wp-content/uploads/2016/04/shot41-300x199.jpg 300w, https://strongloop.com/wp-content/uploads/2016/04/shot41-705x467.jpg 705w, https://strongloop.com/wp-content/uploads/2016/04/shot41-450x298.jpg 450w" sizes="(max-width: 750px) 100vw, 750px" />
+<img class="aligncenter size-full wp-image-27331" src="{{site.url}}/blog-assets/2016/04/shot41.jpg" alt="shot4" width="750" height="497"  />
 
 So by simply making an HTTP GET request to /api/people/count, you&#8217;ll get the response back in a simple JSON object: {&#8220;count&#8221;:5000}.
 
@@ -38,26 +38,26 @@ So by simply making an HTTP GET request to /api/people/count, you&#8217;ll get t
 Alright, so let&#8217;s put this together in an incredibly simple demo application. I began with a simple view:
 
 ```js
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-	&lt;head&gt;
-		&lt;meta charset="utf-8"&gt;
-		&lt;title&gt;&lt;/title&gt;
-		&lt;meta name="description" content=""&gt;
-		&lt;meta name="viewport" content="width=device-width"&gt;
-	&lt;/head&gt;
-	&lt;body&gt;
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
 
 
-		&lt;div id="results"&gt;&lt;/div&gt;
-		&lt;button id="goBackBtn" disabled&gt;Go Back&lt;/button&gt; -
-		&lt;button id="goForwardBtn" disabled&gt;Go Forward&lt;/button&gt; 
+		<div id="results"></div>
+		<button id="goBackBtn" disabled>Go Back</button> -
+		<button id="goForwardBtn" disabled>Go Forward</button> 
 
-		&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"&gt;&lt;/script&gt;
-		&lt;script src="app.js"&gt;&lt;/script&gt;
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="app.js"></script>
 
-	&lt;/body&gt;
-&lt;/html&gt;
+	</body>
+</html>
 
 ```
 
@@ -103,8 +103,8 @@ function fetchData() {
 	$.get('http://localhost:3000/api/people?filter[limit]='+perPage+'&filter[skip]='+currentPos, function(res) {
 		renderData(res);
 		
-		if(currentPos &gt; 0) $backBtn.removeAttr('disabled');
-		if(currentPos + perPage &lt; total) $fwdBtn.removeAttr('disabled');
+		if(currentPos > 0) $backBtn.removeAttr('disabled');
+		if(currentPos + perPage < total) $fwdBtn.removeAttr('disabled');
 	},'json');
 			
 }
@@ -113,7 +113,7 @@ function fetchData() {
 function renderData(p) {
 	s = '';
 	p.forEach(function(person) {
-		s += '&lt;div class="person"&gt;&lt;img src="' + person.picture + '" width="48" height="48"&gt;'+person.name+'&lt;/div&gt;';
+		s += '<div class="person"><img src="' + person.picture + '" width="48" height="48">'+person.name+'</div>';
 	});
 	$results.html(s);
 }

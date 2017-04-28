@@ -90,7 +90,7 @@ saucie --browserNameSL="android" --versionSL="4.1" --platformSL="Linux" --device
 
 Click on the screenshot below to watch a command line demo of Saucie in action!
 
-[<img class="aligncenter size-full wp-image-23904" src="https://strongloop.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-11-at-2.35.08-PM.png" alt="Screen Shot 2015-03-11 at 2.35.08 PM" width="748" height="639" srcset="https://strongloop.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-11-at-2.35.08-PM.png 748w, https://strongloop.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-11-at-2.35.08-PM-300x256.png 300w, https://strongloop.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-11-at-2.35.08-PM-705x602.png 705w, https://strongloop.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-11-at-2.35.08-PM-450x384.png 450w" sizes="(max-width: 748px) 100vw, 748px" />](http://showterm.io/bd7400428650f13e43eb6)
+[<img class="aligncenter size-full wp-image-23904" src="{{site.url}}/blog-assets/2015/03/Screen-Shot-2015-03-11-at-2.35.08-PM.png" alt="Screen Shot 2015-03-11 at 2.35.08 PM" width="748" height="639"  />](http://showterm.io/bd7400428650f13e43eb6)
 
 As you can see, with just a few commands we were able to test across cross browsers. Now, let’s go to SauceLabs and check the results, including the mobile ones such as iOS and Android:
 

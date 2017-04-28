@@ -10,7 +10,7 @@ categories:
 ---
 > _**Editor&#8217;s Note:** As some of you may know, the node-webkit project was [rebranded &#8220;nw.js&#8221;](https://groups.google.com/forum/#!msg/nwjs-general/V1FhvfaFIzQ/720xKVd0jNkJ) because they are now using io.js and Chromium. This article was written long before that change. We&#8217;re working on a new article with updates examples for you, but much of the content below still applies!_<figure>
 
-[<img class="alignnone size-full wp-image-10262" alt="sputnik" src="https://strongloop.com/wp-content/uploads/2013/11/sputnik.jpg" width="610" height="384" />](https://strongloop.com/wp-content/uploads/2013/11/sputnik.jpg)&nbsp;</p> <figcaption>[Sputnik:](http://sputnik.szwacz.com/) an open-source RSS reader desktop application created using node-webkit</figcaption> </figure> 
+[<img class="alignnone size-full wp-image-10262" alt="sputnik" src="{{site.url}}/blog-assets/2013/11/sputnik.jpg" width="610" height="384" />]({{site.url}}/blog-assets/2013/11/sputnik.jpg)&nbsp;</p> <figcaption>[Sputnik:](http://sputnik.szwacz.com/) an open-source RSS reader desktop application created using node-webkit</figcaption> </figure> 
 
 Web applications are useful, but there are some cases where it&#8217;s not desirable or necessary to host an application on a remote server. As [HTML5](http://www.w3schools.com/html/html5_intro.asp) provides low-level functionality to modern browsers, such as the ability to read and write files, it&#8217;s now possible to create offline, single-page, JavaScript applications using a web browser as a platform.
 
@@ -30,7 +30,7 @@ The [node-webkit](https://github.com/rogerwang/node-webkit) project, which was c
 
 The project provides a [WebKit](http://www.webkit.org/) browser that has been extended with the the ability to control user interface elements normally off-limits to web developers. The browser&#8217;s security configuration is relaxed, assuming that the application code you&#8217;re runnning is trusted. And, most interestingly, the browser integrates [Node.js](http://nodejs.org/), allowing node-webkit applications to leverage a wide array of functionality other than what HTML5 APIs provide.<figure>
 
-[<img class="alignnone size-full wp-image-10279" alt="The node-webkit concept" src="https://strongloop.com/wp-content/uploads/2013/11/node-webkit-concept-v4.png" width="395" height="236" />](https://strongloop.com/wp-content/uploads/2013/11/node-webkit-concept-v4.png)</figure> 
+[<img class="alignnone size-full wp-image-10279" alt="The node-webkit concept" src="{{site.url}}/blog-assets/2013/11/node-webkit-concept-v4.png" width="395" height="236" />]({{site.url}}/blog-assets/2013/11/node-webkit-concept-v4.png)</figure> 
 
 Now that you&#8217;ve got an idea what node-webkit is and what it&#8217;s useful for, let&#8217;s talk about how to install it.
 
@@ -120,5 +120,5 @@ If you run into difficulties, a [Google Group](https://groups.google.com/forum/#
     StrongLoop Arc is a graphical UI for the <a href="http://strongloop.com/node-js/api-platform/">StrongLoop API Platform</a>, which includes LoopBack, that complements the <a href="http://docs.strongloop.com/pages/viewpage.action?pageId=3834790">slc command line tools</a> for developing APIs quickly and getting them connected to data. Arc also includes tools for building, profiling and monitoring Node apps. It takes just a few simple steps to <a href="http://strongloop.com/get-started/">get started</a>!
   </p>
   
-  <img class="aligncenter size-large wp-image-21950" src="https://strongloop.com/wp-content/uploads/2014/12/Arc_Monitoring_Metrics-1030x593.jpg" alt="Arc_Monitoring_Metrics" width="1030" height="593" />
+  <img class="aligncenter size-large wp-image-21950" src="{{site.url}}/blog-assets/2014/12/Arc_Monitoring_Metrics-1030x593.jpg" alt="Arc_Monitoring_Metrics" width="1030" height="593" />
 </div>

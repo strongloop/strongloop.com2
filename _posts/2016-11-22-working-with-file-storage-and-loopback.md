@@ -92,7 +92,7 @@ The full API is [documented](http://loopback.io/doc/en/lb2/Storage-component-RES
 
 This will list all the folders under my filesystem, again based on the root I defined above. This returns a list of these folders along with some metadata. Did you notice it was plural? This too isn&#8217;t really documented. When you create your model and use a singular name, the API only uses the plural name.
 
-<img class="aligncenter size-full wp-image-28332" src="https://strongloop.com/wp-content/uploads/2016/11/lb1-1.png" alt="lb1" width="566" height="435" srcset="https://strongloop.com/wp-content/uploads/2016/11/lb1-1.png 566w, https://strongloop.com/wp-content/uploads/2016/11/lb1-1-300x231.png 300w, https://strongloop.com/wp-content/uploads/2016/11/lb1-1-450x346.png 450w" sizes="(max-width: 566px) 100vw, 566px" />
+<img class="aligncenter size-full wp-image-28332" src="{{site.url}}/blog-assets/2016/11/lb1-1.png" alt="lb1" width="566" height="435"  />
 
 In the screenshot above, you can see two folders (which again, the docs refer to as containers): picture and resume. I created these by hand and named them according to what I planned on using them for.
 
@@ -100,7 +100,7 @@ In the screenshot above, you can see two folders (which again, the docs refer to
 
 This returns a list of files in the resume folder. The values look similar to the folder/container list:
 
-<img class="aligncenter size-full wp-image-28333" src="https://strongloop.com/wp-content/uploads/2016/11/lb2.png" alt="lb2" width="572" height="1055" srcset="https://strongloop.com/wp-content/uploads/2016/11/lb2.png 572w, https://strongloop.com/wp-content/uploads/2016/11/lb2-163x300.png 163w, https://strongloop.com/wp-content/uploads/2016/11/lb2-558x1030.png 558w, https://strongloop.com/wp-content/uploads/2016/11/lb2-382x705.png 382w, https://strongloop.com/wp-content/uploads/2016/11/lb2-450x830.png 450w" sizes="(max-width: 572px) 100vw, 572px" />
+<img class="aligncenter size-full wp-image-28333" src="{{site.url}}/blog-assets/2016/11/lb2.png" alt="lb2" width="572" height="1055"  />
 
 **GET /api/attachments/resume/avatar.jpg**
 
@@ -156,7 +156,7 @@ I specifically made them **not** required. Why? I wanted the ability to send a s
 
 Now let&#8217;s consider how we can actually use these APIs. I built an incredibly simple jQuery-based front end that has 2 main features. It lists all cats and provides a form for adding new cats.
 
-<img class="aligncenter size-full wp-image-28335" src="https://strongloop.com/wp-content/uploads/2016/11/lb3.png" alt="lb3" width="683" height="1077" srcset="https://strongloop.com/wp-content/uploads/2016/11/lb3.png 683w, https://strongloop.com/wp-content/uploads/2016/11/lb3-190x300.png 190w, https://strongloop.com/wp-content/uploads/2016/11/lb3-653x1030.png 653w, https://strongloop.com/wp-content/uploads/2016/11/lb3-447x705.png 447w, https://strongloop.com/wp-content/uploads/2016/11/lb3-450x710.png 450w" sizes="(max-width: 683px) 100vw, 683px" />
+<img class="aligncenter size-full wp-image-28335" src="{{site.url}}/blog-assets/2016/11/lb3.png" alt="lb3" width="683" height="1077"  />
 
 Not the slickest of apps, but it gets the job done. I began with a simple version that simply ignores the additional data. Here is that script in it&#8217;s entirety:
 
@@ -187,10 +187,10 @@ function getCats() {
     $.get(apiUrl + 'cats').then(function(res) {
         res.forEach(function(cat) {
             list += `
-            &lt;h2&gt;${cat.name}&lt;/h2&gt;
-            &lt;p&gt;
+            <h2>${cat.name}</h2>
+            <p>
             ${cat.name} is a ${cat.breed} and is ${cat.age} year(s) old.
-            &lt;/p&gt;`;
+            </p>`;
         });
         $catList.html(list);
     });
@@ -279,7 +279,7 @@ function handleForm(e) {
         Promise.all(promises).then(function(results) {
             console.log('back from all promises', results);
             //update cat if we need to
-            if(promises.length &gt;= 1) {
+            if(promises.length >= 1) {
                 /*
                 so we have one or two results, we could add some logic to see what
                 we selected so we know what is what, but we can simplify since the result
@@ -314,7 +314,7 @@ You can find a complete copy of this demo at <https://github.com/cfjedimaster/S
 
 I want to be absolutely clear that this was my first test of this particular feature and what I&#8217;m doing may not be &#8220;proper&#8221;, but it worked, and I&#8217;m fine with that.
 
-<img class="aligncenter size-full wp-image-28336" src="https://strongloop.com/wp-content/uploads/2016/11/reactionpic6.jpg" alt="reactionpic6" width="500" height="479" srcset="https://strongloop.com/wp-content/uploads/2016/11/reactionpic6.jpg 500w, https://strongloop.com/wp-content/uploads/2016/11/reactionpic6-300x287.jpg 300w, https://strongloop.com/wp-content/uploads/2016/11/reactionpic6-450x431.jpg 450w" sizes="(max-width: 500px) 100vw, 500px" />
+<img class="aligncenter size-full wp-image-28336" src="{{site.url}}/blog-assets/2016/11/reactionpic6.jpg" alt="reactionpic6" width="500" height="479"  />
 
 Some final thoughts/issues/etc:
 

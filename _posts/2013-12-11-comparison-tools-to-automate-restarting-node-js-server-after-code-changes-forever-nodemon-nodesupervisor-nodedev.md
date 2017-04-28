@@ -17,7 +17,7 @@ after every code change to be very archaic. Luckily there are many tools availab
 &nbsp;
 
 <center>
-  <br /> <img alt="coffee" src="https://strongloop.com/wp-content/uploads/2013/12/coffee.jpg" width="350" height="263" />
+  <br /> <img alt="coffee" src="{{site.url}}/blog-assets/2013/12/coffee.jpg" width="350" height="263" />
 </center>
 
 

@@ -68,58 +68,58 @@ In this blog post, we’ll create a simple REST service in both the Java EE and 
 For the sample application, called `restexample`, I will be using the JBoss EAP Application Server. The first thing we want to do is configure our `pom.xml` file for dependency management using the Maven build system. Below is the `pom.xml` file that includes the dependencies that I will be using for the `restexample` application:
 
 ```js
-&lt;project xmlns="http://maven.apache.org/POM/4.0.0"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"&gt;
-       &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
-       &lt;groupId&gt;restexample&lt;/groupId&gt;
-       &lt;artifactId&gt;restexample&lt;/artifactId&gt;
-       &lt;packaging&gt;war&lt;/packaging&gt;
-       &lt;version&gt;1.0&lt;/version&gt;
-       &lt;name&gt;restexample&lt;/name&gt;
-       &lt;repositories&gt;
-           &lt;repository&gt;
-               &lt;id&gt;eap&lt;/id&gt;
-               &lt;url&gt;http://maven.repository.redhat.com/techpreview/all&lt;/url&gt;
-               &lt;releases&gt;
-                   &lt;enabled&gt;true&lt;/enabled&gt;
-               &lt;/releases&gt;
-               &lt;snapshots&gt;
-                   &lt;enabled&gt;true&lt;/enabled&gt;
-               &lt;/snapshots&gt;
-           &lt;/repository&gt;
-       &lt;/repositories&gt;
-       &lt;pluginRepositories&gt;
-           &lt;pluginRepository&gt;
-               &lt;id&gt;eap&lt;/id&gt;
-               &lt;url&gt;http://maven.repository.redhat.com/techpreview/all&lt;/url&gt;
-               &lt;releases&gt;
-                   &lt;enabled&gt;true&lt;/enabled&gt;
-               &lt;/releases&gt;
-               &lt;snapshots&gt;
-                   &lt;enabled&gt;true&lt;/enabled&gt;
-               &lt;/snapshots&gt;
-           &lt;/pluginRepository&gt;
-       &lt;/pluginRepositories&gt;
-       &lt;properties&gt;
-           &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
-           &lt;maven.compiler.source&gt;1.6&lt;/maven.compiler.source&gt;
-           &lt;maven.compiler.target&gt;1.6&lt;/maven.compiler.target&gt;
-       &lt;/properties&gt;
-       &lt;dependencies&gt;
-           &lt;dependency&gt;
-               &lt;groupId&gt;org.jboss.spec&lt;/groupId&gt;
-               &lt;artifactId&gt;jboss-javaee-6.0&lt;/artifactId&gt;
-               &lt;version&gt;3.0.2.Final-redhat-4&lt;/version&gt;
-               &lt;type&gt;pom&lt;/type&gt;
-               &lt;scope&gt;provided&lt;/scope&gt;
-           &lt;/dependency&gt;
-           &lt;dependency&gt;
-               &lt;groupId&gt;org.mongodb&lt;/groupId&gt;
-               &lt;artifactId&gt;mongo-java-driver&lt;/artifactId&gt;
-               &lt;version&gt;2.9.1&lt;/version&gt;
-           &lt;/dependency&gt;
-           &lt;/dependencies&gt;
-       &lt;/project&gt;
+<project xmlns="http://maven.apache.org/POM/4.0.0"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+       <modelVersion>4.0.0</modelVersion>
+       <groupId>restexample</groupId>
+       <artifactId>restexample</artifactId>
+       <packaging>war</packaging>
+       <version>1.0</version>
+       <name>restexample</name>
+       <repositories>
+           <repository>
+               <id>eap</id>
+               <url>http://maven.repository.redhat.com/techpreview/all</url>
+               <releases>
+                   <enabled>true</enabled>
+               </releases>
+               <snapshots>
+                   <enabled>true</enabled>
+               </snapshots>
+           </repository>
+       </repositories>
+       <pluginRepositories>
+           <pluginRepository>
+               <id>eap</id>
+               <url>http://maven.repository.redhat.com/techpreview/all</url>
+               <releases>
+                   <enabled>true</enabled>
+               </releases>
+               <snapshots>
+                   <enabled>true</enabled>
+               </snapshots>
+           </pluginRepository>
+       </pluginRepositories>
+       <properties>
+           <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+           <maven.compiler.source>1.6</maven.compiler.source>
+           <maven.compiler.target>1.6</maven.compiler.target>
+       </properties>
+       <dependencies>
+           <dependency>
+               <groupId>org.jboss.spec</groupId>
+               <artifactId>jboss-javaee-6.0</artifactId>
+               <version>3.0.2.Final-redhat-4</version>
+               <type>pom</type>
+               <scope>provided</scope>
+           </dependency>
+           <dependency>
+               <groupId>org.mongodb</groupId>
+               <artifactId>mongo-java-driver</artifactId>
+               <version>2.9.1</version>
+           </dependency>
+           </dependencies>
+       </project>
 ```
 
 Whew, pretty verbose, but hopefully you understand the code. I&#8217;m not going to explain the details because if you&#8217;re reading this post, I assume you understand Java.
@@ -133,18 +133,18 @@ I. Browse to your `/src/main/webapp/WEB-INF` directory and create a file named `
 II. Add the following code:
 
 ```js
-&lt;?xml version="1.0"?&gt;
-&lt;beans xmlns="http://java.sun.com/xml/ns/javaee"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://jboss.org/schema/cdi/beans_1_0.xsd"/&gt;
+<?xml version="1.0"?>
+<beans xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://jboss.org/schema/cdi/beans_1_0.xsd"/>
 ```
 
 III. Set the our servlet mapping for our REST API calls in the `web.xml` file. Add the following servlet mapping element to the file located in the `/src/main/webapp/WEB-INF` directory:
 
 ```js
-&lt;servlet-mapping&gt;
-   &lt;servlet-name&gt;javax.ws.rs.core.Application&lt;/servlet-name&gt;
-   &lt;url-pattern&gt;/ws/*&lt;/url-pattern&gt;
-&lt;/servlet-mapping&gt;
+<servlet-mapping>
+   <servlet-name>javax.ws.rs.core.Application</servlet-name>
+   <url-pattern>/ws/*</url-pattern>
+</servlet-mapping>
 ```
 
 **Step 3: Creating the DBConnection class**
@@ -211,7 +211,7 @@ public class DBConnection {
 
 For our sample application, we are going to load a list of beers that match on the name of “Pabst”. If you are not familiar with beer drinking, the Pabst Brewing Company makes some of the finest American ale available. With signature products such as Pabst Blue Ribbon (PBR) and Colt 45, they have all of your malt drinking beverages basis covered.
 
-<img class="aligncenter size-full wp-image-19155" src="https://strongloop.com/wp-content/uploads/2014/08/pabst-coupon.jpg" alt="pabst-coupon" width="1024" height="919" srcset="https://strongloop.com/wp-content/uploads/2014/08/pabst-coupon.jpg 1024w, https://strongloop.com/wp-content/uploads/2014/08/pabst-coupon-300x269.jpg 300w, https://strongloop.com/wp-content/uploads/2014/08/pabst-coupon-450x403.jpg 450w" sizes="(max-width: 1024px) 100vw, 1024px" />
+<img class="aligncenter size-full wp-image-19155" src="{{site.url}}/blog-assets/2014/08/pabst-coupon.jpg" alt="pabst-coupon" width="1024" height="919"  />
 
 The first thing you want to do is download a JSON file that has all the data that we want to return. You can grab this at the following URL:
 
@@ -322,8 +322,8 @@ public class BeerWS {
    // get all of the beers
    @GET()
    @Produces("application/json")
-   public List&lt;Beer&gt; getAllBeers() {
-       ArrayList&lt;Beer&gt; allBeersList = new ArrayList&lt;Beer&gt;();
+   public List<Beer> getAllBeers() {
+       ArrayList<Beer> allBeersList = new ArrayList<Beer>();
 
        DBCollection beers = this.getBeerCollection();
        DBCursor cursor = beers.find();
@@ -348,7 +348,7 @@ Whew, finally. We now have a REST web service written that finds all of the beer
 
 If everything went as it should, you will see all of the beers listed as shown in the following image:
 
-<img class="aligncenter size-full wp-image-19167" src="https://strongloop.com/wp-content/uploads/2014/08/restexample.png" alt="restexample" width="975" height="500" srcset="https://strongloop.com/wp-content/uploads/2014/08/restexample.png 975w, https://strongloop.com/wp-content/uploads/2014/08/restexample-300x153.png 300w, https://strongloop.com/wp-content/uploads/2014/08/restexample-450x230.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-19167" src="{{site.url}}/blog-assets/2014/08/restexample.png" alt="restexample" width="975" height="500"  />
 
 ## **Creating our Node application**
 
@@ -364,7 +364,7 @@ I. Point your browser to the following URL and download the correct installer fo
 
 II. Once this page loads, you should see the following:
 
-[<img class="aligncenter size-large wp-image-28577" src="https://strongloop.com/wp-content/uploads/2014/08/Installer-Screen-1030x533.png" alt="Installer Screen" width="1030" height="533" srcset="https://strongloop.com/wp-content/uploads/2014/08/Installer-Screen-1030x533.png 1030w, https://strongloop.com/wp-content/uploads/2014/08/Installer-Screen-300x155.png 300w, https://strongloop.com/wp-content/uploads/2014/08/Installer-Screen-768x397.png 768w, https://strongloop.com/wp-content/uploads/2014/08/Installer-Screen-705x365.png 705w, https://strongloop.com/wp-content/uploads/2014/08/Installer-Screen-450x233.png 450w, https://strongloop.com/wp-content/uploads/2014/08/Installer-Screen.png 1144w" sizes="(max-width: 1030px) 100vw, 1030px" />](https://strongloop.com/wp-content/uploads/2014/08/Installer-Screen.png)
+[<img class="aligncenter size-large wp-image-28577" src="{{site.url}}/blog-assets/2014/08/Installer-Screen-1030x533.png" alt="Installer Screen" width="1030" height="533"  />]({{site.url}}/blog-assets/2014/08/Installer-Screen.png)
 
 III. If you are using Mac OSX, click on the `.pkg` file. This saves the installation program to your local computer.
 
@@ -372,7 +372,7 @@ IV. Once the file has been downloaded, start the installation program by double 
 
 V. Click Continue on the installer dialogue:
 
-[<img class="aligncenter size-full wp-image-28578" src="https://strongloop.com/wp-content/uploads/2014/08/node-install.png" alt="node install" width="624" height="442" srcset="https://strongloop.com/wp-content/uploads/2014/08/node-install.png 624w, https://strongloop.com/wp-content/uploads/2014/08/node-install-300x213.png 300w, https://strongloop.com/wp-content/uploads/2014/08/node-install-260x185.png 260w, https://strongloop.com/wp-content/uploads/2014/08/node-install-450x319.png 450w" sizes="(max-width: 624px) 100vw, 624px" />](https://strongloop.com/wp-content/uploads/2014/08/node-install.png)
+[<img class="aligncenter size-full wp-image-28578" src="{{site.url}}/blog-assets/2014/08/node-install.png" alt="node install" width="624" height="442"  />]({{site.url}}/blog-assets/2014/08/node-install.png)
 
 VI. Complete the installation process by using all of the defaults.
 
@@ -408,7 +408,7 @@ III. Next, you are prompted for a project directory. For the purpose of this exe
 
 IV. When prompted for the version of LoopBack to use, choose the current stable release.
 
-<img class="aligncenter size-full wp-image-19180" src="https://strongloop.com/wp-content/uploads/2014/08/Screen-Shot-2014-08-14-at-9.11.05-AM.png" alt="Screen Shot 2014-08-14 at 9.11.05 AM" width="422" height="255" srcset="https://strongloop.com/wp-content/uploads/2014/08/Screen-Shot-2014-08-14-at-9.11.05-AM.png 422w, https://strongloop.com/wp-content/uploads/2014/08/Screen-Shot-2014-08-14-at-9.11.05-AM-300x181.png 300w" sizes="(max-width: 422px) 100vw, 422px" />
+<img class="aligncenter size-full wp-image-19180" src="{{site.url}}/blog-assets/2014/08/Screen-Shot-2014-08-14-at-9.11.05-AM.png" alt="Screen Shot 2014-08-14 at 9.11.05 AM" width="422" height="255"  />
 
 IV. The `slc` utility prompts you to select the project type. Select **api-server**.
 
@@ -616,11 +616,11 @@ LoopBack also includes an explorer application that allows you to view all of th
 
 Once the page has loaded, you will be presented with the following screen where I have highlighted the `/beers` endpoint that we created as part of this blog post:
 
-<img class="aligncenter size-full wp-image-19205" src="https://strongloop.com/wp-content/uploads/2014/08/explorer11.png" alt="explorer1" width="975" height="248" srcset="https://strongloop.com/wp-content/uploads/2014/08/explorer11.png 975w, https://strongloop.com/wp-content/uploads/2014/08/explorer11-300x76.png 300w, https://strongloop.com/wp-content/uploads/2014/08/explorer11-450x114.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-19205" src="{{site.url}}/blog-assets/2014/08/explorer11.png" alt="explorer1" width="975" height="248"  />
 
 Click on the `/beers` endpoint to expand the available API calls that can be made and even test a few out as shown in the following image:
 
-<img class="aligncenter size-full wp-image-19206" src="https://strongloop.com/wp-content/uploads/2014/08/explorer2.png" alt="explorer2" width="975" height="894" srcset="https://strongloop.com/wp-content/uploads/2014/08/explorer2.png 975w, https://strongloop.com/wp-content/uploads/2014/08/explorer2-300x275.png 300w, https://strongloop.com/wp-content/uploads/2014/08/explorer2-450x412.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-19206" src="{{site.url}}/blog-assets/2014/08/explorer2.png" alt="explorer2" width="975" height="894"  />
 
 ## **Conclusion**
 

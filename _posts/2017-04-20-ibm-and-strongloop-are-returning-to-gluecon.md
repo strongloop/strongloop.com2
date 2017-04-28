@@ -18,7 +18,7 @@ _Glue is a developer­ oriented conference that is focused on how Serverless Arc
 
 <!--more-->
 
-[<img class="aligncenter wp-image-29219 size-medium" src="https://strongloop.com/wp-content/uploads/2017/04/gluecon-2017-logo-1-300x128.png" alt="IBM and StrongLoop Are Returning to GlueCon - gluecon logo" width="300" height="128" srcset="https://strongloop.com/wp-content/uploads/2017/04/gluecon-2017-logo-1-300x128.png 300w, https://strongloop.com/wp-content/uploads/2017/04/gluecon-2017-logo-1-768x328.png 768w, https://strongloop.com/wp-content/uploads/2017/04/gluecon-2017-logo-1-1030x439.png 1030w, https://strongloop.com/wp-content/uploads/2017/04/gluecon-2017-logo-1-705x301.png 705w, https://strongloop.com/wp-content/uploads/2017/04/gluecon-2017-logo-1-450x192.png 450w, https://strongloop.com/wp-content/uploads/2017/04/gluecon-2017-logo-1.png 1439w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2017/04/gluecon-2017-logo-1.png)
+[<img class="aligncenter wp-image-29219 size-medium" src="{{site.url}}/blog-assets/2017/04/gluecon-2017-logo-1-300x128.png" alt="IBM and StrongLoop Are Returning to GlueCon - gluecon logo" width="300" height="128"  />]({{site.url}}/blog-assets/2017/04/gluecon-2017-logo-1.png)
 
 StrongLoop and IBM have sponsored Gluecon in the past and we are a Platinum Sponsor this year. Our StrongLoop Developer Evangelists will be there as well, with these events on the agenda:
 

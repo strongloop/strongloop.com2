@@ -15,7 +15,7 @@ The world is moving toward the cloud—both public and private clouds—and infr
 ## **What is OpenShift?**
 
 <p dir="ltr">
-  <img class="aligncenter size-full wp-image-19739" src="https://strongloop.com/wp-content/uploads/2014/09/Openshift.png" alt="Openshift" width="620" height="265" srcset="https://strongloop.com/wp-content/uploads/2014/09/Openshift.png 620w, https://strongloop.com/wp-content/uploads/2014/09/Openshift-300x128.png 300w, https://strongloop.com/wp-content/uploads/2014/09/Openshift-450x192.png 450w" sizes="(max-width: 620px) 100vw, 620px" />
+  <img class="aligncenter size-full wp-image-19739" src="{{site.url}}/blog-assets/2014/09/Openshift.png" alt="Openshift" width="620" height="265"  />
 </p>
 
 OpenShift is one of the most popular PaaS (Platform as a Service) provider used by developers worldwide. OpenShift supports Node.js and StrongLoop API server platforms with default built in cartridges.
@@ -132,15 +132,15 @@ As printed on the console output, we can see that the provisioned api applicatio
 
 Logging into OpenShift we can see the application name and details published under the “applications” tab:
   
-<img class="aligncenter size-full wp-image-19746" src="https://strongloop.com/wp-content/uploads/2014/09/Openshift_firstAPI.png" alt="Openshift_firstAPI" width="1600" height="609" srcset="https://strongloop.com/wp-content/uploads/2014/09/Openshift_firstAPI.png 1600w, https://strongloop.com/wp-content/uploads/2014/09/Openshift_firstAPI-300x114.png 300w, https://strongloop.com/wp-content/uploads/2014/09/Openshift_firstAPI-1030x392.png 1030w, https://strongloop.com/wp-content/uploads/2014/09/Openshift_firstAPI-1500x570.png 1500w, https://strongloop.com/wp-content/uploads/2014/09/Openshift_firstAPI-710x270.png 710w, https://strongloop.com/wp-content/uploads/2014/09/Openshift_firstAPI-450x171.png 450w" sizes="(max-width: 1600px) 100vw, 1600px" />
+<img class="aligncenter size-full wp-image-19746" src="{{site.url}}/blog-assets/2014/09/Openshift_firstAPI.png" alt="Openshift_firstAPI" width="1600" height="609"  />
   
 Clicking on the app name lets us see the provisioned specifications of the host system, remote url information as well as gives us options to add multiple backends like MongoDB, MySQL or PostgreSQL to this API application.
   
-<img class="aligncenter size-full wp-image-19747" src="https://strongloop.com/wp-content/uploads/2014/09/Openshift_App_Detail.png" alt="Openshift_App_Detail" width="1600" height="705" srcset="https://strongloop.com/wp-content/uploads/2014/09/Openshift_App_Detail.png 1600w, https://strongloop.com/wp-content/uploads/2014/09/Openshift_App_Detail-300x132.png 300w, https://strongloop.com/wp-content/uploads/2014/09/Openshift_App_Detail-1030x453.png 1030w, https://strongloop.com/wp-content/uploads/2014/09/Openshift_App_Detail-1500x660.png 1500w, https://strongloop.com/wp-content/uploads/2014/09/Openshift_App_Detail-450x198.png 450w" sizes="(max-width: 1600px) 100vw, 1600px" />
+<img class="aligncenter size-full wp-image-19747" src="{{site.url}}/blog-assets/2014/09/Openshift_App_Detail.png" alt="Openshift_App_Detail" width="1600" height="705"  />
   
 Lets open a browser and type in the <app-URL>/explorer, which in our case would be <http://myapi-strongdemo.rhcloud.com/explorer>. Below we can see StrongLoop’s API explorer which provides an interface to visualize and test the out of box default APIs. As Loopback advocates and follows [Model driven development](http://strongloop.com/strongblog/node-js-api-tip-model-driven-development/), the User Model is created by default along with all the CRUD endpoints&#8230;
   
-<img class="aligncenter size-full wp-image-19748" src="https://strongloop.com/wp-content/uploads/2014/09/BaseApp_Explorer.png" alt="BaseApp_Explorer" width="1324" height="1448" srcset="https://strongloop.com/wp-content/uploads/2014/09/BaseApp_Explorer.png 1324w, https://strongloop.com/wp-content/uploads/2014/09/BaseApp_Explorer-274x300.png 274w, https://strongloop.com/wp-content/uploads/2014/09/BaseApp_Explorer-941x1030.png 941w, https://strongloop.com/wp-content/uploads/2014/09/BaseApp_Explorer-450x492.png 450w" sizes="(max-width: 1324px) 100vw, 1324px" />
+<img class="aligncenter size-full wp-image-19748" src="{{site.url}}/blog-assets/2014/09/BaseApp_Explorer.png" alt="BaseApp_Explorer" width="1324" height="1448"  />
 
 ## **Step 3: Update the Loopback API**
 
@@ -312,21 +312,21 @@ remote: Git Post-Receive Result: success
 remote: Activation status: success
 remote: Deployment completed with status: success
 To ssh://5400b85c5004467ec9000337@myapi-strongdemo.rhcloud.com/~/git/myapi.git/
-  f69aa75..e58a549  master -&gt; master
+  f69aa75..e58a549  master -> master
 ```
 
 <p dir="ltr">
   We can now validate the updated myapi application on OpenShift cloud by refreshing the same API explorer URL and checking for the accounts model.
 </p>
 
-<img class="aligncenter size-full wp-image-19757" src="https://strongloop.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-03-at-7.44.18-AM.png" alt="Screen Shot 2014-09-03 at 7.44.18 AM" width="1344" height="344" srcset="https://strongloop.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-03-at-7.44.18-AM.png 1344w, https://strongloop.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-03-at-7.44.18-AM-300x76.png 300w, https://strongloop.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-03-at-7.44.18-AM-1030x263.png 1030w, https://strongloop.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-03-at-7.44.18-AM-450x115.png 450w" sizes="(max-width: 1344px) 100vw, 1344px" />
+<img class="aligncenter size-full wp-image-19757" src="{{site.url}}/blog-assets/2014/09/Screen-Shot-2014-09-03-at-7.44.18-AM.png" alt="Screen Shot 2014-09-03 at 7.44.18 AM" width="1344" height="344"  />
 
 <p dir="ltr">
   First off we can see the new Accounts model (pluralized) being added. Expanding that API, we can also see all the auto-provisioned API endpoints for CRUD operations on Accounts model.
 </p>
 
 <p dir="ltr">
-  <img class="aligncenter size-full wp-image-19758" src="https://strongloop.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-03-at-7.44.37-AM.png" alt="Screen Shot 2014-09-03 at 7.44.37 AM" width="1382" height="946" srcset="https://strongloop.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-03-at-7.44.37-AM.png 1382w, https://strongloop.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-03-at-7.44.37-AM-300x205.png 300w, https://strongloop.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-03-at-7.44.37-AM-1030x705.png 1030w, https://strongloop.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-03-at-7.44.37-AM-450x308.png 450w" sizes="(max-width: 1382px) 100vw, 1382px" />
+  <img class="aligncenter size-full wp-image-19758" src="{{site.url}}/blog-assets/2014/09/Screen-Shot-2014-09-03-at-7.44.37-AM.png" alt="Screen Shot 2014-09-03 at 7.44.37 AM" width="1382" height="946"  />
 </p>
 
 <p dir="ltr">
@@ -334,7 +334,7 @@ To ssh://5400b85c5004467ec9000337@myapi-strongdemo.rhcloud.com/~/git/myapi.git/
 </p>
 
 <p dir="ltr">
-  <img class="aligncenter size-full wp-image-19759" src="https://strongloop.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-03-at-7.44.57-AM.png" alt="Screen Shot 2014-09-03 at 7.44.57 AM" width="1376" height="1500" srcset="https://strongloop.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-03-at-7.44.57-AM.png 1376w, https://strongloop.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-03-at-7.44.57-AM-275x300.png 275w, https://strongloop.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-03-at-7.44.57-AM-944x1030.png 944w, https://strongloop.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-03-at-7.44.57-AM-450x490.png 450w" sizes="(max-width: 1376px) 100vw, 1376px" />
+  <img class="aligncenter size-full wp-image-19759" src="{{site.url}}/blog-assets/2014/09/Screen-Shot-2014-09-03-at-7.44.57-AM.png" alt="Screen Shot 2014-09-03 at 7.44.57 AM" width="1376" height="1500"  />
 </p>
 
 &nbsp;

@@ -21,7 +21,7 @@ In this three-part series, we are covering systematic design as it applies to:
 
 Let’s now turn our attention to the design of **data**.<!--more-->
 
-[<img class="aligncenter wp-image-29210 size-medium" src="https://strongloop.com/wp-content/uploads/2017/04/data-file-246x300.jpeg" alt="Atomic and orthogonal - Systematic Data Design in JavaScript" width="246" height="300" srcset="https://strongloop.com/wp-content/uploads/2017/04/data-file-246x300.jpeg 246w, https://strongloop.com/wp-content/uploads/2017/04/data-file.jpeg 325w" sizes="(max-width: 246px) 100vw, 246px" />](https://strongloop.com/wp-content/uploads/2017/04/data-file.jpeg)
+[<img class="aligncenter wp-image-29210 size-medium" src="{{site.url}}/blog-assets/2017/04/data-file-246x300.jpeg" alt="Atomic and orthogonal - Systematic Data Design in JavaScript" width="246" height="300"  />]({{site.url}}/blog-assets/2017/04/data-file.jpeg)
 
 ## Data definitions
 
@@ -46,7 +46,7 @@ Similarly, atomic data is _specific_. Even though a traffic light could be repre
 
 Data definitions should be _orthogonal_ to the way we define functions. In other words, data should be _mostly independent_ from the functions that operate on that data. This helps with refactoring our application later on as it can reduce the amount of places that need to change when functionality changes.
 
-# Designing data {#designing-data}
+# Designing data 
 
 We are going to design three different types of data, taking each through the systematic design process. They are data that represents: a traffic light, a natural number, and a coordinate.
 
@@ -154,7 +154,7 @@ function tmplForNatural(n) {
 
 You may be wondering, why even write a template this simple. In practice, you probably won’t. Templates are intended to be copied when writing functions that operate on the given data. By writing a template you can easily see all the scenarios you need to account for in your function. You can cut out anything you determine is not needed.
 
-# Writing functions using data definitions {#writing-functions-using-data-definitions}
+# Writing functions using data definitions 
 
 Once you have your data defined, you can use those new types as your write functions to operate on that data. For example, here is a function that indicates if a traffic light is in a stopped state:
 

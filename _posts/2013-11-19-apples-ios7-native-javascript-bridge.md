@@ -10,9 +10,9 @@ categories:
   - LoopBack
   - Mobile
 ---
-<section> [<img class="alignnone  wp-image-10477" alt="ios7-javascript-xcode" src="https://strongloop.com/wp-content/uploads/2013/11/ios7-javascript-xcode.png" width="650" height="424" />](https://strongloop.com/wp-content/uploads/2013/11/ios7-javascript-xcode.png)&nbsp;</p> 
+<section> [<img class="alignnone  wp-image-10477" alt="ios7-javascript-xcode" src="{{site.url}}/blog-assets/2013/11/ios7-javascript-xcode.png" width="650" height="424" />]({{site.url}}/blog-assets/2013/11/ios7-javascript-xcode.png)&nbsp;</p> 
 
-## **A Brief History of JavaScript Bridges in Mobile** {#abriefhistoryofjavascriptbridgesinmobile}
+## **A Brief History of JavaScript Bridges in Mobile** 
 
 In 2009 [Appcelerator&#8217;s Titanium ](http://www.appcelerator.com/)0.8 Version changed from a &#8216;Hybrid web container&#8217; based approach similar to [Phone Gap / Cordova](http://cordova.apache.org/) to full &#8216;Native binding&#8217;. The change required Titanium developers to re-architect their code and remove HTML as the top-level implementation. Developers wrote their apps in pure JavaScript. The value to developers and Appcelerator is Titanium JavaScript applications running on iOS (and eventually Android) could get nearly all of the benefits of applications written in native Objective-C without having to learn Objective-C.
   
@@ -42,7 +42,7 @@ Apple&#8217;s iOS7 is the first iOS operating system to officially support JavaS
 
 Apple&#8217;s iOS7 support of JavaScript inline with your Objective-C code validates JavaScript as the leading (and only) non proprietary language that is supported within the iOS development environment by the device manufacturer.
 
-## **Apple Support for a Native iOS Objective-C to JavaScript bridge is amazing for 3 reasons** {#applesupportforanativeiosobjectivectojavascriptbridgeisamazingfor3reasons}
+## **Apple Support for a Native iOS Objective-C to JavaScript bridge is amazing for 3 reasons** 
 
   1. Gives developers direct access to JavaScript Bridge technology without leveraging 3rd party SDK’s such as Appcelerator, or Cordova (Phone Gap).
   2. JavaScript is the first non Apple proprietary language (Objective-C ) to be supported in the Native iOS XCode tool chain.
@@ -52,31 +52,31 @@ You can check out the WWDC introduction &#8220;Integrating JavaScript into Nativ
 
 At a high level, JavaScriptCore allows for wrapping of standard JavaScript objects into Objective-C (the code used for iOS apps) and also allowing JavaScript to interact with native iOS objects and code.
 
-## **Getting Started** {#gettingstarted}
+## **Getting Started** 
 
 If you want to see the technology in action you can download the sample project here [iOS7 Native JavaScript iPad app](https://github.com/mschmulen/ios7-javascript-bridge), and run it on your iPad device simulator.
 
-#### iOS7 Native JavaScript iPad App {#ios7nativejavascriptipadapp}
+#### iOS7 Native JavaScript iPad App 
 
-[<img class="alignnone  wp-image-10475" alt="ios7-javascript" src="https://strongloop.com/wp-content/uploads/2013/11/ios7-javascript.png" width="448" height="347" />](https://strongloop.com/wp-content/uploads/2013/11/ios7-javascript.png)
+[<img class="alignnone  wp-image-10475" alt="ios7-javascript" src="{{site.url}}/blog-assets/2013/11/ios7-javascript.png" width="448" height="347" />]({{site.url}}/blog-assets/2013/11/ios7-javascript.png)
 
 You can change the JavaScript directly in the green text field and select the &#8220;execute JavaScript code&#8221; button to run the code to see your JavaScript execute in the Native iOS7 bridge.
 
 The Sample Application preloads a UITextView with a JavaScript context and script and also adds some native Objective-C function blocks that you can call from within your JavaScript context. You can edit the code in the app and execute your script on the device.
 
-## **Overview of the JavaScriptCore API** {#overviewofthejavascriptcoreapi}
+## **Overview of the JavaScriptCore API** 
 
 According to Apple, the goal of the JavaScript bridge API is to provide automatic, safe and high fidelity use of JavaScript. Three main classes that iOS developers can use to compose heterogeneous language native applications are JSVirtualMachine, [JSContext](https://developer.apple.com/library/mac/documentation/JavaScriptCore/Reference/JSContextRef_header_reference/Reference/reference.html#//apple_ref/doc/uid/TP40011494) and JSValue.
 
-## **JSVirtualMachine** {#jsvirtualmachine}
+## **JSVirtualMachine** 
 
 The JSVirtualMachine class is a Light weight single thread JavaScript virtual machine. Your app can instantiate multiple JS virtual machines in your app to support multi-threading.
 
-## **JSContext** {#jscontext}
+## **JSContext** 
 
 Within any given JSVirtualMachine you can have an arbitrary number of JSContexts allowing you to execute JavaScript scripts and give access to global objects.
 
-## **JSValue** {#jsvalue}
+## **JSValue** 
 
 JSValue is a strong reference to a JavaScript value in a specific JS Context ( StrongReferenced to the JSContext it is associated or instantiated with)
 
@@ -98,7 +98,7 @@ A listing of some of the supported objects that are automatically bridged for yo
   * NSDate = Date object
   * NSBlock = Function object
 
-## **Simple Execution** {#simpleexecution}
+## **Simple Execution** 
 
 Writing your first JavaScript can be done in as little as 2 lines of code:
 
@@ -112,14 +112,14 @@ JSValue *result = [context evaluateScript:@"2 + 8"];
 NSLog(@"2 + 8 = %d", [result toInt32]);
 ```
 
-## **Objective-C → JavaScript** {#objectivecjavascript}
+## **Objective-C → JavaScript** 
 
 Surfacing native Objective-C Objects is also very simple. Check out the Source Code example to see how to make your Objective-C functional blocks available to your JavaScript script.
 
 <pre lang="objc" line="1">//execute factorial in native Obj-C , Logger(@"5! = %@", factorial(5) );
     self.context[@"factorial"] = ^(int x) {
         int factorial = 1;
-        for (; x &gt; 1; x--) {
+        for (; x > 1; x--) {
             factorial *= x;
         }
         return factorial;
@@ -134,7 +134,7 @@ The [JavaScript iPad example](https://github.com/mschmulen/ios7-javascript-brid
 
 You can also surface custom Objective-C objects with the JSExport protocol to make the entire object available in you JavaScript Context as outlined in the Apple developer documentation on [Calling Objective-C Methods From JavaScript](https://developer.apple.com/library/mac/documentation/AppleApplications/Conceptual/SafariJSProgTopics/Tasks/ObjCFromJavaScript.html)
 
-## **Wrapping Up** {#wrappingup}
+## **Wrapping Up** 
 
 You can find detailed information regarding Memory Management, Threading and Using JavaScriptCore with a WebView at the Apple Developer documentation.
 

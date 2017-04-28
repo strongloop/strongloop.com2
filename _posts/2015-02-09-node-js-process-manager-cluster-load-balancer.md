@@ -17,7 +17,7 @@ StrongLoop is excited to announce the immediate availability of StrongLoop Proce
   * <span style="font-size: 18px;">Automated build and multi-host deploy </span>
   * <span style="font-size: 18px;">Integrated monitoring and profiling </span>
 
-[<img class="aligncenter size-large wp-image-23290" src="https://strongloop.com/wp-content/uploads/2015/02/SingleApp_Multi_Server-1030x346.jpg" alt="SingleApp_Multi_Server" width="1030" height="346" srcset="https://strongloop.com/wp-content/uploads/2015/02/SingleApp_Multi_Server-1030x346.jpg 1030w, https://strongloop.com/wp-content/uploads/2015/02/SingleApp_Multi_Server-300x101.jpg 300w, https://strongloop.com/wp-content/uploads/2015/02/SingleApp_Multi_Server-1500x504.jpg 1500w, https://strongloop.com/wp-content/uploads/2015/02/SingleApp_Multi_Server-705x237.jpg 705w, https://strongloop.com/wp-content/uploads/2015/02/SingleApp_Multi_Server-450x151.jpg 450w" sizes="(max-width: 1030px) 100vw, 1030px" />](https://strongloop.com/wp-content/uploads/2015/02/SingleApp_Multi_Server.jpg)
+[<img class="aligncenter size-large wp-image-23290" src="{{site.url}}/blog-assets/2015/02/SingleApp_Multi_Server-1030x346.jpg" alt="SingleApp_Multi_Server" width="1030" height="346"  />]({{site.url}}/blog-assets/2015/02/SingleApp_Multi_Server.jpg)
 
 <!--more-->
 
@@ -83,5 +83,5 @@ No need to switch to yet another interface to get your monitoring done. StrongLo
     StrongLoop Arc is a graphical UI for the <a href="http://strongloop.com/node-js/api-platform/">StrongLoop API Platform</a>, which includes LoopBack, that complements the <a href="http://docs.strongloop.com/pages/viewpage.action?pageId=3834790">slc command line tools</a> for developing APIs quickly and getting them connected to data. Arc also includes tools for building, profiling and monitoring Node apps. It takes just a few simple steps to <a href="http://strongloop.com/get-started/">get started</a>!
   </p>
   
-  <img class="aligncenter size-large wp-image-21950" src="https://strongloop.com/wp-content/uploads/2014/12/Arc_Monitoring_Metrics-1030x593.jpg" alt="Arc_Monitoring_Metrics" width="1030" height="593" />
+  <img class="aligncenter size-large wp-image-21950" src="{{site.url}}/blog-assets/2014/12/Arc_Monitoring_Metrics-1030x593.jpg" alt="Arc_Monitoring_Metrics" width="1030" height="593" />
 </div>

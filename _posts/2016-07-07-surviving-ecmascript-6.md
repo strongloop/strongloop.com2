@@ -11,7 +11,7 @@ categories:
 ---
 I recently watched <a href="http://www.thedotpost.com/2015/11/rob-pike-simplicity-is-complicated" rel="nofollow">an insightful talk</a> from <a href="https://en.wikipedia.org/wiki/Rob_Pike" rel="nofollow">Rob Pike</a> where he shared his experience attending <a href="https://channel9.msdn.com/events/lang-next" rel="nofollow">Lang.Next</a>, a conference focusing on new and upcoming trends in programming languages. While there, Rob noticed how many presenters focused on things they were <em class="markup--em markup--p-em">adding</em> to their respective languages. This concerned him because languages were becoming more complex and similar to one another.<!--more-->
 
-### JavaScript’s complexity has grown {#6db5.graf--h4.graf-after--p}
+### JavaScript’s complexity has grown 
 
 <p id="a5f3" class="graf--p graf-after--h4">
   JavaScript (as standardized in ECMAScript aka ES) existed as ES3 with the same set of features for over 10 years. When ES5 was standardized, the syntax remained unchanged (version 4 was abandoned). However, the arrival of ES6 (aka ECMAScript 2015) feels in many ways like a new language. I&#8217;m not sure if the change is good or bad, but it is a certainly a change.
@@ -21,7 +21,7 @@ I recently watched <a href="http://www.thedotpost.com/2015/11/rob-pike-simplicit
   I’ve found ES6 both fun and frustrating. I hope to provide some tips to help you focus on writing quality maintainable code.
 </p>
 
-### Pace yourself {#3777.graf--h4.graf-after--p}
+### Pace yourself 
 
 <p id="d526" class="graf--p graf-after--h4">
   You don’t need to convert everything to ES6 or adopt all the ES6 features immediately! It will take time to understand what works well and what doesn’t. ES3 took years to boil down to the good parts, as this photo illustrates:
@@ -53,7 +53,7 @@ I recently watched <a href="http://www.thedotpost.com/2015/11/rob-pike-simplicit
   </p>
 </blockquote>
 
-### Use what’s supported {#7c11.graf--h4.graf-after--blockquote}
+### Use what’s supported 
 
 <p id="47b1" class="graf--p graf-after--h4">
   I love <a class="markup--anchor markup--p-anchor" href="https://babeljs.io/" rel="nofollow">Babel</a> and what it provides to the JavaScript community. So this isn’t intended to knock that project, but Babel allows all sorts of new syntax (even beyond ES6) like it&#8217;s a thing right now! But… it’s not a thing right now!
@@ -67,7 +67,7 @@ I recently watched <a href="http://www.thedotpost.com/2015/11/rob-pike-simplicit
   One beneficial addition to my Express development is the ES7 proposal for <a class="markup--anchor markup--p-anchor" href="https://github.com/tc39/ecmascript-asyncawait" rel="nofollow">async/await</a>. This enables control flow that fits the semantics of JavaScript (<strong>if</strong>/<strong>else</strong>/<strong>try</strong>/<strong>catch</strong>/<strong>return</strong>) but for asynchronous programming. However, Node 6 does not support this proposal. So either I could include Babel or just use <a class="markup--anchor markup--p-anchor" href="https://www.npmjs.com/package/co" rel="nofollow">co</a> or <a class="markup--anchor markup--p-anchor" href="http://bluebirdjs.com/docs/api/promise.coroutine.html" rel="nofollow">Bluebird.coroutine</a>, which give me the same benefits in Node 4+. I prefer what is supported.
 </p>
 
-### Tools over features {#a42c.graf--h4.graf-after--p}
+### Tools over features 
 
 <p id="7e42" class="graf--p graf-after--h4">
   Spend time getting familiar with good JavaScript code quality tools. <a class="markup--anchor markup--p-anchor" href="http://eslint.org/" rel="nofollow">ESLint</a> is a crucial tool that makes me feel good about still using <strong class="markup--strong markup--p-strong">var</strong> in my projects because it has my edge cases covered. One killer feature in ESLint is auto-fix ( — fix flag). If you don’t have that integrated into your editor, go figure that out right now and come back!
@@ -85,7 +85,7 @@ I recently watched <a href="http://www.thedotpost.com/2015/11/rob-pike-simplicit
   Tools increase my confidence in the code my team and I write. If a new language feature doesn’t work with my tools, I don’t care to use it yet. I’d much rather have my tools work.
 </p>
 
-### <strong class="markup--strong markup--h4-strong">Adopt new features with care</strong> {#bf15.graf--h4.graf-after--p}
+### <strong class="markup--strong markup--h4-strong">Adopt new features with care</strong> 
 
 <p id="7ca9" class="graf--p graf-after--h4">
   As you think about using a new feature, ask yourself:
@@ -107,4 +107,4 @@ I recently watched <a href="http://www.thedotpost.com/2015/11/rob-pike-simplicit
   If the benefits clearly outweigh the losses, using that new feature might be a good move. If not, perhaps your best bet may be achieving your goal through other means.
 </p>
 
-####  {#8c07.graf--h4.graf-after--p}
+####  

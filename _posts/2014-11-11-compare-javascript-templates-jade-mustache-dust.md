@@ -9,8 +9,8 @@ categories:
   - Community
   - Express
 ---
-<div style="width: 100%; max-height: 400px; background: url('https://strongloop.com/wp-content/uploads/2014/11/javascript-templates-2014.png') 50% 50% no-repeat; background-size: cover;">
-  <img style="opacity: 0;" src="https://strongloop.com/wp-content/uploads/2014/11/javascript-templates-2014.png" alt="javascript-templates-2014" width="100%" />
+<div style="width: 100%; max-height: 400px; background: url('{{site.url}}/blog-assets/2014/11/javascript-templates-2014.png') 50% 50% no-repeat; background-size: cover;">
+  <img style="opacity: 0;" src="{{site.url}}/blog-assets/2014/11/javascript-templates-2014.png" alt="javascript-templates-2014" width="100%" />
 </div>
 
 Lets talk templates, specifically JavaScript powered templates. Even more specifically – template engines that work as well on the server side as they do on the client side. After all, this is the great promise and advantage that [isomorphic](http://isomorphic.net/) JavaScript brings to the table – ability to run the same code everywhere.
@@ -43,7 +43,7 @@ _Please note, everything in this article represents my personal opinion and migh
 
 ## Jade
 
-<img src="https://strongloop.com/wp-content/uploads/2014/11/javascript-templates-jade.jpg" alt="jade" width="100%" />
+<img src="{{site.url}}/blog-assets/2014/11/javascript-templates-jade.jpg" alt="jade" width="100%" />
 
 ```js
 npm install jade
@@ -112,7 +112,7 @@ var result = template(locals);
 
 ## Mustache.js
 
-<img src="https://strongloop.com/wp-content/uploads/2014/11/javascript-templates-mustache.jpg" alt="mustache" width="100%" />
+<img src="{{site.url}}/blog-assets/2014/11/javascript-templates-mustache.jpg" alt="mustache" width="100%" />
 
 ```js
 npm install mustache
@@ -171,7 +171,7 @@ I don’t think it’s a valid statement to claim that language doesn’t have c
 
 ## Dust.js
 
-<img src="https://strongloop.com/wp-content/uploads/2014/11/javascript-templates-dust.jpg" alt="dust" width="100%" />
+<img src="{{site.url}}/blog-assets/2014/11/javascript-templates-dust.jpg" alt="dust" width="100%" />
 
 ```js
 npm install dustjs-linkedin
@@ -221,7 +221,7 @@ The streaming support in [Dust.js](https://github.com/linkedin/dustjs) is unique
 
 ## Nunjucks
 
-<img src="https://strongloop.com/wp-content/uploads/2014/11/javascript-templates-nunjucks.jpg" alt="nunjucks" width="100%" />
+<img src="{{site.url}}/blog-assets/2014/11/javascript-templates-nunjucks.jpg" alt="nunjucks" width="100%" />
 
 ```js
 npm install nunjucks
@@ -272,7 +272,7 @@ var result = template.render(locals);
 
 ## EJS
 
-<img src="https://strongloop.com/wp-content/uploads/2014/11/javascript-templates-ejs.jpg" alt="ejs" width="100%" />
+<img src="{{site.url}}/blog-assets/2014/11/javascript-templates-ejs.jpg" alt="ejs" width="100%" />
 
 ```js
 npm install ejs
@@ -311,7 +311,7 @@ var result = ejs.render('string of ejs', locals);
 
 # **One more thing…**
 
-<img src="https://strongloop.com/wp-content/uploads/2014/11/javascript-templates-react.jpg" alt="react" width="100%" />
+<img src="{{site.url}}/blog-assets/2014/11/javascript-templates-react.jpg" alt="react" width="100%" />
 
 There’s one other project that I haven’t mentioned that I feel is worth noting – [React](https://github.com/facebook/react) by Facebook. I don’t feel it completely belongs on this list because it’s so much more than a templating engine. However, because it can actually be used as an [isomorphic](http://isomorphic.net/) rendering engine, it’s worth noting. It’s currently very actively developed and there’s a ton of buzz around it.
 

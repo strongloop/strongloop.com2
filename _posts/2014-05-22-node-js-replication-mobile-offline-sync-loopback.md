@@ -25,7 +25,7 @@ The ability to work offline has emerged as a requirement for almost all enterpri
 
 What this means for developers creating isomorphic JavaScript apps is, that for the first time they&#8217;ll be able to easily synchronize to and from various databases without requiring constant network connectivity. LoopBack’s replication also handles the complexity of moving data between mobile devices, mobile device to server and server to server. This means developers can focus on the the front end versus the mechanics of how to replicate data between disparate databases whether they be in cloud or in the datacenter.
 
-<img class="aligncenter size-full wp-image-16542" alt="sync2" src="https://strongloop.com/wp-content/uploads/2014/05/sync21.png" width="1500" height="677" />
+<img class="aligncenter size-full wp-image-16542" alt="sync2" src="{{site.url}}/blog-assets/2014/05/sync21.png" width="1500" height="677" />
 
 ## **<!--more-->Why replication?**
 

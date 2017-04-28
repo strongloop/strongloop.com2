@@ -14,7 +14,7 @@ Every few weeks someone posts a Java vs Node benchmark, like [PayPal’s](https:
 
 But there’s one thing we can all agree on: At high levels of concurrency (thousands of connections) your server needs to go to asynchronous non-blocking. I would have finished that sentence with IO, but the issue is that if any part of your server code blocks you’re going to need a thread. And at these levels of concurrency, you can’t go creating threads for every connection. So the whole codepath needs to be non-blocking and async, not just the IO layer. This is where Node excels.
 
-[<img class="aligncenter size-full wp-image-13765" alt="threading_node" src="https://strongloop.com/wp-content/uploads/2014/01/threading_node.png" width="2188" height="1308" />](https://strongloop.com/wp-content/uploads/2014/01/threading_node.png) [<img class="aligncenter size-full wp-image-13766" alt="threading_java" src="https://strongloop.com/wp-content/uploads/2014/01/threading_java.png" width="2228" height="1346" />](https://strongloop.com/wp-content/uploads/2014/01/threading_java.png)
+[<img class="aligncenter size-full wp-image-13765" alt="threading_node" src="{{site.url}}/blog-assets/2014/01/threading_node.png" width="2188" height="1308" />]({{site.url}}/blog-assets/2014/01/threading_node.png) [<img class="aligncenter size-full wp-image-13766" alt="threading_java" src="{{site.url}}/blog-assets/2014/01/threading_java.png" width="2228" height="1346" />]({{site.url}}/blog-assets/2014/01/threading_java.png)
 
 &nbsp;
 
@@ -30,7 +30,7 @@ We’re going to help keep [maturing Node](http://strongloop.com/strongblog/perf
 
 Ready to start monitoring event loops, manage Node clusters and chase down memory leaks? We’ve made it easy to get started with [StrongOps](http://strongloop.com/node-js-performance/strongops/) either locally or on your favorite cloud, with a [simple npm install](http://strongloop.com/get-started/).
 
-[<img alt="Screen Shot 2014-02-03 at 3.25.40 AM" src="https://strongloop.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-03-at-3.25.40-AM.png" width="1746" height="674" />](https://strongloop.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-03-at-3.25.40-AM.png)
+[<img alt="Screen Shot 2014-02-03 at 3.25.40 AM" src="{{site.url}}/blog-assets/2014/02/Screen-Shot-2014-02-03-at-3.25.40-AM.png" width="1746" height="674" />]({{site.url}}/blog-assets/2014/02/Screen-Shot-2014-02-03-at-3.25.40-AM.png)
 
 ## [**Get trained in Node.js and API development**](http://strongloop.com/node-js/training/)**
   

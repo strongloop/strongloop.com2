@@ -20,7 +20,7 @@ The architecture is illustrated below:
 
 <!--more-->
 
-[<img class="aligncenter size-full wp-image-15338" alt="loopback-nodejs-storage-service-provider" src="https://strongloop.com/wp-content/uploads/2014/04/loopback-nodejs-storage-service-provider.png" width="804" height="473" />](https://strongloop.com/wp-content/uploads/2014/04/loopback-nodejs-storage-service-provider.png)
+[<img class="aligncenter size-full wp-image-15338" alt="loopback-nodejs-storage-service-provider" src="{{site.url}}/blog-assets/2014/04/loopback-nodejs-storage-service-provider.png" width="804" height="473" />]({{site.url}}/blog-assets/2014/04/loopback-nodejs-storage-service-provider.png)
 
 &nbsp;
 

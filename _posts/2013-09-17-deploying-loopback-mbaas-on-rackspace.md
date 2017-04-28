@@ -26,7 +26,7 @@ Fanatical Support has made Rackspace the [leader](http://www.rackspace.com/infor
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2013/09/Rackspace-create-deployment1.png"><img class="alignnone size-full wp-image-7490" alt="Rackspace-create-deployment" src="https://strongloop.com/wp-content/uploads/2013/09/Rackspace-create-deployment1.png" width="605" height="441" /></a>
+  <a href="{{site.url}}/blog-assets/2013/09/Rackspace-create-deployment1.png"><img class="alignnone size-full wp-image-7490" alt="Rackspace-create-deployment" src="{{site.url}}/blog-assets/2013/09/Rackspace-create-deployment1.png" width="605" height="441" /></a>
 </p>
 
 <p dir="ltr">
@@ -34,14 +34,14 @@ Fanatical Support has made Rackspace the [leader](http://www.rackspace.com/infor
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2013/09/Rackspace-create-options1.png"><img class="alignnone size-full wp-image-7491" alt="Rackspace-create-options" src="https://strongloop.com/wp-content/uploads/2013/09/Rackspace-create-options1.png" width="683" height="522" /></a>
+  <a href="{{site.url}}/blog-assets/2013/09/Rackspace-create-options1.png"><img class="alignnone size-full wp-image-7491" alt="Rackspace-create-options" src="{{site.url}}/blog-assets/2013/09/Rackspace-create-options1.png" width="683" height="522" /></a>
 </p>
 
-Then configure your StrongLoop server deployment options: Site Address, Admin settings and application name.[<img class="alignnone size-full wp-image-7311" alt="ConfigurationOptions" src="https://strongloop.com/wp-content/uploads/2013/09/ConfigurationOptions1.png" width="683" height="522" />](https://strongloop.com/wp-content/uploads/2013/09/ConfigurationOptions1.png)
+Then configure your StrongLoop server deployment options: Site Address, Admin settings and application name.[<img class="alignnone size-full wp-image-7311" alt="ConfigurationOptions" src="{{site.url}}/blog-assets/2013/09/ConfigurationOptions1.png" width="683" height="522" />]({{site.url}}/blog-assets/2013/09/ConfigurationOptions1.png)
 
 Select your Deployment machine options.
 
-[<img class="alignnone size-full wp-image-7489" alt="Infrastructure-Details" src="https://strongloop.com/wp-content/uploads/2013/09/Infrastructure-Details1.png" width="629" height="494" />](https://strongloop.com/wp-content/uploads/2013/09/Infrastructure-Details1.png)
+[<img class="alignnone size-full wp-image-7489" alt="Infrastructure-Details" src="{{site.url}}/blog-assets/2013/09/Infrastructure-Details1.png" width="629" height="494" />]({{site.url}}/blog-assets/2013/09/Infrastructure-Details1.png)
 
 Click the “Create Deployment” button to provision your server.
 
@@ -102,7 +102,7 @@ Click the “Create Deployment” button to provision your server.
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2013/09/LoopBack-Explorer-Products-Post.png"><img class="alignnone size-full wp-image-7313" alt="LoopBack-Explorer-Products-Post" src="https://strongloop.com/wp-content/uploads/2013/09/LoopBack-Explorer-Products-Post.png" width="796" height="529" /></a>
+  <a href="{{site.url}}/blog-assets/2013/09/LoopBack-Explorer-Products-Post.png"><img class="alignnone size-full wp-image-7313" alt="LoopBack-Explorer-Products-Post" src="{{site.url}}/blog-assets/2013/09/LoopBack-Explorer-Products-Post.png" width="796" height="529" /></a>
 </p>
 
 <p dir="ltr">
@@ -114,7 +114,7 @@ Click the “Create Deployment” button to provision your server.
 </p>
 
 <p dir="ltr">
-  <a href="https://strongloop.com/wp-content/uploads/2013/09/iOS-ConfigureAdapter.png"><img class="alignnone size-full wp-image-7315" alt="iOS-ConfigureAdapter" src="https://strongloop.com/wp-content/uploads/2013/09/iOS-ConfigureAdapter.png" width="762" height="475" /></a>
+  <a href="{{site.url}}/blog-assets/2013/09/iOS-ConfigureAdapter.png"><img class="alignnone size-full wp-image-7315" alt="iOS-ConfigureAdapter" src="{{site.url}}/blog-assets/2013/09/iOS-ConfigureAdapter.png" width="762" height="475" /></a>
 </p>
 
 <p dir="ltr">

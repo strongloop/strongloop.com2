@@ -13,7 +13,7 @@ IBM and StrongLoop sponsored Changelog&#8217;s _The Future of Node_ Spotlight se
 
 Changelog is a podcast and digital media company focused on telling developer-centric stories. They’re hacker to the heart. You may know them best from their popular podcast “The Changelog” &#8211; a weekly podcast that covers the technology and people of open source. It&#8217;s about the code, the people, and the community.
 
-[<img class="size-medium wp-image-28956 aligncenter" src="https://strongloop.com/wp-content/uploads/2017/03/How-China-Does-Node-269x300.png" alt="Podcast: How China Does Node" width="269" height="300" srcset="https://strongloop.com/wp-content/uploads/2017/03/How-China-Does-Node-269x300.png 269w, https://strongloop.com/wp-content/uploads/2017/03/How-China-Does-Node.png 328w" sizes="(max-width: 269px) 100vw, 269px" />](https://strongloop.com/wp-content/uploads/2017/03/How-China-Does-Node.png)<!--more-->
+[<img class="size-medium wp-image-28956 aligncenter" src="{{site.url}}/blog-assets/2017/03/How-China-Does-Node-269x300.png" alt="Podcast: How China Does Node" width="269" height="300"  />]({{site.url}}/blog-assets/2017/03/How-China-Does-Node.png)<!--more-->
 
 In this episode of _The Future of Node_ Adam talked with Shiya Luo about the use of Node.js in China. They discussed translations of documentation and books from English to Chinese. Additionally, they chatted about the Great Firewall of China. This refers to a censorship and surveillance project of the Chinese government. As you can imagine, this makes it difficult for the people of China to interact with the rest of the web.
 

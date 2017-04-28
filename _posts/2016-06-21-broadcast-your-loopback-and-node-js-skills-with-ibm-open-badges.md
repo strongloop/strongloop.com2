@@ -15,7 +15,7 @@ You may have heard about the IBM Open Badge Program. You probably know that it i
 <!--more-->
 
 <div id="attachment_27600" style="width: 310px" class="wp-caption aligncenter">
-  <a href="https://strongloop.com/wp-content/uploads/2016/06/IBM-badges.png"><img class="size-medium wp-image-27600" src="https://strongloop.com/wp-content/uploads/2016/06/IBM-badges-300x294.png" alt="Some of the badges you can earn and show off." width="300" height="294" srcset="https://strongloop.com/wp-content/uploads/2016/06/IBM-badges-300x294.png 300w, https://strongloop.com/wp-content/uploads/2016/06/IBM-badges-36x36.png 36w, https://strongloop.com/wp-content/uploads/2016/06/IBM-badges-705x690.png 705w, https://strongloop.com/wp-content/uploads/2016/06/IBM-badges-450x440.png 450w, https://strongloop.com/wp-content/uploads/2016/06/IBM-badges.png 755w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a href="{{site.url}}/blog-assets/2016/06/IBM-badges.png"><img class="size-medium wp-image-27600" src="{{site.url}}/blog-assets/2016/06/IBM-badges-300x294.png" alt="Some of the badges you can earn and show off." width="300" height="294"  /></a>
   
   <p class="wp-caption-text">
     Some of the badges you can earn and show off.

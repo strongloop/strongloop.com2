@@ -11,7 +11,7 @@ categories:
 ---
 _&#8220;I have dreamed a dream&#8230; but now that dream is gone from me.&#8221;_
 
-[<img class="aligncenter size-medium wp-image-26848" src="https://strongloop.com/wp-content/uploads/2016/02/Matrix-300x169.png" alt="Morpheus from The Matrix" width="400" height="225" srcset="https://strongloop.com/wp-content/uploads/2016/02/Matrix-300x169.png 300w, https://strongloop.com/wp-content/uploads/2016/02/Matrix-1030x579.png 1030w, https://strongloop.com/wp-content/uploads/2016/02/Matrix-735x413.png 735w, https://strongloop.com/wp-content/uploads/2016/02/Matrix-1500x844.png 1500w, https://strongloop.com/wp-content/uploads/2016/02/Matrix-705x397.png 705w, https://strongloop.com/wp-content/uploads/2016/02/Matrix-450x253.png 450w" sizes="(max-width: 400px) 100vw, 400px" />](https://strongloop.com/wp-content/uploads/2016/02/Matrix.png)
+[<img class="aligncenter size-medium wp-image-26848" src="{{site.url}}/blog-assets/2016/02/Matrix-300x169.png" alt="Morpheus from The Matrix" width="400" height="225"  />]({{site.url}}/blog-assets/2016/02/Matrix.png)
 
 I imagine this phrase from the movie [**The Matrix**](https://www.youtube.com/watch?v=s8VHpx98fFQ) was going through minds of the Parse community while reading that Parse would be shutting down operations on January 28, 2017 (Parse announced it in their blog post entitled: “[Moving On](http://blog.parse.com/announcements/moving-on/)”).
   
@@ -27,7 +27,7 @@ Over the next 11 months, Parse customers will need to wrestle the following two 
 
 &nbsp;
 
-[<img class="aligncenter size-medium wp-image-26849" src="https://strongloop.com/wp-content/uploads/2016/02/Parse-options-300x123.png" alt="Parse Customer Options" width="400" height="164" srcset="https://strongloop.com/wp-content/uploads/2016/02/Parse-options-300x123.png 300w, https://strongloop.com/wp-content/uploads/2016/02/Parse-options-450x184.png 450w, https://strongloop.com/wp-content/uploads/2016/02/Parse-options.png 506w" sizes="(max-width: 400px) 100vw, 400px" />](https://strongloop.com/wp-content/uploads/2016/02/Parse-options.png)
+[<img class="aligncenter size-medium wp-image-26849" src="{{site.url}}/blog-assets/2016/02/Parse-options-300x123.png" alt="Parse Customer Options" width="400" height="164"  />]({{site.url}}/blog-assets/2016/02/Parse-options.png)
 
 Fortunately for those customers, IBM can provide a solution regardless of the decision! Let’s examine both choices…
 

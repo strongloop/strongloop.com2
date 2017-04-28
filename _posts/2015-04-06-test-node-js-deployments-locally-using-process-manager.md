@@ -68,9 +68,9 @@ You can also interact with your running application using the StrongLoop Arc gra
 
 You could also profile the local application, for example, by going to the Profile tab in StrongLoop Arc, selecting \`localhost\` as the \`Hostname\`, and \`8701\` as the \`port\`.
 
-<img class="aligncenter size-large wp-image-24301" src="https://strongloop.com/wp-content/uploads/2015/04/Select_PID_To_Profile-1030x488.jpg" alt="Select_PID_To_Profile" width="1030" height="488" srcset="https://strongloop.com/wp-content/uploads/2015/04/Select_PID_To_Profile-1030x488.jpg 1030w, https://strongloop.com/wp-content/uploads/2015/04/Select_PID_To_Profile-300x142.jpg 300w, https://strongloop.com/wp-content/uploads/2015/04/Select_PID_To_Profile-1500x711.jpg 1500w, https://strongloop.com/wp-content/uploads/2015/04/Select_PID_To_Profile-705x334.jpg 705w, https://strongloop.com/wp-content/uploads/2015/04/Select_PID_To_Profile-450x213.jpg 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-24301" src="{{site.url}}/blog-assets/2015/04/Select_PID_To_Profile-1030x488.jpg" alt="Select_PID_To_Profile" width="1030" height="488"  />
 
-<img class="aligncenter size-large wp-image-24302" src="https://strongloop.com/wp-content/uploads/2015/04/Profile_Output-1030x487.jpg" alt="Profile_Output" width="1030" height="487" srcset="https://strongloop.com/wp-content/uploads/2015/04/Profile_Output-1030x487.jpg 1030w, https://strongloop.com/wp-content/uploads/2015/04/Profile_Output-300x142.jpg 300w, https://strongloop.com/wp-content/uploads/2015/04/Profile_Output-1500x709.jpg 1500w, https://strongloop.com/wp-content/uploads/2015/04/Profile_Output-705x333.jpg 705w, https://strongloop.com/wp-content/uploads/2015/04/Profile_Output-450x213.jpg 450w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-24302" src="{{site.url}}/blog-assets/2015/04/Profile_Output-1030x487.jpg" alt="Profile_Output" width="1030" height="487"  />
 
 Enjoy exploring your app running locally “as if” it was in production, and check out <http://strong-pm.io/REMOTE> for how to manage and deploy your applications in production.
 

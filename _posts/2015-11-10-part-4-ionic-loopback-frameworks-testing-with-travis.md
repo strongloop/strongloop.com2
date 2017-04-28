@@ -114,7 +114,7 @@ var injector = angular.injector(['stopwatch', 'ngMockE2E']);
 injector.invoke(function($rootScope, $compile) {
   parentScope = $rootScope.$new();
 
-  var html = '&lt;timer on-time-saved="onSaved(time);">&lt;/timer>';
+  var html = '<timer on-time-saved="onSaved(time);"></timer>';
   element = $compile(html)(parentScope);
   // Can now do things like `element.css('display')` and
   // `element.find('button').click();`

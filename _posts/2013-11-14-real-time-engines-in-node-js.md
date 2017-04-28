@@ -8,7 +8,7 @@ permalink: /strongblog/real-time-engines-in-node-js/
 categories:
   - How-To
 ---
-[<img class="aligncenter size-full wp-image-8521" alt="1-UfF1rdF3tiQ7CXpj5DDXIA" src="https://strongloop.com/wp-content/uploads/2013/10/1-UfF1rdF3tiQ7CXpj5DDXIA.jpeg" width="1200" height="504" />](https://strongloop.com/wp-content/uploads/2013/10/1-UfF1rdF3tiQ7CXpj5DDXIA.jpeg)
+[<img class="aligncenter size-full wp-image-8521" alt="1-UfF1rdF3tiQ7CXpj5DDXIA" src="{{site.url}}/blog-assets/2013/10/1-UfF1rdF3tiQ7CXpj5DDXIA.jpeg" width="1200" height="504" />]({{site.url}}/blog-assets/2013/10/1-UfF1rdF3tiQ7CXpj5DDXIA.jpeg)
 
 Node arrived on the scene around the time the WebSocket protocol was drafted. Node’s fast, evented approach to server-side programming was a perfect pairing for WebSocket. Out of that marriage emerged the popular <a href="http://socket.io/" target="_blank">socket.io framework</a>: an instant favorite used heavily in the first <a href="http://nodeknockout.com/" target="_blank">Node Knockout</a> competition.
 
@@ -16,7 +16,7 @@ Now that WebSocket is <a href="http://tools.ietf.org/html/rfc6455" target="_bla
 
 ## **The WebSocket module ecosystem**<figure>
 
-[<img class="aligncenter size-full wp-image-8520" alt="1-j4WMa8XcHIJr0FhnVCUjbA" src="https://strongloop.com/wp-content/uploads/2013/10/1-j4WMa8XcHIJr0FhnVCUjbA.png" width="900" height="400" />](https://strongloop.com/wp-content/uploads/2013/10/1-j4WMa8XcHIJr0FhnVCUjbA.png)
+[<img class="aligncenter size-full wp-image-8520" alt="1-j4WMa8XcHIJr0FhnVCUjbA" src="{{site.url}}/blog-assets/2013/10/1-j4WMa8XcHIJr0FhnVCUjbA.png" width="900" height="400" />]({{site.url}}/blog-assets/2013/10/1-j4WMa8XcHIJr0FhnVCUjbA.png)
   
 <figcaption>The layers of real-time engines</figcaption> </figure> 
 

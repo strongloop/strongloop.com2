@@ -18,7 +18,7 @@ This tutorial is the third in a series of posts that will help you get started w
 
 We’ve already covered [Couchbase Server](https://strongloop.com/strongblog/node-js-loopback-js-couchbase-connector/) using [loopback-connector-couchbase](https://github.com/guardly/loopback-connector-couchbase) and [RethinkDB](https://strongloop.com/strongblog/rethinkdb-connector-loopback-node-js-framework/) with [loopback-connector-rethinkdb](https://github.com/fuwaneko/loopback-connector-rethinkdb). Today, we’ll be discussing connecting LoopBack and [ArangoDB](https://www.arangodb.com/) using another community contributed connector &#8211; [loopback-connector-arango](https://github.com/duffn/loopback-connector-arango).
 
-<img class="aligncenter size-full wp-image-24850" src="https://strongloop.com/wp-content/uploads/2015/05/arangodb.png" alt="arangodb" width="578" height="174" srcset="https://strongloop.com/wp-content/uploads/2015/05/arangodb.png 578w, https://strongloop.com/wp-content/uploads/2015/05/arangodb-300x90.png 300w, https://strongloop.com/wp-content/uploads/2015/05/arangodb-450x135.png 450w" sizes="(max-width: 578px) 100vw, 578px" />
+<img class="aligncenter size-full wp-image-24850" src="{{site.url}}/blog-assets/2015/05/arangodb.png" alt="arangodb" width="578" height="174"  />
 
 ## **ArangoDB**
 
@@ -30,27 +30,27 @@ ArangoDB is a multi-model mostly-memory database with a flexible data model for 
 
 Navigate to the [ArangoDB download page](https://www.arangodb.com/download/) to download ArangoDB for your operating system. As you can see, ArangoDB supports numerous platforms.
 
-<img class="aligncenter size-full wp-image-24813" src="https://strongloop.com/wp-content/uploads/2015/05/adb-download.png" alt="adb-download" width="975" height="492" srcset="https://strongloop.com/wp-content/uploads/2015/05/adb-download.png 975w, https://strongloop.com/wp-content/uploads/2015/05/adb-download-300x151.png 300w, https://strongloop.com/wp-content/uploads/2015/05/adb-download-705x356.png 705w, https://strongloop.com/wp-content/uploads/2015/05/adb-download-450x227.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24813" src="{{site.url}}/blog-assets/2015/05/adb-download.png" alt="adb-download" width="975" height="492"  />
 
 Once again, we’ll be developing on Mac OSX. You can install ArangoDB via a command-line app, Homebrew or even the Apple AppStore. ArangoDB [recommends](https://docs.arangodb.com/Installing/MacOSX.html) Homebrew so we’ll follow their recommendation.
 
 **Tip:** Are you an OSX user but haven’t used Homebrew before? Start immediately! [Homebrew](http://brew.sh/) is billed as the “missing package manager” for OSX and you need to install it right now. Think apt-get or yum for OSX.
 
 ```sh
-&gt; $ brew install arangodb
+> $ brew install arangodb
 
-==&gt; Downloading https://homebrew.bintray.com/bottles/arangodb-2.4.4.yosemite.bottle.tar.gz
+==> Downloading https://homebrew.bintray.com/bottles/arangodb-2.4.4.yosemite.bottle.tar.gz
 ######################################################################## 100.0%
-==&gt; Pouring arangodb-2.4.4.yosemite.bottle.tar.gz
-==&gt; Caveats
+==> Pouring arangodb-2.4.4.yosemite.bottle.tar.gz
+==> Caveats
 To have launchd start arangodb at login:
     ln -sfv /usr/local/opt/arangodb/*.plist ~/Library/LaunchAgents
 Then to load arangodb now:
     launchctl load ~/Library/LaunchAgents/homebrew.mxcl.arangodb.plist
 Or, if you don't want/need launchctl, you can just run:
     /usr/local/opt/arangodb/sbin/arangod --log.file -
-==&gt; /usr/local/Cellar/arangodb/2.4.4/sbin/arangod --upgrade --log.file -
-==&gt; Summary
+==> /usr/local/Cellar/arangodb/2.4.4/sbin/arangod --upgrade --log.file -
+==> Summary
 &#x1f37a;  /usr/local/Cellar/arangodb/2.4.4: 2477 files, 175M 
  Yeah, that was it - <code>brew install arangodb</code> and ArangoDB is now installed on your system.
 ```
@@ -62,14 +62,14 @@ Or, if you don't want/need launchctl, you can just run:
 Now that we have ArangoDB installed, let’s run it! If you followed along above and installed using Homebrew, run this command in the terminal to start ArangoDB.
 
 ```js
-&gt; $ /usr/local/opt/arangodb/sbin/arangod --log.file -
+> $ /usr/local/opt/arangodb/sbin/arangod --log.file -
 ```
 
 Let’s create a database in ArangoDB that we’ll use for the remainder of the tutorial. Did you know that when we started ArangoDB, we also started a full featured, built-in web interface that we can use for database and collection administration, statistics, ad-hoc queries and more? We’re only going to use it to create our database, but you can review the [ArangoDB documentation](https://docs.arangodb.com/WebInterface/index.html) to see all the features of the web interface.
 
 Navigate to <http://localhost:8529/>, click on the &#8220;DB&#8221; drop down on the top menu and select &#8220;Manage DBs&#8221;. On this screen, we’ll be able to add a new database.
 
-<img class="aligncenter size-full wp-image-24817" src="https://strongloop.com/wp-content/uploads/2015/05/add-db.png" alt="add-db" width="975" height="150" srcset="https://strongloop.com/wp-content/uploads/2015/05/add-db.png 975w, https://strongloop.com/wp-content/uploads/2015/05/add-db-300x46.png 300w, https://strongloop.com/wp-content/uploads/2015/05/add-db-705x108.png 705w, https://strongloop.com/wp-content/uploads/2015/05/add-db-450x69.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24817" src="{{site.url}}/blog-assets/2015/05/add-db.png" alt="add-db" width="975" height="150"  />
   
 Click &#8220;Add Database&#8221; and let’s name our new database &#8220;loopback-example&#8221;. Click create and that’s it. We have a new database in ArangoDB. We’ll fill a collection with some test data shortly, but first let’s create our LoopBack application.
 
@@ -78,7 +78,7 @@ Click &#8220;Add Database&#8221; and let’s name our new database &#8220;loopba
 Like last time, we’ll again create our LoopBack application using the [slc loopback application generator](http://docs.strongloop.com/display/public/LB/Application+generator). The slc command line tool, which is [Yeoman](http://yeoman.io/) under the hood, can scaffold a full LoopBack application structure for us in just a few simple steps. Run `slc loopback` in your terminal.
 
 ```js
-&gt; $ slc loopback
+> $ slc loopback
 
      _-----_
     |       |    .--------------------------.
@@ -101,7 +101,7 @@ Like last time, we’ll again create our LoopBack application using the [slc loo
 > &nbsp;
 
 ```js
-&gt; $ npm install --save duffn/loopback-connector-arango
+> $ npm install --save duffn/loopback-connector-arango
 
 loopback-connector-arango@0.1.0 node_modules/loopback-connector-arango
 ├── async@0.9.0
@@ -115,7 +115,7 @@ loopback-connector-arango@0.1.0 node_modules/loopback-connector-arango
 Alright, now that we have ArangoDB and the community connector installed, let’s setup the datasource that will allow us to connect ArangoDB and LoopBack. We’ll use slc again, but this time we’ll tell slc that we want to create a new datasource.
 
 ```js
-&gt; $ slc loopback:datasource
+> $ slc loopback:datasource
 
 ? Enter the data-source name: arangodb
 ? Select the connector for arangodb:
@@ -159,24 +159,24 @@ We’re going to use slc again, but this time we’re going to use it to start A
 We’re going to start with building our application using Arc and we’ll touch on monitoring our app a little bit later.
 
 ```js
-&gt; $ slc arc
+> $ slc arc
 ```
 
 This single command will start Arc and take you to the Arc starting page.
   
-<img class="aligncenter size-full wp-image-24826" src="https://strongloop.com/wp-content/uploads/2015/05/strongloop-arc.png" alt="strongloop-arc" width="975" height="484" srcset="https://strongloop.com/wp-content/uploads/2015/05/strongloop-arc.png 975w, https://strongloop.com/wp-content/uploads/2015/05/strongloop-arc-300x149.png 300w, https://strongloop.com/wp-content/uploads/2015/05/strongloop-arc-705x350.png 705w, https://strongloop.com/wp-content/uploads/2015/05/strongloop-arc-450x223.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24826" src="{{site.url}}/blog-assets/2015/05/strongloop-arc.png" alt="strongloop-arc" width="975" height="484"  />
   
 Click on &#8220;Composer&#8221;. This will take us to the Arc Composer where we can see the arangodb datasource we already created under the datasource menu.
 
 Click on &#8220;Add New Model&#8221; under the model menu.
 
-<img class="aligncenter size-full wp-image-24827" src="https://strongloop.com/wp-content/uploads/2015/05/sl-arc-2.png" alt="sl-arc-2" width="421" height="532" srcset="https://strongloop.com/wp-content/uploads/2015/05/sl-arc-2.png 421w, https://strongloop.com/wp-content/uploads/2015/05/sl-arc-2-237x300.png 237w" sizes="(max-width: 421px) 100vw, 421px" />
+<img class="aligncenter size-full wp-image-24827" src="{{site.url}}/blog-assets/2015/05/sl-arc-2.png" alt="sl-arc-2" width="421" height="532"  />
   
 Enter the &#8220;Name&#8221; as &#8220;business&#8221;, the &#8220;Plural&#8221; as &#8220;businesses&#8221; and select &#8220;arangodb&#8221; as the &#8220;datasource&#8221;.
 
 Next, enter the properties for our model as shown below, then click &#8220;Save Model&#8221;.
   
-<img class="aligncenter size-full wp-image-24829" src="https://strongloop.com/wp-content/uploads/2015/05/properties.png" alt="properties" width="975" height="438" srcset="https://strongloop.com/wp-content/uploads/2015/05/properties.png 975w, https://strongloop.com/wp-content/uploads/2015/05/properties-300x135.png 300w, https://strongloop.com/wp-content/uploads/2015/05/properties-705x317.png 705w, https://strongloop.com/wp-content/uploads/2015/05/properties-450x202.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24829" src="{{site.url}}/blog-assets/2015/05/properties.png" alt="properties" width="975" height="438"  />
   
 You just created a JSON model representation of our data in ArangoDB and exposed it via the LoopBack REST API without writing a line of code! That’s amazing. Check out the model in common/models in the application directory.
 
@@ -191,7 +191,7 @@ One neat feature of loopback-connector-arango is that it implements LoopBack’s
 I’ve provided a [simple script](https://github.com/duffn/loopback-arangodb-example/blob/master/data/sampledata-migrate.js) that will run automigrate on our ArangoDB datasource and create the business collection.
 
 ```js
-&gt; $ node data/sampledata-migrate.js
+> $ node data/sampledata-migrate.js
 ```
 
 You can head to http://localhost:8529/\_db/loopback-example/\_admin/aardvark/standalone.html#collections to see that our business collection has been created.
@@ -199,7 +199,7 @@ You can head to http://localhost:8529/\_db/loopback-example/\_admin/aardvark/sta
 Now we can populate our business collection with some sample documents. I’ve provided [another script](https://github.com/duffn/loopback-arangodb-example/blob/master/data/sampledata-load.js) to create sample data.
 
 ```js
-&gt; $ node data/sampledata-migrate.js
+> $ node data/sampledata-migrate.js
 ```
 
 The cool thing to note about this script is that since we already created our datasource and model, we don’t have to go through the hassle again of using a different Node.js module to connect to ArangoDB, pass it the proper connection information, figure out how to use the module and insert documents. By defining our connection information and models for LoopBack, all we need to do is call &#8220;create&#8221; on our business model to insert documents. Inserting documents in bulk into ArangoDB can simply look like this!
@@ -213,7 +213,7 @@ business.create(sampleData, function(err, models) { …
 We’re ready to query our API! Let’s start by using LoopBack’s built-in Swagger API explorer. Start your application using `slc start` and go to http://localhost:3000/explorer.
 
 ```js
-&gt; $ slc start
+> $ slc start
 
 App `.` started under local process manager.
   View the status:  slc ctl status
@@ -223,14 +223,14 @@ App `.` started under local process manager.
 
 Expand the `GET /companies` section and click on &#8220;Try it out!&#8221; to view the documents in our collection.
 
-<img class="aligncenter size-full wp-image-24835" src="https://strongloop.com/wp-content/uploads/2015/05/api-explorer.png" alt="api-explorer" width="975" height="707" srcset="https://strongloop.com/wp-content/uploads/2015/05/api-explorer.png 975w, https://strongloop.com/wp-content/uploads/2015/05/api-explorer-300x218.png 300w, https://strongloop.com/wp-content/uploads/2015/05/api-explorer-705x511.png 705w, https://strongloop.com/wp-content/uploads/2015/05/api-explorer-450x326.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24835" src="{{site.url}}/blog-assets/2015/05/api-explorer.png" alt="api-explorer" width="975" height="707"  />
 
 You’ll see that even though we didn’t provide an id or revision, ArangoDB automatically created those for us.
 
 We can get individual documents by using the id that the connector created for us.
 
 ```js
-&gt; $ curl http://127.0.0.1:3000/api/businesses/12388685741 
+> $ curl http://127.0.0.1:3000/api/businesses/12388685741 
                                                                                             
 {"id":"12388685741","isActive":true,"company":"DEEPENDS","email":"chambershogan@deepends.com","address":"643 Minna Street, Lydia, Minnesota, 4426","latitude":-20.366389,"longitude":129.676139,"_rev":"12388685741"}%
 ```
@@ -240,7 +240,7 @@ We can get individual documents by using the id that the connector created for u
 The connector supports numerous [where filters](http://docs.strongloop.com/display/public/LB/Where+filter) as well such as `equivalence`&#8230;
 
 ```js
-&gt; $ curl -g http://127.0.0.1:3000/api/businesses\?filter\[where\]\[company\]\=DEEPENDS  
+> $ curl -g http://127.0.0.1:3000/api/businesses\?filter\[where\]\[company\]\=DEEPENDS  
                                                            
 [{"id":"12388685741","isActive":true,"company":"DEEPENDS","email":"chambershogan@deepends.com","address":"643 Minna Street, Lydia, Minnesota, 4426","latitude":-20.366389,"longitude":129.676139,"_rev":"12388685741"}]%
 ```
@@ -248,7 +248,7 @@ The connector supports numerous [where filters](http://docs.strongloop.com/displ
 &#8230;and [greater than](http://docs.strongloop.com/display/public/LB/Where+filter#Wherefilter-gtandlt).
 
 ```js
-&gt; $ curl -g http://localhost:3000/api/businesses\?filter\[where\]\[latitude\]\[gt\]\=80
+> $ curl -g http://localhost:3000/api/businesses\?filter\[where\]\[latitude\]\[gt\]\=80
 
 [{"id":"7531283959","isActive":false,"company":"OCTOCORE","email":"chambershogan@octocore.com","address":"376 Fayette Street, Williamson, Marshall Islands, 5746","latitude":88.83977,"longitude":101.820201,"_rev":"7531283959"}]%
 
@@ -257,7 +257,7 @@ The connector supports numerous [where filters](http://docs.strongloop.com/displ
 We can also use other filters with the connector such as [limi](http://docs.strongloop.com/display/public/LB/Limit+filter)t&#8230;
 
 ```js
-&gt; $ curl -g http://localhost:3000/api/businesses\?filter\[limit\]\=1   
+> $ curl -g http://localhost:3000/api/businesses\?filter\[limit\]\=1   
                                                                             
 [{"id":"12388685741","isActive":true,"company":"DEEPENDS","email":"chambershogan@deepends.com","address":"643 Minna Street, Lydia, Minnesota, 4426","latitude":-20.366389,"longitude":129.676139,"_rev":"12388685741"}]%
 ```
@@ -265,7 +265,7 @@ We can also use other filters with the connector such as [limi](http://docs.stro
 &#8230;and [order](http://docs.strongloop.com/display/public/LB/Order+filter).
 
 ```js
-&gt; $ curl -g http://127.0.0.1:3000/api/businesses\?filter\[order\]\=company\&\[filter\]\[limit\]\=2
+> $ curl -g http://127.0.0.1:3000/api/businesses\?filter\[order\]\=company\&\[filter\]\[limit\]\=2
 
 [{"id":"12388685741","isActive":true,"company":"DEEPENDS","email":"chambershogan@deepends.com","address":"643 Minna Street, Lydia, Minnesota, 4426","latitude":-20.366389,"longitude":129.676139,"_rev":"12388685741"},{"id":"12648863661","isActive":true,"company":"DUFFCON","_rev":"12669441965"}]%
 ```
@@ -275,7 +275,7 @@ We can also use other filters with the connector such as [limi](http://docs.stro
 Creating a document is as simple as sending a POST request to the business endpoint.
 
 ```js
-&gt; $ curl -H "Content-Type: application/json" -X POST -d '{"company": "DUFFCON"}' http://localhost:3000/api/businesses   
+> $ curl -H "Content-Type: application/json" -X POST -d '{"company": "DUFFCON"}' http://localhost:3000/api/businesses   
                           
 {"id":"12648863661","company":"DUFFCON"}%
 ```
@@ -283,7 +283,7 @@ Creating a document is as simple as sending a POST request to the business endpo
 If we need to update the document, a call to `PUT /business/id` will take care of that.
 
 ```js
-&gt; $ curl -H "Content-Type: application/json" -X PUT -d '{"isActive": true}' http://localhost:3000/api/businesses/12648863661    
+> $ curl -H "Content-Type: application/json" -X PUT -d '{"isActive": true}' http://localhost:3000/api/businesses/12648863661    
                    
 {"id":"12648863661","isActive":true,"company":"DUFFCON","_rev":"12648863661"}%
 ```
@@ -296,11 +296,11 @@ Now that we’ve taken a look at the LoopBack ArangoDB connector, let’s take a
 
 First, start Arc with `slc arc`, select &#8220;Profile&#8221; from the main menu and then click &#8220;Load&#8221; on the profile page.
 
-<img class="aligncenter size-full wp-image-24845" src="https://strongloop.com/wp-content/uploads/2015/05/arc-profiler.png" alt="arc-profiler" width="975" height="423" srcset="https://strongloop.com/wp-content/uploads/2015/05/arc-profiler.png 975w, https://strongloop.com/wp-content/uploads/2015/05/arc-profiler-300x130.png 300w, https://strongloop.com/wp-content/uploads/2015/05/arc-profiler-705x306.png 705w, https://strongloop.com/wp-content/uploads/2015/05/arc-profiler-450x195.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24845" src="{{site.url}}/blog-assets/2015/05/arc-profiler.png" alt="arc-profiler" width="975" height="423"  />
   
 Select &#8220;Heap Snapshot&#8221; and then click &#8220;Take Snapshot&#8221;. Wait a few seconds for the snapshot to build.
 
-<img class="aligncenter size-full wp-image-24846" src="https://strongloop.com/wp-content/uploads/2015/05/profiler-2.png" alt="profiler-2" width="975" height="407" srcset="https://strongloop.com/wp-content/uploads/2015/05/profiler-2.png 975w, https://strongloop.com/wp-content/uploads/2015/05/profiler-2-300x125.png 300w, https://strongloop.com/wp-content/uploads/2015/05/profiler-2-705x294.png 705w, https://strongloop.com/wp-content/uploads/2015/05/profiler-2-450x188.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24846" src="{{site.url}}/blog-assets/2015/05/profiler-2.png" alt="profiler-2" width="975" height="407"  />
   
 Select the snapshot created from the left-hand menu and type &#8220;ArangoDB&#8221; into the class filter box. Expand the ArangoDB class, datasource and models and you’ll see our business model.
 

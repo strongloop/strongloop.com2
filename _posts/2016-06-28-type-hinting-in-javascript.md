@@ -19,7 +19,7 @@ The first and most obvious solution is to document all your types.   If your p
   
 <!--more-->
 
-<img class="aligncenter" src="https://strongloop.com/wp-content/uploads/2016/06/typehint-example-1a.gif" alt="example of tooltips and type hinting in JavaScript using VisualStudio Code" />
+<img class="aligncenter" src="{{site.url}}/blog-assets/2016/06/typehint-example-1a.gif" alt="example of tooltips and type hinting in JavaScript using VisualStudio Code" />
 
 <!-- For small projects, the overhead of documenting every function parameter, return value, and variable can be overkill. -->
 
@@ -31,7 +31,7 @@ This post will examine a couple ways to clue-in your IDE to the **types** of th
 
 Before _writing_ type annotations, however, you need a tool that can _read_ them.
 
-## Setting up The Environment {#setting-up-the-environment}
+## Setting up The Environment 
 
 The first thing you need is a code editor that recognizes and supports the concept of types in JavaScript. You can either use a JavaScript-oriented IDE such as [Webstorm](https://www.jetbrains.com/webstorm/) or [VisualStudio Code](https://code.visualstudio.com/), or if you have a favorite text editor, see if it has a type-hinting plugin that supports JavaScript. For example, both [Sublime](http://sublimecodeintel.github.io/SublimeCodeIntel/) and [Atom](https://atom.io/packages/autocomplete-plus) have type-hinting plugins.
 
@@ -47,17 +47,17 @@ For these reasons, I&#8217;ll use VS Code in the remainder of this post.
 
 With VS Code installed, let&#8217;s create a new project and get started!
 
-## Built-in Types {#Built-in-Types}
+## Built-in Types 
 
 To begin an example of, use `npm init` to start a new JavaScript project. At this point, you already get quite a bit from VS Code, which has both JavaScript language APIs ([Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math), [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), etc.) and browser APIs ([DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model), [Console](//developer.mozilla.org/en-US/docs/Web/API/Console), [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), etc.) built in.
 
 Here&#8217;s an illustration of some of what you get out of the box:
 
-<img class=" aligncenter" src="https://strongloop.com/wp-content/uploads/2016/06/typehint-built-in-stuff.gif" alt="demo of type hinting for String, Math, Console, and Document" />
+<img class=" aligncenter" src="{{site.url}}/blog-assets/2016/06/typehint-built-in-stuff.gif" alt="demo of type hinting for String, Math, Console, and Document" />
 
 Nice! But we&#8217;re more interested in Node.js annotations and sadly, VS Code does not ship with those. Type declarations for Node.js core APIs do exist, however, in the form of [Typescript declaration files](https://www.typescriptlang.org/docs/handbook/writing-declaration-files.html). You just need a way to add them to your workspace so VS Code can find them: Enter [Typings](https://www.npmjs.com/package/typings).
 
-## Typings {#Typings}
+## Typings 
 
 [Typings](https://www.npmjs.com/package/typings) is a &#8220;Typescript Definition Manager&#8221; that informs an IDE about the Typescript definitions (or &#8220;declarations&#8221;) for the JavaScript APIs you&#8217;re using. Later we&#8217;ll look at the format of Typescript declarations later; for now you need to inform the IDE about Node.js core APIs.
 
@@ -82,11 +82,11 @@ Let&#8217;s break that command down:
 
 Now you have a new `typings/` directory containing the newly-downloaded definitions, as well as your `typings.json` file.
 
-### One More Step&#8230; {#One-More-Step}
+### One More Step&#8230; 
 
 You now have these type definitions in your project, and VS Code loads all type definitions in your project automatically. However, it identifies the root of a JavaScript project by the presence of a `jsconfig.json` file, and we don&#8217;t have one yet. VS Code can usually guess if your project is JavaScript based, and when it does it will [display a little green lightbulb in the status bar](https://code.visualstudio.com/Docs/runtimes/nodejs#_adding-a-jsconfigjson-configuration-file), prompting you to create just such a `jsconfig.json` file. Click that button, save the file, start writing some Node, and&#8230;
 
-<img class=" aligncenter" src="https://strongloop.com/wp-content/uploads/2016/06/typehint-node-core-apis.gif" alt="demo of looking up core node.js api properties & methods using external node.js typescript definition file" />
+<img class=" aligncenter" src="{{site.url}}/blog-assets/2016/06/typehint-node-core-apis.gif" alt="demo of looking up core node.js api properties & methods using external node.js typescript definition file" />
 
 It works! You now get &#8220;Intellisense&#8221; code hints for all Node.js core APIs. Your project won&#8217;t just be using Node core APIs though, you&#8217;ll be pulling in some utility libraries, starting with [lodash](https://lodash.com/). `typings search lodash` reveals that there&#8217;s a lodash definition from the `npm` source as well as `global` and `dt`. You want the `npm` version since you&#8217;ll be consuming lodash as **module** included with `require('lodash')` and it will _not_ be globally available.
 
@@ -102,11 +102,11 @@ typehinting-demo@1.0.0 /Users/sequoia/projects/typehinting-demo
 
 Now you can require lodash and get coding:
 
-<img class=" aligncenter" src="https://strongloop.com/wp-content/uploads/2016/06/typehint-lodash.gif" alt="example demonstrating property and method lookup of a application dependency (lodash)" />
+<img class=" aligncenter" src="{{site.url}}/blog-assets/2016/06/typehint-lodash.gif" alt="example demonstrating property and method lookup of a application dependency (lodash)" />
 
 So far you&#8217;ve seen how to install and consume types for Node and third party libraries, but you&#8217;re going to want these annotations for your own code as well. You can achieve this by using JSDoc comments, writing your own Typescript Declaration files, or a combination of both.
 
-## JSDoc Annotations {#JSDoc-Annotations}
+## JSDoc Annotations 
 
 [JSDoc](http://usejsdoc.org/) is a tool that allows you to describe the parameters and return types of functions in JavaScript, as well as variables and constants. The main advantages of using JSDoc comments are:
 
@@ -121,7 +121,7 @@ function contains(input, search){
   return RegExp(search).test(input);
 }
 
-contains('Everybody loves types. It is known.', 'known'); // =&gt; true
+contains('Everybody loves types. It is known.', 'known'); // => true
 ```
 
 With a function like this, it&#8217;s easy to forget the order of arguments or their types. Annotations to the rescue!
@@ -176,11 +176,11 @@ You can even add examples and links to documentation to help the next programm
 
 &#8230;and away we go!
 
-<img class=" aligncenter" src="https://strongloop.com/wp-content/uploads/2016/06/typehint-jsdoc.gif" alt="example of hinting function parameters & types based on JSDoc comments" />
+<img class=" aligncenter" src="{{site.url}}/blog-assets/2016/06/typehint-jsdoc.gif" alt="example of hinting function parameters & types based on JSDoc comments" />
 
 JSDoc works great and you&#8217;ve only scratched the surface of what it can do, but for more complex tasks or cases where you&#8217;re documenting a data structure that exists for example in a configuration file, TypeScript declaration files are often a better choice.
 
-## Typescript Declarations {#Typescript-Declarations}
+## Typescript Declarations 
 
 A TypeScript declaration file uses the extension `.d.ts` and describes the shape of an API, but _does not contain the actual API implementation_. In this way, they are very similar to the Java or PHP concept of an **interface**. If you were writing Typescript, you would declare the types of function parameters and so on right in the code, but JavaScript&#8217;s lack of types makes this impossible. The solution: declare the types in an JavaScript library in a Typescript (definition) file that can be installed _alongside_ the JavaScript library. This is the reason you installed the Lodash type definitions separately from Lodash.
 
@@ -194,8 +194,8 @@ The `config.json` looks like this:
 {
   "siteName": "Strongloop",
   "introText":  {
-    "title": "&lt;h1&gt; Yo &lt;/h1&gt;",
-    "body": "&lt;strong&gt;Welcome to StrongLoop!&lt;/strong&gt;"
+    "title": "<h1> Yo </h1>",
+    "body": "<strong>Welcome to StrongLoop!</strong>"
   },
   "mapbox": {
     "styleUrl": "mapbox://styles/test/ciolxdklf80000atmd1raqh0rs",
@@ -218,7 +218,7 @@ The `config.json` looks like this:
     ...
 ```
 
-You don&#8217;t want to have to read this complex JSON file each time you want to find the name of a key or remember the type of a property. Furthermore, it&#8217;s not possible to document this structure in the file itself because JSON does not allow comments.[*](#note-on-documenting-json){#documenting-json} Let&#8217;s create a Typescript declaration called `config.d.ts` to describe this configuration object, and put it in a directory in the project called `types/`.
+You don&#8217;t want to have to read this complex JSON file each time you want to find the name of a key or remember the type of a property. Furthermore, it&#8217;s not possible to document this structure in the file itself because JSON does not allow comments.[*](#note-on-documenting-json) Let&#8217;s create a Typescript declaration called `config.d.ts` to describe this configuration object, and put it in a directory in the project called `types/`.
 
 ```js
 declare namespace Demo{
@@ -232,8 +232,8 @@ declare namespace Demo{
         accessToken: string;
       };
       /** @see https://www.mapbox.com/mapbox.js/api/v2.4.0/l-latlng/ */
-      coords: Array&lt;number&gt;;
-      types : Array&lt;MapConfigFeature&gt;;
+      coords: Array<number>;
+      types : Array<MapConfigFeature>;
   }
 
  interface MapConfigFeature {
@@ -263,7 +263,7 @@ const conf = require('./config.js');
 
 Now you can access properties of the configuration object and get the same code-completion, type information, and documentation hints! Note how in the following GIF, VS Code identifies not only that `conf.types` is an array, but when you call an `.filter` on it, knows that each element in the array is a `MapConfigFeature` type object:
 
-<img class=" aligncenter" src="https://strongloop.com/wp-content/uploads/2016/06/typehint-mapconfig.gif" alt="example demonstrating looking up properties on an object based on a local Typescript Definition" />
+<img class=" aligncenter" src="{{site.url}}/blog-assets/2016/06/typehint-mapconfig.gif" alt="example demonstrating looking up properties on an object based on a local Typescript Definition" />
 
 I&#8217;ve been enjoying the benefits of JSDoc, Typescript Declarations, and the `typings` repository in my work. Hopefully this article will help you get started up and running with type hinting in JavaScript. If you have any questions or corrections, or if this post was useful to you, please [let me know](https://twitter.com/_sequoia)!
 

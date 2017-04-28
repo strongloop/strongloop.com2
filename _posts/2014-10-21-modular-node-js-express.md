@@ -20,7 +20,7 @@ In this article, I propose a minimal and flexible pattern that I think works wel
 
 It’s hard to anticipate how a code base will grow and change. An application needs the flexibility to adapt and enough isolation between components to enable code reuse and lessen cognitive overhead.
 
-A modular structure understands that you _won’t_ have complete isolation between the components. There will be overlap and that’s OK and sensible[[1]](#footnote1 "see footnote"){#footref1.footnote}. A modular structure then:
+A modular structure understands that you _won’t_ have complete isolation between the components. There will be overlap and that’s OK and sensible[[1]](#footnote1 "see footnote"). A modular structure then:
 
   1. Enables an application to be separated into smaller components.
   2. Permits components to have their own dependencies (and tests) that can be updated with minimum to no effects on other components.
@@ -53,7 +53,7 @@ We will touch on each of these pieces as we continue.
 
 ## Adding components
 
-A component is any aspect of a project that can stand alone. For example, one component could be dedicated to scheduling cron tasks, another to sending emails, and another to an export tool. In terms of data, you could have one component dedicated to all your models or a separate component for each model[[2]](#footnote2 "see footnote"){#footref2.footnote}.
+A component is any aspect of a project that can stand alone. For example, one component could be dedicated to scheduling cron tasks, another to sending emails, and another to an export tool. In terms of data, you could have one component dedicated to all your models or a separate component for each model[[2]](#footnote2 "see footnote").
 
 We then add our components to the _lib_ directory:
 
@@ -77,7 +77,7 @@ Components should be first-class in your application, meaning they are easily ac
     var logger = require('../../../logger')
     
 
-Herein lies a simple trick that works on UNIX and Windows. Add a symbolic link to the project’s `node_modules` folder[[3]](#footnote3 "see footnote"){#footref3.footnote}. In UNIX, this is:
+Herein lies a simple trick that works on UNIX and Windows. Add a symbolic link to the project’s `node_modules` folder[[3]](#footnote3 "see footnote"). In UNIX, this is:
 
     cd {project_root}/node_modules
     ln -s ../lib _
@@ -134,7 +134,7 @@ Then, add it to your main `package.json` file in the `scripts` section:
     }
     
 
-Now, when we run `npm install` in the project root, all the components’ dependencies also get installed[[4]](#footnote4 "see footnote"){#footref4.footnote}.
+Now, when we run `npm install` in the project root, all the components’ dependencies also get installed[[4]](#footnote4 "see footnote").
 
 ## Tests
 

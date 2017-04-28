@@ -20,7 +20,7 @@ Over the past decade or though I&#8217;ve been refocusing my attention to the we
 
 However, I didn&#8217;t like Node at first. I can remember sitting in on &#8220;Intro to NodeJS&#8221; talks where all we did after an hour was build a web server!
 
-<img class="aligncenter size-full wp-image-28549" src="https://strongloop.com/wp-content/uploads/2017/01/boring-cat.jpg" alt="boring-cat" width="500" height="433" srcset="https://strongloop.com/wp-content/uploads/2017/01/boring-cat.jpg 500w, https://strongloop.com/wp-content/uploads/2017/01/boring-cat-300x260.jpg 300w, https://strongloop.com/wp-content/uploads/2017/01/boring-cat-450x390.jpg 450w" sizes="(max-width: 500px) 100vw, 500px" />
+<img class="aligncenter size-full wp-image-28549" src="{{site.url}}/blog-assets/2017/01/boring-cat.jpg" alt="boring-cat" width="500" height="433"  />
 
 Finally I sat in a session where [Express](http://expressjs.com/) was used and it was a game changer. I finally saw myself using Node and (slowly) weaned myself off of ColdFusion as much as possible.
 
@@ -30,4 +30,4 @@ As an evangelist, developer advocate, whatever you want to call it, I feel like 
 
 Outside of that &#8211; I&#8217;m an adoptive father of six (yes, seriously) kids. Three from South Korea and three from China. Did I mention I have an awesome wife, too? I&#8217;ve also got something of a mild Star Wars obsession going on as well, but that&#8217;s totally sensible for a person of my age.
 
-<img class="aligncenter size-full wp-image-28550" src="https://strongloop.com/wp-content/uploads/2017/01/ray2.png" alt="ray2" width="705" height="928" srcset="https://strongloop.com/wp-content/uploads/2017/01/ray2.png 705w, https://strongloop.com/wp-content/uploads/2017/01/ray2-228x300.png 228w, https://strongloop.com/wp-content/uploads/2017/01/ray2-536x705.png 536w, https://strongloop.com/wp-content/uploads/2017/01/ray2-450x592.png 450w" sizes="(max-width: 705px) 100vw, 705px" />
+<img class="aligncenter size-full wp-image-28550" src="{{site.url}}/blog-assets/2017/01/ray2.png" alt="ray2" width="705" height="928"  />

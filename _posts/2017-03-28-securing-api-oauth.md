@@ -55,7 +55,7 @@ Because these applications can manage a client secret securely, they tend to req
 
 ## _Client Credentials Flow_
 
-[<img class="aligncenter size-medium wp-image-28988" src="https://strongloop.com/wp-content/uploads/2017/03/appl-flow-300x186.png" alt="Client credentials flow" width="300" height="186" srcset="https://strongloop.com/wp-content/uploads/2017/03/appl-flow-300x186.png 300w, https://strongloop.com/wp-content/uploads/2017/03/appl-flow-768x477.png 768w, https://strongloop.com/wp-content/uploads/2017/03/appl-flow-845x527.png 845w, https://strongloop.com/wp-content/uploads/2017/03/appl-flow-705x438.png 705w, https://strongloop.com/wp-content/uploads/2017/03/appl-flow-450x280.png 450w, https://strongloop.com/wp-content/uploads/2017/03/appl-flow.png 848w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2017/03/appl-flow.png)
+[<img class="aligncenter size-medium wp-image-28988" src="{{site.url}}/blog-assets/2017/03/appl-flow-300x186.png" alt="Client credentials flow" width="300" height="186"  />]({{site.url}}/blog-assets/2017/03/appl-flow.png)
 
 In this scheme, the application manages all authorization between OAuth and the API. Any user accessing the application can access the API without authenticating: it’s presumed that if the user has access to the application, they are allowed to use the API.
 
@@ -70,7 +70,7 @@ Here’s how authorization flows in this scheme:
 
 ## _Password Flow_
 
-[<img class="aligncenter size-medium wp-image-28989" src="https://strongloop.com/wp-content/uploads/2017/03/passwordflow-300x192.png" alt="Password flow" width="300" height="192" srcset="https://strongloop.com/wp-content/uploads/2017/03/passwordflow-300x192.png 300w, https://strongloop.com/wp-content/uploads/2017/03/passwordflow-768x493.png 768w, https://strongloop.com/wp-content/uploads/2017/03/passwordflow-705x452.png 705w, https://strongloop.com/wp-content/uploads/2017/03/passwordflow-450x289.png 450w, https://strongloop.com/wp-content/uploads/2017/03/passwordflow.png 837w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2017/03/passwordflow.png)
+[<img class="aligncenter size-medium wp-image-28989" src="{{site.url}}/blog-assets/2017/03/passwordflow-300x192.png" alt="Password flow" width="300" height="192"  />]({{site.url}}/blog-assets/2017/03/passwordflow.png)
 
 This scheme requires that the user provide a user name and password to the application. The application then sends the user name, password and client secret to OAuth.
 
@@ -88,7 +88,7 @@ Here’s how authorization flows in this scheme:
 
 ## _Authorization Code Flow_
 
-[<img class="aligncenter size-medium wp-image-28990" src="https://strongloop.com/wp-content/uploads/2017/03/access-code-300x196.png" alt="Authorization Code Flow" width="300" height="196" srcset="https://strongloop.com/wp-content/uploads/2017/03/access-code-300x196.png 300w, https://strongloop.com/wp-content/uploads/2017/03/access-code-768x502.png 768w, https://strongloop.com/wp-content/uploads/2017/03/access-code-845x554.png 845w, https://strongloop.com/wp-content/uploads/2017/03/access-code-705x461.png 705w, https://strongloop.com/wp-content/uploads/2017/03/access-code-450x294.png 450w, https://strongloop.com/wp-content/uploads/2017/03/access-code.png 848w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2017/03/access-code.png)
+[<img class="aligncenter size-medium wp-image-28990" src="{{site.url}}/blog-assets/2017/03/access-code-300x196.png" alt="Authorization Code Flow" width="300" height="196"  />]({{site.url}}/blog-assets/2017/03/access-code.png)
 
 This scheme involves an authorization form sent by OAuth to the end user, configured with a set of acceptable user names and passwords. The user fills out the form with their login credentials. If the entered information matches the acceptable credentials, OAuth provides an authorization code, which is then passed to the application before the application begins the authorization process. This means that only your OAuth instance knows the user’s password and user name &#8211; not the application.
 
@@ -116,7 +116,7 @@ Here’s how authorization flows in this scheme:
 
 ## _Implicit Flow_
 
-[<img class="aligncenter size-medium wp-image-28991" src="https://strongloop.com/wp-content/uploads/2017/03/imp-flow-300x191.png" alt="Implicit Flow" width="300" height="191" srcset="https://strongloop.com/wp-content/uploads/2017/03/imp-flow-300x191.png 300w, https://strongloop.com/wp-content/uploads/2017/03/imp-flow-768x489.png 768w, https://strongloop.com/wp-content/uploads/2017/03/imp-flow-705x449.png 705w, https://strongloop.com/wp-content/uploads/2017/03/imp-flow-450x286.png 450w, https://strongloop.com/wp-content/uploads/2017/03/imp-flow.png 787w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2017/03/imp-flow.png)
+[<img class="aligncenter size-medium wp-image-28991" src="{{site.url}}/blog-assets/2017/03/imp-flow-300x191.png" alt="Implicit Flow" width="300" height="191"  />]({{site.url}}/blog-assets/2017/03/imp-flow.png)
 
 This scheme functions similarly to the authorization code flow above, with a key difference: the user manages a unique access token on their own. The user passes their login credentials to OAuth and receives an access token directly from OAuth.
 
@@ -134,7 +134,7 @@ Here’s how authorization flows in this scheme:
 
 ## _Password Flow_
 
-[<img class="aligncenter size-medium wp-image-28992" src="https://strongloop.com/wp-content/uploads/2017/03/public-password-flow-300x197.png" alt="Password Flow" width="300" height="197" srcset="https://strongloop.com/wp-content/uploads/2017/03/public-password-flow-300x197.png 300w, https://strongloop.com/wp-content/uploads/2017/03/public-password-flow-705x462.png 705w, https://strongloop.com/wp-content/uploads/2017/03/public-password-flow-450x295.png 450w, https://strongloop.com/wp-content/uploads/2017/03/public-password-flow.png 766w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2017/03/public-password-flow.png)
+[<img class="aligncenter size-medium wp-image-28992" src="{{site.url}}/blog-assets/2017/03/public-password-flow-300x197.png" alt="Password Flow" width="300" height="197"  />]({{site.url}}/blog-assets/2017/03/public-password-flow.png)
 
 <p class="Normal1">
   This scheme functions almost identically to the confidential password flow, minus the client secret. The user provides a user name and password to the application, which is authenticated in OAuth from a prepopulated list of acceptable credentials. The pros and cons are the same as the confidential version of this flow—login credentials protect the system from malicious attacks, but the user is more vulnerable because the application knows the user name and password.
@@ -152,7 +152,7 @@ Here’s how authorization flows in this scheme:
 
 ## _Authorization Code Flow_
 
-[<img class="aligncenter size-medium wp-image-28993" src="https://strongloop.com/wp-content/uploads/2017/03/public-access-code-300x193.png" alt="Authorization Code Flow" width="300" height="193" srcset="https://strongloop.com/wp-content/uploads/2017/03/public-access-code-300x193.png 300w, https://strongloop.com/wp-content/uploads/2017/03/public-access-code-768x494.png 768w, https://strongloop.com/wp-content/uploads/2017/03/public-access-code-705x453.png 705w, https://strongloop.com/wp-content/uploads/2017/03/public-access-code-450x289.png 450w, https://strongloop.com/wp-content/uploads/2017/03/public-access-code.png 854w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2017/03/public-access-code.png)
+[<img class="aligncenter size-medium wp-image-28993" src="{{site.url}}/blog-assets/2017/03/public-access-code-300x193.png" alt="Authorization Code Flow" width="300" height="193"  />]({{site.url}}/blog-assets/2017/03/public-access-code.png)
 
 While this scheme may appear to function almost identically to the confidential authorization code flow, there’s a key difference: the access code is provided to the application, not to the user. This has the effect of creating a pseudo-client secret. The user doesn’t know the access code and thus cannot create a malicious application to access your API, making this the most secure of the public schemes.
 

@@ -259,7 +259,7 @@ Testing, or more specifically: stubbing and mocking variables exported by module
 <code class="javascript">// module.js
 export default {
   value: 42,
-  print: () =&gt; console.log(this.value)
+  print: () => console.log(this.value)
 }
 
 // module-test.js

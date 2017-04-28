@@ -24,11 +24,11 @@ These examples share a common pattern: the app needs to access information in th
 
 In traditional synchronous languages/frameworks like J2EE, ASP.NET or Ruby on Rails, one can use [thread-local storage](https://en.wikipedia.org/wiki/Thread-local_storage) to save a value at the beginning of request handling and later retrieve it deep inside business logic.  This works because each request has its own thread dedicated to serving it.
 
-[<img class="aligncenter size-full wp-image-28675" src="https://strongloop.com/wp-content/uploads/2017/02/Request-1-2.jpeg" alt="Request 1 & 2" width="550" height="500" srcset="https://strongloop.com/wp-content/uploads/2017/02/Request-1-2.jpeg 550w, https://strongloop.com/wp-content/uploads/2017/02/Request-1-2-300x273.jpeg 300w, https://strongloop.com/wp-content/uploads/2017/02/Request-1-2-450x409.jpeg 450w" sizes="(max-width: 550px) 100vw, 550px" />](https://strongloop.com/wp-content/uploads/2017/02/Request-1-2.jpeg)_In this example, REQUEST1 uses Thread-Local Storage to set transaction id (TID) to value 1. Later, code in another module can retrieve TID and get the value 1 back again. Similarly for REQUEST2 which sets TID to value 2._
+[<img class="aligncenter size-full wp-image-28675" src="{{site.url}}/blog-assets/2017/02/Request-1-2.jpeg" alt="Request 1 & 2" width="550" height="500"  />]({{site.url}}/blog-assets/2017/02/Request-1-2.jpeg)_In this example, REQUEST1 uses Thread-Local Storage to set transaction id (TID) to value 1. Later, code in another module can retrieve TID and get the value 1 back again. Similarly for REQUEST2 which sets TID to value 2._
 
 The situation is different in Node.js and similar async frameworks: a single thread is handling many requests at the same time, interleaving execution of bits of code for each request.
 
-[<img class="aligncenter size-full wp-image-28677" src="https://strongloop.com/wp-content/uploads/2017/02/Single-thread-request.png" alt="Single thread request" width="550" height="307" srcset="https://strongloop.com/wp-content/uploads/2017/02/Single-thread-request.png 550w, https://strongloop.com/wp-content/uploads/2017/02/Single-thread-request-300x167.png 300w, https://strongloop.com/wp-content/uploads/2017/02/Single-thread-request-450x251.png 450w" sizes="(max-width: 550px) 100vw, 550px" />](https://strongloop.com/wp-content/uploads/2017/02/Single-thread-request.png)_When the code handling requests are interleaved, the code storing TID is called in the same thread for both requests. How to know which value to return later, when the code asks for the stored TID?_
+[<img class="aligncenter size-full wp-image-28677" src="{{site.url}}/blog-assets/2017/02/Single-thread-request.png" alt="Single thread request" width="550" height="307"  />]({{site.url}}/blog-assets/2017/02/Single-thread-request.png)_When the code handling requests are interleaved, the code storing TID is called in the same thread for both requests. How to know which value to return later, when the code asks for the stored TID?_
 
 When we were looking for alternatives for thread-local storage back in 2014, the concept of [continuation-local storage](https://datahero.com/blog/2014/05/22/node-js-preserving-data-across-async-callbacks/) (CLS) looked like a perfect fit: an API similar to that of thread-local storage, that works out of the box in all Node.js applications. (Or does it? Read more to find out!) So we went ahead and implemented loopback.getCurrentContext() API using [continuation-local-storage](https://www.npmjs.com/package/continuation-local-storage) module (see [loopback#337](https://github.com/strongloop/loopback/pull/337)).
 
@@ -56,10 +56,10 @@ module.exports = function(MyModel) {
   MyModel.log = function(messageId, options) {
     const Message = this.app.models.Message;
     return Message.findById(messageId, options) // IMPORTANT: forward the options arg
-      .then(msg =&gt; {
+      .then(msg => {
         // NOTE: code similar to this can be placed into Operation hooks too as long as options are forwarded above
         const userId = options && options.accessToken && options.accessToken.userId;
-        const user = userId ? 'user#' + userId : '&lt;anonymous&gt;';
+        const user = userId ? 'user#' + userId : '<anonymous>';
         console.log('(%s) %s', user, msg.text));
       });
   };

@@ -11,7 +11,7 @@ categories:
 ---
 In [a previous post](https://strongloop.com/strongblog/lets-code-it-the-debug-module/), I explained the [`debug`](https://www.npmjs.com/package/debug) module and how to use it for basic debugging.  I recently used it to help me understand complex interactions between events in [Leaflet](http://leafletjs.com/) and [Leaflet.Editable](https://github.com/Leaflet/Leaflet.Editable). Before going over that, however, I&#8217;m going to lay the groundwork with a couple organizational tips that makes `debug` easier to use. This post assumes you have either used [`debug`](https://www.npmjs.com/package/debug) or read the [previous post](https://strongloop.com/strongblog/lets-code-it-the-debug-module/)&#8230;.<!--more-->
 
-## Namespacing debug functions {#namespacing-debug-functions}
+## Namespacing debug functions 
 
 The `debug` module has a great namespace feature that allows you to enable or disable debug functions in groups. It is very simple&#8211;you separate namespaces by colons, like this:
 
@@ -48,7 +48,7 @@ debug('myapp:thirdparty:twitter:auth')('success!');
 
 &#8230;but don&#8217;t overdo it. Personally, I try not to go deeper than two or sometimes three levels.
 
-### More namespace tricks {#more-namespace-tricks}
+### More namespace tricks 
 
 The asterisk wildcard &#8220;`*"`matches a namespace at any level when enabling a debug function. Given the two debug functions above above, you can enable both by running your program with this command:
 
@@ -75,7 +75,7 @@ You can turn them all on with `HTTP:*`, but it turns out that `200` comes up wa
 $ DEBUG='HTTP:*,-HTTP:200' node app.js
 ```
 
-## Externalizing debug functions {#externalizing-debug-functions}
+## Externalizing debug functions 
 
 `debug()` is factory function, and thus it returns another function, that you can call to write to the console (more specifically, `STDERR` in Node.js):
 
@@ -120,7 +120,7 @@ const debugDB = require('../lib/debuggers').db;
 
 debugDB(`looking up user by ID: ${userid}`);
 db.Customer.findById(userid)
-  .tap(result =&gt; debugDB('customer lookup result', result))
+  .tap(result => debugDB('customer lookup result', result))
   .then(processCustomer)
 //.then(...)
 
@@ -160,9 +160,9 @@ app:init env not DEV, loading configs from DB +1ms
 
 &#8230;and quickly discover that a missing environment variable is causing the issue.
 
-## Debugging All (known) Events on an Event Emitter {#debugging-all-known-events-on-an-event-emitter}
+## Debugging All (known) Events on an Event Emitter 
 
-### Background {#background}
+### Background 
 
 My goal was to run my `newFeatureAdded` function whenever a user created a new &#8220;feature&#8221; on the map. This example is browser-based, but the approach works just as well with [Node.js EventEmiters](https://nodejs.org/dist/latest-v6.x/docs/api/events.html).
 
@@ -204,7 +204,7 @@ map.on('editable:vertex:clicked', function(e){
 
 This is starting to look redundant, and doubly bad as it&#8217;s forcing me to wrap the handler calls in extra anonymous functions rather than delegate to them directly, for example `map.on('click', disableEdits)`. Furthermore, not knowing the event system well, I want to _discover_ other events that fire at times that might be useful.
 
-### Another Approach&#8230; {#another-approach-}
+### Another Approach&#8230; 
 
 To build my UI, I needed to understand the interactions between [Leaflet&#8217;s 35 events](http://leafletjs.com/reference.html#map-events) and [Leaflet.Editable&#8217;s 18 events](https://github.com/Leaflet/Leaflet.Editable/tree/leaflet0.7#events), that overlap, trigger one another, and have somewhat ambiguous names (`layeradd`, `dragend`, `editable:drawing:dragend`, `editable:drawing:end`, `editable:drawing:commit`, `editable:created`, and so on.)
 
@@ -246,9 +246,9 @@ function debugEvents(target, events){
     // 2. Create debug function for each
     // (but keep the function name as well! we'll need it below)
     // return both as { name, debugger }
-    .map(eventName =&gt; { return { name: eventName, debugger: debug(eventName) }; })
+    .map(eventName => { return { name: eventName, debugger: debug(eventName) }; })
     // 3. Attach that function to the target
-    .map(event =&gt; target.on(event.name, event.debugger));
+    .map(event => target.on(event.name, event.debugger));
 }
 
 debugEvents(mapObject, leafletEditableEvents);
@@ -257,7 +257,7 @@ debugEvents(mapObject, leafletEvents);
 
 Assuming I [set `localStorage.debug='*'` in the browser console](https://www.npmjs.com/package/debug#browser-support), I will now see a debug statement in the console when _any_ of the Leaflet.Editable events fire on the map object!
 
-<img class="aligncenter" src="https://strongloop.com/wp-content/uploads/2016/09/debug_all_events.png" alt="debugger output in console" />
+<img class="aligncenter" src="{{site.url}}/blog-assets/2016/09/debug_all_events.png" alt="debugger output in console" />
 
 Note that the data that `.on()` passes to an event handler target is also passed to the debug functions.
 
@@ -268,11 +268,11 @@ In this case it&#8217;s the event object created by Leaflet, shown above in the 
 ```js
 function debugEvents(target, events, namespace){
   events
-    .map(eventName =&gt; { return {
+    .map(eventName => { return {
       name: eventName,
       debugger: debug(`${namespace}:${eventName}`)
     } } )
-    .map(event =&gt; target.on(event.name, event.debugger));
+    .map(event => target.on(event.name, event.debugger));
 }
 
 //editable events already prefixed with "editable", so "events:editable:..."
@@ -284,37 +284,37 @@ debugEvents(mapObject, leafletEvents, 'event:map');
 You can enable all event debuggers in the console, or just editable events, or just core map events, thus:
 
 ```js
-&gt; localStorage.debug = 'event:*'
-&gt; localStorage.debug = 'event:editable:*'
-&gt; localStorage.debug = 'event:map:*
+> localStorage.debug = 'event:*'
+> localStorage.debug = 'event:editable:*'
+> localStorage.debug = 'event:map:*
 ```
 
 Conveniently, the [Leaflet.Editable events](https://github.com/Leaflet/Leaflet.Editable/tree/leaflet0.7#events) are all already &#8220;namespaced&#8221; and colon-separated, just like our debug namespaces!
 
 ```js
-&gt; localStorage.debug = 'event:editable:*' //enable all editable
-&gt; localStorage.debug = 'event:editable:drawing:*'  //just editable:drawing events
+> localStorage.debug = 'event:editable:*' //enable all editable
+> localStorage.debug = 'event:editable:drawing:*'  //just editable:drawing events
 ```
 
 ### Fine-tuning the output
 
 Let&#8217;s enable all event debuggers and see what some interactions look like&#8230;
 
-<img class="aligncenter" src="https://strongloop.com/wp-content/uploads/2016/09/debug_events_1.gif" alt="gif of debugger output with rapidly flowing debug statments during user interaction with map. Lots and lots of &quot;event:map:mousemove&quot; events." />
+<img class="aligncenter" src="{{site.url}}/blog-assets/2016/09/debug_events_1.gif" alt="gif of debugger output with rapidly flowing debug statments during user interaction with map. Lots and lots of &quot;event:map:mousemove&quot; events." />
 
 Looks nice, but the `mousemove` events are coming so fast they push everything else out of the console&#8211;they are basically noise. Some trial and error taught me it that `drag` events are equally noisy and I don&#8217;t need to know the core map events most of the time, just the `editable` events.
 
 So I can reduce logging to just what I need, enabling only `editable:`events and ignoring _all_ &#8220;drag&#8221; and &#8220;mousemove&#8221; events:
 
 ```js
-&gt; localStorage.debug = 'event:editable:*,-event:*:drag,-event:*:mousemove’
+> localStorage.debug = 'event:editable:*,-event:*:drag,-event:*:mousemove’
 ```
 
-<img class="aligncenter" src="https://strongloop.com/wp-content/uploads/2016/09/debug_events_2.gif" alt="gif of debugger output with a smaller number of events. Console screen does not overflow" />
+<img class="aligncenter" src="{{site.url}}/blog-assets/2016/09/debug_events_2.gif" alt="gif of debugger output with a smaller number of events. Console screen does not overflow" />
 
 Looks good!
 
-## Conclusion {#conclusion}
+## Conclusion 
 
 While `debug` is a very small module and easy to get started with, you can tune it in very granular ways and this makes it a powerful development tool. By attaching debug statements to all events, _outside_ of our application code, you can trace the path of an event system and better understand how events interact, without adding any debug statements into your application code. If you&#8217;ve found another novel use of this library or have any questions about my post, [let me know](http://sequoia.makes.software/contact/). Happy logging!
 

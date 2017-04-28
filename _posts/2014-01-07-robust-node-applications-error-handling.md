@@ -105,7 +105,7 @@ events.js:72
  ^
 Error: Redis connection to some.unknown.host:6379 failed - connect ENOENT
  at RedisClient.on_error (/node_modules/redis/index.js:185:24)
- at Socket.&lt;anonymous&gt; (/node_modules/redis/index.js:95:14)
+ at Socket.<anonymous> (/node_modules/redis/index.js:95:14)
  at Socket.EventEmitter.emit (events.js:95:17)
  at net.js:441:14
  at process._tickCallback (node.js:415:13)

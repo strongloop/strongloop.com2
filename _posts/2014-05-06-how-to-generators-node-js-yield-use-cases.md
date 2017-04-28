@@ -60,7 +60,7 @@ Generators may be used for iteration via the shiny new **for of** loop:
 
 ```js
 function* iter () {
- for (var i = 0; i &lt; 10; i++) yield i
+ for (var i = 0; i < 10; i++) yield i
 }
 for (var val of iter()) {
  console.log(val) // outputs 0 — 9
@@ -73,14 +73,14 @@ for (var val of iter()) {
 
 Now that I can suspend functions, I can run all this stuff in parallel right? No. __JavaScript is _still_ single-threaded, but now we have the ability to say STOP in the middle of a function.
 
-[<img class="aligncenter size-full wp-image-15899" alt="876" src="https://strongloop.com/wp-content/uploads/2014/04/876.jpg" width="512" height="288" />](https://strongloop.com/wp-content/uploads/2014/04/876.jpg)
+[<img class="aligncenter size-full wp-image-15899" alt="876" src="{{site.url}}/blog-assets/2014/04/876.jpg" width="512" height="288" />]({{site.url}}/blog-assets/2014/04/876.jpg)
 
 If you are looking to bolster raw performance, generators may not be your ticket. Here’s a sample CPU intensive task, calculating a Fibonacci sequence number:
 
 ```js
 function fib (n) {
   var current = 0, next = 1, swap
-  for (var i = 0; i &lt; n; i++) {
+  for (var i = 0; i < n; i++) {
     swap = current, current = next
     next = swap + next
   }
@@ -93,7 +93,7 @@ Now, we write a similar function using generators:
 ```js
 function* fibGen (n) {
   var current = 0, next = 1, swap
-  for (var i = 0; i &lt; n; i++) {
+  for (var i = 0; i < n; i++) {
     swap = current, current = next
     next = swap + next
     yield current
@@ -179,7 +179,7 @@ Now we evaluate a Fibonacci stream lazily, asking it to return the first Fibonac
 
 ```js
 for (var num of fibGen()) {
- if (num &gt; 5000) break
+ if (num > 5000) break
 }
 console.log(num) // 6765
 ```

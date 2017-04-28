@@ -261,7 +261,7 @@ Now configure Eclipse ADT as follows:
             <span style="font-size: 18px;">Click &#8220;Next&#8221;<br /> </span>
           </li>
           <li>
-            <span style="font-size: 18px;">Browse to the <code>&lt;android-sdk&gt;/extras/google/google_play_services/libproject/google-play-services_lib</code> directory.</span>
+            <span style="font-size: 18px;">Browse to the <code><android-sdk>/extras/google/google_play_services/libproject/google-play-services_lib</code> directory.</span>
           </li>
           <li style="margin-left: 2em;">
             <span style="font-size: 18px;">Check &#8220;Copy projects into workspace&#8221;</span>
@@ -289,7 +289,7 @@ Now configure Eclipse ADT as follows:
                 <span style="font-size: 18px;">In the Library frame, click on &#8220;Add&#8230;&#8221; and select <code>google-play-services_lib</code>.</span>
               </li>
               <li style="margin-left: 2em;">
-                <span style="font-size: 18px;">Also under Project Build Target, set the target as Google APIs.<code>&lt;br />
+                <span style="font-size: 18px;">Also under Project Build Target, set the target as Google APIs.<code><br />
 </code><br /> <img title="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.34.36 PM.png" alt="" src="http://docs.strongloop.com/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.34.36%20PM.png?version=1&modificationDate=1391643314000&api=v2" data-image-src="/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.34.36%20PM.png?version=1&modificationDate=1391643314000&api=v2" data-linked-resource-id="1769891" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2014-02-05 at 3.34.36 PM.png" data-base-url="http://docs.strongloop.com" data-linked-resource-container-id="1542953" data-location="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.34.36 PM.png" /></span>
               </li>
             </ul>
@@ -389,7 +389,7 @@ adapter = new RestAdapter(
                                 <span style="font-size: 18px;">In Eclipse ADT, browse to DemoActivity/AndroidManifest.xml.</span>
                               </li>
                               <li style="margin-left: 2em;">
-                                <span style="font-size: 18px;">Change the line<br /> <code>&lt;meta-data &lt;a>android:name="com.google.android.gms.version&lt;/a>" &lt;a>android:value="@integer/google_play_services_version"/&lt;/a>&gt;</code><br /> to<br /> <code>&lt;meta-data &lt;a>android:name="com.google.android.gms.version&lt;/a>" &lt;a>android:value="4030500”/&lt;/a>&gt;</code></span>
+                                <span style="font-size: 18px;">Change the line<br /> <code><meta-data <a>android:name="com.google.android.gms.version</a>" <a>android:value="@integer/google_play_services_version"/</a>></code><br /> to<br /> <code><meta-data <a>android:name="com.google.android.gms.version</a>" <a>android:value="4030500”/</a>></code></span>
                               </li>
                               <li style="margin-left: 2em;">
                                 <span style="font-size: 18px;">Save the file.</span>
@@ -534,7 +534,7 @@ private void updateRegistration() {
                           <td>
                             ```js
 private void registerInBackground(final LocalInstallation installation) {
-    new AsyncTask&lt;Void, Void, Exception&gt;() {
+    new AsyncTask<Void, Void, Exception>() {
         @Override
         protected Exception doInBackground(final Void... params) {
             try {

@@ -396,7 +396,7 @@ require('superagent')
  .set('Content-Type', 'application/json')
  .end(function(err, res) {
    console.log(res.body);
-   // =&gt; [ { name: 'pen', price: 2.99, id: '74b1049dd990a83b' } ]
+   // => [ { name: 'pen', price: 2.99, id: '74b1049dd990a83b' } ]
  });
 ```js
                                                           
@@ -423,7 +423,7 @@ require('superagent')
  .set('Content-Type', 'application/json')
  .end(function(err, res) {
    console.log(res.body);
-   // =&gt; [ { name: 'pen', price: 2.99, id: '74b1049dd990a83b' } ]
+   // => [ { name: 'pen', price: 2.99, id: '74b1049dd990a83b' } ]
  });
 ```js
                                                             

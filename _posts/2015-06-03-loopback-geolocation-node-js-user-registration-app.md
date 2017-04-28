@@ -47,7 +47,7 @@ I added two properties to the \`Subscriber\` model:
 Now, we’ll create our application using the \`slc loopback application generator\`.
 
 ```sh
-&gt; $ slc loopback
+> $ slc loopback
 
      _-----_
     |       |    .--------------------------.
@@ -361,13 +361,13 @@ The typical flow for user would be:
 
 The following diagram depicts the design/architecture of the sample application:
 
-<img class="aligncenter size-full wp-image-25130" src="https://strongloop.com/wp-content/uploads/2015/06/lb1.png" alt="lb1" width="975" height="732" srcset="https://strongloop.com/wp-content/uploads/2015/06/lb1.png 975w, https://strongloop.com/wp-content/uploads/2015/06/lb1-300x225.png 300w, https://strongloop.com/wp-content/uploads/2015/06/lb1-705x529.png 705w, https://strongloop.com/wp-content/uploads/2015/06/lb1-450x338.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-25130" src="{{site.url}}/blog-assets/2015/06/lb1.png" alt="lb1" width="975" height="732"  />
 
 That’s it! If you curious to see how the rest of the AngularJS side was built, take a look at the finished application here on [GitHub](https://github.com/robertojrojas/self-registration-loopback).
 
 Here is a [video](https://www.youtube.com/watch?v=3p90HjfYMUw) demonstrating how the application works:
 
-[<img class="aligncenter size-full wp-image-25131" src="https://strongloop.com/wp-content/uploads/2015/06/lb2.png" alt="lb2" width="700" height="522" srcset="https://strongloop.com/wp-content/uploads/2015/06/lb2.png 700w, https://strongloop.com/wp-content/uploads/2015/06/lb2-300x224.png 300w, https://strongloop.com/wp-content/uploads/2015/06/lb2-450x336.png 450w" sizes="(max-width: 700px) 100vw, 700px" />](https://www.youtube.com/watch?v=3p90HjfYMUw)
+[<img class="aligncenter size-full wp-image-25131" src="{{site.url}}/blog-assets/2015/06/lb2.png" alt="lb2" width="700" height="522"  />](https://www.youtube.com/watch?v=3p90HjfYMUw)
 
 ## **Conclusion**
 

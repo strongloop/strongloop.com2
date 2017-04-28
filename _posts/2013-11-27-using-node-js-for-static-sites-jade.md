@@ -194,7 +194,7 @@ jade: {
       pretty: true
     },
     files: [
-      {expand: true, cwd: 'src/jade', src: '*.jade', dest: '&lt;%=meta.endpoint%&gt;/', ext: '.html'}
+      {expand: true, cwd: 'src/jade', src: '*.jade', dest: '<%=meta.endpoint%>/', ext: '.html'}
     ]
   }
 },

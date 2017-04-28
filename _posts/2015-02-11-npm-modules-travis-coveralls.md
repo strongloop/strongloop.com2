@@ -102,8 +102,8 @@ Run these tests with npm test, and you should see a simple test report.
 ```js
 ~/Personal/fizzbuzz-coverage $ npm test
 
-&gt; fizzbuzz-coverage@0.0.0 test /Users/vkarpov/Personal/fizzbuzz-coverage
-&gt; ./node_modules/mocha/bin/mocha ./test/*
+> fizzbuzz-coverage@0.0.0 test /Users/vkarpov/Personal/fizzbuzz-coverage
+> ./node_modules/mocha/bin/mocha ./test/*
 
  fizzbuzz
     ✓ returns null when passed a non-number 
@@ -143,8 +143,8 @@ Now the question is, how do you get coverage output? That&#8217;s where istanbul
 ```js
 specter:fizzbuzz-coverage vkarpov$ npm run-script test-travis
 
-&gt; fizzbuzz-coverage@0.0.0 test-travis /Users/vkarpov/Personal/fizzbuzz-coverage
-&gt; ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*
+> fizzbuzz-coverage@0.0.0 test-travis /Users/vkarpov/Personal/fizzbuzz-coverage
+> ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*
 
  fizzbuzz
    ✓ returns null when passed a non-number 
@@ -255,5 +255,5 @@ In this article, you saw how easy it can be to tie your npm modules into Travis 
     StrongLoop Arc is a graphical UI for the <a href="http://strongloop.com/node-js/api-platform/">StrongLoop API Platform</a>, which includes LoopBack, that complements the <a href="http://docs.strongloop.com/pages/viewpage.action?pageId=3834790">slc command line tools</a> for developing APIs quickly and getting them connected to data. Arc also includes tools for building, profiling and monitoring Node apps. It takes just a few simple steps to <a href="http://strongloop.com/get-started/">get started</a>!
   </p>
   
-  <img class="aligncenter size-large wp-image-21950" src="https://strongloop.com/wp-content/uploads/2014/12/Arc_Monitoring_Metrics-1030x593.jpg" alt="Arc_Monitoring_Metrics" width="1030" height="593" />
+  <img class="aligncenter size-large wp-image-21950" src="{{site.url}}/blog-assets/2014/12/Arc_Monitoring_Metrics-1030x593.jpg" alt="Arc_Monitoring_Metrics" width="1030" height="593" />
 </div>

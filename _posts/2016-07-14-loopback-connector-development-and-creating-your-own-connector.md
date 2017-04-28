@@ -80,7 +80,7 @@ LoopBack connectors expose standard create, read, update, and delete (CRUD) oper
 
 Here is the OpenAPI (Swagger) definition of a model called model1. The steps to create the model are explained in final section.
 
-[<img class="aligncenter size-medium wp-image-27660" src="https://strongloop.com/wp-content/uploads/2016/07/model1-image-300x171.jpg" alt="model1-image" width="300" height="171" srcset="https://strongloop.com/wp-content/uploads/2016/07/model1-image-300x171.jpg 300w, https://strongloop.com/wp-content/uploads/2016/07/model1-image-705x401.jpg 705w, https://strongloop.com/wp-content/uploads/2016/07/model1-image-450x256.jpg 450w, https://strongloop.com/wp-content/uploads/2016/07/model1-image.jpg 1001w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2016/07/model1-image.jpg)
+[<img class="aligncenter size-medium wp-image-27660" src="{{site.url}}/blog-assets/2016/07/model1-image-300x171.jpg" alt="model1-image" width="300" height="171"  />]({{site.url}}/blog-assets/2016/07/model1-image.jpg)
 
 In our example helloworld connector, we will perform CRUD operations with an  in-memory table containing **id** and **name** properties:
 
@@ -254,7 +254,7 @@ The associated connector method is the **updateOrCreate** method, that we&#8217;
 HelloWorldConnector.prototype.updateOrCreate = function (model, data, callback) {
   console.log("updateOrCreate");
   var isCreate = true;
-  for (i = 0; i &lt; this.response.length; i++) {
+  for (i = 0; i < this.response.length; i++) {
     if (this.response[i].id === data.id) {
       this.response[i].name = data.name;
       isCreate = false;

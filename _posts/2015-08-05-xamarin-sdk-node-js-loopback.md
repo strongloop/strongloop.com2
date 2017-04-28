@@ -32,20 +32,20 @@ For more information, see the [LoopBack Xamarin SDK documentation](http://docs.s
 <!--more-->
 
 ```js
-public class TodoTasks : CRUDInterface&lt;TodoTask&gt;
+public class TodoTasks : CRUDInterface<TodoTask>
         {
 
             /*
              * Find a related item by id for TodoTask.
              */
-            public static async Task&lt;TodoTask&gt; findByIdForuser(string id, string fk)
+            public static async Task<TodoTask> findByIdForuser(string id, string fk)
             {
                 string APIPath = "users/:id/TodoTask/:fk";
-                IDictionary&lt;string, string&gt; queryStrings = new Dictionary&lt;string, string&gt;();
+                IDictionary<string, string> queryStrings = new Dictionary<string, string>();
                 string bodyJSON = "";
                 APIPath = APIPath.Replace(":id", (string)id);
                 APIPath = APIPath.Replace(":fk", (string)fk);
-                var response = await Gateway.PerformRequest&lt;TodoTask&gt;(APIPath, bodyJSON, "GET", queryStrings).ConfigureAwait(false);
+                var response = await Gateway.PerformRequest<TodoTask>(APIPath, bodyJSON, "GET", queryStrings).ConfigureAwait(false);
                 return response;
             }
 ...
@@ -55,7 +55,7 @@ public class TodoTasks : CRUDInterface&lt;TodoTask&gt;
 
 The Xamarin SDK has a slick [example app](https://github.com/strongloop/loopback-example-xamarin), TodoApp, to help you learn the SDK and showcase its power. You can run the Todo App against the LoopBack backend set up already or run the LoopBack backend yourself.
 
-<img class="aligncenter size-full wp-image-25646" src="https://strongloop.com/wp-content/uploads/2015/07/4.png" alt="4" width="793" height="407" srcset="https://strongloop.com/wp-content/uploads/2015/07/4.png 793w, https://strongloop.com/wp-content/uploads/2015/07/4-300x154.png 300w, https://strongloop.com/wp-content/uploads/2015/07/4-705x362.png 705w, https://strongloop.com/wp-content/uploads/2015/07/4-450x231.png 450w" sizes="(max-width: 793px) 100vw, 793px" />
+<img class="aligncenter size-full wp-image-25646" src="{{site.url}}/blog-assets/2015/07/4.png" alt="4" width="793" height="407"  />
 
 ## **What&#8217;s next?**
 

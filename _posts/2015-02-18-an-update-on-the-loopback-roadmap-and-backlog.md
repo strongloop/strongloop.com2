@@ -63,7 +63,7 @@ categories:
 </p>
 
 <p dir="ltr">
-  <img class="aligncenter size-large wp-image-23527" src="https://strongloop.com/wp-content/uploads/2015/02/Screen-Shot-2015-02-18-at-8.18.38-AM-1030x376.png" alt="Screen Shot 2015-02-18 at 8.18.38 AM" width="1030" height="376" />
+  <img class="aligncenter size-large wp-image-23527" src="{{site.url}}/blog-assets/2015/02/Screen-Shot-2015-02-18-at-8.18.38-AM-1030x376.png" alt="Screen Shot 2015-02-18 at 8.18.38 AM" width="1030" height="376" />
 </p>
 
 <p dir="ltr">

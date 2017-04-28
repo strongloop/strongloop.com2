@@ -16,7 +16,7 @@ In [last week’s performance tip](http://strongloop.com/strongblog/node-js-perf
 
 ## **With great power comes tiny difficulties**
 
-<img class="aligncenter size-full wp-image-16429" src="https://strongloop.com/wp-content/uploads/2014/05/hulk1.jpg"  />
+<img class="aligncenter size-full wp-image-16429" src="{{site.url}}/blog-assets/2014/05/hulk1.jpg"  />
 
 Node apps essentially run [single-threaded](http://en.wikipedia.org/wiki/Single_threading), even though file and network events could leverage multiple threads. This architecture thereby binds the performance of each application instance/process to one logical CPU core that the thread it&#8217;s attached to. To a J2EE architect like me, this highlights immaturity in Node as an enterprise ready technology. Application servers like JBoss or Weblogic already solved this 10 years back using server core [multi-threading](http://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) and parallelism. Little did I realize that context switching between threads ate up my memory and I still had a blocking IO problem.
 

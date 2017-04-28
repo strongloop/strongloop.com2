@@ -41,7 +41,7 @@ This tutorial will cover integrating LoopBack with Couchbase Server using the co
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-24545" src="https://strongloop.com/wp-content/uploads/2015/04/couchpluslb.png" alt="couchpluslb" width="608" height="195" srcset="https://strongloop.com/wp-content/uploads/2015/04/couchpluslb.png 608w, https://strongloop.com/wp-content/uploads/2015/04/couchpluslb-300x96.png 300w, https://strongloop.com/wp-content/uploads/2015/04/couchpluslb-450x144.png 450w" sizes="(max-width: 608px) 100vw, 608px" />
+<img class="aligncenter size-full wp-image-24545" src="{{site.url}}/blog-assets/2015/04/couchpluslb.png" alt="couchpluslb" width="608" height="195"  />
 
 <!--more-->
 
@@ -57,7 +57,7 @@ Head over to the [Couchbase website](http://www.couchbase.com/nosql-databases/do
 
 Installation on OSX is extremely simple. After you download the file, expand the archive and drag the Couchbase-Server.app to your Applications folder. Double-click the application to launch Couchbase.
 
-<img class="aligncenter size-full wp-image-24509" src="https://strongloop.com/wp-content/uploads/2015/04/couchbase.png" alt="couchbase" width="975" height="203" srcset="https://strongloop.com/wp-content/uploads/2015/04/couchbase.png 975w, https://strongloop.com/wp-content/uploads/2015/04/couchbase-300x62.png 300w, https://strongloop.com/wp-content/uploads/2015/04/couchbase-705x147.png 705w, https://strongloop.com/wp-content/uploads/2015/04/couchbase-450x94.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24509" src="{{site.url}}/blog-assets/2015/04/couchbase.png" alt="couchbase" width="975" height="203"  />
 
 That’s it! Couchbase Server is now running on your Mac. You’ll see the Couchbase Server icon in your tray.
 
@@ -71,7 +71,7 @@ When you’re complete with the rest of the setup steps, you’ll be taken to th
 
 Click &#8220;Create New Data Bucket&#8221; and enter the name as &#8220;loopback-example&#8221;. Leave all the settings at their defaults and click &#8220;Create&#8221;.
 
-<img class="aligncenter size-full wp-image-24510" src="https://strongloop.com/wp-content/uploads/2015/04/couchbase2.png" alt="couchbase2" width="975" height="349" srcset="https://strongloop.com/wp-content/uploads/2015/04/couchbase2.png 975w, https://strongloop.com/wp-content/uploads/2015/04/couchbase2-300x107.png 300w, https://strongloop.com/wp-content/uploads/2015/04/couchbase2-705x252.png 705w, https://strongloop.com/wp-content/uploads/2015/04/couchbase2-450x161.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24510" src="{{site.url}}/blog-assets/2015/04/couchbase2.png" alt="couchbase2" width="975" height="349"  />
 
 Now that we have our sample bucket, we need to take one more step in preparation for connecting to our Couchbase Server with LoopBack. We need to install the Couchbase N1QL engine.
 
@@ -465,7 +465,7 @@ To make life easy, Loopback uses Swagger API documentation out of box. It’s ac
 
 Try out all the great features in Swagger for CRUD, filtering, querying and more.
 
-<img class="aligncenter size-full wp-image-24528" src="https://strongloop.com/wp-content/uploads/2015/04/swagger.png" alt="swagger" width="975" height="555" srcset="https://strongloop.com/wp-content/uploads/2015/04/swagger.png 975w, https://strongloop.com/wp-content/uploads/2015/04/swagger-300x171.png 300w, https://strongloop.com/wp-content/uploads/2015/04/swagger-705x401.png 705w, https://strongloop.com/wp-content/uploads/2015/04/swagger-450x256.png 450w" sizes="(max-width: 975px) 100vw, 975px" />
+<img class="aligncenter size-full wp-image-24528" src="{{site.url}}/blog-assets/2015/04/swagger.png" alt="swagger" width="975" height="555"  />
 
 Now we’ll run through some steps to guide you through the testing of our new APIs.
 

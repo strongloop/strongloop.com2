@@ -9,11 +9,11 @@ categories:
   - Community
   - How-To
 ---
-## **Introduction** {#introduction}
+## **Introduction** 
 
 In this article we are going to do a quick introduction to Node.js and [LoopBack](http://loopback.io/) for Ruby on Rails minded developers. What&#8217;s LoopBack? It&#8217;s an open source framework for easily developing APIs in Node and getting them connected to databases like MongoDB, MySQL, Oracle and SQL Server. We&#8217;ll cover installing Node, the [StrongLoop CLI](http://docs.strongloop.com/pages/viewpage.action?pageId=3834790), look at an example LoopBack application plus how to start out on your own. All the while drawing parallels between Node and Rails commands.
 
-## **From Ruby to Node** {#from-ruby-to-node}
+## **From Ruby to Node** 
 
 You&#8217;ve likely heard in the past few months that some [big companies](http://strongloop.com/node-js/why-node/) are starting to deploy Node applications in production and at scale. Walmart is running their entire [mobile site](http://www.joyent.com/developers/videos/node-summit-walmart-save-money-use-node-js) on Node, which is currently the biggest Node application, traffic wise. eBay has been running a production Node [API service](http://www.ebaytechblog.com/2011/11/30/announcing-ql-io) since 2011. PayPal is [slowly rebuilding](https://www.paypal-engineering.com/2013/11/22/node-js-at-paypal/) their front-end in Node.
 
@@ -23,7 +23,7 @@ There aren&#8217;t that many frameworks that try to deliver Rails experience for
 
 <!--more-->
 
-## **Installing Node** {#installing-node}
+## **Installing Node** 
 
 There are many ways to install Node:
 
@@ -40,7 +40,7 @@ Node has a version manager called [NVM](https://github.com/creationix/nvm) which
 
 In the interests of keep this article to the point, I&#8217;m going to refer you to the [NVM manual](https://github.com/creationix/nvm) for installation instructions (which are pretty much the same as [RVM](https://rvm.io/)).
 
-## **Package Management In Node** {#package-management-in-node}
+## **Package Management In Node** 
 
 Most of the concepts found in Ruby translate well to Node. Such is the case for package management and [NPM](https://www.npmjs.org/) is Node&#8217;s alternative to [GEM](https://rubygems.org/). [NPM](https://www.npmjs.org/) is [GEM](https://rubygems.org/) for Node. After you have setup Node and it&#8217;s in your system path, the `npm` command becomes available and you can have any of the 70k packages currently published installed with just one command:
 
@@ -48,7 +48,7 @@ Most of the concepts found in Ruby translate well to Node. Such is the case for 
 
 One of the differentiating factors between [NPM](https://www.npmjs.org/) and [GEM](https://rubygems.org/) is that [NPM](https://www.npmjs.org/) installs all packages in the local `node_modules` folder by default, which means you don&#8217;t have to worry about handling multiple versions of the same package or accidental cross project pollution. [The modules folder](http://nodejs.org/api/modules.html) is a core Node concept that allows programs to load installed packages and I encourage your to [read and understand](http://nodejs.org/api/modules.html) the manual on this subject.
 
-## **Package Manifest For Node** {#package-manifest-for-node}
+## **Package Manifest For Node** 
 
 To help you manage project dependencies Node introduces `package.json` as a [core concept](http://nodejs.org/api/modules.html#modules_folders_as_modules). On the surface it works similar to `Gemfile` in Ruby and contains list modules that your project depends on. `package.json` is `Gemfile` for Node.
 
@@ -62,7 +62,7 @@ If you are in a folder with `package.json` and want to install all packages it l
 
 This is equivalent to `bundle install` in the Ruby world.
 
-## **Installing StrongLoop API Server** {#installing-strongloop-tools}
+## **Installing StrongLoop API Server** 
 
 Now that we have covered some basics, lets get started with LoopBack, the open source API framework powering StrongLoop API server.
 
@@ -72,7 +72,7 @@ This will install the `slc` command into your global [NPM](https://www.npmjs.org
 
 The `slc` tool is our gateway for all things StrongLoop. Think of it as `rails` command, just for Node. You&#8217;ll see why in a moment.
 
-## **LoopBack Sample Application** {#loopback-sample-application}
+## **LoopBack Sample Application** 
 
     $ slc loopback:example
     $ [?] Enter a directory name where to create the project: SampleApp
@@ -90,9 +90,9 @@ Open up http://localhost:3000/explorer in a browser and
 
 you should be seeing API explorer which comes in a pluggable, but completely separate [NPM](https://www.npmjs.org/) module called `loopback-explorer` ([github repository](https://github.com/strongloop/loopback-explorer)).
 
-[<img class="aligncenter size-large wp-image-18998" alt="Loopback_explorer" src="https://strongloop.com/wp-content/uploads/2014/07/Loopback_explorer2-1030x395.png" width="1030" height="395" srcset="https://strongloop.com/wp-content/uploads/2014/07/Loopback_explorer2-1030x395.png 1030w, https://strongloop.com/wp-content/uploads/2014/07/Loopback_explorer2-300x115.png 300w, https://strongloop.com/wp-content/uploads/2014/07/Loopback_explorer2-1500x576.png 1500w, https://strongloop.com/wp-content/uploads/2014/07/Loopback_explorer2-705x271.png 705w, https://strongloop.com/wp-content/uploads/2014/07/Loopback_explorer2-450x173.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" />](https://strongloop.com/wp-content/uploads/2014/07/Loopback_explorer2.png)
+[<img class="aligncenter size-large wp-image-18998" alt="Loopback_explorer" src="{{site.url}}/blog-assets/2014/07/Loopback_explorer2-1030x395.png" width="1030" height="395"  />]({{site.url}}/blog-assets/2014/07/Loopback_explorer2.png)
 
-[<img class="aligncenter size-large wp-image-18997" alt="Loopback_details" src="https://strongloop.com/wp-content/uploads/2014/07/Loopback_details1-1030x624.png" width="1030" height="624" srcset="https://strongloop.com/wp-content/uploads/2014/07/Loopback_details1-1030x624.png 1030w, https://strongloop.com/wp-content/uploads/2014/07/Loopback_details1-300x181.png 300w, https://strongloop.com/wp-content/uploads/2014/07/Loopback_details1-1500x909.png 1500w, https://strongloop.com/wp-content/uploads/2014/07/Loopback_details1-450x272.png 450w" sizes="(max-width: 1030px) 100vw, 1030px" />](https://strongloop.com/wp-content/uploads/2014/07/Loopback_details1.png)
+[<img class="aligncenter size-large wp-image-18997" alt="Loopback_details" src="{{site.url}}/blog-assets/2014/07/Loopback_details1-1030x624.png" width="1030" height="624"  />]({{site.url}}/blog-assets/2014/07/Loopback_details1.png)
 
 &nbsp;
 
@@ -100,7 +100,7 @@ you should be seeing API explorer which comes in a pluggable, but completely sep
 
 Check out [StrongLoop documentation](http://docs.strongloop.com/display/LB/LoopBack+example+app) for some additional details about the sample app.
 
-## **New Project** {#new-project}
+## **New Project** 
 
 Execute:
 
@@ -147,7 +147,7 @@ Models will be stored as .json files under `/common/models` and `model-config.js
 
 `node_modules` contains minimum dependencies you need to get your starter application to run.
 
-## **Adding a Model** {#adding-a-model}
+## **Adding a Model** 
 
     $ slc loopback:model
     [?] Enter the model name: Person
@@ -168,7 +168,7 @@ It&#8217;s worth noting that json files for models is just a default way to stor
 
 At this point you might be thinking that `slc loopback` command is similar to `rails generate` and it is, just not as elaborate at the moment.
 
-## **Running Application** {#running-application}
+## **Running Application** 
 
 Previously we used `slc run` to start the sample application. However, your preferred way to start your application could simply be:
 

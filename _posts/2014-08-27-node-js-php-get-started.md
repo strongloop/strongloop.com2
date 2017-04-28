@@ -45,7 +45,7 @@ By the end of this blog post, you will see how quick and easy it is to create a 
 
 I had originally planned to create the same application in both PHP and Node.js to help ease the transition for you but in order to cover all of the different frameworks and ways of creating REST based services in PHP, it would warrant an entire book and simply can’t be covered in a single blog post.  I then thought about just using the Laravel framework as it is continuing to grow in popularity. However,  I would still only reach a quarter of the PHP developers.  Personally, my favorite framework is CodeIgniter but it is quickly losing ground and now only represents less than 8% of the PHP developer population.  [Sitepoint](http://www.sitepoint.com/best-php-frameworks-2014/) recently published an article discussing this very thing and provides the following chart depicting the frameworks that show the most promise for 2014.
 
-<img class="aligncenter size-full wp-image-19607" src="https://strongloop.com/wp-content/uploads/2014/08/slnodePHP1.png" alt="slnodePHP1" width="1024" height="853" srcset="https://strongloop.com/wp-content/uploads/2014/08/slnodePHP1.png 1024w, https://strongloop.com/wp-content/uploads/2014/08/slnodePHP1-300x250.png 300w, https://strongloop.com/wp-content/uploads/2014/08/slnodePHP1-705x587.png 705w, https://strongloop.com/wp-content/uploads/2014/08/slnodePHP1-450x375.png 450w" sizes="(max-width: 1024px) 100vw, 1024px" />
+<img class="aligncenter size-full wp-image-19607" src="{{site.url}}/blog-assets/2014/08/slnodePHP1.png" alt="slnodePHP1" width="1024" height="853"  />
 
 Given the vast differences in how to configure database connections and create REST services for each framework, I will assume that you know how to do this for your framework in PHP and instead will focus just on the Node.js code.
 
@@ -63,11 +63,11 @@ The easiest way to install Node.js is via one of the available binary packages t
 
 Once this page loads, you should see the following:
 
-<img class="aligncenter size-full wp-image-19608" src="https://strongloop.com/wp-content/uploads/2014/08/slphpnodeinstall1.png" alt="slphpnodeinstall1" width="951" height="971" srcset="https://strongloop.com/wp-content/uploads/2014/08/slphpnodeinstall1.png 951w, https://strongloop.com/wp-content/uploads/2014/08/slphpnodeinstall1-293x300.png 293w, https://strongloop.com/wp-content/uploads/2014/08/slphpnodeinstall1-36x36.png 36w, https://strongloop.com/wp-content/uploads/2014/08/slphpnodeinstall1-450x459.png 450w" sizes="(max-width: 951px) 100vw, 951px" />
+<img class="aligncenter size-full wp-image-19608" src="{{site.url}}/blog-assets/2014/08/slphpnodeinstall1.png" alt="slphpnodeinstall1" width="951" height="971"  />
 
 If you are using Mac OSX, click on the universal .pkg file. This will save the installation program to your local computer. Once the file has been downloaded, start the installation program by double clicking on the .pkg file that has been downloaded and you will be presented the installation dialog:
 
-<img class="aligncenter size-full wp-image-19609" src="https://strongloop.com/wp-content/uploads/2014/08/0nodejsInstall2.png" alt="0nodejsInstall2" width="619" height="437" srcset="https://strongloop.com/wp-content/uploads/2014/08/0nodejsInstall2.png 619w, https://strongloop.com/wp-content/uploads/2014/08/0nodejsInstall2-300x211.png 300w, https://strongloop.com/wp-content/uploads/2014/08/0nodejsInstall2-260x185.png 260w, https://strongloop.com/wp-content/uploads/2014/08/0nodejsInstall2-450x317.png 450w" sizes="(max-width: 619px) 100vw, 619px" />
+<img class="aligncenter size-full wp-image-19609" src="{{site.url}}/blog-assets/2014/08/0nodejsInstall2.png" alt="0nodejsInstall2" width="619" height="437"  />
 
 Complete the installation process by using all of the defaults and finally click on the close button to exit the program once the installation has been successful. Pretty easy, huh?
 
@@ -376,7 +376,7 @@ Guess what?  You have just created your first REST based web service using Node
 
 You will be presented with a JSON representation of all of the Walmart stores that we imported into the database as shown in the following image:
 
-<img class="aligncenter size-full wp-image-19619" src="https://strongloop.com/wp-content/uploads/2014/08/slnodephpapi1.png" alt="slnodephpapi1" width="951" height="971" srcset="https://strongloop.com/wp-content/uploads/2014/08/slnodephpapi1.png 951w, https://strongloop.com/wp-content/uploads/2014/08/slnodephpapi1-293x300.png 293w, https://strongloop.com/wp-content/uploads/2014/08/slnodephpapi1-36x36.png 36w, https://strongloop.com/wp-content/uploads/2014/08/slnodephpapi1-450x459.png 450w" sizes="(max-width: 951px) 100vw, 951px" />
+<img class="aligncenter size-full wp-image-19619" src="{{site.url}}/blog-assets/2014/08/slnodephpapi1.png" alt="slnodephpapi1" width="951" height="971"  />
 
 ## **Using the StrongLoop Explorer**
 
@@ -386,11 +386,11 @@ Well, that’s great.  We have a REST endpoint that will return all of the Walm
 
 Once the Explorer page has loaded, expand the `stores` API to see all of the available operations that are permitted on the model object.  This is shown in the following image:
 
-<img class="aligncenter size-large wp-image-19620" src="https://strongloop.com/wp-content/uploads/2014/08/Screen-Shot-2014-08-18-at-8.26.26-PM-1030x627.png" alt="Screen Shot 2014-08-18 at 8.26.26 PM" width="1030" height="627" srcset="https://strongloop.com/wp-content/uploads/2014/08/Screen-Shot-2014-08-18-at-8.26.26-PM-1030x627.png 1030w, https://strongloop.com/wp-content/uploads/2014/08/Screen-Shot-2014-08-18-at-8.26.26-PM-300x182.png 300w, https://strongloop.com/wp-content/uploads/2014/08/Screen-Shot-2014-08-18-at-8.26.26-PM-1500x913.png 1500w, https://strongloop.com/wp-content/uploads/2014/08/Screen-Shot-2014-08-18-at-8.26.26-PM-450x273.png 450w, https://strongloop.com/wp-content/uploads/2014/08/Screen-Shot-2014-08-18-at-8.26.26-PM.png 1600w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-19620" src="{{site.url}}/blog-assets/2014/08/Screen-Shot-2014-08-18-at-8.26.26-PM-1030x627.png" alt="Screen Shot 2014-08-18 at 8.26.26 PM" width="1030" height="627"  />
 
 As an example of what you can do with the Explorer, expand the `/stores/findOne` API and click on the `Try it out!` link which will query the database and return one record as shown in the following image:
 
-<img class="aligncenter size-large wp-image-19621" src="https://strongloop.com/wp-content/uploads/2014/08/slnodephpexplorer2-815x1030.png" alt="slnodephpexplorer2" width="815" height="1030" srcset="https://strongloop.com/wp-content/uploads/2014/08/slnodephpexplorer2-815x1030.png 815w, https://strongloop.com/wp-content/uploads/2014/08/slnodephpexplorer2-237x300.png 237w, https://strongloop.com/wp-content/uploads/2014/08/slnodephpexplorer2-450x568.png 450w, https://strongloop.com/wp-content/uploads/2014/08/slnodephpexplorer2.png 865w" sizes="(max-width: 815px) 100vw, 815px" />
+<img class="aligncenter size-large wp-image-19621" src="{{site.url}}/blog-assets/2014/08/slnodephpexplorer2-815x1030.png" alt="slnodephpexplorer2" width="815" height="1030"  />
 
 ## **Taking things a bit further by adding a map representation**
 
@@ -407,27 +407,27 @@ $ mkdir public
 
 The next thing we need to do is create a nice representation of the data. Since we have the latitude and longitude of every store, it would be great to express this content with a map that the user can drag around, zoom in and out of, etc. This tasks is actually much easier than you might expect if we take advantage of some existing libraries. At the end of creating this responsive view, the result will look like the following:
 
-<img class="aligncenter size-large wp-image-19625" src="https://strongloop.com/wp-content/uploads/2014/08/slnodephpmap1-1030x883.png" alt="slnodephpmap1" width="1030" height="883" srcset="https://strongloop.com/wp-content/uploads/2014/08/slnodephpmap1-1030x883.png 1030w, https://strongloop.com/wp-content/uploads/2014/08/slnodephpmap1-300x257.png 300w, https://strongloop.com/wp-content/uploads/2014/08/slnodephpmap1-450x385.png 450w, https://strongloop.com/wp-content/uploads/2014/08/slnodephpmap1.png 1278w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-19625" src="{{site.url}}/blog-assets/2014/08/slnodephpmap1-1030x883.png" alt="slnodephpmap1" width="1030" height="883"  />
 
 Furthermore, the user will be able to zoom in to a very detailed level of the map to view the closest Walmart as shown in the following image:
 
-<img class="aligncenter size-large wp-image-19626" src="https://strongloop.com/wp-content/uploads/2014/08/slnodephpmap2-1030x848.png" alt="slnodephpmap2" width="1030" height="848" srcset="https://strongloop.com/wp-content/uploads/2014/08/slnodephpmap2-1030x848.png 1030w, https://strongloop.com/wp-content/uploads/2014/08/slnodephpmap2-300x247.png 300w, https://strongloop.com/wp-content/uploads/2014/08/slnodephpmap2-450x370.png 450w, https://strongloop.com/wp-content/uploads/2014/08/slnodephpmap2.png 1276w" sizes="(max-width: 1030px) 100vw, 1030px" />
+<img class="aligncenter size-large wp-image-19626" src="{{site.url}}/blog-assets/2014/08/slnodephpmap2-1030x848.png" alt="slnodephpmap2" width="1030" height="848"  />
 
 The code for the web view of the application takes advantage of the longitude and latitude properties that we defined on our model object and imported into the database.  We will also use the popular [Leaflet](http://leafletjs.com/) library for creating the map and placing the pins, or markers, on the map.
 
 To create this map, create a new file in the public directory named `locatewalmart.html` and add the following JavaScript code:
 
-```&lt;!doctype html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;title&gt;Walmart Stores&lt;/title&gt;
-  	&lt;link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" /&gt;
-	&lt;!--[if lte IE 8]&gt;
-    	&lt;link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" /&gt;
-	&lt;![endif]--&gt;
-	&lt;script src="https://code.jquery.com/jquery-2.0.0.min.js"&gt;&lt;/script&gt;
-	&lt;link href='http://fonts.googleapis.com/css?family=oswald' rel='stylesheet' type='text/css'&gt;
-	&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /&gt;	&lt;style type="text/css"&gt;
+```<!doctype html>
+<html lang="en">
+<head>
+  <title>Walmart Stores</title>
+  	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
+	<!--[if lte IE 8]>
+    	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
+	<![endif]-->
+	<script src="https://code.jquery.com/jquery-2.0.0.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=oswald' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />	<style type="text/css">
 		body {
     		padding: 0;
 		    margin: 0;
@@ -442,21 +442,21 @@ To create this map, create a new file in the public directory named `locatewalma
 		}
 		#map { z-index: 1;}
 		#title { z-index: 2; position: absolute; left: 10px; }
-	&lt;/style&gt;
+	</style>
 
-&lt;/head&gt;
-&lt;body&gt;
-	&lt;h1 id="title"&gt;Walmart Stores&lt;/h1&gt;
-	&lt;div id="map"&gt;&lt;/div&gt;
-	&lt;script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"&gt;&lt;/script&gt;
-	&lt;script&gt;
+</head>
+<body>
+	<h1 id="title">Walmart Stores</h1>
+	<div id="map"></div>
+	<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+	<script>
 		center = new L.LatLng(39.83, -98.58);
 		zoom = 5;
 		var map = L.map('map').setView(center, zoom);
 		var markerLayerGroup = L.layerGroup().addTo(map);
 		L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			maxZoom: 18,
-			attribution: 'Map data &copy; &lt;a href="http://openstreetmap.org"&gt;OpenStreetMap&lt;/a&gt; contributors, &lt;a href="http://creativecommons.org/licenses/by-sa/2.0/"&gt;CC-BY-SA&lt;/a&gt;'
+			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
 		}).addTo(map);
 		function getPins(e){
 			url = "http://0.0.0.0:3000/api/stores";
@@ -468,18 +468,18 @@ To create this map, create a new file in the public directory named `locatewalma
 			//add the new pins
 			var markerArray = [];
 			var lastNumber = 0;
-			for (var i = 0; i &lt; data.length; i++){
+			for (var i = 0; i < data.length; i++){
 				store = data[i];
-				if(store.latitude.length &gt; 0 && store.longitude.length&gt;0) {
+				if(store.latitude.length > 0 && store.longitude.length>0) {
 					markerArray.push(L.marker([store.latitude, store.longitude]));
 				}		
 			}
 			markerLayerGroup = L.layerGroup(markerArray).addTo(map);
 		}
 		map.whenReady(getPins)
-	&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+	</script>
+</body>
+</html>
 ```
 <p dir="ltr">
   As you can see, the code is just standard HTML and JavaScript.  The interesting part is the getPins(e) function where we make a REST call to the API that we created previously in this blog post.  We then iterate over each store and create a pin given the latitude and longitude of each store.  Pretty nifty, huh?

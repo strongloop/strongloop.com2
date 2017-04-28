@@ -29,11 +29,11 @@ Here is the JSON I used:
 
 And here is the response:
 
-<img class="aligncenter size-full wp-image-26966" src="https://strongloop.com/wp-content/uploads/2016/03/shot11.png" alt="shot1" width="140" height="181" srcset="https://strongloop.com/wp-content/uploads/2016/03/shot11.png 420w, https://strongloop.com/wp-content/uploads/2016/03/shot11-232x300.png 232w" sizes="(max-width: 140px) 100vw, 140px" />
+<img class="aligncenter size-full wp-image-26966" src="{{site.url}}/blog-assets/2016/03/shot11.png" alt="shot1" width="140" height="181"  />
 
 Notice that no error was thrown, but the invalid value was nulled out. This only happens because age is not required, so LoopBack simply throws out the incorrect value. You can address this by simply making age required. Then when you post the same value, you get the proper response:
 
-<img class="aligncenter size-full wp-image-26965" src="https://strongloop.com/wp-content/uploads/2016/03/shot2.png" alt="shot2" width="750" height="368" srcset="https://strongloop.com/wp-content/uploads/2016/03/shot2.png 750w, https://strongloop.com/wp-content/uploads/2016/03/shot2-300x147.png 300w, https://strongloop.com/wp-content/uploads/2016/03/shot2-705x346.png 705w, https://strongloop.com/wp-content/uploads/2016/03/shot2-450x221.png 450w" sizes="(max-width: 750px) 100vw, 750px" />
+<img class="aligncenter size-full wp-image-26965" src="{{site.url}}/blog-assets/2016/03/shot2.png" alt="shot2" width="750" height="368"  />
 
 Woot! OK, but that&#8217;s pretty simple. What about things such as validating that age is numeric, a whole number, and &#8220;reasonable&#8221; (for a cat, say below 25)? Turns out there are different ways of handling validation. Obviously you can write completely custom code, so yes, what I just described is completely doable. But LoopBack includes some validation &#8220;shortcuts&#8221; out of the box, so the great news is that you can skip writing validation functions in many cases. The [docs](https://docs.strongloop.com/display/public/LB/Validating+model+data) cover this in depth, but at a high level,in one line you can add validation methods to require:
 

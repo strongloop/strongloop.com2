@@ -34,7 +34,7 @@ Application id: "loopback-push-notification-app"
 </li>
 
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;"><span style="font-size: 18px;">You can access the swagger REST API explorer which comes with the LoopBack app at <code>http://&lt;server_IP_address&gt;:3000/explorer</code></span></span><a href="https://strongloop.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-14-at-3.35.53-PM.png"><img class="alignnone  wp-image-16303" alt="Screen Shot 2014-05-14 at 3.35.53 PM" src="https://strongloop.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-14-at-3.35.53-PM.png" width="796" height="290" /></a>
+  <span style="font-size: 18px;"><span style="font-size: 18px;">You can access the swagger REST API explorer which comes with the LoopBack app at <code>http://<server_IP_address>:3000/explorer</code></span></span><a href="{{site.url}}/blog-assets/2014/05/Screen-Shot-2014-05-14-at-3.35.53-PM.png"><img class="alignnone  wp-image-16303" alt="Screen Shot 2014-05-14 at 3.35.53 PM" src="{{site.url}}/blog-assets/2014/05/Screen-Shot-2014-05-14-at-3.35.53-PM.png" width="796" height="290" /></a>
 </li>
 
 ## **Receive Push Notifications for Android Client application**
@@ -68,7 +68,7 @@ Application id: "loopback-push-notification-app"
       <span style="font-size: 18px;">If the AVD launches and the app gets installed successfully, the device will be registered with the backend and you should be able to verify the installation using GET request <code>/api/installations</code>.</span>
     </li>
     <li style="margin-left: 2em;">
-      <span style="font-size: 18px;">You should also be able to see the GCM application on your android emulator. You will need the &#8220;id&#8221; from the to send the push notification to the device. You can also get the id from the <code>/api/installations</code><br /> <a href="https://strongloop.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-13-at-4.34.49-PM.png"><img class="size-full wp-image-16299 aligncenter" alt="Screen Shot 2014-05-13 at 4.34.49 PM" src="https://strongloop.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-13-at-4.34.49-PM.png" width="318" height="499" /></a><br /> </span>
+      <span style="font-size: 18px;">You should also be able to see the GCM application on your android emulator. You will need the &#8220;id&#8221; from the to send the push notification to the device. You can also get the id from the <code>/api/installations</code><br /> <a href="{{site.url}}/blog-assets/2014/05/Screen-Shot-2014-05-13-at-4.34.49-PM.png"><img class="size-full wp-image-16299 aligncenter" alt="Screen Shot 2014-05-13 at 4.34.49 PM" src="{{site.url}}/blog-assets/2014/05/Screen-Shot-2014-05-13-at-4.34.49-PM.png" width="318" height="499" /></a><br /> </span>
     </li>
   </ul>
 </li>
@@ -82,7 +82,7 @@ OK
 
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;"><span style="font-size: 18px;">You should receive a notification on your emulator and it should look somewhat like this:<br /> </span></span><center>
-    <a href="https://strongloop.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-13-at-4.43.31-PM.png"><img class="alignnone size-full wp-image-16300" alt="Screen Shot 2014-05-13 at 4.43.31 PM" src="https://strongloop.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-13-at-4.43.31-PM.png" width="319" height="493" /></a>
+    <a href="{{site.url}}/blog-assets/2014/05/Screen-Shot-2014-05-13-at-4.43.31-PM.png"><img class="alignnone size-full wp-image-16300" alt="Screen Shot 2014-05-13 at 4.43.31 PM" src="{{site.url}}/blog-assets/2014/05/Screen-Shot-2014-05-13-at-4.43.31-PM.png" width="319" height="493" /></a>
   </center>
 </li>
 
@@ -122,7 +122,7 @@ OK
       <span style="font-size: 18px;">If the app runs successfully, the iOS device will be registered with the backend and you should be able to verify the installation using GET request <code>/api/installations</code>.</span>
     </li>
     <li style="margin-left: 2em;">
-      <span style="font-size: 18px;">You should also be able to see the apnagent application on your phone. Click on Register Device and you should get an alert with the registration number.</span><img class="thumbnail aligncenter" style="max-width: 100%;" alt="" src="https://strongloop.com/wp-content/uploads/2014/05/xcode1.png" /><img class="aligncenter" title="StrongLoop > How to setup Push Notifications and an mBaaS on Amazon - Putting it all together > Screen Shot 2014-05-14 at 12.25.44 PM.png" alt="" src="http://docs.strongloop.com/download/attachments/2296052/Screen%20Shot%202014-05-14%20at%2012.25.44%20PM.png?version=1&modificationDate=1400095581000&api=v2" data-image-src="/download/attachments/2296052/Screen%20Shot%202014-05-14%20at%2012.25.44%20PM.png?version=1&modificationDate=1400095581000&api=v2" data-linked-resource-id="2261631" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2014-05-14 at 12.25.44 PM.png" data-base-url="http://docs.strongloop.com" data-linked-resource-container-id="2296052" data-location="StrongLoop > How to setup Push Notifications and an mBaaS on Amazon - Putting it all together > Screen Shot 2014-05-14 at 12.25.44 PM.png" />
+      <span style="font-size: 18px;">You should also be able to see the apnagent application on your phone. Click on Register Device and you should get an alert with the registration number.</span><img class="thumbnail aligncenter" style="max-width: 100%;" alt="" src="{{site.url}}/blog-assets/2014/05/xcode1.png" /><img class="aligncenter" title="StrongLoop > How to setup Push Notifications and an mBaaS on Amazon - Putting it all together > Screen Shot 2014-05-14 at 12.25.44 PM.png" alt="" src="http://docs.strongloop.com/download/attachments/2296052/Screen%20Shot%202014-05-14%20at%2012.25.44%20PM.png?version=1&modificationDate=1400095581000&api=v2" data-image-src="/download/attachments/2296052/Screen%20Shot%202014-05-14%20at%2012.25.44%20PM.png?version=1&modificationDate=1400095581000&api=v2" data-linked-resource-id="2261631" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2014-05-14 at 12.25.44 PM.png" data-base-url="http://docs.strongloop.com" data-linked-resource-container-id="2296052" data-location="StrongLoop > How to setup Push Notifications and an mBaaS on Amazon - Putting it all together > Screen Shot 2014-05-14 at 12.25.44 PM.png" />
     </li>
   </ul>
   

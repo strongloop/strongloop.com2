@@ -11,9 +11,9 @@ categories:
 ---
 I did some fun stuff with the `debug` module recently for a web map project. I needed to understand the interactions between events in [Leaflet.js](http://leafletjs.com/) to figure out what events to attach to&#8230; but that&#8217;s the next post. Before I get to that, I want to go over the `debug` module itself.<!--more-->
 
-## A trip down memory lane&#8230; {#a-trip-down-memory-lane-}
+## A trip down memory lane&#8230; 
 
-`console.log`: the JavaScript programmer&#8217;s oldest[*](#window-dot-alert){#intro} friend. `console.log` was probably one of the first things you used to debug JavaScript, and while there are [plenty](https://code.visualstudio.com/docs/runtimes/nodejs#_debugging-your-express-application) of [more powerful tools](https://developer.mozilla.org/en-US/docs/Tools/Debugger), `console.log` is still useful to say &#8220;event fired&#8221;, &#8220;sending the following query to the database&#8230;&#8221;, etc..
+`console.log`: the JavaScript programmer&#8217;s oldest[*](#window-dot-alert) friend. `console.log` was probably one of the first things you used to debug JavaScript, and while there are [plenty](https://code.visualstudio.com/docs/runtimes/nodejs#_debugging-your-express-application) of [more powerful tools](https://developer.mozilla.org/en-US/docs/Tools/Debugger), `console.log` is still useful to say &#8220;event fired&#8221;, &#8220;sending the following query to the database&#8230;&#8221;, etc..
 
 So we write statements like ``console.log(`click fired on ${event.target}`)``. But then we&#8217;re not working on that part of the application anymore and those log statements just make noise, so we delete them. But then we _are_ working on that bit again later, so we put them back&#8211; and this time when we&#8217;re finished, we just comment them out, instead of moving them. Before we know it our code looks like this:
 
@@ -23,7 +23,7 @@ fs.readFile(usersJson, 'utf-8', function (err, contents){
   if(err){ throw err; }
   var users = JSON.parse(contents);
   // console.log('User ids & names :');
-  // console.log(users.map(user =&gt; [user.id, user.name]));
+  // console.log(users.map(user => [user.id, user.name]));
   users.forEach(function(user){
     db.accounts.findOne({id: user.id}, function(err, address){
       if(err){ throw err; }
@@ -55,7 +55,7 @@ _NB: Using ES6 features [rest parameters](https://developer.mozilla.org/en-US/do
 
 Now we can replace our `console.log()` statements with `log()`, and by setting `DEBUG=true `or `DEBUG=false` in our code, we can turn logging on or off as needed! Hooray! Well, actually, there are still a couple problems&#8230;
 
-## Problem 1: Hardcoding {#problem-1-hardcoding}
+## Problem 1: Hardcoding 
 
 In our current system, `DEBUG` must be hardcoded, which is bad because
 
@@ -97,12 +97,12 @@ function log(...items){
 Now we can set `DEBUG` in local storage using our browser console&#8230;
 
 ```js
-&gt; window.localStorage.DEBUG = true;
+> window.localStorage.DEBUG = true;
 ```
 
 &#8230;reload the page, and debugging is enabled! Set `window.localStorage.DEBUG` to false and reload and it&#8217;s disabled again.
 
-## Problem 2: All or Nothing {#problem-2-all-or-nothing}
+## Problem 2: All or Nothing 
 
 With our current setup, we can only chose &#8220;all log statements on&#8221; or &#8220;all log statements off.&#8221; This is OK, but if we have a big application with distinct parts, and we&#8217;re having a database problem, it would be nice to just turn on database-related debug statements, but not others. If we only have one debugger and one debug on/off switch (`DEBUG`), this isn&#8217;t possible, so we need:
 
@@ -129,7 +129,7 @@ $ DEBUG=database,http node my-cool-script.js
 // process.env.DEBUG = 'database,http'
 DEBUG = localEnv.DEBUG.split(',');
 
-DEBUG === ['database', 'http'] // =&gt; true
+DEBUG === ['database', 'http'] // => true
 ```
 
 Now we have an array of keys for debuggers we want enabled. The simplest way to allow us to enable just http or just database debugging would be to add an argument to the `log` function, specifying which &#8220;key&#8221; each debug statement should be associated with:
@@ -154,7 +154,7 @@ function logHttp(...items){
   log('http', ...items);
 }
 
-logHttp('foo'); // --&gt; log('http', 'foo');
+logHttp('foo'); // --> log('http', 'foo');
 ```
 
 Using [higher-order functions](https://strongloop.com/strongblog/higher-order-functions-in-es6easy-as-a-b-c/) (in this case a function that returns a function), we can make a &#8220;factory&#8221; to produce debugger functions bound to a certain key:
@@ -179,7 +179,7 @@ dbDebug('Results recieved');           // runs if "database" is enabled
 http(`Request took ${requestTime}ms`); // runs if "http" is enabled
 ```
 
-## That&#8217;s it! {#that-s-it-}
+## That&#8217;s it! 
 
 That gets us just about all the way to the [`debug` module](https://github.com/visionmedia/debug)! It has a couple more features than what we created here, but this covers the main bits. I use the `debug` module in basically all projects and typically start using it from day one: if you _never_ put `console.log` statements in your code you have nothing to &#8220;clean up,&#8221; and those debug log statements you make during active development can be useful later, so why not keep them?
 

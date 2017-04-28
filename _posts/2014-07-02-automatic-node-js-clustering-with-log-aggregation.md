@@ -106,7 +106,7 @@ Now, let&#8217;s see what actually happens&#8230;
 
 &nbsp;
 
-[<img class="alignnone size-medium wp-image-17435" src="https://strongloop.com/wp-content/uploads/2014/07/infowarnerror-300x96.png" alt="infowarnerror" width="300" height="96" srcset="https://strongloop.com/wp-content/uploads/2014/07/infowarnerror-300x96.png 300w, https://strongloop.com/wp-content/uploads/2014/07/infowarnerror-450x144.png 450w, https://strongloop.com/wp-content/uploads/2014/07/infowarnerror.png 600w" sizes="(max-width: 300px) 100vw, 300px" />](https://strongloop.com/wp-content/uploads/2014/07/infowarnerror.png)
+[<img class="alignnone size-medium wp-image-17435" src="{{site.url}}/blog-assets/2014/07/infowarnerror-300x96.png" alt="infowarnerror" width="300" height="96"  />]({{site.url}}/blog-assets/2014/07/infowarnerror.png)
 
 Now, let’s see how this all actually happens&#8230;
 
@@ -166,7 +166,7 @@ Pretty straight forward so far, but these log messages would be pretty useless i
   </h2>
   
   <p>
-    <img class="alignnone size-medium wp-image-17443" src="https://strongloop.com/wp-content/uploads/2014/07/log_storage2-300x300.jpg" alt="log_storage2" width="300" height="300" srcset="https://strongloop.com/wp-content/uploads/2014/07/log_storage2-300x300.jpg 300w, https://strongloop.com/wp-content/uploads/2014/07/log_storage2-80x80.jpg 80w, https://strongloop.com/wp-content/uploads/2014/07/log_storage2-36x36.jpg 36w, https://strongloop.com/wp-content/uploads/2014/07/log_storage2-180x180.jpg 180w, https://strongloop.com/wp-content/uploads/2014/07/log_storage2-120x120.jpg 120w, https://strongloop.com/wp-content/uploads/2014/07/log_storage2-450x450.jpg 450w, https://strongloop.com/wp-content/uploads/2014/07/log_storage2.jpg 582w" sizes="(max-width: 300px) 100vw, 300px" /><br /> Now where to put these log messages? Since log persistence is the responsibility of the runtime and not the application, it sounds like a job for a process supervisor (the process that spawns the application on boot up and keeps it running). If you’re using a modern init replacement (Upstart, systemd, launchctl, smf, etc.) then you should let that system take care of log persistence by configuring it to write your process’s stdout to file and handle log rotation for you and call it a day.
+    <img class="alignnone size-medium wp-image-17443" src="{{site.url}}/blog-assets/2014/07/log_storage2-300x300.jpg" alt="log_storage2" width="300" height="300"  /><br /> Now where to put these log messages? Since log persistence is the responsibility of the runtime and not the application, it sounds like a job for a process supervisor (the process that spawns the application on boot up and keeps it running). If you’re using a modern init replacement (Upstart, systemd, launchctl, smf, etc.) then you should let that system take care of log persistence by configuring it to write your process’s stdout to file and handle log rotation for you and call it a day.
   </p>
   
   <p>
@@ -239,7 +239,7 @@ Pretty straight forward so far, but these log messages would be pretty useless i
   daily
   compress
   postrotate
-    kill -SIGUSR2 `cat /var/run/my-app.pid` &gt; /dev/null
+    kill -SIGUSR2 `cat /var/run/my-app.pid` > /dev/null
   endscript
 }
 ```js
@@ -260,12 +260,12 @@ Pretty straight forward so far, but these log messages would be pretty useless i
 # logstash.conf
 input {
   file {
-    path =&gt; ["/var/log/my-app.log"]
+    path => ["/var/log/my-app.log"]
   }
 }
 filter {
   grok {
-    match =&gt; [
+    match => [
       # Timestamped
       "message", "%{TIMESTAMP_ISO8601:extracted_timestamp} pid:%{INT:pid} worker:%{WORD:worker} %{LOGLEVEL:level} %{GREEDYDATA:message}",
       # Timestamped but no log level
@@ -274,22 +274,22 @@ filter {
       "message", "pid:%{INT:pid} worker:%{WORD:worker} %{LOGLEVEL:level} %{GREEDYDATA:message}",
       "message", "pid:%{INT:pid} worker:%{WORD:worker} %{GREEDYDATA:message}"
     ]
-    overwrite =&gt; [ "message" ]
+    overwrite => [ "message" ]
   }
   date {
     # If a timestamp was extracted, use it for the event's timestamp
-    match =&gt; [ "extracted_timestamp", "ISO8601" ]
-    remove_field =&gt; [ "extracted_timestamp" ]
+    match => [ "extracted_timestamp", "ISO8601" ]
+    remove_field => [ "extracted_timestamp" ]
   }
   if ! [level] {
-    mutate { add_field =&gt; { level =&gt; "INFO" } }
+    mutate { add_field => { level => "INFO" } }
   }
-  mutate { add_tag =&gt; [ "%{level}" ] }
+  mutate { add_tag => [ "%{level}" ] }
 }
 output {
   elasticsearch {
-    host =&gt; "localhost"
-    protocol =&gt; "http"
+    host => "localhost"
+    protocol => "http"
   }
 }
 ```js

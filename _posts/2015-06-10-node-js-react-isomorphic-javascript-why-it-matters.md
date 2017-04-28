@@ -9,7 +9,7 @@ categories:
   - Community
   - JavaScript Language
 ---
-## <img class=" size-full wp-image-24869 alignright" src="https://strongloop.com/wp-content/uploads/2015/05/isomorphic-flow.jpg" alt="isomorphic-flow" width="386" height="289" srcset="https://strongloop.com/wp-content/uploads/2015/05/isomorphic-flow.jpg 386w, https://strongloop.com/wp-content/uploads/2015/05/isomorphic-flow-300x225.jpg 300w" sizes="(max-width: 386px) 100vw, 386px" />**What is Isomorphic JavaScript?**
+## <img class=" size-full wp-image-24869 alignright" src="{{site.url}}/blog-assets/2015/05/isomorphic-flow.jpg" alt="isomorphic-flow" width="386" height="289"  />**What is Isomorphic JavaScript?**
 
 TL;DR: JavaScript rendered on the server AND the client.
 
@@ -101,7 +101,7 @@ var reactHtml = React.renderToString(App({})); // make html to send to client
 res.render('index.ejs', {reactOutput: reactHtml}); // give template html
 
 // (5) Output in template (index.ejs)
-&lt;div id="react-main-mount"&gt; &lt;%- reactOutput %&gt; &lt;/div&gt;
+<div id="react-main-mount"> <%- reactOutput %> </div>
 ```
 
 ## **Express.js Example**
@@ -132,17 +132,17 @@ module.exports = function(app) {
 Then inside /views/index.ejs you can see that \`reactHTML\` is then output into the express template. In this instance we are using .ejs for our templating engine, but you can use whatever templating engine you wish ( jade, handlebars, etc )
 
 ```js
-&lt;!-- /views/index.ejs --&gt;
-&lt;!doctype html&gt;
-&lt;html&gt;
-  &lt;body&gt;
-    &lt;div id="react-main-mount"&gt;
-      &lt;%- reactOutput %&gt;
-    &lt;/div&gt;
-  &lt;!-- this script bootstraps the app once the JS is downloaded --&gt;
-  &lt;script src="/main.js"&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;&lt;/p&gt;
+<!-- /views/index.ejs -->
+<!doctype html>
+<html>
+  <body>
+    <div id="react-main-mount">
+      <%- reactOutput %>
+    </div>
+  <!-- this script bootstraps the app once the JS is downloaded -->
+  <script src="/main.js"></script>
+  </body>
+</html></p>
 ```
 
 ## **Client Side Implementation Flow**

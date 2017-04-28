@@ -24,7 +24,7 @@ Considering using LoopBack to create an API for your data in MongoDB? Then mark 
 
 LoopBack is a great tool for quickly generating a CRUD API for your data stored in MongoDB. In this webinar, we will walk through setting up a continuous integration pipeline with tests, and show a few different deployment options.
 
-[<img class="aligncenter size-full wp-image-26753" src="https://strongloop.com/wp-content/uploads/2014/07/loopback-logo-sm.png" alt="loopback-logo-sm" width="194" height="200" srcset="https://strongloop.com/wp-content/uploads/2014/07/loopback-logo-sm.png 194w, https://strongloop.com/wp-content/uploads/2014/07/loopback-logo-sm-36x36.png 36w" sizes="(max-width: 194px) 100vw, 194px" />](https://strongloop.com/wp-content/uploads/2014/07/loopback-logo-sm.png)
+[<img class="aligncenter size-full wp-image-26753" src="{{site.url}}/blog-assets/2014/07/loopback-logo-sm.png" alt="loopback-logo-sm" width="194" height="200"  />]({{site.url}}/blog-assets/2014/07/loopback-logo-sm.png)
 
 [Erin McKean](https://strongloop.com/strongblog/introducing-erin-mckean-strongloop-lead-developer-evangelist/) (Lead Developer Evangelist, IBM Cloud) is the webinar speaker and will provide a comprehensive walkthrough of a full MongoDB-backed API, including unit tests, continuous integration, and deployment examples.
 

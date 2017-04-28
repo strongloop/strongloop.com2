@@ -18,7 +18,7 @@ This is a two-part blog series about some best practices for running Express app
 
 ## Overview
 
-[<img class="alignright wp-image-15007" src="https://strongloop.com/wp-content/uploads/2014/04/api_security.png" alt="api_security" width="204" height="240" />](https://strongloop.com/wp-content/uploads/2014/04/api_security.png)The term “_production_” refers to the stage in the software lifecycle when an application or API is generally available to its end-users or consumers. In contrast, in _development_, you’re still actively writing and testing code, and the application is not open to external access. The corresponding system environments are known as _production_ and _development environments_, respectively.
+[<img class="alignright wp-image-15007" src="{{site.url}}/blog-assets/2014/04/api_security.png" alt="api_security" width="204" height="240" />]({{site.url}}/blog-assets/2014/04/api_security.png)The term “_production_” refers to the stage in the software lifecycle when an application or API is generally available to its end-users or consumers. In contrast, in _development_, you’re still actively writing and testing code, and the application is not open to external access. The corresponding system environments are known as _production_ and _development environments_, respectively.
 
 Development and production environments are often set up very differently and have vastly different requirements. Something that’s fine in development may not be acceptable in production. For example, in a development environment verbose logging of errors may be needed for debugging, while the same behavior can become a security concern in a production environment.  And in development, you don’t need to worry about scalability, reliability, and performance, while those concerns become critical in production.
 
@@ -44,7 +44,7 @@ Also, a handy tool to get a TLS certificate is [Let&#8217;s Encrypt](https://let
 
 [Helmet](https://www.npmjs.com/package/helmet) can help protect your app from some well-known web vulnerabilities by setting HTTP headers appropriately.
 
-[<img class="aligncenter size-full wp-image-26309" src="https://strongloop.com/wp-content/uploads/2015/11/helmet.png" alt="helmet" width="471" height="132" srcset="https://strongloop.com/wp-content/uploads/2015/11/helmet.png 471w, https://strongloop.com/wp-content/uploads/2015/11/helmet-300x84.png 300w, https://strongloop.com/wp-content/uploads/2015/11/helmet-450x126.png 450w" sizes="(max-width: 471px) 100vw, 471px" />](https://strongloop.com/wp-content/uploads/2015/11/helmet.png)
+[<img class="aligncenter size-full wp-image-26309" src="{{site.url}}/blog-assets/2015/11/helmet.png" alt="helmet" width="471" height="132"  />]({{site.url}}/blog-assets/2015/11/helmet.png)
 
 Helmet is actually just a collection of nine smaller middleware functions that set security-related HTTP headers:
 
@@ -148,7 +148,7 @@ app.use(session({
 
 Using npm to manage your application’s dependencies is powerful and convenient.  But the packages that you use may contain critical security vulnerabilities that could also affect your application.  The security of your app is only as strong as the “weakest link” in your dependencies.
 
-<img class="alignright size-full wp-image-26310" src="https://strongloop.com/wp-content/uploads/2015/11/nsp.png" alt="nsp" width="241" height="63" />Fortunately, there are two helpful tools you can use to ensure security of the third-party packages you use: [nsp](https://www.npmjs.com/package/nsp) and [requireSafe](https://requiresafe.com/).  These two tools do largely the same thing, so using both might be overkill, but “better safe than sorry” are words to live by when it comes to security.
+<img class="alignright size-full wp-image-26310" src="{{site.url}}/blog-assets/2015/11/nsp.png" alt="nsp" width="241" height="63" />Fortunately, there are two helpful tools you can use to ensure security of the third-party packages you use: [nsp](https://www.npmjs.com/package/nsp) and [requireSafe](https://requiresafe.com/).  These two tools do largely the same thing, so using both might be overkill, but “better safe than sorry” are words to live by when it comes to security.
 
 [nsp](https://www.npmjs.com/package/nsp) is a command-line tool that checks the [Node Security Project](https://nodesecurity.io/) vulnerability database to determine if your application uses packages with known vulnerabilities.  Install it as follows:
 

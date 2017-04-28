@@ -26,7 +26,7 @@ categories:
 </p>
 
 <p class="graf--p">
-  <a href="https://strongloop.com/wp-content/uploads/2016/07/autofix.gif"><img class="aligncenter size-full wp-image-27757" src="https://strongloop.com/wp-content/uploads/2016/07/autofix.gif" alt="autofix" width="1252" height="726" /></a>
+  <a href="{{site.url}}/blog-assets/2016/07/autofix.gif"><img class="aligncenter size-full wp-image-27757" src="{{site.url}}/blog-assets/2016/07/autofix.gif" alt="autofix" width="1252" height="726" /></a>
 </p>
 
 #### Installing ESLint {.graf--h4}
@@ -81,7 +81,7 @@ au BufWritePre *.jsx :Fixmyjs
 </p>
 
 <p class="graf--p">
-  <a href="https://strongloop.com/wp-content/uploads/2016/07/atomcfg.png"><img class="aligncenter size-full wp-image-27758" src="https://strongloop.com/wp-content/uploads/2016/07/atomcfg.png" alt="atomcfg" width="1062" height="366" srcset="https://strongloop.com/wp-content/uploads/2016/07/atomcfg.png 1062w, https://strongloop.com/wp-content/uploads/2016/07/atomcfg-300x103.png 300w, https://strongloop.com/wp-content/uploads/2016/07/atomcfg-1030x355.png 1030w, https://strongloop.com/wp-content/uploads/2016/07/atomcfg-705x243.png 705w, https://strongloop.com/wp-content/uploads/2016/07/atomcfg-450x155.png 450w" sizes="(max-width: 1062px) 100vw, 1062px" /></a>
+  <a href="{{site.url}}/blog-assets/2016/07/atomcfg.png"><img class="aligncenter size-full wp-image-27758" src="{{site.url}}/blog-assets/2016/07/atomcfg.png" alt="atomcfg" width="1062" height="366"  /></a>
 </p>
 
 <blockquote class="graf--blockquote">
@@ -101,7 +101,7 @@ au BufWritePre *.jsx :Fixmyjs
 </p>
 
 ```
-eslint -c &lt;path-to-config&gt; --fix &lt;path-to-current-file&gt;
+eslint -c <path-to-config> --fix <path-to-current-file>
 ```
 <p class="graf--p">
   Then, reload the file in the buffer.

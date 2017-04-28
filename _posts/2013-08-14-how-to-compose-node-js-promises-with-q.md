@@ -10,7 +10,7 @@ categories:
 ---
 In the [last article on promises](http://blog.strongloop.com/promises-in-node-js-with-q-an-alternative-to-callbacks/), we focused on the [Promises/A+](http://promises-aplus.github.io/promises-spec/) specification and [Q](https://github.com/kriskowal/q) implementation of promises. We learned the benefits of using promises over raw callbacks. Now, we&#8217;re going to take it up a notch and focus on promise composition, which we&#8217;ll define as _functional programming and asynchronous control flow using promises_.
 
-## **More about chaining** {#moreaboutchaining}
+## **More about chaining** 
 
 The `then` method allows us to chain promises (see 3.2.6 in [Promises/A+](http://promises-aplus.github.io/promises-spec/) spec). The value returned from a chain of promises is itself a promise. This returned promise will be resolved to the value returned from the last `onFulfilled` or `onRejected` handlers in the chain. Let&#8217;s look at some examples:
 
@@ -51,7 +51,7 @@ forever(doThis).then(undefined, console.error)
 
 > **Won&#8217;t this blow the stack?** Unfortunately, JavaScript does not have proper tail call support [yet](http://bbenvie.com/articles/2013-01-06/JavaScript-ES6-Has-Tail-Call-Optimization). However, it won&#8217;t affect this recursive call because Promises/A+ requires the `onFulfilled` and `onRejected` handlers to be called on a future turn in the event loop after the stack unwinds (3.2.4 in Promises/A+).
 
-## **Starting chains and grouping promises** {#startingchainsandgroupingpromises}
+## **Starting chains and grouping promises** 
 
 In addition to the functional programming concepts we enjoy in synchronous programming, promise libraries like Q provide tools to aid in composition. We&#8217;ll focus on two of them: `Q()` and `all`.
 
@@ -94,7 +94,7 @@ Note that `promise.all` has the same function signature as `then`, so we could h
 .all(function (results) { }, console.error)
 ```
 
-## **Working with collections** {#workingwithcollections}
+## **Working with collections** 
 
 Let&#8217;s look at iterating through collections of data that require asynchronous action per element. First, let&#8217;s mimic [async.map](https://github.com/caolan/async#map) using promises:
 
@@ -182,7 +182,7 @@ When structured this way, we maintain the order (seconds won&#8217;t be called u
   
 promise fulfillment value in each chain is grouped).
 
-## **Going further with promises** {#goingfurtherwithpromises}
+## **Going further with promises** 
 
 For more examples of chaining and grouping promises, this [gist](https://gist.github.com/wavded/6116786) implements most of the [async](https://github.com/caolan/async) API. However, your best grasp of these concepts will come by playing around with them. Here are some ideas:
 

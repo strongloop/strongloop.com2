@@ -21,7 +21,7 @@ If you haven&#8217;t already, be sure to also read [Part 1 on security](https://
 
 ## Overview
 
-[<img class="alignright wp-image-21423" src="https://strongloop.com/wp-content/uploads/2014/12/expertise-icon1.png" alt="expertise-icon" width="150" height="150" srcset="https://strongloop.com/wp-content/uploads/2014/12/expertise-icon1.png 333w, https://strongloop.com/wp-content/uploads/2014/12/expertise-icon1-80x80.png 80w, https://strongloop.com/wp-content/uploads/2014/12/expertise-icon1-300x300.png 300w, https://strongloop.com/wp-content/uploads/2014/12/expertise-icon1-36x36.png 36w, https://strongloop.com/wp-content/uploads/2014/12/expertise-icon1-180x180.png 180w, https://strongloop.com/wp-content/uploads/2014/12/expertise-icon1-120x120.png 120w" sizes="(max-width: 150px) 100vw, 150px" />](https://strongloop.com/wp-content/uploads/2014/12/expertise-icon1.png)As explained in part one, in _production_ your application is generally available for use by end-users, as opposed to _development_ when you’re still actively writing and testing code.  Development and production environments are often set up very differently and have vastly different requirements.  For example, in development, you don’t need to worry about scalability, reliability, and performance, while in production those concerns become critical.
+[<img class="alignright wp-image-21423" src="{{site.url}}/blog-assets/2014/12/expertise-icon1.png" alt="expertise-icon" width="150" height="150"  />]({{site.url}}/blog-assets/2014/12/expertise-icon1.png)As explained in part one, in _production_ your application is generally available for use by end-users, as opposed to _development_ when you’re still actively writing and testing code.  Development and production environments are often set up very differently and have vastly different requirements.  For example, in development, you don’t need to worry about scalability, reliability, and performance, while in production those concerns become critical.
 
 This topic clearly falls into the “devops” world, spanning both traditional development and operations.  Accordingly, we’ve divided the information into two parts:
 
@@ -44,7 +44,7 @@ Here are some things you can do in your code to improve your application’s per
 
 ### Use gzip compression
 
-[<img class="alignleft wp-image-15103" src="https://strongloop.com/wp-content/uploads/2014/04/sl_strongops_managescale.png" alt="sl_strongops_managescale" width="120" height="120" />](https://strongloop.com/wp-content/uploads/2014/04/sl_strongops_managescale.png)Gzip compressing can greatly decrease the size of the response body and hence increase the speed of a web app.  Use the [compression](https://www.npmjs.com/package/compression) middleware for gzip compression in your Express app. For example:
+[<img class="alignleft wp-image-15103" src="{{site.url}}/blog-assets/2014/04/sl_strongops_managescale.png" alt="sl_strongops_managescale" width="120" height="120" />]({{site.url}}/blog-assets/2014/04/sl_strongops_managescale.png)Gzip compressing can greatly decrease the size of the response body and hence increase the speed of a web app.  Use the [compression](https://www.npmjs.com/package/compression) middleware for gzip compression in your Express app. For example:
 
 ```js
 var compression = require('compression');
@@ -173,7 +173,7 @@ However, there are two caveats:
   2. Event emitters (like streams) can still cause uncaught exceptions. So make sure you are handling the error event properly; for example:
 
 ```js
-app.get('/', wrap(async (req, res, next) =&gt;; {
+app.get('/', wrap(async (req, res, next) =>; {
   let company = await getCompanyById(req.query.id)
   let stream = getLogoStreamById(company.id)
   stream.on('error', next).pipe(res)
@@ -247,7 +247,7 @@ Node applications crash if they encounter an uncaught exception. The foremost th
 
 #### **Use a process manager**
 
-[<img class="alignright wp-image-23548 size-square" src="https://strongloop.com/wp-content/uploads/2015/02/pm-icon-180x180.png" alt="pm-icon" width="180" height="180" srcset="https://strongloop.com/wp-content/uploads/2015/02/pm-icon-180x180.png 180w, https://strongloop.com/wp-content/uploads/2015/02/pm-icon-80x80.png 80w, https://strongloop.com/wp-content/uploads/2015/02/pm-icon-36x36.png 36w, https://strongloop.com/wp-content/uploads/2015/02/pm-icon-120x120.png 120w, https://strongloop.com/wp-content/uploads/2015/02/pm-icon.png 297w" sizes="(max-width: 180px) 100vw, 180px" />](https://strongloop.com/wp-content/uploads/2015/02/pm-icon.png)In development, you started your app simply from the command line with \`node server.js\` or something similar.  But doing this in production is a recipe for disaster.  If the app crashes, it will be offline until you restart it.   To ensure your app restarts if it crashes, use a process manager.  A process manager is a “container” for applications that facilitates deployment, provides high availability, and enables you to manage the application at runtime.
+[<img class="alignright wp-image-23548 size-square" src="{{site.url}}/blog-assets/2015/02/pm-icon-180x180.png" alt="pm-icon" width="180" height="180"  />]({{site.url}}/blog-assets/2015/02/pm-icon.png)In development, you started your app simply from the command line with \`node server.js\` or something similar.  But doing this in production is a recipe for disaster.  If the app crashes, it will be offline until you restart it.   To ensure your app restarts if it crashes, use a process manager.  A process manager is a “container” for applications that facilitates deployment, provides high availability, and enables you to manage the application at runtime.
 
 In addition to restarting your app when it crashes, a process manager can enable you to:
 
@@ -417,7 +417,7 @@ NOTE: On systems that don’t support Upstart 1.4, the commands are slightly dif
 
 In a multi-core system, you can increase the performance of a Node app by many times by launching a cluster of processes.  A cluster runs multiple instances of the app, ideally one instance on each CPU core, thereby distributing the load and tasks among the instances.
 
-<img class=" wp-image-14069 size-full aligncenter" src="https://strongloop.com/wp-content/uploads/2014/02/cluster.png" alt="Balancing between application instances using the cluster API" width="446" height="144" />IMPORTANT: Since the app instances run as separate processes, they do not share the same memory space. That is, objects are local to each instance of the app. Therefore, you cannot maintain state in the application code.  However, you can use an in-memory datastore like [Redis](http://redis.io/) to store session-related data and state. This caveat applies to essentially all forms of horizontal scaling, whether clustering with multiple processes or multiple physical servers.
+<img class=" wp-image-14069 size-full aligncenter" src="{{site.url}}/blog-assets/2014/02/cluster.png" alt="Balancing between application instances using the cluster API" width="446" height="144" />IMPORTANT: Since the app instances run as separate processes, they do not share the same memory space. That is, objects are local to each instance of the app. Therefore, you cannot maintain state in the application code.  However, you can use an in-memory datastore like [Redis](http://redis.io/) to store session-related data and state. This caveat applies to essentially all forms of horizontal scaling, whether clustering with multiple processes or multiple physical servers.
 
 In clustered apps, worker processes can crash individually without affecting the rest of the processes. Apart from performance advantages, failure isolation is another reason to run a cluster of app processes. Whenever a worker process crashes, always make sure to log the event and spawn a new process using cluster.fork().
 
