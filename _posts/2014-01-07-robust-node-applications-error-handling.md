@@ -6,7 +6,6 @@ author: Marc Harter
 guid: http://strongloop.com/?p=12533
 permalink: /strongblog/robust-node-applications-error-handling/
 categories:
-  - Arc
   - Community
   - How-To
 ---
@@ -198,7 +197,7 @@ fs.readFile('/path/to/file', function (er, buf) {
 
   1. ReferenceError: buf is undefined
 
-It’s also _not_ recommended to **throw** the error unless you have a mechanism to catch it (like <a href="http://nodejs.org/api/domain.html" target="_blank">domains</a> or <a href="http://strongloop.com/strongblog/promises-in-node-js-with-q-an-alternative-to-callbacks/" target="_blank">promises</a>):
+It’s also _not_ recommended to **throw** the error unless you have a mechanism to catch it (like <a href="http://nodejs.org/api/domain.html">domains</a> or <a href="http://strongloop.com/strongblog/promises-in-node-js-with-q-an-alternative-to-callbacks/">promises</a>):
 
 ```js
 fs.readFile('/path/to/file', function (er, buf) {
@@ -275,9 +274,3 @@ Errors happen; its important to build structures to handle them. Use this checkl
   5. Am I notified of uncaught exceptions?
 
 Happy robust Noding!
-
-### What&#8217;s Next? Use StrongOps to monitor errors in Node
-
-Now that we’ve added error logging to get some good understanding of what is happening in our application. How about baking in some automation and vizualizations to help monitor errors when they happen? One solution is to use StrongOps. It&#8217;s a performance monitoring and operations console that helps you [track down errors](http://docs.strongloop.com/display/DOC/Error+reporting) and get alerts when they happen. Getting installed is easy via npm. [Check it out!](http://strongloop.com/node-js-performance/strongops/)
-
-[<img class="aligncenter size-full wp-image-12535" src="https://strongloop.com/wp-content/uploads/2014/01/part3.02060001.05070202@strongloop.com_.png" alt="part3.02060001.05070202@strongloop.com" width="778" height="570" />](https://strongloop.com/wp-content/uploads/2014/01/part3.02060001.05070202@strongloop.com_.png)

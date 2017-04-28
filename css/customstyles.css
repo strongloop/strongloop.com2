@@ -112,7 +112,13 @@ body h1 {margin-top:40px;}
 
 p.post-meta {font-size: 80%; color: #777;}
 
-.entry-date{font-size:14px;font-size:0.875rem;line-height:1.71429;margin-bottom:0;text-transform:uppercase;}
+.entry-date {
+  font-size:14px;
+  font-size:0.875rem;
+  line-height:1.71429;
+  margin-bottom:0;
+  text-transform:uppercase;
+}
 
 .filter-options {
     margin-bottom: 20px;
@@ -894,6 +900,12 @@ For printing
 
 /* -------- Added for strongloop.com ------------ */
 
+/* page layout */
+.page-header {
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+}
+
 /* Newsletter */
 .nl-yr {
   margin-left: 20px;
@@ -913,11 +925,21 @@ For printing
   font-size: 90%;
 }
 
-.author {
+.author, .date {
   font-style: italic;
   color: #444;
   margin-left: 10px;
 }
+
+/* Home page */
+.date {
+  font-size: 80%;
+}
+
+.blog-icon: {
+  display: inline;
+}
+
 
 /* MailChimp (newsletter) signup form */
 #mc_embed_signup {

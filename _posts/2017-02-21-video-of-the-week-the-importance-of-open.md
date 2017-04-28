@@ -6,18 +6,17 @@ author: Dave Whiteley
 guid: https://strongloop.com/?p=28743
 permalink: /strongblog/video-of-the-week-the-importance-of-open/
 categories:
+  - Community
   - Node core
   - Node DevOps
 ---
 The StrongLoop and IBM team were fortunate enough to interview some of the developers at [Node Interactive](https://strongloop.com/strongblog/node-interactive-north-america-wrap-up/) in Austin, Texas near the end of 2016. During the month of February we will share the four videos created from those interviews. We&#8217;ve talked about [why node matters](https://strongloop.com/strongblog/video-of-the-week-why-node-matters/) and the [node community](https://strongloop.com/strongblog/video-of-the-week-node-community/). Today we discuss the importance of open.
-  
+
 <!--more-->
 
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/Rfibd-63wuA" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 
-  
 IBM continues to invest in open platforms such as Node.js. IBM experts and industry insiders explain how being open promotes application innovation across a variety of environments, companies, and a variety of developer roles.
-
-
 
 Ready to play around with Node.js yourself?
 

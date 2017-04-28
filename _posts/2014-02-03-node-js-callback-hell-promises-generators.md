@@ -6,7 +6,6 @@ author: Marc Harter
 guid: http://strongloop.com/?p=13837
 permalink: /strongblog/node-js-callback-hell-promises-generators/
 categories:
-  - Arc
   - Community
   - How-To
 ---
@@ -25,7 +24,7 @@ doAsync1(function () {
 Callback hell is subjective, as heavily nested code can be perfectly fine sometimes. Asynchronous code is _hellish_ when it becomes overly complex to manage the flow. A good question to see how much “hell” you are in is: _how much refactoring pain would I endure if_ **_doAsync2_** _happened before_ **_doAsync1_**_?_ The goal isn’t about removing levels of indentation but rather writing modular (and testable!) code that is easy to reason about and resilient.
 
 In this article, we will write a module using a number of tools and libraries to show how control flow can work. We’ll even look at an up and coming solution made possible by the _next_ version of Node.
-  
+
 <!--more-->
 
 ## **The problem**
@@ -212,7 +211,7 @@ module.exports = function (dir, cb) {
       fs.readdir(dir, next)
     },
     function (files, next) {
-      var paths = 
+      var paths =
        files.map(function (file) { return path.join(dir,file) })
       async.map(paths, fs.stat, function (er, stats) { // [2]
         next(er, files, stats)
@@ -373,41 +372,3 @@ In this article, we investigated a variety of different approaches to mitigating
 Although we didn’t employ it while looking at the 3rd party modules, a modular approach can be applied to any flow libraries (async, promises, generators). Can you think of ways to make the examples more modular? Have a library or technique that has worked well for you? Share it in the comments!
 
 > Want to check out and play with all the code samples used in this article as well as another generator example? There is a <a href="https://github.com/strongloop-community/handling-callback-hell" target="_blank">GitHub repo</a> set up for that!
-
-## [**Get trained in Node.js and API development**](http://strongloop.com/node-js/training/)**
-  
-** 
-
-<p dir="ltr">
-  Looking for Node.js and API development training? StrongLoop instructors are coming to a city near you:
-</p>
-
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Nov 6-7: <a href="http://strongloop.com/node-js/training-denver-2014/">Denver, CO</a> at Galvanize Campus</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Nov 13-14: <a href="http://strongloop.com/node-js/training-herndon-2014/">Herndon, VA</a> at Vizuri</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Dec 3-4: <a href="http://strongloop.com/node-js/training-framingham-2014/">Framingham, MA</a> at Applause</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Dec 11-12: <a href="http://strongloop.com/node-js/training-minneapolis-2014/">Minneapolis, MN</a> at BestBuy</span>
-</li>
-
-Check out our complete [Node.js and API development training, conference and Meetup calendar](http://strongloop.com/developers/events/) to see where you can come meet with StrongLoop engineers.
-
-## **What’s next?**
-
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">What&#8217;s in the upcoming Node v0.12 release? <span style="text-decoration: underline;"><a href="http://strongloop.com/strongblog/performance-node-js-v-0-12-whats-new/">Big performance optimizations</a>,</span> read <a href="https://github.com/bnoordhuis">Ben Noordhuis&#8217;</a> blog to learn more.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Watch <a href="https://github.com/piscisaureus">Bert Belder’s</a> comprehensive <a href="http://strongloop.com/developers/videos/#whats-new-in-nodejs-v012">video </a>presentation on all the new upcoming features in v0.12</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.<a href="http://strongloop.com/get-started/"><br /> </a></span>
-</li>
-
-<div>
-</div>

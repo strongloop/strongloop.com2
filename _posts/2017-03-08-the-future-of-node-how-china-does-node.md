@@ -5,16 +5,6 @@ date: 2017-03-08T09:15:09+00:00
 author: Dave Whiteley
 guid: https://strongloop.com/?p=28808
 permalink: /strongblog/the-future-of-node-how-china-does-node/
-sidebar:
-
-
-
-
-
-
-
-inline_featured_image:
-  - "0"
 categories:
   - Community
   - Node core

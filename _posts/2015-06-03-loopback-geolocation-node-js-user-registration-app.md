@@ -6,7 +6,6 @@ author: Roberto Rojas
 guid: https://strongloop.com/?p=25112
 permalink: /strongblog/loopback-geolocation-node-js-user-registration-app/
 categories:
-  - Arc
   - How-To
   - LoopBack
 ---
@@ -28,7 +27,7 @@ The finished example application can be found on [GitHub](https://github.com/rob
   * [MongoDB](https://www.mongodb.org/) running locally
   * A basic understanding of [AngularJS](https://angularjs.org/)
 
-## 
+##
 
 ## **The Self Registration API**
 
@@ -41,7 +40,7 @@ I added two properties to the \`Subscriber\` model:
   * **preferences:** This property is of type object, which means we can store embedded properties. We store the street, city, zipcode, and temperature properties.
   * **geo:** This property is of type geopoint. We store the latitude and longitude corresponding to the address stored in the preferences property.
 
-## 
+##
 
 ## **Steps for Creating the Application**
 
@@ -49,7 +48,7 @@ Now, we’ll create our application using the \`slc loopback application generat
 
 ```sh
 &gt; $ slc loopback
- 
+
      _-----_
     |       |    .--------------------------.
     |--(o)--|    |  Let's create a LoopBack |
@@ -59,7 +58,7 @@ Now, we’ll create our application using the \`slc loopback application generat
  	 |  ~  |
    __'.___.'__
 ´   `  |° ´ Y `
- 
+
 ?  What's the name of your application? self-registration-loopback
 ? Enter name of the directory to contain the project: loself-registration-loopback
 create self-registration-loopback/info
@@ -224,7 +223,7 @@ The following steps show you how to the create the Subscriber model:
 ? Select the data-source to attach Subscriber to: mongoDBDs (mongodb)
 ? Select model's base class: User
 ? Expose Subscriber via the REST API? Yes
-? Custom plural form (used to build REST URL): 
+? Custom plural form (used to build REST URL):
 Let's add some Subscriber properties now.
 
 Enter an empty property name when done.
@@ -300,7 +299,7 @@ Subscriber.getWeather = function(subscriberId, cb){
 ## **Security Changes for the API**
 
 Since we only want to get the weather for the authenticated user, we need to add an ACL
-  
+
 for the remote method. An ACL is an access control list used by LoopBack to enforce restrictions to data provided by models. The ACL indicates what type of authority is needed to access CRUD operations or Remote methods of the models. For more information, see Controlling data access.
 
 Once again the slc tool is used to create an ACL to the Subscriber.getWeather remote method. We use the following criteria for the ACL:
@@ -330,12 +329,12 @@ Finally, we need to stop exposing the built-in \`User\` model. By default the \`
 
 ```
 
-## 
+##
 
 ## **Create the AngularJS Client**
 
 Another cool feature of the LoopBack framework is the [AngularJS SDK](http://docs.strongloop.com/display/public/LB/AngularJS+JavaScript+SDK). It provides facilities to generate \`$resource\` services corresponding to the REST API we
-  
+
 generated from the models. The following steps would take care of generating the AngularJS services.
 
 ```sh
@@ -344,9 +343,9 @@ $ mkdir -p client/app/services
 $ lb-ng server/server.js client/app/services/lb-services.js
 Loading LoopBack app "self-registration-loopback/server/server.js"
 Generating "lbServices" for the API endpoint "/api"
-Warning: scope User.accessTokens targets class "AccessToken", which is not exposed 
+Warning: scope User.accessTokens targets class "AccessToken", which is not exposed
 via remoting. The Angular code for this scope won't be generated.
-Warning: scope Subscriber.accessTokens targets class "AccessToken", which is not exposed 
+Warning: scope Subscriber.accessTokens targets class "AccessToken", which is not exposed
 via remoting. The Angular code for this scope won't be generated.
 Saving the generated services source to "self-registration-loopback/client/app/services/lb-services.js"
 
