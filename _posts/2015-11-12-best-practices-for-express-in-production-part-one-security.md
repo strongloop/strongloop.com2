@@ -2,7 +2,7 @@
 id: 26290
 title: 'Best Practices for Express in Production &#8211; Part One: Security'
 date: 2015-11-12T05:22:12+00:00
-author: C. Rand McKinney
+author: Hage Yaapa and C. Rand McKinney
 guid: https://strongloop.com/?p=26290
 permalink: /strongblog/best-practices-for-express-in-production-part-one-security/
 categories:
@@ -10,7 +10,6 @@ categories:
   - How-To
   - Node DevOps
 ---
-_by Hage Yaapa and C. Rand McKinney_
 
 This is a two-part blog series about some best practices for running Express applications in production. This first part focuses on security, and the second on performance and reliability.  It assumes you are already familiar with the basics of Node.js and web development practices and covers topics and concepts especially relevant to the production environment.
 
@@ -18,7 +17,9 @@ This is a two-part blog series about some best practices for running Express app
 
 ## Overview
 
-[<img class="alignright wp-image-15007" src="{{site.url}}/blog-assets/2014/04/api_security.png" alt="api_security" width="204" height="240" />]({{site.url}}/blog-assets/2014/04/api_security.png)The term “_production_” refers to the stage in the software lifecycle when an application or API is generally available to its end-users or consumers. In contrast, in _development_, you’re still actively writing and testing code, and the application is not open to external access. The corresponding system environments are known as _production_ and _development environments_, respectively.
+<img class="alignright wp-image-15007" src="{{site.url}}/blog-assets/2014/04/api_security.png" alt="api_security" style="width:100px;" />
+
+The term “_production_” refers to the stage in the software lifecycle when an application or API is generally available to its end-users or consumers. In contrast, in _development_, you’re still actively writing and testing code, and the application is not open to external access. The corresponding system environments are known as _production_ and _development environments_, respectively.
 
 Development and production environments are often set up very differently and have vastly different requirements. Something that’s fine in development may not be acceptable in production. For example, in a development environment verbose logging of errors may be needed for debugging, while the same behavior can become a security concern in a production environment.  And in development, you don’t need to worry about scalability, reliability, and performance, while those concerns become critical in production.
 
@@ -48,15 +49,15 @@ Also, a handy tool to get a TLS certificate is [Let&#8217;s Encrypt](https://let
 
 Helmet is actually just a collection of nine smaller middleware functions that set security-related HTTP headers:
 
-  * [csp](https://github.com/helmetjs/csp) sets the \`Content-Security-Policy\` header to help prevent cross-site scripting attacks and other cross-site injections.
-  * [hidePoweredBy](https://github.com/helmetjs/hide-powered-by) removes the \`X-Powered-By header\`.
+  * [csp](https://github.com/helmetjs/csp) sets the `Content-Security-Policy` header to help prevent cross-site scripting attacks and other cross-site injections.
+  * [hidePoweredBy](https://github.com/helmetjs/hide-powered-by) removes the `X-Powered-By header`.
   * [hpkp](https://github.com/helmetjs/hpkp) Adds [Public Key Pinning](https://developer.mozilla.org/en-US/docs/Web/Security/Public_Key_Pinning) headers to prevent man-in-the-middle attacks with forged certificates.
-  * [hsts](https://github.com/helmetjs/hsts) sets \`Strict-Transport-Security\` header that enforces secure (HTTP over SSL/TLS) connections to the server.
-  * [ieNoOpen](https://github.com/helmetjs/ienoopen) sets \`X-Download-Options\` for IE8+.
-  * [noCache](https://github.com/helmetjs/nocache) sets \`Cache-Control\` and \`Pragma\` headers to disable client-side caching.
-  * [noSniff](https://github.com/helmetjs/dont-sniff-mimetype) sets \`X-Content-Type-Options\` to prevent browsers from MIME-sniffing a response away from the declared content-type.
-  * [frameguard](https://github.com/helmetjs/frameguard) sets the \`X-Frame-Options\` header to provide [clickjacking](https://www.owasp.org/index.php/Clickjacking) protection.
-  * [xssFilter](https://github.com/helmetjs/x-xss-protection) sets \`X-XSS-Protection\` to enable the Cross-site scripting (XSS) filter in most recent web browsers.
+  * [hsts](https://github.com/helmetjs/hsts) sets `Strict-Transport-Security` header that enforces secure (HTTP over SSL/TLS) connections to the server.
+  * [ieNoOpen](https://github.com/helmetjs/ienoopen) sets `X-Download-Options` for IE8+.
+  * [noCache](https://github.com/helmetjs/nocache) sets `Cache-Control` and `Pragma` headers to disable client-side caching.
+  * [noSniff](https://github.com/helmetjs/dont-sniff-mimetype) sets `X-Content-Type-Options` to prevent browsers from MIME-sniffing a response away from the declared content-type.
+  * [frameguard](https://github.com/helmetjs/frameguard) sets the `X-Frame-Options` header to provide [clickjacking](https://www.owasp.org/index.php/Clickjacking) protection.
+  * [xssFilter](https://github.com/helmetjs/x-xss-protection) sets `X-XSS-Protection` to enable the Cross-site scripting (XSS) filter in most recent web browsers.
 
 Install Helmet like any other module:
 
@@ -75,9 +76,9 @@ app.use(helmet());
 
 ### At a minimum, disable X-Powered-By header
 
-If you don’t want to use Helmet, then at least disable the \`X-Powered-By header\`.  Attackers can use this header (that is enabled by default) to detect apps running Express and then launch specifically-targeted attacks.
+If you don’t want to use Helmet, then at least disable the `X-Powered-By header`.  Attackers can use this header (that is enabled by default) to detect apps running Express and then launch specifically-targeted attacks.
 
-So, best practice is to to turn off the header with the \`app.disable()\` method:
+So, best practice is to to turn off the header with the `app.disable()` method:
 
 ```js
 app.disable('x-powered-by');
@@ -91,8 +92,8 @@ To ensure cookies don’t open your app to exploits, don’t use the default ses
 
 There are two main middleware cookie session modules:
 
-  * [express-session](https://www.npmjs.com/package/express-session) that replaces \`express.session\` middleware built-in to Express 3.x.
-  * [cookie-session](https://www.npmjs.com/package/cookie-session) that replaces \`express.cookieSession\` middleware built-in to Express 3.x.
+  * [express-session](https://www.npmjs.com/package/express-session) that replaces `express.session` middleware built-in to Express 3.x.
+  * [cookie-session](https://www.npmjs.com/package/cookie-session) that replaces `express.cookieSession` middleware built-in to Express 3.x.
 
 The main difference between these two modules is how they save cookie session data.  The [express-session](https://www.npmjs.com/package/express-session) middleware stores session data on the server; it saves only the session ID in the cookie itself, not session data.  By default, it uses in-memory storage and is not designed for a production environment.  In production, you’ll need to set up a scalable session-store; see the list of [compatible session stores](https://github.com/expressjs/session#compatible-session-stores).
 
@@ -100,7 +101,7 @@ In contrast, [cookie-session](https://www.npmjs.com/package/cookie-session) midd
 
 ### Don’t use default session cookie name
 
-Using the default session cookie name can open your app to attacks.  The security issue posed is similar to \`X-Powered-By\`: a potential attacker can use it to fingerprint the server and target attacks accordingly.
+Using the default session cookie name can open your app to attacks.  The security issue posed is similar to `X-Powered-By`: a potential attacker can use it to fingerprint the server and target attacks accordingly.
 
 To avoid this, use generic cookie names; for example using [express-session](https://www.npmjs.com/package/express-session) middleware:
 
@@ -118,11 +119,11 @@ app.use( session({
 
 Set the following cookie options to enhance security:
 
-  * \`secure\` &#8211; Ensures the browser only sends the cookie over HTTPS.
-  * \`httpOnly\` &#8211; Ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.
-  * \`domain\` &#8211; indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next.
-  * \`path\` &#8211; indicates the path of the cookie; use it to compare against the request path. If this and domain match, then send the cookie in the request.
-  * \`expires\` &#8211; use to set expiration date for persistent cookies.
+  * `secure` &#8211; Ensures the browser only sends the cookie over HTTPS.
+  * `httpOnly` &#8211; Ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.
+  * `domain` &#8211; indicates the domain of the cookie; use it to compare against the domain of the server in which the URL is being requested. If they match, then check the path attribute next.
+  * `path` &#8211; indicates the path of the cookie; use it to compare against the request path. If this and domain match, then send the cookie in the request.
+  * `expires` &#8211; use to set expiration date for persistent cookies.
 
 Here is an example using [cookie-session](https://www.npmjs.com/package/cookie-session) middleware:
 
@@ -156,7 +157,7 @@ Using npm to manage your application’s dependencies is powerful and convenient
 $ npm i nsp -g
 ```
 
-Then use this command to submit your app&#8217;s \`npm-shrinkwrap.json\` and\`package.json\` files for validation to [nodesecurity.io](https://nodesecurity.io/):
+Then use this command to submit your app&#8217;s `npm-shrinkwrap.json` and`package.json` files for validation to [nodesecurity.io](https://nodesecurity.io/):
 
 ```js
 $ cd your-app

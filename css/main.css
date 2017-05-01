@@ -25,6 +25,13 @@ body {
     color: #000;
     margin: 0;
     padding: 0;
+    font: 1rem/1.5 'Ubuntu',serif;
+    font-style: normal;
+    font-weight: 300;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
 ol,
@@ -57,25 +64,6 @@ img {
     text-align: center;
 }
 
-.x-disabled {
-    opacity: .35;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=35)";
-    filter: alpha(opacity=35);
-}
-
-.x-disabled:hover,
-.x-disabled:focus {
-    cursor: default;
-}
-
-.x-greylight {
-    background: #383838;
-}
-
-.x-white {
-    background: #fff;
-}
-
 .c-quote {
     padding: 1rem;
     -webkit-border-radius: .5rem;
@@ -92,11 +80,31 @@ img {
 }
 
 .x-green {
-    background: #6cb333;
+  background: #7dbd33;
 }
 
-.x-lightgreen {
-  background: #7dbd33;
+.x-lightgrey {
+  background: #e6e6e6;
+}
+
+.x-darkgrey {
+    background: #383838;
+}
+
+.x-white {
+    background: #fff;
+}
+
+.x-white a:hover,
+.x-white a:focus,
+c-heading.-h3 a:hover,
+c-heading.-h3 a:focus {
+  color: #7dbd33;
+}
+
+li._nav-item a:hover,
+li._nav-item a:focus {
+  color: #487722
 }
 
 .x-hide {
@@ -208,17 +216,6 @@ html {
     html {
         font-size: 16px;
     }
-}
-
-body {
-    color: #000;
-    font: 1rem/1.5 'Ubuntu',serif;
-    font-style: normal;
-    font-weight: 300;
-    -webkit-font-smoothing: subpixel-antialiased;
-    -webkit-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    text-size-adjust: none;
 }
 
 .c-heading {
@@ -376,15 +373,6 @@ li > dl {
     background: rgba(255,255,255,0.25);
 }
 
-.c-button.x-disabled {
-    color: #d8f2c2;
-    border-color: rgba(255,255,255,0.5);
-}
-
-.docs-button {
-    margin-left: 0.5rem;
-}
-
 .c-container {
     width: 980px;
     margin: 0 auto;
@@ -424,7 +412,7 @@ li > dl {
 }
 
 .c-container.-padded-bottom {
-    padding-top: 3rem;
+    padding-bottom: 2.5rem;
 }
 
 @media (max-width:567px) {
@@ -509,6 +497,16 @@ li > dl {
 
 .c-footer ._nav ._nav-list ._nav-item.-active a {
     color: #fff;
+}
+
+.legal {
+  float: right;
+  text-align: right;
+}
+
+.c-footer .legal a {
+    color: #d8f2c2;
+    font-weight: 300;
 }
 
 .c-footer ._copyright {

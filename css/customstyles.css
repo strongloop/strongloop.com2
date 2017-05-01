@@ -112,65 +112,6 @@ body h1 {margin-top:40px;}
 
 p.post-meta {font-size: 80%; color: #777;}
 
-.entry-date {
-  font-size:14px;
-  font-size:0.875rem;
-  line-height:1.71429;
-  margin-bottom:0;
-  text-transform:uppercase;
-}
-
-.filter-options {
-    margin-bottom: 20px;
-}
-.filter-options button {
-    margin: 3px;
-}
-
-div#toc {
-    background-color: whitesmoke;
-    border-radius: 5px;
-    color: gray;
-    max-width: 300px;
-    position: relative;
-}
-
-div#toc .toc-title {
-    color: #555;
-    display: inline-block;
-    font-weight: 500;
-    padding:5px;
-    padding-left:15px;
-}
-
-div#toc .toc-expand-button {
-    position: absolute;
-    padding: 5px 8px;
-    right: 0;
-    top: 0;
-}
-
-div#toc ul {
-    padding: 5px;
-}
-
-div#toc > ul {
-    padding-top: 0;
-}
-
-div#toc ul li {
-    margin: 8px 0px 8px 22px;
-    font-size: 90%;
-    list-style: square;
-}
-
-div#toc ul li ul {
-    padding-left:8px;
-}
-
-div#toc ul li ul li::before {
-    content: "–  ";
-}
 
 li.dropdownActive a {
     font-weight: bold;
@@ -231,27 +172,12 @@ a.accordion-toggle, a.accordion-collapsed {
     border-radius: 5px;
 }
 
-span.projectTitle {
-    font-family: Helvetica;
-    font-weight: bold;
-}
-
 .footer-right {
     text-align: right;
 }
 
 .footer-left {
     text-align: left;
-}
-
-.footerMeta {
-    background-color: whitesmoke;
-    padding: 10px;
-    max-width: 250px;
-    border-radius: 5px;
-    margin-top: 50px;
-    font-style:italic;
-    font-size:12px;
 }
 
 img.screenshotSmall {
@@ -348,7 +274,7 @@ table > tbody + tbody {
     b
 }
 table > tbody > tr:nth-of-type(odd) {
-    background-color: #7dbd33;
+    background-color: #e6e6e6;
 }
 
 table col[class*="col-"] {
@@ -426,27 +352,7 @@ ol li ul li {list-style-type: disc;}
 
 li img {clear:both; }
 
-div#toc ul li ul li {
-    list-style-type: none;
-    margin: 5px 0px 0px 0px;
-}
-
-.tab-content {
-    padding: 15px;
-    background-color: #FAFAFA;
-}
-
 span.tagTitle {font-weight: 500;}
-
-li.activeSeries {
-    font-weight: bold;
-}
-
-.seriesContext .dropdown-menu li.active {
-    font-weight: bold;
-    margin-left: 43px;
-    font-size:18px;
-}
 
 .alert-warning {
     color: #444;
@@ -494,21 +400,6 @@ a[data-toggle="tooltip"] {
     cursor: default;
 }
 
-.seriesNext, .seriesContext {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.seriescontext ol li {
-    list-style-type: upper-roman;
-}
-
-ol.series li {
-    list-style-type: decimal;
-    margin-left: 40px;
-    padding-left: 0px;
-}
-
 .siteTagline {
     font-size: 200%;
     font-weight: bold;
@@ -543,28 +434,6 @@ ol.series li {
 .tree-parent.expanded .nav-list{
   display:block;
 }
-
-.nav ul.series li {
-    list-style: decimal;
-    font-size:12px;
-}
-
-.nav ul.series li a:hover {
-    background-color: gray;
-}
-.nav ul.series {
-    padding-left: 30px;
-}
-
-.nav ul.series {
-    background-color: #FAFAFA;
-}
-
-/*
-a.dropdown-toggle.otherProgLangs {
-    color: #f7e68f !important;
-}
-*/
 
 span.muted {color: #666;}
 
@@ -627,11 +496,6 @@ dd {margin-left:20px;}
 
 a.accordion-toggle {
     font-style: normal;
-}
-
-span.red {
-    color: red;
-    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
 h3.codeExplanation {
@@ -713,7 +577,6 @@ span.soft {
     border: 1px solid #dedede;
 }
 
-
 @media only screen and (min-width: 900px), @media only screen and (min-device-width: 900px) {
     .col-md-9 img {
         max-width: 700px;
@@ -724,12 +587,6 @@ span.soft {
 *:hover > .anchorjs-link {
     transition: color .25s linear;
     text-decoration: none;
-}
-
-.kbCaption {
-    color: white;
-    background-color: #444;
-    padding:10px;
 }
 
 /* this part adds an icon after external links, using FontAwesome */
@@ -862,29 +719,6 @@ td pre {
   margin-bottom: 0;
   }
 
-/* Navtabs customization */
-
-.tab-content {
-    padding: 15px;
-    background-color: #FAFAFA;
-    border: 1px solid #d9d9d9;
-    border-radius: 3px;
-    margin-top: -10px;
-}
-
-.nav-tabs { border-bottom: none;}
-
-.tab-content { padding-top: 0;}
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: #72ac4a;
-    color: white;
-}
-
-/*
-.tab-pane > h2 { margin-top: 0; }
-*/
-
 blockquote p { font-size: 100%; }
 
 /*
@@ -898,7 +732,7 @@ For printing
     }
 }
 
-/* -------- Added for strongloop.com ------------ */
+/* ------------- Added for strongloop.com ------------ */
 
 /* page layout */
 .page-header {
@@ -906,9 +740,28 @@ For printing
   padding-top: 1rem;
 }
 
-/* Newsletter */
-.nl-yr {
-  margin-left: 20px;
+/* Home page */
+.date {
+  font-size: 80%;
+}
+
+.project-tile {
+  border: 1px solid #609f2d;
+  border-radius: 3px;
+  padding: 10px;
+  min-height: 240px;
+}
+
+.tile-img {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-notice {
+  border: 1px solid #487722; 
+  border-radius: 3px;
+  padding: 10px;
 }
 
 /* Events page */
@@ -931,15 +784,10 @@ For printing
   margin-left: 10px;
 }
 
-/* Home page */
-.date {
-  font-size: 80%;
+/* Newsletter */
+.nl-yr {
+  margin-left: 20px;
 }
-
-.blog-icon: {
-  display: inline;
-}
-
 
 /* MailChimp (newsletter) signup form */
 #mc_embed_signup {

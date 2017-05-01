@@ -2,7 +2,7 @@
 id: 26332
 title: 'Best Practices for Express in Production, Part Two: Performance and Reliability'
 date: 2015-11-19T06:30:06+00:00
-author: C. Rand McKinney
+author: Hage Yaapa and C. Rand McKinney
 guid: https://strongloop.com/?p=26332
 permalink: /strongblog/best-practices-for-express-in-production-part-two-performance-and-reliability/
 categories:
@@ -11,12 +11,11 @@ categories:
   - Node DevOps
   - Performance Tip
 ---
-_by Hage Yaapa and C. Rand McKinney_
 
 This is a two-part blog series about some best practices for running Express applications in production. The first part was about security, and this second part focuses on performance and reliability.  It assumes you are already familiar with the basics of Node.js and web development practices and covers topics and concepts especially relevant to the production environment.
 
 If you haven&#8217;t already, be sure to also read [Part 1 on security](https://strongloop.com/strongblog/best-practices-for-express-in-production-part-one-security/)!
-  
+
 <!--more-->
 
 ## Overview
@@ -40,11 +39,11 @@ Here are some things you can do in your code to improve your application’s per
   * Do logging right
   * Handle exceptions properly
 
-&nbsp;
-
 ### Use gzip compression
 
-[<img class="alignleft wp-image-15103" src="{{site.url}}/blog-assets/2014/04/sl_strongops_managescale.png" alt="sl_strongops_managescale" width="120" height="120" />]({{site.url}}/blog-assets/2014/04/sl_strongops_managescale.png)Gzip compressing can greatly decrease the size of the response body and hence increase the speed of a web app.  Use the [compression](https://www.npmjs.com/package/compression) middleware for gzip compression in your Express app. For example:
+<img class="alignleft wp-image-15103" src="{{site.url}}/blog-assets/2014/04/sl_strongops_managescale.png" alt="sl_strongops_managescale" style="width:120px;" />
+
+Gzip compressing can greatly decrease the size of the response body and hence increase the speed of a web app.  Use the [compression](https://www.npmjs.com/package/compression) middleware for gzip compression in your Express app. For example:
 
 ```js
 var compression = require('compression');
@@ -53,7 +52,7 @@ var app = express();
 app.use(compression());
 ```
 
-For a high-traffic website in production, the best way to put compression in place is to implement it at a reverse proxy level (see [Use a reverse proxy](#proxy)). In that case, you do not need to use compression middleware. For details on enabling gzip compression in Nginx, see [Module ngx\_http\_gzip_module](http://nginx.org/en/docs/http/ngx_http_gzip_module.html) in the Nginx documentation.
+For a high-traffic website in production, the best way to put compression in place is to implement it at a reverse proxy level (see [Use a reverse proxy](#proxy)). In that case, you do not need to use compression middleware. For details on enabling gzip compression in Nginx, see [Module ngx_http_gzip_module](http://nginx.org/en/docs/http/ngx_http_gzip_module.html) in the Nginx documentation.
 
 ### Don’t use synchronous functions
 
@@ -61,11 +60,11 @@ Synchronous functions and methods tie up the executing process until they return
 
 Although Node and many modules provide synchronous and asynchronous versions of their functions, always use the asynchronous version in production. The only time when a synchronous function can be justified is upon initial startup.
 
-If you are using Node.js 4.0+ or io.js 2.1.0+,  you can use the \`&#8211;trace-sync-io\` command-line flag to print a warning and a stack trace whenever your application uses a synchronous API.  Of course, you wouldn’t want to actually use this in production, but rather to ensure that your code is ready for production.  See the [Weekly update for io.js 2.1.0](https://nodejs.org/en/blog/weekly-updates/weekly-update.2015-05-22/#2-1-0) for more information.
+If you are using Node.js 4.0+ or io.js 2.1.0+,  you can use the `&#8211;trace-sync-io` command-line flag to print a warning and a stack trace whenever your application uses a synchronous API.  Of course, you wouldn’t want to actually use this in production, but rather to ensure that your code is ready for production.  See the [Weekly update for io.js 2.1.0](https://nodejs.org/en/blog/weekly-updates/weekly-update.2015-05-22/#2-1-0) for more information.
 
 ### Use middleware to serve static files
 
-In development, you can use \`[res.sendFile()](http://expressjs.com/4x/api.html#res.sendFile)\` to serve static files.  But don’t do this in production, because this function has to read from the file system for every file request, so it will encounter significant latency and affect the overall performance of the app.  Note that \`res.sendFile()\` is _not_ implemented with the [sendfile](http://linux.die.net/man/2/sendfile) system call, which would make it far more efficient.
+In development, you can use `[res.sendFile()](http://expressjs.com/4x/api.html#res.sendFile)` to serve static files.  But don’t do this in production, because this function has to read from the file system for every file request, so it will encounter significant latency and affect the overall performance of the app.  Note that `res.sendFile()` is _not_ implemented with the [sendfile](http://linux.die.net/man/2/sendfile) system call, which would make it far more efficient.
 
 Instead, use [serve-static](https://www.npmjs.com/package/serve-static) middleware (or something equivalent), that is optimized for serving files for Express apps.
 
@@ -73,15 +72,15 @@ An even better option is to use a reverse proxy to serve static files; see [Use 
 
 ### Do logging well
 
-In general, there are two reasons for logging from your app: For debugging and for logging app activity (essentially, everything else).  Using \`console.log()\` or \`console.err()\` to print log messages to the terminal is common practice in development.  But [these functions are synchronous](https://nodejs.org/api/console.html#console_console_1) when the destination is a terminal or a file, so they are not suitable for production, unless you pipe the output to another program.
+In general, there are two reasons for logging from your app: For debugging and for logging app activity (essentially, everything else).  Using `console.log()` or `console.err()` to print log messages to the terminal is common practice in development.  But [these functions are synchronous](https://nodejs.org/api/console.html#console_console_1) when the destination is a terminal or a file, so they are not suitable for production, unless you pipe the output to another program.
 
 #### **For debugging**
 
-If you’re logging for purposes of debugging, then instead of using \`console.log()\`, use a special debugging module like [debug](https://www.npmjs.com/package/debug).  This module enables you to use the DEBUG environment variable to control what debug messages are sent to \`console.err()\`, if any.  To keep your app purely asynchronous, you’d still want to pipe \`console.err()\` to another program.  But then, you&#8217;re not really going to debug in production, are you?
+If you’re logging for purposes of debugging, then instead of using `console.log()`, use a special debugging module like [debug](https://www.npmjs.com/package/debug).  This module enables you to use the DEBUG environment variable to control what debug messages are sent to `console.err()`, if any.  To keep your app purely asynchronous, you’d still want to pipe `console.err()` to another program.  But then, you&#8217;re not really going to debug in production, are you?
 
 #### **For app activity**
 
-If you’re logging app activity (for example, tracking traffic or API calls), instead of using \`console.log()\`, use a logging library like [Winston](https://www.npmjs.com/package/winston) or [Bunyan](https://www.npmjs.com/package/bunyan).  For a detailed comparison of these two libraries, see the StrongLoop blog post [Comparing Winston and Bunyan Node.js Logging](https://strongloop.com/strongblog/compare-node-js-logging-winston-bunyan/).
+If you’re logging app activity (for example, tracking traffic or API calls), instead of using `console.log()`, use a logging library like [Winston](https://www.npmjs.com/package/winston) or [Bunyan](https://www.npmjs.com/package/bunyan).  For a detailed comparison of these two libraries, see the StrongLoop blog post [Comparing Winston and Bunyan Node.js Logging](https://strongloop.com/strongblog/compare-node-js-logging-winston-bunyan/).
 
 <a name="exceptions"></a>
 
@@ -105,9 +104,9 @@ For more on the fundamentals of error handling, see:
 
 #### **What not to do**
 
-One thing you should _not_ do is to listen for the \`uncaughtException\` event, emitted when an exception bubbles all the way back to the event loop.  Adding an event listener for \`uncaughtException\` will change the default behavior of the process encountering an exception; the process will continue to run despite the exception.  This might sound like a good way of preventing your app from crashing, but continuing to run the app after an uncaught exception is a dangerous practice and is not recommended, because the state of the process becomes unreliable and unpredictable.
+One thing you should _not_ do is to listen for the `uncaughtException` event, emitted when an exception bubbles all the way back to the event loop.  Adding an event listener for `uncaughtException` will change the default behavior of the process encountering an exception; the process will continue to run despite the exception.  This might sound like a good way of preventing your app from crashing, but continuing to run the app after an uncaught exception is a dangerous practice and is not recommended, because the state of the process becomes unreliable and unpredictable.
 
-Additionally, using \`uncaughtException\` is officially recognized as [crude](https://nodejs.org/api/process.html#process_event_uncaughtexception) and there is a [proposal](https://github.com/nodejs/node-v0.x-archive/issues/2582) to remove it from the core.  So listening for \`uncaughtException\` is just a bad idea.   This is why we recommend things like multiple processes and supervisors: crashing and restarting is often the most reliable way to recover from an error.
+Additionally, using `uncaughtException` is officially recognized as [crude](https://nodejs.org/api/process.html#process_event_uncaughtexception) and there is a [proposal](https://github.com/nodejs/node-v0.x-archive/issues/2582) to remove it from the core.  So listening for `uncaughtException` is just a bad idea.   This is why we recommend things like multiple processes and supervisors: crashing and restarting is often the most reliable way to recover from an error.
 
 We also don’t recommend using [domains](https://nodejs.org/api/domain.html).  It generally doesn’t solve the problem and is a deprecated module.
 
@@ -144,7 +143,7 @@ However, try-catch works only for synchronous code. Since the Node platform is p
 
 #### **Use promises**
 
-Promises will handle any exceptions (both explicit and implicit) in asynchronous code blocks using \`then()\`. Just add \`.catch(next)\` to the end of promise chains.  For example:
+Promises will handle any exceptions (both explicit and implicit) in asynchronous code blocks using `then()`. Just add `.catch(next)` to the end of promise chains.  For example:
 
 ```js
 app.get('/', function (req, res, next) {
@@ -169,7 +168,7 @@ Now all errors asynchronous and synchronous get propagated to the error middlewa
 
 However, there are two caveats:
 
-  1. All your asynchronous code must return promises (except emitters). If a particular library does not return promises, convert the base object using a helper function like \`[Bluebird.promisifyAll()](http://bluebirdjs.com/docs/api/promise.promisifyall.html)\`.
+  1. All your asynchronous code must return promises (except emitters). If a particular library does not return promises, convert the base object using a helper function like `[Bluebird.promisifyAll()](http://bluebirdjs.com/docs/api/promise.promisifyall.html)`.
   2. Event emitters (like streams) can still cause uncaught exceptions. So make sure you are handling the error event properly; for example:
 
 ```js
@@ -198,11 +197,9 @@ Here are some things you can do in your system environment to improve your app�
   * Use a load balancer
   * Use a reverse proxy
 
-&nbsp;
-
 ### Set NODE_ENV to “production”
 
-The NODE\_ENV environment variable specifies the environment in which an application is running (usually, development or production).   One of the simplest things you can do to improve performance is to set NODE\_ENV to “production.”
+The NODE_ENV environment variable specifies the environment in which an application is running (usually, development or production).   One of the simplest things you can do to improve performance is to set NODE_ENV to “production.”
 
 Setting NODE_ENV to “production” makes Express:
 
@@ -212,9 +209,9 @@ Setting NODE_ENV to “production” makes Express:
 
 [Tests indicate](http://apmblog.dynatrace.com/2015/07/22/the-drastic-effects-of-omitting-node_env-in-your-express-js-applications/) that just doing this can improve app performance by a factor of three!
 
-If you need to write environment-specific code, you can check the value of NODE\_ENV with \` process.env.NODE\_ENV\`.  Be aware that checking the value of any environment variable incurs a performance penalty, and so should be done sparingly.
+If you need to write environment-specific code, you can check the value of NODE_ENV with `process.env.NODE_ENV`.  Be aware that checking the value of any environment variable incurs a performance penalty, and so should be done sparingly.
 
-You’re probably used to setting environment variables in your interactive shell, for example with \`export\` or your \`.bash\_profile\` file.  But in general you shouldn’t do that on a production server; instead, use your OS’s init system (systemd or Upstart).  The next section provides more details about using your init system in general, but setting NODE\_ENV is so important for performance (and easy to do), that we’re highlighting it here.
+You’re probably used to setting environment variables in your interactive shell, for example with `export` or your `.bash_profile` file.  But in general you shouldn’t do that on a production server; instead, use your OS’s init system (systemd or Upstart).  The next section provides more details about using your init system in general, but setting NODE_ENV is so important for performance (and easy to do), that we’re highlighting it here.
 
 **With Upstart**, use the env keyword in your job file.  For example:
 
@@ -247,7 +244,7 @@ Node applications crash if they encounter an uncaught exception. The foremost th
 
 #### **Use a process manager**
 
-[<img class="alignright wp-image-23548 size-square" src="{{site.url}}/blog-assets/2015/02/pm-icon-180x180.png" alt="pm-icon" width="180" height="180"  />]({{site.url}}/blog-assets/2015/02/pm-icon.png)In development, you started your app simply from the command line with \`node server.js\` or something similar.  But doing this in production is a recipe for disaster.  If the app crashes, it will be offline until you restart it.   To ensure your app restarts if it crashes, use a process manager.  A process manager is a “container” for applications that facilitates deployment, provides high availability, and enables you to manage the application at runtime.
+[<img class="alignright wp-image-23548 size-square" src="{{site.url}}/blog-assets/2015/02/pm-icon-180x180.png" alt="pm-icon" width="180" height="180"  />]({{site.url}}/blog-assets/2015/02/pm-icon.png)In development, you started your app simply from the command line with `node server.js` or something similar.  But doing this in production is a recipe for disaster.  If the app crashes, it will be offline until you restart it.   To ensure your app restarts if it crashes, use a process manager.  A process manager is a “container” for applications that facilitates deployment, provides high availability, and enables you to manage the application at runtime.
 
 In addition to restarting your app when it crashes, a process manager can enable you to:
 
@@ -347,9 +344,9 @@ For more information, see [Setting up a production host (StrongLoop documentatio
 
 Upstart is a system tool available on many Linux distributions for starting tasks and services during system startup, stopping them during shutdown, and supervising them. You can configure your Express app or process manager as a service and then Upstart will automatically restart it when it crashes.
 
-An Upstart service is defined in a job configuration file (also called a “job”) with filename ending in \`.conf\`.  The following example shows how to create a job called “myapp” for an app named “myapp” with the main file located at \`/projects/myapp/index.js\`.
+An Upstart service is defined in a job configuration file (also called a “job”) with filename ending in `.conf`.  The following example shows how to create a job called “myapp” for an app named “myapp” with the main file located at `/projects/myapp/index.js`.
 
-Create a file named \`myapp.conf\` at \`/etc/init/\` with the following content (replace the bolded text with values for your system and app):
+Create a file named `myapp.conf` at `/etc/init/` with the following content (replace the bolded text with values for your system and app):
 
 ```js
 # When to start the process
@@ -387,9 +384,9 @@ Since the job is configured to run when the system starts, your app will be star
 
 Apart from automatically restarting the app, Upstart enables you to use these commands:
 
-  * \`start myapp\` &#8211; Start the app
-  * \`restart myapp\` &#8211; Restart the app
-  * \`stop myapp\` &#8211; Stop the app.
+  * `start myapp` &#8211; Start the app
+  * `restart myapp` &#8211; Restart the app
+  * `stop myapp` &#8211; Stop the app.
 
 For more information on Upstart, see [Upstart Intro, Cookbook and Best Practises](http://upstart.ubuntu.com/cookbook).
 
@@ -458,7 +455,7 @@ Load balancing is a vast topic of its own, and a detailed discussion is beyond t
 #### **Using StrongLoop PM with an Nginx load balancer**
 
 [StrongLoop Process Manager](http://strong-pm.io/) integrates with an Nginx Controller, making it easy to configure multi-host production environment configurations.  For more information , see [Scaling to multiple servers](https://docs.strongloop.com/display/SLC/Scaling+to+multiple+servers) (StrongLoop documentation).
-  
+
 <a name="proxy"></a>
 
 ### Use a reverse proxy
