@@ -1,0 +1,21 @@
+---
+title: StrongLoop Blog Authors
+layout: page
+permalink: /blog-authors
+---
+
+<section class="c-section x-white">
+  <div class="c-container -padded">
+    <div class="c-grid">
+      <div class="_col -col-4-5">
+        <p>These authors have bio pages:</p>
+        {% assign sorted_authors = site.data.authors.authors | sort %}
+        {% for author in sorted_authors %}
+          <ul>
+            <li><a class="no_icon" href="{{site.url}}/authors/{{ author | replace: " ", "_" }}">{{author}}</a></li>
+          </ul>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

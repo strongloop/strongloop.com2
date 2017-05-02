@@ -63,7 +63,13 @@
 .gi-4x{font-size: 4em;}
 .gi-5x{font-size: 5em;}
 
+/*
+.breadcrumb li {
+    color: gray;
+}
+
 .breadcrumb > .active {color: #777 !important;}
+*/
 
 /* make room for the nav bar */
 h1[id],
@@ -104,10 +110,6 @@ body h1 {margin-top:40px;}
 
 .post-summary {
     margin-bottom:12px;
-}
-
-.breadcrumb li {
-    color: gray;
 }
 
 p.post-meta {font-size: 80%; color: #777;}
@@ -759,7 +761,7 @@ For printing
 }
 
 .home-notice {
-  border: 1px solid #487722; 
+  /*border: 1px solid #487722; */
   border-radius: 3px;
   padding: 10px;
 }
@@ -782,6 +784,13 @@ For printing
   font-style: italic;
   color: #444;
   margin-left: 10px;
+}
+
+/* Breadcrumbs */
+
+.breadcrumb {
+  padding: 20px 0 0 3rem;
+  font-size: 85%;
 }
 
 /* Newsletter */

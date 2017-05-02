@@ -2,6 +2,7 @@
   <h3>Categories:</h3>
   <ul>
     <li><a class="no_icon" href="{{site.url}}/blog-archives">All posts</a></li>
+    <li><a class="no_icon" href="{{site.url}}/blog-authors">All authors</a></li>    
   {% for tag in site.data.tags.allowed-tags %}
     <li>
       <a class="no_icon" href="{{site.url}}/{{ "tag_" | append: tag | append: ".html" | replace: " ", "-" }}">{{tag}}</a>

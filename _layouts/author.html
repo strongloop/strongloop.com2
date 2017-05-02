@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<main class="c-content">
+
+
+  <section class="c-section x-green">
+    {% include breadcrumb.html title1='Blog' url1="blog" title2="Authors" url2="blog-authors" %}
+    <div class="c-container -padded-bottom">
+      <h2 class="c-heading -h2">{{page.author}}</h2>
+    </div>
+  </section>
+
+  <section class="c-section x-white">
+    <div class="c-container -padded">
+      <div class="c-grid">
+        <div class="_col -col-2-3">
+          {% assign bio = content | strip_newlines %}
+
+          {% if bio != '' %}
+            {{content}}
+          {% else %}
+            <p>Author information TBD.</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-section x-lightgrey">
+    <div class="c-container -padded">
+      <h3 class="c-heading -h3">Blog posts by {{page.author}}</h2>
+    </div>
+  </section>
+
+  <section class="c-section x-white">
+    <div class="c-container -padded">
+      <div class="c-grid">
+        <div class="_col -col-4-5">
+
+          {% for post in site.posts %}
+              {% if post.author == page.author %}
+                <h4 class="c-heading -h5"><a class="no_icon" href="{{site.url}}{{ post.url }}">{{post.title}}</a></h2>
+                <div class="date">{{post.date | date: "%b %-d, %Y"}}</div><br/>
+
+                {% if post.excerpt %}
+                  {{ post.excerpt | strip_html | truncate: 250 }} <a class="no_icon" href="{{site.url}}{{ post.url }}">More</a> {% else %}
+                  {{ post.content | truncatewords: 50 | strip_html }}
+                {% endif %}
+                <hr class="faded"><br/>
+              {% endif %}
+           {% endfor %}
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>

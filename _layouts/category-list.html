@@ -6,7 +6,34 @@ layout: page
     <div class="c-container -padded">
       <div class="c-grid">
         <div class="_col -col-1-1">
-          {% include taglogic.html %}
+
+          <table><thead><tr><th>Title</th><th>Excerpt</th></tr></thead>
+            <tbody>
+            {% assign thisTag = page.tagName %}
+
+            {% for post in site.posts %}
+              {% for tag in post.categories %}
+                  {% if tag == thisTag %}
+                  <tr><td><a class="no_icon" href="{{site.url}}{{ post.url }}">{{post.title}}</a>
+                      <br/><div class="date">{{post.date | date: "%b %-d, %Y"}}</div>
+                      </td>
+                      <td style="font-size: 80%;">
+                        {% if post.layout == 'redirect' %}
+                          This blog post has moved to <a href="{{post.redirect_to}}">IBM DeveloperWorks</a> ....
+                        {% else %}
+                          {% if post.excerpt %}
+                              {{ post.excerpt | strip_html | truncate: 250 }} <a class="no_icon" href="{{site.url}}{{ post.url }}">More</a> {% else %}
+                            {{ post.content | truncatewords: 50 | strip_html }}
+                          {% endif %}
+                        {% endif %}
+                      </td>
+                  </tr>
+                  {% endif %}
+               {% endfor %}
+             {% endfor %}
+             </tbody>
+          </table>
+
         </div>
       </div>
     </div>
