@@ -2,14 +2,14 @@
 id: 26208
 title: Moving toward Express 5
 date: 2015-10-20T06:25:55+00:00
-author: C. Rand McKinney
+author:
+  - C. Rand McKinney
+  - Hage Yaapa
 guid: https://strongloop.com/?p=26208
 permalink: /strongblog/moving-toward-express-5/
 categories:
   - Express
 ---
-_by Hage Yaapa and C. Rand McKinney_
-
 Express 5.0 is still in the alpha release stage, but we want to give you a brief look at the changes that will be in the release and how you can migrate your Express 4 app to Express 5.
 
 Express 5 is not very different from Express 4: The changes to the API are not as significant as from 3.0 to 4.0.  Although the basic API remains the same, there are still breaking changes; in other words an existing Express 4 program may not work if you update it to use Express 5.

@@ -6,17 +6,22 @@ layout: default
     <div class="c-grid">
       <div class="_col -col-1-1">
         <h1 class="c-heading -h3">{{ page.title }}</h1>
-        {% if page.author %}<p class="author">by {{ page.author }}</p>{% endif %}
+        {% if page.author %}<p class="author">by
+          {% for author in page.author %}
+            <a class="no_icon" href="{{site.url}}/authors/{{ author | replace: " ", "_" | replace: ".", "_" }}">{{author}}</a>
+            {% if forloop.last == false %},{% endif %}
+          {% endfor %}
+        </p>{% endif %}
 
         <p class="post-meta"><time>{{ page.date | date: "%b %-d, %Y" }}</time>
           {% if page.categories != null %}/
             {% assign projectTags = site.data.tags.allowed-tags %}
             {% for tag in page.categories %}
               {% if projectTags contains tag %}
-                <a href="{{ "tag_" | append: tag | append: ".html" | replace: " ", "-" }}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+                <a class="no_icon" href="{{site.url}}/strongblog/{{ "tag_" | append: tag | append: ".html" | replace: " ", "-" }}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
               {% endif %}
             {% endfor %}
-          {% endif %}
+          {% endif %}</p>
       </div>
     </div>
   </div>
@@ -27,10 +32,6 @@ layout: default
         <div class="c-grid">
           <div class="_col -col-1-1">
             <div class="post-content">
-              {% if post.excerpt %}
-                <div class="summary">{{post.excerpt}}</div>
-              {% endif %}
-
               {{ content }}
             </div>
           </div>

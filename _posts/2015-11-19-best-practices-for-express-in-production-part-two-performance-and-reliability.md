@@ -2,7 +2,9 @@
 id: 26332
 title: 'Best Practices for Express in Production, Part Two: Performance and Reliability'
 date: 2015-11-19T06:30:06+00:00
-author: Hage Yaapa and C. Rand McKinney
+author:
+  - Hage Yaapa
+  - C. Rand McKinney
 guid: https://strongloop.com/?p=26332
 permalink: /strongblog/best-practices-for-express-in-production-part-two-performance-and-reliability/
 categories:

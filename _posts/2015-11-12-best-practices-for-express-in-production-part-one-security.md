@@ -2,7 +2,9 @@
 id: 26290
 title: 'Best Practices for Express in Production &#8211; Part One: Security'
 date: 2015-11-12T05:22:12+00:00
-author: Hage Yaapa and C. Rand McKinney
+author:
+  - Hage Yaapa
+  - C. Rand McKinney
 guid: https://strongloop.com/?p=26290
 permalink: /strongblog/best-practices-for-express-in-production-part-one-security/
 categories:

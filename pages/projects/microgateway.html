@@ -1,0 +1,106 @@
+<h2 class="c-heading -h3">Overview</h2>
+
+<p>The Microgateway is a developer-focused, extensible gateway framework written
+in Node.js for enforcing access to Microservices and APIs. It supports the
+following core features:</p>
+<ul>
+<li>Secure and control access to APIs using Swagger (OpenAPI) Specification</li>
+<li>Collection of pre-built gateway policies for API Key validation, OAuth 2.0,
+rate limiting, and JavaScript</li>
+<li>Create gateway policies (security, routing, integration, etc... ) using
+Swagger extensions (API Assembly)</li>
+<li>Simple interfaces for creating your own gateway policies.</li>
+</ul>
+<p>The role of a Gateway in an API architecture is to protect, enrich and
+control access to API services. These sets of capabilities are often related
+to security and rate limiting, but it also includes the ability to do deeper
+message inspection.  For example, you may want to insure that the message
+received is properly formed JSON, XML, or data following your own specific
+format.  In addition, the Gateway can modify the payload or transform it to
+meet old or new interfaces for the API backend. Finally, the Gateway can
+invoke multiple services and aggregate responses from multiple API backends.</p>
+<p>The Microgateway is the foundation for all of those things. It is optimized
+to perform security, rate limiting, and much more complex packet processing
+through a highly flexible flow-engine.</p>
+<p>The flow-engine is a processing unit that allows you to define a sequence
+of processing policies or tasks that get applied to the transaction as it
+passes through the Gateway for a specific API. These policies may be organized
+in a linear fashion, executing in sequential order. Or, they may have
+conditional logic deciding which set of policies will execute depending on
+variables that are part of the API flow.</p>
+
+<h2 class="c-heading -h3">Getting Started</h2>
+<p>Following are the steps to install and run a stand alone microgateway</p>
+<p>Step 1. Clone the microgateway repository</p>
+<pre class="highlight" class="highlight"><code>git clone https://github.com/strongloop/microgateway.git
+</code></pre>
+<p>Step 2. Populate all of the necessary dependencies for the project</p>
+<pre class="highlight"><code>cd microgateway
+npm install
+</code></pre>
+<p>Step 3. Change current working directory to the test directory</p>
+<pre class="highlight"><code>cd microgateway/test
+</code></pre>
+<p>Step 4. Create a startup script that sets environment variables and starts up
+the Microgateway. The script file is a simple node.js JavaScript file shown
+below. Create this file in the <code>microgateway/test</code> directory.</p>
+<p>Note:  The CONFIG_DIR is the folder containing the yaml files holding the API
+definitions that you wish to enforce.</p>
+<pre class="highlight"><code>// sample.js
+//
+'use strict';
+
+var mg = require('../lib/microgw');
+var fs = require('fs');
+
+// config dir
+process.env.CONFIG_DIR = __dirname + '/definitions/sample';
+process.env.NODE_ENV = 'production';
+mg.start(3000);
+</code></pre>
+<p>Step 4. Create a yaml file to define the API. Place the yaml file in the folder
+identified by the <code>CONFIG_DIR</code> environment variable created in the startup script.
+For this example, we are creating the file sample_1.0.0.yaml in the
+<code>microgateway/test/definitions/sample</code> directory. Note that you can place
+several yaml files in this directory and all will be pulled in and used by the
+Microgateway.</p>
+<pre class="highlight"><code># sample_1.0.0.yaml
+#
+info:
+  version: 1.0.0
+  title: sample
+  description: sample laptop yaml
+basePath: /sample
+swagger: '2.0'
+paths:
+  /echo:
+    get:
+      responses:
+        '200':
+          description: 200 OK
+x-ibm-configuration:
+  assembly:
+    execute:
+      - javascript:
+          title: write a small json object
+          source: |
+           message.body = { text : 'Hello World' };
+schemes:
+  - http
+</code></pre>
+<p>Step 5. From the test directory, execute the command to start the Microgateway.</p>
+<pre class="highlight"><code>cd $HOME/microgateway/test
+node sample.js
+</code></pre>
+<p>Step 6. Send a curl command to test the API. It should return the
+<code>{“text”:”Hello World”}</code> JSON object.</p>
+<pre class="highlight"><code>curl http://localhost:3000/sample/echo
+</code></pre>
+<p>For more information on the internal specifics of the Microgatewayy, you may
+want to look at the microgateway/test directory. All middleware components
+have one or more test suites to exercise their interfaces and logic.</p>
+<p>For more examples on how to add various policies to your API assembly, look in
+the microgateway/test/definitions directory. There are several swagger files
+that are used to test out the implementation.</p>
+
+<p>For more information, see the <a target="_blank" href="https://github.com/strongloop/microgateway">GitHub repository</a></p>

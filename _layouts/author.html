@@ -20,7 +20,7 @@ layout: default
           {% if bio != '' %}
             {{content}}
           {% else %}
-            <p>Author information TBD.</p>
+            <p><i>Author information TBD</i>.</p>
           {% endif %}
         </div>
       </div>
@@ -39,7 +39,8 @@ layout: default
         <div class="_col -col-4-5">
 
           {% for post in site.posts %}
-              {% if post.author == page.author %}
+            {% for author in post.author %}
+              {% if author == page.author %}
                 <h4 class="c-heading -h5"><a class="no_icon" href="{{site.url}}{{ post.url }}">{{post.title}}</a></h2>
                 <div class="date">{{post.date | date: "%b %-d, %Y"}}</div><br/>
 
@@ -50,7 +51,7 @@ layout: default
                 <hr class="faded"><br/>
               {% endif %}
            {% endfor %}
-
+         {% endfor %}
         </div>
       </div>
     </div>

@@ -8,13 +8,12 @@ permalink: /blog-authors
   <div class="c-container -padded">
     <div class="c-grid">
       <div class="_col -col-4-5">
-        <p>These authors have bio pages:</p>
-        {% assign sorted_authors = site.data.authors.authors | sort %}
+        {% assign sorted_authors = site.data.authors.names | sort %}
+        <ul>
         {% for author in sorted_authors %}
-          <ul>
-            <li><a class="no_icon" href="{{site.url}}/authors/{{ author | replace: " ", "_" }}">{{author}}</a></li>
-          </ul>
+          <li><a class="no_icon" href="{{site.url}}/authors/{{ author | replace: " ", "_" | replace: ".", "_" }}">{{author}}</a></li>
         {% endfor %}
+        </ul>
       </div>
     </div>
   </div>
