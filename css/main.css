@@ -970,6 +970,16 @@ li > dl {
     color: #487722; /* #2e2e2e;*/
     font-weight: 300;
 }
+/* fix for the moving menu */
+.c-masthead ._nav ._nav-list ._nav-item a:after{
+    display:block;
+    content:attr(title)!important;
+    font-weight:bold;
+    height:1px;
+    color:transparent;
+    overflow:hidden;
+    visibility:hidden;
+}
 
 .c-masthead ._nav ._nav-list ._nav-item:hover a,
 .c-masthead ._nav ._nav-list ._nav-item:focus a,
