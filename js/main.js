@@ -27,13 +27,13 @@ $(window).on("resize",function() {
   // Transpose menu
   if ($window.width() < 769) {
     if($('.c-nav .js-nav-list').length === 0 ){
-      $(".js-masthead-nav .js-nav-list:first").appendTo(".js-nav");
+      $(".js-masthead-nav .js-nav-list:first").appendTo(".c-nav .js-nav");
       $(".js-github-star").appendTo(".js-nav");
     }
   }
   else {
     if($('.c-masthead .js-nav-list').length === 0 ){
-      $(".js-nav .js-nav-list:first").appendTo(".js-masthead-nav");
+      $(".js-nav .js-nav-list:first").appendTo(".c-masthead .js-masthead-nav");
       $(".js-github-star").appendTo(".js-masthead-container");
     }
     
