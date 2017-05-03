@@ -760,9 +760,15 @@ For printing
 }
 
 .home-notice {
-  /*border: 1px solid #487722; */
+  border: 1px solid #6aa12b;
   border-radius: 3px;
+  background: #91cf4a;
   padding: 10px;
+}
+
+.home-notice-head {
+  font-weight: bold;
+  text-align: center;
 }
 
 /* Events page */
