@@ -26,12 +26,17 @@ $(window).on("resize",function() {
 
   // Transpose menu
   if ($window.width() < 769) {
-    $(".js-masthead-nav .js-nav-list").appendTo(".js-nav");
-    $(".js-github-star").appendTo(".js-nav");
+    if($('.c-nav .js-nav-list').length === 0 ){
+      $(".js-masthead-nav .js-nav-list").appendTo(".js-nav");
+      $(".js-github-star").appendTo(".js-nav");
+    }
   }
   else {
-    $(".js-nav .js-nav-list").appendTo(".js-masthead-nav");
-    $(".js-github-star").appendTo(".js-masthead-container");
+    if($('.c-masthead .js-nav-list').length === 0 ){
+      $(".js-nav .js-nav-list").appendTo(".js-masthead-nav");
+      $(".js-github-star").appendTo(".js-masthead-container");
+    }
+    
   }
 });
 

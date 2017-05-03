@@ -619,15 +619,6 @@ a.no_icon:after
     background-color: whitesmoke;
     font-weight: bold;
     color: black;
-    }
-.c-masthead ._nav ._nav-list ._nav-item a:after{
-    display:block;
-    content:attr(title)!important;
-    font-weight:bold;
-    height:1px;
-    color:transparent;
-    overflow:hidden;
-    visibility:hidden;
 }
 /*
 a code {
