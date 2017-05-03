@@ -6,62 +6,13 @@ redirect_from: /getting-started
 ---
 
 <section class="c-section x-white">
-  <div class="c-container  -padded-bottom">
-    <div class="c-grid">
-      <div class="_col -col-4-5">
-        <a name="loopback"></a><h2 class="c-heading -h2">LoopBack</h2>
-
-        LoopBack is a highly-extensible, open-source Node.js framework that enables you to:
-        <ul>
-          <li>Create dynamic end-to-end REST APIs with little or no coding.</li>
-          <li>Access data from major relational databases, MongoDB, SOAP, and REST APIs.</li>
-          <li>Incorporate model relationships and access controls for complex APIs.</li>
-          <li>Use separable components for file storage, third-party login, and OAuth 2.0.</li>
-        </ul>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="c-container -padded">
-    <h2 class="c-heading -h3">Install</h2>
-
-    <div class="c-grid">
-      <div class="_col -col-1-3">
-        <p style="padding-top: 10px;">Assuming you have already installed Node, install the LoopBack CLI tool:</p>
-      </div>
-      <div class="_col -col-2-3">
-        <div class="language-js highlighter-rouge"><pre class="highlight">
-$ npm install -g loopback-cli</pre></div>
-      </div>
-    </div>
-
-    <div class="c-grid">
-      <div class="_col -col-2-3">
-    <p>To keep going, see <a target="_blank" href="http://loopback.io/getting-started/">Getting started on loopback.io</a></p>
-      </div>
-    </div>
-  </div>
+  {% include_relative projects/loopback.html %}
 </section>
 
 <section class="c-section x-lightgrey">
-  <div class="c-container -padded-bottom">
-    <div class="c-grid">
-      <div class="_col -col-4-5">
-        <a name="mg"></a><h2 class="c-heading -h2">Microgateway</h2>
-        {% include_relative projects/microgateway.html %}
-      </div>
-    </div>
-  </div>
+  {% include_relative projects/microgateway.html %}
 </section>
 
 <section class="c-section x-white">
-  <div class="c-container -padded-bottom">
-    <div class="c-grid">
-      <div class="_col -col-4-5">
-        <a name="openapi"></a><h2 class="c-heading -h2">OpenAPI</h2>
-        {% include_relative projects/openapi.html %}
-      </div>
-    </div>
-  </div>
+  {% include_relative projects/openapi.html %}
 </section>
