@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [strongloop.com](#strongloopcom)
+  - [Running and viewing site locally](#running-and-viewing-site-locally)
+    - [Setup](#setup)
+    - [Preview site locally](#preview-site-locally)
+    - [References](#references)
+  - [Overview of the site](#overview-of-the-site)
+  - [Updating the site](#updating-the-site)
+    - [How to add a new page](#how-to-add-a-new-page)
+    - [How to add a blog post](#how-to-add-a-blog-post)
+    - [How to add a blog category](#how-to-add-a-blog-category)
+    - [How to add an author](#how-to-add-an-author)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # strongloop.com
 
 StrongLoop community website.
