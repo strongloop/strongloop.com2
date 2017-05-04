@@ -345,10 +345,6 @@ a.fa.fa-envelope-o.mailto {
     font-weight: 600;
 }
 
-.alert, .callout {
-    overflow: hidden;
-}
-
 ol li ol li {list-style-type: lower-alpha;}
 ol li ul li {list-style-type: disc;}
 
@@ -356,16 +352,8 @@ li img {clear:both; }
 
 span.tagTitle {font-weight: 500;}
 
-.alert-warning {
-    color: #444;
-}
-
 div.alert code, h2 code {
     background-color: transparent !important;
-}
-/* without this, the links in these notes aren't visible.*/
-.alert a {
-    text-decoration: underline;
 }
 
 div.tags {padding: 10px 5px;}
@@ -489,11 +477,6 @@ dd {margin-left:20px;}
 .note code, .alert code, .warning code, div#toc code, h2 code, h3 code, h4 code {
     color: inherit;
     padding: 0px;
-}
-
-.alert {
-    margin-bottom:10px;
-    margin-top:10px;
 }
 
 a.accordion-toggle {
@@ -732,13 +715,108 @@ For printing
         display: none !important;
     }
 }
+/* ---- Alerts  ----*/
+
+.alert, .callout {
+    overflow: hidden;
+}
+
+.alert-warning {
+    color: #444;
+}
+
+/* without this, the links in these notes aren't visible.*/
+.alert a {
+    text-decoration: underline;
+}
+
+.alert {
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+/* ---- From lavish-bootstrap.css ----*/
+
+.alert {
+  padding: 0 15px 15px 15px;
+  /*padding: 15px;*/
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.alert .alert-link {
+  font-weight: bold;
+}
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+.alert > p + p {
+  margin-top: 5px;
+}
+.alert-dismissable {
+  padding-right: 35px;
+}
+.alert-dismissable .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+.alert-success .alert-link {
+  color: #356635;
+}
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #3a87ad;
+}
+.alert-info hr {
+  border-top-color: #a6e1ec;
+}
+.alert-info .alert-link {
+  color: #2d6987;
+}
+.alert-warning {
+  background-color: #fcf8e3;
+  border-color: #fbeed5;
+  color: #c09853;
+}
+.alert-warning hr {
+  border-top-color: #f8e5be;
+}
+.alert-warning .alert-link {
+  color: #a47e3c;
+}
+.alert-danger {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+.alert-danger hr {
+  border-top-color: #e6c1c7;
+}
+.alert-danger .alert-link {
+  color: #953b39;
+}
 
 /* ------------- Added for strongloop.com ------------ */
 
 /* page layout */
 .page-header {
-  padding-bottom: 3rem;
-  padding-top: 1rem;
+  padding: 3rem 0 3rem 0;
 }
 
 /* Home page */
@@ -761,12 +839,13 @@ For printing
 
 .home-notice {
   border: 1px solid #6aa12b;
-  border-radius: 3px;
+  border-radius: 4px;
   background: #91cf4a;
   padding: 10px;
+  margin-bottom: 3rem !important;
 }
 
-.home-notice-head {
+.home-notice-header {
   font-weight: bold;
   text-align: center;
 }
@@ -789,6 +868,22 @@ For printing
   font-style: italic;
   color: #444;
   margin-left: 10px;
+}
+
+div.post-content h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+div.post-content h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+div.post-content h4 {
+  color: #808080;
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 
 /* Breadcrumbs */

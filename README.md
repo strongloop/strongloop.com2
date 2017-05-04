@@ -12,7 +12,7 @@
     - [How to add a new page](#how-to-add-a-new-page)
     - [How to add a blog post](#how-to-add-a-blog-post)
     - [How to add a blog category](#how-to-add-a-blog-category)
-    - [How to add an author](#how-to-add-an-author)
+    - [How to add an author page](#how-to-add-an-author-page)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -147,15 +147,13 @@ To add a new blog category:
     tagName: <Category-Name>
     search: exclude
     permalink: strongblog/tag_<Category>.html
-    title: 'Cloud Posts'
     ---
 ```
 Where:
 - `<Category-Name>` matches the entry in `tags.yml`.
 - `permalink` is `strongblog/tag_<tagname>.html` by convention, with spaces converted to underscores.
-- `title` is the Category title; generally just "<tagname> Posts".
 
-### How to add an author
+### How to add an author page
 
 To add a new blog author:
 1. Add an entry to `_data/authors.yml`
@@ -170,3 +168,5 @@ To add a new blog author:
 Where the value of:
 - `author` matches the entry in `authors.yml`.
 - `permalink` is `/authors/<Author_Name>` by convention, with spaces in author name converted to underscores.
+
+The content of this page should be the author's biography information.  In addition to any content, the author page lists all blogs by that author.

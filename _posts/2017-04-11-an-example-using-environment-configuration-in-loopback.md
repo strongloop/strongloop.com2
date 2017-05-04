@@ -44,7 +44,13 @@ Finally &#8211; I ran my local server, ensured everything was working as normal,
 
 The next step was to create a new Node.js application in [IBM Bluemix](https://www.ibm.com/cloud-computing/bluemix/). After creating the application, I then provisioned a free-tier instance of our Cloudant service. Finally, I launched the web-based admin for Cloudant and created a database called &#8220;data&#8221;. (Very imaginative, I know.) I provisioned my server with everything I needed at this point. I just had to tell LoopBack how to use it.
 
-Back on my machine, I began by adding the connector for Cloudant: `npm install --save loopback-connector-cloudant`. Next, I created a new file, datasources.production.js. The JS extension lets us know we&#8217;re doing something with code here versus just simple configuration. By default, Bluemix puts all of your server data into an environment variable called VCAP_SERVICES. If you forget what this looks like, you can select the &#8220;Runtime&#8221; link in Bluemix and then the &#8220;Environmental Variables&#8221; tab.
+Back on my machine, I began by adding the connector for Cloudant:
+
+```
+npm install --save loopback-connector-cloudant
+```
+
+Next, I created a new file, `datasources.production.js`. The JS extension lets us know we&#8217;re doing something with code here versus just simple configuration. By default, Bluemix puts all of your server data into an environment variable called VCAP_SERVICES. If you forget what this looks like, you can select the &#8220;Runtime&#8221; link in Bluemix and then the &#8220;Environmental Variables&#8221; tab.
 
 [<img class="aligncenter wp-image-29180 size-medium" src="{{site.url}}/blog-assets/2017/04/fordave2-300x220.png" width="300" height="220"  />]({{site.url}}/blog-assets/2017/04/fordave2.png)
 

@@ -225,23 +225,24 @@ html {
 }
 
 .c-heading.-h1,
-.c-heading.-h2,
 .c-heading.-h3 {
     color: #000;
     font-weight: 500;
 }
 
 .c-heading.-h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .c-heading.-h2 {
+    font-weight: 500;
     font-size: 2rem;
     padding-top: 2rem;
+    color: #283c10;
 }
 
 .c-heading.-h3 {
-    font-size: 1.854rem;
+    font-size: 1.5rem;
 }
 
 .c-heading.-h5,
@@ -251,12 +252,12 @@ html {
 }
 
 .c-heading.-h4 {
-    font-size: 1.618rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
 .c-heading.-h5 {
-    font-size: 1.146rem;
+    font-size: 1rem;
 }
 
 .c-heading.-h6 {
@@ -269,6 +270,10 @@ p {
 
 code {
     display: inline-block;
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-size: 90%;
+    font-weight: 700;
+    color: #404040;
 }
 
 strong {
@@ -302,7 +307,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #d8f2c2;
+    color: #b5df86; /*#5d8d25; /*#d8f2c2;*/
 }
 
 ul,ol,dl {

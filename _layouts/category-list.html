@@ -1,7 +1,14 @@
 ---
-layout: page
+layout: default
 ---
 <main class="c-content">
+  <section class="c-section x-green">
+    {% include breadcrumb.html title1='Blog' url1="strongblog" title2="Categories" url2="blog-categories" %}
+    <div class="c-container -padded-bottom">
+      <h2 class="c-heading -h2">Blog posts in '{{page.tagName}}' category</h2>
+    </div>
+  </section>
+
   <section class="c-section x-white">
     <div class="c-container -padded">
       <div class="c-grid">

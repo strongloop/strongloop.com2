@@ -1,0 +1,21 @@
+---
+title: StrongLoop Blog Categories
+layout: page
+permalink: /blog-categories
+---
+
+<section class="c-section x-white">
+  <div class="c-container -padded">
+    <div class="c-grid">
+      <div class="_col -col-4-5">
+        <ul>
+        {% for tag in site.data.tags.allowed-tags %}
+          <li>
+            <a class="no_icon" href="{{site.url}}/strongblog/{{ "tag_" | append: tag | append: ".html" | replace: " ", "-" }}">{{tag}}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

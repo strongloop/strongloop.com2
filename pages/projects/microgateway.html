@@ -30,70 +30,74 @@
       in a linear fashion, executing in sequential order. Or, they may have
       conditional logic deciding which set of policies will execute depending on
       variables that are part of the API flow.</p>
+      <hr class="faded">
 
       <h2 class="c-heading -h3">Getting Started</h2>
       <p>Following are the steps to install and run a stand alone microgateway</p>
-      <p>Step 1. Clone the microgateway repository</p>
+      <p><b>Step 1</b>: Clone the microgateway repository</p>
       <pre class="highlight" class="highlight"><code>git clone https://github.com/strongloop/microgateway.git </code></pre>
-      <p>Step 2. Populate all of the necessary dependencies for the project</p>
-      <pre class="highlight"><code>cd microgateway
-      npm install </code></pre>
-      <p>Step 3. Change current working directory to the test directory</p>
+      <p><b>Step 2</b>: Populate all of the necessary dependencies for the project</p>
+<pre class="highlight"><code>cd microgateway
+npm install </code></pre>
+      <p><b>Step 3</b>: Change current working directory to the test directory</p>
       <pre class="highlight"><code>cd microgateway/test </code></pre>
-      <p>Step 4. Create a startup script that sets environment variables and starts up
-      the Microgateway. The script file is a simple node.js JavaScript file shown
-      below. Create this file in the <code>microgateway/test</code> directory.</p>
-      <p>Note:  The CONFIG_DIR is the folder containing the yaml files holding the API
+      <p><b>Step 4</b>: Create a startup script that sets environment variables and starts up
+      the Microgateway. The script file is a simple Node.js JavaScript file shown
+      below. Create this file in the <code>microgateway/test</code> directory.
+      CONFIG_DIR is the folder containing the YAML files with the API
       definitions that you wish to enforce.</p>
-      <pre class="highlight"><code>'use strict';
 
-      var mg = require('../lib/microgw');
-      var fs = require('fs');
+  <div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="s1">'use strict'</span><span class="p">;</span>
 
-      // config dir
-      process.env.CONFIG_DIR = __dirname + '/definitions/sample';
-      process.env.NODE_ENV = 'production';
-      mg.start(3000);  </code></pre>
-      <p>Step 4. Create a yaml file to define the API. Place the yaml file in the folder
+<span class="kd">var</span> <span class="nx">mg</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'../lib/microgw'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fs'</span><span class="p">);</span>
+
+<span class="c1">// config dir</span>
+<span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">CONFIG_DIR</span> <span class="o">=</span> <span class="nx">__dirname</span> <span class="o">+</span> <span class="s1">'/definitions/sample'</span><span class="p">;</span>
+<span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">NODE_ENV</span> <span class="o">=</span> <span class="s1">'production'</span><span class="p">;</span>
+<span class="nx">mg</span><span class="p">.</span><span class="nx">start</span><span class="p">(</span><span class="mi">3000</span><span class="p">);</span></code></pre></div>
+      <p><b>Step 5</b>: Create a yaml file to define the API. Place the yaml file in the folder
       identified by the <code>CONFIG_DIR</code> environment variable created in the startup script.
       For this example, we are creating the file sample_1.0.0.yaml in the
-      <code>microgateway/test/definitions/sample</code> directory. Note that you can place
-      several yaml files in this directory and all will be pulled in and used by the
-      Microgateway.</p>
-      <pre class="highlight"><code># sample_1.0.0.yaml
-      #
-      info:
-        version: 1.0.0
-        title: sample
-        description: sample laptop yaml
-      basePath: /sample
-      swagger: '2.0'
-      paths:
-        /echo:
-          get:
-            responses:
-              '200':
-                description: 200 OK
-      x-ibm-configuration:
-        assembly:
-          execute:
-            - javascript:
-                title: write a small json object
-                source: |
-                 message.body = { text : 'Hello World' };
-      schemes:
-        - http  </code></pre>
-      <p>Step 5. From the test directory, execute the command to start the Microgateway.</p>
-      <pre class="highlight"><code>cd microgateway/test
-      node sample.js </code></pre>
-      <p>Step 6. Send a curl command to test the API. It should return the
+      <code>microgateway/test/definitions/sample</code> directory. </p>
+      <p>You can place several YAML files in this directory and the
+      Microgateway will pull in and use them all.</p>
+
+      <div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="c1"># sample_1.0.0.yaml</span>
+<span class="c1">#</span>
+<span class="s">info</span><span class="pi">:</span>
+  <span class="s">version</span><span class="pi">:</span> <span class="s">1.0.0</span>
+  <span class="s">title</span><span class="pi">:</span> <span class="s">sample</span>
+  <span class="s">description</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Sample</span><span class="nv"> </span><span class="s">laptop</span><span class="nv"> </span><span class="s">YAML'</span>
+<span class="s">basePath</span><span class="pi">:</span> <span class="s">/sample</span>
+<span class="s">swagger</span><span class="pi">:</span> <span class="s1">'</span><span class="s">2.0'</span>
+<span class="s">paths</span><span class="pi">:</span>
+  <span class="s">/echo</span><span class="pi">:</span>
+    <span class="s">get</span><span class="pi">:</span>
+      <span class="s">responses</span><span class="pi">:</span>
+        <span class="s1">'</span><span class="s">200'</span><span class="pi">:</span>
+          <span class="s">description</span><span class="pi">:</span> <span class="s1">'</span><span class="s">200</span><span class="nv"> </span><span class="s">OK'</span>
+<span class="s">x-ibm-configuration</span><span class="pi">:</span>
+  <span class="s">assembly</span><span class="pi">:</span>
+    <span class="s">execute</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">javascript</span><span class="pi">:</span>
+          <span class="s">title</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Write</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">small</span><span class="nv"> </span><span class="s">JSON</span><span class="nv"> </span><span class="s">object'</span>
+          <span class="s">source</span><span class="pi">:</span> <span class="pi">|</span>
+            <span class="no">message.body = { text : 'Hello World' };</span>
+<span class="s">schemes</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">http</span></code></pre></div>
+
+      <p><b>Step 6</b>: From the test directory, execute the command to start the Microgateway.</p>
+<pre class="highlight"><code>cd microgateway/test
+node sample.js </code></pre>
+      <p><b>Step 7</b>: Send a <code>curl</code> command to test the API. It should return the
       <code>{“text”:”Hello World”}</code> JSON object.</p>
       <pre class="highlight"><code>curl http://localhost:3000/sample/echo </code></pre>
       <p>For more information on the internal specifics of the Microgatewayy, you may
-      want to look at the microgateway/test directory. All middleware components
+      want to look at the <code>microgateway/test</code> directory. All middleware components
       have one or more test suites to exercise their interfaces and logic.</p>
       <p>For more examples on how to add various policies to your API assembly, look in
-      the microgateway/test/definitions directory. There are several swagger files
+      the <code>microgateway/test/definitions</code> directory. There are several swagger files
       that are used to test out the implementation.</p>
 
       <p>For more information, see the <a target="_blank" href="https://github.com/strongloop/microgateway">GitHub repository</a></p>

@@ -1,0 +1,12 @@
+<ul>
+  <li><a class="no_icon" href="{{site.url}}/blog-archives">All posts</a></li>
+  <li><a class="no_icon" href="{{site.url}}/blog-authors">All authors</a></li>
+</ul>
+<h3>Categories:</h3>
+<ul>
+{% for tag in site.data.tags.allowed-tags %}
+  <li>
+    <a class="no_icon" href="{{site.url}}/strongblog/{{ "tag_" | append: tag | append: ".html" | replace: " ", "-" }}">{{tag}}</a>
+  </li>
+{% endfor %}
+</ul>

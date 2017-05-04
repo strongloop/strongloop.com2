@@ -2,7 +2,7 @@
 id: 24852
 title: 'How to Implement Node + React Isomorphic JavaScript &amp; Why it Matters'
 date: 2015-06-10T08:00:43+00:00
-author: davidwells
+author: çß
 guid: https://strongloop.com/?p=24852
 permalink: /strongblog/node-js-react-isomorphic-javascript-why-it-matters/
 categories:
@@ -185,7 +185,7 @@ ReactApp = React.createFactory(require('../components/ReactApp'));
 module.exports = function(app) {
 
   app.get('/', function(req, res){
-    
+
     var data = // Do DB query or whatever here
 
     // React.renderToString with data from DB call

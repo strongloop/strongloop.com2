@@ -17,7 +17,6 @@ Node.js is a server side programming framework based on JavaScript. It is <a hr
 
 Given that web programming is the primary scenario focus of Node.js, the  _Hello, world_ samples usually take the form of a simple HTTP server:
 
-<div>
   ```js
 var http = require('http');
 
@@ -25,8 +24,7 @@ http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-type': 'text/plain' });
     res.end('Hello, world!');
 }).listen(8080);
-```js
-</div>
+```
 
 Subsequent sections will focus on key aspects of Node.js to compare and contrast them with .NET framework.
 
@@ -99,7 +97,7 @@ Using npm modules in your Node.js application requires them to be installed, sim
 Installing a Node.js module is simple. Let&#8217;s use the <a href="https://www.npmjs.org/package/ws" rel="noreferrer">ws</a> module to implement a simple WebSocket server in Node.js. You will also notice that the source code of the module along with its documentation are on GitHub at<a href="https://github.com/einaros/ws" rel="noreferrer">einaros/ws</a>, which is the pattern followed by vast majority of Node.js modules. First, install the module:
 
     npm install ws
-    
+
 
 Notice that a `node_modules\ws` directory was created on disk. This is where the module code is stored and where the Node.js runtime will <a href="http://nodejs.org/api/modules.html" rel="noreferrer">load it from</a> when the application runs.
 
