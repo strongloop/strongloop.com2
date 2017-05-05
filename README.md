@@ -11,6 +11,7 @@
   - [Updating the site](#updating-the-site)
     - [How to add a new page](#how-to-add-a-new-page)
     - [How to add a blog post](#how-to-add-a-blog-post)
+    - [How to redirect a blog post](#how-to-redirect-a-blog-post)
     - [How to add a blog category](#how-to-add-a-blog-category)
     - [How to add an author page](#how-to-add-an-author-page)
 
@@ -135,6 +136,31 @@ Where:
 - `categories` is one or more categories that are in `categories.yml`.
 
 Simply adding the post will make it appear in the list on the front page, and in the appropriate category and author pages.
+
+### How to redirect a blog post
+
+For blog posts that were moved to other sites (DeveloperWorks), you can easily redirect the URL so any external links to the old post will be redirected to the new location.
+Edit the post as follows:
+
+- Change the post to have `layout: redirected`
+- Add a new front-matter property `redirect_to` that specifies the post's new URL.  
+- Replace the content of the post with the following (optional, but clarifies the redirect in the blog excerpt):
+```
+This blog post has been moved to IBM DeveloperWorks....
+<!--more-->
+```
+
+For example:
+
+```
+layout: redirected
+redirect_to: https://developer.ibm.com/open/2016/10/11/new-life-for-loopback-docs/
+---
+This blog post has been moved to IBM DeveloperWorks....
+<!--more-->
+```
+
+You can see this in action if you go to https://strongloop.github.io/strongloop.com/strongblog/new-life-for-loopback-docs/.
 
 ### How to add a blog category
 

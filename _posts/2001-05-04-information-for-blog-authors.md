@@ -23,7 +23,7 @@ YEAR-MONTH-DAY-title.md
 ```
 
 Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers,
-and `title` is the post tile, in lowercase, with spaces converted to dashes.
+and `title` is the post title, in lowercase, with spaces converted to dashes.
 For example, this post's file name is `2001-05-04-information-for-blog-authors.md`.
 
 {% include note.html content="This post has a fictitious (old) date so it
@@ -39,7 +39,7 @@ For example, here's the front-matter for this post:
 ```
 ---
 layout: post
-title: Blog Post Demo
+title: Information for Blog Authors
 date: 2001-05-04
 author: C. Rand McKinney
 permalink: /strongblog/information-for-blog-authors/
