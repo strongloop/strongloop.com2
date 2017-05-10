@@ -3,9 +3,13 @@
 <nav class="_nav js-masthead-nav">
   <ul class="_nav-list js-nav-list">
     {% for item in items %}
-    <li class="_nav-item {% if page.url contains item.url %}-active{% endif %}">
-      <a class="no_icon" href="{{site.url}}/{{ item.url }}" title="{{item.title}}">{{item.title}}</a>
-    </li>
+      {% assign url = item.url %}
+      {% if url == 'strongblog' and site.url == 'http://localhost:4001' %}
+        {% assign url = 'blog' %}
+      {% endif %}
+      <li class="_nav-item {% if page.url contains url %}-active{% endif %}">
+        <a class="no_icon" href="{{site.url}}/{{ url }}" title="{{item.title}}">{{item.title}}</a>
+      </li>
     {% endfor %}
   </ul>
 </nav>
