@@ -829,6 +829,8 @@ For printing
   padding: 10px;
   min-height: 240px;
   font-weight: 400;
+  text-align: justify;
+  /* font-size: 110%; */
 }
 
 .tile-img {
