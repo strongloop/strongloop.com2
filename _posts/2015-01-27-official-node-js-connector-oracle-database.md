@@ -15,7 +15,7 @@ This is exciting for the Node community. The interest in Node applications that 
 
 Releasing source code on GitHub is itself big news for the Oracle Database development community. It is part of the shift to making content highly available to Oracle users and lets developers be more efficient at adopting technology and creating new generations of applications.
 
-StrongLoop is one player with feet in both Node and Oracle communities. They have supported and given advice on the development of `node-oracledb`, even though it seemingly competes with their [own driver](https://github.com/strongloop/strong-oracle). What `node-oracledb` actually does is let StrongLoop focus their efforts in making products like the [LoopBack](http://loopback.io/) framework and the [StrongLoop Arc](http://strongloop.com/node-js/arc/) GUI and platform even more successful. The maintenance of the database access layer can now transition to Oracle, where their expertise is, freeing StrongLoop to add value above it.
+StrongLoop is one player with feet in both Node and Oracle communities. They have supported and given advice on the development of `node-oracledb`, even though it seemingly competes with their [own driver](https://github.com/strongloop/strong-oracle). What `node-oracledb` actually does is let StrongLoop focus their efforts in making products like the [LoopBack](http://loopback.io/) framework even more successful. The maintenance of the database access layer can now transition to Oracle, where their expertise is, freeing StrongLoop to add value above it.
 
 <img class="aligncenter size-full wp-image-22968" alt="oracle2" src="{{site.url}}/blog-assets/2015/01/oracle2.jpg" width="590" height="414"  />
 

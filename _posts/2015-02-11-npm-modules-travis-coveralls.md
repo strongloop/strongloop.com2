@@ -106,11 +106,11 @@ Run these tests with npm test, and you should see a simple test report.
 > ./node_modules/mocha/bin/mocha ./test/*
 
  fizzbuzz
-    ✓ returns null when passed a non-number 
-    ✓ returns fizzbuzz when divisible by 15 
-    ✓ returns fizz when divisible by 3 but not 5 
-    ✓ returns buzz when divisble by 5 but not 3 
-    ✓ returns input otherwise 
+    ✓ returns null when passed a non-number
+    ✓ returns fizzbuzz when divisible by 15
+    ✓ returns fizz when divisible by 3 but not 5
+    ✓ returns buzz when divisble by 5 but not 3
+    ✓ returns input otherwise
 
   5 passing (7ms)
 ```
@@ -147,11 +147,11 @@ specter:fizzbuzz-coverage vkarpov$ npm run-script test-travis
 > ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*
 
  fizzbuzz
-   ✓ returns null when passed a non-number 
-   ✓ returns fizzbuzz when divisible by 15 
-   ✓ returns fizz when divisible by 3 but not 5 
-   ✓ returns buzz when divisble by 5 but not 3 
-   ✓ returns input otherwise 
+   ✓ returns null when passed a non-number
+   ✓ returns fizzbuzz when divisible by 15
+   ✓ returns fizz when divisible by 3 but not 5
+   ✓ returns buzz when divisble by 5 but not 3
+   ✓ returns input otherwise
 
  5 passing (6ms)
 
@@ -245,15 +245,3 @@ You can get the build status and coverage info for any branch by changing the br
 ## **Conclusion**
 
 In this article, you saw how easy it can be to tie your npm modules into Travis and Coveralls. Continuous integration and code coverage used to only be feasible for the Googles of the world, but now even small npm modules can take advantage of these sophisticated dev practices. I look forward to seeing more npm authors take advantage of these excellent tools and get serious about test coverage.
-
-<div id="design-apis-arc" class="post-shortcode" style="clear:both;">
-  <h2>
-    <a href="http://strongloop.com/node-js/arc/"><strong>Develop APIs Visually with StrongLoop Arc</strong></a>
-  </h2>
-  
-  <p>
-    StrongLoop Arc is a graphical UI for the <a href="http://strongloop.com/node-js/api-platform/">StrongLoop API Platform</a>, which includes LoopBack, that complements the <a href="http://docs.strongloop.com/pages/viewpage.action?pageId=3834790">slc command line tools</a> for developing APIs quickly and getting them connected to data. Arc also includes tools for building, profiling and monitoring Node apps. It takes just a few simple steps to <a href="http://strongloop.com/get-started/">get started</a>!
-  </p>
-  
-  <img class="aligncenter size-large wp-image-21950" src="{{site.url}}/blog-assets/2014/12/Arc_Monitoring_Metrics-1030x593.jpg" alt="Arc_Monitoring_Metrics" width="1030" height="593" />
-</div>

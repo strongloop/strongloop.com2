@@ -246,26 +246,12 @@ or
 $ slc debug app.js
 ```
 
-<span style="line-height: 1.5;">To automatically debug with mocha tests, you have to start <code>_mocha</code> as the debugged process and make sure the execution pauses on the first line. This way you have enough time to set your breakpoints before the tests are run.</span>
+To automatically debug with mocha tests, you have to start <code>_mocha</code> as the debugged process and make sure the execution pauses on the first line. This way you have enough time to set your breakpoints before the tests are run.
 
 ```js
 $ node-debug _mocha
 ```
 
-Here is a snapshot of Node-Inspector in flight. To know more, read [documentation](http://docs.strongloop.com/display/SLC/Using+Node+Inspector "Node Debugging")
+Here is a snapshot of Node-Inspector in flight.
 
 <img class="aligncenter size-full wp-image-23865" src="{{site.url}}/blog-assets/2015/03/Debugger.png" alt="Debugger" width="807" height="626"  />
-
-<span style="line-height: 1.5;">
-
-<div id="design-apis-arc" class="post-shortcode" style="clear:both;">
-  <h2>
-    <a href="http://strongloop.com/node-js/arc/"><strong>Develop APIs Visually with StrongLoop Arc</strong></a>
-  </h2>
-  
-  <p>
-    StrongLoop Arc is a graphical UI for the <a href="http://strongloop.com/node-js/api-platform/">StrongLoop API Platform</a>, which includes LoopBack, that complements the <a href="http://docs.strongloop.com/pages/viewpage.action?pageId=3834790">slc command line tools</a> for developing APIs quickly and getting them connected to data. Arc also includes tools for building, profiling and monitoring Node apps. It takes just a few simple steps to <a href="http://strongloop.com/get-started/">get started</a>!
-  </p>
-  
-  <img class="aligncenter size-large wp-image-21950" src="{{site.url}}/blog-assets/2014/12/Arc_Monitoring_Metrics-1030x593.jpg" alt="Arc_Monitoring_Metrics" width="1030" height="593" />
-</div></span>

@@ -22,7 +22,9 @@ We’ve already covered [Couchbase Server](https://strongloop.com/strongblog/nod
 
 ## **ArangoDB**
 
-ArangoDB is described as _“A distributed free and open-source database with a flexible data model for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions.”_
+ArangoDB is described as
+
+> “A distributed free and open-source database with a flexible data model for documents, graphs, and key-values. Build high performance applications using a convenient SQL-like query language or JavaScript extensions.”
 
 ArangoDB is a multi-model mostly-memory database with a flexible data model for documents and graphs. It is designed as a “general purpose database”, offering all the features you typically need for modern web applications.
 
@@ -70,7 +72,7 @@ Let’s create a database in ArangoDB that we’ll use for the remainder of the 
 Navigate to <http://localhost:8529/>, click on the &#8220;DB&#8221; drop down on the top menu and select &#8220;Manage DBs&#8221;. On this screen, we’ll be able to add a new database.
 
 <img class="aligncenter size-full wp-image-24817" src="{{site.url}}/blog-assets/2015/05/add-db.png" alt="add-db" width="975" height="150"  />
-  
+
 Click &#8220;Add Database&#8221; and let’s name our new database &#8220;loopback-example&#8221;. Click create and that’s it. We have a new database in ArangoDB. We’ll fill a collection with some test data shortly, but first let’s create our LoopBack application.
 
 ## **LoopBack &#8211; Creating the application**
@@ -97,7 +99,7 @@ Like last time, we’ll again create our LoopBack application using the [slc loo
 `slc` makes it very simple for us to create a full LoopBack application structure in just a few steps. Now, cd into the application directory and install the ArangoDB connector.
 
 > **Note:** The [Github repository](https://github.com/nvdnkpr/loopback-connector-arango) and the [NPM registry](https://www.npmjs.com/package/loopback-connector-arango) for the original version of connector are out of sync. The Github repository holds a old version (0.0.3) of the connector while NPM has the most up-to-date (0.1.0) version. There have been some changes in LoopBack since this connector was last updated, so I’ve forked the code from NPM and made a few changes to get it working again with LoopBack. Credit for the original loopback-connector-arango goes to [nvdnkpr](https://github.com/nvdnkpr).
-> 
+>
 > &nbsp;
 
 ```js
@@ -163,21 +165,21 @@ We’re going to start with building our application using Arc and we’ll touch
 ```
 
 This single command will start Arc and take you to the Arc starting page.
-  
+
 <img class="aligncenter size-full wp-image-24826" src="{{site.url}}/blog-assets/2015/05/strongloop-arc.png" alt="strongloop-arc" width="975" height="484"  />
-  
+
 Click on &#8220;Composer&#8221;. This will take us to the Arc Composer where we can see the arangodb datasource we already created under the datasource menu.
 
 Click on &#8220;Add New Model&#8221; under the model menu.
 
 <img class="aligncenter size-full wp-image-24827" src="{{site.url}}/blog-assets/2015/05/sl-arc-2.png" alt="sl-arc-2" width="421" height="532"  />
-  
+
 Enter the &#8220;Name&#8221; as &#8220;business&#8221;, the &#8220;Plural&#8221; as &#8220;businesses&#8221; and select &#8220;arangodb&#8221; as the &#8220;datasource&#8221;.
 
 Next, enter the properties for our model as shown below, then click &#8220;Save Model&#8221;.
-  
+
 <img class="aligncenter size-full wp-image-24829" src="{{site.url}}/blog-assets/2015/05/properties.png" alt="properties" width="975" height="438"  />
-  
+
 You just created a JSON model representation of our data in ArangoDB and exposed it via the LoopBack REST API without writing a line of code! That’s amazing. Check out the model in common/models in the application directory.
 
 We have our model in LoopBack and now we’re ready to create the collection that will hold our data and populate it with some sample documents.
@@ -230,8 +232,8 @@ You’ll see that even though we didn’t provide an id or revision, ArangoDB au
 We can get individual documents by using the id that the connector created for us.
 
 ```js
-> $ curl http://127.0.0.1:3000/api/businesses/12388685741 
-                                                                                            
+> $ curl http://127.0.0.1:3000/api/businesses/12388685741
+
 {"id":"12388685741","isActive":true,"company":"DEEPENDS","email":"chambershogan@deepends.com","address":"643 Minna Street, Lydia, Minnesota, 4426","latitude":-20.366389,"longitude":129.676139,"_rev":"12388685741"}%
 ```
 
@@ -241,7 +243,7 @@ The connector supports numerous [where filters](http://docs.strongloop.com/displ
 
 ```js
 > $ curl -g http://127.0.0.1:3000/api/businesses\?filter\[where\]\[company\]\=DEEPENDS  
-                                                           
+
 [{"id":"12388685741","isActive":true,"company":"DEEPENDS","email":"chambershogan@deepends.com","address":"643 Minna Street, Lydia, Minnesota, 4426","latitude":-20.366389,"longitude":129.676139,"_rev":"12388685741"}]%
 ```
 
@@ -258,7 +260,7 @@ We can also use other filters with the connector such as [limi](http://docs.stro
 
 ```js
 > $ curl -g http://localhost:3000/api/businesses\?filter\[limit\]\=1   
-                                                                            
+
 [{"id":"12388685741","isActive":true,"company":"DEEPENDS","email":"chambershogan@deepends.com","address":"643 Minna Street, Lydia, Minnesota, 4426","latitude":-20.366389,"longitude":129.676139,"_rev":"12388685741"}]%
 ```
 
@@ -276,7 +278,7 @@ Creating a document is as simple as sending a POST request to the business endpo
 
 ```js
 > $ curl -H "Content-Type: application/json" -X POST -d '{"company": "DUFFCON"}' http://localhost:3000/api/businesses   
-                          
+
 {"id":"12648863661","company":"DUFFCON"}%
 ```
 
@@ -284,7 +286,7 @@ If we need to update the document, a call to `PUT /business/id` will take care o
 
 ```js
 > $ curl -H "Content-Type: application/json" -X PUT -d '{"isActive": true}' http://localhost:3000/api/businesses/12648863661    
-                   
+
 {"id":"12648863661","isActive":true,"company":"DUFFCON","_rev":"12648863661"}%
 ```
 
@@ -297,11 +299,11 @@ Now that we’ve taken a look at the LoopBack ArangoDB connector, let’s take a
 First, start Arc with `slc arc`, select &#8220;Profile&#8221; from the main menu and then click &#8220;Load&#8221; on the profile page.
 
 <img class="aligncenter size-full wp-image-24845" src="{{site.url}}/blog-assets/2015/05/arc-profiler.png" alt="arc-profiler" width="975" height="423"  />
-  
+
 Select &#8220;Heap Snapshot&#8221; and then click &#8220;Take Snapshot&#8221;. Wait a few seconds for the snapshot to build.
 
 <img class="aligncenter size-full wp-image-24846" src="{{site.url}}/blog-assets/2015/05/profiler-2.png" alt="profiler-2" width="975" height="407"  />
-  
+
 Select the snapshot created from the left-hand menu and type &#8220;ArangoDB&#8221; into the class filter box. Expand the ArangoDB class, datasource and models and you’ll see our business model.
 
 Diving too much further into Arc Profiler is beyond the scope of this tutorial, but you can read more about it right on the StrongLoop blog at Using [StrongLoop Arc to Profile Memory Leaks in SailsJS](https://strongloop.com/strongblog/node-js-strongloop-arc-sailsjs-to-profile-memory-leaks/). Wait, what? Sails? That’s right! One of the excellent things about Arc is that it works with any Node.js application.

@@ -9,7 +9,7 @@ categories:
   - How-To
   - LoopBack
 ---
-If you&#8217;ve been looking for a framework to help you get your REST APIs up and running quickly, with a robust set of functionality and flexibility, then the LoopBack Framework is what you want. This framework helps developers create APIs that integrate with legacy systems, Cloud APIs, while enabling micro service architectures, mobile services, and much more. A lot of this functionality can be easily managed either with the [slc command line tools](http://docs.strongloop.com/pages/viewpage.action?pageId=3834790) or the visual tool called [StrongLoop Arc](https://strongloop.com/node-js/arc/).
+If you&#8217;ve been looking for a framework to help you get your REST APIs up and running quickly, with a robust set of functionality and flexibility, then the LoopBack Framework is what you want. This framework helps developers create APIs that integrate with legacy systems, Cloud APIs, while enabling micro service architectures, mobile services, and much more. A lot of this functionality can be easily managed  with the [slc command line tools](http://docs.strongloop.com/pages/viewpage.action?pageId=3834790).
 
 In this post, I’ll show you how to build a simple self registration application using the Loopback framework with authentication and geolocation capabilities built-in. The application utilizes the following features of the LoopBack framework:
 

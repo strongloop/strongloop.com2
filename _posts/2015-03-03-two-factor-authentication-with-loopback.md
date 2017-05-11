@@ -31,7 +31,7 @@ So, without further ado, let’s see how we can extend the existing LoopBack Use
 
 The basic login process will change from a simple email and password form entry to a 2.5 step process:
 
-  1. User requests a two-factor code&#8230; 
+  1. User requests a two-factor code&#8230;
       * The user will enter their email and password, which will be verified.
       * The system will send a unique code to their mobile device.
   2. The user must enter that code into the UI to complete the “log in” process.
@@ -52,7 +52,7 @@ Here is our function for requesting a new two-factor, time-limited code. Note th
 var speakeasy = require('speakeasy');
 
 module.exports = function(Employee) {
-  
+
   Employee.requestCode = function(credentials, fn) {
     this.findOne({where: { email: credentials.email }}, function(err, user) {
       user.hasPassword(credentials.password, function(err, isMatch) {
@@ -60,9 +60,9 @@ module.exports = function(Employee) {
           // Note that you’ll want to change the secret to something a lot more secure!
           var code = speakeasy.totp({key: 'APP_SECRET' + credentials.email});
           console.log('Two factor code for ' + credentials.email + ': ' + code);
-          
+
           // [TODO] hook into your favorite SMS API and send your user their code!
-          
+
           fn(null, now);
         } else {
           var err = new Error('Sorry, but that email and password do not match!');
@@ -85,16 +85,16 @@ Employee.loginWithCode = function(credentials, fn) {
   var err = new Error('Sorry, but that verification code does not work!');
   err.statusCode = 401;
   err.code = 'LOGIN_FAILED';
-  
+
   this.findOne({ where: { email: credentials.email } }, function(err, user) {
     // And don’t forget to match this secret to the one in requestCode()
     var code = speakeasy.totp({key: 'APP_SECRET' + credentials.email});
-    
+
     if (code !== credentials.twofactor) {
       return fn(err);
     }
-    
-    // Everything looks good, so now we can create the access token, which 
+
+    // Everything looks good, so now we can create the access token, which
     // is used for all future API calls to authenticate the user.
     user.createAccessToken(86400, function(err, token) {
       if (err) return fn(err);
@@ -148,7 +148,7 @@ https.get(
 ```
 
 > ### Push Notifications
-> 
+>
 > _While it&#8217;s out of scope for this article, if SMS isn&#8217;t your thing and you&#8217;re already developing a native mobile application, you could also deliver the two-factor code using [LoopBack&#8217;s push notification component](http://docs.strongloop.com/display/public/LB/Push+notifications)!_
 
 That’s it for the server! At this point you could execute \`slc run\` and go to <http://localhost:3000/explorer> and see your new model and the custom remote methods. However, they aren’t very interesting without seeing them in action. So let’s build out a lightweight front end to see how everything fits together.
@@ -182,7 +182,7 @@ document
           alert('Your code is has been sent by SMS!');
         }
       });
-    
+
     } else {
       ajaxCall({
         url: '/api/Employees/loginWithCode',
@@ -190,9 +190,9 @@ document
         data: { email: emailFromForm, twofactor: codeFromForm },
         headers: { 'Content-Type': 'application/json' },
         success: function(data) {
-          
+
           alert('You have logged in!');
-          
+
           // The access token will be in the data for use with future API calls!
           console.log(data.id);
         }
@@ -212,17 +212,5 @@ You can access the [full example application code](https://github.com/strongloop
 That’s really it! With just a couple of remote methods we can turn a fresh LoopBack application into a secure, two-factor authenticated system. Of course, it’s important to know what the right authentication mechanism is for your application and users. Additionally, you’ll want to add proper access controls to all of your API methods. Check out the [tutorial on our documentation site](http://docs.strongloop.com/display/public/LB/Tutorial%3A+access+control) for more information on setting that up!
 
 > **Want More?**
-> 
+>
 > If this post only whet your appetite for more information on LoopBack, Access Control Layers, APIs, authentication, or even SMS via Node.js then hit me up on [Twitter (@jakerella)](http://twitter.com/jakerella)! Or just post a comment, let&#8217;s keep the discussion of security going!
-
-<div id="design-apis-arc" class="post-shortcode" style="clear:both;">
-  <h2>
-    <a href="http://strongloop.com/node-js/arc/"><strong>Develop APIs Visually with StrongLoop Arc</strong></a>
-  </h2>
-  
-  <p>
-    StrongLoop Arc is a graphical UI for the <a href="http://strongloop.com/node-js/api-platform/">StrongLoop API Platform</a>, which includes LoopBack, that complements the <a href="http://docs.strongloop.com/pages/viewpage.action?pageId=3834790">slc command line tools</a> for developing APIs quickly and getting them connected to data. Arc also includes tools for building, profiling and monitoring Node apps. It takes just a few simple steps to <a href="http://strongloop.com/get-started/">get started</a>!
-  </p>
-  
-  <img class="aligncenter size-large wp-image-21950" src="{{site.url}}/blog-assets/2014/12/Arc_Monitoring_Metrics-1030x593.jpg" alt="Arc_Monitoring_Metrics" width="1030" height="593" />
-</div>

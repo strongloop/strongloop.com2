@@ -91,7 +91,7 @@ In our case, since `tape` outputs TAP by default, the [test command] will be:
 tape test/*-test.js
 ```
 
-> If you are using `mocha`, it would look something like `_mocha -- -R tap \"test/*-test.js\"`
+If you are using `mocha`, it would look something like `_mocha -- -R tap \"test/*-test.js\"`
 
 Pulling it all together, we use the following `ci-test` script in the jenkins-example repo:
 
@@ -219,8 +219,6 @@ One of the struggles developers face when moving to Node.js is the lack of best 
 There are tools out there, but they are often not composable, are incomplete, or we just don’t agree with how they do things. StrongLoop&#8217;s Node.js core team members have created modular tooling  to solve these problems like [`strong-build`](http://docs.strongloop.com/display/SLC/slc+build), to package your application for deployment, and [`strong-deploy`](http://docs.strongloop.com/display/SLC/slc+deploy) to push your application packages to [`strong-pm`](http://docs.strongloop.com/display/SLC/slc+pm), the process manager that will manage your deployed applications.
 
 Check out the [production best practices ](http://strongloop.com/strongblog/node-js-deploy-production-best-practice/) blog by Sam Roberts.
-
-[Push button build and deploy](http://docs.strongloop.com/display/ARC/Build+and+Deploy) have also been featured in [StrongLoop Arc](http://strongloop.com/node-js/arc/), the graphical UI for end to end lifecycle management of Node.js applications and APIs.
 
 [<img class="aligncenter size-large wp-image-21570" src="{{site.url}}/blog-assets/2014/12/Build_Deploy-1030x528.jpg" alt="Build_Deploy" width="1030" height="528"  />]({{site.url}}/blog-assets/2014/12/Build_Deploy.jpg)
 

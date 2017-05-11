@@ -20,9 +20,9 @@ Enter [strong-pm](https://github.com/strongloop/strong-pm)! But first&#8230; How
 
 StrongLoop has developed a pretty cool solution consisting of three separate modules, each one doing its own thing to give you a smooth build/deploy/run workflow out of the box.
 
-  * <span style="font-size: 18px;"><a href="https://github.com/strongloop/strong-build">strong-build</a> &#8211; creates a build artifact for your project (GIT repo or otherwise).</span>
-  * <span style="font-size: 18px;"><a href="https://github.com/strongloop/strong-deploy">strong-deploy</a> &#8211; sends the build artifact prepared by strong-build to a running instance of strong-pm.</span>
-  * <span style="font-size: 18px;"><a href="https://github.com/strongloop/strong-pm">strong-pm</a> &#8211; receives the build artifact and runs it locally guaranteeing uptime.</span>
+  * <a href="https://github.com/strongloop/strong-build">strong-build</a> &#8211; creates a build artifact for your project (GIT repo or otherwise).
+  * <a href="https://github.com/strongloop/strong-deploy">strong-deploy</a> &#8211; sends the build artifact prepared by strong-build to a running instance of strong-pm.
+  * <a href="https://github.com/strongloop/strong-pm">strong-pm</a> &#8211; receives the build artifact and runs it locally guaranteeing uptime.
 
 Let’s look at each one in some detail to get a better understanding of the work involved at each step. For full technical documentation please visit the GitHub pages linked to above.
 
@@ -32,9 +32,9 @@ Let’s look at each one in some detail to get a better understanding of the wor
 
 strong-build is the first of two steps on the path to making your deployment life easier. Here’s what it does:
 
-  * <span style="font-size: 18px;">Installs dependencies, runs custom build steps, and prunes development dependencies, all without affecting your existing source tree.</span>
-  * <span style="font-size: 18px;">Modifies the npm `package.json` and `.npmignore` configuration files so that dependencies will be packed.</span>
-  * <span style="font-size: 18px;">Creates an npm package of the build or commits the build onto a GIT `deploy` branch (based on the chosen settings).</span>
+  * Installs dependencies, runs custom build steps, and prunes development dependencies, all without affecting your existing source tree.
+  * Modifies the npm `package.json` and `.npmignore` configuration files so that dependencies will be packed.
+  * Creates an npm package of the build or commits the build onto a GIT `deploy` branch (based on the chosen settings).
 
 Of course all options here (as well as other modules) are fully configurable. Each step can be executed via an individual command and running strong-build kicks them all off in sequence: \`install\`, \`bundle\`, \`pack\` and \`commit\`. In the end you will either have a GIT \`deploy\` branch or a TAR file ready to be sent over to the target machine.
 
@@ -54,34 +54,11 @@ When restarting an already running application, strong-pm will try to gracefully
 
 On the server:
 
-  * <span style="font-size: 18px;">Install strong-pm as a system service using the bundled `sl-pm-install` command (see `sl-pm-install &#8211;help` for available options). 
-    
-    <li>
-      <span style="font-size: 18px;">Start the service.</li> </ul> 
-      
-      <p>
-        On the build machine:
-      </p>
-      
-      <ul>
-        <li>
-          <span style="font-size: 18px;">Run strong-build to generate a build artifact.</li> 
-          
-          <li>
-            <span style="font-size: 18px;">Run strong-deploy to send the artifact over to the running strong-pm instance.</li> </ul> 
-            
-            <h2>
-              <strong>What Else?</strong>
-            </h2>
-            
-            <p>
-              <img class="aligncenter size-large wp-image-23274" src="{{site.url}}/blog-assets/2014/12/API_Compose-1030x587.jpg" alt="API_Compose" width="1030" height="587"  />
-            </p>
-            
-            <p>
-              &nbsp;
-            </p>
-            
-            <p>
-              All StrongLoop tools are open source and are built to be fully functional as stand alone pieces to easily integrate into your existing system. At the same time <a href="https://github.com/strongloop/strong-arc">StrongLoop Arc</a> is an enterprise grade front end to StrongLoop products including the <a href="http://loopback.io/">LoopBack</a> framework and all the devops features. StrongLoop Arc lets you visualize and control instances on top of making it easier to develop APIs and manage Node.js applications.
-            </p>
+Install strong-pm as a system service using the bundled `sl-pm-install` command (see `sl-pm-install &#8211;help` for available options).
+
+Start the service.
+
+On the build machine:
+
+- Run strong-build to generate a build artifact.
+- Run strong-deploy to send the artifact over to the running strong-pm instance.
