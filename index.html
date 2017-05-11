@@ -1,9 +1,48 @@
 ---
 layout: page
+title: Open-source solutions for the API developer community
 permalink: /
 ---
+<section class="c-section x-white">
+  <div class="c-container -padded">
+
+    <!-- <h1 class="c-heading -h2"></h1> -->
+    <div class="c-grid">
+      <div class="_col -col-1-1">
+        <p>StongLoop began in 2013 offering an open-source enterprise version of Node.js. Acquired by IBM in 2015, the StrongLoop team continues to build LoopBack, the open-source Node.js API Framework. IBM continues to contribute and support the StrongLoop community through these projects that provide key technologies for the API economy:</p>
+      </div>
+
+    {% include tile.html
+      link ="loopback"
+      image="loopback-logo-sm.png" image-width="100px"
+      blurb="Highly-extensible, open-source Node.js framework ideal for APIs." %}
+
+    {% include tile.html
+      link ="mg" image="MicroGatewayArchitecture.png" image-width="200px"
+      blurb="Developer-focused, extensible Node.js gateway framework." %}
+
+    {% include tile.html
+      link ="openapi"
+      image="OpenAPI_Pantone.png" image-width="200px"
+      blurb="<br/>Vendor-neutral, open, portable API description based on the Swagger specification." %}
+
+    </div>
+  </div>
+  <!-- <div style="height: 50px;"> -->
+</section>
+
+<section class="c-section x-lightgrey">
+  <div class="c-container -padded">
+
+    <div class="_col -col-1-1">
+      <p><a class="no_icon" href="{{site.url}}/newsletter">Subscribe to our newsletter</a> for the latest information on these open source projects, and notice of events where you can learn more and see them in action.</p>
+      <p>For more open-source project in which IBM participates, see <a href="http://developer.ibm.com/opentech/">IBM OpenTech</a>.</p>
+    </div>
+  </div>
+</section>
+
 <section class="c-section x-green">
-  <div class="c-container -padded-bottom">
+  <div class="c-container -padded">
     <p class="learn-more x-center"><a href="{{site.url}}/newsletter" class="no_icon c-button -lg x-center">Get Newsletter</a></p>
   </div>
 
@@ -18,45 +57,10 @@ permalink: /
   </div>
 </section>
 
-<section class="c-section x-white">
-  <div class="c-container">
-
-    <h1 class="c-heading -h2">Supporting the open-source community</h1>
-
-    <p>StongLoop began in 2013 offering an open-source enterprise version of Node.js. Acquired by IBM in 2015, the StrongLoop team continues to build LoopBack, the open-source Node.js API Framework. IBM continues to contribute and support the StrongLoop community.</p>
-    <p>Projects include:</p>
-
-    <div class="c-grid">
-    {% include tile.html
-      link ="loopback"
-      image="loopback-logo-sm.png" image-width="100px"
-      blurb="Highly-extensible, open-source Node.js framework ideal for APIs." %}
-
-    {% include tile.html
-      link ="mg" image="MicroGatewayArchitecture.png" image-width="200px"
-      blurb="Developer-focused, extensible Node.js gateway framework for enforcing access to microservices and APIs." %}
-
-    {% include tile.html
-      link ="openapi"
-      image="OpenAPI_Pantone.png" image-width="200px"
-      blurb="<br/>Vendor-neutral, open, portable API description based on the Swagger specification." %}
-    </div>
-  </div>
-  <div style="height: 50px;">
-</section>
-
-<section class="c-section x-green">
-  <div class="c-container -padded-bottom">
-    <div class="c-grid">
-      <div class="_col -col-4-5">
-        <h2 class="c-heading -h2">Latest Blog Posts</h2>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="c-section x-white" >
-  <div class="c-container">
+  <div class="c-container -padded-top">
+    <h2 class="c-heading -h3">Latest Blog Posts</h2>
+
     <div class="c-grid">
     {% for post in site.posts limit:3 %}
     <div class="_col -col-1-3">
@@ -73,4 +77,3 @@ permalink: /
       </div>
     </div>
 </section>
-<!-- <img class="blog-icon" src="{{site.url}}/blog-assets/2013/07/sl_nr_icons_1.png"/> -->
