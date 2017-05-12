@@ -187,11 +187,20 @@ To add a new blog author:
     ---
     layout: author
     author: '<Author Name>'
+    gitbhub_id: <your_github_id>
     permalink: /authors/<Author_Name>
     ---
 ```
 Where the value of:
 - `author` matches the entry in `authors.yml`.
 - `permalink` is `/authors/<Author_Name>` by convention, with spaces in author name converted to underscores.
+- `github_id` is the author's GitHub ID (optional).  If provided, the author's GitHub avatar will be displayed.
 
 The content of this page should be the author's biography information.  In addition to any content, the author page lists all blogs by that author.
+
+### How to add your bio to your author page
+
+Once you have an author page as described above, you should add some biographical information about yourself.
+Simply edit your author page in `/pages/authors`, and add any markdown you wish.  
+
+If you don't want to upload and include your own picture, just add your GitHub ID as the value of the `github_id` property in the front-matter. Then your GitHub avatar will automatically be displayed on your author page.  This is entirely optional, though.

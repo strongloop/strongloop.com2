@@ -12,9 +12,14 @@ layout: default
   <section class="c-section x-white">
     <div class="c-container -padded">
       <div class="c-grid">
+        {% if page.github_id %}
+          <div class="_col -col-1-3">
+            <img style="max-width: 200px;" src="https://github.com/{{page.github_id}}.png" />
+            <p><a href="https://github.com/{{page.github_id}}">@{{page.github_id}}</a> on GitHub</p>
+          </div>
+        {% endif %}
         <div class="_col -col-2-3">
           {% assign bio = content | strip_newlines %}
-
           {% if bio != '' %}
             {{content}}
           {% else %}
