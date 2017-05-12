@@ -24,7 +24,7 @@ All through these developments, we continued to engage the Node.js community. We
 
 Moving forward, this site will focus on open-source solutions for the API developer community. With that in mind, we will zero in on:
 
-[LoopBack](http://loopback.io/), [API Microgateway](https://github.com/strongloop/microgateway), and [Open API Initiative](https://www.openapis.org/)- three key Open-source technologies for API creation. 
+[LoopBack](http://loopback.io/), [API Microgateway](https://github.com/strongloop/microgateway), and [Open API Initiative](https://www.openapis.org/) - three key Open-source technologies for API creation. 
 
 Events. The StrongLoop team will continue to sponsor and attend events because these are important to us and the community. This includes meetups, informative webinars, and developer conferences. We'll provide a list so you know where to find us!
 
