@@ -830,7 +830,7 @@ For printing
   min-height: 240px;
   font-weight: 400;
   text-align: justify;
-  /* font-size: 110%; */
+  font-size: 110%;
 }
 
 .tile-img {
@@ -893,6 +893,16 @@ div.post-content h4 {
 .breadcrumb {
   padding: 20px 0 0 3rem;
   font-size: 85%;
+}
+
+.breadcrumb a, .x-green a, .post-meta a {
+  color: #daefc3;
+}
+
+.breadcrumb a:hover, .breadcrumb a:focus,
+.x-green a:hover, .x-green a:focus,
+.post-meta a:hover, .post-meta a:focus {
+  color: #f3faeb;
 }
 
 /* Newsletter */

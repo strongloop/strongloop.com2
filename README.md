@@ -12,7 +12,9 @@
   - [How to add a blog post](#how-to-add-a-blog-post)
   - [How to redirect a blog post](#how-to-redirect-a-blog-post)
   - [How to add a blog category](#how-to-add-a-blog-category)
+  - [How to add an event](#how-to-add-an-event)
   - [How to add an author page](#how-to-add-an-author-page)
+  - [How to add your bio to your author page](#how-to-add-your-bio-to-your-author-page)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -177,6 +179,11 @@ To add a new blog category:
 Where:
 - `<Category-Name>` matches the entry in `tags.yml`.
 - `permalink` is `strongblog/tag_<tagname>.html` by convention, with spaces converted to underscores.
+
+### How to add an event
+
+Events are shown in a table, which is in `pages/events_table.html`.
+To add an event to the events table, simply add a new row to the HTML table in that page snippet.
 
 ### How to add an author page
 

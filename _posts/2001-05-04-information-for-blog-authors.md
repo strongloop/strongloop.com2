@@ -28,6 +28,9 @@ Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit number
 and `title` is the post title, in lowercase, with spaces converted to dashes.
 For example, this post's file name is `2001-05-04-information-for-blog-authors.md`.
 
+If a post's date is in the future, it won't show up in the list of latest blogs on
+the main blog page nor in the blog archive page of all blog posts.
+
 {% include note.html content="This post has a fictitious (old) date so it
 doesn't show up on the front page or strongblog page and appears last in lists by
 category and author.
