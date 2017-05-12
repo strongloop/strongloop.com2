@@ -473,6 +473,9 @@ li > dl {
     margin: 0;
     list-style-type: none;
 }
+.c-footer ._nav ._nav-list ._nav-item.no-foot{
+    display: none;
+}
 
 @media (max-width:568px) {
     .c-footer ._nav ._nav-list {

@@ -910,3 +910,7 @@ div.post-content h4 {
 #mc_embed_signup_scroll h2 {
   padding-top: 0;
 }
+/* Restrict post image width on archive */
+.c-container .excerpt img{
+  max-width: 100%;
+}
