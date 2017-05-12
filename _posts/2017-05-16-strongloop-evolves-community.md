@@ -1,7 +1,7 @@
 ---
 layout: post
 title: StrongLoop Evolves to Promote Open-Source Solutions for the API Developer Community
-date: 2017-05-12
+date: 2017-05-16
 author: Dave Whiteley
 permalink: /strongblog/strongLoop-evolves-to-promote-open-source-solutions-for-the-api-developer-community
 categories:
@@ -22,9 +22,9 @@ All through these developments, we continued to engage the Node.js community. We
 
 ## Supporting the Open Source API Developer Community
 
-This site will focus on open-source solutions for the API developer community. With that in mind, we will zero in on:
+Moving forward, this site will focus on open-source solutions for the API developer community. With that in mind, we will zero in on:
 
-LoopBack, API Microgateway, and Open API Initiative - three key Open-source technologies for API creation. 
+[LoopBack](http://loopback.io/), [API Microgateway](https://github.com/strongloop/microgateway), and [Open API Initiative](https://www.openapis.org/)- three key Open-source technologies for API creation. 
 
 Events. The StrongLoop team will continue to sponsor and attend events because these are important to us and the community. This includes meetups, informative webinars, and developer conferences. We'll provide a list so you know where to find us!
 
@@ -34,18 +34,14 @@ StrongLoop newsletter. Each month we will email a summary of articles, news and 
 
 ## The Future
 
-We are excited to refocus on the community and streamline our website to further hone our community focus. If there are any open source solutions or events you think we should know about, let us know at: 
+We are excited about our new focus on these technologies for creating APIs and the Open Source developer communities that builds them. We plan to continue to deliver relevant content to help you be part of the API economy.
 
 ## What Next?
 
-- Read about LoopBack.next
-- Learn more about Open API Spec
-- Discover Microgateway
-- Check out events
-- Follow us on Twitter
-- Like us on Facebook
-- Join our LinkedIn Developers Community Group to discuss your own Open Source projects.
+- Read about planned changes to [LoopBack](https://strongloop.com/strongblog/announcing-loopback-next/).
+- Follow us on [Twitter](https://twitter.com/StrongLoop).
+- Like us on [Facebook](https://www.facebook.com/strongloop/).
+- Join our StrongLoop Developers Community Group on [LinkedIn](https://www.linkedin.com/groups/5046525) to discuss Open Source projects.
 
-> Something like continue ot give you great / relevant / latest content ? Keeping in mind that we really don't offer a discussion community here
 
  
