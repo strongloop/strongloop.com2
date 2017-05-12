@@ -1,7 +1,8 @@
 {% for post in site.posts limit:include.number %}
 
   <h4 class="c-heading -h3"><a class="no_icon" href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h4>
-  <p class="author"> by {{ post.author }} - {{ post.date | date: "%b %-d, %Y" }}</p>
+  <p class="author"> by <a class="no_icon" href="{{site.url}}/authors/{{ post.author | replace: " ", "_" | replace: ".", "_" }}">{{post.author}}</a>
+    {{ post.date | date: "%b %-d, %Y" }}</p>
   <div class="excerpt">
     {{post.excerpt}}
     <p><a class="no_icon" href="{{site.url}}{{ post.url }}">More...</a>

@@ -16,6 +16,8 @@ This site now supports blogs authored in markdown format.
 
 ## File name
 
+All blog posts go in the `_posts` directory in the GitHub repository.
+
 Jekyll requires blog post file names to have the following format:
 
 ```
