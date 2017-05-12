@@ -33,7 +33,7 @@ Woot! (Again!) But we&#8217;re not quite done yet. How do we know when to stop p
 
 So by simply making an HTTP GET request to /api/people/count, you&#8217;ll get the response back in a simple JSON object: {&#8220;count&#8221;:5000}.
 
-## **Making a Demo** {.graf--h3}
+## **Making a Demo** 
 
 Alright, so let&#8217;s put this together in an incredibly simple demo application. I began with a simple view:
 
@@ -136,7 +136,7 @@ This file is a bit more complex, but still relatively simple. We do a quick call
 
 You can find this complete demo and LoopBack application up on my epic GitHub repo: <https://github.com/cfjedimaster/StrongLoopDemos/tree/master/superlongscroll>
 
-## **One last thing** {.graf--h3}
+## **One last thing** 
 
 So as a quick FYI &#8211; what if you were worried about people trying to fetch all of your data? That could be a performance drain on your server. Luckily LoopBack provides a quick way to handle that. A few days ago, Alex [blogged about remote hooks](https://strongloop.com/strongblog/applying-custom-logic-in-phases-using-remote-hooks-in-loopback/). Remote hooks are a way to apply logic to the REST calls of your API. In our case, we can listen for calls to &#8220;find&#8221; data and look to see if a limit was applied. Here is the entirety of the logic.
 
@@ -157,7 +157,7 @@ module.exports = function(Person) {
 
 That&#8217;s it! The number 10 was chosen arbitrarily &#8211; you can use whatever makes sense for you.
 
-## **One more last thing** {.graf--h3}
+## **One more last thing** 
 
 Ok, I lied, we aren&#8217;t quite done yet. I just discovered an interesting feature of LoopBack called [Scopes](https://docs.strongloop.com/display/public/LB/Model+definition+JSON+file#ModeldefinitionJSONfile-Scopes). Scopes allow you to define aliases for queries. So for example, I could actually make a scope for &#8216;page2&#8217; that implied a limit of 10 and a skip of 10 as well. You can also supply a \*default\* scope and correct the issue we mentioned above, setting a default limit. It would look like this in the model JSON file:
 

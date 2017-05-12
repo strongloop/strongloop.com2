@@ -15,11 +15,11 @@ Managing Loopback configuration files for multiple environments can be a hassle.
 
 Advantages of using environment variables for configuration management include:
 
-  * Enables decoupling of named environment groups and provides more granular control (for example, staging, production, development). 
+  * Enables decoupling of named environment groups and provides more granular control (for example, staging, production, development).
       * With the named groups approach, when a project grows, you may end up having multiple sets of configurations in each of deployment, which can slowly become messy.
-  * Avoids leakage of credentials; because environment variables are per-deployment, it lowers the chance of someone accidentally committing their credentials to a codebase. 
+  * Avoids leakage of credentials; because environment variables are per-deployment, it lowers the chance of someone accidentally committing their credentials to a codebase.
       * Having environment independent of the codebase also helps to enforce separation between codebase and configurations.
-  * Makes it easy to work with cloud platforms such as Bluemix and Heroku. 
+  * Makes it easy to work with cloud platforms such as Bluemix and Heroku.
       * Modern cloud platforms often provide tools to assist with environment variable management (for example,foreman, internal settings)
       * There are multiple ways to set environment variables.
   * Eliminates maintaining many sets of configuration files.
@@ -66,152 +66,15 @@ In the event both the connection-string and the default credentials (host, port,
 
 The following table provides details of the connection-string format for each LoopBack connector.
 
-<table style="width:auto;margin:0">
-  <tr>
-    <td>
-      <b>Data source</b>
-    </td>
-    
-    <td>
-      <b>Property</b>
-    </td>
-    
-    <td>
-      <b>Connection String Format</b>
-    </td>
-    
-    <td>
-      <b>Notes</b>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      DB2
-    </td>
-    
-    <td>
-      dsn
-    </td>
-    
-    <td>
-      DATABASE=<database>;HOSTNAME=<host>;PORT=<port>;PROTOCOL=TCPIP;UID=<uid>;PWD=<pwd>
-    </td>
-    
-    <td>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Cloudant
-    </td>
-    
-    <td>
-      url
-    </td>
-    
-    <td>
-      https://<username>:<password>@<host>
-    </td>
-    
-    <td>
-      The url property does not override the field database. You still must specify database.
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Mongodb
-    </td>
-    
-    <td>
-      url
-    </td>
-    
-    <td>
-      mongodb://<username>:<password>@<host>:<port>/<database>
-    </td>
-    
-    <td>
-      Credentials are converted to aurl to initiate connection.
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      MySQL
-    </td>
-    
-    <td>
-      url
-    </td>
-    
-    <td>
-      mysql://<username>:<password>@<host>/<database>?<option_name>=<opt_value>
-    </td>
-    
-    <td>
-      See <a href="https://github.com/felixge/node-mysql#connection-options">MySQL url format</a> for details.
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      PostgreSQL
-    </td>
-    
-    <td>
-      url
-    </td>
-    
-    <td>
-      postgres://<username>:<password>@<host>/<database>
-    </td>
-    
-    <td>
-      See <a href="https://github.com/brianc/node-postgres#client-pooling">PostgreSQL url format</a> for details.
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      MSSQL
-    </td>
-    
-    <td>
-      url
-    </td>
-    
-    <td>
-      mssql://<username>:<password>@<host>:<port>/<database>?<option_name>=<opt_value>
-    </td>
-    
-    <td>
-      See <a href="https://github.com/patriksimek/node-mssql#formats">MsSQL url format</a> for details.
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      Oracle
-    </td>
-    
-    <td>
-      tns
-    </td>
-    
-    <td>
-      DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=<host>)(PORT=<port>))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=<database>))
-    </td>
-    
-    <td>
-      You must also provide tns, userand password. See <a href="https://github.com/joeferner/node-oracle#alternative-connection-using-tns">Oracle connection using tns</a> for details.
-    </td>
-  </tr>
-</table>
-
-&nbsp;
+| **Data source** | **Property** | **Connection String Format** | **Notes** |
+| --- | --- | --- | --- |
+| DB2 | dsn | `DATABASE=<database>;HOSTNAME=<host>;PORT=<port>;PROTOCOL=TCPIP;UID=<uid>;PWD=</uid></port></host></database>` |
+| Cloudant | url | `https://<username>:<password>@</password></username>` | The url property does not override the field database. You still must specify database. |
+| Mongodb | url | `mongodb://<username>:<password>@<host>:<port>/<database></database></port></host></password></username>` | Credentials are converted to aurl to initiate connection. |
+| MySQL | url | `mysql://<username>:<password>@<host>/<database>?<option_name>=<opt_value></opt_value></option_name></database></host></password></username>` | See [MySQL url format](https://github.com/felixge/node-mysql#connection-options) for details. |
+| PostgreSQL | url | `postgres://<username>:<password>@<host>/<database></database></host></password></username>` | See [PostgreSQL url format](https://github.com/brianc/node-postgres#client-pooling) for details. |
+| MSSQL | url | `mssql://<username>:<password>@<host>:<port>/<database>?<option_name>=<opt_value></opt_value></option_name></database></port></host></password></username>` | See [MsSQL url format](https://github.com/patriksimek/node-mssql#formats) for details. |
+| Oracle | tns | `DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=<host>)(PORT=<port>))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=<database>))</database></port></host>` | You must also provide tns, userand password. See [Oracle connection using tns](https://github.com/joeferner/node-oracle#alternative-connection-using-tns) for details. |
 
 ### Extending dynamic configurations to datasources.json
 

@@ -155,16 +155,12 @@ Here&#8217;s the model definition created in `pet.json`:
   "acls": [],
   "methods": {}
 }
-
 ```
 
 Here&#8217;s a video demonstrating what I&#8217;ve shown.
 
-
-
 Finally, here are the docs for both generating and consuming Swagger:
-
-  * <https://docs.strongloop.com/display/LB/Swagger+generator>
-  * <https://docs.strongloop.com/display/LB/API+definition+generator>
+- [Swagger generator](https://loopback.io/doc/en/lb3/Swagger-generator.html)
+- [API definition generator](https://loopback.io/doc/en/lb3/API-definition-generator.html)
 
 Hopefully this helps you understand how to generate Swagger from your LoopBack application.

@@ -16,14 +16,14 @@ There was a lot to learn at this year&#8217;s NINA — if you missed a few sessi
 **Diversity**
 
 First off, diversity was a first-class citizen at NINA—well before the conference, [Tracy Hinds](https://twitter.com/HackyGoLucky), the education community manager of the Node.js Foundation, [shared a long post on Medium](https://medium.com/@nodejs/working-towards-a-safer-inclusive-event-node-js-interactive-north-america-808edcd771f7#.ncnwk0ere) outlining the community&#8217;s commitment to a safe, inclusive, respectful, and enjoyable event for all. Tuesday kicked off bright and early with the Diversity Coffee Talk (sponsored by IBM and Intel):
-  
+
 <!--more-->
 
 <blockquote class="twitter-tweet" data-width="550">
   <p lang="en" dir="ltr">
     Packed house for diversity coffee talk at <a href="https://twitter.com/hashtag/NodeInteractive?src=hash">#NodeInteractive</a> happy to join forces with <a href="https://twitter.com/hashtag/Intel?src=hash">#Intel</a> <a href="https://t.co/7K8sM1OqoG">pic.twitter.com/7K8sM1OqoG</a>
   </p>
-  
+
   <p>
     &mdash; Ashley Brisco (@abrisco1999) <a href="https://twitter.com/abrisco1999/status/803605176259121152">November 29, 2016</a>
   </p>
@@ -43,7 +43,7 @@ Several speakers talked eloquently about the joys of contributing to Node—wart
   <p lang="en" dir="ltr">
     .<a href="https://twitter.com/williamkapke">@williamkapke</a>'s tips for contributing: don't assume you're right, offer solutions, be patient, persistent & ok w scrutiny <a href="https://twitter.com/hashtag/NodeInteractive?src=hash">#NodeInteractive</a> <a href="https://t.co/74nfxWdhql">pic.twitter.com/74nfxWdhql</a>
   </p>
-  
+
   <p>
     &mdash; Beth Qiang (@BethQiang) <a href="https://twitter.com/BethQiang/status/803636045451554816">November 29, 2016</a>
   </p>
@@ -57,7 +57,7 @@ Several speakers talked eloquently about the joys of contributing to Node—wart
   <p lang="en" dir="ltr">
     Good chat by <a href="https://twitter.com/trott">@trott</a> about getting your feet wet in Node.js core at <a href="https://twitter.com/hashtag/NodeInteractive?src=hash">#NodeInteractive</a> . Check out <a href="https://twitter.com/NodeTodo">@NodeTodo</a> !
   </p>
-  
+
   <p>
     &mdash; Wes Tyler (@westyler1) <a href="https://twitter.com/westyler1/status/803652128849817600">November 29, 2016</a>
   </p>
@@ -71,7 +71,7 @@ We also got a thorough [&#8220;State of the Union&#8221; for Express](https://w
   <p lang="en" dir="ltr">
     <a href="https://twitter.com/hashtag/NodeInteractive?src=hash">#NodeInteractive</a> Express 5 roadmap <a href="https://t.co/7edCuHYOsw">pic.twitter.com/7edCuHYOsw</a>
   </p>
-  
+
   <p>
     &mdash; Diana Lozano (@bossigner) <a href="https://twitter.com/bossigner/status/803637618327990277">November 29, 2016</a>
   </p>
@@ -85,7 +85,7 @@ And IBM&#8217;s [Rand McKinney](https://twitter.com/randmckinney/) talked about 
   <p lang="en" dir="ltr">
     My Node Interactive presentation &#8211; "Beyond the README: Creating Effective Documentation" &#8230; <a href="https://t.co/tLiei4zACC">https://t.co/tLiei4zACC</a> via <a href="https://twitter.com/YouTube">@YouTube</a>
   </p>
-  
+
   <p>
     &mdash; Rand Mckinney (@randmckinney) <a href="https://twitter.com/randmckinney/status/806207973554933760">December 6, 2016</a>
   </p>
@@ -101,7 +101,7 @@ If you&#8217;re still trying to convince your boss that Node is an enterprise-re
   <p lang="en" dir="ltr">
     <a href="https://twitter.com/hashtag/NodeInteractive?src=hash">#NodeInteractive</a>: What key enterprise names using <a href="https://twitter.com/nodejs">@Nodejs</a> are missing from the slide below? <a href="https://t.co/3PRS9Ui45O">pic.twitter.com/3PRS9Ui45O</a>
   </p>
-  
+
   <p>
     &mdash; Gaurav Seth (@gauravseth) <a href="https://twitter.com/gauravseth/status/803626348971368448">November 29, 2016</a>
   </p>
@@ -121,7 +121,7 @@ Additionally, IBM&#8217;s [Sam Roberts](https://twitter.com/octetcloud) gave a [
   <p lang="en" dir="ltr">
     Node exits when it no longer has any events to wait for, at which point the loop must complete. <a href="https://twitter.com/octetcloud">@octetcloud</a> at <a href="https://twitter.com/hashtag/NodeInteractive?src=hash">#NodeInteractive</a> <a href="https://t.co/el2MyjhXJy">pic.twitter.com/el2MyjhXJy</a>
   </p>
-  
+
   <p>
     &mdash; StrongLoop (<a class='bp-suggestions-mention' href='https://strongloop.com/members/strongloop/' rel='nofollow'>@StrongLoop</a>) <a href="https://twitter.com/StrongLoop/status/803980044016226304">November 30, 2016</a>
   </p>
@@ -137,7 +137,7 @@ NINA2016  is where I first encountered the acronym JIFASNIF: _JavaScript is fu
   <p lang="en" dir="ltr">
     I like the just plain weird bots myself <a href="https://twitter.com/hashtag/botALLY?src=hash">#botALLY</a> <a href="https://twitter.com/hashtag/NodeInteractive?src=hash">#NodeInteractive</a> via <a href="https://twitter.com/ohhoe">@ohhoe</a> <a href="https://t.co/GI3RIDPYsn">pic.twitter.com/GI3RIDPYsn</a>
   </p>
-  
+
   <p>
     &mdash; Erin McKean (<a class='bp-suggestions-mention' href='https://strongloop.com/members/emckean/' rel='nofollow'>@emckean</a>) <a href="https://twitter.com/emckean/status/803660951866048512">November 29, 2016</a>
   </p>
@@ -155,7 +155,7 @@ And of course, there was a booth crawl:
   <p lang="en" dir="ltr">
     The booth crawl has begun! <a href="https://twitter.com/hashtag/NodeInteractive?src=hash">#NodeInteractive</a> <a href="https://t.co/Nzz4JnFRDQ">pic.twitter.com/Nzz4JnFRDQ</a>
   </p>
-  
+
   <p>
     &mdash; StrongLoop (<a class='bp-suggestions-mention' href='https://strongloop.com/members/strongloop/' rel='nofollow'>@StrongLoop</a>) <a href="https://twitter.com/StrongLoop/status/803743959541579776">November 29, 2016</a>
   </p>
@@ -167,9 +167,7 @@ There were the usual giveaways on hand (shoutout to Node Interactive for making 
 
 If you couldn&#8217;t get near the IBM booth, don&#8217;t worry—you can catch up on [CodeRally](http://www.infoq.com/coderally/?utm_source=infoq&utm_medium=Twitter&utm_campaign=11_25), [Eclair.js](https://eclairjs.github.io/), [IBM Graph](http://www-03.ibm.com/software/products/en/ibm-graph), [OpenWhisk](https://developer.ibm.com/openwhisk/), and of course, [Bluemix](http://www.ibm.com/bluemix), [APIConnect](https://developer.ibm.com/apiconnect/) and [LoopBack](http://loopback.io/)! (Any lack of ice cream you&#8217;ll have to handle on your own.)
 
-**The Conference Party and Beyond
-  
-** 
+## The Conference Party and Beyond
 
 Those who still had energy after the first day and booth crawl were rewarded with food, drink, and music at the Node Interactive Conference Party. The event was held at the Speakeasy, a fun venue that has a vintage bowling lane,  a photo booth to mark memories, and a view of Austin from the rooftop DJ lounge that was definitely something to enjoy!
 
@@ -179,14 +177,8 @@ There wasn&#8217;t really an after-party after day two (or at least not an offic
   <p lang="en" dir="ltr">
     Great turn out at <a href="https://twitter.com/hashtag/NodeInteractive?src=hash">#NodeInteractive</a> NA 2016 <a href="https://twitter.com/hashtag/codeandlearn?src=hash">#codeandlearn</a> ! <a href="https://t.co/Yfrl7EZqZb">pic.twitter.com/Yfrl7EZqZb</a>
   </p>
-  
+
   <p>
     &mdash; Javascript Stack (@javascriptstack) <a href="https://twitter.com/javascriptstack/status/804364570005565440">December 1, 2016</a>
   </p>
 </blockquote>
-
-
-
-&nbsp;
-
-What did you learn at NINA2016 that surprised or enthused you? Let us know!

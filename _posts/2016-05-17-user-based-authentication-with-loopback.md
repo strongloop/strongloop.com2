@@ -37,20 +37,18 @@ To create a new user in LoopBack, all we need to do is send the user&#8217;s det
 
 ```js
 curl -X POST http://localhost:3000/api/users -d '{"email": "fakeyemail@fakeyfake.com", "password": "SuperFakePassword"}'
-
 ```
 
 First, I&#8217;d like to note that every password strength tester I could find rated &#8216;SuperFakePassword&#8217; as strong or very strong, which I find very entertaining. Second, LoopBack uses [bcrypt](https://www.npmjs.com/package/bcrypt-nodejs) to encrypt the user&#8217;s password before it&#8217;s persisted to the datasource, so you get very strong encryption for free. Third, you&#8217;ve created a user without having to do anything other than stand up a LoopBack API and make a single HTTP request. Pretty easy, right?
 
 > ### Tip: Removing Email Requirement
-> 
+>
 > If you don&#8217;t want to require the email property, you can disable it by dropping this boot script into a file in `/server/boot/` of your project:
-> 
-> ```js
+
+```js
 module.exports = function(app) {
   delete app.models.User.validations.email;
 };
-
 ```
 
 ## Authentication and Authorization
@@ -63,7 +61,6 @@ To get a token for a user, all you have to do is send the user&#8217;s email and
 
 ```js
 curl -X POST http://localhost:3000/api/users/login -d '{"email": "fakeyemail@fakeyfake.com", "password": "SuperFakePassword"}'
-
 ```
 
 LoopBack will return a token in the `id` property of the response, as well as the token&#8217;s time to live in seconds, the creation timestamp, and the ID of the user record the token was issued to:
@@ -75,7 +72,6 @@ LoopBack will return a token in the `id` property of the response, as well as th
   "created": "2013-12-20T21:10:20.377Z",
   "userId": 1
 }
-
 ```
 
 ### Authentication
@@ -84,7 +80,6 @@ Now all you have to do is send the token in the `Authorization` header of your r
 
 ```js
 curl -X GET http://localhost:3000/api/someSecureStuff -H "Authorization: "
-
 ```
 
 LoopBack will automatically check that the token is valid, and evaluate its access to resources against any ACLs you&#8217;ve defined in your LoopBack app.
@@ -95,7 +90,6 @@ Once the user is ready to be logged out, send an HTTP request to the `/api/users
 
 ```js
 curl -X POST http://localhost:3000/api/users/logout -H "Authorization: "
-
 ```
 
 On success, this will return a response with a &#8216;204 No Content&#8217; status code.
@@ -115,7 +109,6 @@ module.exports = function (app) {
 	app.post('/login', function (req, res, next) {};
 	app.post('/logout', function (req, res, next) {}
 }
-
 ```
 
 ### Extending Login/Logout from the Built-in User Model
@@ -128,7 +121,7 @@ module.exports = function (app) {
 	var UserModel = app.models.User;
 
 	app.post('/login', function (req, res) {		
-		
+
 		//parse user credentials from request body
 		const userCredentials = {
 			"username": req.body.username,
@@ -148,7 +141,7 @@ module.exports = function (app) {
 				"timestamp": new Date.getTime(),
 				"action": "login"
 			});
-			
+
 			//transform response to only return the token and ttl
 			res.json({
 				"token": result.id,
@@ -176,7 +169,6 @@ module.exports = function (app) {
 		});		
 	});
 }
-
 ```
 
 ## What&#8217;s Next?

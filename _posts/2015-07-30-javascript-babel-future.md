@@ -52,7 +52,7 @@ categories:
   </p>
 </blockquote>
 
-## **Practically speaking: Developing with ES6 and beyond** {.graf--h3}
+## **Practically speaking: Developing with ES6 and beyond**
 
 <p class="graf--p">
   The remainder of this article will be a practical launching point if you haven’t used Babel before and perhaps fill in some gaps if you have. We will build a simple app to provide context. The final product is <a class="markup--anchor markup--p-anchor" href="https://github.com/strongloop-community/babel-example">located on GitHub</a>.
@@ -101,7 +101,7 @@ categories:
   Go ahead and create these files and directories. To create a <code>package.json</code> file quickly, just run <code>npm init -y</code>.
 </p>
 
-## **Installing dependencies** {.graf--h4}
+## **Installing dependencies**
 
 <p class="graf--p">
   Now let’s get our dependencies installed and saved. Run the following to install our development dependencies:
@@ -138,7 +138,7 @@ npm install babel-runtime -S
   The <code>babel-runtime</code> package allows us to require only the features we need when distributing our application without polluting the global scope.
 </p>
 
-## **Configuring Babel** {.graf--h4}
+## **Configuring Babel**
 
 <p class="graf--p">
   Let’s look at the <code>.babelrc</code> file next. Having a <code>.babelrc</code> file allows you to configure Babel in <em class="markup--em markup--p-em">one spot</em> in your project and it will work regardless how its run. Create a <code>.babelrc</code> file with the following content:
@@ -164,7 +164,7 @@ npm install babel-runtime -S
   </li>
 </ol>
 
-## **Building our application** {.graf--h4}
+## **Building our application**
 
 <p class="graf--p">
   Now that we have Babel configured, let’s write some code! First, set up the root <code>index.js</code> file for development purposes with the following code:
@@ -247,7 +247,7 @@ time for bed wavded.local
   Now that we have an application to play with, let’s look at a few more tools you likely use in day-to-day development and how they translate when using Babel.
 </p>
 
-## **Testing Babel code** {.graf--h4}
+## **Testing Babel code**
 
 <p class="graf--p">
   Let’s add a test for our <code>sleep</code> utility we developed in the last section. Inside <code>modules/utils/__tests__/sleep-test.js</code> let’s add the following:
@@ -303,7 +303,7 @@ ok 1 takes about 20 seconds
   Groovy. We can use Babel for tests as well as application code.
 </p>
 
-## **Linting Babel** {.graf--h4}
+## **Linting Babel**
 
 <p class="graf--p">
   Let’s turn to our <code>.eslintrc</code> file next and add the following:
@@ -361,7 +361,7 @@ npm run lint
   Which will give us no output currently as there aren’t any linting errors.
 </p>
 
-## **Running Babel in production** {.graf--h4}
+## **Running Babel in production**
 
 <p class="graf--p">
   Our <code>index.js</code> is handy for running Babel in development as its all in-memory and we don’t need a manual compilation step. However, that isn’t ideal for production for a couple reasons:
@@ -435,7 +435,7 @@ node build
   Now that we’ve done a build, poke around at the files in the <code>build</code> directory and see how they compare with the originals.
 </p>
 
-## **Source maps in production** {.graf--h4}
+## **Source maps in production**
 
 <p class="graf--p">
   Although <code>loose</code> mode (which we enabled in the <em class="markup--em markup--p-em">Configuring Babel</em> section above) will generate cleaner and faster output, you may still want to use source maps in production. This allows you to get at the original line numbers in stack traces. To do this, change your <code>babel</code> command to:
@@ -461,13 +461,13 @@ npm install source-map-support -S
 require('source-map-support')
 ```
 
-## **Wrapping up** {.graf--h4}
+## **Wrapping up**
 
 <p class="graf--p">
   Babel allows you to write ES6 and beyond today and have it work across different versions of Node and also work across different browsers on the client side (see <a class="markup--anchor markup--p-anchor" href="http://www.2ality.com/2015/04/webpack-es6.html" rel="nofollow">http://www.2ality.com/2015/04/webpack-es6.html</a> for an example). The most exciting thing for me that has been a joy to work with is universal JavaScript applications that share most of their code and then I get to write it in ES6.
 </p>
 
-## **PS: Syntax and Babel** {.graf--h4}
+## **PS: Syntax and Babel**
 
 <p class="graf--p">
   Let’s quickly talk about your text editor before we go shall we? Lots of the new constructs won’t be highlighted properly when you start using Babel. Thankfully, the community has rocked this one and you should definitely switch if you haven’t as a lot of these have good support for things like <a class="markup--anchor markup--p-anchor" href="https://facebook.github.io/react/docs/jsx-in-depth.html">JSX</a> and <a class="markup--anchor markup--p-anchor" href="http://flowtype.org">Flow</a>.
@@ -487,5 +487,3 @@ require('source-map-support')
     <a class="markup--anchor markup--li-anchor" href="https://github.com/mooz/js2-mode">Emacs</a>
   </li>
 </ol>
-
-####  {.graf--h4.graf--empty}

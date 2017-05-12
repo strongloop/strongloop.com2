@@ -29,7 +29,7 @@ categories:
   <a href="{{site.url}}/blog-assets/2016/07/autofix.gif"><img class="aligncenter size-full wp-image-27757" src="{{site.url}}/blog-assets/2016/07/autofix.gif" alt="autofix" width="1252" height="726" /></a>
 </p>
 
-#### Installing ESLint {.graf--h4}
+#### Installing ESLint 
 
 <p class="graf--p">
   You an install ESLint locally for a given project or globally for all projects on a system. We will focus on using a <em class="markup--em markup--p-em">global</em> ESLint for this tutorial, but note that many of these plugins support a local install as well.
@@ -43,7 +43,7 @@ categories:
 npm install -g eslint
 ```
 
-#### Vim/Neovim {.graf--h4}
+#### Vim/Neovim 
 
 <p class="graf--p">
   For Vim users, just add the <a class="markup--anchor markup--p-anchor" href="https://github.com/ruanyl/vim-fixmyjs">fixmyjs package</a> using your preferred packaging tool like <a class="markup--anchor markup--p-anchor" href="https://github.com/junegunn/vi…">vim-plug</a> or <a class="markup--anchor markup--p-anchor" href="https://github.com/VundleVim/Vundle.vim">Vundle</a>:
@@ -63,7 +63,7 @@ Plugin ruanyl/vim-fixmyjs
 au BufWritePre *.js :Fixmyjs
 au BufWritePre *.jsx :Fixmyjs
 ```
-#### Sublime Text {.graf--h4}
+#### Sublime Text 
 
 <p class="graf--p">
   For Sublime, using <a class="markup--anchor markup--p-anchor" href="https://packagecontrol.io/">Package Control</a>, install the <a class="markup--anchor markup--p-anchor" title="https://github.com/TheSavior/ESLint-Formatter" href="https://github.com/TheSavior/ESLint-Formatter">ESLint-Formatter</a> package. Then, to format on save, add the following to the <em class="markup--em markup--p-em">Preferences -> Package Settings -> ESLint-Formatter -> Settings  —  User</em> file:
@@ -74,7 +74,7 @@ au BufWritePre *.jsx :Fixmyjs
   "format_on_save": true
 }
 ```
-#### Atom {.graf--h4}
+#### Atom 
 
 <p class="graf--p">
   For Atom, install the <a class="markup--anchor markup--p-anchor" title="https://github.com/AtomLinter/linter-eslint" href="https://github.com/AtomLinter/linter-eslint">linter-eslint</a> package. Then, configure it like this:
@@ -90,7 +90,7 @@ au BufWritePre *.jsx :Fixmyjs
   </p>
 </blockquote>
 
-#### Other editors {.graf--h4}
+#### Other editors 
 
 <p class="graf--p">
   If your editor is not represented above, there may be a plugin or a way to use the <a class="markup--anchor markup--p-anchor" href="http://eslint.org/docs/user-guide/command-line-interface"><strong class="markup--strong markup--p-strong">eslint</strong> command</a> directly to achieve a similar effect.

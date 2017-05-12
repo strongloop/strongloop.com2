@@ -6,7 +6,7 @@ author: Adron Hall
 guid: http://strongloop.com/?p=12310
 permalink: /strongblog/node-js-event-loop/
 categories:
-  - Case Studies
+  - Node core
 ---
 Ah, the great and crazy Node.js Event Loop. Often talked about, rarely intimately known. What does the Node event Loop do? What does it provide the programmer? Let&#8217;s dive in and talk about what the event loop is and does and how it can help you in your day to day development.
 

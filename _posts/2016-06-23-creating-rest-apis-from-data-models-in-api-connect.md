@@ -43,12 +43,14 @@ In the following example, we&#8217;ll look at a couple ways to create models in 
 To get started with API Connect, you&#8217;ll need to do three things:
 
   1. Download the API Connect Developer Toolkit from npm:
-    ```js
+```
 $ npm install -g apiconnect
 ```
 
   2. [Create a free IBM Bluemix account](https://console.ng.bluemix.net/registration/?Target=https%3A%2F%2Fconsole.ng.bluemix.net%2Flogin). You&#8217;ll need this to access the API Connect editor.
-  3. Create a starter API from the command line (this will look very familiar to LoopBack users): ```js
+  3. Create a starter API from the command line (this will look very familiar to LoopBack users):
+
+```
 $ apic loopback
 
      _-----_
@@ -68,7 +70,6 @@ $ apic loopback
   empty-server (An empty LoopBack API, without any configured models or datasources)
   hello-world (A project containing a controller, including a single vanilla Message and a single remote method)
 ❯ notes (A project containing a basic working example, including a memory database)
-
 ```
 
 This will create a new API using Node.js that supports basic create, read, update, and delete (CRUD) operations for a `/notes` endpoint. It also configures an in-memory data source for handling data persistence.
@@ -80,7 +81,6 @@ Next, start the API locally so we can start building and testing:
 ```js
 $ apic start
 Service apic started on port 4001
-
 ```
 
 We can now hit our API at `http://localhost:4001`. To check that everything is running fine, open it in your web browser. You should see a message like this:
@@ -103,24 +103,22 @@ $ apic create --type model
 
 Next, enter the following. This will create our `Cat` data model, and expose it as a REST API with CRUD functionality.
 
-```js
+```
 ? Enter the model name: cat
 ? Select the data-source to attach undefined to: db (memory)
-? Select model's base class PersistedModel
+? Select models base class PersistedModel
 ? Expose cat via the REST API? Yes
 ? Custom plural form (used to build REST URL):
 ? Common model or server only? common
-
 ```
 
 Of course, our cats need names, so add that property when prompted:
 
-```js
+```
 ? Property name: name
 ? Property type: string
 ? Required? Yes
 ? Default value[leave blank for none]:
-
 ```
 
 But we have a problem. Cats are jerks and we didn&#8217;t like them anyway, so let&#8217;s make a better endpoint, using a different method.
@@ -134,7 +132,6 @@ First, start the API Designer:
 ```js
 $ cd apic-getting-started
 $ apic edit
-
 ```
 
 This will launch the API Designer in your default browser. You&#8217;ll need to log in to Bluemix at this point.
