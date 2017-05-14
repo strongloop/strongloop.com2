@@ -28,12 +28,4 @@ LoopBack is a great tool for quickly generating a CRUD API for your data stored 
 
 [Erin McKean](https://strongloop.com/strongblog/introducing-erin-mckean-strongloop-lead-developer-evangelist/) (Lead Developer Evangelist, IBM Cloud) is the webinar speaker and will provide a comprehensive walkthrough of a full MongoDB-backed API, including unit tests, continuous integration, and deployment examples.
 
-**When:** March 28, 2017
-  
-Virtual door opens at 12:45 pm EST
-  
-Webcast starts at 1:00 pm EST
-
-[Register Now!](https://engage.vevent.com/index.jsp?eid=556&seid=89055)
-
-Also, don&#8217;t forget about the webinar we announced last week &#8211; <a href="https://strongloop.com/strongblog/webinar-combining-open-whisk-serverless-openapi-swagger-and-api-connect-to-build-powerful-apis/" rel="bookmark">Combining OpenWhisk (serverless), OpenAPI (swagger) and API Connect to Build Powerful APIs</a>.
+[Listen to the webcast recording now!](https://engage.vevent.com/index.jsp?eid=556&seid=89055)
