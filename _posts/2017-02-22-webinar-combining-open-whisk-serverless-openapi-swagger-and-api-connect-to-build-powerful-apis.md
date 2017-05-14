@@ -32,10 +32,4 @@ Using the power and simplicity of serverless functions and exposing them via API
 
 [Joe Sepi](https://strongloop.com/strongblog/my-friends-call-me-joe-sepi-and-you-can-too/) (Lead Developer Evangelist, IBM Cloud) is the webinar speaker and will demonstrate how to use LoopBack to help you build APIs to take advantage of the search capabilities of Elasticsearch.
 
-**When:** March 16, 2017
-  
-Virtual door opens at 12:45 pm EST
-  
-Webcast starts at 1:00 pm EST
-
-[Register Now!](https://engage.vevent.com/rt/ibm~combiningopenwhisk)
+[Listen to the webcast recording now!](https://engage.vevent.com/rt/ibm~combiningopenwhisk)
