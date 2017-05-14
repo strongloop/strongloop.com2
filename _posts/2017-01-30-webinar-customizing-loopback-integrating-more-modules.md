@@ -22,10 +22,4 @@ David Okun (Lead Developer Evangelist, IBM Cloud) is the webinar speaker and wil
 
 _“For basic API needs, LoopBack has you 100% sorted. However, you may want to open the box and step outside for additional functionality. I’ll show you how LoopBack is ready to handle anything you throw at it, and how it augments your API needs instead of getting in the way.&#8221;_
 
-**When:** February 21, 2017
-  
-Virtual door opens at 12:45 pm ET
-  
-Webcast starts at 1:00 pm ET
-
-[Register Now!](https://engage.vevent.com/rt/ibm~customizingloopback)
+[Listen to the webcast recording now!](https://engage.vevent.com/rt/ibm~customizingloopback)
