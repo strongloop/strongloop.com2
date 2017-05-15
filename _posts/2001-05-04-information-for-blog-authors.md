@@ -7,10 +7,9 @@ permalink: /strongblog/information-for-blog-authors/
 categories:
   - How-To
 ---
+This site now supports blogs authored in markdown format! This is a sample blog post that explains and demonstrates formatting and best practices for blog authors.
 
-This is a sample blog post that explains and demonstrates formatting and best practices for blog authors.
-
-This site now supports blogs authored in markdown format.
+To see how various parts of this post were created, [view the markdown source](https://github.com/strongloop/strongloop.com/blob/master/_posts/2001-05-04-information-for-blog-authors.md) for this post.
 
 <!--more-->
 
