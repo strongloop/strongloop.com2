@@ -15,15 +15,18 @@ Over the last year, as part of the Strongloop-IBM journey, we’ve integrated th
 
 We’ve shortened the namespace, but essentially `loopback-cli` delegates to the `generator-loopback` Yeoman generator as `slc` did.
 
-Because the \`loopback-cli\` module is purely a development tool and doesn&#8217;t include any runtime tooling, you can install it without [installing native compiler tools](http://loopback.io/doc/en/lb2/Installing-compiler-tools.html), which makes it a snap to install.
+Because the `loopback-cli` module is purely a development tool and doesn&#8217;t include any runtime tooling, you can install it without [installing native compiler tools](http://loopback.io/doc/en/lb2/Installing-compiler-tools.html), which makes it a snap to install.
 
 Install it with this command :
 
-<pre class="lang:default decode:true">$ npm install –g loopback-cli</pre>
+```
+$ npm install –g loopback-cli
+```
 
-Then enter \`lb -l\` to list all available commands:
+Then enter `lb -l` to list all available commands:
 
-<pre class="lang:default decode:true">lb acl  
+```js
+lb acl  
 lb app   
 lb boot-script   
 lb datasource   
@@ -34,9 +37,9 @@ lb property
 lb relation   
 lb remote-method   
 lb swagger
-</pre>
+```
 
-As you would expect, \`lb -h\` gives you command help.
+As you would expect, `lb -h` gives you command help.
 
 To scaffold a new LoopBack application and install LoopBack as a dependency, simply use the `lb` (or `lb app`) command. This command is the equivalent of `slc loopback.`
 
