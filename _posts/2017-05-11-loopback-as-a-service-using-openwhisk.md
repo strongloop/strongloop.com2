@@ -2,7 +2,9 @@
 id: 29289
 title: LoopBack As A Service Using OpenWhisk
 date: 2017-05-11T22:43:15+00:00
-author:  Subramanian Krishnan
+author:  
+- Subramanian Krishnan
+- Nagarjuna Surabathina
 guid: https://strongloop.com/?p=29289
 permalink: /strongblog/loopback-as-a-service-using-openwhisk/
 categories:
@@ -10,7 +12,6 @@ categories:
   - LoopBack
   - Cloud
 ---
-**Note:** This article was co-written by Subramanian Krishnan and Nagarjuna Surabathina.
 
 In the previous blog [1] we saw how we can host LoopBack as a multi-tenant micro-service on the cloud. As a quick recap, this would require us to: 
 
