@@ -36,7 +36,7 @@ We are proud of the work that StrongLoop, IBM, and members of the community have
 
 ### StrongLoop newsletter
 
-Each month we will email a summary of articles, news and announcements to help you stay in the loop. 
+Each month we will email a summary of articles, news and announcements to help you stay in the loop. You can subscribe and review archives [https://strongloop.com/newsletter](here).
 
 ## The Future
 
