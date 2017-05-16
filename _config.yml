@@ -23,7 +23,7 @@ github_editme_path: strongloop/strongloop.com/blob/gh-pages/pages
 
 excerpt_separator: <!--more-->
 
-google_analytics:
+google_analytics: UA-37775386-1
 
 disqus_shortname:
 # if you're using disqus for comments, add the shortname here. if not, leave this value blank.
