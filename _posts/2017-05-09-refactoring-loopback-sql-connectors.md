@@ -2,7 +2,9 @@
 id: 29366
 title: Refactoring LoopBack SQL Connectors
 date: 2017-05-09T07:13:21+00:00
-author: Dave Whiteley
+author: 
+- Loay Gewily
+- Janny Hou
 guid: http://strongloop.com/?p=29366
 permalink: /strongblog/refactoring-loopback-sql-connectors/
 categories:
@@ -18,7 +20,7 @@ categories:
 [@jannyHou](https://github.com/JannyHou)) wrote this article.
 
 We've now been developing LoopBack for over three and a half years. Like any software built at a startup's pace, it can benefit from some much needed refactoring! This blog outlines the changes to Model Discovery and Migration. It is worth highlighting that just recently we refactored many LoopBack datasource connectors. This includes SQL connectors such as MySQL, PostgreSQL, MsSQL, and Oracle. The common functions were extracted from the individual connectors to the base connector ([loopback-connector](https://github.com/strongloop/loopback-connector)). The developer can still override the connectors with customized logic and /or features if required.
-
+<!--more-->
 {% include image.html file="2017/04/powered-by-LB-med.png"
 alt="Refactoring LoopBack SQL Connectors xx"
 %}
