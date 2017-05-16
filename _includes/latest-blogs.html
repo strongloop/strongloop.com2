@@ -1,11 +1,16 @@
 {% for post in site.posts limit:include.number %}
 
-  <h4 class="c-heading -h3"><a class="no_icon" href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h4>
-  <p class="author"> by <a class="no_icon" href="{{site.url}}/authors/{{ post.author | replace: " ", "_" | replace: ".", "_" }}">{{post.author}}</a>
-    {{ post.date | date: "%b %-d, %Y" }}</p>
+  <h4 class="c-heading -h3"><a class="no_icon" href="{{ post.url }}">{{ post.title }}</a></h4>
+    {% if post.author %}<p class="author">by
+      {% for author in post.author %}
+        <a class="no_icon" href="/authors/{{ author | replace: " ", "_" | replace: ".", "_" }}">{{author}}</a>
+        {% if forloop.last == false %},{% endif %}
+      {% endfor %}
+    - {{ post.date | date: "%b %-d, %Y" }} </p>
+    {% endif %}
   <div class="excerpt">
     {{post.excerpt}}
-    <p><a class="no_icon" href="{{site.url}}{{ post.url }}">More...</a>
+    <p><a class="no_icon" href="{{ post.url }}">More...</a>
   </div>
   <hr class="faded">
 
