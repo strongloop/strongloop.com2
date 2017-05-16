@@ -1,7 +1,7 @@
 ---
 layout: author
 author: 'Erin McKean'
-gitbhub_id: emckean
+github_id: emckean
 permalink: /authors/Erin_McKean
 ---
 
