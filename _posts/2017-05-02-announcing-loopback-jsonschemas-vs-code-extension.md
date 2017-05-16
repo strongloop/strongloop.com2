@@ -23,7 +23,7 @@ If you just want to install the extension, search "loopback" from VS Code or fin
 ' %}
 
 What does it do? Let's take a look:
-
+<!--more-->
 ## Code Hints
 
 The plugin prompts you as you type. Hit enter to accept a suggestion, or use the up/down arrows to select one from a list of options.
