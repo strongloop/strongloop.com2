@@ -2,7 +2,7 @@
 id: 29189
 title: Announcing LoopBack.next, the Next Step to Make LoopBack Effortlessly Extensible
 date: 2017-04-13T08:37:15+00:00
-author: Tetsuo Seto
+author: Ritchie Martori
 guid: http://strongloop.com/?p=29189
 permalink: /strongblog/announcing-loopback-next/
 categories: 
