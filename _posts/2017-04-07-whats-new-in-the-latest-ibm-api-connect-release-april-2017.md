@@ -2,7 +2,7 @@
 id: 29157
 title: What's New in the Latest IBM API Connect Release - April 2017
 date: 2017-04-13T08:37:15+00:00
-author: Tetsuo Seto
+author: Dave Whiteley
 guid: http://strongloop.com/?p=29157
 permalink: /strongblog/whats-new-in-the-latest-ibm-api-connect-release-april-2017/
 categories: 
