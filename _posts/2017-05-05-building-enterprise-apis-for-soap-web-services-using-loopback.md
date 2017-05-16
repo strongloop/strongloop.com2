@@ -17,7 +17,7 @@ We are excited to announce that LoopBack can now generate remote methods and RES
 [LoopBack](http://loopback.io/) is an open source Node.js API framework from
 [StrongLoop](http://www.strongloop.com/), optimized for mobile, web, and other device and built on top of Express . LoopBack makes it easy for developers to define, build and consume APIs. Define data models, connect to multiple data sources, write business logic in Node.js, glue on top of your existing services and data, and consume using JavaScript, iOS, and Android SDKs.
 more
-
+<!--more-->
 ## What are Web Services, SOAP, and WSDL?
 
 Web services enable applications to communicate with each other independently of their platform and language in which they're implemented. A web service is a software interface that describes operations that can be invoked over the network through standardized XML messaging using Simple Object Access Protocol (
