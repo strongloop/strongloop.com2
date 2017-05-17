@@ -8,7 +8,7 @@ categories:
   - Community
   - News
 ---
-Today marks an important milestone for the StrongLoop website: the transition from showcasing our services to promoting community. While we proudly supported community since we launched, our previous site highlighted options from IBM and StrongLoop to help you build with node.js and power the API economy. Moving forward, this site embraces our role within the open source community that creates APIs and supporting the growth of that community.
+Today marks an important milestone for the StrongLoop website: the transition from showcasing our services to promoting community. While we proudly supported community since we launched, our previous site highlighted options from StrongLoop and IBM to help you build with node.js and power the API economy. Moving forward, this site embraces our role within the Open Source community that creates APIs and supporting the growth of that community.
 
 ## Supporting the Open Source API Developer Community
 
@@ -16,7 +16,7 @@ With our renewed focus on Open-Source options for the API developer community, t
 
 ### Projects
 
-[LoopBack](http://loopback.io/), [API Microgateway](https://github.com/strongloop/microgateway), and [Open API Initiative](https://www.openapis.org/) - three key open source technologies for API creation. 
+[LoopBack](http://loopback.io/), [API Microgateway](https://github.com/strongloop/microgateway), and [Open API Initiative](https://www.openapis.org/) - three key Open Source technologies for API creation. 
 
 ### Events
 
@@ -32,13 +32,13 @@ Each month we will email a summary of articles, news and announcements to help y
 
 ## History
 
-In March of 2013, the StrongLoop team introduced its supportable Node.js solution. From teh beginning, we embraced the community Node distribution by making major contributions to Node core, and added features to improve Enterprise adoption. We nurtured our relationship with the Node.js community online and at meetups, hackathons, and conventions. We shared informative tutorials and webinars for our offerings and Node.js and JavaScript. After being acquired by IBM in September 2015, we launched exciting new products to create and design APIs. We re-established LoopBack as an Open Source framework, re-invigorating its documentation, adding features, and [sharing plans for significant revisions and improvements](https://strongloop.com/strongblog/announcing-loopback-next/). 
+In March of 2013, the StrongLoop team introduced its supportable Node.js solution. From the beginning, we embraced the community Node distribution by making major contributions to Node core, and added features to improve Enterprise adoption. We nurtured our relationship with the Node.js community online and at meetups, hackathons, and conventions. We shared informative tutorials and webinars for our offerings and Node.js and JavaScript. After being acquired by IBM in September 2015, we launched exciting new products to create and design APIs. We re-established LoopBack as an Open Source framework, re-invigorating its documentation, adding features, and [sharing plans for significant revisions and improvements](https://strongloop.com/strongblog/announcing-loopback-next/). 
 
 Throughout these developments, we continued to engage the Node.js community. We attended events, learned from our users, and provided valuable information on our blog. While StrongLoop began with a focus on Open Source software within the Node community, we've evolved  and extended our presence in the Open Source community that builds APIs. We're proud of how developers helped shape and grow the StrongLoop community, and we want to pay it forward by continuing to help promote Open Source solutions for API development. IBM continues to contribute to and support this StrongLoop community. 
 
 ## The Future
 
-We are excited about our new focus on APIs and the open source developer communities that builds them. We plan to continue to deliver relevant content and resources to help you be part of the API economy. Want to stay looped in? Check out these options:
+We are excited about our new focus on APIs and the Open Source developer communities that builds them. We plan to continue to deliver relevant content and resources to help you be part of the API economy. Want to stay looped in? Check out these options:
 
 - Follow us on [Twitter](https://twitter.com/StrongLoop).
 - Like us on [Facebook](https://www.facebook.com/strongloop/).
