@@ -12,13 +12,9 @@ Today marks an important milestone for the StrongLoop website. It marks the tran
 
 ## History
 
-In March of 2013, the StrongLoop team introduced their supportable Node.js solutions. We also announced our support and services for that distribution. At our launch, we announced our intention to embrace the community Node distribution and add features to improve Enterprise adoption.  We followed up with LoopBack, our Open Source Node.js framework, and then StrongLoop Arc.
+In March of 2013, the StrongLoop team introduced their supportable Node.js solutions. At our launch, we embrace the community Node distribution, adding features to improve Enterprise adoption while making major contributions to Node core. We nurtured our relationship with the Node.js community online and at meetups, hackathons, and conventions.  We shared informative tutorials and how to's for our offerings and Node.js and JavaScript. After being acquired by IBM in September 2015, we innovated more quickly, increased our global market reach and customer support and launched exciting new products to create and design APIs. We re-established our commitment to LoopBack as an Open Source framework, re-invigorating its documentation, adding features, and establishing plans for significant revisions and improvements. 
 
-Over the next couple of years we continued to refine our solutions while nurturing our relationship with the Node.js community. We shared with the community at meetups, hackathons, and conventions. We teaching people about our various solutions while listening to invaluable feedback as to how to improve those solutions. We also shared informative tutorials, how to's, and overviews in our StrongBlog. This provided insight into using our solutions more effectively, but also how to more effectively use Node.js and JavaScript. Much of this blog content really struck a positive note with our developer audience, and continues to find an audience.
-
-In September 2015, IBM acquired StrongLoop. This allowed us to innovate more quickly and increase our global market reach and customer support. Within months we introduced the world to API Connect to allow companies to enter the API economy more easily. We established a one year end of life plan for Arc as we moved its various functionalities into other products. We re-established our commitment to LoopBack as an Open Source framework, re-invigorating its documentation and continuing to add features. And, of course, making plans for upcoming revisions to LoopBack.  LoopBack.next.
-
-All through these developments, we continued to engage the Node.js community. We attended events, learned from our users, and provided strong and useful information on our blog. StrongLoop began with a focus on the Node community, but we evolved to include the open source community as well. While our means to connect with this community may have evolved, our focus and commitment has not. We're proud of how developers helped shape and grow the StrongLoop community. Moving forward, we want to continue to help promote Open Source solutions for API development. We are excited that IBM continues to contribute to and support the StrongLoop community! 
+All through these developments, we continued to engage the Node.js community. We attended events, learned from our users, and provided strong and useful information on our blog. StrongLoop began with a focus on Open Source software within the Node community. We've evolved to offer additional Open Source API  software, extending our presence in the open source community.  We're proud of how developers helped shape and grow the StrongLoop community, and we want to pay it forward by continuing to help promote Open Source solutions for API development. We are excited that IBM continues to contribute to and support this StrongLoop community! 
 
 ## Supporting the Open Source API Developer Community
 
@@ -48,6 +44,3 @@ We are excited about our new focus on these technologies for creating APIs and t
 - Follow us on [Twitter](https://twitter.com/StrongLoop).
 - Like us on [Facebook](https://www.facebook.com/strongloop/).
 - Join our StrongLoop Developers Community Group on [LinkedIn](https://www.linkedin.com/groups/5046525) to discuss Open Source projects.
-
-
- 
