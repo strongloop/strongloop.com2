@@ -38,11 +38,15 @@ All through these developments, we continued to engage the Node.js community. We
 
 ## The Future
 
-We are excited about our new focus on APIs and the open source developer communities that builds them. We plan to continue to deliver relevant content to help you be part of the API economy.
+We are excited about our new focus on APIs and the open source developer communities that builds them. We plan to continue to deliver relevant content and resources to help you be part of the API economy. Want to stay looped in? Check out these options:
+
+- Follow us on [Twitter](https://twitter.com/StrongLoop).
+- Like us on [Facebook](https://www.facebook.com/strongloop/).
+- Join our StrongLoop Developers Community Group on [LinkedIn](https://www.linkedin.com/groups/5046525) to discuss Open Source projects.
+- Subscribe to our [https://strongloop.com/newsletter](newsletter).
 
 ## What Next?
 
 - Read about planned changes to [LoopBack](https://strongloop.com/strongblog/announcing-loopback-next/).
-- Follow us on [Twitter](https://twitter.com/StrongLoop).
-- Like us on [Facebook](https://www.facebook.com/strongloop/).
-- Join our StrongLoop Developers Community Group on [LinkedIn](https://www.linkedin.com/groups/5046525) to discuss Open Source projects.
+- Learn more about [API Microgateway](https://strongloop.com/strongblog/introducing-api-microgateway-programmable-open-source-gateway-apis/)
+- Check out how the Open API Initiative and the Linux Foundation are combining efforts to produce [APIStrat 17](https://www.openapis.org/blog/2017/04/13/the-open-api-initiative-and-the-linux-foundation-to-produce-apistrat-17).
