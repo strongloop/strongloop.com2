@@ -43,10 +43,10 @@ We are excited about our new focus on APIs and the open source developer communi
 - Follow us on [Twitter](https://twitter.com/StrongLoop).
 - Like us on [Facebook](https://www.facebook.com/strongloop/).
 - Join our StrongLoop Developers Community Group on [LinkedIn](https://www.linkedin.com/groups/5046525) to discuss Open Source projects.
-- Subscribe to our [https://strongloop.com/newsletter](newsletter).
+- Subscribe to our [newsletter](https://strongloop.com/newsletter).
 
 ## What Next?
 
 - Read about planned changes to [LoopBack](https://strongloop.com/strongblog/announcing-loopback-next/).
-- Learn more about [API Microgateway](https://strongloop.com/strongblog/introducing-api-microgateway-programmable-open-source-gateway-apis/)
+- Learn more about [API Microgateway](https://strongloop.com/strongblog/introducing-api-microgateway-programmable-open-source-gateway-apis/).
 - Check out how the Open API Initiative and the Linux Foundation are combining efforts to produce [APIStrat 17](https://www.openapis.org/blog/2017/04/13/the-open-api-initiative-and-the-linux-foundation-to-produce-apistrat-17).
