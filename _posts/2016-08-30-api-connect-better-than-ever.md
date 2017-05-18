@@ -8,7 +8,7 @@ permalink: /strongblog/api-connect-better-than-ever/
 categories:
   - API Connect
 ---
-The [IBM API Connect](https://strongloop.com/node-js/api-connect/) team has been busy!  In March, IBM API Connect v5 was delivered, and since then we&#8217;ve made several updates and additions. Alan Ogilvie provided a thorough rundown in the IBM developerWorks forums, and we are pleased to present some of the highlights:<!--more-->
+The [IBM API Connect](https://developer.ibm.com/apiconnect/getting-started/) team has been busy!  In March, IBM API Connect v5 was delivered, and since then we&#8217;ve made several updates and additions. Alan Ogilvie provided a thorough rundown in the IBM developerWorks forums, and we are pleased to present some of the highlights:<!--more-->
 
 [<img class="aligncenter size-medium wp-image-27690" src="{{site.url}}/blog-assets/2016/07/API-Connect_logo-300x250.png" alt="API Connect_logo" width="300" height="250"  />]({{site.url}}/blog-assets/2016/07/API-Connect_logo.png)_We made it even easier to use API Connect on Bluemix, simplifying the “getting started” experience by adding a step-by-step Guided Tour approach to import APIs, package and publish to Bluemix, and explore and test that API. The addition of Analytics provides insight into how your API is being used._
 
