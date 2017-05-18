@@ -454,4 +454,4 @@ The one thing which could be a potential concern is the latency of serving reque
 
 All in all FaaS/serverless/OpenWhisk seems to be very promising and definitely worth an evaluation not just for LoopBack as a service but cloud-based services in general.
 
-<bold>Note:</b> The astute reader would have noticed the minimal input validation and no security implemented in the code for the actions shared in the post. These are omitted to simplify the blog but are needed for a production implementation.</span></p>
+<b>Note:</b> The astute reader would have noticed the minimal input validation and no security implemented in the code for the actions shared in the post. These are omitted to simplify the blog but are needed for a production implementation.</span></p>
