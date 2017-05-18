@@ -1,7 +1,7 @@
 ---
 id: 29289
 title: LoopBack As A Service Using OpenWhisk
-date: 2017-05-11T22:43:15+00:00
+date: 2017-05-23T22:43:15+00:00
 author:  
 - Subramanian Krishnan
 - Nagarjuna Surabathina
@@ -13,7 +13,7 @@ categories:
   - Cloud
 ---
 
-In the previous blog [1] we saw how we can host LoopBack as a multi-tenant micro-service on the cloud. As a quick recap, this would require us to: 
+In our [previous blog](https://strongloop.com/strongblog/creating-a-multi-tenant-connector-microservice-using-loopback/) we saw how we can host LoopBack as a multi-tenant micro-service on the cloud. As a quick recap, this would require us to: 
 
 <ol class="postList">
  <li class="graf graf--li">Expose REST APIs for CRUD on /models and /datasources resources.</li>
@@ -21,7 +21,7 @@ In the previous blog [1] we saw how we can host LoopBack as a multi-tenant micro
  <li class="graf graf--li">Use the http path property of models to create models in the namespace of the tenant and generate unique URLs for each model (even if the resources they expose have the same name).</li>
  <li class="graf graf--li">How to workaround challenges introduced because there are no LoopBack NodeJS APIs for deleting and updating datasources and models.</li>
 </ol>
-<p id="magicdomid8" class="ace-line">Following the steps in the blog would let us stand-up a single instance of the LoopBack application which is great for demos.It is not yet ready for deploying at scale on the cloud. The previous blog ends with open questions on:<!--more--></p>
+<p id="magicdomid8" class="ace-line">Following the steps in the blog would let us stand-up a single instance of the LoopBack application which is great for demos. It is not yet ready for deploying at scale on the cloud. The previous blog ends with open questions on:<!--more--></p>
 
 <ol>
   <li class="graf graf--li">How to scale the application horizontally - Multiple instances of the application running and able to process simultaneous requests for the same API. This will also be needed to avoid single points of failure (min-3 deployments). Introducing multiple instances brings in challenges of deploying models/datasources to all the instances and keeping them in sync.</li>
@@ -45,7 +45,7 @@ In this blog we are going to explore an altogether different and brand new way o
 
 <span>4. FaaS - which means Functions as a Service or serverless.</span>
 
-**Serverless** is a cloud computing code execution model which is event driven wherein containers encapsulating the function/code defined by users are run in response to the event, the response returned to the caller and the container is killed and all of this is managed by the cloud provider in a scalable way. Further, the user is billed based on the events/invocations and resources consumed to fulfill the invocation. See reference [2] and [3] for a detailed explanation.
+**Serverless** is a cloud computing code execution model which is event driven wherein containers encapsulating the function/code defined by users are run in response to the event, the response returned to the caller and the container is killed and all of this is managed by the cloud provider in a scalable way. Further, the user is billed based on the events/invocations and resources consumed to fulfill the invocation. See this article on [serverless computing](https://en.wikipedia.org/wiki/Serverless_computing) and [serverless architectures](https://martinfowler.com/articles/serverless.html) for a detailed explanation.
 
 The advantages of such an architecture are:
 <ol>
@@ -58,11 +58,13 @@ The advantages of such an architecture are:
 </ol>
 While there are many cloud vendors who are offering FaaS, in this blog we use the IBM BlueMix FaaS offering called OpenWhisk. Apache OpenWhisk is an open-source server less compute platform and IBM BlueMix hosts and manages OpenWhisk as a service.See reference [4] for more details.
 From OpenWhisk documentation:
+
 An OpenWhisk action is a piece of code that performs one specific task. An action can be written in the language of your choice. You provide your action to OpenWhisk either source code or a Docker image. An action performs work when invoked from your code via REST API. Actions can also automatically respond to events from BlueMix and third party services using a trigger.
 Let us take a look at how we can architect the multi-tenant LoopBack micro-service using OpenWhisk actions.
 
 <img class="aligncenter wp-image-29404 size-large" src="{{site.url}}/blog-assets/2017/04/OpenWhisk.png" alt="LoopBack As A Service Using OpenWhisk" width="1030" height="569" />
-The table bellow summarizes the different actions and their purpose./div>
+The table below summarizes the different actions and their purpose.
+
 <table class="resizable">
   <tbody>
     <tr>
@@ -213,7 +215,7 @@ exports.main = create_model;
 ```js
 zip -r createModel.zip *
 ```
-<p>2) Create an OpenWhisk action for the package (Refer [5] for details)</p>
+<p>2) Create an OpenWhisk action for the package (See [here](https://console.ng.bluemix.net/docs/openwhisk/openwhisk_webactions.html#openwhisk_webactions) for details)</p>
 
 ```js
 wsk action create /sukrishj_dev/demo/createModel --kind nodejs:6 createModel.zip --web true
@@ -235,8 +237,8 @@ curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj_dev/demo/createModel.h
 The implementation of this action:
 <ul>
   <li>Reads the model and datasource from Cloudant</li>
-  <li>Dynamically creates a LoopBack model and datasource in the application using the NodeJS APIs</span></li>
-  <li>Invokes the model instance create via the NodeJS API</span></li>
+  <li>Dynamically creates a LoopBack model and datasource in the application using the NodeJS APIs</li>
+  <li>Invokes the model instance create via the NodeJS API</li>
   <li>Returns the response</li>
 </ul>
 <p>Create a new package.json as shown below.</p>
@@ -347,7 +349,7 @@ Note: We use Cloudant connector to create a record in a collection specified in 
 ```js
 zip -r createModelInstance.zip
 ```
-3) Create an OpenWhisk action for the package (Refer [5] for details)
+3) Create an OpenWhisk action for the package (Refer to [Create a simple API](https://loopback.io/doc/en/lb3/Create-a-simple-API.html) for details)
 
 ```js
 wsk action create /sukrishj_dev/demo/createModelInstance --kind nodejs:6 createModelInstance.zip  --web true
@@ -431,27 +433,25 @@ This confirms that different OpenWhisk actions can be created for different appl
 </table>
 <div class="ace-line"></div>
 <div class="ace-line">
-<p id="magicdomid301" class="ace-line"><span class="author-257921261 font-color-000000 font-size-medium">With a little tweak to the createModel action, we can return the base URL corresponding to the application for which the model is created (Cloudant/Redis/any other). This gives a neat and simple way of scaling the service to support multiple applications.</span></p>
-<p id="magicdomid303" class="ace-line"><span class="author-257921261 font-color-000000 font-size-medium">We now have a recipe for standing up a LoopBack service using OpenWhisk which scales in all </span><span class="author-257921261 b font-color-000000 font-size-medium"><b>dimensions</b></span><span class="author-257921261 font-color-000000 font-size-medium">:</span></p>
+
+With a little tweak to the createModel action, we can return the base URL corresponding to the application for which the model is created (Cloudant/Redis/any other). This gives a neat and simple way of scaling the service to support multiple applications.
+
+We now have a recipe for standing up a LoopBack service using OpenWhisk which scales in all <b>dimensions</b>:</p>
 
 <ul>
-  <li><span class="author-257921261 b font-color-000000 font-size-medium"><b>Horizontal</b></span><span class="author-257921261 font-color-000000 font-size-medium">  - Since we are not explicitly standing up a server, we need not worry about multiple instances.</span></li>
-  <li><span class="author-257921261 b font-color-000000 font-size-medium"><b>Vertical</b></span><span class="author-257921261 font-color-000000 font-size-medium">  - Since we are not explicitly standing up a server, we need not worry about how many models can be deployed in it.</span></li>
-  <li><span class="author-257921261 b font-color-000000 font-size-medium"><b>Multiple Apps</b></span><span class="author-257921261 font-color-000000 font-size-medium"> - We can scale by creating an OpenWhisk action per application using the same LoopBack app code but the specific connector bundled in.</span></li>
+  <li><b>Horizontal</b> - Since we are not explicitly standing up a server, we need not worry about multiple instances.</li>
+  <li><b>Vertical</b> - Since we are not explicitly standing up a server, we need not worry about how many models can be deployed in it.</li>
+  <li><b>Multiple Apps</b> - We can scale by creating an OpenWhisk action per application using the same LoopBack app code but the specific connector bundled in.</li>
 </ul>
-<p id="magicdomid308" class="ace-line"><span class="author-257921261 font-color-000000 font-size-medium">The architectural simplicity is also clear because there is no need to manage instances of servers, keep them in sync, deploying and managing multiple server pools, need for placement logic for selecting the pool, and maintaining servers specific to applications. Since the execution model is request based, there is no need to worry about the deletes/updates to models deployed in servers and nor is there a need to worry about restoring models in a server after restart or to a newly added instance.</span></p>
-<p id="magicdomid310" class="ace-line"><span class="author-257921261 font-color-000000 font-size-medium">The other benefit of this approach is the possibility of parallel development of the actions. Each action can be developed, tested and deployed by a different person in the team due to inherent decoupling in the deployment and execution paradigm.</span></p>
-<p id="magicdomid312" class="ace-line"><span class="author-257921261 font-color-000000 font-size-medium">Finally, as one can see, there is no/little operations cost because there are no servers to be deployed,  managed and scaled. The platform takes care of it all. And since the billing is based on usage, there is no capital cost incurred either. </span></p>
-<p id="magicdomid314" class="ace-line"><span class="author-257921261 font-color-000000 font-size-medium">The one thing which could be a potential concern is the latency of serving requests. We have not yet measured the response times and compared approaches (good topic for a future post) but what we observed with the naked eye was pretty good. </span></p>
-<p id="magicdomid316" class="ace-line"><span class="author-257921261 font-color-000000 font-size-medium">All in all FaaS/serverless/OpenWhisk seems to be very promising and definitely worth an evaluation not just for LoopBack as a service but cloud-based services in general.</span></p>
-<p id="magicdomid318" class="ace-line"><span class="author-257921261 font-color-000000 font-size-medium">Note: The astute reader would have noticed the minimal input validation and no security implemented in the code for the actions shared in the post. These are omitted to simplify the blog but are needed for a production implementation.</span></p>
 
-<div id="magicdomid320" class="ace-line"><span class="author-257921261 font-size-large">References:</span></div>
-<div id="magicdomid321" class="ace-line"><span class="author-257921261">[1] <a href="https://strongloop.com/strongblog/creating-a-multi-tenant-connector-microservice-using-loopback/">https://strongloop.com/strongblog/creating-a-multi-tenant-connector-microservice-using-loopback/</a>
-</span></div>
-<div id="magicdomid322" class="ace-line"><span class="author-257921261">[2] </span><span class="author-257921261 link-MTQ5MjA2Mjg5MDA1Mi1odHRwczovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9TZXJ2ZXJsZXNzX2NvbXB1dGluZw=="><a class="link" href="https://en.wikipedia.org/wiki/Serverless_computing" target="_blank" rel="noreferrer nofollow">https://en.wikipedia.org/wiki/Serverless_computing</a></span></div>
-<div id="magicdomid323" class="ace-line"><span class="author-257921261">[3] </span><span class="author-257921261 link-MTQ5MjA2Mjg5MDA1My1odHRwczovL21hcnRpbmZvd2xlci5jb20vYXJ0aWNsZXMvc2VydmVybGVzcy5odG1s"><a class="link" href="https://martinfowler.com/articles/serverless.html" target="_blank" rel="noreferrer nofollow">https://martinfowler.com/articles/serverless.html</a></span></div>
-<div id="magicdomid324" class="ace-line"><span class="author-257921261">[4] </span><span class="author-257921261 link-MTQ5MjA2Mjg5MDA1My1odHRwczovL2NvbnNvbGUubmcuYmx1ZW1peC5uZXQvZG9jcy9vcGVud2hpc2s="><a class="link" href="https://console.ng.bluemix.net/docs/openwhisk" target="_blank" rel="noreferrer nofollow">https://console.ng.bluemix.net/docs/openwhisk</a></span></div>
-<div id="magicdomid325" class="ace-line"><span class="author-257921261 font-color-000000 font-size-medium">[5] </span><span class="author-257921261 font-color-000000 font-size-medium link-MTQ5MjEwMjkxNTY4My1odHRwczovL2NvbnNvbGUubmcuYmx1ZW1peC5uZXQvZG9jcy9vcGVud2hpc2svb3BlbndoaXNrX3dlYmFjdGlvbnMuaHRtbCNvcGVud2hpc2tfd2ViYWN0aW9ucw=="><a class="link" href="https://console.ng.bluemix.net/docs/openwhisk/openwhisk_webactions.html#openwhisk_webactions" target="_blank" rel="noreferrer nofollow">https://console.ng.bluemix.net/docs/openwhisk/openwhisk_webactions.html#openwhisk_webactions</a></span></div>
-<div id="magicdomid326" class="ace-line"><span class="author-257921261 font-color-000000 font-size-medium">[6] </span><span class="author-257921261 font-color-000000 font-size-medium link-MTQ5MjE5MTAzMTA1OC1odHRwczovL2xvb3BiYWNrLmlvL2RvYy9lbi9sYjMvQ3JlYXRlLWEtc2ltcGxlLUFQSS5odG1s"><a class="link" href="https://loopback.io/doc/en/lb3/Create-a-simple-API.html" target="_blank" rel="noreferrer nofollow">https://loopback.io/doc/en/lb3/Create-a-simple-API.html</a></span></div>
-</div>
+The architectural simplicity is also clear because there is no need to manage instances of servers, keep them in sync, deploying and managing multiple server pools, need for placement logic for selecting the pool, and maintaining servers specific to applications. Since the execution model is request based, there is no need to worry about the deletes/updates to models deployed in servers and nor is there a need to worry about restoring models in a server after restart or to a newly added instance.
+
+The other benefit of this approach is the possibility of parallel development of the actions. Each action can be developed, tested and deployed by a different person in the team due to inherent decoupling in the deployment and execution paradigm.
+
+Finally, as one can see, there is no/little operations cost because there are no servers to be deployed,  managed and scaled. The platform takes care of it all. And since the billing is based on usage, there is no capital cost incurred either. 
+
+The one thing which could be a potential concern is the latency of serving requests. We have not yet measured the response times and compared approaches (good topic for a future post) but what we observed with the naked eye was pretty good. 
+
+All in all FaaS/serverless/OpenWhisk seems to be very promising and definitely worth an evaluation not just for LoopBack as a service but cloud-based services in general.
+
+<bold>Note:</b> The astute reader would have noticed the minimal input validation and no security implemented in the code for the actions shared in the post. These are omitted to simplify the blog but are needed for a production implementation.</span></p>
