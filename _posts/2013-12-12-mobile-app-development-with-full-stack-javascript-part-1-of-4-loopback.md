@@ -95,6 +95,4 @@ We hope this blog provided insights into mobile back ends and general back end d
 
 ## **What’s next?**
 
-  * Find out more about [LoopBack](http://strongloop.com/strongloop-suite/loopback/).
-  * Get our [“Mobilizing Enterprise Data with LoopBack Models” whitepaper](http://strongloop.com/wp-content/uploads/2013/11/Mobilizing-Enterprise-Data-with-LoopBack-Models.pdf).
-  * Ready to build your next mobile app with a Node backend? We’ve made it easy to get started either locally or on your favorite cloud, with simple npm install. <a href="http://strongloop.com/get-started/" target="_blank">Get Started >></a>
+  * Find out more about [LoopBack](http://loopback.io/).
