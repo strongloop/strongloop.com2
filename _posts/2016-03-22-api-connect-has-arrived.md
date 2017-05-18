@@ -48,4 +48,4 @@ We&#8217;ve also compiled some [FAQs](https://strongloop.com/api-connect-faqs/) 
 
 Finally, we have a webinar scheduled for March 23rd. Find out details and register for &#8220;<span class="message_body"><a href="https://engage.vevent.com/rt/ibm~stronglooptoapiconnect">StrongLoop to API Connect: the Evolution</a>”</span> here!
 
-Ready to get started with IBM API Connect? [Just follow these steps](https://strongloop.com/get-started/)!
+Ready to get started with IBM API Connect? [Just follow these steps](https://developer.ibm.com/apiconnect/getting-started/)!
