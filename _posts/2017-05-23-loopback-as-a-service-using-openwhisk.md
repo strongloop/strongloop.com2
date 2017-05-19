@@ -56,7 +56,8 @@ The advantages of such an architecture are:
   <li class="graf graf--li">Granular and parallel development and deployment model.</li>
   <li class="graf graf--li">Truly stateless because of the ephemeral nature of the containers.</li>
 </ol>
-While there are many cloud vendors who are offering FaaS, in this blog we use the IBM BlueMix FaaS offering called OpenWhisk. Apache OpenWhisk is an open-source server less compute platform and IBM BlueMix hosts and manages OpenWhisk as a service.See reference [4] for more details.
+While there are many cloud vendors who are offering FaaS, in this blog we use the IBM BlueMix FaaS offering called OpenWhisk. Apache OpenWhisk is an open-source server less compute platform and IBM BlueMix hosts and manages OpenWhisk as a service. You can get more details in our [About OpenWhisk documentation](https://console.ng.bluemix.net/docs/openwhisk/openwhisk_about.html#about-openwhisk).
+
 From OpenWhisk documentation:
 
 An OpenWhisk action is a piece of code that performs one specific task. An action can be written in the language of your choice. You provide your action to OpenWhisk either source code or a Docker image. An action performs work when invoked from your code via REST API. Actions can also automatically respond to events from BlueMix and third party services using a trigger.
