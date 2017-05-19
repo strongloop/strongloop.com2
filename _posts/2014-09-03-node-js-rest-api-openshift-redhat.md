@@ -28,7 +28,7 @@ For organizations looking to leverage OpenShift for their omni-channel API / ESB
   <span style="font-size: 18px;">On-premise – take control of your BaaS  and run it in your datacenter or on your own cloud infrastructure </span>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Powered by <a href="http://strongloop.com/node-js/loopback/">LoopBack</a> – the leading, open source API framework project built 100% in Node.js </span>
+  <span style="font-size: 18px;">Powered by <a href="http://loopback.io/">LoopBack</a> – the leading, open source API framework project built 100% in Node.js </span>
 </li>
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;">Built in mBaaS with <a href="http://docs.strongloop.com/display/LB/Push+notifications">Push</a> , <a href="http://docs.strongloop.com/display/LB/GeoPoint+class">Geopoint</a> , <a href="http://strongloop.com/node-js/mbaas/#social-login">Social Login</a>, <a href="http://strongloop.com/node-js/mbaas/#storage-service">Storage</a>, etc </span>
@@ -347,5 +347,5 @@ To ssh://5400b85c5004467ec9000337@myapi-strongdemo.rhcloud.com/~/git/myapi.git/
   <span style="font-size: 18px;">In the first blog of this sequence, we got up and running with Loopback API framework and generated REST APIs within minutes on OpenShift PaaS. In the following blogs we will discuss more detailed use cases, frontend integration and DevOps features and capabilities of Node.js APIs on OpenShift.</span>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://strongloop.com/node-js/loopback/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
+  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
 </li>

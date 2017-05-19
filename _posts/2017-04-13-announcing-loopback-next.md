@@ -19,7 +19,7 @@ In 2013, we started LoopBack as a
 [Express](http://expressjs.com/) library and based it on open standards to ensure compatibility. We developed it in the open to ensure we could address users' problems and needs.
 
 
-[![Powered by LoopBack](https://strongloop.com/wp-content/uploads/2017/04/powered-by-LB-med.png)](https://strongloop.com/wp-content/uploads/2017/04/powered-by-LB-med.png)
+[![Powered by LoopBack]({{site.url}}/blog-assets/2017/04/powered-by-LB-med.png)]({{site.url}}/blog-assets/2017/04/powered-by-LB-med.png)
 
 ##What's Next?
 

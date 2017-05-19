@@ -206,7 +206,7 @@ So you&#8217;re sending your first real Node.js app into production. Nervous? Yo
 
 ## NodeFly Setup
 
-![NodeFly Logo](http://strongloop.com/wp-content/uploads/2013/09/hexamajig.png)
+![NodeFly Logo]({{site.url}}/blog-assets/2013/09/hexamajig.png)
 
 [Signing up](http://www.nodefly.com) for an account is really simple. After that, we just install via npm:
 
@@ -362,5 +362,5 @@ We asked the OpenShift team what was behind the slow curl response, and here&#82
 ## **[What’s next?](http://strongloop.com/get-started/)**
 
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://strongloop.com/node-js/loopback/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
+  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
 </li>

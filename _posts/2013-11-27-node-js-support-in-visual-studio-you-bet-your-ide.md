@@ -130,7 +130,7 @@ Although NTVS is in Alpha state, it is already providing one of best IDE integra
   <span style="font-size: 18px;">What’s in the upcoming Node v0.12 release? <a href="http://strongloop.com/node-js/whats-new-in-node-js-v0-12/">Six new features, plus new and breaking APIs</a>.</span>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://strongloop.com/node-js/loopback/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
+  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
 </li>
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;">Want to read more articles like this? Check out <a href="http://strongloop.com/strongblog/using-a-digital-ocean-droplet-for-on-demand-node-js-mobile-backend/">&#8220;Using a Digital Ocean Droplet for On Demand Node.js Mobile Backend&#8221;</a>, <a href="http://strongloop.com/strongblog/how-to-heap-snapshots/">&#8220;How-to: Heap Snapshots and Handling Node.js Memory Leaks&#8221;</a> and <a href="http://strongloop.com/strongblog/using-express-js-for-apis-2/">&#8220;Using Express.js for APIs&#8221;</a>.</span>

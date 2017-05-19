@@ -420,7 +420,7 @@ didRegisterForRemoteNotificationsWithDeviceToken:deviceToken
           Learn more about <a href="http://strongloop.com/mobile-application-development/loopback/">LoopBack</a>, the open-source mobile backend built with Node
         </li>
         <li>
-          Get our <a href="http://strongloop.com/wp-content/uploads/2013/11/Mobilizing-Enterprise-Data-with-LoopBack-Models.pdf">“Mobilizing Enterprise Data with LoopBack Models” whitepaper</a>.
+          Get our <a href="{{site.url}}/blog-assets/2013/11/Mobilizing-Enterprise-Data-with-LoopBack-Models.pdf">“Mobilizing Enterprise Data with LoopBack Models” whitepaper</a>.
         </li>
         <li>
           Ready to build your next mobile app with a Node backend? We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.

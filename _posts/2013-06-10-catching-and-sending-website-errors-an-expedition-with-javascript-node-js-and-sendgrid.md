@@ -94,6 +94,6 @@ The client-side code doesn&#8217;t record a stacktrace, nor does it catch user b
 
 In addition there is no throttling control. This can lead to a waterfall of errors pouring in, like during a recent incident:
 
-[<img class="alignnone size-full wp-image-677" alt="Client-Error-reporting" src="http://strongloop.com/wp-content/uploads/2013/06/Client-Error-reporting.jpg" width="800" height="385" />](http://strongloop.com/wp-content/uploads/2013/06/Client-Error-reporting.jpg)
+[<img class="alignnone size-full wp-image-677" alt="Client-Error-reporting" src="{{site.url}}/blog-assets/2013/06/Client-Error-reporting.jpg" width="800" height="385" />]({{site.url}}/blog-assets/2013/06/Client-Error-reporting.jpg)
 
 For the most part, this technique has worked remarkably well. Even as our traffic has increased dramatically, we have been able to hunt down and eliminate a bevy of bugs and now it is quite rare when a new error trickles in. Side benefit: we are even better JavaScript programmers!
