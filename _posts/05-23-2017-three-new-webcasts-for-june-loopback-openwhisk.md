@@ -1,10 +1,10 @@
 ---
 id: 29289
-title: LoopBack As A Service Using OpenWhisk
-date: 2017-05-23T22:43:15+00:00
+title: Three New Webcasts for June - LoopBack and OpenWhisk
+date: 2017-05-23T07:00:15+00:00
 author: Dave Whiteley
 guid: https://strongloop.com/?p=29289
-permalink: /strongblog/three-new-webcasts-for-june-open-source/
+permalink: /strongblog/three-new-webcasts-for-june-loopback-openwhisk/
 categories:
   - Events
   - LoopBack
@@ -15,8 +15,7 @@ We are excited to announce three new webcasts for June!
 
 This series will focus on Open Source solutions - in this case OpenWhisk and LoopBack. Check out the topics and dates below, and be sure to register for all three!
  
-## [Go Serverless with OpenWhisk](https://engage.vevent.com/index.jsp?eid=556&seid=90389)
-June 7, 2017
+## June 7, 2017: [Go Serverless with OpenWhisk](https://engage.vevent.com/index.jsp?eid=556&seid=90389)
 
 {% include image.html file='2017/Serverless w OpenWhisk.jpg' alt='Go Serverless with OpenWhisk' %}
 
@@ -31,8 +30,8 @@ To sum up: less management, more code, what can go wrong with that?
 
 [Register Now](https://engage.vevent.com/index.jsp?eid=556&seid=90389)
 
-## [Unlock Enterprise Data with APIs Using LoopBack](https://engage.vevent.com/index.jsp?eid=556&seid=90377)
-June 13, 2017 
+## June 13, 2017: [Unlock Enterprise Data with APIs Using LoopBack](https://engage.vevent.com/index.jsp?eid=556&seid=90377)
+
 {% include image.html file='2017/LoopBack-Unlockenterprise.jpg' alt='Unlock Enterprise Data with APIs Using LoopBack with Sai Vennam' %}
 
 Join Developer Evangelist Sai Vennam on June 13 to learn how Acme Freight, a fictional logistics company, uses LoopBack to create and expose APIs for enterprise data and API Connect to secure and manage their APIs.
@@ -43,30 +42,33 @@ The open source API framework LoopBack can be used for many development use case
 
 [Register Now](https://engage.vevent.com/index.jsp?eid=556&seid=90377)
 
-## [LoopBack Now and Next](https://engage.vevent.com/index.jsp?eid=556&seid=90290)
-June 27, 2017
+## June 27, 2017: [LoopBack Now and Next](https://engage.vevent.com/index.jsp?eid=556&seid=90290)
+
 {% include image.html file='2017/Loopback now and next.jpeg' alt='LoopBack Now and Next with with Ritchie Martori and ErinMcKean' %}
 
 Learn all about LoopBack now and plans for what’s next in this webinar with Ritchie Martori, a LoopBack core contributor and Architect at IBM, and Erin McKean, Developer Evangelist for LoopBack and IBM. !
 
 You’ll learn:
 
-    Core use cases for LoopBack
-    New functionality in LB 3.0
-    Details of the Loopback.next roadmap and exciting new capabilities
-    Tips for getting the most out of LoopBack
-    How you can get involved and contribute!
+* Core use cases for LoopBack
+* New functionality in LB 3.0
+* Details of the Loopback.next roadmap and exciting new capabilities
+* Tips for getting the most out of LoopBack
+* How you can get involved and contribute!
 
 Whether you’re new to LoopBack or a longtime user, you’ll find this webinar helpful in getting the most out of this powerful API framework for Node.
 
 [Register Now](https://engage.vevent.com/index.jsp?eid=556&seid=90290)
 
-Attend all three of these webinars and get free StrongLoop swag! Just send an email to <a href="mailto:marketsl@us.ibm.com">marketsl@us.ibm.com</a> with your name and address after the series is complete. Please use the same email address you used to register.
+- - - -
+
+{% include note.html content="Attend all three of these webinars and get free StrongLoop swag! Just send an email to <a href="mailto:marketsl@us.ibm.com">marketsl@us.ibm.com</a> with your name and address after the series is complete. Please use the same email address you used to register." %}
+
+- - - -
 
 PS - There's also time to register for our May webcast. Details are below:
 
-## [101 Tips and Extensions for API Connect](https://engage.vevent.com/index.jsp?eid=556&seid=90261)
-May 24, 2017: 
+## May 24, 2017: [101 Tips and Extensions for API Connect](https://engage.vevent.com/index.jsp?eid=556&seid=90261)
 
 {% include image.html file='2017/101 tips.jpeg' alt='101 Tips and Extensions for API Connect' %}
 
