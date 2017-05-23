@@ -1,9 +1,8 @@
 ---
 id: 29289
 title: Three New Webcasts for June - LoopBack and OpenWhisk
-date: 2017-05-23T07:00:15+00:00
+date: 2017-05-23
 author: Dave Whiteley
-guid: https://strongloop.com/?p=29289
 permalink: /strongblog/three-new-webcasts-for-june-loopback-openwhisk/
 categories:
   - Events
