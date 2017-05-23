@@ -10,7 +10,7 @@ categories:
   - Community
 ---
 
-We are excited to announce three new webcasts for June!
+We are excited to announce three new free webcasts for June!
 
 This series will focus on Open Source solutions - in this case OpenWhisk and LoopBack. Check out the topics and dates below, and be sure to register for all three!
  
