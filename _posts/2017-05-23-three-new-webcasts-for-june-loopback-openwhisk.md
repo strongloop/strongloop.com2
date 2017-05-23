@@ -1,5 +1,5 @@
 ---
-id: 29289
+layout: post
 title: Three New Webcasts for June - LoopBack and OpenWhisk
 date: 2017-05-23
 author: Dave Whiteley
