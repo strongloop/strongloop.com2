@@ -61,7 +61,7 @@ Whether you’re new to LoopBack or a longtime user, you’ll find this webinar 
 
 - - - -
 
-{% include note.html content="Attend all three of these webinars and get free StrongLoop swag! Just send an email to <a href="mailto:marketsl@us.ibm.com">marketsl@us.ibm.com</a> with your name and address after the series is complete. Please use the same email address you used to register." %}
+{% include note.html content="Attend all three of these webinars and get free StrongLoop swag! Just send an email to <a href='mailto:marketsl@us.ibm.com'>marketsl@us.ibm.com</a> with your name and address after the series is complete. Please use the same email address you used to register." %}
 
 - - - -
 
