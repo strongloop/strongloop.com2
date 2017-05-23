@@ -14,7 +14,7 @@ We are excited to announce three new free webcasts for June!
 
 This series will focus on Open Source solutions - in this case OpenWhisk and LoopBack. Check out the topics and dates below, and be sure to register for all three!
  
-## June 7, 2017: [Go Serverless with OpenWhisk](https://engage.vevent.com/index.jsp?eid=556&seid=90389)
+### June 7, 2017: [Go Serverless with OpenWhisk](https://engage.vevent.com/index.jsp?eid=556&seid=90389)
 
 {% include image.html file='2017/Serverless w OpenWhisk.jpg' alt='Go Serverless with OpenWhisk' %}
 
@@ -29,7 +29,7 @@ To sum up: less management, more code, what can go wrong with that?
 
 [Register Now](https://engage.vevent.com/index.jsp?eid=556&seid=90389)
 
-## June 13, 2017: [Unlock Enterprise Data with APIs Using LoopBack](https://engage.vevent.com/index.jsp?eid=556&seid=90377)
+### June 13, 2017: [Unlock Enterprise Data with APIs Using LoopBack](https://engage.vevent.com/index.jsp?eid=556&seid=90377)
 
 {% include image.html file='2017/LoopBack-Unlockenterprise.jpg' alt='Unlock Enterprise Data with APIs Using LoopBack with Sai Vennam' %}
 
@@ -41,7 +41,7 @@ The open source API framework LoopBack can be used for many development use case
 
 [Register Now](https://engage.vevent.com/index.jsp?eid=556&seid=90377)
 
-## June 27, 2017: [LoopBack Now and Next](https://engage.vevent.com/index.jsp?eid=556&seid=90290)
+### June 27, 2017: [LoopBack Now and Next](https://engage.vevent.com/index.jsp?eid=556&seid=90290)
 
 {% include image.html file='2017/Loopback now and next.jpeg' alt='LoopBack Now and Next with with Ritchie Martori and ErinMcKean' %}
 
@@ -61,13 +61,13 @@ Whether you’re new to LoopBack or a longtime user, you’ll find this webinar 
 
 - - - -
 
-{% include note.html content="Attend all three of these webinars and get free StrongLoop swag! Just send an email to <a href='mailto:marketsl@us.ibm.com'>marketsl@us.ibm.com</a> with your name and address after the series is complete. Please use the same email address you used to register." %}
+Attend all three of these webinars and get free StrongLoop swag! Just send an email to <a href="mailto:marketsl@us.ibm.com">marketsl@us.ibm.com</a> with your name and address after the series is complete. Please use the same email address you used to register.
 
 - - - -
 
 PS - There's also time to register for our May webcast. Details are below:
 
-## May 24, 2017: [101 Tips and Extensions for API Connect](https://engage.vevent.com/index.jsp?eid=556&seid=90261)
+### May 24, 2017: [101 Tips and Extensions for API Connect](https://engage.vevent.com/index.jsp?eid=556&seid=90261)
 
 {% include image.html file='2017/101 tips.jpeg' alt='101 Tips and Extensions for API Connect' %}
 
