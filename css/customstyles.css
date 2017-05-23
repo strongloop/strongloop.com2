@@ -924,3 +924,18 @@ div.post-content h4 {
 .c-container .excerpt img{
   max-width: 100%;
 }
+/* Share buttons */
+.twitter-share-button{
+  color: #fff;
+  background-color: #1da1f2;
+  padding: 2px;
+  font-size: 11.5px;
+  border-radius: 3px;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+.twitter-share-button:hover{
+  color: #fff;
+}
