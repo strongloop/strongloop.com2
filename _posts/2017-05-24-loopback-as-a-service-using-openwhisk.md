@@ -49,7 +49,7 @@ In this blog we are going to explore an altogether different and brand new way o
 
 The advantages of such an architecture are:
 <ol>
-  <li class="graf graf--li">Effortless scaling which is managed by the cloud provider transparent to the application provider.</span></li>
+  <li class="graf graf--li">Effortless scaling which is managed by the cloud provider transparent to the application provider.</li>
   <li class="graf graf--li">Less or no operations cost for the application provider.</li>
   <li class="graf graf--li">Cost-effective because you only pay when you use.</li>
   <li class="graf graf--li">Simplifies the application architecture as we shall see very shortly.</li>
@@ -63,7 +63,7 @@ From OpenWhisk documentation:
 An OpenWhisk action is a piece of code that performs one specific task. An action can be written in the language of your choice. You provide your action to OpenWhisk either source code or a Docker image. An action performs work when invoked from your code via REST API. Actions can also automatically respond to events from BlueMix and third party services using a trigger.
 Let us take a look at how we can architect the multi-tenant LoopBack micro-service using OpenWhisk actions.
 
-<img class="aligncenter wp-image-29404 size-large" src="{{site.url}}/blog-assets/2017/04/OpenWhisk.png" alt="LoopBack As A Service Using OpenWhisk" width="1030" height="569" />
+<img class="aligncenter wp-image-29404 size-large" src="{{site.url}}/blog-assets/2017/04/OpenWhisk.png" alt="LoopBack As A Service Using OpenWhisk" width="600" height="331" />
 The table below summarizes the different actions and their purpose.
 
 <table class="resizable">
@@ -96,7 +96,7 @@ The table below summarizes the different actions and their purpose.
     </tr>
     <tr>
       <td>
-        <div>/datasources/:id/definitions</span></div></td>
+        <div>/datasources/:id/definitions
       <td>
         <div>GET</div>
       </td>
@@ -231,7 +231,7 @@ curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj_dev/demo/createModel.h
 ```
 <p>We can see that the model doc got created in Cloudant models collection.</p>
 
-<img class="alignnone wp-image-29294 size-large" src="{{site.url}}/blog-assets/2017/04/Screen-Shot-2017-04-13-at-10.59.53-PM-904x1030.png" alt="Screen Shot 2017-04-13 at 10.59.53 PM" width="904" height="1030" />
+<img class="alignnone wp-image-29294 size-large" src="{{site.url}}/blog-assets/2017/04/Screen-Shot-2017-04-13-at-10.59.53-PM-904x1030.png" alt="Screen Shot 2017-04-13 at 10.59.53 PM" width="600" height="683" />
 
 <h2>2) createModelInstance</h2>
 
@@ -365,7 +365,7 @@ curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj@in.ibm.com_dev/demo/cr
 ```
 We can see that the model doc got created in Cloudant accounts collection.
 
-<img class="alignnone wp-image-29295 size-full" src="{{site.url}}/blog-assets/2017/04/Screen-Shot-2017-04-14-at-11.38.24-PM.png" alt="Screen Shot 2017-04-14 at 11.38.24 PM" width="858" height="596" />
+<img class="alignnone wp-image-29295 size-full" src="{{site.url}}/blog-assets/2017/04/Screen-Shot-2017-04-14-at-11.38.24-PM.png" alt="Screen Shot 2017-04-14 at 11.38.24 PM" width="600" height="417" />
 A key thing to observe in the implementation of createModelInstance OpenWhisk action is that it is completely generic and can work for any LoopBack connector. In the example above we installed Cloudant connector (step 1) and it worked for Cloudant. We can use the same code base and install another connector (ex. Redis) and create an OpenWhisk action which can create records in Redis. 
 
 Note: An OpenWhisk action was created for Redis using the above mentioned approached and invoked as follows: 
