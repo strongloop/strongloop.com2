@@ -15,47 +15,46 @@ categories:
 
 In our [previous blog](https://strongloop.com/strongblog/creating-a-multi-tenant-connector-microservice-using-loopback/) we saw how we can host LoopBack as a multi-tenant micro-service on the cloud. As a quick recap, this would require us to: 
 
-<ol class="postList">
- <li class="graf graf--li">Expose REST APIs for CRUD on /models and /datasources resources.</li>
- <li class="graf graf--li">Use the LoopBack NodeJS APIs to create models, datasources and attach them programmatically.</li>
- <li class="graf graf--li">Use the http path property of models to create models in the namespace of the tenant and generate unique URLs for each model (even if the resources they expose have the same name).</li>
- <li class="graf graf--li">How to workaround challenges introduced because there are no LoopBack NodeJS APIs for deleting and updating datasources and models.</li>
-</ol>
-<p id="magicdomid8" class="ace-line">Following the steps in the blog would let us stand-up a single instance of the LoopBack application which is great for demos. It is not yet ready for deploying at scale on the cloud. The previous blog ends with open questions on:<!--more--></p>
+1. Expose REST APIs for CRUD on /models and /datasources resources.
+2. Use the LoopBack NodeJS APIs to create models, datasources and attach them programmatically.
+3. Use the http path property of models to create models in the namespace of the tenant and generate unique URLs for each model (even if the resources they expose have the same name).
+4. How to workaround challenges introduced because there are no LoopBack NodeJS APIs for deleting and updating datasources and models.
 
-<ol>
-  <li class="graf graf--li">How to scale the application horizontally - Multiple instances of the application running and able to process simultaneous requests for the same API. This will also be needed to avoid single points of failure (min-3 deployments). Introducing multiple instances brings in challenges of deploying models/datasources to all the instances and keeping them in sync.</li>
-  <li class="graf graf--li">How to scale the application vertically - When we dynamically create datasources and models in the applications (which has finite resources in terms of RAM and CPU) we will eventually hit a threshold where no more models/datasources can be created. At this point, we need to be able to start deploying to another LoopBack application pool. Note that all horizontal instances of the application run the same models/datasources whereas different (vertical) application pools run different models/datasources. Introducing vertical scaling brings in the challenges of maintaining multiple application pools and logic for choosing which pool would be used for deploying a model/datasource.</li>
-  <li class="graf graf--li">When an application instance restarts after a crash or is newly added for horizontal scaling, it needs to create all models/datasources that peer instances have to get functional parity with them. For the time this takes, the instance can not join the load-balancing group of instances. </li>
-  <li class="graf graf--li">In real production scenarios, there could be LoopBack applications specific to each application type. This will introduce the need for having a registry for different applications supported and getting the network endpoint to work with each of them.</li>
-</ol>
+Following the steps in the blog would let us stand-up a single instance of the LoopBack application which is great for demos. It is not yet ready for deploying at scale on the cloud. The previous blog ends with open questions on:<!--more-->
+
+1. How to scale the application horizontally - Multiple instances of the application running and able to process simultaneous requests for the same API. This will also be needed to avoid single points of failure (min-3 deployments). Introducing multiple instances brings in challenges of deploying models/datasources to all the instances and keeping them in sync.</li>
+
+2. How to scale the application vertically - When we dynamically create datasources and models in the applications (which has finite resources in terms of RAM and CPU) we will eventually hit a threshold where no more models/datasources can be created. At this point, we need to be able to start deploying to another LoopBack application pool. Note that all horizontal instances of the application run the same models/datasources whereas different (vertical) application pools run different models/datasources. Introducing vertical scaling brings in the challenges of maintaining multiple application pools and logic for choosing which pool would be used for deploying a model/datasource.
+
+3. When an application instance restarts after a crash or is newly added for horizontal scaling, it needs to create all models/datasources that peer instances have to get functional parity with them. For the time this takes, the instance can not join the load-balancing group of instances. 
+
+4. In real production scenarios, there could be LoopBack applications specific to each application type. This will introduce the need for having a registry for different applications supported and getting the network endpoint to work with each of them.</li>
+
 As one can see, to solve the above problems non-trivial and entails huge deployment and management (of instances, pools, application specific micro services and registry) effort.
 
 This blog explores one particular way to address the challenges highlighted above. When it comes to deploying a LoopBack application (or any app for that matter) on cloud there are different ways to do it:
 
-<ol>
-  <li class="graf graf--li">IaaS way - The application is deployed on VMs or bare metal servers of a cloud provider or in private cloud.</li>
-  <li class="graf graf--li">PaaS way - Deploy the application using NodeJS (runtime specific) buildpack. </li>
-  <li class="graf graf--li">CaaS way - Deploying the application as Docker containers.</li>
-</ol>
+1. IaaS way - The application is deployed on VMs or bare metal servers of a cloud provider or in private cloud.
+2. PaaS way - Deploy the application using NodeJS (runtime specific) buildpack. 
+3. CaaS way - Deploying the application as Docker containers.
 
 The author of this blog has a first-hand experience of running production LoopBack applications using way 2 and 3. We have also deployed LoopBack apps on VMs for a non-production scenario.
 
 In this blog we are going to explore an altogether different and brand new way of deploying LoopBack apps using the latest cloud technology in town which is:
 
-4. FaaS - which means Functions as a Service or serverless.
+1. FaaS - which means Functions as a Service or serverless.
 
 **Serverless** is a cloud computing code execution model which is event driven wherein containers encapsulating the function/code defined by users are run in response to the event, the response returned to the caller and the container is killed and all of this is managed by the cloud provider in a scalable way. Further, the user is billed based on the events/invocations and resources consumed to fulfill the invocation. See this article on [serverless computing](https://en.wikipedia.org/wiki/Serverless_computing) and [serverless architectures](https://martinfowler.com/articles/serverless.html) for a detailed explanation.
 
 The advantages of such an architecture are:
-<ol>
-  <li class="graf graf--li">Effortless scaling which is managed by the cloud provider transparent to the application provider.</li>
-  <li class="graf graf--li">Less or no operations cost for the application provider.</li>
-  <li class="graf graf--li">Cost-effective because you only pay when you use.</li>
-  <li class="graf graf--li">Simplifies the application architecture as we shall see very shortly.</li>
-  <li class="graf graf--li">Granular and parallel development and deployment model.</li>
-  <li class="graf graf--li">Truly stateless because of the ephemeral nature of the containers.</li>
-</ol>
+
+1. Effortless scaling which is managed by the cloud provider transparent to the application provider.
+2. Less or no operations cost for the application provider.
+3. Cost-effective because you only pay when you use.
+4. Simplifies the application architecture as we shall see very shortly.
+5. Granular and parallel development and deployment model.
+6. Truly stateless because of the ephemeral nature of the containers.
+
 While there are many cloud vendors who are offering FaaS, in this blog we use the IBM BlueMix FaaS offering called OpenWhisk. Apache OpenWhisk is an open-source server less compute platform and IBM BlueMix hosts and manages OpenWhisk as a service. You can get more details in our [About OpenWhisk documentation](https://console.ng.bluemix.net/docs/openwhisk/openwhisk_about.html#about-openwhisk).
 
 From OpenWhisk documentation:
@@ -155,7 +154,7 @@ The table below summarizes the different actions and their purpose.
 
 Let us explore a couple of these actions in more detail. Once the examples are understood, the other actions can also be defined on similar lines.
 
-<h2>1) createModel</h2>
+**1. createModel**
 
 Create a new package.json with:
 
@@ -212,12 +211,12 @@ function create_model(params) {
  
 exports.main = create_model;
 ```
-1) Create a zip for the package
+1. Create a zip for the package
 
 ```
 zip -r createModel.zip *
 ```
-2) Create an OpenWhisk action for the package (See [here](https://console.ng.bluemix.net/docs/openwhisk/openwhisk_webactions.html#openwhisk_webactions) for details)
+2. Create an OpenWhisk action for the package (See [here](https://console.ng.bluemix.net/docs/openwhisk/openwhisk_webactions.html#openwhisk_webactions) for details)
 
 ```
 wsk action create /sukrishj_dev/demo/createModel --kind nodejs:6 createModel.zip --web true
@@ -225,7 +224,7 @@ ok: created action demo/createModel
 ```
 **Note:** Replace sukrishj_dev with yourorg_yourspace on BlueMix.
 
-3) Invoke the OpenWhisk webAction
+3. Invoke the OpenWhisk webAction
 
 ```
 curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj_dev/demo/createModel.http –X POST -H 'Content-Type: application/json' -d @model.json 
@@ -235,7 +234,7 @@ We can see that the model doc got created in Cloudant models collection.
 
 <img class="alignnone wp-image-29294 size-large" src="{{site.url}}/blog-assets/2017/04/Screen-Shot-2017-04-13-at-10.59.53-PM-904x1030.png" alt="Screen Shot 2017-04-13 at 10.59.53 PM" width="600" height="683" />
 
-**2) createModelInstance**
+**2. createModelInstance**
 
 The implementation of this action:
 <ul>
@@ -337,30 +336,30 @@ exports.main = create_model_instance;
 
 **Note:** The implementation reads the model and datasource information stored by the createModel action in Cloudant. Sharing of datastores across micro-services is considered an anti-pattern and is done here only to simplify the implementation for demonstration purposes. In the real world, the createModelInstance would have its own persistence which could be optimized for low read latency (CQRS).
 
-0) Install package dependencies
+0. Install package dependencies
 ```
 npm install
 ```
-1) Install the LoopBack Cloudant connector
+1. Install the LoopBack Cloudant connector
 
 ```
 npm install loopback-connector-cloudant --save
 ```
 **Note:** We use Cloudant connector to create a record in a collection specified in the datasource.
 
-2) Create a zip for the package
+2. Create a zip for the package
 
 ```
 zip -r createModelInstance.zip
 ```
-3) Create an OpenWhisk action for the package (Refer to [Create a simple API](https://loopback.io/doc/en/lb3/Create-a-simple-API.html) for details)
+3. Create an OpenWhisk action for the package (Refer to [Create a simple API](https://loopback.io/doc/en/lb3/Create-a-simple-API.html) for details)
 
 ```
 wsk action create /sukrishj_dev/demo/createModelInstance --kind nodejs:6 createModelInstance.zip  --web true
 ok: created action demo/createModelInstance
 ```
 
-4) Invoke the OpenWhisk webAction
+4. Invoke the OpenWhisk webAction
 
 ```
 curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj@in.ibm.com_dev/demo/createModelInstance.http/AMo7xBkvdF/c95fcc09-11a2-4ddb-bbdc-e7053d91ed3e/Accounts  X POST -H 'Content-Type: application/json' -d @model.json
