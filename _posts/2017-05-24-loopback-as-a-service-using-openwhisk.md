@@ -1,7 +1,7 @@
 ---
 id: 29289
 title: LoopBack As A Service Using OpenWhisk
-date: 2017-05-24
+date: 2017-05-24 08:00:00
 author:  
 - Subramanian Krishnan
 - Nagarjuna Surabathina
