@@ -67,89 +67,13 @@ Let us take a look at how we can architect the multi-tenant LoopBack micro-servi
 
 The table below summarizes the different actions and their purpose.
 
-<table class="resizable">
-  <tbody>
-    <tr>
-      <td>
-        <div><b>Resource</b></div>
-      </td>
-      <td>
-        <div><b>Method</b></div>
-      </td>
-      <td>
-        <div><b>OpenWhisk Action</b></div></td>
-      <td>
-        <div><b>Description</b></div></td>
-    </tr>
-    <tr>
-      <td>
-        <div>/datasources</div>
-      </td>
-      <td>
-        <div>POST</div>
-      </td>
-      <td>
-        <div>createDatasource</div>
-      </td>
-      <td>
-        <div>Creates a cloudant doc in the datasources collection and returns the id.</div>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div>/datasources/:id/definitions
-      <td>
-        <div>GET</div>
-      </td>
-      <td>
-        <div>getModelDefinition</div>
-      </td>
-      <td>
-        <div>Lists the available model definitions available in the datasource using LoopBack connector.</div>
-      </td>
-      <tr>
-      <td>
-        <div>/datasources/:id/schemas/:model</div>
-      </td>
-      <td>
-        <div>GET</div>
-      </td>
-      <td>
-        <div>getModelSchema</div>
-      </td>
-      <td>
-        <div>Returns the schema for the model using LoopBack connector.</div>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div>/models</div>
-      </td>
-      <td>
-        <div>POST</div>
-      </td>
-      <td>
-        <div>createModel</div>
-      </td>
-      <td>
-        <div>Creates a cloudant doc in the models collection and returns the id.</div>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div>/:tenantId/:modelId/:model</div>
-      </td>
-      <td>
-        <div>POST</div>
-      </td>
-      <td>
-        <div>createModelInstance</div>
-      </td>
-      <td>
-        <div>Creates an instance of the model on the datasource using the LoopBack connector.</div>
-      </td>
-    </tr>
-</div>
+| Resource | Method | OpenWhisk Action | Description |
+|-------|-------|-------|-------|
+| /datasources | POST | createDatasource | Creates a cloudant doc in the datasources collection and returns the id. |
+| /datasources<p>/:id/definitions</p> | GET | getModelDefinition | Lists the available model definitions available in the datasource using LoopBack connector. |
+| /datasources<p>/:id /schemas/:model </p> | GET | getModelSchema | Returns the schema for the model using LoopBack connector. |
+| /models |	POST | createModel | Creates a cloudant doc in the models collection and returns the id. |
+| /:tenantId<p>/:modelId/:model </p> | POST | createModelInstance | Creates an instance of the model on the datasource using the LoopBack connector. |
 
 **Note:** that this is a representative list of resources and methods and not an exhaustive list.
 
