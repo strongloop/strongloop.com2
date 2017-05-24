@@ -89,7 +89,7 @@ The steps 1–3 are the initial setup.  You have do them only once.
 
 Ready to start monitoring event loops, manage Node clusters and chase down memory leaks? We’ve made it easy to get started with [StrongOps](http://strongloop.com/node-js-performance/strongops/) either locally or on your favorite cloud, with a [simple npm install](http://strongloop.com/get-started/).
 
-<img alt="Screen Shot 2014-02-03 at 3.25.40 AM" src={{site.url}}/blog-assets/uploads/2014/02/Screen-Shot-2014-02-03-at-3.25.40-AM.png" width="1746" height="674" />
+<img alt="Screen Shot 2014-02-03 at 3.25.40 AM" src={{site.url}}/blog-assets/2014/02/Screen-Shot-2014-02-03-at-3.25.40-AM.png" width="1746" height="674" />
 
 ## **[What’s next?](http://strongloop.com/get-started/)
   

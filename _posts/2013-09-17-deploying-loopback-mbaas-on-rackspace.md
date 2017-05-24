@@ -78,7 +78,7 @@ Click the “Create Deployment” button to provision your server.
 </p>
 
 <p dir="ltr">
-  <img class="alignnone  wp-image-6786" alt="iphone-examples-3" src="{{site.url}}/blog-assets/uploads/2013/09/iphone-examples-3.png" width="532" height="312" />
+  <img class="alignnone  wp-image-6786" alt="iphone-examples-3" src="{{site.url}}/blog-assets/2013/09/iphone-examples-3.png" width="532" height="312" />
 </p>
 
 <p dir="ltr">
@@ -121,7 +121,7 @@ Click the “Create Deployment” button to provision your server.
   Run the Application in the XCode iOS simulator with by Pressing the Run button in the top left or using the hotkey combination (?+R) . From the simulator Click the &#8216;Inject Data&#8217; button in the top left to insert 3 &#8216;product&#8217; model instances into the LoopBack server.  Naturally you will see the Records appear on the mobile device, but you can also verify the server content by opening the API Explorer <a href="http://localhost:3000/explorer/#!/products/products_find_get_4 ">http://localhost:3000/explorer/#!/products/products_find_get_4 </a> to the Get Request and pressing the &#8216;Try it out&#8217; button.
 </p>
 
-[<img class="alignnone size-full wp-image-6789" alt="Screen Shot 2013-09-17 at 7.51.47 AM" src="{{site.url}}/blog-assets/uploads/2013/09/Screen-Shot-2013-09-17-at-7.51.47-AM.png" width="752" height="565" />]({{site.url}}/blog-assets/2013/09/Screen-Shot-2013-09-17-at-7.51.47-AM.png)
+[<img class="alignnone size-full wp-image-6789" alt="Screen Shot 2013-09-17 at 7.51.47 AM" src="{{site.url}}/blog-assets/2013/09/Screen-Shot-2013-09-17-at-7.51.47-AM.png" width="752" height="565" />]({{site.url}}/blog-assets/2013/09/Screen-Shot-2013-09-17-at-7.51.47-AM.png)
 
 Additionally, you can add data to the backend from the API Explorer as well from the &#8216;POST&#8217; button by inserting the model JSON data { &#8220;name&#8221;: &#8220;Matts Product&#8221;, &#8220;inventory&#8221; : 22 }  in the &#8216;Value&#8217; field. Pressing Refresh on the mobile client will sync the tableView.
 
