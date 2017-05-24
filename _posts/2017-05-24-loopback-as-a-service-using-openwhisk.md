@@ -106,8 +106,7 @@ The table below summarizes the different actions and their purpose.
       <td>
         <div>Lists the available model definitions available in the datasource using LoopBack connector.</div>
       </td>
-    </tr>
-    <tr>
+      <tr>
       <td>
         <div>/datasources/:id/schemas/:model</div>
       </td>
@@ -149,8 +148,7 @@ The table below summarizes the different actions and their purpose.
         <div>Creates an instance of the model on the datasource using the LoopBack connector.</div>
       </td>
     </tr>
-  </tbody>
-</table>
+
 **Note:*** that this is a representative list of resources and methods and not an exhaustive list.
 
 Let us explore a couple of these actions in more detail. Once the examples are understood, the other actions can also be defined on similar lines.
