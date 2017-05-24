@@ -151,7 +151,7 @@ The table below summarizes the different actions and their purpose.
       </td>
     </tr>
 
-**Note:*** that this is a representative list of resources and methods and not an exhaustive list.
+**Note:** that this is a representative list of resources and methods and not an exhaustive list.
 
 Let us explore a couple of these actions in more detail. Once the examples are understood, the other actions can also be defined on similar lines.
 
@@ -223,7 +223,8 @@ zip -r createModel.zip *
 wsk action create /sukrishj_dev/demo/createModel --kind nodejs:6 createModel.zip --web true
 ok: created action demo/createModel
 ```
-Note: Replace sukrishj_dev with yourorg_yourspace on BlueMix.
+**Note:** Replace sukrishj_dev with yourorg_yourspace on BlueMix.
+
 3) Invoke the OpenWhisk webAction
 
 ```
@@ -234,7 +235,7 @@ We can see that the model doc got created in Cloudant models collection.
 
 <img class="alignnone wp-image-29294 size-large" src="{{site.url}}/blog-assets/2017/04/Screen-Shot-2017-04-13-at-10.59.53-PM-904x1030.png" alt="Screen Shot 2017-04-13 at 10.59.53 PM" width="600" height="683" />
 
-<h2>2) createModelInstance</h2>
+**2) createModelInstance**
 
 The implementation of this action:
 <ul>
@@ -334,7 +335,7 @@ function invoke_model(params) {
 exports.main = create_model_instance;
 ```
 
-Note: The implementation reads the model and datasource information stored by the createModel action in Cloudant. Sharing of datastores across micro-services is considered an anti-pattern and is done here only to simplify the implementation for demonstration purposes. In the real world, the createModelInstance would have its own persistence which could be optimized for low read latency (CQRS).
+**Note:** The implementation reads the model and datasource information stored by the createModel action in Cloudant. Sharing of datastores across micro-services is considered an anti-pattern and is done here only to simplify the implementation for demonstration purposes. In the real world, the createModelInstance would have its own persistence which could be optimized for low read latency (CQRS).
 
 0) Install package dependencies
 ```
@@ -345,7 +346,7 @@ npm install
 ```
 npm install loopback-connector-cloudant --save
 ```
-Note: We use Cloudant connector to create a record in a collection specified in the datasource.
+**Note:** We use Cloudant connector to create a record in a collection specified in the datasource.
 
 2) Create a zip for the package
 
@@ -370,7 +371,7 @@ We can see that the model doc got created in Cloudant accounts collection.
 <img class="alignnone wp-image-29295 size-full" src="{{site.url}}/blog-assets/2017/04/Screen-Shot-2017-04-14-at-11.38.24-PM.png" alt="Screen Shot 2017-04-14 at 11.38.24 PM" width="600" height="417" />
 A key thing to observe in the implementation of createModelInstance OpenWhisk action is that it is completely generic and can work for any LoopBack connector. In the example above we installed Cloudant connector (step 1) and it worked for Cloudant. We can use the same code base and install another connector (ex. Redis) and create an OpenWhisk action which can create records in Redis. 
 
-<b>Note:</b> An OpenWhisk action was created for Redis using the above mentioned approached and invoked as follows: 
+**Note:** An OpenWhisk action was created for Redis using the above mentioned approached and invoked as follows: 
 
 ```
 curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj_dev/demo/createRedisModelInstance.http/AMo7xBkvdF/061d5b185ae2f4e8efdb5dbf315752f4/Accounts -X POST -H 'Content-Type: application/json' -d @model.json
@@ -457,4 +458,4 @@ The one thing which could be a potential concern is the latency of serving reque
 
 All in all FaaS/serverless/OpenWhisk seems to be very promising and definitely worth an evaluation not just for LoopBack as a service but cloud-based services in general.
 
-<b>Note:</b> The astute reader would have noticed the minimal input validation and no security implemented in the code for the actions shared in the post. These are omitted to simplify the blog but are needed for a production implementation.</span></p>
+**Note:** The astute reader would have noticed the minimal input validation and no security implemented in the code for the actions shared in the post. These are omitted to simplify the blog but are needed for a production implementation.</span></p>
