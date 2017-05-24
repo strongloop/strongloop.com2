@@ -38,7 +38,7 @@ Throughout these developments, we continued to engage the Node.js community. We 
 
 ## The Future
 
-We are excited about our new focus on APIs and the Open Source developer communities that builds them. We plan to continue to deliver relevant content and resources to help you be part of the API economy. Want to stay looped in? Check out these options:
+We are excited about our new focus on APIs and the Open Source developer communities that builds them. We will continue to post the same sort of LoopBack and Open Source-related content you've come to expect so that you you be part of the API economy. Want to stay looped in? Check out these options:
 
 - Follow us on [Twitter](https://twitter.com/StrongLoop).
 - Like us on [Facebook](https://www.facebook.com/strongloop/).
