@@ -149,8 +149,7 @@ The table below summarizes the different actions and their purpose.
         <div>Creates an instance of the model on the datasource using the LoopBack connector.</div>
       </td>
     </tr>
-  </tbody>
-</table>
+</div>
 
 **Note:** that this is a representative list of resources and methods and not an exhaustive list.
 
@@ -447,7 +446,7 @@ This confirms that different OpenWhisk actions can be created for different appl
   </tbody>
 </table>
 <div class="ace-line"></div>
-<div class="ace-line">
+<div class="ace-line"></div>
 
 With a little tweak to the createModel action, we can return the base URL corresponding to the application for which the model is created (Cloudant/Redis/any other). This gives a neat and simple way of scaling the service to support multiple applications.
 
