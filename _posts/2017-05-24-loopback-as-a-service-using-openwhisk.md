@@ -159,14 +159,16 @@ Let us explore a couple of these actions in more detail. Once the examples are u
 
 Create a new package.json with:
 
-  {
+```
+{
   "name": "create-model",
-  "main": "index.js",
-  "dependencies": {
-  "cloudant": "^1.7.1",
+    "main": "index.js",
+    "dependencies": {
+    "cloudant": "^1.7.1",
   "uuid": "^3.0.1"
   }
-  }
+}
+```
 
 index.js
 
