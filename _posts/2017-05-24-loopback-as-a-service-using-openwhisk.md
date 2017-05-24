@@ -149,6 +149,8 @@ The table below summarizes the different actions and their purpose.
         <div>Creates an instance of the model on the datasource using the LoopBack connector.</div>
       </td>
     </tr>
+  </tbody>
+</table>
 
 **Note:** that this is a representative list of resources and methods and not an exhaustive list.
 
@@ -168,6 +170,7 @@ Create a new package.json with:
   }
 }
 ```
+
 index.js
 
 ```
@@ -211,17 +214,20 @@ function create_model(params) {
  
 exports.main = create_model;
 ```
+
 1. Create a zip for the package
 
 ```
 zip -r createModel.zip *
 ```
+
 2. Create an OpenWhisk action for the package (See [here](https://console.ng.bluemix.net/docs/openwhisk/openwhisk_webactions.html#openwhisk_webactions) for details)
 
 ```
 wsk action create /sukrishj_dev/demo/createModel --kind nodejs:6 createModel.zip --web true
 ok: created action demo/createModel
 ```
+
 **Note:** Replace sukrishj_dev with yourorg_yourspace on BlueMix.
 
 3. Invoke the OpenWhisk webAction
@@ -230,6 +236,7 @@ ok: created action demo/createModel
 curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj_dev/demo/createModel.http –X POST -H 'Content-Type: application/json' -d @model.json 
 {"modelId":"c95fcc09-11a2-4ddb-bbdc-e7053d91ed3e"}
 ```
+
 We can see that the model doc got created in Cloudant models collection.
 
 <img class="alignnone wp-image-29294 size-large" src="{{site.url}}/blog-assets/2017/04/Screen-Shot-2017-04-13-at-10.59.53-PM-904x1030.png" alt="Screen Shot 2017-04-13 at 10.59.53 PM" width="600" height="683" />
@@ -337,14 +344,17 @@ exports.main = create_model_instance;
 **Note:** The implementation reads the model and datasource information stored by the createModel action in Cloudant. Sharing of datastores across micro-services is considered an anti-pattern and is done here only to simplify the implementation for demonstration purposes. In the real world, the createModelInstance would have its own persistence which could be optimized for low read latency (CQRS).
 
 0. Install package dependencies
+
 ```
 npm install
 ```
+
 1. Install the LoopBack Cloudant connector
 
 ```
 npm install loopback-connector-cloudant --save
 ```
+
 **Note:** We use Cloudant connector to create a record in a collection specified in the datasource.
 
 2. Create a zip for the package
@@ -352,6 +362,7 @@ npm install loopback-connector-cloudant --save
 ```
 zip -r createModelInstance.zip
 ```
+
 3. Create an OpenWhisk action for the package (Refer to [Create a simple API](https://loopback.io/doc/en/lb3/Create-a-simple-API.html) for details)
 
 ```
@@ -365,6 +376,7 @@ ok: created action demo/createModelInstance
 curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj@in.ibm.com_dev/demo/createModelInstance.http/AMo7xBkvdF/c95fcc09-11a2-4ddb-bbdc-e7053d91ed3e/Accounts  X POST -H 'Content-Type: application/json' -d @model.json
 {"name":"Subu Krishnan","id":"007","reference":"James Bond"}
 ```
+
 We can see that the model doc got created in Cloudant accounts collection.
 
 <img class="alignnone wp-image-29295 size-full" src="{{site.url}}/blog-assets/2017/04/Screen-Shot-2017-04-14-at-11.38.24-PM.png" alt="Screen Shot 2017-04-14 at 11.38.24 PM" width="600" height="417" />
