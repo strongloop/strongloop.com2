@@ -156,7 +156,8 @@ The table below summarizes the different actions and their purpose.
 Let us explore a couple of these actions in more detail. Once the examples are understood, the other actions can also be defined on similar lines.
 
 <h2>1) createModel</h2>
-<p>Create a new package.json with:</p>
+
+Create a new package.json with:
 
 ```
 {
@@ -211,25 +212,25 @@ function create_model(params) {
  
 exports.main = create_model;
 ```
-<p>1) Create a zip for the package</p>
+1) Create a zip for the package
 
 ```
 zip -r createModel.zip *
 ```
-<p>2) Create an OpenWhisk action for the package (See [here](https://console.ng.bluemix.net/docs/openwhisk/openwhisk_webactions.html#openwhisk_webactions) for details)</p>
+2) Create an OpenWhisk action for the package (See [here](https://console.ng.bluemix.net/docs/openwhisk/openwhisk_webactions.html#openwhisk_webactions) for details)
 
 ```
 wsk action create /sukrishj_dev/demo/createModel --kind nodejs:6 createModel.zip --web true
 ok: created action demo/createModel
 ```
-<p>Note: Replace sukrishj_dev with yourorg_yourspace on BlueMix.</p>
-<p>3) Invoke the OpenWhisk webAction</p>
+Note: Replace sukrishj_dev with yourorg_yourspace on BlueMix.
+3) Invoke the OpenWhisk webAction
 
 ```
 curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj_dev/demo/createModel.http –X POST -H 'Content-Type: application/json' -d @model.json 
 {"modelId":"c95fcc09-11a2-4ddb-bbdc-e7053d91ed3e"}
 ```
-<p>We can see that the model doc got created in Cloudant models collection.</p>
+We can see that the model doc got created in Cloudant models collection.
 
 <img class="alignnone wp-image-29294 size-large" src="{{site.url}}/blog-assets/2017/04/Screen-Shot-2017-04-13-at-10.59.53-PM-904x1030.png" alt="Screen Shot 2017-04-13 at 10.59.53 PM" width="600" height="683" />
 
@@ -242,8 +243,9 @@ The implementation of this action:
   <li>Invokes the model instance create via the NodeJS API</li>
   <li>Returns the response</li>
 </ul>
-<p>Create a new package.json as shown below.</p>
-<p>package.json</p>
+Create a new package.json as shown below.
+
+package.json
 
 ```
 {
@@ -260,7 +262,7 @@ The implementation of this action:
   "description": "Generic OpenWhisk action to create a model instance"
 }
 ```
-<p>index.js</p>
+index.js
 
 ```
 var loopback = require('loopback');
