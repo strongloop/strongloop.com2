@@ -43,7 +43,7 @@ The author of this blog has a first-hand experience of running production LoopBa
 
 In this blog we are going to explore an altogether different and brand new way of deploying LoopBack apps using the latest cloud technology in town which is:
 
-<span>4. FaaS - which means Functions as a Service or serverless.</span>
+4. FaaS - which means Functions as a Service or serverless.
 
 **Serverless** is a cloud computing code execution model which is event driven wherein containers encapsulating the function/code defined by users are run in response to the event, the response returned to the caller and the container is killed and all of this is managed by the cloud provider in a scalable way. Further, the user is billed based on the events/invocations and resources consumed to fulfill the invocation. See this article on [serverless computing](https://en.wikipedia.org/wiki/Serverless_computing) and [serverless architectures](https://martinfowler.com/articles/serverless.html) for a detailed explanation.
 
@@ -61,9 +61,11 @@ While there are many cloud vendors who are offering FaaS, in this blog we use th
 From OpenWhisk documentation:
 
 An OpenWhisk action is a piece of code that performs one specific task. An action can be written in the language of your choice. You provide your action to OpenWhisk either source code or a Docker image. An action performs work when invoked from your code via REST API. Actions can also automatically respond to events from BlueMix and third party services using a trigger.
+
 Let us take a look at how we can architect the multi-tenant LoopBack micro-service using OpenWhisk actions.
 
-<img class="aligncenter wp-image-29404 size-large" src="{{site.url}}/blog-assets/2017/04/OpenWhisk.png" alt="LoopBack As A Service Using OpenWhisk" width="600" height="331" />
+<img class="aligncenter wp-image-29404" src="{{site.url}}/blog-assets/2017/04/OpenWhisk.png" alt="LoopBack As A Service Using OpenWhisk" width="600" height="331" />
+
 The table below summarizes the different actions and their purpose.
 
 <table class="resizable">
