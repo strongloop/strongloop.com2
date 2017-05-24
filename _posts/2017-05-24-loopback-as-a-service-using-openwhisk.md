@@ -70,10 +70,10 @@ The table below summarizes the different actions and their purpose.
 | Resource | Method | OpenWhisk Action | Description |
 |-------|-------|-------|-------|
 | /datasources | POST | createDatasource | Creates a cloudant doc in the datasources collection and returns the id. |
-| /datasources<p>/:id/definitions</p> | GET | getModelDefinition | Lists the available model definitions available in the datasource using LoopBack connector. |
-| /datasources<p>/:id /schemas/:model </p> | GET | getModelSchema | Returns the schema for the model using LoopBack connector. |
+| /datasources  /:id/definitions | GET | getModelDefinition | Lists the available model definitions available in the datasource using LoopBack connector. |
+| /datasources  /:id /schemas/:model | GET | getModelSchema | Returns the schema for the model using LoopBack connector. |
 | /models |	POST | createModel | Creates a cloudant doc in the models collection and returns the id. |
-| /:tenantId<p>/:modelId/:model </p> | POST | createModelInstance | Creates an instance of the model on the datasource using the LoopBack connector. |
+| /:tenantId  /:modelId/:model | POST | createModelInstance | Creates an instance of the model on the datasource using the LoopBack connector. |
 
 **Note:** that this is a representative list of resources and methods and not an exhaustive list.
 
