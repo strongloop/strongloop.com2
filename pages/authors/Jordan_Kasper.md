@@ -1,7 +1,10 @@
 ---
 layout: author
 author: 'Jordan Kasper'
-permalink: /authors/Jordan_Kasper
+permalink: /authors/Jordan_Kasper/
+redirect_from:
+  - /authors/jordan_kasper
+  - /authors/Jordan_Kasper
 ---
 
 Former StrongLoop developer evangelist.
