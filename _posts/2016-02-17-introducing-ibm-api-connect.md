@@ -97,4 +97,4 @@ We plan on making API Connect available on March 15, 2016 with flexible pricing 
 
 [ibm.biz/apiconnect](http://ibm.biz/apiconnect)
 
-As always, you can get started with [StrongLoop](https://strongloop.com/) to create your APIs and try the current version of [IBM API Management](https://www.ibm.com/ibmid/basic_register/register_generic.html?a=IBMSystems&ctx=API&cc=us&lc=en&catalogName=Master&partNumber=APIM-TRIAL&quantity=1&trial=yes&S_TACT=C43102GW) if you are ready to start managing your APis.
+As always, you can get started with [LoopBack](http://loopback.io/) to quickly create dynamic end-to-end REST APIs and try the current version of [IBM API Management](https://www.ibm.com/ibmid/basic_register/register_generic.html?a=IBMSystems&ctx=API&cc=us&lc=en&catalogName=Master&partNumber=APIM-TRIAL&quantity=1&trial=yes&S_TACT=C43102GW) if you are ready to start managing your APis.

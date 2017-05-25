@@ -8,15 +8,13 @@ permalink: /strongblog/use-grunt-js-and-the-power-of-javascript-to-automating-re
 categories:
   - How-To
 ---
-_Editor&#8217;s Note: If you experience problems installing or configuring StrongLoop components, please make sure to check the [documentation](http://docs.strongloop.com/display/SL/StrongLoop+2.0) _and the_ _[Getting Started](http://strongloop.com/get-started/)_ _page for the most current instructions.__
+_Editor&#8217;s Note: If you experience problems installing or configuring StrongLoop components, please make sure to check the [documentation](http://docs.strongloop.com/display/SL/StrongLoop+2.0) for the most current instructions.__
 
 As a programmer, one of the first things you learn is the [DRY principle](http://en.wikipedia.org/wiki/Don't_repeat_yourself): don&#8217;t repeat yourself.
 
 Consider for a moment everything that you have to do when you finish a project: validating, compiling, minimizing, concatenating – it’s a lot. Doing all of these things by hand can be repetitive and if I know one thing about developers, it’s that they like to move on and tackle new problems. In this tutorial, we will show how [Grunt.js](http://gruntjs.com/) can optimize your workflow when building a website and get rid of some of the (ahem) grunt work.
 
-<h2 dir="ltr">
-  Setting Up Our Environment
-</h2>
+## Setting Up Our Environment
 
 Before we get started, you will need to install Node.js. If you don’t have Node.js make your way to the StrongLoop Node [download page](http://strongloop.com/products#downloads). We will be relying on the Node.js package manager ([npm](https://npmjs.org/)) to install Grunt and Grunt plugins for our project. npm comes packaged with StrongLoop Node, so we can get started.
 
@@ -30,9 +28,7 @@ After some lengthy output, you may find that everything ran successfully or you 
 
 Next, grab yourself a copy of [HTML5 Boilerplate](http://html5boilerplate.com/). This is what we will be working with for this tutorial, even though we will only really be interested in the JavaScript files. Extract the directory from the zip, place it on your desktop and rename it to gruntProject.
 
-<h2 dir="ltr">
-  Creating The package.json File
-</h2>
+## Creating The package.json File
 
 Next, we will be making package.json, one of the two files that are necessary for Grunt to do its thing. Enter thegruntProject directory and start editing an empty text file. Paste the following into it:
 
@@ -71,9 +67,7 @@ npm install grunt-contrib-concat --save-dev`
 
 These commands, when issued, should load the Uglify.js, JSHint and concatenation plugin respectively. This is not an extensive list by any means, in fact there are a plethora of available [Grunt plugins over at gruntjs.com](http://gruntjs.com/plugins).
 
-<h2 dir="ltr">
-  Making The Gruntfile
-</h2>
+## Making The Gruntfile
 
 The gruntfile is where you set options and specify operations that Grunt will use to automate tasks for our desired workflow.
 
@@ -89,9 +83,7 @@ Pull up another empty text file and paste the following:
 
 Save this file as `Gruntfile.js.`
 
-<h3 dir="ltr">
-  Configuring Task Options
-</h3>
+## Configuring Task Options
 
 Now that we have our files prepared, let&#8217;s start configuring our options for some of these tasks. Let&#8217;s configure the JSHint task that checks our JavaScript for errors. While the Grunt plugin for JSHint comes equipped with a multitude of configurable options outlined in its documentation, let&#8217;s just stick to something simple.
 
@@ -166,9 +158,7 @@ Remember those plugins we loaded earlier that allowed us to concatenate and mini
 
 Now that we&#8217;ve done this, running either grunt concat or grunt uglify would run them.
 
-<h2 dir="ltr">
-  Writing Tasks
-</h2>
+## Writing Tasks
 
 At this point, you may be thinking, &#8220;Wait a second… This isn&#8217;t optimized at all! I still have to run grunt task to make something happen!&#8221; Don’t worry. Luckily, Grunt let&#8217;s you outline which specific tasks you want to run. For instance, Grunt has a built in default task that can be configured with `registerTask('default', /* your tasks */); --` The name of the actual task (in this case Grunt&#8217;s default) would be the first argument, followed by the task list you want to run when the command is issued. Let&#8217;s add that piece of code to the bottom:
 
@@ -245,16 +235,12 @@ As you may have guessed, you can run each of these tasks, respectively, by issui
 `$ grunt development<br />
 $ grunt production`
 
-<h2 dir="ltr">
-  Conclusion
-</h2>
+## Conclusion
 
 In a nutshell, all we&#8217;ve done is added Grunt and some plugins locally to the project via npm, configured some options for some tasks, enabled those tasks, and then ran them. Grunt is a very powerful tool and can be used to make any sort of workflow imaginable. The documentation is rich, the community is vast, and with a surplus of quality plugins for Grunt, the sky is truly the limit for optimizing your workflow.
 
-## **[What’s next?](http://strongloop.com/get-started/)**
+## [What’s next?]
 
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
 </li>
-
-&nbsp;

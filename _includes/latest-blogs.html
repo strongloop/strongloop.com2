@@ -12,6 +12,27 @@
     {{post.excerpt}}
     <p><a class="no_icon" href="{{ post.url }}">More...</a>
   </div>
+  <div class="share">
+     <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9&appId=243237449414858";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <div class="fb-share-button" data-href="https://strongloop.com/{{post.url}}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://strongloop.com/{{post.url}}%2F&amp;src=sdkpreparse">Share</a></div>
+  
+  <a class="twitter-share-button no_icon"
+  href="https://twitter.com/share"
+  data-size="large"
+  data-text="{{ post.title }}"
+  data-url="https://strongloop.com/{{post.url}}"
+  data-related="twitterapi,twitter">
+  <i class="fa fa-twitter" aria-hidden="true"></i>  Tweet
+  </a>
+  </div>
   <hr class="faded">
 
 {% endfor %}

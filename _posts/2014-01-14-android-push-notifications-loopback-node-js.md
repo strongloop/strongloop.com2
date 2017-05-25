@@ -213,8 +213,5 @@ Pretty easy, huh?
 <h2 dir="ltr">
   <strong>What&#8217;s next?</strong>
 </h2>
-
-  * Check out the Push notification demo application from project’s [GitHub repository](https://github.com/strongloop/loopback-push-notification/tree/master/example) and play around with the Android application.
-  * Read the [documentation](http://docs.strongloop.com/display/DOC/Creating+push+notifications) to better understand how to work with LoopBack Push notifications.
-  * Join the conversation in [LoopBack mailing list](https://groups.google.com/forum/#!forum/loopbackjs) and let us know your opinion on this new module.
-  * Do you want to keep up on the latest LoopBack and Node.js news? Sign up for our newsletter, [“In the Loop”](http://strongloop.com/newsletter).
+ 
+  * Do you want to keep up on the latest LoopBack and Open Source news? Sign up for [our newsletter](http://strongloop.com/newsletter).

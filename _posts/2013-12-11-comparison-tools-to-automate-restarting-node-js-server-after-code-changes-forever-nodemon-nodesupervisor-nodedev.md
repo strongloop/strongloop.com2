@@ -14,16 +14,11 @@ As a newbie Node.js developer coming from a Java and PHP background, I found the
 
 after every code change to be very archaic. Luckily there are many tools available that can automate this process for you, saving you valuable time and unnecessary pain. These seconds can really add up if you are constantly making a lot of little changes to your code. With all that time you’re saving, you can unglue yourself from your seat and go out for a walk or take an extra coffee break.
 
-&nbsp;
-
 <center>
   <br /> <img alt="coffee" src="{{site.url}}/blog-assets/2013/12/coffee.jpg" width="350" height="263" />
 </center>
-
-
   
 <!--more-->
-
 &nbsp;
 
 ## [**forever**](https://github.com/nodejitsu/forever)
@@ -145,6 +140,4 @@ For a development environment, using nodemon, supervisor, or node-dev are all gr
 
 ## **What’s next?**
 
-  * Want to read more articles like this? Check out [“Node.js support in Visual Studio? You bet your IDE”](http://strongloop.com/strongblog/node-js-support-in-visual-studio-you-bet-your-ide/), [“Using a Digital Ocean Droplet for On Demand Node.js Mobile Backend”](http://strongloop.com/strongblog/using-a-digital-ocean-droplet-for-on-demand-node-js-mobile-backend/), and [“How-to: Heap Snapshots and Handling Node.js Memory Leaks”](http://strongloop.com/strongblog/how-to-heap-snapshots/).
-  * Ready to build your next mobile app with a Node backend? We’ve made it easy to get started either locally or on your favorite cloud, with simple npm install. <a href="http://strongloop.com/get-started/" target="_blank">Get Started >></a>
-  * Do you want to keep up on the latest Node.js news and developments? Sign up for [“In the Loop”](http://strongloop.com/newsletter), StrongLoop’s newsletter.
+  * Do you want to keep up on the latest Node.js and Open Source news and developments? Sign up for [StrongLoop’s newsletter](http://strongloop.com/newsletter).
