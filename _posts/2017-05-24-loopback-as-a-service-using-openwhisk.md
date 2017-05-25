@@ -22,13 +22,13 @@ In our [previous blog](https://strongloop.com/strongblog/creating-a-multi-tenant
 
 Following the steps in the blog would let us stand-up a single instance of the LoopBack application which is great for demos. It is not yet ready for deploying at scale on the cloud. The previous blog ends with open questions on:<!--more-->
 
-1. How to scale the application horizontally - Multiple instances of the application running and able to process simultaneous requests for the same API. This will also be needed to avoid single points of failure (min-3 deployments). Introducing multiple instances brings in challenges of deploying models/datasources to all the instances and keeping them in sync.</li>
+1. How to scale the application horizontally - Multiple instances of the application running and able to process simultaneous requests for the same API. This will also be needed to avoid single points of failure (min-3 deployments). Introducing multiple instances brings in challenges of deploying models/datasources to all the instances and keeping them in sync.
 
 2. How to scale the application vertically - When we dynamically create datasources and models in the applications (which has finite resources in terms of RAM and CPU) we will eventually hit a threshold where no more models/datasources can be created. At this point, we need to be able to start deploying to another LoopBack application pool. Note that all horizontal instances of the application run the same models/datasources whereas different (vertical) application pools run different models/datasources. Introducing vertical scaling brings in the challenges of maintaining multiple application pools and logic for choosing which pool would be used for deploying a model/datasource.
 
 3. When an application instance restarts after a crash or is newly added for horizontal scaling, it needs to create all models/datasources that peer instances have to get functional parity with them. For the time this takes, the instance can not join the load-balancing group of instances. 
 
-4. In real production scenarios, there could be LoopBack applications specific to each application type. This will introduce the need for having a registry for different applications supported and getting the network endpoint to work with each of them.</li>
+4. In real production scenarios, there could be LoopBack applications specific to each application type. This will introduce the need for having a registry for different applications supported and getting the network endpoint to work with each of them.
 
 As one can see, to solve the above problems non-trivial and entails huge deployment and management (of instances, pools, application specific micro services and registry) effort.
 
@@ -83,7 +83,7 @@ Let us explore a couple of these actions in more detail. Once the examples are u
 
 Create a new package.json with:
 
-```
+```javascript
 {
   "name": "create-model",
     "main": "index.js",
@@ -96,7 +96,7 @@ Create a new package.json with:
 
 index.js
 
-```
+```javascript
 var Cloudant = require('cloudant')
 var cloudant = Cloudant("&lt;YOUR_CLOUDANT_URL&gt;");
 const uuidV4 = require('uuid/v4');
@@ -140,13 +140,13 @@ exports.main = create_model;
 
 1. Create a zip for the package
 
-```
+```javascript
 zip -r createModel.zip *
 ```
 
 2. Create an OpenWhisk action for the package (See [here](https://console.ng.bluemix.net/docs/openwhisk/openwhisk_webactions.html#openwhisk_webactions) for details)
 
-```
+```javascript
 wsk action create /sukrishj_dev/demo/createModel --kind nodejs:6 createModel.zip --web true
 ok: created action demo/createModel
 ```
@@ -155,7 +155,7 @@ ok: created action demo/createModel
 
 3. Invoke the OpenWhisk webAction
 
-```
+```javascript
 curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj_dev/demo/createModel.http –X POST -H 'Content-Type: application/json' -d @model.json 
 {"modelId":"c95fcc09-11a2-4ddb-bbdc-e7053d91ed3e"}
 ```
@@ -177,7 +177,7 @@ Create a new package.json as shown below.
 
 package.json
 
-```
+```javascript
 {
   "name": "create-model-instance",
   "version": "1.0.0",
@@ -194,7 +194,7 @@ package.json
 ```
 index.js
 
-```
+```javascript
 var loopback = require('loopback');
 var app = loopback();
  
@@ -268,13 +268,13 @@ exports.main = create_model_instance;
 
 0. Install package dependencies
 
-```
+```javascript
 npm install
 ```
 
 1. Install the LoopBack Cloudant connector
 
-```
+```javascript
 npm install loopback-connector-cloudant --save
 ```
 
@@ -282,20 +282,20 @@ npm install loopback-connector-cloudant --save
 
 2. Create a zip for the package
 
-```
+```javascript
 zip -r createModelInstance.zip
 ```
 
 3. Create an OpenWhisk action for the package (Refer to [Create a simple API](https://loopback.io/doc/en/lb3/Create-a-simple-API.html) for details)
 
-```
+```javascript
 wsk action create /sukrishj_dev/demo/createModelInstance --kind nodejs:6 createModelInstance.zip  --web true
 ok: created action demo/createModelInstance
 ```
 
 4. Invoke the OpenWhisk webAction
 
-```
+```javascript
 curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj@in.ibm.com_dev/demo/createModelInstance.http/AMo7xBkvdF/c95fcc09-11a2-4ddb-bbdc-e7053d91ed3e/Accounts  X POST -H 'Content-Type: application/json' -d @model.json
 {"name":"Subu Krishnan","id":"007","reference":"James Bond"}
 ```
@@ -307,14 +307,14 @@ A key thing to observe in the implementation of createModelInstance OpenWhisk ac
 
 **Note:** An OpenWhisk action was created for Redis using the above mentioned approached and invoked as follows: 
 
-```
+```javascript
 curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj_dev/demo/createRedisModelInstance.http/AMo7xBkvdF/061d5b185ae2f4e8efdb5dbf315752f4/Accounts -X POST -H 'Content-Type: application/json' -d @model.json
 {“name”:”Subu Krishnan”,”id”:”007″,”reference”:”James Bond”}
 ```
 
 We can use redis-cli to see that the model got created in Redis.
 
-```
+```javascript
 bluemix-sandbox-dal-9-portal.8.dblayer.com:25643&gt; KEYS Account*
 
 1) "Account:007"
