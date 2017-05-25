@@ -1,17 +1,17 @@
 - title: 'Projects'
-  url: projects
+  url: projects/
 
 - title: 'Blog'
-  url: strongblog
+  url: strongblog/
 
 - title: 'Newsletter'
-  url: newsletter
+  url: newsletter/
 
 - title: 'Events'
-  url: events
+  url: events/
 
 - title: 'FAQ'
-  url: faq
+  url: faq/
 
 - title: 'About'
-  url: about
+  url: about/
