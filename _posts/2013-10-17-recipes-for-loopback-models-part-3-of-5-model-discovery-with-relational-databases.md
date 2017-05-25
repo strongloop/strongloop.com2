@@ -21,7 +21,6 @@ categories:
   LoopBack makes it surprisingly simple to create models from existing data, as illustrated below for an Oracle database. First, the code sets up the Oracle data source. Then the call to discoverAndBuildModels() creates models from the database tables. Calling it with associations: true makes the discovery follow primary/foreign key relations.
 </p>
 
-<div>
   ```js
 var loopback = require('loopback');
 var ds = loopback.createDataSource('oracle', {
@@ -50,8 +49,7 @@ function (err, models) {
     });
   });
 });
-```js
-</div>
+```
 
 <p dir="ltr">
   For more information, please check out:
@@ -74,5 +72,5 @@ function (err, models) {
   <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/"]]>training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>
+  <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/">training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>
 </li>

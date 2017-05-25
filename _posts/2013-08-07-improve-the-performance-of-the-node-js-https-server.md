@@ -141,7 +141,7 @@ server.listen(port);
   ```js
 $ openssl version
 OpenSSL 1.0.1e 11 Feb 2013
-```js
+```
 </li>
 
 <li dir="ltr">
@@ -159,7 +159,7 @@ Reused, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
 Reused, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
 Reused, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
 ^C
-```js
+```
 </li>
 
 <li dir="ltr">
@@ -177,7 +177,7 @@ Reused, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
 Reused, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
 Reused, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
 ^C
-```js
+```
 </li>
 
 ## **What’s next?**

@@ -9,9 +9,7 @@ categories:
   - Community
   - LoopBack
 ---
-<h2 dir="ltr">
-</h2>
-
+<br/>
 <h2 dir="ltr">
   <strong>Background</strong>
 </h2>
@@ -22,7 +20,7 @@ As part of the LoopBack, we build a [sample application](https://github.com/stro
 
 > Avatar.js is a project to bring the node programming model, APIs and module ecosystem to the Java platform, enabling a new class of hybrid server applications that can leverage two of the most popular programming languages and ecosystems today. These Java+JavaScript applications can leverage capabilities of both environments &#8211; access the latest node frameworks while taking advantage of the Java platform&#8217;s scalability, manageability, tools, and extensive collection of Java libraries and middleware.
 
-__I decided to check out Avatar.js to see if I could bring up the sample application for LoopBack on a JVM. The exercise was not so straightforward but the end result was exciting. Let me share the steps I took to get it up and running. Please note for the purposes of this example I am using MacOS X 10.8.5.
+I decided to check out Avatar.js to see if I could bring up the sample application for LoopBack on a JVM. The exercise was not so straightforward but the end result was exciting. Let me share the steps I took to get it up and running. Please note for the purposes of this example I am using MacOS X 10.8.5.
 
 <h2 dir="ltr">
   <strong>Build Avatar.js</strong>
@@ -42,7 +40,8 @@ Avatar.js doesn&#8217;t have a downloadable distribution yet. I have to build it
 
 There are three git repositories required for Avatar.js. It also needs Node source code, Apache Ant, and TestNG. To simplify the whole process, I created checkout.sh to check out the git repositories and download the necessary tools. Please run:
 
-<pre lang="sh">git clone git@github.com:raymondfeng/loopback-on-jvm.git
+```js
+git clone git@github.com:raymondfeng/loopback-on-jvm.git
 cd loopback-on-jvm
 ./checkout.sh
 ```
@@ -51,7 +50,8 @@ cd loopback-on-jvm
 
 Now that we have all the source code and tools, we can just run:
 
-<pre lang="sh">./build.sh
+```js
+./build.sh
 ```
 
 After that, the Avatar.js distribution is created in the \`avatar-js/dist\` folder:
@@ -64,19 +64,19 @@ After that, the Avatar.js distribution is created in the \`avatar-js/dist\` fold
 
 &#8211; libuv-java.dylib
 
-## 
 
 ## **Run the &#8216;hello&#8217; sample**
 
 I wrote a plain Node.js program \`hello.js\`. It basically prints out the command line arguments and the platform/arch/version.
 
-<pre lang="sh">console.log(process.argv);
+```js
+console.log(process.argv);
 console.log(process.version, process.platform, process.arch);
 ```
 
 To try the sample with node:
-
-<pre lang="sh">node hello
+```js
+node hello
 ```
 
 And you see:
@@ -89,7 +89,8 @@ v0.10.18 darwin x64
 
 Let&#8217;s run it again with Avatar.js:
 
-<pre lang="sh">./nodej hello
+```js
+./nodej hello
 ```
 
 You should see the following output:
@@ -105,7 +106,8 @@ You should see the following output:
 
 Wow, we got the first Node.js program running on the JVM! One exciting feature of Avatar.js is to call Java classes from JavaScript. To play with that, here is another example:
 
-<pre lang="java">var Collections = Java.type("java.util.Collections");
+```js
+var Collections = Java.type("java.util.Collections");
 var ArrayList = Java.type("java.util.ArrayList");
 var names = new ArrayList();
 names.add('John');
@@ -118,7 +120,8 @@ print('After sort: ', names);
 
 In the example, we use java.util.Collections.sort() to sort an array of strings.
 
-<pre lang="sh">./nodej hello-java.js
+```js
+./nodej hello-java.js
 ```
 
 Before sort:
@@ -135,20 +138,20 @@ After sort:
 
 That&#8217;s nice, I don&#8217;t have to rewrite sort in JavaScript. Now that the basics are working, let&#8217;s try to do something more serious.
 
-<h2 dir="ltr">
-</h2>
 
 <h2 dir="ltr">
   <strong>Run LoopBack sample app</strong>
 </h2>
 
-<pre lang="sh">cd sls-sample-app
+```js
+>cd sls-sample-app
 npm install
 ```
 
 After that, run:
 
-<pre lang="sh">../nodej app
+```js
+../nodej app
 ```
 
 &nbsp;
@@ -187,7 +190,7 @@ Here&#8217;s some closing observations and things to consider before you embark 
   <strong>Performance issues</strong>
 </h2>
 
-You probably have noticed that Avatar.js is significantly slower. Let&#8217;s time the two runs:
+<P>You probably have noticed that Avatar.js is significantly slower. Let&#8217;s time the two runs:</P>
 
 ```js
 time node hello

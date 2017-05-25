@@ -26,10 +26,6 @@ after every code change to be very archaic. Luckily there are many tools availab
 
 &nbsp;
 
-[
-  
-](https://github.com/nodejitsu/forever) 
-
 ## [**forever**](https://github.com/nodejitsu/forever)
 
 forever is not only a great CLI tool for keeping your app running continuously in a production environment, but also has advanced features that support running multiple node processes as background services. In this case, it gives you the option of restarting the server on file changes by using the -w flag. By using this flag, we not are only automatically restarting the application when the code changes, but also when and if the application goes down.
@@ -46,9 +42,6 @@ sudo npm install -g forever
 $ forever -w app.js
 ```
 
-[
-  
-](https://github.com/remy/nodemon) 
 
 ## [**nodemon**](https://github.com/remy/nodemon)
 
@@ -78,9 +71,6 @@ $ nodemon -e ".coffee|.js|.ejs" app.js
 
 ## **Alternatives**
 
-[
-  
-](https://github.com/isaacs/node-supervisor) 
 
 &nbsp;
 
@@ -110,9 +100,6 @@ Like nodemon, supervisor also allows you to specify your own list of files to wa
 $ supervisor -e "js|ejs|node|coffee" app.js
 ```
 
-[
-  
-](https://github.com/fgnass/node-dev) 
 
 ## [**node-dev**](https://github.com/fgnass/node-dev)
 

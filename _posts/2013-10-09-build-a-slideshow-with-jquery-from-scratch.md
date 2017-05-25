@@ -18,8 +18,8 @@ Now, before I start every project the first thing I like to do is think about th
 
 After pondering briefly about what steps would be required of a slideshow, I came up with the following:
 
-<span style="font-size: medium"></p> 
-
+<span style="font-size: medium">
+<ul>
 <li>
   For every slide that exists for the slideshow, starting from the first one, stack them on top of each other. This can be done easily with the z-index attribute.
 </li>
@@ -37,7 +37,7 @@ After pondering briefly about what steps would be required of a slideshow, I cam
 </li></ul> 
 
 <p>
-  </span><br /> Keep in mind that the above points ensure that we can add as many slides as we want to our slideshow and the code will do the work. We want to write our code to be as dynamic as possible so we won&#8217;t have a lot to maintain.
+  <br /> Keep in mind that the above points ensure that we can add as many slides as we want to our slideshow and the code will do the work. We want to write our code to be as dynamic as possible so we won&#8217;t have a lot to maintain.
 </p>
 
 <p>
@@ -381,6 +381,6 @@ slideshow.startSlideshow();
       <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
     </li>
     <li style="margin-left: 2em;">
-      <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/"]]>training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>
+      <p style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/">training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</p>
     </li>
   </ul>

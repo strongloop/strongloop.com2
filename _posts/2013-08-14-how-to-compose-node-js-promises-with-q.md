@@ -197,9 +197,8 @@ And from the previous article:
   3. Write something recursively using promises (a directory tree might be a good start)
   4. Write a passing [Promise A+ implementation](https://github.com/promises-aplus/promises-tests). Here is my [crude one](https://gist.github.com/wavded/5692344).
 
-## **[Use StrongOps to Monitor Node Apps](http://strongloop.com/node-js-performance/strongops/)
+##[Use StrongOps to Monitor Node Apps](http://strongloop.com/node-js-performance/strongops/)
   
-** 
 
 Ready to start monitoring event loops, manage Node clusters and chase down memory leaks? We’ve made it easy to get started with [StrongOps](http://strongloop.com/node-js-performance/strongops/) either locally or on your favorite cloud, with a [simple npm install](http://loopback.io/getting-started/).
 

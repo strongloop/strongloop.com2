@@ -158,28 +158,26 @@ By default, the demo application uses an in-memory database to store application
 `mongodb://127.0.0.1/demo.`
 
 <p dir="ltr">
-  <p dir="ltr">
-    <strong>Start the demo application</strong>
-  </p>
-  
-  <p>
-    <code>$ node app</code>
-  </p>
-  
-  <p>
-    <code><a href="http://localhost:3010">http://localhost:3010</a></code>
-  </p>
-  
-  <p dir="ltr">
-    <p dir="ltr">
-      <strong>Send notifications</strong>
-    </p>
+  <strong>Start the demo application</strong>
+</p>
+
+<p>
+  <code>$ node app</code>
+</p>
+
+<p>
+  <code><a href="http://localhost:3010">http://localhost:3010</a></code>
+</p>
+
+<p dir="ltr">
+  <strong>Send notifications</strong>
+</p>
+
+<p>
+  For the purpose of demonstration, we create a custom endpoint for the AngularJS client to send out a dummy notification for the selected device:
+</p>
     
-    <p>
-      For the purpose of demonstration, we create a custom endpoint for the AngularJS client to send out a dummy notification for the selected device:
-    </p>
-    
-    ```js
+```js
 // Add our custom routes
 var badge = 1;
 app.post('/notify/:id', function (req, res, next) {
@@ -195,67 +193,67 @@ app.post('/notify/:id', function (req, res, next) {
  });
  res.send(200, 'OK');
 });
+```
+    
+<p>
+  LoopBack provides two Node.js methods to select devices and send notifications to them.
+</p>
+
+<ul>
+  <li dir="ltr">
+    notifyById: Select a device by registratrion id and send a notification to it
+  </li>
+  <li dir="ltr">
+    notifyByQuery: Select a list of devices by the query (same as the where property for Installation.find()) and send a notification to all of them.
+  </li>
+</ul>
+
+<p>
+  &nbsp;
+</p>
+
+<h2 dir="ltr">
+  <strong>Prepare your iOS application</strong>
+</h2>
+
+<p dir="ltr">
+  <strong>Add LoopBack iOS SDK as a framework</strong>
+</p>
+
+<p>
+  Open your xcode project, select targets, under build phases, unfold &#8216;Link Binary with Libraries&#8217;, and click on &#8216;+&#8217; to add LoopBack framework.
+</p>
+
+<p>
+  <img class="aligncenter" alt="" src="https://lh3.googleusercontent.com/XamcGhw0Cw9oIijJUbhErJ3DtiM95D9kwHYoFU9kw8nvwYtyDOYK8zfaQInjKIJwUpSn9wvTsmuozL4zXlecejzyzUTLrdVFo-hMD4IsVIfOGpK-7W3JQylLPw" width="624px;" height="243px;" />
+</p>
+
+<p>
+  LoopBack iOS SDK provides the LBInstallation and LBPushNotification classes to simplify the push notification programming for iOS applications.
+</p>
+
+<ul>
+  <li>
+    <a style="font-size: 13px; line-height: 19px;" href="http://apidocs.strongloop.com/loopback-ios/api/interface_l_b_installation.html">http://apidocs.strongloop.com/loopback-ios/api/interface_l_b_installation.html</a>
+  </li>
+  <li>
+    <a style="font-size: 13px; line-height: 19px;" href="http://apidocs.strongloop.com/loopback-ios/api/interface_l_b_push_notification.html">http://apidocs.strongloop.com/loopback-ios/api/interface_l_b_push_notification.html</a>
+  </li>
+</ul>
+
+<p>
+  LBInstallation allows the iOS application to register mobile devices with LoopBack. LBPushNotification provides a set of helper methods to handle common tasks for push notifications.
+</p>
+
+<p dir="ltr">
+  <strong>Respond to application launch</strong>
+</p>
+
+<p>
+  When the iOS application is launched, it should initialize an instance of LBRESTAdapter for the SDK to communicate with the LoopBack server. If the application is launched by an offline notification, we can get the message and process it.
+</p>
+    
 ```js
-    
-    <p>
-      LoopBack provides two Node.js methods to select devices and send notifications to them.
-    </p>
-    
-    <ul>
-      <li dir="ltr">
-        notifyById: Select a device by registratrion id and send a notification to it
-      </li>
-      <li dir="ltr">
-        notifyByQuery: Select a list of devices by the query (same as the where property for Installation.find()) and send a notification to all of them.
-      </li>
-    </ul>
-    
-    <p>
-      &nbsp;
-    </p>
-    
-    <h2 dir="ltr">
-      <strong>Prepare your iOS application</strong>
-    </h2>
-    
-    <p dir="ltr">
-      <strong>Add LoopBack iOS SDK as a framework</strong>
-    </p>
-    
-    <p>
-      Open your xcode project, select targets, under build phases, unfold &#8216;Link Binary with Libraries&#8217;, and click on &#8216;+&#8217; to add LoopBack framework.
-    </p>
-    
-    <p>
-      <img class="aligncenter" alt="" src="https://lh3.googleusercontent.com/XamcGhw0Cw9oIijJUbhErJ3DtiM95D9kwHYoFU9kw8nvwYtyDOYK8zfaQInjKIJwUpSn9wvTsmuozL4zXlecejzyzUTLrdVFo-hMD4IsVIfOGpK-7W3JQylLPw" width="624px;" height="243px;" />
-    </p>
-    
-    <p>
-      LoopBack iOS SDK provides the LBInstallation and LBPushNotification classes to simplify the push notification programming for iOS applications.
-    </p>
-    
-    <ul>
-      <li>
-        <a style="font-size: 13px; line-height: 19px;" href="http://apidocs.strongloop.com/loopback-ios/api/interface_l_b_installation.html">http://apidocs.strongloop.com/loopback-ios/api/interface_l_b_installation.html</a>
-      </li>
-      <li>
-        <a style="font-size: 13px; line-height: 19px;" href="http://apidocs.strongloop.com/loopback-ios/api/interface_l_b_push_notification.html">http://apidocs.strongloop.com/loopback-ios/api/interface_l_b_push_notification.html</a>
-      </li>
-    </ul>
-    
-    <p>
-      LBInstallation allows the iOS application to register mobile devices with LoopBack. LBPushNotification provides a set of helper methods to handle common tasks for push notifications.
-    </p>
-    
-    <p dir="ltr">
-      <strong>Respond to application launch</strong>
-    </p>
-    
-    <p>
-      When the iOS application is launched, it should initialize an instance of LBRESTAdapter for the SDK to communicate with the LoopBack server. If the application is launched by an offline notification, we can get the message and process it.
-    </p>
-    
-    ```js
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
    self.settings = [self loadSettings];
@@ -281,20 +279,20 @@ app.post('/notify/:id', function (req, res, next) {
 
    return YES;
 }
+```
+
+<h3 dir="ltr">
+</h3>
+
+<p dir="ltr">
+  <strong>Respond to device tokens</strong>
+</p>
+
+<p>
+  An instance of the iOS application should receive a device token. The application needs to register the device token with other information such as appId, userId, timeZone, or subscriptions with the backend so that push notifications can be initiated from LoopBack by querying the installation model. The iOS application receives the device token from the <em>application:didRegisterForRemoteNotificationsWithDeviceToken</em> method.
+</p>
+    
 ```js
-    
-    <h3 dir="ltr">
-    </h3>
-    
-    <p dir="ltr">
-      <strong>Respond to device tokens</strong>
-    </p>
-    
-    <p>
-      An instance of the iOS application should receive a device token. The application needs to register the device token with other information such as appId, userId, timeZone, or subscriptions with the backend so that push notifications can be initiated from LoopBack by querying the installation model. The iOS application receives the device token from the <em>application:didRegisterForRemoteNotificationsWithDeviceToken</em> method.
-    </p>
-    
-    ```js
 __unsafe_unretained typeof(self) weakSelf = self;
 
    // Register the device token with the LoopBack push notification service
@@ -328,127 +326,126 @@ didRegisterForRemoteNotificationsWithDeviceToken:deviceToken
    ...
 
 }
+```
+    
+<p>
+  &nbsp;
+</p>
+
+<p>
+  If your app fails to register for push notifications, the following method will be invoked:
+</p>
+
 ```js
-    
-    <p>
-      &nbsp;
-    </p>
-    
-    <p>
-      If your app fails to register for push notifications, the following method will be invoked:
-    </p>
-    
-    ```js
 - (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error {
 
    // Handle errors if it fails to receive the device token
        [LBPushNotification application:application didFailToRegisterForRemoteNotificationsWithError:error];
 }
-```js
+```
     
-    <p dir="ltr">
-      <p dir="ltr">
-        <strong>Respond to received notifications</strong>
-      </p>
-      
-      <p>
-        If your app is already running when the notification is received, the notification message is made available in the <em>application:didReceiveRemoteNotification:</em> method through the userInfo parameter.
-      </p>
-      
-      ```js
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+<p dir="ltr">
+  <strong>Respond to received notifications</strong>
+</p>
+
+<p>
+  If your app is already running when the notification is received, the notification message is made available in the <em>application:didReceiveRemoteNotification:</em> method through the userInfo parameter.
+</p>
+
+```js
+  - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
 
    // Receive push notifications
    LBPushNotification* notification = [LBPushNotification application:application
                                          didReceiveRemoteNotification:userInfo];
    [self.pnListVC addPushNotification:notification];
 
-}
-```js
-      
-      <p>
-        &nbsp;
-      </p>
-      
-      <p>
-        Now we know how to enable the iOS application to interact with LoopBack push notification services. Let’s review the architecture behind.
-      </p>
-      
-      <h2 dir="ltr">
-        <strong>Architecture</strong>
-      </h2>
-      
-      <p>
-        <img class="aligncenter" alt="" src="https://lh4.googleusercontent.com/6TqMqJL353c3_omDxS0xredCihU3j_bzhANHLbpyosJkS4tD9BbDYV7kQHIrzEGY3UDCiWztg2HIoz912BHizp7UxuWMEsFOOVyhpWpeC5415Aph00ql7CzCCg" width="386px;" height="368px;" />
-      </p>
-      
-      <h2 dir="ltr">
-        <strong>Key Components</strong>
-      </h2>
-      
-      <ul>
-        <li dir="ltr">
-          Device model and APIs to manage devices with applications and users
-        </li>
-        <li dir="ltr">
-          Application model to provide push settings for device types such as ios and android
-        </li>
-        <li dir="ltr">
-          Notification model to capture notification messages and persist scheduled notifications
-        </li>
-        <li dir="ltr">
-          Optional Job to take scheduled notification requests
-        </li>
-        <li dir="ltr">
-          Push connector that interact with device registration records and push providers such as APNS, GCM, and MPNS.
-        </li>
-        <li dir="ltr">
-          Push model to provide high level APIs for device-independent push notifications
-        </li>
-      </ul>
-      
-      <p>
-        &nbsp;
-      </p>
-      
-      <h2>
-        <strong>What’s Next?</strong>
-      </h2>
-      
-      <ul>
-        <li>
-          Learn more about <a href="http://strongloop.com/mobile-application-development/loopback/">LoopBack</a>, the open-source mobile backend built with Node
-        </li>
-        <li>
-          Get our <a href="{{site.url}}/blog-assets/2013/11/Mobilizing-Enterprise-Data-with-LoopBack-Models.pdf">“Mobilizing Enterprise Data with LoopBack Models” whitepaper</a>.
-        </li>
-        <li>
-          Ready to build your next mobile app with a Node backend? We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.
-        </li>
-      </ul>
-      
-      <p>
-        &nbsp;
-      </p>
-      
-      <h2 dir="ltr">
-        <strong>Further Reading</strong>
-      </h2>
-      
-      <ul>
-        <li dir="ltr">
-          <a href="https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html">Apple Push Service</a>
-        </li>
-        <li dir="ltr">
-          <a href="http://developer.android.com/google/gcm/index.html">Google Cloud Messaging for Android</a>
-        </li>
-        <li dir="ltr">
-          <a href="https://github.com/argon/node-apn">Apple Push Notifications </a>
-        </li>
-        <li dir="ltr">
-          <a href="https://github.com/logicalparadox/apnagent-ios">APN Agent </a>
-        </li>
-        <li dir="ltr">
-          <a href="https://blog.engineyard.com/2013/developing-ios-push-notifications-nodejs">iOS Push Notifications in Node</a>
-        </li>
-      </ul>
+  }
+```
+
+<p>
+&nbsp;
+</p>
+
+<p>
+Now we know how to enable the iOS application to interact with LoopBack push notification services. Let’s review the architecture behind.
+</p>
+
+<h2 dir="ltr">
+<strong>Architecture</strong>
+</h2>
+
+<p>
+<img class="aligncenter" alt="" src="https://lh4.googleusercontent.com/6TqMqJL353c3_omDxS0xredCihU3j_bzhANHLbpyosJkS4tD9BbDYV7kQHIrzEGY3UDCiWztg2HIoz912BHizp7UxuWMEsFOOVyhpWpeC5415Aph00ql7CzCCg" width="386px;" height="368px;" />
+</p>
+
+<h2 dir="ltr">
+<strong>Key Components</strong>
+</h2>
+
+<ul>
+<li dir="ltr">
+  Device model and APIs to manage devices with applications and users
+</li>
+<li dir="ltr">
+  Application model to provide push settings for device types such as ios and android
+</li>
+<li dir="ltr">
+  Notification model to capture notification messages and persist scheduled notifications
+</li>
+<li dir="ltr">
+  Optional Job to take scheduled notification requests
+</li>
+<li dir="ltr">
+  Push connector that interact with device registration records and push providers such as APNS, GCM, and MPNS.
+</li>
+<li dir="ltr">
+  Push model to provide high level APIs for device-independent push notifications
+</li>
+</ul>
+
+<p>
+&nbsp;
+</p>
+
+<h2>
+<strong>What’s Next?</strong>
+</h2>
+
+<ul>
+<li>
+  Learn more about <a href="http://strongloop.com/mobile-application-development/loopback/">LoopBack</a>, the open-source mobile backend built with Node
+</li>
+<li>
+  Get our <a href="{{site.url}}/blog-assets/2013/11/Mobilizing-Enterprise-Data-with-LoopBack-Models.pdf">“Mobilizing Enterprise Data with LoopBack Models” whitepaper</a>.
+</li>
+<li>
+  Ready to build your next mobile app with a Node backend? We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.
+</li>
+</ul>
+
+<p>
+&nbsp;
+</p>
+
+<h2 dir="ltr">
+<strong>Further Reading</strong>
+</h2>
+
+<ul>
+<li dir="ltr">
+  <a href="https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html">Apple Push Service</a>
+</li>
+<li dir="ltr">
+  <a href="http://developer.android.com/google/gcm/index.html">Google Cloud Messaging for Android</a>
+</li>
+<li dir="ltr">
+  <a href="https://github.com/argon/node-apn">Apple Push Notifications </a>
+</li>
+<li dir="ltr">
+  <a href="https://github.com/logicalparadox/apnagent-ios">APN Agent </a>
+</li>
+<li dir="ltr">
+  <a href="https://blog.engineyard.com/2013/developing-ios-push-notifications-nodejs">iOS Push Notifications in Node</a>
+</li>
+</ul>

@@ -85,7 +85,7 @@ app.use(loopback.rest());
 app.listen(3000, function () {
     console.log('The form application is ready at http://127.0.0.1:3000');
 });
-```js
+```
 </div>
 
 <p dir="ltr">

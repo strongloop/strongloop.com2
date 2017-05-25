@@ -1,4 +1,4 @@
-http://loopback.io/---
+---
 id: 704
 title: Use Grunt.js and the Power of JavaScript to Automating Repetitive Tasks
 date: 2013-06-12T03:47:58+00:00
