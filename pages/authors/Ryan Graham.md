@@ -1,8 +1,8 @@
 ---
 layout: author
 author: 'Ryan Graham'
-permalink: /authors/Ryan_Graham
+permalink: /authors/Ryan_Graham/
 redirect_from:
-  - /authors/ryan_graham/
-  - /authors/Ryan_Graham/
+  - /authors/ryan_graham
+  - /authors/Ryan_Graham
 ---

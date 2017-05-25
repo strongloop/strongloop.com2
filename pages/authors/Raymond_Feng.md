@@ -1,10 +1,10 @@
 ---
 layout: author
 author: 'Raymond Feng'
-permalink: /authors/Raymond_Feng
+permalink: /authors/Raymond_Feng/
 redirect_from:
-  - /authors/raymond_feng/
-  - /authors/Raymond_Feng/
+  - /authors/raymond_feng
+  - /authors/Raymond_Feng
 ---
 
 This is Raymond, a co-founder from StrongLoop. I work on LoopBack, our open source mobile API platform built on and for Node.js.

@@ -30,7 +30,7 @@ layout: default
     <section class="c-section x-white">
       <div class="c-container">
         <div class="c-grid">
-          <div class="_col -col-1-1">
+          <div class="_col -col-1-1 strictwidth">
             <div class="post-content">
             <div class="share">
             <!-- Load Facebook SDK for JavaScript -->
@@ -53,9 +53,22 @@ layout: default
                 data-related="twitterapi,twitter">
                   <i class="fa fa-twitter" aria-hidden="true"></i>  Tweet
                 </a>
+                <a class="newshare-share-button no_icon linkedinshare" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://strongloop.com/{{page.url}}" target="_blank">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>  Share
+                </a>
+              
+                <a class="newshare-share-button no_icon redditshare" href="http://reddit.com/submit?url==https://strongloop.com/{{page.url}}&amp;title={{ page.title }}" target="_blank">
+                  <i class="fa fa-reddit" aria-hidden="true"></i>  Share
+                </a>
+                <a class="newshare-share-button pinterestshare no_icon" href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+                  <i class="fa fa-pinterest" aria-hidden="true"></i>  Share
+                </a>
+                <a class="newshare-share-button tumblrshare no_icon" href="http://www.tumblr.com/share/link?url=https://strongloop.com/{{page.url}}&amp;title={{ page.title }}" target="_blank">
+                  <i class="fa fa-tumblr" aria-hidden="true"></i>  Share
+                </a>
               </div>
               {{ content }}
-              <div class="share">
+              <div class="share" style="padding-bottom:10px;">
                  <!-- Load Facebook SDK for JavaScript -->
                 <div id="fb-root"></div>
                 <script>(function(d, s, id) {
@@ -75,6 +88,19 @@ layout: default
                 data-url="https://strongloop.com/{{page.url}}"
                 data-related="twitterapi,twitter">
                   <i class="fa fa-twitter" aria-hidden="true"></i>  Tweet
+                </a>
+                <a class="newshare-share-button no_icon linkedinshare" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://strongloop.com/{{page.url}}" target="_blank">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>  Share
+                </a>
+              
+                <a class="newshare-share-button no_icon redditshare" href="http://reddit.com/submit?url==https://strongloop.com/{{page.url}}&amp;title={{ page.title }}" target="_blank">
+                  <i class="fa fa-reddit" aria-hidden="true"></i>  Share
+                </a>
+                <a class="newshare-share-button pinterestshare no_icon" href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+                  <i class="fa fa-pinterest" aria-hidden="true"></i>  Share
+                </a>
+                <a class="newshare-share-button tumblrshare no_icon" href="http://www.tumblr.com/share/link?url=https://strongloop.com/{{page.url}}&amp;title={{ page.title }}" target="_blank">
+                  <i class="fa fa-tumblr" aria-hidden="true"></i>  Share
                 </a>
                 <br/>
               </div>

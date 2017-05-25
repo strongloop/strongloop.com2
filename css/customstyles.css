@@ -93,7 +93,7 @@ body h1 {margin-top:40px;}
     margin: 12px 0px 3px 0px;
     width: auto;
     height: auto;
-    max-width: 100%;
+    max-width: 640px;
     max-height: 100%;
 }
 
@@ -354,6 +354,9 @@ span.tagTitle {font-weight: 500;}
 
 div.alert code, h2 code {
     background-color: transparent !important;
+}
+code{
+  max-width: 100%;
 }
 
 div.tags {padding: 10px 5px;}
@@ -924,6 +927,9 @@ div.post-content h4 {
 .c-container .excerpt img{
   max-width: 100%;
 }
+.strictwidth{
+  max-width: 100%;
+}
 /* Share buttons */
 .twitter-share-button{
   color: #fff;
@@ -939,3 +945,33 @@ div.post-content h4 {
 .twitter-share-button:hover{
   color: #fff;
 }
+.newshare-share-button{
+  padding: 2px;
+  font-size: 11.5px;
+  border-radius: 3px;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  cursor: pointer;
+  color: #fff;
+  padding-left:5px;
+  padding-right: 5px;
+}
+.tumblrshare{
+  background-color: #3C5970;
+}
+.pinterestshare{
+  background-color: #CC2028;
+}
+.linkedinshare{
+  background-color: #006699;
+}
+.redditshare{
+  background-color: #FF4500;
+}
+.newshare-share-button img{
+  max-width: 30px;
+  
+  width: auto;
+}
+
