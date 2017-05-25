@@ -10,7 +10,7 @@ categories:
   - How-To
 ---
 
-Node brought a simplicity and beauty to streaming.  Streams are now a powerful way to build modules and applications.  Yet the original streams API had some <a href="http://blog.strongloop.com/whats-new-in-node-v0-10/">problems</a>.  So in Node v0.10, we saw the streams API change in order to fix the prior problems, extend the APIs to encapsulate more common use cases, and be simpler and easier to use.
+Node brought a simplicity and beauty to streaming.  Streams are now a powerful way to build modules and applications.  Yet the original streams API had some problems.  So in Node v0.10, we saw the streams API change in order to fix the prior problems, extend the APIs to encapsulate more common use cases, and be simpler and easier to use.
 
 As I tried to make the adjustment to the new APIs, I found some documentation on it but not many practical examples.  This article explores some of the <a href="http://nodejs.org/api/stream.html">Node documentation</a> that may be confusing about the new APIs.  It will also apply the new APIs in practical terms to help you get started using these APIs in your programs.  Let’s dive in!
 
@@ -166,5 +166,5 @@ if (!stream.Transform) {
 ## **[What’s next?](http://strongloop.com/get-started/)**
 
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://strongloop.com/node-js/loopback/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
+  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
 </li>

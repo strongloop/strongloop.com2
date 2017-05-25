@@ -24,12 +24,12 @@ In addition to the performance of the server instance (a droplet in Digital Ocea
 
 ## <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean#creating-and-configuring-your-digital-ocean-virtual-machine" name="creating-and-configuring-your-digital-ocean-virtual-machine"></a>Creating and Configuring your Digital Ocean Virtual Machine
 
-  1.  <span style="font-size: medium;">Login to <a href="https://www.digitalocean.com/?refcode=d58fefe584fa">Digital Ocean</a> and Create your droplet in less than a minute. <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanPostLogin.png?raw=true" target="_blank"><img alt="Image" src="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanPostLogin.png?raw=true" /></a></span>
-  2.  <span style="font-size: medium;">Configure your host name <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigHostName.png?raw=true" target="_blank"><img alt="Image" src="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigHostName.png?raw=true" /></a></span>
-  3.  <span style="font-size: medium;">Select your configration size. <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigSize.png?raw=true" target="_blank"><img alt="Image" src="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigSize.png?raw=true" /></a></span>
-  4. <span style="font-size: medium;">Select your region. <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigRegion.png?raw=true" target="_blank"><img alt="Image" src="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigRegion.png?raw=true" /></a></span>
-  5.  <span style="font-size: medium;">Select your Image, in this walk through I will create it from Linux Ubuntu 12.04 x32. However you can start from an &#8220;Application&#8221; image such as Docker or WordPress, or from one of your own &#8220;SnapShot&#8221; image ( these are great for standing up a dev stage fast). <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigImage.png?raw=true" target="_blank"><img alt="Image" src="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigImage.png?raw=true" /></a></span>
-  6.  <span style="font-size: medium;">Count to 60. <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanCreating.png?raw=true" target="_blank"><img alt="Image" src="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanCreating.png?raw=true" /></a></span>
+  1 .  <span style="font-size: medium;">Login to <a href="https://www.digitalocean.com/?refcode=d58fefe584fa">Digital Ocean</a> and Create your droplet in less than a minute. <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanPostLogin.png?raw=true" target="_blank"><img alt="Image" src="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanPostLogin.png?raw=true" /></a></span>
+  2 .  <span style="font-size: medium;">Configure your host name <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigHostName.png?raw=true" target="_blank"><img alt="Image" src="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigHostName.png?raw=true" /></a></span>
+  3 .  <span style="font-size: medium;">Select your configration size. <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigSize.png?raw=true" target="_blank"><img alt="Image" src="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigSize.png?raw=true" /></a></span>
+  4 . <span style="font-size: medium;">Select your region. <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigRegion.png?raw=true" target="_blank"><img alt="Image" src="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigRegion.png?raw=true" /></a></span>
+  5 .  <span style="font-size: medium;">Select your Image, in this walk through I will create it from Linux Ubuntu 12.04 x32. However you can start from an &#8220;Application&#8221; image such as Docker or WordPress, or from one of your own &#8220;SnapShot&#8221; image ( these are great for standing up a dev stage fast). <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigImage.png?raw=true" target="_blank"><img alt="Image" src="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanConfigImage.png?raw=true" /></a></span>
+  6 .  <span style="font-size: medium;">Count to 60. <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanCreating.png?raw=true" target="_blank"><img alt="Image" src="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/raw/master/screenshots/digitalOceanCreating.png?raw=true" /></a></span>
 
 ## <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean#standing-up-your-nodejs-mobile-services-with-strongloop" name="standing-up-your-nodejs-mobile-services-with-strongloop"></a>Standing up your Node.js mobile services with StrongLoop
 
@@ -46,7 +46,7 @@ Now that your Virtual Machine droplet is up, check your email for your login, pa
     Password: yanyyyyyvh
     
 
-  1. <span style="font-size: medium;"><span style="font-size: medium;"> From the terminal ssh to your new instance with `ssh root@192.111.111.111&#8242; and the password provided.</span></span> 
+  1 . <span style="font-size: medium;"><span style="font-size: medium;"> From the terminal ssh to your new instance with `ssh root@192.111.111.111&#8242; and the password provided.</span></span> 
         Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-24-virtual i686)
         
         * Documentation:  https://help.ubuntu.com/
@@ -54,7 +54,7 @@ Now that your Virtual Machine droplet is up, check your email for your login, pa
         root@MobileServices:~#
         
 
-  2.  <span style="font-size: medium;">Now let&#8217;s configure the server with the StrongLoop Node distro, to make this step easier I created a small <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/blob/master/install.sh">install script</a> to install dependencies get you up quickly.</span>
+  2 .  <span style="font-size: medium;">Now let&#8217;s configure the server with the StrongLoop Node distro, to make this step easier I created a small <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/blob/master/install.sh">install script</a> to install dependencies get you up quickly.</span>
 
 The script will update apt-get and install some of the usual suspects: python-software-properties, vim git subversion curl , memcached, build-essential, etc ( feel free to modify for your specific configurations) s. Additionally it will download and install the latest StrongLoop Debian distro from[StrongLoop](https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/blob/master/StrongLoop.com). Finally the script will create a /var/apps folder for you to hold your Node applications.
 
@@ -62,10 +62,9 @@ To run the script on your server:
 
   1.  <span style="font-size: medium;">copy the contents of <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/blob/master/install.sh">script.sh</a> to your copy buffer with CMD+Copy</span>
   2.  <span style="font-size: medium;">From the terminal you can simply &#8216;wget <a href="http://raw.github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/master/install.sh">http://raw.github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/master/install.sh</a>&#8216; Just copy past the script to your command line with.</span>
-  3. <span style="font-size: medium;"><span style="font-size: medium;"> &#8230;and then run the command with &#8216;chmod +x script.sh; ./script.sh&#8217;</span></span> 
+  3 . <span style="font-size: medium;"><span style="font-size: medium;"> &#8230;and then run the command with &#8216;chmod +x script.sh; ./script.sh&#8217;</span></span> 
       1.  <span style="font-size: medium;">Stand Up your LoopBack Mobile Server with the following commands</span>
 
-<div>
   ```js
 cd /var/apps
 
@@ -75,8 +74,7 @@ slc lb model product
 slc lb model store
 slc lb model customer
 slc install
-```js
-</div>
+```
 
 You can verify the installation by starting your server with &#8216;slc run app.js&#8217; and open a web browser on your local machine to the servers address and the default port <http://192.111.111.111:3000/explorer>
 
@@ -148,8 +146,8 @@ Now that you have your StrongLoop Loopback server configured and your mobile app
   <span style="font-size: 18px;">What’s in the upcoming Node v0.12 release? <a href="http://strongloop.com/node-js/whats-new-in-node-js-v0-12/">Six new features, plus new and breaking APIs</a>.</span>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://strongloop.com/node-js/loopback/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
+  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/"]]>training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>
+  <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/">training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>
 </li>

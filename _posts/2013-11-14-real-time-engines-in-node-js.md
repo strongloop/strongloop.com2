@@ -14,11 +14,11 @@ Node arrived on the scene around the time the WebSocket protocol was drafted. No
 
 Now that WebSocket is <a href="http://tools.ietf.org/html/rfc6455" target="_blank">mature</a> and has support in <a href="http://caniuse.com/#search=websocket" target="_blank">all the modern desktop browsers</a> and most mobile platforms, the dust has settled a bit. Let’s take a look at what’s available in Node for WebSocket.<!--more-->
 
-## **The WebSocket module ecosystem**<figure>
+## **The WebSocket module ecosystem**
 
 [<img class="aligncenter size-full wp-image-8520" alt="1-j4WMa8XcHIJr0FhnVCUjbA" src="{{site.url}}/blog-assets/2013/10/1-j4WMa8XcHIJr0FhnVCUjbA.png" width="900" height="400" />]({{site.url}}/blog-assets/2013/10/1-j4WMa8XcHIJr0FhnVCUjbA.png)
   
-<figcaption>The layers of real-time engines</figcaption> </figure> 
+<figcaption>The layers of real-time engines</figcaption>
 
 WebSocket modules can be divided up into three categories. The first are _protocol implementations_ (drivers) which focus on high performance of and standards compliance to the WebSocket protocol. Like the http module, they provide a low-level implementation.
 
@@ -98,8 +98,8 @@ WebSocket has become a game-changer in web development by enabling games, framew
   <span style="font-size: 18px;">What’s in the upcoming Node v0.12 release? <a href="http://strongloop.com/node-js/whats-new-in-node-js-v0-12/">Six new features, plus new and breaking APIs</a>.</span>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://strongloop.com/node-js/loopback/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
+  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/"]]>training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>
+  <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/">training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>
 </li>

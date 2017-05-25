@@ -235,17 +235,15 @@ script.
 
 It can take some trial and error to get it all straight; templates, includes, blocks, and yields. Just as with HTML and Javascript, there are several ways to achieve any given desired output. Once you get the hang of it, you&#8217;ll find your own preferences and be comfortable refactoring when you realize what you&#8217;ve been including should be part of a layout.
 
-## **[Use StrongOps to Monitor Node Apps](http://strongloop.com/node-js-performance/strongops/)
+## [Use StrongOps to Monitor Node Apps](http://strongloop.com/node-js-performance/strongops/)
   
-** 
 
 Ready to start monitoring event loops, manage Node clusters and chase down memory leaks? We’ve made it easy to get started with [StrongOps](http://strongloop.com/node-js-performance/strongops/) either locally or on your favorite cloud, with a [simple npm install](http://strongloop.com/get-started/).
 
-<a href="http://strongloop.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-03-at-3.25.40-AM.png" rel="lightbox"><img alt="Screen Shot 2014-02-03 at 3.25.40 AM" src="http://strongloop.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-03-at-3.25.40-AM.png" width="1746" height="674" /></a>
+<a href="{{site.url}}/blog-assets/2014/02/Screen-Shot-2014-02-03-at-3.25.40-AM.png" rel="lightbox"><img alt="Screen Shot 2014-02-03 at 3.25.40 AM" src="{{site.url}}/blog-assets/2014/02/Screen-Shot-2014-02-03-at-3.25.40-AM.png" width="1746" height="674" /></a>
 
-## **[What’s next?](http://strongloop.com/get-started/)
-  
-** 
+## [What’s next?](http://strongloop.com/get-started/)
+ 
 
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;">What’s in the upcoming Node v0.12 release? <a href="http://strongloop.com/strongblog/performance-node-js-v-0-12-whats-new/">Big performance optimizations</a>, read <a href="https://github.com/bnoordhuis">Ben Noordhuis’</a> blog to learn more.</span>

@@ -78,7 +78,7 @@ Click the “Create Deployment” button to provision your server.
 </p>
 
 <p dir="ltr">
-  <a href="http://strongloop.com/wp-content/uploads/2013/09/iphone-examples-3.png"><img class="alignnone  wp-image-6786" alt="iphone-examples-3" src="http://strongloop.com/wp-content/uploads/2013/09/iphone-examples-3.png" width="532" height="312" /></a>
+  <img class="alignnone  wp-image-6786" alt="iphone-examples-3" src="{{site.url}}/blog-assets/2013/09/iphone-examples-3.png" width="532" height="312" />
 </p>
 
 <p dir="ltr">
@@ -121,7 +121,7 @@ Click the “Create Deployment” button to provision your server.
   Run the Application in the XCode iOS simulator with by Pressing the Run button in the top left or using the hotkey combination (?+R) . From the simulator Click the &#8216;Inject Data&#8217; button in the top left to insert 3 &#8216;product&#8217; model instances into the LoopBack server.  Naturally you will see the Records appear on the mobile device, but you can also verify the server content by opening the API Explorer <a href="http://localhost:3000/explorer/#!/products/products_find_get_4 ">http://localhost:3000/explorer/#!/products/products_find_get_4 </a> to the Get Request and pressing the &#8216;Try it out&#8217; button.
 </p>
 
-[<img class="alignnone size-full wp-image-6789" alt="Screen Shot 2013-09-17 at 7.51.47 AM" src="http://strongloop.com/wp-content/uploads/2013/09/Screen-Shot-2013-09-17-at-7.51.47-AM.png" width="752" height="565" />](http://strongloop.com/wp-content/uploads/2013/09/Screen-Shot-2013-09-17-at-7.51.47-AM.png)
+[<img class="alignnone size-full wp-image-6789" alt="Screen Shot 2013-09-17 at 7.51.47 AM" src="{{site.url}}/blog-assets/2013/09/Screen-Shot-2013-09-17-at-7.51.47-AM.png" width="752" height="565" />]({{site.url}}/blog-assets/2013/09/Screen-Shot-2013-09-17-at-7.51.47-AM.png)
 
 Additionally, you can add data to the backend from the API Explorer as well from the &#8216;POST&#8217; button by inserting the model JSON data { &#8220;name&#8221;: &#8220;Matts Product&#8221;, &#8220;inventory&#8221; : 22 }  in the &#8216;Value&#8217; field. Pressing Refresh on the mobile client will sync the tableView.
 
@@ -141,7 +141,7 @@ Take some time and explore the mobile application as well as the LoopBack Node s
   <span style="font-size: 18px;">What’s in the upcoming Node v0.12 release? <a href="http://strongloop.com/node-js/whats-new-in-node-js-v0-12/">Six new features, plus new and breaking APIs</a>.</span>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://strongloop.com/node-js/loopback/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
+  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
 </li>
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/"]]>training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>

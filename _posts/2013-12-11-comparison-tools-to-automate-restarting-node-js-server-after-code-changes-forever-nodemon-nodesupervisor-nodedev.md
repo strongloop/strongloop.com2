@@ -19,10 +19,7 @@ after every code change to be very archaic. Luckily there are many tools availab
 </center>
   
 <!--more-->
-
-[
-  
-](https://github.com/nodejitsu/forever) 
+&nbsp;
 
 ## [**forever**](https://github.com/nodejitsu/forever)
 
@@ -40,9 +37,6 @@ sudo npm install -g forever
 $ forever -w app.js
 ```
 
-[
-  
-](https://github.com/remy/nodemon) 
 
 ## [**nodemon**](https://github.com/remy/nodemon)
 
@@ -72,9 +66,6 @@ $ nodemon -e ".coffee|.js|.ejs" app.js
 
 ## **Alternatives**
 
-[
-  
-](https://github.com/isaacs/node-supervisor) 
 
 &nbsp;
 
@@ -104,9 +95,6 @@ Like nodemon, supervisor also allows you to specify your own list of files to wa
 $ supervisor -e "js|ejs|node|coffee" app.js
 ```
 
-[
-  
-](https://github.com/fgnass/node-dev) 
 
 ## [**node-dev**](https://github.com/fgnass/node-dev)
 

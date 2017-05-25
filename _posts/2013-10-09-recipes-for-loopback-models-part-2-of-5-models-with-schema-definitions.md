@@ -21,7 +21,6 @@ categories:
   In this case, we&#8217;ll define a model first and use an in-memory data source to mock up the data access. You&#8217;ll get a fully-fledged REST API without writing a lot of server side code.
 </p>
 
-<div>
   ```js
 var loopback = require('loopback');
 
@@ -33,8 +32,7 @@ var Customer = ds.createModel('customer', {
     emails: [String],
     age: Number},
     {strict: true});
-```js
-</div>
+```
 
 <p dir="ltr">
   The snippet above creates a &#8216;Customer&#8217; model with a numeric id, a string name, an array of string emails, and a numeric age. Please also note we set the &#8216;strict&#8217; option to be true for the settings object so that LoopBack will enforce the schema and ignore unknown ones.
@@ -52,7 +50,6 @@ var Customer = ds.createModel('customer', {
   You can now test the CRUD operations on the server side. The following code creates two customers, finds a customer by ID, and then finds customers by name to return up to three customer records.
 </p>
 
-<div>
   ```js
 // Create two instances
 Customer.create({
@@ -77,14 +74,12 @@ Customer.create({
         });
     });
 });
-```js
-</div>
+```
 
 <p dir="ltr">
   To expose the model as a REST API, use the following:
 </p>
 
-<div>
   ```js
 var app = loopback();
 app.model(Customer);
@@ -92,14 +87,12 @@ app.use(loopback.rest());
 app.listen(3000, function() {
     console.log('The form application is ready at http://127.0.0.1:3000');
 });
-```js
-</div>
+```
 
 <p dir="ltr">
   Until now the data access has been backed by an in-memory store. To make your data persistent, simply replace it with a MongoDB database by changing the data source configuration:
 </p>
 
-<div>
   ```js
 var ds = loopback.createDataSource('mongodb', {
     "host": "demo.strongloop.com",
@@ -108,8 +101,7 @@ var ds = loopback.createDataSource('mongodb', {
     "password": "L00pBack",
     "port": 27017
 });
-```js
-</div>
+```
 
 <p dir="ltr">
   For more information about data sources and connectors, please check out:
@@ -129,8 +121,8 @@ var ds = loopback.createDataSource('mongodb', {
   <span style="font-size: 18px;">What’s in the upcoming Node v0.12 release? <a href="http://strongloop.com/node-js/whats-new-in-node-js-v0-12/">Six new features, plus new and breaking APIs</a>.</span>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://strongloop.com/node-js/loopback/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
+  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/"]]>training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>
+  <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/">training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>
 </li>

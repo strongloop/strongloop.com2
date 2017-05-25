@@ -27,9 +27,7 @@ categories:
 git clone git@github.com:strongloop-community/loopback-mysql-example.git
 ```
 
-## 
 
-## 
 
 ## **Prerequisites**
 
@@ -89,7 +87,6 @@ npm install loopback-connector-mysql --save
 slc install
 ```
 
-## 
 
 ## **Configure the data source**
 
@@ -106,7 +103,8 @@ vi index.js
   In index.js replace this code:
 </p>
 
-<pre lang="javascript">module.exports = loopback.createDataSource({
+```js
+module.exports = loopback.createDataSource({
   connector: loopback.Memory
 });
 ```
@@ -115,7 +113,8 @@ vi index.js
   with the following code:
 </p>
 
-<pre lang="javascript">module.exports = loopback.createDataSource({
+```js
+module.exports = loopback.createDataSource({
   connector: require('loopback-connector-mysql'),
   host: 'demo.strongloop.com',
   port: 3306,
@@ -135,7 +134,8 @@ vi index.js
   Look at the code in create-test-data.js:
 </p>
 
-<pre lang="javascript">dataSource.automigrate('account', function (err) {
+```js
+dataSource.automigrate('account', function (err) {
   accounts.forEach(function(act) {
     Account.create(act, function(err, result) {
       if(!err) {
@@ -176,7 +176,7 @@ node app
   Open your browser to <a href="http://localhost:3000/accounts">http://localhost:3000/accounts</a>.  You’ll see the JSON describing the two records that you just added to the accounts table:
 </p>
 
-<pre lang="json">  
+```js 
 [
   {
     "email": "foo@bar.com",
@@ -199,7 +199,7 @@ node app
   To get an account by id, go to <a href="http://localhost:3000/accounts/1">http://localhost:3000/accounts/1</a>.
 </p>
 
-<pre lang="json">  
+```js
 {
   "email": "foo@bar.com",
   "level": 10,
@@ -231,7 +231,8 @@ node discover
   First, you&#8217;ll see the model definition for account in JSON format.
 </p>
 
-<pre lang="json">{
+```js
+{
   "name": "Account",
   "options": {
     "idInjection": false,
@@ -281,7 +282,8 @@ node discover
   Then we use the model to find all accounts from MySQL:
 </p>
 
-<pre lang="json">[ { id: 1,
+```js
+[ { id: 1,
   email: 'foo@bar.com',
   level: 10,
   created: Tue Oct 15 2013 14:34:50 GMT-0700 (PDT),
@@ -297,7 +299,8 @@ node discover
   Now, examine the code in discover.js. It&#8217;s surprisingly simple! The dataSource.discoverSchema() method returns the model definition based on the account table schema.
 </p>
 
-<pre lang="javascript">dataSource.discoverSchema('account', {owner: 'demo'}, function (err, schema) {
+```js
+dataSource.discoverSchema('account', {owner: 'demo'}, function (err, schema) {
   console.log(JSON.stringify(schema, null, '  '));
 });
 ```
@@ -306,7 +309,8 @@ node discover
   The dataSource.discoverAndBuildModels() method goes one step further by making the model classes available to perform CRUD operations.
 </p>
 
-<pre lang="javascript">dataSource.discoverAndBuildModels('account', {}, function (err, models) {
+```js
+dataSource.discoverAndBuildModels('account', {}, function (err, models) {
   models.Account.find(function (err, act) {
     if (err) {
       console.error(err);
@@ -325,8 +329,8 @@ As you have seen, the MySQL connector for LoopBack enables applications to work 
   <span style="font-size: 18px;">What’s in the upcoming Node v0.12 release? <a href="http://strongloop.com/node-js/whats-new-in-node-js-v0-12/">Six new features, plus new and breaking APIs</a>.</span>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://strongloop.com/node-js/loopback/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
+  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/"]]>training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>
+  <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/">training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>
 </li>

@@ -77,5 +77,5 @@ The developer should address design patterns driven by mobile use cases with con
 ## **What’s next?**
 
   * Find out more about [LoopBack](http://strongloop.com/strongloop-suite/loopback/).
-  * Get our [&#8220;Mobilizing Enterprise Data with LoopBack Models&#8221; whitepaper](http://strongloop.com/wp-content/uploads/2013/11/Mobilizing-Enterprise-Data-with-LoopBack-Models.pdf).
+  * Get our [&#8220;Mobilizing Enterprise Data with LoopBack Models&#8221; whitepaper]({{site.url}}/blog-assets/2013/11/Mobilizing-Enterprise-Data-with-LoopBack-Models.pdf).
   * Ready to build your next mobile app with a Node backend? We’ve made it easy to get started either locally or on your favorite cloud, with simple npm install. <a href="http://strongloop.com/get-started/" target="_blank">Get Started >></a>

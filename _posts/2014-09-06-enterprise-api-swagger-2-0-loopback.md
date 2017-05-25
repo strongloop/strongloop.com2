@@ -10,7 +10,7 @@ categories:
   - LoopBack
   - News
 ---
-The [Swagger 2.0](http://swagger.io/index.html) specification was [officially released today](http://www.marketwatch.com/story/reverb-announces-swagger-20-a-next-generation-interface-to-connect-apis-and-cloud-services-2014-09-08?reflink=MW_news_stmp) and at StrongLoop we are excited to announce that [LoopBack](http://strongloop.com/node-js/loopback/) is the first Node.js framework to support Swagger 2.0. Using LoopBack you can now take a Swagger 1.2 _or_ 2.0 specification and automatically scaffold a Node-powered REST API. This should be especially useful for any developer wanting to easily describe their APIs using the leading enterprise standard for API specification and implement them in Node.js. Developers now have the ultimate flexibility in starting from a &#8220;bottoms up&#8221; approach &#8211; building APIs from existing data sources or a &#8220;top down&#8221; approach &#8211; starting with the leading enterprise API specification and scaffolding up a backend of generated models.
+The [Swagger 2.0](http://swagger.io/index.html) specification was [officially released today](http://www.marketwatch.com/story/reverb-announces-swagger-20-a-next-generation-interface-to-connect-apis-and-cloud-services-2014-09-08?reflink=MW_news_stmp) and at StrongLoop we are excited to announce that [LoopBack](http://loopback.io/) is the first Node.js framework to support Swagger 2.0. Using LoopBack you can now take a Swagger 1.2 _or_ 2.0 specification and automatically scaffold a Node-powered REST API. This should be especially useful for any developer wanting to easily describe their APIs using the leading enterprise standard for API specification and implement them in Node.js. Developers now have the ultimate flexibility in starting from a &#8220;bottoms up&#8221; approach &#8211; building APIs from existing data sources or a &#8220;top down&#8221; approach &#8211; starting with the leading enterprise API specification and scaffolding up a backend of generated models.
 
 ## A community effort 
 
@@ -250,5 +250,5 @@ With the Swagger generator, we&#8217;ve now completed a round trip of API creati
 </h2>
 
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://strongloop.com/node-js/loopback/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
+  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
 </li>

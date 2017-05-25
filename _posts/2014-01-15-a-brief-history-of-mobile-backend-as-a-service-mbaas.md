@@ -10,6 +10,7 @@ categories:
   - LoopBack
   - Mobile
 ---
+<br>
 <h2 dir="ltr">
   <strong>Background</strong>
 </h2>
@@ -43,11 +44,11 @@ About two years ago, [Jeff Cross](https://twitter.com/jeffbcross) and I created 
 <p dir="ltr">
   MongoDB is essentially a database designed for a backend service platform. It shouldn’t be much of a surprise that pretty much every notable platform depends on it:
 </p>
-
+<br>
 <h2 dir="ltr">
   <strong>Backend platforms using MongoDB</strong>
 </h2>
-
+<ul>
 <li style="margin-left:2em;">
   <a style="font-size: 18px;" href="http://blog.parse.com/2013/03/07/techniques-for-warming-up-mongodb/">Parse</a>
 </li>
@@ -63,6 +64,8 @@ About two years ago, [Jeff Cross](https://twitter.com/jeffbcross) and I created 
 <li style="margin-left:2em;">
   <a style="font-size: 18px;" href="http://www.mongodb.org/about/production-deployments/">Firebase</a>
 </li>
+</ul>
+
 
 <h2 dir="ltr">
 </h2>

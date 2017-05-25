@@ -33,7 +33,7 @@ Existing sync and replication techniques are limited to proprietary data sources
 
 ## **Introducing Loopback**
 
-[LoopBack](http://strongloop.com/node-js/loopback/)  is an open source Node.js API framework from StrongLoop that provides out of box offline synchronization using isomorphic JavaScript. For data replication it uses model-based data persistence.
+[LoopBack](http://loopback.io/)  is an open source Node.js API framework from StrongLoop that provides out of box offline synchronization using isomorphic JavaScript. For data replication it uses model-based data persistence.
 
 This functionality is available for client side [Angularjs](http://docs.strongloop.com/display/LB/AngularJS+JavaScript+SDK) and [JavaScript](http://docs.strongloop.com/display/LB/AngularJS+JavaScript+SDK) web or mobile apps. It also supports backend data sources like [Oracle](http://docs.strongloop.com/display/LB/Oracle+connector), [SQL Server](http://docs.strongloop.com/display/LB/SQL+Server+connector), [MongoDB](http://docs.strongloop.com/display/LB/MongoDB+connector), [PostgreSQL](http://docs.strongloop.com/display/LB/PostgreSQL+connector), [MySQL](http://docs.strongloop.com/display/LB/MySQL+connector) and any [LoopBack connector](http://docs.strongloop.com/display/LB/Data+sources+and+connectors) that supports create, read, update and delete (CRUD) operations.
 

@@ -346,7 +346,7 @@ output {
   </p>
   
   <p>
-    <img src="http://strongloop.com/wp-content/uploads/2014/02/1746x674xScreen-Shot-2014-02-03-at-3.25.40-AM.png.pagespeed.ic.z6EZzoEvwk.png" alt="Screen Shot 2014-02-03 at 3.25.40 AM" width="1746" height="674" />
+    <img src="{{site.url}}/blog-assets/2014/02/Screen-Shot-2014-02-03-at-3.25.40-AM.png" alt="Screen Shot 2014-02-03 at 3.25.40 AM" width="1746" height="674" />
   </p>
   
   <h2>
