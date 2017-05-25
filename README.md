@@ -69,6 +69,10 @@ $ jekyll clean
 - [Liquid template language](http://shopify.github.io/liquid/)
 - [More Liquid documentation](https://help.shopify.com/themes/liquid)
 
+*NOTE:* Having issues running Jekyll locally? You can use Docker instead of installing Ruby, Gems, Jekyll, etc.
+
+- [https://github.com/jekyll/docker/wiki/Usage:-Running](jekyll/docker)
+
 ## Overview of the site
 
 The site is based on https://github.com/strongloop/loopback.io, published as http://loopback.io.
@@ -114,9 +118,12 @@ The site follows the standard Jekyll layout.  Specifically:
 
 ### How to add a blog post
 
-1. Create a new markdown file in `_posts`.  
+1. Blog post submissions should follow this github collaborative flow, which is essentially "submit via fork / clone / push / pull request. No branches."
+https://guides.github.com/activities/forking/
+
+2. Create a new markdown file in `_posts`.  
 By convention, the file name is of the form `yyyy-mm-dd-blog-url`, where `blog-url` is based on the title as described below.
-1. Include the following front-matter:
+3. Include the following front-matter:
     ```
     ---
     layout: post
