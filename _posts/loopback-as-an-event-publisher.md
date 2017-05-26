@@ -59,8 +59,8 @@ Note that the initialize() method of the connector is the same as in CRUD connec
 
 Another thing to mention here is that the Event Interface is defined as a CustomDAO in the post but it is possible to have it standardized (post review, changes and approval) as a part of the LoopBack framework the way SQLConnector/PersistedModel is. If that happens, then a CustomDAO would not be needed.
 
-```javascript
 package.json
+```javascript
 {
   "name": "loopback-connector-cloudantevents",
   "version": "0.0.1",
@@ -76,6 +76,8 @@ package.json
 The index.js file does module.exports = require('./lib/cloudantevents.js');
 
 cloudantevents.js
+
+```javascript
 var cloudant = require('cloudant');
 
 /*
@@ -118,6 +120,7 @@ CustomDAO.stop = function (callback) {
   console.log(this.modelName);
   this.feed.stop();
 };
+```
 
 2. Event Publisher
 This is a LoopBack application created using lb utility with the server.js code as shown below. The application contains:
@@ -135,6 +138,8 @@ The datasource points to my Cloudant instance and a model is created for the acc
 On receiving events from connector for document creation/updation/deletion in accounts collection, the handler publishes message to a topic (/v1/subutest) using the strong-pubsub client.
 
 server.js
+
+```javascript
 var loopback = require("loopback");
 var app = module.exports = loopback();
 
@@ -204,6 +209,7 @@ app.start = function() {
 if (require.main === module) {
     app.start();
 }
+```
 
 3. Message Broker
 For demonstration purpose we have run a MQTT broker (mosquitto [2]) on the localhost at port 1883.
@@ -211,6 +217,7 @@ For demonstration purpose we have run a MQTT broker (mosquitto [2]) on the local
 4. Client App
 The client application is a simple Node.js code which runs the code below (borrowed from strong-pubsub documentation). It connects to the MQTT broker using strong-pubsub client and adapter and subscribes for messages in the /v1/subutest topic. When it receives a message, it logs it to console.
 
+```javascript
 var Client = require('strong-pubsub');
 var Adapter = require('strong-pubsub-mqtt');
 
@@ -222,6 +229,7 @@ siskel.subscribe('/v1/subutest');
 siskel.on('message', function(topic, msg) {
  console.log(topic, msg.toString());
 });
+```
 
 Demo
 1. Start the broker
@@ -251,6 +259,7 @@ accounts /*The event model active*/
 5. Login to Cloudant and create a new document in accounts collection.
 
 6. The Connector and LoopBack app logs show that a new event is detected:
+```javascript
 { _id: '26dd638e8462387f03f2f6f25e4e6926',
   _rev: '1-08fb96a08261081dcd24b7a1629c8cde',
   name: 'James Bond',
@@ -263,7 +272,7 @@ accounts /*The event model active*/
      name: 'James Bond',
      type: 'Demo',
      region: 'Bangalore' } }
-
+```
 7. Broker logs show that a new client (publisher) connected:
 1493573959: New connection from 127.0.0.1 on port 1883.
 1493573959: New client connected from 127.0.0.1 as mqttjs_e1b485ee (c1, k10).
@@ -272,8 +281,9 @@ accounts /*The event model active*/
 /v1/subutest {"model":"accounts","message":{"_id":"26dd638e8462387f03f2f6f25e4e6926","_rev":"1-08fb96a08261081dcd24b7a1629c8cde","name":"James Bond","type":"Demo","region":"Bangalore"}}
 
 9. The mosquitto subscriber also receives the same message:
+```javascript
 {"model":"accounts","message":{"_id":"26dd638e8462387f03f2f6f25e4e6926","_rev":"1-08fb96a08261081dcd24b7a1629c8cde","name":"James Bond","type":"Demo","region":"Bangalore"}}
-
+```
 This proves that LoopBack can be extended for the events side of the story in a seamless way which is:
 
     Generic - Using strong-pubsub abstracts away broker specific interfaces.
