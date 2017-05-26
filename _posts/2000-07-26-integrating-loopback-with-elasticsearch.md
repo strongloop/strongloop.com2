@@ -1,9 +1,10 @@
 ---
+id: 29183
 layout: post
 title: Integrating LoopBack with ElasticSearch
 date: 2000-07-26
 author: Raymond Camden
-permalink: /strongblog/integrating-loopback-with-elasticsearch
+permalink: /strongblog/integrating-loopback-with-elasticsearch/
 categories:
   - How-To
   - LoopBack

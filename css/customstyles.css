@@ -826,6 +826,9 @@ For printing
 .date {
   font-size: 80%;
 }
+.x-green .author a{
+  color: #000
+}
 
 .project-tile {
   border-radius: 3px;

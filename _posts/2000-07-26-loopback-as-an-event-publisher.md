@@ -1,9 +1,13 @@
 ---
+id: 29431
 layout: post
 title: LoopBack As An Event Publisher
 date: 2000-07-26
-author: Nagarjuna Surabathina
-permalink: /strongblog/loopback-as-event-publisher
+author:
+   - Nagarjuna Surabathina
+   - Subramanian Krishnan
+guid: https://strongloop.com/?p=29431
+permalink: /strongblog/loopback-as-event-publisher/
 categories:
   - Community
 ---

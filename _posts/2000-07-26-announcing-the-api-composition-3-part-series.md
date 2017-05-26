@@ -1,9 +1,10 @@
 ---
+id: 29399
 layout: post
 title: Announcing the API Composition Three-Part Webinar Series
 date: 2000-07-26
 author: Dave Whitley
-permalink: /strongblog/announcing-the-api-composition-3-part-series
+permalink: /strongblog/announcing-the-api-composition-3-part-series/
 categories:
   - Community
 ---
