@@ -1,7 +1,7 @@
 ---
 id: 29305
-title: LoopBack As A Service Using OpenWhisk
-date: 2017-05-24T05:55:00+00:00
+title: LoopBack As An Event Publisher
+date: 2017-06-05T05:55:00+00:00
 author:  
 - Subramanian Krishnan
 - Nagarjuna Surabathina
@@ -59,6 +59,7 @@ Note that the initialize() method of the connector is the same as in CRUD connec
 
 Another thing to mention here is that the Event Interface is defined as a CustomDAO in the post but it is possible to have it standardized (post review, changes and approval) as a part of the LoopBack framework the way SQLConnector/PersistedModel is. If that happens, then a CustomDAO would not be needed.
 
+```javascript
 package.json
 {
   "name": "loopback-connector-cloudantevents",
@@ -70,6 +71,7 @@ package.json
     "cloudant": "^1.4.1"
   }
 }
+```
 
 The index.js file does module.exports = require('./lib/cloudantevents.js');
 
