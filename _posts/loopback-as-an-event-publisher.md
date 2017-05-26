@@ -65,7 +65,10 @@ Another thing to mention here is that the Event Interface is defined as a Custom
 }
 ```
 
-The index.js file does module.exports = require('./lib/cloudantevents.js');
+#### index.js 
+```javascript
+module.exports = require('./lib/cloudantevents.js');
+```
 
 #### cloudantevents.js
 
@@ -258,6 +261,7 @@ $ mosquitto_sub -h localhost  -p 1883 -t /v1/subutest
 
 4. Run the Event Publisher LoopBack app
 ```bash
+$ node server.js
 Web server listening at: http://:::51192/
 accounts /*The event model active*/
 ```
