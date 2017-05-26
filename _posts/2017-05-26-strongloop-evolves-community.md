@@ -17,7 +17,7 @@ With our renewed focus on Open-Source options for the API developer community, t
 ### Projects
 
 [LoopBack](http://loopback.io/), [API Microgateway](https://github.com/strongloop/microgateway), and [Open API Initiative](https://www.openapis.org/) - three key Open Source technologies for API creation. 
-
+<!--more-->
 ### Events
 
 The StrongLoop team will continue to sponsor and attend events because these are important to us and the community. These events will include meetups, informative webinars, and developer conferences. We'll provide [a list](https://strongloop.com/events) so you know where to find us!
