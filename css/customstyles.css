@@ -112,7 +112,7 @@ body h1 {margin-top:40px;}
     margin-bottom:12px;
 }
 
-p.post-meta {font-size: 80%; color: #777;}
+p.post-meta {font-size: 80%; color: #444;}
 
 
 li.dropdownActive a {
@@ -869,7 +869,7 @@ For printing
   font-size: 90%;
 }
 
-.author, .date {
+.date {
   font-style: italic;
   color: #444;
   margin-left: 10px;
@@ -899,7 +899,7 @@ div.post-content h4 {
 }
 
 .breadcrumb a, .x-green a, .post-meta a {
-  color: #daefc3;
+  color: #444;
 }
 
 .breadcrumb a:hover, .breadcrumb a:focus,
