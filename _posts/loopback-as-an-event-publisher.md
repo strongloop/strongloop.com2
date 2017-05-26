@@ -119,7 +119,7 @@ CustomDAO.stop = function (callback) {
 
 ## 2. Event Publisher
 
-This is a LoopBack application created using lb utility with the server.js code as shown below. The application contains:
+This is a LoopBack application created using [lb utility](https://loopback.io/doc/en/lb3/Command-line-tools.html) with the server.js code as shown below. The application contains:
 
   * datasource
 
@@ -213,7 +213,7 @@ For demonstration purpose we have run a MQTT broker ([mosquitto](https://mosquit
 
 ## 4. Client App
 
-The client application is a simple Node.js code which runs the code below (borrowed from strong-pubsub documentation). It connects to the MQTT broker using strong-pubsub client and adapter and subscribes for messages in the /v1/subutest topic. When it receives a message, it logs it to console.
+The client application is a simple Node.js app which runs the code below (borrowed from strong-pubsub documentation). It connects to the MQTT broker using strong-pubsub client and adapter and subscribes for messages in the /v1/subutest topic. When it receives a message, it logs it to console.
 
 ```javascript
 var Client = require('strong-pubsub');
@@ -302,7 +302,7 @@ accounts /*The event model active*/
 {"model":"accounts","message":{"_id":"26dd638e8462387f03f2f6f25e4e6926","_rev":"1-08fb96a08261081dcd24b7a1629c8cde","name":"James Bond","type":"Demo","region":"Bangalore"}}
 ```
 
-This proves that LoopBack can be extended for the events side of the story in a seamless way which is:
+This proves that LoopBack can be seamlessly extended for the events side of the story in a way which is:
 
   * Generic - Using strong-pubsub abstracts away broker specific interfaces.
 
