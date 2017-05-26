@@ -2,7 +2,7 @@
 id: 29431
 layout: post
 title: LoopBack As An Event Publisher
-date: 2000-07-26
+date: 2017-07-26
 author:
    - Nagarjuna Surabathina
    - Subramanian Krishnan
