@@ -43,8 +43,9 @@ strong-pubsub
 This is the counterpart of strong-remoting for the events side of the story. We want the publisher (and possibly the consumer) to be de-coupled from the specific choice of broker. [Strong-pubsub](https://github.com/strongloop/strong-pubsub) allows us to easily switch the broker without affecting the producer/consumer code.
 	
 
-
 The diagram below shows end to end view of the solution.
+<img class="aligncenter wp-image-29404" src="{{site.url}}/blog-assets/2017/04/EventPublisher.png" alt="LoopBack As An Event Publisher" width="600" height="331" />
+
 Let us now look at each piece of the solution in greater detail.
 
 1. Event Connector
@@ -257,6 +258,7 @@ Web server listening at: http://:::51192/
 accounts /*The event model active*/
 
 5. Login to Cloudant and create a new document in accounts collection.
+<img class="aligncenter wp-image-29404" src="{{site.url}}/blog-assets/2017/04/CloudAntRecord.png" alt="Cloudant new record" width="600" height="331" />
 
 6. The Connector and LoopBack app logs show that a new event is detected:
 ```javascript
