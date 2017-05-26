@@ -40,7 +40,7 @@ A LoopBack app in which datasources and models can be created using the standard
 As an example, the datasource will have the Cloudant credentials and the model will identify the Cloudant collection for which I want the (CREATED/UPDATED/DELETED) events.
 strong-pubsub
 	
-This is the counterpart of strong-remoting for the events side of the story. We want the publisher (and possibly the consumer) to be de-coupled from the specific choice of broker. Strong-pubsub [1] allows us to easily switch the broker without affecting the producer/consumer code.
+This is the counterpart of strong-remoting for the events side of the story. We want the publisher (and possibly the consumer) to be de-coupled from the specific choice of broker. [Strong-pubsub](https://github.com/strongloop/strong-pubsub) allows us to easily switch the broker without affecting the producer/consumer code.
 	
 
 
@@ -212,7 +212,7 @@ if (require.main === module) {
 ```
 
 3. Message Broker
-For demonstration purpose we have run a MQTT broker (mosquitto [2]) on the localhost at port 1883.
+For demonstration purpose we have run a MQTT broker ([mosquitto](https://mosquitto.org/)) on the localhost at port 1883.
 
 4. Client App
 The client application is a simple Node.js code which runs the code below (borrowed from strong-pubsub documentation). It connects to the MQTT broker using strong-pubsub client and adapter and subscribes for messages in the /v1/subutest topic. When it receives a message, it logs it to console.
@@ -278,7 +278,9 @@ accounts /*The event model active*/
 1493573959: New client connected from 127.0.0.1 as mqttjs_e1b485ee (c1, k10).
 
 8. The Node.js client app logs show that a message is received with the new account details:
+```
 /v1/subutest {"model":"accounts","message":{"_id":"26dd638e8462387f03f2f6f25e4e6926","_rev":"1-08fb96a08261081dcd24b7a1629c8cde","name":"James Bond","type":"Demo","region":"Bangalore"}}
+````
 
 9. The mosquitto subscriber also receives the same message:
 ```javascript
@@ -292,8 +294,4 @@ This proves that LoopBack can be extended for the events side of the story in a 
 
     Consistent - Same conceptual and programming model (datasources and models) as for the CRUD side.
 
-
-References:
-[1] https://github.com/strongloop/strong-pubsub
-[2] https://mosquitto.org/
 
