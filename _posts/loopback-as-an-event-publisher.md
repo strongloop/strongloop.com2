@@ -44,6 +44,7 @@ This is the counterpart of strong-remoting for the events side of the story. We 
 	
 
 The diagram below shows end to end view of the solution.
+
 <img class="aligncenter wp-image-29404" src="{{site.url}}/blog-assets/2017/04/EventPublisher.png" alt="LoopBack As An Event Publisher" width="600" height="331" />
 
 Let us now look at each piece of the solution in greater detail.
