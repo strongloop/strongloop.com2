@@ -16,7 +16,11 @@ With our renewed focus on Open-Source options for the API developer community, t
 
 ### Projects
 
-[LoopBack](http://loopback.io/), [API Microgateway](https://github.com/strongloop/microgateway), and [Open API Initiative](https://www.openapis.org/) - three key Open Source technologies for API creation. 
+- [LoopBack](http://loopback.io/)
+- [API Microgateway](https://github.com/strongloop/microgateway)
+- [Open API Initiative](https://www.openapis.org/) 
+
+These are three key Open Source technologies for API creation, and we will share content revolving around them. 
 <!--more-->
 ### Events
 
