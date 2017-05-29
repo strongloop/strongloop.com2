@@ -13,7 +13,7 @@ Want to attend the premier enterprise app developers conference? We're heading t
 
 {% include image.html file='CF-logo.png' alt='Cloud Foundry Summit' %}
 
-Visit us at the IBM booth to for a demo of LoopBack and free stickers. Plus, you'll want to discover more about IBM sponsoring the Node track.
+Visit us at the IBM booth for a demo of LoopBack and to get some free stickers. Plus, IBM is sponsoring the Node.js Sessions Track, so be sure to take advantage of those learning opportunities.
 <!--more-->
 CLoud Foundry runs from June 13-15 and is held in Santa Clara, California.
 
