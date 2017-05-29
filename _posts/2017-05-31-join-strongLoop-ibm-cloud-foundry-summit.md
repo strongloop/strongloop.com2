@@ -15,9 +15,7 @@ Want to attend the premier enterprise app developers conference? We're heading t
 
 Visit us at the IBM booth for a demo of LoopBack and to get some free stickers. Plus, IBM is sponsoring the Node.js Sessions Track, so be sure to take advantage of those learning opportunities.
 <!--more-->
-CLoud Foundry runs from June 13-15 and is held in Santa Clara, California.
-
-Join StrongLoop and IBM at InterConnect 2017 in Las Vegas, Nevada! The event runs from March 19-23, and the StrongLoop team will once again unite with the larger IBM team at InterConnect. We look forward to helping people discover and learn about options for the Cloud, the Internet of Things, Watson, and more. And, of course, discovering and learning more about those things ourselves.
+Cloud Foundry Summit runs from June 13-15 and is held in Santa Clara, California.
 
 ### Register Today!
 
