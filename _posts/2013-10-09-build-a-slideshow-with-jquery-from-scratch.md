@@ -368,19 +368,9 @@ slideshow.startSlideshow();
   In conclusion, you can see how understanding scoping and the power of closures can help you create awesome features with not a lot of effort. With very minimal code we managed to make a slideshow that is contained and doesn&#8217;t introduce anything new into the window object.
 </p>
 
-<p>
-  <h2>
+<h2>
     <strong><a href="http://strongloop.com/get-started/">What’s next?</a></strong>
   </h2>
   
-  <ul>
-    <li style="margin-left: 2em;">
-      <span style="font-size: 18px;">What’s in the upcoming Node v0.12 release? <a href="http://strongloop.com/node-js/whats-new-in-node-js-v0-12/">Six new features, plus new and breaking APIs</a>.</span>
-    </li>
-    <li style="margin-left: 2em;">
-      <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
-    </li>
-    <li style="margin-left: 2em;">
-      <p style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/">training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</p>
-    </li>
-  </ul>
+- Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js [LoopBack framework](http://loopback.io/). We’ve made it easy to get started either locally or on your favorite cloud.
+  
