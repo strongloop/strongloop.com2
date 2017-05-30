@@ -23,14 +23,14 @@ The purpose of this post is not to convince you to adopt this new style right aw
 Hopefully you&#8217;re familiar with arrow functions that return a value:
 
 ```js
-<code class="javascript">const square = x => x * x;</code>
+const square = x => x * x;
 ```
 
 But what&#8217;s going on in the code below?
 
 ```js
-<code class="javascript">const has = p => o => o.hasOwnProperty(p);
-const sortBy = p => (a, b) => a[p] > b[p];</code>
+const has = p => o => o.hasOwnProperty(p);
+const sortBy = p => (a, b) => a[p] > b[p];
 ```
 
 What&#8217;s this &#8220;p returns o returns o.hasOwnProperty&#8230;&#8221;? How can we use \`has\`?
@@ -40,7 +40,7 @@ What&#8217;s this &#8220;p returns o returns o.hasOwnProperty&#8230;&#8221;? How
 To illustrate writing higher order functions with arrows, let&#8217;s look at a classic example: add.  In ES5 that would look like this:
 
 ```js
-<code class="javascript">function add(x){
+function add(x){
   return function(y){
     return y + x;
   };
@@ -48,7 +48,7 @@ To illustrate writing higher order functions with arrows, let&#8217;s look at a 
 
 var addTwo = add(2);
 addTwo(3);          // => 5
-add(10)(11);        // => 21</code>
+add(10)(11);        // => 21
 ```
 
 Our add function takes x and returns a function that takes y which returns y + x. How would we write this with arrow functions? We know that&#8230;
@@ -59,17 +59,17 @@ Our add function takes x and returns a function that takes y which returns y + x
 &#8230;so all we must do is make the body of our arrow function _another_ arrow function, thus:
 
 ```js
-<code class="javascript">const add = x => y => y + x;
+const add = x => y => y + x;
 // outer function: x => [inner function, uses x]
-// inner function: y => y + x;</code>
+// inner function: y => y + x;
 ```
 
 Now we can create _inner_ functions with a value bound to \`x\`:
 
 ```js
-<code class="javascript">const add2 = add(2);// returns [inner function] where x = 2
+const add2 = add(2);// returns [inner function] where x = 2
 add2(4);            // returns 6: exec inner with y = 4, x = 2
-add(8)(7);          // 15</code>
+add(8)(7);          // 15
 ```
 
 Our \`add\` function isn&#8217;t terribly useful, but it should illustrate how an outer function can take an argument \`(x)\` and reference it in a function it returns.
@@ -79,7 +79,7 @@ Our \`add\` function isn&#8217;t terribly useful, but it should illustrate how a
 So you&#8217;re looking at an ES6 library on github and encounter code that looks like this:
 
 ```js
-<code class="javascript">const has = p => o => o.hasOwnProperty(p);
+const has = p => o => o.hasOwnProperty(p);
 const sortBy = p => (a, b) => a[p] > b[p];
 
 let result;
@@ -91,7 +91,7 @@ let users = [
 
 result = users
   .filter(has('pets'))
-  .sort(sortBy('age'));</code>
+  .sort(sortBy('age'));
 ```
 
 What&#8217;s going on here? We&#8217;re calling the [Array prototype&#8217;s sort and filter methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype#Methods), each of which take a single function argument, but instead of writing function expressions and passing them to filter and sort, we&#8217;re calling functions that return functions, and passing those to filter and sort.
@@ -101,17 +101,17 @@ Let&#8217;s take a look, with the expression that returns a function underlined 
 ### Without higher order functions:
 
 ```js
-<code class="javascript">result = users
+result = users
   .filter(x => x.hasOwnProperty('pets')) //pass Function to filter
-  .sort((a, b) => a.age > b.age);        //pass Function to sort</code>
+  .sort((a, b) => a.age > b.age);        //pass Function to sort
 ```
 
 ### With higher order functions:
 
 ```js
-<code class="javascript">result = users
+result = users
   .filter(has('pets'))  //pass Function to filter
-  .sort(sortBy('age')); //pass Function to sort</code>
+  .sort(sortBy('age')); //pass Function to sort
 ```
 
 In each case, \`filter\` is passed a function that checks if an object has a property called &#8220;pets.&#8221;
@@ -127,19 +127,19 @@ This is useful for a few reasons:
 Imagine we want only users with pets **and with titles**. We could add another function in:
 
 ```js
-<code class="javascript">result = users
+result = users
   .filter(x => x.hasOwnProperty('pets'))
   .filter(x => x.hasOwnProperty('title'))
-  ...</code>
+  ...
 ```
 
 The repetition here is just clutter: it doesn&#8217;t add clarity, it&#8217;s just more to read and write. Compare with the same code using our \`has\` function:
 
 ```js
-<code class="javascript">result = users
+result = users
   .filter(has('pets'))
   .filter(has('title'))
-  ...</code>
+  ...
 ```
 
 This is shorter and easier to write, and that makes for fewer typos. I consider this code to have greater clarity as well, as it&#8217;s easy to understand its purpose at a glance.
@@ -147,24 +147,24 @@ This is shorter and easier to write, and that makes for fewer typos. I consider 
 As for reuse, if you have to filter to pet users or people with job titles in many places, you can create function to do this and reuse them as needed:
 
 ```js
-<code class="javascript">const hasPets = has('pets');
+const hasPets = has('pets');
 const isEmployed = has('title');
 const byAge = sortBy('age');
 
 let workers = users.filter(isEmployed);
 let petOwningWorkers = workers.filter(hasPets);
-let workersByAge = workers.sort(byAge);</code>
+let workersByAge = workers.sort(byAge);
 ```
 
 We can use some of our functions for single values as well, not just for filtering arrays:
 
 ```js
-<code class="javascript">let user = {name: 'Assata', age: 68, title: 'VP of Operations'};
+let user = {name: 'Assata', age: 68, title: 'VP of Operations'};
 if(isEmployed(user)){   // true
   //do employee action
 }
 hasPets(user);          // false
-has('age')(user);       //true</code>
+has('age')(user);       //true
 ```
 
 ## A Step Further
@@ -172,13 +172,13 @@ has('age')(user);       //true</code>
 Let&#8217;s make a function that will produce a filter function that checks that an object has a **key** with a certain **value**. Our \`has\` function checked for a _key_, but to check _value_ as well our filter function will need to know two things (key and value), not just one. Let&#8217;s take a look at one approach:
 
 ```js
-<code class="javascript">//[p]roperty, [v]alue, [o]bject:
+//[p]roperty, [v]alue, [o]bject:
 const is = p => v => o => o.hasOwnProperty(p) && o[p] == v;
 
 // broken down:
 // outer:  p => [inner1 function, uses p]
 // inner1: v => [inner2 function, uses p and v]
-// inner2: o => o.hasOwnProperty(p) && o[p] = v;</code>
+// inner2: o => o.hasOwnProperty(p) && o[p] = v;
 ```
 
 So our new function called &#8220;is&#8221; does three things:
@@ -190,7 +190,7 @@ So our new function called &#8220;is&#8221; does three things:
 Here is an example of using this \`is\` to filter our users:
 
 ```js
-<code class="javascript">const titleIs = is('title');
+const titleIs = is('title');
 // titleIs == v => o => o.hasOwnProperty('title') && o['title'] == v;
 
 const isContractor = titleIs('Contractor');
@@ -201,7 +201,7 @@ let developers  = users.filter(titleIs('Developer'));
 
 let user = {name: 'Viola', age: 50, title: 'Actress', pets: ['Zak']};
 isEmployed(user);   // true
-isContractor(user); // false</code>
+isContractor(user); // false
 ```
 
 ## A note on style
@@ -209,13 +209,13 @@ isContractor(user); // false</code>
 Scan this function, and note the time it takes you to figure out what’s going on:
 
 ```js
-<code class="javascript">const i = x => y => z => h(x)(y) && y[x] == z;</code>
+const i = x => y => z => h(x)(y) && y[x] == z;
 ```
 
 Now take a look at this same function, written slightly differently:
 
 ```js
-<code class="javascript">const is = prop => val => obj => has(prop)(obj) && obj[prop] == val;</code>
+const is = prop => val => obj => has(prop)(obj) && obj[prop] == val;
 ```
 
 There is a tendency when writing one line functions to be as terse as possible, at the expense of readability. Fight this urge! Short, meaningless names make for cute-looking, **hard to understand** functions. Do yourself and your fellow coders a favor and spend the extra few characters for meaningful variable and function names.
@@ -225,13 +225,13 @@ There is a tendency when writing one line functions to be as terse as possible, 
 What if you want to sort by age in _descending_ order rather than ascending? Or find out who&#8217;s _not_ an employee? Do we have to write new utility functions \`sortByDesc\` and \`notHas\`? No we do not! We can wrap our functions, which return Booleans, with a function that inverts that boolean, true to false and vice versa:
 
 ```js
-<code class="javascript">//take args, pass them thru to function x, invert the result of x
+//take args, pass them thru to function x, invert the result of x
 const invert = x => (...args) => !x(...args);
 const noPets = invert(hasPets);
 
 let petlessUsersOldestFirst = users
   .filter(noPets)
-  .sort(invert(sortBy('age')));</code>
+  .sort(invert(sortBy('age')));
 ```
 
 ## Conclusion
