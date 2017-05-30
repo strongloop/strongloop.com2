@@ -9,66 +9,28 @@ categories:
   - How-To
   - LoopBack
 ---
-<p dir="ltr">
-  Rich mobile applications are driven by data. Data can be produced and consumed by mobile devices, browsers, cloud services, legacy applications, databases, and other backend systems.
-</p>
 
-<p dir="ltr">
-  LoopBack mobilizes data through models that represent business data and behavior. LoopBack exposes models to mobile apps through REST APIs and client SDKs. You need to interact with the model differently, depending on the location and type of data. In this 5-part blog series, I&#8217;ll explain some of the most important recipes for working with LoopBack models:
-</p>
+Rich mobile applications are driven by data. Data can be produced and consumed by mobile devices, browsers, cloud services, legacy applications, databases, and other backend systems.
 
-<li dir="ltr">
-  <p dir="ltr">
-    Part 1: Open models &#8211; for free-form data.
-  </p>
-</li>
+LoopBack mobilizes data through models that represent business data and behavior. LoopBack exposes models to mobile apps through REST APIs and client SDKs. You need to interact with the model differently, depending on the location and type of data. In this 5-part blog series, I&#8217;ll explain some of the most important recipes for working with LoopBack models:
 
-<li dir="ltr">
-  <p dir="ltr">
-    Part 2: Models with schema definitions such as relational databases.
-  </p>
-</li>
+- Part 1: Open models &#8211; for free-form data.
+- Part 2: Models with schema definitions such as relational databases.
+- Part 3: Model discovery with relational databases &#8211; consuming existing data from a relational database.
+- Part 4: Models by instance introspection &#8211; Consuming JSON data from NoSQL databases or REST APIs.
+- Part 5: Model synchronization with relational databases &#8211; keeping your model synchronized with the database.
 
-<li dir="ltr">
-  <p dir="ltr">
-    Part 3: Model discovery with relational databases &#8211; consuming existing data from a relational database.
-  </p>
-</li>
+The source code is available at [https://github.com/strongloop/loopback-sample-recipes](https://github.com/strongloop/loopback-sample-recipes).
 
-<li dir="ltr">
-  <p dir="ltr">
-    Part 4: Models by instance introspection &#8211; Consuming JSON data from NoSQL databases or REST APIs.
-  </p>
-</li>
+Let&#8217;s start with the simplest one: open models.
 
-<li dir="ltr">
-  <p dir="ltr">
-    Part 5: Model synchronization with relational databases &#8211; keeping your model synchronized with the database.
-  </p>
-</li>
+<em>I&#8217;m mobile developer. Can LoopBack help me save and load data transparently? I don&#8217;t need to worry about the backend or define the model up front, because my data are free-form.</em>
 
-<p dir="ltr">
-  The source code is available at <a href="https://github.com/strongloop/loopback-sample-recipes">https://github.com/strongloop/loopback-sample-recipes</a>.
-</p>
+For free-form data, use an open model that allows you to set any properties on model instances.
 
-<p dir="ltr">
-  Let&#8217;s start with the simplest one: open models.
-</p>
+The following code creates an open model and exposes it as a REST API:
 
-> <p dir="ltr">
->   <em>I&#8217;m mobile developer. Can LoopBack help me save and load data transparently? I don&#8217;t need to worry about the backend or define the model up front, because my data are free-form.</em>
-> </p>
-
-<p dir="ltr">
-  For free-form data, use an open model that allows you to set any properties on model instances.
-</p>
-
-<p dir="ltr">
-  The following code creates an open model and exposes it as a REST API:
-</p>
-
-<div>
-  ```js
+```js
 var loopback = require('loopback');
 var app = loopback(); // Create an instance of LoopBack
 // Create an in memory data source
@@ -86,28 +48,18 @@ app.listen(3000, function () {
     console.log('The form application is ready at http://127.0.0.1:3000');
 });
 ```
-</div>
+Notice the call to ds.createModel() with only a name to create an open model.
 
-<p dir="ltr">
-  Notice the call to ds.createModel() with only a name to create an open model.
-</p>
-
-<p dir="ltr">
-  To try it out, enter the following command:
-</p>
+To try it out, enter the following command:
 
 ```js
 curl -X POST -H "Content-Type:application/json" -d '{"a": 1, "b": "B"}' \
 http://127.0.0.1:3000/forms
 ```
 
-<p dir="ltr">
-  This command POSTs some simple JSON data to the LoopBack /forms URI.
-</p>
+This command POSTs some simple JSON data to the LoopBack /forms URI.
 
-<p dir="ltr">
-  The output that the app returns is a JSON object for the newly-created instance.
-</p>
+The output that the app returns is a JSON object for the newly-created instance.
 
 ```js
 {
@@ -117,29 +69,21 @@ http://127.0.0.1:3000/forms
 }
 ```
 
-<p dir="ltr">
-  The id field is a unique identifier you can use to retrieve the instance:
-</p>
+The id field is a unique identifier you can use to retrieve the instance:
 
 ```js
 curl -X GET http://127.0.0.1:3000/forms/52389f5f7d365dd52a000005
 ```
 
-<p dir="ltr">
-  Note: Your ID will be different as it is generated by the database. Please copy it from the POST response.
-</p>
+** Note:** Your ID will be different as it is generated by the database. Please copy it from the POST response.
 
-<p dir="ltr">
-  Try submitting a different form:
-</p>
+Try submitting a different form:
 
 ```js
 curl -X POST -H "Content-Type:application/json" -d '{"a": "A", "c": "C", "d": true}' http://localhost:3000/forms
 ```
 
-<p dir="ltr">
-  Now you see the newly created instance as follows:
-</p>
+Now you see the newly created instance as follows:
 
 ```js
 {
@@ -150,17 +94,11 @@ curl -X POST -H "Content-Type:application/json" -d '{"a": "A", "c": "C", "d": tr
 }
 ```
 
-<p dir="ltr">
-  For the complete list of REST APIs that LoopBack scaffolds for a model, please read:
-</p>
+For the complete list of REST APIs that LoopBack scaffolds for a model, please read:
 
-<p dir="ltr">
-  <a href="http://wiki.strongloop.com/display/DOC/REST+API">http://wiki.strongloop.com/display/DOC/REST+API</a>
-</p>
+[http://wiki.strongloop.com/display/DOC/REST+API](http://wiki.strongloop.com/display/DOC/REST+API)
 
-<p dir="ltr">
-  If you have StrongLoop Suite (<a href="http://strongloop.com/strongloop-suite/downloads/">http://strongloop.com/strongloop-suite/downloads/</a>)  installed, you can build and run this project from scratch in 5 commands:
-</p>
+If you have StrongLoop Suite [http://strongloop.com/strongloop-suite/downloads](http://strongloop.com/strongloop-suite/downloads)  installed, you can build and run this project from scratch in 5 commands:
 
 ```js
 $ slc lb project free-form
@@ -170,34 +108,18 @@ $ slc install
 $ slc run app
 ```
 
-<p dir="ltr">
-  Now open a browser and point it to <a href="http://localhost:3000/explorer">http://localhost:3000/explorer</a>.
-</p>
+Now open a browser and point it to <a href="http://localhost:3000/explorer">http://localhost:3000/explorer</a>.
 
 <img alt="" src="https://lh3.googleusercontent.com/DubpOEv_B6ZCmss9RbjtEgTujDu3B2YVgkp9Y_xJJZNfPZdSzwWLHaT4M71yVjqBSQakXoekzcjqDUOcdkuLeG80U3Cc2F2t7bUEOimJYVKWS3NjCn9bVZEY" width="624px;" height="340px;" />
 
-<p dir="ltr">
-  You get an explorer to try the forms APIs right away. The UI is pretty straghtforward, feel free to play with it. For more information, check out:
-</p>
+You get an explorer to try the forms APIs right away. The UI is pretty straghtforward, feel free to play with it. For more information, check out:
 
-<p dir="ltr">
-  <a href="http://wiki.strongloop.com/display/DOC/LoopBack+API">http://wiki.strongloop.com/display/DOC/LoopBack+API</a>
-</p>
+[http://wiki.strongloop.com/display/DOC/LoopBack+API](http://wiki.strongloop.com/display/DOC/LoopBack+API)
 
-<p dir="ltr">
-  The open model is simple and flexible. It works well for free-form style data because the model doesn&#8217;t constrain the properties and their types. But for other scenarios, a predefined model is preferred to validate the data and ensure it can be exchanged among multiple systems.
-</p>
+The open model is simple and flexible. It works well for free-form style data because the model doesn&#8217;t constrain the properties and their types. But for other scenarios, a predefined model is preferred to validate the data and ensure it can be exchanged among multiple systems.
 
 Next week, we’ll talk about models with schema definitions.
 
-## **[What’s next?](http://strongloop.com/get-started/)**
+## **What’s next?**
 
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">What’s in the upcoming Node v0.12 release? <a href="http://strongloop.com/node-js/whats-new-in-node-js-v0-12/">Six new features, plus new and breaking APIs</a>.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/"]]>training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>
-</li>
+- Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js [LoopBack framework](http://loopback.io/). We’ve made it easy to get started either locally or on your favorite cloud.
