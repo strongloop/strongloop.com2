@@ -21,11 +21,11 @@ For instance, the `NODE_PATH` environment variable lets you add additional direc
 Unfortunately, every environment variable and flag you need to set adds extra complexity to starting your application. Odds are, if you need to set 17 environment variables and flags to start your application, you&#8217;re going to forget one or two. Suppose your application relies on the `env NODE_PATH=./` trick as well as [ES2015 proxies](http://thecodebarbarian.com/2015/04/24/80-20-guide-to-ecmascript-6-proxies), which are hidden behind the `--harmony_proxies` flag as of this writing. You can define a `start` script in your package.json file as shown below.
 
 ```js
-<code class="javascript">{
+{
   "scripts": {
     "start": "env NODE_PATH=./ node --harmony_proxies index.js"
   }
-}</code>
+}
 ```
 
 Now, if you run `npm start` (which is just short for `npm run start`), npm will run the `start` script for you and start your application with your special configuration options.
@@ -37,21 +37,21 @@ Let&#8217;s face it, [asking users to `npm install -g` (usually) sucks](http://t
 It&#8217;s much better to list gulp as a `devDependency` in `package.json`, but then you have to run`./node_modules/.bin/gul`p watch rather than gulp watch, which is a pain. That&#8217;s where `npm run` comes in; it adds `./node_modules/.bin` to your `PATH`. In other words, if you list gulp 3.8 as a `devDependency`, you can access the `gulp` executable in your `package.json` scripts without asking your users to `npm install gulp -g`.
 
 ```js
-<code class="javascript">{
+{
   "scripts": {
     "watch": "gulp watch"
   }
-}</code>
+}
 ```
 
 Now, `npm run watch` is a handy shortcut for `./node_modules/.bin/gulp` watch. You can do the same thing with mocha.
 
 ```js
-<code class="javascript">{
+{
   "scripts": {
     "test": "mocha -r nyan test/*.test.js"
   }
-}</code>
+}
 ```
 
 Now `npm test` (which is the same as `npm run test`) is a handy shortcut for running all your mocha tests in your `test` directory using the nyan cat reporter.
@@ -59,10 +59,10 @@ Now `npm test` (which is the same as `npm run test`) is a handy shortcut for run
 The mocha executable also has some neat command line flags. For instance, the `--grep` (or `-g` for short) mocha flag lets you only run tests whose names match the given regular expression. In npm >= 2.14.0, you can use `--` to pass extra flags to mocha. For instance, the below commands are equivalent.
 
 ```js
-<code class="javascript"># This command...
+# This command...
 npm test -- -g "login.*fails"
 # is the same thing as this one
-./node_modules/.bin/mocha -r nyan test/*.test.js -g "login.*fails"</code>
+./node_modules/.bin/mocha -r nyan test/*.test.js -g "login.*fails"
 ```
 
 ## **An Alternative to Gulp**
@@ -70,31 +70,29 @@ npm test -- -g "login.*fails"
 Gulp is a powerful streaming build system that lets you parallelize compiling your files. It&#8217;s a great tool, but it can be overkill for some applications, especially if your team doesn&#8217;t have much experience with Node.js streams. The `npm run` command can serve as a less-performant replacement for gulp in many use cases. For instance, suppose you have some ES2015 code in `example.js` that you want to transpile with babel and then pipe into browserify for use in the browser.
 
 ```js
-<code class="javascript">'use strict';
+'use strict';
 
 const co = require('co');
 
 co(function*() {
   console.log('Hello, world!');
-});</code>
+});
 ```
 
 If you wanted to use gulp to compile this, you&#8217;d probably use the `gulp-babel` and `gulp-browserify` npm modules, which wrap babel and browserify for gulp. However, babel and browserify have command line interfaces, so you can compile this file using Unix-style pipes. Note that the below example requires babel 5.x, it won&#8217;t work with babel 6.
 
 ```js
-<code class="javascript">
 ./node_modules/.bin/browserify example.js | ./node_modules/.bin/babel > ./bin/example.js
-</code>
 ```
 
 Once again, the `./node_modules/.bin` part is annoying. Thankfully, if you define a compile script in `package.json`, you can just achieve the same result with `npm run` compile.
 
 ```js
-<code class="javascript">{
+{
   "scripts": {
     "compile": "browserify example.js | babel > ./bin/example.js"
   }
-}</code>
+}
 ```
 
 ## **Closing Thoughts**
