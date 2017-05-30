@@ -16,9 +16,9 @@ What&#8217;s [LoopBack](http://docs.strongloop.com/loopback)? It&#8217;s an op
 <img class="aligncenter size-full wp-image-14996" alt="loopback_logo" src="{{site.url}}/blog-assets/2014/04/loopback_logo.png" width="1590" height="498"  />
 
 - Part one shows how to use slc to create a backend service on Amazon to send push notifications to different iOS devices.
-- <a title="Part two" href="http://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-amazon-aws-part/">Part Two</a> explains how to setup and create an Android app to receive push notifications.
+- <a title="Part two" href="https://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-amazon-aws-part-2/">Part Two</a> explains how to setup and create an Android app to receive push notifications.
 - <a title="Part three" href="http://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-amazon-aws-part-3/">Part Three</a> explains how to setup and create an iOS app to receive push notifications.
-- <a title="Part four" href="http://strongloop.com/strongblog/how-to-setup-push-notifications-privat-mbaas-on-amazon-aws-part-4/">Part Four</a> explains how to use LoopBack&#8217;s swagger REST api and send/receive push notifications on your android and iOS devices.
+- <a title="Part four" href="https://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-on-amazon-aws-part-4/">Part Four</a> explains how to use LoopBack&#8217;s swagger REST api and send/receive push notifications on your android and iOS devices.
 
 You can use the StrongLoop AMI as a starting point for building a backend node application using the slc command line tools. Using this same app Mobile developers can dynamically manage ‘mobile object’ schemas directly from the LoopBack SDK as they are building their mobile app. The pre-built StrongLoop AMI makes it easy for Node developers who’ve chosen Amazon as their infrastructure provider to get up and running, fast.<!--more-->
 
@@ -243,11 +243,11 @@ PushModel.notifyByQuery({userId: {inq: selectedUserIds}}, note, function(err) {
 ## **What&#8217;s Next**
 
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">To setup and create an Android app to receive push notifications go to <a title="Part Two" href="http://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-amazon-aws-part/">Part Two</a></span>
+  <span style="font-size: 18px;">To setup and create an Android app to receive push notifications go to <a title="Part Two" href="https://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-amazon-aws-part-2/">Part Two</a></span>
 </li>
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;">To setup and create an iOS app to receive push notifications go to <a title="Part Three" href="http://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-amazon-aws-part-3/">Part Three</a></span>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;">To use LoopBack&#8217;s swagger REST api and send/receive push notifications on your android and iOS devices go to <a title="Part Four" href="http://strongloop.com/strongblog/how-to-setup-push-notifications-privat-mbaas-on-amazon-aws-part-4/">Part Four</a></span>
+  <span style="font-size: 18px;">To use LoopBack&#8217;s swagger REST api and send/receive push notifications on your android and iOS devices go to <a title="Part Four" href="https://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-on-amazon-aws-part-4/">Part Four</a></span>
 </li>
