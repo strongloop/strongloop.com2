@@ -20,7 +20,7 @@ The reason for this is to ensure backwards compatibility with existing code writ
 Let’s refresh our memory and look at a typical way of wiring OO code in ES5. While [Object.defineProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty) is not very commonly used, I want to make a point of creating a read only property.
 
 ```js
-<code class="javascript">function Vehicle(make, year) {
+function Vehicle(make, year) {
   Object.defineProperty(this, 'make', {
     get: function() { return make; }
   });
@@ -39,13 +39,12 @@ var vehicle = new Vehicle('Toyota Corolla', 2009);
 console.log(vehicle.make); // Toyota Corolla
 vehicle.make = 'Ford Mustang';
 console.log(vehicle.toString()) // Toyota Corolla 2009
-</code>
 ```
 
 Pretty basic stuff, we’ve defined a `Vehicle` class with two read only properties and a custom `toString` method. Lets do the same thing in ES6.
 
 ```js
-<code class="javascript">class Vehicle {
+class Vehicle {
   constructor(make, year) {
     this._make = make;
     this._year = year;
@@ -69,7 +68,6 @@ var vehicle = new Vehicle('Toyota Corolla', 2009);
 console.log(vehicle.make); // Toyota Corolla
 vehicle.make = 'Ford Mustang';
 console.log(vehicle.toString()) // Toyota Corolla 2009
-</code>
 ```
 
 The two examples are practically equal, however there’s one difference. To be able to take advantage of the new `get` syntax (which is actually part of the [ES5 spec](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)), we have to keep `make` and `year` around as properties using basic assignment. This leaves them vulnerable to being improperly changed. This feels like a pretty big omission in the spec – in order hang on to a value passed into a constructor privately, you still have to use `defineProperty` syntax.
@@ -79,30 +77,27 @@ The two examples are practically equal, however there’s one difference. To be 
 There are two ways to declare a class in ES6. The first one is called _class declaration_ and that is what we used in the example above, eg:
 
 ```js
-<code class="javascript">class Vehicle() {
+class Vehicle() {
 }
-</code>
 ```
 
 One important thing to note here is that unlike function declarations, class declarations can’t be hoisted. For example, this code works fine:
 
 ```js
-<code class="javascript">console.log(helloWorld());
+console.log(helloWorld());
 
 function helloWorld() {
   return "Hello World";
 }
-</code>
 ```
 
 However, the following is going to throw an exception:
 
 ```js
-<code class="javascript">var vehicle = new Vehicle();
+var vehicle = new Vehicle();
 
 class Vehicle() {
 }
-</code>
 ```
 
 ## **Class Expressions**
@@ -110,7 +105,7 @@ class Vehicle() {
 Another way to define a class is by using a _class expression_ and it works exactly the same way as a function expression. A class expression can be named or unnamed.
 
 ```js
-<code class="javascript">var Vehicle = class {
+var Vehicle = class {
 }
 
 var Vehicle = class VehicleClass {
@@ -120,7 +115,6 @@ var Vehicle = class VehicleClass {
 }
 
 console.log(VehicleClass); // throws an exception
-</code>
 ```
 
 ## **Static Methods**
@@ -128,25 +122,23 @@ console.log(VehicleClass); // throws an exception
 The `static` keyword is another syntax sugar in ES6 that makes static function declaration a first class citizen (see what I did here?). In ES5 it looks like a basic property on a constructor function.
 
 ```js
-<code class="javascript">function Vehicle() {
+function Vehicle() {
   // ...
 }
 
 Vehicle.compare = function(a, b) {
   // ...
 }
-</code>
 ```
 
 And the new shiny `static` syntax looks like this:
 
 ```js
-<code class="javascript">class Vehicle {
+class Vehicle {
   static compare(a, b) {
     // ...
   }
 }
-</code>
 ```
 
 Under the covers, JavaScript is still just adding a property to the `Vehicle` constructor, it just ensures that the method is in fact static. Note that you can also add static value properties.
@@ -156,7 +148,7 @@ Under the covers, JavaScript is still just adding a property to the `Vehicle` co
 Prototypical inheritance is not unlike magic when used properly. This hasn’t been forgotten in ES6 with the introduction of the all new `extends` keyword. In the old world of ES5 we did something like this:
 
 ```js
-<code class="javascript">function Motorcycle(make, year) {
+function Motorcycle(make, year) {
   Vehicle.apply(this, [make, year]);
 }
 
@@ -167,13 +159,12 @@ Motorcycle.prototype = Object.create(Vehicle.prototype, {
 });
 
 Motorcycle.prototype.constructor = Motorcycle;
-</code>
 ```
 
 With the new `extends` keyword same example looks a lot more digestible:
 
 ```js
-<code class="javascript">class Motorcycle extends Vehicle {
+class Motorcycle extends Vehicle {
   constructor(make, year) {
     super(make, year);
   }
@@ -182,13 +173,12 @@ With the new `extends` keyword same example looks a lot more digestible:
     return `Motorcycle ${this.make} ${this.year}`;
   }
 }
-</code>
 ```
 
 The `super` keyword also works with static methods:
 
 ```js
-<code class="javascript">class Vehicle {
+class Vehicle {
   static compare(a, b) {
     // ...
   }
@@ -201,7 +191,6 @@ class Motorcycle extends Vehicle {
     }
   }
 }
-</code>
 ```
 
 ## **super**
@@ -211,12 +200,11 @@ The last example also showed the usage of the `super` keyword. This is useful wh
 To call a parent constructor you simply use the `super` keyword as a function, eg `super(make, year)`. For all other functions, use `super` as an object, eg `super.toString()`. Here’s what the updated example looks like:
 
 ```js
-<code class="javascript">class Motorcycle extends Vehicle {
+class Motorcycle extends Vehicle {
   toString() {
     return 'Motorcycle ' + super.toString();
   }
 }
-</code>
 ```
 
 ## **Computed Method Names**
@@ -224,7 +212,7 @@ To call a parent constructor you simply use the `super` keyword as a function, e
 When declaring properties or functions in a class, you can use expressions instead of statically defined names. This syntax feature will be very popular for ORM type libraries. Here is an example:
 
 ```js
-<code class="javascript">function createInterface(name) {
+function createInterface(name) {
   return class {
     ['findBy' + name]() {
       return 'Found by ' + name;
@@ -236,7 +224,6 @@ const Interface = createInterface('Email');
 const instance = new Interface();
 
 console.log(instance.findByEmail()); 
-</code>
 ```
 
 ## **Bottom Line**
@@ -252,5 +239,3 @@ If you are using something like [Browserify](http://browserify.org/) in your Jav
 ## **What About The Browsers?**
 
 The majority of [browsers are catching up](https://kangax.github.io/compat-table/es6/) on implementing new features but not one has full support. Does that mean you have to wait? It depends. It’s a good idea to begin using the language features that will be universally available in 1-2 years so that you are comfortable with them when the time comes. On the other hand, if you feel the need for 100% control over the source code, you should stick with ES5 for now.
-
-&nbsp;
