@@ -38,13 +38,13 @@ Another option is tapping into the [V8 profiler](https://github.com/node-inspect
 To instrument your application run:
 
 ```js
-<code class="sh">npm install v8-profiler --save</code>
+npm install v8-profiler --save
 ```
 
 Then, add this code to your application:
 
 ```js
-<code class="js">const profiler = require('v8-profiler')
+const profiler = require('v8-profiler')
 const fs = require('fs')
 var profilerRunning = false
  
@@ -64,13 +64,13 @@ function toggleProfiling () {
   console.log('started profiling')
 }
  
-process.on('SIGUSR2', toggleProfiling)</code>
+process.on('SIGUSR2', toggleProfiling)
 ```
 
 Whenever you send a `SIGUSR2` signal to the process it will start profiling. Sending a subsequent `SIGUSR2` stops the profiler.
 
 ```js
-<code class="sh">kill -SIGUSR2 [pid]</code>
+kill -SIGUSR2 [pid]
 ```
 
 The output is written to a file in the current working directory for the process (make sure it&#8217;s writable!). Since this is a programmatic API, you can trigger it however you&#8217;d like (web endpoint, IPC, etc). You also can trigger it whenever you like, if you have a hunch about when things get sluggish. Setting up automatic triggers can be helpful to avoid babysitting your application, but it requires forethought on when and how long to capture.
@@ -86,19 +86,19 @@ Although utilizing the V8 profiler directly is powerful and customizable, it doe
 First, run `npm install strongloop -g`. Then run:
 
 ```js
-<code class="sh">slc start [/path/to/app]</code>
+slc start [/path/to/app]
 ```
 
 This will start your application wrapped in a process manager that allows you to take CPU profiles on demand. To verify a proper start and obtain the application id, run:
 
 ```js
-<code class="sh">slc ctl</code>
+slc ctl
 ```
 
 You will get an output similar to this:
 
 ```js
-<code class="sh">Service ID: 1
+Service ID: 1
 Service Name: my-sluggish-app
 Environment variables:
     Name      Value
@@ -109,25 +109,25 @@ Instances:
 Processes:
         ID      PID   WID  Listening Ports  Tracking objects?  CPU profiling?  Tracing?  Debugging?
     1.1.61022  61022   0
-    1.1.61023  61023   1     0.0.0.0:3000</code>
+    1.1.61023  61023   1     0.0.0.0:3000
 ```
 
 Locate the process id for your application. In this example, it is `1.1.61023`. Now, we can start profiling whenever we want by running:
 
 ```js
-<code class="sh">slc ctl cpu-start 1.1.61023</code>
+slc ctl cpu-start 1.1.61023
 ```
 
 When we feel we have captured the sluggish behavior, we can stop the profiler by running:
 
 ```js
-<code class="sh">slc ctl cpu-stop 1.1.61023</code>
+slc ctl cpu-stop 1.1.61023
 ```
 
 This will write a file to disk:
 
 ```js
-<code class="(null)">CPU profile written to `node.1.1.61023.cpuprofile`, load into Chrome Dev Tools</code>
+CPU profile written to `node.1.1.61023.cpuprofile`, load into Chrome Dev Tools
 ```
 
 And that&#8217;s it. You can load it into Chrome just like the V8 profiler.
@@ -141,10 +141,6 @@ In this article, I presented three options for capturing production CPU usage in
   3. I want to trigger profiles for certain actions in my application: use v8 profiler.
   4. I can&#8217;t have performance impacted in my application: use kernel tools.
   5. I want my applications ready for profiling without having to instrument each one: use a process manager.
-
-## Take things further with StrongLoop Arc and Tracing 
-
-StrongLoop provides a visual suite of tools for profiling and monitoring production application called [StrongLoop Arc](https://strongloop.com/node-js/arc/). The Arc Tracing module enables developers to analyze performance and execution of Node applications through: resource consumption timelines, trace sequences, asynchronous and synchronous waterfall views as well as flame graphs. These tools instrument IO calls like databases as well as CPU time to help pinpoint where your application is spending its time. To check out more specifics of the Arc Tracing module, see our [documentation](https://docs.strongloop.com/display/SLC/Tracing).
 
 [^1]:    Command line applications typically don&#8217;t have these requirements. 
     [ ↩](1 "return to article"){.reversefootnote}
