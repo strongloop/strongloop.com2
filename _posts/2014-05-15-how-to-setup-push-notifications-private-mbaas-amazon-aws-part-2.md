@@ -183,112 +183,64 @@ See <a href="http://developer.android.com/google/play-services/setup.html" rel=
                       <li style="margin-left: 2em;">
                         <span style="font-size: 18px;"><span style="font-size: 18px;">Edit src/com/google/android/gcm/demo/app/DemoApplication.java</span></span> <ul>
                           <li style="margin-left: 2em;">
-                            <span style="font-size: 18px;"><span style="font-size: 18px;">Set adaptor to our server ip. In my case it is:</span></span> ```js
+                            <span style="font-size: 18px;"><span style="font-size: 18px;">Set adaptor to our server ip. In my case it is:
+
+```js
 adapter = new RestAdapter(
                     getApplicationContext(),
                     "http://ec2-54-184-36-164.us-west-2.compute.amazonaws.com:3000/api/");
         }
-```js
-                          </li>
-                        </ul>
-                      </li>
-                      
-                      <li style="margin-left: 2em;">
-                        <span style="font-size: 18px;">Click the green &#8220;Run&#8221; button in the toolbar to run the application. Run it as an Android application. You will be prompted to select the target on which to run the application. Select the AVD you created earlier.</span>
-                      </li></ol> 
-                      
-                      <table data-macro-name="note" data-macro-body-type="RICH_TEXT">
+```
+Click the green &#8220;Run&#8221; button in the toolbar to run the application. Run it as an Android application. You will be prompted to select the target on which to run the application. Select the AVD you created earlier.
+
+<table>
                         <tr>
                           <td>
                             It may take several minutes to launch your application and the Android virtual device the first time.
                           </td>
                         </tr>
-                      </table>
+</table>
                       
-                      <table data-macro-name="warning" data-macro-body-type="RICH_TEXT">
-                        <tr>
-                          <td>
-                            Due to a <a href="https://code.google.com/p/android/issues/detail?id=61675">known issue with Google Play Services</a>, you must download and import an older version of Google Play services.&nbsp;</p> 
-                            
-                            <ol>
-                              <li style="margin-left: 2em;">
-                                <span style="font-size: 18px;">Download <a href="https://dl-ssl.google.com/android/repository/google_play_services_3225130_r10.zip">https://dl-ssl.google.com/android/repository/google_play_services_3225130_r10.zip</a></span>
-                              </li>
-                              <li style="margin-left: 2em;">
-                                <span style="font-size: 18px;">Extract the zip file.</span>
-                              </li>
-                              <li style="margin-left: 2em;">
-                                <span style="font-size: 18px;">In Eclipse ADT, right-click on your project and choose <strong>Import</strong>&#8230;</span>
-                              </li>
-                              <li style="margin-left: 2em;">
-                                <span style="font-size: 18px;">Choose <strong>Existing Android Code into Workspace</strong> then click Next.</span>
-                              </li>
-                              <li style="margin-left: 2em;">
-                                <span style="font-size: 18px;">Click <strong>Browse</strong>&#8230;</span>
-                              </li>
-                              <li style="margin-left: 2em;">
-                                <span style="font-size: 18px;">Browse to the <code>google-play-services/libproject/google-play-services_lib/</code> directory created when you extracted the zip file and select it in the dialog box.</span>
-                              </li>
-                              <li style="margin-left: 2em;">
-                                <span style="font-size: 18px;">Click <strong>Finish</strong>.</span>
-                              </li>
-                            </ol>
-                            
-                            <p>
-                              You must also update <code>AndroidManifest.xml</code> as follows:
-                            </p>
-                            
-                            <ol>
-                              <li style="margin-left: 2em;">
-                                <span style="font-size: 18px;">In Eclipse ADT, browse to DemoActivity/AndroidManifest.xml.</span>
-                              </li>
-                              <li style="margin-left: 2em;">
-                                <span style="font-size: 18px;">Change the line<br /> <code><meta-data <a>android:name="com.google.android.gms.version</a>" <a>android:value="@integer/google_play_services_version"/</a>></code><br /> to<br /> <code><meta-data <a>android:name="com.google.android.gms.version</a>" <a>android:value="4030500”/</a>></code></span>
-                              </li>
-                              <li style="margin-left: 2em;">
-                                <span style="font-size: 18px;">Save the file.</span>
-                              </li>
-                            </ol>
-                          </td>
-                        </tr>
-                      </table>
-                      
-                      <h2>
-                        <strong>Prepare your own Android project</strong>
-                      </h2>
-                      
-                      <p>
-                        Follow the instructions in <a href="http://docs.strongloop.com/display/DOC/Android+SDK#AndroidSDK-Creatingandworkingwithyourownapp">Android SDK documentation</a> to add LoopBack Android SDK to your Android project.
-                      </p>
-                      
-                      <p>
-                        Follow the instructions in Google&#8217;s <a href="http://developer.android.com/google/gcm/client.html">Implementing GCM Client guide</a> for setting up Google Play Services in your project.
-                      </p>
-                      
-                      <table data-macro-name="note" data-macro-body-type="RICH_TEXT">
-                        <tr>
-                          <td>
-                            To use push notifications, you must install a compatible version of the Google APIs platform.  To test your app on the emulator, expand the directory for Android 4.2.2 (API 17) or a higher version, select <strong>Google APIs</strong>, and install it. Then create a new AVD with Google APIs as the platform target.  You must install the package from the SDK manager.  For more information, see <a href="http://developer.android.com/google/play-services/setup.html">Set Up Google Play Services</a>.
-                          </td>
-                        </tr>
-                      </table>
-                      
-                      <h2>
-                        <strong>Check for Google Play Services APK</strong>
-                      </h2>
-                      
-                      <p>
-                        Applications that rely on the Google Play Services SDK should always check the device for a compatible Google Play services APK before using Google Cloud Messaging.
-                      </p>
-                      
-                      <p>
-                        For example, the following code checks the device for Google Play Services APK by calling  <code>checkPlayServices()</code> if  this method returns true, it proceeds with GCM registration.  The <code>checkPlayServices()</code> method checks whether the device has the Google Play Services APK. If  it doesn&#8217;t, it displays a dialog that allows users to download the APK from the Google Play Store or enables it in the device&#8217;s system settings.
-                      </p>
-                      
-                      <table data-macro-name="code" data-macro-parameters="language=java|linenumbers=true" data-macro-body-type="PLAIN_TEXT">
-                        <tr>
-                          <td>
-                            ```js
+<table>
+     
+Due to a <a href="https://code.google.com/p/android/issues/detail?id=61675">known issue with Google Play Services</a>, you must download and import an older version of Google Play services.&nbsp;
+
+- Download <a href="https://dl-ssl.google.com/android/repository/google_play_services_3225130_r10.zip">https://dl-ssl.google.com/android/repository/google_play_services_3225130_r10.zip</a>
+- Extract the zip file.
+- In Eclipse ADT, right-click on your project and choose <strong>Import</strong>&#8230;
+- Choose <strong>Existing Android Code into Workspace</strong> then click Next.
+- Click <strong>Browse</strong>&#8230;
+- Browse to the `google-play-services/libproject/google-play-services_lib/` directory created when you extracted the zip file and select it in the dialog box.
+- Click <strong>Finish</strong>.
+
+You must also update `AndroidManifest.xml` as follows:
+                 
+1. In Eclipse ADT, browse to DemoActivity/AndroidManifest.xml.
+2. Change the line:
+
+`<meta-data <a>android:name="com.google.android.gms.version</a>" <a>android:value="@integer/google_play_services_version"/</a>>`
+
+to:
+
+`<meta-data <a>android:name="com.google.android.gms.version</a>" <a>android:value="4030500”/</a>>`
+
+3. Save the file.
+
+## Prepare your own Android project##
+
+Follow the instructions in <a href="http://docs.strongloop.com/display/DOC/Android+SDK#AndroidSDK-Creatingandworkingwithyourownapp">Android SDK documentation</a> to add LoopBack Android SDK to your Android project.
+
+Follow the instructions in Google&#8217;s <a href="http://developer.android.com/google/gcm/client.html">Implementing GCM Client guide</a> for setting up Google Play Services in your project.
+
+To use push notifications, you must install a compatible version of the Google APIs platform.  To test your app on the emulator, expand the directory for Android 4.2.2 (API 17) or a higher version, select <strong>Google APIs</strong>, and install it. Then create a new AVD with Google APIs as the platform target.  You must install the package from the SDK manager.  For more information, see <a href="http://developer.android.com/google/play-services/setup.html">Set Up Google Play Services</a>.
+
+## Check for Google Play Services APK##
+
+Applications that rely on the Google Play Services SDK should always check the device for a compatible Google Play services APK before using Google Cloud Messaging.
+
+For example, the following code checks the device for Google Play Services APK by calling `checkPlayServices()` if  this method returns true, it proceeds with GCM registration. The `checkPlayServices()` method checks whether the device has the Google Play Services APK. If it doesn&#8217;t, it displays a dialog that allows users to download the APK from the Google Play Store or enables it in the device&#8217;s system settings.
+
+```js
 @Override
 public void onCreate(final Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -314,42 +266,20 @@ private boolean checkPlayServices() {
     }
     return true;
 }
+```
+
+## Create LocalInstallation##
+
+Once you have ensured the device provides Google Play Services, the app can register with GCM and LoopBack (for example, by calling a method such as `updateRegistration()` as shown below). Rather than register with GCM every time the app starts, simply store and retrieve the registration ID (device token).  The `LocalInstallation` class in the LoopBack SDK handles these details for you.
+                    
+The example `updateRegistration()` method does the following:
+
+- Lines 3 &#8211; 4: get a reference to the shared `RestAdapter` instance.
+- Line 5: Create an instance of `LocalInstallation`.
+- Line 13: Subscribe to topics.
+- Lines 15-19: Check if there is a valid GCM registration ID.  If so, then save the installation to the server; if not, get one from GCM and then save the installation.
+
 ```js
-                          </td>
-                        </tr>
-                      </table>
-                      
-                      <h2>
-                        <strong>Create LocalInstallation</strong>
-                      </h2>
-                      
-                      <p>
-                        Once you have ensured the device provides Google Play Services, the app can register with GCM and LoopBack (for example, by calling a method such as <code>updateRegistration()</code> as shown below). Rather than register with GCM every time the app starts, simply store and retrieve the registration ID (device token).  The <code>LocalInstallation</code> class in the LoopBack SDK handles these details for you.
-                      </p>
-                      
-                      <p>
-                        The example <code>updateRegistration()</code> method does the following:
-                      </p>
-                      
-                      <ul>
-                        <li style="margin-left: 2em;">
-                          <span style="font-size: 18px;">Lines 3 &#8211; 4: get a reference to the shared <code>RestAdapter</code> instance.</span>
-                        </li>
-                        <li style="margin-left: 2em;">
-                          <span style="font-size: 18px;">Line 5: Create an instance of <code>LocalInstallation</code>.</span>
-                        </li>
-                        <li style="margin-left: 2em;">
-                          <span style="font-size: 18px;">Line 13: Subscribe to topics.</span>
-                        </li>
-                        <li style="margin-left: 2em;">
-                          <span style="font-size: 18px;">Lines 15-19: Check if there is a valid GCM registration ID.  If so, then save the installation to the server; if not, get one from GCM and then save the installation.</span>
-                        </li>
-                      </ul>
-                      
-                      <table data-macro-name="code" data-macro-parameters="language=java|linenumbers=true" data-macro-body-type="PLAIN_TEXT">
-                        <tr>
-                          <td>
-                            ```js
 private void updateRegistration() {
 
     final DemoApplication app = (DemoApplication) getApplication();
@@ -370,23 +300,13 @@ private void updateRegistration() {
         registerInBackground(installation);
     }
 }
+```
+
+## Register with GCM if needed##
+
+In the following code, the application obtains a new registration ID from GCM. Because the `register()` method is blocking, you must call it on a background thread.
+ 
 ```js
-                          </td>
-                        </tr>
-                      </table>
-                      
-                      <h2>
-                        <strong>Register with GCM if needed</strong>
-                      </h2>
-                      
-                      <p>
-                        In the following code, the application obtains a new registration ID from GCM. Because the <code>register()</code> method is blocking, you must call it on a background thread.
-                      </p>
-                      
-                      <table data-macro-name="code" data-macro-parameters="language=java|linenumbers=true" data-macro-body-type="PLAIN_TEXT">
-                        <tr>
-                          <td>
-                            ```js
 private void registerInBackground(final LocalInstallation installation) {
     new AsyncTask<Void, Void, Exception>() {
         @Override
@@ -415,23 +335,13 @@ private void registerInBackground(final LocalInstallation installation) {
         }
     }.execute(null, null, null);
 }
+```
+
+## Register with LoopBack server##
+
+Once you have all Installation properties set, you can register with the LoopBack server. The first run of the application should create a new Installation record, subsequent runs should update this existing record. The LoopBack Android SDK handles the details. Your code just needs to `call1save()`.
+
 ```js
-                          </td>
-                        </tr>
-                      </table>
-                      
-                      <h2>
-                        <strong>Register with LoopBack server</strong>
-                      </h2>
-                      
-                      <p>
-                        Once you have all Installation properties set, you can register with the LoopBack server. The first run of the application should create a new Installation record, subsequent runs should update this existing record. The LoopBack Android SDK handles the details.  Your code just needs to call <code>save()</code>.
-                      </p>
-                      
-                      <table data-macro-name="code" data-macro-parameters="language=java|linenumbers=true" data-macro-body-type="PLAIN_TEXT">
-                        <tr>
-                          <td>
-                            ```js
 void saveInstallation(final LocalInstallation installation) {
     installation.save(new Model.Callback() {
         @Override
@@ -446,44 +356,21 @@ void saveInstallation(final LocalInstallation installation) {
         }
     });
 }
-```js
-                          </td>
-                        </tr>
-                      </table>
-                      
-                      <h2>
-                        <strong>Handle received notifications</strong>
-                      </h2>
-                      
-                      <p>
-                        Android apps handle incoming notifications in the standard way; LoopBack does not require any special changes. For more information, see the section &#8220;Receive a message&#8221; of Google&#8217;s <a href="http://developer.android.com/google/gcm/client.html">Implementing GCM Client guide</a>.
-                      </p>
-                      
-                      <h2>
-                        <strong>Troubleshooting</strong>
-                      </h2>
-                      
-                      <p>
-                        When running your app in the Eclipse device emulator, you may encounter the following error:
-                      </p>
-                      
-                      <p>
-                        <code>Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.</code>
-                      </p>
-                      
-                      <p>
-                        To resolve this, install a compatible version of the Google APIs platform.
-                      </p>
-                      
-                      <h2>
-                        <strong>Next Steps</strong>
-                      </h2>
-                      
-                      <ul>
-                        <li style="margin-left: 2em;">
-                          <span style="font-size: 18px;">To setup and create an iOS app to receive push notifications go to <a title="Part three" href="http://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-amazon-aws-part-3/">Part Three</a></span>
-                        </li>
-                        <li style="margin-left: 2em;">
-                          <span style="font-size: 18px;">To use LoopBack&#8217;s swagger REST api and send/receive push notifications on your Android and iOS devices go to <a title="Part four" href="http://strongloop.com/strongblog/how-to-setup-push-notifications-privat-mbaas-on-amazon-aws-part-4/">Part Four</a></span>
-                        </li>
-                      </ul>
+```
+            
+## Handle received notifications##
+
+Android apps handle incoming notifications in the standard way; LoopBack does not require any special changes. For more information, see the section &#8220;Receive a message&#8221; of Google&#8217;s <a href="http://developer.android.com/google/gcm/client.html">Implementing GCM Client guide</a>.
+                                          
+## Troubleshooting##
+
+When running your app in the Eclipse device emulator, you may encounter the following error:
+
+<code>Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.</code>
+
+To resolve this, install a compatible version of the Google APIs platform.
+
+## Next Steps##
+
+- To setup and create an iOS app to receive push notifications go to <a title="Part three" href="http://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-amazon-aws-part-3/">Part Three</a>
+- To use LoopBack&#8217;s swagger REST api and send/receive push notifications on your Android and iOS devices go to <a title="Part four" href="http://strongloop.com/strongblog/how-to-setup-push-notifications-privat-mbaas-on-amazon-aws-part-4/">Part Four</a>
