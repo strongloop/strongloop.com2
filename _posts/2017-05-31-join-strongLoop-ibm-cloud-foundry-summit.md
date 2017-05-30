@@ -22,3 +22,7 @@ Cloud Foundry Summit runs from June 13-15 and is held in Santa Clara, California
 Reserve your spot today and register for this event [here](https://goo.gl/z6aMOf). Save yourself $100 if you register before June 12th!
 
 https://www.cloudfoundry.org/event/summit-silicon-valley-2017/
+
+### What's Next?
+
+Find out about other conferences, webinars, meetups, and events that the StrongLoop team are attending or supporting on our [events page](https://strongloop.com/events/).
