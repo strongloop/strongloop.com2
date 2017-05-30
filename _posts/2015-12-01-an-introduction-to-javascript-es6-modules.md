@@ -52,7 +52,7 @@ Most modules export some functionality for other modules to import using the new
 Every module can have one, and only one, default export that can be exported and imported without specifying variable name. For example:
 
 ```js
-<code class="javascript">// hello-world.js
+// hello-world.js
 export default function() {}
 
 // main.js
@@ -60,13 +60,13 @@ import helloWorld from './hello-world';
 import anotherFunction from './hello-world';
 
 helloWorld();
-console.log(helloWorld === anotherFunction);</code>
+console.log(helloWorld === anotherFunction);
 ```
 
 The equivalent in [CommonJS](http://www.commonjs.org/) would be:
 
 ```js
-<code class="javascript">// hello.js
+// hello.js
 module.exports = function() {}
 
 // main.js
@@ -74,15 +74,15 @@ var helloWorld = require('./hello-world');
 var anotherFunction = require('./hello-world');
 
 helloWorld();
-console.log(helloWorld === anotherFunction);</code>
+console.log(helloWorld === anotherFunction);
 ```
 
 Any JavaScript value can be exported from a module as the default:
 
 ```js
-<code class="javascript">export default 3.14;
+export default 3.14;
 export default {foo: 'bar'};
-export default 'hello world';</code>
+export default 'hello world';
 ```
 
 ### Named Exports
@@ -90,46 +90,46 @@ export default 'hello world';</code>
 Alongside default exports live named exports. In this case you have to explicitly specify name of the variable you wish to export and use the same name to import it. A module can have any number of named exports of any type.
 
 ```js
-<code class="javascript">const PI = 3.14;
+const PI = 3.14;
 const value = 42;
 export function helloWorld() {}
-export {PI, value};</code>
+export {PI, value};
 ```
 
 The equivalent in [CommonJS](http://www.commonjs.org/) would be:
 
 ```js
-<code class="javascript">var PI = 3.14;
+var PI = 3.14;
 var value = 42;
 module.exports.helloWorld = function() {}
 module.exports.PI = PI;
-module.exports.value = value;</code>
+module.exports.value = value;
 ```
 
 You can also change the export name without renaming the original variable, for example:
 
 ```js
-<code class="javascript">const value = 42;
-export {value as THE_ANSWER};</code>
+const value = 42;
+export {value as THE_ANSWER};
 ```
 
 The equivalent in [CommonJS](http://www.commonjs.org/) would be:
 
 ```js
-<code class="javascript">var value = 42;
-module.exports.THE_ANSWER = value;</code>
+var value = 42;
+module.exports.THE_ANSWER = value;
 ```
 
 If you have name conflicts or simply want to import a variable under a different name than the original, you can use the `as` keyword like so:
 
 ```js
-<code class="javascript">import {value as THE_ANSWER} from './module';</code>
+import {value as THE_ANSWER} from './module';
 ```
 
 The equivalent in [CommonJS](http://www.commonjs.org/) would be:
 
 ```js
-<code class="javascript">var THE_ANSWER = require('./module'').value;</code>
+var THE_ANSWER = require('./module'').value;
 ```
 
 ### Import All The Things
@@ -137,7 +137,7 @@ The equivalent in [CommonJS](http://www.commonjs.org/) would be:
 An easy way to import all of the values from a module with a single command is to use the `*` notation. This groups all of the module’s exports under a single object variable with properties matching export names. Default exports are placed under the `default` property.
 
 ```js
-<code class="javascript">// module.js
+// module.js
 export default 3.14;
 export const table = {foo: 'bar'};
 export function hello() {};
@@ -146,13 +146,13 @@ export function hello() {};
 import * as module from './module';
 console.log(module.default);
 console.log(module.table);
-console.log(module.hello());</code>
+console.log(module.hello());
 ```
 
 The equivalent in [CommonJS](http://www.commonjs.org/) would be:
 
 ```js
-<code class="javascript">// module.js
+// module.js
 module.exports.default = 3.14;
 module.exports.table = {foo: 'bar'};
 module.exports.hello = function () {};
@@ -161,7 +161,7 @@ module.exports.hello = function () {};
 var module = require('./module');
 console.log(module.default);
 console.log(module.table);
-console.log(module.hello());</code>
+console.log(module.hello());
 ```
 
 It’s worth mentioning the difference in how default exports are imported when using `import * as foo from` and `import foo from`. The later only imports the `default` export and `* as foo` imports everything the module exports as a single object.
@@ -171,7 +171,7 @@ It’s worth mentioning the difference in how default exports are imported when 
 A fairly common practice is to re-export a few select values (or even all of them) in one module from another. This is called re-exporting. Notice that you can re-export the same “name” multiple times with different values without an error being triggered. In that situation, the last exported value wins.
 
 ```js
-<code class="javascript">// module.js
+// module.js
 const PI = 3.14;
 const value = 42;
 export const table = {foo: 'bar'};
@@ -180,20 +180,20 @@ export function hello() {};
 // main.js
 export * from './module';
 export {hello} from './module';
-export {hello as foo} from './module';</code>
+export {hello as foo} from './module';
 ```
 
 The equivalent in [CommonJS](http://www.commonjs.org/) would be:
 
 ```js
-<code class="javascript">// module.js
+// module.js
 module.exports.table = {foo: 'bar'};
 module.exports.hello = function () {};
 
 // main.js
 module.exports = require('./module');
 module.exports.hello = require('./module').hello;
-module.exports.foo = require('./module').hello;</code>
+module.exports.foo = require('./module').hello;
 ```
 
 ## Gotchas
@@ -205,12 +205,12 @@ It’s important to understand that what is being imported into a module aren’
 When importing variables from a module by name, if you make a typo or that variable is removed later on, no errors will be thrown during the import, instead the imported binding will be `undefined`.
 
 ```js
-<code class="javascript">// module.js
+// module.js
 export const value = 42;
 
 // main.js
 import {valu} from './module'; // no errors
-console.log(valu); // undefined</code>
+console.log(valu); // undefined
 ```
 
 ### Mutable Bindings
@@ -218,7 +218,7 @@ console.log(valu); // undefined</code>
 Imported bindings refer to variables inside a module’s body. This causes an interesting side-effect when you import “by value” variable such as `Number`, `Boolean`, or `String`. It’s possible that the value of that variable will be changed by an operation outside of the importing module. In other words, a “by value” variable can be mutated elsewhere. Here’s an example.
 
 ```js
-<code class="javascript">// module.js
+// module.js
 export let count = 0;
 
 export function inc() { 
@@ -230,7 +230,7 @@ import {count, inc} from './module; // `count` is a `Number` variable
 
 assert.equal(count, 0);
 inc();
-assert.equal(count, 1);</code>
+assert.equal(count, 1);
 ```
 
 In the example above the `count` variable is of the `Number` type, yet its value appears to change in the `main` module.
@@ -240,7 +240,7 @@ In the example above the `count` variable is of the `Number` type, yet its value
 No matter what kind of declaration is being exported from a module, imported variables are always read-only. You can, however, change an imported object’s properties.
 
 ```js
-<code class="javascript">// module.js
+// module.js
 export let count = 0;
 export const table = {foo: 'bar'};
 
@@ -248,7 +248,7 @@ export const table = {foo: 'bar'};
 import {count, table} from './module;
 
 table.foo = 'Bar'; // OK
-count++; // read-only error</code>
+count++; // read-only error
 ```
 
 ### Testing Modules
@@ -256,7 +256,7 @@ count++; // read-only error</code>
 Testing, or more specifically: stubbing and mocking variables exported by modules, unfortunately hasn’t been addressed by the new ES2015 module system. Just like with [CommonJS](http://www.commonjs.org/), exported variables can’t be reassigned. One way to deal with that is to export an object instead of individual variables.
 
 ```js
-<code class="javascript">// module.js
+// module.js
 export default {
   value: 42,
   print: () => console.log(this.value)
@@ -265,7 +265,7 @@ export default {
 // module-test.js
 import m from './module';
 m.value = 10;
-m.print(); // 10</code>
+m.print(); // 10
 ```
 
 ## Bottom Line
