@@ -57,17 +57,17 @@ Now configure Eclipse ADT as follows:
     
 Before you start, make sure you have set up at least one Android virtual device: Choose <strong>Window > Android Virtual Device Manager</strong>.
 
-Configure the target virtual device as shown in the screenshot below. See <a href="http://developer.android.com/tools/help/avd-manager.html" rel="nofollow">AVD Manager</a>for more information.
+Configure the target virtual device as shown in the screenshot below. See <a href="http://developer.android.com/tools/help/avd-manager.html" rel="nofollow">AVD Manager</a> for more information.
 
 <img title="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.43.32 PM.png" alt="" src="http://docs.strongloop.com/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.43.32%20PM.png?version=1&modificationDate=1391643853000&api=v2" data-image-src="/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.43.32%20PM.png?version=1&modificationDate=1391643853000&api=v2" data-linked-resource-id="1769893" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2014-02-05 at 3.43.32 PM.png" data-base-url="http://docs.strongloop.com" data-linked-resource-container-id="1542953" data-location="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.43.32 PM.png" />
 
-    <table data-macro-name="info" data-macro-body-type="RICH_TEXT">
+<table>
       <tr>
         <td>
           <strong>NOTE</strong>: If you are using the virtual device suggested above, you must also install the ARM EABI v7a System Image SDK.
         </td>
       </tr>
-    </table>
+</table>
 
 ## Get your Google Cloud Messaging credentials##
    
