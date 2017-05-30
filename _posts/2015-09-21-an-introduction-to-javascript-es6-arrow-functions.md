@@ -20,7 +20,6 @@ Arrow functions serve two main purposes: more concise syntax and sharing lexical
 Classical JavaScript function syntax doesn&#8217;t provide for any flexibility, be that a 1 statement function or an unfortunate multi-page function. Every time you need a function you have to type out the dreaded `function () {}`. More concise function syntax was one of the many reasons why <a href="http://coffeescript.org/" target="_blank">CoffeeScript</a> gained so much momentum back in the day. This is especially pronounced in the case of tiny callback functions. Lets look at a Promise chain:
 
 ```js
-<code class="javascript">
 function getVerifiedToken(selector) {
   return getUsers(selector)
     .then(function (users) { return users[0]; })
@@ -28,13 +27,11 @@ function getVerifiedToken(selector) {
     .then(function (user, verifiedToken) { return verifiedToken; })
     .catch(function (err) { log(err.stack); });
 }
-</code>
 ```
 
 Above is more or less plausible piece of code written using classical JavaScript `function` syntax. Here is what the same code could look like rewritten using the arrow syntax:
 
 ```js
-<code class="javascript">
 function getVerifiedToken(selector) {
   return getUsers(selector)
     .then(users => users[0])
@@ -42,7 +39,6 @@ function getVerifiedToken(selector) {
     .then((user, verifiedToken) => verifiedToken)
     .catch(err => log(err.stack));
 }
-</code>
 ```
 
 A few important things to notice here:
@@ -54,7 +50,6 @@ A few important things to notice here:
 It&#8217;s important to reinforce the last point. **Implicit return only happens for single statement arrow functions**. When arrow function is declared with `{}`, even if it&#8217;s a single statement, **implicit return does not happen**:
 
 ```js
-<code class="javascript">
 const getVerifiedToken = selector => {
   return getUsers()
     .then(users => users[0])
@@ -62,20 +57,17 @@ const getVerifiedToken = selector => {
     .then((user, verifiedToken) => verifiedToken)
     .catch(err => log(err.stack));
 }
-</code>
 ```
 
 Here&#8217;s the really fun bit. Because our function has only one statement, we can still get rid of the `{}` and it will look almost exactly like <a href="http://coffeescript.org/" target="_blank">CoffeeScript</a> syntax:
 
 ```js
-<code class="javascript">
 const getVerifiedToken = selector =>
   getUsers()
     .then(users => users[0])
     .then(verifyUser)
     .then((user, verifiedToken) => verifiedToken)
     .catch(err => log(err.stack));
-</code>
 ```
 
 Yep, the example above is completely valid ES2015 syntax (I was also surprised that it [compiles fine](http://babeljs.io/repl/#?)). When we talk about single statement arrow functions, it doesn&#8217;t mean the statement can&#8217;t be spread out to multiple lines for better comprehension.
@@ -83,25 +75,20 @@ Yep, the example above is completely valid ES2015 syntax (I was also surprised t
 There&#8217;s one caveat, however, with omitting `{}` from arrow functions &#8211; how do you return an empty object, eg `{}`?
 
 ```js
-<code class="javascript">
 const emptyObject = () => {};
 emptyObject(); // ?
-</code>
 ```
 
 Unfortunately there&#8217;s no way to distinguish between empty block `{}` and an object `{}`. Because of that `emptyObject()` evaluates to `undefined` and `{}` interpreted as empty block. To return an empty object from fat arrow functions you have to surround it with brackets like so `({})`:
 
 ```js
-<code class="javascript">
 const emptyObject = () => ({});
 emptyObject(); // {}
-</code>
 ```
 
 Here&#8217;s all of the above together:
 
 ```js
-<code class="javascript">
 function () { return 1; }
 () => { return 1; }
 () => 1
@@ -120,7 +107,6 @@ function () { return arguments[0]; }
 
 () => {} // undefined
 () => ({}) // {}
-</code>
 ```
 
 ## Lexical `this`
@@ -128,19 +114,16 @@ function () { return arguments[0]; }
 The story of clobbering `this` in JavaScript is a really old one. Each `function` in JavaScript defines its own `this` context, which is as easy to get around as it is annoying. The example below tries to display a clock that updates every second using jQuery:
 
 ```js
-<code class="javascript">
 $('.current-time').each(function () {
   setInterval(function () {
     $(this).text(Date.now());
   }, 1000);
 });
-</code>
 ```
 
 When attempting to reference the DOM element `this` set by `each` in the `setInterval` callback, we unfortunately get a brand new `this` that belongs to the callback itself. A common way around this is to declare `that` or `self` variable:
 
 ```js
-<code class="javascript">
 $('.current-time').each(function () {
   var self = this;
 
@@ -148,17 +131,14 @@ $('.current-time').each(function () {
     $(self).text(Date.now());
   }, 1000);
 });
-</code>
 ```
 
 The fat arrow functions allow you to solve this problem because they don&#8217;t introduce their own `this`:
 
 ```js
-<code class="javascript">
 $('.current-time').each(function () {
   setInterval(() => $(this).text(Date.now()), 1000);
 });
-</code>
 ```
 
 ## What about arguments?
@@ -166,27 +146,23 @@ $('.current-time').each(function () {
 One of the caveats with arrow functions is that they also don&#8217;t have their own `arguments` variable like regular functions:
 
 ```js
-<code class="javascript">
 function log(msg) {
   const print = () => console.log(arguments[0]);
   print(`LOG: ${msg}`);
 }
 
 log('hello'); // hello
-</code>
 ```
 
 To reiterate, fat arrow functions don&#8217;t have their own `this` and `arguments`. Having said that, you can still get all arguments passed into the arrow functions using rest parameters (also known as spread operator):
 
 ```js
-<code class="javascript">
 function log(msg) {
   const print = (...args) => console.log(args[0]);
   print(`LOG: ${msg}`);
 }
 
 log('hello'); // LOG: hello
-</code>
 ```
 
 ## What about yield?
