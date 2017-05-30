@@ -21,183 +21,92 @@ This article provides information on creating Android apps that can get push not
 
 To enable an Android app to receive LoopBack push notifications:
 
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Setup your android client app to use Google Play Services.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">On app startup, register with GCM servers to obtain a device registration ID (device token) and register the device with the LoopBack server application.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Configure your LoopBack application to receive incoming messages from GCM.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Process the notifications received.<!--more--></span>
-</li>
+- Setup your android client app to use Google Play Services.
+- On app startup, register with GCM servers to obtain a device registration ID (device token) and register the device with the LoopBack server application.
+- Configure your LoopBack application to receive incoming messages from GCM.
+- Process the notifications received.<!--more-->
 
 ## **Prerequisites**
 
 Before you start developing your application make sure you&#8217;ve performed all the prerequisite steps outlined in this section.
 
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;"><strong><a href="http://strongloop.com/mobile/android/">Download the LoopBack Android SDK</a></strong></span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;"><strong><a href="http://developer.android.com/sdk/index.html">Install Eclipse development tools (ADT)</a></strong></span>
-</li>
-
-## 
+- <strong><a href="http://strongloop.com/mobile/android/">Download the LoopBack Android SDK</a></strong>
+- <strong><a href="http://developer.android.com/sdk/index.html">Install Eclipse development tools (ADT)</a></strong>
 
 ## **Configure Android Development Tools**
 
 Now configure Eclipse ADT as follows:
 
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Open Eclipse from the downloaded ADT bundle.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">In ADT, choose: Window > Android SDK Manager<br /> </span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;"><span style="font-size: 18px;">Install the following if they are not already installed:</span></span> <ul>
-    <li style="margin-left: 2em;">
-      <span style="font-size: 18px;"><span style="font-size: 18px;">Tools</span></span> <ul>
-        <li style="margin-left: 2em;">
-          <span style="font-size: 18px;">Android SDK Platform-tools 18 or newer</span>
-        </li>
-        <li style="margin-left: 2em;">
-          <span style="font-size: 18px;">Android SDK Build-tools 18 or newer</span>
-        </li>
-      </ul>
-    </li>
-  </ul>
-  
-  <ul>
-    <li style="margin-left: 2em;">
-      <span style="font-size: 18px;"><span style="font-size: 18px;">Android 4.3 (API 18)</span></span> <ul>
-        <li style="margin-left: 2em;">
-          <span style="font-size: 18px;">SDK Platform</span>
-        </li>
-        <li style="margin-left: 2em;">
-          <span style="font-size: 18px;">Google APIs</span>
-        </li>
-      </ul>
-    </li>
+1. Open Eclipse from the downloaded ADT bundle.
+2. In ADT, choose: Window > Android SDK Manager
+3. Install the following if they are not already installed:
+
+**Tools**
+- Android SDK Platform-tools 18 or newer
+- Android SDK Build-tools 18 or newer</span>
     
-    <li style="margin-left: 2em;">
-      <span style="font-size: 18px;"><span style="font-size: 18px;">Extras</span></span> <ul>
-        <li style="margin-left: 2em;">
-          <span style="font-size: 18px;">Google Play Services</span>
-        </li>
-        <li style="margin-left: 2em;">
-          <span style="font-size: 18px;">Intel x86 Emulator Accelerator (HAXM)</span>
-        </li>
-      </ul>
-    </li>
-  </ul>
-  
-  <p>
-    <img title="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.42.00 PM.png" alt="" src="http://docs.strongloop.com/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.42.00%20PM.png?version=1&modificationDate=1391643769000&api=v2" data-image-src="/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.42.00%20PM.png?version=1&modificationDate=1391643769000&api=v2" data-linked-resource-id="1769892" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2014-02-05 at 3.42.00 PM.png" data-base-url="http://docs.strongloop.com" data-linked-resource-container-id="1542953" data-location="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.42.00 PM.png" /></li> 
+**Android 4.3 (API 18)**
+- SDK Platform
+- Google APIs
+
+**Extras**
+- Google Play Services
+- Intel x86 Emulator Accelerator (HAXM)
+
+<img title="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.42.00 PM.png" alt="" src="http://docs.strongloop.com/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.42.00%20PM.png?version=1&modificationDate=1391643769000&api=v2" data-image-src="/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.42.00%20PM.png?version=1&modificationDate=1391643769000&api=v2" data-linked-resource-id="1769892" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2014-02-05 at 3.42.00 PM.png" data-base-url="http://docs.strongloop.com" data-linked-resource-container-id="1542953" data-location="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.42.00 PM.png" />
     
-    <li style="margin-left: 2em;">
-      <span style="font-size: 18px;">Before you start, make sure you have set up at least one Android virtual device: Choose  <strong>Window > Android Virtual Device Manager</strong> .</span>
-    </li>
-    <li style="margin-left: 2em;">
-      <span style="font-size: 18px;">Configure the target virtual device as shown in the screenshot below.  See  <a href="http://developer.android.com/tools/help/avd-manager.html" rel="nofollow">AVD Manager</a>  for more information.</span>
-    </li></ol> 
-    
-    <p>
-      <img title="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.43.32 PM.png" alt="" src="http://docs.strongloop.com/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.43.32%20PM.png?version=1&modificationDate=1391643853000&api=v2" data-image-src="/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.43.32%20PM.png?version=1&modificationDate=1391643853000&api=v2" data-linked-resource-id="1769893" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2014-02-05 at 3.43.32 PM.png" data-base-url="http://docs.strongloop.com" data-linked-resource-container-id="1542953" data-location="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.43.32 PM.png" />
-    </p>
-    
-    <table data-macro-name="note" data-macro-body-type="RICH_TEXT">
+Before you start, make sure you have set up at least one Android virtual device: Choose <strong>Window > Android Virtual Device Manager</strong>.
+
+Configure the target virtual device as shown in the screenshot below. See <a href="http://developer.android.com/tools/help/avd-manager.html" rel="nofollow">AVD Manager</a>for more information.
+
+<img title="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.43.32 PM.png" alt="" src="http://docs.strongloop.com/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.43.32%20PM.png?version=1&modificationDate=1391643853000&api=v2" data-image-src="/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.43.32%20PM.png?version=1&modificationDate=1391643853000&api=v2" data-linked-resource-id="1769893" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2014-02-05 at 3.43.32 PM.png" data-base-url="http://docs.strongloop.com" data-linked-resource-container-id="1542953" data-location="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.43.32 PM.png" />
+
+    <table data-macro-name="info" data-macro-body-type="RICH_TEXT">
       <tr>
         <td>
-          If you are using the virtual device suggested above, you must also install the ARM EABI v7a System Image SDK.
+          <strong>NOTE</strong>: If you are using the virtual device suggested above, you must also install the ARM EABI v7a System Image SDK.
         </td>
       </tr>
     </table>
-    
-    <h2>
-      <strong>Get your Google Cloud Messaging credentials</strong>
-    </h2>
-    
-    <p>
-      To send push notifications to your Android app, you need to setup a Google API project and enable the Google Cloud Messaging (GCM) service.
-    </p>
-    
-    <ul>
-      <li style="margin-left: 2em;">
-        <span style="font-size: 18px;"><a href="http://developer.android.com/google/gcm/gs.html#create-proj">Open the Android Developer&#8217;s Guide</a></span>
-      </li>
-    </ul>
-    
-    <p>
-      Follow the instructions to get your GCM credentials:
-    </p>
-    
-    <ol>
-      <li style="margin-left: 2em;">
-        <span style="font-size: 18px;">Follow steps to create a Google API project and enable the GCM service.</span>
-      </li>
-      <li style="margin-left: 2em;">
-        <span style="font-size: 18px;"><span style="font-size: 18px;">Create an Android API key</span></span> <ul>
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;">In the sidebar on the left, select <strong>APIs & auth > Credentials</strong>.</span>
-          </li>
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;">Click &#8220;Create new key&#8221;<br /> </span>
-          </li>
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;">Select &#8220;Android key&#8221;<br /> </span>
-          </li>
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;">Enter the SHA-1 fingerprint followed by the package name, for example:<br /> <a href="45:B5:E4:6F:36:AD:0A:98:94:B4:02:66:2B:12:17:F2:56:26:A0:E0;com.example"><code>45:B5:E4:6F:36:AD:0A:98:94:B4:02:66:2B:12:17:F2:56:26:A0:E0;com.example</code></a><br /> <strong>NOTE:</strong> Leave the package name as &#8220;com.example&#8221; for the time being.</span>
-          </li>
-        </ul>
-      </li>
-      
-      <li style="margin-left: 2em;">
-        <span style="font-size: 18px;"><span style="font-size: 18px;">You also have to create a new server API key that will be used by the LoopBack server:</span></span> <ul>
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;">Click &#8220;Create new key&#8221;<br /> </span>
-          </li>
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;">Select &#8220;Server key&#8221;<br /> </span>
-          </li>
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;">Leave the list of allowed IP addresses empty for now.</span>
-          </li>
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;">Click &#8220;Create&#8221;<br /> </span>
-          </li>
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;">Copy down the API key.  Later you will use this when you configure the LoopBack server application.</span>
-          </li>
-        </ul>
-      </li>
-    </ol>
-    
-    <h2>
-      <strong>Configure GCM push settings in your server application</strong>
-    </h2>
-    
-    <p>
-      Add the following key and value to the push settings of your application in the config.js file:
-    </p>
-    
-    ```js
+
+## Get your Google Cloud Messaging credentials##
+   
+To send push notifications to your Android app, you need to setup a Google API project and enable the Google Cloud Messaging (GCM) service.
+ 
+- <a href="http://developer.android.com/google/gcm/gs.html#create-proj">Open the Android Developer&#8217;s Guide</a>
+
+Follow the instructions to get your GCM credentials:
+
+1. Follow steps to create a Google API project and enable the GCM service.
+
+2. Create an Android API key.
+- In the sidebar on the left, select <strong>APIs & auth > Credentials</strong>.
+- Click &#8220;Create new key&#8221;
+- Select &#8220;Android key&#8221;
+- Enter the SHA-1 fingerprint followed by the package name, for example:<br /> <a href="45:B5:E4:6F:36:AD:0A:98:94:B4:02:66:2B:12:17:F2:56:26:A0:E0;com.example"><code>45:B5:E4:6F:36:AD:0A:98:94:B4:02:66:2B:12:17:F2:56:26:A0:E0;com.example</code></a><br /> <strong>NOTE:</strong> Leave the package name as &#8220;com.example&#8221; for the time being.
+
+3. You also have to create a new server API key that will be used by the LoopBack server:
+- Click &#8220;Create new key&#8221;
+- Select &#8220;Server key&#8221;
+- Leave the list of allowed IP addresses empty for now.
+- Click &#8220;Create&#8221;
+- Copy down the API key.  Later you will use this when you configure the LoopBack server application.
+
+## Configure GCM push settings in your server application##
+
+Add the following key and value to the push settings of your application in the config.js file:
+
+```js
 {
   gcm: {
     serverApiKey: "server-api-key"
   }
 }
-```js
+```
+
+Replace <code>server-api-key</code> with the API key you obtained in the section Get your Google Cloud Messaging credentials.
     
-    <p>
-      Replace <code>server-api-key</code> with the API key you obtained in the section Get your Google Cloud Messaging credentials.
-    </p>
-    
-    <table data-macro-name="info" data-macro-body-type="RICH_TEXT">
+<table data-macro-name="info" data-macro-body-type="RICH_TEXT">
       <tr>
         <td>
           <strong>NOTE</strong>: If you want to try a sample client application follow steps in &#8220;Install and run LoopBack Push Notification app&#8221; OR if you want to enable push notifications for your own android application using the LoopBack SDK follow steps in &#8220;Prepare your own Android project&#8221;.
@@ -205,42 +114,19 @@ Now configure Eclipse ADT as follows:
       </tr>
     </table>
     
-    <h2>
-      <strong><span style="font-size: 1.5em;">Install and run LoopBack Push Notification app</span></strong>
-    </h2>
+## Install and run LoopBack Push Notification app##
     
-    <p>
-      If you want to use the sample Android client app, download the  <a href="https://github.com/strongloop/loopback-push-notification/tree/master/example/android">Push Notification Example Android app</a> .  Then follow these steps to run the app:
-    </p>
+If you want to use the sample Android client app, download the  <a href="https://github.com/strongloop/loopback-push-notification/tree/master/example/android">Push Notification Example Android app</a>. Then follow these steps to run the app:
+  
+a. Open ADT Eclipse.</span>
+b. Import the push notification application to your workspace:
+- Choose &#8220;File > Import&#8221;
+- Choose &#8220;Android > Existing Android Code into Workspace&#8221;
+- Click &#8220;Next&#8221;
+- Browse to the example Android app you just downloaded.
+- Click &#8220;Finish&#8221;.
     
-    <ol>
-      <ol>
-        <li style="margin-left: 2em;">
-          <span style="font-size: 18px;">Open ADT Eclipse.</span>
-        </li>
-        <li style="margin-left: 2em;">
-          <span style="font-size: 18px;"><span style="font-size: 18px;">Import the push notification application to your workspace:</span></span> <ul>
-            <li>
-              <span style="font-size: 18px;">Choose &#8220;File > Import&#8221;</span>
-            </li>
-            <li>
-              <span style="font-size: 18px;">Choose &#8220;Android > Existing Android Code into Workspace&#8221;</span>
-            </li>
-            <li>
-              <span style="font-size: 18px;">Click &#8220;Next&#8221;</span>
-            </li>
-            <li>
-              <span style="font-size: 18px;">Browse to the example Android app you just downloaded.</span>
-            </li>
-            <li>
-              <span style="font-size: 18px;">Click &#8220;Finish&#8221;.</span>
-            </li>
-          </ul>
-        </li>
-      </ol>
-    </ol>
-    
-    <table data-macro-name="note" data-macro-body-type="RICH_TEXT">
+<table data-macro-name="note" data-macro-body-type="RICH_TEXT">
       <tr>
         <td>
           <strong>NOTE</strong>: ADT does not take long to import the guide app. Don&#8217;t be misguided by the progress bar at the bottom of the IDE window: it indicates memory use, not loading status.
@@ -248,63 +134,31 @@ Now configure Eclipse ADT as follows:
       </tr>
     </table>
     
-    <ol>
-      <li style="margin-left: 2em;">
-        <span style="font-size: 18px;"><span style="font-size: 18px;">Import Google Play Services library project into your workspace. The project is located inside the directory where you have installed the Android SDK.</span></span> <ul>
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;">Choose &#8220;File > Import&#8221;<br /> </span>
-          </li>
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;">Choose &#8220;Android > Existing Android Code into Workspace&#8221;<br /> </span>
-          </li>
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;">Click &#8220;Next&#8221;<br /> </span>
-          </li>
-          <li>
-            <span style="font-size: 18px;">Browse to the <code><android-sdk>/extras/google/google_play_services/libproject/google-play-services_lib</code> directory.</span>
-          </li>
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;">Check &#8220;Copy projects into workspace&#8221;</span>
-          </li>
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;">Click &#8220;Finish&#8221;<br /> </span>
-          </li>
-        </ul>
-        
-        <p>
-          See <a href="http://developer.android.com/google/play-services/setup.html" rel="nofollow">Google Play Services SDK</a> for more details.</li> 
+1. Import Google Play Services library project into your workspace. The project is located inside the directory where you have installed the Android SDK.
+
+- Choose &#8220;File > Import&#8221;
+- Choose &#8220;Android > Existing Android Code into Workspace&#8221;
+- Click &#8220;Next&#8221;
+- Browse to the `<android-sdk>/extras/google/google_play_services/libproject/google-play-services_lib` directory.
+- Check &#8220;Copy projects into workspace&#8221;
+- Click &#8220;Finish&#8221;
+
+See <a href="http://developer.android.com/google/play-services/setup.html" rel="nofollow">Google Play Services SDK</a> for more details.
+
+- Add the imported google-play-services_lib as an Android build dependency of the push notification application.
+- In the Package Explorer frame in Eclipse, select the  push notification application.
+-- Choose &#8220;File > Properties&#8221;
+-- Select &#8220;Android&#8221;
+-- In the Library frame, click on &#8220;Add&#8230;&#8221; and select `google-play-services_lib`.
+-- Also under Project Build Target, set the target as Google APIs.
+
+<img title="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.34.36 PM.png" alt="" src="http://docs.strongloop.com/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.34.36%20PM.png?version=1&modificationDate=1391643314000&api=v2" data-image-src="/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.34.36%20PM.png?version=1&modificationDate=1391643314000&api=v2" data-linked-resource-id="1769891" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2014-02-05 at 3.34.36 PM.png" data-base-url="http://docs.strongloop.com" data-linked-resource-container-id="1542953" data-location="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.34.36 PM.png" />
           
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;"><span style="font-size: 18px;">Add the imported google-play-services_lib as an Android build dependency of the push notification application.</span></span> <ul>
-              <li style="margin-left: 2em;">
-                <span style="font-size: 18px;">In the Package Explorer frame in Eclipse, select the  push notification application.</span>
-              </li>
-              <li style="margin-left: 2em;">
-                <span style="font-size: 18px;">Choose &#8220;File > Properties&#8221;<br /> </span>
-              </li>
-              <li style="margin-left: 2em;">
-                <span style="font-size: 18px;">Select &#8220;Android&#8221;<br /> </span>
-              </li>
-              <li style="margin-left: 2em;">
-                <span style="font-size: 18px;">In the Library frame, click on &#8220;Add&#8230;&#8221; and select <code>google-play-services_lib</code>.</span>
-              </li>
-              <li style="margin-left: 2em;">
-                <span style="font-size: 18px;">Also under Project Build Target, set the target as Google APIs.<code><br />
-</code><br /> <img title="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.34.36 PM.png" alt="" src="http://docs.strongloop.com/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.34.36%20PM.png?version=1&modificationDate=1391643314000&api=v2" data-image-src="/download/attachments/1542953/Screen%20Shot%202014-02-05%20at%203.34.36%20PM.png?version=1&modificationDate=1391643314000&api=v2" data-linked-resource-id="1769891" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screen Shot 2014-02-05 at 3.34.36 PM.png" data-base-url="http://docs.strongloop.com" data-linked-resource-container-id="1542953" data-location="StrongLoop > Push notifications for Android apps > Screen Shot 2014-02-05 at 3.34.36 PM.png" /></span>
-              </li>
-            </ul>
-          </li>
-          
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;"><span style="font-size: 18px;">Edit <code>src/com/google/android/gcm/demo/app/DemoActivity.java</code>.</span></span> <ul>
-              <li style="margin-left: 2em;">
-                <span style="font-size: 18px;">Set SENDER_ID to the project number from the Google Developers Console you created earlier in Get your Google Cloud Messaging credentials.</span>
-              </li>
-            </ul>
-          </li>
-          
-          <li style="margin-left: 2em;">
-            <span style="font-size: 18px;"><span style="font-size: 18px;">Go back to the <a href="https://cloud.google.com/console/project">https://cloud.google.com/console/project</a> and edit the Android Key to reflect your unique application ID. Set the value of &#8220;Android applications&#8221; to something like this:<br /> </span></span>&nbsp;</p> <table>
+- Edit `src/com/google/android/gcm/demo/app/DemoActivity.java`.
+- Set SENDER_ID to the project number from the Google Developers Console you created earlier in Get your Google Cloud Messaging credentials.
+- Go back to the <a href="https://cloud.google.com/console/project">https://cloud.google.com/console/project</a> and edit the Android Key to reflect your unique application ID. Set the value of &#8220;Android applications&#8221; to something like this:
+
+<table>
               <tr>
                 <th>
                   Android applications
