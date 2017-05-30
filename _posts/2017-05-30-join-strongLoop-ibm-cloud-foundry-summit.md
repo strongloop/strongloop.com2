@@ -1,7 +1,7 @@
 ---
 id: 28775
 title: Join StrongLoop and IBM at Cloud Foundry Summit
-date: 2017-04-30
+date: 2017-05-30
 author: Dave Whiteley
 permalink: /strongblog/join-strongloop-ibm-cloud-foundry-2017/
 categories:
