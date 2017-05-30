@@ -158,32 +158,16 @@ See <a href="http://developer.android.com/google/play-services/setup.html" rel=
 - Set SENDER_ID to the project number from the Google Developers Console you created earlier in Get your Google Cloud Messaging credentials.
 - Go back to the <a href="https://cloud.google.com/console/project">https://cloud.google.com/console/project</a> and edit the Android Key to reflect your unique application ID. Set the value of &#8220;Android applications&#8221; to something like this:
 
-<table>
-              <tr>
-                <th>
-                  Android applications
-                </th>
-                
-                <td>
-                  XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:X&nbsp;</p> 
-                  
-                  <p>
-                    LOOPBACK_APP_ID
-                  </p>
-                  
-                  <p>
-                    X:XX:XX:XX:XX:XX:XX:XX:XX:XX;com.google.android.gcm.demo.app.DemoApplication</td> </tr> </tbody> </table> 
-                    
-                    <p>
-                      &nbsp;</li> 
-                      
-                      <li style="margin-left: 2em;">
-                        <span style="font-size: 18px;">Set the appName in the server application&#8217;s <code>config.js</code> to &#8220;com.google.android.gcm.demo.app.DemoActivity&#8221;.</span>
-                      </li>
-                      <li style="margin-left: 2em;">
-                        <span style="font-size: 18px;"><span style="font-size: 18px;">Edit src/com/google/android/gcm/demo/app/DemoApplication.java</span></span> <ul>
-                          <li style="margin-left: 2em;">
-                            <span style="font-size: 18px;"><span style="font-size: 18px;">Set adaptor to our server ip. In my case it is:
+Android applications
+
+XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:X&nbsp; 
+LOOPBACK_APP_ID
+
+X:XX:XX:XX:XX:XX:XX:XX:XX:XX;com.google.android.gcm.demo.app.DemoApplication
+
+- Set the appName in the server application&#8217;s `config.js` to &#8220;com.google.android.gcm.demo.app.DemoActivity&#8221;.
+- Edit src/com/google/android/gcm/demo/app/DemoApplication.java
+- Set adaptor to our server ip. In my case it is:
 
 ```js
 adapter = new RestAdapter(
@@ -191,6 +175,7 @@ adapter = new RestAdapter(
                     "http://ec2-54-184-36-164.us-west-2.compute.amazonaws.com:3000/api/");
         }
 ```
+
 Click the green &#8220;Run&#8221; button in the toolbar to run the application. Run it as an Android application. You will be prompted to select the target on which to run the application. Select the AVD you created earlier.
 
 <table>
@@ -201,8 +186,6 @@ Click the green &#8220;Run&#8221; button in the toolbar to run the application.
                         </tr>
 </table>
                       
-<table>
-     
 Due to a <a href="https://code.google.com/p/android/issues/detail?id=61675">known issue with Google Play Services</a>, you must download and import an older version of Google Play services.&nbsp;
 
 - Download <a href="https://dl-ssl.google.com/android/repository/google_play_services_3225130_r10.zip">https://dl-ssl.google.com/android/repository/google_play_services_3225130_r10.zip</a>
