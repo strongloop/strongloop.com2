@@ -15,7 +15,7 @@ Want to attend the premier enterprise app developers conference? We're heading t
 
 Visit us at the IBM booth. The StrongLoop team (including Developer Evangelist [Erin McKean](https://twitter.com/emckean)) will be sharing stickers and providing info on: 
 
-- [The LoopBack developer journey](developer.ibm.com/code/journey/unlock-enterprise-data-using-apis/), featuring OpenWhisk and other journeys.
+- [The LoopBack developer journey](https://developer.ibm.com/code/journeys/unlock-enterprise-data-using-apis/), featuring OpenWhisk and other journeys.
 - Our [LoopBack in 5 minutes](http://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/) demo.
 
 In addition to the booth, IBM will host a "Node Meetup" on June 12th, from 7:30-9:00PM to kick-off the Cloud Foundry Summit. Expect lightning talks and a networking social with food and beverages. 
