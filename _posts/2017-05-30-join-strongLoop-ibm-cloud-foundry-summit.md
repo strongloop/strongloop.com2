@@ -12,7 +12,7 @@ categories:
 Want to attend the premier enterprise app developers conference? We're heading to [Cloud Foundry Summit](https://www.cloudfoundry.org/event/summit-silicon-valley-2017/) in Silicon Valley, and we hope you will join us!
 
 {% include image.html file='CF-logo.png' alt='Cloud Foundry Summit' %}
-
+<!--more-->
 Visit us at the IBM booth. The StrongLoop team (including Developer Evangelist [Erin McKean](https://twitter.com/emckean)) will be sharing stickers and providing info on: 
 
 - [The LoopBack developer journey](https://developer.ibm.com/code/journeys/unlock-enterprise-data-using-apis/), featuring OpenWhisk and other journeys.
@@ -22,7 +22,6 @@ In addition to the booth, IBM will host a "Node Meetup" on June 12th, from 7:30-
 
 Finally, IBM is hosting the Node.js sessions track, which will feature great speakers and learning opportunities.
 
-<!--more-->
 Cloud Foundry Summit runs from June 13-15 and is held in Santa Clara, California.
 
 ### Register Today!
