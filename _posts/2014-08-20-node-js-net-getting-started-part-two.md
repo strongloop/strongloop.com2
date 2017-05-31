@@ -11,7 +11,7 @@ categories:
 ---
 [Part 1 ](http://strongloop.com/strongblog/node-js-net-getting-started-part-one/)of this blog post provided an introduction to Node.js for .NET developers. In this second part I am going to discuss common Node.js frameworks, tools, hosting technologies, and coding practices.
 
-## **Frameworks**
+## Frameworks##
 
 The primary scenario for Node.js is web development. The Node.js runtime itself contains a full <a href="http://nodejs.org/api/http.html" rel="noreferrer">HTTP stack implementation</a>. There is a large number of npm modules that provide higher level web application capabilities on top of that HTTP stack: MVC frameworks, REST frameworks, authentication plugins, WebSocket implementations, etc. A good way to discover them and get the idea of the most popular ones is to <a href="https://www.npmjs.org/" rel="noreferrer">search the npm registry</a>.
 
@@ -19,8 +19,7 @@ One of the most popular MVC frameworks for Node.js is <a href="http://expressjs
 
 <!--more-->
 
-<div>
-  ```js
+```js
 var express = require('express');
 var app = express();
 
@@ -29,25 +28,13 @@ app.get('/:name', function(req, res) {
 });
 
 app.listen(3000);
-```js
-</div>
-
-&nbsp;
-
+```
 The `hello.ejs` view rendered from the single route controller above would look like this:
 
-&nbsp;
-
-<pre lang="ejs"><code><html>
-<head>
-    <title>EJS scample</title>
-</head>
-<body>
-    <h1>Hello, <%= name %></h1>
-    <p>The date is <%= date %></p>
-</body>
-</html>
-</code>
+```ejs
+EJS scample
+Hello, <%= name %>
+The date is <%= date %>
 ```
 
 If you are developing an HTTP API application and need a framework that is more data-centric than MVC-centric, Node also provides you with a wide selection of modules. One of the most popular ones is <a href="http://mcavage.me/node-restify/" rel="noreferrer">restify</a>. Similarly to express it supports an extensible middleware pipeline, but out of the box provides many of the features specifically targeting HTTP APIs: CORS, GZip, JSONP, as well as parsing of the body and key HTTP headers. While it does not support WebSockets itself, it composes well with other modules that do (like <a href="http://socket.io/" rel="noreferrer">socket.io</a>).
@@ -58,7 +45,7 @@ No discussion of Node.js frameworks would be complete without mention of WebSock
 
 The functional equivalent of _socket.io_ in .NET is <a href="http://signalr.net/" rel="noreferrer">ASP.NET SignalR</a>. In fact, the SignalR project in .NET was largely inspired by _socket.io_ and created as a .NET answer to it.
 
-## **Distributions**
+## Distributions##
 
 As of this writing, the npm repository contains over 70k modules, with several modules addressing any given scenario. As the ecosystem evolves in a completely decentralized way, there is a lot of overlap between modules. Some modules are actively supported while others become deprecated and decay over time. This situation created a very low barrier to entry for developers willing to contribute to the ecosystem and was one of the primary factors behind fast and innovative growth of the platform.
 
@@ -72,7 +59,7 @@ LoopBack is complemented by <a href="http://strongloop.com/node-js-performance/
 
 Creating _Node.js distributions_ out of the many Node.js modules is a natural next step in the evolution of the Node.js ecosystem.
 
-## **Hosting**
+## Hosting##
 
 There are substantial differences in the structure of the HTTP stack of .NET and Node.js web applications. .NET web applications are using HTTP stack that builds on top of the kernel mode HTTP implementation provided by the operating system within the HTTP.SYS component. In contrast, Node.js applications listen directly on TCP ports, and Node.js runtime provides HTTP protocol implementation. This difference has important implications for how Node.js applications are hosted.
 
@@ -84,7 +71,7 @@ When running Node.js applications in production on Linux systems, one typically 
 
 When hosting production Node.js web applications on Windows, one has two options. First one is to create a Windows Service around the Node.js application. One of the tools that helps streamline this approach is <a href="http://nssm.cc/" rel="noreferrer">NSSM</a>. Another option is to host Node.js applications in IIS using <a href="https://github.com/tjanczuk/iisnode" rel="noreferrer">iisnode</a>. In the _iisnode_ model, Node.js applications are running within IIS in a similar way that FastCGI applications would, except the protocol _iisnode_ uses to communicate with Node.js processes is HTTP over named pipes as opposed to FastCGI. From the perspective of the Node.js application it provides full fidelity to establishing a stand alone TCP listener. You can <a href="https://github.com/tjanczuk/iisnode/wiki" rel="noreferrer">read more about the features provided by iisnode that differentiate it from self-hosting</a>. Before you decide on a specific way of hosting for your app on Windows, you should also understand the <a href="http://tomasz.janczuk.org/2012/06/performance-of-hosting-nodejs.html" rel="noreferrer">performance implications of using iisnode in various scenarios</a>. The _iisnode_ technology is used by Windows Azure Web Sites and several other hosting providers for hosting Node.js applications on Windows.
 
-## **Tooling**
+## Tooling##
 
 While there are several good environments and tools for developing Node.js applications, generally speaking .NET developers used to the Visual Studio experience of developing .NET applications will need to lower their expectations.
 
@@ -96,14 +83,13 @@ If you are using Windows for development of your Node.js applications, you shoul
 
 The last note here is about transpilation tools. Use of JavaScript on the server often generates extreme reactions (interestingly, many people like JavaScript for the exact same reasons others dislike it). A few attempts were made to address some of the perceived issues with JavaScript through transpilation of a different syntax to JavaScript. One tool from this space is <a href="http://coffeescript.org/" rel="noreferrer">CoffeeScript</a> which aspires to simplify the syntax and emphasize the &#8220;good parts&#8221; of JavaScript. Another is <a href="http://www.typescriptlang.org/" rel="noreferrer">TypeScript</a> which adds strong typing and type constraints to otherwise untyped JavaScript. The price one pays for the benefits of transpilation is an extra compilation step in the development and deployment workflow, which is a drawback compared to the simplicity of change-save-run workflow that Node.js developers are used to. Transpilation also implies the need to learn a new syntax. TypeScript offers a gentler learning slope than CoffeeScript in that respect by allowing gradual transition from a JavaScript-only code base: any valid JavaScript is also a valid TypeScript.
 
-## **Coding patterns and practices**
+## Coding patterns and practices##
 
 Node.js, being single-threaded, asynchronous, and based on loosely typed JavaScript, has distinctly different coding patterns, esthetics, and practices compared to strongly typed .NET.
 
 Although both JavaScript and .NET combine elements of functional and object oriented programming, Node.js embraces functional programming to a much greater extent than .NET. In fact, in the entire Node.js runtime there is just a handful of classes which capture quintessential concepts of Node.js (e.g. <a href="http://nodejs.org/api/events.html" rel="noreferrer">EventEmitter</a> or <a href="http://nodejs.org/api/stream.html" rel="noreferrer">Stream</a>). Vast majority of APIs in Node.js is grouped into modules exposing functions. And since functions in JavaScript are values, composability in Node.js often relies on passing functions, frequently implemented as closures over other state, as parameters to other functions. The flagship example is the async pattern in Node.js where by convention an async API accepts a callback function as the last parameter, e.g.:
 
-<div>
-  ```js
+```js
 function startAsyncOperationFoo(parameter1, parameter2, callback) {
     // start async operation, and when it completes, invoke the callback:
     var error = null;
@@ -117,9 +103,7 @@ startAsyncOperationFoo('abc', 'def', function (error, result) {
     if (error) throw error;
     someState += result.a;
 })
-```js
-</div>
-
+```
 The example above demonstrates the basic async calling convention in Node.js:
 
   * asynchronous functions accept their parameters followed by a callback function,
@@ -130,8 +114,7 @@ The example above demonstrates the basic async calling convention in Node.js:
 
 A frequent side effect of a naive application of this pattern for more complex logic results in programs that tend to grow horizontally faster than vertically. Consider a case where we want to calculate the result of (5 + 7) * 4 / 3 given asynchronous functions _add_, _multiply_, and _divide_:
 
-<div>
-  ```js
+```js
 add(5, 7, function (error, result) {
     if (error) throw error;
     multiply(result, 4, function (error, result) {
@@ -142,13 +125,11 @@ add(5, 7, function (error, result) {
         });
     });
 });
-```js
-</div>
+```
 
 The <a href="https://github.com/caolan/async" rel="noreferrer">async</a> module remedies this situation by helping developers &#8220;flatten&#8221; a number of popular asynchronous workflows into more concise JavaScript code. Using the _async_ module, the same computation would take this form:
 
-<div>
-  ```js
+```js
 async.waterfall([
     function (callback) {
         add(5, 6, callback);
@@ -163,8 +144,7 @@ async.waterfall([
     if (error) throw error;
     console.log(result);
 });
-```js
-</div>
+```
 
 Another approach to help developers organize asynchronous code is to use <a href="http://howtonode.org/promises" rel="noreferrer">promises</a> and most notably<a href="https://github.com/petkaantonov/bluebird" rel="noreferrer">Bluebird</a>. If you have been using the Task Programming Model in .NET, you will feel right at home with JavaScript promises.
 
@@ -172,7 +152,7 @@ The upcoming (as of this writing) release of Node.js 0.12 will support the new J
 
 Another extremely popular utility module used in Node.js development is <a href="http://underscorejs.org/" rel="noreferrer">underscore</a>. It provides some 80 functions that facilitate working with collections, arrays, objects, and functions. Conceptually it is similar to extension methods in .NET, except they have a distinctly functional programming twist.
 
-## **When Node.js is not enough**
+## When Node.js is not enough##
 
 There are applications for which Node.js is not a good fit and other technologies must be employed.
 
@@ -191,14 +171,6 @@ CPU-bound bound tasks that are performed with ease in a .NET application require
 
 A different approach to the problem of running CPU-bound logic in Node.js applications is to use the <a href="http://tjanczuk.github.io/edge" rel="noreferrer">edge.js</a>module. _Edge.js_ allows running C# code inside of a Node.js application by hosting CLR in the Node.js process and providing an interop model between Node.js and CLR. It works on Windows, MacOS, and Linux (using Mono on non-Windows platforms). Edge.js allows you to leverage .NET Framewok functionality in your Node.js application without paying the performance and complexity price of cross-process communication and child process management. Edge is also useful in leveraging pre-existing .NET components, which is a frequent situation in a non-greenfield application development.
 
-## **[What’s next?](http://strongloop.com/get-started/)**
+## What’s next?##
 
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">What’s in the upcoming Node v0.12 release? <a href="http://strongloop.com/node-js/whats-new-in-node-js-v0-12/">Six new features, plus new and breaking APIs</a>.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/">training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>
-</li>
+- Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js LoopBack framework. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.
