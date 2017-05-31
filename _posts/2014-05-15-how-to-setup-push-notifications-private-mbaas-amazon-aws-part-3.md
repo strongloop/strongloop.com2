@@ -146,5 +146,5 @@ didRegisterForRemoteNotificationsWithDeviceToken:deviceToken
  
 ## <strong>Next Steps</strong>##
        
-- To use LoopBack&#8217;s swagger REST API and send or receive push notifications on your Android and iOS devices go to <a title="Part four" href="http://strongloop.com/strongblog/how-to-setup-push-notifications-privat-mbaas-on-amazon-aws-part-4/">Part Four</a>.
-- To setup and create an Android app to receive push notifications go to <a title="Part two" href="http://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-amazon-aws-part/">Part Two</a>.
+- To use LoopBack&#8217;s swagger REST API and send or receive push notifications on your Android and iOS devices go to <a title="Part four" href="https://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-on-amazon-aws-part-4/">Part Four</a>.
+- To setup and create an Android app to receive push notifications go to <a title="Part two" href="https://strongloop.com/strongblog/how-to-setup-push-notifications-private-mbaas-amazon-aws-part-2/">Part Two</a>.
