@@ -15,12 +15,12 @@ _Note: Since the publication of this blog, the StrongLoop API Gateway was relaun
 In case you missed it, today we [announced](http://strongloop.com/strongblog/open-source-node-js-api-gateway/) the availability of the open source LoopBack API Gateway. The LoopBack API Gateway is open source and is the “minimum viable product” (MVP) that covers key use cases piloted with our co-development partners. In this blog we&#8217;ll show you how to get started with a sample application to test out the features of the gateway.
 
 > _What&#8217;s LoopBack? It&#8217;s an open source Node.js framework for developing, managing and scaling APIs. [Learn more&#8230;](http://loopback.io/)_
-
-## **What is an API gateway?**
+<!--more-->
+## What is an API gateway?
 
 An API gateway is a component within systems architecture to externalize, secure and manage APIs. The API gateway sits as an intermediary between the many consumers of APIs &#8211; API clients and the many producers of the APIs on the backend &#8211; API servers.
 
-## **The basic features**
+## The basic features
 
 `loopback-gateway` is an example application to demonstrate how to build an API gateway using LoopBack. In this tutorial, we&#8217;ll build a simplified version of API gateway using LoopBack. The gateway supports basic features listed below:
 
@@ -51,15 +51,13 @@ The test scenario consists of three components:
 
 The architecture is illustrated in the diagram below.
 
-<!--more-->
-
 <img class="aligncenter size-full wp-image-20524" src="{{site.url}}/blog-assets/2014/10/loopback-api-gateway.png" alt="loopback-api-gateway" width="910" height="507"  />
 
-## **Build the gateway application**
+## Build the gateway application
 
 The application is initially scaffolded using `slc loopback` command. We customize server/server.js to add specific features for the gateway.
 
-## **Configure and ensure HTTPS** 
+## Configure and ensure HTTPS
 
 [oAuth 2.0](http://tools.ietf.org/html/rfc6749#section-10.9) states that the authorization server MUST require the use of TLS with server authentication for any request sent to the authorization and token endpoints. There are two steps involved here:
 
@@ -78,13 +76,13 @@ var httpsPort = app.get('https-port');
 app.use(httpsRedirect({httpsPort: httpsPort}));
 ```
 
-## **Configure oAuth 2.0**
+## Configure oAuth 2.0
 
 The oAuth 2.0 integration is done using `loopback-component-oauth2`.
   
 In our case, we configure the API gateway as both an authorization server and resource server.
 
-## **Set up authorization server**
+## Set up authorization server
 
 The oAuth authorization server exposes the authorization endpoint to allow resource owners (users) to grant permissions to authenticated client applications. It also creates the token endpoint to issue access tokens to client applications with valid grants.
 
@@ -97,7 +95,7 @@ var oauth2 = require('loopback-component-oauth2').oAuth2Provider(
   });
 ```
 
-## **Set up resource server**
+## Set up resource server
 
 To protect endpoints with oAuth 2.0, we set up middleware that checks incoming requests for an access token and validate it with the information persisted on the server when the token is issued.
 
@@ -105,7 +103,7 @@ To protect endpoints with oAuth 2.0, we set up middleware that checks incoming r
 oauth2.authenticate(['/protected', '/api', '/me'], {session: false, scope: 'demo'});
 ```
 
-## **Rate Limiting**
+## Rate Limiting
 
 Rate limiting controls how many API calls can be made from client applications within a certain period of time.
 
@@ -126,7 +124,7 @@ var rateLimiting = require('./middleware/rate-limiting');
 app.use(rateLimiting({limit: 100, interval: 60000}));
 ```
 
-## **Proxy**
+## Proxy
 
 The proxy middleware allows incoming requests to be forwarded/dispatched to other servers. In this tutorial, we&#8217;ll route /api/ to http://localhost:3002/api/. The implementation is based on [node-http-proxy](https://github.com/nodejitsu/node-http-proxy).
 
@@ -142,7 +140,7 @@ app.use(proxy(proxyOptions));
 }
 ```
 
-## **Sign up client applications and users**
+## Sign up client applications and users
 
 oAuth 2.0 requires client applications to be registered. In this tutorial, we can simply create a new instance with the LoopBack built-in application model. The client id is 123 and the client secret is `secret`. The resource owner is basically a user. We create a user named `bob` with password `secret` for testing.
 
@@ -185,11 +183,11 @@ function signupTestUserAndApp() {
 }
 ```
 
-## **Run the demo**
+## Run the demo
 
 There are a few steps to run the demo application.
 
-## **Create the api server**
+## Create the api server
 
 ```js
 $ slc loopback demo-api-server
@@ -223,19 +221,21 @@ PORT=3002 node .
 
 Open a browser and point to http://localhost:3002/explorer. Locate the &#8216;POST notes&#8217; section and add a few notes.
 
-## **Run the gateway**
+## Run the gateway
 
 ```js
 node .
 ```
 
-## **Test out https**
+## Test out https
 
 Open a browser and point to http://localhost:3000. You will see the browser to be redirected to https://localhost:3001. Please note your browser might complain about the SSL certificate as it is self-signed. It&#8217;s safe to ignore the warning and proceed.
 
-## **Test out oAuth 2.0 and proxy**
+## Test out oAuth 2.0 and proxy
 
 The home page below shows multiple options to try out the oAuth 2.0 grant types. Let&#8217;s start with the [explicit flow](http://tools.ietf.org/html/rfc6749#section-4.2).
+
+{% raw %}{% include image.html file='/blog-assets/2014/10/home.png' alt='LoopBack Gateway Demo' %}{: .center-image}{% endraw %}
 
 <img class="aligncenter size-full wp-image-20536" src="{{site.url}}/blog-assets/2014/10/home.png" alt="home" width="486" height="244"  />
   
@@ -255,7 +255,7 @@ The callback page builds the links with the access token. Click on &#8216;Callin
 
 <img class="aligncenter size-full wp-image-20540" src="{{site.url}}/blog-assets/2014/10/notes.png" alt="notes" width="747" height="262"  />
 
-## **Test out rate limiting**
+## Test out rate limiting
 
 To test rate limiting, please run the following script which sends 150 requests to the server. The script prints out the rate limit and remaining.
 
@@ -263,7 +263,7 @@ To test rate limiting, please run the following script which sends 150 requests 
 node server/scripts/rate-limiting-client.js
 ```
 
-Test out JWT
+## Test out JWT
   
 We support JSON Web Token (JWT) as client authentication and authorization grant for oAuth 2.0. See <https://tools.ietf.org/html/draft-ietf-oauth-jwt-bearer-10> for more details.
   
@@ -279,16 +279,12 @@ The second command requests an access token using a JWT token as the assertion t
 node server/scripts/jwt-client-auth.js <authorization code>
 ```
 
-##  **Summary** 
+##  Summary 
 
 The open source LoopBack gateway provides key functionality that enables you to manually piece together middleware and specify your business rules through plain JavaScript hooks. The LoopBack API gateway serves as a reference implementation and will be limited to its current functionality. It currently fulfills the MVP use cases without components and policies.
 
 We expect that complex enterprises need to manage API endpoints at runtime, using the dynamic controls and additional functionality of components and policies provided by the StrongLoop API Gateway. It will provide the commercial-grade features and performance required for top-tier enterprise API management.
 
-## [**What’s next?**](http://strongloop.com/get-started/)
+## **What’s next?
 
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
-</li>
-
-&nbsp;
+- >Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js LoopBack framework. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.
