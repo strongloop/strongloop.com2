@@ -161,7 +161,8 @@ Alternately you can just run:
 
 This will auto update the `package.json`. The section should look like the following:
 
-```"dependencies": {
+```
+"dependencies": {
     "compression": "^1.0.3",
     "errorhandler": "^1.1.1",
     "loopback": "^2.0.0",
