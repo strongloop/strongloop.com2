@@ -391,7 +391,7 @@ The code for the web view of the application takes advantage of the longitude an
 
 To create this map, create a new file in the public directory named `locatewalmart.html` and add the following JavaScript code:
 
-```
+```js
 &lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
