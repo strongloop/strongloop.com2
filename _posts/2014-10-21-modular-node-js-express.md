@@ -182,6 +182,7 @@ If you are itching to see a full running example, I have [an Express project up 
 <li id="footnote4">
   Setting up other scripts is trivial. For updating, just change <code>npm.commands.install</code> to <code>npm.commands.update</code>. Want to check if anything is outdated, just switch it to <code>npm.commands.outdated</code>. See <a href="https://www.npmjs.org/doc/api/npm.html">npm api</a> for more details. <a class="reversefootnote" title="return to article" href="#footref4"> ↩</a> 
    
+<p>
 ## What’s next?
 
 - Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js LoopBack framework. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.
