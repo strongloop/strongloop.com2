@@ -66,7 +66,6 @@ OK
 - You should receive a notification on your emulator and it should look somewhat like this:
 
 <a href="{{site.url}}/blog-assets/2014/05/Screen-Shot-2014-05-13-at-4.43.31-PM.png"><img class="alignnone size-full wp-image-16300" alt="Screen Shot 2014-05-13 at 4.43.31 PM" src="{{site.url}}/blog-assets/2014/05/Screen-Shot-2014-05-13-at-4.43.31-PM.png" width="319" height="493" /></a>
-  </center>
 
 ## **Receive Push Notifications for iOS Client application**
 
