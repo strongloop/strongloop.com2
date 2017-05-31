@@ -137,7 +137,8 @@ Neo4j (provided by community)
 
 In order to communicate with MongoDB, we need to point the datasource to the actual MongoDB instance. LoopBack defines all datasource configuration in the `datasource.json` file that is located in your applications `root/server` directory. Open this file and add a datasource for MongoDB as shown in the following code:
 
-```{
+```
+{
   "db": {
     "name": "db",
     "connector": "memory"
@@ -303,7 +304,8 @@ Type in "yes" and hit the enter key.
 
 Congratulations! you have just created your first model object using LoopBack in conjunction with Node.js. To see what was actually created under the covers, open up the `store.json` file that is located in the `root/common/models` directory of your application directory. Find the stores entry that will look like the following:
 
-```{
+```
+{
   "name": "store",
   "base": "PersistedModel",
   "properties": {
