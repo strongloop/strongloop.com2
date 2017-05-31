@@ -235,8 +235,6 @@ Open a browser and point to http://localhost:3000. You will see the browser to b
 
 The home page below shows multiple options to try out the oAuth 2.0 grant types. Let&#8217;s start with the [explicit flow](http://tools.ietf.org/html/rfc6749#section-4.2).
 
-{% include image.html file='{{site.url}}/blog-assets/2014/10/login.png' alt='LoopBack Gateway Demo' %}{: .center-image}
-
 <img class="aligncenter size-full wp-image-20536" src="{{site.url}}/blog-assets/2014/10/home.png" alt="home" width="486" height="244"  />
   
 Now you need to log in as the resource owner.
