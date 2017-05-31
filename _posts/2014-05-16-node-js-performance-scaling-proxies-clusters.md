@@ -79,12 +79,3 @@ Runctl lets you size the number of processes in the cluster at startup; but also
 In case, a faulty deployment is pushed out to a cluster, StrongLoop clusterctl ensures rolling restarts, so that if the first process being restarted crashes, then the deployment is not pushed out to the remaining processes in the cluster. If the issues on the faulty code is fixed on the fly, clusterctl also has hot deploy capability to auto-correct the faulty process and restore it.
 
 StrongLoop cluster control has both a CLI as well as a Web interface. The Web interface allows to remotely manage multiple clusters running on multiple hosts from a single console, which provides ease of runtime management.
-
-## **What’s next?**
-
-<ul>
-<li>What’s in the upcoming Node v0.12 release? <a href="http://strongloop.com/strongblog/performance-node-js-v-0-12-whats-new/">Big performance optimizations</a>! Read <a href="https://github.com/bnoordhuis">Ben Noordhuis’</a> blog to learn more.</span>
-</li>
-<li>Watch <a href="https://github.com/piscisaureus">Bert Belder’s</a> comprehensive <a href="http://strongloop.com/developers/videos/#whats-new-in-nodejs-v012">video </a>presentation on all the new upcoming features in v0.12</span>
-</li>
-</ul>
