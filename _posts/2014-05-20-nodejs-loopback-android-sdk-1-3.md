@@ -22,12 +22,9 @@ User authentication and authorization are important for many applications.  The
 
 To get started:<!--more-->
 
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Enable authentication in your loopback server as described in the <a href="http://docs.strongloop.com/display/LB/Access+control+tutorial">Access control tutorial</a>.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Create an instance of <code>UserRepository<User></code>: </span>
-</li>
+- Enable authentication in your loopback server as described in the <a href="http://docs.strongloop.com/display/LB/Access+control+tutorial">Access control tutorial</a>.
+
+- Create an instance of `UserRepository<User>`: 
 
 ```js
 RestAdapter restAdapter = // get the global adapter object
@@ -36,9 +33,7 @@ UserRepository<User> userRepo =
     restAdapter.createRepository(UserRepository<User>.class);
 ```
 
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">At application startup, find the currently logged-in user. When no user is logged in and your application requires an authenticated user, instead present the login screen Activity.</span>
-</li>
+- At application startup, find the currently logged-in user. When no user is logged in and your application requires an authenticated user, instead present the login screen Activity.
 
 ```js
 userRepo.findCurrentUser(new ObjectCallback<User>() {
@@ -53,9 +48,7 @@ userRepo.findCurrentUser(new ObjectCallback<User>() {
 });
 ```
 
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Call the following method to log in a user:</span>
-</li>
+- Call the following method to log in a user:
 
 ```js
 userRepo.loginUser("user@example.com", "password",
@@ -70,10 +63,7 @@ userRepo.loginUser("user@example.com", "password",
     }
 );
 ```
-
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Use <code>getCachedCurrentUser()</code> in your <code>Activity</code> classes to get the data for the current user.</span>
-</li>
+- Use `getCachedCurrentUser()` in your `Activity` classes to get the data for the current user.
 
 ```js
 User currentUser = userRepo.getCachedCurrentUser();
@@ -91,21 +81,12 @@ Refer to the LoopBack Android SDK <a href="http://docs.strongloop.com/display/
 
 SDK version 1.3 adds support for working with files using the <a href="http://docs.strongloop.com/display/LB/Storage+service" rel="nofollow">LoopBack storage service</a>.  The storage service makes it easy to upload and download files to cloud storage providers and the server local file system. It supports the following providers:
 
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Amazon</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Rackspace</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Openstack</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Azure</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Server file system</span>
-</li>
+- Amazon
+- Rackspace
+- Openstack
+- Azure
+- Server file system
+
 
 Let&#8217;s illustrate the client API on a hypothetical application for submitting insurance claims. To submit a claim, one has to attach documents proving the validity of the claim, such as pictures of the damaged property.
 
@@ -138,18 +119,9 @@ containerRepo.create(claim.getId().toString(), new ObjectCallback<Container>()
     }
 });
 ```
+## <strong>Displaying  documents</strong>##
 
-&nbsp;
-
-<div>
-  <h2 id="What'snewinLoopBackAndroidSDK1.3-Displayingdocuments">
-    <strong>Displaying  documents</strong>
-  </h2>
-  
-  <p>
-    To display a list of documents that are already uploaded, we need to fetch all files in the container associated with the current claim as follows:
-  </p>
-</div>
+To display a list of documents that are already uploaded, we need to fetch all files in the container associated with the current claim as follows:
 
 ```js
 activity.getContainer().getAllFiles(new ListCallback<File>() {
@@ -185,12 +157,7 @@ void displayDocument(File remoteFile) {
     });
 }
 ```
-
-<div>
-  <h2 id="What'snewinLoopBackAndroidSDK1.3-Attachinganewdocument">
-    <strong>Attaching a new document</strong>
-  </h2>
-</div>
+## <strong>Attaching a new document</strong>##
 
 To keep this example simple, we will skip details on how to take pictures in Android (for information on this, see the <a href="http://developer.android.com/reference/android/hardware/Camera.html" rel="nofollow">Android Camera docs</a>). Once the picture is taken, the app uploads it to the storage service and updates the list of all documents:
 
@@ -226,28 +193,10 @@ camera.takePicture(
 );
 ```
 
-<div>
-  <p>
-    You can find more information in the LoopBack Android SDK <a href="http://docs.strongloop.com/display/DOC/Android+SDK#AndroidSDK-UsingtheLoopBackstorageservice" rel="nofollow">documentation</a>.
-  </p>
-</div>
+You can find more information in the LoopBack Android SDK <a href="http://docs.strongloop.com/display/DOC/Android+SDK#AndroidSDK-UsingtheLoopBackstorageservice" rel="nofollow">documentation</a>.
 
 ## **What&#8217;s Next?** 
 
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Download the SDK bundle for Eclipse: <a href="http://81b70ddedaf4b27b1592-b5e75689411476c98957e7dab0242f50.r56.cf2.rackcdn.com/loopback-android-1.3.0-eclipse-bundle.zip" rel="nofollow">loopback-android-1.3.0-eclipse-bundle.zip</a></span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">See the <a href="http://docs.strongloop.com/display/LB/Android+SDK" rel="nofollow">Android SDK documentation</a>.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Install LoopBack with a <a href="http://strongloop.com/get-started/">simple npm command</a></span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">What’s in the upcoming Node v0.12 version? <a href="http://strongloop.com/strongblog/performance-node-js-v-0-12-whats-new/">Big performance optimizations</a>, read the blog by Ben Noordhuis to learn more.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Need performance monitoring, profiling and cluster capabilities for your Node apps? Check out <a href="http://strongloop.com/node-js-performance/strongops/">StrongOps</a>!</span>
-</li>
-
-&nbsp;
+- Download the SDK bundle for Eclipse: <a href="http://81b70ddedaf4b27b1592-b5e75689411476c98957e7dab0242f50.r56.cf2.rackcdn.com/loopback-android-1.3.0-eclipse-bundle.zip" rel="nofollow">loopback-android-1.3.0-eclipse-bundle.zip</a>
+- See the <a href="http://docs.strongloop.com/display/LB/Android+SDK" rel="nofollow">Android SDK documentation</a>.
+- Install LoopBack with a <a href="http://strongloop.com/get-started/">simple npm command</a>
