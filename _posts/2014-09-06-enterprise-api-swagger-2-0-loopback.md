@@ -232,23 +232,12 @@ Please note in 1.2, the spec URL can be the resource listing or a specific API s
 
 With the Swagger generator, we&#8217;ve now completed a round trip of API creation:
 
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Start with a Swagger spec</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Generate corresponding models and methods for your application</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Implement the remote methods</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Play with the live APIs served by LoopBack using the explorer</span>
-</li>
+- Start with a Swagger spec
+- Generate corresponding models and methods for your application
+- Implement the remote methods
+- Play with the live APIs served by LoopBack using the explorer
 
-<h2 dir="ltr">
-  What’s next
-</h2>
+## What’s next
 
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
+- Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js LoopBack framework>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
 </li>
