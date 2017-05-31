@@ -71,6 +71,6 @@ Learn more in the documentation:
 - <a href="http://docs.strongloop.com/display/NODE/Using+multiple+package+registries">Using multiple package registries</a> 
 - <a href="http://docs.strongloop.com/display/SL/slc+registry">slc registry</a> command reference</span>
 
-## **[What’s next?](http://strongloop.com/get-started/)
+## What’s next?**
   
 - Ready to develop APIs in Node.js and get them connected to your data? Check out the LoopBack framework? We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.<
