@@ -434,27 +434,27 @@ II. We get a prompt to enter the data-source name, which can be anything custom.
 
 III. Now we can attach the backend datasource definition to the real connector supported by StrongLoop. Here we choose the MongoDB connector from the list.
 
-`[?]Select the connector for myMongo:<br />
-In-memory db (supported by StrongLoop)<br />
-IBM DB2 (supported by StrongLoop)<br />
-IBM DashDB (supported by StrongLoop)<br />
-IBM MQ Light (supported by StrongLoop)<br />
-IBM Cloudant DB (supported by StrongLoop)<br />
-IBM DB2 for z/OS (supported by StrongLoop)<br />
-❯ MongoDB (supported by StrongLoop)<br />
-MySQL (supported by StrongLoop)<br />
-PostgreSQL (supported by StrongLoop)<br />
-Oracle (supported by StrongLoop)<br />
-Microsoft SQL (supported by StrongLoop)<br />
-REST services (supported by StrongLoop)<br />
-SOAP webservices (supported by StrongLoop)<br />
-Couchbase (provided by community)<br />
-Neo4j (provided by community)<br />
-Kafka (provided by community)<br />
-SAP HANA (provided by community)<br />
-Email (supported by StrongLoop)<br />
-ElasticSearch (provided by community)<br />
-other<br />
+`[?]Select the connector for myMongo:
+In-memory db (supported by StrongLoop)
+IBM DB2 (supported by StrongLoop)
+IBM DashDB (supported by StrongLoop)
+IBM MQ Light (supported by StrongLoop)
+IBM Cloudant DB (supported by StrongLoop)
+IBM DB2 for z/OS (supported by StrongLoop)
+❯ MongoDB (supported by StrongLoop)
+MySQL (supported by StrongLoop)
+PostgreSQL (supported by StrongLoop)
+Oracle (supported by StrongLoop)
+Microsoft SQL (supported by StrongLoop)
+REST services (supported by StrongLoop)
+SOAP webservices (supported by StrongLoop)
+Couchbase (provided by community)
+Neo4j (provided by community)
+Kafka (provided by community)
+SAP HANA (provided by community)
+Email (supported by StrongLoop)
+ElasticSearch (provided by community)
+other
 ` 
 
 **Step 5: Pointing to the real datasource**
@@ -492,8 +492,8 @@ II. Once you have the data set downloaded, simply load it into your database usi
 
 III. You should see the following results:
 
-`connected to: 127.6.189.2:27017<br />
-Tue Jun 10 20:09:55.436 check 9 24<br />
+`connected to: 127.6.189.2:27017
+Tue Jun 10 20:09:55.436 check 9 24
 Tue Jun 10 20:09:55.437 imported 24 objects`
 
 **Step 7: Creating our Beer model**
@@ -510,21 +510,21 @@ III. The first thing that will be asked is the model name. Let’s call that “
 
 IV. It will prompt for the datasource this model should be attached to and we should select the myMongo datasource we just created.
 
-`[?] Enter the model name: beer<br />
-[?] Select the data-source to attach beer to:<br />
-db (memory)<br />
+`[?] Enter the model name: beer
+[?] Select the data-source to attach beer to:
+db (memory)
 ❯ myMongo (mongodb)`
 
 V. Next, cli prompts us for a model base class. Select `PersistedModel`.
   
-`[?] Select model's base class: (Use arrow keys)<br />
-Model<br />
-❯ PersistedModel<br />
-ACL<br />
-AccessToken<br />
-Application<br />
-Change<br />
-Checkpoint<br />
+`[?] Select model's base class: (Use arrow keys)
+Model
+❯ PersistedModel
+ACL
+AccessToken
+Application
+Change
+Checkpoint
 ` 
 
 VI. We then get prompted if this API should be exposed over REST. Of course we want to do that.
@@ -537,29 +537,29 @@ VI. Enter a web plural name for your model. Since our model is called `beer`, th
 
 VII. Next, define the properties of your model. For this sample application, we are interested in the name and description of the beer.
 
-`Enter an empty property name when done.<br />
+`Enter an empty property name when done.
 [?] Property name: name`
 
 IX. Once you hit enter, provide the data type for each property specified. Select string and press the enter key.
 
-`[?] Property type: (Use arrow keys)<br />
-❯ string<br />
-number<br />
-boolean<br />
-object<br />
-array<br />
-date<br />
-buffer<br />
-geopoint<br />
+`[?] Property type: (Use arrow keys)
+❯ string
+number
+boolean
+object
+array
+date
+buffer
+geopoint
 (other)`
 
 Follow steps VIII and IX above to create the description property.
 
-`Let's add another beer property.<br />
-Enter an empty property name when done.<br />
-[?] Property name: description<br />
-invoke loopback:property<br />
-[?] Property type: string<br />
+`Let's add another beer property.
+Enter an empty property name when done.
+[?] Property name: description
+invoke loopback:property
+[?] Property type: string
 [?] Required? Yes`
 
 Congratulations! you have just created your first model object using LoopBack in conjunction with Node. To see what was actually created under the covers, open up the `beer.json` file that is located in the `root/common/models` of your application directory. Scroll to the very bottom of the file and you will see the following model:
@@ -600,8 +600,8 @@ In the `/server/model-config.js` you will notice we also have some additional fi
 
 Congratulations! You have just created your first Node.js application that includes a REST web service for retrieving information about beer! The last thing we need to do is deploy the application. Fortunately, this is an easy task and can be performed with the following command, executed from your application&#8217;s root directory:
 
-`$ cd my-app-dir<br />
-$ node .<br />
+`$ cd my-app-dir
+$ node .
 ` 
 
 Once the application is running, verify that is working by going to the following URL with your web browser:
@@ -832,7 +832,6 @@ A quick table showing some of the comparisons discussed in this blog post is bel
   </table>
 </div>
 
-## 
 
 ## [**Develop APIs Visually with IBM API Connect**](https://console.ng.bluemix.net/docs/services/apiconnect/index.html)
 
