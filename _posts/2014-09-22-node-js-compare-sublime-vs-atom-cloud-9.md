@@ -144,21 +144,10 @@ In terms of features that come out of the box, Cloud 9 IDE easily takes the cake
 <img class="screenshot" src="http://npmawesome.com/wp-content/uploads/2014/09/cloud9-chromebook.jpg" alt="" width="100%" />
 
 ## Summary
-
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Sublime is my personal preference. It&#8217;s blazingly fast, relatively cheap and I can customize it to match my needs via limitless selection of plugins.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Atom is a free alternative to Sublime that comes pretty close to feature parity, but you pay the performance penalty here. If you aren&#8217;t working on giant multi-GB repositories, you will be just fine in most cases.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Cloud 9 IDE allows you take your web development terminal anywhere where there is internet and a decent browser. If you and a buddy working on a project together, I recommend looking at Cloud 9 IDE for its amazing collaborative features.</span>
-</li>
+- Sublime is my personal preference. It&#8217;s blazingly fast, relatively cheap and I can customize it to match my needs via limitless selection of plugins.
+- Atom is a free alternative to Sublime that comes pretty close to feature parity, but you pay the performance penalty here. If you aren&#8217;t working on giant multi-GB repositories, you will be just fine in most cases.
+- Cloud 9 IDE allows you take your web development terminal anywhere where there is internet and a decent browser. If you and a buddy working on a project together, I recommend looking at Cloud 9 IDE for its amazing collaborative features.
 
 ## What&#8217;s next?
 
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
-</li>
-
-&nbsp;
+- Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js LoopBack framework. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.
