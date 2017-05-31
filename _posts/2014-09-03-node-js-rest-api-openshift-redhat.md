@@ -11,51 +11,31 @@ categories:
   - LoopBack
 ---
 The world is moving toward the cloud—both public and private clouds—and infrastructure demands are giving rise to a new generation of integration platform-as-a-service (iPaaS) API servers which specifically handle this use case with the added dimension of cloud versus your own datacenter. Node.js is powering these new iPaaS products because it&#8217;s dynamic, highly scriptable, and high-performance. Node hits the sweet spot because it enables developers to glue together disparate pieces of legacy infrastructure and quickly surface an API for next-generation web and mobile applications. Ultimately, it promises to address the emerging requirements for the internet of things (IoT).
+<!--more-->
+## What is OpenShift?##
 
-## **What is OpenShift?**
-
-<p dir="ltr">
-  <img class="aligncenter size-full wp-image-19739" src="{{site.url}}/blog-assets/2014/09/Openshift.png" alt="Openshift" width="620" height="265"  />
-</p>
+<img class="aligncenter size-full wp-image-19739" src="{{site.url}}/blog-assets/2014/09/Openshift.png" alt="Openshift" width="620" height="265"  />
 
 OpenShift is one of the most popular PaaS (Platform as a Service) provider used by developers worldwide. OpenShift supports Node.js and StrongLoop API server platforms with default built in cartridges.
 
-## **StrongLoop API Server highlights**
+## StrongLoop API Server highlights## 
 
 For organizations looking to leverage OpenShift for their omni-channel API / ESB initiatives, StrongLoop’s API Server offers many advantages:
 
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">On-premise – take control of your BaaS  and run it in your datacenter or on your own cloud infrastructure </span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Powered by <a href="http://loopback.io/">LoopBack</a> – the leading, open source API framework project built 100% in Node.js </span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Built in mBaaS with <a href="http://docs.strongloop.com/display/LB/Push+notifications">Push</a> , <a href="http://docs.strongloop.com/display/LB/GeoPoint+class">Geopoint</a> , <a href="http://strongloop.com/node-js/mbaas/#social-login">Social Login</a>, <a href="http://strongloop.com/node-js/mbaas/#storage-service">Storage</a>, etc </span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;"><a href="http://docs.strongloop.com/display/LB/Synchronization">Offline sync</a> – isomorphic JavaScript front to back with conflict resolution and a variety of sync algorithms supported </span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;"><a href="http://docs.strongloop.com/display/LB/Synchronization">Replication</a> – client to server, server to client, app to app and database to database </span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;"><a href="http://strongloop.com/node-js/connectors/">Connectors</a> to interface and autodiscover new and existing datasources including RDBMS, NoSQL and proprietary backends </span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;"><a href="http://strongloop.com/node-js/controller/">Controller</a> to automate DevOps tasks like clustering, debugging, log management, build and deploy </span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;"><a href="http://strongloop.com/node-js/monitoring/">Monitoring</a> to provide deep application performance visibility and deep profiling in production </span>
-</li>
+- On-premise – take control of your BaaS  and run it in your datacenter or on your own cloud infrastructure. 
+- Powered by <a href="http://loopback.io/">LoopBack</a> – the leading, open source API framework project built 100% in Node.js .
+- Built in mBaaS with <a href="http://docs.strongloop.com/display/LB/Push+notifications">Push</a> , <a href="http://docs.strongloop.com/display/LB/GeoPoint+class">Geopoint</a> , <a href="http://strongloop.com/node-js/mbaas/#social-login">Social Login</a>, <a href="http://strongloop.com/node-js/mbaas/#storage-service">Storage</a>, etc. 
+- <a href="http://docs.strongloop.com/display/LB/Synchronization">Offline sync</a> – isomorphic JavaScript front to back with conflict resolution and a variety of sync algorithms supported.
+- <a href="http://docs.strongloop.com/display/LB/Synchronization">Replication</a> – client to server, server to client, app to app and database to database.
+- <a href="http://strongloop.com/node-js/connectors/">Connectors</a> to interface and autodiscover new and existing datasources including RDBMS, NoSQL and proprietary backends.
+- <a href="http://strongloop.com/node-js/controller/">Controller</a> to automate DevOps tasks like clustering, debugging, log management, build and deploy. 
+- <a href="http://strongloop.com/node-js/monitoring/">Monitoring</a> to provide deep application performance visibility and deep profiling in production. 
 
 Here’s how to get started with Openshift and StrongLoop in four simple steps&#8230;
 
-<!--more-->
+## Step 1: Create an OpenShift account##
 
-## **Step 1: Create an OpenShift account**
-
-Login at at [http://www.openshift.co](http://www.openshift.com/)m/ . Create an account if you don&#8217;t already have one.
+Login at at [http://www.openshift.co](http://www.openshift.com/)m/. Create an account if you don&#8217;t already have one.
 
 Ensure you have the latest version of the [client tools](https://www.openshift.com/get-started#cli). As part of this process, you&#8217;ll run the rhc setup command and choose a unique name (called a namespace) that becomes part of your public application URL.
 
@@ -75,7 +55,7 @@ $ gem update rhc
 
 Using your OpenShift login and password, run $ rhc setup to connect to OpenShift and create a unique namespace for your applications.
 
-## **Step 2: Create a Loopback API application**
+## Step 2: Create a Loopback API application##
 
 Create an application on OpenShift with the following command:
 
@@ -138,11 +118,13 @@ Clicking on the app name lets us see the provisioned specifications of the host 
   
 <img class="aligncenter size-full wp-image-19747" src="{{site.url}}/blog-assets/2014/09/Openshift_App_Detail.png" alt="Openshift_App_Detail" width="1600" height="705"  />
   
-Lets open a browser and type in the <app-URL>/explorer, which in our case would be <http://myapi-strongdemo.rhcloud.com/explorer>. Below we can see StrongLoop’s API explorer which provides an interface to visualize and test the out of box default APIs. As Loopback advocates and follows [Model driven development](http://strongloop.com/strongblog/node-js-api-tip-model-driven-development/), the User Model is created by default along with all the CRUD endpoints&#8230;
+Let's open a browser and type in the <app-URL>/explorer, which in our case would be <http://myapi-strongdemo.rhcloud.com/explorer>. 
+
+Below we can see StrongLoop’s API explorer which provides an interface to visualize and test the out of box default APIs. As Loopback advocates and follows [Model driven development](http://strongloop.com/strongblog/node-js-api-tip-model-driven-development/), the User Model is created by default along with all the CRUD endpoints&#8230;
   
 <img class="aligncenter size-full wp-image-19748" src="{{site.url}}/blog-assets/2014/09/BaseApp_Explorer.png" alt="BaseApp_Explorer" width="1324" height="1448"  />
 
-## **Step 3: Update the Loopback API**
+## Step 3: Update the Loopback API##
 
 Now let’s try to update this API application by adding some custom models and API endpoints.
 
@@ -248,7 +230,7 @@ We will also install the MongoDB connector module of LoopBack as that is a requi
 npm install loopback-connector-mongodb --save
 ```
 
-## **Step 4: Republish/update the deployment**
+## Step 4: Republish/update the deployment##
 
 Now let us try to publish this updated `myAPI` application to OpenShift. We will be using `git` commands as described below for doing that. We will initialize the project in git, add our new files and commit to the git repository
 
@@ -258,17 +240,14 @@ $ git add -A
 $ git commit -a -m "Initial Commit"
 ```
 
-<p dir="ltr">
-  To update the same project on OpenShift we need the Git URL. When we provisioned the app, we got the GitURL as :
-</p>
+To update the same project on OpenShift we need the Git URL. When we provisioned the app, we got the GitURL as :
 
 ```sh
 Git remote: ssh://5400b85c5004467ec9000337@myapi-strongdemo.rhcloud.com/~/git/myapi.git/
 ```
 
-<p dir="ltr">
-  In case we forget that we can extract the URL info  from the OpenShift console or by using the git command:
-</p>
+In case we forget that we can extract the URL info  from the OpenShift console or by using the git command:
+
 
 ```sh
 $ rhc app show myapi
@@ -290,18 +269,14 @@ myapi @ http://myapi-strongdemo.rhcloud.com/ (uuid: 5400b85c5004467ec9000337)
    Gears:   1 small
 ```
 
-<p dir="ltr">
-  To republish the app, we simply use the following commands:
-</p>
+To republish the app, we simply use the following commands:
 
 ```sh
 $ git remote add openshift ssh://5400b85c5004467ec9000337@myapi-strongdemo.rhcloud.com/~/git/myapi.git/
 $ git push --force openshift master
 ```
 
-<p dir="ltr">
-  We should get a successful status as below after a series of npm messages:
-</p>
+We should get a successful status as below after a series of npm messages:
 
 ```sh
 remote: Preparing build for deployment
@@ -315,37 +290,18 @@ To ssh://5400b85c5004467ec9000337@myapi-strongdemo.rhcloud.com/~/git/myapi.git/
   f69aa75..e58a549  master -> master
 ```
 
-<p dir="ltr">
-  We can now validate the updated myapi application on OpenShift cloud by refreshing the same API explorer URL and checking for the accounts model.
-</p>
+We can now validate the updated myapi application on OpenShift cloud by refreshing the same API explorer URL and checking for the accounts model.
 
 <img class="aligncenter size-full wp-image-19757" src="{{site.url}}/blog-assets/2014/09/Screen-Shot-2014-09-03-at-7.44.18-AM.png" alt="Screen Shot 2014-09-03 at 7.44.18 AM" width="1344" height="344"  />
 
-<p dir="ltr">
-  First off we can see the new Accounts model (pluralized) being added. Expanding that API, we can also see all the auto-provisioned API endpoints for CRUD operations on Accounts model.
-</p>
+First off we can see the new Accounts model (pluralized) being added. Expanding that API, we can also see all the auto-provisioned API endpoints for CRUD operations on Accounts model.
 
-<p dir="ltr">
-  <img class="aligncenter size-full wp-image-19758" src="{{site.url}}/blog-assets/2014/09/Screen-Shot-2014-09-03-at-7.44.37-AM.png" alt="Screen Shot 2014-09-03 at 7.44.37 AM" width="1382" height="946"  />
-</p>
+<img class="aligncenter size-full wp-image-19758" src="{{site.url}}/blog-assets/2014/09/Screen-Shot-2014-09-03-at-7.44.37-AM.png" alt="Screen Shot 2014-09-03 at 7.44.37 AM" width="1382" height="946"  />
 
-<p dir="ltr">
-  The endpoints can actually be tested and executed through this interface. Here we see a “Get” operation.
-</p>
+The endpoints can actually be tested and executed through this interface. Here we see a “Get” operation.
 
-<p dir="ltr">
-  <img class="aligncenter size-full wp-image-19759" src="{{site.url}}/blog-assets/2014/09/Screen-Shot-2014-09-03-at-7.44.57-AM.png" alt="Screen Shot 2014-09-03 at 7.44.57 AM" width="1376" height="1500"  />
-</p>
+<img class="aligncenter size-full wp-image-19759" src="{{site.url}}/blog-assets/2014/09/Screen-Shot-2014-09-03-at-7.44.57-AM.png" alt="Screen Shot 2014-09-03 at 7.44.57 AM" width="1376" height="1500"  />
 
-&nbsp;
-
-<h2 dir="ltr">
-  What’s next
-</h2>
-
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">In the first blog of this sequence, we got up and running with Loopback API framework and generated REST APIs within minutes on OpenShift PaaS. In the following blogs we will discuss more detailed use cases, frontend integration and DevOps features and capabilities of Node.js APIs on OpenShift.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
-</li>
+## What’s next?##
+- In the first blog of this sequence, we got up and running with Loopback API framework and generated REST APIs within minutes on OpenShift PaaS. In the following blogs we will discuss more detailed use cases, frontend integration and DevOps features and capabilities of Node.js APIs on OpenShift.</span>
+- Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js LoopBack framework. We’ve made it easy to 
