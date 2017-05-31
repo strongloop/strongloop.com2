@@ -391,17 +391,17 @@ The code for the web view of the application takes advantage of the longitude an
 
 To create this map, create a new file in the public directory named `locatewalmart.html` and add the following JavaScript code:
 
-```<!doctype html>
-<html lang="en">
-<head>
-  <title>Walmart Stores</title>
-  	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
-	<!--[if lte IE 8]>
-    	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
-	<![endif]-->
-	<script src="https://code.jquery.com/jquery-2.0.0.min.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=oswald' rel='stylesheet' type='text/css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />	<style type="text/css">
+```&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;title&gt;Walmart Stores&lt;/title&gt;
+  	&lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css&quot; /&gt;
+	&lt;!--[if lte IE 8]&gt;
+    	&lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css&quot; /&gt;
+	&lt;![endif]--&gt;
+	&lt;script src=&quot;https://code.jquery.com/jquery-2.0.0.min.js&quot;&gt;&lt;/script&gt;
+	&lt;link href='http://fonts.googleapis.com/css?family=oswald' rel='stylesheet' type='text/css'&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;	&lt;style type=&quot;text/css&quot;&gt;
 		body {
     		padding: 0;
 		    margin: 0;
@@ -416,25 +416,25 @@ To create this map, create a new file in the public directory named `locatewalma
 		}
 		#map { z-index: 1;}
 		#title { z-index: 2; position: absolute; left: 10px; }
-	</style>
+	&lt;/style&gt;
 
-</head>
-<body>
-	<h1 id="title">Walmart Stores</h1>
-	<div id="map"></div>
-	<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
-	<script>
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1 id=&quot;title&quot;&gt;Walmart Stores&lt;/h1&gt;
+	&lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+	&lt;script src=&quot;http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js&quot;&gt;&lt;/script&gt;
+	&lt;script&gt;
 		center = new L.LatLng(39.83, -98.58);
 		zoom = 5;
 		var map = L.map('map').setView(center, zoom);
 		var markerLayerGroup = L.layerGroup().addTo(map);
 		L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			maxZoom: 18,
-			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+			attribution: 'Map data &amp;copy; &lt;a href=&quot;http://openstreetmap.org&quot;&gt;OpenStreetMap&lt;/a&gt; contributors, &lt;a href=&quot;http://creativecommons.org/licenses/by-sa/2.0/&quot;&gt;CC-BY-SA&lt;/a&gt;'
 		}).addTo(map);
 		function getPins(e){
-			url = "http://0.0.0.0:3000/api/stores";
-			$.get(url, pinTheMap, "json")
+			url = &quot;http://0.0.0.0:3000/api/stores&quot;;
+			$.get(url, pinTheMap, &quot;json&quot;)
 		}
 		function pinTheMap(data){
 			//clear the current pins
@@ -442,18 +442,18 @@ To create this map, create a new file in the public directory named `locatewalma
 			//add the new pins
 			var markerArray = [];
 			var lastNumber = 0;
-			for (var i = 0; i < data.length; i++){
+			for (var i = 0; i &lt; data.length; i++){
 				store = data[i];
-				if(store.latitude.length > 0 && store.longitude.length>0) {
+				if(store.latitude.length &gt; 0 &amp;&amp; store.longitude.length&gt;0) {
 					markerArray.push(L.marker([store.latitude, store.longitude]));
 				}		
 			}
 			markerLayerGroup = L.layerGroup(markerArray).addTo(map);
 		}
 		map.whenReady(getPins)
-	</script>
-</body>
-</html>
+	&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 ```
 
 As you can see, the code is just standard HTML and JavaScript. The interesting part is the getPins(e) function where we make a REST call to the API that we created previously in this blog post. We then iterate over each store and create a pin given the latitude and longitude of each store. Pretty nifty, huh?
