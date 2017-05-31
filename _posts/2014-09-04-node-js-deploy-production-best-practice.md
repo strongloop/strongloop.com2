@@ -14,12 +14,10 @@ One of the struggles developers face when moving to Node.js is the lack of best 
 While best practices for Node application deployment are starting to develop, tool support for these practices are still poor, and get worse the further you get from developer workstations. StrongLoop’s customers regularly ask for recommendations on how they should deploy, and until now we haven’t had good answers for them when it comes to tool supported workflows.
 
 There are tools out there, but they are often not composable, are incomplete, or we just don’t agree with how they do things. In this blog, I will talk about what problems these tools solve, why some existing solutions do not work well, and the modular tooling StrongLoop is creating to solve these problems. In particular, we’ve released [`strong-build`](http://docs.strongloop.com/display/NODE/slc+build), to package your application for deployment, and [`strong-deploy`](http://docs.strongloop.com/display/NODE/slc+deploy) to push your application packages to [`strong-pm`](http://strong-pm.io/), the process manager that will manage your deployed applications.
-
+<!--more-->
 All wrapped within [`slc`](http://docs.strongloop.com/display/NODE/Command-line+reference), the one ring to rule them – a command-line controller from StrongLoop.
 
-<!--more-->
-
-## **Build your dependencies into your deployable packages**
+## Build your dependencies into your deployable packages##
 
 Why, the package.json already describes all an app’s dependencies, right? Yes, but while it is perfect for use on development branches, it should not be used at deploy time.
 
@@ -45,7 +43,7 @@ git log --stat --decorate deploy # to see what was committed to deploy
 tar -tf ../appname-appversion.tgz # to see what was packed, if app is not using git
 ```
 
-## **Be able to push deploys**
+## Be able to push deploys##
 
 You want to push deploys when you decide your new app version is deployable, or perhaps have it automatically pushed to staging by your CI tools.
 
@@ -55,7 +53,7 @@ And you want to push either git branches, or npm packages, as appropriate for yo
 
 `slc deploy` does all of the above, pushing your app to the strongloop process manager. If using git, it can also push to 3rdparty platforms, though in this case its just a thin wrapper around \`git push remote deploy:master\`.
 
-## **Deploy and run your app inside a supervisor/manager**
+## Deploy and run your app inside a supervisor/manager##
 
 When running an app in deployment (as opposed to development), there are a number of features you want: restart on failure, logging, start/stop/restart (hard and soft), deploying new application versions with zero-downtime upgrade, clustering, profiling and performance monitoring, etc. You can build all those features into your app, including a way to disable them during development, since they often make development more difficult. And you can do it again and again, for every app you build… or you can use a supervisor/manager.
 
@@ -89,27 +87,12 @@ Give it a try! You don’t have to install it, it can be run manually on your de
     # or
     slc deploy http:// ../appname-appversion.tgz # if using npm packages
 
-## **Use composable tools**
+## Use composable tools##
 
 Note that all the tools described here (`slc build, slc deploy, slc pm/slc pm-install`) can be composed in multiple ways. You don’t **have** to use all our tooling for the entire workflow, but they do compose well. For example, if you are deploying to Heroku or OpenShift, you should use `slc build`, and perhaps `strong-deploy`’s `git push` capability, but you wouldn’t need the process manager. Similarly, if you already have a build process that commits your build products into git or creates a deployable package with the dependencies built into it, you don’t have to replace it with `slc build`, you can still use `slc deploy` and the process manager.
 
 For more information check out the [strong-pm project page](http://strong-pm.io/).
 
-## **What’s Next?**
+## What’s Next?##
 
 **Watch the demo!** Check out this [short video](https://www.youtube.com/watch?v=OPQRfkaH_tE&t=3s){.mfp-iframe.lightbox-added} that gives you an overview of the StrongLoop Process Manager.
-
-**Sign up for the webinar!** [“Best Practices for Deploying Node.js Applications in Production”](http://marketing.strongloop.com/acton/form/5334/0039:d-0002/0/index.htm) on April 16 with StrongLoop and Node core developer [Sam Roberts](https://github.com/sam-github).
-
-In the coming weeks, look for more enhancements to the StrongLoop Process Manager and its runtime capabilities. But for now, here’s a few additional technical articles that dive into greater detail on how to make the most of this release:
-
-  * [Best Practices for Deploying Node in Production](https://strongloop.com/strongblog/node-js-deploy-production-best-practice/)
-  * [How to Test Node.js Deployments Locally Using StrongLoop Process Manager](https://strongloop.com/strongblog/test-node-js-deployments-locally-using-process-manager/)
-  * [How to Run StrongLoop Process Manager in Production](https://strongloop.com/strongblog/node-js-process-manager-production/)
-  * [How to Secure StrongLoop Process Manager with SSH](https://strongloop.com/strongblog/secure-node-js-process-manager-ssh/)
-  * [Best Practices for Deploying Express Apps with StrongLoop Process Manager](https://strongloop.com/strongblog/best-practices-express-js-process-manager/)
-  * [How to Create and Run StrongLoop Process Manager Docker Images](https://strongloop.com/strongblog/run-create-node-js-process-manager-docker-images/)
-
-&nbsp;
-
-&nbsp;
