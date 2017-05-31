@@ -20,24 +20,19 @@ One of the widely used features of the <a href="http://expressjs.com/" rel="nor
 
 Before explaining the drawbacks of the Express view rendering engine, let’s take a quick look at how to utilize this feature. The first thing you must do is configure your Express app using code similar to the following:
 
-<div>
-  ```js
+```js
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-```js
-</div>
-
+```
 The first lines tell Express to search for all templates within a single “views” directory. The second line enables the “jade” view engine for loading Jade templates found in the views directory.
 
 Once configured, you can render a view from your page controller using the `res.render(viewName, viewModel)` method as shown in the following code:
 
-<div>
-  ```js
+```js
 app.get('/', function (req, res) {
   res.render('index', { title: 'Hey', message: 'Hello there!'});
 })
-```js
-</div>
+```
 
 Internally, Express resolves the view name to a template file path, renders the template using the associated template engine, writes the resulting output to the response and then finally ends the response.
 
@@ -78,19 +73,16 @@ Not all configuration is bad, but unnecessary configuration is bad. Also, a cent
 
 While Express describes itself as a framework, it is actually quite easy to bypass the Express view rendering engine. This allows developers to create applications that are more flexible, easier to understand and better performing. An important thing to know when using Express is that the `res`object is actually a writable HTTP response stream (although it is heavily monkey-patched by Express). Therefore, you can write directly to the response if you choose:
 
-<div>
-  ```js
+```js
 app.get('/', function (req, res) {
     res.write('Hello Frank');
     res.end();
 });
-```js
-</div>
+```
 
 If you want to render a Jade template to the HTTP response you could do the following:
 
-<div>
-  ```js
+```js
 var templatePath = require.resolve('./template.jade');
 var templateFn = require('jade').compileFile(templatePath);
 
@@ -98,8 +90,7 @@ app.get('/', function (req, res) {
     res.write(templateFn({name: 'Frank'});
     res.end();
 });
-```js
-</div>
+```
 
 That solution is a little more verbose than just using `res.render()`, but it is very straightforward and provides extra flexibility.
 
@@ -107,31 +98,27 @@ _NOTE:_ You will notice that we are using <a href="http://nodejs.org/api/globa
 
 If your templating engine supports writing to a stream then the code is even simpler. For example, the <a href="https://github.com/raptorjs/marko" rel="noreferrer">Marko</a> templating engine supports writing to a stream as shown in the following code:
 
-<div>
-  ```js
+```js
 var templatePath = require.resolve('./template.marko');
 var template = require('marko').load(templatePath);
 
 app.get('/', function (req, res) {
     template.render({name: 'Frank'}, res);
 });
-```js
-</div>
+```
 
 ## <a href="https://gist.github.com/patrick-steele-idem/37c1fd35a7a23336a52e#view-resolver" rel="noreferrer" name="user-content-view-resolver"></a>_View Resolver_
 
 If you feel that your application would benefit from a view resolver (maybe you want to use a different template for A/B testing or have the template vary by the user&#8217;s locale) then there is a clean solution for that as well. The following hypothetical code illustrates how a view resolver could be used independent of Express to resolve a view template given a name and some context (in this case, the request and the current directory):
 
-<div>
-  ```js
+```js
 var myViewResolver = require('my-view-resolver');
 
 app.get('/', function (req, res) {
     var template = myViewResolver.resolve('hello', req, __dirname);
     template.render({name: 'Frank'}, res);
 });
-```js
-</div>
+```
 
 Using an explicit view resolver makes code easier to understand and also provides greater flexibility.
 
