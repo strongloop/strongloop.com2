@@ -231,7 +231,6 @@ When I run that in one terminal and run my app in another terminal, telling stro
 ```
 
 ## Recap##
-  </h2>
   
 - Our app uses a simple wrapper around console.log to add levels.
 - We kept our log messages to single lines.
