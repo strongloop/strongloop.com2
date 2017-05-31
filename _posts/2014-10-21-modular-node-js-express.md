@@ -180,16 +180,9 @@ If you are itching to see a full running example, I have [an Express project up 
   Another technique for making components first class is setting the NODE_PATH environment variable to be the path of the <em>lib</em> directory. I find using symlinks preferable through as you never have to set the path when executing any file or starting your app and it allows you to have a component and an npm package with the same name. For example, I can have a customized <code>_/redis</code> module which depends on the <code>redis</code> npm package. <a class="reversefootnote" title="return to article" href="#footref3"> ↩</a>
 </li>
 <li id="footnote4">
-  Setting up other scripts is trivial. For updating, just change <code>npm.commands.install</code> to <code>npm.commands.update</code>. Want to check if anything is outdated, just switch it to <code>npm.commands.outdated</code>. See <a href="https://www.npmjs.org/doc/api/npm.html">npm api</a> for more details. <a class="reversefootnote" title="return to article" href="#footref4"> ↩</a></fn></footnotes> <h2>
-    <a href="http://strongloop.com/get-started/"><strong>What’s next?</strong></a>
-  </h2>
-  
-  <ul>
-    <li style="margin-left: 2em;">
-      <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
-    </li>
-  </ul>
-  
-  <p>
-    &nbsp;
-  </p>
+  Setting up other scripts is trivial. For updating, just change <code>npm.commands.install</code> to <code>npm.commands.update</code>. Want to check if anything is outdated, just switch it to <code>npm.commands.outdated</code>. See <a href="https://www.npmjs.org/doc/api/npm.html">npm api</a> for more details. <a class="reversefootnote" title="return to article" href="#footref4"> ↩</a> 
+   
+## What’s next?
+
+- Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js LoopBack framework. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
+   
