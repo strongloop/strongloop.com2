@@ -10,9 +10,9 @@ categories:
 
 The StrongLoop and IBM team are going to be at [Developer Week New York](http://www.developerweek.com/NYC/). The event, described as New York City’s largest developer conference and expo, runs from June 19-21.
 
-{% include image.html file='developer week ny.png' alt='Develoepr Week NY' %}
+{% include image.html file='developer week ny.png' alt='Developer Week NY' %}
 <!--more-->
-Visit us at the IBM booth. The StrongLoop team (including Developer Evangelist [Erin McKean](https://twitter.com/emckean)) will be sharing stickers and providing info on: 
+Visit us at the IBM booth. The StrongLoop team will be there, and Developer Evangelist [Joe Sepi](https://twitter.com/joe_sepi) will be sharing leading two discussions: 
 
 - [The LoopBack developer journey](https://developer.ibm.com/code/journeys/unlock-enterprise-data-using-apis/), featuring OpenWhisk and other journeys.
 - Our [LoopBack in 5 minutes](http://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/) demo.
