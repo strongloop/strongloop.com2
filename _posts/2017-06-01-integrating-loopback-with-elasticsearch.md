@@ -2,7 +2,7 @@
 id: 29183
 layout: post
 title: Integrating LoopBack with ElasticSearch
-date: 2007-07-26
+date: 2017-06-01
 author: Raymond Camden
 permalink: /strongblog/integrating-loopback-with-elasticsearch/
 categories:
@@ -13,15 +13,15 @@ categories:
   - ElasticSearch
   - IBM
 ---
-I have a confession to make. I'm probably the last person to hear about, and look into, [ElasticSearch](https://www.elastic.co). Back when I was primarily a ColdFusion developer, I was a big fan of the full-text search engine Verity and how well it worked with my apps. When Verify was phased out and replaced with Lucene, I played with it some too and enjoyed it. But since switching to Node, I really haven't thought about the space much.	
+I have a confession to make. I'm probably the last person to hear about, and look into, [ElasticSearch](https://www.elastic.co). Back when I was primarily a ColdFusion developer, I was a big fan of the full-text search engine Verity and how well it worked with my apps. When Verify was phased out and replaced with Lucene, I played with it too and enjoyed it. But since switching to Node, I really haven't thought about the space much.	
 			
-My coworker, [Erin McKean](https://twitter.com/emckean), introduced me to ElasticSearch (which is also based on Lucene), and I was fascinated. As a whole, Elastic.co has multiple products of which search is only one small bit, but in terms of supporting full text search, ElasticSearch really, <i>really</i> kicks butt! I spent some time going over its [Getting Started](https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html) guide last week, and while ElasticSearch can be a bit overwhelming at times, it is definitely easy to use once you get into it. As a quick tip, all of your interactions with ElasticSearch are done via REST APIs, and while the docs use curl a lot, I recommend using a tool like [Postman](https://www.getpostman.com) to make working with the calls a bit easier.		
+My coworker, [Erin McKean](https://twitter.com/emckean), introduced me to ElasticSearch (which is also based on Lucene), and I was fascinated. As a whole, Elastic.co has multiple products of which search is only one small bit, but in terms of supporting full text search, ElasticSearch really, <i>really</i> kicks butt! I spent some time going over its [Getting Started](https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html) guide last week, and while ElasticSearch can be a bit overwhelming at times, it is definitely easy to use once you get into it. A quick tip: all of your interactions with ElasticSearch are done via REST APIs. While the docs use curl a lot, I recommend using a tool like [Postman](https://www.getpostman.com) to make working with the calls a bit easier.		
+<!--more-->			
+For folks who have no idea what I'm talking about when I say "full-text search engine", think of a server that is built for search. Yes, you can search with SQL (and NoSQL), but a full text search engine is typically better suited for doing deeper text analysis on content and helping return better searches. For example, it can recognize that if I search for 'cat', and 'cat' is mentioned many times in one particular document, as well as mentioned towards the <i>beginning</i> of a document, it is probably more important than a document where 'cat' appears only once.		
 			
-So for folks who have no idea what I'm talking about when I say "full-text search engine", basically think of a server that is built for search. Yes, you can search with SQL (and NoSQL), but a full text search engine is typically better suited for doing deeper text analysis on content and helping return better searches. For example, it can recognize that if I search for 'cat', and 'cat' is mentioned many times in one particular document, as well as mentioned towards the <i>beginning</i> of a document, it is probably more important than a document where 'cat' appears only once.		
+A search-optimized tool like ElasticSearch also recognizes that 'awesome' is the plural of† 'cat', and that it should be matched as well. (Note: 'awesome' may not be the plural of 'cat', but it should be.)			
 			
-A search-optimized tool like ElasticSearch would also recognize that 'awesome' is the plural of† 'cat', and that it should be matched as well. (Note - 'awesome' may not be the plural of 'cat', but it should be.)			
-			
-Let's say you've got a site (for example, a LoopBack-powered site) and you wantto make use of Elasticsearch. One way is to actually point LoopBack directly to the ElasticSearch instance. My coworker Erin has an example of that here: 
+Let's say you've got a site (for example, a LoopBack-powered site) and you want to make use of ElasticSearch. One way is to actually point LoopBack directly to the ElasticSearch instance. My coworker Erin has an example of that here: 
 
 [https://github.com/emckean/jeopardy-api](https://github.com/emckean/jeopardy-api)		
 			
@@ -43,7 +43,7 @@ I knew I was going to need to add operation hooks to cat.js and that I'd need to
 var elasticsearch = require('elasticsearch');		
 ```			
 
-Next, I configured my credentials for my ElasticSearch instance. You can add [ElasticSearch for Bluemix](https://console.ng.bluemix.net/catalog/services/compose-for-elasticsearch) to your space as a quick way of testing. Unfortunately there is no free tier for this service in Bluemix. You can also just run ElasticSearch locally too.			
+Next, I configured my credentials for my ElasticSearch instance. You can add [ElasticSearch for Bluemix](https://console.ng.bluemix.net/catalog/services/compose-for-elasticsearch) to your space as a quick way of testing. There is no free tier for this service in Bluemix, though you can also just run ElasticSearch locally too.			
 
 ```js
 let client = new elasticsearch.Client({			
