@@ -1,21 +1,20 @@
 ---
-title: Join StrongLoop and IBM at Develoepr Week
+title: Join StrongLoop at Develoepr Week
 date: 2017-07-31
 author: Dave Whiteley
-permalink: /strongblog/join-strongloop-ibm-cloud-foundry-2017/
 categories:
   - Community
   - Events
 ---
 
-The StrongLoop and IBM team are going to be at [Developer Week New York](http://www.developerweek.com/NYC/). The event, described as New York City’s largest developer conference and expo, runs from June 19-21.
+The StrongLoop team are going to be at [Developer Week New York](http://www.developerweek.com/NYC/). The event, described as New York City’s largest developer conference and expo, runs from June 19-21.
 
 {% include image.html file='developer week ny.png' alt='Developer Week NY' %}
 <!--more-->
-Visit us at the IBM booth. The StrongLoop team will be there, and Developer Evangelist [Joe Sepi](https://twitter.com/joe_sepi) will be sharing leading two discussions: 
+Visit us at our booth to talk and the StrongLoop team. Developer Evangelist [Joe Sepi](https://twitter.com/joe_sepi) will be sharing leading two discussions: 
 
-- [The LoopBack developer journey](https://developer.ibm.com/code/journeys/unlock-enterprise-data-using-apis/), featuring OpenWhisk and other journeys.
-- Our [LoopBack in 5 minutes](http://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/) demo.
+- Building Serverless Applications on the Apache OpenWhisk Platform
+- An API-First Approach to Take Over the World
 
 In addition to the booth, IBM will host a "Node Meetup" on June 12th, from 7:30-9:00PM to kick-off the Cloud Foundry Summit. Expect lightning talks and a networking social with food and beverages. 
 
