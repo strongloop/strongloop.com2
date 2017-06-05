@@ -11,12 +11,10 @@ The StrongLoop team are going to be at [Developer Week New York](http://www.deve
 
 {% include image.html file='developer week ny.png' alt='Developer Week NY' %}
 <!--more-->
-Visit us at our booth to talk and the StrongLoop team. Developer Evangelist [Joe Sepi](https://twitter.com/joe_sepi) will be sharing leading two discussions: 
+Visit us at our booth to talk and the StrongLoop team. Developer Evangelist [Joe Sepi](https://twitter.com/joe_sepi) will be attending the event, as well as leading two discussions: 
 
 - Building Serverless Applications on the Apache OpenWhisk Platform
 - An API-First Approach to Take Over the World
-
-In addition to the booth, IBM will host a "Node Meetup" on June 12th, from 7:30-9:00PM to kick-off the Cloud Foundry Summit. Expect lightning talks and a networking social with food and beverages. 
 
 ### Register Today!
 
