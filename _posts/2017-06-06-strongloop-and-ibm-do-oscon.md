@@ -1,4 +1,4 @@
-## 
+---
 layout: post
 title: Strongloop and IBM Do OSCON
 date: 2017-06-06
