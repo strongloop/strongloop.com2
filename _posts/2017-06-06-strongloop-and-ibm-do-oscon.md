@@ -1,4 +1,13 @@
-## Strongloop and IBM do OSCON
+## 
+layout: post
+title: Strongloop and IBM Do OSCON
+date: 2017-06-06
+author: David Okun
+permalink: /strongblog/strongloop-and-ibm-do-oscon/
+categories:
+  - Community
+  - Events
+---
 
 Everything is bigger in Texas, and O'Reilly's Open Source Convention 2017 was certainly no exception this year! Set right in the heart of Austin, Texas, OSCON was a meeting of some of the most powerful minds in software development, and as you would expect from Austin's food scene, there was plenty of meat on the bone to digest.
 
