@@ -13,7 +13,7 @@ categories:
   - ElasticSearch
   - IBM
 ---
-I have a confession to make. I'm probably the last person to hear about, and look into, [ElasticSearch](https://www.elastic.co). Back when I was primarily a ColdFusion developer, I was a big fan of the full-text search engine Verity and how well it worked with my apps. When Verify was phased out and replaced with Lucene, I played with it too and enjoyed it. But since switching to Node, I really haven't thought about the space much.	
+I have a confession to make. I'm probably the last person to hear about, and look into, [ElasticSearch](https://www.elastic.co). Back when I was primarily a ColdFusion developer, I was a big fan of the full-text search engine Verity and how well it worked with my apps. When Verity was phased out and replaced with Lucene, I played with it too and enjoyed it. But since switching to Node, I really haven't thought about the space much.	
 			
 My coworker, [Erin McKean](https://twitter.com/emckean), introduced me to ElasticSearch (which is also based on Lucene), and I was fascinated. As a whole, Elastic.co has multiple products of which search is only one small bit, but in terms of supporting full text search, ElasticSearch really, <i>really</i> kicks butt! I spent some time going over its [Getting Started](https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html) guide last week, and while ElasticSearch can be a bit overwhelming at times, it is definitely easy to use once you get into it. A quick tip: all of your interactions with ElasticSearch are done via REST APIs. While the docs use curl a lot, I recommend using a tool like [Postman](https://www.getpostman.com) to make working with the calls a bit easier.		
 <!--more-->			
