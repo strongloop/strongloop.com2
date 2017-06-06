@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Strongloop and IBM Do OSCON
-date: 2017-06-06T06:00:15+00:00
+date: 2017-06-06
 author: David Okun
 permalink: /strongblog/strongloop-and-ibm-do-oscon/
 categories:
@@ -15,7 +15,7 @@ When I went to IBM's Interconnect a couple of months ago, I noted that people we
 <!--more-->
 > It was really exciting to see so many of the tech-savvy OSCON attendees flocking to our booth. Many came to play with the HTC Vive with Watson, a clear crowd-winner, but stayed to learn about our other tech.
 
-Interestingly enough, with so much work and focus on the cloud and what people are deploying to it, there was one thing that seemed to catch onlookers' attention more than most - [OpenWhisk](https://developer.ibm.com/openwhisk/). Our team has been working really hard to show a bunch of different demos (such as ([LoopBack as a service using OpenWhisk](https://strongloop.com/strongblog/loopback-as-a-service-using-openwhisk/), [making powerful APIs with OpenWhisk, Open API Spec, and API COnnect](https://strongloop.com/strongblog/webinar-combining-open-whisk-serverless-openapi-swagger-and-api-connect-to-build-powerful-apis/), and [three webcasts in June](https://strongloop.com/strongblog/three-new-webcasts-for-june-loopback-openwhisk/)), but it was interesting to really see how Serverless technology is really taking the cloud computing world by storm. I primarily come from a [mobile](https://strongloop.com/strongblog/introducing-david-okun-strongloop-developer-evangelist/) development world, so seeing how easy and simple it is to basically deploy a function as a service is really invigorating. The attendees of OSCON largely agreed, as Sai also noticed:
+Interestingly enough, with so much work and focus on the cloud and what people are deploying to it, there was one thing that seemed to catch onlookers' attention more than most - [OpenWhisk](https://developer.ibm.com/openwhisk/). Our team has been working really hard to show a bunch of different demos (such as [LoopBack as a service using OpenWhisk](https://strongloop.com/strongblog/loopback-as-a-service-using-openwhisk/), [making powerful APIs with OpenWhisk, Open API Spec, and API Connect](https://strongloop.com/strongblog/webinar-combining-open-whisk-serverless-openapi-swagger-and-api-connect-to-build-powerful-apis/), and [three webcasts in June](https://strongloop.com/strongblog/three-new-webcasts-for-june-loopback-openwhisk/)), but it was interesting to really see how Serverless technology is really taking the cloud computing world by storm. I primarily come from a [mobile](https://strongloop.com/strongblog/introducing-david-okun-strongloop-developer-evangelist/) development world, so seeing how easy and simple it is to basically deploy a function as a service is really invigorating. The attendees of OSCON largely agreed, as Sai also noticed:
 
 > Being at an open-source convention, attendees were glad to hear that IBM is working on serverless technology as an open-source project. The real kicker was when they saw how easy it was to start creating serverless functions right away!
 
