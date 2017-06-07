@@ -1,5 +1,5 @@
 ---
-title: Join StrongLoop at Develoepr Week
+title: Join StrongLoop at Developer Week New York
 date: 2017-07-31
 author: Dave Whiteley
 categories:
@@ -23,4 +23,4 @@ Register and learn more about the speakers, schedule and hackathon [here](http:/
 ### What's Next?
 
 - Find out about other conferences, webinars, meetups, and events that the StrongLoop team are attending or supporting on our [events page](https://strongloop.com/events/).
-- Develop your own APIs with these [Open Source projects](https://strongloop.com/projects/)
+- Develop your own APIs with these [Open Source projects](https://strongloop.com/projects/).
