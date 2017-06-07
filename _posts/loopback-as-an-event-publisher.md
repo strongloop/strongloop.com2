@@ -1,11 +1,10 @@
 ---
-id: 29305
+layout: post
 title: LoopBack As An Event Publisher
 date: 2017-06-05T05:55:00+00:00
 author:  
 - Subramanian Krishnan
 - Nagarjuna Surabathina
-guid: https://strongloop.com/?p=29305
 permalink: /strongblog/loopback-as-an-event-publisher/
 categories:
   - How-To
@@ -33,7 +32,7 @@ Fundamentally, the architected solution should have the following components:
 
 The diagram below shows end to end view of the solution.
 
-<img class="aligncenter wp-image-29404" src="https://github.com/Nagarjuna-S/strongloop.com/blob/patch-1/blog-assets/2017/04/EventPublisher.png" alt="LoopBack As An Event Publisher" width="600" height="331" />
+<img class="aligncenter wp-image-29404" src="{{site.url}}/blog-assets/2017/04/EventPublisher.png" alt="LoopBack As An Event Publisher" width="600" height="331" />
 
 Let us now look at each piece of the solution in greater detail.
 
@@ -268,7 +267,7 @@ accounts /*The event model active*/
 
 5. Login to Cloudant and create a new document in accounts collection.
 
-<img class="aligncenter wp-image-29404" src="https://github.com/Nagarjuna-S/strongloop.com/blob/patch-1/blog-assets/2017/04/CloudAntRecord.png" alt="Cloudant new record" width="600" height="331" />
+<img class="aligncenter wp-image-29404" src="{{site.url}}/blog-assets/2017/04/CloudAntRecord.png" alt="Cloudant new record" width="600" height="331" />
 
 6. The Connector and LoopBack app logs show that a new event is detected:
 ```javascript
