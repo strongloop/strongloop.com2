@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack As An Event Publisher
-date: 2017-06-05T05:55:00+00:00
+date: 2017-07-31T05:55:00+00:00
 author:  
 - Subramanian Krishnan
 - Nagarjuna Surabathina
@@ -16,7 +16,7 @@ Most people who have used LoopBack know that it is a highly-extensible, open-sou
 
 These REST APIs can be used by client applications (Web/Mobile/IoT/Other) to perform CRUD + Custom operations on any 3rd party application for which there is a LoopBack connector. Irrespective of the nature of the APIs/Client libraries exposed by the 3rd party application, the client has standard, simple and runtime agnostic REST APIs to perform actions on the application. That is the value proposition of LoopBack.
 
-Now let us consider the other side of the story where an event occurs in a 3rd party application (ex. a record got created/updated/deleted). Different applications may expose these events through different mechanisms (Webhooks, Streaming, Polling API, Websockets, PubSub, PubSubHubbub, other). If client applications want to consume these events in a standard, simple and runtime agnostic way, is that possible with LoopBack? Further can we use the same LoopBack programming constructs of datasources, models and connectors for the events side of the story?
+Now let's consider the other side of the story: where an event occurs in a 3rd party application (ex. a record got created / updated / deleted). Different applications may expose these events through different mechanisms (Webhooks, Streaming, Polling API, Websockets, PubSub, PubSubHubbub, other). But what if client applications want to consume these events in a standard, simple and runtime agnostic way? Is that possible with LoopBack? Can we use the same LoopBack programming constructs of datasources, models and connectors for the events side of the story?
 
 It turns out that with a little work, it can be done and this post shows how. 
 
@@ -34,7 +34,7 @@ The diagram below shows end to end view of the solution.
 
 <img class="aligncenter wp-image-29404" src="{{site.url}}/blog-assets/2017/04/EventPublisher.png" alt="LoopBack As An Event Publisher" width="600" height="331" />
 
-Let us now look at each piece of the solution in greater detail.
+Let's look at each piece of the solution in greater detail.
 
 ## 1. Event Connector
 
@@ -208,7 +208,7 @@ if (require.main === module) {
 
 ## 3. Message Broker
 
-For demonstration purpose we have run a MQTT broker ([mosquitto](https://mosquitto.org/)) on the localhost at port 1883.
+For demonstration purposes, we have run a MQTT broker ([mosquitto](https://mosquitto.org/)) on the localhost at port 1883.
 
 ## 4. Client App
 
@@ -240,17 +240,20 @@ $ mosquitto -p 1883
 ```
 
 2. Start the client app
+
 ```bash
 $ node client.js
 created consumer.....
 ```
 
 Note: To make things more interesting we start another non Node.js consumer listening to the same topic.
+
 ```bash
 $ mosquitto_sub -h localhost  -p 1883 -t /v1/subutest
 ```
 
 3. Checking the broker logs shows that 2 clients have connected to it:
+
 ```bash
 1493572839: New connection from 127.0.0.1 on port 1883.
 1493572839: New client connected from 127.0.0.1 as mqttjs_8dfcc98e (c1, k10).
@@ -259,6 +262,7 @@ $ mosquitto_sub -h localhost  -p 1883 -t /v1/subutest
 ```
 
 4. Run the Event Publisher LoopBack app
+
 ```bash
 $ node server.js
 Web server listening at: http://:::51192/
@@ -270,6 +274,7 @@ accounts /*The event model active*/
 <img class="aligncenter wp-image-29404" src="{{site.url}}/blog-assets/2017/04/CloudAntRecord.png" alt="Cloudant new record" width="600" height="331" />
 
 6. The Connector and LoopBack app logs show that a new event is detected:
+
 ```javascript
 { _id: '26dd638e8462387f03f2f6f25e4e6926',
   _rev: '1-08fb96a08261081dcd24b7a1629c8cde',
@@ -286,17 +291,20 @@ accounts /*The event model active*/
 ```
 
 7. Broker logs show that a new client (publisher) connected:
+
 ```bash
 1493573959: New connection from 127.0.0.1 on port 1883.
 1493573959: New client connected from 127.0.0.1 as mqttjs_e1b485ee (c1, k10).
 ```
 
 8. The Node.js client app logs show that a message is received with the new account details:
+
 ```bash
 /v1/subutest {"model":"accounts","message":{"_id":"26dd638e8462387f03f2f6f25e4e6926","_rev":"1-08fb96a08261081dcd24b7a1629c8cde","name":"James Bond","type":"Demo","region":"Bangalore"}}
 ````
 
 9. The mosquitto subscriber also receives the same message:
+
 ```javascript
 {"model":"accounts","message":{"_id":"26dd638e8462387f03f2f6f25e4e6926","_rev":"1-08fb96a08261081dcd24b7a1629c8cde","name":"James Bond","type":"Demo","region":"Bangalore"}}
 ```
@@ -309,4 +317,4 @@ This proves that LoopBack can be seamlessly extended for the events side of the 
 
   * Consistent - Same conceptual and programming model (datasources and models) as for the CRUD side.
 
-
+## What's next?##
