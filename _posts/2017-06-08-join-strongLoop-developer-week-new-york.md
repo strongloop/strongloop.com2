@@ -11,7 +11,7 @@ The StrongLoop team is heading to [DeveloperWeek New York](http://www.developerw
 
 {% include image.html file='developer week ny.png' alt='Developer Week NY' %}
 <!--more-->
-Visit us at our booth to talk and the StrongLoop team about your API or app development. Developer Evangelist [Joe Sepi](https://strongloop.com/strongblog/my-friends-call-me-joe-sepi-and-you-can-too/) will be attending the event, as well as leading two discussions: 
+StrongLoop is proud to be one of the event sponsors. Visit us at our booth to talk and the StrongLoop team about your API or app development. Developer Evangelist [Joe Sepi](https://strongloop.com/strongblog/my-friends-call-me-joe-sepi-and-you-can-too/) will be attending the event, as well as leading two discussions: 
 
 - Building Serverless Applications on the Apache OpenWhisk Platform
 - An API-First Approach to Take Over the World
