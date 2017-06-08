@@ -1,17 +1,17 @@
 ---
 title: Join StrongLoop at Developer Week New York
-date: 2017-07-31
+date: 2017-06-08T06:00:15+00:00
 author: Dave Whiteley
 categories:
   - Community
   - Events
 ---
 
-The StrongLoop team are going to be at [Developer Week New York](http://www.developerweek.com/NYC/). The event, described as New York City’s largest developer conference and expo, runs from June 19-21.
+The StrongLoop team are heading to [Developer Week New York](http://www.developerweek.com/NYC/). The event, described as New York City’s largest developer conference and expo, runs from June 19-21.
 
 {% include image.html file='developer week ny.png' alt='Developer Week NY' %}
 <!--more-->
-Visit us at our booth to talk and the StrongLoop team. Developer Evangelist [Joe Sepi](https://strongloop.com/strongblog/my-friends-call-me-joe-sepi-and-you-can-too/) will be attending the event, as well as leading two discussions: 
+Visit us at our booth to talk and the StrongLoop team about your API or app development. Developer Evangelist [Joe Sepi](https://strongloop.com/strongblog/my-friends-call-me-joe-sepi-and-you-can-too/) will be attending the event, as well as leading two discussions: 
 
 - Building Serverless Applications on the Apache OpenWhisk Platform
 - An API-First Approach to Take Over the World
