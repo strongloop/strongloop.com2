@@ -7,7 +7,7 @@ categories:
   - Events
 ---
 
-The StrongLoop team are heading to [Developer Week New York](http://www.developerweek.com/NYC/). The event, described as New York City’s largest developer conference and expo, runs from June 19-21.
+The StrongLoop team is heading to [Developer Week New York](http://www.developerweek.com/NYC/). The event, described as New York City’s largest developer conference and expo, runs from June 19-21.
 
 {% include image.html file='developer week ny.png' alt='Developer Week NY' %}
 <!--more-->
