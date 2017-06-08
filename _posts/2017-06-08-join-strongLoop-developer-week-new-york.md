@@ -1,5 +1,5 @@
 ---
-title: Join StrongLoop at Developer Week New York
+title: Join StrongLoop at DeveloperWeek New York
 date: 2017-06-08T06:00:15+00:00
 author: Dave Whiteley
 categories:
@@ -7,7 +7,7 @@ categories:
   - Events
 ---
 
-The StrongLoop team is heading to [Developer Week New York](http://www.developerweek.com/NYC/). The event, described as New York City’s largest developer conference and expo, runs from June 19-21.
+The StrongLoop team is heading to [DeveloperWeek New York](http://www.developerweek.com/NYC/). The event, described as New York City’s largest developer conference and expo, runs from June 19-21.
 
 {% include image.html file='developer week ny.png' alt='Developer Week NY' %}
 <!--more-->
@@ -18,7 +18,7 @@ Visit us at our booth to talk and the StrongLoop team about your API or app deve
 
 ### Register Today!
 
-Register and learn more about the speakers, schedule and hackathon [here](http://www.developerweek.com/NYC/). 
+Register for DeveloperWeek NY and learn more about the speakers, schedule and hackathon [here](http://www.developerweek.com/NYC/). 
 
 ### What's Next?
 
