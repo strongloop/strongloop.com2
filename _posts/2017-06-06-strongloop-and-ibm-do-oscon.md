@@ -25,4 +25,4 @@ OSCON is returning back to Portland next year in April 2018, and we'll hopefully
 
 ## What's Next?
 
-If you haven't seen, LoopBack can help you get an API up and running in 5 minutes! [Here's](https://www.youtube.com/watch?v=pFPMFcPNgKA&t=59s) how.
+OSCON is returning back to Portland next year in April 2018, and we'll hopefully be there too to see what's going on in the exciting world of containerization and API Management, as we continue our contributions to Loopback. If you haven't seen, Loopback can help you get an API up and running in 5 minutes - [here's](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/) how.
