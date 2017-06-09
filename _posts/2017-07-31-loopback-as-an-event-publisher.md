@@ -317,4 +317,6 @@ This proves that LoopBack can be seamlessly extended for the events side of the 
 
   * Consistent - Same conceptual and programming model (datasources and models) as for the CRUD side.
 
-## What's next?##
+## What's next? ##
+
+- Read about planned changes to [LoopBack](https://strongloop.com/strongblog/announcing-loopback-next/).
