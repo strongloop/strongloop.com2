@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using LoopBack to Build and Open Source XtraPoints with The SilverLogic
-date: 2017-06-13
+date: 2017-07-13
 author: David Okun
 permalink: /strongblog/loopback-and-xtra-points/
 categories:
