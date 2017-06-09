@@ -18,7 +18,7 @@ Visit us at the IBM booth. The StrongLoop team (including Developer Evangelist [
 - [The LoopBack developer journey](https://developer.ibm.com/code/journeys/unlock-enterprise-data-using-apis/), featuring OpenWhisk and other journeys.
 - Our [LoopBack in 5 minutes](http://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/) demo.
 
-In addition to the booth, IBM will host a "Node Meetup" on June 12th, from 7:30-9:00PM to kick-off the Cloud Foundry Summit. Expect lightning talks and a networking social with food and beverages. 
+In addition to the booth, IBM will host a "Node Meetup" on June 12th, from 7:30-9:00PM to kick-off the Cloud Foundry Summit. Expect lightning talks and a networking social with food and beverages. Find out more [here](https://www.eventbrite.com/e/slay-the-dragons-of-a-monolith-with-nodejs-microservices-tickets-35058740637).
 
 Finally, IBM is hosting the Node.js sessions track, which will feature great speakers and learning opportunities.
 
