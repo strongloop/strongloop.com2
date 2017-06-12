@@ -54,7 +54,7 @@ This team included Tommy Inouye, Sean Inouye, Edward Donovan and Shuyang Sun.
 
 ### WINNER - BEST USE OF LOOPBACK
 
-The winner for best use of LoopBack (based on LoopBack usage tracked wit ha scorecard) was inspired by bringing friends and food together and determining what to eat tonight, especially when you are paralyzed by choice.
+The winner for best use of LoopBack (based on LoopBack usage tracked with a scorecard) was inspired by bringing friends and food together and determining what to eat tonight, especially when you are paralyzed by choice.
 
 > Too much freedom?! We'll take the pressure away from choosing.
 
