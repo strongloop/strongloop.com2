@@ -10,13 +10,13 @@ categories:
   - Community
 ---
 
-The StrongLoop team has been working with Mobile Monday for events for some time now. Recently, though, we combined forces to host a hackathon at Galvanize NYC from June 2-4th, 2017. Developer Evangelist [Joe Sepi](https://strongloop.com/strongblog/my-friends-call-me-joe-sepi-and-you-can-too/) was on hand to provide an overview of LoopBack as well as support and encouragement.
+The StrongLoop team has been working with [Mobile Monday](http://mobilemonday.us) for events for some time now. Recently, though, we combined forces to host a hackathon at [Galvanize NYC](https://www.galvanize.com/new-york/campus) from June 2-4th, 2017. Developer Evangelist [Joe Sepi](https://strongloop.com/strongblog/my-friends-call-me-joe-sepi-and-you-can-too/) was on hand to provide an overview of LoopBack as well as support and encouragement.
 
 Not familiar with Mobile Monday? Here's how they describe themselves: 
 
 > MobileMonday is the premiere community for the Mobile and Connected Industry. It is an open community platform fostering industry cooperation through events that educate, demo products, share ideas and discuss industry trends. 
 <!--more-->
-The hackathon was open to solo entrants or teams made up of beginners, pro hackers, and everyone in between. Participants were set to hack with Watson, StrongLoop's LoopBack, and Bluemix.
+The hackathon was open to solo entrants or teams made up of beginners, pro hackers, and everyone in between. Participants were set to hack with [Watson](https://www.ibm.com/watson/), StrongLoop's [LoopBack](http://loopback.io/), and [Bluemix](https://www.ibm.com/cloud-computing/bluemix/what-is-bluemix).
 
 Here's a list of the winners, including best use of LoopBack.
 
@@ -54,13 +54,13 @@ This team included Tommy Inouye, Sean Inouye, Edward Donovan and Shuyang Sun.
 
 ### WINNER - BEST USE OF LOOPBACK
 
-The prize for best use of LoopBack was inspired by bringing friends and food together and determining what to eat tonight, especially when you are paralyzed by choice.
+The winner for best use of LoopBack (based on LoopBack usage tracked wit ha scorecard) was inspired by bringing friends and food together and determining what to eat tonight, especially when you are paralyzed by choice.
 
 > Too much freedom?! We'll take the pressure away from choosing.
 
 {% include image.html file='loopback prize.png' alt='Best Use of LoopBack Winners' %}
 
-Congratulations to Richard Kuo, La-Keisha Towner and Roman Levytskyy for their creative use of LoopBack. 
+Congratulations to Richard Kuo, La-Keisha Towner and Roman Levytskyy for their creative use of LoopBack. Each team member was awarded a [TJ Bot](https://ibmtjbot.github.io/). 
 
 ## What's next?
 
