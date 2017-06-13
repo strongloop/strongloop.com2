@@ -12,7 +12,7 @@ categories:
   - Cloud
 ---
 
-Most people who have used LoopBack know that it is a highly-extensible, open-source Node.js framework that enables you to quickly create dynamic end-to-end REST APIs with little or no coding.
+Most people who have used [LoopBack](http://loopback.io/) know that it is a highly-extensible, open-source Node.js framework that enables you to quickly create dynamic end-to-end REST APIs with little or no coding.
 
 These REST APIs can be used by client applications (Web/Mobile/IoT/Other) to perform CRUD + Custom operations on any 3rd party application for which there is a LoopBack connector. Irrespective of the nature of the APIs/Client libraries exposed by the 3rd party application, the client has standard, simple and runtime agnostic REST APIs to perform actions on the application. That is the value proposition of LoopBack.
 
