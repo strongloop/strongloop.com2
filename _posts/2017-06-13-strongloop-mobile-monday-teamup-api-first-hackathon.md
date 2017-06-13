@@ -1,7 +1,7 @@
 ---
 layout: post
 title: StrongLoop and Mobile Monday Team Up for API-First Hackathon
-date: 2017-06-13
+date: 2017-06-13T06:00:15+00:00
 author: David Whiteley
 permalink: /strongblog/strongloop-mobile-monday-teamup-api-first-hackathon/
 categories:
