@@ -1,7 +1,7 @@
 ---
 layout: post
 title: StrongLoop and Mobile Monday Team Up for API-First Hackathon
-date: 2017-06-30
+date: 2017-06-13
 author: David Whiteley
 permalink: /strongblog/strongloop-mobile-monday-teamup-api-first-hackathon/
 categories:
@@ -52,7 +52,7 @@ The third prize went to "Smart Bitly", dubbed as "Bitly But Smarter".
 
 This team included Tommy Inouye, Sean Inouye, Edward Donovan and Shuyang Sun. 
 
-### WINNER - BEST USE OF LOOPBACK
+### WINNER - BEST USE OF LOOPBACK - TJ BOT
 
 The winner for best use of LoopBack (based on LoopBack usage tracked with a scorecard) was inspired by bringing friends and food together and determining what to eat tonight, especially when you are paralyzed by choice.
 
@@ -63,6 +63,8 @@ The winner for best use of LoopBack (based on LoopBack usage tracked with a scor
 Congratulations to Richard Kuo, La-Keisha Towner and Roman Levytskyy for their creative use of LoopBack. Each team member was awarded a [TJ Bot](https://ibmtjbot.github.io/). 
 
 ## What's next?
+
+Loopback can help you get an API up and running in 5 minutes! [Here’s how](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/).
 
 
 
