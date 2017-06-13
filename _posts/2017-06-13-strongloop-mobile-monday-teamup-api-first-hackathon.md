@@ -26,7 +26,7 @@ The team that won the grand prize created Medibot, "an Interactive search interf
 
 > Evidence-based medicine (EBM) is an approach to medical practice intended to optimize decision-making by emphasizing the use of evidence from well-designed and well-conducted research. A medical professional generally depends on articles published in medical journals for this evidence.  Thousands of article are being published every day. which makes it very hard for the health care professional to find relevant info.
 
-{% include image.html file='grand prize.png' alt='Grand Prize Winners' %}
+{% include image.html file='2017/grand prize.png' alt='Grand Prize Winners' %}
 
 Congratulations to the team, composed of Akshay Kumar Vikram, Vishnu Pillai, and Gladys Um.
 
@@ -36,7 +36,7 @@ Second place went to "Watchu-Wantson", created to solve a familiar challenge:
 
 > A common struggle for all is to think of gift or date ideas. With our app, we got your back. Finding a gift for someone can often times be hard, and many people end up resorting to giving impersonal gifts like gift-cards. With our app, Watson will study a person through his/her social media, utilizing its Personality Insights service, and suggest a gift for you to get.
 
-{% include image.html file='second prize.png' alt='Second Prize Winners' %}
+{% include image.html file='2017/second prize.png' alt='Second Prize Winners' %}
 
 Kudos to team members Harmit Minhas, Prasanth Venigalla, Jai Punjwani and Sarthak Arora.
 
@@ -48,7 +48,7 @@ The third prize went to "Smart Bitly", dubbed as "Bitly But Smarter".
 
 > On top of maintaining links, we parse through the content and use Watson's cloud services to accurately translate and rebuild the content in a cohesive fashion. Unlike Google Translate services that blindly go through the webpage and tries to translate every sentence it sees, our service takes a more logical approach and more accurately translates our content.
 
-{% include image.html file='third prize.png' alt='Third Prize Winners' %}
+{% include image.html file='2017/third prize.png' alt='Third Prize Winners' %}
 
 This team included Tommy Inouye, Sean Inouye, Edward Donovan and Shuyang Sun. 
 
@@ -58,7 +58,7 @@ The winner for best use of LoopBack (based on LoopBack usage tracked with a scor
 
 > Too much freedom?! We'll take the pressure away from choosing.
 
-{% include image.html file='loopback prize.png' alt='Best Use of LoopBack Winners' %}
+{% include image.html file='2017/loopback prize.png' alt='Best Use of LoopBack Winners' %}
 
 Congratulations to Richard Kuo, La-Keisha Towner and Roman Levytskyy for their creative use of LoopBack. Each team member was awarded a [TJ Bot](https://ibmtjbot.github.io/). 
 
