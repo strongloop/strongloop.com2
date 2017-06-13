@@ -19,17 +19,9 @@ categories:
   LoopBack provides two ways to synchronize model definitions with table schemas:
 </p>
 
-<li dir="ltr">
-  <p dir="ltr">
-    Auto-migrate: Automatically create or re-create the table schemas based on the model definitions. WARNING: An existing table will be dropped if its name matches the model name.
-  </p>
-</li>
+- Auto-migrate: Automatically create or re-create the table schemas based on the model definitions. WARNING: An existing table will be dropped if its name matches the model name.
+- Auto-update: Automatically alter the table schemas based on the model definitions.
 
-<li dir="ltr">
-  <p dir="ltr">
-    Auto-update: Automatically alter the table schemas based on the model definitions.
-  </p>
-</li>
 
 <h3 dir="ltr">
   Auto-migration
@@ -94,23 +86,9 @@ ds.automigrate(function () {
   This creates the following objects in the Oracle database:
 </p>
 
-<li dir="ltr">
-  <p dir="ltr">
-    A table CUSTOMER_TEST.
-  </p>
-</li>
-
-<li dir="ltr">
-  <p dir="ltr">
-    A sequence CUSTOMER_TEST_ID_SEQUENCE for keeping sequential IDs.
-  </p>
-</li>
-
-<li dir="ltr">
-  <p dir="ltr">
-    A trigger CUSTOMER_ID_TRIGGER that sets values for the primary key.
-  </p>
-</li>
+- A table CUSTOMER_TEST.
+- A sequence CUSTOMER_TEST_ID_SEQUENCE for keeping sequential IDs.
+- A trigger CUSTOMER_ID_TRIGGER that sets values for the primary key.
 
 <p dir="ltr">
   Now we decide to make some changes to the model. Here is the second version:
@@ -306,21 +284,15 @@ ds.autoupdate(schema_v2.name, function (err, result) {
 </h2>
 
 <li dir="ltr">
-  <p dir="ltr">
     <a href="https://github.com/strongloop/loopback-recipes">https://github.com/strongloop/loopback-sample-recipes</a>
-  </p>
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
     <a href="http://wiki.strongloop.com/display/DOC/LoopBack">http://wiki.strongloop.com/display/DOC/LoopBack</a>
-  </p>
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
     <a href="http://wiki.strongloop.com/display/DOC/Oracle+connector">http://wiki.strongloop.com/display/DOC/Oracle+connector</a>
-  </p>
 </li>
 
 ## **[What’s next?](http://strongloop.com/get-started/)**

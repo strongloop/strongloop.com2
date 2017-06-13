@@ -21,9 +21,9 @@ As we saw previously where we created an inventory of awesome dogs (code availa
 
 _Remote hooks_ enable you to take this customization a step further. In short, remote hooks are functions attached to every Loopback model where you can inject application logic at three different points when a remote method is called:
 
-  * \`PersistedModel.beforeRemote()\`: Invoked before the remote method is executed.
-  * \`PersistedModel.afterRemote()\`: Invoked after the remote method is executed.
-  * \`PersistedModel.afterRemoteError()\`: Invoked after the remote method throws an `Error` object. Also called if `beforeRemote()` or `afterRemote()` pass an `Error` object to `next()`.
+  * `PersistedModel.beforeRemote()`: Invoked before the remote method is executed.
+  * `PersistedModel.afterRemote()`: Invoked after the remote method is executed.
+  * `PersistedModel.afterRemoteError()`: Invoked after the remote method throws an `Error` object. Also called if `beforeRemote()` or `afterRemote()` pass an `Error` object to `next()`.
 
 ### Aren&#8217;t Remote Hooks Redundant?
 
@@ -33,10 +33,10 @@ The first answer is that it’s good to apply logic to API endpoints in phases. 
 
 The second answer is that not all remote methods are custom. Loopback has a bunch of built-in remote methods, including ones for every CRUD (create, read, update, and delete) operation. Just to make things clearer, here&#8217;s a quick rundown of the basic HTTP CRUD verbs mapped to the built-in remote methods they use under the covers (full docs on these is available in the [Loopback API docs](http://apidocs.strongloop.com/loopback/#persistedmodel)):
 
-  * GET: \`PersistedModel.find()\`, \`PersistedModel.findOne()\`, \`PersistedModel.findById()\`
-  * POST: \`PersistedModel.create()\`
-  * PUT: \`PersistedModel.updateAll()\`, \`PersistedModel.upsert()\`
-  * DELETE: \`PersistedModel.destroyAll()\`, \`PersistedModel.destroyById()\`
+  * GET: `PersistedModel.find()`, `PersistedModel.findOne()`, `PersistedModel.findById()`
+  * POST: `PersistedModel.create()`
+  * PUT: `PersistedModel.updateAll()`, `PersistedModel.upsert()\`
+  * DELETE: `PersistedModel.destroyAll()`, `PersistedModel.destroyById()`
 
 So, as much as I would like to say Loopback uses magic to query your SQL and NoSQL databases, it is sadly not so. And the thing is, you shouldn&#8217;t alter these functions. Bad Things might happen because they&#8217;re used extensively within Loopback. Instead, add that customization you&#8217;ve been craving with remote hooks!
 
@@ -78,7 +78,7 @@ In this code, we&#8217;re injecting our custom logic before any call to the `cre
 
 There are a couple unfamiliar things worth stopping to mention here: `context` and `next()`.
 
-  * The `<a href="https://docs.strongloop.com/display/public/LB/Remote+hooks#Remotehooks-Contextobject">context</a>` object is passed by Loopback into every remote hook. In the case of `beforeRemote()` it contains the API request object (`context.req`), and in the case of `afterRemote()` and `afterRemoteError()` it contains the response object that will be returned by the API (`context.result`).
+  * The <a href="https://docs.strongloop.com/display/public/LB/Remote+hooks#Remotehooks-Contextobject">context</a> object is passed by Loopback into every remote hook. In the case of `beforeRemote()` it contains the API request object (`context.req`), and in the case of `afterRemote()` and `afterRemoteError()` it contains the response object that will be returned by the API (`context.result`).
   * The `next()` function is called when we are ready to proceed to the next phase of the remote method, in this case executing the `create()` remote method. Express users will recognize this as telling our Express-based API to continue to the next function in the [middleware](http://expressjs.com/en/guide/using-middleware.html) chain.
 
 ### Error Handling in `afterRemoteError()`

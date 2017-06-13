@@ -47,7 +47,7 @@ Today we are pleased to announce a new tool that makes registry switching as eas
   <strong>slc registry quickstart</strong>
 </h2>
 
-1. Update your slc tool
+1 . Update your slc tool
 
 `$ slc update`
 
@@ -57,29 +57,31 @@ or install it from the public npmjs.org registry
 
 &nbsp;
 
-2. Add a new configuration entry for your private registry
+2 . Add a new configuration entry for your private registry
 
 `$ slc registry add private <a href="http://your.registry.url/">http://your.registry.url/</a>`
 
 You will be presented with a simple wizard where you can customize related configuration options:
 
-`Adding a new configuration "private"` [?] Registry URL: (http://your.registry.url/)</p> [?] HTTP proxy:</p> [?] HTTPS proxy:</p> [?] Email: (miroslav@strongloop.com)</p> [?] Always authenticate? (Y/n)</p> [?] Check validity of server SSL certificates? (Y/n)</p> 
+`Adding a new configuration "private"` [?] Registry URL: (http://your.registry.url/)
+[?] HTTP proxy:
+[?] HTTPS proxy:
+[?] Email: (miroslav@strongloop.com)
+[?] Always authenticate? (Y/n)
+[?] Check validity of server SSL certificates? (Y/n)
 
 `Configuration "private" was created.`
 
 ``Run `slc registry use "private"` to let the npm client use this registry.`` 
 
-&nbsp;
-
-3. Switch your npm client to use the private registry:
+3 . Switch your npm client to use the private registry:
 
 `$ slc registry use private`
 
 `Using the registry "private" (<a href="http://your.registry.url/">http://your.registry.url/</a>).`
 
-&nbsp;
 
-4. Switching back to the public npmjs.org registry is easy too:
+4 . Switching back to the public npmjs.org registry is easy too:
 
 `$ slc registry use default`
 

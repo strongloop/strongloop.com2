@@ -133,23 +133,15 @@ server.listen(port);
   Note: the openssl version shipped in Mac OS X is ancient and does not play well with the version used by node. You should upgrade your openssl before you perform the following test, e.g. by installing a recent version using homebrew.
 </p>
 
-<li dir="ltr">
-  <p dir="ltr">
-    Check the openssl version to make sure we have at least 1.0.
-  </p>
-  
-  ```js
+<li dir="ltr"><p dir="ltr">Check the openssl version to make sure we have at least 1.0. </p>
+</li>
+```js
 $ openssl version
 OpenSSL 1.0.1e 11 Feb 2013
 ```
+<li dir="ltr"><p dir="ltr">Open few connections reusing the same session via TLS. Terminate the test by pressing Ctrl+C.</p>
 </li>
-
-<li dir="ltr">
-  <p dir="ltr">
-    Open few connections reusing the same session via TLS. Terminate the test by pressing Ctrl+C.
-  </p>
-  
-  ```js
+ ```js
 $ openssl s_client  -reconnect -port 3000 2>&1 
 | grep "^(New|Reused)"
 New, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
@@ -160,14 +152,9 @@ Reused, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
 Reused, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
 ^C
 ```
+<li dir="ltr"><p dir="ltr">Repeat the same test but with TLS session tickets extension disabled.</p> 
 </li>
-
-<li dir="ltr">
-  <p dir="ltr">
-    Repeat the same test but with TLS session tickets extension disabled.
-  </p>
-  
-  ```js
+```js
 $ openssl s_client  -reconnect -port 3000 2>&1 -no_ticket 
 | grep "^(New|Reused)"
 New, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
@@ -178,8 +165,6 @@ Reused, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
 Reused, TLSv1/SSLv3, Cipher is AES256-GCM-SHA384
 ^C
 ```
-</li>
-
 ## **What’s next?**
 
 <li style="margin-left: 2em;">

@@ -58,8 +58,7 @@ In addition to the functional programming concepts we enjoy in synchronous progr
 `Q(value)` helps us start promise chains. If no `value` is provided, a promise is returned fulfilled to `undefined`. We&#8217;ll call this an &#8220;empty&#8221; promise. If a `value` is provided, a promise is returned fulfilled to that value:
 
 ```js
-<code class="js">Q('monkeys').then(console.log) // will log 'monkeys'
-</code>
+Q('monkeys').then(console.log) // will log 'monkeys'
 ```
 
 > `Q()` also converts promises from other libraries, but we won&#8217;t be using that here.

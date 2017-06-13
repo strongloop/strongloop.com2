@@ -31,9 +31,9 @@ With this in place, you&#8217;re ready to run on Heroku— you don&#8217;t even 
 
 ## **Why Koa?**
 
-Do a search and you&#8217;ll find that most of the focus is on Koa&#8217;s use of generators, a feature that&#8217;s a part of the upcoming ECMAScript 6 specification. However, there are two other key features; cascading middleware and sane error handling. Getting a superficial awareness of how Koa uses generators will help in understanding its other features.<!--more-->
+Do a search and you&#8217;ll find that most of the focus is on Koa&#8217;s use of generators, a feature that&#8217;s a part of the upcoming ECMAScript 6 specification. However, there are two other key features; cascading middleware and sane error handling. Getting a superficial awareness of how Koa uses generators will help in understanding its other features.
 
-## **yielding to ***
+## Yielding to 
 
 Koa is built on [co](https://github.com/visionmedia/co), which handles the delegation to generators and gives Koa its nice syntax. You can read about generators, co-routines, and the [differences between them](https://medium.com/code-adventures/174f1fe66127) if you&#8217;re curious.
 

@@ -239,5 +239,4 @@ With the Swagger generator, we&#8217;ve now completed a round trip of API creati
 
 ## What’s next
 
-- Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js LoopBack framework>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
-</li>
+- Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js LoopBack framework>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.

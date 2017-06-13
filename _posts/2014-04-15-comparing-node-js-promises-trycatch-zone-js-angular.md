@@ -297,6 +297,3 @@ Want to learn more about Zones? Stay tuned for more information in the coming we
   * Need performance monitoring, profiling and cluster capabilites for your Node apps? Check out [StrongOps](https://web.archive.org/web/20150207114217/http://strongloop.com/node-js-performance/strongops/)!
 
 <img class="aligncenter" src="https://web.archive.org/web/20150207114217im_/http://lh3.googleusercontent.com/YEOX6zIZUkK1sOQso5H1xeFDnAho4ZlTEC6dJW_X-kAqRc6Y2n_o1cOViTRj0s1Mloq0IHToJqXugT8BFcxtHoZKeMU9Woe4lVXMvi6OCBnM5kAT1qGWFRNZS4F8j5ylrQ" alt="profit" width="498px;" height="210px;" />
-
-<div class="addtoany_share_save_container">
-</div></div> </div> </div>

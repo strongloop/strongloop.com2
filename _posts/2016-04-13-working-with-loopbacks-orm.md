@@ -87,7 +87,7 @@ router.get('/', function(req,res) {
 As you can see, to get everything, you can simply call the `find` method on your model. Sorting is also pretty simple: `{order:'name asc'}`. Nice and simple. In case you're curious, here is the view I used to list out both sets of data. Yes, I used tables and I'm proud of that.
 
 {% raw %}
-```js
+```html
 <h1>Products</h1>
 
 <table border="1">

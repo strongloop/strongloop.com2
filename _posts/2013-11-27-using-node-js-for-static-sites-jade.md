@@ -30,7 +30,7 @@ The first time I saw <a href="http://haml.info/" target="_blank">HAML</a> I roll
 
 Jade is like HTML without the HTML; no arrow brackets, no closing tags. id attributes become #, classes just need a ., and a div is assumed unless you specify a different element. So this:
 
-```js
+```html
 <div class="container">
   <ul id="my-list" class="bucket-list pull-right">
     <li>
@@ -141,7 +141,7 @@ each el in navElements
 
 In line 2 we’re using the ternery operator to set a variable liClass to either &#8216;active&#8217; or an empty string. When Jade renders that variable into the class of the li, if it finds an empty string it will just drop the class attribute. So we end up with:
 
-```js
+```html
 <ul>
   <li class="active">
     <a href="#">about</a>

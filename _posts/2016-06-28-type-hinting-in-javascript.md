@@ -114,7 +114,7 @@ So far you&#8217;ve seen how to install and consume types for Node and third pa
   2. The comments are human-readable, so they can be useful even if you&#8217;re reading the code on github or in a simple text editor.
   3. The syntax is similar to [Javadoc](http://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html) and fairly intuitive.
 
-JSDoc supports [many annotations](http://usejsdoc.org/index.html#block-tags), but you can get a long way just by learning a few, namely `<a href="http://usejsdoc.org/tags-param.html">@param</a>` and `<a href="http://usejsdoc.org/tags-returns.html">@return</a>`. Let&#8217;s annotate this simple function, which checks whether one string contains another string:
+JSDoc supports [many annotations](http://usejsdoc.org/index.html#block-tags), but you can get a long way just by learning a few, namely <a href="http://usejsdoc.org/tags-param.html">@param</a> and <a href="http://usejsdoc.org/tags-returns.html">@return</a>. Let&#8217;s annotate this simple function, which checks whether one string contains another string:
 
 ```js
 function contains(input, search){

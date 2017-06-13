@@ -31,47 +31,20 @@ categories:
   If you are a mobile developer looking to develop applications that need access to data that resides in the cloud and the datacenter, there’s quite a few advantages to running your own private mBaaS in the cloud:
 </p>
 
-<li dir="ltr">
-  <p dir="ltr">
-    LoopBack is open source and extensible at its core and with the over <a href="https://npmjs.org/">41,000</a> available NPM community modules, the possibilities are almost limitless
-  </p>
-</li>
+- LoopBack is open source and extensible at its core and with the over <a href="https://npmjs.org/">41,000</a> available NPM community modules, the possibilities are almost limitless
 
-<li dir="ltr">
-  <p dir="ltr">
-    LoopBack is built on Node.js, so if you know JavaScript you know LoopBack
-  </p>
-</li>
+- LoopBack is built on Node.js, so if you know JavaScript you know LoopBack
 
-<li dir="ltr">
-  <p dir="ltr">
-    Out-of-the-box, LoopBack connects to enterprise datasources like Oracle and MongoDB
-  </p>
-</li>
+- Out-of-the-box, LoopBack connects to enterprise datasources like Oracle and MongoDB
 
-<li dir="ltr">
-  <p dir="ltr">
-    LoopBack ships with an iOS SDK, so you won’t have to compromise on functionality or inherit a steep learning curve
-  </p>
-</li>
+- LoopBack ships with an iOS SDK, so you won’t have to compromise on functionality or inherit a steep learning curve
 
-<li dir="ltr">
-  <p dir="ltr">
-    Cloud Foundry lets you focus on your app not machines or middleware
-  </p>
-</li>
+- Cloud Foundry lets you focus on your app not machines or middleware
 
-<li dir="ltr">
-  <p dir="ltr">
-    Cloud Foundry manages the patching, load balancing and availability of your backend
-  </p>
-</li>
+- Cloud Foundry manages the patching, load balancing and availability of your backend
 
-<li dir="ltr">
-  <p dir="ltr">
-    If your app needs it (and let’s hope it does!), Cloud Foundry auto-scales on demand to make sure whether you are servicing one or tens of thousands of users &#8211; everyone is guaranteed to have a stellar user experience
-  </p>
-</li>
+- If your app needs it (and let’s hope it does!), Cloud Foundry auto-scales on demand to make sure whether you are servicing one or tens of thousands of users &#8211; everyone is guaranteed to have a stellar user experience
+
 
 ## **<span style="color: black;">Configuring for Cloud Foundry and StrongLoop </span>**
 
@@ -97,9 +70,7 @@ categories:
   3. configuring your target ( you will need cf target, I&#8217;m using pivotal  <a href="https://console.run.pivotal.io/register" rel="noreferrer">https://console.run.pivotal.io/register</a>  for this demo)
 </p>
 
-<p dir="ltr">
-  $cf target api.run.pivotal.io cf login <email> <password>
-</p>
+`$cf target api.run.pivotal.io cf login <email> <password>`
 
 <p dir="ltr">
   More information on <a href="http://docs.cloudfoundry.com/docs/using/deploying-apps/javascript/">Deploying Node.js Applications on CF</a>
@@ -113,11 +84,12 @@ Build your LoopBack mBaaS on your local developer machine and push it to a Cloud
   1.Create and Prepare your StrongLoop LoopBack Node application on your local machine
 </p>
 
- `$mkdir CloudFoundryApp<br />
-$cd CloudFoundryApp<br />
-$slc lb api-example<br />
-$cd sls-sample-app<br />
-$slc install`
+```js 
+$mkdir CloudFoundryApp$cd CloudFoundryApp
+$slc lb api-example
+$cd sls-sample-app
+$slc install
+```
 
 <p dir="ltr">
   2. Verify your LoopBack Mobile API tier is up and running by hitting the API explorer page on your local machine at <a href="http://localhost:3000/explorer">http://localhost:3000/explorer</a>
@@ -141,9 +113,7 @@ $slc install`
 
 Since you have the &#8216;loopback-mobile-getting-started&#8217; github repo on your local machine  you can simply open the loopback iOS guide app located at /loopback-ios-app/loopback-ios-multi-model.xcodeproj with XCode.
 
-Once the XCode Project is open you will need to modify your Adaptor endpoint to point to your server.   Modify the &#8216;
-
-_adapter = [LBRESTAdapter adapterWithURL:[NSURL URLWithString:@&#8221;http://localhost:3000&#8243;]];&#8217; in the AppDelegate.m.  Change the &#8216;localhost&#8217; address to point to your  ip address.
+Once the XCode Project is open you will need to modify your Adaptor endpoint to point to your server.   Modify the `_adapter = [LBRESTAdapter adapterWithURL:[NSURL URLWithString:'http://localhost:3000';]];` in the AppDelegate.m.  Change the &#8216;localhost&#8217; address to point to your  ip address.
 
 Hit command R in XCode and walk through the walk the guide application instructions.
 
@@ -166,7 +136,4 @@ Now that you have your StrongLoop Suite ( StrongNode, StrongOps and LoopBack ) u
 </li>
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/"]]>training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>
 </li>

@@ -79,14 +79,18 @@ npm install markdown
 
 node-webkit can include any module in your application&#8217;s `node_modules` directory by using a &#8220;require&#8221; statement, as the example below shows.
 
-```
-
-
-
-
-
-
-
+```html
+<!DOCTYPE html>
+<html>
+  <head>  
+  </head>
+  <body>
+    <script>
+    var markdown = require('markdown').markdown;
+    document.write(markdown.toHTML("Hello **World**!"));
+    </script>
+  </body>
+</html>
 
 ```
 

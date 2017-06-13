@@ -99,8 +99,6 @@ There are several other useful (some would say critical) metrics that Strong Ops
 
 ## **<span style="color: black;">Current Status</span>**
 
-&nbsp;
-
 ****
   
 Now that I have my indicators and actions outlined, I can check in on my machine and evaluate as my posts are consumed and the ghost blogging platform is used.

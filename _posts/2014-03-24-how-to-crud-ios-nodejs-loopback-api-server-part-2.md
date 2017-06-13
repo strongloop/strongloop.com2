@@ -39,18 +39,15 @@ To add the interface elements that enable a user to add a book:
 
 When the user clicks the &#8220;+&#8221; button you want the app to show a screen to add a book to the collection.  To do that you need to add another View Controller:
 
-  1. Drag a **View Controller** element from the Object Library into the storyboard.
-  2. Name this View Controller &#8220;Add Book&#8221;.
+  1 . Drag a **View Controller** element from the Object Library into the storyboard.
+  2 . Name this View Controller &#8220;Add Book&#8221;.
   
-    [<img class="alignnone size-medium wp-image-19125" alt="AddBook" src="{{site.url}}/blog-assets/2014/03/AddBook-300x188.png" width="300" height="188" />]({{site.url}}/blog-assets/2014/03/AddBook.png)
-  3. Now connect the &#8220;+&#8221; button from the Books Collection View Controller to this screen: Control-dragg the &#8220;+&#8221; button from the **Books Collection View Controller** to the** Add Books View Controller**. This creates a segue.
-  4. Select **modal** as segue type.
-  5. Implement the segue action by adding the following code to `ViewController.m`:
+[<img class="alignnone size-medium wp-image-19125" alt="AddBook" src="{{site.url}}/blog-assets/2014/03/AddBook-300x188.png" width="300" height="188" />]({{site.url}}/blog-assets/2014/03/AddBook.png)
+  3 . Now connect the &#8220;+&#8221; button from the Books Collection View Controller to this screen: Control-dragg the &#8220;+&#8221; button from the **Books Collection View Controller** to the** Add Books View Controller**. This creates a segue.
+  4 . Select **modal** as segue type.
+  5 . Implement the segue action by adding the following code to `ViewController.m`:
   
-    <table data-macro-name="code" data-macro-parameters="title=ViewController.m" data-macro-body-type="PLAIN_TEXT">
-      <tr>
-        <td>
-          ```js
+```js
 ...
 @implementation ViewController 
 //Add these 3 lines
@@ -59,10 +56,7 @@ When the user clicks the &#8220;+&#8221; button you want the app to show a scree
 }
 ...
 - (void)viewDidLoad
-```js
-        </td>
-      </tr>
-    </table>
+```
 
 ## **Add navigation to View Controller**
 
@@ -129,22 +123,12 @@ To connect the Done button to your view controller:
 
 Now add functionality to the class to save the book when the user adds one:
 
-<table data-macro-name="code" data-macro-parameters="title=AddNewBookViewController.h" data-macro-body-type="PLAIN_TEXT">
-  <tr>
-    <td>
-      ```js
+```js
 #import UIKit/UIKit.h
 #import "ViewController.h"
 ...
+```
 ```js
-    </td>
-  </tr>
-</table>
-
-<table data-macro-name="code" data-macro-parameters="title=AddNewBookViewController.m" data-macro-body-type="PLAIN_TEXT">
-  <tr>
-    <td>
-      ```js
 #import "AddNewBook.h"
 #import "ViewController.h"
 #define prototypeName @"books"
@@ -187,10 +171,7 @@ Now add functionality to the class to save the book when the user adds one:
     }
 }
 ....(ctd)
-```js
-    </td>
-  </tr>
-</table>
+```
 
 Run the build and try it out. You should be able to add a new book and refresh to fetch all books.
 
@@ -204,9 +185,6 @@ Run the build and try it out. You should be able to add a new book and refresh t
 </li>
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;">What’s in the upcoming Node v0.12 version? <a href="http://strongloop.com/strongblog/performance-node-js-v-0-12-whats-new/">Big performance optimizations</a>, read the blog by Ben Noordhuis to learn more.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Need performance monitoring, profiling and cluster capabilities for your Node apps? Check out <a href="http://strongloop.com/node-js-performance/strongops/">StrongOps</a>!</span>
 </li>
 
 &nbsp;

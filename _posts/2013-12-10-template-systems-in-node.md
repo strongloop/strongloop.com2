@@ -35,7 +35,7 @@ Node’s web template systems can be divided into four general approaches. They 
 
 Like the style of PHP, JSP, or ERB templates? Prefer working with vanilla JavaScript? If so, take a look at embedded JavaScript. At the core, these engines allow JavaScript code to be evaluated within a template. The most notable is <a href="https://github.com/visionmedia/ejs" target="blank">EJS</a>, which looks a lot like PHP or JSP (except it uses JavaScript, of course):
 
-```js
+```ejs
 <% if (loggedIn) { %>
  <a href="/account"><%= firstName %> <%= lastName %></a>
 <% } else { %>
@@ -66,7 +66,7 @@ code sitting all over the place. Here is where the world of custom <a href="http
 <a href="http://olado.github.io/doT/" target="blank">doT</a> takes a minimalistic approach (it’s also built for speed):
 
 {% raw %}
-```js
+```ejs
 {{? it.loggedIn }}
   <a href="/account">{{= it.firstName }} {{= it.lastName }}</a>
 {{??}}
@@ -107,7 +107,7 @@ Logic-less templates, a concept popularized by <a href="http://mustache.github.i
 Let’s take a peak at <a href="https://github.com/janl/mustache.js" target="blank">Mustache</a>:
 
 {% raw %}
-```js
+```mustache
 {{#loggedIn}}
   <a href="/account">{{firstName}} {{lastName}}</a>
 {{/loggedIn}}
@@ -131,7 +131,7 @@ Other popular template engines in this vein include <a href="http://handlebarsjs
 
 The last style we will explore is programmatic. Unlike the previous styles, which add custom syntax to HTML, these modules augment plain HTML and/or build it from scratch with data. For example, <a href="https://github.com/substack/hyperglue" target="blank">hyperglue</a> processes plain HTML, like:
 
-```js
+```html
 <a></a>
 <ul>
   <li>

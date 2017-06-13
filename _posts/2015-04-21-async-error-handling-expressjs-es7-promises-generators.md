@@ -25,31 +25,31 @@ First, let’s look at what Express handles out of the box and then we will look
 By default, Express will catch any exception thrown within the initial _synchronous_ execution of a route and pass it along to the next error-handling middleware:
 
 ```js
-<code class="js">app.get('/', function (req, res) {
+app.get('/', function (req, res) {
   throw new Error('oh no!')
 })
 app.use(function (err, req, res, next) {
   console.log(err.message) // oh no!
-})</code>
+})
 ```
 
 Yet in asynchronous code, Express cannot catch exceptions as you’ve lost your stack once you have entered a callback:
 
 ```js
-<code class="js">app.get('/', function (req, res) {
+app.get('/', function (req, res) {
   queryDb(function (er, data) {
     if (er) throw er
   })
 })
 app.use(function (err, req, res, next) {
   // error never gets here
-})</code>
+})
 ```
 
 For these cases, use the `next` function to propagate errors:
 
 ```js
-<code class="js">app.get('/', function (req, res, next) {
+app.get('/', function (req, res, next) {
   queryDb(function (err, data) {
     if (err) return next(err)
     // handle data
@@ -63,7 +63,7 @@ For these cases, use the `next` function to propagate errors:
 })
 app.use(function (err, req, res, next) {
   // handle error
-})</code>
+})
 ```
 
 Still, this isn’t bulletproof. There are two problems with this approach:
@@ -76,7 +76,7 @@ Still, this isn’t bulletproof. There are two problems with this approach:
 [Promises](http://strongloop.com/strongblog/promises-in-node-js-with-q-an-alternative-to-callbacks/) handle any exception (explicit and implicit) within asynchronous code blocks (inside `then`) like Express does for us in synchronous code blocks. Just add `.catch(next)` to the end of promise chains.
 
 ```js
-<code class="js">app.get('/', function (req, res, next) {
+app.get('/', function (req, res, next) {
   // do some sync stuff
   queryDb()
     .then(function (data) {
@@ -90,7 +90,7 @@ Still, this isn’t bulletproof. There are two problems with this approach:
 })
 app.use(function (err, req, res, next) {
   // handle error
-})</code>
+})
 ```
 
 Now all errors asynchronous and synchronous get propagated to the error middleware. Hurrah!
@@ -106,13 +106,13 @@ If you use [io.js](http://iojs.org) or Node `>=0.12`, you can improve on this wo
 First, let’s make Express compatible with promise generators by creating a little `wrap` function:
 
 ```js
-<code class="js">var Promise = require('bluebird')
+var Promise = require('bluebird')
 function wrap (genFn) { // 1
     var cr = Promise.coroutine(genFn) // 2
     return function (req, res, next) { // 3
         cr(req, res, next).catch(next) // 4
     }
-}</code>
+}
 ```
 
 The `wrap` function:
@@ -125,7 +125,7 @@ The `wrap` function:
 This `wrap` boilerplate hopefully will go away with Express 5 [custom routers](https://github.com/strongloop/express/pull/2431) but write it once and keep it as a utility. With it, we can write route functions like this:
 
 ```js
-<code class="js">app.get('/', wrap(function *(req, res) {
+app.get('/', wrap(function *(req, res) {
   var data = yield queryDb()
   // handle data
   var csv = yield makeCsv(data)
@@ -133,7 +133,7 @@ This `wrap` boilerplate hopefully will go away with Express 5 [custom routers](h
 }))
 app.use(function (err, req, res, next) {
   // handle error
-})</code>
+})
 ```
 
 This is pretty clean and reads well. All normal control structures (like `if/else`) work the same regardless if asynchronously or synchronous executed. Just remember to `yield` the promises.
@@ -153,12 +153,12 @@ let wrap = fn => (...args) => fn(...args).catch(args[2])
 Then, we make routes like this:
 
 ```js
-<code class="js">app.get('/', wrap(async function (req, res) {
+app.get('/', wrap(async function (req, res) {
   let data = await queryDb()
   // handle data
   let csv = await makeCsv(data)
   // handle csv
-}))</code>
+}))
 ```
 
 Or with arrow functions:
@@ -170,13 +170,13 @@ app.get('/', wrap(async (req, res) => { ... }))
 Now, to run this code, you will need the [Babel](http://babeljs.io) JavaScript compiler. There are many ways to use Babel with Node, but to keep things simple, install the `babel-node` command by running:
 
 ```js
-<code class="sh">npm i babel -g</code>
+npm i babel -g
 ```
 
 Then run your app using:
 
 ```js
-<code class="sh">babel-node --stage 0 myapp.js</code>
+babel-node --stage 0 myapp.js
 ```
 
 > Bonus: Since this code compiles to ES5, you can use this solution with older versions of Node.

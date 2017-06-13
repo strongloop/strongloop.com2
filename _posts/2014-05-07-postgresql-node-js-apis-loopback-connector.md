@@ -62,10 +62,11 @@ The LoopBack database example application is available at [https://github.com/st
 
 You can switch between the databases by updating `datasources.json` and `models.json`. No code change is required. In the following steps, you’ll use PostgreSQL as the example.  By default, the application connects to a PostgreSQL server running on demo.strongloop.com.
   
-`<br />
-$ git clone git@github.com:strongloop-community/loopback-example-database.git<br />
-$ cd loopback-example-database<br />
-$ git checkout postgresql`
+```js
+$ git clone git@github.com:strongloop-community/loopback-example-database.git
+$ cd loopback-example-database
+$ git checkout postgresql
+```
 
 The last command ensures that you’re connecting to the PostgreSQL server instead of Oracle, MongoDB, or MySQL.
 
@@ -93,11 +94,12 @@ You’ll see that there are two account records in the database, returned in JSO
 
 Now you’ll create a new application similar to the example using the slc command:
   
-`<br />
-$ slc lb project my-postgres-example<br />
-$ cd my-postgres-example<br />
-$ slc lb datasource accountDB --connector postgresql<br />
-$ slc lb model account -i --data-source accountDB` 
+```js
+$ slc lb project my-postgres-example
+$ cd my-postgres-example
+$ slc lb datasource accountDB --connector postgresql
+$ slc lb model account -i --data-source accountDB
+```
 
 Follow the prompts to create your model with the following properties:
 
@@ -126,11 +128,13 @@ Now add the `loopback-connector-postgresql` module and install the dependencies.
 
 **NOTE:** Don’t worry if you see errors like this:
   
-`...<br />
-/bin/sh: pg_config: command not found<br />
-gyp: Call to 'pg_config --libdir' returned exit status 127.<br />
-gyp ERR! configure error<br />
-...`
+```js
+...
+/bin/sh: pg_config: command not found
+gyp: Call to 'pg_config --libdir' returned exit status 127.
+gyp ERR! configure error
+...
+```
 
 The PostgreSQL connector looks for the native PostgreSQL client, but if it’s not installed, it falls back to a pure JavaScript solution so you can ignore these errors.
 

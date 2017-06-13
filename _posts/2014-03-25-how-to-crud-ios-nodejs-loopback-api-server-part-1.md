@@ -33,16 +33,9 @@ Before starting this tutorial:
 Follow these steps to create a simple LoopBack Node application using the StrongLoop command-line tool, slc:
 
 **Step 1:** Create a new application called &#8220;books&#8221;
-
-<table data-macro-name="code" data-macro-body-type="PLAIN_TEXT">
-  <tr>
-    <td>
-      ```js
-$ slc lb project books
 ```js
-    </td>
-  </tr>
-</table>
+$ slc lb project books
+```
 
 **Step 2:** Follow the instructions in <a href="http://docs.strongloop.com/display/DOC/Creating+a+LoopBack+application" data-linked-resource-id="1541039" data-linked-resource-type="page" data-linked-resource-default-alias="Creating a LoopBack application" data-base-url="http://docs.strongloop.com">Create a LoopBack application</a> to create a model called &#8220;book&#8221; with the default properties. Follow the instructions in the link to the section &#8220;Defining a model manually&#8221;.
 
@@ -50,19 +43,13 @@ $ slc lb project books
 
 **Step 4:** Add a few books to the app by running a POST request through the API Explorer. The format of JSON for the POST request is as follows:
 
-<table data-macro-name="code" data-macro-body-type="PLAIN_TEXT">
-  <tr>
-    <td>
-      ```js
+```js
 {"title" : "The Godfather", 
 "author" : "Mario Puzo", 
 "genre" : "Fiction", 
 "totalPages" : "1000", 
 "description" : "Classic novel of La Cosa Nostra"}
-```js
-    </td>
-  </tr>
-</table>
+```
 
 ## **Create the iOS app**
 
@@ -82,10 +69,7 @@ From the LoopBack iOS SDK, drag `Loopback.Framework` to the Frameworks directo
 
 Import the Loopback framework into your app. Edit `booksAppDelegate.h` and add lines 2 and 7 as shown below:
 
-<table data-macro-name="code" data-macro-parameters="linenumbers=true|title=booksAppDelegate.h" data-macro-body-type="PLAIN_TEXT">
-  <tr>
-    <td>
-      ```js
+```js
 #import 
 #import 
 
@@ -94,17 +78,11 @@ Import the Loopback framework into your app. Edit `booksAppDelegate.h` and add
 @property (strong, nonatomic) UIWindow *window;
 + ( LBRESTAdapter *) adapter;
 @end
-```js
-    </td>
-  </tr>
-</table>
+```
 
 Edit` booksAppDelegate.m` to add the code in lines 3 through 11 as shown below:
 
-<table data-macro-name="code" data-macro-parameters="linenumbers=true|title=booksAppDelegate.m" data-macro-body-type="PLAIN_TEXT">
-  <tr>
-    <td>
-      ```js
+```js
 #import "booksAppDelegate.h"
 @implementation booksAppDelegate
 static LBRESTAdapter * _adapter = nil;
@@ -117,10 +95,7 @@ static LBRESTAdapter * _adapter = nil;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 ...
-```js
-    </td>
-  </tr>
-</table>
+```
 
 **Create the first screen for the application. **Click on **Main.storyboard** in the File Navigator to see an empty View Controller. Name this View Controller &#8220;Books Collection&#8221; by double clicking on it or adding a name in the **Title** field, shown highlighted in the following figure:
 
@@ -134,16 +109,10 @@ Select and drag a **Table View** to the View Controller. Add a **Table View C
 
 Connect the elements in the screen with the View Controller class: Select the Refresh button in your View Controller, hold Control and drag it into the `ViewController.m` right before `@end`. Name it &#8220;actionGetBooks&#8221; and click **Connect**, as shown below.  This will insert code that looks like this:
 
-<table data-macro-name="code" data-macro-body-type="PLAIN_TEXT">
-  <tr>
-    <td>
-      ```js
+```js
 - (IBAction)actionGetBooks:(id)sender {
 }
-```js
-    </td>
-  </tr>
-</table>
+```
 
 [<img class="alignnone size-medium wp-image-19117" alt="SNP-3" src="{{site.url}}/blog-assets/2014/03/SNP-3-300x180.png" width="300" height="180" />]({{site.url}}/blog-assets/2014/03/SNP-3.png)
 
@@ -169,26 +138,17 @@ Implement the &#8216;actionGetBook&#8217; function.
 
 **booksViewController.h**
 
-<table data-macro-name="code" data-macro-parameters="title=booksViewController.h" data-macro-body-type="PLAIN_TEXT">
-  <tr>
-    <td style="text-align: left;">
-      ```js
+```js
 #import UIKit/UIKit.h
 #import "booksAppDelegate.h"
 @interface ViewController : UIViewController 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
-```js
-    </td>
-  </tr>
-</table>
+```
 
 **booksViewController.rm**
 
-<table data-macro-name="code" data-macro-parameters="title=booksViewController.m" data-macro-body-type="PLAIN_TEXT">
-  <tr>
-    <td>
-      ```js
+```js
 #import "booksViewController.h"
 #import "booksAppDelegate.h"
 #define prototypeName @"books"
@@ -246,24 +206,15 @@ Implement the &#8216;actionGetBook&#8217; function.
     return cell;
 }
 ...
-```js
-    </td>
-  </tr>
-</table>
+```
 
 Call getBooks from the actionGetBooks function defined in Step 4.
 
-<table class="aligncenter" data-macro-name="code" data-macro-body-type="PLAIN_TEXT">
-  <tr>
-    <td>
-      ```js
+```js
 - (IBAction)actionGetBooks:(id)sender {
     [self getBooks]; 
 }
-```js
-    </td>
-  </tr>
-</table>
+```
 
 At this point you should be able to build your app and get the list of books. Build the app and run it on a simulator. Click **Refresh** and you should be able to see the list of books.
 
@@ -279,7 +230,4 @@ At this point you should be able to build your app and get the list of books. Bu
 </li>
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;">Download the <a href="https://github.com/strongloop-community/sample-applications/tree/master/BooksClient">iOS client application</a></span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Need performance monitoring, profiling and cluster capabilities for your Node apps? Check out <a href="http://strongloop.com/node-js-performance/strongops/">StrongOps</a>!</span>
 </li>

@@ -24,10 +24,11 @@ I&#8217;m assuming an API backed by MongoDB, and that we&#8217;re using [Mongoos
 
 I&#8217;m generally not a flow control library guy. I guess I&#8217;ve just gotten used to callbacks. That said, it&#8217;s worth considering [express-mongoose](https://github.com/LearnBoost/express-mongoose) as a nice way of cleaning things up. It allows you to pass a Mongoose Query or Promise object to res.send instead of writing out the full callback. That means a method that requires two separate Mongoose calls can be condensed to this:
 
-`app.get('/pets', function(req, res) {<br />
-res.send({cats: Cat.find(), dogs: Dog.find()});<br />
-});<br />
-` 
+```js
+app.get('/pets', function(req, res) {
+res.send({cats: Cat.find(), dogs: Dog.find()});
+});
+```
 
 The fact that it supports Promises is important to keep in mind, because it means you can create some fairly complex async stuff in your Mongoose models, and as long as it returns a Promise you keep the top layer routing/sending code really tidy.
 
@@ -35,17 +36,23 @@ The fact that it supports Promises is important to keep in mind, because it mean
 
 I often find myself wanting to hide certain properties before they get sent across the wire. Mongoose has a great mechanism for doing this at the model level via toObject and toJson Transforms. Here&#8217;s an example [from the docs](http://mongoosejs.com/docs/api.html#document_Document-toObject):
 
-`schema.options.toObject.transform = function (doc, ret, options) {<br />
-return { movie: ret.name }<br />
-}`
+```js
+schema.options.toObject.transform = function (doc, ret, options) {
+return { movie: ret.name }
+}
+```
 
 // without the transformation in the schema
   
-`doc.toObject(); // { _id: 'anId', name: 'Wreck-it Ralph' }`
+```js
+doc.toObject(); // { _id: 'anId', name: 'Wreck-it Ralph' }
+```
 
 // with the transformation
   
-`doc.toObject(); // { movie: 'Wreck-it Ralph' }`
+```js
+doc.toObject(); // { movie: 'Wreck-it Ralph' }
+```
 
 This is yet another way to avoid repetition at the route/controller levels of your app.
 
@@ -114,7 +121,4 @@ Node.js is a great for APIs; it&#8217;s easy to make calls to other external ser
 </li>
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;">Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js <a href="http://loopback.io/">LoopBack framework</a>. We’ve made it easy to get started either locally or on your favorite cloud, with a <a href="http://strongloop.com/get-started/">simple npm install</a>.</span>
-</li>
-<li style="margin-left: 2em;">
-  <span style="font-size: 18px;">Need <a href="http://strongloop.com/node-js-support/expertise/"]]>training and certification</a> for Node? Learn more about both the private and open options StrongLoop offers.</span>
 </li>

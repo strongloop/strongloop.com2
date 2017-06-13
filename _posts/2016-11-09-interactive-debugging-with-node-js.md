@@ -26,15 +26,13 @@ The ability to change the value of a variable at runtime enables you to play th
 
 You&#8217;ll use [VS Code](https://code.visualstudio.com), which has a built-in Node.js debugger. To run code in the context of the VS Code debugger, you must first make VS Code aware of our Node.js project. For this demo you&#8217;ll create a simple Express app with [`express-generator`](https://expressjs.com/en/starter/generator.html), as follows:
 
-<div>
-  ```js
+```js
 $ npm install express-generator -g
 $ express test-app   # create an application
 $ cd test-app        
 $ npm install
 $ code .             # start VS Code
-```js
-</div>
+```
 
 With VS Code open, open the Debug view by clicking the [bug icon](https://code.visualstudio.com/images/debugging_debugicon.png) in left sidebar menu. With the Debug view open, the gear icon at the top of the pane will have a red dot over it. This is because there are currently no &#8220;launch configurations:&#8221; configuration objects that tell VS Code how to run your application. Click the gear icon, select &#8220;Node.js,&#8221; and VS Code will generate a boilerplate launch configuration for you.
 
@@ -49,12 +47,11 @@ The first approach normally requires some setup (beyond the scope of this post, 
 
 If all went well, you will see a new toolbar at the top of your screen with pause and play buttons (among others). The Debug Console at the bottom of the screen will tell you the command it ran and its output&#8211;something like this:
 
-<div>
-  ```js
+
+```js
 node --debug-brk=18764 --nolazy bin/www 
 Debugger listening on port 18764
-```js
-</div>
+```
 
 When you load <http://localhost:3000> in a browser, you will see the Express log messages in this same Debug Console:
 
@@ -93,15 +90,13 @@ In addition to breaking on a certain line each time it&#8217;s executed, you can
 
 In this pane, you can examine and change variables in the running application. Let&#8217;s edit our homepage route in `routes/index.js` to make the title a variable:
 
-<div>
-  ```js
+```js
 /* GET home page. */
 var ourTitle = 'Express';
 router.get('/', function(req, res, next) {
   res.render('index', { title: ourTitle });
 });
-```js
-</div>
+```
 
 After editing the code, **restart the debugger** so it picks up the new code. Do this by clicking the green circle/arrow button in the top toolbar. After editing a file with a breakpoint already set and restarting the debugger (as you just did), you&#8217;ll also want to check that your breakpoints are still in the right spot. VS Code does a pretty good job of keeping the breakpoint on the line you expect but it&#8217;s not perfect.
 
@@ -128,14 +123,12 @@ Sometimes, rather than just pausing the application, examining or altering a val
 
 While stepping through your code, you may want to see the values of certain things. A &#8220;watch expression&#8221; will run (in the current scope!) at each paused/stopped position in your code and display the expression&#8217;s value. Hover over the **Watch Expression** pane and click the plus to add an expression. To see the user agent header of each request as well as `ourTitle`, whether the response object has had headers sent, and the value of `1 + 1`, just for good measure, so add the following watch expressions:
 
-<div>
-  ```js
+```js
 req.headers['user-agent']
 ourTitle
 res._headerSent
 1 + 1
-```js
-</div>
+```
 
 When you refresh the browser the debugger pauses once again at the breakpoint on line 7, you can see the result of each expression:
 

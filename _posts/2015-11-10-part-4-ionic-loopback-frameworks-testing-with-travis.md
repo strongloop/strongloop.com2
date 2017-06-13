@@ -35,7 +35,7 @@ devDependencies: {
 
 Once you&#8217;ve installed karma, you&#8217;ll need to do a little extra work to make your tests easy to run. You&#8217;ll need to create a [separate AngularJS module that contains all the stopwatch-specific logic](https://github.com/vkarpov15/stopwatch-example/commit/1b9cd0ec48e18e0782804c0446c8c74651477127#diff-5) from the [third article in this series](https://strongloop.com/strongblog/part-3-ionic-loopback-frameworks-building-the-ionic-app/). Why? Getting the whole Ionic bundle to run in a browser is unnecessary in this case, because the stopwatch directives don&#8217;t touch any Ionic-specific code. All you really need to test is how the directives work in conjunction with the HTTP interceptors and other Ionic-specific configuration.
 
-Once you&#8217;ve created this \`stopwatch.js\` file that contains an AngularJS module with all of your stopwatch-specific directives, it&#8217;s time to set up a karma config file. Karma config files can be intimidating at first, but they make sense once you remember the 3 things that karma is responsible for: starting browsers, running some JavaScript, and reporting output.
+Once you&#8217;ve created this `stopwatch.js` file that contains an AngularJS module with all of your stopwatch-specific directives, it&#8217;s time to set up a karma config file. Karma config files can be intimidating at first, but they make sense once you remember the 3 things that karma is responsible for: starting browsers, running some JavaScript, and reporting output.
 
 ```js
 module.exports = function(config) {
@@ -66,7 +66,7 @@ module.exports = function(config) {
 
 ```
 
-The above config assumes that all the tests will be in the \`test/\` directory. Let&#8217;s write a basic mocha test and run it.
+The above config assumes that all the tests will be in the `test/` directory. Let&#8217;s write a basic mocha test and run it.
 
 ```js
 describe('test', function() {
@@ -86,7 +86,7 @@ In order to make karma easier to run, you can create a script in your package.js
 
 ```
 
-Now, once you run \`npm test\`, you should see output that looks like this:
+Now, once you run `npm test`, you should see output that looks like this:
 
 ```js
 $ npm test
@@ -104,9 +104,9 @@ $ npm test
 
 _TLDR;_ [_See a diff for this step on GitHub_](https://github.com/vkarpov15/stopwatch-example/commit/e6c278b3d5a9cf612e112bea38fc1f4874fcac9b)
 
-No offense to Aristotle, but a test that asserts that [A is A](http://www.importanceofphilosophy.com/Metaphysics_Identity.html) is not particularly interesting. Part of what makes AngularJS so powerful is the ability to test directives from the level of user interactions without a server. In other words, you can test your directives using jQuery&#8217;s \`.click()\` and \`.val()\` methods without having to set up a server.
+No offense to Aristotle, but a test that asserts that [A is A](http://www.importanceofphilosophy.com/Metaphysics_Identity.html) is not particularly interesting. Part of what makes AngularJS so powerful is the ability to test directives from the level of user interactions without a server. In other words, you can test your directives using jQuery&#8217;s `.click()` and `.val()` methods without having to set up a server.
 
-How does this work? The key is [AngularJS&#8217; \`$compile\` service](https://docs.angularjs.org/api/ng/service/$compile). If you don&#8217;t understand the \`$compile\` docs, don&#8217;t worry, I don&#8217;t either. At a high level, the \`$compile\` service takes in an HTML string and an AngularJS scope, and compiles the HTML into a DOM element attached to the given scope. In other words, the \`$compile\` service lets you instantiate your directives.
+How does this work? The key is [AngularJS&#8217; `$compile` service](https://docs.angularjs.org/api/ng/service/$compile). If you don&#8217;t understand the `$compile` docs, don&#8217;t worry, I don&#8217;t either. At a high level, the `$compile` service takes in an HTML string and an AngularJS scope, and compiles the HTML into a DOM element attached to the given scope. In other words, the `$compile` service lets you instantiate your directives.
 
 ```js
 var injector = angular.injector(['stopwatch', 'ngMockE2E']);
@@ -122,9 +122,9 @@ injector.invoke(function($rootScope, $compile) {
 
 ```
 
-[The \`angular.injector()\` function](https://docs.angularjs.org/api/auto/service/$injector) is what you use to generate your \`$compile\` service. This creates a new AngularJS dependency injector from the given modules. Since the injector knows about the stopwatch module, the \`$compile\` service will know about the \`timer\` directive and give you a jQuery handle to an instantiated \`timer\` directive.
+[The `angular.injector()` function](https://docs.angularjs.org/api/auto/service/$injector) is what you use to generate your `$compile` service. This creates a new AngularJS dependency injector from the given modules. Since the injector knows about the stopwatch module, the `$compile` service will know about the `timer` directive and give you a jQuery handle to an instantiated `timer` directive.
 
-In order to really run this test, you&#8217;re going to need three more details. First, you&#8217;re going to need to define the \`onSaved()\` function. This is just going to be a stub for testing.
+In order to really run this test, you&#8217;re going to need three more details. First, you&#8217;re going to need to define the `onSaved()` function. This is just going to be a stub for testing.
 
 ```js
 parentScope.onSaved = function(time) {
@@ -134,14 +134,14 @@ parentScope.onSaved.calls = [];
 
 ```
 
-Secondly, recall that the \`timer\` directive creates a new AngularJS scope. The \`parentScope\` variable is useful, but what if we want access to the directive&#8217;s internals? Thankfully, a scope has a \`$$childHead\` member that points to its first child scope.
+Secondly, recall that the `timer` directive creates a new AngularJS scope. The `parentScope` variable is useful, but what if we want access to the directive&#8217;s internals? Thankfully, a scope has a `$$childHead` member that points to its first child scope.
 
 ```js
 scope = parentScope.$$childHead;
 
 ```
 
-Finally, you&#8217;re going to want to test that clicking on the &#8216;Save&#8217; button triggers the correct HTTP request. Thankfully, that&#8217;s what AngularJS&#8217; \`$httpBackend\` service (part of the \`ngMockE2E\` module you saw above) is for.
+Finally, you&#8217;re going to want to test that clicking on the &#8216;Save&#8217; button triggers the correct HTTP request. Thankfully, that&#8217;s what AngularJS&#8217; `$httpBackend` service (part of the `ngMockE2E` module you saw above) is for.
 
 ```js
 injector.invoke(function($rootScope, $compile, $httpBackend) {
@@ -151,7 +151,7 @@ injector.invoke(function($rootScope, $compile, $httpBackend) {
 
 ```
 
-With that, you&#8217;re ready to write your first test. The full code can be found on [GitHub](https://github.com/vkarpov15/stopwatch-example/commit/e6c278b3d5a9cf612e112bea38fc1f4874fcac9b#diff-0). Let&#8217;s walk through the high-level concepts in this test. Now that you have the element, you first want to click on the &#8216;Start&#8217; button in the \`timer\` directive and make sure the directive reacted correctly.
+With that, you&#8217;re ready to write your first test. The full code can be found on [GitHub](https://github.com/vkarpov15/stopwatch-example/commit/e6c278b3d5a9cf612e112bea38fc1f4874fcac9b#diff-0). Let&#8217;s walk through the high-level concepts in this test. Now that you have the element, you first want to click on the &#8216;Start&#8217; button in the `timer` directive and make sure the directive reacted correctly.
 
 ```js
 // Click the 'Start' button
@@ -208,7 +208,7 @@ If you&#8217;re interested in learning more, there&#8217;s a [detailed guide to 
 
 _TLDR;_ [_See a diff for this step on GitHub_](https://github.com/vkarpov15/stopwatch-example/commit/592d7cb64ff23a3dae465db3d6f95c49e095b76a)
 
-Once you have tests for your mobile app, you can set up [Travis](https://travis-ci.org/) to run your tests on every commit to GitHub. The tests are the hard part, setting up Travis to work with Node is much easier than Android or iOS. All you need to do is set up an account on Travis, add your Ionic app&#8217;s GitHub repo, and add the below \`.travis.yml\` file to your repo.
+Once you have tests for your mobile app, you can set up [Travis](https://travis-ci.org/) to run your tests on every commit to GitHub. The tests are the hard part, setting up Travis to work with Node is much easier than Android or iOS. All you need to do is set up an account on Travis, add your Ionic app&#8217;s GitHub repo, and add the below `.travis.yml` file to your repo.
 
 ```js
 language: node_js
