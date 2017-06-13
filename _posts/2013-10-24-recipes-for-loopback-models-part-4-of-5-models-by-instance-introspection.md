@@ -19,10 +19,6 @@ categories:
   Yes, certainly! Here is an example:
 </p>
 
-<p dir="ltr">
-   
-</p>
-
 ```js
  var ds = require('../data-sources/db.js')('memory');
 
@@ -56,10 +52,10 @@ var obj = new User(user);
 console.log(obj.toObject());
 
 User.create(user, function (err, u1) {
-console.log('Created: ', u1.toObject());
-User.findById(u1.id, function (err, u2) {
-console.log('Found: ', u2.toObject());
-});
+ console.log('Created: ', u1.toObject());
+ User.findById(u1.id, function (err, u2) {
+  console.log('Found: ', u2.toObject());
+ });
 });
 ```
 

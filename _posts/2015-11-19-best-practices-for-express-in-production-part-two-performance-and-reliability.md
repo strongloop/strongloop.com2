@@ -170,7 +170,7 @@ Now all errors asynchronous and synchronous get propagated to the error middlewa
 
 However, there are two caveats:
 
-  1. All your asynchronous code must return promises (except emitters). If a particular library does not return promises, convert the base object using a helper function like `[Bluebird.promisifyAll()](http://bluebirdjs.com/docs/api/promise.promisifyall.html)`.
+  1. All your asynchronous code must return promises (except emitters). If a particular library does not return promises, convert the base object using a helper function like [Bluebird.promisifyAll()](http://bluebirdjs.com/docs/api/promise.promisifyall.html).
   2. Event emitters (like streams) can still cause uncaught exceptions. So make sure you are handling the error event properly; for example:
 
 ```js

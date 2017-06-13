@@ -37,7 +37,7 @@ So by simply making an HTTP GET request to /api/people/count, you&#8217;ll get t
 
 Alright, so let&#8217;s put this together in an incredibly simple demo application. I began with a simple view:
 
-```js
+```html
 <!DOCTYPE html>
 <html>
 	<head>
@@ -47,15 +47,11 @@ Alright, so let&#8217;s put this together in an incredibly simple demo applicati
 		<meta name="viewport" content="width=device-width">
 	</head>
 	<body>
-
-
 		<div id="results"></div>
 		<button id="goBackBtn" disabled>Go Back</button> -
 		<button id="goForwardBtn" disabled>Go Forward</button> 
-
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="app.js"></script>
-
 	</body>
 </html>
 

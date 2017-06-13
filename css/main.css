@@ -491,6 +491,7 @@ li > dl {
 @media (max-width:568px) {
     .c-footer ._nav ._nav-list {
         text-align: center;
+        width: 100%
     }
 }
 
@@ -543,6 +544,10 @@ li > dl {
 
 @media (max-width:568px) {
     .c-footer ._copyright {
+        text-align: center;
+    }
+    .c-footer .legal {
+        float: none;
         text-align: center;
     }
 }
@@ -939,7 +944,6 @@ li > dl {
 
 @media (max-width:567px) {
     .c-masthead ._logo::before {
-        width: 2rem;
         height: 2.309185186rem;
     }
 }

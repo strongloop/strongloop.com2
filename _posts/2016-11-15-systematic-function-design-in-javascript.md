@@ -221,6 +221,6 @@ function double(n) { return n * 2}
     Write a function called <em class="markup--em markup--li-em">first</em> that takes an array of values and returns the first one. If the array is empty, it should return null. Note: you should use the any type (<code class="markup--code markup--li-code">{}</code>) in your <code class="markup--code markup--li-code">@return</code> tag.
   </li>
   <li class="graf graf--li">
-    Write a function called <em class="markup--em markup--li-em">dashString</em> that takes an array of string values (<code class="markup--code markup--li-code">{Array.<string>}</code>) and joins them together with dashes. If the array is empty, you should return an empty string.
+    Write a function called <em class="markup--em markup--li-em">dashString</em> that takes an array of string values (<code class="markup--code markup--li-code">{Array.< string >}</code>) and joins them together with dashes. If the array is empty, you should return an empty string.
   </li>
 </ol>

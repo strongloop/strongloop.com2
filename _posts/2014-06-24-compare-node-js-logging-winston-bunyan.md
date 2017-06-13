@@ -264,8 +264,6 @@ Here are a few more notable things to explore in [Bunyan](https://github.com/tre
 
 ## **What’s next?**
 
-  * What’s coming to the next Node release? [Read about eight exciting new Node v0.12 features](http://strongloop.com/node-js/whats-new-in-node-js-v0-12/) and how to make the most of them, from the authors themselves.[
-
-](http://strongloop.com/strongblog/performance-node-js-v-0-12-whats-new/)
+  * What’s coming to the next Node release? [Read about eight exciting new Node v0.12 features](http://strongloop.com/node-js/whats-new-in-node-js-v0-12/) and how to make the most of them, from the authors themselves.[](http://strongloop.com/strongblog/performance-node-js-v-0-12-whats-new/)
   * Ready to develop APIs in Node.js and get them connected to your data? Check out the Node.js [LoopBack API framework](http://strongloop.com/mobile-application-development/loopback/). We’ve made it easy to get started either locally or on your favorite cloud, with a [simple npm install](http://strongloop.com/get-started/).
   * Need [training and certification](http://strongloop.com/node-js-support/expertise/) for Node? Learn more about both the private and open options StrongLoop offers.

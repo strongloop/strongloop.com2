@@ -33,7 +33,7 @@ const has = p => o => o.hasOwnProperty(p);
 const sortBy = p => (a, b) => a[p] > b[p];
 ```
 
-What&#8217;s this &#8220;p returns o returns o.hasOwnProperty&#8230;&#8221;? How can we use \`has\`?
+What&#8217;s this &#8220;p returns o returns o.hasOwnProperty&#8230;&#8221;? How can we use `has`?
 
 ## Understanding the syntax
 
@@ -133,7 +133,7 @@ result = users
   ...
 ```
 
-The repetition here is just clutter: it doesn&#8217;t add clarity, it&#8217;s just more to read and write. Compare with the same code using our \`has\` function:
+The repetition here is just clutter: it doesn&#8217;t add clarity, it&#8217;s just more to read and write. Compare with the same code using our `has` function:
 
 ```js
 result = users
@@ -169,7 +169,7 @@ has('age')(user);       //true
 
 ## A Step Further
 
-Let&#8217;s make a function that will produce a filter function that checks that an object has a **key** with a certain **value**. Our \`has\` function checked for a _key_, but to check _value_ as well our filter function will need to know two things (key and value), not just one. Let&#8217;s take a look at one approach:
+Let&#8217;s make a function that will produce a filter function that checks that an object has a **key** with a certain **value**. Our `has` function checked for a _key_, but to check _value_ as well our filter function will need to know two things (key and value), not just one. Let&#8217;s take a look at one approach:
 
 ```js
 //[p]roperty, [v]alue, [o]bject:

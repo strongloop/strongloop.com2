@@ -49,7 +49,7 @@ The expectation is an object containing lat and lng values, representing latitud
 
 So given that we have a few cats (trust me, I do), let&#8217;s build a demo to map them on the planet. First, the HTML:
 
-```js
+```html
 <!DOCTYPE html>
 <html>
 	<head>
@@ -59,11 +59,8 @@ So given that we have a few cats (trust me, I do), let&#8217;s build a demo to m
 		<meta name="viewport" content="width=device-width">
 	</head>
 	<body>
-
 		<h1>Map Demo</h1>
-		
 		<img id="map"></img>
-		
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="js/map.js"></script>
 	</body>
@@ -164,7 +161,7 @@ In case you&#8217;re curious, you can change the unit of measurement. The [Geopo
 
 Let&#8217;s build a new version of our client-side code that uses fancy HTML5 Geolocation (we can&#8217;t really call that fancy anymore) to figure out the user&#8217;s location and return Cats near them. As before, we&#8217;ll start with the HTML.
 
-```js
+```html
 <!DOCTYPE html>
 <html>
 	<head>
@@ -174,13 +171,10 @@ Let&#8217;s build a new version of our client-side code that uses fancy HTML5 Ge
 		<meta name="viewport" content="width=device-width">
 	</head>
 	<body>
-
 		<h1>Cats near you?</h1>
-		
 		<div id="status">
 			Attempting to find your location...
 		</div>
-		
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="js/near.js"></script>
 	</body>

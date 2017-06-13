@@ -106,5 +106,3 @@ I recently watched <a href="http://www.thedotpost.com/2015/11/rob-pike-simplicit
 <p class="graf--p">
   If the benefits clearly outweigh the losses, using that new feature might be a good move. If not, perhaps your best bet may be achieving your goal through other means.
 </p>
-
-####  

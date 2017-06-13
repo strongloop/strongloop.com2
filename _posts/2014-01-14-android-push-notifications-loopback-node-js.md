@@ -27,27 +27,19 @@ categories:
 </p>
 
 <li dir="ltr">
-  <p dir="ltr">
-    Create the promotion message.
-  </p>
+  Create the promotion message.
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
-    Find all users whose address is in the United States
-  </p>
+  Find all users whose address is in the United States
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
-    Find the iOS and Android devices associated with the users found in step 2.
-  </p>
+  Find the iOS and Android devices associated with the users found in step 2.
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
-    Send out notifications to each of those devices through Apple’s APN or Google’s GCM service.
-  </p>
+  Send out notifications to each of those devices through Apple’s APN or Google’s GCM service.
 </li>
 
 <p dir="ltr">
@@ -63,27 +55,19 @@ categories:
 </p>
 
 <li dir="ltr">
-  <p dir="ltr">
-    Setup your application to use Google Play Services
-  </p>
+  Setup your application to use Google Play Services
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
-    On application startup, register with GCM servers to obtain a device registration id (device token) and register the device with LoopBack server.
-  </p>
+  On application startup, register with GCM servers to obtain a device registration id (device token) and register the device with LoopBack server.
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
-    Configure your application to receive incoming messages from GCM.
-  </p>
+  Configure your application to receive incoming messages from GCM.
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
-    Process the notifications received.
-  </p>
+  Process the notifications received.
 </li>
 
 <p dir="ltr">
@@ -95,39 +79,27 @@ categories:
 </p>
 
 <li dir="ltr">
-  <p dir="ltr">
-    Check if we have already registered with GCM before &#8211; try to load a device token from SharedPreferences.
-  </p>
+  Check if we have already registered with GCM before &#8211; try to load a device token from SharedPreferences.
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
-    If there was no token found, or if the token was saved by an older version of our application, then register with GCM and save the token to SharedPreferences.
-  </p>
+  If there was no token found, or if the token was saved by an older version of our application, then register with GCM and save the token to SharedPreferences.
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
-    Now we need to create or update an instance of Installation model, which is used by LoopBack to track application installations. First of all, try to load Installation ID from SharedPreferences.
-  </p>
+  Now we need to create or update an instance of Installation model, which is used by LoopBack to track application installations. First of all, try to load Installation ID from SharedPreferences.
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
-    If there was an ID found, we have already registered with the LoopBack server and we need to update an existing record. Otherwise we are creating a new one.
-  </p>
+  If there was an ID found, we have already registered with the LoopBack server and we need to update an existing record. Otherwise we are creating a new one.
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
-    Fill all required Installation properties like device token, user id, application version, etc.
-  </p>
+  Fill all required Installation properties like device token, user id, application version, etc.
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
-    Save the Installation to the server.
-  </p>
+  Save the Installation to the server.
 </li>
 
 <p dir="ltr">

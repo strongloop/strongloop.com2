@@ -95,7 +95,6 @@ After setting up the environment variables, go to `twitter-rest-api-server` fold
 
 Let&#8217;s say you want to test the <a href="https://github.com/igorlima/twitter-rest-api-server/blob/master/twitter.js" rel="noreferrer">twitter.js</a> code:
 
-<div class="highlight highlight-javascript">
   ```js
 var Twit   = require('twit'),
     async  = require('async'),
@@ -135,20 +134,16 @@ module.exports = function(username, callback) {
     });
   })
 };
-```js
-</div>
+```
 
 To do that in a easy and fun way, let&#8217;s load this module using <a href="https://github.com/jhnns/rewire" rel="noreferrer">rewire</a>. So, within your test module <a href="https://github.com/igorlima/twitter-rest-api-server/blob/master/twitter-spec.js" rel="noreferrer">twitter-spec.js</a>:
 
-<div class="highlight highlight-javascript">
-  ```js
+```js
 var rewire  = require('rewire'),
     assert  = require('assert'),
     twitter = rewire('./twitter.js'),
     mock    = require('./twitter-spec-mock-data.js');
-```js
-</div>
-
+```
 <a href="https://github.com/jhnns/rewire" rel="noreferrer">rewire</a> acts exactly like \`require\`.  With just one difference: Your module will now export a special \`setter\` and \`getter\` for private variables.
 
 ```js
@@ -160,8 +155,7 @@ This allows you to mock everything in the top-level scope of the module, like th
 
 You may also override globals. These changes are only within the module, so you don&#8217;t have to be concerned that other modules are influenced by your mock.
 
-<div class="highlight highlight-javascript">
-  ```js
+```js
 describe('twitter module', function(){
 
   describe('simplify function', function(){
@@ -256,8 +250,7 @@ describe('twitter module', function(){
 
    });
 });
-```js
-</div>
+```
 
 `__set__` returns a function which reverts the changes introduced by this particular `__set__` call.
 

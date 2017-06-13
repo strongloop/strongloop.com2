@@ -19,21 +19,21 @@ In this article I’m going to outline all the new ES6 object declaration syntax
 How often have you declared a property function? I know it’s been too many times for me than I care to recall.
 
 ```js
-<code class="javascript">var obj = {
+var obj = {
   hello: function () {
     // ...
   }
-};</code>
+};
 ```
 
 ES6 brings in new syntax to shorten this very common declaration pattern. Notice the lack of the `function` keyword in the example below! The good thing is that both examples are technically the same thing and could co-exist in ES6.
 
 ```js
-<code class="javascript">var obj = {
+var obj = {
   hello() {
     // ...
   }
-};</code>
+};
 ```
 
 ## <a class="headeranchor-link" href="#getters-and-setters" name="user-content-getters-and-setters"></a>**Getters and Setters** 
@@ -41,7 +41,7 @@ ES6 brings in new syntax to shorten this very common declaration pattern. Notice
 Defining read only properties using `Object.createProperty()` was possible for a pretty long time in ES5. To me it always felt as an afterthought and maybe that’s the reason why you rarely see this feature being used today.
 
 ```js
-<code class="javascript">var obj = Object.defineProperties({}, {
+var obj = Object.defineProperties({}, {
   hello: {
     get: function () {
       return 'hello';
@@ -49,41 +49,40 @@ Defining read only properties using `Object.createProperty()` was possible for a
     configurable: true,
     enumerable: true
   }
-});</code>
+});
 ```
 
 Typing this every time for a readonly property feels like a lot of hassle to me. ES6 introduces proper getter and setter syntax to make this a first class feature:
 
 ```js
-<code class="javascript">var obj = {
+var obj = {
   get hello() {
     return this._hello;
   }
-};</code>
+};
 ```
 
 The difference here is pretty striking. Both examples are equivalent in functionality but ES6 is way more manageable and feels like it belongs. Any attempt to set the `hello` property value results in an exception:
 
 ```js
-<code class="javascript">obj.hello = 'new value';
+obj.hello = 'new value';
 // Uncaught TypeError: Cannot set property hello of [object Object] which has only a getter
-</code>
 ```
 
 Defining a setter is just as easy using the `set` keyword:
 
 ```js
-<code class="javascript">var obj = {
+var obj = {
   set hello(value) {
     this._hello = value;
   }
-};</code>
+};
 ```
 
 That translates to the following ES5:
 
 ```js
-<code class="javascript">var obj = Object.defineProperties({}, {
+var obj = Object.defineProperties({}, {
   hello: {
     set: function (value) {
       this._hello = value;
@@ -91,7 +90,7 @@ That translates to the following ES5:
     configurable: true,
     enumerable: true
   }
-});</code>
+});
 ```
 
 Unlike with the getter, trying to read the value from a set-only property doesn’t throw an error and returns `undefined`. I’m not sure how I feel about the difference in behaviour here, at the same time don’t think I’ve ever encountered a set-only property before. I think we can file this under “no big deal”.
@@ -101,27 +100,27 @@ Unlike with the getter, trying to read the value from a set-only property doesn�
 Often you have to create an object with keys based on a variable. In that case traditional approach looks something like this:
 
 ```js
-<code class="javascript">var param = 'size';
+var param = 'size';
 var config = {};
 
 config[param] = 12;
-config["mobile-" + param] = 4;</code>
+config["mobile-" + param] = 4;
 ```
 
 Functional? Yes, and also incredibly annoying. In ES6 you can define computed property names during object declaration without having separate statements like so:
 
 ```js
-<code class="javascript">const param = 'size';
+const param = 'size';
 const config = {
   [param]: 12,
   [`mobile-${param}`]: 4
-};</code>
+};
 ```
 
 Here’s another example:
 
 ```js
-<code class="javascript">var index = 0;
+var index = 0;
 var obj = {
   [`key${index}`]: index++,
   [`key${index}`]: index++,
@@ -129,7 +128,7 @@ var obj = {
 };
 
 console.log(obj);
-// {"key0":0,"key1":1,"key2":2}</code>
+// {"key0":0,"key1":1,"key2":2}
 ```
 
 ## <a class="headeranchor-link" href="#shorthand-assignment" name="user-content-shorthand-assignment"></a>**Shorthand Assignment** 
@@ -137,7 +136,7 @@ console.log(obj);
 One of my personal favorite new syntax features is the shorthand assignment. Lets look at the example in ES5 first:
 
 ```js
-<code class="javascript">...
+...
 module.exports = {
   readSync: readSync,
   readFile: readFile,
@@ -146,13 +145,13 @@ module.exports = {
   writeFileSync: writeFileSync,
   appendFile: appendFile,
   appendFileSync: appendFileSync
-};</code>
+};
 ```
 
 Sprinkle some ES6 magic and you have:
 
 ```js
-<code class="javascript">// ...
+// ...
 module.exports = {
   readSync,
   readFile,
@@ -161,19 +160,19 @@ module.exports = {
   writeFileSync,
   appendFile,
   appendFileSync
-};</code>
+};
 ```
 
 Basically, if the variable and property name is the same, you can omit the right side. Nothing stops you from mixing and matching either:
 
 ```js
-<code class="javascript">// ...
+// ...
 module.exports = {
   appendFile,
   appendFileSync: function () {
     // ...
   }
-};</code>
+};
 ```
 
 ## <a class="headeranchor-link" href="#es6-today" name="user-content-es6-today"></a>**ES6 Today** 

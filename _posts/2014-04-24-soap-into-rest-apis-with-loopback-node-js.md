@@ -40,7 +40,7 @@ SOAP web services are formally described using [WSDL](http://www.w3.org/TR/wsdl)
 </h2>
 
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;"><strong>wsdl:</strong> HTTP URL or local file system path to the WSDL file, if not present, defaults to <soap web service url>?wsdl.</span>
+  <strong>wsdl:</strong> HTTP URL or local file system path to the WSDL file, if not present, defaults to < soap web service url >?wsdl.
 </li>
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;"><strong>url:</strong> URL to the SOAP web service endpoint. If not present, the location attribute of the SOAP address for the service/port from the WSDL document will be used. For example:</span>
@@ -145,11 +145,12 @@ Open <http://localhost:3000/explorer>
 You can also test the REST API through direct URLs:
 
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;"><a href="http://localhost:3000/api/WeatherServices/forecast?zip=94555">http://localhost:3000/api/WeatherServices/forecast?zip=94555</a></span>
+  <a href="http://localhost:3000/api/WeatherServices/forecast?zip=94555">http://localhost:3000/api/WeatherServices/forecast?zip=94555</a>
 </li>
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;"><a href="http://localhost:3000/api/WeatherServices/weather?zip=95131">http://localhost:3000/api/WeatherServices/weather?zip=95131</a></span>
+  <a href="http://localhost:3000/api/WeatherServices/weather?zip=95131">http://localhost:3000/api/WeatherServices/weather?zip=95131</a>
 </li>
+
 
 <h2 dir="ltr">
   <strong>Additional Examples</strong>

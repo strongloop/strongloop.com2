@@ -540,27 +540,19 @@ You can define a model declaratively in models.json and you can programmatically
 </p>
 
 <li dir="ltr">
-  <p dir="ltr">
     Define the model using <a href="http://docs.strongloop.com/display/LB/LoopBack+Definition+Language">LoopBack Definition Language (LDL)</a>. This provides a model definition in JSON or as a JavaScript object.
-  </p>
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
     Create an instance of <code>ModelBuilder</code> or <code>DataSource</code> which extends from <code>ModelBuilder</code>. <code>ModelBuilder</code> compiles model definitions to JavaScript constructors of model classes.DataSource inherits that function from <code>ModelBuilder</code>. In addition, DataSource adds behaviors to model classes by mixing in methods from the <code>DataAccessObject</code> (DAO) into the model class.
-  </p>
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
     Use <code>ModelBuilder</code> or <code>DataSource</code> to build a JavaScript constructor (i.e, the model class) from the model definition. Model classes built from <code>ModelBuilder</code> can be later attached to a <code>DataSource</code> to receive the mixin of data access functions.
-  </p>
 </li>
 
 <li dir="ltr">
-  <p dir="ltr">
     As part of step 2, <code>DataSource</code> initializes the underlying Connector to provides configurations to the connector instance.Connector works with <code>DataSource</code> to define the functions as <code>DataAccessObject</code> to be mixed into the model class. The DataAccessObject consists of a list of static & prototype methods.
-  </p>
 </li>
 
 <h3 dir="ltr">
@@ -581,12 +573,11 @@ You can define a model declaratively in models.json and you can programmatically
   To checkout more details please visit <a href="http://loopback.io">Loopback.io</a> or <a href="http://strongloop.com/mobile-application-development/loopback/">Strongloop</a> website. In our next weekly blog we will deep-dive into the API services architecture of Loopback.
 </p>
 
-<h2 dir="ltr">
-  <strong style="font-size: 1.5em;">What’s next?</strong>
+<h2 dir="ltr">What’s next?
 </h2>
 
 <li style="margin-left: 2em;">
-  <span style="font-size: 18px;"><a href="http://strongloop.com/node-js/whats-new-in-node-js-v0-12/">Read about eight exciting new upcoming Node v0.12 features</a> and how to make the most of them, from the authors themselves.<a href="http://strongloop.com/strongblog/performance-node-js-v-0-12-whats-new/"><br /> </a></span>
+  <span style="font-size: 18px;"><a href="http://strongloop.com/node-js/whats-new-in-node-js-v0-12/">Read about eight exciting new upcoming Node v0.12 features</a> and how to make the most of them, from the authors themselves.<a href="http://strongloop.com/strongblog/performance-node-js-v-0-12-whats-new/"></a></span>
 </li>
 <li style="margin-left: 2em;">
   <span style="font-size: 18px;">Need </span><a href="http://strongloop.com/node-js-support/expertise/">training and certification</a>for Node? Learn more about both the private and open options StrongLoop offers.

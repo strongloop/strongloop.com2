@@ -60,10 +60,12 @@ The script will update apt-get and install some of the usual suspects: python-so
 
 To run the script on your server:
 
-  1.  <span style="font-size: medium;">copy the contents of <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/blob/master/install.sh">script.sh</a> to your copy buffer with CMD+Copy</span>
-  2.  <span style="font-size: medium;">From the terminal you can simply &#8216;wget <a href="http://raw.github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/master/install.sh">http://raw.github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/master/install.sh</a>&#8216; Just copy past the script to your command line with.</span>
-  3 . <span style="font-size: medium;"><span style="font-size: medium;"> &#8230;and then run the command with &#8216;chmod +x script.sh; ./script.sh&#8217;</span></span> 
-      1.  <span style="font-size: medium;">Stand Up your LoopBack Mobile Server with the following commands</span>
+1.  copy the contents of <a href="https://github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/blob/master/install.sh">script.sh</a> to your copy buffer with CMD+Copy
+2.  From the terminal you can simply &#8216;wget <a href="http://raw.github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/master/install.sh">http://raw.github.com/mschmulen/ios-mobile-server-with-node-and-digitalocean/master/install.sh</a>&#8216; Just copy paste the script to your command line.
+
+3 . &#8230;and then run the command with &#8216;chmod +x script.sh; ./script.sh&#8217;
+
+<span style="font-size: medium;">Stand Up your LoopBack Mobile Server with the following commands</span>
 
   ```js
 cd /var/apps
@@ -88,25 +90,22 @@ Now we can integrate a mobile application with our Digital Ocean SSD virtual mac
 
 The best part is we don&#8217;t even need to install Node or LoopBack on our local dev machine ( although this is useful if you want to run your development cycle on your local box when your disconnected from the network ). You can download the iOS Framework SDK directly from ([http://github.com/strongloop-community)[http://github.com/strongloop-community/loopback-ios-sdk]](http://github.com/strongloop-community)%5Bhttp://github.com/strongloop-community/loopback-ios-sdk%5D) and start with your process.
 
-  1.  <span style="font-size: medium;">Clone the iOS example apps on your local machine</span>
+  <span style="font-size: medium;">Clone the iOS example apps on your local machine</span>
 
-<div>
-  ```js
-git clone git@github.com:strongloop-community/loopback-examples-ios.git
+
 ```js
-</div>
+git clone git@github.com:strongloop-community/loopback-examples-ios.git
+```
 
-  1.  <span style="font-size: medium;">Open the TableView example in XCode (you should also checkout the MapView and Remote Procedure projects as well).</span>
+  <span style="font-size: medium;">Open the TableView example in XCode (you should also checkout the MapView and Remote Procedure projects as well).</span>
 
 You can open the XCode project with the following command on your local dev machine.
 
-<div>
-  ```js
-open loopback-examples-ios/ios-tableview-simple-example/tableview-example.xcodeproj
 ```js
-</div>
+open loopback-examples-ios/ios-tableview-simple-example/tableview-example.xcodeproj
+```
 
-  1.  <span style="font-size: medium;">Update the endpoint URL to match your newly instantiated Digital Ocean virtual machine IP address, by modifying the AppDelegate.m file in the tableview-example group:</span>
+  <span style="font-size: medium;">Update the endpoint URL to match your newly instantiated Digital Ocean virtual machine IP address, by modifying the AppDelegate.m file in the tableview-example group:</span>
 
 change :
 
@@ -128,7 +127,7 @@ to
     }
     
 
-  1.  <span style="font-size: medium;">Run the project in the simulator with the ( ⌘ + R ) hot key or press the play triangle in the top left corner of XCode.</span>
+  <span style="font-size: medium;">Run the project in the simulator with the ( ⌘ + R ) hot key or press the play triangle in the top left corner of XCode.</span>
 
 The Examples app will leverage the &#8220;product&#8221; model that you defined when creating your LoopBack Node Server instance, so you can simply explore the code in the ViewController.m file to see how to Create, Read, Update and Delete Mobile defined models from your Objective-C iOS mobile Application.
 

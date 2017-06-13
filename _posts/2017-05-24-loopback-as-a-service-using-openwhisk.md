@@ -81,7 +81,7 @@ Let's explore a couple of these actions in more detail. Once the examples are un
 
 Create a new `package.json` with:
 
-```javascript
+```js
 {
   "name": "create-model",
     "main": "index.js",
@@ -94,7 +94,7 @@ Create a new `package.json` with:
 
 And `index.js` is:
 
-```javascript
+```js
 var Cloudant = require('cloudant')
 var cloudant = Cloudant("<YOUR_CLOUDANT_URL>");
 const uuidV4 = require('uuid/v4');
@@ -138,7 +138,7 @@ exports.main = create_model;
 
 **2. Create a zip for the package**
 
-```javascript
+```js
 zip -r createModel.zip *
 ```
 
@@ -146,7 +146,7 @@ zip -r createModel.zip *
 
 For details, see [here](https://console.ng.bluemix.net/docs/openwhisk/openwhisk_webactions.html#openwhisk_webactions).
 
-```javascript
+```js
 wsk action create /sukrishj_dev/demo/createModel --kind nodejs:6 createModel.zip --web true
 ok: created action demo/createModel
 ```
@@ -155,7 +155,7 @@ ok: created action demo/createModel
 
 **4. Invoke the OpenWhisk webAction**
 
-```javascript
+```js
 curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj_dev/demo/createModel.http –X POST -H 'Content-Type: application/json' -d @model.json 
 {"modelId":"c95fcc09-11a2-4ddb-bbdc-e7053d91ed3e"}
 ```
@@ -175,7 +175,7 @@ The implementation of this action:
 </ul>
 Create a new `package.json` as shown below:
 
-```javascript
+```js
 {
   "name": "create-model-instance",
   "version": "1.0.0",
@@ -193,7 +193,7 @@ Create a new `package.json` as shown below:
 
 And `index.js` is:
 
-```javascript
+```js
 var loopback = require('loopback');
 var app = loopback();
 
@@ -266,29 +266,29 @@ exports.main = create_model_instance;
 **Note:** The implementation reads the model and datasource information stored by the createModel action in Cloudant. Sharing of datastores across micro-services is considered an anti-pattern and is done here only to simplify the implementation for demonstration purposes. In the real world, the createModelInstance would have its own persistence which could be optimized for low read latency (CQRS).
 
 1. Install package dependencies
-    ```javascript
+    ```js
     npm install
     ```
 
 1. Install the LoopBack Cloudant connector
-    ```javascript
+    ```js
     npm install loopback-connector-cloudant --save
     ```
   **Note:** We use Cloudant connector to create a record in a collection specified in the datasource.
 
 2. Create a zip for the package
-  ```javascript
+  ```js
   zip -r createModelInstance.zip
   ```
 
 3. Create an OpenWhisk action for the package (Refer to [Create a simple API](https://loopback.io/doc/en/lb3/Create-a-simple-API.html) for details)
-  ```javascript
+  ```js
   wsk action create /sukrishj_dev/demo/createModelInstance --kind nodejs:6 createModelInstance.zip  --web true
   ok: created action demo/createModelInstance
   ```
 
 4. Invoke the OpenWhisk webAction
-  ```javascript
+  ```js
   curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj@in.ibm.com_dev/demo/createModelInstance.http/AMo7xBkvdF/c95fcc09-11a2-4ddb-bbdc-e7053d91ed3e/Accounts  X POST -H 'Content-Type: application/json' -d @model.json
   {"name":"Subu Krishnan","id":"007","reference":"James Bond"}
   ```
@@ -300,14 +300,14 @@ A key thing to observe in the implementation of createModelInstance OpenWhisk ac
 
 **Note:** An OpenWhisk action was created for Redis using the above mentioned approached and invoked as follows: 
 
-```javascript
+```js
 curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj_dev/demo/createRedisModelInstance.http/AMo7xBkvdF/061d5b185ae2f4e8efdb5dbf315752f4/Accounts -X POST -H 'Content-Type: application/json' -d @model.json
 {“name”:”Subu Krishnan”,”id”:”007″,”reference”:”James Bond”}
 ```
 
 We can use redis-cli to see that the model got created in Redis.
 
-```javascript
+```js
 bluemix-sandbox-dal-9-portal.8.dblayer.com:25643> KEYS Account*
 
 1) "Account:007"

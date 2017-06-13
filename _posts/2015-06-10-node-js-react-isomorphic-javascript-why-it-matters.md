@@ -131,7 +131,7 @@ module.exports = function(app) {
 
 Then inside /views/index.ejs you can see that \`reactHTML\` is then output into the express template. In this instance we are using .ejs for our templating engine, but you can use whatever templating engine you wish ( jade, handlebars, etc )
 
-```js
+```reactHTML
 <!-- /views/index.ejs -->
 <!doctype html>
 <html>

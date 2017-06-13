@@ -32,7 +32,8 @@ Next, grab yourself a copy of [HTML5 Boilerplate](http://html5boilerplate.com/).
 
 Next, we will be making package.json, one of the two files that are necessary for Grunt to do its thing. Enter thegruntProject directory and start editing an empty text file. Paste the following into it:
 
-<pre line="1" lang="javascript">{
+```js
+{
 "name": "gruntProject",
 "version": "0.0.1",
 "devDependencies": {
@@ -48,7 +49,8 @@ Let&#8217;s first add the grunt package to our list (it&#8217;s the cornerstone 
 
 What you’re doing here is installing Grunt locally into a node_module directory in the project and using the `--save-dev` flag to store that information under the `devDependencies` object in your package.json file. Go take a look. You should see this now:
 
-<pre line="1" lang="javascript">{
+```js
+{
   "name": "my-project-name",
   "version": "0.1.0",
   "devDependencies": {
@@ -73,7 +75,8 @@ The gruntfile is where you set options and specify operations that Grunt will us
 
 Pull up another empty text file and paste the following:
 
-<pre line="1" lang="javascript">module.exports = function(grunt) {
+```js
+module.exports = function(grunt) {
 
     grunt.initConfig({
         //grunt tasks go here
@@ -87,7 +90,8 @@ Save this file as `Gruntfile.js.`
 
 Now that we have our files prepared, let&#8217;s start configuring our options for some of these tasks. Let&#8217;s configure the JSHint task that checks our JavaScript for errors. While the Grunt plugin for JSHint comes equipped with a multitude of configurable options outlined in its documentation, let&#8217;s just stick to something simple.
 
-<pre line="1" lang="javascript">module.exports = function(grunt) {
+```js
+module.exports = function(grunt) {
 
     grunt.initConfig({
 
@@ -113,12 +117,14 @@ We should get the following output:
 
 We&#8217;ve successfully automated the linting of your main.js file. Awesome! Let&#8217;s open up the main.js file we just linted and write some not so interesting JavaScript:
 
-<pre line="1" lang="javascript">function foo() {}
+```js
+function foo() {}
 ```
 
 Remember those plugins we loaded earlier that allowed us to concatenate and minimize our scripts? Let&#8217;s add those to our Gruntfile.js, set their options, and enable them:
 
-<pre line="1" lang="javascript">module.exports = function(grunt) {
+```js
+module.exports = function(grunt) {
 
     grunt.initConfig({
 
@@ -162,7 +168,8 @@ Now that we&#8217;ve done this, running either grunt concat or grunt uglify woul
 
 At this point, you may be thinking, &#8220;Wait a second… This isn&#8217;t optimized at all! I still have to run grunt task to make something happen!&#8221; Don’t worry. Luckily, Grunt let&#8217;s you outline which specific tasks you want to run. For instance, Grunt has a built in default task that can be configured with `registerTask('default', /* your tasks */); --` The name of the actual task (in this case Grunt&#8217;s default) would be the first argument, followed by the task list you want to run when the command is issued. Let&#8217;s add that piece of code to the bottom:
 
-<pre line="1" lang="javascript">module.exports = function(grunt) {
+```js
+module.exports = function(grunt) {
 
     grunt.initConfig({
 
@@ -226,7 +233,8 @@ You should now have a brand new script.js file in your js directory. Pretty simp
 
 A default case could be all that you may need, but there might be times you want to run certain tasks for a development or production environment. That’s not a problem. Just use the same formula as before:
 
-<pre line="1" lang="javascript">grunt.registerTask('development', ['jshint']);
+```js
+grunt.registerTask('development', ['jshint']);
 grunt.registerTask('production', ['jshint', 'concat', 'uglify']);
 ```
 
