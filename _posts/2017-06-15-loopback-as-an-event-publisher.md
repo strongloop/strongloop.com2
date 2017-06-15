@@ -248,7 +248,6 @@ created consumer.....
 ```bash
 $ mosquitto_sub -h localhost  -p 1883 -t /v1/subutest
 ```
-
 3. Check the broker logs shows that 2 clients have connected to it.
 ```bash
 1493572839: New connection from 127.0.0.1 on port 1883.
