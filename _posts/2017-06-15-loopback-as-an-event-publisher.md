@@ -244,7 +244,6 @@ $ mosquitto -p 1883
 $ node client.js
 created consumer.....
 ```
-
 **Note:** To make things more interesting we start another non Node.js consumer listening to the same topic.
 ```bash
 $ mosquitto_sub -h localhost  -p 1883 -t /v1/subutest
