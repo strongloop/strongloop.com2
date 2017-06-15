@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LoopBack As An Event Publisher
+title: LoopBack as an Event Publisher
 date: 2017-06-15T05:55:00+00:00
 author:  
 - Subramanian Krishnan
