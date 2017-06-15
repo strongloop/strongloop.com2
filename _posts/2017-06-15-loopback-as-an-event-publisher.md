@@ -230,7 +230,8 @@ siskel.on('message', function(topic, msg) {
 
 ## Demo
 
-1. Start the broker
+1. Start the broker.
+
 ```bash
 $ mosquitto -p 1883
 1493572785: mosquitto version 1.4.11 (build date 2017-03-14 19:27:59+0000) starting
@@ -239,20 +240,20 @@ $ mosquitto -p 1883
 1493572785: Opening ipv6 listen socket on port 1883.
 ```
 
-2. Start the client app
+2. Start the client app.
 
 ```bash
 $ node client.js
 created consumer.....
 ```
 
-Note: To make things more interesting we start another non Node.js consumer listening to the same topic.
+**Note:** To make things more interesting we start another non Node.js consumer listening to the same topic.
 
 ```bash
 $ mosquitto_sub -h localhost  -p 1883 -t /v1/subutest
 ```
 
-3. Checking the broker logs shows that 2 clients have connected to it:
+3. Check the broker logs shows that 2 clients have connected to it.
 
 ```bash
 1493572839: New connection from 127.0.0.1 on port 1883.
@@ -261,7 +262,7 @@ $ mosquitto_sub -h localhost  -p 1883 -t /v1/subutest
 1493572943: New client connected from ::1 as mosqsub/1718-Subramania (c1, k60).
 ```
 
-4. Run the Event Publisher LoopBack app
+4. Run the Event Publisher LoopBack app.
 
 ```bash
 $ node server.js
@@ -269,7 +270,7 @@ Web server listening at: http://:::51192/
 accounts /*The event model active*/
 ```
 
-5. Login to Cloudant and create a new document in accounts collection.
+5. Log in to Cloudant and create a new document in accounts collection.
 
 <img class="aligncenter wp-image-29404" src="{{site.url}}/blog-assets/2017/04/CloudAntRecord.png" alt="Cloudant new record" width="600" height="331" />
 
