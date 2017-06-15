@@ -17,7 +17,7 @@ Most people who have used [LoopBack](http://loopback.io/) know that it is a high
 These REST APIs can be used by client applications (Web/Mobile/IoT/Other) to perform CRUD + Custom operations on any 3rd party application for which there is a LoopBack connector. Irrespective of the nature of the APIs/Client libraries exposed by the 3rd party application, the client has standard, simple and runtime agnostic REST APIs to perform actions on the application. That is the value proposition of LoopBack.
 
 Now let's consider the other side of the story: where an event occurs in a 3rd party application (ex. a record got created / updated / deleted). Different applications may expose these events through different mechanisms (Webhooks, Streaming, Polling API, Websockets, PubSub, PubSubHubbub, other). But what if client applications want to consume these events in a standard, simple and runtime agnostic way? Is that possible with LoopBack? Can we use the same LoopBack programming constructs of datasources, models and connectors for the events side of the story?
-
+<!--more-->
 It turns out that with a little work, it can be done and this post shows how. 
 
 Fundamentally, the architected solution should have the following components:
