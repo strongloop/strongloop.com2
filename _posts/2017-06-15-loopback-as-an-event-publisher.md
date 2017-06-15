@@ -231,7 +231,6 @@ siskel.on('message', function(topic, msg) {
 ## Demo
 
 1. Start the broker.
-
 ```bash
 $ mosquitto -p 1883
 1493572785: mosquitto version 1.4.11 (build date 2017-03-14 19:27:59+0000) starting
@@ -241,7 +240,6 @@ $ mosquitto -p 1883
 ```
 
 2. Start the client app.
-
 ```bash
 $ node client.js
 created consumer.....
@@ -254,7 +252,6 @@ $ mosquitto_sub -h localhost  -p 1883 -t /v1/subutest
 ```
 
 3. Check the broker logs shows that 2 clients have connected to it.
-
 ```bash
 1493572839: New connection from 127.0.0.1 on port 1883.
 1493572839: New client connected from 127.0.0.1 as mqttjs_8dfcc98e (c1, k10).
@@ -263,7 +260,6 @@ $ mosquitto_sub -h localhost  -p 1883 -t /v1/subutest
 ```
 
 4. Run the Event Publisher LoopBack app.
-
 ```bash
 $ node server.js
 Web server listening at: http://:::51192/
@@ -271,11 +267,9 @@ accounts /*The event model active*/
 ```
 
 5. Log in to Cloudant and create a new document in accounts collection.
-
 <img class="aligncenter wp-image-29404" src="{{site.url}}/blog-assets/2017/04/CloudAntRecord.png" alt="Cloudant new record" width="600" height="331" />
 
 6. The Connector and LoopBack app logs show that a new event is detected:
-
 ```javascript
 { _id: '26dd638e8462387f03f2f6f25e4e6926',
   _rev: '1-08fb96a08261081dcd24b7a1629c8cde',
@@ -292,20 +286,17 @@ accounts /*The event model active*/
 ```
 
 7. Broker logs show that a new client (publisher) connected:
-
 ```bash
 1493573959: New connection from 127.0.0.1 on port 1883.
 1493573959: New client connected from 127.0.0.1 as mqttjs_e1b485ee (c1, k10).
 ```
 
 8. The Node.js client app logs show that a message is received with the new account details:
-
 ```bash
 /v1/subutest {"model":"accounts","message":{"_id":"26dd638e8462387f03f2f6f25e4e6926","_rev":"1-08fb96a08261081dcd24b7a1629c8cde","name":"James Bond","type":"Demo","region":"Bangalore"}}
 ````
 
 9. The mosquitto subscriber also receives the same message:
-
 ```javascript
 {"model":"accounts","message":{"_id":"26dd638e8462387f03f2f6f25e4e6926","_rev":"1-08fb96a08261081dcd24b7a1629c8cde","name":"James Bond","type":"Demo","region":"Bangalore"}}
 ```
