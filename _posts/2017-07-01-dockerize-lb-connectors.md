@@ -11,7 +11,7 @@ categories:
 
 ## Introduction
 
-Data source connectors are a vital part of LoopBack that provide access to back-end data. Connectors typically provide access to an external database system.  However, setting up a database system for development can be a barrier because it can be difficult to:
+Data source connectors are a vital part of [LoopBack](http://loopback.io/) that provide access to back-end data. Connectors typically provide access to an external database system.  However, setting up a database system for development can be a barrier because it can be difficult to:
 - Download and install the database system.
 - Set up the database.
 - Isolate tests run against a database.
@@ -86,6 +86,6 @@ Lowering barriers to entry improves the contribution experience for all, and we'
 
 ## What's next?
 
-Loopback can help you get an API up and running in 5 minutes! [Here’s how](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/).
-
+- Loopback can help you get an API up and running in 5 minutes! [Here’s how](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/).
+- Read about planned changes to LoopBack [Here](https://strongloop.com/strongblog/announcing-loopback-next/).
 
