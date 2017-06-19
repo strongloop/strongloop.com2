@@ -31,4 +31,4 @@ TSL are planning to release the first version of the app on iOS by the end of th
 
 ## What's next?
 
-If you want to make a backend application just like PicksApp, go see how you can have an API up and running in five minutes [here](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/).
+If you want to make a backend application just like XtraPoints, go see how you can have an API up and running in five minutes [here](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/).
