@@ -9,7 +9,7 @@ categories:
   - Events
 ---
 
-Let's start with a backstory - in 2010, my dad, [Robert Okun](https://www.linkedin.com/in/robertokun/) and I started using an Excel spreadsheet to see who could correctly predict the outcome of more NFL games on a weekly basis. This caught on quite easily, and we've kept the game going since then. Along the way we made  some additions to the game rules, trackers, points, and so on. Needless to say, the Excel spreadsheet has become a little, uh, let's call it cumbersome.
+Let's start with a backstory. In 2010, my dad, [Robert Okun](https://www.linkedin.com/in/robertokun/), and I started using an Excel spreadsheet to see who could correctly predict the outcome of more NFL games on a weekly basis. This caught on quite easily, and we've kept the game going since then. Along the way we made some additions to the game rules, trackers, points, and so on. Needless to say, the Excel spreadsheet has become a little, uh, let's call it cumbersome.
 
 ![This got old](http://imgur.com/a/yEs0J "How to play our game")
 
