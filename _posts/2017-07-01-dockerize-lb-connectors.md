@@ -83,3 +83,9 @@ Here is an example of how to run the script to setup a Docker container for the 
 This new feature will enable community contributors to use, test, and develop LoopBack data source connectors more easily than ever. Thanks to Docker, it has never been easier to contribute code in all LoopBack connector modules.
 
 Lowering barriers to entry improves the contribution experience for all, and we'd love to see your contributions in the future!
+
+## What's next?
+
+Loopback can help you get an API up and running in 5 minutes! [Here’s how](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/).
+
+
