@@ -11,8 +11,11 @@ categories:
 
 Let's start with a backstory. In 2010, my dad, [Robert Okun](https://www.linkedin.com/in/robertokun/), and I started using an Excel spreadsheet to see who could correctly predict the outcome of more NFL games on a weekly basis. This caught on quite easily, and we've kept the game going since then. Along the way we made some additions to the game rules, trackers, points, and so on. Needless to say, the Excel spreadsheet has become a little, uh, let's call it cumbersome.
 
-![This got old](http://imgur.com/a/yEs0J "How to play our game")
+This got old.
 
+{% include image.html file='2017/06/this got old.png' alt='This got old' %}
+
+<!--more-->
 After the 2016 season ended, a few things became clear. The Excel spreadsheet was getting old. We wanted to invite others to play, but it wasn’t an easy onboarding process. How could we better manage our own gameplay and more easily involve others? As a developer myself, a web or mobile version of the game seemed like the obvious option.
 
 You do know where I'm going with this, don't you? Something like [LoopBack](https://loopback.io) sure would be easy to get this up and running.
