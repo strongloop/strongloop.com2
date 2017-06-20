@@ -26,7 +26,7 @@ I'm going to use [`test/cass.custom.test.js`](https://github.com/strongloop/loop
 
 There are two top-level blocks in the figure:
 
-(1) LoopBack app & Cassandra connector, which is the client, and
+(1) LoopBack app & Cassandra connector, which is the client, and;
 (2) the Cassandra database back end.
 
 Green background shows (1) LoopBack API calls down to the Cassandra driver. Blue background shows (2) CQL and Cassandra internal API calls over the Internet as well as the Cassandra system implemented in Java. As the color implies, the blue arrows show Cassandra-side data flow directions in the Cassandra back end. We are going to examine each step.
