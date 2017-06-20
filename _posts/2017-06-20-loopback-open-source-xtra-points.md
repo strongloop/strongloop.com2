@@ -22,6 +22,8 @@ You do know where I'm going with this, don't you? Something like [LoopBack](http
 
 ## XtraPoints 1.0
 
+{% include image.html file='2017/06/xpoint.png' alt='XtraPoints logo' %}
+
 Sure enough, the talk turned to reality, and something exciting is underway. My dad now works for [The SilverLogic](https://tsl.io) as their Chief Business Development Officer, and he and [David Hartmann, CEO](https://www.linkedin.com/in/hartmanndavid/) have put a vision in place to make this a fully-playable and open source (!!!) game in time for the 2017 NFL Season. The SilverLogic (TSL) is a full service software engineering firm based out of South Florida, working with clients on unique ways to leverage mobile and web technology to make your life easier. Check out their portfolio [here](https://tsl.io/portfolio/).
 
 Along with using LoopBack, [Kitura](http://kitura.io), and [Bluemix](https://console.ng.bluemix.net/catalog/), TSL are working hard on a base application called *BaseApp* accelerating rapid development of iOS and Android applications, which they plan to open source as part of this release.
