@@ -14,24 +14,26 @@ In this blog, I’ll walk you through the steps and corresponding source code bl
 
 [![How To Use Materialized Views with LoopBack Cassandra Connector](../blog-assets/2017/04/apache-cassandra.png)](http://cassandra.apache.org/)
 
-Install the Cassandra connector from 
-[npm](https://www.npmjs.com/package/loopback-connector-cassandra).  We've provided extensive documentation for it on 
-[loopback.io](http://loopback.io/doc/en/lb3/Cassandra-connector.html).
+Install the Cassandra connector from:
 
-I'm going to use [`test/cass.custom.test.js`](https://github.com/strongloop/loopback-connector-cassandra/blob/v1.1.1/test/cass.custom.test.js) as an example of end-to-end work flow.  The figure below is my attempt to visualize the work flow:
+[npm](https://www.npmjs.com/package/loopback-connector-cassandra)
+
+We've provided extensive documentation for it on [loopback.io](http://loopback.io/doc/en/lb3/Cassandra-connector.html).
+
+I'm going to use [`test/cass.custom.test.js`](https://github.com/strongloop/loopback-connector-cassandra/blob/v1.1.1/test/cass.custom.test.js) as an example of end-to-end work flow. The figure below is my attempt to visualize the work flow:
 
 ![Materialized View Access Work Flow](../blog-assets/2017/05/cassandra-materialized-views.png)
 
-
 There are two top-level blocks in the figure:
+
 (1) LoopBack app & Cassandra connector, which is the client, and
 (2) the Cassandra database back end.
 
-Green background shows (1) LoopBack API calls down to the Cassandra driver.  Blue background shows (2) CQL and Cassandra internal API calls over the Internet as well as the Cassandra system implemented in Java.  As the color implies, the blue arrows show Cassandra-side data flow directions in the Cassandra back end.  We are going to examine each step.
+Green background shows (1) LoopBack API calls down to the Cassandra driver. Blue background shows (2) CQL and Cassandra internal API calls over the Internet as well as the Cassandra system implemented in Java. As the color implies, the blue arrows show Cassandra-side data flow directions in the Cassandra back end. We are going to examine each step.
 
 <h3>Step 1 : Create a LoopBack data source and attach the Cassandra connector instance to it</h3>
 
-In this blog, we use `db` as the data source which is created in [`test/init.js`](https://github.com/strongloop/loopback-connector-cassandra/blob/v1.1.1/test/init.js).  This step is not included in the figure.
+In this blog, we use `db` as the data source which is created in [`test/init.js`](https://github.com/strongloop/loopback-connector-cassandra/blob/v1.1.1/test/init.js). This step is not included in the figure.
 
 ```js
 // Since the test code resides in the connector itself,
@@ -43,7 +45,7 @@ var db = new DataSource(require('../'), config);
 
 <h3>Step 2 : Schema definition and model creation of the base table</h3>
 
-As shown in the area of blue background, there is a base table and two views associated with the base table.  In the example, the base table is called `allInfo`.  The base table is an ordinary table, i.e., the table schema is defined and the model is created by `db.define` LoopBack operation and the schema is populated to the database back end by `db.automigrate` LoopBack operation.
+As shown in the area of blue background, there is a base table and two views associated with the base table. In the example, the base table is called `allInfo`. The base table is an ordinary table, i.e., the table schema is defined and the model is created by `db.define` LoopBack operation and the schema is populated to the database back end by `db.automigrate` LoopBack operation.
 
 ```js
 var allInfo, members, teams; // LoopBack models
@@ -65,7 +67,7 @@ db.automigrate(['allInfo'], function(err) {
 
 <h3>Step 3 : Create models for materialized views</h3>
 
-Materialized views look exactly like tables to your LoopBack app.  However, LoopBack doesn't provides `define` and `automigrate` for Materialized Views.  Thus, we need to use `db.createModel` LoopBack operation and create a model for each materialized view.  We will use the model to read data from the materialized view.  As the arrows in the figure show, the app can only read from the materialized view.
+Materialized views look exactly like tables to your LoopBack app. However, LoopBack doesn't provides `define` and `automigrate` for Materialized Views. Thus, we need to use `db.createModel` LoopBack operation and create a model for each materialized view. We will use the model to read data from the materialized view. As the arrows in the figure show, the app can only read from the materialized view.
 
 In the example, we create two models corresponding to the two materialized views `members` and `teams` using `db.createModel`:
 
@@ -94,8 +96,7 @@ function createModelFromViewSchema(viewName) {
   return model;
 }
 ```
-You may be wondering why there is no `Step 3` shown in the figure.  That's because the model creation is a pure LoopBack operation and independent from the Cassandra back end.
-
+You may be wondering why there is no `Step 3` shown in the figure. That's because the model creation is a pure LoopBack operation and independent from the Cassandra back end.
 
 <h3>Step 4 : Create materialized views using CQL execute</h3>
 
@@ -116,11 +117,11 @@ db.connector.execute('CREATE MATERIALIZED VIEW teams AS ' +
   'WHERE league IS NOT NULL AND team IS NOT NULL AND member IS NOT NULL ' +
   'PRIMARY KEY (league, team, member)', done);
 ```
-In the second `db.connector.execute` CQL, `member` field is not `SELECT`-ed, but shows up in the PRIMARY KEY definition.  Cassandra does not warn nor error but brings in all the primary key fields of the base table by default to the view's PRIMARY KEY. 
+In the second `db.connector.execute` CQL, `member` field is not `SELECT`-ed, but shows up in the PRIMARY KEY definition. Cassandra does not warn nor error but brings in all the primary key fields of the base table by default to the view's PRIMARY KEY. 
 
 <h3>Step 5 : Populate data to the base table</h3>
 
-The base table `allInfo` is an ordinary table.  You can write and read data to/from the base table.
+The base table `allInfo` is an ordinary table. You can write and read data to/from the base table.
 
 ```js
 var membersData = [ // fields: registered, member, zipCode, team
@@ -156,7 +157,8 @@ teamsData.forEach(function(team) {
 
 <h3>Step 6 : Read data from the materialized views</h3>
 
-LoopBack `find` operations can be used to `read` data from the materialized view.  Once created, the materialized views can be read like tables.
+LoopBack `find` operations can be used to `read` data from the materialized view. Once created, the materialized views can be read like tables.
+
 ```js
 // find rows from `members` where 'team` is `Blue`.
 members.find({where: {team: 'Blue'}}, function(err, rows) {
@@ -191,11 +193,15 @@ teams.find({where: {team: 'Green'}, fields: {member: false}}, function(err, rows
 
 <h3>Notes</h3>
 
-The order of the steps is chosen for readability.  When you design tables and materialized views, you might want to do the view schema design first in normalized form, then, design the base table.
+The order of the steps is chosen for readability. When you design tables and materialized views, you might want to do the view schema design first in normalized form, then, design the base table.
 
-Also, note that all primary key fields of the base table are used in primary key of each view by default (and you cannot change that) when `CREATE MATERIALIZED VIEW`.  One additional non-primary-in-base-table field can be used in the view's primary key.
+Also, note that all primary key fields of the base table are used in primary key of each view by default (and you cannot change that) when `CREATE MATERIALIZED VIEW`. One additional non-primary-in-base-table field can be used in the view's primary key.
 
-The example code used in this blog is available on 
-[github.com](https://github.com/strongloop/loopback-connector-cassandra/blob/master/test/cass.custom.test.js).
+The example code used in this blog is available on [github.com](https://github.com/strongloop/loopback-connector-cassandra/blob/master/test/cass.custom.test.js).
 
 [Questions and pull requests](https://github.com/strongloop/loopback-connector-cassandra/issues) are welcome. Please let us know what you think!
+
+## What's next?
+
+- Loopback can help you get an API up and running in 5 minutes! [Here’s how](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/).
+- Read about planned changes to LoopBack [Here](https://strongloop.com/strongblog/announcing-loopback-next/).
