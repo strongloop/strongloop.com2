@@ -17,7 +17,7 @@ In this blog, I’ll walk you through the steps and corresponding source code bl
 Install the Cassandra connector from:
 
 [npm](https://www.npmjs.com/package/loopback-connector-cassandra)
-
+<!--more-->
 We've provided extensive documentation for it on [loopback.io](http://loopback.io/doc/en/lb3/Cassandra-connector.html).
 
 I'm going to use [`test/cass.custom.test.js`](https://github.com/strongloop/loopback-connector-cassandra/blob/v1.1.1/test/cass.custom.test.js) as an example of end-to-end work flow. The figure below is my attempt to visualize the work flow:
