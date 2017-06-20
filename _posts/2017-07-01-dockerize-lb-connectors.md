@@ -12,6 +12,7 @@ categories:
 ## Introduction
 
 Data source connectors are a vital part of [LoopBack](http://loopback.io/) that provide access to back-end data. Connectors typically provide access to an external database system.  However, setting up a database system for development can be a barrier because it can be difficult to:
+
 - Download and install the database system.
 - Set up the database.
 - Isolate tests run against a database.
