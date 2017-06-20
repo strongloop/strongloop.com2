@@ -7,7 +7,7 @@ author:
    - Nagarjuna Surabathina
    - Subramanian Krishnan
 guid: https://strongloop.com/?p=29431
-permalink: /strongblog/loopback-as-event-publisher/
+permalink: /strongodd/loopback-as-event-publisher/
 categories:
   - Community
 ---

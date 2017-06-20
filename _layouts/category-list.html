@@ -17,8 +17,8 @@ layout: default
           <table><thead><tr><th>Title</th><th>Excerpt</th></tr></thead>
             <tbody>
             {% assign thisTag = page.tagName %}
-
-            {% for post in site.posts %}
+            {% assign posters = site.posts | where_exp:"post", "post.date <= site.time" %}
+            {% for post in posters %}
               {% for tag in post.categories %}
                   {% if tag == thisTag %}
                   <tr><td><a class="no_icon" href="{{site.url}}{{ post.url }}">{{post.title}}</a>

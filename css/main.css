@@ -1258,8 +1258,3 @@ code[class*="language-"] {
     font-family: 'Ubuntu Mono',Courier,monospace;
     background: none;
 }
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-    background: rgba(0,0,0,0.35);
-}

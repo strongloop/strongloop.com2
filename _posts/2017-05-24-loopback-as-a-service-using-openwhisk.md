@@ -11,6 +11,7 @@ categories:
   - How-To
   - LoopBack
   - Cloud
+  - Draft
 ---
 
 In our [previous blog](https://strongloop.com/strongblog/creating-a-multi-tenant-connector-microservice-using-loopback/) we saw how we can host LoopBack as a multi-tenant micro-service on the cloud. As a quick recap, this would require us to:

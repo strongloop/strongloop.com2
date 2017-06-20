@@ -1,5 +1,7 @@
-{% for post in site.posts limit:include.number %}
 
+{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+{% assign posters = site.posts | where_exp:"post", "post.date <= site.time" %}
+{% for post in posters limit:include.number %}
   <h4 class="c-heading -h3"><a class="no_icon" href="{{ post.url }}">{{ post.title }}</a></h4>
     {% if post.author %}<p class="author">by
       {% for author in post.author %}
@@ -44,5 +46,4 @@
   </a>
   </div>
   <hr class="faded">
-
 {% endfor %}

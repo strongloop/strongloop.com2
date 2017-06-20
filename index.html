@@ -63,7 +63,8 @@ permalink: /
     <h2 class="c-heading -h3">Latest Blog Posts</h2>
 
     <div class="c-grid">
-    {% for post in site.posts limit:3 %}
+    {% assign posters = site.posts | where_exp:"post", "post.date <= site.time" %}
+    {% for post in posters limit:3 %}
     <div class="_col -col-1-3">
       <div class="blog-mini">
         <h3 class="c-heading -h5"><a class="no_icon" href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h3>

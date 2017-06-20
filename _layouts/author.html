@@ -40,8 +40,8 @@ layout: default
     <div class="c-container -padded">
       <div class="c-grid">
         <div class="_col -col-4-5">
-
-          {% for post in site.posts %}
+          {% assign posters = site.posts | where_exp:"post", "post.date <= site.time" %}
+          {% for post in posters %}
             {% for author in post.author %}
               {% if author == page.author %}
                 <h4 class="c-heading -h5"><a class="no_icon" href="{{site.url}}{{ post.url }}">{{post.title}}</a></h2>
