@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Use Materialized Views with LoopBack Cassandra Connector
-date: 2017-07-20
+date: 2017-07-20T05:55:00+00:00
 author: Tetsuo Seto
 permalink: /strongblog/cassandra-materialized-view/
 categories: 
