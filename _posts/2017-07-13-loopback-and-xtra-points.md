@@ -31,7 +31,7 @@ I think this is going to be a really fun game to play. I've played fantasy footb
 
 ## When can I try it?
 
-TSL are planning to release the first version of the app on iOS by the end of this month, to allow enough time for **all** of the downloads to happen before the season starts. It'll be totally free, and you'll be able to watch the game get made in real time [here](this would be a good spot to put the github link if what we have is ready to open source). Being open source, I'm positive that TSL would love contributors to come on board and help get it up to speed.
+TSL are planning to release the first version of the app on iOS by the end of this month, to allow enough time for **all** of the downloads to happen before the season starts. It'll be totally free, and you'll be able to watch the game get made in real time on GitHub soon. Being open source, I'm positive that TSL would love contributors to come on board and help get it up to speed.
 
 ## What's next?
 
