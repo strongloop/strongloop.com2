@@ -2,6 +2,7 @@
 title: Join StrongLoop at Develoepr Week
 date: 2017-07-31
 author: Dave Whiteley
+permalink: /strongblog/join-strongloop-at-developer-week/
 categories:
   - Community
   - Events
@@ -9,7 +10,7 @@ categories:
 
 The StrongLoop team are going to be at [Developer Week New York](http://www.developerweek.com/NYC/). The event, described as New York City’s largest developer conference and expo, runs from June 19-21.
 
-{% include image.html file='developer week ny.png' alt='Developer Week NY' %}
+{% include image.html file='developer week ny.png' alt='Developer Week NY' class='center-image' %}
 <!--more-->
 Visit us at our booth to talk and the StrongLoop team. Developer Evangelist [Joe Sepi](https://strongloop.com/strongblog/my-friends-call-me-joe-sepi-and-you-can-too/) will be attending the event, as well as leading two discussions: 
 
