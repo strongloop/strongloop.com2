@@ -5,6 +5,7 @@ date: 2017-05-05T07:01:47+00:00
 author: Rashmi Hunt
 guid: http://strongloop.com/?p=29325
 permalink: /strongblog/building-enterprise-apis-for-soap-web-services-using-loopback
+featured: true
 categories:
 - API
 - LoopBack

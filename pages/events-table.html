@@ -11,6 +11,7 @@
 
 <tbody>
   {% assign event_information = site.eventer | where_exp:"eventer", "eventer.date >= site.time" %}
+  {% assign event_information = event_information | where_exp:"eventer", "eventer.visible != 0" %}
   {% for eventer in event_information %}
     <tr>
     	<td>{{ eventer.event-range }}</td><td><a href="{{ eventer.event-link }}">{{ eventer.title }}</a></td><td>{{ eventer.location }}</td>

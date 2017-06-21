@@ -15,6 +15,7 @@ categories:
 - node core
 - node.js
 - VM neutrality
+featured: true
 ---
 
 <p>We're sharing another episode of The Future of Node series from Changelog. IBM and StrongLoop sponsored Changelog’s The Future of Node Spotlight series at Node Interactive 2016. Adam spoke with event attendees about Node.js and the Node community. In this podcast, Adam discusses Node at Microsoft, ChakraCore, and VM Neutrality with Gaurav Seth and Arunesh Chandra.</p>
