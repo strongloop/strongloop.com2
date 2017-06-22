@@ -12,7 +12,7 @@ categories:
 
 In this blog, I’ll walk you through the steps and corresponding source code blocks to help make your LoopBack app interact with Cassandra Materialized Views.
 
-[![How To Use Materialized Views with LoopBack Cassandra Connector](https://strongloop.com/blog-assets/2017/05/blog-assets/2017/04/apache-cassandra.png)](http://cassandra.apache.org/)
+[![How To Use Materialized Views with LoopBack Cassandra Connector](https://strongloop.com/blog-assets/2017/04/apache-cassandra.png)](http://cassandra.apache.org/)
 
 Install the Cassandra connector from:
 
