@@ -12,7 +12,7 @@ categories:
 
 In this blog, I’ll walk you through the steps and corresponding source code blocks to help make your LoopBack app interact with Cassandra Materialized Views.
 
-[![How To Use Materialized Views with LoopBack Cassandra Connector](../blog-assets/2017/04/apache-cassandra.png)](http://cassandra.apache.org/)
+[![How To Use Materialized Views with LoopBack Cassandra Connector](https://strongloop.com/blog-assets/2017/05/blog-assets/2017/04/apache-cassandra.png)](http://cassandra.apache.org/)
 
 Install the Cassandra connector from:
 
@@ -22,7 +22,7 @@ We've provided extensive documentation for it on [loopback.io](http://loopback.i
 
 I'm going to use [`test/cass.custom.test.js`](https://github.com/strongloop/loopback-connector-cassandra/blob/v1.1.1/test/cass.custom.test.js) as an example of end-to-end work flow. The figure below is my attempt to visualize the work flow:
 
-![Materialized View Access Work Flow](../blog-assets/2017/05/cassandra-materialized-views.png)
+![Materialized View Access Work Flow](https://strongloop.com/blog-assets/2017/05/blog-assets/2017/05/cassandra-materialized-views.png)
 
 There are two top-level blocks in the figure:
 
