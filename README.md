@@ -11,6 +11,8 @@
   - [How to add a new page](#how-to-add-a-new-page)
   - [How to add a blog post](#how-to-add-a-blog-post)
   - [How to redirect a blog post](#how-to-redirect-a-blog-post)
+  - [How to hide a blog post](#how-to-hide-a-blog-post)
+  - [How to feature a blog post](#how-to-feature-a-blog-post)
   - [How to add a blog category](#how-to-add-a-blog-category)
   - [How to add an event](#how-to-add-an-event)
   - [How to add an author page](#how-to-add-an-author-page)
@@ -93,6 +95,7 @@ The site follows the standard Jekyll layout.  Specifically:
   - `post.html` - Used for blog posts.
   - `redirected.html` - Used for blog posts that were moved elsewhere (e.g. DeveloperWorks).
 - `_posts` - Contains blog posts.
+- `_eventer` - Contains events for the event table.
 - `blog-assets` - Contains images, videos, and other files exported from WordPress site.
 - `css` and `fonts` - Stylesheets and fonts.
 - `images` - Contains image files used in pages.
@@ -187,10 +190,46 @@ Where:
 - `<Category-Name>` matches the entry in `tags.yml`.
 - `permalink` is `strongblog/tag_<tagname>.html` by convention, with spaces converted to underscores.
 
+### How to hide a blog post
+
+Posts will be hidden if they are set to be published in the future under their `date: ` setting in the post's front matter.
+
+They can also be hidden by adding `visible: 0` to the post front matter. 
+
+### How to feature a blog post
+
+You can feature a post on the homepage by adding `featured: true` to the post front matter. Only one post can be featured at a time. The most recent pinned post will be shown.
+
 ### How to add an event
 
 Events are shown in a table, which is in `pages/events_table.html`.
-To add an event to the events table, simply add a new row to the HTML table in that page snippet.
+
+1.Create a new markdown file in `_eventer`.  
+By convention, the file name is of the form `yyyy-mm-dd-event-name` where the date is based on the start date of the event.
+
+2. Include the following front-matter:
+    ```
+    ---
+    layout: redirected
+    date: 2013-05-01
+    event-range: <Event Dates>
+    title: <Title Here>
+    redirect_to: <Event URL>
+    permalink: /event/<Event-Title>
+    event-link: <Event URL>
+    location: Hyderabad, India
+    role: Speaking & sponsor
+    ---
+    ```
+Where:
+- `<Event Dates>` is the time range in which the event is taking place e.g. 17-23 Aug or 1st September.
+- `<Title Here>` is the title of the event.
+- `<Event URL>` is the external url of the event.
+- `<Event-Title>` is the URL safe version of the title.
+
+This provides all the information that will appear in the table. Underneath the front matter you should include the Event Title again as content.
+
+The event will automatically appear in the table if it is in the future.
 
 ### How to add an author page
 

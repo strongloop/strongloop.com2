@@ -13,24 +13,25 @@ redirect_from:
   {% else %}
     {% assign color = 'x-white'%}
   {% endif %}
-
   <section class="c-section {{color}}">
     <div class="c-container -padded">
       <div class="c-grid">
         <div class="_col -col-4-5 blog-archive" >
           <h2>{{ year }}</h2>
           <ul>
-          {% for post in site.posts %}
+          {% assign posters = site.posts | where_exp:"post", "post.date <= site.time" %}
+          {% assign posters = posters | where_exp:"post", "post.visible != 0" %}
+          {% for post in posters %}
+            {% if post.visible != 0  %}
+              {% assign post_year = post.date | date: "%Y"% %}
+              {% capture sYear %}{{year}}{% endcapture %}
 
-            {% assign post_year = post.date | date: "%Y"% %}
-            {% capture sYear %}{{year}}{% endcapture %}
-
-            {% if sYear == post_year %}
-              <li>
-                <a class="no_icon" href="{{site.url}}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%b %-d, %Y" }}
-              </li>
+              {% if sYear == post_year %}
+                <li>
+                  <a class="no_icon" href="{{site.url}}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%b %-d, %Y" }}
+                </li>
+              {% endif %}
             {% endif %}
-
           {% endfor %}
           </ul>
         </div>
