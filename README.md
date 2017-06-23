@@ -222,14 +222,14 @@ By convention, the file name is of the form `yyyy-mm-dd-event-name` where the da
     ---
     ```
 Where:
-- `<Event Dates>` is the time range in which the event is taking place e.g. 17-23 Aug or 1st September.
+- `<Event Dates>` is the time range in which the event is taking place e.g. 17-23 Aug or 1st September. If it is a monthly event simply write 'Monthly'.
 - `<Title Here>` is the title of the event.
 - `<Event URL>` is the external url of the event.
 - `<Event-Title>` is the URL safe version of the title.
 
 This provides all the information that will appear in the table. Underneath the front matter you should include the Event Title again as content.
 
-The event will automatically appear in the table if it is in the future.
+The event will automatically appear in the table if it is in the future. For this reason I would recommend that the date entered in the front matter is the end date if it is a multi day event. For Monthly events an arbitrary date far enough in the future to cover the timespan of the event. 
 
 ### How to add an author page
 
