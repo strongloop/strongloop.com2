@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dockerize LoopBack Connectors
-date: 2017-07-01
+date: 2017-06-27
 author: Sakib Hasan
 permalink: /strongblog/dockerize-lb-connectors/
 categories:
@@ -77,7 +77,7 @@ For example, visit [How to run tests on MySQL](https://github.com/strongloop/loo
 
 Here is an example of how to run the script to setup a Docker container for the MySQL connector:
 
-![How To Run Docker Script For LB Connector](/blog-assets/2017/06/loopback-connector-docker.png)
+![How To Run Docker Script For LB Connector](https://strongloop.com/blog-assets/2017/06/loopback-connector-docker.png)
 
 ## Conclusion
 
