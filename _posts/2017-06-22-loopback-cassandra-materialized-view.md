@@ -8,6 +8,7 @@ categories:
 - Apache Cassandra
 - LoopBack
 - StrongLoop
+featured: true
 ---
 
 In this blog, I’ll walk you through the steps and corresponding source code blocks to help make your LoopBack app interact with Cassandra Materialized Views.
