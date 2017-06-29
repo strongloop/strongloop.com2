@@ -1,3 +1,13 @@
+---
+title: Let's Build a Band App with LoopBack! (part 1 of many)
+date: 2017-07-30
+author: Joe Sepi
+permalink: /strongblog/2017-07-30-lets-build-a-band-app-loopback-pt1/
+categories:
+  - How-To
+  - LoopBack
+---
+
 # Let's build a band app! (part 1 of many)
 
 In this series, we will work through building an application to support the needs of DIY bands. We'll start out solving some basic problems and move into more complex ground, eventually transforming the application into a platform that others can use and build upon.
