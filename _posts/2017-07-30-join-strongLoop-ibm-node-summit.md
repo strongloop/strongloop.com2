@@ -8,24 +8,18 @@ categories:
   - Events
 ---
 
-The StrongLoop and IBM team will excited to be part of [Node Summit](http://www.nodesummit.com/) in San Fransicso on July 26-27.
+We're excited to be part of [Node Summit](http://www.nodesummit.com/) in San Francisco on July 26-27.
 
 [![Node Summit 2017](https://strongloop.com/blog-assets/2017/07/node summit 2017.png)](http://www.nodesummit.com/)
 
 <!--more-->
-Visit us at the IBM booth. The StrongLoop team (including Developer Evangelist [Erin McKean](https://twitter.com/emckean)) will be sharing stickers and providing info on: 
+IBM is helping sponsor the event, and the StrongLoop team will be joining IBMers to talk about the ecosytsem of node.js/
 
-- [The LoopBack developer journey](https://developer.ibm.com/code/journeys/unlock-enterprise-data-using-apis/), featuring OpenWhisk and other journeys.
-- Our [LoopBack in 5 minutes](http://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/) demo.
-
-In addition to the booth, IBM will host a "Node Meetup" on June 12th, from 7:30-9:00PM to kick-off the Cloud Foundry Summit. Expect lightning talks and a networking social with food and beverages. Find out more [here](https://www.eventbrite.com/e/slay-the-dragons-of-a-monolith-with-nodejs-microservices-tickets-35058740637).
-
-Finally, IBM is hosting the Node.js sessions track, which will feature great speakers and learning opportunities.
-
+Ritchie Martori from the [LoopBack](http://loopback.io/) team will be there to talk about what we cana expect from [LoopBack.next](https://strongloop.com/strongblog/announcing-loopback-next/), the next step to make LoopBack effortlessly extensible.
 
 ### Register Today!
 
-Get more details about this event and reserve your spot today [here](http://www.nodesummit.com/registration/). Save yourself $100 if you register before June 12th!
+You can learn more about Node SUmmit and register [here](http://www.nodesummit.com/registration/).
 
 ### What's Next?
 
