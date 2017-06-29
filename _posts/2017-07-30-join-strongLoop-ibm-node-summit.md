@@ -10,7 +10,8 @@ categories:
 
 The StrongLoop and IBM team will excited to be part of [Node Summit](http://www.nodesummit.com/) in San Fransicso on July 26-27.
 
-{% include image.html file='CF-logo.png' alt='Cloud Foundry Summit' %}
+[![Node Summit 2017](https://strongloop.com/blog-assets/2017/07/node summit 2017.png)](http://www.nodesummit.com/)
+
 <!--more-->
 Visit us at the IBM booth. The StrongLoop team (including Developer Evangelist [Erin McKean](https://twitter.com/emckean)) will be sharing stickers and providing info on: 
 
