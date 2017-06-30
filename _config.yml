@@ -94,6 +94,7 @@ defaults:
 # these are defaults used for the frontmatter for these file types
 
 url: https://strongloop.com
+baseurl: https://strongloop.com
 
 future: true
 
