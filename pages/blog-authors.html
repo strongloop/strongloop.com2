@@ -14,7 +14,7 @@ redirect_from:
         {% assign sorted_authors = site.data.authors.names | sort %}
         <ul>
         {% for author in sorted_authors %}
-          <li><a class="no_icon" href="{{site.url}}/authors/{{ author | replace: " ", "_" | replace: ".", "_" }}">{{author}}</a></li>
+          <li><a class="no_icon" href="{{site.url}}/authors/{{ author | replace: " ", "_" | replace: ".", "_" }}/">{{author}}</a></li>
         {% endfor %}
         </ul>
       </div>

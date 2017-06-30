@@ -8,7 +8,7 @@ layout: default
         <h1 class="c-heading -h1">{{ page.title }}</h1>
         {% if page.author %}<p class="author">by
           {% for author in page.author %}
-            <a class="no_icon" href="{{site.url}}/authors/{{ author | replace: " ", "_" | replace: ".", "_" }}">{{author}}</a>
+            <a class="no_icon" href="{{site.url}}/authors/{{ author | replace: " ", "_" | replace: ".", "_" }}">{{author}}/</a>
             {% if forloop.last == false %},{% endif %}
           {% endfor %}
         </p>{% endif %}
@@ -44,7 +44,7 @@ layout: default
                 }(document, 'script', 'facebook-jssdk'));
                 </script>
                 <div class="fb-share-button" data-href="https://strongloop.com/{{page.url}}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://strongloop.com/{{page.url}}%2F&amp;src=sdkpreparse">Share</a></div>
-                
+
                 <a class="twitter-share-button no_icon"
                 href="https://twitter.com/share"
                 data-size="large"
@@ -56,7 +56,7 @@ layout: default
                 <a class="newshare-share-button no_icon linkedinshare" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://strongloop.com/{{page.url}}" target="_blank">
                   <i class="fa fa-linkedin" aria-hidden="true"></i>  Share
                 </a>
-              
+
                 <a class="newshare-share-button no_icon redditshare" href="http://reddit.com/submit?url==https://strongloop.com/{{page.url}}&amp;title={{ page.title }}" target="_blank">
                   <i class="fa fa-reddit" aria-hidden="true"></i>  Share
                 </a>
@@ -80,7 +80,7 @@ layout: default
                 }(document, 'script', 'facebook-jssdk'));
                 </script>
                 <div class="fb-share-button" data-href="https://strongloop.com/{{page.url}}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://strongloop.com/{{page.url}}%2F&amp;src=sdkpreparse">Share</a></div>
-                
+
                 <a class="twitter-share-button no_icon"
                 href="https://twitter.com/share"
                 data-size="large"
@@ -92,7 +92,7 @@ layout: default
                 <a class="newshare-share-button no_icon linkedinshare" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://strongloop.com/{{page.url}}" target="_blank">
                   <i class="fa fa-linkedin" aria-hidden="true"></i>  Share
                 </a>
-              
+
                 <a class="newshare-share-button no_icon redditshare" href="http://reddit.com/submit?url==https://strongloop.com/{{page.url}}&amp;title={{ page.title }}" target="_blank">
                   <i class="fa fa-reddit" aria-hidden="true"></i>  Share
                 </a>
