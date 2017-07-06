@@ -8,8 +8,6 @@ categories:
   - LoopBack
 ---
 
-# Let's build a band app! (part 1 of many)
-
 In this series, we will work through building an application to support the needs of DIY bands. We'll start out solving some basic problems and move into more complex ground, eventually transforming the application into a platform that others can use and build upon.
 
 There is a [corresponding workshop](https://github.com/StrongLoop-Evangelists/workshop-band-app) as well as a [code repository](https://github.com/StrongLoop-Evangelists/band-app).
@@ -39,7 +37,7 @@ In this episode, we will install our prerequisites, get an understanding of what
 
 **_LoopBack is so awesome, it is almost magical. Let me show you by building an API in 73 seconds:_**
 
-[![Rapid APIs in LoopBack](..blog-assets/2017/band-app/rapid-apis-in-lb-video.png)](https://youtu.be/iOMD27DjuO4 "Rapid APIs in LoopBack")
+[![Rapid APIs in LoopBack](https://strongloop.com/blog-assets/2017/band-app/rapid-apis-in-lb-video.png)](https://youtu.be/iOMD27DjuO4 "Rapid APIs in LoopBack")
 
 ## Let's initialize our LoopBack application
 
