@@ -17,7 +17,7 @@ When you use LoopBack to set up your API, you can integrate it with [Passport](h
 
 In this post, we'll show you how you can use the REST connector in LoopBack to connect with the Facebook Graph API, and how you can leverage that connection for user authentication in a server application primarily for mobile clients.
 
-You may have heard that [The SilverLogic](http://tsl.io) have made the decision to use LoopBack as a key component of their new game, XtraPoints. You'll be using that application as context for this post.
+You may have heard that [The SilverLogic](http://tsl.io) have made the decision to use LoopBack as a key component of their new game, [XtraPoints](https://strongloop.com/strongblog/loopback-open-source-xtra-points/). You'll be using that application as context for this post.
 
 ## Setup
 
