@@ -15,7 +15,7 @@ We're excited to be part of [Node Summit](http://www.nodesummit.com/) in San Fra
 <!--more-->
 IBM is helping sponsor the event, and the StrongLoop team will be joining IBMers to talk about the ecosystem of node.js.
 
-Sai Vennam from the StrongLoop team will be there to talk about what we can expect from [LoopBack.next](https://strongloop.com/strongblog/announcing-loopback-next/), the next step to make LoopBack effortlessly extensible. He'll briefly cover it in a two-minute Keynote Speech on the mainstage, and then be available at the IBM booth to discuss it in more detail.
+Sai Vennam from the StrongLoop team will be there to talk about what we can expect from LoopBack.next, the next step to make LoopBack effortlessly extensible. He’ll be available at the IBM booth to discuss it in more detail.
 
 In addition to this, be sure to check out the IBM Sponsor Workshop on Wednesday morning to learn how Accenture uses Node.js and IBM Watson Developer Cloud to rapidly build prototypes for clients. And that's not all, of course. Check out the [agenda](http://www.nodesummit.com/agenda/) for full details.
 
