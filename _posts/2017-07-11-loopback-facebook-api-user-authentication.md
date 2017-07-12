@@ -18,7 +18,7 @@ When you use LoopBack to set up your API, you can integrate it with [Passport](h
 In this post, we'll show you how you can use the REST connector in LoopBack to connect with the Facebook Graph API, and how you can leverage that connection for user authentication in a server application primarily for mobile clients.
 
 You may have heard that [The SilverLogic](http://tsl.io) have made the decision to use LoopBack as a key component of their new game, [XtraPoints](https://strongloop.com/strongblog/loopback-open-source-xtra-points/). You'll be using that application as context for this post.
-
+<!--more-->
 ## Setup
 
 To get started, create a basic LoopBack application with the `lb` command. You'll need Node.js and npm to do this, and you'll have to have run `npm install -g loopback-cli` first.
