@@ -60,6 +60,10 @@ The properties are:
 - `title`: Title of the post, which can include any character except a colon (:).  To put a colon in your title, use the HTML entity `&#58;`.
 - `date`: Publication date of your post in `yyyy-mm-dd` format.
 - `author`: Your name.  If this matches an entry in `_data/authors.yml` the post byline will automatically link to your author page if you have one.  See [README - How to add an author page](https://github.com/strongloop/strongloop.com/blob/master/README.md#how-to-add-an-author-page) for more information.
+- Note that multiple authors must be formatted like this, with each author marked on a new line:
+author: 
+- David Okun
+- Manny Guerrero
 - `permalink`: The URL path where the post will be published on `strongloop.com`.  Must  be `/strongblog/<title>/` where `title` is the title portion of the filename (see above).
 - `categories`: An array of one or more categories.  Allowed categories are defined by [_data/tags.yml](https://github.com/strongloop/strongloop.com/blob/master/_data/tags.yml):
   - 'API Connect'
