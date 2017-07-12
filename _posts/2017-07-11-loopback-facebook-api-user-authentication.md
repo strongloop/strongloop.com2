@@ -2,7 +2,9 @@
 layout: post
 title: Using LoopBack with Facebook’s Graph API for User Authentication
 date: 2017-07-11
-author: David Okun & Manny Guerrero
+author: 
+- David Okun
+- Manny Guerrero
 permalink: /strongblog/loopback-facebook-api-user-authentication/
 categories:
   - how-to
