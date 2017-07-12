@@ -69,7 +69,7 @@ This is so that the properties you need are returned from the OAuth connection w
 
 ## Setting up your Facebook Application
 
-Next, you're going to go to https://developer.facebook.com and create a new application. Make sure you take note of the App ID you create here:
+Next, you're going to go to [https://developer.facebook.com](https://developer.facebook.com) and create a new application. Make sure you take note of the App ID you create here:
 
 ![appIDPhoto](http://i.imgur.com/myB9wIR.png)
 
