@@ -13,7 +13,7 @@ In this series, we will work through building an application to support the need
 There is a [corresponding workshop](https://github.com/StrongLoop-Evangelists/workshop-band-app) as well as a [code repository](https://github.com/StrongLoop-Evangelists/band-app).
 
 🖥 To see the code for this step, here is [commit/diff](https://github.com/StrongLoop-Evangelists/band-app/commit/e488c9cda9966ce3f4dfd6a5a8e67cc813494db0).
-
+<!--more-->
 #### Corresponding Video
 
 🎦 [What is LoopBack: a demo and how to get started](https://youtu.be/Llr18lNuYIo?list=PLxGLihicw5Woe3SV9MCFooTdrI9eOmj54)
