@@ -1,7 +1,7 @@
 ---
 layout: author
 author: 'Manny Guerrero'
-github_id: emckean
+github_id: eman6576
 permalink: /authors/Manny_Guerrero/
 redirect_from:
   - /authors/Manny_Guerrero
