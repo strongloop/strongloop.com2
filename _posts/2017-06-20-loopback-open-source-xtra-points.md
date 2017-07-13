@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using LoopBack to Build and Open Source XtraPoints with The SilverLogic
+title: Using LoopBack to Build the Open Source Game Xtra Points
 date: 2017-06-20T05:55:00+00:00
 author: David Okun
 permalink: /strongblog/loopback-open-source-xtra-points/
@@ -35,6 +35,8 @@ I think this is going to be a really fun game to play. I've played fantasy footb
 > "We plan on leveraging Watson in XtraPoints to make predictions on future games, and generating game picks based on its analysis.” -Manny Guerrero, The SilverLogic
 
 ## When can I try it?
+
+**Update (7/13/2017)**: We've got some code for you to check out! You can look at the LoopBack component of XtraPoints [here](https://github.com/silverlogic/PicksApp-Loopback). It's in active development, so feel free to get involved if you want to help! You can also check [this](https://github.com/silverlogic/PicksApp-SportsScrapper) repo for how the website scraper is made in Swift, using [Kitura](http://kitura.io).
 
 TSL are planning to release the first version of the app on iOS by the end of this month, to allow enough time for **all** of the downloads to happen before the season starts. It'll be totally free, and you'll be able to watch the game get made in real time on GitHub soon. Being open source, I'm positive that TSL would love contributors to come on board and help get it up to speed.
 
