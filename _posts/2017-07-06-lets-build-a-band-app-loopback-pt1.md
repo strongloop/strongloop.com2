@@ -2,7 +2,7 @@
 title: Let's Build a Band App with LoopBack! (part 1 of many)
 date: 2017-07-06
 author: Joe Sepi
-permalink: /strongblog/2017-07-06-lets-build-a-band-app-loopback-pt1/
+permalink: /strongblog/lets-build-a-band-app-loopback-pt1/
 categories:
   - How-To
   - LoopBack
