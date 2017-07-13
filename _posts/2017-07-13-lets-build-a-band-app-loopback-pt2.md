@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Let's Build a Band App with LoopBack: Creating Our First Model-Driven API Endpoint (part 2 of many)
+title: Let's Build a Band App with LoopBack&#58; Creating Our First Model-Driven API Endpoint (part 2 of many)
 date: 2017-07-13T05:55:00+00:00
 author: Joe Sepi
 permalink: /strongblog/lets-build-a-band-app-loopback-pt2/
@@ -9,6 +9,15 @@ categories:
   - LoopBack
 ---
 
+---
+title: Let's Build a Band App with LoopBack! (part 1 of many)
+date: 2017-07-06
+author: Joe Sepi
+permalink: /strongblog/lets-build-a-band-app-loopback-pt1/
+categories:
+  - How-To
+  - LoopBack
+---
 
 
 In this series, we are working through building an application to support the needs of DIY bands. We'll start out solving some basic problems and move into more complex ground, eventually transforming the application into a platform that others can use and build upon.
