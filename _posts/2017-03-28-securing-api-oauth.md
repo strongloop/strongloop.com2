@@ -2,7 +2,7 @@
 title: 'Securing Your API with OAuth'
 date: 2016-03-28T08:05:36+00:00
 author: Mitchell Kocen
-permalink: /securing-api-oauth/
+permalink: /strongblog/securing-api-oauth/
 categories:
   - LoopBack
 layout: redirected
