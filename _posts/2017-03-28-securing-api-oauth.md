@@ -1,14 +1,10 @@
 ---
-id: 28974
-title: Securing Your API with OAuth
-date: 2017-03-28T08:50:28+00:00
-author: Mitchell Kocen
-guid: https://strongloop.com/?p=28974
-permalink: /strongblog/securing-api-oauth/
-inline_featured_image:
-  - "0"
-categories:
-  - How-To
+layout: redirected
+redirect_to: https://developer.ibm.com/apiconnect/2017/07/13/securing-api-oauth/
+---
+This blog post has been moved to IBM DeveloperWorks....
+<!--more-->
+
 ---
 APIs can be powerful tools for software developers. You can expose parts of your product to users and partners without having to directly build new functionality. If a third party wants to make an application that scans your database and returns specific results, they can use your API to access your system without pulling away your development resources.
 
