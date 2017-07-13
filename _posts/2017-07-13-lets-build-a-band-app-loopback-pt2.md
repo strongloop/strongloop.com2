@@ -17,7 +17,7 @@ Accompanying this series is a [corresponding workshop](https://github.com/Strong
 
 ## Previously on _Let's build a band app!_
 
-In the [previous episode](https://strongloop.com/strongblog/2017-07-06-lets-build-a-band-app-loopback-pt1/), we installed our prerequisites, got an understanding of what LoopBack provides and initialized our LoopBack application.
+In the [previous episode](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt1/), we installed our prerequisites, got an understanding of what LoopBack provides and initialized our LoopBack application.
 
 
 ## In this episode
@@ -440,6 +440,8 @@ module.exports = function(Review) {
 As we can see, this file allows us to hook into our application to do business logic or manipulate our data according to the needs of our application. Now let's see view our newly created `event` API in our explorer.
 
 At this point, we now have our first API endpoint and we've gotten some understanding about what code LoopBack has generated and how we can extend functionality based on our model. We can start up our Node app by typing `node .` in our terminal. From here, we can make requests to the endpoint either in the browser with a simple form or with some AJAX or perhaps through a tool like Postman or using cURL.
+
+## What's Next?
 
 In the next episode, we'll dive deeper into interacting with our API. We'll interact with the Swagger explorer we get for free with LoopBack. We'll look at making requests to our endpoints from various sources and how we can start to build applications making use of our new API.
 
