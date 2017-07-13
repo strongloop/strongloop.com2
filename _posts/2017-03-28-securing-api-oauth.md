@@ -1,8 +1,15 @@
 ---
+title: 'Securing Your API with OAuth'
+date: 2016-03-28T08:05:36+00:00
+author: Mitchell Kocen
+permalink: /securing-api-oauth/
+categories:
+  - LoopBack
 layout: redirected
 redirect_to: https://developer.ibm.com/apiconnect/2017/07/13/securing-api-oauth/
 ---
 This blog post has been moved to IBM DeveloperWorks....
+
 <!--more-->
 
 ---
