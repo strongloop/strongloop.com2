@@ -16,7 +16,7 @@ categories:
 
 If you're reading this post, it's entirely possible that you've been exposed to the goodness that is LoopBack. If not, I'd recommend checking [this](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/) out to get a quick and easy start to generating RESTful APIs with LoopBack.
 
-Having a RESTful API ready to go in such a short period of time is quite powerful, and it really takes a lot of time out of getting your backend up and running. But there's an important part of your application that LoopBack neglects - your frontend and your user interface.
+Having a RESTful API ready to go in such a short period of time is quite powerful, and it really reduces the time needed to get your backend up and running. But there's an important part of your application that LoopBack neglects - your frontend and your user interface.
 
 ***(extremely documentary voice)*** What if I told you that you could use a command line interface to generate (code generation is kind of a thing around here) a client SDK for any application you create in LoopBack?
 
@@ -42,7 +42,7 @@ You have to have the Bluemix CLI installed first, but once you have it up and ru
 
 #### An API That Follows the OpenAPI Spec
 
-All geerated LoopBack APIs adhere to the [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification), which, for the purpose of this tutorial, means that you can represent the structure and capabilities of your API in a single .yml file. This also used to be called a "Swagger" file, but to be fair, you should feel pretty awesome being able to rep your API in a single file. For this tutorial, we'll use [this](https://github.com/StrongLoop-Evangelists/loopback-in-five) as an API to work with. You should be able to clone this git repo, and then run `npm install`.
+All generated LoopBack APIs adhere to the [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification), which, for the purpose of this tutorial, means that you can represent the structure and capabilities of your API in a single .yml file. This also used to be called a "Swagger" file, but to be fair, you should feel pretty awesome being able to rep your API in a single file. For this tutorial, we'll use [this](https://github.com/StrongLoop-Evangelists/loopback-in-five) as an API to work with. You should be able to clone this git repo, and then run `npm install`.
 
 If you've done all this, you should be ready to go.
 
