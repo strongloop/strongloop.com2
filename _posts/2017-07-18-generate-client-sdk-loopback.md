@@ -18,9 +18,11 @@ If you're reading this post, it's entirely possible that you've been exposed to 
 
 Having a RESTful API ready to go in such a short period of time is quite powerful, and it really takes a lot of time out of getting your backend up and running. But there's an important part of your application that LoopBack neglects - your frontend and your user interface.
 
-***(extremely documentary voice)*** What if I told you that you could use a command line interface to generate (kind of a thing around here) a client SDK for any application you create in LoopBack?
+***(extremely documentary voice)*** What if I told you that you could use a command line interface to generate (code generation is kind of a thing around here) a client SDK for any application you create in LoopBack?
 
 Now that you've fallen out of your chair, get back in your seat and let's get cracking. You're going to love this.
+
+(P.S. - I would like to thank [Chris Bailey](https://twitter.com/Chris__Bailey) for the inspiration for this post - he gave a great talk at AltConf about Full Stack Swift and how you can do this. Check it out [here](https://news.realm.io/news/altconf-2017-chris-bailey-full-stack-swift-in-30-minutes)).
 
 ### Setup
 
