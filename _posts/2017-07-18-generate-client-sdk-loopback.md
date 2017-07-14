@@ -14,15 +14,15 @@ categories:
 
 ## Generating a Client SDK For LoopBack with the Bluemix CLI
 
-If you're reading this post, it's entirely possible that you've been exposed to the goodness that is LoopBack. If not, I'd recommend checking [this](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/) out to get a quick and easy start to generating RESTful APIs with LoopBack.
+If you're reading this post, it's entirely possible that you've been exposed to the goodness that is LoopBack. If not, I'd recommend checking out [my video showing you how you can create an API with LoopBack in just 5 minutes](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/).
 
-Having a RESTful API ready to go in such a short period of time is quite powerful, and it really reduces the time needed to get your backend up and running. But there's an important part of your application that LoopBack neglects - your frontend and your user interface.
+Having a RESTful API ready to go in such a short period of time is quite powerful, and it really reduces the time needed to get your backend up and running. But there's an important part of your application that LoopBack neglects - your frontend.
 
 ***(extremely documentary voice)*** What if I told you that you could use a command line interface to generate (code generation is kind of a thing around here) a client SDK for any application you create in LoopBack?
 
-Now that you've fallen out of your chair, get back in your seat and let's get cracking. You're going to love this.
+Now that you've fallen out of your chair, get back in your seat and let's get cracking. You're going to love this <3.
 
-(P.S. - I would like to thank [Chris Bailey](https://twitter.com/Chris__Bailey) for the inspiration for this post - he gave a great talk at AltConf about Full Stack Swift and how you can do this. Check it out [here](https://news.realm.io/news/altconf-2017-chris-bailey-full-stack-swift-in-30-minutes)).
+(P.S. - I would like to thank [Chris Bailey](https://twitter.com/Chris__Bailey) for the inspiration for this post - he gave a [great talk at AltConf about Full Stack Swift](https://news.realm.io/news/altconf-2017-chris-bailey-full-stack-swift-in-30-minutes) and how you can do this.
 
 ### Setup
 
@@ -30,11 +30,11 @@ You'll need to have a few things installed first.
 
 #### LoopBack
 
-This should go without saying. Once you have Node.js and npm installed on your machine, go to your command line and type in `npm install -g loopback-cli`. This should give you all you need to start generating RESTful APIs for Node.js.
+Make sure you have Node.js and npm installed on your machine, then go to your command line and type in `npm install -g loopback-cli`. This should give you all you need to start generating RESTful APIs for Node.js.
 
 #### Bluemix CLI
 
-Go to [this](https://console.bluemix.net/docs/cli/index.html#cli) website and install the appropriate CLI for your operating system. You don't *need* an account in Bluemix to use the CLI, but as an IBM employee I am legally mandated to inform you that signing up for a [Bluemix](https://console.ng.bluemix.net) account is a very good idea. If you do, you'll be able to manage your cloud applications with it, and you can find out more about that [here](https://clis.ng.bluemix.net/ui/home.html).
+Go to [this](https://console.bluemix.net/docs/cli/index.html#cli) website and install the appropriate CLI for your operating system. You don't *need* an account in Bluemix to use the CLI, but as an IBM employee I am legally mandated to inform you that signing up for a [Bluemix](https://console.ng.bluemix.net) account is a very good idea (just kidding about the legal mandate.) If you do, you'll be able to manage your cloud applications with it, and you can find out more about that [here](https://clis.ng.bluemix.net/ui/home.html).
 
 #### [Bluemix SDK Generation Plugin](https://console.bluemix.net/docs/cloudnative/sdk_cli.html#sdk-cli)
 
