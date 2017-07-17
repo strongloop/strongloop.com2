@@ -25,7 +25,7 @@ We also have a couple of events planned prior to the official start of the summi
 
 - **[Meetup](https://www.meetup.com/big-data-developers-in-san-francisco/events/241380842/)** @ Galvanize (6 - 8 p.m. PT): Following the workshop, IBM will convene a meet up centered on Node-RED. Speakers include Max Katz, IBM's Developer Advocacy Program Director in San Francisco and Kris Borchers of the JS Foundation providing introductory remarks, followed by IBM's Nick O'Leary speaking about Node-RED and JeanCarl Bisson who will showcase examples of applications that can be built in Node-RED using IoT, Watson and other services.
 
-And that's not all, of course. Check out the [agenda](http://www.nodesummit.com/agenda/) for full details.
+Want more info on these two events and more IBM-led activities? Click {here}(https://developer.ibm.com/code/2017/07/10/node-summit-2017-coming-soon-want-join-us/)!
 
 ### Register Today!
 
