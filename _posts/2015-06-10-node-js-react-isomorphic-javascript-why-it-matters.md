@@ -8,6 +8,8 @@ permalink: /strongblog/node-js-react-isomorphic-javascript-why-it-matters/
 categories:
   - Community
   - JavaScript Language
+layout: redirected
+redirect_to: https://developer.ibm.com/apiconnect/2017/07/13/securing-api-oauth/  
 ---
 ## <img class=" size-full wp-image-24869 alignright" src="{{site.url}}/blog-assets/2015/05/isomorphic-flow.jpg" alt="isomorphic-flow" width="386" height="289"  />**What is Isomorphic JavaScript?**
 
