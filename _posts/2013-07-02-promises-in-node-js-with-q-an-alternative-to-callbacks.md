@@ -8,6 +8,10 @@ permalink: /strongblog/promises-in-node-js-with-q-an-alternative-to-callbacks/
 categories:
   - Community
   - How-To
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2013/07/02/promises-in-node-js-with-q-an-alternative-to-callbacks/
+---
+This blog post has been moved to IBM DeveloperWorks....  
 ---
 **Note:** The author has provided an updated version of this article, which you can read [here](https://strongloop.com/strongblog/promises-in-node-js-an-alternative-to-callbacks-revisited/).
 
