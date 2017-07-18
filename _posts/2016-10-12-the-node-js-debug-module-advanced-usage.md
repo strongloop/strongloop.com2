@@ -8,6 +8,10 @@ permalink: /strongblog/the-node-js-debug-module-advanced-usage/
 categories:
   - How-To
   - Performance Tip
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2016/10/12/the-node-js-debug-module-advanced-usage/
+---
+This blog post has been moved to IBM DeveloperWorks....  
 ---
 In [a previous post](https://strongloop.com/strongblog/lets-code-it-the-debug-module/), I explained the [`debug`](https://www.npmjs.com/package/debug) module and how to use it for basic debugging.  I recently used it to help me understand complex interactions between events in [Leaflet](http://leafletjs.com/) and [Leaflet.Editable](https://github.com/Leaflet/Leaflet.Editable). Before going over that, however, I&#8217;m going to lay the groundwork with a couple organizational tips that makes `debug` easier to use. This post assumes you have either used [`debug`](https://www.npmjs.com/package/debug) or read the [previous post](https://strongloop.com/strongblog/lets-code-it-the-debug-module/)&#8230;.<!--more-->
 
