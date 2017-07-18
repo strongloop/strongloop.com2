@@ -8,6 +8,10 @@ permalink: /strongblog/tips-optimizing-slow-code-in-nodejs/
 categories:
   - How-To
   - Performance Tip
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2016/01/06/tips-optimizing-slow-code-in-nodejs/
+---
+This blog post has been moved to IBM DeveloperWorks....  
 ---
 Node.js programs can be slow due to CPU or IO bound operations. On the CPU side, typically there is a “hot path” (a code that is visited often) that is not optimized. On the IO side, limits imposed by either the underlying OS or Node itself may be at fault. Or, a slow application may have nothing to do with Node; instead, an outside resource, like database queries or a slow API call, may not be optimized.
 
