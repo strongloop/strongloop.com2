@@ -7,6 +7,10 @@ guid: https://strongloop.com/?p=27848
 permalink: /strongblog/promises-in-node-js-an-alternative-to-callbacks/
 categories:
   - How-To
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2016/08/24/promises-in-node-js-an-alternative-to-callbacks/
+---
+This blog post has been moved to IBM DeveloperWorks....  
 ---
 Promises are a compelling alternative to callbacks when dealing with asynchronous code. Unfortunately, promises can be confusing and perhaps you&#8217;ve written them off. However, significant work has been done to bring out the essential beauty of promises in a way that is interoperable and verifiable. The result is [Promises/A+](http://promises-aplus.github.io/promises-spec/), a specification that has made its way into ES6 JavaScript as well as multiple third-party libraries.
 
