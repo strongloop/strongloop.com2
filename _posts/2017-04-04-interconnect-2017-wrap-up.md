@@ -10,6 +10,8 @@ inline_featured_image:
 categories:
   - Community
   - Events
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2017/04/04/interconnect-2017-wrap-up/
 ---
 _Well, that was amazing._
 
