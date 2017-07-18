@@ -8,6 +8,10 @@ permalink: /strongblog/the-future-of-node-podcast-series-node-iot-and-robotics/
 categories:
   - Community
   - Node core
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2017/03/14/the-future-of-node-podcast-series-node-iot-and-robotics/
+---
+This blog post has been moved to IBM DeveloperWorks....  
 ---
 IBM and StrongLoop sponsored Changelog’s _The Future of Node_ Spotlight series at Node Interactive 2016. Adam spoke with event attendees about Node.js and the Node community. In this podcast, Adam discussed Node, IoT and robotics.
 
