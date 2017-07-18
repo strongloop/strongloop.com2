@@ -8,6 +8,10 @@ permalink: /strongblog/introduction-to-es6-iterators/
 categories:
   - How-To
   - JavaScript Language
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2015/07/16/introduction-to-es6-iterators/
+---
+This blog post has been moved to IBM DeveloperWorks....  
 ---
 EcmaScript 2015 (formerly known as ES6) introduces a brand new concept of iterators which allows us to define sequences (limited and otherwise) at the language level.
 
