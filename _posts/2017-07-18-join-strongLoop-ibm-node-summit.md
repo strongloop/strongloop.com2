@@ -1,6 +1,6 @@
 ---
 title: Join StrongLoop and IBM at Node Summit
-date: 1917-07-31
+date: 2017-07-18
 author: Dave Whiteley
 permalink: /strongblog/join-strongLoop-ibm-node-summit/
 categories:
