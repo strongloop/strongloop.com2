@@ -8,6 +8,10 @@ permalink: /strongblog/lets-code-it-the-debug-module/
 categories:
   - How-To
   - Performance Tip
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2016/09/15/lets-code-it-the-debug-module/
+---
+This blog post has been moved to IBM DeveloperWorks....
 ---
 I did some fun stuff with the `debug` module recently for a web map project. I needed to understand the interactions between events in [Leaflet.js](http://leafletjs.com/) to figure out what events to attach to&#8230; but that&#8217;s the next post. Before I get to that, I want to go over the `debug` module itself.<!--more-->
 
