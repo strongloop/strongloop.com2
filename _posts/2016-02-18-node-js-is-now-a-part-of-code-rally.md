@@ -7,6 +7,10 @@ guid: https://strongloop.com/?p=26891
 permalink: /strongblog/node-js-is-now-a-part-of-code-rally/
 categories:
   - News
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2016/02/18/node-js-is-now-a-part-of-code-rally/
+---
+This blog post has been moved to IBM DeveloperWorks....  
 ---
 Code Rally Challenge is a fun racing game designed to help you improve your Java coding skills. Today sees a great new addition to the game: node.js! That&#8217;s right, node.js is now a part of the Code Rally Challenge and will be live at [InterConnect](https://www.ibm.com/cloud-computing/us/en/interconnect/) in dev@ on the Expo Floor.
   
