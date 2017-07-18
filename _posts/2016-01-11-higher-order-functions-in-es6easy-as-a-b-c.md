@@ -8,6 +8,10 @@ permalink: /strongblog/higher-order-functions-in-es6easy-as-a-b-c/
 categories:
   - ES2015 ES6
   - How-To
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2016/01/11/higher-order-functions-in-es6easy-as-a-b-c/
+---
+This blog post has been moved to IBM DeveloperWorks....  
 ---
 ES6 is nigh! As more and more libraries & Thought Leaders start incorporating ES6 into their code, what used to be nice-to-know ES6 features are becoming required knowledge. And it&#8217;s not just new syntax &#8211; in many cases, new language features can make an expression that was cumbersome to write in ES5 easy in ES6, enabling and encouraging the use of this type of expression. We&#8217;re going to look at one such case here: how arrow functions make it easier to write higher-order functions in ES6.
 
