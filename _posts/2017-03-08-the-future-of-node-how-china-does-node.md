@@ -8,6 +8,10 @@ permalink: /strongblog/the-future-of-node-how-china-does-node/
 categories:
   - Community
   - Node core
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2017/03/08/the-future-of-node-how-china-does-node/
+---
+This blog post has been moved to IBM DeveloperWorks....  
 ---
 IBM and StrongLoop sponsored Changelog&#8217;s _The Future of Node_ Spotlight series at Node Interactive 2016. Adam spoke with event attendees about Node.js and the Node community. In this video, Adam learns about how China does node.
 
