@@ -7,6 +7,10 @@ guid: https://strongloop.com/?p=28395
 permalink: /strongblog/lets-code-it-static-site-generator-with-rx-js/
 categories:
   - How-To
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2017/01/19/lets-code-it-static-site-generator-with-rx-js/
+---
+This blog post has been moved to IBM DeveloperWorks....  
 ---
 [Last post](https://strongloop.com/strongblog/lets-code-it-static-site-generator/), we went over building a Static Site Generator (SSG) in Node.js. We used [Promises](http://bluebirdjs.com/docs/why-promises.html) for flow control, and that worked for reading each Markdown input file, transforming it into HTML, and writing that to disk, once per file. What if instead of running this build process once per input file, we want it to run once per input file _every time that input file is created or changed?_
 
