@@ -9,6 +9,10 @@ categories:
   - ES2015 ES6
   - How-To
   - JavaScript Language
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2016/02/01/write-your-own-co-using-es2015-generators/
+---
+This blog post has been moved to IBM DeveloperWorks....  
 ---
 ES2015 is now officially the new JavaScript language standard, and it is packed with sweet new features. One feature that I&#8217;m particularly excited about is [​generators​](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*). At a high level, generators are functions that can pause and then pick up where they left off later. Generators enable you to break up CPU­-intensive calculations like computing the millionth Fibonacci number so you don&#8217;t block the event loop and write ​[web servers using middleware that can post-­process your HTTP response](https://www.npmjs.com/package/koa)​. The most exciting application of generators, though, is asynchronous coroutines, better known as callback-­free asynchronous code. In this article, you&#8217;ll learn about how to write your own ​co​, a library for asynchronous coroutines using generators.
 
