@@ -7,6 +7,10 @@ guid: https://strongloop.com/?p=28363
 permalink: /strongblog/lets-code-it-static-site-generator/
 categories:
   - How-To
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2017/01/05/lets-code-it-static-site-generator/
+---
+This blog post has been moved to IBM DeveloperWorks....  
 ---
 Traditionally, if you wanted to create a blog or website that you can update easily without having to directly edit HTML, you&#8217;d use a tool like WordPress. The basic flow for serving a website from a CMS like WordPress is as follows:
 
