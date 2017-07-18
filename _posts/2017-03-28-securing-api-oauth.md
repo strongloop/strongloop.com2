@@ -6,7 +6,7 @@ permalink: /strongblog/securing-api-oauth/
 categories:
   - LoopBack
 layout: redirected
-redirect_to: https://developer.ibm.com/node/2016/01/11/higher-order-functions-in-es6easy-as-a-b-c/
+redirect_to: https://developer.ibm.com/apiconnect/2017/07/13/securing-api-oauth/
 ---
 This blog post has been moved to IBM DeveloperWorks....
 
