@@ -8,6 +8,10 @@ permalink: /strongblog/auto-fixing-formatting-your-javascript-with-eslint/
 categories:
   - How-To
   - JavaScript Language
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2016/07/27/auto-fixing-formatting-your-javascript-with-eslint/
+---
+This blog post has been moved to IBM DeveloperWorks....  
 ---
 <p class="graf--p">
   <a class="markup--anchor markup--p-anchor" href="https://en.wikipedia.org/wiki/Lint_%28software%29">Linting</a> is the process of running a program that will analyze your code for potential errors. A lint program does this by using a set of rules applied to your code to determine if any violations have occurred.<!--more-->
