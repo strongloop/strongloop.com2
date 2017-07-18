@@ -10,6 +10,10 @@ categories:
   - LoopBack
   - Mobile
   - Node core
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2016/09/06/isomorphic-javascript-mobile-apps/
+---
+This blog post has been moved to IBM DeveloperWorks....  
 ---
 The method of delivering content to a browser has continued to evolve over the years. In the early days, every page was a full payload. If you clicked a link, you got a new page. If you hit the back button, you were delivered a new full page.
 
