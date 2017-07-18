@@ -12,6 +12,10 @@ categories:
 - Node core
 - node core
 - node.js
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2017/03/24/the-future-of-node-podcast-series-nodejs-backstory-future/
+---
+This blog post has been moved to IBM DeveloperWorks....
 ---
 
 <p>IBM and StrongLoop sponsored Changelog’s The Future of Node Spotlight series at Node Interactive 2016. Adam spoke with event attendees about Node.js and the Node community. In this podcast, Adam discusses Node.js' backstory and its future.</p>
