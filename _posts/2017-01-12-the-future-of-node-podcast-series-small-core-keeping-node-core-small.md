@@ -8,6 +8,10 @@ permalink: /strongblog/the-future-of-node-podcast-series-small-core-keeping-node
 categories:
   - Community
   - Node core
+layout: redirected
+redirect_to: https://developer.ibm.com/node/2017/01/12/the-future-of-node-podcast-series-small-core-keeping-node-core-small/
+---
+This blog post has been moved to IBM DeveloperWorks....  
 ---
 IBM and StrongLoop partnered with Changelog to sponsor &#8220;The Future of Node&#8221; Spotlight series, recorded at Node Interactive 2016 in Austin, Texas.
 
