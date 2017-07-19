@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Generating a Client SDK For LoopBack with the Bluemix CLI
-date: 2017-25-18
+date: 2017-07-25
 author: 
 - David Okun
 permalink: /strongblog/generate-client-sdk-loopback
@@ -21,6 +21,7 @@ If you're reading this post, it's entirely possible that you've been exposed to 
 Having a RESTful API ready to go in such a short period of time is quite powerful, and it really reduces the time needed to get your backend up and running. But there's an important part of your application that LoopBack neglects - your frontend.
 
 ***(extremely documentary voice)*** What if I told you that you could use a command line interface to generate (code generation is kind of a thing around here) a client SDK for any application you create in LoopBack?
+<!--more-->
 
 Now that you've fallen out of your chair, get back in your seat and let's get cracking. You're going to love this <3.
 
