@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Generating a Client SDK For LoopBack with the Bluemix CLI
-date: 2017-07-25
+date: 2017-07-20T08:05:36+00:00
 author: 
 - David Okun
 permalink: /strongblog/generate-client-sdk-loopback-bluemix-cli
@@ -16,7 +16,7 @@ categories:
 
 ![](http://i.imgur.com/WztyOGl.png)
 
-If you're reading this post, it's entirely possible that you've been exposed to the goodness that is LoopBack. If not, I'd recommend checking out [my video showing you how you can create an API with LoopBack in just 5 minutes](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/).
+If you're reading this post, it's entirely possible that you've been exposed to the goodness that is [LoopBack](http://loopback.io/). If not, I'd recommend checking out [my video showing you how you can create an API with LoopBack in just 5 minutes](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/).
 
 Having a RESTful API ready to go in such a short period of time is quite powerful, and it really reduces the time needed to get your backend up and running. But there's an important part of your application that LoopBack neglects - your frontend.
 
