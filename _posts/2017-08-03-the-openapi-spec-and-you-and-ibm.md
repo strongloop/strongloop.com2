@@ -10,15 +10,13 @@ categories:
 ---
 #The OpenAPI Spec and You (and IBM)
 
-If you work with APIs at all, either creating or consuming them, you've probably heard of something called the OpenAPI specification—(or its former name, Swagger).
-
-But if you're fuzzy on the details, don't worry! By the end of this post you won't be. 
+If you work with APIs at all, either creating or consuming them, you've probably heard of something called the [OpenAPI Specification](https://www.openapis.org/specification/repo) (or its former name, Swagger). However, you may be fuzzy on the details. Don't worry! By the end of this post you won't be. 
 
 ###What is this OpenAPI thing, anyway?
 
 The OpenAPI Specification (OAS) is a way to describe your API so that all its resources and operations can be read by both humans and machines. 
 
-Your OAS document can be in JSON or YAML, and once you have one, you can leverage all sorts of OAS-compliant tools to add really helpful functionality, including: 
+Your OAS document can be in JSON or YAML. Once you have one, you can leverage all sorts of OAS-compliant tools to add really helpful functionality, including: 
 
 * interactive API documentation 
 * SDK generation
@@ -26,7 +24,7 @@ Your OAS document can be in JSON or YAML, and once you have one, you can leverag
 
 Also, describing your API with an OAS document makes it more likely that your API and your documentation remain in sync, reducing developer and user frustration!
 
-The OpenAPI Specification is an open-source project of the OpenAPI Initiative, a vendor-neutral group that is one of the Linux Foundation’s Collaborative Projects. Members of the initative include 3Scale, Apigee, Capital One, Google, Intuit, Microsoft, PayPal, and, of course, IBM!
+The OpenAPI Specification is an open-source project of the [OpenAPI Initiative](https://www.openapis.org/), a vendor-neutral group that is one of the Linux Foundation’s Collaborative Projects. Members of the initative include 3Scale, Apigee, Capital One, Google, Intuit, Microsoft, PayPal, and, of course, IBM!
 
 You can find the full OpenAPI Specification [here](https://github.com/OAI/OpenAPI-Specification). 
 
