@@ -6,7 +6,8 @@ author: Erin McKean
 permalink: /strongblog/the-openapi-spec-and-you-and-ibm
 categories:
   - Community
-   
+  - Open API Initiative
+  - Open API Spec   
 ---
 #The OpenAPI Spec and You (and IBM)
 
