@@ -65,7 +65,7 @@ author:
 - David Okun
 - Manny Guerrero
 - `permalink`: The URL path where the post will be published on `strongloop.com`.  Must  be `/strongblog/<title>/` where `title` is the title portion of the filename (see above).
-- `categories`: An array of one or more categories.  Allowed categories are defined by [_data/tags.yml](https://github.com/strongloop/strongloop.com/blob/master/_data/tags.yml):
+- `categories`: An array of one or more categories.  Allowed categories are defined by [_data/tags.yml](https://github.com/strongloop/strongloop.com/blob/master/_data/tags.yml). If you do not use the defined categories, this information will not be accepted or populated in the post.
   - 'API Connect'
   - 'API Microgateway'
   - 'API Tip'
