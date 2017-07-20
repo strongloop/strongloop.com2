@@ -1,19 +1,21 @@
 allowed-tags:
-  - 'API Connect'
-  - 'API Microgateway'
-  - 'API Tip'
+  - API Connect
+  - API Microgateway
+  - API Tip
   - Cloud
   - Community
-  - 'ES2015 ES6'
+  - ES2015 ES6
   - Events
   - Express
   - How-To
-  - 'JavaScript Language'
+  - JavaScript Language
   - LoopBack
   - Mobile
   - News
-  - 'Node core'
-  - 'Node DevOps'
+  - Node core
+  - Node DevOps
+  - Open API Initiative
+  - Open API Spec
   - Product
   - Resources
   - Tutorial
