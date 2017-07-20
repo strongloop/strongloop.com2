@@ -7,10 +7,8 @@ author:
 - Manny Guerrero
 permalink: /strongblog/loopback-facebook-api-user-authentication/
 categories:
-  - how-to
-  - tutorial
-  - user authentication 
-
+  - How-To
+  - Tutorial
 ---
 
 ## Using LoopBack with Facebook’s Graph API for User Authentication
