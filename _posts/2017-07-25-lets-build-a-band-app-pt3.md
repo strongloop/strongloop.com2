@@ -20,10 +20,11 @@ In the [previous episode](https://strongloop.com/strongblog/lets-build-a-band-ap
 
 ## In this episode
 
-Exploring our API
+In this episode, we will learn about the Swagger UI Explorer that comes with LoopBack and allows us to "explore" our APIs. We can see all of the endpoints that LoopBack has created for us as well as interact with them within the browser.
+
+## Let's get exploring!
 
 We've initialized a LoopBack application and built our first model-driven RESTful API endpoint for `events`. Let's run the application using `node .` and take a look at the API Explorer UI.
-
 
 ### Start our application
 
@@ -115,9 +116,11 @@ If the request is successful (as it should be), we get a `200` response and the 
 
 Yay! Again, we get the `200` response and this time, the `GET` request returns an array with the object we had submitted in the previous step. Exciting, right?
 
+*Note: we have not hooked up a datasource yet. If you remember, we chose the "in memory data store" when creating this model. Therefore, every time you restart your node app, you will lose all the data you have created. We will hook up a datasource in an upcoming episode.*
+
+Until next time, if we want to "explore" this a little further, we could try making these requests through our command line with cURL requests or by hitting the endpoints directly in the browser. We may even want to start implementing these requests in some HTML and make AJAX requests to get data. This should keep us busy for a few until next time!
+
 ## What's Next?
 
-Now that we can see how to interact with our API endpoints through the explorer, let's hook this up to an actual datasource, something we will tackle in the next episode. Until then, we could try making these requests through our command line with cURL requests or by hitting the endpoints directly in the browser. We may even start to implement these requests in some HTML and make AJAX requests to get data. This should keep us busy for a few until next time!
-
-
+Now we have a handle on creating our first model within LoopBack and seeing it in action, let's dive a little deeper: in the next episode, we'll break this model down a little further and create a couple "related" models.
 
