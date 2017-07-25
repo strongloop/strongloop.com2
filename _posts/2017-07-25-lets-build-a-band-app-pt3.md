@@ -2,6 +2,7 @@
 layout: post
 Let's Build a Band App with LoopBack: exploring our api (part 3 of many)
 title: Let's Build a Band App with LoopBack&#58; Exploring Our API (part 3 of many)
+date: 2017-07-25T08:05:36+00:00
 author: Joe Sepi
 permalink: /strongblog/lets-build-a-band-app-loopback-pt3/
 categories:
@@ -16,7 +17,6 @@ Accompanying this series is a [corresponding workshop](https://github.com/Strong
 ## Previously on _Let's build a band app!_
 
 In the [previous episode](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt2/), we created our first model-driven API endpoint. We used the LoopBack CLI, which asked us a series of questions about our data and then built out our RESTful API endpoints based on the answers we provided. We took a moment to look at the files that were generated, but now we will actually see those endpoints in action.
-
 
 ## In this episode
 
