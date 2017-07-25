@@ -21,7 +21,7 @@ In the [previous episode](https://strongloop.com/strongblog/lets-build-a-band-ap
 ## In this episode
 
 In this episode, we will learn about the Swagger UI Explorer that comes with LoopBack and allows us to "explore" our APIs. We can see all of the endpoints that LoopBack has created for us as well as interact with them within the browser.
-
+<!--more-->
 ## Let's get exploring!
 
 We've initialized a LoopBack application and built our first model-driven RESTful API endpoint for `events`. Let's run the application using `node .` and take a look at the API Explorer UI.
