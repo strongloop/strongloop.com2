@@ -19,11 +19,10 @@ Accompanying this series is a [corresponding workshop](https://github.com/Strong
 
 In the [previous episode](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt1/), we installed our prerequisites, got an understanding of what LoopBack provides and initialized our LoopBack application.
 
-
 ## In this episode
 
 We'll build out our first API endpoint!
-
+<!--more-->
 LoopBack takes a model-driven approach to building out APIs. Based on our responses to command line prompts, LoopBack will create a JSON file with our model schema and endpoint details.  For an introduction to LoopBack models see [LoopBack core concepts -  Models](http://loopback.io/doc/en/lb3/LoopBack-core-concepts.html#models) in the LoopBack documentation.
 
 ### Let's get into it!
