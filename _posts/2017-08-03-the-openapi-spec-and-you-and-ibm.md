@@ -70,4 +70,5 @@ You can [generate test code](https://github.com/apigee-127/swagger-test-template
 
 
 ###What's Next?
-The current OAI Specification is at v2, with v3 about to be released [any day now](https://www.openapis.org/blog/2017/06/18/open-api-initiative-begins-openapi-spec-comment-period). If you're interested in contributing, you can find more information [here](https://www.openapis.org/participate/how-to-contribute).
+
+OAI Specification v3 has [been announced](https://www.openapis.org/blog/2017/07/26/the-oai-announces-the-openapi-specification-3-0-0). If you're interested in contributing, you can find more information [here](https://www.openapis.org/participate/how-to-contribute).
