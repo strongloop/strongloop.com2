@@ -2,7 +2,7 @@
 title: Introducing Sai Vennam - StrongLoop Developer Evangelist
 date: 2017-07-27T05:55:00+00:00
 author: Sai Vennam
-permalink: /strongblog/introducing-sai-vennam-strongloop-developer-evangelist.md
+permalink: /strongblog/introducing-sai-vennam-strongloop-developer-evangelist
 categories:
   - Community
   - Events
