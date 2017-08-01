@@ -13,7 +13,7 @@ categories:
 
 If you work with APIs at all, either creating or consuming them, you've probably heard of something called the [OpenAPI Specification](https://www.openapis.org/specification/repo) (or its former name, Swagger). However, you may be fuzzy on the details. Don't worry! By the end of this post you won't be. 
 
-###What is this OpenAPI thing, anyway?
+##What is this OpenAPI thing, anyway?
 
 The OpenAPI Specification (OAS) is a way to describe your API so that all its resources and operations can be read by both humans and machines. 
 
@@ -29,7 +29,7 @@ The OpenAPI Specification is an open-source project of the [OpenAPI Initiative](
 
 You can find the full OpenAPI Specification [here](https://github.com/OAI/OpenAPI-Specification). 
 
-###How Do I Create An OAS definition?
+##How Do I Create An OAS definition?
 
 A typical OAS document looks something like this: 
 
@@ -54,7 +54,7 @@ paths:
           description: Successful response 
 ```
 
-You can write one by hand if you want, or you can use a number of open-source tools and editors to create one. (Check out [Swagger Editor](https://swagger.io/swagger-editor/) and [this tutorial seriers](https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-1-introduction/) for more tips.) 
+You can write one by hand if you want, or you can use a number of open-source tools and editors to create one. (Check out [Swagger Editor](https://swagger.io/swagger-editor/) and [this tutorial series](https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-1-introduction/) for more tips.) 
 
 If you are creating your API with [LoopBack](https://loopback.io), you can [export your OAS definition easily](https://strongloop.com/strongblog/generating-swagger-openapi-specification-from-your-loopback-application/).
 
@@ -69,6 +69,6 @@ You can create SDKs easily with [swagger-codegen] (https://github.com/swagger-ap
 You can [generate test code](https://github.com/apigee-127/swagger-test-templates), [confirm that your backend and your description are in sync](https://github.com/apiaryio/dredd), [check for breaking changes in your API](https://swagger.io/using-swagger-to-detect-breaking-api-changes/), or [integrate with any number of commercial tools](https://swagger.io/commercial-tools/), including [uploading your OAS document to API Connect](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/create_api_swagger.html).
 
 
-###What's Next?
+##What's Next?
 
 OAI Specification v3 has [been announced](https://www.openapis.org/blog/2017/07/26/the-oai-announces-the-openapi-specification-3-0-0). If you're interested in contributing, you can find more information [here](https://www.openapis.org/participate/how-to-contribute).
