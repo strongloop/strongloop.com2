@@ -64,7 +64,7 @@ Once you have your OAS document, your options for exploring, testing, and debugg
 
 You can add an interactive API sandbox explorer with [swagger-ui](https://github.com/swagger-api/swagger-ui) (you might already be familiar with swagger-ui, as it's used in LoopBack). 
 
-You can create SDKs easily with [swagger-codegen] (https://github.com/swagger-api/swagger-codegen). If you are using  IBM's Bluemix, this is [already available to you as a plugin](https://strongloop.com/strongblog/generate-client-sdk-loopback-bluemix-cli)!
+You can create SDKs easily with [swagger-codegen](https://github.com/swagger-api/swagger-codegen). If you are using  IBM's Bluemix, this is [already available to you as a plugin](https://strongloop.com/strongblog/generate-client-sdk-loopback-bluemix-cli)!
 
 You can [generate test code](https://github.com/apigee-127/swagger-test-templates), [confirm that your backend and your description are in sync](https://github.com/apiaryio/dredd), [check for breaking changes in your API](https://swagger.io/using-swagger-to-detect-breaking-api-changes/), or [integrate with any number of commercial tools](https://swagger.io/commercial-tools/), including [uploading your OAS document to API Connect](https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.apionprem.doc/create_api_swagger.html).
 
