@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The OpenAPI Spec and You (and IBM)
-date: 2017-08-03T09:40:15+00:00
+date: 2017-08-08T09:40:15+00:00
 author: Erin McKean
 permalink: /strongblog/the-openapi-spec-and-you-and-ibm
 categories:
@@ -9,7 +9,6 @@ categories:
   - Open API Initiative
   - Open API Spec   
 ---
-#The OpenAPI Spec and You (and IBM)
 
 If you work with APIs at all, either creating or consuming them, you've probably heard of something called the [OpenAPI Specification](https://www.openapis.org/specification/repo) (or its former name, Swagger). However, you may be fuzzy on the details. Don't worry! By the end of this post you won't be. 
 
