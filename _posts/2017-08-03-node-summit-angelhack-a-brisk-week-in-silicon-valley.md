@@ -18,7 +18,7 @@ As someone who loves Node.js, Node Summit to me is the equivalent of Disney Worl
 
 ### Kickoff with a short IBM Announcement
 
-One of the first things I did at Node Summit was a short keynote welcoming everyone to Node Summit and talking a bit about what IBM is doing with Node.js. In addition, it was the perfect audience to announce the LoopBack Next framework ([learn more](https://github.com/strongloop/loopback-next)). I'm assuming it was well-received because I had a number of people coming by the IBM booth shortly after to talk to me about what we're doing with LoopBack!
+One of the first things I did at Node Summit was a short keynote welcoming everyone to Node Summit and talking a bit about what IBM is doing with Node.js. It was the perfect audience to announce the LoopBack Next framework ([learn more](https://github.com/strongloop/loopback-next)). I'm assuming it was well-received because I had a number of people coming by the IBM booth shortly after to talk to me about what we're doing with LoopBack!
 
 <img src="https://strongloop.com/blog-assets/2017/08/NSkeynote.png" alt="Node Summit Keynote" style="width: 300px"/>
 
@@ -28,14 +28,13 @@ The IBM booth on the conference floor was bustling for most of the conference. W
 
 <img src="https://strongloop.com/blog-assets/2017/08/NSbooth.png" alt="Node Summit Booth" style="width: 500px"/>
 
-
 ### Final Remarks about Node Summit
 
 Overall, Node Summit 2017 was a very successful event for me. Being able to network with all the experts in the field was invaluable and really opened my eyes for new technology to keep an eye out on. Particularly, I didn't realize how many people were big fans of TypeScript! I highly recommend attending this conference if you're a fan of Node.js and hopefully we'll see some of you out there next year!
 
 ## AngelHack Silicon Valley
 
-AngelHack has _the_ world's largest and most diverse hacker community - or so they say. Regardless, arriving at the venue early on a Saturday morning to a line that stretched to the end of the block was promising. My priority at hackathons is always the same: help the attendees make the best app possible with the short timeframe they're given. Luckily, I'm there on behalf of StrongLoop with the wonderful LoopBack framework - perfect for the hackathon environment. It makes it so easy to start creating APIs; check out this video by my colleague David Okun that shows how you can start with [LoopBack in 5 minutes](https://www.youtube.com/watch?v=Bm6u1f2PUag).
+AngelHack has _the_ world's largest and most diverse hacker community. Arriving at the venue early on a Saturday morning to a line that stretched to the end of the block was promising, the line showing that diverse community. My priority at hackathons is always the same: help the attendees make the best app possible with the short timeframe they're given. Luckily, I'm there on behalf of StrongLoop with the wonderful LoopBack framework - perfect for the hackathon environment. It makes it so easy to start creating APIs; check out this video by my colleague David Okun that shows how you can start with [LoopBack in 5 minutes](https://www.youtube.com/watch?v=Bm6u1f2PUag).
 
 After delivering a 10 minute keynote introducing LoopBack and an hour long presentation diving into the depths of LoopBack and application development and deployment on [Bluemix](http://bluemix.net), it was clear that many hackers were hooked.
 
