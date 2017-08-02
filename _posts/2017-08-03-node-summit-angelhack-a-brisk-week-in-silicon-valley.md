@@ -1,15 +1,14 @@
 ---
 layout: post
-title: A Brisk Week in Silicon Valley
-date: 2017-08-02T09:40:15+00:00
+title: Node Summit & AngelHack: A Brisk Week in Silicon Valley
+date: 2017-08-03T09:40:15+00:00
 author: Sai Vennam
-permalink: /strongblog/a-brisk-week-in-silicon-valley
+permalink: /strongblog/node-summit-angelhack-a-brisk-week-in-silicon-valley
 categories:
   - Community
   - LoopBack
   - Events   
 ---
-# A Brisk Week in Silicon Valley
 
 Coffee shops, Patagonia jackets and Teslas on every corner - just a few of the things I was greeted with when I landed in San Francisco International Airport last Tuesday. It was going to be a great week; with Node Summit 2017 kicking off my week and finishing up with one of the largest hackathons organized, AngelHack. Join me as I share with you my experiences at these two amazing events!
 
@@ -42,7 +41,6 @@ After delivering a 10 minute keynote introducing LoopBack and an hour long prese
 
 <img src="https://strongloop.com/blog-assets/2017/08/AHkeynote.png" alt="AH Keynote" style="width: 500px"/>
 
-
 ### The Prize
 
 IBM was giving away a TJ Bot, an awesome DIY kit that's powered by a Raspberry PI. A great IoT device at just under $150. To win it, the attendee simply has to use the most number of LoopBack capabilities. Let's highlight some of my favorite apps that used LoopBack at AngelHack!
@@ -74,7 +72,6 @@ The winner of the IBM prize for most detailed use of LoopBack was Anish Singhani
 Anish Singhani and Find Safe Space:
 
 <img src="https://strongloop.com/blog-assets/2017/08/FindSafeSpace.png" alt="Find Safe Space" style="width: 200px"/>
-
 
 ## That's all folks
 
