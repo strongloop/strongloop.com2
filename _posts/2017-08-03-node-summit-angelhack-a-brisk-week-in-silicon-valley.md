@@ -1,6 +1,5 @@
 ---
-layout: post
-title: Node Summit & AngelHack: A Brisk Week in Silicon Valley
+title: Node Summit & AngelHack - A Brisk Week in Silicon Valley
 date: 2017-08-03T09:40:15+00:00
 author: Sai Vennam
 permalink: /strongblog/node-summit-angelhack-a-brisk-week-in-silicon-valley
