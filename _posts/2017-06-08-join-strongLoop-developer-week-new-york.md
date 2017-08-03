@@ -2,6 +2,7 @@
 title: Join StrongLoop at DeveloperWeek New York
 date: 2017-06-08T06:00:15+00:00
 author: Dave Whiteley
+permalink: /strongblog/join-strongLoop-developer-week-new-york
 categories:
   - Community
   - Events
