@@ -15,7 +15,7 @@ If you work with APIs at all, either creating or consuming them, you've probably
 ##What is this OpenAPI thing, anyway?
 
 The OpenAPI Specification (OAS) is a way to describe your API so that all its resources and operations can be read by both humans and machines. 
-
+<!--more--> 
 Your OAS document can be in JSON or YAML. Once you have one, you can leverage all sorts of OAS-compliant tools to add really helpful functionality, including: 
 
 * interactive API documentation 
