@@ -28,6 +28,8 @@ The OpenAPI Specification is an open-source project of the [OpenAPI Initiative](
 
 You can find the full OpenAPI Specification [here](https://github.com/OAI/OpenAPI-Specification). 
 
+<img src="https://strongloop.com/blog-assets/2017/08/OpenAPISpecLogo.png" alt="Open API Spec / Open API Initiative" style="width: 300px"/>
+
 ## How Do I Create An OAS definition? ##
 
 A typical OAS document looks something like this: 
