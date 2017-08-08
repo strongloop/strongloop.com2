@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The OpenAPI Spec and You (and IBM)
-date: 2017-08-08T09:40:15+00:00
+date: 2017-08-08T01:40:15+00:00
 author: Erin McKean
 permalink: /strongblog/the-openapi-spec-and-you-and-ibm
 categories:
