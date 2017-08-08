@@ -12,7 +12,7 @@ categories:
 
 If you work with APIs at all, either creating or consuming them, you've probably heard of something called the [OpenAPI Specification](https://www.openapis.org/specification/repo) (or its former name, Swagger). However, you may be fuzzy on the details. Don't worry! By the end of this post you won't be. 
 
-##What is this OpenAPI thing, anyway?
+## What is this OpenAPI thing, anyway? ##
 
 The OpenAPI Specification (OAS) is a way to describe your API so that all its resources and operations can be read by both humans and machines. 
 <!--more--> 
@@ -28,7 +28,7 @@ The OpenAPI Specification is an open-source project of the [OpenAPI Initiative](
 
 You can find the full OpenAPI Specification [here](https://github.com/OAI/OpenAPI-Specification). 
 
-##How Do I Create An OAS definition?
+## How Do I Create An OAS definition? ##
 
 A typical OAS document looks something like this: 
 
@@ -57,7 +57,7 @@ You can write one by hand if you want, or you can use a number of open-source to
 
 If you are creating your API with [LoopBack](https://loopback.io), you can [export your OAS definition easily](https://strongloop.com/strongblog/generating-swagger-openapi-specification-from-your-loopback-application/).
 
-###I Have an OAS Document ... Now What?
+### I Have an OAS Document ... Now What? ###
 
 Once you have your OAS document, your options for exploring, testing, and debugging your API expand. Here's a run-down of some of these options:
 
@@ -73,6 +73,6 @@ Once you have your OAS document, your options for exploring, testing, and debugg
 
 In short, anything you need to do with your API, OpenAPI Spec makes easier, faster, or clearer.
 
-##What's Next?
+## What's Next?
 
 OAI Specification v3 has [been announced](https://www.openapis.org/blog/2017/07/26/the-oai-announces-the-openapi-specification-3-0-0). If you're interested in contributing, you can find more information [here](https://www.openapis.org/participate/how-to-contribute).
