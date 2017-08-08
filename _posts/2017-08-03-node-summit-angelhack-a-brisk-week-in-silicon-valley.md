@@ -18,7 +18,7 @@ As someone who loves Node.js, Node Summit to me is the equivalent of Disney Worl
 ### Kickoff with a short IBM Announcement
 
 One of the first things I did at Node Summit was a short keynote welcoming everyone to Node Summit and talking a bit about what IBM is doing with Node.js. It was the perfect audience to announce the LoopBack Next framework ([learn more](https://github.com/strongloop/loopback-next)). I'm assuming it was well-received because I had a number of people coming by the IBM booth shortly after to talk to me about what we're doing with LoopBack!
-
+<!--more--> 
 <img src="https://strongloop.com/blog-assets/2017/08/NSkeynote.png" alt="Node Summit Keynote" style="width: 300px"/>
 
 ### Sponsor Expo
