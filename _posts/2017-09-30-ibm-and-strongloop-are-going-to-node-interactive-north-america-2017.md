@@ -37,4 +37,4 @@ You can register for the event [here](http://events.linuxfoundation.org/events/n
 
 &nbsp;
 
-And don't forget - you can contribute to Tux's Bookworms at the event and help increase literacy by providing more options for young readers in low-income areas.
+And don't forget - you can contribute to Tux's Bookworms at the event and help increase literacy by providing more options for young readers in low-income areas. Find out how in our recent post. <link>
