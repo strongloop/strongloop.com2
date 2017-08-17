@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Let's Build a Band App with LoopBack&#58; Connecting to Cloudant (part 4 of many)
+title: Let's Build a Band App with LoopBack&#58; Connecting to Cloudant (part 5 of many)
 date: 2017-08-17T01:40:15+00:00
 author: Joe Sepi
 permalink: /strongblog/lets-build-a-band-app-loopback-pt5/
