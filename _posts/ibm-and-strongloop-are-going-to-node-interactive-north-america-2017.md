@@ -21,6 +21,10 @@ Node.js Interactive is the marquee event for Node.js developers, companies that 
 
 Join us, the StrongLoop and IBM API Connect teams, at Node Interactive North America for four exciting days of a technical deep dive in all things Node.js. As the platinum level sponsor, and one of the founders of the Node.js Foundation, we are committed to the advancement of Node.js and its thriving ecosystem.
 
+Speakers from the IBM team include:
+
+- Michael Dawson - Senior software developer, IBM Node.js Community Lead 
+
 Be sure to stop by our booth, P3, where you can see demos on :
 
 ---
