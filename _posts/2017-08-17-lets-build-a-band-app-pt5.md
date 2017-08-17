@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Let's Build a Band App with LoopBack&#58; Connecting to Cloudant (part 4 of many)
+date: 2017-08-17T01:40:15+00:00
 author: Joe Sepi
 permalink: /strongblog/lets-build-a-band-app-loopback-pt5/
 categories:
@@ -96,4 +97,8 @@ At this point, we have a data-source connected to our application and our data c
 ## 🚨 SECURITY ISSUE 🚨
 
 We are putting our username and password in our code. If we aren't going to use a public repository, this isn't an issue, but if we do commit this to a public repository, we are making our application vulnerable. There are a number of ways to alleviate this issue. We will look at a preferred method in the next step.
+
+## What's Next?
+
+There are a number of ways to alleviate the security issue I just mentioned. We will look at a preferred method in the next step. 
 
