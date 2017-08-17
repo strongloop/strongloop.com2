@@ -2,13 +2,13 @@
 title: Support Books for Kids with Tux's Bookworms at Node Interactive
 date: 2017-08-30T01:40:15+00:00
 author: Dave Whiteley
-permalink: /strongblog/jsupport-books-kids-tuxs-bookworms-node-interactive.md
+permalink: /strongblog/jsupport-books-kids-tuxs-bookworms-node-interactive/
 categories:
   - Community
   - Events
 ---
 
-Are you heading to [Node.js Interactive](http://events.linuxfoundation.org/events/node-interactive)? It's the premier event for those who use Node.js - developers, companies, and vendors. In addition to offering great info and thoughts about Node.js, the event also provides a great aopportunity for attendees: the chance to help support and provide book donations for local children through [Tux's Bookworms](http://events.linuxfoundation.org/events/node-interactive/extend-the-experience/bookdonation)! 
+Are you heading to [Node.js Interactive](http://events.linuxfoundation.org/events/node-interactive)? It's the premier event for those who use Node.js - developers, companies, and vendors. In addition to providing great dialogue and networking around Node.js, the event also provides a great opportunity for attendees: the chance to help support and provide book donations for local children through [Tux's Bookworms](http://events.linuxfoundation.org/events/node-interactive/extend-the-experience/bookdonation)! 
 
 ## What's Tux's Bookworms? 
 
