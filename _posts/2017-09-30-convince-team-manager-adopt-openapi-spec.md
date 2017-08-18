@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selling OpenAPI: How to Convince Your Team (and Your Manager!) to Adopt the OpenAPI Spec
+title: Selling OpenAPI - How to Convince Your Team (and Your Manager!) to Adopt the OpenAPI Spec
 date: 2017-09-30T01:40:15+00:00
 author: Dave Whiteley
 permalink: /strongblog/ibm-and-strongloop-are-going-to-node-interactive-north-america-2017
