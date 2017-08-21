@@ -8,7 +8,7 @@ categories:
   - Events
 ---
 
-Are you heading to [Node.js Interactive](http://events.linuxfoundation.org/events/node-interactive)? It's the premier event for those who use Node.js - developers, companies, and vendors. In addition to providing great dialogue and networking around Node.js, the event also provides a great opportunity for attendees: the chance to help support and provide book donations for local children through Tux's Bookworms! 
+Are you heading to [Node.js Interactive](http://events.linuxfoundation.org/events/node-interactive)? It's the premier event for those who use Node.js, whether you are a developer, a vendor, or represneting a company. In addition to providing great dialogue and networking around Node.js, the event also provides a great opportunity for attendees: the chance to help support and provide book donations for local children through Tux's Bookworms! 
 
 ## What's Tux's Bookworms? 
 
@@ -20,4 +20,4 @@ If you want to support this great cause, it's easy! Simply bring one or more of 
 
 ## What's Next?
 
-Keep an eye out for a future post telling you about how IBM and StrongLoop will be involved with Node Interactive (spoiler alert: we are one of the Platinum Sponsors and will be speaking there). In the meantime, find out what other conferences, webinars, meetups, and events that the StrongLoop team are attending or supporting on our [events page](https://strongloop.com/events/).
+Keep an eye out for a future post telling you how IBM and StrongLoop will be involved with Node Interactive (spoiler alert: we are one of the Platinum Sponsors and will be speaking there). In the meantime, find out what other conferences, webinars, meetups, and events that the StrongLoop team are attending or supporting on our [events page](https://strongloop.com/events/).
