@@ -64,7 +64,7 @@ Upon connecting, we will need to restage our application to make that connection
 
 Now that our app and data-source are connected in Bluemix, we can take advantage of VCAP_SERVICES for our hosted code and we will replicate the service locally. First, let's go to the "Runtime" section of our application and then click on the "Environment variables" tab:
 
-![Bluemix - App credentials](https://strongloop.com/blog-assets/2017/band-app/assets/app-credentials.png)
+![Bluemix - App credentials](https://strongloop.com/blog-assets/2017/band-app/app-credentials.png)
 
 At a minimum, we should see our recently connected CloudantDB credentials here. We could also store other environment specific variables here as well, if we needed them. Let's copy that entire code block with all of our credentials.
 
