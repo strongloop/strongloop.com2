@@ -17,7 +17,7 @@ Accompanying this series is a [corresponding workshop](https://github.com/Strong
 
 ## Previously on _Let's build a band app!_
 
-In the [previous episode](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt1/), we installed our prerequisites, got an understanding of what LoopBack provides and initialized our LoopBack application.
+In the [previous episode](/strongblog/lets-build-a-band-app-loopback-pt1/), we installed our prerequisites, got an understanding of what LoopBack provides and initialized our LoopBack application.
 
 ## In this episode
 
