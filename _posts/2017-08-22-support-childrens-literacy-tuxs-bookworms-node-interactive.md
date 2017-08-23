@@ -19,7 +19,7 @@ According to the [Tux's Bookworms](http://events.linuxfoundation.org/events/node
 
 ## How can you help?
 
-If you want to support this great cause, it's easy: simply bring a children’s book or two to donate! Feel free to include books in Spanish and books for readers between 0 – 8, and leave the textbooks, encyclopedias and adult books at home (Lux's Bookworms cannot accept those). There will be a donation station near registration at Node Interactive, and you can drop your books off there - and even personalize them a message if you want. If you would prefer to purchase your books at Vancouver rather than travelling with them, you can find out where to get them - and get more information about this initiative - at the [Tux's Bookworms site](http://events.linuxfoundation.org/events/node-interactive/extend-the-experience/bookdonation). 
+If you want to support this great cause, it's easy: simply bring a children’s book or two to donate! Feel free to include books in Spanish and books for readers between 0 – 8, and leave the textbooks, encyclopedias and adult books at home (Tux's Bookworms cannot accept those). There will be a donation station near registration at Node Interactive, and you can drop your books off there - and even personalize them a message if you want. If you would prefer to purchase your books at Vancouver rather than travelling with them, you can find out where to get them - and get more information about this initiative - at the [Tux's Bookworms site](http://events.linuxfoundation.org/events/node-interactive/extend-the-experience/bookdonation). 
 
 ## What's Next?
 
