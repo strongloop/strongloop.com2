@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Let's Build a Band App with LoopBack&#58; Working with Credentials (part 6 of many)
+date: 2017-08-24T01:40:15+00:00
 author: Joe Sepi
 permalink: /strongblog/lets-build-a-band-app-loopback-pt6/
 categories:
@@ -16,7 +17,7 @@ Accompanying this series is a [corresponding workshop](https://github.com/Strong
 
 ## Previously on _Let's build a band app!_
 
-In the [previous episode](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt5/), we connected a data-source to our application so that our data can be persisted to the cloud. We can start to interact with our APIs and know that our data will not be lost and we can start to build meaningful interfaces. However, we discovered a potential security issue that we need to deal with, which will do in this episode.
+In the [previous episode](/strongblog/lets-build-a-band-app-loopback-pt5/), we connected a data-source to our application so that our data can be persisted to the cloud. We can start to interact with our APIs and know that our data will not be lost and we can start to build meaningful interfaces. However, we discovered a potential security issue that we need to deal with, which will do in this episode.
 
 ## In this episode
 
@@ -41,7 +42,7 @@ It is good practice to have your environments as consistent as possible. The rea
 
 ## Production
 
-Cloud Foundry apps are able to have credentials and other environment variables passed to the application by way of VCAP_SERVICES. Bluemix provides this functionality which we will integrate it into our application.
+Cloud Foundry apps can pass credentials and other environment variables to the application by way of VCAP_SERVICES. Bluemix provides this functionality which we will integrate it into our application.
 
 The first thing we are going to do is connect our Cloudant data-source to our application in Bluemix. We will then be able to take the "production" settings and use them in our local development environment.
 
@@ -110,7 +111,7 @@ Now let's write some logic to do the following:
 
 We'll create a file called `env.js` (*JS not JSON*) and add the following code to it:
 
-```javascript
+```js
 let VCAP;
 
 // PRODUCTION CREDENTIALS
