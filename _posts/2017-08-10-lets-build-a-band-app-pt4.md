@@ -17,7 +17,7 @@ Accompanying this series is a [corresponding workshop](https://github.com/Strong
 
 ## Previously on _Let's build a band app!_
 
-In the [previous episode](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt3/), we got to know the Swagger explorer that comes for free with LoopBack. It is an interface that allows us to see and interact with our APIs. We are able to make requests through the UI and see how our API endpoints respond. Now that we have seen our API in action, let's deploy it so that we can begin to interact with it over the web rather than just within our local development environment.
+In the [previous episode](/strongblog/lets-build-a-band-app-loopback-pt3/), we got to know the Swagger explorer that comes for free with LoopBack. It is an interface that allows us to see and interact with our APIs. We are able to make requests through the UI and see how our API endpoints respond. Now that we have seen our API in action, let's deploy it so that we can begin to interact with it over the web rather than just within our local development environment.
 
 ## In this episode
 
