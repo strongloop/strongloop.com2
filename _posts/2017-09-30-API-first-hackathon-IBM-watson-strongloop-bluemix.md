@@ -23,8 +23,8 @@ Well, good news for those of you in San Francisco! There is an Open API Initiati
 <!--more-->
 
 
-Register [here](https://mm-api-first-hackathon-sf.devpost.com/)!
+You can register, read the schedule, and learn about requirements and elibility [here](https://mm-api-first-hackathon-sf.devpost.com/).
 
 ## What's Next?
 
-If you haven't already read about OAI v3, read the recent [press release](https://www.openapis.org/blog/2017/07/26/the-oai-announces-the-openapi-specification-3-0-0). 
+Find out what other events we are involved with on our [Events page](https://strongloop.com/events/). 
