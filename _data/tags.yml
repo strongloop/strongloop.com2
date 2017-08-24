@@ -2,6 +2,7 @@ allowed-tags:
   - API Connect
   - API Microgateway
   - API Tip
+  - Bluemix
   - Cloud
   - Community
   - ES2015 ES6
@@ -19,3 +20,4 @@ allowed-tags:
   - Product
   - Resources
   - Tutorial
+  - Watson
