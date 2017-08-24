@@ -23,4 +23,8 @@ Erin McKean, IBM Lead Developer Advocate, will help you get your teams on board 
 
 Tim Burks from Google will help you work with code generation you can trust with "Taking API Code Generation to the next level with OpenAPI 3." 
 
-The talk will be held at the Google Launchpad, and you can register for this event [at its meetup page](https://www.meetup.com/The-Open-API-Initiative-OAI-Meetup/events/242625994/).
+The talk will be held at the Google Launchpad, and you can register for this event on its [meetup page](https://www.meetup.com/The-Open-API-Initiative-OAI-Meetup/events/242625994/).
+
+## What's Next?
+
+If you haven't already read about OAI v3, read the recent [press release](https://www.openapis.org/blog/2017/07/26/the-oai-announces-the-openapi-specification-3-0-0). 
