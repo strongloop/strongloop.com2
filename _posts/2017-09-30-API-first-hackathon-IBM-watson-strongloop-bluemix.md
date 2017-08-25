@@ -22,7 +22,7 @@ Wondering if you should take part? Well, the hackathon event page gives an overv
 
 Our IBM Evangelist Team will be there to provide support and see how attendees do with LoopBack and Watson. We're excited to see the results!   
 
-You can register, read the schedule, and learn about requirements and elibility [here](https://mm-api-first-hackathon-sf.devpost.com/). Happy hacking!
+You can register, read the schedule, and learn about requirements and eligibility [here](https://mm-api-first-hackathon-sf.devpost.com/). Happy hacking!
 
 ## What's Next?
 
