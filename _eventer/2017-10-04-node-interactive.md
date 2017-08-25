@@ -6,7 +6,7 @@ title: Node Interactive
 redirect_to: http://events.linuxfoundation.org/events/node-interactive
 permalink: /event/node-interactive-2017/
 event-link: http://events.linuxfoundation.org/events/node-interactive
-location: Vancouver, Canada
+location: Vancouver, BC, Canada
 role: Speaking & sponsor
 ---
 Node Interactive
