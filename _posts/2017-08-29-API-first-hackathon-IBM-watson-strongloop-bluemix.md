@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Take Part in the API-First Hackathon with IBM Watson | Strongloop | Bluemix
 date: 2017-08-29T01:40:15+00:00
 author: Dave Whiteley
