@@ -9,7 +9,7 @@ categories:
   - Bluemix
 ---
 
-We're pleased to announce that IBM and StrongLoop are working with [Mobile Monday](https://www.mobilemonday.us/) for their upcoming three day hackathon event in San Francisco! Running from September 8-10, this event provides the challenge of the "API-First Hackathon with IBM Watson | Strongloop | Bluemix". Are you up for that challenge? If so, there is $7,000 worth of prizes up for grabs, as well as a TJBot Watson Maker kit for the best use of LoopBack in the hackathon. 
+We're pleased to announce that IBM and StrongLoop are working with [Mobile Monday](https://www.mobilemonday.us/) for their upcoming three day hackathon event in San Francisco! Running from September 8-10, this event provides the challenge of the "API-First Hackathon with IBM Watson, Strongloop & Bluemix". Are you up for that challenge? If so, there is $7,000 worth of prizes up for grabs, as well as a TJBot Watson Maker kit for the best use of LoopBack in the hackathon. 
 
 Wondering if you should take part? Well, the hackathon event page gives an overview of who should join in:
 
