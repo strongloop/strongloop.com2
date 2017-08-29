@@ -4,7 +4,7 @@ date: 2017-08-29T01:40:15+00:00
 author: Dave Whiteley
 permalink: /strongblog/API-first-hackathon-IBM-watson-strongloop-bluemix/
 categories:
-  - Loopback
+  - LoopBack
   - Watson
   - Bluemix
 ---
