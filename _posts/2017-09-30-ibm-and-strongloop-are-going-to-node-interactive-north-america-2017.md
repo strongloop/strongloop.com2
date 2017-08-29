@@ -13,7 +13,7 @@ categories:
 IBM and StrongLoop are heading to Vancouver, BC, Canada for [Node Interactive North America](http://events.linuxfoundation.org/events/node-interactive). The event runs from October 4-6, 2017. IBM is once more Platinum Sponsor for this event, and we are all proud to be involved.
 
 <!--more-->
-<img src="https://strongloop.com/blog-assets/2017/08/nodejs-interactive-2017.png" alt="Let's make a band app part 6" style="width: 500px"/>
+<img src="https://strongloop.com/blog-assets/2017/08/nodejs-interactive-2017.png" alt="Node Interactive North America" style="width: 400px"/>
 <>
 
 Want to know more about Node Interactive North America? Here's a description of the event, straight from its web site:
