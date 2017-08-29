@@ -1,7 +1,7 @@
 ---
 layout: post
 title: API-First Hackathon with IBM Watson | Strongloop | Bluemix
-date: 2017-09-30T01:40:15+00:00
+date: 2017-08-29T01:40:15+00:00
 author: Dave Whiteley
 permalink: /strongblog/2017-09-30-API-first-hackathon-IBM-watson-strongloop-bluemix
 categories:
@@ -10,9 +10,7 @@ categories:
   - Bluemix
 
 ---
-We're pleased to announce that IBM and StrongLoop are working with [Mobile Monday](https://www.mobilemonday.us/) for their upcoming three day hackathon event in San Francisco!
-
-Are you up for the challenge of the "API-First Hackathon with IBM Watson | Strongloop | Bluemix"? There is $7,000 worth of prizes up for grabs, as well as a TJBot Watson Maker kit for the best use of LoopBack in the hackathon. 
+We're pleased to announce that IBM and StrongLoop are working with [Mobile Monday](https://www.mobilemonday.us/) for their upcoming three day hackathon event in San Francisco! Running from September 8-10, this event provides the challenge of the "API-First Hackathon with IBM Watson | Strongloop | Bluemix". Are you up for that challenge? If so, there is $7,000 worth of prizes up for grabs, as well as a TJBot Watson Maker kit for the best use of LoopBack in the hackathon. 
 
 Wondering if you should take part? Well, the hackathon event page gives an overview of who should join in:
 
