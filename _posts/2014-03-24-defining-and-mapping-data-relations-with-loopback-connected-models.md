@@ -58,7 +58,9 @@ Let’s examine the relation types one by one. We’ll explain what a relation i
 
 A “belongsTo” relation specifies a one-to-one connection between two models: each instance of the declaring model &#8220;belongs to&#8221; one instance of the related model. For example, in an application with customers and orders, each order “belongs to” one customer, as illustrated in the diagram below.
   
-<img src="https://strongloop.com/blog-assets/2014/03/belongstorelationcsorder.png" alt="The belongsTo relation - Customer Order" width="500px;"/>
+<img src="https://strongloop.com/blog-assets/2014/03/CXorder.png" alt="The belongsTo relation - Customer Order" width="500px;"/>
+
+<img src="https://strongloop.com/blog-assets/2017/08/mmhackathonsep2017.png" alt="API-First Hackathon with IBM Watson | Strongloop | Bluemix" style="width: 500px"/>
 
 The declaring model (Order) has a foreign key property that references the primary key property of the target model (Customer). If a primary key is not present, LoopBack will automatically add one.
 
