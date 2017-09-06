@@ -60,8 +60,6 @@ A “belongsTo” relation specifies a one-to-one connection between two models:
   
 <img src="https://strongloop.com/blog-assets/2014/03/CXorder.png" alt="The belongsTo relation - Customer Order" width="500px;"/>
 
-<img src="https://strongloop.com/blog-assets/2017/08/mmhackathonsep2017.png" alt="API-First Hackathon with IBM Watson | Strongloop | Bluemix" style="width: 500px"/>
-
 The declaring model (Order) has a foreign key property that references the primary key property of the target model (Customer). If a primary key is not present, LoopBack will automatically add one.
 
 <h2 dir="ltr">
