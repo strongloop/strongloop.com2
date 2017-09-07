@@ -20,7 +20,7 @@ Well, good news for those of you in San Francisco! There is an Open API Initiati
 
 The Open API Initiative Meetup will feature discussion and demos featuring OpenAPI v3.0.
 
-Erin McKean, IBM Lead Developer Advocate, will help you get your teams on board with Open API Spec with her talk, "Selling OpenAPI: How to Convince Your Team (and Your Manager!) to Adopt the OpenAPI Spec."
+Erin McKean, Developer Advocate, will help you get your teams on board with Open API Spec with her talk, "Selling OpenAPI: How to Convince Your Team (and Your Manager!) to Adopt the OpenAPI Spec."
 
 Tim Burks from Google will help you work with code generation you can trust with "Taking API Code Generation to the next level with OpenAPI 3." 
 
