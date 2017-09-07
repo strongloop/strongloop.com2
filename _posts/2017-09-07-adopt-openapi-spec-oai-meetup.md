@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Learn How to Convince Your Team to Adopt the OpenAPI Spec at the Open API Initiative (OAI) Meetup
-date: 2017-09-30T01:40:15+00:00
+date: 2017-09-07T01:40:15+00:00
 author: Dave Whiteley
 permalink: /strongblog/adopt-openapi-spec-oai-meetup
 categories:
