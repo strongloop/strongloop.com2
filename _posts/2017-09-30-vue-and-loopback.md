@@ -9,9 +9,9 @@ categories:
   - How-To
 ---
 
-I recently had a conversation with a follower on Twitter about how [Vue.js](https://vuejs.org/) and [LoopBack](http://loopback.io/) could work together. Because of how LoopBack works, this is almost a non-issue. By creating a simple REST-based API, there's nothing "special" about using Vue.js with LoopBack, just as there wouldn't be anything special if you used React or Angular. That being said, I still thought it would be nice to give a quick demonstration on how a Vue.js application could be built with LoopBack as the back end.
+I recently had a conversation with a follower on Twitter about how [Vue.js](https://vuejs.org/) and [LoopBack](http://loopback.io/) could work together. Because of how LoopBack works, this is almost a non-issue. By creating a simple REST-based API, there's nothing "special" about using Vue.js with LoopBack, just as there wouldn't be anything special if you used [React](https://facebook.github.io/react/) or [Angular](https://angularjs.org/). That being said, I still thought it would be nice to give a quick demonstration on how a Vue.js application could be built with LoopBack as the back end.
 
-I'm going to assume some basic understanding of Vue.js, but if you've never seen it, then I definitely recommend reading the [guide](https://vuejs.org/v2/guide/) for an introduction. One of the things Vue.js does well is work with sites where you don't have a full "application" in play. What do I mean by that? Frameworks like Angular are built around the idea of creating an application - where the entire site, or functionality, is handled by framework. While Vue.js can certainly do that as well, it doesn't require this. So imagine an existing HTML page that you need to add interactivity to. In the past, you may have added in jQuery and began coding away. While this works, you may get to a point where managing DOM state and generating dynamic content becomes messy. You still don't need a "full" application built with Angular, but you'd like something that helps you out a bit more than just jQuery by itself. 
+I'm going to assume some basic understanding of Vue.js, but if you've never seen it, then I definitely recommend reading its [guide](https://vuejs.org/v2/guide/) for an introduction. One of the things Vue.js does well is work with sites where you don't have a full "application" in play. What do I mean by that? Frameworks like Angular are built around the idea of creating an application - where the entire site, or functionality, is handled by framework. While Vue.js can certainly do that as well, it doesn't require this. So imagine an existing HTML page that you need to add interactivity to. In the past, you may have added in jQuery and began coding away. While this works, you may get to a point where managing DOM state and generating dynamic content becomes messy. You still don't need a "full" application built with Angular, but you'd like something that helps you out a bit more than just jQuery by itself. 
 
 Vue.js - in this author's not so humble opinion - really serves well as the "middle spot" between "just a few lines of JavaScript" and "wow this escalated quickly." 
 
@@ -19,7 +19,7 @@ Vue.js - in this author's not so humble opinion - really serves well as the "mid
 
 ### Building the Back End 
 
-So with that out of the way - let's quickly build a LoopBack server using the CLI. At your command prompt, enter `lb app` to scaffold a new application. Any name is fine, but be sure to use `3.x` for the version and `api-server` for the application type. (Conversely, you could also just download the repository from https://github.com/StrongLoop-Evangelists/lbandvue and use that to start off with.)
+So with that out of the way, let's quickly build a LoopBack server using the CLI. At your command prompt, enter `lb app` to scaffold a new application. Any name is fine, but be sure to use `3.x` for the version and `api-server` for the application type. (Conversely, you could also just download the repository from https://github.com/StrongLoop-Evangelists/lbandvue and use that to start off with.)
 
 Next, you'll want to build a model called `cat`. Remember that this can be done via the cli with `lb model`. The model should have 4 properties:
 
@@ -46,7 +46,7 @@ The last change is to remove the default home page (or `/` route) so that the cl
 //router.get('/', server.loopback.status());
 ```
 
-The net result is two=fold. After starting the server, you can hit your APIs for the Cat model at http://localhost:3000/api/cat and view the client-side demo at http://localhost:3000.
+The net result is two-fold. After starting the server, you can hit your APIs for the Cat model at http://localhost:3000/api/cat and view the client-side demo at http://localhost:3000.
 
 ### Building the Front End
 
@@ -128,7 +128,7 @@ Let's begin by looking at the HTML. As you can imagine, there isn't much there.
 </body>
 </html>
 ```
-For those new to Vue.js - the important parts can be found in the table on top. Note the use of `v-for` as a simple looping mechanism. Inside the each row the use of brackets (`{{cat.name}}`) is used to represent variables that will be replaced with real data. The `@click` directives are basically simple event handlers.
+For those new to Vue.js, the important parts can be found in the table on top. Note the use of `v-for` as a simple looping mechanism. Inside the each row the use of brackets (`{{cat.name}}`) is used to represent variables that will be replaced with real data. The `@click` directives are basically simple event handlers.
 
 The form at the bottom is a bit different. By using `v-model` I'm basically creating a connection between the form data and data in the JavaScript code you'll see in a moment. Finally, the use of `@submit.prevent` does two things - first it simply assigns a submit handler for the form and secondly it automatically prevents the default behavior of a form submit. (Which is what I want since I'm going to handle the form data myself.)
 
