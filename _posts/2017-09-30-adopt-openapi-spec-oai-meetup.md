@@ -16,6 +16,7 @@ Have you heard about the [Open API Initiative](https://www.openapis.org/) and it
 Well, good news for those of you in San Francisco! There is an Open API Initiative (OAI) Meetup coming on September 14th!
 
 <!--more-->
+<img src="https://strongloop.com/blog-assets/2017/08/OpenAPISpecLogo.png" alt="Open API Spec / Open API Initiative" style="width: 300px"/>
 
 The Open API Initiative Meetup will feature discussion and demos featuring OpenAPI v3.0.
 
