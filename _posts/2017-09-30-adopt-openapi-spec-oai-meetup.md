@@ -28,4 +28,5 @@ The talk will be held at the Google Launchpad, and you can register for this eve
 
 ## What's Next?
 
-If you haven't already read about OAI v3, read the recent [press release](https://www.openapis.org/blog/2017/07/26/the-oai-announces-the-openapi-specification-3-0-0). 
+- If you haven't already read about OAI v3, read the recent [press release](https://www.openapis.org/blog/2017/07/26/the-oai-announces-the-openapi-specification-3-0-0). 
+- Learn about the [OpenAPI Spec and you (and IBM)](https://strongloop.com/strongblog/the-openapi-spec-and-you-and-ibm).
