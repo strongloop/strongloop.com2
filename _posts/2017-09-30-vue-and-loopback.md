@@ -13,7 +13,7 @@ I recently had a conversation with a follower on Twitter about how [Vue.js](http
 
 I'm going to assume some basic understanding of Vue.js, but if you've never seen it, then I definitely recommend reading its [guide](https://vuejs.org/v2/guide/) for an introduction. One of the things Vue.js does well is work with sites where you don't have a full "application" in play. What do I mean by that? Frameworks like Angular are built around the idea of creating an application - where the entire site, or functionality, is handled by framework. While Vue.js can certainly do that as well, it doesn't require this. So imagine an existing HTML page that you need to add interactivity to. In the past, you may have added in jQuery and began coding away. While this works, you may get to a point where managing DOM state and generating dynamic content becomes messy. You still don't need a "full" application built with Angular, but you'd like something that helps you out a bit more than just jQuery by itself. 
 
-Vue.js - in this author's not so humble opinion - really serves well as the "middle spot" between "just a few lines of JavaScript" and "wow this escalated quickly." 
+Vue.js, in this author's not so humble opinion, really serves well as the "middle spot" between "just a few lines of JavaScript" and "wow this escalated quickly." 
 
 <img src="/blog-assets/2017/09/escalated.png" alt="It happens..." />
 
