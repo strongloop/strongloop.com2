@@ -19,7 +19,7 @@ Want to know more about Node Interactive North America? Here's a description of 
 
 *Node.js Interactive is the marquee event for Node.js developers, companies that rely on Node.js and the vendors that support both of these constituents with tools, training and other services.*
 
-Join us, the StrongLoop and IBM API Connect teams, at Node Interactive North America for four exciting days of a technical deep dive in all things Node.js. As the platinum level sponsor, and one of the founders of the Node.js Foundation, we are committed to the advancement of Node.js and its thriving ecosystem.
+Join us, the StrongLoop and IBM API Connect teams, at Node Interactive North America for three exciting days of a technical deep dive in all things Node.js. As the platinum level sponsor, and one of the founders of the Node.js Foundation, we are committed to the advancement of Node.js and its thriving ecosystem.
 
 Speakers from the IBM team include:
 
