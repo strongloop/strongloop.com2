@@ -31,10 +31,6 @@ Speakers from the IBM team include:
 - Gireesh Punathil, Software Engineer - ["Programming Best Practices: Memory Efficiency with Closures"](https://nina17.sched.com/event/AtiR/programming-best-practices-memory-efficiency-with-closures-i-gireesh-punathil-ibm-india-pvt-ltd)
 - Joran Siu, Senior Software Developer - ["Node.js Does 30 Billion Transactions Per Day"](https://nina17.sched.com/event/Atik/nodejs-does-30-billion-transactions-per-day-b-joran-siu-ibm)
 
-In addition to the activities at our booth, join us at the following sessions:
-
-We look forward to meeting conference attendees, so if you are going to be there definitely come visit Booth P3!
-
 You can register for the event [here](http://events.linuxfoundation.org/events/node-interactive/attend/registration)!
 
 ## What Next?
