@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2017-09-30T01:40:15+00:00
-title: Let's Build a Band App with LoopBack&#58; Continuous Deployment (part 7 of many)
+title: Let's Build a Band App with LoopBack&#58; Continuous Deployment (part 7 of 8)
 author: Joe Sepi
 permalink: /strongblog/lets-build-a-band-app-loopback-pt7/
 categories:
@@ -91,4 +91,6 @@ Toolchains and pipelines allow us to stop worrying about deployment and allows u
 
 ## What's Next?
 
-Well, I don't really have a what's next planned at the moment. I want to go build out this application/platform and get users on board and then I will come back and share more about what I've built and how others can do so too. I'll be sure to document all the pains and the joys, so stay tuned and thanks for following along. Cheers!
+Eagle-eyed readers will have noticed that this entry was part 7 of 8, while this series was originally launched as having "many" parts. The next part will be a natural stopping point for Phase One of building a band app - and you will have a functional band app ready to run. We've also updated past entries to mention the 8 parts.
+
+I don't have Phase Two planned at the moment. I want to go build out this application / platform further and get users on board. Then I will come back and share more about what I've built and how others can do so too. I'll be sure to document all the pains and the joys, so stay tuned and thanks for following along. Cheers!
