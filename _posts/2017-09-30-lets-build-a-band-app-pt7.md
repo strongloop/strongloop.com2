@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2017-09-30T01:40:15+00:00
 title: Let's Build a Band App with LoopBack&#58; Continuous Deployment (part 7 of many)
 author: Joe Sepi
 permalink: /strongblog/lets-build-a-band-app-loopback-pt7/
