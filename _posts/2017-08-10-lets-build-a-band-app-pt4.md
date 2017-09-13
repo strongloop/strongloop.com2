@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Let's Build a Band App with LoopBack&#58; Deploying Our Application (part 4 of many)
+title: Let's Build a Band App with LoopBack&#58; Deploying Our Application (part 4 of 8)
 date: 2017-08-10T02:40:15+00:00
 author: Joe Sepi
 permalink: /strongblog/lets-build-a-band-app-loopback-pt4/
