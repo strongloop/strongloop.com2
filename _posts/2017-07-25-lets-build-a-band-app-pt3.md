@@ -1,7 +1,7 @@
 ---
 layout: post
 Let's Build a Band App with LoopBack: exploring our api (part 3 of many)
-title: Let's Build a Band App with LoopBack&#58; Exploring Our API (part 3 of many)
+title: Let's Build a Band App with LoopBack&#58; Exploring Our API (part 3 of 8)
 date: 2017-07-25T08:05:36+00:00
 author: Joe Sepi
 permalink: /strongblog/lets-build-a-band-app-loopback-pt3/
