@@ -9,7 +9,7 @@ categories:
   - How-To
 ---
 
-I recently had a conversation with a follower on Twitter about how [Vue.js](https://vuejs.org/) and [LoopBack](http://loopback.io/) could work together. Because of how LoopBack works, this is almost a non-issue. By creating a simple REST-based API, there's nothing "special" about using Vue.js with LoopBack, just as there wouldn't be anything special if you used [React](https://facebook.github.io/react/) or [Angular](https://angularjs.org/). That being said, I still thought it would be nice to give a quick demonstration on how a Vue.js application could be built with LoopBack as the back end.
+I recently had a conversation with a follower on [Twitter](https://twitter.com/raymondcamden) about how [Vue.js](https://vuejs.org/) and [LoopBack](http://loopback.io/) could work together. Because of how LoopBack works, this is almost a non-issue. By creating a simple REST-based API, there's nothing "special" about using Vue.js with LoopBack, just as there wouldn't be anything special if you used [React](https://facebook.github.io/react/) or [Angular](https://angularjs.org/). That being said, I still thought it would be nice to give a quick demonstration on how a Vue.js application could be built with LoopBack as the back end.
 
 I'm going to assume some basic understanding of Vue.js, but if you've never seen it, then I definitely recommend reading its [guide](https://vuejs.org/v2/guide/) for an introduction. One of the things Vue.js does well is work with sites where you don't have a full "application" in play. What do I mean by that? Frameworks like Angular are built around the idea of creating an application - where the entire site, or functionality, is handled by framework. While Vue.js can certainly do that as well, it doesn't require this. So imagine an existing HTML page that you need to add interactivity to. In the past, you may have added in jQuery and began coding away. While this works, you may get to a point where managing DOM state and generating dynamic content becomes messy. You still don't need a "full" application built with Angular, but you'd like something that helps you out a bit more than just jQuery by itself. 
 
@@ -30,7 +30,7 @@ Next, you'll want to build a model called `cat`. Remember that this can be done 
 
 You can use the in-memory datasource for this sample, but you may want to add the `file` option to the datasource so your changes are persisted while you test. If you use the version of the app from GitHub, this is already done.
 
-Once done, now it's time for another change. The client-side version of this demo could be hosted anywhere, but to keep things simple, we're going to store the client-side code on the same server as the API. A LoopBack application comes with an empty client folder so we're halfway there. To use it for static assets, you can follow a tip I wrote about on my blog last year ([Quick LoopBack Tip - Using the Client Folder for your Static Directory](https://www.raymondcamden.com/2016/11/08/quick-loopback-tip-using-the-client-folder-for-your-static-directory/). Basically, find your `server/middleware.json` file, look for the `files` block, and edit it to look like so:
+Once done, now it's time for another change. The client-side version of this demo could be hosted anywhere, but to keep things simple, we're going to store the client-side code on the same server as the API. A LoopBack application comes with an empty client folder so we're halfway there. To use it for static assets, you can follow a tip I wrote about on my blog last year ([Quick LoopBack Tip - Using the Client Folder for your Static Directory](https://www.raymondcamden.com/2016/11/08/quick-loopback-tip-using-the-client-folder-for-your-static-directory/)). Basically, find your `server/middleware.json` file, look for the `files` block, and edit it to look like so:
 
 ```json
 "files": {
@@ -238,3 +238,7 @@ Finally, the `reset` method simply nukes any data in the form. This is used afte
 ### So What?
 
 As I said in the beginning, using LoopBack with Vue.js is really a non-story. That's what you want in an API - something that is easy to setup and doesn't get in the way. While obviously a simple proof of concept, the entire code base took about an hour to do with 5 minutes of that being LoopBack. (Which is not to say the Vue.js portion was that much harder, I'm still new to Vue.js!) 
+
+### What's next?
+
+Interested in trying LoopBack for your own RESTful API needs? Check out [this](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/) blog post to get started in 5 minutes!
