@@ -92,9 +92,9 @@ Let's begin by looking at the HTML. As you can imagine, there isn't much there.
     <tbody>
       <tr v-for="cat in cats">
       <td @click="editCat(cat)" class="catItem" title="Click to Edit">{{cat.name}}</td>
-      <td>{% highlight ruby %}{{cat.age}}{% endhighlight %}</td>
-      <td>{% highlight ruby %}{{cat.gender}}{% endhighlight %}</td>
-      <td>{% highlight ruby %}{{cat.breed}}{% endhighlight %}</td>
+      <td><MTMarkdownOptions output='raw'>{{cat.age}}</MTMarkdownOptions></td>
+      <td><MTMarkdownOptions output='raw'>{{cat.gender}}</MTMarkdownOptions></td>
+      <td><MTMarkdownOptions output='raw'>{{cat.breed}}</MTMarkdownOptions></td>
       <td @click="deleteCat(cat)" class="deleteCat" title="Click to Delete">Delete</td>
       </tr>
     </tbody>
