@@ -23,7 +23,7 @@ In this episode, we will institute some basic devops tooling to allow us to focu
 
 <!--more-->
 
-<img src="../blog-assets/2017/band-app/bandapp7.jpg" alt="Let's make a band app part 7" style="width: 500px"/>
+<img src="https://strongloop.com/blog-assets/2017/band-app/bandapp7.jpg" alt="Let's make a band app part 7" style="width: 500px"/>
 
 ## CI/CD
 
@@ -37,7 +37,7 @@ We start by going to Toolchains within the DevOps section of Bluemix.
 
 https://console.bluemix.net/devops/toolchains
 
-![Bluemix - Toolchain](../blog-assets/2017/band-app/toolchain01.png)
+![Bluemix - Toolchain](https://strongloop.com/blog-assets/2017/band-app/toolchain01.png)
 
 
 ### Create a Toolchain:
@@ -47,7 +47,7 @@ From the page above, we can see any previous toolchains we may have set up. To c
 Doing so will take us to the page where we can choose from the different types of toolchains available to us:
 https://console.bluemix.net/devops/create
 
-![Bluemix - Toolchain](../blog-assets/2017/band-app/toolchain02.png)
+![Bluemix - Toolchain](https://strongloop.com/blog-assets/2017/band-app/toolchain02.png)
 
 
 ### Simple Cloud Foundry toolchain
@@ -59,7 +59,7 @@ This open toolchain is based off of this template: https://github.com/open-toolc
 
 If you scroll down, you will see this diagram:
 
-![Bluemix - Toolchain](../blog-assets/2017/band-app/toolchain03.png)
+![Bluemix - Toolchain](https://strongloop.com/blog-assets/2017/band-app/toolchain03.png)
 
 Here we can imagine the cycle between "think" and "code" where we are able to iterate on the development of our application and on every merge to master, the "deliver" pipeline fuels our "run" runtime on Bluemix.
 
@@ -71,7 +71,7 @@ Also, in the above image, we will find the field to name our toolchain.
 
 If we scroll down further, we get to the configuration options for how our toolchain connects with our code.
 
-![Bluemix - Toolchain](../blog-assets/2017/band-app/toolchain04.png)
+![Bluemix - Toolchain](https://strongloop.com/blog-assets/2017/band-app/toolchain04.png)
 
 We will be using Github and we will link to an existing repository (choose Repository type: Existing).
 
@@ -79,11 +79,11 @@ In the next field we choose our repository. If you have given IBM Bluemix access
 
 *Note: this field is looking for a github repository and will give you an error if the URL contains a slash at the end. I believe it is looking for the `.git` within your repository and takes issue when it looks like a directory with the slash.*
 
-![Bluemix - Toolchain](../blog-assets/2017/band-app/toolchain05.png)
+![Bluemix - Toolchain](https://strongloop.com/blog-assets/2017/band-app/toolchain05.png)
 
 From here, we can click on the Delivery Pipeline box and see our pipeline in action:
 
-![Bluemix - Toolchain](../blog-assets/2017/band-app/toolchain06.png)
+![Bluemix - Toolchain](https://strongloop.com/blog-assets/2017/band-app/toolchain06.png)
 
 If we commit code to our repository, this pipeline should be kicked off. If we want to run it manually, we can click the little play button. Once our code is built and those build artifacts are deployed, we can see our site live.
 
