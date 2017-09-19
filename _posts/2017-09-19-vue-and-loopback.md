@@ -57,7 +57,7 @@ Before we get into the code, let's actually take a look at how the application w
 The form at the bottom is used both for creating new cats as well at editing. Clicking the cats name will load their defaults into the form while clicking delete will send the cat into an unknown oblivion on the edge of space. (Or it will just delete it. You decide.)
 
 Let's begin by looking at the HTML. As you can imagine, there isn't much there.
-{% highlight ruby %}
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -128,7 +128,6 @@ Let's begin by looking at the HTML. As you can imagine, there isn't much there.
 </body>
 </html>
 ```
-{% endhighlight %}
 
 For those new to Vue.js, the important parts can be found in the table on top. Note the use of `v-for` as a simple looping mechanism. Inside each row brackets (`{{cat.name}}`) are used to represent variables that will be replaced with real data. The `@click` directives are basically simple event handlers.
 
