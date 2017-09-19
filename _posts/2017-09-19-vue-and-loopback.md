@@ -120,7 +120,6 @@ Let's begin by looking at the HTML. As you can imagine, there isn't much there.
     <input type="reset" value="Clear" @click="reset">
     <input type="submit" value="Save Cat 🐱">
   </form>
-
   </div>
 
   <script src="https://unpkg.com/vue"></script>
