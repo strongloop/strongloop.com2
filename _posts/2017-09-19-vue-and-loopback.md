@@ -59,7 +59,6 @@ The form at the bottom is used both for creating new cats as well at editing. Cl
 Let's begin by looking at the HTML. As you can imagine, there isn't much there.
 
 ```html
-{% raw %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -90,12 +89,12 @@ Let's begin by looking at the HTML. As you can imagine, there isn't much there.
       </tr>
     </thead>
    <tbody>
-      <tr v-for=“cat in cats”>
-      <td @click=“editCat(cat)” class=“catItem” title=“Click to Edit”>{{cat.name}}</td>
-      <td>{{cat.age}}</td>
-      <td>{{cat.gender}}</td>
-      <td>{{cat.breed}}</td>
-      <td @click=“deleteCat(cat)” class=“deleteCat” title=“Click to Delete”>Delete</td>
+      <tr v-for="cat in cats">
+      <td @click="editCat(cat)" class="catItem" title="Click to Edit">{{ "{{cat.name" }}}}</td>
+      <td>{{ "{{cat.age" }}}}</td>
+      <td>{{ "{{cat.gender" }}}}</td>
+      <td>{{ "{{cat.breed" }}}}</td>
+      <td @click="deleteCat(cat)" class="deleteCat" title="Click to Delete">Delete</td>
       </tr>
     </tbody>
   </table>
@@ -127,10 +126,9 @@ Let's begin by looking at the HTML. As you can imagine, there isn't much there.
   <script src="js/app.js"></script>
 </body>
 </html>
-{% endraw %}
 ```
 For those new to Vue.js - the important parts can be found in the table on top. Note the use of `v-for` as a simple looping mechanism. Inside each row the use of brackets
- ({ %raw% }{{cat.name}}{% endraw %}) is used to represent variables that will be replaced with real data. The `@click` directives are basically simple event handlers.
+ ({{ "{{cat.name" }}}}) is used to represent variables that will be replaced with real data. The `@click` directives are basically simple event handlers.
 
 The form at the bottom is a bit different. By using `v-model` I'm basically creating a connection between the form data and data in the JavaScript code you'll see in a moment. Finally, the use of `@submit.prevent` does two things - first it simply assigns a submit handler for the form and secondly it automatically prevents the default behavior of a form submit. (Which is what I want since I'm going to handle the form data myself.)
 
