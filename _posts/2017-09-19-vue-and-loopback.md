@@ -243,4 +243,4 @@ As I said in the beginning, using LoopBack with Vue.js is really a non-story. Th
 
 ### What's next?
 
-Interested in trying LoopBack for your own RESTful API needs? Check out [this](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/) blog post to get started in 5 minutes!
+Interested in trying LoopBack for your own RESTful API needs? Check out [this](https://developer.ibm.com/apiconnect/2017/03/09/loopback-in-5-minutes/) blog post to get started in just 5 minutes!
