@@ -92,9 +92,9 @@ Let's begin by looking at the HTML. As you can imagine, there isn't much there.
    <tbody>
       <tr v-for=“cat in cats”>
       <td @click=“editCat(cat)” class=“catItem” title=“Click to Edit”>{{cat.name}}</td>
-      <td> {{cat.age}} </td>
-      <td> {{cat.gender}} </td>
-      <td> {{cat.breed}} </td>
+      <td>`{{cat.age}}`</td>
+      <td>`{{cat.gender}}`</td>
+      <td>`{{cat.breed}}`</td>
       <td @click=“deleteCat(cat)” class=“deleteCat” title=“Click to Delete”>Delete</td>
       </tr>
     </tbody>
