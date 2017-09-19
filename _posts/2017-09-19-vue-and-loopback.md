@@ -1,6 +1,6 @@
 ---
 layout: Building a Vue.js Application with LoopBack - an Example
-date: 2017-09-30T01:40:15+00:00
+date: 2017-09-19T01:40:15+00:00
 author: Raymond Camden
 permalink: /strongblog/vuejs-and-loopback
 categories:
