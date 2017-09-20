@@ -12,14 +12,17 @@ categories:
 IBM and StrongLoop are heading to [APIStrat](http://apistrat.com/), held October 31 through to November 2nd. The event is held in Portland, OR and is hosted by the Open API Initiative and The Linux Foundation.
 
 <!--more-->
-<img src="https://strongloop.com/blog-assets/2017/08/nodejs-interactive-2017.png" alt="Node Interactive North America" style="width: 400px"/>
+<img src="https://strongloop.com/blog-assets/2017/09/apistrat-logo.jpg" alt="APIStrat logo" style="width: 450px"/>
 
-The API Strategy & Practice Conference - better known as APIStrat - is in its eight year. The event gives attendees opportntunities to learn and discuss the API economy and all related things. 
+The API Strategy & Practice Conference - better known as APIStrat - is in its eight year. The event gives attendees opportunities to learn and discuss the API economy and all related things. The event homepage explains more about APIStrat:
 
-"The API Strategy & Practice Conference provides a forum in which leaders in the API sector can gather to discuss successes and challenges they face while executing their own API strategy. The API community comes together to hear these stories, participate, and discuss what is needed to move forward, in order to ensure the healthiest and most vibrant API sector possible."
+*"The API Strategy & Practice Conference provides a forum in which leaders in the API sector can gather to discuss successes and challenges they face while executing their own API strategy. The API community comes together to hear these stories, participate, and discuss what is needed to move forward, in order to ensure the healthiest and most vibrant API sector possible."*
 
-Join us, the StrongLoop and IBM API Connect teams, at Node Interactive North America for four exciting days of a technical deep dive in all things Node.js. As the platinum level sponsor, and one of the founders of the Node.js Foundation, we are committed to the advancement of Node.js and its thriving ecosystem.
+* [Bringing GraphQL to the Enterprise: When REST Isn't Enough](https://apistrat17.sched.com/event/BiDL/bringing-graphql-to-the-enterprise-when-rest-isnt-enough-jason-lengstorf-ibm?iframe=no&w=100%&sidebar=yes&bg=no) - Jason Lengstorf, Senior Front End Developer IBM
 
+* 2:30pm  [REST API Microversions](https://apistrat17.sched.com/event/BiE2/rest-api-microversions-sean-dague-ibm) - Sean Dague, Software Engineer IBM
+
+The StrongLoop and IBM team will be there, so feel free to visit us at our booth. We also recommend you visit the [Open API Initiative](https://www.openapis.org/) booth and learn about how you can utilize OpenAPI Spec V3 for the full API lifecycle.
 
 
 You can register for the event [here](http://events.linuxfoundation.org/events/apistrat)!
