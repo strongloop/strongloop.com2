@@ -145,8 +145,6 @@ Now LoopBack is setup to serve static files from your client directory. Let's gi
 Navigate to your `client` directory and add a file named `index.html`. In this file, add the following code, which has our basic HTML structure, including two divs to inject our templated content built from APIs, as well as the JavaScript needed to do that fetch and template.
 
 ```html
-{% highlight html%}
-{% raw %}
 <!doctype html>
 <html>
   <head>
@@ -194,8 +192,6 @@ Navigate to your `client` directory and add a file named `index.html`. In this f
     </script>
   </body>
 </html>
-{% endraw %}
-{% endhighlight %}
 ```
 
 *Note: we are using the Fetch API which isn't supported in all browsers. I chose this method because I didn't want to introduce any dependencies like jQuery or a Fetch shim. Also of note, I am very crudely templating my data by hand. This doesn't scale well for a full application -- typically we would choose a templating library like Mustache or perhaps even use a full featured client-side framework like Vue.js, Angular or that other one with the licensing issues.* ;)
