@@ -19,7 +19,7 @@ In the [previous episode](/strongblog/lets-build-a-band-app-loopback-pt7/), we s
 
 ## In this episode
 
-In this episode, we are going to quickly build out another API endpoint, configure out LoopBack server to be more than just an API server so that we can serve our UI as well, and we will put together some simple HTML to show our APIs in action.
+In this episode, we are going to quickly build out another API endpoint, configure our LoopBack server to be more than just an API server so that we can serve our UI as well, and we will put together some simple HTML to show our APIs in action.
 
 <!--more-->
 
