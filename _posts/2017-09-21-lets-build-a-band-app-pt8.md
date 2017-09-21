@@ -1,7 +1,7 @@
 ---
 layout: post
 2017-09-21T01:40:15+00:00
-title: Let's Build a Band App with LoopBack&#58; UI and Wrap Up (part 8 of 8)
+title: "Let's Build a Band App with LoopBack&#58; UI and Wrap Up (part 8 of 8)"
 author: Joe Sepi
 permalink: /strongblog/lets-build-a-band-app-loopback-pt8/
 categories:
