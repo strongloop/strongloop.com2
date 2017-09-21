@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Let's Build a Band App with LoopBack&#58; UI and Wrap Up (part 8 of 8)
+2017-09-21T01:40:15+00:00
 author: Joe Sepi
 permalink: /strongblog/lets-build-a-band-app-loopback-pt8/
 categories:
@@ -215,5 +216,5 @@ This is also the seed of my inspiration. From here, we can imagine a number of g
 - Events have venues, which should be their own model. We could make the platform an avenue to connect bands and venues by having promoters join the platform
 - The platform could be opened up to anyone to follow their favorite bands and be alerted of upcoming shows and such
 
-I don't have Phase Two planned at the moment. I want to go build out this application/platform further and get users on board. Then I will come back and share more about what I've built and how others can do so too. I'll be sure to document all the pains and the joys, so stay tuned and thanks for following along. Cheers!
+I will begin Phase Two after I build out this application/platform further and get users on board. Then I will come back and share more about what I've built and how others can do so too. I'll be sure to document all the pains and the joys, so stay tuned and thanks for following along. Cheers!
 
