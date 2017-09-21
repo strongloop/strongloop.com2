@@ -176,7 +176,7 @@ Navigate to your `client` directory and add a file named `index.html`. In this f
       });
 
       // EVENTS
-      fetch('http://0.0.0.0:3000/api//events')
+      fetch('http://0.0.0.0:3000/api/events')
       .then(res => res.json())
       .then(res => {
         tmpl = '<h2>Events</h2><ul>';
@@ -213,4 +213,3 @@ This is also the seed of my inspiration. From here, we can imagine a number of g
 - The platform could be opened up to anyone to follow their favorite bands and be alerted of upcoming shows and such
 
 I will begin Phase Two after I build out this application/platform further and get users on board. Then I will come back and share more about what I've built and how others can do so too. I'll be sure to document all the pains and the joys, so stay tuned and thanks for following along. Cheers!
-
