@@ -1,7 +1,7 @@
 ---
 layout: post
 2017-09-21T01:40:15+00:00
-title: ! 'Let's Build a Band App with LoopBack&#58; UI and Wrap-Up (part 8 of 8)'
+title: Let's Build a Band App with LoopBack - UI and Wrap-Up (part 8 of 8)
 author: Joe Sepi
 permalink: /strongblog/lets-build-a-band-app-loopback-pt8/
 categories:
@@ -140,6 +140,67 @@ Then we go into our `server/boot/root.js` file and find the line that handles th
 
 Now LoopBack is setup to serve static files from your client directory. Let's give it something to serve!
 
+## Our index page
+
+Navigate to your `client` directory and add a file named `index.html`. In this file, add the following code, which has our basic HTML structure, including two divs to inject our templated content built from APIs, as well as the JavaScript needed to do that fetch and template.
+
+```html
+{% highlight html%}
+{% raw %}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Band App</title>
+  </head>
+  <body>
+    <div class="js-info"></div>
+    <div class="js-events"></div>
+
+    <script>
+      // BAND INFO
+      fetch('http://0.0.0.0:3000/api/bands/829f5215a7864a332e12db14fbd40a2e')
+      .then(res => res.json())
+      .then(res => {
+        let tmpl = `
+          <img src="${res.image}"" style="float:right; margin:50px 0; width:100%;">
+          <h1>${res.name}</h1>
+          <div>
+            ${res.description}
+          </div>
+        `;
+
+        tmpl += res.socialMedia.reduce((str, channel) => {
+          return str + `<p><a href="${channel.url}">${channel.name}</a></p>`;
+        }, '');
+
+        document.getElementsByClassName('js-info')[0].innerHTML = tmpl;
+      });
+
+      // EVENTS
+      fetch('http://0.0.0.0:3000/api//events')
+      .then(res => res.json())
+      .then(res => {
+        tmpl = '<h2>Events</h2><ul>';
+
+        tmpl += res.reduce((str, event) => {
+          return str + `<li>${event.description}</li>`;
+        }, '');
+
+        tmpl += '</ul>';
+
+        document.getElementsByClassName('js-events')[0].innerHTML = tmpl;
+      });
+    </script>
+  </body>
+</html>
+{% endraw %}
+{% endhighlight %}
+```
+
+*Note: we are using the Fetch API which isn't supported in all browsers. I chose this method because I didn't want to introduce any dependencies like jQuery or a Fetch shim. Also of note, I am very crudely templating my data by hand. This doesn't scale well for a full application -- typically we would choose a templating library like Mustache or perhaps even use a full featured client-side framework like Vue.js, Angular or that other one with the licensing issues.* ;)
+
+And voila! We have a working band page that is the beginnings of our band app. We can see this page being served up from the app on Bluemix: https://band-app.mybluemix.net
 
 ## What's Next?
 
