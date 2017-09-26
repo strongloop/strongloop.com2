@@ -10,14 +10,14 @@ categories:
   - Node core
   - Node DevOps 
 ---
-IBM and StrongLoop are heading to Vancouver, BC, Canada for [Node Interactive North America](http://events.linuxfoundation.org/events/node-interactive). The event runs from October 4-6, 2017. IBM is once more Platinum Sponsor for this event, and we are all proud to be involved.
+IBM and StrongLoop are heading to Vancouver, BC, Canada for [Node Interactive North America](http://events.linuxfoundation.org/events/node-interactive). The event runs from October 4-6, 2017. IBM is once more a Platinum Sponsor for this event, and we are all proud to be involved.
 
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2017/08/nodejs-interactive-2017.png" alt="Node Interactive North America" style="width: 400px"/>
 
 Want to know more about Node Interactive North America? Here's a description of the event, straight from its web site:
 
-*Node.js Interactive is the marquee event for Node.js developers, companies that rely on Node.js and the vendors that support both of these constituents with tools, training and other services.*
+*Node.js Interactive is the marquee event for Node.js developers, companies that rely on Node.js and the vendors that support both of these constituents with tools, training and other services.
 
 Join us, the StrongLoop and IBM API Connect teams, at Node Interactive North America for three exciting days of a technical deep dive in all things Node.js. As the platinum level sponsor, and one of the founders of the Node.js Foundation, we are committed to the advancement of Node.js and its thriving ecosystem.
 
