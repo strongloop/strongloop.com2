@@ -18,6 +18,14 @@ The API Strategy & Practice Conference - better known as APIStrat - is in its ei
 
 *"The API Strategy & Practice Conference provides a forum in which leaders in the API sector can gather to discuss successes and challenges they face while executing their own API strategy. The API community comes together to hear these stories, participate, and discuss what is needed to move forward, in order to ensure the healthiest and most vibrant API sector possible."*
 
+There are sveeral great sessions and opportunities to learn, and we wanted to highlight some from the StrongLoop and IBM team:
+
+* Erin
+
+* Jeffrey B
+
+* Sai
+
 * [Bringing GraphQL to the Enterprise: When REST Isn't Enough](https://apistrat17.sched.com/event/BiDL/bringing-graphql-to-the-enterprise-when-rest-isnt-enough-jason-lengstorf-ibm?iframe=no&w=100%&sidebar=yes&bg=no) - Jason Lengstorf, Senior Front End Developer IBM
 
 * [REST API Microversions](https://apistrat17.sched.com/event/BiE2/rest-api-microversions-sean-dague-ibm) - Sean Dague, Software Engineer IBM
