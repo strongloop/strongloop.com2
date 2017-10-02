@@ -1,7 +1,7 @@
 ---
 layout: post
 title: IBM and StrongLoop Are Going to APIStrat
-date: 2017-09-30T01:40:15+00:00
+date: 2017-10-30T01:40:15+00:00
 author: Dave Whiteley
 permalink: /strongblog/ibm-and-strongloop-are-going-to-apistrat
 categories:
