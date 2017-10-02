@@ -24,11 +24,12 @@ There are sveeral great sessions and opportunities to learn, and we wanted to hi
 
 * Jeffrey B
 
-* Sai
+* [Building Serverless APIs for Modern Application Architectures](https://apistrat17.sched.com/event/CWLZ/building-serverless-apis-for-modern-application-architectures-sai-vennam-ibm) - Sai Vennam, Developer Evangelist
 
-* [Bringing GraphQL to the Enterprise: When REST Isn't Enough](https://apistrat17.sched.com/event/BiDL/bringing-graphql-to-the-enterprise-when-rest-isnt-enough-jason-lengstorf-ibm?iframe=no&w=100%&sidebar=yes&bg=no) - Jason Lengstorf, Senior Front End Developer IBM
 
-* [REST API Microversions](https://apistrat17.sched.com/event/BiE2/rest-api-microversions-sean-dague-ibm) - Sean Dague, Software Engineer IBM
+* [Bringing GraphQL to the Enterprise: When REST Isn't Enough](https://apistrat17.sched.com/event/BiDL/bringing-graphql-to-the-enterprise-when-rest-isnt-enough-jason-lengstorf-ibm?iframe=no&w=100%&sidebar=yes&bg=no) - Jason Lengstorf, Senior Front End Developer
+
+* [REST API Microversions](https://apistrat17.sched.com/event/BiE2/rest-api-microversions-sean-dague-ibm) - Sean Dague, Software Engineer 
 
 The StrongLoop and IBM team will be there, so feel free to visit us at our booth. We also recommend you visit the [Open API Initiative](https://www.openapis.org/) booth and learn about how you can utilize OpenAPI Spec V3 for the full API lifecycle.
 
