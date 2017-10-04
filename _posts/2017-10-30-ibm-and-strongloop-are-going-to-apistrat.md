@@ -9,7 +9,7 @@ categories:
   - Events
   
 ---
-IBM and StrongLoop are heading to [APIStrat](http://apistrat.com/), held October 31 through to November 2nd. The event is held in Portland, OR and is hosted by the Open API Initiative and The Linux Foundation.
+[APIStrat](http://apistrat.com/) will take place October 31 through to November 2nd in Portland, OR. This event is put on by the Open API Initiative and The Linux Foundation, and IBM and StrongLoop are pleased to take part in it.
 
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2017/09/apistrat-logo.jpg" alt="APIStrat logo" style="width: 450px"/>
@@ -18,7 +18,7 @@ The API Strategy & Practice Conference - better known as APIStrat - is in its ei
 
 *"The API Strategy & Practice Conference provides a forum in which leaders in the API sector can gather to discuss successes and challenges they face while executing their own API strategy. The API community comes together to hear these stories, participate, and discuss what is needed to move forward, in order to ensure the healthiest and most vibrant API sector possible."*
 
-There are sveeral great sessions and opportunities to learn, and we wanted to highlight some from the StrongLoop and IBM team:
+There are several great sessions and opportunities to learn, and we wanted to highlight some from the StrongLoop and IBM team:
 
 * Erin
 
