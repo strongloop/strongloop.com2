@@ -9,7 +9,7 @@ categories:
   - Events
   
 ---
-[APIStrat](http://apistrat.com/) will take place October 31 through to November 2nd in Portland, OR. This event is put on by the Open API Initiative and The Linux Foundation. IBM is excited to be a Platinum Sponsor, and we’re looking forward to engaging with you. IBM continues to build our partnership with the Open API community, enhancing and growing our integrations and exploring new opportunities for development. 
+[APIStrat](http://apistrat.com/) will take place October 31 through to November 2nd in Portland, OR. This event is hotsed by the Open API Initiative and The Linux Foundation. IBM is excited to be a Platinum Sponsor, and we’re looking forward to engaging with you. IBM continues to build our partnership with the Open API community, enhancing and growing our integrations and exploring new opportunities for development. 
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2017/09/apistrat-logo.jpg" alt="APIStrat logo" style="width: 450px"/>
 
@@ -21,7 +21,7 @@ There are several great sessions and opportunities to learn, and we wanted to hi
 
 * Erin McKean, IBM’s StrongLoop & API Connect Developer Advocate, will be sharing insights as a Conference Panelist. 
 
-* Sai Vennam, Developer Evangelist, will host [Building Serverless APIs for Modern Application Architectures](https://apistrat17.sched.com/event/CWLZ/building-serverless-apis-for-modern-application-architectures-sai-vennam-ibm). 
+* Sai Vennam, Developer Advocate, will host [Building Serverless APIs for Modern Application Architectures](https://apistrat17.sched.com/event/CWLZ/building-serverless-apis-for-modern-application-architectures-sai-vennam-ibm). 
 
 * Jason Lengstorf, Senior Front End Developer, will host [Bringing GraphQL to the Enterprise: When REST Isn't Enough](https://apistrat17.sched.com/event/BiDL/bringing-graphql-to-the-enterprise-when-rest-isnt-enough-jason-lengstorf-ibm?iframe=no&w=100%&sidebar=yes&bg=no). 
 
