@@ -1,7 +1,7 @@
 ---
 layout: post
 title: IBM and StrongLoop Are Going to APIStrat
-date: 2017-10-30T01:40:15+00:00
+date: 2017-10-12T01:40:15+00:00
 author: Dave Whiteley
 permalink: /strongblog/ibm-and-strongloop-are-going-to-apistrat
 categories:
@@ -9,7 +9,7 @@ categories:
   - Events
   
 ---
-[APIStrat](http://apistrat.com/) will take place October 31 through to November 2nd in Portland, OR. This event is hotsed by the Open API Initiative and The Linux Foundation. IBM is excited to be a Platinum Sponsor, and we’re looking forward to engaging with you. IBM continues to build our partnership with the Open API community, enhancing and growing our integrations and exploring new opportunities for development. 
+[APIStrat](http://apistrat.com/) takes place October 31 through to November 2nd in Portland, Oregon and is hosted by the Open API Initiative and The Linux Foundation. IBM is excited to be a Platinum Sponsor, and we’re looking forward to engaging with you. IBM continues to build our partnership with the Open API community, enhancing and growing our integrations and exploring new opportunities for development. 
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2017/09/apistrat-logo.jpg" alt="APIStrat logo" style="width: 450px"/>
 
