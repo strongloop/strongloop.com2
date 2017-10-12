@@ -22,10 +22,16 @@ We also got a thorough [&#8220;State of the Union&#8221; for Express](https://w
 
 Day One at the convention center wrapped up with a BoothCrawl, giving attendees an opportunity to check out the technologies at the booths, get some swag, and enjoy the free drinks that rewarded a lomg day.
 
-Recption Party at Steamworks
+One highlight was Wednesday's JS Foundation Panel, moderated by Bocoup's Jory Burson. The topic at hand was "The Many Facets of Sustaining an Open Source Ecosystem", and great perspectives and insight were offered by IBM's Erin McKean, Microsoft's   Maggie Pint, and Node.js' Tracy Hinds. Their comments ranged from growth of Node.js, diversity within the Node ecosystem and 
+the relationshops between corporatiosn and Open Source.
 
 
-## The Conference Party and Beyond
+
+
+## The Attendee Party and Beyond
+
+Attendee Party at Steamworks
+
 
 Those who still had energy after the first day and booth crawl were rewarded with food, drink, and music at the Node Interactive Conference Party. The event was held at the Speakeasy, a fun venue that has a vintage bowling lane,  a photo booth to mark memories, and a view of Austin from the rooftop DJ lounge that was definitely something to enjoy!
 
@@ -40,3 +46,5 @@ There wasn&#8217;t really an after-party after day two (or at least not an offic
     &mdash; Javascript Stack (@javascriptstack) <a href="https://twitter.com/javascriptstack/status/804364570005565440">December 1, 2016</a>
   </p>
 </blockquote>
+
+Still want to know more about how it went? Check out the [event recap photo stream](http://events.linuxfoundation.org/events/node-interactive) hosted on the Linux Foundation site.
