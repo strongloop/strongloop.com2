@@ -9,7 +9,7 @@ categories:
 ---
 Node Interactive has wrapped up for another year, and the 2017 event was another success. Held in Vancouver, British Columbia, Canada, the event ran from October 4-6, 2017. IBM was Platinum Sponsor for this event, and we are all proud to have been involved.
 
-Vancouver's fantastic scenery and pleasant weather provided a lot of competition to last year's host city of Austin, Texas. But as amazing as the scenery was, the attendees were there to learn more about Node.js - and there was a lot for them to digest! We don't have space to give them all justice, so we'll share some highlights below.
+Vancouver's fantastic scenery and pleasant weather provided a lot of competition to last year's host city of Austin, Texas. But as amazing as the scenery was, the attendees were there to learn more about Node.js - and there was a lot for them to digest! We don't have space to give all the keynotes and sessions justice, so we'll share some highlights below.
 
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2017/10/nodejs-interactive-2017-cropped.png" alt="Node Interactive 2017" style="width: 350px"/>
@@ -40,15 +40,13 @@ Over 300 commits to review.
 
 _Some attendees shared photo proof - and the photos don't lie:_
 
-https://twitter.com/ohhoe/status/916376918387068929
+[Pic 1](https://twitter.com/ohhoe/status/916376918387068929)
 
-https://twitter.com/jphblais/status/916480803437203456
+[Pic 2](https://twitter.com/jphblais/status/916480803437203456)
 
 _And with all that work, Thomas Watson reported that the Node.js repo [crossed 40,000 stars](https://twitter.com/wa7son/status/916384621293486080)._
 
-_During the Collaborator’s Summit, we did some health exercises, working through what we (small breakout teams) believed to be our core values. This tweet from Sarah Novotny demonstrates:_
-
-https://twitter.com/sarahnovotny/status/916420235359510528
+_During the Collaborator’s Summit, we did some health exercises, working through what we (small breakout teams) believed to be our core values. A [tweet](https://twitter.com/sarahnovotny/status/916420235359510528) from Sarah Novotny demonstrates._
 
 _Afterwards, we broke into smaller sessions/groups of people to discuss areas of focus, such as security, performance and community._
 
