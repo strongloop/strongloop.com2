@@ -1,7 +1,7 @@
 ---
 id: 28452
 title: Node Interactive 2017 Wrap-Up
-date: 2017-10-31T08:00:13+00:00
+date: 2017-10-17T08:00:13+00:00
 author: Dave Whteley
 permalink: /strongblog/node-interactive-2017-wrap-up/
 categories:
@@ -42,6 +42,7 @@ Over 300 commits to review.
 _Some attendees shared photo proof - and the photos don't lie:_
 
 https://twitter.com/ohhoe/status/916376918387068929
+
 https://twitter.com/jphblais/status/916480803437203456
 
 _And with all that work, Thomas Watson reported that the Node.js repo [crossed 40,000 stars](https://twitter.com/wa7son/status/916384621293486080)._
@@ -54,5 +55,4 @@ _Afterwards, we broke into smaller sessions/groups of people to discuss areas of
 
 _There were so many great discussions and lots of new friends made. I feel quite confident about our future. To get a glimpse into the day, check out [William Kapke’s video](https://youtu.be/WVv10H_Np1c)."_
 
-
-We've just scratched the surface for this amazing event. You can find out more by checking out the [event recap photo stream](http://events.linuxfoundation.org/events/node-interactive) hosted on the Linux Foundation site and the [recorded talks](https://www.youtube.com/playlist?list=PLfMzBWSH11xa-iNnQG2555lgi4574nZOh)! If you didn't make it this year, it's never too early to start planning for next time.
+This recap is by no means complete! We've just scratched the surface for this amazing event. You can find out more by checking out the [event recap photo stream](http://events.linuxfoundation.org/events/node-interactive) hosted on the Linux Foundation site and the [recorded talks](https://www.youtube.com/playlist?list=PLfMzBWSH11xa-iNnQG2555lgi4574nZOh)! If you didn't make it this year, it's never too early to start planning for next time.
