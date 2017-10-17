@@ -33,8 +33,8 @@ Joe Sepi, another one of IBM's great Developer Advocates, was also on the scene.
 *"My biggest takeaway is the how powerful the Node.js community can be and that was on full display at Day 3 of Node Interactive. That is when we had Code + Learn and the Collaborator’s Summit. At the Code + Learn, participants are supported and encouraged to work on the Node.js core. Mentors are on hand and PRs are opened, in fact, you can see that a lot of work was done by people new to the project in [Ryan Graham’s tweet](https://twitter.com/rmgraham/status/916454911054721025) about the numbers:*
 
 > "Great turn out for the #NodeInteractive Code & Learn! 
-Over 300 commits to review. 
-248 files changed, 1356 insertions(+), 1770 deletions(-)"
+> Over 300 commits to review. 
+> 248 files changed, 1356 insertions(+), 1770 deletions(-)"
 
 *Some attendees shared photo proof - and the photos don't lie:*
 
