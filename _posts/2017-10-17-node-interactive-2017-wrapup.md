@@ -1,7 +1,7 @@
 ---
 title: Node Interactive 2017 Wrap-Up
 date: 2017-10-17T01:00:13+00:00
-author: Dave Whteley
+author: Dave Whiteley
 permalink: /strongblog/node-interactive-2017-wrap-up/
 categories:
   - Community
