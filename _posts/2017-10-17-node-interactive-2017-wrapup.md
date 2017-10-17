@@ -30,24 +30,24 @@ Day One at the convention center wrapped up with a BoothCrawl, giving attendees 
 
 Joe Sepi, another one of IBM's great Developer Advocates, was also on the scene. In addition to presenting ["My 20-Year Journey as a JS Engineer, Front to Back"](https://www.youtube.com/watch?v=9BDn6HYmgWc&index=12&list=PLfMzBWSH11xa-iNnQG2555lgi4574nZOh), he also shared time at the IBM booth (along with many of the IBM team) and shared some thoughts on Node Interactive highlights. He said:
 
-*"My biggest takeaway is the how powerful the Node.js community can be and that was on full display at Day 3 of Node Interactive. That is when we had Code + Learn and the Collaborator’s Summit. At the Code + Learn, participants are supported and encouraged to work on the Node.js core. Mentors are on hand and PRs are opened, in fact, you can see that a lot of work was done by people new to the project in [Ryan Graham’s tweet](https://twitter.com/rmgraham/status/916454911054721025) about the numbers:*
+> "My biggest takeaway is the how powerful the Node.js community can be and that was on full display at Day 3 of Node Interactive. That is when we had Code + Learn and the Collaborator’s Summit. At the Code + Learn, participants are supported and encouraged to work on the Node.js core. Mentors are on hand and PRs are opened, in fact, you can see that a lot of work was done by people new to the project in [Ryan Graham’s tweet](https://twitter.com/rmgraham/status/916454911054721025) about the numbers:
 
 > "Great turn out for the #NodeInteractive Code & Learn! 
 > Over 300 commits to review. 
 > 248 files changed, 1356 insertions(+), 1770 deletions(-)"
 
-*Some attendees shared photo proof - and the photos don't lie:*
+> Some attendees shared photo proof - and the photos don't lie:
 
 [Pic 1](https://twitter.com/ohhoe/status/916376918387068929)
 
 [Pic 2](https://twitter.com/jphblais/status/916480803437203456)
 
-*And with all that work, Thomas Watson reported that the Node.js repo [crossed 40,000 stars](https://twitter.com/wa7son/status/916384621293486080).*
+> And with all that work, Thomas Watson reported that the Node.js repo [crossed 40,000 stars](https://twitter.com/wa7son/status/916384621293486080).
 
-*During the Collaborator’s Summit, we did some health exercises, working through what we (small breakout teams) believed to be our core values. A [tweet](https://twitter.com/sarahnovotny/status/916420235359510528) from Sarah Novotny demonstrates.*
+> During the Collaborator’s Summit, we did some health exercises, working through what we (small breakout teams) believed to be our core values. A [tweet](https://twitter.com/sarahnovotny/status/916420235359510528) from Sarah Novotny demonstrates.
 
-*Afterwards, we broke into smaller sessions/groups of people to discuss areas of focus, such as security, performance and community.*
+> Afterwards, we broke into smaller sessions/groups of people to discuss areas of focus, such as security, performance and community.
 
-*There were so many great discussions and lots of new friends made. I feel quite confident about our future. To get a glimpse into the day, check out [William Kapke’s video](https://youtu.be/WVv10H_Np1c)."*
+> There were so many great discussions and lots of new friends made. I feel quite confident about our future. To get a glimpse into the day, check out [William Kapke’s video](https://youtu.be/WVv10H_Np1c)."
 
 This recap is by no means complete! We've just scratched the surface for this amazing event. You can find out more by checking out the [event recap photo stream](http://events.linuxfoundation.org/events/node-interactive) hosted on the Linux Foundation site and the [recorded talks](https://www.youtube.com/playlist?list=PLfMzBWSH11xa-iNnQG2555lgi4574nZOh)! If you didn't make it this year, it's never too early to start planning for next time.
