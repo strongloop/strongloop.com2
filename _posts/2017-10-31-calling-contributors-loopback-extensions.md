@@ -20,6 +20,8 @@ Examples of LB extensions:
 - Authentication: [https://github.com/strongloop/loopback-next/tree/master/packages/authentication](https://github.com/strongloop/loopback-next/tree/master/packages/authentication)
 - Log extension: [https://github.com/strongloop/loopback4-example-log-extension](https://github.com/strongloop/loopback4-example-log-extension) (currently in dev branch)
 
+{% include image.html file="2017/04/powered-by-LB-med.png" %}
+
 ### Build it ###
 
 One of our LB project maintainers will be assigned to you to walk you through the whole journey of creating an extension from the beginning till the end.
