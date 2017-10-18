@@ -8,9 +8,7 @@ categories:
   - LoopBack
 ---
 
-One of the objectives of LoopBack 4 is to promote extensibility to [grow the ecosystem](http://loopback.io/doc/en/lb4/Crafting-LoopBack-Next.html#objectives). Some of the popular extensions voted by the LoopBack community are authorization support, support of other protocols (e.g. gRPC, MQTT) and other API styles (e.g. GraphQL, XML).  As we're wrapping up on the LoopBack4 Core Beta release, we'd like to call for your contribution to develop extensions with us.  
-
-As you might know already, we're wrapping up on the LoopBack4 Core Beta release. We are now calling out to our LoopBack community users (especially @strongloop/loopback-next) to develop LB extensions!
+One of the objectives of LoopBack 4 is to promote extensibility to [grow the ecosystem](http://loopback.io/doc/en/lb4/Crafting-LoopBack-Next.html#objectives). Some of the popular extensions voted by the LoopBack community are authorization support, support of other protocols (e.g. gRPC, MQTT) and other API styles (e.g. GraphQL, XML). As we're wrapping up on the LoopBack4 Core Beta release, we'd like to call for your contribution to develop extensions with us.  
  
 ## How it works ##
 
@@ -24,7 +22,7 @@ Examples of LB extensions:
 
 ### Build it ###
 
-One of the LB project maintainers will be assigned to you to walk you through the whole journey of creating an extension from the beginning till the end.
+One of our LB project maintainers will be assigned to you to walk you through the whole journey of creating an extension from the beginning till the end.
 
 ### Get recognized ###
 
