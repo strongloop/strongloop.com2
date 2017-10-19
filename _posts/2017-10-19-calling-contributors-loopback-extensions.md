@@ -1,6 +1,6 @@
 ---
 title: Calling for Contributors on LoopBack Extensions
-date: 2017-10-31T08:00:13+00:00
+date: 2017-10-19T08:00:13+00:00
 author: Diana Lau
 permalink: /strongblog/calling-contributors-loopback-extensions.md/
 categories:
