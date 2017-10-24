@@ -5,7 +5,6 @@
     <th>When</th>
     <th>What</th>
     <th>Where</th>
-    <th>StrongLoop Role</th>
 </tr>
 </thead>
 <tbody>
@@ -14,8 +13,7 @@
   {% for eventer in event_information %}
     <tr>
     	<td>{{ eventer.event-range }}</td><td><a href="{{ eventer.event-link }}">{{ eventer.title }}</a></td><td>{{ eventer.location }}</td>
-      <td>{{ eventer.role }}</td>
-    </tr>
+     </tr>
   {% endfor %}
 </tbody>
 </table>
