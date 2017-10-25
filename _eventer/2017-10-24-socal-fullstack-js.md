@@ -1,6 +1,6 @@
 ---
 layout: redirected
-date: 3017-10-04
+date: 2017-10-24
 event-range: Monthly
 title: SoCal FullstackJS
 redirect_to: https://www.meetup.com/SoCal-Full-Stack-JS/
