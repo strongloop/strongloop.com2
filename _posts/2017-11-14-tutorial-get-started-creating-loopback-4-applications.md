@@ -1,6 +1,6 @@
 ---
 title: Tutorial&#58; Get Started Creating LoopBack 4 Applications
-date: 2017-11-14T08:00:13+00:00
+date: 2017-11-14T05:00:13+00:00
 author: Dave Whiteley
 permalink: /strongblog/tutorial-get-started-creating-loopback-4-applications/
 categories:
@@ -9,7 +9,7 @@ categories:
   - LoopBack
 ---
 
-CASCON 2017 has come and gone, running from November 6-8. Focusing on data, systems, and society, the event also hosted the first [LoopBack 4](https://strongloop.com/strongblog/announcing-loopback-next/) workshop. The tutorial was called "API Economy Made Easy with LoopBack 4", and if you missed it, you can check it out on GitHub. 
+CASCON 2017 has come and gone, running from November 6-8. Focusing on data, systems, and society, the event also hosted the first [LoopBack 4](https://strongloop.com/strongblog/announcing-loopback-next/) workshop, called "API Economy Made Easy with LoopBack 4" If you missed it, you can check it out on GitHub. We're providing some detials below.
 
 <img src="https://strongloop.com/blog-assets/2017/11/CASCON.jpg" alt="CASCON 2017 LoopBack 4 Tutorial" style="width: 500px"/>
 
