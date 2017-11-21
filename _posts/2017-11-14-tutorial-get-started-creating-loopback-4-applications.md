@@ -9,7 +9,7 @@ categories:
   - LoopBack
 ---
 
-CASCON 2017 has come and gone, running from November 6-8. Focusing on data, systems, and society, the event also hosted the first [LoopBack 4](https://strongloop.com/strongblog/announcing-loopback-next/) workshop, called "API Economy Made Easy with LoopBack 4" If you missed it, you can check it out on GitHub. We're providing some detials below.
+CASCON 2017, running from November 6-8, has come and gone. Focusing on data, systems, and society, the event also hosted the first [LoopBack 4](https://strongloop.com/strongblog/announcing-loopback-next/) workshop, called "API Economy Made Easy with LoopBack 4" If you missed it, you can check it out on GitHub. We're providing some details below.
 
 <img src="https://strongloop.com/blog-assets/2017/11/CASCON.jpg" alt="CASCON 2017 LoopBack 4 Tutorial" style="width: 500px"/>
 
