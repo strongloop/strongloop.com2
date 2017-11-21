@@ -6,7 +6,7 @@ permalink: /strongblog/support-childrens-literacy-tuxs-bookworms-node-interactiv
 categories:
   - Community
   - Events
-featured: true  
+featured: false
 ---
 
 Are you heading to [Node.js Interactive](http://events.linuxfoundation.org/events/node-interactive)? It's the premier event for those who use Node.js, whether you are a developer, a vendor, or representing a company. In addition to providing great dialogue and networking around Node.js, the event also provides a great opportunity for attendees: the chance to help support local children by donating books to Tux's Bookworms! 
