@@ -15,7 +15,7 @@ One of the objectives of LoopBack 4 is to promote extensibility to [grow the eco
 
 ### Tell us ###
 
-Let us know which extension you'd like to build by signing up in this [GitHub issue](https://github.com/strongloop/loopback-connector/pull/119). Here is the wish list voted by the community: [#512](https://github.com/strongloop/loopback-next/issues/512).
+Let us know which extension you'd like to build by signing up in this [GitHub issue](https://github.com/strongloop/loopback-next/issues/647). Here is the wish list voted by the community: [#512](https://github.com/strongloop/loopback-next/issues/512).
 <!--more-->
 Examples of LB extensions:
 - Authentication: [https://github.com/strongloop/loopback-next/tree/master/packages/authentication](https://github.com/strongloop/loopback-next/tree/master/packages/authentication)
