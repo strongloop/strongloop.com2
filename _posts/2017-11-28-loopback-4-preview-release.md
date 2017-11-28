@@ -46,7 +46,6 @@ Back in April, we [kicked off](https://strongloop.com/strongblog/announcing-loop
 ## Who is this for?
 
 The Developer Preview release targets:
-
 #### Extension developers (those who are interested in contributing new features to LoopBack)
 
 The release makes the new foundation available for extension developers to create new extensions for LoopBack 4. Here are a few steps to get you started.
