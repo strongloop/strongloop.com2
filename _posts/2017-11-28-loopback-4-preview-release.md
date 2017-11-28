@@ -47,7 +47,7 @@ Back in April, we [kicked off](https://strongloop.com/strongblog/announcing-loop
 
 The Developer Preview release targets:
 
-### Extension developers (those who are interested in contributing new features to LoopBack)
+#### Extension developers (those who are interested in contributing new features to LoopBack)
 
 The release makes the new foundation available for extension developers to create new extensions for LoopBack 4. Here are a few steps to get you started.
 
@@ -60,11 +60,9 @@ The release makes the new foundation available for extension developers to creat
 3. Read the [wish list of extensions](https://github.com/strongloop/loopback-next/issues/512) to find inspiration.
 
 4. Join the community efforts for some of the interesting extensions, such as:
-
 * gRPC Extension
   * [Issue](https://github.com/strongloop/loopback-next/issues/675)
   * [Repository](https://github.com/strongloop/loopback4-extension-grpc)
-
 * GraphQL extension
   * [Issue](https://github.com/strongloop/loopback-next/issues/656)
   * [Repository](https://github.com/strongloop/loopback4-extension-graphql) 
@@ -76,7 +74,7 @@ npm i -g @loopback/cli
 lb4 extension <extension-name>
 ```
 
-### API application developers (those who are interested in using LoopBack to create APIs).
+#### API application developers (those who are interested in using LoopBack to create APIs).
 
 The Developer Preview releases implements basic REST API creation capabilities with preliminary database persistence. To try out the new ways of building APIs, you can follow the steps below:
 
