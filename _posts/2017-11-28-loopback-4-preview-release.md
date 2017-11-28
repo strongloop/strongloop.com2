@@ -51,15 +51,15 @@ The Developer Preview release targets:
 
 The release makes the new foundation available for extension developers to create new extensions for LoopBack 4. Here are a few steps to get you started.
 
-1. Play with example extensions:
+#### Play with example extensions:
     * [A simple log extension](https://github.com/strongloop/loopback4-example-log-extension).
     * [@loopback/authentication](https://github.com/strongloop/loopback-next/tree/master/packages/authentication).
 
-2. Check out [Extending LoopBack 4](http://loopback.io/doc/en/lb4/Extending-LoopBack-4.html) and [Crafting LoopBack 4](http://loopback.io/doc/en/lb4/Crafting-LoopBack-4.html).
+#### Check out [Extending LoopBack 4](http://loopback.io/doc/en/lb4/Extending-LoopBack-4.html) and [Crafting LoopBack 4](http://loopback.io/doc/en/lb4/Crafting-LoopBack-4.html).
 
-3. Read the [wish list of extensions](https://github.com/strongloop/loopback-next/issues/512) to find inspiration.
+#### Read the [wish list of extensions](https://github.com/strongloop/loopback-next/issues/512) to find inspiration.
 
-4. Join the community efforts for some of the interesting extensions, such as:
+#### Join the community efforts for some of the interesting extensions, such as:
 
 * gRPC Extension
   * [Issue](https://github.com/strongloop/loopback-next/issues/675)
@@ -69,7 +69,7 @@ The release makes the new foundation available for extension developers to creat
   * [Issue](https://github.com/strongloop/loopback-next/issues/656)
   * [Repository](https://github.com/strongloop/loopback4-extension-graphql) 
 
-5. Create your own by scaffolding an extension project.
+#### Create your own by scaffolding an extension project.
 
 ```
 npm i -g @loopback/cli
@@ -80,18 +80,18 @@ lb4 extension <extension-name>
 
 The Developer Preview releases implements basic REST API creation capabilities with preliminary database persistence. To try out the new ways of building APIs, you can follow the steps below:
 
-1. Play with sample applications.
+#### Play with sample applications.
 
 * [A hello world application](https://github.com/strongloop/loopback4-example-hello-world).
 * [An intermediate getting started application](https://github.com/strongloop/loopback4-example-getting-started).
 
-2. Follow instructions at [Installation](http://loopback.io/doc/en/lb4/Installation.html) and [Getting Started](http://loopback.io/doc/en/lb4/Getting-started.html).
+#### Follow instructions at [Installation](http://loopback.io/doc/en/lb4/Installation.html) and [Getting Started](http://loopback.io/doc/en/lb4/Getting-started.html).
 
-3. Understand the [key concepts](http://loopback.io/doc/en/lb4/Concepts.html) as building blocks for LoopBack 4 applications.
+#### Understand the [key concepts](http://loopback.io/doc/en/lb4/Concepts.html) as building blocks for LoopBack 4 applications.
 
-4. [Use Components](http://loopback.io/doc/en/lb4/Using-components.html).
+#### [Use Components](http://loopback.io/doc/en/lb4/Using-components.html).
 
-5. Create your own by scaffolding an application project.
+#### Create your own by scaffolding an application project.
 
 ```
 npm i -g @loopback/cli
