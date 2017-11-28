@@ -104,7 +104,7 @@ If you are an existing user of LoopBack 3.x, you might wonder what's different b
 
 ## What's next?
 
-The Developer Preview release is just the first milestone of our LoopBack 4 journey. A tentative plan is outlined at https://github.com/strongloop/loopback-next/wiki/Upcoming-Releases. Please note that it is not an official commitment and subject to adjustment as we make progress with the community contributions and feedbacks.
+The Developer Preview release is just the first milestone of our LoopBack 4 journey. A tentative plan is outlined at [https://github.com/strongloop/loopback-next/wiki/Upcoming-Releases](https://github.com/strongloop/loopback-next/wiki/Upcoming-Releases). Please note that it is not an official commitment and subject to adjustment as we make progress with the community contributions and feedbacks.
 
 ## Call for action
 
