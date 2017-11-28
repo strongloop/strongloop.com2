@@ -79,9 +79,8 @@ lb4 extension <extension-name>
 The Developer Preview releases implements basic REST API creation capabilities with preliminary database persistence. To try out the new ways of building APIs, you can follow the steps below:
 
 1. Play with sample applications.
-
-* [A hello world application](https://github.com/strongloop/loopback4-example-hello-world).
-* [An intermediate getting started application](https://github.com/strongloop/loopback4-example-getting-started).
+    * [A hello world application](https://github.com/strongloop/loopback4-example-hello-world).
+    * [An intermediate getting started application](https://github.com/strongloop/loopback4-example-getting-started).
 
 2. Follow instructions at [Installation](http://loopback.io/doc/en/lb4/Installation.html) and [Getting Started](http://loopback.io/doc/en/lb4/Getting-started.html).
 
