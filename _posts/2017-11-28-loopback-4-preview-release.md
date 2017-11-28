@@ -47,19 +47,19 @@ Back in April, we [kicked off](https://strongloop.com/strongblog/announcing-loop
 
 The Developer Preview release targets:
 
-* Extension developers (those who are interested in contributing new features to LoopBack)
+### Extension developers (those who are interested in contributing new features to LoopBack)
 
 The release makes the new foundation available for extension developers to create new extensions for LoopBack 4. Here are a few steps to get you started.
 
-#### Play with example extensions:
+1. Play with example extensions:
     * [A simple log extension](https://github.com/strongloop/loopback4-example-log-extension).
     * [@loopback/authentication](https://github.com/strongloop/loopback-next/tree/master/packages/authentication).
 
-#### Check out [Extending LoopBack 4](http://loopback.io/doc/en/lb4/Extending-LoopBack-4.html) and [Crafting LoopBack 4](http://loopback.io/doc/en/lb4/Crafting-LoopBack-4.html).
+2. Check out [Extending LoopBack 4](http://loopback.io/doc/en/lb4/Extending-LoopBack-4.html) and [Crafting LoopBack 4](http://loopback.io/doc/en/lb4/Crafting-LoopBack-4.html).
 
-#### Read the [wish list of extensions](https://github.com/strongloop/loopback-next/issues/512) to find inspiration.
+3. Read the [wish list of extensions](https://github.com/strongloop/loopback-next/issues/512) to find inspiration.
 
-#### Join the community efforts for some of the interesting extensions, such as:
+4. Join the community efforts for some of the interesting extensions, such as:
 
 * gRPC Extension
   * [Issue](https://github.com/strongloop/loopback-next/issues/675)
@@ -69,29 +69,29 @@ The release makes the new foundation available for extension developers to creat
   * [Issue](https://github.com/strongloop/loopback-next/issues/656)
   * [Repository](https://github.com/strongloop/loopback4-extension-graphql) 
 
-#### Create your own by scaffolding an extension project.
+5. Create your own by scaffolding an extension project.
 
 ```
 npm i -g @loopback/cli
 lb4 extension <extension-name>
 ```
 
-* API application developers (those who are interested in using LoopBack to create APIs).
+### API application developers (those who are interested in using LoopBack to create APIs).
 
 The Developer Preview releases implements basic REST API creation capabilities with preliminary database persistence. To try out the new ways of building APIs, you can follow the steps below:
 
-#### Play with sample applications.
+1. Play with sample applications.
 
 * [A hello world application](https://github.com/strongloop/loopback4-example-hello-world).
 * [An intermediate getting started application](https://github.com/strongloop/loopback4-example-getting-started).
 
-#### Follow instructions at [Installation](http://loopback.io/doc/en/lb4/Installation.html) and [Getting Started](http://loopback.io/doc/en/lb4/Getting-started.html).
+2. Follow instructions at [Installation](http://loopback.io/doc/en/lb4/Installation.html) and [Getting Started](http://loopback.io/doc/en/lb4/Getting-started.html).
 
-#### Understand the [key concepts](http://loopback.io/doc/en/lb4/Concepts.html) as building blocks for LoopBack 4 applications.
+3. Understand the [key concepts](http://loopback.io/doc/en/lb4/Concepts.html) as building blocks for LoopBack 4 applications.
 
-#### [Use Components](http://loopback.io/doc/en/lb4/Using-components.html).
+4. [Use Components](http://loopback.io/doc/en/lb4/Using-components.html).
 
-#### Create your own by scaffolding an application project.
+5. Create your own by scaffolding an application project.
 
 ```
 npm i -g @loopback/cli
