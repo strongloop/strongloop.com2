@@ -1,6 +1,6 @@
 ---
 title: Writing LoopBack 4 Extensions
-date: 2017-11-27T02:00:13+00:00
+date: 2017-11-30T02:00:13+00:00
 author: Taranveer Virk
 permalink: /strongblog/writing-loopback-4-extensions/
 categories:
