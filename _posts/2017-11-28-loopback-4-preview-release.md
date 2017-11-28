@@ -40,7 +40,7 @@ Back in April, we [kicked off](https://strongloop.com/strongblog/announcing-loop
 5. Documentation.
   * The documentation for LoopBack 4 is available [here](http://loopback.io/doc/en/lb4/).
   * To get started, follow instructions at [here](http://loopback.io/doc/en/lb4/Getting-started.html).
-  * To understand key concepts, check out [this](http://loopback.io/doc/en/lb4/Concepts.html.
+  * To understand key concepts, check out [this](http://loopback.io/doc/en/lb4/Concepts.html).
   * To follow best practices, read [Thinking in LoopBack 4](http://loopback.io/doc/en/lb4/Thinking-in-LoopBack.html).
 
 ## Who is this for?
