@@ -1,5 +1,6 @@
 ---
 title: Writing LoopBack 4 Extensions
+description: LoopBack 4 extensibility makes writing extensions simpler than ever before. In this blog post, we'll be going over writing an example log extension and seeing how easy it is to do so.
 date: 2017-11-30T00:00:13+00:00
 author: Taranveer Virk
 permalink: /strongblog/writing-loopback-4-extensions/
