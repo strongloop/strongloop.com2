@@ -1,6 +1,6 @@
 ---
 title: Help Us Decide on a New LoopBack Logo
-date: 2017-12-05T02:00:13+00:00
+date: 2017-12-05T01:00:13+00:00
 author: 
 - Dave Whiteley
 - Cody Cai
