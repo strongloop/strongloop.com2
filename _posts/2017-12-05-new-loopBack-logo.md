@@ -10,7 +10,7 @@ categories:
   - LoopBack
 ---
 
-Last week we excitedly announced the [LoopBack 4 developer preview release](https://strongloop.com/strongblog/loopback-4-developer-preview-release). Your feedback helped fuel this transformation and how we built our open source framework. Now, as we are ready to launch the latest version of LoopBack, we are considering updating our LoopBack logo. We would like your feedback on some new logo and color palette options we have in mind.
+Last week we excitedly announced the [LoopBack 4 developer preview release](https://strongloop.com/strongblog/loopback-4-developer-preview-release). Your feedback helped fuel this transformation and how we built our open source framework. Now, as we are ready to launch the latest version of LoopBack, we are considering updating our LoopBack logo. We would like your feedback on some new logo and color palette options we have in mind. As such, we're asking you to rank the logos from 1-5, with 1 being your most favorite, and 5 representing your least favorite. You can rank 1-3 for the color palettes, again with 1 as your favorite and 3 as your least.
 
 Be sure you have a say in our transformation and our community as we move forward by participating in this survey. We recommend completing the survey on a larger screen for the best viewing experience.
 
