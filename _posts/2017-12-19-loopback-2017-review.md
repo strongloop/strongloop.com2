@@ -81,8 +81,21 @@ With all of this activity, a GitHub achievement almost went by unnoticed. [LoopB
 
 With LoopBack 4 just about ready for prime time, we are looking forward to seeing how the community uses it and helps it grow.
 
+## What about StrongLoop? 
 
+Of course, the StrongLoop site had a big year too! In May, we announced changes to the focus of the [StrongLoop site]
+(https://strongloop.com/strongblog/strongLoop-evolves-to-promote-open-source-solutions-for-the-api-developer-community). We summarized the change by looking at our old foucs and outlining our new one:
 
+"(We've made) the transition from showcasing our services to promoting community. While we proudly supported community since we launched, our previous site highlighted options from StrongLoop and IBM to help you build with node.js and power the API economy. Moving forward, this site embraces our role within the Open Source community that creates APIs and supporting the growth of that community."
 
+With this new approach, we continue to bring Node.js updates - which is important to us since we are part of the [Node Foundation](https://foundation.nodejs.org/)). We are also highlighting three open source options for building APIs:  
+
+* LoopBack
+* [API Microgateway](https://github.com/strongloop/microgateway)
+* [Open API Initiative](https://www.openapis.org/)
+
+What we said then about the future still holds true today: 
+
+"We are excited about our new focus on APIs and the Open Source developer communities that builds them. We will continue to post the same sort of LoopBack and Open Source-related content you’ve come to expect so that you you be part of the API economy."
 
 
