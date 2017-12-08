@@ -73,7 +73,7 @@ With LoopBack 4 imminent, we considered a new look for LoopBack as well. We reac
 
 ## LoopBack Events
 
-Throughout 2017 our Evangelist team continued to share their knowledge of LoopBack. There were webinars, tutorials and walk-throughs at conferences, and more hands-on discussions at meetups. Throughout each of these, we were and are amazed at the enthusiasm LoopBack users share, and the intriguing questions and scenarios they can come up with. It’s this enthusiasm that has also helped shaped LoopBack’s growth and future.   
+Throughout 2017 our Evangelist team continued to share their knowledge of LoopBack. We sponsored 33 events (meet-ups, conferences, workshops, and hackathons), sharing LoopBack content at 28 of them. We held 3 webinars and appeared at 5 events we did not sponsor. Throughout each of these, we were and are amazed at the enthusiasm LoopBack users share, and the intriguing questions and scenarios they can come up with. It’s this enthusiasm that has also helped shaped LoopBack’s growth and future.  
 
 ## A GitHub Milestone and Towards the Future
 
