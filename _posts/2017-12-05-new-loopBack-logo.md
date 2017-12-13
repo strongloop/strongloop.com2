@@ -20,7 +20,7 @@ Be sure you have a say in our transformation and our community as we move forwar
 
 (Embedded survey not working? You can go directly to the survey [here](https://www.surveymonkey.com/r/MRKFWVY).)
 
-We appeciate your input and look forward to seeing the results!
+We'll close submissions on Monday, December 18th. We appeciate your input and look forward to seeing the results!
 
 ## What's next?
 
