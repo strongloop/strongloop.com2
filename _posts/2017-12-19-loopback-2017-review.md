@@ -9,7 +9,7 @@ categories:
 
 ---
 
-As 2017 draws to a close, we’re reflecting on the evolution of LoopBack in the past twelve months. It's been a big year for  this open-source Node.js framework. It started with the introduction of the LoopBack CLI and ended with the LoopBack 4 developer preview release and a request for feedback on a new LoopBack logo - and there was a lot of activity in between! We invite you to join us as we take a look at how things progressed for LoopBack in 2017. There's a lot to take in, so feel free to top up your coffee before you begin!
+As 2017 draws to a close, we’re reflecting on the evolution of [LoopBack](http://loopback.io/) in the past twelve months. It's been a big year for our open-source Node.js framework. It started with the introduction of the LoopBack CLI and ended with the LoopBack 4 developer preview release and a request for feedback on a new LoopBack logo - and there was a lot of activity in between! We invite you to join us as we take a look at how things progressed for LoopBack in 2017. There's a lot to take in, so feel free to top up your coffee before you begin!
  
 ## Continuing to Add to LoopBack
 
@@ -76,7 +76,7 @@ Throughout 2017 our Evangelist team continued to share their knowledge of LoopBa
 
 ## A GitHub Milestone and Towards the Future
 
-With all of this activity, a GitHub achievement almost went by unnoticed. [LoopBack hit 10k](https://github.com/strongloop/loopback) stars in November.
+With all of this activity, a GitHub achievement almost went by unnoticed. [LoopBack hit 10k+](https://github.com/strongloop/loopback) stars in November. We are humbled by teh support of our community, and invite you to "star" [strongloop/loopback-next](https://github.com/strongloop/loopback-next) as well!
 
 With LoopBack 4 just about ready for prime time, we are looking forward to seeing how the community uses it and helps it grow.
 
