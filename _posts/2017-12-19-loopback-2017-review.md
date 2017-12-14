@@ -9,7 +9,7 @@ categories:
 
 ---
 
-As 2017 draws to a close, we’re reflecting on the evolution of LoopBack in the past twelve months. It's been a big year for  this open-source Node.js framework. It started with the introduction of the LoopBack CLI and ended with the LoopBack 4 developer preview release and a request for feedback on a new LoopBack logo - and there was a lot of activity in between! We invite you to join us as we take a look at how things progressed for LoopBack in 2017.
+As 2017 draws to a close, we’re reflecting on the evolution of LoopBack in the past twelve months. It's been a big year for  this open-source Node.js framework. It started with the introduction of the LoopBack CLI and ended with the LoopBack 4 developer preview release and a request for feedback on a new LoopBack logo - and there was a lot of activity in between! We invite you to join us as we take a look at how things progressed for LoopBack in 2017. There's a lot to take in, so feel free to top up your coffee before you begin!
  
 ## Continuing to Add to LoopBack
 
@@ -19,7 +19,7 @@ January also saw the release of a new open-source LoopBack module called [strong
 
 ## Introducing LoopBack.next
 
-In April, Ritchie Martori announced [LoopBack.next](https://strongloop.com/strongblog/announcing-loopback-next/), which would be renamed LoopBack 4. Recognizing that LoopBack’s core code made it difficult to add certain features and tough to gain new contributors, the LoopBack team had one goal: a new and flexible core that would be small, powerful, and fast. Martori talked about LoopBack.next, saying:
+In April, [Ritchie Martori](https://github.com/ritch) announced [LoopBack.next](https://strongloop.com/strongblog/announcing-loopback-next/), which would be renamed LoopBack 4. Recognizing that LoopBack’s core code made it difficult to add certain features and tough to gain new contributors, the LoopBack team had one goal: a new and highly-extensible core that would be small, powerful, and fast. Martori talked about LoopBack.next, saying:
 
 “This new core will allow us to greatly improve the LoopBack developer experience. On top of the core, we’re working on adding better tooling, new integrations with OpenAPI (Swagger), and making significant performance improvements to routing.
 The basic goal of LoopBack remains the same: to make it easy to build apps that use new or existing data. With LoopBack.next, our goal is to take the solid foundation of LoopBack and make it effortlessly extensible.” 
@@ -28,38 +28,37 @@ The basic goal of LoopBack remains the same: to make it easy to build apps that 
 
 Even as the StrongLoop team focused on the next version of LoopBack, improvements for the existing version of LoopBack still emerged in spring and summer. 
 
-*	Tetsuo Seto let everyone know about [LoopBack’s new Cassandra Connector](https://strongloop.com/strongblog/cassandra-connector-has-arrived/) in April, delivering on requests from the LoopBack community. He followed up with an explanation of how to use corresponding source code blocks to help make your LoopBack app interact with [Cassandra Materialized Views](https://strongloop.com/strongblog/cassandra-materialized-view/).
+*	[Tetsuo Seto](https://github.com/Setogit) let everyone know about [LoopBack’s new Cassandra Connector](https://strongloop.com/strongblog/cassandra-connector-has-arrived/) in April, delivering on requests from the LoopBack community. He followed up with an explanation of how to use corresponding source code blocks to help make your LoopBack app interact with [Cassandra Materialized Views](https://strongloop.com/strongblog/cassandra-materialized-view/).
 
-*	In May Rashmi Hunt introduced a new LoopBack feature: the ability to [generate remote methods and REST APIs for SOAP web services](https://strongloop.com/strongblog/building-enterprise-apis-for-soap-web-services-using-loopback). As Rashmi described, this allows creation of REST APIs that invoke web services easily, even if you haven’t mastered the web service.
+*	In May [Rashmi Hunt](https://github.com/rashmihunt) introduced a new LoopBack feature: the ability to [generate remote methods and REST APIs for SOAP web services](https://strongloop.com/strongblog/building-enterprise-apis-for-soap-web-services-using-loopback). As Rashmi described, this allows creation of REST APIs that invoke web services easily, even if you haven’t mastered the web service.
 
-* Also in May, Loay Gewily and Janny Hou shared details about [refactoring LoopBack SQL Connectors](https://strongloop.com/strongblog/refactoring-loopback-sql-connectors/) and the changes to Model Discovery and Migration. 
+* Also in May, [Loay Gewily](https://github.com/loay) and [Janny Hou](https://github.com/jannyHou) shared details about [refactoring LoopBack SQL Connectors](https://strongloop.com/strongblog/refactoring-loopback-sql-connectors/) and the changes to Model Discovery and Migration. 
 
 We also saw many informative “how to” posts and tutorials during this time. These included:
 
-*	Nagarjuna Surabathina demonstrated creating a [multi-tenant Connector Microservice](https://strongloop.com/strongblog/creating-a-multi-tenant-connector-microservice-using-loopback/) using LoopBack. 
+*	[Nagarjuna Surabathina](https://github.com/Nagarjuna-S) demonstrated creating a [multi-tenant Connector Microservice](https://strongloop.com/strongblog/creating-a-multi-tenant-connector-microservice-using-loopback/) using LoopBack. 
 
 * Nagarjuna joined forces with Subramanian Krishnan to write about using [OpenWhisk for LoopBack As A Service](https://strongloop.com/strongblog/loopback-as-a-service-using-openwhisk/)
 and [LoopBack as an Event Publisher](https://strongloop.com/strongblog/loopback-as-an-event-publisher/).
 
 *	Sequioa McDowell announced his Open Source [LoopBack JSONSchemas VS Code Extension](https://strongloop.com/strongblog/announcing-loopback-jsonschemas-vs-code-extension/), a tool that pushes the documentation to you while you code. The result? You can avoid typos, find configuration errors early, and learn baout useful features.
 
-*	Raymond Camden explained how to [integrate LoopBack with ElasticSearch](https://strongloop.com/strongblog/integrating-loopback-with-elasticsearch/).
+*	[Raymond Camden](https://github.com/cfjedimaster) explained how to [integrate LoopBack with ElasticSearch](https://strongloop.com/strongblog/integrating-loopback-with-elasticsearch/) as well as [building a Vue.js application with LoopBack](https://strongloop.com/strongblog/vuejs-and-loopback/) as the back end. 
 
-*	David Okun told us how he used LoopBack to build the Open Source Game [Xtra Points](https://strongloop.com/strongblog/loopback-open-source-xtra-points/), how to use LoopBack with [Facebook’s Graph API for user authentication](https://strongloop.com/strongblog/loopback-facebook-api-user-authentication/), and how to generate a [client SDK for LoopBack with the Bluemix cloud CLI](https://strongloop.com/strongblog/generate-client-sdk-loopback-bluemix-cli).
+*	[David Okun](https://github.com/dokun1) told us how he used LoopBack to build the Open Source Game [Xtra Points](https://strongloop.com/strongblog/loopback-open-source-xtra-points/), how to use LoopBack with [Facebook’s Graph API for user authentication](https://strongloop.com/strongblog/loopback-facebook-api-user-authentication/), and how to generate a [client SDK for LoopBack with the Bluemix cloud CLI](https://strongloop.com/strongblog/generate-client-sdk-loopback-bluemix-cli).
 
 *	Sakib Hasan explained how to [Dockerize LoopBack Connectors](https://strongloop.com/strongblog/dockerize-lb-connectors/) for a simple way to set up and tear down a database service on request.
 
-*	Joe Sepi used LoopBack to build a band app in his multi-part series that began [here](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt1/).
+*	[Joe Sepi](https://github.com/joesepi) used LoopBack to build a band app in his multi-part series that began [here](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt1/).
 
-* Raymond Camden provided a quick demonstration about [building a Vue.js application with LoopBack](https://strongloop.com/strongblog/vuejs-and-loopback/) as the back end. 
 
 ## LoopBack.next becomes LoopBack 4, Evolution Continues
 
-With Fall arriving, the focus on the new version of LoopBack began anew. LoopBack.next was now known as LoopBack 4, and on October 19th Diana Lau invited [contributors on LoopBack extensions](https://strongloop.com/strongblog/calling-contributors-loopback-extensions/) to help promote extensibility and grow the ecosystem.
+With Fall arriving, the focus on the new version of LoopBack began anew. LoopBack.next was now known as LoopBack 4, and on October 19th [Diana Lau](https://github.com/dhmlau) invited [contributors on LoopBack extensions](https://strongloop.com/strongblog/calling-contributors-loopback-extensions/) to help promote extensibility and grow the ecosystem.
 
-The first LoopBack 4 workshop was held at CasCon in November. Titled “API Economy Made Easy with LoopBack 4”, the tutorial is [available on GitHub](https://github.com/torontoCascon/cascon-2017) if you missed it.
+The first LoopBack 4 workshop was held at [CASCON](cascon.ca) in November. Titled “API Economy Made Easy with LoopBack 4”, the tutorial is [available on GitHub](https://github.com/torontoCascon/cascon-2017) if you missed it.
 
-Raymond Feng announced the [LoopBack 4 Developer Preview Release](https://strongloop.com/strongblog/loopback-4-developer-preview-release) on Nov 28. Aimed at Extension Developers as well as API application developers, the preview offered:
+[Raymond Feng](https://github.com/raymondfeng) announced the [LoopBack 4 Developer Preview Release](https://strongloop.com/strongblog/loopback-4-developer-preview-release) on Nov 28. Aimed at extension developers as well as API application developers, the preview offered:
 
 * A brand new LoopBack core written in TypeScript with great extensibility and flexibility. 
 * An OpenAPI spec driven REST API creation experience. 
