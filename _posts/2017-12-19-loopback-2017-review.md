@@ -76,7 +76,7 @@ Throughout 2017 our Evangelist team continued to share their knowledge of LoopBa
 
 ## A GitHub Milestone and Towards the Future
 
-With all of this activity, a GitHub achievement almost went by unnoticed. [LoopBack hit 10k+](https://github.com/strongloop/loopback) stars in November. We are humbled by teh support of our community, and invite you to "star" [strongloop/loopback-next](https://github.com/strongloop/loopback-next) as well!
+With all of this activity, a GitHub achievement almost went by unnoticed. [LoopBack hit 10k+](https://github.com/strongloop/loopback) stars in November. We are humbled by the support of our community, and invite you to "star" [strongloop/loopback-next](https://github.com/strongloop/loopback-next) as well!
 
 With LoopBack 4 just about ready for prime time, we are looking forward to seeing how the community uses it and helps it grow.
 
@@ -89,7 +89,7 @@ Of course, the StrongLoop site had a big year too! In May, we announced changes 
 
 With this new approach, we continue to bring Node.js updates - which is important to us since we are part of the [Node Foundation](https://foundation.nodejs.org/)). We are also highlighting three open source options for building APIs:  
 
-* LoopBack
+* [LoopBack](http://loopback.io/)
 * [API Microgateway](https://github.com/strongloop/microgateway)
 * [Open API Initiative](https://www.openapis.org/)
 
