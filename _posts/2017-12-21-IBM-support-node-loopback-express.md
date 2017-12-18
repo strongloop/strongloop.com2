@@ -11,7 +11,7 @@ categories:
  
 ---
 
-StrongLoop's history is tied to Node.js, as is LoopBack, the highly-extensible, open-source Node.js framework that's ideal for APIs. With a 2x growth rate, Node.js has skyrocketed in popularity as more and more enterprises rely on its fast start up speed and quick time to value for efficient development. Despite rapid growth in the community, Enterprises still need support and security when developing and deploying Node.js applications. Therefore, IBM recently enhanced its Node.js support and added support for LoopBack and Express.
+StrongLoop's history is tied to Node.js, as is LoopBack, the highly-extensible, open-source Node.js framework that's ideal for APIs. With a 2x growth rate, Node.js has skyrocketed in popularity as more and more enterprises rely on its fast start up speed and quick time to value for efficient development. Despite rapid growth in the community, enterprises still need support and security when developing and deploying Node.js applications. Therefore, IBM recently enhanced its Node.js support and added support for LoopBack and Express. It's called IBM Foundation Support for Runtimes.
 
 ## What's offered?
 
@@ -26,5 +26,7 @@ IBM Advanced Support for Runtimes expands on Foundation Support, providing addit
 These offerings provide you with the majority of what you need in order to be able to create, deploy, monitor and scale production-grade web applications and mobile back ends using Node.js. Visit [IBM's marketplace](https://www.ibm.com/us-en/marketplace/support-for-runtimes) to learn more.
 
 ## What's Next?
+
+Check out this IBM Support for Runtimes [FAQ](https://www.ibm.com/us-en/marketplace/support-for-runtimes/faq).
 
 Learn about [LoopBack](http://loopback.io/doc/en/lb4), our highly-extensible, open-source Node.js framework - ideal for APIs. 
