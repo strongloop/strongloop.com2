@@ -82,8 +82,7 @@ With LoopBack 4 just about ready for prime time, we are looking forward to seein
 
 ## What about StrongLoop? 
 
-Of course, the StrongLoop site had a big year too! In May, we announced changes to the focus of the [StrongLoop site]
-(https://strongloop.com/strongblog/strongLoop-evolves-to-promote-open-source-solutions-for-the-api-developer-community). We summarized the change by looking at our old foucs and outlining our new one:
+Of course, the StrongLoop site had a big year too! In May, we announced changes to the focus of the [StrongLoop site](https://strongloop.com/strongblog/strongLoop-evolves-to-promote-open-source-solutions-for-the-api-developer-community). We summarized the change by looking at our old focus and outlining our new one:
 
 "(We've made) the transition from showcasing our services to promoting community. While we proudly supported community since we launched, our previous site highlighted options from StrongLoop and IBM to help you build with node.js and power the API economy. Moving forward, this site embraces our role within the Open Source community that creates APIs and supporting the growth of that community."
 
