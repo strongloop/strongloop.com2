@@ -17,6 +17,7 @@ StrongLoop's history is tied to Node.js, as is LoopBack, the highly-extensible, 
 
 IBM Foundation Support for Runtimes provides coverage for Node.js, Swift and Java. Support is available for the Node.js 6 & 8 LTS binaries from the nodejs.org community and the IBM SDK for Node.js, which includes the open sourced [App Metrics](https://developer.ibm.com/node/monitoring-post-mortem/application-metrics-node-js/) monitoring framework.
 
+<!--more-->
 The Node.js runtime support is available regardless of which modules you are using within your application. Support is available for wherever you want to deploy the runtime: whether that’s on your own machines or in the cloud, and whether that’s IBM Cloud, Amazon Web Services, Microsoft Azure, Heroku or somewhere else.
 
 IBM Advanced Support for Runtimes expands on Foundation Support, providing additional coverage for the Express.js, Loopback, and Kitura (Swift framework) frameworks as well as the packages on which they rely.
