@@ -10,14 +10,15 @@ categories:
 ---
 
 As 2017 draws to a close, we’re reflecting on the evolution of StrongLoop and [LoopBack](http://loopback.io/) in the past twelve months. It's been a big year for our open-source Node.js framework. It started with the introduction of the LoopBack CLI and ended with the LoopBack 4 developer preview release and a request for feedback on a new LoopBack logo - and there was a lot of activity in between! We invite you to join us as we take a look at how things progressed for LoopBack in 2017. There's a lot to take in, so we invite you to top up your beverage of choice before you begin!
- 
+
+<img src="https://strongloop.com/blog-assets/2017/loopback-2017.png" alt="LoopBack 2017 Year in Review"/>
+
+<!--more-->
 ## Continuing to Add to LoopBack
 
 In the early days of StrongLoop, the team released slc to build and manage Node applications. Since joining IBM, the StrongLoop team integrated LoopBack’s API creation tooling with IBM’s existing API management options. With the two combined, [LoopBack was given its own CLI](https://strongloop.com/strongblog/announcing-the-loopback-cli/) in January.
 
 January also saw the release of a new open-source LoopBack module called [strong-soap](https://strongloop.com/strongblog/strong-soap-loopback-module/) to go along with the LoopBack 3.0 release. Created by Rashmi Hunt, the module provides a comprehensive SOAP client for invoking web services as well as a mock-up SOAP server capability to create and test your web service. 
-
-<!--more-->
 
 ## Introducing LoopBack.next
 
