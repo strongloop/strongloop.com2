@@ -8,7 +8,7 @@ categories:
   - LoopBack
 ---
 
-Note: The first phase of this series is complete. CLick on the links below for each part.
+Note: The first phase of this series is complete. Click on the links below for each part.
 
 * [Part 1: Let's Build a Band App with LoopBack!](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt1/)
 * [Part 2: Creating Our First Model-Driven API Endpoint](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt2/)
