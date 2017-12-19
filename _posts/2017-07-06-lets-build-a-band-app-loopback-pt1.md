@@ -8,6 +8,17 @@ categories:
   - LoopBack
 ---
 
+Note: The first phase of this series is complete. CLick on the links below for each part.
+
+* [Part 1: Let's Build a Band App with LoopBack!](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt1/)
+* [Part 2: Creating Our First Model-Driven API Endpoint](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt2/)
+* [Part 3: Exploring Our API](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt3/)
+* [Part 4: Deploying Our Application](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt4/)
+* [Part 5: Connecting to Cloudant](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt5/)
+* [Part 6: Working with Credentials](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt6/)
+* [Part 7: Continuous Deployment](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt7/)
+* [Part 8: UI and Wrap-Up](https://strongloop.com/strongblog/lets-build-a-band-app-loopback-pt8/)
+
 In this series, we will work through building an application to support the needs of DIY bands. We'll start out solving some basic problems and move into more complex ground, eventually transforming the application into a platform that others can use and build upon.
 
 There is a [corresponding workshop](https://github.com/StrongLoop-Evangelists/workshop-band-app) as well as a [code repository](https://github.com/StrongLoop-Evangelists/band-app).
