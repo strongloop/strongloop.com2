@@ -17,6 +17,8 @@ In the early days of StrongLoop, the team released slc to build and manage Node 
 
 January also saw the release of a new open-source LoopBack module called [strong-soap](https://strongloop.com/strongblog/strong-soap-loopback-module/) to go along with the LoopBack 3.0 release. Created by Rashmi Hunt, the module provides a comprehensive SOAP client for invoking web services as well as a mock-up SOAP server capability to create and test your web service. 
 
+<!--more-->
+
 ## Introducing LoopBack.next
 
 In April, [Ritchie Martori](https://github.com/ritch) announced [LoopBack.next](https://strongloop.com/strongblog/announcing-loopback-next/). Recognizing that LoopBack’s core code made it difficult to add certain features and tough to gain new contributors, the LoopBack team had one goal with the next version of LoopBack: a new and highly-extensible core that would be small, powerful, and fast. Martori talked about LoopBack.next, saying:
