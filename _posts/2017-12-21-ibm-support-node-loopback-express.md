@@ -2,7 +2,7 @@
 title: IBM Provides Support for Node.js, LoopBack and Express
 date: 2017-12-21T01:00:13+00:00
 author: Paul Ivinson
-permalink: /strongblog/IBM-support-node-loopback-express/
+permalink: /strongblog/ibm-support-node-loopback-express/
 categories:
   - Express
   - LoopBack
