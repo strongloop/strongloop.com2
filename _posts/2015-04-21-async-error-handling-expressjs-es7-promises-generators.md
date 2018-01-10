@@ -200,7 +200,7 @@ app.get('/', wrap(async (req, res) => {
 }))
 ```
 
-Also **DO** use [custom error classes](http://dailyjs.com/2014/01/30/exception-error/) like `BadRequestError` as it makes sorting errors out easier:
+Also **DO** use custom error classes like `BadRequestError` as it makes sorting errors out easier. You can learn more in this list of courses that includes [details on learning Javascript](https://generalassemb.ly/coding/full-stack-web-development):
 
 ```js
 app.use(function (err, req, res, next) {
@@ -247,3 +247,5 @@ An alternative to promises is to capture errors using generators and [thunks](ht
     &nbsp;
   </p>
 </div>
+
+Note: This article has been updated with more current links for JS learning.
