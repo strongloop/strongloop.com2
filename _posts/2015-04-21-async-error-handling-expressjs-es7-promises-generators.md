@@ -200,7 +200,7 @@ app.get('/', wrap(async (req, res) => {
 }))
 ```
 
-Also **DO** use custom error classes like `BadRequestError` as it makes sorting errors out easier. You can learn more in this list of courses that includes [details on learning Javascript](https://generalassemb.ly/coding/full-stack-web-development):
+Also **DO** use custom error classes like `BadRequestError` as it makes sorting errors out easier. You can learn more in courses that includes [details on learning Javascript](https://generalassemb.ly/coding/full-stack-web-development):
 
 ```js
 app.use(function (err, req, res, next) {
