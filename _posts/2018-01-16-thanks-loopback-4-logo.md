@@ -8,7 +8,7 @@ categories:
   - LoopBack
 ---
 
-Late last year, we [asked for assistance](https://strongloop.com/strongblog/new-loopBack-logo/) from the StrongLoop community to decide upon a new LoopBack logo - one that will be used for LoopBack 4. We presented five logo options as well as three options for the color palettes, asking for you to rank your favorites. We weren't disappointed, witht over 200 of you taking the time to share your input.
+Late last year, we [asked for assistance](https://strongloop.com/strongblog/new-loopBack-logo/) from the StrongLoop community to decide upon a new LoopBack logo - one that will represent LoopBack 4. We shared five logo options ands three color palette options, asking for you to rank your favorites. We weren't disappointed, with over 200 of you taking the time to share your input.
 
 So, how did things go? Since your eyes have probably already spotted the image below, you can see for yourself. It's a sneak preview of the logo and color sample that got the most votes.
 
