@@ -16,7 +16,7 @@ So, how did things go? Since your eyes have probably already spotted the image b
 
 <img src="https://strongloop.com/blog-assets/2018/01/loopback-4-logo-sample.png" alt="LoopBack 4 Logo Sample"/>
 
-This logo concept narrowly beat out the others with 25.79% of you selecting it. Then, 39.47% of you chose the color scheme we went with.
+With voters ranking their favorite and ordering the rest according to preference, the results were weighted to show the overall winner. The higher the score, the better, and the above logo concept narrowly beat out the others, scoring a cumulative 3.25 (the nearest scored 3.16). The winning color scheme scored 2.13 while the runner up was 1.98. 
 
 I'd like to extend a sincere thank you from the entire team! We are still fine-tuning things, so the final version of this logo might still be tweaked slightly, but we couldn't have gotten here without your guidance. Expect to see the logo turning up as we share more about LoopBack 4 in the future. 
 
