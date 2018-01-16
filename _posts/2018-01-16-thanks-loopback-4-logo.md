@@ -1,5 +1,5 @@
 ---
-title: Thanks for Helping Us Decide on the Logo for LoopBack
+title: Thanks for Helping Us Decide on the LoopBack 4 Logo
 date: 2018-1-16T01:00:13+00:00
 author: Dave Whiteley
 permalink: /strongblog/thanks-loopback-4-logo/
