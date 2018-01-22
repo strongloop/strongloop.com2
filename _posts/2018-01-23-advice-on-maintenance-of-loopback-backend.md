@@ -1,16 +1,17 @@
 ---
-title: "Answered in open: An advice for maintenance and updating a Loopback back-end"
+title: Answered in Open: Advice for Maintenance and Updating a Loopback Back-end"
 date: 2018-1-23T01:00:13+00:00
 author: Miroslav Bajtoš
 permalink: /strongblog/advice-for-loopback-backend-maintenance/
 categories:
   - Community
   - LoopBack
+  - How-To
 ---
 
-Recently, I was approached by a LoopBack user running a single-person project powered by LoopBack 2.x, asking for an advice on how to maintain and upgrade his backend. While I could respond directly in an email, I strongly believe in [Maximizing the value of my keystrokes](https://blog.codinghorror.com/maximizing-the-value-of-your-keystrokes/) and posting information potentially useful to the LoopBack community in a public place.
+Recently, I was approached by a LoopBack user running a single-person project powered by LoopBack 2.x, asking for an advice on how to maintain and upgrade his backend. While I could respond directly in an email, I strongly believe in [maximizing the value of my keystrokes](https://blog.codinghorror.com/maximizing-the-value-of-your-keystrokes/) and posting information potentially useful to the LoopBack community in a public place.
 
-This user is running a website and a REST API powered by LoopBack as the back-end with an angular admin interface, and React as the web client with React Native as the app framework. The system was implemented in about 2 months back in 2016 and has run without particular issues for over a year now.
+This user runs a website and a REST API powered by LoopBack as the back-end with an angular admin interface, and React as the web client with React Native as the app framework. The system was implemented in about 2 months back in 2016 and has run without particular issues for over a year now.
 
 The implementation contains some suboptimal/hacky bits that were needed to get around the old issues of dynamic context access, a bug in the relations from UserRole, etc. As a result, the number of hooks has continued to pile up. The system is still relatively fast, but there are concerns about scalability issues as usage grows.
 
@@ -48,7 +49,7 @@ If you are using StrongLoop Arc to build and deploy new versions of your applica
 
 > P.S. There is one bug I've never been able to figure out... a "callback has already been called" error that I seem unable to trace in any way or recreate consistently. It seems to randomly occur once every minute or so in the logs on production only... Do you have any advice how to possibly trace it? It doesn't really hurt anything as far as I can tell, but it clutters up the log file.
 
-In general, this happens when one function invocation calls the callback argument multiple times. For example, it can happen when you install multiple even listeners that eventually calls the callback. Let's say you listen for both "close" and "error" events and both events are fired, therefore triggering the callback two times. Another common source of this situation is when you forget to return early from your function after calling a callback:
+In general, this happens when one function invocation calls the callback argument multiple times. For example, it can happen when you install multiple even listeners that eventually call the callback. Let's say you listen for both "close" and "error" events and both events are fired, therefore triggering the callback two times. Another common source of this situation is when you forget to return early from your function after calling a callback:
 
 ```js
 function doSomething(options, cb) {
@@ -66,4 +67,17 @@ doSomething({skip: true}, (err, data) => console.log('cb', err, data));
 
 There are many ways how you can end up in "callback has already been called" situation, so it's hard for me to help you more without seeing the specific error message text. (I was not able to find "callback has already been called" anywhere in the source code of loopback and its dependencies.)
 
-In general, this kind of questions is best to ask on [GitHub](https://github.com/strongloop/loopback/issues/new), [Gitter](https://gitter.im/strongloop/loopback) or [StackOverflow](https://stackoverflow.com/questions/tagged/loopbackjs), as they are better suited for troubleshooting.
+In general, it's best to ask this kind of question on [GitHub](https://github.com/strongloop/loopback/issues/new), [Gitter](https://gitter.im/strongloop/loopback) or [StackOverflow](https://stackoverflow.com/questions/tagged/loopbackjs), as these resources are better suited for troubleshooting.
+
+## What's next?
+
+If you haven't already checked out the [Developer Preview release](https://strongloop.com/strongblog/loopback-4-developer-preview-release), it is just the first milestone of our LoopBack 4 journey. A tentative plan is outlined at [https://github.com/strongloop/loopback-next/wiki/Upcoming-Releases](https://github.com/strongloop/loopback-next/wiki/Upcoming-Releases). Please note that it is not an official commitment and subject to adjustment as we make progress with the community contributions and feedbacks.
+
+## Call for action
+
+LoopBack's future success counts on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
+
+* [Casting your vote for extensions](https://github.com/strongloop/loopback-next/issues/512)
+* [Reporting issues](https://github.com/strongloop/loopback-next/issues)
+* [Building more extensions](https://github.com/strongloop/loopback-next/issues/647)
+* [Helping each other in the community](https://groups.google.com/forum/#!forum/loopbackjs)
