@@ -73,11 +73,7 @@ In general, it's best to ask this kind of question on [GitHub](https://github.co
 
 If you haven't already checked out the [Developer Preview release](https://strongloop.com/strongblog/loopback-4-developer-preview-release), it is just the first milestone of our LoopBack 4 journey. A tentative plan is outlined at [https://github.com/strongloop/loopback-next/wiki/Upcoming-Releases](https://github.com/strongloop/loopback-next/wiki/Upcoming-Releases). Please note that it is not an official commitment and subject to adjustment as we make progress with the community contributions and feedbacks.
 
-## Call for action
-
-LoopBack's future success counts on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
-
-* [Casting your vote for extensions](https://github.com/strongloop/loopback-next/issues/512)
-* [Reporting issues](https://github.com/strongloop/loopback-next/issues)
-* [Building more extensions](https://github.com/strongloop/loopback-next/issues/647)
-* [Helping each other in the community](https://groups.google.com/forum/#!forum/loopbackjs)
+* [Cast your vote for extensions](https://github.com/strongloop/loopback-next/issues/512)
+* [Report issues](https://github.com/strongloop/loopback-next/issues)
+* [Build more extensions](https://github.com/strongloop/loopback-next/issues/647)
+* [Help each other in the community](https://groups.google.com/forum/#!forum/loopbackjs)
