@@ -20,7 +20,7 @@ The project is staying on LoopBack 2.x LTS, because 3.x has not entered LTS mode
 
 Now that we have set the context, let's look at the actual questions asked.
 
-**What would you suggest for a company like mine with only me as the developer/owner with somewhat limited time? Should I consider upgrading to loopback 3 in the short term, or stick it out with our working loopback 2 backend and deal with scalability issues through extra horsepower in the meantime, planning on a wholesale rewrite of our backend to loopback 4 for mid 2019?
+**What would you suggest for a company like mine with only me as the developer/owner with somewhat limited time? Should I consider upgrading to loopback 3 in the short term, or stick it out with our working loopback 2 backend and deal with scalability issues through extra horsepower in the meantime, planning on a wholesale rewrite of our backend to loopback 4 for mid 2019?**
 
 As the popular saying goes: If it ain't broke, don't fix it. Unless you can leverage a feature from 3.x to simplify your code, or perhaps get rid of a hacky workaround for a bug that was fixed in 3.x but not backported to 2.x, then I think the costs of upgrading from 2.x to 3.x outweigh the short-term benefits right now. Keep in mind: as long as 2.x is covered by our [Long Term Support](https://loopback.io/doc/en/contrib/Long-term-support.html) program, we are backporting all security fixes to the 2.x branch, so your application using LoopBack 2.x is as safe as with LoopBack 3.x.
 
@@ -30,7 +30,7 @@ When LoopBack 4 GA is released, LoopBack 2.x will move from LTS to maintenance m
 
 By the way, we are maintaining a [documentation page](http://loopback.io/doc/en/lb4/LoopBack-3.x.html) describing the differences between LoopBack 3.x and the upcoming 4.0 version. It may help you to better understand the scope of the future upgrade to LoopBack 4.0.
 
-**We are using your angular SDK now for the admin back end, but you say you'll have a React SDK for V4? I'd love to hear more about plans for that.
+**We are using your angular SDK now for the admin back end, but you say you'll have a React SDK for V4? I'd love to hear more about plans for that.**
 
 Going forward, we prefer to avoid creating and maintaining any LoopBack-specific frontend SDKs ourselves. Ideally, we would like to work with existing Swagger/OpenAPI client generators (e.g. the official [Swagger Codegen](https://swagger.io/swagger-codegen/)) to make their output easy to use for LoopBack developers. For example, we would like to leverage additional endpoint metadata like "controller name" and "method name" to enable code generators to generate a structured client API (e.g. "Product.create") instead of the current flat list of endpoints (i.e. "Product\_create").
 
@@ -38,7 +38,7 @@ We would also like to implement a GraphQL component which will make it easy to c
 
 Having said that, if there is a strong demand for an SDK specific to a single frontend framework and there are volunteers willing to make such SDK happen, then we are happy to lend our expertise to help them along the way. [LoopBack SDK Builder for Angular2](https://github.com/mean-expert-official/loopback-sdk-builder) is a good example of such community-maintained SDK. If you would like to start or join such community effort for a React 4 SDK, then please leave a comment in [GitHub issue #509](https://github.com/strongloop/loopback-next/issues/509) and consider joining the list of our contributors via [GitHub issue #110](https://github.com/strongloop/loopback-next/issues/110).
 
-**Also, right now I'm using slc and strong-pm to manage the backend server and push updates, since we're too small to afford IBM's platform (and we aren't an API as a service company, so the pricing structure based on API calls doesn't work at all). I hope there will continue to be an open source way to manage our own processes in the future.
+**Also, right now I'm using slc and strong-pm to manage the backend server and push updates, since we're too small to afford IBM's platform (and we aren't an API as a service company, so the pricing structure based on API calls doesn't work at all). I hope there will continue to be an open source way to manage our own processes in the future.**
 
 As strong-pm's [documentation](https://docs.strongloop.com/display/SLC/Operating+Node+applications) mentions, StrongLoop Arc and slc are no longer under active development, and will soon be deprecated. I understand that IBM's offering may not fit your particular needs, in which case you may find [pm2](http://pm2.keymetrics.io/) or [forever](https://www.npmjs.com/package/forever) as reasonable alternatives for supervising and managing your Node.js processes in production. See StrongLoop's comparison page to better understand the pros and cons of each solution: [http://strong-pm.io/compare/](http://strong-pm.io/compare/)
 
@@ -48,7 +48,7 @@ For application monitoring, I recommend replacing StrongLoop's strong-agent with
 
 If you are using StrongLoop Arc to build and deploy new versions of your application, then you can always switch to the lower-level tools used by Arc under the hood: [strong-build](https://www.npmjs.com/package/strong-build) for bundling your application for publishing and [strong-deploy](https://www.npmjs.com/package/strong-deploy) for deploying the output of strong-build to strong-pm.
 
-**P.S. There is one bug I've never been able to figure out... a "callback has already been called" error that I seem unable to trace in any way or recreate consistently. It seems to randomly occur once every minute or so in the logs on production only... Do you have any advice how to possibly trace it? It doesn't really hurt anything as far as I can tell, but it clutters up the log file.
+**P.S. There is one bug I've never been able to figure out... a "callback has already been called" error that I seem unable to trace in any way or recreate consistently. It seems to randomly occur once every minute or so in the logs on production only... Do you have any advice how to possibly trace it? It doesn't really hurt anything as far as I can tell, but it clutters up the log file.**
 
 In general, this happens when one function invocation calls the callback argument multiple times. For example, it can happen when you install multiple even listeners that eventually call the callback. Let's say you listen for both "close" and "error" events and both events are fired, therefore triggering the callback two times. Another common source of this situation is when you forget to return early from your function after calling a callback:
 
