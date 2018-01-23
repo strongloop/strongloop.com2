@@ -1,5 +1,5 @@
 ---
-title: Answered in Open&#8211; Advice for Maintenance and Updating a Loopback Back-end"
+title: Answered in Open &#8211; Advice for Maintenance and Updating a Loopback Back-end
 date: 2018-1-23T01:00:13+00:00
 author: Miroslav Bajtoš
 permalink: /strongblog/advice-for-loopback-backend-maintenance/
