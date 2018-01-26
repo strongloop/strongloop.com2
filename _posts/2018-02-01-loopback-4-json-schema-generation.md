@@ -13,6 +13,9 @@ More and more features are being completed as the release of [LoopBack 4.0 MVP](
 ## Models and metadata in LoopBack4
 
 Currently with LoopBack4, the concept of models are borrowed from LoopBack3 where models are used to represent data in backend systems.
+A great feature LoopBack3 had was the painless conversion of LoopBack models into Swagger API spec through [`loopback-swagger`](https://github.com/strongloop/loopback-swagger) module.
+We sought to bring over this feature to LoopBack4 and at the same time use the advantages of TypeScript to make creating models easier and more intutitive.
+
 In order to define these models for the legacy juggler with just TypeScript classes, `@model` and `@property` decorators from `@loopback/repository` package are used.
 With TypeScript's experimental feature on decorators, we're able to infer property types of a class at compile-time and store them as metadata.
 This metadata is accessed at run-time and a working model definition is automatically built from the metadata and stored as a property under the class constructor to be readily accessed.
@@ -23,12 +26,7 @@ With the property type metadata availble to us through these decorators, we've c
 
 Install the module in your LoopBack4 project:
 ```
-npm i --save @loopback/repository-json-schema
-```
-
-Install `@loopback/repository` (if you haven't done already):
-```
-npm i --save @loopback/repository
+npm i --save @loopback/repository-json-schema @loopback/repository
 ```
 
 Write your LoopBack model using `@model` and `@property` decorators:
@@ -57,6 +55,22 @@ For more information on model decorating specifics to get the correct JSON Schem
 ## Integration with `@loopback/rest`
 
 This feature has also been integrated into our `@loopback/rest` package to be able to automatically provide a full OpenAPI schema (after conversion from JSON Schema) for the decorated models that's been used in the registered controllers.
+Here's how it works:
+
+```ts
+class MyController {
+  @post('/path')
+  create(
+    @param.body('model') // type inferrence done here
+    model: MyModel
+  ) {}
+}
+```
+
+When an application using our `RestServer` is run, a routing table is built for routes defined in the controllers registered with the application.
+As these routes get registered, `@param` decorator infers the type definition of the parameter of the route and notices that it's a LoopBack model.
+A JSON Schema is then generated and cached for the model and then converted into OpenAPI spec definition.
+The completed schema is made available at `/openapi.json` endpoint when the application is running.
 
 ## Top-level metadata and limitations
 
