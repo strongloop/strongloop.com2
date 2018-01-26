@@ -18,7 +18,7 @@ We sought to bring over this feature to LoopBack4 and at the same time use the a
 
 In order to define these models for the legacy juggler with just TypeScript classes, `@model` and `@property` decorators from `@loopback/repository` package are used.
 With TypeScript's experimental feature on decorators, we're able to infer property types of a class at compile-time and store them as metadata.
-This metadata is accessed at run-time and a working model definition is automatically built from the metadata and stored as a property under the class constructor to be readily accessed.
+This metadata is accessed at run-time and a working model definition for the juggler is automatically built from the metadata and stored as a static property under the class constructor to be readily accessed.
 
 With the property type metadata availble to us through these decorators, we've created `@loopback/repository-json-schema` module to use that same metadata as a base to build a JSON Schema representation of the model.
 
