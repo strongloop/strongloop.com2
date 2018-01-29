@@ -13,14 +13,15 @@ and we'd like to share some of what we've just added in the current release!
 
 We've added the new controller generation command to the `lb4` CLI toolkit, which you can install with `npm i -g @loopback/cli`.
 
-### How controllers work in LoopBack 4
+## How controllers work in LoopBack 4
+
 Controllers are what sit in the middle of the request-response lifecycle of LoopBack 4. Incoming requests are routed by the RestServer to an instance of a controller that has been configured to handle the appropriate route.
 
 Controllers often work with a repository and a model definition in order to facilitate CRUD operations between the client making requests and whatever datasources might be wired up to your LoopBack 4 application.
 
-Previously, you would have to build most of the boilerplate for a controller yourself, but now, all you need to do is run a command and answer a few simple questions!
+Previously, you would have to build most of the boilerplate for a controller yourself. Now, all you need to do is run a command and answer a few simple questions!
 
-### Using the new controller template tool
+## Using the new controller template tool
 
 Install the new loopback CLI toolkit:
 ```
@@ -41,18 +42,18 @@ $ cd loopback4-example-getting-started
 $ npm i
 ```
 
-As of the time of this writing, the CLI template is a closer representation of the end goal than the original TodoController in `loopback4-example-getting-started`, so we're going to replace the existing TodoController (`todo.controller.ts`) with a new one. Delete the controller from the controllers folder. Additionally, since this will break the existing test suite, we'll remove that as well.
+At the time of this writing, the CLI template is a closer representation of the end goal than the original TodoController in `loopback4-example-getting-started`, so we're going to replace the existing TodoController (`todo.controller.ts`) with a new one. Delete the controller from the controllers folder. Additionally, since this will break the existing test suite, we'll remove that as well.
 ```
 $ rm ./src/controllers/todo.controller.ts
 $ rm ./test/unit/controllers/todo.controller.test.ts
 ```
 
-Run the `lb4 controller` command and generate a replacement!
+Run the `lb4 controller` command and generate a replacement.
 ```
 $ lb4 controller
 ```
 
-At the prompt, enter the name of the controller. You don't need to add the word "Controller" at the end!
+At the prompt, enter the name of the controller. You don't need to add the word "Controller" at the end.
 ```
 ? Controller class name: Todo
 ? What kind of controller would you like to generate?
@@ -87,7 +88,7 @@ The tool will generate the new controller file in the original location.
 Controller Todo is now created in src/controllers/
 ```
 
-If we look inside the controller file, it should look something like this
+If we look inside the controller file, it should look something like this.
 ```ts
 import {Filter, Where} from '@loopback/repository';
 import {post, param, get, put, patch, del} from '@loopback/openapi-v2';
@@ -147,8 +148,7 @@ export class TodoController {
   }
 }
 ```
-You can then modify the template to add business logic to these handler functions, or add totally new ones!
-
+You can then modify the template to add business logic to these handler functions, or add totally new ones.
 Feel free to start the app and play around with it! In this example, I grab the existing todos from the sample database and pipe them into [jq](https://stedolan.github.io/jq/) for some pretty formatting.
 ```
 npm start
@@ -165,9 +165,7 @@ $ curl 127.0.0.1:3000/todo | jq
 
 ## Call for action
 
-LoopBack's future success counts on you. We appreciate your continuous support
-and engagement to make LoopBack even better and meaningful for your API creation
-experience. Please join us and help the project by:
+LoopBack's future success counts on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
 
 * [Open a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue)
 * [Casting your vote for extensions](https://github.com/strongloop/loopback-next/issues/512)
