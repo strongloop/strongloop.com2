@@ -1,6 +1,6 @@
 ---
 title: LoopBack MVP - Generate Controllers
-date: 2018-1-29T01:00:13+00:00
+date: 2018-1-30T01:00:13+00:00
 author: Kevin Delisle
 permalink: /strongblog/loopback-next-2018-01/
 categories:
