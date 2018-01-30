@@ -8,7 +8,7 @@ categories:
   - LoopBack
 ---
 
-Work has been going non-stop on the upcoming [LoopBack 4.0 MVP](https://github.com/strongloop/loopback-next),
+Work has been going non-stop on the upcoming [LoopBack 4.0](https://github.com/strongloop/loopback-next),
 and we'd like to share some of what we've just added in the current release!
 
 We've added the new controller generation command to the `lb4` CLI toolkit, which you can install with `npm i -g @loopback/cli`.
