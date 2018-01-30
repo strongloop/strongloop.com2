@@ -61,10 +61,9 @@ permalink: /
     </div>
   </div>
 </section>
-{% assign featured_post = site.posts | where_exp:"post", "post.date <= site.time" %}
-{% assign featured_post = featured_post | where: "featured","true" %}
-{% for post in featured_post limit:1 %}
-  <section class="c-section x-lightgrey">
+  
+<section class="c-section x-lightgrey">
+
     <div class="c-container -padded">
       <div class="_col -col-1-1">
       <h2 class="c-heading -h4">Featured: <a class="no_icon" href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h2>
