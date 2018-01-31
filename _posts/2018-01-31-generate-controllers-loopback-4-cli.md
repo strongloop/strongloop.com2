@@ -1,6 +1,6 @@
 ---
 title: Generate Controllers With LoopBack 4
-date: 2018-1-31T01:00:13+00:00
+date: 2018-1-31T01:00:00+00:00
 author: Kevin Delisle
 permalink: /strongblog/generate-controllers-loopback-4-cli/
 categories:
