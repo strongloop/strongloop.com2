@@ -41,10 +41,6 @@ permalink: /
   </div>
 </section>
 
-{% assign featured_post = site.posts | where_exp:"post", "post.date <= site.time" %}
-{% assign featured_post = featured_post | where: "featured","true" %}
-{% for post in featured_post limit:1 %}
-
 <section class="c-section x-green">
   <div class="c-container -padded">
     <p class="learn-more x-center"><a href="{{site.url}}/newsletter/" class="no_icon c-button -lg x-center">Get Newsletter</a></p>
@@ -61,9 +57,10 @@ permalink: /
     </div>
   </div>
 </section>
-  
-<section class="c-section x-lightgrey">
-
+{% assign featured_post = site.posts | where_exp:"post", "post.date <= site.time" %}
+{% assign featured_post = featured_post | where: "featured","true" %}
+{% for post in featured_post limit:1 %}
+  <section class="c-section x-lightgrey">
     <div class="c-container -padded">
       <div class="_col -col-1-1">
       <h2 class="c-heading -h4">Featured: <a class="no_icon" href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h2>
@@ -90,8 +87,6 @@ permalink: /
       }(document, 'script', 'facebook-jssdk'));</script>
         <div class="fb-share-button" data-href="https://strongloop.com/{{post.url}}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://strongloop.com/{{post.url}}%2F&amp;src=sdkpreparse">Share</a></div>
 
- 
-  
         <a class="twitter-share-button no_icon"
         href="https://twitter.com/share"
         data-size="large"
