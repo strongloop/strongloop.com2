@@ -16,7 +16,7 @@ We've added the new controller generation command to the `lb4` CLI toolkit, whic
 ## How controllers work in LoopBack 4
 
 Controllers are what sit in the middle of the request-response lifecycle of LoopBack 4. Incoming requests are routed by the RestServer to an instance of a controller that has been configured to handle the appropriate route.
-
+<!--more-->
 Controllers often work with a repository and a model definition in order to facilitate CRUD operations between the client making requests and whatever datasources might be wired up to your LoopBack 4 application.
 
 Previously, you would have to build most of the boilerplate for a controller yourself. Now, all you need to do is run a command and answer a few simple questions!
