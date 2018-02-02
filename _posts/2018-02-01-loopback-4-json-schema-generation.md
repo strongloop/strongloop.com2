@@ -14,10 +14,10 @@ LoopBack4 models. I'll dive right into it.
 
 ## Models and metadata in LoopBack4
 
-Currently with LoopBack4, a model is a way to represent data being handled by
-the framework and is implemented as TypeScript classes. One useful feature
-of TypeScript is its experimental decorators which are able to infer
-property types of a class at compile-time and store them as metadata. 
+Currently with LoopBack4, a model is a way to represent data, such as `Customer`
+and `Order`, handled by the framework and is implemented as TypeScript classes.
+One useful feature of TypeScript is its experimental decorators which are able
+to infer property types of a class at compile-time and store them as metadata. 
 
 We are putting this feature to use with `@model` and `@property` decorators
 from `@loopback/repository` package to make their decorated classes' metadata
@@ -84,6 +84,21 @@ import {MyModel} from '../models/my-model.model.ts';
 import {getJsonSchema} from '@loopback/repository-json-schema';
 
 export const myModelJson = getJsonSchema(MyModel);
+```
+
+Here is the object `myModelJSON` is holding:
+```json
+{
+  "title": "MyModel",
+  "properties": {
+    "foo": {
+      "type": "string"
+    },
+    "bar": {
+      "type": "number"
+    }
+  }
+}
 ```
 
 And there you have it! A JSON Schema of your model you can use for anything
@@ -154,6 +169,3 @@ for your API creation experience. Please join us and help the project by:
 * [Reporting issues](https://github.com/strongloop/loopback-next/issues)
 * [Building more extensions](https://github.com/strongloop/loopback-next/issues/647)
 * [Helping each other in the community](https://groups.google.com/forum/#!forum/loopbackjs)
-
-
-
