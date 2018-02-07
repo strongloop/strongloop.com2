@@ -1,6 +1,6 @@
 ---
 title: Automatically generating JSON Schema for your LoopBack4 models
-date: 2018-2-1T01:00:13+00:00
+date: 2018-2-8T01:00:13+00:00
 author: Kyu Shim
 permalink: /strongblog/loopback-4-json-schema-generation
 categories:
@@ -18,7 +18,7 @@ Currently with LoopBack4, a model is a way to represent data, such as `Customer`
 and `Order`, handled by the framework and is implemented as TypeScript classes.
 One useful feature of TypeScript is its experimental decorators which are able
 to infer property types of a class at compile-time and store them as metadata. 
-
+<!--more-->
 We are putting this feature to use with `@model` and `@property` decorators
 from `@loopback/repository` package to make their decorated classes' metadata
 available. This design choice allows us to create model definitions used by
