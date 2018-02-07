@@ -6,6 +6,7 @@ permalink: /strongblog/security-advisory-loopback/
 categories:
   - LoopBack
   - Product
+---
 
 A security advisory was issued today for users of LoopBack 2.x and 3.x.
 
