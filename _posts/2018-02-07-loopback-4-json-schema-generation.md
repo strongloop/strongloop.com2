@@ -12,13 +12,13 @@ I've recently been working on an exciting new feature for LoopBack4 which would 
 
 ## Models and metadata in LoopBack 4
 
-Currently with LoopBack 4, a model is a way to represent data, such as `Customer`and `Order`, handled by the framework and is implemented as TypeScript classes. One useful feature of TypeScript is its experimental decorators which are able to infer property types of a class at compile-time and store them as metadata. 
+Currently with LoopBack 4, a model is a way to represent data, such as `Customer` and `Order`, handled by the framework and is implemented as TypeScript classes. One useful feature of TypeScript is its experimental decorators which are able to infer property types of a class at compile-time and store them as metadata. 
 <!--more-->
 We are putting this feature to use with `@model` and `@property` decorators from `@loopback/repository` package to make their decorated classes' metadata available. This design choice allows us to create model definitions used by LoopBack 3's legacy juggler just out of TypeScript classes.
 
 Here is a diagram of how it all works:
 
-<img src="https://strongloop.com/blog-assets/2018/02/retainment-of-types-through-metadata.jpg" alt="Retainment of Types through Metadata" style="width: 500px"/>
+<img src="https://strongloop.com/blog-assets/2018/02/retainment-of-types-through-metadata.png" alt="Retainment of Types through Metadata" style="width: 500px"/>
 
 When the compiler converts TypeScript code into JavaScript, the type information in our LoopBack models is lost, meaning their type-safe representation cannot be built for purposes like validation; this is where the decorators come in. When the compiler is run with experimental decorator feature enabled, the types of the decorated properties are stored as metadata in `design:type` key in the form of class constructors (or wrappers for primitives), which are accessible through the `reflect-metadata` module. Then at run-time when the decorators are run, the "metadata" is fetched and our conversion logic converts it into a LoopBack model definition and stores it as a static property of the model itself.
 
