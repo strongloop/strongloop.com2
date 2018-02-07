@@ -1,5 +1,4 @@
 ---
-id: 1094
 title: Security Advisory for LoopBack 2.x & 3.x
 date: 2018-01-31T09:30:00+00:00
 author: Dave Whiteley
