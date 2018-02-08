@@ -8,16 +8,16 @@ categories:
   - LoopBack
 ---
 
-Example projects: at one side, they are useful learning material that show
-individual features in a full runnable application, making it easy to further
-tweak and play with the code. On the other hand, they quickly become a
-maintenance burden: as the framework evolves, the example projects need updates
-to stay up to date with the latest conventions and best practices.
+We often face a dilemma around example projects. They are useful learning
+resources that demonstrate individual features in a runnable application and
+make it easy to tweak and play with the code. But on the other hand, they can
+quickly become a maintenance burden as the framework evolves and significant
+ongoing efforts are needed to keep these examples up to date with the latest
+APIs, conventions, and best practices.
 
-In the past, we have been bitten by this ourselves too. Our CLI tooling
-makes it so easy to quickly create a new project, we did not resist the
-temptation and ended up with about 18 example projects. To update them, one has
-to open 18 pull requests - that's a lot of tedious work!
+Our CLI tooling makes it so easy to quickly create a new project, we did not
+resist the temptation and ended up with about 18 example projects. To update
+them, one has to open 18 pull requests - that's a lot of tedious work!
 
 When work on LoopBack 4 (a.k.a Next) started, maintenance of example projects
 was off the radar. There was too much more important work in other areas; from
