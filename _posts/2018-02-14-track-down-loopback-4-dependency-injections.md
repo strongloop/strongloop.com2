@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Track down dependency injections with LoopBack 4
-date: 2018-02-10T01:40:15+00:00
+title: Track Down Dependency Injections with LoopBack 4
+date: 2018-02-14T01:40:15+00:00
 author: Raymond Feng
-permalink: /strongblog/loopback-4-track-down-dependency-injections
+permalink: /strongblog/loopback-4-track-down-dependency-injections/
 categories:
   - LoopBack
   - Community
@@ -14,7 +14,7 @@ LoopBack 4 implements an IoC container to support dependency injection with deco
 Dependency injection is very powerful, but when something goes wrong, it can get ugly. Circular dependencies and resolution errors can leave you with layers of bindings and injections to sift through to track down even small problems.
 
 But there's no reason to panic! We've recently introduced the ability to track down the dependency injection path to help you out. Let's start with an example before we dive into the details of the feature.
-
+<!--more-->
 Example 1: [circular-deps.ts](https://github.com/raymondfeng/loopback4-example-di/blob/master/src/circular-deps.ts)
 ```ts
 import {Context, inject} from '@loopback/context';
@@ -257,26 +257,17 @@ if (require.main === module) {
 }
 ```
 
-Now you can use `@resolutionPath` to inject the resolution path. You can even
-go beyond that by leveraging the `context` and `session` to perform more advanced
-resolutions.
+Now you can use `@resolutionPath` to inject the resolution path. You can even go beyond that by leveraging the `context` and `session` to perform more advanced resolutions.
 
 ## Use `@loopback/context` outside of LoopBack
 
-It's worth mentioning that `@loopback/context` can be used as a standalone module
-outside of LoopBack framework and we encourage you to try it out. This package is
-a fully-fledged implementation of `Inversion of Control` and `Dependency Injection`.
-Simply add it to your Node.js project with `npm i @loopback/context` and be
-productive with our robust IoC container for TypeScript/Node.js.
+It's worth mentioning that `@loopback/context` can be used as a standalone module outside of LoopBack framework and we encourage you to try it out. This package is a fully-fledged implementation of `Inversion of Control` and `Dependency Injection`. Simply add it to your Node.js project with `npm i @loopback/context` and be productive with our robust IoC container for TypeScript/Node.js.
 
-For more information, see LoopBack 4 [Context](http://loopback.io/doc/en/lb4/Context.html) and
-[Dependency Injection](http://loopback.io/doc/en/lb4/Dependency-injection.html).
+For more information, see LoopBack 4 [Context](http://loopback.io/doc/en/lb4/Context.html) and [Dependency Injection](http://loopback.io/doc/en/lb4/Dependency-injection.html).
 
 ## Call for action
 
-LoopBack's future success counts on you. We appreciate your continuous support
-and engagement to make LoopBack even better and meaningful
-for your API creation experience. Please join us and help the project by:
+LoopBack's future success counts on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
 
 * [Casting your vote for extensions](https://github.com/strongloop/loopback-next/issues/512)
 * [Reporting issues](https://github.com/strongloop/loopback-next/issues)
