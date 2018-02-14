@@ -9,7 +9,7 @@ categories:
   - Community
 ---
 
-LoopBack 4 implements an IoC container to support dependency injection with decorators. You can find more information at http://loopback.io/doc/en/lb4/Dependency-injection.html. 
+LoopBack 4 implements an IoC container to support dependency injection with decorators. You can find more information at [http://loopback.io/doc/en/lb4/Dependency-injection.html](http://loopback.io/doc/en/lb4/Dependency-injection.html). 
 
 Dependency injection is very powerful, but when something goes wrong, it can get ugly. Circular dependencies and resolution errors can leave you with layers of bindings and injections to sift through to track down even small problems.
 
