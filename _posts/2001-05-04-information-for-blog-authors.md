@@ -87,10 +87,7 @@ author:
 
 ## Excerpt
 
-You generally create an "excerpt" from the first few paragraphs of text
-in your blog.  It works best if these paragraphs provide summary or abstract of the post.
-Pages that display blogs with excerpts such as the [Home page]({{site.url}}),
-[Author pages]({{site.url}}/blog-authors), and [Category pages]({{site.url}}/blog-archives) display this excerpt.
+All blog posts should have an excerpt so that the blog page prsents our content effecively. You generally create an "excerpt" from the first few paragraphs of text in your blog.  It works best if these paragraphs provide summary or abstract of the post. Pages that display blogs with excerpts such as the [Home page]({{site.url}}), [Author pages]({{site.url}}/blog-authors), and [Category pages]({{site.url}}/blog-archives) display this excerpt.
 
 Everything in the post before this HTML comment is in the excerpt:
 
