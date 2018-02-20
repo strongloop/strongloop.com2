@@ -8,13 +8,13 @@ categories:
   - LoopBack
 ---
 
-We often face a dilemma around example projects. They are useful learning resources, demonstrating individual features in a runnable application that makes it easy to tweak and play with the code. But on the other hand, they can quickly become a maintenance burden: as the framework evolves, significant ongoing efforts are needed to keep these examples up to date with the latest APIs, conventions, and best practices.
+We often face a dilemma around example projects. They are useful learning resources that demonstrate individual features in a runnable application while making it easy to tweak and play with the code. But on the other hand, they can quickly become a maintenance burden. As the framework evolves, significant ongoing efforts are needed to keep these examples up to date with the latest APIs, conventions, and best practices.
 
-Our CLI tooling makes it so easy to quickly create a new project, we did not resist the temptation and ended up with about 18 example projects. To update them, one has to open 18 pull requests - that's a lot of tedious work!
+Because our CLI tooling makes it so easy to quickly create a new project, we could not resist the temptation and ended up with about 18 example projects. To update them, one has to open 18 pull requests - that's a lot of tedious work!
 
-When work on [LoopBack 4 (a.k.a Next)](https://strongloop.com/strongblog/announcing-loopback-next/) started, maintenance of example projects was off the radar. There was too much more important work in other areas; from figuring out Lerna monorepo with TypeScript builds, to finding the right design and APIs that will enable us to address pain points of LoopBack 3.x codebase.
+When work on [LoopBack 4 (a.k.a Next)](https://strongloop.com/strongblog/announcing-loopback-next/) started, maintenance of example projects was off the radar. There was too much more important work in other areas, from figuring out Lerna monorepo with TypeScript builds, to finding the right design and APIs that will enable us to address pain points of LoopBack 3.x codebase.
 
-Recently, we started to look into some cleanup tasks. For example, whe nwe looked at dropping support for Node.js 6.x (see [issue #611](https://github.com/strongloop/loopback-next/issues/611)) we realized that with 8 example projects living in their own GitHub repositories, many changes that are easy to apply in the main monorepo are turning into long and tedious tasks.
+Recently, we started to look into some cleanup tasks. For example, when we looked at dropping support for Node.js 6.x (see [issue #611](https://github.com/strongloop/loopback-next/issues/611)) we realized that with 8 example projects living in their own GitHub repositories, many changes that are easy to apply in the main monorepo are turning into long and tedious tasks.
 
 Despite a decision we made at the beginning to keep everything in a single repository, we were now asking ourselves why example projects are living outside of our monorepo. The main reason was user experience, since we did not want our users to git clone the entire monorepo when they are interested only in a single example project! After some consideration, we fortunately found an easy solution: a CLI tool that downloads only files of the desired example project.
 
@@ -90,13 +90,15 @@ The doc page [Examples and tutorials](http://loopback.io/doc/en/lb4/Examples-and
 
 We have deprecated example projects that are not useful anymore:
 
-- [loopback4-extension-typeorm](https://github.com/strongloop/loopback4-extension-typeorm)
-- [loopback-next-hello-world](https://github.com/strongloop/loopback-next-hello-world)
-- [loopback4-extension-starter](https://github.com/strongloop/loopback4-extension-starter)
+* [loopback4-extension-typeorm](https://github.com/strongloop/loopback4-extension-typeorm)
+* [loopback-next-hello-world](https://github.com/strongloop/loopback-next-hello-world)
+* [loopback4-extension-starter](https://github.com/strongloop/loopback4-extension-starter)
 
 The example project "loopback-next-example" is showcasing a monorepo with multiple microservices. We feel it does not belong to our monorepo. It's a monorepo on its own and it will eventually depend on external tools like microservices orchestrator that we don't want to bring into our main monorepo. I renamed the project to better tell its purpose:
+
 [loopback4-example-microservices](https://github.com/strongloop/loopback4-example-microservices).
-Please note the codebase is rather outdated and doesn't even compile against the latest alpha versions of LoopBack4, this is something we need to fix soon (see [loopback4-example-microservices#76](https://github.com/strongloop/loopback4-example-microservices/issues/76)).
+
+Please note the codebase is rather outdated and doesn't even compile against the latest alpha versions of LoopBack4. This is something we need to fix soon (see [loopback4-example-microservices#76](https://github.com/strongloop/loopback4-example-microservices/issues/76)).
 
 ## Call for Action
 
