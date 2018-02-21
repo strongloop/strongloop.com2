@@ -1,6 +1,6 @@
 ---
 title: Moving LoopBack 4 Example Project to the Monorepo
-date: 2018-02-21T01:00:13+00:00
+date: 2018-02-21T00:00:13+00:00
 author: Miroslav Bajtoš
 permalink: /strongblog/moving-examples-to-monorepo/
 categories:
