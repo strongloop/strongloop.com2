@@ -11,7 +11,7 @@ categories:
 We often face a dilemma around example projects. They are useful learning resources that demonstrate individual features in a runnable application while making it easy to tweak and play with the code. But on the other hand, they can quickly become a maintenance burden. As the framework evolves, significant ongoing efforts are needed to keep these examples up to date with the latest APIs, conventions, and best practices.
 
 Because our CLI tooling makes it so easy to quickly create a new project, we could not resist the temptation and ended up with about 18 example projects. To update them, one has to open 18 pull requests - that's a lot of tedious work!
-
+<!--more-->
 When work on [LoopBack 4 (a.k.a Next)](https://strongloop.com/strongblog/announcing-loopback-next/) started, maintenance of example projects was off the radar. There was too much more important work in other areas, from figuring out Lerna monorepo with TypeScript builds, to finding the right design and APIs that will enable us to address pain points of LoopBack 3.x codebase.
 
 Recently, we started to look into some cleanup tasks. For example, when we looked at dropping support for Node.js 6.x (see [issue #611](https://github.com/strongloop/loopback-next/issues/611)) we realized that with 8 example projects living in their own GitHub repositories, many changes that are easy to apply in the main monorepo are turning into long and tedious tasks.
