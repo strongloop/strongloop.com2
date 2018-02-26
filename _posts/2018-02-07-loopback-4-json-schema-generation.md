@@ -75,7 +75,7 @@ Here is the object `myModelJSON` is holding:
 
 And there you have it! A JSON Schema of your model you can use for anything your heart desires!
 
-For more information on model decorating specifics to get the correct JSON Schema, visit (http://loopback.io/doc/en/lb4/Schemas.html).
+For more information on model decorating specifics to get the correct JSON Schema, visit [http://loopback.io/doc/en/lb4/Model.html](http://loopback.io/doc/en/lb4/Model.html).
 
 ## Integration with `@loopback/rest`
 
