@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Information for Blog Authors
+title: Guidelines and Information for Blog Authors
 date: 2001-05-04
 author: C. Rand McKinney
 permalink: /strongblog/information-for-blog-authors/
 categories:
   - How-To
 ---
-This site now supports blogs authored in markdown format! This is a sample blog post that explains and demonstrates formatting and best practices for blog authors.
+This site now supports blogs authored in markdown format! This is a sample blog post that explains and demonstrates guidelines, formatting and best practices for blog authors.
 
 Blog post submissions should follow this github collaborative flow, which is essentially "submit via fork / clone / push / pull request. No branches."
 https://guides.github.com/activities/forking/
@@ -57,7 +57,7 @@ categories:
 
 The properties are:
 - `layout`: Must be `post`.
-- `title`: Title of the post, which can include any character except a colon (:).  To put a colon in your title, use the HTML entity `&#58;`.
+- `title`: Title of the post, which can include any character except a colon (:).  To put a colon in your title, use the HTML entity `&#58;`. Note that titles should be primarily upper case as per [this style guide](https://www.bkacontent.com/how-to-correctly-use-apa-style-title-case/). 
 - `date`: Publication date of your post in `yyyy-mm-dd` format.
 - `author`: Your name.  If this matches an entry in `_data/authors.yml` the post byline will automatically link to your author page if you have one.  See [README - How to add an author page](https://github.com/strongloop/strongloop.com/blob/master/README.md#how-to-add-an-author-page) for more information.
 - Note that multiple authors must be formatted like this, with each author marked on a new line:
@@ -87,7 +87,7 @@ author:
 
 ## Excerpt
 
-All blog posts should have an excerpt so that the blog page prsents our content effecively. You generally create an "excerpt" from the first few paragraphs of text in your blog.  It works best if these paragraphs provide summary or abstract of the post. Pages that display blogs with excerpts such as the [Home page]({{site.url}}), [Author pages]({{site.url}}/blog-authors), and [Category pages]({{site.url}}/blog-archives) display this excerpt.
+All blog posts should have an excerpt so that the blog page prsents our content effectively. You generally create an "excerpt" from the first few paragraphs of text in your blog.  It works best if these paragraphs provide summary or abstract of the post. Pages that display blogs with excerpts such as the [Home page]({{site.url}}), [Author pages]({{site.url}}/blog-authors), and [Category pages]({{site.url}}/blog-archives) display this excerpt.
 
 Everything in the post before this HTML comment is in the excerpt:
 
@@ -186,6 +186,10 @@ Add the `max-width` parameter to adjust the size of the image:
 ```
 
 {% include image.html file='2017/03/1m8q3b.jpg' alt='Release the API Gateway' max-width='300' %}
+
+# What's Next, or Call to Action
+
+All posts should end with a section indicating "What's next?" or a "Call to Action" You can find examples [here](https://strongloop.com/strongblog/calling-contributors-loopback-extensions/) anmd [here](https://strongloop.com/strongblog/moving-examples-to-monorepo/).
 
 ## Alerts
 
