@@ -1,6 +1,6 @@
 ---
 layout: redirected
-date: 3017-10-04
+date: 2017-10-04
 event-range: Monthly
 title: Atlanta Nodejs Developers
 redirect_to: http://www.meetup.com/Atlanta-Nodejs-Developers/
