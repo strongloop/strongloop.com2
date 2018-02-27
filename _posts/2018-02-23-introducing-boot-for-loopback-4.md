@@ -10,29 +10,30 @@ categories:
 ---
 
 A LoopBack 4 Application is made up of many different artifacts such as controllers,
-repositories, models, datasources, etc. LoopBack 4 uses Dependency Injection to
+repositories, models, datasources, etc. LoopBack 4 uses [Dependency Injection](http://loopback.io/doc/en/lb4/Dependency-injection.html) to
 resolve dependencies on related models so your Application can work as expected.
 To levergae Dependency Injection, we must bind these artifacts to the Application context.
 
 A large Application can have tens or hundreds of such artifacts. It gets very tedious to
 bind artifacts that many times.
 
-````ts
+```ts
 class MyApp extends RestApplication {
   constructor() {
     super();
-    this.controller(UserController);    // Ok
-    this.controller(CartController);    // Ok
-    this.controller(AdminController);   // Another one
-    this.repository(UserRepository);    // Yet another one, so tedious
+    this.controller(UserController); // Ok
+    this.controller(CartController); // Ok
+    this.controller(AdminController); // Another one
+    this.repository(UserRepository); // Yet another one, so tedious
     this.repository(ProductRepository); // Tedious, ... many more to go
   }
 }
 ```
 
 Enter `@loopback/boot`, one of the newest LoopBack 4 packages. **Boot** is a
-convention-based bootstrapper that automatically discovers artifacts and binds them to your Application's
-Context to reduce the amount of manual effort required to bind artifacts for dependency injection at scale.
+convention-based bootstrapper that automatically discovers artifacts and binds
+them to your Application's Context. This reduces the amount of manual effort
+required to bind artifacts for dependency injection at scale.
 
 <!-- more -->
 
@@ -95,7 +96,7 @@ async function main() {
     console.log(err);
   }
 }
-````
+```
 
 ## Additional Resources
 
