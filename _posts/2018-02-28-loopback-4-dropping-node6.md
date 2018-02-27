@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dropping support for Node.js 6 in LoopBack 4
-date: 2018-02-12T01:10:15+00:00
+date: 2018-02-28T01:10:15+00:00
 author: Biniam Admikew
 permalink: /strongblog/loopback-4-dropping-node6
 categories:
