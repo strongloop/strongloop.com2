@@ -102,7 +102,7 @@ Please note the codebase is rather outdated and doesn't even compile against the
 
 ## Call for Action
 
-LoopBack's future success counts on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
+LoopBack's success counts on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
 
 * [Open a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue)
 * [Casting your vote for extensions](https://github.com/strongloop/loopback-next/issues/512)
