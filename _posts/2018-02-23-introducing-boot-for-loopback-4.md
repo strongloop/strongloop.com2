@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Introducing @loopback/boot for LoopBack 4
 date: 2018-02-23T00:00:13+00:00
 author: Taranveer Virk
@@ -6,19 +7,32 @@ permalink: /strongblog/introducing-boot-for-loopback-4/
 categories:
   - Community
   - LoopBack
-  - LoopBack 4
 ---
 
 A LoopBack 4 Application is made up of many different artifacts such as controllers,
 repositories, models, datasources, etc. LoopBack 4 uses Dependency Injection to
 resolve dependencies on related models so your Application can work as expected.
 To levergae Dependency Injection, we must bind these artifacts to the Application context.
-A large Application can have tens or hundreds of such artifacts. It is very tedious to repeat
-`this.controller(UserController)`, `this.bind(...).to(MyClass)`, etc. that many times.
+
+A large Application can have tens or hundreds of such artifacts. It gets very tedious to
+bind artifacts that many times.
+
+````ts
+class MyApp extends RestApplication {
+  constructor() {
+    super();
+    this.controller(UserController);    // Ok
+    this.controller(CartController);    // Ok
+    this.controller(AdminController);   // Another one
+    this.repository(UserRepository);    // Yet another one, so tedious
+    this.repository(ProductRepository); // Tedious, ... many more to go
+  }
+}
+```
 
 Enter `@loopback/boot`, one of the newest LoopBack 4 packages. **Boot** is a
-conventional bootstrapper that discovers artifacts and binds them to the Application
-Context so Dependency Injection can work.
+convention-based bootstrapper that automatically discovers artifacts and binds them to your Application's
+Context to reduce the amount of manual effort required to bind artifacts for dependency injection at scale.
 
 <!-- more -->
 
@@ -35,7 +49,7 @@ names ending with the artifact type as the suffix. Examples:
 
 As of the writing of this blog post, only [Controller](http://loopback.io/doc/en/lb4/Controllers.html) and [Repository](http://loopback.io/doc/en/lb4/Repositories.html) type
 artifacts are booted. Other types of artifacts such as Models, DataSources, etc. will
-be added eventually.
+be added as we move towards release.
 
 ## Existing Projects
 
@@ -62,6 +76,11 @@ class MyApplication extends BootMixin(Application) {
         dirs: ["controllers"],
         extensions: [".controller.js"],
         nested: true
+      },
+      repositories: {
+        dirs: ["repositories"],
+        extensions: [".repository.js"],
+        nested: true
       }
     };
   }
@@ -76,11 +95,11 @@ async function main() {
     console.log(err);
   }
 }
-```
+````
 
 ## Additional Resources
 
-You can learn more about Boot by visiting the following resources.
+You can learn more about Boot by visiting the following resources:
 
 * [@loopback/boot README](https://github.com/strongloop/loopback-next/blob/master/packages/boot/README.md)
 * [LoopBack 4 Docs: Booting an Application](http://loopback.io/doc/en/lb4/Booting-an-Application.html)
