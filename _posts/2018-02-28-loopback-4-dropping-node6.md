@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dropping Support for Node.js 6 in LoopBack 4
-date: 2018-02-28T01:10:15+00:00
+date: 2018-02-28T01:00:15+00:00
 author: Biniam Admikew
 permalink: /strongblog/loopback-4-dropping-node6
 categories:
@@ -10,6 +10,7 @@ categories:
 ---
 
 Our goal with the next version of [LoopBack](https://strongloop.com/strongblog/announcing-loopback-next/) is to use cutting-edge features and tooling from the Node.js ecosystem. Node.js 6.x will be entering maintenance mode this April, and requires us to provide hacks and polyfills to maintain compatibility, which actively works against this goal. As a result, we are dropping Node.js 6.x support for LoopBack 4. We will continue to support Node.js 8.x, and will be adding support for Node.js 10.x shortly after it is released.
+<!--more-->
 
 With Node.js 6.x out of the picture, we were able to further simplify our project infrastructure:
 
