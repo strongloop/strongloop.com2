@@ -60,11 +60,11 @@ and registering it with the Bootstrapper using `app.booters(MyCustomBooter)`.
 If you already have an existing LoopBack 4 project, you can add support for `@loopback/boot`
 as follows:
 
-1. Install the package by running `npm i @loopback/boot`
-2. Add `BootMixin` to you Application. _NOTE: You need to import `Booter` and `Binding` types_
-3. Set the `projectRoot`. All artifacts are resolved relative to this path
-4. Set your project conventions in the Application property `bootOptions`
-5. Boot the Application by calling `boot()` before `start()`.
+1.  Install the package by running `npm i @loopback/boot`
+2.  Add `BootMixin` to you Application. _NOTE: You need to import `Booter` and `Binding` types_
+3.  Set the `projectRoot`. All artifacts are resolved relative to this path
+4.  Set your project conventions in the Application property `bootOptions`
+5.  Boot the Application by calling `boot()` before `start()`.
 
 ```ts
 import { Application } from "@loopback/core";
@@ -100,6 +100,30 @@ async function main() {
   }
 }
 ```
+
+## Architecture
+
+As with most things in LoopBack 4, this component was designed with extensibility
+in mind. `@loopback/boot` not only binds artifacts but lays the foundation for
+declarative, convetnion based support. Booting is a multiple-step
+process to collect metadata for artifacts, resolve cross references, and create
+representation as bindings in the context to build up your Application.
+
+`@loopback/boot` has a Bootstrapper which acts as an extension point for extension
+developers. Extensions can provide leverage the boot process by writing a class
+implementing the [Booter](http://loopback.io/doc/en/lb4/Booting-an-Application.html#booters)
+interface and packaging it as part of their Component. When the Application boots,
+the bootstrapper allows Booters to participate in each step (known as a phase)
+of the boot process. After a phase is completed by all registered Booters, the next phase
+is called. There are currently three phases: configure, discover, load.
+More phases may be added in the future.
+
+Extension developers can learn more about writing a custom booter [here](http://loopback.io/doc/en/lb4/Booting-an-Application.html#custom-booters).
+A custom booter may be registered by a Component or an Application using the
+`BootMixin` by calling `app.booter(MyCustomBooter)`. The diagram below provides
+a general outline of the boot process.
+
+<img src="https://strongloop.com/blog-assets/2018/03/boot-process.png" alt="@loopback/boot Bootstrapping process" style="width: 500px"/>
 
 ## Additional Resources
 
