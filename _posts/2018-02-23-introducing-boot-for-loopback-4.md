@@ -123,7 +123,7 @@ A custom booter may be registered by a Component or an Application using the
 `BootMixin` by calling `app.booter(MyCustomBooter)`. The diagram below provides
 a general outline of the boot process.
 
-<img src="https://strongloop.com/blog-assets/2018/03/boot-process.png" alt="@loopback/boot Bootstrapping process" style="width: 500px"/>
+<img src="../blog-assets/2018/03/boot-process.png" alt="@loopback/boot Bootstrapping process" style="width: 500px"/>
 
 ## Additional Resources
 
