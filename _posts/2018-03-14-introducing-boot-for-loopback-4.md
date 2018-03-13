@@ -9,9 +9,9 @@ categories:
   - LoopBack
 ---
 
-A [LoopBack 4](https://strongloop.com/strongblog/announcing-loopback-next/) Application is made up of many different artifacts such as controllers, repositories, models, datasources, and so on. LoopBack 4 uses [Dependency Injection](http://loopback.io/doc/en/lb4/Dependency-injection.html) to resolve dependencies on related models so your application can work as expected. To leverage Dependency Injection, we must bind these artifacts to the Application context.
+A [LoopBack 4](https://strongloop.com/strongblog/announcing-loopback-next/) Application is made up of many different artifacts such as controllers, repositories, models, datasources, and so on. LoopBack 4 uses [Dependency Injection](http://loopback.io/doc/en/lb4/Dependency-injection.html) to resolve dependencies on related models so your application can work as expected. To leverage Dependency Injection, we must bind these artifacts to the application context.
 
-A large Application can have tens or hundreds of such artifacts. It gets very tedious to bind artifacts that many times.
+A large application can have tens or hundreds of such artifacts. It gets very tedious to bind artifacts that many times.
 
 ```ts
 class MyApp extends RestApplication {
