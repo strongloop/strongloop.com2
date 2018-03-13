@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing @loopback/boot for LoopBack 4
-date: 2018-02-23T00:00:13+00:00
+date: 2018-03-14T00:00:13+00:00
 author: Taranveer Virk
 permalink: /strongblog/introducing-boot-for-loopback-4/
 categories:
