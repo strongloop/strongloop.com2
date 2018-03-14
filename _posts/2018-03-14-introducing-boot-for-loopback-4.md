@@ -95,7 +95,7 @@ As with most things in LoopBack 4, this component was designed with extensibilit
 
 Extension developers can learn more about writing a custom booter [here](http://loopback.io/doc/en/lb4/Booting-an-Application.html#custom-booters). A custom booter may be registered by a Component or an Application using the `BootMixin` by calling `app.booter(MyCustomBooter)`. The diagram below provides a general outline of the boot process.
 
-<img src="../blog-assets/2018/03/boot-process.png" alt="@loopback/boot Bootstrapping process" style="width: 500px; margin:auto;"/>
+<img src="https://strongloop.com/blog-assets/2018/03/boot-process.png" alt="@loopback/boot Bootstrapping process" style="width: 500px; margin:auto;"/>
 
 ## Additional Resources
 
