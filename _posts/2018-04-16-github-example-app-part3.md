@@ -24,6 +24,8 @@ Since GitHub does not keep track of the history on how the number of stargazers 
 over time.  In this article, we are going to complete the application by persisting such 
 data into a [Cloudant](https://console.bluemix.net/catalog/services/cloudant-nosql-db) database.  
 
+<img src="../blog-assets/2018/04/github-app-cloudant.png" alt="Creating Model, DataSource and Repository" style="width: 400px; margin:auto;"/>
+
 ### Step 1: Defining the model
 First, we define the model for the data to be persisted in the database.
 The model `GHStars` we are creating extends from a base class `Entity` 
@@ -42,7 +44,6 @@ export class GHStars extends Entity {
      * making the id as generated
      */
     @property({
-        type: 'number',
         id: true,
     })
     id?: number;
@@ -75,14 +76,15 @@ export class GHStars extends Entity {
 ### Step 2: Configuring the datasource
 We're going to declare the datasource connection to the Cloudant database
 through `datasources.json`.  In this article, [Cloudant service on IBM Cloud](https://console.bluemix.net/catalog/services/cloudant-nosql-db) is used.
-Feel free to use other database with the [supported database connectors](http://loopback.io/doc/en/lb3/Database-connectors.html).  
-Since LoopBack 4 is leveraging the juggler in LoopBack 3 through the legacy juggler bridge,
-defining the datasource is similar to what we do in LoopBack 3 for those who are familiar 
-with the older version of LoopBack.  
+Feel free to use other database with the [supported database connectors](http://loopback.io/doc/en/lb3/Database-connectors.html).  Since LoopBack 4 is leveraging 
+the juggler in LoopBack 3 through the legacy juggler bridge, defining the datasource is similar 
+to what we do in LoopBack 3 for those who are familiar with the older versions of LoopBack.  
 For details, see http://loopback.io/doc/en/lb3/Defining-data-sources.html.  
 
+#### Step 2a: Creating `datasources.json` for the database connection
+
 Create a folder `config` at the root of the project and a file within this folder called `datasources.json`,  
-with the following content:
+with the following content.  Replace the `url` with your Cloudant instance.
 ```json
 {
     "name": "db",
@@ -93,8 +95,9 @@ with the following content:
 }
 ```
 _**Important**_: If you're pushing your application to GitHub, make sure you are not committing 
-this file as well.  To do this, add `config\datasource.json` in the `.gitignore` file.  
+this file as well.  To do this, add `config/` in the `.gitignore` file.  
 
+#### Step 2b: Creating `DataSource` class 
 Next, create a DataSource class which reads the `datasources.json` we just created.
 
 Create `db.datasource.ts` in `datasources` folder.   
@@ -131,8 +134,6 @@ export class GHStarRepository extends DefaultCrudRepository<GHStars, typeof GHSt
 ### Step 4: Using Repository Mixin in the Application
 We are going to use the [Repository Mixin](http://loopback.io/doc/en/lb4/Repositories.html#repository-mixin) to bind the Application and Repository. 
 
-<img src="../blog-assets/2018/04/github-app-cloudant.png" alt="Creating Model, DataSource and Repository" style="width: 400px; margin:auto;"/>
-
 To do that, go to `application.ts`:
 - Change the application to be extended from `BootMixin(RepositoryMixin(RestApplication))`
 i.e.
@@ -150,7 +151,6 @@ Add `bindDataSource()` function, and add `this.bindDataSource();`
 at the end of `GitHubApplication` constructor.
 ```ts
 bindDataSource() {
-    // this.repository(GHStarRepository);
     this.bind('datasources.db').to(db);
 }
 ```
