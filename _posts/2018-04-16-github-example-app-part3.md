@@ -67,7 +67,6 @@ export class GHStars extends Entity {
         required: false,
         type: 'string',
         format: 'date'
-
     })
     countdate: Date;
 };
@@ -132,26 +131,29 @@ export class GHStarRepository extends DefaultCrudRepository<GHStars, typeof GHSt
 ```
 
 ### Step 4: Using Repository Mixin in the Application
-We are going to use the [Repository Mixin](http://loopback.io/doc/en/lb4/Repositories.html#repository-mixin) to bind the Application and Repository. 
+We are going to use the [Repository Mixin](http://loopback.io/doc/en/lb4/Repositories.html#repository-mixin) to bind the Application and Repository in `application.ts`.  
 
-To do that, go to `application.ts`:
-- Change the application to be extended from `BootMixin(RepositoryMixin(RestApplication))`
+#### Step 4a: Change the application to be extended from `BootMixin(RepositoryMixin(RestApplication))`
 i.e.
 ```ts
 export class GitHubApplication extends BootMixin(RepositoryMixin(RestApplication)) {
+//...
+}
 ```
 Add the following import statements:
 ```ts
 import {RepositoryMixin, Class, Repository, juggler} from '@loopback/repository';
 import {db} from './datasources/db.datasource';
 ```
+_Note_: The unused imports are necessary as type information from these imports are needed
+when mixins are used.
 
-- Bind the datasource to the application
-Add `bindDataSource()` function, and add `this.bindDataSource();` 
-at the end of `GitHubApplication` constructor.
+#### Step 4b: Binding the datasource
+This can be done by setting up `bindDataSource()` function, and calling
+it in the constructor of `GitHubApplication`.
 ```ts
 bindDataSource() {
-    this.bind('datasources.db').to(db);
+    this.dataSource(db);
 }
 ```
 
@@ -161,7 +163,19 @@ As the final step, we are going to create a POST endpoint `/repo/{org}/{repo}/st
 - gets the number of stargazers for a given GitHub repo, and;
 - stores the information to Cloudant database
 
-In `controllers\gh-repo.controller.ts`, add a new function:
+
+
+#### Step 5a: Update the contructor for the GHRepoController
+In `controllers\gh-repo.controller.ts`, update the constructor to inject `repositories.GHStarRepository`.  
+
+```ts
+constructor(
+    @inject('repositories.GHStarRepository')
+    public ghstarRepository : GHStarRepository,) {}
+```
+
+#### Step 5b: Add new function for the `POST` endpoint
+In the same `GHRepoController`, add a new function:
 ```ts
 /**
    * Get the GitHub star count
@@ -172,9 +186,11 @@ In `controllers\gh-repo.controller.ts`, add a new function:
     @param.path.string('org') org: string,
     @param.path.string('repo') repo: string
   ): Promise<GHStars> {
-    console.log('org/repo', org, repo);
+    console.debug('org/repo', org, repo);
+    //gets the number of stargazers for a given GitHub repo
     const repoContent = await octo.repos(org, repo).fetch();
     const stargazerNum = repoContent.stargazersCount;
+    //stores the information to database
     const ghStar = new GHStars();
     ghStar.org = org;
     ghStar.repo = repo;
