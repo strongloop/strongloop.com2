@@ -25,7 +25,7 @@ class MyApp extends RestApplication {
   }
 }
 ```
-
+<!--more-->
 Enter `@loopback/boot`, one of the newest LoopBack 4 packages. **Boot** is a convention-based bootstrapper that automatically discovers artifacts and binds them to your Application's Context. This reduces the amount of manual effort
 required to bind artifacts for dependency injection at scale.
 
