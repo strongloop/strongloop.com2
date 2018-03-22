@@ -15,7 +15,7 @@ With the emergence of Progressive Web Apps and browser APIs such as persistent s
 - 📱 Contains a [web app manifest](https://developers.google.com/web/fundamentals/web-app-manifest/) to control how the app is experienced by end users
 - 🔐 Is served over [HTTPS](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https) for security
 - 🚀 Is served over [HTTP/2](https://developers.google.com/web/fundamentals/performance/http2/) for performance
-- 💯 Scores 100s in all categories of the [Lighthouse](https://developers.google.com/web/tools/lighthouse/) web app audit tool
+- 💯 Scores 100s in all categories within the [Lighthouse](https://developers.google.com/web/tools/lighthouse/) web app audit tool
 
 <!--more-->
 
@@ -76,21 +76,19 @@ While not strictly required, [serving a Progressive Web App over HTTP/2](https:/
 
 If you want to make a web app that is a Progressive Web App then there are a number of requirements, recommendations, and best practices to follow. I've mentioned a few of these including using a Service Worker (required), having a web app manifest (required), serving over HTTPS (required), and serving over HTTP/2 (best practice).
 
-[Lighthouse](https://developers.google.com/web/tools/lighthouse/) is an open source tool that can run an audit against your web app and give you guidance in a number of different categories. Lighthouse is available in Chrome DevTools to quickly perform an audit against any URL, from the command line so that you can run Lighthouse via shell scripts, or as a Node.js module so that you can integrate Lighthouse into your continuous integration process.
-
 {% include image.html file='lighthouse-audit-report-scoring-100s.png' alt='Lighthouse audit report showing scores of 100 in the categories of performance, Progressive Web App, accessibility, best practices, and SEO' caption='Lighthouse audit report for a Progressive Web App served from LoopBack with scores of 100 in the categories of performance, Progressive Web App, accessibility, best practices, and SEO.' %}
 
-This post demonstrates how you can serve a Progressive Web App from LoopBack that scores 100s in all Lighthouse categories (performance, Progressive Web App, accessibility, best practices, SEO).
+[Lighthouse](https://developers.google.com/web/tools/lighthouse/) is an open source tool that can run an audit against your web app and give you guidance in a number of different categories. Lighthouse is available in Chrome DevTools to quickly perform an audit against any URL, from the command line so that you can run Lighthouse via shell scripts, or as a Node.js module so that you can integrate Lighthouse into your continuous integration process. This post demonstrates how you can serve a Progressive Web App from LoopBack that scores 100s in all Lighthouse categories (performance, Progressive Web App, accessibility, best practices, SEO).
 
 ### LoopBack and Progressive Web Apps: BFFs
 
-Progressive Web Apps are frontend web apps that can work independent of a network connection. Once the initial requests have been made for the web app, and all of its content, assets, and data have been cached or stored locally in the user's browser, then the frontend web app can work completely independent of the backend web server. However, this doesn't mean that a Progressive Web App never checks back in with the backend web server. There are a number of potential interactions between a frontend Progressive Web App and a backend web server including:
+Progressive Web Apps are frontend web apps that can work independent of a network connection. Once the initial requests have been made for the web app, and all of its content, assets, and data have been cached or stored locally in the user's browser, then the frontend web app can work completely independent of the backend web server. However, this doesn't mean that a Progressive Web App never checks back in with the backend web server. There are a number of potential interactions between a frontend Progressive Web App and a backend web server after the initial requests and responses including:
 
 - Getting new content and reference data from the backend web server when a connection is available
 - Sync'ing data collected on the user's device with the backend web server when a connection is available
 - Queuing up API requests to send to the backend web server when a connection is available
 
-This is where LoopBack comes in. LoopBack combined with a Progressive Web App is an example of the [back-end for front-end (BFF) pattern](http://philcalcado.com/2015/09/18/the_back_end_for_front_end_pattern_bff.html). Rather than have separate teams work on the backend and the frontend apps, with the BFF pattern the same team works on both the backend and the frontend together. Your team would still have both backend and frontend developers, but they would work closely together towards the same goals. Another aspect of the BFF pattern is that the backend and frontend codebases are written in the same language. By using LoopBack to serve a Progressive Web App this gives you back-end for front-end (BFF) architecture where:
+This is where LoopBack comes in. LoopBack combined with a Progressive Web App is an example of the [backend for frontend (BFF) pattern](https://youtu.be/iOFtTLPTbWc). Rather than have separate teams work on the backend and the frontend apps, with the BFF pattern the same team works on both the backend and the frontend together. Your team would still have both backend and frontend developers, but they would work closely together towards the same goals. Another aspect of the BFF pattern is that the backend and frontend codebases are written in the same language. By using LoopBack to serve a Progressive Web App this gives you a backend for frontend (BFF) architecture where:
 
 - The backend and the frontend apps are both written in JavaScript
 - The backend and the frontend apps share a single codebase (though for more complex apps it could make sense to separate the codebases)
