@@ -96,7 +96,103 @@ This is where LoopBack comes in. LoopBack combined with a Progressive Web App is
 
 ## Quick Start
 
-TK: Provide instructions for spinning up the repo containing the demo app.
+The \"tutorial\" section includes detailed instructions for creating a Progressive Web App served from LoopBack. This "quick start" section provides instructions for getting a pre-built copy of this app up and running quickly.
+
+Install Node.js if it is not already installed:
+
+* [Download Node.js](https://nodejs.org/en/download/) or
+* [Install Node.js via a package manager](https://nodejs.org/en/download/package-manager/)
+
+TK: Create the `loopback-pwa` repository.
+
+Clone or download the [`loopback-pwa`](https://github.com/ibm-watson-data-lab/loopback-pwa) repository from GitHub.
+
+Change in to the `loopback-pwa` directory:
+
+```bash
+$ cd loopback-pwa
+```
+
+Install npm dependencies:
+
+```bash
+$ npm install
+```
+
+Make a `server/private` directory for the private key and the certificate:
+
+```bash
+$ mkdir server/private
+```
+
+Run the `generate-key` script to generate a new private key:
+
+```bash
+$ npm run generate-key
+```
+
+Run the `generate-cert` script to generate a new self-signed certificate:
+
+```bash
+$ npm run generate-cert
+```
+
+Alternatively, run the `generate-csr` script to generate a new certificate signing request to send to a certificate authority:
+
+```bash
+$ npm run generate-csr
+```
+
+Optionally, install the self-signed certificate (`server/private/localhost.cert.pem`) as trusted by your computer. The steps needed for this will vary by operating system. If you skip this step then your web browser will warn you that the certificate is not trusted and Lighthouse will fail your app on several audits.
+
+{% include tip.html content="[Let's Encrypt](https://letsencrypt.org/) is a free certificate authority that you can use when you deploy your app to production. The [`letsencrypt-express`](https://www.npmjs.com/package/letsencrypt-express) package can be used to manage Let's Encrypt certificates within Express apps and should work equally well for LoopBack apps.
+" %}
+
+Run the LoopBack app:
+
+```bash
+$ node .
+```
+
+Go to [https://localhost:8443/](https://localhost:8443/) in Google Chrome. In Google Chrome open DevTools by selecting "View" → "Developer" → "Developer Tools". Select the "Audits" tab in Chrome DevTools. Hit the "Perform an audit…" button. Ensure that all of the audit categories are selected and hit the "Run audit" button.
+
+{% include important.html content="If you do not install the self-signed certificate as trusted by your computer then Google Chrome will warn you that the certificate is not trusted and Lighthouse will fail your app on several audits.
+" %}
+
+The Lightouse audit results should be almost perfect scores in all categories at this point. However, under the Progressive Web App category Lighthouse will indicate that the app "Does not redirect HTTP traffic to HTTPS." Lighthouse may also indicate that the app "Does not provide fallback content when JavaScript is not available." This audit should pass, but fails as a result of the "Does not redirect HTTP traffic to HTTPS" audit failing.
+
+The app does, in fact, redirect HTTP traffic to HTTPS. However, Lighthouse doesn't know to look for the HTTP version on the non-standard port 8080. To achieve a perfect score in Lighthouse, temporarily change the `httpPort` and `port` values in `server/config.json` to the standard values for HTTP and HTTPS respectively:
+
+```js
+"httpPort": 80,
+"port": 443,
+```
+
+You will then need to start LoopBack using `sudo`, as ports below 1024 are privileged ports, entering your system password when prompted:
+
+```bash
+$ sudo node .
+```
+
+{% include warning.html content="Starting LoopBack using `sudo` is _not_ a recommended practice.
+" %}
+
+Go to [https://localhost/](https://localhost/) in Google Chrome (no port number is needed as port 443 is the standard port for HTTPS). In Google Chrome open DevTools and run a Lighthouse audit again with all categories selected.
+
+The Lightouse audit results should be all perfect scores in all categories now! The previously-failing "Does not redirect HTTP traffic to HTTPS" and "Does not provide fallback content when JavaScript is not available" audits should now be passing.
+
+Change the `httpPort` and `port` values in `server/config.json` back to their previous settings:
+
+```js
+"httpPort": 8080,
+"port": 8443,
+```
+
+From now on when you start LoopBack do _not_ use `sudo`:
+
+```bash
+$ node .
+```
 
 ## Tutorial
 
