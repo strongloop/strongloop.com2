@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LoopBack 4 GitHub Example Application - Persist to Cloudant   (Part 3 of 3)
+title: LoopBack 4 GitHub Example Application - Persist Data to Cloudant   (Part 3 of 3)
 date: 2018-04-16T00:00:13+00:00
 author: Diana Lau
 permalink: /strongblog/loopback4-github-example-app-part3/
@@ -10,32 +10,24 @@ categories:
 ---
 
 In this series, we will work through creating a basic LoopBack 4 application
-that exposes REST APIs; calls out to GitHub APIs through octokat.js (a GitHub API client) 
-to get the number of stargazers on a user-specified GitHub organization and repository; 
+that exposes REST APIs, calls out to GitHub APIs through [octokat.js](https://github.com/philschatz/octokat.js) (a GitHub API client) 
+to get the number of stargazers on a user-specified GitHub organization and repository,
 and persists the data into a Cloudant database.
 
 <!-- more -->
-### Where we left off 
-In the previous part of this series, we created a REST endpoint that connects to GitHub and gets 
-the number of stargazers for GitHub repository.  
+### Previously in Part 2
+In the Part 2 of this series, we created a REST endpoint that gets 
+the number of stargazers for a GitHub repository by using 
+[octokat.js](https://github.com/philschatz/octokat.js).
 
-The code repository can be found [here](https://github.com/dhmlau/loopback4-github-app).
-If you miss out part 2, you can start following this article by checking out the `part2` branch.
-```
-git clone https://github.com/dhmlau/loopback4-github-app.git
-git checkout part2
-```
-
-## Adding Persistance to the application
-In this article, we are going to complete the application by persisting the data we got 
-in part 2 into a [Cloudant](https://console.bluemix.net/catalog/services/cloudant-nosql-db) database.  
-
-
+Since GitHub does not keep track of the history on how the number of stargazers change
+over time.  In this article, we are going to complete the application by persisting such 
+data into a [Cloudant](https://console.bluemix.net/catalog/services/cloudant-nosql-db) database.  
 
 ### Step 1: Defining the model
 First, we define the model for the data to be persisted in the database.
-The model `GHStars` we are creating extends from a base class `Entity` and 
-has the following properties:
+The model `GHStars` we are creating extends from a base class `Entity` 
+from `@loopback/repository` and has the following properties:
 - org: GitHub organization
 - repo: GitHub repository
 - stars: number of stars for the given org/repo
@@ -89,8 +81,8 @@ defining the datasource is similar to what we do in LoopBack 3 for those who are
 with the older version of LoopBack.  
 For details, see http://loopback.io/doc/en/lb3/Defining-data-sources.html.  
 
-Create a folder `config` and a file within this folder called `datasources.json`,  
-with the content like below:
+Create a folder `config` at the root of the project and a file within this folder called `datasources.json`,  
+with the following content:
 ```json
 {
     "name": "db",
@@ -137,7 +129,7 @@ export class GHStarRepository extends DefaultCrudRepository<GHStars, typeof GHSt
 ```
 
 ### Step 4: Using Repository Mixin in the Application
-We are going to use the [Repository Mixin](http://loopback.io/doc/en/lb4/Repositories.html#repository-mixin) to bind the application and Repository. 
+We are going to use the [Repository Mixin](http://loopback.io/doc/en/lb4/Repositories.html#repository-mixin) to bind the Application and Repository. 
 
 <img src="../blog-assets/2018/04/github-app-cloudant.png" alt="Creating Model, DataSource and Repository" style="width: 400px; margin:auto;"/>
 
@@ -155,7 +147,7 @@ import {db} from './datasources/db.datasource';
 
 - Bind the datasource to the application
 Add `bindDataSource()` function, and add `this.bindDataSource();` 
-at the end of GitHubApplication constructor.
+at the end of `GitHubApplication` constructor.
 ```ts
 bindDataSource() {
     // this.repository(GHStarRepository);
@@ -179,22 +171,16 @@ In `controllers\gh-repo.controller.ts`, add a new function:
   async storeRepoStargazers(
     @param.path.string('org') org: string,
     @param.path.string('repo') repo: string
-  ): Promise<void> {
-    let octoRepo = octo.repos(org, repo);
-    return await octoRepo.stargazers.fetch().then((content:GHStargazerList) => {
-      /*
-       * the github api paginates the stargazer results,
-       * so we're using a recursive function to get the total number count. 
-       */
-      this.getStarCount(content.items.length, content.nextPageUrl).then((starNum:number)=> {
-        let ghStar = new GHStars();
-        ghStar.org = org;
-        ghStar.repo = repo;
-        ghStar.countdate = new DateType().defaultValue();
-        ghStar.stars = starNum;
-        this.ghstarRepository.create(ghStar);
-      });
-    });
+  ): Promise<GHStars> {
+    console.log('org/repo', org, repo);
+    const repoContent = await octo.repos(org, repo).fetch();
+    const stargazerNum = repoContent.stargazersCount;
+    const ghStar = new GHStars();
+    ghStar.org = org;
+    ghStar.repo = repo;
+    ghStar.countdate = new DateType().defaultValue();
+    ghStar.stars = stargazerNum;
+    return await this.ghstarRepository.create(ghStar); 
   }
 ```
  
@@ -218,11 +204,17 @@ After running it, you should see an entry in the Cloudant database look like:
 ```
 
 ## Recap
-In this blog series, we are building this LoopBack GitHub application using LoopBack 4 step-by-step:
+In this blog series, we built this LoopBack GitHub application using LoopBack 4 step-by-step:
 - Part 1: Scaffolding a LoopBack 4 application and creating REST APIs
 - Part 2: Adding logics to the Controller to talk to GitHub APIs
 - Part 3: Persisting data to Cloudant database using DataSource and Repository
 
+
+## Code repository
+The code repository can be found [here](https://github.com/dhmlau/loopback4-github-app).
+```
+git clone https://github.com/dhmlau/loopback4-github-app.git
+```
 
 ## Call for Action
 LoopBack's future success counts on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
