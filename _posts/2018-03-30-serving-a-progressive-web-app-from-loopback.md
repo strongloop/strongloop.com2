@@ -720,7 +720,7 @@ Then start LoopBack using `sudo`:
 $ sudo node .
 ```
 
-{% include important.html content="Starting LoopBack using `sudo` is _not_ a recommended practice.
+{% include warning.html content="Starting LoopBack using `sudo` is _not_ a recommended practice.
 " %}
 
 Change the `httpPort` and `port` values in `server/config.json` back to their previous settings:
