@@ -219,7 +219,7 @@ $ lb
 Use `loopback-pwa` as the name of your application:
 
 ```
-? What's the name of your application? (bradleydholt) loopback-pwa
+? What's the name of your application? () loopback-pwa
 ```
 
 Hit enter to use the default value of `loopback-pwa` as the name of the directory to contain the project:
