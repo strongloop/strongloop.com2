@@ -509,19 +509,21 @@ IP.2        = ::1
 
 Add scripts to `package.json` for generating private keys, self-signed certificates, and certificate signing requests, as well as for printing certificates and certificate signing requests:
 
-TK: Make the formatting better here?
-
-TK: Use an npm package here?
-
 ```js
-"generate-key": "openssl genrsa -out server/private/localhost.key.pem 2048",
-"generate-cert": "openssl req -config server/localhost.conf -new -x509 -sha256 -nodes -key server/private/localhost.key.pem -days 365 -out server/private/localhost.cert.pem",
-"generate-csr": "openssl req -config server/localhost.conf -new -sha256 -nodes -key server/private/localhost.key.pem -days 365 -out server/private/localhost.req.pem",
-"print-cert": "openssl x509 -in server/private/localhost.cert.pem -text -noout",
-"print-csr": "openssl req -in server/private/localhost.req.pem -text -noout"
+"scripts": {
+  "lint": "eslint .",
+  "start": "node .",
+  "posttest": "npm run lint && nsp check",
+  "generate-key": "openssl genrsa -out server/private/localhost.key.pem 2048",
+  "generate-cert": "openssl req -config server/localhost.conf -new -x509 -sha256 -nodes -key server/private/localhost.key.pem -days 365 -out server/private/localhost.cert.pem",
+  "generate-csr": "openssl req -config server/localhost.conf -new -sha256 -nodes -key server/private/localhost.key.pem -days 365 -out server/private/localhost.req.pem",
+  "print-cert": "openssl x509 -in server/private/localhost.cert.pem -text -noout",
+  "print-csr": "openssl req -in server/private/localhost.req.pem -text -noout"
+},
 ```
 
-TK: Automate the creation of the `server/private` directory?
+{% include note.html content="The `lint`, `start`, and `posttest` scripts should be there already and do not need to be modified. Add the `generate-key`, `generate-cert`, `generate-csr`, `print-cert`, and `print-csr` scripts.
+" %}
 
 Make a `server/private` directory for the private key and the certificate:
 
