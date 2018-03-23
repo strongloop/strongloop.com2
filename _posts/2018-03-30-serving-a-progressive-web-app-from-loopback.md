@@ -36,7 +36,7 @@ One important aspect of Progressive Web Apps is the concept of building your web
 
 #### 📱 Web App Manifest
 
-A [web app manifest](https://developers.google.com/web/fundamentals/web-app-manifest/) enables web developers to control how a Progressive Web App is experienced by end users. Some of the common metadata attributes included in a web app manifest includes:
+A [web app manifest](https://developers.google.com/web/fundamentals/web-app-manifest/) enables web developers to control how a Progressive Web App is experienced by end users. Some of the common metadata attributes in a web app manifest include:
 
 - A `name` for when the user is prompted to install the Progressive Web App
 - A `short_name` for when the app is installed to the user's home screen
