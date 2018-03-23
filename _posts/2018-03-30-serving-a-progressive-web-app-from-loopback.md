@@ -748,4 +748,4 @@ When you're ready to go into production, or you're ready to stand up a staging e
 - Use the [IBM Cloud Container Service](https://console.bluemix.net/docs/containers/container_index.html#container_index) to deploy the app in Docker containers that run in Kubernetes clusters
 - Use [IBM API Connect](https://developer.ibm.com/apiconnect/)
 
-I hope that after reading this post you're ready to build a Progressive Web App that is served from LoopBack and uses LoopBack as your backend for frontend (BFF). I'm looking forward to seeing what you build!
+I hope that you're now ready to build a Progressive Web App that is served from LoopBack and uses LoopBack as your backend for frontend (BFF). I'm looking forward to seeing what you build!
