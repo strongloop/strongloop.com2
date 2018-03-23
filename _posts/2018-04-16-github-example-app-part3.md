@@ -220,7 +220,7 @@ After running it, you should see an entry in the Cloudant database look like:
 ## Recap
 In this blog series, we built this LoopBack GitHub application using LoopBack 4 step-by-step:
 - Part 1: Scaffolding a LoopBack 4 application and creating REST API
-- Part 2: Adding logic to the Controller to talk to GitHub API
+- Part 2: Adding logic to a controller to talk to GitHub API
 - Part 3: Persisting data to Cloudant database using DataSource and Repository
 
 
