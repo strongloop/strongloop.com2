@@ -429,8 +429,6 @@ Add the following metadata _within_ the `<head>` section of the `client/index.ht
 
 Add the web app manifest (`manifest.json`) and the icons (`icons/icon-192x192.png`, `icons/icon-512x512.png`) to the list of files to cache within the `client/sw.js` Service Worker file:
 
-TK: Bump the cache v1 version number?
-
 ```js
 var filesToCache = [
   './',
