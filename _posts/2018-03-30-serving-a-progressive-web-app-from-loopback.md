@@ -549,7 +549,7 @@ Alternatively, run the `generate-csr` script to generate a new certificate signi
 $ npm run generate-csr
 ```
 
-Optionally, install the self-signed certificate (`server/private/localhost.cert.pem`) as trusted by your computer.
+Optionally, install the self-signed certificate (`server/private/localhost.cert.pem`) as trusted by your computer. The steps needed for this will vary by operating system. If you skip this step then your web browser will warn you that the certificate is not trusted and Lighthouse will fail your app on several audits.
 
 {% include tip.html content="[Let's Encrypt](https://letsencrypt.org/) is a free certificate authority that you can use when you deploy your app to production. The [`letsencrypt-express`](https://www.npmjs.com/package/letsencrypt-express) package can be used to manage Let's Encrypt certificates within Express apps and should work equally well for LoopBack apps.
 " %}
