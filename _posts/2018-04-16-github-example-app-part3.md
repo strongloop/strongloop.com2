@@ -22,7 +22,7 @@ the number of stargazers for a GitHub repository by using
 
 Since GitHub does not keep track of the history on how the number of stargazers change
 over time.  In this article, we are going to complete the application by persisting such 
-data into a [Cloudant](https://console.bluemix.net/catalog/services/cloudant-nosql-db) database.  
+data together with the timestamp into a [Cloudant](https://console.bluemix.net/catalog/services/cloudant-nosql-db) database.  
 
 <img src="../blog-assets/2018/04/github-app-cloudant.png" alt="Creating Model, DataSource and Repository" style="width: 400px; margin:auto;"/>
 
@@ -146,10 +146,10 @@ import {RepositoryMixin, Class, Repository, juggler} from '@loopback/repository'
 import {db} from './datasources/db.datasource';
 ```
 _Note_: The unused imports are necessary as type information from these imports are needed
-when mixins are used.
+when RepositoryMixin is used.
 
 #### Step 4b: Binding the datasource
-This can be done by setting up `bindDataSource()` function, and calling
+This can be done by setting up `bindDataSource()` function and calling
 it in the constructor of `GitHubApplication`.
 ```ts
 bindDataSource() {
@@ -160,10 +160,8 @@ bindDataSource() {
 ### Step 5: Putting things together
 As the final step, we are going to create a POST endpoint `/repo/{org}/{repo}/stars` in the 
 `GHRepoController` that:
-- gets the number of stargazers for a given GitHub repo, and;
+- gets the number of stargazers for a given GitHub repo
 - stores the information to Cloudant database
-
-
 
 #### Step 5a: Update the contructor for the GHRepoController
 In `controllers\gh-repo.controller.ts`, update the constructor to inject `repositories.GHStarRepository`.  
@@ -221,8 +219,8 @@ After running it, you should see an entry in the Cloudant database look like:
 
 ## Recap
 In this blog series, we built this LoopBack GitHub application using LoopBack 4 step-by-step:
-- Part 1: Scaffolding a LoopBack 4 application and creating REST APIs
-- Part 2: Adding logics to the Controller to talk to GitHub APIs
+- Part 1: Scaffolding a LoopBack 4 application and creating REST API
+- Part 2: Adding logic to the Controller to talk to GitHub API
 - Part 3: Persisting data to Cloudant database using DataSource and Repository
 
 
