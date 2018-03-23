@@ -17,7 +17,7 @@ and persists the data into a Cloudant database.
 
 <!-- more -->
 ## Let's continue
-In Part 1 of this blog post series, we have created a LoopBack 4 application and created a REST endpoint in `GHRepoController` that takes GitHub organization and repository as the path parameters.  Let's continue with adding logic to the `getRepoStargazers` function in `GHRepoController`.
+In Part 1 of this blog post series, we have created a LoopBack 4 application and created a REST endpoint in `GHRepoController` that takes GitHub organization and repository as the path parameters.  We'll continue by adding logic to the `getRepoStargazers` function in `GHRepoController`.
 
 ### Step 1: Creating `creds.ts` for credentials used in octokat.js
 [octokat.js](https://www.npmjs.com/package/octokat) is a GitHub API client that makes it easier to talk 
@@ -60,10 +60,10 @@ npm i --save octokat
 ### Step 3: Retrieving the stargazer numbers in the GHRepoController
 To retrieve the number of stargazers a repo has, we can refer to the [GitHub Repositories API](https://developer.github.com/v3/repos/#get). 
 `GET /repos/:owner/:repo` returns information about the repo, and the attribute `stargazersCount` 
-is the stargazer number we're looking for.  This endpoint can be reached through the octokat module by calling 'await octo.repos(org, repo).fetch().stargazersCount'.
+is the stargazer number we're looking for.  This endpoint can be reached through the octokat module by calling `await octo.repos(org, repo).fetch()`.
 
 In `GHRepoController`, we are going to update `getRepoStargazers` function:
-1. make it async
+1. make it async, because the operation does not return the result instantly and we don't want it to block the application.
 2. call `octo.repos(org, repo).fetch()` to get information from the repo
 
 ```ts
@@ -86,7 +86,7 @@ http://localhost:3000/swagger-ui
 ```
 
 Select `GHRepoController` > `GET /repo/{org}/{repo}/stars`, 
-and type your favorite GitHub repo for the number of stargazers.  
+and in the parameters fields, type your favorite GitHub repo for the number of stargazers.  
 <img src="../blog-assets/2018/04/apiExplorer-request-part2.png" alt="Screen shot of API Explorer for REST endpoint under GHRepoController" style="width: 400px; margin:auto;"/>
 
 You should be able to see the results in the response section.
