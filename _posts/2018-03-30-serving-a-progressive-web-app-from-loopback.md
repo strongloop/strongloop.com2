@@ -738,8 +738,14 @@ $ node .
 
 ## What’s next?
 
-TK: Building out the PWA.
+While this web app meets the technical requirements for being a Progressive Web App, it's not much of an app at this point. The next steps would be to flesh out the frontend app with your actual content and desired app capabilities. You could continue to write the frontend web app using plain JavaScript, or you may want to use a frontend framework such as React, Preact, Polymer, Ember.js, or Vue.js.
 
-TK: Deploying to IBM Cloud.
+You will likely also want to add a local, Offline First database to your app. PouchDB is a JavaScript database that syncs and can run in a web browser, making it a great fit for Progressive Web Apps. Even better, PouchDB can sync its data with [Apache CouchDB](http://couchdb.apache.org/) or [IBM Cloudant](https://www.ibm.com/cloud/cloudant). Check out the [Shopping List](https://github.com/ibm-watson-data-lab/shopping-list) series of demo apps for examples of frontend Progressive Web Apps that use PouchDB. Reference implementations are available for [React](https://github.com/ibm-watson-data-lab/shopping-list-react-pouchdb), [Preact](https://github.com/ibm-watson-data-lab/shopping-list-preact-pouchdb), [Polymer](https://github.com/ibm-watson-data-lab/shopping-list-polymer-pouchdb), [Ember.js](https://github.com/ibm-watson-data-lab/shopping-list-emberjs-pouchdb), and [Vue.js](https://github.com/ibm-watson-data-lab/shopping-list-vuejs-pouchdb).
 
-TK: Talk about PouchDB.
+When you're ready to go into production, or you're ready to stand up a staging environment, you have a number of options for deploying your app to the IBM Cloud:
+
+- Use the [Node.js runtime on IBM Cloud](https://console.bluemix.net/docs/runtimes/nodejs/index.html#nodejs_runtime)
+- Use the [IBM Cloud Container Service](https://console.bluemix.net/docs/containers/container_index.html#container_index) to deploy the app in Docker containers that run in Kubernetes clusters
+- Use [IBM API Connect](https://developer.ibm.com/apiconnect/)
+
+I hope that after reading this post you're ready to build a Progressive Web App that is served from LoopBack and uses LoopBack as your backend for frontend (BFF). I'm looking forward to seeing what you build!
