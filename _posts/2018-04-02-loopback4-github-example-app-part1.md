@@ -19,9 +19,9 @@ and persists the data into a Cloudant database.
 <!-- more -->
 The series is organized as follows:
 
-Part 1 - Scaffolding a LoopBack 4 application and creating REST APIs
+Part 1 - Scaffolding a LoopBack 4 application and creating REST API
 
-Part 2 - Adding logic to the `Controller` to talk to GitHub APIs
+Part 2 - Adding logic to a controller to talk to GitHub API
 
 Part 3 - Persisting data to Cloudant database using `DataSource` and `Repository`
 
