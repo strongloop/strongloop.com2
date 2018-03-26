@@ -196,6 +196,8 @@ $ node .
 
 ## Tutorial
 
+The "quick start" section provides instructions for getting a pre-built copy of this app up and running quickly. This \"tutorial\" section includes detailed instructions for creating a Progressive Web App served from LoopBack. You can clone or download the completed [`loopback-pwa`](https://github.com/ibm-watson-data-lab/loopback-pwa) repository from GitHub.
+
 ### Generating the LoopBack App
 
 Install the [LoopBack command-line interface (CLI) tool](https://github.com/strongloop/loopback-cli) (if you don't already have it installed):
