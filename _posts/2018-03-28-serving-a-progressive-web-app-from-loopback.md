@@ -718,7 +718,9 @@ boot(app, __dirname, function(err) {
 
 ### Getting a Perfect Lighthouse Audit Result
 
-Performing a Lighthouse audit at this point will fail some checks as Lighthouse is unable to test the HTTP to HTTPS redirect. To achieve a perfect score in Lighthouse, temporarily change the `httpPort` and `port` values in `server/config.json`:
+The Lightouse audit results should be almost perfect scores in all categories at this point. However, under the Progressive Web App category Lighthouse will indicate that the app "Does not redirect HTTP traffic to HTTPS." Lighthouse may also indicate that the app "Does not provide fallback content when JavaScript is not available." This audit should pass, but fails as a result of the "Does not redirect HTTP traffic to HTTPS" audit failing.
+
+The app does, in fact, redirect HTTP traffic to HTTPS. However, Lighthouse doesn't know to look for the HTTP version on the non-standard port 8080. To achieve a perfect score in Lighthouse, temporarily change the `httpPort` and `port` values in `server/config.json` to the standard values for HTTP and HTTPS respectively:
 
 ```js
 "httpPort": 80,
