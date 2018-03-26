@@ -46,10 +46,7 @@ In `GHRepoController` (located in `src/controllers/gh-repo.controller.ts`), add 
 import {creds} from '../../creds';
 const Octokat = require('octokat');
 
-const octo = new Octokat({
-  username: creds.username,
-  password: creds.password
-});
+const octo = new Octokat(creds);
 ```
 
 Don't forget to install `octokat` module by running:
@@ -66,13 +63,19 @@ In `GHRepoController`, we are going to update `getRepoStargazers` function:
 1. make it async, because the operation does not return the result instantly and we don't want it to block the application.
 2. call `octo.repos(org, repo).fetch()` to get information from the repo
 
+Add this import statement at the top:
+```ts
+const debug = require('debug')('gh-repo');
+```
+
+Modify `getRepoStargazers` function: 
 ```ts
 @get('/repo/{org}/{repo}/stars') 
   async getRepoStargazers(
     @param.path.string('org') org: string,
     @param.path.string('repo') repo: string
   ): Promise<number> {
-    console.debug('org/repo: ', org, repo);
+    debug('org/repo: ', org, repo);
     const repoContent = await octo.repos(org, repo).fetch();
     return repoContent.stargazersCount;
   }
