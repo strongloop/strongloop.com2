@@ -388,6 +388,8 @@ Add the following JavaScript _within_ the `<head>` section of the `client/index.
 
 ### Creating a Manifest File
 
+TK: Get rid of the favicon removal step.
+
 Remove the default LoopBack favicon by deleting the following from `server/middleware.json`:
 
 ```js
@@ -395,6 +397,8 @@ Remove the default LoopBack favicon by deleting the following from `server/middl
     "loopback#favicon": {}
   },
 ```
+
+TK: Provide more instructions for creating the icons.
 
 Create the following app icon files (I generated these from a `client/icons/icon.svg` file):
 
