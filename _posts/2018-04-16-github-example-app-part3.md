@@ -164,11 +164,16 @@ As the final step, we are going to create a POST endpoint `/repo/{org}/{repo}/st
 - stores the information to Cloudant database
 
 #### Step 5a: Update the contructor for the GHRepoController
-In `controllers\gh-repo.controller.ts`, update the constructor to inject `repositories.GHStarRepository`.  
+In `controllers/gh-repo.controller.ts`, update the constructor to inject `repositories.GHStarRepository`.  
+
+Add the following import statement:
+```ts
+import {db} from './datasources/db.datasource';
+```
 
 ```ts
 constructor(
-    @inject('repositories.GHStarRepository')
+    @repository(GHStars, db)
     public ghstarRepository : GHStarRepository,) {}
 ```
 
@@ -184,7 +189,7 @@ In the same `GHRepoController`, add a new function:
     @param.path.string('org') org: string,
     @param.path.string('repo') repo: string
   ): Promise<GHStars> {
-    console.debug('org/repo', org, repo);
+    debug('org/repo', org, repo);
     //gets the number of stargazers for a given GitHub repo
     const repoContent = await octo.repos(org, repo).fetch();
     const stargazerNum = repoContent.stargazersCount;
@@ -205,7 +210,7 @@ select `GHRepoController` > `POST /repo/{org}/{repo}/stars`.
 Type in the `org` and `repo` that you'd like to know about the number of stargazers.  
 
 After running it, you should see an entry in the Cloudant database look like:
-```
+```json
 {
   "_id": "f0a792a6dd9dc2c60186e9e2d91441b7",
   "_rev": "1-2f128fd392901a6390c8cf3c0590f458",
