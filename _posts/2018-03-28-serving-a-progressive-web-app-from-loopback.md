@@ -315,19 +315,21 @@ Create a `client/index.html` file with the following initial contents:
 </html>
 ```
 
-
 ### Creating a Service Worker
 
 Create a `client/sw.js` Service Worker file with the following contents:
 
 ```js
+// The name of the cache to use for this instance of the Service Worker
 var cacheName = 'v1';
 
+// The set of files to cache
 var filesToCache = [
   './',
   './index.html',
 ];
 
+// Pre-caches the files when the Service Worker is installed
 self.addEventListener('install', function(e) {
   e.waitUntil(caches.open(cacheName)
     .then(function(cache) {
@@ -338,6 +340,7 @@ self.addEventListener('install', function(e) {
       }));
 });
 
+// Deletes old caches when the new Service Worker is activated
 self.addEventListener('activate', function(e) {
   e.waitUntil(caches.keys()
     .then(function(keyList) {
@@ -349,6 +352,7 @@ self.addEventListener('activate', function(e) {
   return self.clients.claim();
 });
 
+// Returns a response out of cache when fetched, or requests the resource if not already cached
 self.addEventListener('fetch', function(e) {
   e.respondWith(caches.match(e.request)
     .then(function(response) {
