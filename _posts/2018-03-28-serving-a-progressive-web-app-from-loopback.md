@@ -279,6 +279,12 @@ API Connect. When your APIs need robust management and
 security options, please check out http://ibm.biz/tryAPIC
 ```
 
+Change in to the `loopback-pwa` directory:
+
+```bash
+$ cd loopback-pwa
+```
+
 ### Serving Static Files from LoopBack
 
 Delete the file `server/boot/root.js`, which is the default root route handler.
@@ -391,22 +397,19 @@ Add the following JavaScript _within_ the `<head>` section of the `client/index.
 
 ### Creating a Manifest File
 
-TK: Get rid of the favicon removal step.
-
-Remove the default LoopBack favicon by deleting the following from `server/middleware.json`:
-
-```js
-  "initial:before": {
-    "loopback#favicon": {}
-  },
-```
-
-TK: Provide more instructions for creating the icons.
-
-Create the following app icon files (I generated these from a `client/icons/icon.svg` file):
+First you'll need to create the following app icon files:
 
 - `client/icons/icon-192x192.png`
 - `client/icons/icon-512x512.png`
+
+You can copy these icons from the completed [`loopback-pwa`](https://github.com/ibm-watson-data-lab/loopback-pwa) repository on GitHub.
+
+I generated the PNG files from a `client/icons/icon.svg` file with the following commands:
+
+```bash
+$ inkscape -z -e client/icons/icon-192x192.png -w 192 -h 192 client/icons/icon.svg
+$ inkscape -z -e client/icons/icon-512x512.png -w 512 -h 512 client/icons/icon.svg
+```
 
 Create a `client/manifest.json` file with the following contents:
 
