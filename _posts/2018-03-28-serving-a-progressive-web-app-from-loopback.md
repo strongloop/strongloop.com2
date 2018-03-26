@@ -220,6 +220,9 @@ Run the LoopBack [application generator](https://loopback.io/doc/en/lb3/Applicat
 $ lb
 ```
 
+{% include note.html content="You do not need to first create a `loopback-pwa` directory first as this directory will be created by the application generator.
+" %}
+
 {% include note.html content="Alternative [command line tools](https://loopback.io/doc/en/lb3/Command-line-tools.html) to the LoopBack CLI (`lb`) include the IBM API Connect developer toolkit (`apic`) or the legacy StrongLoop tool (`slc`).
 " %}
 
