@@ -200,6 +200,11 @@ The "quick start" section provides instructions for getting a pre-built copy of 
 
 ### Generating the LoopBack App
 
+Install Node.js if it is not already installed:
+
+* [Download Node.js](https://nodejs.org/en/download/) or
+* [Install Node.js via a package manager](https://nodejs.org/en/download/package-manager/)
+
 Install the [LoopBack command-line interface (CLI) tool](https://github.com/strongloop/loopback-cli) (if you don't already have it installed):
 
 ```bash
