@@ -9,7 +9,7 @@ categories:
   - LoopBack
 ---
 
-With the emergence of Progressive Web Apps and browser APIs such as persistent storage, payments, geolocation, and push notifications, it is now possible to build almost fully-featured mobile apps on the web platform. LoopBack makes a great backend web and API server for a frontend Progressive Web App. This post demonstrates how you can serve a Progressive Web App from LoopBack that:
+With the emergence of Progressive Web Apps and browser APIs such as persistent storage, payments, geolocation, and push notifications, it is now possible to build mobile apps on the web platform that have many of the same features as native apps. LoopBack makes a great backend web and API server for a frontend Progressive Web App. This post demonstrates how you can serve a Progressive Web App from LoopBack that:
 
 - ⚙️ Uses a [Service Worker](https://developers.google.com/web/ilt/pwa/introduction-to-service-worker) to enable the app to work whether or not the end user's device has an internet connection (this is what is referred to as an [Offline First](http://offlinefirst.org/) approach)
 - 📱 Contains a [web app manifest](https://developers.google.com/web/fundamentals/web-app-manifest/) to control how the app is experienced by end users
@@ -32,7 +32,7 @@ One important aspect of Progressive Web Apps is the concept of building your web
 
 #### ⚙️ Service Workers
 
-[Service Workers](https://developers.google.com/web/ilt/pwa/introduction-to-service-worker) are a key browser technology that enables Offline First Progressive Web Apps. Service Workers give web developers fine-grained control over caching of URL-addressable content and assets. A Service Worker intercepts requests under a certain scope, meaning under a certain URL path. Any network requests that go to a URL under scope will instead be routed through the Service Worker. This gives you the opportunity to intercept those requests, and instead of those requests going to the network, replying to the request with a response stored in a local cache. This is called a cache-first approach, where a local cache is preferred over the network.
+[Service Workers](https://developers.google.com/web/ilt/pwa/introduction-to-service-worker) are a key browser technology for enabling Offline First Progressive Web Apps. Service Workers give web developers fine-grained control over caching of URL-addressable content and assets. A Service Worker intercepts requests under a certain scope, or URL path. Any network requests that go to a URL under scope will instead be routed through the Service Worker. This gives you the opportunity to intercept those requests and reply with a response stored in a local cache. This is called a cache-first approach, where a local cache is preferred over the network.
 
 #### 📱 Web App Manifest
 
@@ -360,7 +360,7 @@ self.addEventListener('fetch', function(e) {
 });
 ```
 
-Add the following JavaScript _within_ the `<head>` section of the `client/index.html` file:
+Add the following JavaScript _within_ the `<head>` section of the `client/index.html` file to register the Service Worker (if supported by the browser):
 
 ```html
 <script type="text/javascript">
