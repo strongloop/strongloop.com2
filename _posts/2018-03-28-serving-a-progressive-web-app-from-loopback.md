@@ -684,7 +684,6 @@ boot(app, __dirname, function(err) {
 {% include tip.html content="Simply replace `require('spdy')` with `require('https')` in the preceding code snippet if you would prefer to just use HTTPS and not HTTP/2 as well (and also skip `npm install spdy`).
 " %}
 
-
 #### Redirecting HTTP Traffic to HTTPS
 
 Add an `httpPort` option to `server/config.json`:
