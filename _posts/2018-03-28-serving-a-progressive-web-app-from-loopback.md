@@ -762,11 +762,6 @@ boot(app, __dirname, function(err) {
 });
 ```
 
-Go to [https://localhost:8443/](https://localhost:8443/) in Google Chrome. In Google Chrome open DevTools by selecting "View" → "Developer" → "Developer Tools". Select the "Audits" tab in Chrome DevTools. Hit the "Perform an audit…" button. Ensure that all of the audit categories are selected and hit the "Run audit" button.
-
-{% include important.html content="If you do not install the self-signed certificate as trusted by your computer then Google Chrome will warn you that the certificate is not trusted and Lighthouse will fail your app on several audits.
-" %}
-
 ### Getting a Perfect Lighthouse Audit Result
 
 Run the LoopBack app:
