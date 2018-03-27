@@ -26,7 +26,7 @@ With the emergence of Progressive Web Apps and browser APIs such as persistent s
 
 ### What is a Progressive Web App?
 
-A Progressive Web App is a web app that gains more and more app-like capabilities the more often you use it. You browse to a Progressive Web App just like any other website. As you continue to use the web app, it gains additional native-app-like capabilities. For example, a Progressive Web App could be installed to your home screen or send you alerts and notifications. Progressive Web Apps combine the discoverability of web apps with the power of native mobile apps.
+A Progressive Web App is a web app that gains more and more app-like capabilities the more you use it. You browse to a Progressive Web App just like any other website. As you continue to use the web app, it gains additional native-app-like capabilities. For example, a Progressive Web App could be installed to your home screen or send you alerts and notifications. Progressive Web Apps combine the discoverability of web apps with the power of native mobile apps.
 
 One important aspect of Progressive Web Apps is the concept of building your web app to be [Offline First](http://offlinefirst.org/). With an Offline First approach, you design your web app for the most resource-constrained environment first. This approach provides a consistent user experience whether the user’s device has no connectivity, limited connectivity, or great connectivity. One of the biggest benefits of Offline First Progressive Web Apps is that they can be very fast, as they provide zero-latency access to content and data stored directly on the device.
 
@@ -42,7 +42,7 @@ A [web app manifest](https://developers.google.com/web/fundamentals/web-app-mani
 - A `short_name` for when the app is installed to the user's home screen
 - A `description` of the purpose of the app
 - The `lang`, or primary language of the web app manifest attributes
-- The `start_url`, or starting URL that the app would prefer the user agent loads when launching the app
+- The `start_url`, or starting URL that the app would prefer the user agent load when launching the app
 - A `display` setting which sets how the app should be presented within the context of the user's operating system (`fullscreen`, `standalone`, `minimal-ui`, or `browser`)
 - A `theme_color`, or default theme color for the app's browsing context
 - The `background_color`, or expected background color to use while the app is loading
@@ -50,7 +50,7 @@ A [web app manifest](https://developers.google.com/web/fundamentals/web-app-mani
 
 #### 🔐 HTTPS
 
-Most browser features that support Progressive Web Apps [require that the app is served over HTTPS](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https). There are a number of reasons for this including:
+Most browser features that support Progressive Web Apps [require that the app is served over HTTPS](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https). There are a number of reasons for this:
 
 - HTTPS ensures that the app is served from a trusted source that can be verified through the app's SSL/TLS certificate. This is especially important when the app requests access to device APIs such as geolocation.
 - Content requests/responses, form submissions, and API requests/responses are encrypted, giving the end user better privacy and security.
@@ -78,17 +78,23 @@ If you want to make a web app that is a Progressive Web App then there are a num
 
 {% include image.html file='lighthouse-audit-report-scoring-100s.png' alt='Lighthouse audit report showing scores of 100 in the categories of performance, Progressive Web App, accessibility, best practices, and SEO' caption='Lighthouse audit report for a Progressive Web App served from LoopBack with scores of 100 in the categories of performance, Progressive Web App, accessibility, best practices, and SEO.' %}
 
-[Lighthouse](https://developers.google.com/web/tools/lighthouse/) is an open source tool that can run an audit against your web app and give you guidance in a number of different categories. Lighthouse is available in Chrome DevTools to quickly perform an audit against any URL, from the command line so that you can run Lighthouse via shell scripts, or as a Node.js module so that you can integrate Lighthouse into your continuous integration process. This post demonstrates how you can serve a Progressive Web App from LoopBack that scores 100s in all Lighthouse categories (performance, Progressive Web App, accessibility, best practices, and SEO).
+[Lighthouse](https://developers.google.com/web/tools/lighthouse/) is an open-source tool that can run an audit against your web app and give you guidance in a number of different categories. Lighthouse is available:
+
+- In Chrome DevTools to quickly perform an audit against any URL
+- From the command line so that you can run Lighthouse via shell scripts
+- As a Node.js module so that you can integrate Lighthouse into your continuous integration process
+
+This post demonstrates how you can serve a Progressive Web App from LoopBack that scores 100s in all Lighthouse categories (performance, Progressive Web App, accessibility, best practices, and SEO).
 
 ### LoopBack and Progressive Web Apps: BFFs
 
-Progressive Web Apps are frontend web apps that can work independent of a network connection. Once the initial requests have been made for the web app, and all of its content, assets, and data have been cached or stored locally in the user's browser, then the frontend web app can work completely independent of the backend web server. However, this doesn't mean that a Progressive Web App never checks back in with the backend web server. There are a number of potential interactions between a frontend Progressive Web App and a backend web server after the initial requests and responses including:
+Progressive Web Apps are frontend web apps that can work independent of a network connection. Once the initial requests have been made for the web app, and all of its content, assets, and data have been cached or stored locally in the user's browser, then the frontend web app can work completely independent of the backend web server. However, this doesn't mean that a Progressive Web App never checks back in with the backend web server. There are a number of potential interactions between a frontend Progressive Web App and a backend web server after the initial requests and responses, including:
 
 - Getting new content and reference data from the backend web server when a connection is available
-- Sync'ing data collected on the user's device with the backend web server when a connection is available
+- Syncing data collected on the user's device with the backend web server when a connection is available
 - Queuing up API requests to send to the backend web server when a connection is available
 
-This is where LoopBack comes in. LoopBack combined with a Progressive Web App is an example of the [backend for frontend (BFF) pattern](https://youtu.be/iOFtTLPTbWc). Rather than have separate teams work on the backend and the frontend apps, with the BFF pattern the same team works on both the backend and the frontend together. Your team would still have both backend and frontend developers, but they would work closely together towards the same goals. Another aspect of the BFF pattern is that the backend and frontend codebases are written in the same language. By using LoopBack to serve a Progressive Web App this gives you a backend for frontend (BFF) architecture where:
+This is where LoopBack comes in. LoopBack combined with a Progressive Web App is an example of the [backend for frontend (BFF) pattern](https://youtu.be/iOFtTLPTbWc). Rather than have separate teams work on the backend and the frontend apps, with the BFF pattern the same team works on both the backend and the frontend together. Your team would still have both backend and frontend developers, but they would work closely together towards the same goals. Another aspect of the BFF pattern is that the backend and frontend codebases are written in the same language. Using LoopBack to serve a Progressive Web App gives you a backend-for-frontend (BFF) architecture where:
 
 - The backend and the frontend apps are both written in JavaScript
 - The backend and the frontend apps share a single codebase (though for more complex apps it could make sense to separate the codebases)
@@ -105,11 +111,14 @@ Install Node.js if it is not already installed:
 
 Clone or download the [`loopback-pwa`](https://github.com/ibm-watson-data-lab/loopback-pwa) repository from GitHub.
 
-Change in to the `loopback-pwa` directory:
+Navigate to the `loopback-pwa` directory:
 
 ```bash
 $ cd loopback-pwa
 ```
+
+{% include note.html content="The `$` in the above instruction (and in all subsequent examples) indicates the start of a command prompt in a terminal. Do not type the leading `$` into your command prompt.
+" %}
 
 Install npm dependencies:
 
@@ -150,7 +159,7 @@ $ open "/Applications/Utilities/Keychain Access.app"
 3. In Keychain Access, ensure that "System" is selected under "Keychains" and that "Certificates" is selected under "Category."
 4. Drag-and-drop the `localhost.cert.pem` file from the `server/private` directory in Finder into Keychain Access. Enter your password if prompted.
 5. Double-click the self-signed certificate in Keychain Access (it should be named "LoopBack PWA (localhost)").
-6. Under the "Trust" section change the value of "When using this certificate" to "Always Trust."
+6. Under the "Trust" section, change the value of "When using this certificate" to "Always Trust."
 7. Close the "LoopBack PWA (localhost)" certificate window in Keychain Access. Enter your password when prompted.
 8. You can now close Keychain Access and the `server/private` directory in Finder.
 
@@ -177,7 +186,7 @@ The app does, in fact, redirect HTTP traffic to HTTPS. However, Lighthouse doesn
 "port": 443,
 ```
 
-You will then need to start LoopBack using `sudo`, as ports below 1024 are privileged ports, entering your system password when prompted:
+As ports below 1024 are privileged ports, you will now need to start LoopBack using `sudo`, entering your system password when prompted:
 
 ```bash
 $ sudo node .
@@ -202,6 +211,8 @@ From now on when you start LoopBack do _not_ use `sudo`:
 ```bash
 $ node .
 ```
+
+Temporarily changing the `httpPort` and `port` values in `server/config.json` to the standard values for HTTP and HTTPS enables you to get a Lightouse audit result with perfect scores in all categories. Since it's not a good idea to start LoopBack using `sudo`, this makes it impractical to get a perfect Lighthouse score while running your app locally for day to day development. However, you can still achieve a perfect Lighthouse score when deploying your web app to a staging or to a production environment.
 
 ## Tutorial
 
@@ -229,7 +240,7 @@ Run the LoopBack [application generator](https://loopback.io/doc/en/lb3/Applicat
 $ lb
 ```
 
-{% include note.html content="You do not need to first create a `loopback-pwa` directory first as this directory will be created by the application generator.
+{% include note.html content="You do not need to first create a `loopback-pwa` directory as this directory will be created by the application generator.
 " %}
 
 {% include note.html content="Alternative [command line tools](https://loopback.io/doc/en/lb3/Command-line-tools.html) to the LoopBack CLI (`lb`) include the IBM API Connect developer toolkit (`apic`) or the legacy StrongLoop tool (`slc`).
@@ -288,7 +299,7 @@ API Connect. When your APIs need robust management and
 security options, please check out http://ibm.biz/tryAPIC
 ```
 
-Change in to the `loopback-pwa` directory:
+Navigate to the `loopback-pwa` directory:
 
 ```bash
 $ cd loopback-pwa
@@ -594,7 +605,7 @@ $ open "/Applications/Utilities/Keychain Access.app"
 3. In Keychain Access, ensure that "System" is selected under "Keychains" and that "Certificates" is selected under "Category."
 4. Drag-and-drop the `localhost.cert.pem` file from the `server/private` directory in Finder into Keychain Access. Enter your password if prompted.
 5. Double-click the self-signed certificate in Keychain Access (it should be named "LoopBack PWA (localhost)").
-6. Under the "Trust" section change the value of "When using this certificate" to "Always Trust."
+6. Under the "Trust" section, change the value of "When using this certificate" to "Always Trust."
 7. Close the "LoopBack PWA (localhost)" certificate window in Keychain Access. Enter your password when prompted.
 8. You can now close Keychain Access and the `server/private` directory in Finder.
 
@@ -763,7 +774,7 @@ The app does, in fact, redirect HTTP traffic to HTTPS. However, Lighthouse doesn
 "port": 443,
 ```
 
-Then start LoopBack using `sudo`:
+As ports below 1024 are privileged ports, you will now need to start LoopBack using `sudo`, entering your system password when prompted:
 
 ```bash
 $ sudo node .
@@ -785,9 +796,11 @@ From now on when you start LoopBack do _not_ use `sudo`:
 $ node .
 ```
 
+Temporarily changing the `httpPort` and `port` values in `server/config.json` to the standard values for HTTP and HTTPS enables you to get a Lightouse audit result with perfect scores in all categories. Since it's not a good idea to start LoopBack using `sudo`, this makes it impractical to get a perfect Lighthouse score while running your app locally for day to day development. However, you can still achieve a perfect Lighthouse score when deploying your web app to a staging or to a production environment.
+
 ## What’s next?
 
-While this web app meets the technical requirements for being a Progressive Web App, it's not much of an app at this point. The next steps would be to flesh out the frontend app with your actual content and desired app capabilities. You could continue to write the frontend web app using plain JavaScript, or you may want to use a frontend framework such as React, Preact, Polymer, Ember.js, or Vue.js.
+While this web app (either the pre-built copy from the "quick start" section or the version you created yourself using the "tutorial" section) meets the technical requirements for being a Progressive Web App, it's not much of an app at this point. The next steps would be to flesh out the frontend app with your actual content and desired app capabilities. You could continue to write the frontend web app using plain JavaScript, or you may want to use a frontend framework such as React, Preact, Polymer, Ember.js, or Vue.js.
 
 You will likely also want to add a local, Offline First database to your app. PouchDB is a JavaScript database that syncs and can run in a web browser, making it a great fit for Progressive Web Apps. Even better, PouchDB can sync its data with [Apache CouchDB](http://couchdb.apache.org/) or [IBM Cloudant](https://www.ibm.com/cloud/cloudant). Check out the [Shopping List](https://github.com/ibm-watson-data-lab/shopping-list) series of demo apps for examples of frontend Progressive Web Apps that use PouchDB. Reference implementations are available for [React](https://github.com/ibm-watson-data-lab/shopping-list-react-pouchdb), [Preact](https://github.com/ibm-watson-data-lab/shopping-list-preact-pouchdb), [Polymer](https://github.com/ibm-watson-data-lab/shopping-list-polymer-pouchdb), [Ember.js](https://github.com/ibm-watson-data-lab/shopping-list-emberjs-pouchdb), and [Vue.js](https://github.com/ibm-watson-data-lab/shopping-list-vuejs-pouchdb).
 
