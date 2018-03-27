@@ -137,6 +137,23 @@ $ npm run generate-csr
 
 Optionally, install the self-signed certificate (`server/private/localhost.cert.pem`) as trusted by your computer. The steps needed for this will vary by operating system. If you skip this step then your web browser will warn you that the certificate is not trusted and Lighthouse will fail your app on several audits.
 
+To install the self-signed certificate on macOS:
+
+1. Open the `server/private` directory in Finder. This can be done in Finder or with the following command:  
+```bash
+$ open server/private
+```
+2. Open the Keychain Access utility app. This can be done in Finder or with the following command:  
+```bash
+$ open "/Applications/Utilities/Keychain Access.app"
+```
+3. In Keychain Access, ensure that "System" is selected under "Keychains" and that "Certificates" is selected under "Category."
+4. Drag-and-drop the `localhost.cert.pem` file from the `server/private` directory in Finder into Keychain Access. Enter your password if prompted.
+5. Double-click the self-signed certificate in Keychain Access (it should be named "LoopBack PWA (localhost)").
+6. Under the "Trust" section change the value of "When using this certificate" to "Always Trust."
+7. Close the "LoopBack PWA (localhost)" certificate window in Keychain Access. Enter your password when prompted.
+8. You can now close Keychain Access and the `server/private` directory in Finder.
+
 {% include tip.html content="[Let's Encrypt](https://letsencrypt.org/) is a free certificate authority that you can use when you deploy your app to production. The [`letsencrypt-express`](https://www.npmjs.com/package/letsencrypt-express) package can be used to manage Let's Encrypt certificates within Express apps and should work equally well for LoopBack apps.
 " %}
 
