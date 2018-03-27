@@ -103,8 +103,6 @@ Install Node.js if it is not already installed:
 * [Download Node.js](https://nodejs.org/en/download/) or
 * [Install Node.js via a package manager](https://nodejs.org/en/download/package-manager/)
 
-TK: Create the `loopback-pwa` repository.
-
 Clone or download the [`loopback-pwa`](https://github.com/ibm-watson-data-lab/loopback-pwa) repository from GitHub.
 
 Change in to the `loopback-pwa` directory:
