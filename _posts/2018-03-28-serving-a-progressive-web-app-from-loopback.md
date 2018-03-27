@@ -762,7 +762,23 @@ boot(app, __dirname, function(err) {
 });
 ```
 
+Go to [https://localhost:8443/](https://localhost:8443/) in Google Chrome. In Google Chrome open DevTools by selecting "View" → "Developer" → "Developer Tools". Select the "Audits" tab in Chrome DevTools. Hit the "Perform an audit…" button. Ensure that all of the audit categories are selected and hit the "Run audit" button.
+
+{% include important.html content="If you do not install the self-signed certificate as trusted by your computer then Google Chrome will warn you that the certificate is not trusted and Lighthouse will fail your app on several audits.
+" %}
+
 ### Getting a Perfect Lighthouse Audit Result
+
+Run the LoopBack app:
+
+```bash
+$ node .
+```
+
+Go to [https://localhost:8443/](https://localhost:8443/) in Google Chrome. In Google Chrome open DevTools by selecting "View" → "Developer" → "Developer Tools". Select the "Audits" tab in Chrome DevTools. Hit the "Perform an audit…" button. Ensure that all of the audit categories are selected and hit the "Run audit" button.
+
+{% include important.html content="If you do not install the self-signed certificate as trusted by your computer then Google Chrome will warn you that the certificate is not trusted and Lighthouse will fail your app on several audits.
+" %}
 
 The Lightouse audit results should be almost perfect scores in all categories at this point. However, under the Progressive Web App category Lighthouse will indicate that the app "Does not redirect HTTP traffic to HTTPS." Lighthouse may also indicate that the app "Does not provide fallback content when JavaScript is not available." This audit should pass, but fails as a result of the "Does not redirect HTTP traffic to HTTPS" audit failing.
 
@@ -781,6 +797,10 @@ $ sudo node .
 
 {% include warning.html content="Starting LoopBack using `sudo` is _not_ a recommended practice.
 " %}
+
+Go to [https://localhost/](https://localhost/) in Google Chrome (no port number is needed as port 443 is the standard port for HTTPS). In Google Chrome open DevTools and run a Lighthouse audit again with all categories selected.
+
+The Lightouse audit results should be all perfect scores in all categories now! The previously-failing "Does not redirect HTTP traffic to HTTPS" and "Does not provide fallback content when JavaScript is not available" audits should now be passing.
 
 Change the `httpPort` and `port` values in `server/config.json` back to their previous settings:
 
