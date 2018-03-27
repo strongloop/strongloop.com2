@@ -117,12 +117,6 @@ Install npm dependencies:
 $ npm install
 ```
 
-Make a `server/private` directory for the private key and the certificate:
-
-```bash
-$ mkdir server/private
-```
-
 Run the `generate-key` script to generate a new private key:
 
 ```bash
