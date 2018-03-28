@@ -11,7 +11,7 @@ categories:
 
 In this series, we will work through creating a basic LoopBack 4 application that exposes REST APIs; calls out to GitHub APIs through [octokat.js](https://github.com/philschatz/octokat.js) (a GitHub API client) to get the number of stargazers on a user-specified GitHub organization and repository; and persists the data into a Cloudant database.
 
-<img src="https://strongloop.com/blog-assets/2018/04/github-app-overview.png" alt="Overview of the LoopBack GitHub app" style="width: 500px; margin:auto;"/>
+
 
 <!--more-->
 The series is organized as follows:
