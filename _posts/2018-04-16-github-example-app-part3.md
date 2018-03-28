@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LoopBack 4 GitHub Example Application - Persist Data to Cloudant   (Part 3 of 3)
+title: LoopBack 4 GitHub Example Application &#58; Persist Data to Cloudant   (Part 3 of 3)
 date: 2018-04-16T00:00:13+00:00
 author: Diana Lau
 permalink: /strongblog/loopback4-github-example-app-part3/
@@ -14,7 +14,7 @@ that exposes REST APIs, calls out to GitHub APIs through [octokat.js](https://gi
 to get the number of stargazers on a user-specified GitHub organization and repository,
 and persists the data into a Cloudant database.
 
-<!-- more -->
+<!--more-->
 ### Previously in Part 2
 In the Part 2 of this series, we created a REST endpoint that gets 
 the number of stargazers for a GitHub repository by using 
