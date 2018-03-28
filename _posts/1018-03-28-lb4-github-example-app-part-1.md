@@ -35,25 +35,7 @@ npm i -g @loopback/cli
 
 ### Step 1: Scaffolding a LB4 Application
 
-Use `lb4` command and follow the prompts to create a new LB4 application. 
 
-```
-$ lb4
-? Project name: loopback4-github-app
-? Project description: LoopBack4 application that calls GitHub for data
-? Project root directory: loopback-4-github-app
-? Application class name: GitHubApplication
-? Select project build settings:  Enable tslint, Enable prettier, Enable mocha, Enable loopbackBuild
-
-<<some more output>>
- 
-Application loopback4-github-app is now created in loopback-4-github-app.
-
-Next steps:
-
-$ cd loopback-4-github-app
-$ npm start
-```
 
 Follow the next steps above and try out the `http://127.0.0.1:3000/ping` endpoint, you'll get something like:
 ```
