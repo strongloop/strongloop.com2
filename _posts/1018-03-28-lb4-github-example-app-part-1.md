@@ -9,13 +9,12 @@ categories:
   - LoopBack
 ---
 
-DW 3
+DW 4
 
 
 11
 11
 
-Follow the next steps above and try out the `http://127.0.0.1:3000/ping` endpoint, you'll get something like:
 
 ```
 {  
