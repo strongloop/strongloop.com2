@@ -1,20 +1,17 @@
 ---
 layout: post
-title: LoopBack 4 GitHub Example Application - Create REST APIs   (Part 1 of 3)
-date: 2018-04-02T00:00:13+00:00
+title: LoopBack 4 GitHub Example Application - Create REST APIs (Part 1 of 3)
+date: 2018-03-28T00:00:13+00:00
 author: Diana Lau
 permalink: /strongblog/loopback4-github-example-app-part1/
 categories:
-  - Community
+  - How-To
   - LoopBack
 ---
 
-In this series, we will work through creating a basic LoopBack 4 application
-that exposes REST APIs; calls out to GitHub APIs through [octokat.js](https://github.com/philschatz/octokat.js) 
-(a GitHub API client) to get the number of stargazers on a user-specified GitHub organization and repository; 
-and persists the data into a Cloudant database.
+In this series, we will work through creating a basic LoopBack 4 application that exposes REST APIs; calls out to GitHub APIs through [octokat.js](https://github.com/philschatz/octokat.js) (a GitHub API client) to get the number of stargazers on a user-specified GitHub organization and repository; and persists the data into a Cloudant database.
 
-<img src="../blog-assets/2018/04/github-app-overview.png" alt="Overview of the LoopBack GitHub app" style="width: 400px; margin:auto;"/>
+<img src="https://strongloop.com/blog-assets/2018/04/github-app-overview.png" alt="Overview of the LoopBack GitHub app" style="width: 400px; margin:auto;"/>
 
 <!-- more -->
 The series is organized as follows:
@@ -25,7 +22,8 @@ Part 2 - Adding logic to a controller to talk to GitHub API
 
 Part 3 - Persisting data to Cloudant database using `DataSource` and `Repository`
 
-## Before you begin
+## Before You Begin
+
 Make sure you have [Node.js](https://nodejs.org/en/download/) v8 or higher installed. Since we will be using the LoopBack 4 [CLI](http://loopback.io/doc/en/lb4/Command-line-interface.html) to get started, install `@loopback/cli` as well. 
 
 Run the following command: 
@@ -33,8 +31,10 @@ Run the following command:
 npm i -g @loopback/cli
 ```
 
-## Let's get started
-### Step 1: Scaffolding an LB4 application
+## Let's Get Started
+
+### Step 1: Scaffolding a LB4 Application
+
 Use `lb4` command and follow the prompts to create a new LB4 application. 
 
 ```
@@ -73,8 +73,9 @@ Follow the next steps above and try out the `http://127.0.0.1:3000/ping` endpoin
 }
 ```
 
-### Step 2: Generating the controller for creating REST APIs
-A [Controller](http://loopback.io/doc/en/lb4/Controllers.html) is where you implement the business logic.  We are going to generate the controller for our REST endpoint `/repo/{org}/{repo}/stars`, which will get the number of stargazers for the user-specified GitHub organization and repository.  
+### Step 2: Generating the Controller for Creating REST APIs
+
+A [Controller](http://loopback.io/doc/en/lb4/Controllers.html) is where you implement the business logic. We are going to generate the controller for our REST endpoint `/repo/{org}/{repo}/stars`, which will get the number of stargazers for the user-specified GitHub organization and repository.  
 
 Run the `lb4 controller` command as follows: 
 ```
@@ -85,10 +86,9 @@ $ lb4 controller
 ```
 _Note_: the class name will be suffixed with `Controller`.
 
-### Step 3: Create REST endpoints in GHRepoController
-Go to `GHRepoController` (in `controllers\gh-repo.controller.ts`) that was generated 
-in the previous step, and add the following function that corresponds to the 
-`GET /repo/{org}/{repo}/stars` endpoint:
+### Step 3: Create REST Endpoints in GHRepoController
+
+Go to `GHRepoController` (in `controllers\gh-repo.controller.ts`) that was generated in the previous step, and add the following function that corresponds to the `GET /repo/{org}/{repo}/stars` endpoint:
 
 ```ts
 @get('/repo/{org}/{repo}/stars') 
@@ -106,16 +106,15 @@ You also need to add the import statement below:
 ```ts
 import {get, param} from "@loopback/openapi-v3";
 ```
-### Step 4: Testing the REST endpoint
-Before adding in more logic, let's test the endpoint we've just created.  
-Run the command `npm start` to start the application.  
+### Step 4: Testing the REST Endpoint
+
+Before adding in more logic, let's test the endpoint we've just created. Run the command `npm start` to start the application.  
 
 Go to a browser and type:
 ```
 http://localhost:3000/swagger-ui
 ```
-This will bring you to the API explorer where you can test your API.  
-Try out the newly added REST API Under `GHRepoController`.
+This will bring you to the API explorer where you can test your API. Try out the newly added REST API Under `GHRepoController`.
 
 ![Screen shot](../blog-assets/2018/04/screenshot-ghRepoController-apiExplorer.png)
 
@@ -126,13 +125,13 @@ _Tip:_ If you want to look at the corresponding OpenAPI specification, type in t
 http://localhost:3000/openapi.json
 ```
 
-## What's next
+## What's Next
+
 In part 2, we will add more logic in `GHRepoController` to talk to GitHub APIs through `octokat.js`, a GitHub API client.
 
-## Code repository
+## Code Repository
 
-The code for this GitHub example application can be found [here](https://github.com/dhmlau/loopback4-github-app).
-The `part1` branch has everything accomplished in this article.
+The code for this GitHub example application can be found [here](https://github.com/dhmlau/loopback4-github-app). The `part1` branch has everything accomplished in this article.
 ```
 git clone https://github.com/dhmlau/loopback4-github-app.git
 git checkout part1
