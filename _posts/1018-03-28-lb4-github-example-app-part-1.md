@@ -9,47 +9,7 @@ categories:
   - LoopBack
 ---
 
-## DELETED H3 Let's Get Started
-
-Use `lb4` command and follow the prompts to create a new LB4 application. 
-
-```
-$ lb4
-? Project name: loopback4-github-app
-? Project description: LoopBack4 application that calls GitHub for data
-? Project root directory: loopback-4-github-app
-? Application class name: GitHubApplication
-? Select project build settings:  Enable tslint, Enable prettier, Enable mocha, Enable loopbackBuild
-
-<<some more output>>
- 
-Application loopback4-github-app is now created in loopback-4-github-app.
-
-Next steps:
-
-$ cd loopback-4-github-app
-$ npm start
-```
-
-Follow the next steps above and try out the `http://127.0.0.1:3000/ping` endpoint, you'll get something like:
-```
-{  
-   "greeting":"Hello from LoopBack",
-   "date":"2018-03-19T17:22:16.159Z",
-   "url":"/ping",
-   "headers":{  
-      "host":"localhost:3000",
-      "connection":"keep-alive",
-      "user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36",
-      "upgrade-insecure-requests":"1",
-      "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
-      "accept-encoding":"gzip, deflate, br",
-      "accept-language":"en-US,en;q=0.8"
-   }
-}
-```
-
-delete down here next
+## DELETED Let's Get Started
 
 ## Step 2: Generating the Controller for Creating REST APIs
 
