@@ -75,7 +75,7 @@ export class GHStars extends Entity {
 ### Step 2: Configuring the datasource
 We're going to declare the datasource connection to the Cloudant database
 through `datasources.json`.  In this article, [Cloudant service on IBM Cloud](https://console.bluemix.net/catalog/services/cloudant-nosql-db) is used.
-Feel free to use other database with the [supported database connectors](http://loopback.io/doc/en/lb3/Database-connectors.html).  Since LoopBack 4 is leveraging 
+Feel free to use another database from the [supported database connectors](http://loopback.io/doc/en/lb3/Database-connectors.html).  Since LoopBack 4 is leveraging 
 the juggler in LoopBack 3 through the legacy juggler bridge, defining the datasource is similar 
 to what we do in LoopBack 3 for those who are familiar with the older versions of LoopBack.  
 For details, see http://loopback.io/doc/en/lb3/Defining-data-sources.html.  
@@ -89,8 +89,7 @@ with the following content.  Replace the `url` with your Cloudant instance.
     "name": "db",
     "connector": "cloudant",
     "url": "https://someuserid:somepassword@someinstance-bluemix.cloudant.com",
-    "database": "ghstars",
-    "modelIndex": ""
+    "database": "ghstars"
 }
 ```
 _**Important**_: If you're pushing your application to GitHub, make sure you are not committing 
