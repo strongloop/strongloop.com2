@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LoopBack 4 GitHub Example Application - Call out to GitHub   (Part 2 of 3)
+title: LoopBack 4 GitHub Example Application &#58; Call out to GitHub   (Part 2 of 3)
 date: 2018-04-09T00:00:13+00:00
 author: Diana Lau
 permalink: /strongblog/loopback4-github-example-app-part2/
@@ -15,7 +15,7 @@ that exposes REST APIs, calls out to GitHub APIs through [octokat.js](https://gi
 and persists the data into a Cloudant database.
 
 
-<!-- more -->
+<!--more-->
 ## Let's continue
 In Part 1 of this blog post series, we have created a LoopBack 4 application and created a REST endpoint in `GHRepoController` that takes GitHub organization and repository as the path parameters.  We'll continue by adding logic to the `getRepoStargazers` function in `GHRepoController`.
 
