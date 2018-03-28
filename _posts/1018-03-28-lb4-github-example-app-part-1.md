@@ -9,7 +9,7 @@ categories:
   - LoopBack
 ---
 
-## Before You Begin
+## REVISED Before You Begin
 
 Make sure you have [Node.js](https://nodejs.org/en/download/) v8 or higher installed. Since we will be using the LoopBack 4 [CLI](http://loopback.io/doc/en/lb4/Command-line-interface.html) to get started, install `@loopback/cli` as well. 
 
@@ -123,13 +123,3 @@ The code for this GitHub example application can be found [here](https://github.
 git clone https://github.com/dhmlau/loopback4-github-app.git
 git checkout part1
 ```
-
-## Call for Action
-
-LoopBack's future success counts on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
-
-* [Open a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue)
-* [Casting your vote for extensions](https://github.com/strongloop/loopback-next/issues/512)
-* [Reporting issues](https://github.com/strongloop/loopback-next/issues)
-* [Building more extensions](https://github.com/strongloop/loopback-next/issues/647)
-* [Helping each other in the community](https://groups.google.com/forum/#!forum/loopbackjs)
