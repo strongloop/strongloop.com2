@@ -9,7 +9,7 @@ categories:
   - LoopBack
 ---
 
-## DELETED Let's Get Started
+## DELETED H3 Let's Get Started
 
 Use `lb4` command and follow the prompts to create a new LB4 application. 
 
@@ -51,7 +51,7 @@ Follow the next steps above and try out the `http://127.0.0.1:3000/ping` endpoin
 
 delete down here next
 
-### Step 2: Generating the Controller for Creating REST APIs
+## Step 2: Generating the Controller for Creating REST APIs
 
 A [Controller](http://loopback.io/doc/en/lb4/Controllers.html) is where you implement the business logic. We are going to generate the controller for our REST endpoint `/repo/{org}/{repo}/stars`, which will get the number of stargazers for the user-specified GitHub organization and repository.  
 
@@ -64,7 +64,7 @@ $ lb4 controller
 ```
 Note: the class name will be suffixed with `Controller`.
 
-### Step 3: Create REST Endpoints in GHRepoController
+## Step 3: Create REST Endpoints in GHRepoController
 
 Go to `GHRepoController` (in `controllers\gh-repo.controller.ts`) that was generated in the previous step, and add the following function that corresponds to the `GET /repo/{org}/{repo}/stars` endpoint:
 
@@ -84,7 +84,7 @@ You also need to add the import statement below:
 ```ts
 import {get, param} from "@loopback/openapi-v3";
 ```
-### Step 4: Testing the REST Endpoint
+## Step 4: Testing the REST Endpoint
 
 Before adding in more logic, let's test the endpoint we've just created. Run the command `npm start` to start the application.  
 
