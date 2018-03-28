@@ -84,7 +84,7 @@ $ lb4 controller
 ? What kind of controller would you like to generate? Empty Controller
    create src/controllers/gh-repo.controller.ts
 ```
-_Note_: the class name will be suffixed with `Controller`.
+Note: the class name will be suffixed with `Controller`.
 
 ### Step 3: Create REST Endpoints in GHRepoController
 
@@ -120,7 +120,7 @@ This will bring you to the API explorer where you can test your API. Try out the
 
 The response body should be `100` regardless of the value of the input parameters.
 
-_Tip:_ If you want to look at the corresponding OpenAPI specification, type in the browser:
+Tip: If you want to look at the corresponding OpenAPI specification, type in the browser:
 ```
 http://localhost:3000/openapi.json
 ```
