@@ -51,7 +51,7 @@ pages with each one focusing on a key concept for LoopBack 4 development. You ca
 ### APIDocs
 
 There were a number of issues in [typedoc](https://github.com/TypeStrong/typedoc) and [strong-docs](https://github.com/strongloop/strong-docs) which left APIDocs to be incomplete for some of
-the packages. These issues were addressed and as a result [APIDocs](http://apidocs.loopback.io/) are now more accurate and complete than ever before.
+the packages. These issues were addressed and as a result [APIDocs](http://apidocs.loopback.io/) are now more accurate than before as it includes missing sections and types.
 
 ## Injection Type Inference
 
@@ -71,7 +71,7 @@ class FooClass {
 
 const ctx = new Context();
 const key = BindingKey.create<FooClass>("my.binding.key");
-ctx.bind(key.toString()).toClass(FooClass);
+ctx.bind(key).toClass(FooClass);
 
 let foo = await ctx.get(key);
 
@@ -81,7 +81,7 @@ foo.world();
 
 // After #1169, foo is known to be of type FooClass. The following compiler warning is shown in VSCode.
 // [ts] Property 'world' does not exist on type 'FooClass'.
-foo.world(); // foo is known to be of type FooClass.
+foo.world();
 ```
 
 ## Experiments
@@ -102,11 +102,11 @@ task will not finish on time but you can track progress in this [PR](https://git
 
 ## Miscellaneous Improvements
 
-<img src="https://strongloop.com/blog-assets/2018/04/powered-by-LB4.png" alt="Powered by LB4 Badge" style="width: 500px; margin:auto;"/>
-
 * New projects generated using the LoopBack 4 CLI now feature the new Powered by LoopBack 4 Logo.
-* Removed License generation from a new project generated using the CLI.
-* We've simplified the issues template for LoopBack 4 and now accept questions in issues (but please consider this to be the last resort).
+  <img src="/blog-assets/2018/04/powered-by-LB4.png" alt="Powered by LB4 Badge" style="width: 500px; margin:auto;"/>
+
+* `LICENSE.md` is no longer generated for a new Application scaffolded using the CLI.
+* We've simplified the issues template for LoopBack 4 and now accept questions in issues (but please use this as a last resort).
 
 ## Call for Action
 
