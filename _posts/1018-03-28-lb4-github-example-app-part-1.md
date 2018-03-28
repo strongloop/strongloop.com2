@@ -9,11 +9,7 @@ categories:
   - LoopBack
 ---
 
-## DELETED Before You Begin
-
-## Let's Get Started
-
-### Step 1: Scaffolding a LB4 Application
+## DELETED Let's Get Started
 
 Use `lb4` command and follow the prompts to create a new LB4 application. 
 
@@ -52,6 +48,8 @@ Follow the next steps above and try out the `http://127.0.0.1:3000/ping` endpoin
    }
 }
 ```
+
+delete down here next
 
 ### Step 2: Generating the Controller for Creating REST APIs
 
