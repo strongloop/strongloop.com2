@@ -23,6 +23,7 @@ In the [previous episode](/strongblog/lets-build-a-band-app-loopback-pt3/), we g
 
 In this episode, we will deploy our application to the cloud. A LoopBack app is simply a Node.js app. For our purposes, we will deploy our code to [Bluemix](https://bluemix.net), IBM's PaaS (platform as a service), but we could deploy it wherever Node.js is supported. Wherever we decide to deploy our Node application, we need to make sure the tools were in place to keep our app running and able to handle any sort of load it may need to withstand. Fortunately, Bluemix handles all of that for us. And we can use their Cloud Foundry tools to configure and manage the deployment.
 <!--more-->
+
 <img src="https://strongloop.com/blog-assets/2017/band-app/bandapp4.jpg" alt="Let's make a band app part 4" style="width: 500px; margin:auto;"/>
 
 ## Create Node.js Cloud Foundry app:
