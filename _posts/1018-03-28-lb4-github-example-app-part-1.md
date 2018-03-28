@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 GitHub Example Application&#58; Create REST APIs (Part 1 of 3)
-date: 2019-03-28T00:00:13+00:00
+date: 1018-03-28T00:00:13+00:00
 author: Diana Lau
 permalink: /strongblog/lb4-github-example-app-part-1/
 categories:
