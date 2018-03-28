@@ -9,14 +9,7 @@ categories:
   - LoopBack
 ---
 
-## REVISED Before You Begin
-
-Make sure you have [Node.js](https://nodejs.org/en/download/) v8 or higher installed. Since we will be using the LoopBack 4 [CLI](http://loopback.io/doc/en/lb4/Command-line-interface.html) to get started, install `@loopback/cli` as well. 
-
-Run the following command: 
-```
-npm i -g @loopback/cli
-```
+## DELETED Before You Begin
 
 ## Let's Get Started
 
