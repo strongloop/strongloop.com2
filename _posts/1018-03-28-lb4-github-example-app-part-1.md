@@ -9,6 +9,8 @@ categories:
   - LoopBack
 ---
 
+DW 1
+
 In this series, we will work through creating a basic LoopBack 4 application that exposes REST APIs; calls out to GitHub APIs through [octokat.js](https://github.com/philschatz/octokat.js) (a GitHub API client) to get the number of stargazers on a user-specified GitHub organization and repository; and persists the data into a Cloudant database.
 
 <img src="https://strongloop.com/blog-assets/2018/04/github-app-overview.png" alt="Overview of the LoopBack GitHub app" style="width: 500px; margin:auto;"/>
@@ -35,22 +37,23 @@ npm i -g @loopback/cli
 
 ### Step 1: Scaffolding a LB4 Application
 
+Use `lb4` command and follow the prompts to create a new LB4 application. 
 
+```
+$ lb4
+? Project name: loopback4-github-app
+? Project description: LoopBack4 application that calls GitHub for data
+? Project root directory: loopback-4-github-app
+? Application class name: GitHubApplication
+? Select project build settings:  Enable tslint, Enable prettier, Enable mocha, Enable loopbackBuild
 
-Follow the next steps above and try out the `http://127.0.0.1:3000/ping` endpoint, you'll get something like:
+<<some more output>>
+ 
+Application loopback4-github-app is now created in loopback-4-github-app.
+
+Next steps:
+
+$ cd loopback-4-github-app
+$ npm start
 ```
-{  
-   "greeting":"Hello from LoopBack",
-   "date":"2018-03-19T17:22:16.159Z",
-   "url":"/ping",
-   "headers":{  
-      "host":"localhost:3000",
-      "connection":"keep-alive",
-      "user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36",
-      "upgrade-insecure-requests":"1",
-      "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
-      "accept-encoding":"gzip, deflate, br",
-      "accept-language":"en-US,en;q=0.8"
-   }
-}
-```
+
