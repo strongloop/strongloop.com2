@@ -11,7 +11,7 @@ categories:
 
 ```
 {  
-      "host":"localhost:3000",
+      
       "connection":"keep-alive",
       "user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36",
       "upgrade-insecure-requests":"1",
