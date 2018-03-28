@@ -10,10 +10,10 @@ categories:
 ---
 
 With spring in the air, we've been hard at work gearing up for a new major release
-of LoopBack 4 dubbed the "Developer Preview 2". The team has been hard at work
-focusing on the items needed for this release in the [March Milestone](https://github.com/strongloop/loopback-next/issues/937). You can also see
+of LoopBack 4 dubbed the "Developer Preview 2". The team has been focusing on the items
+needed for this release in the [March Milestone](https://github.com/strongloop/loopback-next/issues/937). You can also see
 the [April Milestone](https://github.com/strongloop/loopback-next/issues/1044) to see the work we have planned for the month of April.
-Read on to learn about the March Milestone accomplishments and more.
+Read on to learn about the March Milestone's accomplishments and more.
 
 <!--more-->
 
@@ -37,6 +37,10 @@ This effort allows the documentation to be kept up to date with the code. The do
 available as a `npm` package `@loopback/docs` which opens up the possibility for versioned
 docs on loopback.io.
 
+Now contributors of Loopback 4 can update the documentation along with the code in the same PR in the
+[loopback-next](https://github.com/strongloop/loopback-next) repository. This simplifies the development
+process for all contributors as documentation and code live under the same repository.
+
 ### Tutorial
 
 For those looking to get started with LoopBack 4, we have completely revamped the LoopBack 4
@@ -52,7 +56,7 @@ the packages. These issues were addressed and as a result [APIDocs](http://apido
 ## Injection Type Inference
 
 Previously, it was not possible for the type of an item retrieved from `Context` to be inferred by TypeScript, providing
-some safety and autocompletion support in editors such as VS Code. This has now been addressed as a `BindingKey` now
+some safety and autocompletion support in editors such as Visual Studio Code. This has now been addressed as a `BindingKey` now
 preserves type information and provides that to the compiler when an item is retrieved. These changes came in as a result of
 [PR #1169](https://github.com/strongloop/loopback-next/pull/1169). Example of before and after can be seen below.
 
@@ -82,7 +86,7 @@ foo.world(); // foo is known to be of type FooClass.
 
 ## Experiments
 
-There are some exciting features made available in development that you can check out and provide feedback on!
+There are some exciting features in development that you can check out and provide feedback on below!
 
 * [[RFC] feat: use express/koa/... as the http framework](https://github.com/strongloop/loopback-next/pull/1082)
 * [[WIP - PoC] feat: add integration for service-oriented backends](https://github.com/strongloop/loopback-next/pull/1119)
@@ -98,7 +102,7 @@ task will not finish on time but you can track progress in this [PR](https://git
 
 ## Miscellaneous Improvements
 
-<!-- ADD Powered by LB 4 Logo Here -->
+<img src="https://strongloop.com/blog-assets/2018/04/powered-by-LB4.png" alt="Powered by LB4 Badge" style="width: 500px; margin:auto;"/>
 
 * New projects generated using the LoopBack 4 CLI now feature the new Powered by LoopBack 4 Logo.
 * Removed License generation from a new project generated using the CLI.
