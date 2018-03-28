@@ -13,7 +13,7 @@ In this series, we will work through creating a basic LoopBack 4 application tha
 
 <img src="https://strongloop.com/blog-assets/2018/04/github-app-overview.png" alt="Overview of the LoopBack GitHub app" style="width: 400px; margin:auto;"/>
 
-<!-- more -->
+<!--more-->
 The series is organized as follows:
 
 Part 1 - Scaffolding a LoopBack 4 application and creating REST API
