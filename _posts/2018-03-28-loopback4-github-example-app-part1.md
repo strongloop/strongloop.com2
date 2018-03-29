@@ -62,13 +62,7 @@ Follow the next steps above and try out the `http://127.0.0.1:3000/ping` endpoin
    "date":"2018-03-19T17:22:16.159Z",
    "url":"/ping",
    "headers":{  
-      "host":"localhost:3000",
-      "connection":"keep-alive",
-      "user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36",
-      "upgrade-insecure-requests":"1",
-      "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
-      "accept-encoding":"gzip, deflate, br",
-      "accept-language":"en-US,en;q=0.8"
+     ...
    }
 }
 ```
@@ -116,7 +110,7 @@ http://localhost:3000/swagger-ui
 ```
 This will bring you to the API explorer where you can test your API. Try out the newly added REST API Under `GHRepoController`.
 
-![Screen shot](../blog-assets/2018/04/screenshot-ghRepoController-apiExplorer.png)
+<img src="https://strongloop.com/blog-assets/2018/04/screenshot-ghRepoController-apiExplorer.png" alt="Screenshot of ghRepoController" style="width: 500px; margin:auto;"/>
 
 The response body should be `100` regardless of the value of the input parameters.
 
