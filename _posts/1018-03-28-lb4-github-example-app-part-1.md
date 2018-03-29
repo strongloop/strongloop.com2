@@ -113,6 +113,10 @@ This will bring you to the API explorer where you can test your API. Try out the
 
 <img src="https://strongloop.com/blog-assets/2018/04/screenshot-hRepoController-apiExplorer.png" alt="Screenshot" style="width: 500px; margin:auto;"/>
 
+
+<img src="https://strongloop.com/blog-assets/2018/04/github-app-overview.png" alt="Overview of the LoopBack GitHub app" style="width: 500px; margin:auto;"/>
+
+
 The response body should be `100` regardless of the value of the input parameters.
 
 Tip: If you want to look at the corresponding OpenAPI specification, type in the browser:
