@@ -107,9 +107,11 @@ Before adding in more logic, let's test the endpoint we've just created. Run the
 Go to a browser and type:
 ```
 http://localhost:3000/swagger-ui
-```g
+```
+
 This will bring you to the API explorer where you can test your API. Try out the newly added REST API Under `GHRepoController`.
 
+<img src="https://strongloop.com/blog-assets/2018/04/screenshot-hRepoController-apiExplorer.png" alt="Screenshot" style="width: 500px; margin:auto;"/>
 
 The response body should be `100` regardless of the value of the input parameters.
 
