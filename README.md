@@ -148,6 +148,8 @@ Where:
 
 Simply adding the post will make it appear in the list on the front page, and in the appropriate category and author pages.
 
+Please review [information for blog authors](https://github.com/strongloop/strongloop.com/blob/master/_posts/2001-05-04-information-for-blog-authors.md) for stylistic guidelines.
+
 ### How to redirect a blog post
 
 For blog posts that were moved to other sites (DeveloperWorks), you can easily redirect the URL so any external links to the old post will be redirected to the new location.
