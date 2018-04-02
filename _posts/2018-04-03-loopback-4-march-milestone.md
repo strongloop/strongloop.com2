@@ -42,28 +42,28 @@ Previously, it was not possible for the type of an item retrieved from `Context`
 some safety and autocompletion support in editors such as Visual Studio Code. We added support for providing a type using generics when using `Context` functions like `get`, `getSync`, etc. so you can have type safety when using dependency injection. These changes came in as a result of [PR #1150](https://github.com/strongloop/loopback-next/pull/1050). Example of before and after can be seen below.
 
 ```ts
-import { Context } from "@loopback/context";
+import {Context} from '@loopback/context';
 
 class FooClass {
   hello() {
-    console.log("hello");
+    console.log('hello');
   }
 }
 
 const ctx = new Context();
-const key = "my.binding.key";
+const key = 'my.binding.key';
 ctx.bind(key).toClass(FooClass);
 
 let foo = await ctx.get(key);
 
-// Before #1169, foo is considered to be of type any
+// Before PR #1150, foo is considered to be of type any
 // No error / warning is shown that property 'world' doesn't exist on FooClass.
 foo.world();
 
-// We specify the type as a generic in `<>`
+// AFter PR #1150, We specify the type as a generic in `<>`
 let foo = await ctx.get<FooClass>(key);
 
-// After #1169, foo is known to be of type FooClass. The following compiler error is shown in VSCode.
+// The following compiler error is shown in VSCode.
 // [ts] Property 'world' does not exist on type 'FooClass'.
 foo.world();
 ```
