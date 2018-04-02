@@ -56,11 +56,11 @@ ctx.bind(key).toClass(FooClass);
 
 let foo = await ctx.get(key);
 
-// Before #1150, foo is considered to be of type any
+// Before PR #1150, foo is considered to be of type any
 // No error / warning is shown that property 'world' doesn't exist on FooClass.
 foo.world();
 
-// AFter #1150, We specify the type as a generic in `<>`
+// AFter PR #1150, We specify the type as a generic in `<>`
 let foo = await ctx.get<FooClass>(key);
 
 // The following compiler error is shown in VSCode.
