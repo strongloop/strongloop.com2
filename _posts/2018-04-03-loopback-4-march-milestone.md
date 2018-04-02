@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LoopBack 4March 2018 Milestone Update
+title: LoopBack 4 March 2018 Milestone Update
 date: 2018-04-03T00:00:13+00:00
 author: Taranveer Virk
 permalink: /strongblog/march-2018-milestone/
@@ -39,10 +39,10 @@ There were a number of issues in [typedoc](https://github.com/TypeStrong/typedoc
 ## Injection Type Inference
 
 Previously, it was not possible for the type of an item retrieved from `Context` to be inferred by TypeScript, providing
-some safety and autocompletion support in editors such as Visual Studio Code. This has now been addressed as a `BindingKey` now preserves type information and provides that to the compiler when an item is retrieved. These changes came in as a result of [PR #1169](https://github.com/strongloop/loopback-next/pull/1169). Example of before and after can be seen below.
+some safety and autocompletion support in editors such as Visual Studio Code. We added support for providing a type using generics when using `Context` functions like `get`, `getSync`, etc. so you can have type safety when using dependency injection. These changes came in as a result of [PR #1150](https://github.com/strongloop/loopback-next/pull/1050). Example of before and after can be seen below.
 
 ```ts
-import { Context, BindingKey } from "@loopback/context";
+import { Context } from "@loopback/context";
 
 class FooClass {
   hello() {
@@ -51,19 +51,24 @@ class FooClass {
 }
 
 const ctx = new Context();
-const key = BindingKey.create<FooClass>("my.binding.key");
+const key = "my.binding.key";
 ctx.bind(key).toClass(FooClass);
 
 let foo = await ctx.get(key);
 
 // Before #1169, foo is considered to be of type any
-// No warning is shown that property 'world' doesn't exist on FooClass.
+// No error / warning is shown that property 'world' doesn't exist on FooClass.
 foo.world();
 
-// After #1169, foo is known to be of type FooClass. The following compiler warning is shown in VSCode.
+// We specify the type as a generic in `<>`
+let foo = await ctx.get<FooClass>(key);
+
+// After #1169, foo is known to be of type FooClass. The following compiler error is shown in VSCode.
 // [ts] Property 'world' does not exist on type 'FooClass'.
 foo.world();
 ```
+
+There is more work being done to further improve the developer experience by not having to provide a type at all (as it's stored in the Binding Key). You can track progress for this in [PR #1169](https://github.com/strongloop/loopback-next/pull/1169).
 
 ## Experiments
 
@@ -85,6 +90,10 @@ With LoopBack 4, we are talking a fresh new look at Model Relations. In March we
 
 * `LICENSE.md` is no longer generated for a new Application scaffolded using the CLI.
 * We've simplified the issues template for LoopBack 4 and now accept questions in issues (but please use this as a last resort).
+
+## Farewell to Kevin
+
+Kevin Delisle ([@kjdelisle on GitHub](https://github.com/kjdelisle)) has left the LoopBack team mid-March to move on to new pursuits and we wish him the very best in all of his future endeavors.
 
 ## Call for Action
 
