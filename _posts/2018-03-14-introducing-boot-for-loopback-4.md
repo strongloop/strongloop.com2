@@ -25,7 +25,9 @@ class MyApp extends RestApplication {
   }
 }
 ```
+
 <!--more-->
+
 Enter `@loopback/boot`, one of the newest LoopBack 4 packages. **Boot** is a convention-based bootstrapper that automatically discovers artifacts and binds them to your Application's Context. This reduces the amount of manual effort
 required to bind artifacts for dependency injection at scale.
 
@@ -87,7 +89,7 @@ async function main() {
 
 ## Architecture
 
-As with most things in LoopBack 4, this component was designed with extensibility in mind. `@loopback/boot` not only binds artifacts but lays the foundation for declarative, convetnion based support. Booting is a multiple-step process to collect metadata for artifacts, resolve cross references, and create representation as bindings in the context to build up your Application.
+As with most things in LoopBack 4, this component was designed with extensibility in mind. `@loopback/boot` not only binds artifacts but lays the foundation for declarative, convention based support. Booting is a multiple-step process to collect metadata for artifacts, resolve cross references, and create representation as bindings in the context to build up your Application.
 
 `@loopback/boot` has a Bootstrapper which acts as an extension point for extension developers. Extensions can provide leverage the boot process by writing a class implementing the [Booter](http://loopback.io/doc/en/lb4/Booting-an-Application.html#booters) interface and packaging it as part of their Component. When the Application boots, the bootstrapper allows Booters to participate in each step (known as a phase) of the boot process. After a phase is completed by all registered Booters, the next phase is called. There are currently three phases: configure, discover, load. More phases may be added in the future.
 
