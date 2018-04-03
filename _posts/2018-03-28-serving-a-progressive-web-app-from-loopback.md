@@ -144,24 +144,7 @@ Alternatively, run the `generate-csr` script to generate a new certificate signi
 $ npm run generate-csr
 ```
 
-Optionally, install the self-signed certificate (`server/private/localhost.cert.pem`) as trusted by your computer. The steps needed for this will vary by operating system. If you skip this step then your web browser will warn you that the certificate is not trusted and Lighthouse will fail your app on several audits.
-
-To install the self-signed certificate on macOS:
-
-1. Open the `server/private` directory in Finder. This can be done in Finder or with the following command:  
-```bash
-$ open server/private
-```
-2. Open the Keychain Access utility app. This can be done in Finder or with the following command:  
-```bash
-$ open "/Applications/Utilities/Keychain Access.app"
-```
-3. In Keychain Access, ensure that "System" is selected under "Keychains" and that "Certificates" is selected under "Category."
-4. Drag-and-drop the `localhost.cert.pem` file from the `server/private` directory in Finder into Keychain Access. Enter your password if prompted.
-5. Double-click the self-signed certificate in Keychain Access (it should be named "LoopBack PWA (localhost)").
-6. Under the "Trust" section, change the value of "When using this certificate" to "Always Trust."
-7. Close the "LoopBack PWA (localhost)" certificate window in Keychain Access. Enter your password when prompted.
-8. You can now close Keychain Access and the `server/private` directory in Finder.
+Optionally, install the self-signed certificate (`server/private/localhost.cert.pem`) as trusted by your computer. The steps needed for this will vary by operating system. If you skip this step then your web browser will warn you that the certificate is not trusted and Lighthouse will fail your app on several audits. See the ["Installing A Self-Signed Certificate on macOS"](#installing-a-self-signed-certificate-on-macos) section of this post if you are using macOS.
 
 {% include tip.html content="[Let's Encrypt](https://letsencrypt.org/) is a free certificate authority that you can use when you deploy your app to production. The [`letsencrypt-express`](https://www.npmjs.com/package/letsencrypt-express) package can be used to manage Let's Encrypt certificates within Express apps and should work equally well for LoopBack apps.
 " %}
@@ -590,24 +573,7 @@ Alternatively, run the `generate-csr` script to generate a new certificate signi
 $ npm run generate-csr
 ```
 
-Optionally, install the self-signed certificate (`server/private/localhost.cert.pem`) as trusted by your computer. The steps needed for this will vary by operating system. If you skip this step then your web browser will warn you that the certificate is not trusted and Lighthouse will fail your app on several audits.
-
-To install the self-signed certificate on macOS:
-
-1. Open the `server/private` directory in Finder. This can be done in Finder or with the following command:  
-```bash
-$ open server/private
-```
-2. Open the Keychain Access utility app. This can be done in Finder or with the following command:  
-```bash
-$ open "/Applications/Utilities/Keychain Access.app"
-```
-3. In Keychain Access, ensure that "System" is selected under "Keychains" and that "Certificates" is selected under "Category."
-4. Drag-and-drop the `localhost.cert.pem` file from the `server/private` directory in Finder into Keychain Access. Enter your password if prompted.
-5. Double-click the self-signed certificate in Keychain Access (it should be named "LoopBack PWA (localhost)").
-6. Under the "Trust" section, change the value of "When using this certificate" to "Always Trust."
-7. Close the "LoopBack PWA (localhost)" certificate window in Keychain Access. Enter your password when prompted.
-8. You can now close Keychain Access and the `server/private` directory in Finder.
+Optionally, install the self-signed certificate (`server/private/localhost.cert.pem`) as trusted by your computer. The steps needed for this will vary by operating system. If you skip this step then your web browser will warn you that the certificate is not trusted and Lighthouse will fail your app on several audits. See the ["Installing A Self-Signed Certificate on macOS"](#installing-a-self-signed-certificate-on-macos) section of this post if you are using macOS.
 
 {% include tip.html content="[Let's Encrypt](https://letsencrypt.org/) is a free certificate authority that you can use when you deploy your app to production. The [`letsencrypt-express`](https://www.npmjs.com/package/letsencrypt-express) package can be used to manage Let's Encrypt certificates within Express apps and should work equally well for LoopBack apps.
 " %}
@@ -811,6 +777,25 @@ $ node .
 ```
 
 Temporarily changing the `httpPort` and `port` values in `server/config.json` to the standard values for HTTP and HTTPS enables you to get a Lightouse audit result with perfect scores in all categories. Since it's not a good idea to start LoopBack using `sudo`, this makes it impractical to get a perfect Lighthouse score while running your app locally for day to day development. However, you can still achieve a perfect Lighthouse score when deploying your web app to a staging or to a production environment.
+
+## Installing A Self-Signed Certificate on macOS
+
+To install the self-signed certificate on macOS:
+
+1. Open the `server/private` directory in Finder. This can be done in Finder or with the following command:  
+```bash
+$ open server/private
+```
+2. Open the Keychain Access utility app. This can be done in Finder or with the following command:  
+```bash
+$ open "/Applications/Utilities/Keychain Access.app"
+```
+3. In Keychain Access, ensure that "System" is selected under "Keychains" and that "Certificates" is selected under "Category."
+4. Drag-and-drop the `localhost.cert.pem` file from the `server/private` directory in Finder into Keychain Access. Enter your password if prompted.
+5. Double-click the self-signed certificate in Keychain Access (it should be named "LoopBack PWA (localhost)").
+6. Under the "Trust" section, change the value of "When using this certificate" to "Always Trust."
+7. Close the "LoopBack PWA (localhost)" certificate window in Keychain Access. Enter your password when prompted.
+8. You can now close Keychain Access and the `server/private` directory in Finder.
 
 ## What’s next?
 
