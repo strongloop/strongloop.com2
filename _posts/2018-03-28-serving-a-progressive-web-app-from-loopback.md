@@ -698,7 +698,7 @@ boot(app, __dirname, function(err) {
 {% include note.html content="If you have already installed the self-signed certificate, then skip to the [\"Getting a Perfect Lighthouse Audit Result\"](#getting-a-perfect-lighthouse-audit-result) section.
 " %}
 
-## Installing A Self-Signed Certificate on macOS
+## Installing a Self-Signed Certificate on macOS
 
 To install the self-signed certificate on macOS:
 
