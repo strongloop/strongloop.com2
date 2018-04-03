@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serving a Progressive Web App from LoopBack
-date: 2018-04-04
+date: 2018-04-05
 author: Bradley Holt
 permalink: /strongblog/serving-a-progressive-web-app-from-loopback/
 categories:
