@@ -18,9 +18,7 @@ LoopBack applications with the capability to connect to the backend databases.
 With the newly added features, improved developer experience and documentation, 
 we're pleased to announce today that Developer Preview #2 is available!  
 
-
-[LB4 logo when it's available]
-<!--<img src="https://strongloop.com/blog-assets/2018/03/boot-process.png" alt="@loopback/boot Bootstrapping process" style="width: 500px; margin:auto;"/>-->
+<img src="http://loopback.io/images/branding/mark/blue/loopback.jpg" alt="LoopBack new logo" style="width: 300px; margin:auto;"/>
 
 <!--more-->
 
@@ -36,7 +34,7 @@ which includes convention-based bootstrapper that automatically discovers artifa
 
 ### OpenAPI v3 support
 [OpenAPI Specification](https://swagger.io/specification/) provides a standard format to unify how an industry defines and describes RESTful APIs.  To keep up with the latest
-technologies, [LoopBack 4 has added the support for OpenAPI v3](https://github.com/strongloop/loopback-next/tree/master/packages/openapi-v3).
+technologies, [LoopBack 4 has upgraded the support for OpenAPI v3](https://github.com/strongloop/loopback-next/tree/master/packages/openapi-v3).
 
 ### Enhanced command-line interfaces
 You can now use `lb4 controller` to [generate controllers](https://strongloop.com/strongblog/generate-controllers-loopback-4-cli/)
@@ -44,15 +42,15 @@ and `lb4 example` to download examples. For details, see the [CLI documentation]
 
 ### Documentation
 In addition to our continued effort to improve LoopBack 4 documentation, 
-we've revamped the [Getting Started tutorial](url) to include step-by-step 
-instructions in creating your first LoopBack 4 application.  
+we've revamped the [Getting Started tutorial](http://loopback.io/doc/en/lb4/todo-tutorial.html) 
+to include step-by-step instructions in creating your first LoopBack 4 application.  
 
 ### Development process
 We have made a few changes to keep us on top of the latest technology stack and 
 simplify our development process and infrastructure.  It includes:
-- [Drop Node 6 support](https://strongloop.com/strongblog/loopback-4-dropping-node6)
-- [Move LoopBack 4 documentation to loopback-next monorepo](march-milestone-url) 
-- [Switch to 0.x.y versions from 4.0.0-alpha.X](https://github.com/strongloop/loopback-next/issues/954) to better indicate breaking changes
+- [Dropping Node 6 support](https://strongloop.com/strongblog/loopback-4-dropping-node6)
+- [Moving LoopBack 4 documentation to loopback-next monorepo](https://strongloop.com/strongblog/march-2018-milestone/) 
+- [Switching to 0.x.y versions from 4.0.0-alpha.X](https://github.com/strongloop/loopback-next/issues/954) to better indicate breaking changes
 
 ### Many more enhancements [WIP]
 - [Able to generate JSON schema from models](https://strongloop.com/strongblog/loopback-4-json-schema-generation/)
@@ -64,7 +62,7 @@ simplify our development process and infrastructure.  It includes:
 
 ## What's next
 Going forward, we'll be progressively providing richer functionalities to the framework,
-such as relation and type conversion.  Stay tuned for our [plan](https://github.com/strongloop/loopback-next/wiki/Upcoming-Releases).
+such as [model relation](https://github.com/strongloop/loopback-next/issues/1032) and [type conversion](https://github.com/strongloop/loopback-next/issues/755).  Stay tuned for our [plan](https://github.com/strongloop/loopback-next/wiki/Upcoming-Releases).
 Please note that we may make adjustment along the way.  
 
 ## Call for action
