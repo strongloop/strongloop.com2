@@ -17,7 +17,7 @@ and persists the data into a Cloudant database.
 
 <!--more-->
 ## Let's continue
-In Part 1 of this blog post series, we have created a LoopBack 4 application and created a REST endpoint in `GHRepoController` that takes GitHub organization and repository as the path parameters.  We'll continue by adding logic to the `getRepoStargazers` function in `GHRepoController`.
+In [Part 1](https://strongloop.com/strongblog/loopback4-github-example-app-part1/) of this blog post series, we have created a LoopBack 4 application and created a REST endpoint in `GHRepoController` that takes GitHub organization and repository as the path parameters.  We'll continue by adding logic to the `getRepoStargazers` function in `GHRepoController`.
 
 ### Step 1: Creating `creds.ts` for credentials used in octokat.js
 [octokat.js](https://www.npmjs.com/package/octokat) is a GitHub API client that makes it easier to talk 
