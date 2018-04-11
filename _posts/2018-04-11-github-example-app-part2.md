@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LoopBack 4 GitHub Example Application&#58; Call out to GitHub (Part 2 of 3)
+title: LoopBack 4 GitHub Example Application&#58; Call Out to GitHub (Part 2 of 3)
 date: 2018-04-11
 author: Diana Lau
 permalink: /strongblog/loopback4-github-example-app-part2/
@@ -12,7 +12,7 @@ categories:
 In this series, we will work through creating a basic LoopBack 4 application that exposes REST APIs, calls out to GitHub APIs through [octokat.js](https://github.com/philschatz/octokat.js) (a GitHub API client) to get the number of stargazers on a user-specified GitHub organization and repository, and persists the data into a Cloudant database.
 
 ## Let's continue
-In [Part 1](https://strongloop.com/strongblog/loopback4-github-example-app-part1/) of this blog post series, we have created a LoopBack 4 application and created a REST endpoint in `GHRepoController` that takes GitHub organization and repository as the path parameters.  We'll continue by adding logic to the `getRepoStargazers` function in `GHRepoController`.
+In [Part 1](https://strongloop.com/strongblog/loopback4-github-example-app-part1/) of this blog post series, we created a LoopBack 4 application and created a REST endpoint in `GHRepoController` that takes GitHub organization and repository as the path parameters.  We'll continue by adding logic to the `getRepoStargazers` function in `GHRepoController`.
 
 <!--more-->
 
