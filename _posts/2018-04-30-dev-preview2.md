@@ -13,8 +13,9 @@ In the previous release of [Developer Preview #1](https://strongloop.com/strongb
 we made LoopBack 4 extensible so that our community users and ourselves can build 
 extensions for adding features to LoopBack. 
 
-Since then, we have been focusing on enabling application developers to write 
-LoopBack applications with the capability to connect to the backend databases.
+Since then, we have been focusing on allowing application developers to write 
+LoopBack applications by enabling OpenAPI v3 and booting, as well as adding more 
+improvements in Context/Dependency Injection.
 With the newly added features, improved developer experience and documentation, 
 we're pleased to announce today that Developer Preview #2 is available!  
 
@@ -52,13 +53,17 @@ simplify our development process and infrastructure.  It includes:
 - [Moving LoopBack 4 documentation to loopback-next monorepo](https://strongloop.com/strongblog/march-2018-milestone/) 
 - [Switching to 0.x.y versions from 4.0.0-alpha.X](https://github.com/strongloop/loopback-next/issues/954) to better indicate breaking changes
 
-### Many more enhancements [WIP]
+### Many more enhancements
 - [Able to generate JSON schema from models](https://strongloop.com/strongblog/loopback-4-json-schema-generation/)
-
-[the list below coming from Raymond's message on slack. not sure about the details]
-- Many improvements in the context, such as find, inject.context, session tracking and circular dep detection
-- optional dep
-- source-map
+- Developer productivity
+  - Refine the mono repo layout for better isolation
+  - Refine the build scripts for performance and much better VSCode integration (error reporting, debugging, formatting)
+  - Add more TypeScript type checks
+- More context/DI features
+  - Optional dependency
+  - `@inject.context`
+  - Session tracking
+  - Find bindings
 
 ## What's next
 Going forward, we'll be progressively providing richer functionalities to the framework,
