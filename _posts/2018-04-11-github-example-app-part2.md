@@ -86,11 +86,11 @@ http://localhost:3000/swagger-ui
 
 Select `GHRepoController` > `GET /repo/{org}/{repo}/stars`, and in the parameters fields, type your favorite GitHub repo for the number of stargazers. 
 
-<img src="../blog-assets/2018/04/apiExplorer-request-part2.png" alt="Screen shot of API Explorer for REST endpoint under GHRepoController" style="width: 400px; margin:auto;"/>
+<img src="https://strongloop.com/blog-assets/2018/04/apiExplorer-request-part2.png" alt="Screen shot of API Explorer for REST endpoint under GHRepoController" style="width: 400px; margin:auto;"/>
 
 You should be able to see the results in the response section.
 
-<img src="../blog-assets/2018/04/apiExplorer-response-part2.png" alt="Screen shot of the response for the REST endpoint" style="width: 400px; margin:auto;"/>
+<img src="https://strongloop.com/blog-assets/2018/04/apiExplorer-response-part2.png" alt="Screen shot of the response for the REST endpoint" style="width: 400px; margin:auto;"/>
 
 
 _Tip_: You can make the LoopBack application show more debug statements by starting the app with `DEBUG=loopback:* npm start` command. 
