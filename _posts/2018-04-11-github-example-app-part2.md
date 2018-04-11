@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LoopBack 4 GitHub Example Application &#58; Call out to GitHub   (Part 2 of 3)
+title: LoopBack 4 GitHub Example Application&#58; Call out to GitHub (Part 2 of 3)
 date: 2018-04-11
 author: Diana Lau
 permalink: /strongblog/loopback4-github-example-app-part2/
