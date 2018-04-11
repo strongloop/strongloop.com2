@@ -11,9 +11,10 @@ categories:
 
 In this series, we will work through creating a basic LoopBack 4 application that exposes REST APIs, calls out to GitHub APIs through [octokat.js](https://github.com/philschatz/octokat.js) (a GitHub API client) to get the number of stargazers on a user-specified GitHub organization and repository, and persists the data into a Cloudant database.
 
-<!--more-->
 ## Let's continue
 In [Part 1](https://strongloop.com/strongblog/loopback4-github-example-app-part1/) of this blog post series, we have created a LoopBack 4 application and created a REST endpoint in `GHRepoController` that takes GitHub organization and repository as the path parameters.  We'll continue by adding logic to the `getRepoStargazers` function in `GHRepoController`.
+
+<!--more-->
 
 ### Step 1: Creating `creds.ts` for credentials used in octokat.js
 [octokat.js](https://www.npmjs.com/package/octokat) is a GitHub API client that makes it easier to talk to GitHub APIs.  In this application, we are going to use Basic Authentication to access GitHub for the number of stargzers for a given repo.
