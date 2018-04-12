@@ -59,7 +59,8 @@ Features includes:
 
 ### Many more enhancements
 - [Able to generate JSON schema from models](https://strongloop.com/strongblog/loopback-4-json-schema-generation/)
-- More context/DI features
+- More context/Dependcy Injection features
+  - Better debugging on DI, e.g. [ciricular dependencies](https://strongloop.com/strongblog/loopback-4-track-down-dependency-injections/)
   - Optional dependency
   - `@inject.context`
   - Session tracking
