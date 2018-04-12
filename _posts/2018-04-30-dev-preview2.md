@@ -48,17 +48,17 @@ to include step-by-step instructions in creating your first LoopBack 4 applicati
 
 ### Development process
 We have made a few changes to keep us on top of the latest technology stack and 
-simplify our development process and infrastructure.  It includes:
+simplify our development process and infrastructure.  It also improves developer productivity.
+Features includes:
 - [Dropping Node 6 support](https://strongloop.com/strongblog/loopback-4-dropping-node6)
 - [Moving LoopBack 4 documentation to loopback-next monorepo](https://strongloop.com/strongblog/march-2018-milestone/) 
 - [Switching to 0.x.y versions from 4.0.0-alpha.X](https://github.com/strongloop/loopback-next/issues/954) to better indicate breaking changes
+- Refine the mono repo layout for better isolation
+- Refine the build scripts for performance and much better VSCode integration (error reporting, debugging, formatting)
+- Add more TypeScript type checks
 
 ### Many more enhancements
 - [Able to generate JSON schema from models](https://strongloop.com/strongblog/loopback-4-json-schema-generation/)
-- Developer productivity
-  - Refine the mono repo layout for better isolation
-  - Refine the build scripts for performance and much better VSCode integration (error reporting, debugging, formatting)
-  - Add more TypeScript type checks
 - More context/DI features
   - Optional dependency
   - `@inject.context`
