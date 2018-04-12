@@ -19,14 +19,27 @@ improvements in Context/Dependency Injection.
 With the newly added features, improved developer experience and documentation, 
 we're pleased to announce today that Developer Preview #2 is available!  
 
-<img src="http://loopback.io/images/branding/mark/blue/loopback.jpg" alt="LoopBack new logo" style="width: 300px; margin:auto;"/>
-
 <!--more-->
 
 ## Highlights of Developer Preview 2
+
+- [New LoopBack logo determined by our community](#new-loopback-logo)
+- [Repository and Controller bootstrapper](#Repository-and-Controller-bootstrapper)
+- [OpenAPI v3 support for staying with the latest technologies](#OpenAPI-v3-support)
+- [Enhanced command-line interfaces for better developer experience](#Enhanced-command-line-interfaces)
+- [Revised documentation](#Documentation)
+- [Simplied and improved development process](#Development-process)
+
+   ... and many more enhancements.
+
+
+Let's take a closer look at each of the highlights. 
+
 ### New LoopBack logo
 Based on the [feedback from the community](https://strongloop.com/strongblog/thanks-loopback-4-logo/), 
 we decided on the new logo for LoopBack 4, representing the framework being rewritten from the ground-up with better extensibility and flexibility.  Big shout out to our design team!
+
+<img src="http://loopback.io/images/branding/mark/blue/loopback.jpg" alt="LoopBack new logo" style="width: 100px; margin:auto;"/>
 
 ### Repository and Controller bootstrapper
 [Introducing `@loopback/boot`](https://strongloop.com/strongblog/introducing-boot-for-loopback-4/) 
@@ -53,7 +66,7 @@ Features includes:
 - [Dropping Node 6 support](https://strongloop.com/strongblog/loopback-4-dropping-node6)
 - [Moving LoopBack 4 documentation to loopback-next monorepo](https://strongloop.com/strongblog/march-2018-milestone/) 
 - [Switching to 0.x.y versions from 4.0.0-alpha.X](https://github.com/strongloop/loopback-next/issues/954) to better indicate breaking changes
-- Refine the mono repo layout for better isolation
+- [Refine the mono repo layout for better isolation](https://github.com/strongloop/loopback-next/pull/1231)
 - Refine the build scripts for performance and much better VSCode integration (error reporting, debugging, formatting)
 - Add more TypeScript type checks
 
@@ -75,3 +88,4 @@ Please note that we may make adjustment along the way.
 LoopBack’s future success counts on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
 - [Report bugs or feature requests](https://github.com/strongloop/loopback-next/issues)
 - [Contribute code/documentation](https://github.com/strongloop/loopback-next/blob/master/docs/CONTRIBUTING.md)
+- [Join the team](https://github.com/strongloop/loopback-next/issues/110)
