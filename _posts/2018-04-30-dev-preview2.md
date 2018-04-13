@@ -22,7 +22,7 @@ of LoopBack 4 is available today!
 * [BootStrapper and booters for Repository and Controller](#repository-and-controller-bootstrapper)
 * [OpenAPI v3 support for staying with the latest technologies](#openapi-v3-support)
 * [Enhanced command-line interfaces for better developer experience](#enhanced-command-line-interfaces)
-* [Decorator and metadata utilities](#decorator-and-metadata-utilities)
+* [Decorator and metadata utilities](#dgiecorator-and-metadata-utilities)
 * [Improved IoC container and Dependency Injection](#improved-ioc-container-and-dependency-injection)
 * [Improved documentation](#improved-documentation)
 * [Simplified and improved development process](#development-process)
@@ -116,7 +116,7 @@ Features includes:
 
 ### Generation of JSON schema from models
 
-* [Able to generate JSON schema from models][json-schema-blog]
+We also created a new module @loopback/repository-json-schema which leverages TypeScript's decorator metadata in building a standard representation of LoopBack 4 models as JSON schema and creating legacy juggler model definitions. Visit [this](json-schema-blog] for more detailed look and implications!
 
 ## What's next
 
