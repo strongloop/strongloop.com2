@@ -116,7 +116,7 @@ Features includes:
 
 ### Generation of JSON schema from models
 
-We also created a new module @loopback/repository-json-schema which leverages TypeScript's decorator metadata in building a standard representation of LoopBack 4 models as JSON schema and creating legacy juggler model definitions. Visit [this](json-schema-blog] for more detailed look and implications!
+We also created a new module `@loopback/repository-json-schema` which leverages TypeScript's decorator metadata in building a standard representation of LoopBack 4 models as JSON schema and creating legacy juggler model definitions. Visit [this blog][json-schema-blog] for more detailed look and implications!
 
 ## What's next
 
