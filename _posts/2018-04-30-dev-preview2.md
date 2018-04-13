@@ -18,11 +18,11 @@ of LoopBack 4 is available today!
 
 ## Highlights of Developer Preview 2
 
-* [New LoopBack logo determined by our community](#new-loopBack-logo-determined-by-our-community)
-* [BootStrapper and booters for Repository and Controller](#repository-and-controller-bootStrapper)
+* [New LoopBack logo determined by our community](#new-loopback-logo-determined-by-our-community)
+* [BootStrapper and booters for Repository and Controller](#repository-and-controller-bootstrapper)
 * [OpenAPI v3 support for staying with the latest technologies](#openapi-v3-support)
 * [Enhanced command-line interfaces for better developer experience](#enhanced-command-line-interfaces)
-* [Decorator and metadata utilities](#Decorator-and-metadata-utilities)
+* [Decorator and metadata utilities](#decorator-and-metadata-utilities)
 * [Improved IoC container and Dependency Injection](#improved-ioc-container-and-dependency-injection)
 * [Improved documentation](#improved-documentation)
 * [Simplified and improved development process](#development-process)
