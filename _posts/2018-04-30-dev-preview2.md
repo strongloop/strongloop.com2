@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Announcing LoopBack 4 Developer Preview 2
-date: 2018-04-30T00:00:13+00:00
+date: 2018-04-16T00:00:13+00:00
 author: Diana Lau, Raymond Feng
 permalink: /strongblog/loopback-4-developer-preview-2/
 categories:
@@ -9,31 +9,30 @@ categories:
 - LoopBack
 ---
 
-Since the release of [Developer Preview #1][dp1] in November 2017, the LoopBack
-team have been focusing on adding features for application developers to define
-and implement REST APIs with Controllers and Repositories. We also continue to
-improve the core modules of the framework, such as Decorator/Metadata and
+Since the release of [Developer Preview #1][dp1]
+in November 2017, the LoopBack team have been focusing on adding features for application developers to define and implement REST APIs with Controllers and Repositories. 
+We also continue to improve the core modules of the framework, such as Decorator/Metadata and
 Context/Dependency Injection. A lot of efforts are put into documentation and
 developer productivity. We're pleased to announce that Developer Preview #2
 of LoopBack 4 is available today!
 
 ## Highlights of Developer Preview 2
 
-* [New LoopBack logo determined by our community](#New LoopBack logo)
-* [BootStrapper and booters for Repository and Controller](#Repository and Controller BootStrapper)
+* [New LoopBack logo determined by our community](#New-LoopBack-logo)
+* [BootStrapper and booters for Repository and Controller](#Repository-and-Controller-BootStrapper)
 * [OpenAPI v3 support for staying with the latest technologies](#OpenAPI-v3-support)
 * [Enhanced command-line interfaces for better developer experience](#Enhanced-command-line-interfaces)
-* [Decorator and metadata utilities](#Decorator and metadata utilities)
-* [Improved IoC container and Dependency Injection](#Improved-ioc-di)
+* [Decorator and metadata utilities](#Decorator-and-metadata-utilities)
+* [Improved IoC container and Dependency Injection](#Improved-IoC-container-and-Dependency-Injection)
 * [Improved documentation](#Documentation)
 * [Simplified and improved development process](#Development-process)
-* [Generation of JSON schema from models](#Generation of JSON schema from models)
+* [Generation of JSON schema from models](#Generation-of-JSON-schema-from-models)
 
-Let's take a closer look at each of the highlights.
+Let's take a closer look at each highlight.
 
-### New LoopBack logo
+### New LoopBack logo determined by our community
 
-Based on the [feedback from the community][logo], we decided on the new logo
+Based on the [feedback from the community][logo], we settled on the new logo
 for LoopBack 4, representing the framework being rewritten from the ground-up
 with better extensibility and flexibility. Big shout out to our design team!
 
@@ -78,11 +77,11 @@ injection capabilities, such as:
 2.  Optional dependencies are allowed
 3.  `@inject.context` for Context object injection
 4.  Ability to track binding resolution and dependency injection tree to detect
-    circular dependencies. See [this blog][di-blog] for more details.
+    circular dependencies. See [this blog][di-blog] for more details
 5.  More flexible `find` methods to match bindings within a context
 6.  Strong-typed binding creation and resolution for type safety
 
-### Documentation
+### Improved documentation
 
 In addition to our continued effort to improve LoopBack 4 documentation,
 we've revamped the [Getting Started tutorial][todo] to include step-by-step
@@ -93,7 +92,7 @@ packages are also generated into the `docs` as well. It is published to NPM as
 `@loopback/docs`. The loopback.io site now serves documentation for LoopBack 4
 from the npm module.
 
-### Development process
+### Simplified and improved development process
 
 We have made a few changes to keep us on top of the latest technology stack and
 simplify our development process and infrastructure. It also improves developer
