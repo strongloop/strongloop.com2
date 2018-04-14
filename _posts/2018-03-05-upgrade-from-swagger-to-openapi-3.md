@@ -17,6 +17,18 @@ Given the community feedback we have received in the last few months, we decided
 adopt the OpenAPI 3.0.0 specification to describe the exposed RESTful APIs
 of a LoopBack application. LoopBack 4 users can now build their OpenAPI 3.0.0 endpoints with upgraded packages.
 
+## LoopBack artifacts and OpenAPI specifications
+
+Before introducing the upgrade, here is some background information of how we use OpenAPI in LoopBack 4.
+
+Leveraging TypeScript decorators, we generate a complete OpenAPI specification
+Object from the metadata of various artifacts like "Model", "Controller", "Rest Server", etc. 
+The following diagram shows the concept mapping between the OpenAPI specifications(green) 
+and the LoopBack artifacts(blue).
+Each artifact's corresponding packages are also specified in the rectangle.
+
+<img src="https://strongloop.com/blog-assets/2018/03/map-lb-artifacts-to-oai-spec.png" alt="Map LoopBack Artifacts to OpenAPI Specifications" style="width: 800px"/>
+
 ## Preparation for the upgrade
 
 Package [`@loopback/rest`](https://github.com/strongloop/loopback-next/tree/master/packages/rest) 
