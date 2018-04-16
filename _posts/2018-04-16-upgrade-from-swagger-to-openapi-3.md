@@ -12,6 +12,8 @@ categories:
 The [Swagger/OpenAPI specification](https://swagger.io/specification/) has become the de facto standard of defining and describing machine-readable RESTful APIs over the past few years and announced its major release of version 3.0.0 in 2017.
 The new version also changes the official name from "Swagger" to "OpenAPI". As a framework for building microservices, LoopBack keeps improving its user experience of creating RESTful APIs and always upgrades the tooling to stay with the latest industry standards. Given the community feedback we have received in the last few months, we decided to adopt the OpenAPI 3.0.0 specification to describe the exposed RESTful APIs of a LoopBack application. LoopBack 4 users can now build their OpenAPI 3.0.0 endpoints with upgraded packages.
 
+<!--more-->
+
 ## LoopBack Artifacts and OpenAPI Specifications
 
 Before introducing the upgrade, here is some background information of how we use OpenAPI in LoopBack 4.
@@ -258,11 +260,6 @@ https://github.com/strongloop/loopback-next/pull/940
 
 * OpenAPI 3 specifications official documentation:
 https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md
-
-<!--- I copied this part from boot blog, 
-if it's not a common paragraph appended at the end of every blog,
-please let me know, will change it. 
---> 
 
 ## Call for Action
 
