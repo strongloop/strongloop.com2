@@ -2,7 +2,9 @@
 layout: post
 title: Announcing LoopBack 4 Developer Preview 2
 date: 2018-04-16T00:00:13+00:00
-author: Diana Lau, Raymond Feng
+author: 
+- Diana Lau
+- Raymond Feng
 permalink: /strongblog/loopback-4-developer-preview-2/
 categories:
 - Community
