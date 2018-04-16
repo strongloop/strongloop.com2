@@ -54,8 +54,8 @@ for more details.
 
 [OpenAPI Specification][oas] provides a standard format to unify how an industry
 defines and describes RESTful APIs. To keep up with the latest technologies,
-[LoopBack 4 has upgraded the support for OpenAPI v3][swagger-to-oas3]. Now you
-can use OpenAPI v3 based decorators to define how your controllers are mapped
+[LoopBack 4 has upgraded OpenAPI from v2 (Swagger) to v3 of the specification][swagger-to-oas3]. 
+Now you can use OpenAPI v3 based decorators to define how your controllers are mapped
 to REST APIs.
 
 ### Enhanced command-line interfaces
