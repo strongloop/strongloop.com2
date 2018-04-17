@@ -16,7 +16,8 @@ and persists the data into a Cloudant database.
 
 <!--more-->
 ### Previously in Part 2
-In the Part 2 of this series, we created a REST endpoint that gets 
+In the [Part 2](https://strongloop.com/strongblog/loopback4-github-example-app-part2/) 
+of this series, we created a REST endpoint that gets 
 the number of stargazers for a GitHub repository by using 
 [octokat.js](https://github.com/philschatz/octokat.js).
 
@@ -223,8 +224,8 @@ After running it, you should see an entry in the Cloudant database look like:
 
 ## Recap
 In this blog series, we built this LoopBack GitHub application using LoopBack 4 step-by-step:
-- Part 1: Scaffolding a LoopBack 4 application and creating REST API
-- Part 2: Adding logic to a controller to talk to GitHub API
+- [Part 1: Scaffolding a LoopBack 4 application and creating REST API](https://strongloop.com/strongblog/loopback4-github-example-app-part1/)
+- [Part 2: Adding logic to a controller to talk to GitHub API](https://strongloop.com/strongblog/loopback4-github-example-app-part2/)
 - Part 3: Persisting data to Cloudant database using DataSource and Repository
 
 
