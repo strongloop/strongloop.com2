@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 GitHub Example Application &#58; Persist Data to Cloudant   (Part 3 of 3)
-date: 2018-04-16T00:00:13+00:00
+date: 2018-04-25T00:00:13+00:00
 author: Diana Lau
 permalink: /strongblog/loopback4-github-example-app-part3/
 categories:
