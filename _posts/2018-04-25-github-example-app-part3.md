@@ -18,7 +18,7 @@ In the [Part 2](https://strongloop.com/strongblog/loopback4-github-example-app-p
 
 Since GitHub does not keep track of the history on how the number of stargazers change over time, we're building that functionality ourselves. In this article, we are going to complete the application by persisting such data together with the timestamp into a [Cloudant](https://console.bluemix.net/catalog/services/cloudant-nosql-db) database.  
 
-<img src="../blog-assets/2018/04/github-app-cloudant.png" alt="Creating Model, DataSource and Repository" style="width: 400px; margin:auto;"/>
+<img src="https://strongloop.com/blog-assets/2018/04/github-app-cloudant.png" alt="Creating Model, DataSource and Repository" style="width: 400px; margin:auto;"/>
 
 ### Step 1: Defining the Model
 
