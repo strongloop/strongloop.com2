@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upgrade from Swagger to OpenAPI 3.0.0
+title: LoopBack 4 Upgrades from Swagger to OpenAPI 3.0.0
 date: 2018-04-16T00:00:13+00:00
 author: Janny Hou
 permalink: /strongblog/upgrade-from-swagger-to-openapi-3/
