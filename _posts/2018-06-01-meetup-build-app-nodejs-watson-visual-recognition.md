@@ -8,7 +8,7 @@ categories:
   - Events
 ---
 
-We're excited to announce a new meetup we're offering with Mobile Monday! 
+We're excited to kick off a new meetup we're offering with Mobile Monday! 
   
 <!--more-->
 
