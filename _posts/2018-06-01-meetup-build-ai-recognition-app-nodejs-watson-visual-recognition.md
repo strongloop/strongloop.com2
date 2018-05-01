@@ -24,12 +24,12 @@ When asked what to expect from this session and series, Dennis told us, "The ses
 
 Session details and link to register below.
 
-When: Wednesday, May 30, 2018
-6:00 PM – 9:00 PM PDT
+*When: Wednesday, May 30, 2018
+6:00 PM – 9:00 PM PDT*
 
-Where: Galvanize
+*Where: Galvanize
 44 Tehama Cafe
-San Francisco, CA 94105
+San Francisco, CA 94105*
 
 Space is limited - click (here)[http://bit.ly/2I4Mmtp] to secure your spot! 
 
