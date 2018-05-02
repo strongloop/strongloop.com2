@@ -14,7 +14,7 @@ We're excited to kick off a new devlab! IBM is working alongside MobileMonday is
   
 <!--more-->
 
-<img class="aligncenter" src="https://strongloop.com/blog-assets/2018/05/MM-IBM-Meetup-May-30.jpg" alt="Building an AI Recognition App with Node.js and Watson Visual Recognition" style="width: 400px; margin:auto;"/>
+<img class="aligncenter" src="https://strongloop.com/blog-assets/2018/05/MM-IBM-Meetup-May-30.jpg" alt="Building an AI Recognition App with Node.js and Watson Visual Recognition" style="width: 450px; margin:auto;"/>
 
 [Dennis Ashby](https://www.linkedin.com/in/dennisashby/), Director of IBM's Developer Advocacy Team in the IBM Cloud Integration Business, will teach how to build Apps that combine Node.js and Watson Visual Recognition, Swift, and Google;s Geo-Location APIs. He'll also share some best practices and techniques.
 
