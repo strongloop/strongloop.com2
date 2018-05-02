@@ -8,7 +8,7 @@ categories:
   - Events
 ---
 
-We're excited to kick off a new devlab! IBM is working alongside MobileMonday is to present new events, starting in May. First up:
+We're excited to kick off a new meetup! IBM is working alongside MobileMonday is to present new events, starting in May. First up:
 
 [MobileMonday - Building an AI Recognition App with Node.js and Watson Visual Recognition](http://bit.ly/2I4Mmtp)
   
