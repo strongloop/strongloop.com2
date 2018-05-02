@@ -1,11 +1,12 @@
 ---
 title: 'Meetup: Building an AI Recognition App with Node.js and Watson Visual Recognition'
-date: 2018-06-01T09:58:48+00:00
+date: 2018-05-02T00:58:48+00:00
 author: Dave Whiteley
 permalink: /strongblog/meetup-build-ai-recognition-app-nodejs-watson-visual-recognition/
 categories:
   - How-To
   - Events
+  - Watson 
 ---
 
 We're excited to kick off a new meetup! IBM is working alongside MobileMonday is to present new events, starting in May. First up:
