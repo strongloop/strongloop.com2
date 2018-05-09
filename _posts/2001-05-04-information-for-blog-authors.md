@@ -236,4 +236,4 @@ They function the same except they have a different color, icon, and alert word.
 
 Please use [active voice](https://writing.wisc.edu/Handbook/CCS_activevoice.html) rather than passive voice.
 
-Unless creating a new paragraph, llease use soft wrap rather than hard line breaks.for new paragraphs.
+Unless creating a new paragraph, please use soft wrap rather than hard line breaks.
