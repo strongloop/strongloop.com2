@@ -11,7 +11,7 @@ categories:
 
 Cloudant connector has its major release 2.x with several improvements, supporting LoopBack model index is the most significant one.
 
-loopback-connector-cloudant@1.x doesn't allow creating index for model properties. Without indexes, the Cloudant query engine used index `all_fields` for every model call with a filter to serve ad-hoc queries, which under the hood treated all properties as indexable and resulted in a high response time when with large data set.
+loopback-connector-cloudant@1.x doesn't allow creating index for model properties. Without indexes, the Cloudant query engine used index `all_fields` for every model call with a filter to serve ad-hoc queries, which under the hood treated all properties as indexable and resulted in a slower response time when called with a large data set.
 
 To optimize the query performance, we implemented a feature so that in the model definition file, people can mark indexable properties, or specify multiple properties in a composed index. The connector will then create proper indexes based on the model definition.
 
@@ -36,7 +36,7 @@ index2: {
 }
 ```
 
-When query with property `name` and `city` like `MyModel.find({where: {name: 'foo', city: 'bar'}})`, the auto picked index is `index2` since it's "the index with the smallest number of fields".
+When queried with property `name` and `city` like `MyModel.find({where: {name: 'foo', city: 'bar'}})`, the auto picked index is `index1` since it's "the index with the smallest number of fields".
 
 You can define your model indexes in two ways:
 
@@ -110,6 +110,7 @@ Here is an example of defining an index containing fields `name` and `category` 
   "indexes": {
     "pet_name_and_category": {
       "keys": {
+        // The direction code `-1` means DESC and `1` means ASC. 
         "name": -1,
         "category": -1
       },
@@ -118,8 +119,6 @@ Here is an example of defining an index containing fields `name` and `category` 
   ...
 }
 ```
-
-The direction code `-1` means DESC and `1` means ASC. 
 
 Please note Cloudant doesn't allow a mixed direction for multiple fields in one index, given the example above, both properties are in DESC order. If people specify different directions in an index, we coerce them to be the same as the one for first key property.
 
