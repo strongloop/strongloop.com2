@@ -11,11 +11,13 @@ categories:
 
 Cloudant connector hit its 2.x major release with several improvements. The most significant change is the support of LoopBack model indexes.
 
-loopback-connector-cloudant@1.x doesn't allow creating index for model properties. Without indexes, the Cloudant query engine used index `all_fields` for every model call with a filter to serve ad-hoc queries, which under the hood treated all properties as indexable and resulted in a slower response time when called with a large data set.
+In loopback-connector-cloudant@1.x, all properties are treated indexable. It could cause a slow response time when called with larger data set.
 
-To optimize the query performance, we implemented a feature so that in the model definition file, people can mark indexable properties, or specify multiple properties in a composed index. The connector will then create proper indexes based on the model definition.
+To optimize the query performance, in version 2.x we allow users to specify indexable properties and multiple properties in a composed index. The connector then create proper indexes based on the model definition. The connector will then create proper indexes based on the model definition.
 
-The indexes are created when you migrate or update your model by calling `automigrate` or `autoupdate`. Function `autoupdate` only compares your new indexes with the ones existing in database, and update the changed ones. While `automigrate` cleans up the existing model instances first, then executes `autoupdate`. Therefore be careful when you call `automigrate`. See details in documentation [automigrate vs autoupdate](https://github.com/strongloop/loopback-connector-cloudant#migration)
+<!--more-->
+
+The indexes are created when you migrate or update your model by calling `automigrate` or `autoupdate`. Function `autoupdate` only compares your new indexes with the ones existing in database, and update the changed ones. However `automigrate` cleans up the existing model instances first, then executes `autoupdate`. Therefore be careful when you call `automigrate`. See details in documentation [automigrate vs autoupdate](https://github.com/strongloop/loopback-connector-cloudant#migration)
 
 ## Define your index
 
