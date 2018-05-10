@@ -9,7 +9,7 @@ categories:
   - LoopBack
 ---
 
-Cloudant connector has its major release 2.x with several improvements, supporting LoopBack model index is the most significant one.
+Cloudant connector hit its 2.x major release with several improvements. The most significant change is the support of LoopBack model indexes.
 
 loopback-connector-cloudant@1.x doesn't allow creating index for model properties. Without indexes, the Cloudant query engine used index `all_fields` for every model call with a filter to serve ad-hoc queries, which under the hood treated all properties as indexable and resulted in a slower response time when called with a large data set.
 
@@ -19,7 +19,7 @@ The indexes are created when you migrate or update your model by calling `automi
 
 ## Define your index
 
-You may need to know the frequently made queries of your model, and have a basic understanding of the index system in Cloudant database to decide which properties are indexable and what indexes to create. The connector doesn't inject an index in a query if you don't specify it. And the Cloudant database has an algorithm that automatically fetches the properest index when a query doesn't have one. 
+You may need to know the frequently made queries of your model, and have a basic understanding of the index system in Cloudant database to decide which properties are indexable and what indexes to create. The connector doesn't inject an index in a query if you don't specify it. And the Cloudant database has an algorithm that automatically fetches the proper index when a query doesn't have one. 
 
 Here is how it choses the index:
 > _find chooses which index to use for responding to a query, unless you specify an index at query time.
