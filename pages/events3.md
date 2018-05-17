@@ -1,0 +1,82 @@
+---
+title: Events
+layout: page
+permalink: /events3/
+redirect_from:
+  - /developers/events/
+  - /node-js/node-interactive-2015/
+  - /events
+---
+
+<section class="c-section x-white">
+  <div class="c-container -padded">
+
+    <!-- <h1 class="c-heading -h2 x=center"></h1> -->
+    <div class="c-grid">
+      <div class="_col -col-1-1">
+        <p>Check out StrongLoop at these upcoming conferences, webinars, meetups, and events.</p>
+      </div>
+      
+{% include tile.html
+link ="loopback"
+image="madrid.png" image-width="250px"
+blurb="LoopBack - Develop APIs in Node.js in an Easy and Simple Way"</br>
+<p>WHERE: Madrid
+</br>WHEN: May 24, 2018
+<p>
+Correoslabs invites you to this workshop in which Dennis Ashby talks about LoopBack.
+</br>Learn more" %}
+
+{% include tile.html
+link ="https://www.eventbrite.com/e/mobilemonday-building-an-ai-recognition-app-with-nodejs-and-watson-visual-recognition-tickets-45674322127"
+image="madrid.png" image-width="250px"
+blurb="Building an AI Recognition App with Node.js & Watson Visual Recognition"</br>
+<p>WHERE: San Francisco, CA
+</br>WHEN:May 30, 2018
+<p>
+Learn how to build Apps that combine Node.js with Watson Visual Recognition.
+</br>Learn more" %}
+
+{% include tile.html
+link ="https://www.eventbrite.com/e/fast-hacks-competitive-hackathon-tickets-45600664816"
+image="madrid.png" image-width="250px"
+blurb="Fast Hacks Competitive Hackathon"</br>
+<p>WHERE: Santa Clara, CA
+</br>WHEN: June 2, 2018
+<p>Race against other teams to come up with an idea and develop a Node stack prototype by the end of the day.
+</br>Learn more" %}
+
+{% include tile.html
+link ="loopback"
+image="madrid.png" image-width="250px"
+blurb="EVENT NAME 4"</br>
+<p>City ST 
+</br>Date range 
+</br>Description 
+</br>Learn more" %}
+
+{% include tile.html
+link ="loopback"
+image="madrid.png" image-width="250px"
+blurb="EVENT NAME 5"</br>
+<p>City ST 
+</br>Date range 
+</br>Description 
+</br>Learn more" %}
+
+{% include tile.html
+link ="loopback"
+image="madrid.png" image-width="250px"
+blurb="EVENT NAME 6"</br>
+<p>City ST 
+</br>Date range 
+</br>Description 
+</br>Learn more" %}
+     
+</div>
+</div>
+  <!-- <div style="height: 50px;"> -->
+</section>
+
+
+  
