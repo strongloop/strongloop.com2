@@ -9,25 +9,23 @@ categories:
   - LoopBack
 ---
 
-Cloudant connector hit its 2.x major release with several improvements. The most significant change is the support of LoopBack model indexes.
+Cloudant connector hit its 2.x major release with several improvements. The most significant change is the support of LoopBack model indexes to optimize query performance.
 
-In loopback-connector-cloudant@1.x, all properties are treated indexable. It could cause a slow response time when called with larger data set.
-
-To optimize the query performance, in version 2.x we allow users to specify indexable properties and multiple properties in a composed index. The connector then create proper indexes based on the model definition. The connector will then create proper indexes based on the model definition.
+In loopback-connector-cloudant@1.x, all properties are treated indexable. It could cause a slow response time when called with larger data set. In version 2.x we allow users to specify indexable properties and multiple properties in a composed index. The connector then creates proper indexes based on the model definition.
 
 <!--more-->
 
-The indexes are created when you migrate or update your model by calling `automigrate` or `autoupdate`. Function `autoupdate` only compares your new indexes with the ones existing in database, and update the changed ones. However `automigrate` cleans up the existing model instances first, then executes `autoupdate`. Therefore be careful when you call `automigrate`. See details in documentation [automigrate vs autoupdate](https://github.com/strongloop/loopback-connector-cloudant#migration)
+The indexes are created when you migrate or update your model by calling `automigrate` or `autoupdate`. The function `autoupdate` only compares your new indexes with the ones existing in database, and updates the changed ones. However `automigrate` cleans up the existing model instances first, then executes `autoupdate` to update the indexes. Therefore be careful when you call `automigrate`. See details in documentation [automigrate vs autoupdate](https://github.com/strongloop/loopback-connector-cloudant#migration)
 
 ## Define your index
 
-You may need to know the frequently made queries of your model, and have a basic understanding of the index system in Cloudant database to decide which properties are indexable and what indexes to create. The connector doesn't inject an index in a query if you don't specify it. And the Cloudant database has an algorithm that automatically fetches the proper index when a query doesn't have one. 
+Before deciding which properties are indexable and indexes to create, you need to know the queries on your model which are frequently made and have a basic understanding of the index system in Cloudant database. The connector doesn't inject an index in a query if you don't specify it. And the Cloudant database has an algorithm that automatically fetches the proper index when a query doesn't have one. 
 
-Here is how it choses the index:
+Here is how it chooses the index:
 > _find chooses which index to use for responding to a query, unless you specify an index at query time.
 If there are two or more json type indexes on the same fields, the index with the smallest number of fields in the index is preferred. If there are still two or more candidate indexes, the index with the first alphabetical name is chosen.
 
-For example, given two indexes available in the database:
+For example, there are two indexes available in the database:
 
 ```js
 index1: {
@@ -38,7 +36,7 @@ index2: {
 }
 ```
 
-When queried with property `name` and `city` like `MyModel.find({where: {name: 'foo', city: 'bar'}})`, the auto picked index is `index1` since it's "the index with the smallest number of fields".
+When queried with property `name` and `city` using `MyModel.find({where: {name: 'foo', city: 'bar'}})`, `index1` is automatically picked since it's "the index with the smallest number of fields".
 
 You can define your model indexes in two ways:
 
@@ -81,7 +79,7 @@ Pet.find(
 
 ### Composed index for multiple properties
 
-Or you can define a composed index with multiple fields by adding an entry in a model definition's `indexes` property. The syntax of a index definition is
+You can define a composed index with multiple fields by adding an entry in a model definition's `indexes` property. The syntax of a index definition is
 
 ```js
 index_name: {
@@ -137,7 +135,7 @@ For example:
 },
 ```
 
-The created index will be in ASC since the direction code for property `name` is 1.
+The created index will be in ASC order since the direction code for property `name` is 1.
 
 ## Customize the model name property
 
@@ -159,6 +157,12 @@ When looking at the created index in the database, you may probably notice that 
 ## Ad-hoc query
 
 We suggest users create proper indexes for those properties frequently queried with, while sometimes you may still do ad-hoc queries with properties that are not included in any indexes. In this case, Cloudant automatically uses `all_fields` index to return the result.
+
+## Reference
+
+- [Create index in loopback model](https://loopback.io/doc/en/lb3/Model-definition-JSON-file.html#indexes)
+- [Cloudant query](https://console.bluemix.net/docs/services/Cloudant/api/cloudant_query.html#query)
+- [automigrate vs autoupdate](https://github.com/strongloop/loopback-connector-cloudant#migration)
 
 ## Call for Action
 
@@ -184,9 +188,3 @@ LoopBack’s future success counts on you. We appreciate your continuous support
 [0.x.y]: https://github.com/strongloop/loopback-next/issues/954
 [json-schema-blog]: https://strongloop.com/strongblog/loopback-4-json-schema-generation
 [plan]: https://github.com/strongloop/loopback-next/wiki/Upcoming-Releases
-
-## Reference
-
-- [Create index in loopback model](https://loopback.io/doc/en/lb3/Model-definition-JSON-file.html#indexes)
-- [Cloudant query](https://console.bluemix.net/docs/services/Cloudant/api/cloudant_query.html#query)
-- [automigrate vs autoupdate](https://github.com/strongloop/loopback-connector-cloudant#migration)
