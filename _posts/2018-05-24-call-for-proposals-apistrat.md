@@ -19,9 +19,9 @@ To provide a better idea of what APIStrat is and who it is for, we'll share this
 
 A vital part of APIStrat is the assorted talks - and you can't have those talks without proposals. With APIStrat's Call for Proposals open until end of day on June 8th, we're inviting you to put together and submit your ideas for the event. Join the many techs, developers, and architects who have presented over the years. Share your current insights into an API project or technologies, discuss security or standards, cover testing or transformations. And if you are stumped, the APIStrat team would be more than happy to work with you to shape up a proposal.
 
-Visit the [APIStrat website](https://events.linuxfoundation.org/events/apistrat-2018/cfp/) for more details about important dates, what to talk baout, and how a submission might look!
+Visit the [APIStrat website](https://events.linuxfoundation.org/events/apistrat-2018/cfp/) for more details about important dates, what to talk about, and how a submission might look!
 
 ## What's Next?
 
-* Check out other cool events on our [Events page](https://strongloop.com/events/)
-* Want to get a monthly collection of Strongblog stories and more? [Subscribe to our newsletter](https://strongloop.com/newsletter/)
+* Check out other cool events on our [Events page](https://strongloop.com/events/).
+* Want to get a monthly collection of Strongblog stories and more? [Subscribe to our newsletter](https://strongloop.com/newsletter/).
