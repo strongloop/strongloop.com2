@@ -6,7 +6,6 @@ permalink: /strongblog/call-for-proposals-apistrat/
 categories:
   - Community
   - Events
-
 ---
 
 Did you know that APIStrat has a Call for Proposals running until June 8, 2018? 
@@ -16,6 +15,8 @@ Don't know what APIStrat is? It's the [API Strategy & Practice Conference](https
 To provide a better idea of what APIStrat is and who it is for, we'll share this description from its web site:
 
 "APIStrat brings together experts, leaders, and members of the community to discuss what we each see on the ground every day. This event is not just for developers and IT teams, it is also for business users, executives, and anyone who seeks to better understand how APIs are impacting the world around us."
+<!--more-->
+<img src="https://strongloop.com/blog-assets/2018/05/apistrat-logo.png" alt="APIStrat logo" style="width: 500px"/>
 
 A vital part of APIStrat is the assorted talks - and you can't have those talks without proposals. With APIStrat's Call for Proposals open until end of day on June 8th, we're inviting you to put together and submit your ideas for the event. Join the many techs, developers, and architects who have presented over the years. Share your current insights into an API project or technologies, discuss security or standards, cover testing or transformations. And if you are stumped, the APIStrat team would be more than happy to work with you to shape up a proposal.
 
