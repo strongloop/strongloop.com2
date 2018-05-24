@@ -1,6 +1,6 @@
 ---
 title: 'LoopBack Doc Search Powered by Watson'
-date: 2018-05-23T00:00:13+00:00
+date: 2018-06-23T00:00:13+00:00
 author: Taranveer Virk
 permalink: /strongblog/loopback-doc-search-powered-by-watson/
 categories:
