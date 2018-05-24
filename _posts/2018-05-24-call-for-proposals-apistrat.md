@@ -1,6 +1,6 @@
 ---
 title: 'Call for Proposals for APIStrat'
-date: 2018-05-24T00:00:13+00:00
+date: 2018-05-24T00:00:01+00:00
 author: Dave Whiteley
 permalink: /strongblog/call-for-proposals-apistrat/
 categories:
