@@ -57,7 +57,7 @@ Whenever changes are merged to the `gh-pages` branch for [`loopback.io` reposito
 
 ### Search results page
 
-<img class="aligncenter" src="../blog-assets/2018/05/search-results.png" alt="New loopback.io search results page" style="width: 450px; margin:auto;"/>
+<img class="aligncenter" src="https://strongloop.com/blog-assets/2018/05/search-results.png" alt="New loopback.io search results page" style="width: 450px; margin:auto;"/>
 
 The last part of implementing a new search was a new search results page as this was something previously handled by the Google Custom Search. The new search results page shows 10 results with up to 3 matching sentence excerpts with the matching text bolded. The link for the result page is also shown. The new search results page also makes it possible to share search result page URLs with others. When displaying results, special care had to be taken to ensure results are escaped for any malicious code to prevent XSS attacks as the documentation is open source.
 
