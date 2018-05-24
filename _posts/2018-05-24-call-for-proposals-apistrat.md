@@ -25,4 +25,4 @@ Visit the [APIStrat website](https://events.linuxfoundation.org/events/apistrat-
 ## What's Next?
 
 * Check out other cool events on our [Events page](https://strongloop.com/events/).
-* Want to get a monthly collection of Strongblog stories and more? [Subscribe to our newsletter](https://strongloop.com/newsletter/).
+
