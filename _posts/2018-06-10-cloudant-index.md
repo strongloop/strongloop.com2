@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Index Support for Cloudant model
-date: 2018-05-10T00:00:13+00:00
+title: Index Support for Cloudant Model
+date: 2018-06-10T00:00:13+00:00
 author: Janny Hou
 permalink: /strongblog/cloudant-index/
 categories:
