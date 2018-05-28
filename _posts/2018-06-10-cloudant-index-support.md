@@ -3,7 +3,7 @@ layout: post
 title: Index Support for Cloudant Model
 date: 2018-06-10T00:00:13+00:00
 author: Janny Hou
-permalink: /strongblog/cloudant-index/
+permalink: /strongblog/cloudant-index-support/
 categories:
   - Community
   - LoopBack
@@ -17,11 +17,12 @@ In loopback-connector-cloudant@1.x, all properties are treated indexable. It cou
 
 The indexes are created when you migrate or update your model by calling `automigrate` or `autoupdate`. The function `autoupdate` only compares your new indexes with the ones existing in database, and updates the changed ones. However `automigrate` cleans up the existing model instances first, then executes `autoupdate` to update the indexes. Therefore be careful when you call `automigrate`. See details in documentation [automigrate vs autoupdate](https://github.com/strongloop/loopback-connector-cloudant#migration)
 
-## Define your index
+## Define Your Index
 
 Before deciding which properties are indexable and indexes to create, you need to know the queries on your model which are frequently made and have a basic understanding of the index system in Cloudant database. The connector doesn't inject an index in a query if you don't specify it. And the Cloudant database has an algorithm that automatically fetches the proper index when a query doesn't have one. 
 
 Here is how it chooses the index:
+
 > _find chooses which index to use for responding to a query, unless you specify an index at query time.
 If there are two or more json type indexes on the same fields, the index with the smallest number of fields in the index is preferred. If there are still two or more candidate indexes, the index with the first alphabetical name is chosen.
 
@@ -43,7 +44,7 @@ You can define your model indexes in two ways:
 - Mark a single property as indexable
 - Create composed index with multiple fields
 
-### Index for a single property
+### Index for a Single Property
 
 You can set `index: true` in a property's configuration to mark it as indexable. And the created index only contains one field.
 
@@ -77,7 +78,7 @@ Pet.find(
 })
 ```
 
-### Composed index for multiple properties
+### Composed Index for Multiple Properties
 
 You can define a composed index with multiple fields by adding an entry in a model definition's `indexes` property. The syntax of a index definition is
 
@@ -137,7 +138,7 @@ For example:
 
 The created index will be in ASC order since the direction code for property `name` is 1.
 
-## Customize the model name property
+## Customize the Model Name Property
 
 When looking at the created index in the database, you may probably notice that every index has an extra field besides the ones you specified in the `model.json` file. It's because to organize unstructured data into collections, all the data contains a property that specifies the loopback model name. By default the property is called `loopback__model__name`, you can customize it in `model.json` file:
 
@@ -154,7 +155,7 @@ When looking at the created index in the database, you may probably notice that 
 }
 ```
 
-## Ad-hoc query
+## Ad-hoc Query
 
 We suggest users create proper indexes for those properties frequently queried with, while sometimes you may still do ad-hoc queries with properties that are not included in any indexes. In this case, Cloudant automatically uses `all_fields` index to return the result.
 
