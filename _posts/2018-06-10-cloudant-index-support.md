@@ -171,7 +171,7 @@ LoopBack’s future success counts on you. We appreciate your continuous support
 
 * [Report bugs or feature requests](https://github.com/strongloop/loopback-next/issues)
 * [Contribute code/documentation](https://github.com/strongloop/loopback-next/blob/master/docs/CONTRIBUTING.md)
-* [Join the team](https://github.com/strongloop/loopback-next/issues/110)
+* [Join the contributor team](https://github.com/strongloop/loopback-next/issues/110)
 
 [dp1]: https://strongloop.com/strongblog/loopback-4-developer-preview-release
 [logo]: https://strongloop.com/strongblog/thanks-loopback-4-logo/
