@@ -11,7 +11,7 @@ categories:
 layout: post
 ---
 
-When you have over a 1000 pages of documentation, it becomes a necessity to be able to search the documentation effectively to find relevant content. With this in mind, [LoopBack documentation](http://loopback.io/doc/) search is now powered by [IBM Watson Discovery](https://www.ibm.com/watson/services/discovery/) instead of Google Custom Search. Read on to learn more about the new search.
+When you have over a 1000 pages of documentation, it becomes a necessity to be able to search the documentation effectively to find relevant content. With this in mind, we've recently changed to powering [LoopBack documentation](http://loopback.io/doc/) search with [IBM Watson Discovery](https://www.ibm.com/watson/services/discovery/) instead of Google Custom Search. Read on to learn more about the new search.
 
 <!--more-->
 
