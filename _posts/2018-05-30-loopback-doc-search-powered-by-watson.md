@@ -1,5 +1,6 @@
 ---
 title: 'LoopBack Doc Search Powered by Watson'
+layout: post
 date: 2018-05-30T00:00:13+00:00
 author: Taranveer Virk
 permalink: /strongblog/loopback-doc-search-powered-by-watson/
@@ -8,7 +9,6 @@ categories:
   - Watson
   - Community
   - Cloud
-layout: post
 ---
 
 When you have over a 1000 pages of documentation, it becomes a necessity to be able to search the documentation effectively to find relevant content. With this in mind, we've recently changed to powering [LoopBack documentation](http://loopback.io/doc/) search with [IBM Watson Discovery](https://www.ibm.com/watson/services/discovery/) instead of Google Custom Search. Read on to learn more about the new search.
