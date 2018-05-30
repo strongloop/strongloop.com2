@@ -7,7 +7,6 @@ permalink: /strongblog/loopback-doc-search-powered-by-watson/
 categories:
   - LoopBack
   - Watson
-  - Community
   - Cloud
 ---
 
