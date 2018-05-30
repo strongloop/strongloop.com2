@@ -1,6 +1,6 @@
 ---
 title: 'LoopBack Doc Search Powered by Watson'
-date: 2018-06-23T00:00:13+00:00
+date: 2018-05-30T00:00:13+00:00
 author: Taranveer Virk
 permalink: /strongblog/loopback-doc-search-powered-by-watson/
 categories:
@@ -68,7 +68,7 @@ Try out the new search in the [docs](http://loopback.io/doc/) and [share your fe
 
 ## Call for Action
 
-LoopBack's future success counts on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
+LoopBack's success counts on you! We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
 
 * [Open a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue)
 * [Casting your vote for extensions](https://github.com/strongloop/loopback-next/issues/512)
