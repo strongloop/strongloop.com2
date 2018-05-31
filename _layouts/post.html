@@ -46,7 +46,7 @@ layout: default
                 <div class="fb-share-button" data-href="https://strongloop.com/{{page.url}}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://strongloop.com/{{page.url}}%2F&amp;src=sdkpreparse">Share</a></div>
 
                 <a class="twitter-share-button no_icon"
-                href="https://twitter.com/share"
+                href="https://twitter.com/intent/tweet?via=STRONGLOOP&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}" target="_blank"
                 data-size="large"
                 data-text="{{ page.title }}"
                 data-url="https://strongloop.com/{{page.url}}"
