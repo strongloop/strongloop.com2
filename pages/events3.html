@@ -8,42 +8,29 @@ redirect_from:
   - /events
 ---
 {% include section.html content='
-Check out StrongLoop at these upcoming Node.js, API Development, and Integration Events. This includes conferences, webinars, meetups, and more.
+<div class="c-grid">
+  <div class="_col -col-4-5">
+    <p>Check out StrongLoop at these upcoming Node.js, API Development, and Integration Events. This includes conferences, webinars, meetups, and more.</p>
+    <ul>
+      <li><a href="#denverbouldernodejs">Denver/Boulder NodeJS</a></li>
+      <li><a href="#lnug">LNUG - London Node User Group</a></li>
+      <li><a href="#sacramentojavascript">The Sacramento JavaScript Meetup</a></li>
+    </ul>
+  </div>
+</div>
+' %}
+
+<section class="c-section x-lightgrey">
+  {% include_relative events/denverbouldernodejs.html %}
+</section>
 
 <section class="c-section x-white">
-<div markdown="1" class="c-container">
-<a href=“https://www.meetup.com/Node-js-Denver-Boulder/“><b>Denver/Boulder NodeJS</b></a>
- <img src="http://www.strongloop.com/blog-assets/2018/05/MM-IBM-Meetup-May-30.jpg" alt="Denver Boulder NodeJS" style="width:250px">  
-WHERE: Denver, CO </br>
-WHEN: June 19, 2018</br>
-<p>
-Sponsored. This is a group for anyone who in the Denver area and is currently using or interested in knowing more about Node.js and JavaScript. 
-<p>
-<a href=“https://www.meetup.com/Node-js-Denver-Boulder/“>Learn more</a> 
-</div>
+  {% include_relative events/lnug.html %}
 </section>
-<hr>
-<section class="c-section x-white">
-<div markdown="1" class="c-container">
-<a href=“https://lnug.org/“><b>LNUG - London Node User Group</b></a>
- <img src=“http://www.strongloop.com/blog-assets/2018/05/MM-IBM-Meetup-May-30.jpg” alt=“LNUG London Node User Group” style=“width:250px”>
-</br>WHERE: London, UK
-</br>WHEN: Monthly  
-</br>
-</br>Sponsored. A friendly monthly meetup for people using Node.js for fun or profit.
-</br><a href=“https://lnug.org/“>Learn more</a> 
-</div>
+
+<section class="c-section x-lightgrey">
+  {% include_relative events/sacramentojavascript.html %}
 </section>
-<hr>
-<a href=“https://www.meetup.com/The-Sacramento-Javascript-Meetup/“><b>The Sacramento JavaScript Meetup</b></a>
-<img src=“http://www.strongloop.com/blog-assets/2018/05/MM-IBM-Meetup-May-30.jpg” alt=“The Sacramento JavaScript Meetup” style=“width:250px”>
-</br>WHERE: Sacramento, CA
-</br>WHEN: June 26, 2018
-</br>
-</br>Sponsored. SacJS isn’t just about teaching Javascript, jQuery, new APIs, NodeJS, or micro-controllers. Its about people. 
-</br><a href=“https://www.meetup.com/The-Sacramento-Javascript-Meetup/“>Learn more</a> 
-<p>
-' %}  
-  
-  
- 
+
+
+
