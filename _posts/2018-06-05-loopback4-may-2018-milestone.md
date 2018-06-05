@@ -86,7 +86,7 @@ DataSource will be the first artifact to gain support for Declarative support an
 
 ### New Website Dedicated for LoopBack 4
 
-To reflect LoopBack 4's usage of shiny new technology and the rebuilding of features from the ground up, we've created a homepage for LoopBack 4 highlighting its strengths and features. The homepage is now available at [v4.loopback.io](v4.loopback.io) and is ready to introduce Node.js users to our awesome framework.
+To reflect LoopBack 4's usage of shiny new technology and the rebuilding of features from the ground up, we've created a homepage for LoopBack 4 highlighting its strengths and features. The homepage is now available at [http://v4.loopback.io/](v4.loopback.io) and is ready to introduce Node.js users to our awesome framework.
 
 ### Prompt for HTTP Path Name for REST Controller Generation
 
