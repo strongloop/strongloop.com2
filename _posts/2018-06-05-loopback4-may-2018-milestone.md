@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 May 2018 Milestone Update
-date: 2018-05-08T00:10:11+00:00
+date: 2018-06-05T00:10:11+00:00
 author: Kyu Shim
 permalink: /strongblog/may-2018-milestone/
 categories:
@@ -9,7 +9,7 @@ categories:
   - LoopBack
 ---
 
-The sun's out and we're breaking all the guns out for "Developer Preview 3" (DP3) as various spikes that started as stretch goals from [our previous milestone](https://strongloop.com/strongblog/april-2018-milestone/) continue and are being put into effect. You can check out the follow up issues from these spikes in our [June Milestone](https://github.com/strongloop/loopback-next/issues/1375).
+The sun's out and we're breaking all the guns out for "Developer Preview 3" (DP3)! In May various spikes that started as stretch goals from [our previous milestone](https://strongloop.com/strongblog/april-2018-milestone/) continued and were put into effect. You can check out the follow up issues from these spikes in our [June Milestone](https://github.com/strongloop/loopback-next/issues/1375).
 
 Read on to get our insights on what's been accomplished in our [May milestone](https://github.com/strongloop/loopback-next/issues/1172).
 
@@ -23,8 +23,8 @@ As part of the Model Relations spike in March/April, we curated a list of backlo
 
 The implementation introduces the following components:
 
-- `hasManyRepositoryFactory` to create constrained repository instances based on specified constraint (source model ID), relation metadata, and target repository
-- `HasManyEntityCrudRepository` interface which specifies the shape of the public APIs exposed by the `HasMany` relation
+- `hasManyRepositoryFactory` to create constrained repository instances based on specified constraint (source model ID), relation metadata, and target repository.
+- `HasManyEntityCrudRepository` interface which specifies the shape of the public APIs exposed by the `HasMany` relation.
 - `DefaultHasManyEntityCrudRepository` class which implements those APIs by calling utility functions on a target repository instance to constrain its CRUD methods.
 - `constrain*` utility functions which apply constraints on a data object, filter, or where object and modification of `WhereBuilder` and `FilterBuilder` classes to include an `impose` function to merge constrain objects with their own where and filter objects.
 - The first [acceptance test](https://github.com/strongloop/loopback-next/blob/master/packages/repository/test/acceptance/has-many.relation.acceptance.ts) that shows how to create an order for a customer with a "customer has many orders" relation.
@@ -35,13 +35,13 @@ Check out the GitHub issue [#1032](https://github.com/strongloop/loopback-next/i
 
 We started LoopBack 4 with the desire to improve all aspects of application development. One of the pain points in LoopBack 3.x was composition of Express middleware handlers, which we decided to address by rolling out a different design based on [Sequence](http://loopback.io/doc/en/lb4/Sequence.html) of actions. As time progressed, we realized we would have to end up 'reinventing the wheel' with frequently used middleware like CORS with our own Sequence-friendly version. Instead, we decided to step back and keep using the vast ecosystem of existing Express middleware.
 
-Once we decided to use Express as our low-level HTTP framework, many options to simplify our code opened to us.
+Once we decided to use Express as our low-level HTTP framework, many options to simplify our code opened up.
 
 In this milestone, we made the following changes (primarily in the REST layer):
 
-Internally, we upgraded from Node.js core ServerRequest/ServerResponse objects to Express.js Request/Response objects. This simplifies integration with Express middleware and relieves us from the responsibility of parsing URL into path, query string, etc. See https://github.com/strongloop/loopback-next/pull/1326. As a result, we can mount CORS middleware properly with no need to invoke its handler function directly as we were doing before. See https://github.com/strongloop/loopback-next/pull/1338
+Internally, we upgraded from Node.js core ServerRequest/ServerResponse objects to Express.js Request/Response objects. This simplifies integration with Express middleware and relieves us from the responsibility of parsing URL into path, query string, etc. See issue [#1326](https://github.com/strongloop/loopback-next/pull/1326). As a result, we can mount CORS middleware properly with no need to invoke its handler function directly as we were doing before. See issue [#1338](https://github.com/strongloop/loopback-next/pull/1338).
 
-We find Express handler signature `(request, response, next)` as rather limiting, because any additional context must be stored in request properties. We like Koa's design better, where a single context object is passed around, since we already have a per-request context object used for dependency injection. In https://github.com/strongloop/loopback-next/pull/1316, we reworked the internal routing as well as the public API of sequence actions to use a `{request,response}` context object instead of a pair of `(request, response)` arguments.
+We find Express handler signature `(request, response, next)` as rather limiting, because any additional context must be stored in request properties. We like Koa's design better, where a single context object is passed around, since we already have a per-request context object used for dependency injection. In [#1316](https://github.com/strongloop/loopback-next/pull/1316), we reworked the internal routing as well as the public API of sequence actions to use a `{request,response}` context object instead of a pair of `(request, response)` arguments.
 
 Some of these changes are not backwards compatible. Application and extensions must be updated if they use any of the following:
 
@@ -55,9 +55,9 @@ HTTP hardening work will continue in June, see the GitHub issue [#1038](https://
 
 #### Using a Web Service's API with `@serviceProxy`
 
-Our work on web services' integration with DataSource and LoopBack 4 has finally culminated into the package `@loopback/service-proxy`. The package provides `@serviceProxy` decorator, which configures and injects a web service's API into a controller by utilizing the connector defined in the context-bound DataSource (an example being [loopback-connector-rest](https://github.com/strongloop/loopback-connector-rest)). This now allows users to easily define a web service's operations in Data Access Object pattern with all the type safety TypeScript offers. Visit http://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html for more information on the package and its usage.
+Our work on web services' integration with DataSource and LoopBack 4 has finally culminated into the package `@loopback/service-proxy`. The package provides `@serviceProxy` decorator, which configures and injects a web service's API into a controller by utilizing the connector defined in the context-bound DataSource (an example being [loopback-connector-rest](https://github.com/strongloop/loopback-connector-rest)). This now allows users to easily define a web service's operations in Data Access Object pattern with all the type safety TypeScript offers. Visit [http://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html](http://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html) for more information on the package and its usage.
 
-There is still more work to be done to really polish up package though. An enhanced user story for using the package and QOL adjustment of allowing a service to be easily exposed without having to be bound by an app is tracked by [this issue](https://github.com/strongloop/loopback-next/issues/1311). We also plan to add in a CLI scaffolding command to easily configure the web service for use; the progress can be checked [here](https://github.com/strongloop/loopback-next/issues/1312).
+There is still more work to be done to really polish up package though. You can find an enhanced user story [here](https://github.com/strongloop/loopback-next/issues/1311) that explains how to use the package as well as QOL adjustment of allowing a service to be easily exposed without having to be bound by an app. We also plan to add in a CLI scaffolding command to easily configure the web service for use; the progress can be checked [here](https://github.com/strongloop/loopback-next/issues/1312).
 
 #### Adding TypeScript Declaration Files to loopback-datasource-juggler
 
@@ -74,7 +74,7 @@ With this feature introduced, you're now able to use LoopBack 4's advocated conv
 
 ### LoopBack Docs Search is Now Powered by IBM Watson
 
-LoopBack Documentation search was made to be smarter this past month by making the switch to [IBM Watson Discovery](https://www.ibm.com/cloud/watson-discovery). The new search is now context aware, meaning if you search for a keyword from the docs of a particular LoopBack version then you will only get results from the docs of that particular LoopBack version only. You can learn more about the alternatives and the implementation of search in this previous blog post: [LoopBack Doc Search Powered by Watson](https://strongloop.com/strongblog/loopback-doc-search-powered-by-watson/)
+LoopBack Documentation search was made smarter this past month by making the switch to [IBM Watson Discovery](https://www.ibm.com/cloud/watson-discovery). The new search is now context aware, meaning if you search for a keyword from the docs of a particular LoopBack version then you will only get results from the docs of that particular LoopBack version only. You can learn more about the alternatives and the implementation of search in this previous blog post: [LoopBack Doc Search Powered by Watson](https://strongloop.com/strongblog/loopback-doc-search-powered-by-watson/)
 
 ### @loopback/boot Support for Declarative JSON/YAML
 
