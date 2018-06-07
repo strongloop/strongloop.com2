@@ -1,7 +1,7 @@
 ---
 id: 28544
 title: Introducing Erin McKean – StrongLoop Lead Developer Evangelist
-date: 2117-01-17T07:00:31+00:00
+date: 2027-01-17T07:00:31+00:00
 author: Erin McKean
 guid: https://strongloop.com/?p=28544
 permalink: /strongblog/introducing-erin-mckean-strongloop-lead-developer-evangelist/
