@@ -1,7 +1,7 @@
 ---
 id: 28504
 title: 'Introducing David Okun &#8211; StrongLoop Developer Evangelist'
-date: 2117-01-10T07:00:03+00:00
+date: 2027-01-10T07:00:03+00:00
 author: David Okun
 guid: https://strongloop.com/?p=28504
 permalink: /strongblog/introducing-david-okun-strongloop-developer-evangelist/
