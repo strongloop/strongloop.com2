@@ -1,7 +1,7 @@
 ---
 id: 28636
 title: 'Introducing Joe Sepi – StrongLoop Lead Developer Evangelist: &#8220;My Friends Call Me Joe Sepi and You Can Too&#8221;'
-date: 2017-01-24T14:40:41+00:00
+date: 2117-01-24T14:40:41+00:00
 author: Joe Sepi
 guid: https://strongloop.com/?p=28636
 permalink: /strongblog/my-friends-call-me-joe-sepi-and-you-can-too/
