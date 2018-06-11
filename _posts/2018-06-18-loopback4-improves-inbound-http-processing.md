@@ -75,7 +75,7 @@ class MySequence implements SequenceHandler {
 }
 ```
 
-The built-in sequence action "reject" is another place we could simplify. Before, reject has three arguments - response, request, error; never mind the unusual order where response is before request. The new API expects only two arguments:
+The built-in sequence action "reject" is another place we could simplify. Before, reject had three arguments - response, request, error; never mind the unusual order where response is before request. The new API expects only two arguments:
 
 ```ts
 function reject(handlerContext: HandlerContext, err: Error): void;
@@ -131,7 +131,7 @@ const httpServer = new HttpServer(
 
 We expect the initial implementation to evolve over time and get support for additional features, from HTTPS to WebSockets and HTTP/2. Contributions are welcome!
 
-See [Robust processing capabilities](https://app.zenhub.com/workspace/o/strongloop/loopback-next/issues/1038) for even more improvements of our HTTP stack we are thinking about .
+See [Robust processing capabilities](https://github.com/strongloop/loopback-next/issues/1038) for even more improvements of our HTTP stack we are thinking about .
 
 ## Call for Action
 
