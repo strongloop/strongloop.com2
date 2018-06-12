@@ -18,9 +18,9 @@ The series is organized as follows:
 
 Part 1: Scaffolding a LoopBack 4 application and creating REST API
 
-Part 2: Adding logic to a controller to talk to GitHub API
+[Part 2: Adding logic to a controller to talk to GitHub API](https://strongloop.com/strongblog/loopback4-github-example-app-part2/)
 
-Part 3: Persisting data to Cloudant database using `DataSource` and `Repository`
+[Part 3: Persisting data to Cloudant database using `DataSource` and `Repository`](https://strongloop.com/strongblog/loopback4-github-example-app-part3/)
 
 ## Before You Begin
 
