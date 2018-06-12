@@ -6,8 +6,7 @@ author: Erin McKean
 permalink: /strongblog/the-openapi-spec-and-you-and-ibm
 categories:
   - Community
-  - Open API Initiative
-  - Open API Spec   
+  - OpenAPI Spec   
 ---
 
 If you work with APIs at all, either creating or consuming them, you've probably heard of something called the [OpenAPI Specification](https://www.openapis.org/specification/repo) (or its former name, Swagger). However, you may be fuzzy on the details. Don't worry! By the end of this post you won't be. 
@@ -30,7 +29,7 @@ You can find the full OpenAPI Specification [here](https://github.com/OAI/OpenAP
 
 <img src="https://strongloop.com/blog-assets/2017/08/OpenAPISpecLogo.png" alt="Open API Spec / Open API Initiative" style="width: 300px"/>
 
-## How Do I Create An OAS definition? ##
+## How Do I Create An OAS Definition? ##
 
 A typical OAS document looks something like this: 
 
