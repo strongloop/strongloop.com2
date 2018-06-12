@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LoopBack 4 improves inbound HTTP processing
+title: LoopBack 4 Improves Inbound HTTP Processing
 date: 2018-06-18T9:40:15+00:00
 author: Miroslav Bajtoš
 permalink: /strongblog/loopback4-improves-inbound-http-processing
@@ -9,13 +9,13 @@ categories:
   - LoopBack
 ---
 
-We started LoopBack 4 with the desire to improve all aspects of application development. One of the pain points in LoopBack 3.x was composition of Express middleware handlers, which we decided to address by rolling out a different design based on Sequence of actions. As time progressed, we realized we would have to end up ‘reinventing the wheel’ and provide our own Sequence-friendly version for many frequently used middleware like CORS. Instead, we decided to step back and keep using the vast ecosystem of existing Express middleware that is battle-testeds by years of production use.
+We started LoopBack 4 with the desire to improve all aspects of application development. One of the pain points in LoopBack 3.x was composition of Express middleware handlers, which we decided to address by rolling out a different design based on Sequence of actions. As time progressed, we realized we would have to end up ‘reinventing the wheel’ and provide our own Sequence-friendly version for many frequently used middleware like CORS. Instead, we decided to step back and keep using the vast ecosystem of existing Express middleware that is battle-tested by years of production use.
 
 <!--more-->
 
 While discussing the new direction, we thought it would be great to support multiple different HTTP frameworks like Express and Koa and implement a thin integration layer to allow mounting of LoopBack 4 REST router. [Raymond](/authors/Raymond_Feng/) researched this approach in a spike pull request [#1082](https://github.com/strongloop/loopback-next/pull/1082). Later on, [Yaapa](/authors/Hage_Yaapa/) looked into practical implications of the proposed approach and discovered that Express and Koa are fundamentally incompatible at such level that it's impossible to write a a single middleware/route function that would work with both frameworks. That left us with a difficult decision to make: going forward, should we pick Express or Koa as the framework of choice for LoopBack 4? While we like Koa's design a lot, we see even more value in the wider adoption and maturity of Express framework and middleware. Ultimately we decided to use Express under the hood but bring some parts of Koa design into LoopBack too.
 
-## Request Context as an object
+## Request Context as an Object
 
 Traditionally in Express (and Connect), functions implementing request handling logic have the following signature:
 
@@ -87,7 +87,7 @@ Implementors can leverage [ES6 destructuring](https://developer.mozilla.org/en-U
 function reject({response, request}: HandlerContext, err: Error): void;
 ```
 
-## Express Request & Response everywhere
+## Express Request & Response Everywhere
 
 In the next step (see pull request [#1326](https://github.com/strongloop/loopback-next/pull/1326)), I switched our code from `ServerRequest` and `ServerResponse` types provided by Node.js core module [http](https://nodejs.org/api/http.html) to Express-flavored variants and integrated Express into RestServer's request handler. This change allowed further simplifications in many places (the patch added 352 and removed 378 lines), which further validated our decision to leverage Express.
 
@@ -112,7 +112,7 @@ this._expressApp.use(cors(corsOptions));
 
 Not all was a bed of roses though. The request and response objects provided by Express are more difficult to stub when compared to core ServerRequest and ServerResponse objects. I'll spare the readers from details on how the sausages are made, it's sufficient to say that [@loopback/testlab](https://www.npmjs.com/package/@loopback/testlab) was updated to provide a factory function `stubExpressContext()` to create Express-flavored request/response stubs too. See module's [documentation](https://www.npmjs.com/package/@loopback/testlab#shot) to learn more.
 
-## A factory for HTTP(S) endpoints
+## A Factory for HTTP(S) Endpoints
 
 The last change identified in the original spike was refactoring of the code setting up the HTTP server. We have had the following goals in mind:
 - Allow different HTTP-based transports to share the same code and configuration options.
