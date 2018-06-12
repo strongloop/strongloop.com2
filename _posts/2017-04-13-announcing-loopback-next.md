@@ -10,13 +10,11 @@ categories:
 - LoopBack
 ---
 
+NOTE: LoopBack.next has officially been renamed as [LoopBack 4](http://v4.loopback.io/).
+
 ## History
 
-In 2013, we started LoopBack as a
-mobile-backend-as-a-service, evolving out of earlier efforts such as
-[Deployd](http://deployd.com/) and
-[JugglingDB](https://github.com/1602/jugglingdb). Users quickly told us that what they needed wasn't a backend-as-a-service itself, but a framework to build their own MBaaS. We built LoopBack on top of the popular
-[Express](http://expressjs.com/) library and based it on open standards to ensure compatibility. We developed it in the open to ensure we could address users' problems and needs.
+In 2013, we started LoopBack as a mobile-backend-as-a-service, evolving out of earlier efforts such as [Deployd](http://deployd.com/) and [JugglingDB](https://github.com/1602/jugglingdb). Users quickly told us that what they needed wasn't a backend-as-a-service itself, but a framework to build their own MBaaS. We built LoopBack on top of the popular [Express](http://expressjs.com/) library and based it on open standards to ensure compatibility. We developed it in the open to ensure we could address users' problems and needs.
 
 {% include image.html file="2017/04/powered-by-LB-med.png" %}
 
