@@ -121,7 +121,7 @@ http://localhost:3000/openapi.json
 
 ## What's Next
 
-In part 2, we will add more logic in `GHRepoController` to talk to GitHub APIs through `octokat.js`, a GitHub API client.
+In [part 2](https://strongloop.com/strongblog/loopback4-github-example-app-part2/), we will add more logic in `GHRepoController` to talk to GitHub APIs through `octokat.js`, a GitHub API client.
 
 ## Code Repository
 
