@@ -97,7 +97,7 @@ _Tip_: You can make the LoopBack application show more debug statements by start
 
 ## What's Next?
 
-In part 3, we will finish the application by persisting the data we got in this article into a Cloudant database.
+In [part 3](https://strongloop.com/strongblog/loopback4-github-example-app-part3/), we will finish the application by persisting the data we got in this article into a Cloudant database.
 
 ## Code repository
 The code repository can be found [here](https://github.com/dhmlau/loopback4-github-app).
