@@ -5,22 +5,21 @@ date: 2017-09-07T01:40:15+00:00
 author: Dave Whiteley
 permalink: /strongblog/adopt-openapi-spec-oai-meetup
 categories:
-  - Open API Initiative
-  - Open API Spec
+  - OpenAPI Spec
   - Events
 
 ---
 
-Have you heard about the [Open API Initiative](https://www.openapis.org/) and its OpenAPI Specification? If so, you probably know how cool OpenAPI Spec is and that v3.0 is on its way. But maybe you want to know more about Open API Spec, getting others to try it out, and how to use it yourself.
+Have you heard about the [OpenAPI Initiative](https://www.openapis.org/) and its OpenAPI Specification? If so, you probably know how cool OpenAPI Spec is and that v3.0 is on its way. But maybe you want to know more about Open API Spec, getting others to try it out, and how to use it yourself.
 
-Well, good news for those of you in San Francisco! There is an Open API Initiative (OAI) Meetup coming on September 14th!
+Well, good news for those of you in San Francisco! There is an OpenAPI Initiative (OAI) Meetup coming on September 14th!
 
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2017/08/OpenAPISpecLogo.png" alt="Open API Spec / Open API Initiative" style="width: 300px"/>
 
-The Open API Initiative Meetup will feature discussion and demos featuring OpenAPI v3.0.
+The OpenAPI Initiative Meetup will feature discussion and demos featuring OpenAPI v3.0.
 
-Erin McKean, Developer Advocate, will help you get your teams on board with Open API Spec with her talk, "Selling OpenAPI: How to Convince Your Team (and Your Manager!) to Adopt the OpenAPI Spec."
+Erin McKean, Developer Advocate, will help you get your teams on board with OpenAPI Spec with her talk, "Selling OpenAPI: How to Convince Your Team (and Your Manager!) to Adopt the OpenAPI Spec."
 
 Tim Burks from Google will help you work with code generation you can trust with "Taking API Code Generation to the next level with OpenAPI 3." 
 
