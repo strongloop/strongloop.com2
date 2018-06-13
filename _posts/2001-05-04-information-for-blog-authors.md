@@ -57,7 +57,7 @@ categories:
 
 The properties are:
 - `layout`: Must be `post`.
-- `title`: Title of the post, which can include any character except a colon (:).  To put a colon in your title, use the HTML entity `&#58;`. Note that titles should be primarily upper case as per [this style guide](https://www.bkacontent.com/how-to-correctly-use-apa-style-title-case/). Please follow MLA Style for capitalization: Capitalize Major Words and Those With Four or More Letters.
+- `title`: Title of the post, which can include any character except a colon (:).  To put a colon in your title, use the HTML entity `&#58;`. Note that titles and headers should be primarily upper case as per [this style guide](https://www.bkacontent.com/how-to-correctly-use-apa-style-title-case/). Please follow MLA Style for capitalization: Capitalize Major Words and Those With Four or More Letters.
 - `date`: Publication date of your post in `yyyy-mm-dd` format.
 - `author`: Your name.  If this matches an entry in `_data/authors.yml` the post byline will automatically link to your author page if you have one.  See [README - How to add an author page](https://github.com/strongloop/strongloop.com/blob/master/README.md#how-to-add-an-author-page) for more information.
 - Note that multiple authors must be formatted like this, with each author marked on a new line:
@@ -96,6 +96,8 @@ Everything in the post before this HTML comment is in the excerpt:
 ```
 
 ## Headings
+
+Note that titles and headers should be primarily upper case as per [this style guide](https://www.bkacontent.com/how-to-correctly-use-apa-style-title-case/). Please follow MLA Style for capitalization: Capitalize Major Words and Those With Four or More Letters.
 
 You can use standard markdown headings as follows:
 - Top-level headings should be a Head2: Use markdown `##`. It's not a Head1 because that's used for the blog/page title.
@@ -237,3 +239,5 @@ They function the same except they have a different color, icon, and alert word.
 Please use [active voice](https://writing.wisc.edu/Handbook/CCS_activevoice.html) rather than passive voice.
 
 Unless creating a new paragraph, please use soft wrap rather than hard line breaks.
+
+There should only be one space between sentences, not two.
