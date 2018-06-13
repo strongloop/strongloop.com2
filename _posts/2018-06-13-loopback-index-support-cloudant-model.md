@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack Offers Index Support for Cloudant Model
-date: 2018-06-13T00:00:13+00:00
+date: 2018-06-13T00:00:01+00:00
 author: Janny Hou
 permalink: /strongblog/loopback-index-support-cloudant-model/
 categories:
