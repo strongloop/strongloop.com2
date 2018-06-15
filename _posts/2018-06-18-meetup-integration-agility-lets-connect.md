@@ -9,7 +9,7 @@ categories:
   - Community 
 ---
 
-We're pleased to announce a new meetup! 
+We're pleased to announce a new meetup coming soon. 
 
 Let’s welcome the beginning of summer and say goodbye to the first half of 2018 with a light-hearted integration workshop. Forget inviting clients to all-day PoTs and product pitches — this one’s for them, for the enterprises who want the agility of startups and the startups who want to be more established.
 
