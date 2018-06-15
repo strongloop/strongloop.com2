@@ -9,20 +9,17 @@ categories:
   - Watson 
 ---
 
-We're pleased to announce a new meetup! IBM solution specialists and technical specialists will facilitate an interatcive discussion about integration, sharing insights into the state of the industry and your own projects and looking at IBM’s integration portfolio.
-
-
-First up:
+We're pleased to announce a new meetup! IBM solution specialists and technical specialists will facilitate an interactive discussion about integration, sharing insights into the state of the industry and your own projects and looking at IBM’s integration portfolio. We hope you will join us!
 
 [Integration for Agility: Let’s Connect!](https://www.meetup.com/New-York-Cloud-Integration-Meetup/events/251764136/)
   
 <!--more-->
 
-<img class="aligncenter" src="https://strongloop.com/blog-assets/2018/05/MM-IBM-Meetup-May-30.jpg" alt="Building an AI Recognition App with Node.js and Watson Visual Recognition" style="width: 450px; margin:auto;"/>
+<img class="aligncenter" src="https://strongloop.com/blog-assets/2018/06/integration-meetup.jpeg" alt="Meetup - Integration for Agility: Let’s Connect!" style="width: 450px; margin:auto;"/>
 
-Join us for an interactive morning discussing how to best connect your systems and applications. What does integration mean today? We’ll talk about current practices and industry trends, your interests and your projects, and even spend some time getting hands-on with new solutions.
+The focus of this meetup is looking at how to best connect your systems and applications! We will consider what integration means today, look at current practices and industry trends, and get hands-on with new solutions to apply to your own projects.
 
-We'll start with coffee at 8:30 and kick off the event at 9:00 AM.
+The event formally starts at 9, but we'll begin the morning with coffee at 8:30.
 
 
 When asked what to expect from this session and series, Dennis told us, "The session is targeted at developers of all kinds.  Whether your weapon of choice is Java, Swift, Node.js, if your platform is Mobile or Cloud, this Meetup Series has something for all people who live by the mantra: Eat, Sleep, Code, Repeat."
