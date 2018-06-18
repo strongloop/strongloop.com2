@@ -1,6 +1,6 @@
 ---
 title: 'Meetup: Integration for Agility: Let’s Connect!'
-date: 2018-06-18-02T00:00:48+00:00
+date: 2018-06-18T00:00:48+00:00
 author: Dave Whiteley
 permalink: /strongblog/meetup-integration-agility-lets-connect/
 categories:
