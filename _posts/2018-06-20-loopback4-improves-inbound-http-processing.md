@@ -115,6 +115,7 @@ Not all was a bed of roses though. The request and response objects provided by 
 ## A Factory for HTTP(S) Endpoints
 
 The last change identified in the original spike was refactoring of the code setting up the HTTP server. We have had the following goals in mind:
+
 - Allow different HTTP-based transports to share the same code and configuration options.
 - Make it easy to add HTTPS support in the (near) future, use the same API to create both HTTP and HTTPS endpoints depending on the configuration.
 - Manage the lifecycle of http endpoints (start/stop API).
