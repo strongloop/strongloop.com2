@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 Improves Inbound HTTP Processing
-date: 2018-06-20T00:01:15+00:00
+date: 2018-06-20T00:01:01+00:00
 author: Miroslav Bajtoš
 permalink: /strongblog/loopback4-improves-inbound-http-processing
 categories:
