@@ -144,7 +144,6 @@ LoopBack's future success counts on you. We appreciate your continuous support a
 * [Building more extensions](https://github.com/strongloop/loopback-next/issues/647)
 * [Helping each other in the community](https://groups.google.com/forum/#!forum/loopbackjs)
 
-
-
 ## What's Next?
 
+* Check out cool events we're part of on our [Events page](https://strongloop.com/events/).
