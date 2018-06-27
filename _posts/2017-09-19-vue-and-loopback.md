@@ -9,6 +9,8 @@ categories:
   - How-To
 ---
 
+** NOTE:** We recenty posted "[Embedding Frontend Frameworks into LoopBack](https://strongloop.com/strongblog/embeddding-frontend-frameworks-into-loopback)", which gives a complete starter that uses the full Vue.js framework. The following blog post provides quick demo for using Vue and LoopBack.
+
 I recently had a conversation with a follower on [Twitter](https://twitter.com/raymondcamden) about how [Vue.js](https://vuejs.org/) and [LoopBack](http://loopback.io/) could work together. Because of how LoopBack works, this is almost a non-issue. By creating a simple REST-based API, there's nothing "special" about using Vue.js with LoopBack, just as there wouldn't be anything special if you used [React](https://facebook.github.io/react/) or [Angular](https://angularjs.org/). That being said, I still thought it would be nice to give a quick demonstration on how a Vue.js application could be built with LoopBack as the back end.
 <!--more-->
 
