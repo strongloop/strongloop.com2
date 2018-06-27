@@ -7,19 +7,24 @@ redirect_from:
   - /node-js/node-interactive-2015/
   - /events
 ---
+
 {% include section.html content='
 <div class="c-grid">
-Check out StrongLoop at these upcoming Node.js, API Development, and Integration Events. This includes conferences, webinars, meetups, and more.
+  <div class="_col -col-4-5">
+    <p>StrongLoop is proud to support these upcoming Node.js, API Development, and Integration Events. The StrongLoop team sponsors, speaks at, or hosts a booth at these conferences, webinars and meetups.
+  </div>
 </div>
 ' %}
-<section class="c-section x-white">
-  <div class="c-container -padded">
-    <div class="c-grid">
-      <div class="_col -col-1-1">
-          {% include_relative events-table.html %}
-      </div>
-    </div>
-  </div>
+
+<section class="c-section x-lightgrey">
+  {% include_relative events/dbnodejs.html %}
 </section>
 
-
+<section class="c-section x-white">
+  {% include_relative events/sacjavascript.html %}
+</section>
+                                   
+<section class="c-section x-lightgrey">
+  {% include_relative events/lnug.html %}
+</section>
+                                
