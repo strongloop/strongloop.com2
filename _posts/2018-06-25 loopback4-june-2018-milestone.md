@@ -30,6 +30,11 @@ cc @b-admike @shimks
 https://github.com/strongloop/loopback-next/issues/1331
 cc @hacksparrow
 
+#### LoopBack 4 improves inbound HTTP Processing
+
+https://strongloop.com/strongblog/loopback4-improves-inbound-http-processing
+cc @bajtos
+
 #### Shot Request/Response mocks
 
 https://github.com/strongloop/loopback-next/issues/760
@@ -65,15 +70,25 @@ cc @bajtos
 
 #### Coerce parameters 
 
-https://github.com/strongloop/loopback-next/issues/750
-cc @jannyhou
+When parsing the parameter's values from the HTTP request, they are always in a string format, but users expect to have them in the JavaScript data type defined in the corresponding OpenAPI parameter specification to invoke the controller method. Such type coercions are now handled in `@loopback/rest`.  
 
-## Blogs
+Take an example of the endpoint defined below:
 
-### LoopBack 4 improves inbound HTTP Processing
+```ts
+// in your controller file
+class FooController {
+  @get('/Foo')
+  async find(@param.query.integer('count')count: number): Promsise<Foo> {
+    return await fooRepo.find({limit: count});
+  }
+}
+```
 
-https://strongloop.com/strongblog/loopback4-improves-inbound-http-processing
-cc @bajtos
+Method `find` takes in a parameter called `count` from the query, its JavaScript run-time type should be a number, to be more specific, an integer. But by calling endpoint "a_partial_url/Foo?count=10", the value of `count` we get from the HTTP client is "10", not 10.
+
+In this case, `@loopback/rest` does a type coercion from string to integer when it parses the parameter from the HTTP request. And some basic validations also happen along with the coercion. For instance, value as "10.10" will be rejected since it's a float instead of an integer.
+
+The coercion and validation are applied to parameters from query, path and header, and you can check [OpenAPI primitive types](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#data-types) to find the proper `type` and `format` to describe your parameter's type in the OpenAPI Specification.
 
 ## Miscellaneous Improvements
 
