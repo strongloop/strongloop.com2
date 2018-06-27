@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Embedding Frontend Frameworks into LoopBack
-date: 2018-06-27T00:00:00+00:00
+date: 2018-06-27T00:00:00+00:01
 author: Ivan Dovgan
 permalink: /strongblog/embeddding-frontend-frameworks-into-loopback
 categories:
