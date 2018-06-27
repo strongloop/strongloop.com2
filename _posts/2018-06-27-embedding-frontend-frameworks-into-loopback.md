@@ -13,7 +13,8 @@ When working with LoopBack, there are many choices for frontend frameworks, howe
 
 In this post, we will explore how to easily embed a frontend framework into LoopBack and set up proper development and production environments. This post will discuss embedding [Vue.js](https://vuejs.org/), but the overall strategy can be used with any other frontend framework.
 
-**TLDR** There are pros and cons to embedding a frontend framework into LoopBack. This post shows you how to do it. If you just want a working example, look at my [loopback-vue-starter](https://github.com/ivandov/loopback-vue-starter).
+**TLDR;** There are pros and cons to embedding a frontend framework into LoopBack. This post shows you how to do it. If you just want a working example, look at my [loopback-vue-starter](https://github.com/ivandov/loopback-vue-starter).
+<!--more-->
 
 ## Initializing the LoopBack API Framework
 
