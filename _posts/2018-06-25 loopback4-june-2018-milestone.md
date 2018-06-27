@@ -9,9 +9,9 @@ categories:
   - LoopBack
 ---
 
-Based on the roadmap created from the spike stories, we have been able to make significant progresses for our 5 epics. Here is a highlight for the accomplishment in each area: We implemented the fundamental relation traversing by supporting relation decorators. A big refactor for @loopback/rest introduced a new package @loopback/http-server as the HTTP endpoint factory and improved the inbound HTTP processing by leveraging Express. Users now can create their datasources by `lb4 datasource` and @loopback/boot can automatically pick them up. Another new CLI we have created is `lb4 openapi`, which generates models and controllers from an Swagger/OpenAPI file. We added a geoService in the Todo example to show users how to integrate a service, and a caching HTTP proxy is created to speed up the integration test. The coercion for endpoint parameters converts a string from HTTP request to the corresponding JavaScript run-time type.
+Based on the roadmap created from the spike stories, we have been able to make significant progresses for our 5 epics. Here are the highlights of the accomplishments in each area: We implemented the fundamental relation traversing by supporting relation decorators. A big refactor for @loopback/rest introduced a new package @loopback/http-server as the HTTP endpoint factory and improved the inbound HTTP processing by leveraging Express. Users now can create their datasources by `lb4 datasource` and `@loopback/boot` can automatically pick them up. Another new CLI we created is `lb4 openapi`, which generates models and controllers from a Swagger/OpenAPI file. We added a geoService in the Todo example to show users how to integrate a service, and a caching HTTP proxy is created to speed up the integration test. The coercion for endpoint parameters converts a string from HTTP request to the corresponding JavaScript run-time type.
 
-A full list of finished stories and their story links can be find in issue [June milestone](https://github.com/strongloop/loopback-next/issues/1375).
+A full list of finished stories and their story links can be found in issue [June milestone](https://github.com/strongloop/loopback-next/issues/1375).
 
 <!--more-->
 
@@ -77,7 +77,7 @@ cc @bajtos
 
 ## Miscellaneous Improvements
 
-On top of the big features in our milestone, various PRs that involve cleanups, quality of life features, and beefening of our test suites have landed. Below is the list of these issues with links to more details.
+Besides the big achievements in epics, we also continue improving our code base to be more robust and update the documentations to reflect the latest architecture. Below is a serials of miscellaneous improvements for `loopback-next`:
 
 * [relation] Add more CRUD methods to relation "hasMany" [#1376](https://github.com/strongloop/loopback-next/issues/1376)
 * [relation] Add tests for relation constrain util functions [#1379](https://github.com/strongloop/loopback-next/issues/1379)
