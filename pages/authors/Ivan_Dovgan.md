@@ -1,6 +1,6 @@
 ---
 layout: author
-author: 'IvanDovgan'
+author: 'Ivan Dovgan'
 permalink: /authors/Ivan_Dovgan/
 redirect_from:
   - /authors/Ivan_Dovgan
