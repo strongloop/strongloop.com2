@@ -59,12 +59,31 @@ cc @virkt25
 https://github.com/strongloop/loopback-next/pull/1399
 cc @raymondfeng
 
-### Service Integration
+### Service Integration: Make Services Easy to Test
 
-#### Make services easy to test
+The initial support for accessing 3rd party REST/SOAP services from LoopBack4 application focused on implementation details of leveraging the existing capabilities provided by loopback-datasource-juggler and connectors. While the proposed solution was very easy to use when building applications, we had concerns about testability of such approach. In June, @bajtos did a series of improvements to make service integration easier to test.
 
-https://github.com/strongloop/loopback-next/issues/1311
-cc @bajtos
+The changes are based on few basic premises:
+
+ 1. When integrating with a 3rd-party service, we need to periodically verify that the assumptions made by our client are still valid: the request URLs and parameters are still supported, the service returns responses in the expected format. Ideally, these checks should be implemented as integration tests that don't require the entire application to be set up.
+
+ 2. Integration tests for service proxies should obtain proxy instances using the same APIs as application controllers do.
+
+ 3. When running the test suite, the non-functional aspects of service integration needs a different configuration compared to production use. For example, we may want to add an aggresive HTTP cache to speed up test duration and/or conserve rate limit restrictions.
+
+Fortunately enough, the current implementation was found as flexible enough to support the requirements. All that was needed was to connect existing building blocks in a slightly different way: Instead of using `@serviceProxy()` decorator that's difficult to use from integration tests, we recommend to write a service Provider that can be injected to Controllers via `@inject` and used from integration tests directly. The documentation page [Calling other APIs
+and web services](http://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html#make-service-proxies-easier-to-test) was updated with detailed implementation instructions and [Testing your application](http://loopback.io/doc/en/lb4/Testing-your-application.html#test-your-services-against-real-backends) received a new section _Test your services against real backends_ with a guide on integration testing.
+
+To ensure the advices given in the new documentation content are sound and the new code snippets work as expected, we have put our recommendations in practice and updated the example Todo application and the accompanying tutorial to show integration with [US Census Geocoder](https://geocoding.geo.census.gov/geocoder/) web service. Todo items now provide data for location-based reminders now, including server-side conversion of addresses to GPS coordinates. Yay! Learn more in [Integrate with a geo-coding service](http://loopback.io/doc/en/lb4/todo-tutorial-geocoding-service.html) tutorial and check out the pull request [#1347](https://github.com/strongloop/loopback-next/pull/1347) to see full code changes including new integration and acceptance tests.
+
+**Behind the Stage**
+
+Adding a geocoding web service turned out to be surprisingly tricky! Historically, many open source projects (including us) were relying on Google Maps API, because of their rich dataset, great performance and a generous free tier. Starting from July 16, 2018, the pricing is going to [change](https://cloud.google.com/maps-platform/user-guide/pricing-changes/) in a way that makes it difficult to use Google Maps API in an open-source example project for free. While there are other alternatives available (including IBM's [Weather Company Data](https://console.bluemix.net/catalog/services/weather-company-data?cm_mc_uid=26165958112215259376291&cm_mc_sid_50200000=38303921530172949280) or OpenStreetMap's [Nominatim](https://wiki.openstreetmap.org/wiki/Nominatim)), none of them were as easy to use as we would like to. 
+
+US Census Geocoder was found as the best alternative, especially because it allows anonymous requests (no access token required). The catch: more often than not, the service takes many seconds to complete the request. Sometimes even 30 seconds is not enough! We run Todo example tests as part of loopback-next's main test suite (`npm test`), and with the newly added tests making about 3 calls to Geocoder API, the test suite would become unusably slow. 
+
+We have considered several different options and existing npm packages while searching for a solution, from [mockyeah](https://www.npmjs.com/package/mockyeah) to [node-http-proxy](https://github.com/nodejitsu/node-http-proxy) and [anyproxy](https://github.com/alibaba/anyproxy). At the end, we decided to bite the bullet and implement our own HTTP proxy that will aggressively cache responses and persist the cache in the filesystem. Say hello to [@loopback/http-caching-proxy](https://www.npmjs.com/package/@loopback/http-caching-proxy)!
+
 
 ### Validation and Coercion
 
