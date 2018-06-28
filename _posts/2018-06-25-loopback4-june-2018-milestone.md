@@ -19,42 +19,32 @@ A full list of finished stories and their story links can be found in issue [Jun
 
 ### Model Relations
 
-#### Add relation decorators
+#### Add Relation Decorators
 
 cc @b-admike @shimks
 
 ### HTTP Hardening
 
-#### HTTP endpoint factory
+#### HTTP Endpoint Factory
 
 https://github.com/strongloop/loopback-next/issues/1331
 cc @hacksparrow
 
-#### LoopBack 4 improves inbound HTTP Processing
-
-https://strongloop.com/strongblog/loopback4-improves-inbound-http-processing
-cc @bajtos
-
-#### Shot Request/Response mocks
-
-https://github.com/strongloop/loopback-next/issues/760
-cc @bajtos
-
 ### @loopback/boot Support for Declarative JSON/YAML
 
-#### Generate datasource
+#### Generate Datasource
 
 https://github.com/strongloop/loopback-next/issues/1225
 cc @virkt25
 
-#### Generate index file for artifacts
+#### Generate Index File For Artifacts
 
 https://github.com/strongloop/loopback-next/issues/1127
 cc @virkt25
 
 ### CLI
 
-#### Generate LoopBack artifacts from OpenAPI specs
+#### Generate LoopBack Artifacts From OpenAPI Specs
 
 LoopBack 4 already [adopts OpenAPI 3.0](https://strongloop.com/strongblog/upgrade-from-swagger-to-openapi-3/) to expose controllers as REST APIs. The support is further expanded with the newly introduced `lb4 openapi` command. We can now generate corresponding artifacts such as controllers and models from OpenAPI 2.0 and 3.0 specs. It's the step stone to offer an `API design first` approach. For more information, please check out [OpenAPI Generator](http://loopback.io/doc/en/lb4/OpenAPI-generator.html). 
 
@@ -85,9 +75,9 @@ We have considered several different options and existing npm packages while sea
 
 ### Validation and Coercion
 
-#### Coerce parameters
+#### Coerce Parameters
 
-When parsing the parameter's values from the HTTP request, they are always in a string format, but users expect to have them in the JavaScript data type defined in the corresponding OpenAPI parameter specification to invoke the controller method. Such type coercions are now handled in `@loopback/rest`.
+When parsing the parameter's values from the HTTP request, they are always in a string format, but users expect to have them in JavaScript data type defined in the corresponding OpenAPI parameter specification to invoke the controller method. Such type coercions are now handled in `@loopback/rest`.
 
 Take an example of the endpoint defined below:
 
@@ -101,7 +91,7 @@ class FooController {
 }
 ```
 
-Method `find` takes in a parameter called `count` from the query, its JavaScript run-time type should be a number, to be more specific, an integer. But by calling endpoint "a_partial_url/Foo?count=10", the value of `count` we get from the HTTP client is "10", not 10.
+Method `find` takes in a parameter called `count` from the query, its JavaScript run-time type should be a number, to be more specific, an integer. But by calling endpoint "/Foo?[count]=10", the value of `count` we get from the HTTP client is "10", not 10.
 
 In this case, `@loopback/rest` does a type coercion from string to integer when it parses the parameter from the HTTP request. And some basic validations also happen along with the coercion. For instance, value as "10.10" will be rejected since it's a float instead of an integer.
 
@@ -115,10 +105,12 @@ Besides the big achievements in epics, we also continue improving our code base 
 - [relation] Add tests for relation constrain util functions [#1379](https://github.com/strongloop/loopback-next/issues/1379)
 - [refactor] Remove execute function out of Repository interface [#1355](https://github.com/strongloop/loopback-next/issues/1355)
 - [epic] Create tasks for improving Todo tutorial [#1206](https://github.com/strongloop/loopback-next/issues/1206)
+- [docs] The usage of shot Request/Response mocks [#760](https://github.com/strongloop/loopback-next/issues/760)
 - [docs] Clean up "Best Practices with LoopBack 4" [#1094](https://github.com/strongloop/loopback-next/issues/1094)
 - [docs] Move @loopback/repository's "Concepts" doc from Readme to loopback.io [#1137](https://github.com/strongloop/loopback-next/issues/1137)
 - [CLI] Enable tsc watch in projects scaffolded by lb4 CLI tool [#1259](https://github.com/strongloop/loopback-next/issues/1259)
 - [CLI] Remove the automatic "Controller" suffix from the controller command [#886](https://github.com/strongloop/loopback-next/issues/886)
+- [blog] LoopBack 4 improves inbound HTTP Processing [link](https://strongloop.com/strongblog/loopback4-improves-inbound-http-processing)
 
 ## Call for Action
 
