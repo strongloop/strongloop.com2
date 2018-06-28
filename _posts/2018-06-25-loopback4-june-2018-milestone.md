@@ -52,12 +52,11 @@ cc @virkt25
 https://github.com/strongloop/loopback-next/issues/1127
 cc @virkt25
 
-### CLI 
+### CLI
 
-#### Generate LoopBack app from OpenAPI file
+#### Generate LoopBack artifacts from OpenAPI specs
 
-https://github.com/strongloop/loopback-next/pull/1399
-cc @raymondfeng
+LoopBack 4 already [adopts OpenAPI 3.0](https://strongloop.com/strongblog/upgrade-from-swagger-to-openapi-3/) to expose controllers as REST APIs. The support is further expanded with the newly introduced `lb4 openapi` command. We can now generate corresponding artifacts such as controllers and models from OpenAPI 2.0 and 3.0 specs. It's the step stone to offer an `API design first` approach. For more information, please check out [OpenAPI Generator](http://loopback.io/doc/en/lb4/OpenAPI-generator.html). 
 
 ### Service Integration: Make Services Easy to Test
 
@@ -65,11 +64,11 @@ The initial support for accessing 3rd party REST/SOAP services from LoopBack4 ap
 
 The changes are based on few basic premises:
 
- 1. When integrating with a 3rd-party service, we need to periodically verify that the assumptions made by our client are still valid: the request URLs and parameters are still supported, the service returns responses in the expected format. Ideally, these checks should be implemented as integration tests that don't require the entire application to be set up.
+1.  When integrating with a 3rd-party service, we need to periodically verify that the assumptions made by our client are still valid: the request URLs and parameters are still supported, the service returns responses in the expected format. Ideally, these checks should be implemented as integration tests that don't require the entire application to be set up.
 
- 2. Integration tests for service proxies should obtain proxy instances using the same APIs as application controllers do.
+2.  Integration tests for service proxies should obtain proxy instances using the same APIs as application controllers do.
 
- 3. When running the test suite, the non-functional aspects of service integration needs a different configuration compared to production use. For example, we may want to add an aggresive HTTP cache to speed up test duration and/or conserve rate limit restrictions.
+3.  When running the test suite, the non-functional aspects of service integration needs a different configuration compared to production use. For example, we may want to add an aggresive HTTP cache to speed up test duration and/or conserve rate limit restrictions.
 
 Fortunately enough, the current implementation was found as flexible enough to support the requirements. All that was needed was to connect existing building blocks in a slightly different way: Instead of using `@serviceProxy()` decorator that's difficult to use from integration tests, we recommend to write a service Provider that can be injected to Controllers via `@inject` and used from integration tests directly. The documentation page [Calling other APIs
 and web services](http://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html#make-service-proxies-easier-to-test) was updated with detailed implementation instructions and [Testing your application](http://loopback.io/doc/en/lb4/Testing-your-application.html#test-your-services-against-real-backends) received a new section _Test your services against real backends_ with a guide on integration testing.
@@ -78,18 +77,17 @@ To ensure the advices given in the new documentation content are sound and the n
 
 **Behind the Stage**
 
-Adding a geocoding web service turned out to be surprisingly tricky! Historically, many open source projects (including us) were relying on Google Maps API, because of their rich dataset, great performance and a generous free tier. Starting from July 16, 2018, the pricing is going to [change](https://cloud.google.com/maps-platform/user-guide/pricing-changes/) in a way that makes it difficult to use Google Maps API in an open-source example project for free. While there are other alternatives available (including IBM's [Weather Company Data](https://console.bluemix.net/catalog/services/weather-company-data?cm_mc_uid=26165958112215259376291&cm_mc_sid_50200000=38303921530172949280) or OpenStreetMap's [Nominatim](https://wiki.openstreetmap.org/wiki/Nominatim)), none of them were as easy to use as we would like to. 
+Adding a geocoding web service turned out to be surprisingly tricky! Historically, many open source projects (including us) were relying on Google Maps API, because of their rich dataset, great performance and a generous free tier. Starting from July 16, 2018, the pricing is going to [change](https://cloud.google.com/maps-platform/user-guide/pricing-changes/) in a way that makes it difficult to use Google Maps API in an open-source example project for free. While there are other alternatives available (including IBM's [Weather Company Data](https://console.bluemix.net/catalog/services/weather-company-data?cm_mc_uid=26165958112215259376291&cm_mc_sid_50200000=38303921530172949280) or OpenStreetMap's [Nominatim](https://wiki.openstreetmap.org/wiki/Nominatim)), none of them were as easy to use as we would like to.
 
-US Census Geocoder was found as the best alternative, especially because it allows anonymous requests (no access token required). The catch: more often than not, the service takes many seconds to complete the request. Sometimes even 30 seconds is not enough! We run Todo example tests as part of loopback-next's main test suite (`npm test`), and with the newly added tests making about 3 calls to Geocoder API, the test suite would become unusably slow. 
+US Census Geocoder was found as the best alternative, especially because it allows anonymous requests (no access token required). The catch: more often than not, the service takes many seconds to complete the request. Sometimes even 30 seconds is not enough! We run Todo example tests as part of loopback-next's main test suite (`npm test`), and with the newly added tests making about 3 calls to Geocoder API, the test suite would become unusably slow.
 
 We have considered several different options and existing npm packages while searching for a solution, from [mockyeah](https://www.npmjs.com/package/mockyeah) to [node-http-proxy](https://github.com/nodejitsu/node-http-proxy) and [anyproxy](https://github.com/alibaba/anyproxy). At the end, we decided to bite the bullet and implement our own HTTP proxy that will aggressively cache responses and persist the cache in the filesystem. Say hello to [@loopback/http-caching-proxy](https://www.npmjs.com/package/@loopback/http-caching-proxy)!
 
-
 ### Validation and Coercion
 
-#### Coerce parameters 
+#### Coerce parameters
 
-When parsing the parameter's values from the HTTP request, they are always in a string format, but users expect to have them in the JavaScript data type defined in the corresponding OpenAPI parameter specification to invoke the controller method. Such type coercions are now handled in `@loopback/rest`.  
+When parsing the parameter's values from the HTTP request, they are always in a string format, but users expect to have them in the JavaScript data type defined in the corresponding OpenAPI parameter specification to invoke the controller method. Such type coercions are now handled in `@loopback/rest`.
 
 Take an example of the endpoint defined below:
 
@@ -97,7 +95,7 @@ Take an example of the endpoint defined below:
 // in your controller file
 class FooController {
   @get('/Foo')
-  async find(@param.query.integer('count')count: number): Promsise<Foo> {
+  async find(@param.query.integer('count') count: number): Promsise<Foo> {
     return await fooRepo.find({limit: count});
   }
 }
@@ -113,14 +111,14 @@ The coercion and validation are applied to parameters from query, path and heade
 
 Besides the big achievements in epics, we also continue improving our code base to be more robust and update the documentations to reflect the latest architecture. Below is a serials of miscellaneous improvements for `loopback-next`:
 
-* [relation] Add more CRUD methods to relation "hasMany" [#1376](https://github.com/strongloop/loopback-next/issues/1376)
-* [relation] Add tests for relation constrain util functions [#1379](https://github.com/strongloop/loopback-next/issues/1379)
-* [refactor] Remove execute function out of Repository interface [#1355](https://github.com/strongloop/loopback-next/issues/1355)
-* [epic] Create tasks for improving Todo tutorial [#1206](https://github.com/strongloop/loopback-next/issues/1206)
-* [docs] Clean up "Best Practices with LoopBack 4" [#1094](https://github.com/strongloop/loopback-next/issues/1094)
-* [docs] Move @loopback/repository's "Concepts" doc from Readme to loopback.io [#1137](https://github.com/strongloop/loopback-next/issues/1137)
-* [CLI] Enable tsc watch in projects scaffolded by lb4 CLI tool [#1259](https://github.com/strongloop/loopback-next/issues/1259)
-* [CLI] Remove the automatic "Controller" suffix from the controller command [#886](https://github.com/strongloop/loopback-next/issues/886)
+- [relation] Add more CRUD methods to relation "hasMany" [#1376](https://github.com/strongloop/loopback-next/issues/1376)
+- [relation] Add tests for relation constrain util functions [#1379](https://github.com/strongloop/loopback-next/issues/1379)
+- [refactor] Remove execute function out of Repository interface [#1355](https://github.com/strongloop/loopback-next/issues/1355)
+- [epic] Create tasks for improving Todo tutorial [#1206](https://github.com/strongloop/loopback-next/issues/1206)
+- [docs] Clean up "Best Practices with LoopBack 4" [#1094](https://github.com/strongloop/loopback-next/issues/1094)
+- [docs] Move @loopback/repository's "Concepts" doc from Readme to loopback.io [#1137](https://github.com/strongloop/loopback-next/issues/1137)
+- [CLI] Enable tsc watch in projects scaffolded by lb4 CLI tool [#1259](https://github.com/strongloop/loopback-next/issues/1259)
+- [CLI] Remove the automatic "Controller" suffix from the controller command [#886](https://github.com/strongloop/loopback-next/issues/886)
 
 ## Call for Action
 
