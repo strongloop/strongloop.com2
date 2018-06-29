@@ -19,9 +19,21 @@ A full list of finished stories and their story links can be found in issue [Jun
 
 ### Model Relations
 
-#### Add Relation Decorators
+With groundwork for creating constrained `hasMany` repositories in place, the next
+step was to streamline the user experience.
 
-cc @b-admike @shimks
+`@loopback/repository`'s `DefaultCrudRepository` is now equipped with
+`_createHasManyRepositoryFactoryFor` method, which can be used inside your
+repository's constructor to give your repository instance a primary-key-constraining
+`hasMany` repository factory. In order to use this nitfy little method, just decorate
+your source model with a `@hasMany()` decorator and pass in it the constructor of the
+model on the receiving end of the `hasMany` relation. If you're interested in
+how it all works, check out our PR on this work [here](https://github.com/strongloop/loopback-next/issues/1438).
+
+A detailed documentation and tutorial on using `@hasMany`,
+`_createHasManyRepositoryFactoryFor` and the proudced factory function along
+with a blog post detailing our design choices is on the horizon, so please stay
+tuned!
 
 ### HTTP Hardening
 
@@ -46,7 +58,7 @@ cc @virkt25
 
 #### Generate LoopBack Artifacts From OpenAPI Specs
 
-LoopBack 4 already [adopts OpenAPI 3.0](https://strongloop.com/strongblog/upgrade-from-swagger-to-openapi-3/) to expose controllers as REST APIs. The support is further expanded with the newly introduced `lb4 openapi` command. We can now generate corresponding artifacts such as controllers and models from OpenAPI 2.0 and 3.0 specs. It's the step stone to offer an `API design first` approach. For more information, please check out [OpenAPI Generator](http://loopback.io/doc/en/lb4/OpenAPI-generator.html). 
+LoopBack 4 already [adopts OpenAPI 3.0](https://strongloop.com/strongblog/upgrade-from-swagger-to-openapi-3/) to expose controllers as REST APIs. The support is further expanded with the newly introduced `lb4 openapi` command. We can now generate corresponding artifacts such as controllers and models from OpenAPI 2.0 and 3.0 specs. It's the step stone to offer an `API design first` approach. For more information, please check out [OpenAPI Generator](http://loopback.io/doc/en/lb4/OpenAPI-generator.html).
 
 ### Service Integration: Make Services Easy to Test
 
