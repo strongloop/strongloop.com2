@@ -42,18 +42,6 @@ tuned!
 https://github.com/strongloop/loopback-next/issues/1331
 cc @hacksparrow
 
-### @loopback/boot Support for Declarative JSON/YAML
-
-#### Generate Datasource
-
-https://github.com/strongloop/loopback-next/issues/1225
-cc @virkt25
-
-#### Generate Index File For Artifacts
-
-https://github.com/strongloop/loopback-next/issues/1127
-cc @virkt25
-
 ### CLI
 
 June had a major focus on our CLI as it helps abstract complexity and simplifies the developer experience. It already helped scaffold your Applications and create Controllers, now it can do even more!
