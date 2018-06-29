@@ -56,6 +56,16 @@ cc @virkt25
 
 ### CLI
 
+June had a major focus on our CLI as it helps abstract complexity and simplifies the developer experience. It already helped scaffold your Applications and create Controllers, now it can do even more!
+
+#### Generate DataSource
+
+CLI has a new command, `lb4 datasource` that can create a [DataSource]() for you. The command will ask you for the name, connector and connector specific question. Then it will install the connector from `npm` into the project, create a `datasource.json` file and an accompanying `datasource.ts` (for programatic overrides) file in `/src/datasources` folder.
+
+#### Generate Index File for Artifacts
+
+When the CLI generates artifacts such as Controllers / DataSources, we had always recommended adding a `index.ts` in the artifact folder and exporting the artifacts from that file. This made it easier to import the artifacts when using them for typing information with Dependency Injection / otherwise. Creating and maintaing the `index.ts` file was a manual process before but now all artifacts created using the CLI will create / update `index.ts` in the artifact folder, simplying the developer experience significantly!
+
 #### Generate LoopBack Artifacts From OpenAPI Specs
 
 LoopBack 4 already [adopts OpenAPI 3.0](https://strongloop.com/strongblog/upgrade-from-swagger-to-openapi-3/) to expose controllers as REST APIs. The support is further expanded with the newly introduced `lb4 openapi` command. We can now generate corresponding artifacts such as controllers and models from OpenAPI 2.0 and 3.0 specs. It's the step stone to offer an `API design first` approach. For more information, please check out [OpenAPI Generator](http://loopback.io/doc/en/lb4/OpenAPI-generator.html).
@@ -98,7 +108,7 @@ Take an example of the endpoint defined below:
 class FooController {
   @get('/Foo')
   async find(@param.query.integer('count') count: number): Promsise<Foo> {
-    return await fooRepo.find({limit: count});
+    return await fooRepo.find({ limit: count });
   }
 }
 ```
