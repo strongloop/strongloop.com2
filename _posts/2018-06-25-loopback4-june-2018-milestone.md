@@ -60,7 +60,9 @@ June had a major focus on our CLI as it helps abstract complexity and simplifies
 
 #### Generate DataSource
 
-CLI has a new command, `lb4 datasource` that can create a [DataSource]() for you. The command will ask you for the name, connector and connector specific question. Then it will install the connector from `npm` into the project, create a `datasource.json` file and an accompanying `datasource.ts` (for programatic overrides) file in `/src/datasources` folder.
+CLI has a new command, `lb4 datasource` that can create a [DataSource](http://loopback.io/doc/en/lb4/DataSources.html) for you. The command will ask you for the name, connector and connector specific question. Then it will install the connector from `npm` into the project, create a `datasource.json` file and an accompanying `datasource.ts` (for programatic overrides) file in `/src/datasources` folder.
+
+Accordingly, `@loopback/boot` now supports discovering and binding DataSource files in your Application automatically.
 
 #### Generate Index File for Artifacts
 
