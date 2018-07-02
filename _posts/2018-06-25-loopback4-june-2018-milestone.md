@@ -39,8 +39,15 @@ tuned!
 
 #### HTTP Endpoint Factory
 
-https://github.com/strongloop/loopback-next/issues/1331
-cc @hacksparrow
+A new package, `@loopback/http-server`, was created to decouple the HTTP/HTTPs server creation and management responsibilities from `@loopback/rest`. This package exports a class, `HttpServer`, which can be used idenpendently from LoopBack, to create HTTP or HTTPS servers based on its configuration object.
+
+An earlier implementation of `HttpServer` incorrectly formatted Ipv6 host in its `url` property. This has been fixed in the latest version.
+
+A new property, `listening` is added to `RestServer`. It's a boolen, which will be `true` if the server was started successfully and is listening for connections.
+
+#### HTTPS support
+
+Work is being done to add built-in support for HTTPS in LoopBack. This feature is likely to land in early July.
 
 ### CLI
 
