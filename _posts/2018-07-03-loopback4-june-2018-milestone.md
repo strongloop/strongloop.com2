@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 June 2018 Milestone Update
-date: 2018-06-25T00:10:11+00:00
+date: 2018-07-03T00:10:11+00:00
 author: Janny Hou
 permalink: /strongblog/june-2018-milestone/
 categories:
@@ -19,21 +19,11 @@ A full list of finished stories and their story links can be found in issue [Jun
 
 ### Model Relations
 
-With groundwork for creating constrained `hasMany` repositories in place, the next
-step was to streamline the user experience.
+With groundwork for creating constrained `hasMany` repositories in place, the next step was to streamline the user experience.
 
-`@loopback/repository`'s `DefaultCrudRepository` is now equipped with
-`_createHasManyRepositoryFactoryFor` method, which can be used inside your
-repository's constructor to give your repository instance a primary-key-constraining
-`hasMany` repository factory. In order to use this nitfy little method, just decorate
-your source model with a `@hasMany()` decorator and pass in it the constructor of the
-model on the receiving end of the `hasMany` relation. If you're interested in
-how it all works, check out our PR on this work [here](https://github.com/strongloop/loopback-next/issues/1438).
+`@loopback/repository`'s `DefaultCrudRepository` is now equipped with `_createHasManyRepositoryFactoryFor` method, which can be used inside your repository's constructor to give your repository instance a primary-key-constraining `hasMany` repository factory. In order to use this nitfy little method, just decorate your source model with a `@hasMany()` decorator and pass in it the constructor of the model on the receiving end of the `hasMany` relation. If you're interested in how it all works, check out our PR on this work [here](https://github.com/strongloop/loopback-next/issues/1438).
 
-A detailed documentation and tutorial on using `@hasMany`,
-`_createHasManyRepositoryFactoryFor` and the proudced factory function along
-with a blog post detailing our design choices is on the horizon, so please stay
-tuned!
+A detailed documentation and tutorial on using `@hasMany`, `_createHasManyRepositoryFactoryFor` and the proudced factory function along with a blog post detailing our design choices is on the horizon, so please stay tuned!
 
 ### HTTP Hardening
 
