@@ -27,32 +27,29 @@ Let's take a closer look at each epic!
 
 ## Robust HTTP Processing Capabilities
 
-- decided to use Express as our low level HTTP transport provider because of Express' maturity and richer middleware ecosystem.
-- a new package `@loopback/http-server` was created to decouple the HTTP/HTTPs server creation and management responsibilities from @loopback/rest
-- rework internals to use Express request/response types
+We [decided to use Express](https://github.com/strongloop/loopback-next/issues/1071) as our low level HTTP transport provider because of Express' maturity and richer middleware ecosystem. As a result, a new package `@loopback/http-server` was introduced to decouple the HTTP/HTTPs server creation and management responsibilities from the `@loopback/rest` package. We have also reworked the internals to use Express request/response types.
 
 ## Integration with REST /SOAP Services
 
-- calling other Web services (REST, SOAP, etc) with `@serviceProxy` decorator
-- users can continue to leverage the existing connectors such as loopback-connector-soap and loopback-connector-grpc
-- for details, check out [Calling other APIs and Web Services documentation page](http://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html).
+With `@serviceProxy` decorator, users can continue to leverage the existing connectors, such as [loopback-connector-soap][loopback-connector-soap] and [loopback-connector-grpc][loopback-connector-grpc], to call other web services. For details, check out [Calling other APIs and Web Services documentation page](http://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html).
 
 ## Model Relations Preview
 
-- created the infrastructure (decorators and dependency injection??) to support model relations
-- added support of `hasMany` relation
+In real-world applications, it is common to have models related to each other. For Developer Preview #3, we created the infrastructure to support model relations in this release and added support of `hasMany` relation. For more details, see [the relation documentation page](link) and try out the [example](link).
 
-## Validation and Type conversion
+## Validation and Type Conversion
 
-- coerce primitives in query and path parameter as well as the headers
-- minimal validation on the input parameters using AJV
+We added the support to coerce primitive types in query and path parameters as well as the headers. There is also minimal validation on the input parameters using [AJV][ajv]. Check out the [documentation](link) for more details.
 
 ## Usability Enhancements
 
-- CLI to create data source, model, etc
-- CLI to create from openapi spec
-- --help
-- express vs custom mode
+User experience has been a focus for LoopBack 4. In this release, we have added the [command-line interface][cli] for creating data source and model, the `lb4 datasource` and `lb4 model` command, respectively. We now also have the `lb4 openapi` command to generate corresponding artifacts from OpenAPI 2.0 and 3.0 specs.
+
+Besides, we introduced 2 flavors of command-line interfaces: express vs custom mode, tailored for different usage scenarios. For more information, see [this blog post](link).
+
+## What's Next?
+
+Moving towards the GA release, we are planning to build a [fictitious e-commerce store][estore] to validate that we cover the common usage scenarios of real-world LoopBack-based applications. We'll keep you posted on new features added to the framework in our monthly milestone blog posts.
 
 ## Call for Action
 
@@ -71,6 +68,11 @@ LoopBack's future success counts on you. We appreciate your continuous support a
 [model-relation]: https://github.com/strongloop/loopback-next/issues/1032
 [conversion]: https://github.com/strongloop/loopback-next/issues/755
 [calling-other-apis]: http://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html
+[ajv]: https://www.npmjs.com/package/ajv
+[cli]: https://loopback.io/doc/en/lb4/Command-line-interface.html
+[loopback-connector-soap]: https://www.npmjs.com/package/loopback-connector-soap
+[loopback-connector-grpc]: https://www.npmjs.com/package/loopback-connector-grpc
+[estore]: https://github.com/strongloop/loopback-next/issues/1476
 [april-milestone]: https://strongloop.com/strongblog/april-2018-milestone/
 [may-milestone]: https://strongloop.com/strongblog/may-2018-milestone/
 [june-milestone]: https://strongloop.com/strongblog/june-2018-milestone/
