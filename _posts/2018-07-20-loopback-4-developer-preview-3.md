@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Announcing LoopBack 4 Developer Preview 3
-date: 2018-06-27T00:00:00+00:01
+date: 2018-07-20T00:00:00+00:01
 author: Diana Lau
 author: Raymond Feng
 author: Miroslav Bajtos
@@ -21,13 +21,19 @@ Since the previous release of [LoopBack 4 Developer Preview 2][dp2-announcement]
 - [Validation and Type conversion](#validation-and-type-conversion)
 - [Usability Enhancements](#usability-enhancements)
 
+With Developer Preview 3, you can create a LoopBack application that connects to the backend resources, for example, connecting to a database or calling out to other REST and legacy SOAP web services. There are various command-line interfaces to help you create the artifacts along the way.
+
 Let's take a closer look at each epic!
 
 <!--more-->
 
 ## Robust HTTP Processing Capabilities
 
-We [decided to use Express](https://github.com/strongloop/loopback-next/issues/1071) as our low level HTTP transport provider because of Express' maturity and richer middleware ecosystem. As a result, a new package `@loopback/http-server` was introduced to decouple the HTTP/HTTPs server creation and management responsibilities from the `@loopback/rest` package. We have also reworked the internals to use Express request/response types.
+We have discussed in [this blog post](https://strongloop.com/strongblog/loopback4-improves-inbound-http-processing) that we are using Express under the hood for HTTP processing capabilities but bring some parts of Kao design into LoopBack. We have:
+
+1.  Added context types `HandlerContext` and `RequestContext` to act as a context for low-level HTTP code
+2.  Integrated Express into RestServer’s request handler
+3.  Introduced a factory for HTTP(S) endpoints for setting up HTTP server
 
 ## Integration with REST /SOAP Services
 
@@ -35,11 +41,11 @@ With `@serviceProxy` decorator, users can continue to leverage the existing conn
 
 ## Model Relations Preview
 
-In real-world applications, it is common to have models related to each other. For Developer Preview #3, we created the infrastructure to support model relations in this release and added support of `hasMany` relation. For more details, see [the relation documentation page](link) and try out the [example](link).
+In real-world applications, it is common to have models related to each other. We created the infrastructure to support model relations in this release and added support of `hasMany` relation. For more details, see [the relation documentation page](link) and try out the [example](link).
 
 ## Validation and Type Conversion
 
-We added the support to coerce primitive types in query and path parameters as well as the headers. There is also minimal validation on the input parameters using [AJV][ajv]. Check out the [documentation](link) for more details.
+We added the support to coerce primitive types in query and path parameters as well as the headers. There is also minimal validation on the input parameters and request bodies using [AJV][ajv]. Check out the [documentation](link) for more details.
 
 ## Usability Enhancements
 
