@@ -1,13 +1,15 @@
 ---
 layout: post
-title: LoopBack 4 introduces express mode for CLI 
-date: 2018-07-12T00:01:01+00:00
+title: LoopBack 4 Introduces Express Mode for CLI 
+date: 2018-07-18T00:01:01+00:00
 author: Raymond Feng
 permalink: /strongblog/loopback4-cli-express-mode
 categories:
   - Community
   - LoopBack
 ---
+
+As we continue to work on [LoopBack 4](http://v4.loopback.io/), w’re excited to tell you about new ways for developers to build with it via the LoopBack 4 CLI. 
 
 LoopBack 4 CLI is a powerful tool for developers to scaffold projects and provision artifacts. There are a few different ways to provide input to drive the commands:
 
@@ -155,6 +157,8 @@ The JSON configuration can be something like:
 }
 ```
 
+As you have seen, LoopBack 4 CLI can help developers scaffold projects and provision artifacts in a few different ways. We hope being in the loop with these options helps your current and future projects!
+
 ## Call for Action
 
 LoopBack's future success counts on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
@@ -164,3 +168,7 @@ LoopBack's future success counts on you. We appreciate your continuous support a
 - [Reporting issues](https://github.com/strongloop/loopback-next/issues)
 - [Building more extensions](https://github.com/strongloop/loopback-next/issues/647)
 - [Helping each other in the community](https://groups.google.com/forum/#!forum/loopbackjs)
+
+## What's Next?
+
+- Check out upcoming Node.js, API Development, and Integration [events](https://strongloop.com/events/) with the StrongLoop and IBM team. 
