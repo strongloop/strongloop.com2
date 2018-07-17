@@ -11,17 +11,17 @@ categories:
   - LoopBack
 ---
 
-Whether you have been creating Node.js application using LoopBack 4 or wondering when is a good time to start building something serious, LoopBack 4 Developer Preview 3 is the release that you should not miss!
+Whether you have been creating Node.js application using LoopBack 4 or wondering when is a good time to start building something serious, LoopBack 4 Developer Preview 3 is the release that you don't want to miss!
 
-Since the previous release of [LoopBack 4 Developer Preview 2][dp2-announcement], we have been focusing on filling the gaps so that our users can start creating LoopBack 4 applications for production. To enable that, there are 5 major epics in this release:
+With Developer Preview 3, you can now create a LoopBack application that can persist Models to a database using LoopBack 3 connectors or call out to other REST and legacy SOAP web services. There are new CLI commands to help you create artifacts along the way.
+
+Since the previous release of [LoopBack 4 Developer Preview 2][dp2-announcement], we have been focused on filling the gaps so that you can start creating production ready LoopBack 4 applications. To enable that, there are 5 major epics in this release:
 
 - [Robust HTTP processing capabilities](#robust-http-processing-capabilities)
 - [Integration with REST / SOAP services](#integration-with-rest-soap-services)
-- [Model relations Preview](#model-relations-preview)
-- [Validation and Type conversion](#validation-and-type-conversion)
-- [Usability Enhancements](#usability-enhancements)
-
-With Developer Preview 3, you can create a LoopBack application that connects to the backend resources, for example, connecting to a database or calling out to other REST and legacy SOAP web services. There are various command-line interfaces to help you create the artifacts along the way.
+- [Model relations preview](#model-relations-preview)
+- [Validation and type conversion](#validation-and-type-conversion)
+- [Improved artifact generation](#improved-artifact-generation)
 
 Let's take a closer look at each epic!
 
@@ -29,7 +29,7 @@ Let's take a closer look at each epic!
 
 ## Robust HTTP Processing Capabilities
 
-We have discussed in [this blog post](https://strongloop.com/strongblog/loopback4-improves-inbound-http-processing) that we are using Express under the hood for HTTP processing capabilities but bring some parts of Kao design into LoopBack. We have:
+We have discussed in [this blog post](https://strongloop.com/strongblog/loopback4-improves-inbound-http-processing) that we are using Express under the hood for HTTP processing capabilities but bring some parts of Koa design into LoopBack. We have:
 
 1.  Added context types `HandlerContext` and `RequestContext` to act as a context for low-level HTTP code
 2.  Integrated Express into RestServer’s request handler
@@ -41,17 +41,21 @@ With `@serviceProxy` decorator, users can continue to leverage the existing conn
 
 ## Model Relations Preview
 
-In real-world applications, it is common to have models related to each other. We created the infrastructure to support model relations in this release and added support of `hasMany` relation. For more details, see [the relation documentation page](link) and try out the [example](link).
+In real-world applications, it is common to have models related to each other. We created the infrastructure to support model relations in this release and added support for the first relation, `hasMany`. For more details, see [the relation documentation page][relation-docs] and try out the [example](link).
 
 ## Validation and Type Conversion
 
-We added the support to coerce primitive types in query and path parameters as well as the headers. There is also minimal validation on the input parameters and request bodies using [AJV][ajv]. Check out the [documentation](link) for more details.
+There is now support to coerce primitive types (convert string values to appropriate types) in headers, query and path parameters. There is also minimal validation on the input parameters and request bodies using [AJV][ajv]. Check out the [documentation](link) for more details.
 
-## Usability Enhancements
+## Improved Artifact Generation
 
-User experience has been a focus for LoopBack 4. In this release, we have added the [command-line interface][cli] for creating data source and model, the `lb4 datasource` and `lb4 model` command, respectively. We now also have the `lb4 openapi` command to generate corresponding artifacts from OpenAPI 2.0 and 3.0 specs.
+User experience has been a focus for LoopBack 4. In this release, we have added a variety of new [CLI commands][cli]:
 
-Besides, we introduced 2 flavors of command-line interfaces: express vs custom mode, tailored for different usage scenarios. For more information, see [this blog post](link).
+- `lb4 datasource` for creating a datasource
+- `lb4 model` for creating a model
+- `lb4 openapi` to generate corresponding artifacts from OpenAPI 2.0 and 3.0 specs.
+
+Along with the new commands, we've introduced support for an express mode that allows you to accept default values for some prompts. For more information, see [this blog post](link).
 
 ## What's Next?
 
@@ -59,11 +63,11 @@ Moving towards the GA release, we are planning to build a [fictitious e-commerce
 
 ## Call for Action
 
-LoopBack's future success counts on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
+LoopBack's future success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
 
+- [Reporting issues/Sharing feedback](https://github.com/strongloop/loopback-next/issues)
 - [Open a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue)
 - [Casting your vote for extensions](https://github.com/strongloop/loopback-next/issues/512)
-- [Reporting issues](https://github.com/strongloop/loopback-next/issues)
 - [Building more extensions](https://github.com/strongloop/loopback-next/issues/647)
 - [Helping each other in the community](https://groups.google.com/forum/#!forum/loopbackjs)
 
@@ -76,9 +80,7 @@ LoopBack's future success counts on you. We appreciate your continuous support a
 [calling-other-apis]: http://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html
 [ajv]: https://www.npmjs.com/package/ajv
 [cli]: https://loopback.io/doc/en/lb4/Command-line-interface.html
+[relation-docs]: https://loopback.io/doc/en/lb4/Relations.html
 [loopback-connector-soap]: https://www.npmjs.com/package/loopback-connector-soap
 [loopback-connector-grpc]: https://www.npmjs.com/package/loopback-connector-grpc
 [estore]: https://github.com/strongloop/loopback-next/issues/1476
-[april-milestone]: https://strongloop.com/strongblog/april-2018-milestone/
-[may-milestone]: https://strongloop.com/strongblog/may-2018-milestone/
-[june-milestone]: https://strongloop.com/strongblog/june-2018-milestone/
