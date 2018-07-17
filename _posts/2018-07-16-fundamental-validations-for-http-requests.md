@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fundamental Validations for HTTP Requests
-date: 2018-07-03T00:10:11+00:00
+date: 2018-07-16T00:10:11+00:00
 author: Janny Hou
 permalink: /strongblog/fundamental-validations-for-http-requests/
 categories:
@@ -13,7 +13,7 @@ LoopBack 4 is building a powerful validation system for the HTTP requests. As th
 
 <!--more-->
 
-The following code snippet defines an endpoint `PUT /todos/{id}` by decorating it with the rest decorators. This blog will use it as a typical example to explain what validations are performed to the incoming request.
+The following code snippet defines an endpoint `PUT /todos/{id}` by decorating it with the [rest decorators](https://loopback.io/doc/en/lb4/Decorators.html#route-decorators). This blog will use it as a typical example to explain what validations are performed to the incoming request.
 
 ```ts
 class TodoController {
@@ -31,17 +31,19 @@ class TodoController {
 
 ## Parameters Validation
 
-OAI 3.0.x describes the data from a request's header, query and path in an operation specification's `parameters` property. In a controller method, such an argument is typically decorated by the `@param()`.
+OAI 3.0.x describes the data from a request's header, query and path in an operation specification's `parameters` property. In a controller method, such an argument is typically decorated by `@param()`.
 
 The validation guarantees that the data parsed from request is valid in the type described by the parameter specification. For example, the first argument in the function `replaceTodo()` is decorated with `@param.path.number('id')`. It means the raw data of `id` is parsed from the request's path and it should be a valid number. Invalid data like `astring` or `true` would be rejected.
 
 The validation rule varies based on the parameter's [OAI primitive type](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#data-types), which is inferred from the decorator `@param.<http_source>.<OAI_primitive_type>`. `@param.path.number()` is one of the shortcuts for `@param()`, other shortcuts with different combinations of HTTP source and OAI types could be found in the [API Docs](https://apidocs.strongloop.com/@loopback%2fdocs/openapi-v3.html#param).
 
-A more detailed documentation for the parameter validations could be found in the [section "Parameters"]() on page "Parsing Requests".
+A more detailed documentation for the parameter validations could be found in the [section "Parameters"](link_tbd) on page "Parsing Requests".
+
+Please note that the validation against parameters checks the primitive types only, it doesn't apply JSON-schema based validation for non-body arguments.
 
 ## Request Body Validation
 
-A request body's data is described in OAI operation specification's `requestBody` property. The corresponding argument in a controller method is typically defined by the `requestBody()` decorator. We use [`AJV`](https://github.com/epoberezkin/ajv) module to to validate the data with a JSON schema generated from the OAI schema specification.
+A request body's data is described in OAI operation specification's `requestBody` property. The corresponding argument in a controller method is typically defined by `requestBody()` decorator. We use [`AJV`](https://github.com/epoberezkin/ajv) module to validate the data with a JSON schema generated from the OAI schema specification.
 
 As you could see, the second argument in the example method is decorated by `@requestBody()`, which generates the OAI request body specification from its type metadata. The schema specification inside it is inferred from its type `Todo`. The type is exported from a `Todo` model.
 
@@ -74,9 +76,10 @@ export class Todo extends Entity {
 ```
 
 With the `Todo` model defined above, a valid todo instance could have 3 properties: 
- - `id` with type `number`
- - `title` with type `string`
- - `desc` with type `string`
+ 
+  - `id` with type `number`
+  - `title` with type `string`
+  - `desc` with type `string`
 
 And the property `title` is required.
 
@@ -94,9 +97,11 @@ The corresponding OAI schema which will be used to validate the request body dat
 }
 ```
 
-For an incoming request with body missing `title`(e.g. `{id: 1}`), or having data in the wrong type (e.g. `{id: '1', title: 'invalid todo'}`) would be rejected.
+If an incoming request has a body missing `title`(e.g. `{id: 1}`), or containing data in the wrong type (e.g. `{id: '1', title: 'invalid todo'}`), it would be rejected due to the failed validation.
 
 To learn various ways of applying `@requestBody()` and the tips for defining the model, please read the [section "Request Body"](link_tbd) on page "Parsing Request".
+
+## Localizing Request Body Validation Error
 
 The validation errors are returned in batch model. The complete information of them could be found in property `details` of the returned `error`. You can use `error.details` to localize the invalid fields.
 
@@ -128,7 +133,7 @@ The returned `error.details` would be:
 ]
 ```
 
-Please check the [section "Localizing errors"]() on page "Parsing Requests" to have a comprehensive understanding of each field in the `error.details` entry.
+Please check the [section "Localizing Errors"](link_tbd) on page "Parsing Requests" to have a comprehensive understanding of each field in the `error.details` entry.
 
 ## Define endpoint With Operation Specification
 
