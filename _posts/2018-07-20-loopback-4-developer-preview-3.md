@@ -55,7 +55,7 @@ User experience has been a focus for LoopBack 4. In this release, we have added 
 - `lb4 model` for creating a model
 - `lb4 openapi` to generate corresponding artifacts from OpenAPI 2.0 and 3.0 specs.
 
-Along with the new commands, we've introduced support for an express mode that allows you to accept default values for some prompts. For more information, see [this blog post](link).
+Along with the new commands, we've introduced support for an express mode that allows you to accept default values for some prompts. For more information, see [this blog post](https://strongloop.com/strongblog/loopback4-openapi-cli/).
 
 ## What's Next?
 
