@@ -9,7 +9,7 @@ categories:
   - LoopBack
 ---
 
-As we continue to work on [LoopBack 4](http://v4.loopback.io/), w’re excited to tell you about new ways for developers to build with it via the LoopBack 4 CLI. 
+As we continue to work on [LoopBack 4](http://v4.loopback.io/), we’re excited to tell you about new ways for developers to build with it via the LoopBack 4 CLI. 
 
 LoopBack 4 CLI is a powerful tool for developers to scaffold projects and provision artifacts. There are a few different ways to provide input to drive the commands:
 
