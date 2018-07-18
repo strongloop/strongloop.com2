@@ -19,6 +19,7 @@ LoopBack 4 CLI is a powerful tool for developers to scaffold projects and provis
 lb4 app --name order-app
 ```
 
+<!--more-->
 - As questions and answers to the interactive prompts, for example:
 
 ```sh
