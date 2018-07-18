@@ -2,7 +2,7 @@
 layout: post
 title: LoopBack 4 Model Relations Preview
 date: 2018-07-13T00:20:02+00:00
-author: Biniam Admikew, Kyusung Shim
+author: Biniam Admikew
 permalink: /strongblog/loopback4-model-relations
 categories:
   - Community
@@ -11,13 +11,13 @@ categories:
 
 
 One of LoopBack's powerful features is the ability to link its models with
-[Model Relations]. However, the logic for related CRUD methods exposed by
+[Model Relations]. The logic for related CRUD methods exposed by
 configuring relations in LoopBack 3 is implemented individually in
 `loopback-datasource-juggler`'s [relation-definition] source file. When thinking
 about relations in LoopBack 4, we decided to take a step back and explore ways
 we could simplify our relation implementation anew. Thus, I worked on a [spike]
-which aimed to utilize the concept of repositories and constraint enforcement
-and flush out what would be needed to implement the [hasMany] relation. With
+which aimed to utilize the concept of Repositories and constraint enforcement
+and flesh out what would be needed to implement the [hasMany] relation. With
 [Raymond] and [Miroslav's] guidance and feedback, we were able to agree on the
 direction of relations in LoopBack 4 as follows:
 
@@ -26,7 +26,7 @@ direction of relations in LoopBack 4 as follows:
   a constrained target repository instance. The property will return plain data
   objects of the related model instances.
 - The relational access is configured/resolved between repositories. For
-  example, a CustomerRepository and an OrderRepository are needed to perform
+  example, a `CustomerRepository` and an `OrderRepository` are needed to perform
   CRUD operations for a given customer and his/her orders. The source repository
   will have a navigational property which exposes the relation methods.
 - Repository interfaces for relations define the available CRUD methods based on
@@ -36,7 +36,7 @@ direction of relations in LoopBack 4 as follows:
 While I was working on the spike, [Miroslav] identified and fixed a limitation
 in our legacy juggler bridge which creates a new persisted model on a datasource
 every time we create a new instance of `DefaultCrudRepository` in [1302]. This
-is key to ensure that the changes made to a constrained target repository
+is the key to ensure that the changes made to a constrained target repository
 created by relations are reflected in the non-relational target repository.
 
 ## Initial `hasMany` Implementation
@@ -71,7 +71,7 @@ Docs] for those methods.
 
 ## hasMany relation decorator inference
 
-The initial involved implemenation of `hasMany` relation expected users to
+The initial involved implementation of `hasMany` relation expected users to
 explicitly declare the relation metadata and manually create the navigational
 property on a source repository by calling `constrainedRepositoryFactory`. [Kyu]
 and I went on to make UX simpler for users in terms of adding a `hasMany`
@@ -85,8 +85,8 @@ the team by:
 - modifying the function returned by `hasManyRepositoryFactory` function to only
   take in value of the PK/FK constraint instead of a key value pair for the PK
   (`{id: 5}` becomes just `5`}
-- creating a protected function `_createHasManyRepositoryFactor` in
-  `DefaultEntityCrudRepository` which calls `hasManyRepositoryFactory` using the
+- creating a protected function `_createHasManyRepositoryFactory` in
+  `DefaultCrudRepository` which calls `hasManyRepositoryFactory` using the
   metadata stored by `@hasMany` decorator on the source model definition and
   returns a constrained version of the target repository
 
@@ -95,17 +95,21 @@ Check out our recent [Documentation] on how you can define and add a `hasMany`
 relation to your LoopBack 4 application!
 
 [Model Relations]: https://loopback.io/doc/en/lb3/Creating-model-relations.html
+
 [relation-definition]:
 https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/relation-definition.js
-[spike]: https://github.com/strongloop/loopback-next/issues/995 [hasMany]:
-https://loopback.io/doc/en/lb3/HasMany-relations.html [Raymond]:
-https://github.com/raymondfeng [Miroslav]: https://github.com/bajtos [1302]:
-https://github.com/strongloop/loopback-next/pull/1302 [1342]:
-https://github.com/strongloop/loopback-next/pull/1342 [1383]:
-https://github.com/strongloop/loopback-next/pull/1383 [Kyu]:
-https://github.com/shimks [Janny]: https://github.com/jannyHou [1403]:
-https://github.com/strongloop/loopback-next/pull/1403 [API Docs]:
-https://apidocs.strongloop.com/@loopback%2fdocs/repository.html#HasManyRepository
+
+[spike]: https://github.com/strongloop/loopback-next/issues/995
+[hasMany]: https://loopback.io/doc/en/lb3/HasMany-relations.html
+[Raymond]: https://github.com/raymondfeng
+[Miroslav]: https://github.com/bajtos
+[1302]: https://github.com/strongloop/loopback-next/pull/1302
+[1342]: https://github.com/strongloop/loopback-next/pull/1342
+[1383]: https://github.com/strongloop/loopback-next/pull/1383
+[Kyu]: https://github.com/shimks
+[Janny]: https://github.com/jannyHou
+[1403]: https://github.com/strongloop/loopback-next/pull/1403
+[API Docs]: https://apidocs.strongloop.com/@loopback%2fdocs/repository.html#HasManyRepository
 [Documentation]: https://loopback.io/doc/en/lb4/Relations.html
 
 ## Call for Action
