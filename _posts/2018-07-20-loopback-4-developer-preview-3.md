@@ -33,29 +33,60 @@ We have discussed in [this blog post](https://strongloop.com/strongblog/loopback
 
 1.  Added context types `HandlerContext` and `RequestContext` to act as a context for low-level HTTP code
 2.  Integrated Express into RestServer’s request handler
-3.  Introduced a factory for HTTP(S) endpoints for setting up HTTP server
+3.  Introduced a factory for HTTP and HTTPS endpoints for setting up HTTP server
+
+These changes allows application developers to quickly switch from serving HTTP to HTTPS just by changing application's configuration.
 
 ## Integration with REST /SOAP Services
 
-With `@serviceProxy` decorator, users can continue to leverage the existing connectors, such as [loopback-connector-soap][loopback-connector-soap] and [loopback-connector-grpc][loopback-connector-grpc], to call other web services. For details, check out [Calling other APIs and Web Services documentation page](http://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html).
+A typical API implementation often needs to interact with REST APIs, SOAP Web Services, gRPC microservices, or other forms of APIs.
+
+To facilitate calling other APIs or web services, we introduced `@loopback/service-proxy` module to provide a common set of interfaces for interacting with backend services.
+
+This new module allows you to leverage the existing connectors, such as [loopback-connector-soap](loopback-connector-soap) and [loopback-connector-rest](loopback-connector-rest), while keeping your application code following the Service and Dependency Injection design patterns we introduced in LoopBack 4.
+
+For details, check out [Calling other APIs and Web Services documentation page](http://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html).
 
 ## Model Relations Preview
 
-In real-world applications, it is common to have models related to each other. We created the infrastructure to support model relations in this release and added support for the first relation, `hasMany`. For more details, see [the relation documentation page][relation-docs] and try out the [example](link).
+In real-world applications, it is common to have models related to each other. For example, a `Customer` model usually has many associated `Order` instances. We created the infrastructure to support model relations in this release and added support for the first relation, `hasMany`. For more details, see [the relation documentation page][relation-docs] and try out the [example](link).
 
 ## Validation and Type Conversion
 
-There is now support to coerce primitive types (convert string values to appropriate types) in headers, query and path parameters. There is also minimal validation on the input parameters and request bodies using [AJV][ajv]. Check out the [documentation](link) for more details.
+Implementing robust validation by hand is repetitive and time consuming. Fortunately, OpenAPI allows developers to declaratively describe constraints imposed on API inputs. Knowledge of these constraints is important for developers consuming the API from client applications, but it also allows the server application to implement an automatic validation to enforce conformance with the specified API.
+
+In this release, we made several improvements to LoopBack's REST layer:
+
+- For parameter values coming from headers, query and path, LoopBack coerces the values to the appropriate primitive types as requested by the OpenAPI parameter specification. For example, a numeric `id` parameter provided in the URL path as a string is converted to the JavaScript type `number` before it's passed down to controller methods.
+
+- As part of the coercion algorithm, we perform a minimal validation to ensure the input is a valid value for the target type. For example, a numeric parameter `id` rejects requests where the `id` value is a string like `me@example.com`.
+
+- Request bodies are fully validated against the schema provided by the developer. Internally, we are using [AJV][ajv] to perform the validation.
+
+Check out the [documentation](link) for more details.
 
 ## Improved Artifact Generation
 
-User experience has been a focus for LoopBack 4. In this release, we have added a variety of new [CLI commands][cli]:
+User experience has been a focus for LoopBack 4. In this release, we have added a variety of new [CLI commands][cli].
 
-- `lb4 datasource` for creating a datasource
-- `lb4 model` for creating a model
-- `lb4 openapi` to generate corresponding artifacts from OpenAPI 2.0 and 3.0 specs.
+### Streamlined creation of datasources and models
 
-Along with the new commands, we've introduced support for an express mode that allows you to accept default values for some prompts. For more information, see [this blog post](https://strongloop.com/strongblog/loopback4-openapi-cli/).
+We reduced the amount of boilerplate that application developers need to write by introducing two new CLI commands:
+
+- `lb4 datasource` for creating a datasource and
+- `lb4 model` for creating a model.
+
+Together with the existing `lb4 controller` command for creating a REST Controller, LoopBack's CLI tooling covers the full path from zero to a CRUD API exposing a database table to REST clients.
+
+### Quickstart from OpenAPI spec
+
+The new CLI command `lb4 openapi` makes it easy to jump from an OpenAPI document describing the intended API to a skeleton of a server application implementing that API.
+
+Please note this command is intended as a one-time step to speed up the initial development, we don't update the generated code to match changes made to the OpenAPI document after the initial code generation was run.
+
+### Express (non-interactive) mode
+
+Along with the new commands, we've introduced support for an express mode that allows you to provide answers via JSON and use default values for remaining optional prompts. For more information, see [this blog post](https://strongloop.com/strongblog/loopback4-openapi-cli/). This new express mode makes it easier to leverage `lb4` CLI in external tools that use different means to gather user input, for example an HTML-based GUI.
 
 ## What's Next?
 
@@ -82,5 +113,5 @@ LoopBack's future success depends on you. We appreciate your continuous support 
 [cli]: https://loopback.io/doc/en/lb4/Command-line-interface.html
 [relation-docs]: https://loopback.io/doc/en/lb4/Relations.html
 [loopback-connector-soap]: https://www.npmjs.com/package/loopback-connector-soap
-[loopback-connector-grpc]: https://www.npmjs.com/package/loopback-connector-grpc
+[loopback-connector-rest]: https://www.npmjs.com/package/loopback-connector-rest
 [estore]: https://github.com/strongloop/loopback-next/issues/1476
