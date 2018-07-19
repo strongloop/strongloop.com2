@@ -9,9 +9,13 @@ categories:
   - LoopBack
 ---
 
-LoopBack 4 is building a powerful validation system for the HTTP requests. As the first step, we have added fundamental validations for the raw data parsed from requests. They are embedded as part of the default sequence of the REST server, and are performed according to the endpoint's OpenAPI(short for OAI) operation specification. The data is validated before the corresponding controller method gets invoked to make sure the methods are executed with valid inputs.
+A server usually expects to get valid data from the HTTP request to continue on executing the business logic, while there is never a guarantee that the client side would send a valid one. For example, endpoint `GET Users/find` expects to get a number from the request query's property `limit`, but the request is sent as `GET Users/find?limit="astring"`, of which `limit` is a string instead of a number. In this case, people would like to see the invalid data being caught before it gets passed into the controller function. 
+
+Now in Loopback 4, such validations are automatically handled by the framework, and a machine-readable error object is generated for each request to help people localize the invalid fields along with their details.
 
 <!--more-->
+
+As the first step of building a powerful HTTP request validation system, we have added fundamental validations for the raw data parsed from requests. The validations are embedded as part of the default sequence of the REST server, and are performed according to the endpoint's OpenAPI(short for OAI) operation specification. The data will be validated before the corresponding controller method gets invoked to make sure the method is executed with valid inputs.
 
 The following code snippet defines an endpoint `PUT /todos/{id}` by decorating it with the [REST decorators](https://loopback.io/doc/en/lb4/Decorators.html#route-decorators). This blog will use it as a typical example to explain what validations are performed to the incoming request.
 
@@ -37,13 +41,13 @@ The validation guarantees that the data parsed from request is valid in the type
 
 The validation rule varies based on the parameter's [OAI primitive type](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#data-types), which is inferred from the decorator `@param.<http_source>.<OAI_primitive_type>`. `@param.path.number()` is one of the shortcuts for `@param()`, other shortcuts with different combinations of HTTP source and OAI types could be found in the [API Docs](https://apidocs.strongloop.com/@loopback%2fdocs/openapi-v3.html#param).
 
-A more detailed documentation for the parameter validations could be found in the [section "Parameters"](https://loopback.io/doc/en/lb4/Parsing-requests.html#parameters) on page "Parsing Requests".
+*Please note that the validation against parameters checks the primitive types only, it doesn't apply JSON-schema based validation for non-body arguments.*
 
-Please note that the validation against parameters checks the primitive types only, it doesn't apply JSON-schema based validation for non-body arguments.
+A more detailed documentation for the parameter validations could be found in the [section "Parameters"](https://loopback.io/doc/en/lb4/Parsing-requests.html#parameters) on page "Parsing Requests".
 
 ## Request Body Validation
 
-A request body's data is described in OAI operation specification's `requestBody` property. The corresponding argument in a controller method is typically defined by `requestBody()` decorator. We use [`AJV`](https://github.com/epoberezkin/ajv) module to validate the data with a JSON schema generated from the OAI schema specification.
+A request body is usually a nested object and is described by an OAI schema. We leverage [`AJV`](https://github.com/epoberezkin/ajv) module to validate the data with a JSON schema generated from the OAI schema specification.
 
 As you could see, the second argument in the example method is decorated by `@requestBody()`, which generates the OAI request body specification from its type metadata. The schema specification inside it is inferred from its type `Todo`. The type is exported from a `Todo` model.
 
