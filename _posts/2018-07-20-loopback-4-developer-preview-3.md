@@ -17,25 +17,38 @@ With Developer Preview 3, you can now create a LoopBack application that can per
 
 Since the previous release of [LoopBack 4 Developer Preview 2][dp2-announcement], we have been focused on filling the gaps so that you can start creating production ready LoopBack 4 applications. To enable that, there are 5 major epics in this release:
 
-- [Robust HTTP processing capabilities](#robust-http-processing-capabilities)
+- [Improved artifact generation](#improved-artifact-generation)
 - [Integration with REST / SOAP services](#integration-with-rest-soap-services)
 - [Model relations preview](#model-relations-preview)
 - [Validation and type conversion](#validation-and-type-conversion)
-- [Improved artifact generation](#improved-artifact-generation)
+- [Robust HTTP processing capabilities](#robust-http-processing-capabilities)
 
 Let's take a closer look at each epic!
 
 <!--more-->
 
-## Robust HTTP Processing Capabilities
+## Improved Artifact Generation
 
-We have discussed in [this blog post](https://strongloop.com/strongblog/loopback4-improves-inbound-http-processing) that we are using Express under the hood for HTTP processing capabilities but bring some parts of Koa design into LoopBack. We have:
+User experience has been a focus for LoopBack 4. In this release, we have added a variety of new [CLI commands][cli].
 
-1.  Added context types `HandlerContext` and `RequestContext` to act as a context for low-level HTTP code
-2.  Integrated Express into RestServer’s request handler
-3.  Introduced a factory for HTTP and HTTPS endpoints for setting up HTTP server
+### Streamlined creation of datasources and models
 
-These changes allows application developers to quickly switch from serving HTTP to HTTPS just by changing application's configuration.
+We reduced the amount of boilerplate that application developers need to write by introducing two new CLI commands:
+
+- `lb4 datasource` for creating a datasource and
+- `lb4 model` for creating a model.
+
+Together with the existing `lb4 controller` command for creating a REST Controller, LoopBack's CLI tooling covers the full path from zero to a CRUD API exposing a database table to REST clients.
+
+### Quickstart from OpenAPI spec
+
+The new CLI command `lb4 openapi` makes it easy to jump from an OpenAPI document describing the intended API to a skeleton of a server application implementing that API.
+
+Please note this command is intended as a one-time step to speed up the initial development, we don't update the generated code to match changes made to the OpenAPI document after the initial code generation was run.
+
+### Express (non-interactive) mode
+
+Along with the new commands, we've introduced support for an express mode that allows you to provide answers via JSON and use default values for remaining optional prompts. For more information, see [this blog post](https://strongloop.com/strongblog/loopback4-openapi-cli/). This new express mode makes it easier to leverage `lb4` CLI in external tools that use different means to gather user input, for example an HTML-based GUI.
 
 ## Integration with REST /SOAP Services
 
@@ -65,28 +78,15 @@ In this release, we made several improvements to LoopBack's REST layer:
 
 Check out the [documentation](link) for more details.
 
-## Improved Artifact Generation
+## Robust HTTP Processing Capabilities
 
-User experience has been a focus for LoopBack 4. In this release, we have added a variety of new [CLI commands][cli].
+We have discussed in [this blog post](https://strongloop.com/strongblog/loopback4-improves-inbound-http-processing) that we are using Express under the hood for HTTP processing capabilities but bring some parts of Koa design into LoopBack. We have:
 
-### Streamlined creation of datasources and models
+1.  Added context types `HandlerContext` and `RequestContext` to act as a context for low-level HTTP code
+2.  Integrated Express into RestServer’s request handler
+3.  Introduced a factory for HTTP and HTTPS endpoints for setting up HTTP server
 
-We reduced the amount of boilerplate that application developers need to write by introducing two new CLI commands:
-
-- `lb4 datasource` for creating a datasource and
-- `lb4 model` for creating a model.
-
-Together with the existing `lb4 controller` command for creating a REST Controller, LoopBack's CLI tooling covers the full path from zero to a CRUD API exposing a database table to REST clients.
-
-### Quickstart from OpenAPI spec
-
-The new CLI command `lb4 openapi` makes it easy to jump from an OpenAPI document describing the intended API to a skeleton of a server application implementing that API.
-
-Please note this command is intended as a one-time step to speed up the initial development, we don't update the generated code to match changes made to the OpenAPI document after the initial code generation was run.
-
-### Express (non-interactive) mode
-
-Along with the new commands, we've introduced support for an express mode that allows you to provide answers via JSON and use default values for remaining optional prompts. For more information, see [this blog post](https://strongloop.com/strongblog/loopback4-openapi-cli/). This new express mode makes it easier to leverage `lb4` CLI in external tools that use different means to gather user input, for example an HTML-based GUI.
+These changes allows application developers to quickly switch from serving HTTP to HTTPS just by changing application's configuration.
 
 ## What's Next?
 
