@@ -9,11 +9,11 @@ categories:
   - LoopBack
 ---
 
-LoopBack 4 is building a powerful validation system for the HTTP requests. As the first step, we have added fundamental validations for the raw data parsed from requests. They are embedded as part of the default sequence of the rest server, and are performed according to the endpoint's OpenAPI(short for OAI) operation specification. The data is validated before the corresponding controller method gets invoked to make sure the methods are executed with valid inputs.
+LoopBack 4 is building a powerful validation system for the HTTP requests. As the first step, we have added fundamental validations for the raw data parsed from requests. They are embedded as part of the default sequence of the REST server, and are performed according to the endpoint's OpenAPI(short for OAI) operation specification. The data is validated before the corresponding controller method gets invoked to make sure the methods are executed with valid inputs.
 
 <!--more-->
 
-The following code snippet defines an endpoint `PUT /todos/{id}` by decorating it with the [rest decorators](https://loopback.io/doc/en/lb4/Decorators.html#route-decorators). This blog will use it as a typical example to explain what validations are performed to the incoming request.
+The following code snippet defines an endpoint `PUT /todos/{id}` by decorating it with the [REST decorators](https://loopback.io/doc/en/lb4/Decorators.html#route-decorators). This blog will use it as a typical example to explain what validations are performed to the incoming request.
 
 ```ts
 class TodoController {
@@ -31,13 +31,13 @@ class TodoController {
 
 ## Parameters Validation
 
-OAI 3.0.x describes the data from a request's header, query and path in an operation specification's `parameters` property. In a controller method, such an argument is typically decorated by `@param()`.
+OAI 3.0.x describes the data from a request's header, query and path in an operation specification's `parameters` property. In a Controller method, such an argument is typically decorated by `@param()`.
 
 The validation guarantees that the data parsed from request is valid in the type described by the parameter specification. For example, the first argument in the function `replaceTodo()` is decorated with `@param.path.number('id')`. It means the raw data of `id` is parsed from the request's path and it should be a valid number. Invalid data like `astring` or `true` would be rejected.
 
 The validation rule varies based on the parameter's [OAI primitive type](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#data-types), which is inferred from the decorator `@param.<http_source>.<OAI_primitive_type>`. `@param.path.number()` is one of the shortcuts for `@param()`, other shortcuts with different combinations of HTTP source and OAI types could be found in the [API Docs](https://apidocs.strongloop.com/@loopback%2fdocs/openapi-v3.html#param).
 
-A more detailed documentation for the parameter validations could be found in the [section "Parameters"](link_tbd) on page "Parsing Requests".
+A more detailed documentation for the parameter validations could be found in the [section "Parameters"](https://loopback.io/doc/en/lb4/Parsing-requests.html#parameters) on page "Parsing Requests".
 
 Please note that the validation against parameters checks the primitive types only, it doesn't apply JSON-schema based validation for non-body arguments.
 
@@ -99,11 +99,11 @@ The corresponding OAI schema which will be used to validate the request body dat
 
 If an incoming request has a body missing `title`(e.g. `{id: 1}`), or containing data in the wrong type (e.g. `{id: '1', title: 'invalid todo'}`), it would be rejected due to the failed validation.
 
-To learn various ways of applying `@requestBody()` and the tips for defining the model, please read the [section "Request Body"](link_tbd) on page "Parsing Request".
+To learn various ways of applying `@requestBody()` and the tips for defining the model, please read the [section "Request Body"](https://loopback.io/doc/en/lb4/Parsing-requests.html#request-body) on page "Parsing Request".
 
 ## Localizing Request Body Validation Error
 
-The validation errors are returned in batch model. The complete information of them could be found in property `details` of the returned `error`. You can use `error.details` to localize the invalid fields.
+The validation errors are returned in batch mode. The details of the errors could be found in property `details` of the returned `error`. You can use `error.details` to localize the invalid fields.
 
 For example, if the received request body data is 
 
@@ -133,16 +133,15 @@ The returned `error.details` would be:
 ]
 ```
 
-Please check the [section "Localizing Errors"](link_tbd) on page "Parsing Requests" to have a comprehensive understanding of each field in the `error.details` entry.
+Please check the [section "Localizing Errors"](https://loopback.io/doc/en/lb4/Parsing-requests.html#localizing-errors) on page "Parsing Requests" to have a comprehensive understanding of each field in the `error.details` entry.
 
 ## Define endpoint With Operation Specification
 
-If you're using API first development approach, you can also provide the operation specification in decorator [`api()`](https://loopback.io/doc/en/lb4/Decorators.html#api-decorator) or by calling [`app.route`](https://loopback.io/doc/en/lb4/Routes.html#creating-rest-routes), this requires you to provide a completed request body specification.
+If you're using API first development approach, you can also provide the operation specification in decorator [`api()`](https://loopback.io/doc/en/lb4/Decorators.html#api-decorator) or by calling [`app.route()`](https://loopback.io/doc/en/lb4/Routes.html#creating-rest-routes), this requires you to provide a completed request body specification.
 
 ## Coming Features
 
-- Serialization/deserialization of the parameters, see [issue#100](https://github.com/strongloop/loopback-next/issues/100).
-- Perform request body validation based on the content type of a request, see [issue#1494](https://github.com/strongloop/loopback-next/issues/1494).
+Next, more features will be added to improve the robustness of the validation system. For the parameters in type object, we will support serialization/deserialization of them in [issue#100](https://github.com/strongloop/loopback-next/issues/100). And a content type based validation for the request body will be implemented in [issue#1494](https://github.com/strongloop/loopback-next/issues/1494).
 
 ## Call for Action
 
