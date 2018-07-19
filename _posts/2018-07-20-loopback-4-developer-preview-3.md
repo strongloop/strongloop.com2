@@ -38,7 +38,7 @@ We reduced the amount of boilerplate that application developers need to write b
 - `lb4 datasource` for creating a datasource and
 - `lb4 model` for creating a model.
 
-Together with the existing `lb4 controller` command for creating a REST Controller, LoopBack's CLI tooling covers the full path from zero to a CRUD API exposing a database table to REST clients.
+Together with the existing `lb4 controller` command for creating a REST Controller, LoopBack's CLI tooling covers the most of the path from zero to a CRUD API exposing a database table to REST clients.
 
 ### Quickstart from OpenAPI spec
 
@@ -48,7 +48,7 @@ Please note this command is intended as a one-time step to speed up the initial 
 
 ### Express (non-interactive) mode
 
-Along with the new commands, we've introduced support for an express mode that allows you to provide answers via JSON and use default values for remaining optional prompts. For more information, see [this blog post](https://strongloop.com/strongblog/loopback4-openapi-cli/). This new express mode makes it easier to leverage `lb4` CLI in external tools that use different means to gather user input, for example an HTML-based GUI.
+Along with the new commands, we've introduced support for an express mode that allows you to provide answers via JSON and use default values for remaining optional prompts. For more information, see [this blog post](https://strongloop.com/strongblog/loopback4-cli-express-mode). This new express mode makes it easier to leverage `lb4` CLI in external tools that use different means to gather user input, for example an HTML-based GUI.
 
 ## Integration with REST /SOAP Services
 
@@ -56,13 +56,13 @@ A typical API implementation often needs to interact with REST APIs, SOAP Web Se
 
 To facilitate calling other APIs or web services, we introduced `@loopback/service-proxy` module to provide a common set of interfaces for interacting with backend services.
 
-This new module allows you to leverage the existing connectors, such as [loopback-connector-soap](loopback-connector-soap) and [loopback-connector-rest](loopback-connector-rest), while keeping your application code following the Service and Dependency Injection design patterns we introduced in LoopBack 4.
+This new module allows you to leverage the existing connectors, such as [loopback-connector-soap][loopback-connector-soap] and [loopback-connector-rest][loopback-connector-rest], while keeping your application code following the Service and Dependency Injection design patterns we introduced in LoopBack 4.
 
 For details, check out [Calling other APIs and Web Services documentation page](http://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html).
 
 ## Model Relations Preview
 
-In real-world applications, it is common to have models related to each other. For example, a `Customer` model usually has many associated `Order` instances. We created the infrastructure to support model relations in this release and added support for the first relation, `hasMany`. For more details, see [the relation documentation page][relation-docs] and try out the [example](link).
+In real-world applications, it is common to have models related to each other. For example, a `Customer` model usually has many associated `Order` instances. We created the infrastructure to support model relations in this release and added support for the first relation, `hasMany`. For more details, see [the relation documentation page][relation-docs] and try out the [example][relation-example].
 
 ## Validation and Type Conversion
 
@@ -76,7 +76,7 @@ In this release, we made several improvements to LoopBack's REST layer:
 
 - Request bodies are fully validated against the schema provided by the developer. Internally, we are using [AJV][ajv] to perform the validation.
 
-Check out the [documentation](link) for more details.
+Check out the [documentation][validation-docs] for more details.
 
 ## Robust HTTP Processing Capabilities
 
@@ -112,6 +112,8 @@ LoopBack's future success depends on you. We appreciate your continuous support 
 [ajv]: https://www.npmjs.com/package/ajv
 [cli]: https://loopback.io/doc/en/lb4/Command-line-interface.html
 [relation-docs]: https://loopback.io/doc/en/lb4/Relations.html
+[relation-example]: https://loopback.io/doc/en/lb4/todo-list-tutorial.html
 [loopback-connector-soap]: https://www.npmjs.com/package/loopback-connector-soap
 [loopback-connector-rest]: https://www.npmjs.com/package/loopback-connector-rest
 [estore]: https://github.com/strongloop/loopback-next/issues/1476
+[validation-docs]: https://loopback.io/doc/en/lb4/Parsing-requests.html
