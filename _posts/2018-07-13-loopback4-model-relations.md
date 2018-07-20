@@ -7,6 +7,7 @@ permalink: /strongblog/loopback4-model-relations
 categories:
   - Community
   - LoopBack
+  - News
 ---
 
 
@@ -18,7 +19,7 @@ about relations in LoopBack 4, we decided to take a step back and explore ways
 we could simplify our relation implementation anew. Thus, I worked on a [spike]
 which aimed to utilize the concept of Repositories and constraint enforcement
 and flesh out what would be needed to implement the [hasMany] relation. With
-[Raymond] and [Miroslav's] guidance and feedback, we were able to agree on the
+[Raymond] and [Miroslav]'s guidance and feedback, we were able to agree on the
 direction of relations in LoopBack 4 as follows:
 
 - Relations are defined between models via relational properties on the source
@@ -35,13 +36,13 @@ direction of relations in LoopBack 4 as follows:
 
 While I was working on the spike, [Miroslav] identified and fixed a limitation
 in our legacy juggler bridge which creates a new persisted model on a datasource
-every time we create a new instance of `DefaultCrudRepository` in [1302]. This
+every time we create a new instance of `DefaultCrudRepository` in [pull request 1302]. This
 is the key to ensure that the changes made to a constrained target repository
 created by relations are reflected in the non-relational target repository.
 
 ## Initial `hasMany` Implementation
 
-In [1342], I worked on the first iteration of the relations spike which sought
+In [pull request 1342], I worked on the first iteration of the relations spike which sought
 to add the following components using an acceptance test for a `hasMany`
 relation between a customer and order model:
 
@@ -51,31 +52,31 @@ relation between a customer and order model:
   public APIs exposed by the HasMany relation
 - `DefaultHasManyEntityCrudRepository` class which implements those APIs by
   calling utility functions on a target repository instance to constrain its
-  CRUD methods. 
-- `constrainDataObject[s], constrainFilter, constrainWhere` utility functions
-  which apply constraints on a data object (or array of data objects), filter,
-  or where object.
+  CRUD methods.
+- `constrainDataObject, constrainDataObjects, constrainFilter, constrainWhere`
+  utility functions which apply constraints on a data object, an array of data
+  objects, filter, or where object
 
-Afterwards, in [1383], [Kyu] and I worked on adding more unit and integration
+Afterwards, in [pull request 1383], [Kyu] and I worked on adding more unit and integration
 test coverage for the components above. 
 
 ## Additional CRUD methods for hasMany relation
 
 Meanwhile, [Janny] worked on making the available CRUD API set for `hasMany`
-relations complete in [1403]. The initial proposed list of CRUD APIs needed to
+relations complete in [pull request 1403]. The initial proposed list of CRUD APIs needed to
 be improved and she worked with [Miroslav] to simplify the relation API design.
 She reworked `find` method, and added `delete` and `patch` methods which are
-applicable to one more more instances of the target model. Check out the [API
-Docs] for those methods.
+applicable to one or more instances of the target model. Check out the [API
+Docs] for more information on those methods.
 
 
 ## hasMany relation decorator inference
 
-The initial involved implementation of `hasMany` relation expected users to
+The initially involved implementation of `hasMany` relation expected users to
 explicitly declare the relation metadata and manually create the navigational
 property on a source repository by calling `constrainedRepositoryFactory`. [Kyu]
 and I went on to make UX simpler for users in terms of adding a `hasMany`
-relation to a LoopBack 4 application in [1438] with lots of great feedback from
+relation to a LoopBack 4 application in [pull request 1438] with lots of great feedback from
 the team by:
 
 - implementing `@hasMany` decorator which takes the target model class and
@@ -84,7 +85,7 @@ the team by:
 - storing relation metadata on model definition
 - modifying the function returned by `hasManyRepositoryFactory` function to only
   take in value of the PK/FK constraint instead of a key value pair for the PK
-  (`{id: 5}` becomes just `5`}
+  (`{id: 5}` becomes just `5`})
 - creating a protected function `_createHasManyRepositoryFactory` in
   `DefaultCrudRepository` which calls `hasManyRepositoryFactory` using the
   metadata stored by `@hasMany` decorator on the source model definition and
@@ -103,12 +104,13 @@ https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/relati
 [hasMany]: https://loopback.io/doc/en/lb3/HasMany-relations.html
 [Raymond]: https://github.com/raymondfeng
 [Miroslav]: https://github.com/bajtos
-[1302]: https://github.com/strongloop/loopback-next/pull/1302
-[1342]: https://github.com/strongloop/loopback-next/pull/1342
-[1383]: https://github.com/strongloop/loopback-next/pull/1383
+[pull request 1302]: https://github.com/strongloop/loopback-next/pull/1302
+[pull request 1342]: https://github.com/strongloop/loopback-next/pull/1342
+[pull request 1383]: https://github.com/strongloop/loopback-next/pull/1383
+[pull request 1438]: https://github.com/strongloop/loopback-next/pull/1438
 [Kyu]: https://github.com/shimks
 [Janny]: https://github.com/jannyHou
-[1403]: https://github.com/strongloop/loopback-next/pull/1403
+[pull request 1403]: https://github.com/strongloop/loopback-next/pull/1403
 [API Docs]: https://apidocs.strongloop.com/@loopback%2fdocs/repository.html#HasManyRepository
 [Documentation]: https://loopback.io/doc/en/lb4/Relations.html
 
