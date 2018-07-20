@@ -9,13 +9,13 @@ categories:
   - LoopBack
 ---
 
-A server usually expects to get valid data from the HTTP request to continue on executing the business logic, while there is never a guarantee that the client side would send a valid one. For example, endpoint `GET Users/find` expects to get a number from the request query's property `limit`, but the request is sent as `GET Users/find?limit="astring"`, of which `limit` is a string instead of a number. In this case, people would like to see the invalid data being caught before it gets passed into the controller function. 
+A server usually expects to get valid data from the HTTP request to continue on executing the business logic, while there is never a guarantee that the client side would send a valid one. For example, endpoint `GET Users/find` expects to get a number from the request query's property `limit`, but the request is sent as `GET Users/find?limit="astring"`, of which `limit` is a string instead of a number. In this case, people would like to see the invalid data being caught before it gets passed into the Controller function. 
 
 Now in Loopback 4, such validations are automatically handled by the framework, and a machine-readable error object is generated for each request to help people localize the invalid fields along with their details.
 
 <!--more-->
 
-As the first step of building a powerful HTTP request validation system, we have added fundamental validations for the raw data parsed from requests. The validations are embedded as part of the default sequence of the REST server, and are performed according to the endpoint's OpenAPI(short for OAI) operation specification. The data will be validated before the corresponding controller method gets invoked to make sure the method is executed with valid inputs.
+As the first step of building a powerful HTTP request validation system, we have added fundamental validations for the raw data parsed from requests. The validations are embedded as part of the default sequence of the REST server, and are performed according to the endpoint's OpenAPI (OAI) operation specification. The data will be validated before the corresponding controller method gets invoked to make sure the method is executed with valid inputs.
 
 The following code snippet defines an endpoint `PUT /todos/{id}` by decorating it with the [REST decorators](https://loopback.io/doc/en/lb4/Decorators.html#route-decorators). This blog will use it as a typical example to explain what validations are performed to the incoming request.
 
@@ -43,7 +43,7 @@ The validation rule varies based on the parameter's [OAI primitive type](https:/
 
 *Please note that the validation against parameters checks the primitive types only, it doesn't apply JSON-schema based validation for non-body arguments.*
 
-A more detailed documentation for the parameter validations could be found in the [section "Parameters"](https://loopback.io/doc/en/lb4/Parsing-requests.html#parameters) on page "Parsing Requests".
+A more detailed documentation for the parameter validations could be found in the [Parameters section](https://loopback.io/doc/en/lb4/Parsing-requests.html#parameters) on the Parsing Requests page.
 
 ## Request Body Validation
 
@@ -51,7 +51,7 @@ A request body is usually a nested object and is described by an OAI schema. We 
 
 As you could see, the second argument in the example method is decorated by `@requestBody()`, which generates the OAI request body specification from its type metadata. The schema specification inside it is inferred from its type `Todo`. The type is exported from a `Todo` model.
 
-To collect the OAI schema information from a model, the model class has to be defined with `@model()` with its properties defined with `@property()`, like the code below: 
+To collect the OAI schema information from a model, the model class has to be defined with `@model()` with its properties defined with `@property()`, like the code below:
 
 ```ts
 @model()
@@ -103,7 +103,7 @@ The corresponding OAI schema which will be used to validate the request body dat
 
 If an incoming request has a body missing `title`(e.g. `{id: 1}`), or containing data in the wrong type (e.g. `{id: '1', title: 'invalid todo'}`), it would be rejected due to the failed validation.
 
-To learn various ways of applying `@requestBody()` and the tips for defining the model, please read the [section "Request Body"](https://loopback.io/doc/en/lb4/Parsing-requests.html#request-body) on page "Parsing Request".
+To learn various ways of applying `@requestBody()` and the tips for defining the model, please read the [Request Body section](https://loopback.io/doc/en/lb4/Parsing-requests.html#request-body) on the Parsing Request page.
 
 ## Localizing Request Body Validation Error
 
@@ -137,7 +137,7 @@ The returned `error.details` would be:
 ]
 ```
 
-Please check the [section "Localizing Errors"](https://loopback.io/doc/en/lb4/Parsing-requests.html#localizing-errors) on page "Parsing Requests" to have a comprehensive understanding of each field in the `error.details` entry.
+Please check the [Localizing Errors section](https://loopback.io/doc/en/lb4/Parsing-requests.html#localizing-errors) on the Parsing Requests page to have a comprehensive understanding of each field in the `error.details` entry.
 
 ## Define endpoint With Operation Specification
 
