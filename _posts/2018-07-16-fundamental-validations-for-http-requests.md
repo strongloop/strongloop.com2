@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fundamental Validations for HTTP Requests
-date: 2018-07-16T00:10:11+00:00
+date: 2018-07-31
 author: Janny Hou
 permalink: /strongblog/fundamental-validations-for-http-requests/
 categories:
