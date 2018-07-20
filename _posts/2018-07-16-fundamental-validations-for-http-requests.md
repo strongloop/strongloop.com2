@@ -9,7 +9,7 @@ categories:
   - LoopBack
 ---
 
-A server usually expects to get valid data from the HTTP request to continue on executing the business logic, while there is never a guarantee that the client side would send a valid one. For example, endpoint `GET Users/find` expects to get a number from the request query's property `limit`, but the request is sent as `GET Users/find?limit="astring"`, of which `limit` is a string instead of a number. In this case, people would like to see the invalid data being caught before it gets passed into the Controller function. 
+A Controller usually expects to get valid data from the HTTP request so it can focus on executing the business logic but there is never a guarantee that the client side sends valid data. For example, endpoint `GET Users/find` expects to get a number from the request query's property `limit`, but the request is sent as `GET Users/find?limit="astring"`, of which `limit` is a string instead of a number. In this case, people would like to see the invalid data being caught before it gets passed into the Controller function. 
 
 Now in Loopback 4, such validations are automatically handled by the framework, and a machine-readable error object is generated for each request to help people localize the invalid fields along with their details.
 
@@ -149,7 +149,7 @@ Next, more features will be added to improve the robustness of the validation sy
 
 ## Call for Action
 
-LoopBack's future success counts on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
+LoopBack's future success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
 
 - [Opening a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue)
 - [Casting your vote for extensions](https://github.com/strongloop/loopback-next/issues/512)
