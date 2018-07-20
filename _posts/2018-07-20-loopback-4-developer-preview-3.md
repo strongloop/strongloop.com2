@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Announcing LoopBack 4 Developer Preview 3
-date: 2018-07-21T00:00:01+00:00
+date: 2018-07-20T00:00:01+00:00
 author: 
   - Diana Lau
   - Raymond Feng
@@ -12,7 +12,7 @@ categories:
   - LoopBack
 ---
 
-Whether you have been creating Node.js application using LoopBack 4 or wondering when is a good time to start building something serious, LoopBack 4 Developer Preview 3 is the release that you don't want to miss!
+Whether you have been creating Node.js application using LoopBack 4 or wondering when it's a good time to start building something serious, LoopBack 4 Developer Preview 3 is the release that you don't want to miss!
 
 With Developer Preview 3, you can now create a LoopBack application that can persist Models to a database using LoopBack 3 connectors or call out to other REST and legacy SOAP web services. There are new CLI commands to help you create artifacts along the way.
 
