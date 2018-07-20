@@ -6,7 +6,7 @@ author:
   - Diana Lau
   - Raymond Feng
   - Miroslav Bajtos
-permalink: permalink: /strongblog/loopback-4-developer-preview-3/
+permalink: /strongblog/loopback-4-developer-preview-3/
 categories:
   - Community
   - LoopBack
