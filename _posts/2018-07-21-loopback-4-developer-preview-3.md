@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Announcing LoopBack 4 Developer Preview 3
-date: 2018-07-20T00:00:01+00:00
+date: 2018-07-21T00:00:01+00:00
 author: 
   - Diana Lau
   - Raymond Feng
   - Miroslav Bajtos
-permalink: /strongblog/loopback-4-developer-preview-3/
+permalink: /strongblog/loopback-4-developer-preview-3
 categories:
   - Community
   - LoopBack
