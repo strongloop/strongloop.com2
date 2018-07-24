@@ -60,23 +60,22 @@ relation to your LoopBack 4 application! If you would like to have a hands-on
 experience doing it, check out our [example tutorial] which will take you
 through the process step-by-step.
 
-- [Model Relations]: https://loopback.io/doc/en/lb3/Creating-model-relations.html
-- [relation-definition]:
-https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/relation-definition.js
-- [spike]: https://github.com/strongloop/loopback-next/issues/995
-- [hasMany]: https://loopback.io/doc/en/lb3/HasMany-relations.html
-- [Raymond]: https://github.com/raymondfeng
-- [Miroslav]: https://github.com/bajtos
-- [pull request 1302]: https://github.com/strongloop/loopback-next/pull/1302
-- [pull request 1342]: https://github.com/strongloop/loopback-next/pull/1342
-- [pull request 1383]: https://github.com/strongloop/loopback-next/pull/1383
-- [pull request 1438]: https://github.com/strongloop/loopback-next/pull/1438
-- [Kyu]: https://github.com/shimks
-- [Janny]: https://github.com/jannyHou
-- [pull request 1403]: https://github.com/strongloop/loopback-next/pull/1403
-- [API Docs]: https://apidocs.strongloop.com/@loopback%2fdocs/repository.html#HasManyRepository
-- [Documentation]: https://loopback.io/doc/en/lb4/Relations.html
-- [example tutorial]: https://loopback.io/doc/en/lb4/todo-list-tutorial.html
+- [Model Relations](https://loopback.io/doc/en/lb3/Creating-model-relations.html)
+- [relation-definition](https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/relation-definition.js)
+- [spike](https://github.com/strongloop/loopback-next/issues/995)
+- [hasMany](https://loopback.io/doc/en/lb3/HasMany-relations.html)
+- [Raymond](https://github.com/raymondfeng)
+- [Miroslav](https://github.com/bajtos)
+- [pull request 1302](https://github.com/strongloop/loopback-next/pull/1302)
+- [pull request 1342](https://github.com/strongloop/loopback-next/pull/1342)
+- [pull request 1383](https://github.com/strongloop/loopback-next/pull/1383)
+- [pull request 1438](https://github.com/strongloop/loopback-next/pull/1438)
+- [Kyu](https://github.com/shimks)
+- [Janny](https://github.com/jannyHou)
+- [pull request 1403](https://github.com/strongloop/loopback-next/pull/1403)
+- [API Docs](https://apidocs.strongloop.com/@loopback%2fdocs/repository.html#HasManyRepository)
+- [Documentation](https://loopback.io/doc/en/lb4/Relations.html)
+- [example tutorial](https://loopback.io/doc/en/lb4/todo-list-tutorial.html)
 
 ## Call for Action
 
