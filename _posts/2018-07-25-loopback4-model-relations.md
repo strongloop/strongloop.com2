@@ -44,12 +44,21 @@ She reworked `find` method, and added `delete` and `patch` methods which are app
 The initially involved implementation of `hasMany` relation expected users to explicitly declare the relation metadata and manually create the navigational property on a source repository by calling `constrainedRepositoryFactory`. [Kyu] and I went on to make UX simpler for users in terms of adding a `hasMany` relation to a LoopBack 4 application in [pull request 1438] with lots of great feedback from the team by:
 
 - implementing `@hasMany` decorator which takes the target model class and infers the relation metadata and return type of the property it decorates as an array of the target model instances.
-- storing relation metadata on model definition.
+- storing relation metadata on the declaring model definition.
 - modifying the function returned by `hasManyRepositoryFactory` function to only take in value of the PK/FK constraint instead of a key value pair for the PK (`{id: 5}` becomes just `5`}).
 - creating a protected function `_createHasManyRepositoryFactory` in `DefaultCrudRepository` which calls `hasManyRepositoryFactory` using the metadata stored by `@hasMany` decorator on the source model definition and
   returns a constrained version of the target repository.
 
-Check out our recent [Documentation] on how you can define and add a `hasMany` relation to your LoopBack 4 application!
+To visualize how the hasMany relation is set up, the following diagram illustrates a "customer has many
+orders" scenario with two models Customer and Order. Note that the controllers
+which expose the REST APIs are not shown.
+
+<img class="aligncenter" src="https://strongloop.com/blog-assets/2018/07/hasMany-relation-overview.png" alt="hasMany Relation Overview" style="width: 450px; margin:auto;"/>
+
+Check out our recent [Documentation] on how you can define and add a `hasMany`
+relation to your LoopBack 4 application! If you would like to have a hands-on
+experience doing it, check out our [example tutorial] which will take you
+through the process step-by-step.
 
 - [Model Relations]: https://loopback.io/doc/en/lb3/Creating-model-relations.html
 - [relation-definition]:
@@ -67,6 +76,7 @@ https://github.com/strongloop/loopback-datasource-juggler/blob/master/lib/relati
 - [pull request 1403]: https://github.com/strongloop/loopback-next/pull/1403
 - [API Docs]: https://apidocs.strongloop.com/@loopback%2fdocs/repository.html#HasManyRepository
 - [Documentation]: https://loopback.io/doc/en/lb4/Relations.html
+- [example tutorial]: https://loopback.io/doc/en/lb4/todo-list-tutorial.html
 
 ## Call for Action
 
