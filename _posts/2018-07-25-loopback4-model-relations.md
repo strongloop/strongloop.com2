@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 Model Relations Preview
-date: 2018-07-13T00:20:02+00:00
+date: 2018-07-25T00:20:02+00:00
 author: Biniam Admikew
 permalink: /strongblog/loopback4-model-relations
 categories:
