@@ -40,8 +40,7 @@ Afterwards, in [pull request 1383](https://github.com/strongloop/loopback-next/p
 
 ## Additional CRUD Methods for hasMany Relation
 
-Meanwhile, [Janny](https://github.com/jannyHou) worked on making the available CRUD API set for `hasMany` relations complete in [pull request 1403](https://github.com/strongloop/loopback-next/pull/1403). The initial proposed list of CRUD APIs needed to be improved and she worked with [Miroslav](https://github.com/bajtos) to simplify the relation API design.
-She reworked `find` method, and added `delete` and `patch` methods which are applicable to one or more instances of the target model. Check out the [API Docs](https://apidocs.strongloop.com/@loopback%2fdocs/repository.html#HasManyRepository) for more information on those methods.
+Meanwhile, [Janny](https://github.com/jannyHou) worked on making the available CRUD API set for `hasMany` relations complete in [pull request 1403](https://github.com/strongloop/loopback-next/pull/1403). The initial proposed list of CRUD APIs needed to be improved and she worked with [Miroslav](https://github.com/bajtos) to simplify the relation API design. She reworked `find` method, and added `delete` and `patch` methods which are applicable to one or more instances of the target model. Check out the [API Docs](https://apidocs.strongloop.com/@loopback%2fdocs/repository.html#HasManyRepository) for more information on those methods.
 
 ## hasMany Relation Decorator Inference
 
@@ -53,20 +52,11 @@ The initially involved implementation of `hasMany` relation expected users to ex
 - creating a protected function `_createHasManyRepositoryFactory` in `DefaultCrudRepository` which calls `hasManyRepositoryFactory` using the metadata stored by `@hasMany` decorator on the source model definition and
   returns a constrained version of the target repository.
 
-To visualize how the hasMany relation is set up, the following diagram illustrates a "customer has many
-orders" scenario with two models Customer and Order. Note that the controllers
-which expose the REST APIs are not shown.
+To visualize how the hasMany relation is set up, the following diagram illustrates a "customer has many orders" scenario with two models Customer and Order. Note that the controllers which expose the REST APIs are not shown.
 
 <img class="aligncenter" src="https://strongloop.com/blog-assets/2018/07/hasMany-relation-overview.png" alt="hasMany Relation Overview" style="width: 600px; margin:auto;"/>
 
-Check out our recent
-[Documentation](https://loopback.io/doc/en/lb4/Relations.html) on how you can
-define and add a `hasMany`
-relation to your LoopBack 4 application! If you would like to have a hands-on
-experience doing it, check out our [example
-tutorial](https://loopback.io/doc/en/lb4/todo-list-tutorial.html) which will
-take you
-through the process step-by-step.
+Check out our recent [Documentation](https://loopback.io/doc/en/lb4/Relations.html) on how you can define and add a `hasMany` relation to your LoopBack 4 application! If you would like to have a hands-on experience doing it, check out our [example tutorial](https://loopback.io/doc/en/lb4/todo-list-tutorial.html) which will take you through the process step-by-step.
 
 ## Call for Action
 
