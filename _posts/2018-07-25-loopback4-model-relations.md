@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 Model Relations Preview
-date: 2018-07-25T00:20:02+00:00
+date: 2018-07-25T00:00:02+00:00
 author: Biniam Admikew
 permalink: /strongblog/loopback4-model-relations
 categories:
@@ -10,13 +10,7 @@ categories:
   - News
 ---
 
-
-
-Often times, LoopBack models are used to represent real life entities. As such,
-LoopBack is able to understand how those entities interact with each other with
-its concepts of relations. While this feature is alive and well in LoopBack 3, LoopBack 4 now has the infrastructure in place to
-understand relations between models and supports the `hasMany` relationship.
-Read on to see how we have taken a new look at relations in LoopBack 4!
+Often times, LoopBack models are used to represent real life entities. As such, LoopBack is able to understand how those entities interact with each other with its concepts of relations. While this feature is alive and well in LoopBack 3, LoopBack 4 now has the infrastructure in place to understand relations between models and supports the `hasMany` relationship. Read on to see how we have taken a new look at relations in LoopBack 4!
 
 <!--more-->
 
