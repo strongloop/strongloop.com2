@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack Adopts Module LTS Policy
-date: 2018-08-02:01:01+00:00
+date: 2018-08-02T00:00:02+00:00
 author: Miroslav Bajtoš
 permalink: /strongblog/loopback-adopts-module-lts-policy
 categories:
@@ -15,7 +15,7 @@ TL:DR; LoopBack is joining the recently announced [Module LTS initiative](https:
 
 ## Introduction
 
-Back in 2016, we released a new major version of LoopBack 3.0 and defined an LTS policy to cover our existing LoopBack 2.x users. We based our policy on Node.js' LTS policy that was in effect at that time and we aimed to provide enough stability for our users while keeping the cost of maintaining multiple versions affordable.
+In 2016, we released a new major version of LoopBack 3.0 and defined an LTS policy to cover our existing LoopBack 2.x users. We based our policy on Node.js' LTS policy that was in effect at that time, aiming to provide enough stability for our users. We also wanted to keep the cost of maintaining multiple versions affordable, since we had a few:
 
 > - A _Current_ version where most of the development occurs.
 > - A _Long-term support (LTS)_ version that does not add new features but gets bug fixes.
@@ -25,12 +25,11 @@ Back in 2016, we released a new major version of LoopBack 3.0 and defined an LTS
 >
 > When a new major version is released, the oldest LTS version enters maintenance mode, where it will stay for another six months at minimum.
 
-As more and more enterprise users choosing Node.js for their project, the expectations are shifting towards making the supported term longer.  In response to those changes and in tandem with other IBM-maintained Node.js modules, we are joining the recently announced [Module LTS initiative](https://developer.ibm.com/node/2018/07/24/module-lts/).
+As more and more enterprise users choose Node.js for their project, the expectations are shifting towards making the supported term longer. In response to those changes and in tandem with other IBM-maintained Node.js modules, we are joining the recently announced [Module LTS initiative](https://developer.ibm.com/node/2018/07/24/module-lts/).
 
 > Long Term Support (LTS) for Node.js modules aims to provide the longevity and stability of modules that is crucial for many businesses when adopting Node.js in an enterprise, cloud-native setting.
 >
 > When a version of Node.js enters LTS, whichever the latest major version (X.y.z) of a module is at that time, will be supported for the lifetime of that version of Node, and will receive at least security and critical fixes.
-
 
 ## What is Changing
 
@@ -44,7 +43,7 @@ Previously, we were committed to support each major version for at least 6 month
 
 You can find the full version of our LTS policy in our documentation here: [https://loopback.io/doc/en/contrib/Long-term-support.html](https://loopback.io/doc/en/contrib/Long-term-support.html)
 
-In practical terms, when LoopBack 4 GA _(General Availability)_ is released presumably in October 2018:
+In practical terms, when LoopBack 4 GA _(General Availability)_ is released (presumably in October 2018):
 
  - LoopBack 3.x enters Active LTS mode for at least 6 months.
  - LoopBack 2.x enters Maintenance LTS mode until April 2019 when it reaches end of life together with Node.js 6.x.
