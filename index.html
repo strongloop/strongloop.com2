@@ -31,13 +31,6 @@ permalink: /
   <!-- <div style="height: 50px;"> -->
 </section>
 
-<section class="c-section x-green">
-  <div class="c-container -padded">
-
-    <div class="_col -col-1-1">
-      <p>For more open-source project in which IBM participates, see <a href="http://developer.ibm.com/opentech/">IBM OpenTech</a></p>
-    </div>
-</section>
 
 {% assign featured_post = site.posts | where_exp:"post", "post.date <= site.time" %}
 {% assign featured_post = featured_post | where: "featured","true" %}
@@ -127,6 +120,14 @@ permalink: /
     <p class="learn-more x-center"><a href="{{site.url}}/newsletter/" class="no_icon c-button -lg x-center x-white">Read Newsletter</a></p>
   </div>      
  
+         <section class="c-section x-lightgrey">
+  <div class="c-container -padded-top">
+
+    <div class="_col -col-1-1">
+      <p>For more open-source project in which IBM participates, see <a href="http://developer.ibm.com/opentech/">IBM OpenTech</a></p>
+    </div>
+</section>
+
      
    </div>
   </div>
