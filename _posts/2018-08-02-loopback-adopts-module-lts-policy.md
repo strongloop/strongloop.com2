@@ -11,7 +11,7 @@ categories:
 
 TL:DR; LoopBack is joining the recently announced [Module LTS initiative](https://developer.ibm.com/node/2018/07/24/module-lts/) and aligns the long-term support terms with Node.js LTS versions.
 
-<!-- more -->
+<!--more-->
 
 ## Introduction
 
