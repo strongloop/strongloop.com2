@@ -58,7 +58,7 @@ categories:
 The properties are:
 - `layout`: Must be `post`.
 - `title`: Title of the post, which can include any character except a colon (:).  To put a colon in your title, use the HTML entity `&#58;`. Note that titles and headers should be primarily upper case as per [this style guide](https://www.bkacontent.com/how-to-correctly-use-apa-style-title-case/). Please follow MLA Style for capitalization: Capitalize Major Words and Those With Four or More Letters.
-- `date`: Publication date of your post in `yyyy-mm-dd` format. NOTE Please mark date as several weeks ahead - Dave Whiteley will finalize publication date.
+- `date`: Publication date of your post in `yyyy-mm-dd` format. NOTE Please mark date as several weeks ahead - Dave Whiteley will finalize publication date. Ex. 2018-08-02T00:00:02+00:00
 - `author`: Your name.  If this matches an entry in `_data/authors.yml` the post byline will automatically link to your author page if you have one.  See [README - How to add an author page](https://github.com/strongloop/strongloop.com/blob/master/README.md#how-to-add-an-author-page) for more information.
 - Note that multiple authors must be formatted like this, with each author marked on a new line:
 author: 
@@ -234,10 +234,21 @@ They function the same except they have a different color, icon, and alert word.
 {% include important.html content="This is my important info.
 " %}
 
-## Writing guidelines##
+## Writing guidelines
 
 Please use [active voice](https://writing.wisc.edu/Handbook/CCS_activevoice.html) rather than passive voice.
 
 Unless creating a new paragraph, please use soft wrap rather than hard line breaks.
 
 There should only be one space between sentences, not two.
+
+## Publication
+
+A blog is ready to be sent for publication when all content has been reviewed, edited and approved by manager or subject matter expert (eg, Raymond Feng or Diana Lau for LoopBack). Please advise Dave W ASAP in advance about scheduling if the blog should be set up for a particular date.
+
+When ready to be published, a PR *and* a separate email should be sent to Dave Whiteley. Please cc the above approver and Dennis Ashby. Please do *not* rely on Slack to communicate a blog is ready.
+
+Even if approved and PR is sent, expect up to a 24 business hour turnaround time for publication.
+
+Blog posts are generally posted on Wednesday. If there is an important reason to make an exception please advise.
+
