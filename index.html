@@ -31,6 +31,8 @@ permalink: /
   <!-- <div style="height: 50px;"> -->
 </section>
 
+<p>For more open-source project in which IBM participates, see <a href="http://developer.ibm.com/opentech/">IBM OpenTech</a>.</p>
+
 {% assign featured_post = site.posts | where_exp:"post", "post.date <= site.time" %}
 {% assign featured_post = featured_post | where: "featured","true" %}
 {% for post in featured_post limit:1 %}
@@ -81,8 +83,7 @@ permalink: /
         </a>
       </div>
     </div>
-   <p>For more open-source project in which IBM participates, see <a href="http://developer.ibm.com/opentech/">IBM OpenTech</a>.</p>
-  
+    
   </section>
 {% endfor %}
   <section class="c-section x-lightgrey" >
