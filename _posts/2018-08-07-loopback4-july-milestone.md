@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 July 2018 Milestone Update
-date: 2018-08-T00:10:11+00:00
+date: 2018-08-07T00:10:11+00:00
 author: Kyu Shim
 permalink: /strongblog/july-2018-milestone/
 categories:
