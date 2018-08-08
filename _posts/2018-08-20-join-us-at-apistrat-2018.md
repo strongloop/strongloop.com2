@@ -28,7 +28,7 @@ As always, there will be many informative sessions and opportunities to learn. N
 
 * [Go Full Throttle: The Essentials of Throttling in Your API or MicroService Architecture](http://sched.co/FTQP) - Chris Phillips, SWAT Integration Architect
 
-You can register for the event [here](https://events.linuxfoundation.org/events/apistrat-2018/attend/register-2/!
+You can register for the event [here](https://events.linuxfoundation.org/events/apistrat-2018/attend/register-2/)!
 
 ## What Next?
 
