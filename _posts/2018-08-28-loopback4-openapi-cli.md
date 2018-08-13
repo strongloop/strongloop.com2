@@ -1,6 +1,6 @@
 ---
 title: Turning OpenAPI Specifications into Action with LoopBack 4
-date: 2018-08-10T12:20:33+00:00
+date: 2018-08-28T12:20:33+00:00
 author: Raymond Feng
 permalink: /strongblog/loopback4-openapi-cli/
 categories:
