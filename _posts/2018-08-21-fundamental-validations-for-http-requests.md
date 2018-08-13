@@ -11,7 +11,7 @@ categories:
 
 A Controller usually expects to get valid data from the HTTP request so it can focus on executing the business logic but there is never a guarantee that the client side sends valid data. For example, endpoint `GET Users/find` expects to get a number from the request query's property `limit`, but the request is sent as `GET Users/find?limit="astring"`, of which `limit` is a string instead of a number. In this case, people would like to see the invalid data being caught before it gets passed into the Controller function. 
 
-Now in Loopback 4, such validations are automatically handled by the framework, and a machine-readable error object is generated for each request to help people localize the invalid fields along with their details.
+Now in [Loopback 4](http://v4.loopback.io/), such validations are automatically handled by the framework, and a machine-readable error object is generated for each request to help people localize the invalid fields along with their details.
 
 <!--more-->
 
@@ -43,7 +43,7 @@ The validation rule varies based on the parameter's [OAI primitive type](https:/
 
 *Please note that the validation against parameters checks the primitive types only, it doesn't apply JSON-schema based validation for non-body arguments.*
 
-A more detailed documentation for the parameter validations could be found in the [Parameters section](https://loopback.io/doc/en/lb4/Parsing-requests.html#parameters) on the Parsing Requests page.
+A more detailed documentation for the parameter validations can be found in the [Parameters section](https://loopback.io/doc/en/lb4/Parsing-requests.html#parameters) on the Parsing Requests page.
 
 ## Request Body Validation
 
