@@ -18,15 +18,21 @@ Now in its ninth year, the API Strategy & Practice Conference has a specific goa
 
 *"APIStrat brings together experts, leaders, and members of the community to discuss what we each see on the ground every day. This event is not just for developers and IT teams, it is also for business users, executives, and anyone who seeks to better understand how APIs are impacting the world around us."*
 
-As always, there will be many informative sessions and opportunities to learn. New sessions are still being announced, and here are some highlight from StrongLoop and the IBM team:
+As always, there will be many informative sessions and opportunities to learn. New sessions are still being announced, and here are some highlights from StrongLoop and the IBM team
 
-* [Turning External Services to Internal APIs](http://sched.co/FTR1) - Chris Phillips, SWAT Integration Architect
- 
+Chris Phillips, SWAT Integration Architect, has two sessions. When asked about his sessions, he stated, "attendees can learn how to protect their businesses from expensive mistakes. Come and learn the mysteries of scaling and how it causes unexpected issues." 
+
+* [Turning External Services to Internal APIs](http://sched.co/FTR1) 
+
+* [Go Full Throttle: The Essentials of Throttling in Your API or MicroService Architecture](http://sched.co/FTQP) 
+
+The "Go Full Throttle" session is aimed at helping with how to ensure that when you scale out a component, you also scale its dependencies enough."
+
+A couple of other sessions for IBM include: 
+
 * [GraphQL for the Enterprise: Exploiting Your REST API Inventory to Create Better User Experiences](http://sched.co/FTQo) - Jim Laredo & Erik Wittern, IBM Research
  
 * [Generating Product-Quality SDKs and API Reference Documentation](http://sched.co/FTQa) - Michael Kistler
-
-* [Go Full Throttle: The Essentials of Throttling in Your API or MicroService Architecture](http://sched.co/FTQP) - Chris Phillips, SWAT Integration Architect
 
 You can register for the event [here](https://events.linuxfoundation.org/events/apistrat-2018/attend/register-2/)!
 
