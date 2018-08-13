@@ -11,7 +11,7 @@ categories:
 
 During the week of July 23-27, I was able to attend my **first** ever [NodeSummit](http://www.nodesummit.com/) as both an attendee and a speaker. I delivered a talk on [**The Art of Composability and Extensibility: Crafting a Foundation for Node.js Frameworks / Applications in TypeScript**](https://github.com/virkt25/nodesummit-2018). This was also my **first** opportunity to meet [Miroslav Bajtos (@bajtos on GitHub)](https://github.com/bajtos) in person since having joined the team over a year ago. NodeSummit ran their **first** ever [Training Days](http://www.nodesummit.com/training-days/) (which I was able to attend). Keep reading to learn more about my talk, NodeSummit experience and other firsts.
 
-<img src="../blog-assets/2018/08/nodesummit-welcome.jpg" alt="Welcome to NodeSummit Sign" style="width: 400px; margin:auto;"/>
+<img src="/blog-assets/2018/08/nodesummit-welcome.jpg" alt="Welcome to NodeSummit Sign" style="width: 400px; transform: rotate(90deg); display: block; margin: 50px auto;"/>
 
 <!-- more -->
 
@@ -19,8 +19,8 @@ During the week of July 23-27, I was able to attend my **first** ever [NodeSummi
 
 The Sunday before the conference started I finally had a chance to meet Miroslav in person after having worked with him for well over a year on [Loopback](https://loopback.io/). Despite being used to remote collaboration, it's always a fun experience to meet a co-worker you've been working with remotely for the first time and this time was no exception. Miroslav is a kind, smart and amazing person (just like he is on GitHub). We met for lunch and then went on a hike from **Land's End** to the **Golden Gate Bridge**, a trail with amazing views and stops along the way. We were both able to connect well and get to know each other talking about our experiences, LoopBack, life, family and more. Some pictures from the hike below for you to enjoy.
 
-<img src="../blog-assets/2018/08/nodesummit-hike-pano.jpg" alt="Hiking Trail Panorama" style="width: 400px; margin:auto;"/>
-<img src="../blog-assets/2018/08/nodesummit-hike.jpg" alt="Hiking: Golden Gate Bridge" style="width: 400px; margin:auto;"/>
+<img src="/blog-assets/2018/08/nodesummit-hike-pano.jpg" alt="Hiking Trail Panorama" style="margin:25px auto; display:block"/>
+<img src="/blog-assets/2018/08/nodesummit-hike.jpg" alt="Hiking: Golden Gate Bridge" style="width: 400px; margin:auto; display:block"/>
 
 Miroslav was also a presenter at NodeSummit on Day 0, delivering a talk on [**Async Functions In Practice: Tips, Tricks And Caveats You Want To Know Before Migrating From Callbacks**](https://bajtos.net/2018-AsyncAwait) which covered tips, tricks, benefits and how to make the switch. Check out the slides to learn more.
 
@@ -59,8 +59,8 @@ IBM is a founding partner for [Call for Code](https://callforcode.org/), an init
 
 The conference was very well organized with multiple tracks running at certain times allowing attendees to select a session of their choice. The downside of this was trying to decide between multiple great sessions (but all talks were recorded and will be available online soon for everyone to view). There was a wide breadth of topics ranging from the future of Node.js, frameworks, performance, security, and more. The NodeSummit staff was extremely friendly and did an outstanding job organizaing everything. The conference was also a great networking opportunity allowing attendees to connect with maintainers of Node.js, various frameworks and learn from them. I enjoyed chatting with a wide variety of people about Node.js, LoopBack, and IBM. The conference also gave me a chance to connect with a lot of other IBMers working on various Node.js initiatives such as the [CloudNativeJS.io initative](https://www.cloudnativejs.io/) announced at NodeSummit which LoopBack is a part of.
 
-<img src="../blog-assets/2018/08/nodesummit-ibm.jpg" alt="IBM Booth at NodeSummit 2018" style="width: 400px; margin:auto;"/>
-<img src="../blog-assets/2018/08/nodesummit-join-node.jpg" alt="Node.js: Join us in creating the future of Node.js!" style="width: 400px; margin:auto;"/>
+<img src="/blog-assets/2018/08/nodesummit-ibm.jpg" alt="IBM Booth at NodeSummit 2018" style="width: 50%; transform: rotate(90deg); margin: 60px auto; float: left;"/>
+<img src="/blog-assets/2018/08/nodesummit-join-node.jpg" alt="Node.js: Join us in creating the future of Node.js!" style="width: 50%; transform: rotate(90deg); margin: 60px auto; float: left;"/>
 
 One of the biggest take away for me from the conference as an attendee was a desire to get more involved with the Node.js community by joining a working group or making my first PR to the Node.js project. My goal is to make a contribution in some way before the end of this year! :D
 
