@@ -9,13 +9,13 @@ categories:
   - Community
 ---
 
-LoopBack 4 is the biggest change to the framework since it was first created and along with it comes a brand new CLI tool `@loopback/cli`. The tool makes it easy for developers to scaffold applications and create artifacts such as controllers for LoopBack 4. Now, the CLI tool is able to generate [Model](https://loopback.io/doc/en/lb4/Model.html) and [DataSource](https://loopback.io/doc/en/lb4/DataSources.html) artifacts using the `lb4 model` and `lb4 datasource` command respectively. Continue reading to learn more about these commands.
+[LoopBack 4](http://v4.loopback.io/) is the biggest change to the framework since it was first created. Along with it comes a brand new CLI tool `@loopback/cli`, which makes it easy for developers to scaffold applications and create artifacts such as controllers for LoopBack 4. This CLI tool is now able to generate [Model](https://loopback.io/doc/en/lb4/Model.html) and [DataSource](https://loopback.io/doc/en/lb4/DataSources.html) artifacts using the `lb4 model` and `lb4 datasource` command respectively. Continue reading to learn more about these commands.
 
 <!-- more -->
 
-## lb4 model
+## lb4 Model
 
-Defining a Model class can get quite tedious as LoopBack 4 needs metadata associated with each Model property to power features such as validation and coercion when accessed through a Repository. The new `lb4 model` command simplifies creating a story by asking simple prompts and generating code.
+LoopBack 4 needs metadata associated with each Model property to power features such as validation and coercion when accessed through a Repository. This means that defining a Model class can get quite tedious. The new `lb4 model` command simplifies creating a story by asking simple prompts and generating code.
 
 The new command must be run from within a LoopBack 4 Application as follows:
 
@@ -25,7 +25,7 @@ lb4 model [<name>]
 
 You can supply the model name above as an argument or else the tool will prompt you for the Model name. 
 
-Next, the CLI tool will prompt for Model properties similar to LoopBack 3 CLI until a blank property name is entered.
+Next, the CLI tool will prompt for Model properties, similar to LoopBack 3 CLI, until a blank property name is entered.
 
 ```sh
 ? Enter the property name:
@@ -50,10 +50,11 @@ Enter an empty property name when done
 The tool will then generate the model class in `/src/models` directory and export it from `/src/mdoels/index.ts`. The generated Model class will have all the necessary metadata provided to the `@model` / `@property` decorators. 
 
 Some notes about the `lb4 model`:
+
 - Model classes will extend `Entity` as its base class by default _(other options to be added later)_
 - `Is ID field?` is only asked until a property is set as the Model ID
 
-## lb4 datasource
+## lb4 Datasource
 
 DataSource provides LoopBack Repositories the information needed to connect to various databases. Depending on the type of database (connector) being used, different options / properties need to be passed to the DataSource class.
 
@@ -104,7 +105,7 @@ The tool will then create the DataSource class and an accompanying JSON config f
 
 ### DataSource Booting
 
-`@loopback/boot` has also been updated to support booting `datasources`, meaning they are automatically discovered and bound to `@loopback/context` for use by your Application at runtime. To enable this, it will be important that your Application use both the `BootMixin` and `RepositoryMixin`. DataSources generated using the CLI follow the default convention used by the Booter, but you can customize the boot convention like other booters.
+`@loopback/boot` has also been updated to support booting `datasources`, meaning they are automatically discovered and bound to `@loopback/context` for use by your Application at runtime. To enable this, it is important that your Application use both the `BootMixin` and `RepositoryMixin`. DataSources generated using the CLI follow the default convention used by the Booter, but you can customize the boot convention like other booters.
 
 You can add the mixins to your Application as follows:
 
@@ -128,7 +129,7 @@ datasources: {
 }
 ```
 
-## Give it a try
+## Give it a Try
 
 Try out the latest commands by installing the latest version of `@loopback/cli` using `npm i -g @loopback/cli` and share your experience with us via [GitHub Issues](https://github.com/strongloop/loopback-next/issues).
 
