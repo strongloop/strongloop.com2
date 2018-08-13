@@ -1,7 +1,7 @@
 ---
 title: 'Welcoming Model and Datasource Commands to LB4 CLI'
 layout: post
-date: 2018-05-30T00:00:13+00:00
+date: 2018-08-16T00:00:13+00:00
 author: Taranveer Virk
 permalink: /strongblog/welcoming-model-and-datasource-commands-to-lb4-cli/
 categories:
