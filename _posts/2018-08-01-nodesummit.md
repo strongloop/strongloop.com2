@@ -28,9 +28,9 @@ Miroslav was also a presenter at NodeSummit on Day 0, delivering a talk on [**As
 
 ### As a Speaker
 
-I was feeling nervous, excited, and anxious along with other varying emotions to be presenting at NodeSummit. I had been practicing for days with co-workers and improving the talk and slides based on their feedback. 10 minutes before my presentation, I was mic'ed up and ready, my only fear was a tech malfunction (laptop, projector, mic, etc.) even though the NodeSummit team being ready for everything. I got on stage to an almost packed room, took a deep breath, clock struck 4:20 and off I went to deliver my talk. When I saw the audience listening to my presentation with enthusiastic and engaged look, my nervousness disappeared within in seconds of starting. After the talk I had a lot of people approach me to say they enjoyed the talk (phew) while others had follow-up questions about the various topics discussed. People were sharing how they faced the same pain points and that the talk was super relatable. It was very exciting to answer their questions and receive feedback and comments from the attendees. Overall, I was thrilled to present at NodeSummit and hope to be able to do so again next year. 
+I was feeling nervous, excited, and anxious along with other varying emotions to be presenting at NodeSummit. I had been practicing for days with co-workers and improving the talk and slides based on their feedback. 10 minutes before my presentation, I was mic'ed up and ready, my only fear was a tech malfunction (laptop, projector, mic, etc.) even though the NodeSummit team being ready for everything. I got on stage to an almost packed room, took a deep breath, clock struck 4:20 and off I went to deliver my talk. When I saw the audience listening to my presentation with enthusiastic and engaged look, my nervousness disappeared within seconds of starting. After the talk I had a lot of people approach me to say they enjoyed the talk (phew) while others had follow-up questions about the various topics discussed. People were sharing how they faced the same pain points and that the talk was super relatable. It was very exciting to answer their questions and receive feedback and comments from the attendees. Overall, I was thrilled to present at NodeSummit and hope to be able to do so again next year. 
 
-My slides are available [here]((https://github.com/virkt25/nodesummit-2018) and I will share with you all the recording of the presentation once it becomes available.
+My slides are available [here](https://github.com/virkt25/nodesummit-2018) and I will share with you all the recording of the presentation once it becomes available.
 
 There were some follow-up question I got from more than one person that I would like to answer here for everyone: 
 
@@ -49,7 +49,7 @@ For those looking to set up a TypeScript project, check out the [`@loopback/buil
 
 **When is LoopBack 4 coming out?**
 
-It's already out! LoopBack 4 is available as a Developer Preview #3 and can be used to start building applications. We are adding more features and fixing bugs based on the community's feedback. If all goes according to plan, LoopBack 4 GA (General Availability) for building production application should be available sometime in October 2018. That said, I would recommend getting started now as I only anticipate new features and limited (if any) breaking changes to the developer preview. 
+It's already out! LoopBack 4 is available as a Developer Preview #3 and can be used to start building applications. We are adding more features and fixing bugs based on the community's feedback. If all goes according to plan, LoopBack 4 GA (General Availability) for building production application should be available sometime in October 2018. That said, I would recommend getting started now as I only anticipate new features and limited (if any) breaking changes to the [developer preview](https://strongloop.com/strongblog/loopback-4-developer-preview-3). 
 
 **Can you tell me more about Call for Code?**
 
