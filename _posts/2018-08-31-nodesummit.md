@@ -9,7 +9,11 @@ categories:
   - Community
 ---
 
-During the week of July 23-27, I was able to attend my **first** ever [NodeSummit](http://www.nodesummit.com/) as both an attendee and a speaker. I delivered a talk on [**The Art of Composability and Extensibility: Crafting a Foundation for Node.js Frameworks / Applications in TypeScript**](https://github.com/virkt25/nodesummit-2018). This was also my **first** opportunity to meet [Miroslav Bajtos (@bajtos on GitHub)](https://github.com/bajtos) in person since having joined the team over a year ago. NodeSummit ran their **first** ever [Training Days](http://www.nodesummit.com/training-days/) (which I was able to attend). Keep reading to learn more about my talk, NodeSummit experience and other firsts.
+During the week of July 23-27, I experienced several **firsts** at [NodeSummit](http://www.nodesummit.com/).
+
+It was my **first** ever [NodeSummit](http://www.nodesummit.com/) as both an attendee and a speaker (I delivered a talk on [**The Art of Composability and Extensibility: Crafting a Foundation for Node.js Frameworks / Applications in TypeScript**](https://github.com/virkt25/nodesummit-2018)). This was also my **first** opportunity to meet [Miroslav Bajtos (@bajtos on GitHub)](https://github.com/bajtos) in person since having joined the team over a year ago. NodeSummit ran their **first** ever [Training Days](http://www.nodesummit.com/training-days/) (which I was able to attend). 
+
+Keep reading to learn more about my talk, NodeSummit experience and other firsts.
 
 <img src="/blog-assets/2018/08/nodesummit-welcome.jpg" alt="Welcome to NodeSummit Sign" style="width: 400px; transform: rotate(90deg); display: block; margin: 50px auto;"/>
 
@@ -17,7 +21,7 @@ During the week of July 23-27, I was able to attend my **first** ever [NodeSummi
 
 ## Meeting Miroslav
 
-The Sunday before the conference started I finally had a chance to meet Miroslav in person after having worked with him for well over a year on [Loopback](https://loopback.io/). Despite being used to remote collaboration, it's always a fun experience to meet a co-worker you've been working with remotely for the first time and this time was no exception. Miroslav is a kind, smart and amazing person (just like he is on GitHub). We met for lunch and then went on a hike from **Land's End** to the **Golden Gate Bridge**, a trail with amazing views and stops along the way. We were both able to connect well and get to know each other talking about our experiences, LoopBack, life, family and more. Some pictures from the hike below for you to enjoy.
+The Sunday before the conference started I finally had a chance to meet Miroslav in person after having worked with him for well over a year on [Loopback](https://loopback.io/). Despite being used to remote collaboration, it's always a fun experience to meet a co-worker you've been working with remotely for the first time and this time was no exception. Miroslav is a kind, smart and amazing person (just like he is on GitHub). We met for lunch and then went on a hike from **Land's End** to the **Golden Gate Bridge**, a trail with amazing views and stops along the way. We got to know each other well, connetcing as we talked about our experiences, LoopBack, life, family and more. Here are some pictures from the hike for you to enjoy.
 
 <img src="/blog-assets/2018/08/nodesummit-hike-pano.jpg" alt="Hiking Trail Panorama" style="margin:25px auto; display:block"/>
 <img src="/blog-assets/2018/08/nodesummit-hike.jpg" alt="Hiking: Golden Gate Bridge" style="width: 400px; margin:auto; display:block"/>
@@ -28,7 +32,9 @@ Miroslav was also a presenter at NodeSummit on Day 0, delivering a talk on [**As
 
 ### As a Speaker
 
-I was feeling nervous, excited, and anxious along with other varying emotions to be presenting at NodeSummit. I had been practicing for days with co-workers and improving the talk and slides based on their feedback. 10 minutes before my presentation, I was mic'ed up and ready, my only fear was a tech malfunction (laptop, projector, mic, etc.) even though the NodeSummit team being ready for everything. I got on stage to an almost packed room, took a deep breath, clock struck 4:20 and off I went to deliver my talk. When I saw the audience listening to my presentation with enthusiastic and engaged look, my nervousness disappeared within seconds of starting. After the talk I had a lot of people approach me to say they enjoyed the talk (phew) while others had follow-up questions about the various topics discussed. People were sharing how they faced the same pain points and that the talk was super relatable. It was very exciting to answer their questions and receive feedback and comments from the attendees. Overall, I was thrilled to present at NodeSummit and hope to be able to do so again next year. 
+I was feeling nervous, excited, and anxious along with other varying emotions to be presenting at NodeSummit. I had been practicing for days with co-workers and improving the talk and slides based on their feedback. Ten minutes before my presentation, I was mic'ed up and ready. My only fear was a tech malfunction with the laptop, projector, mic, or something unimagined, even with the NodeSummit team ready for everything. I got on stage in front of an almost packed room, took a deep breath, and as the clock struck 4:20 I began to deliver my talk. As I saw the audience listening to my presentation with an enthusiastic and engaged look, my nervousness quickly disappeared. 
+
+After the talk I had a lot of people approach me to say they enjoyed the talk (phew) while others had follow-up questions about the various topics discussed. People shared how they faced the same pain points and told me the talk was super relatable. It was very exciting to answer their questions and receive feedback and comments from the attendees. Overall, I was thrilled to present at NodeSummit and hope to be able to do so again next year. 
 
 My slides are available [here](https://github.com/virkt25/nodesummit-2018) and I will share with you all the recording of the presentation once it becomes available.
 
@@ -37,6 +43,7 @@ There were some follow-up question I got from more than one person that I would 
 **Can `@loopback/context` module be used standalone?**
 
 YES! The Context module is designed to work without any other LoopBack dependency and can serve as a Universal Container for your application / framework.
+
 > The @loopback/context package exposes TypeScript/JavaScript APIs and decorators to register artifacts, declare dependencies, and resolve artifacts by keys. The Context also serves as an IoC container to support dependency injection.
 
 Check out the `@loopback/context` package [here](https://www.npmjs.com/package/@loopback/context).
@@ -57,7 +64,7 @@ IBM is a founding partner for [Call for Code](https://callforcode.org/), an init
 
 ### As an Attendee
 
-The conference was very well organized with multiple tracks running at certain times allowing attendees to select a session of their choice. The downside of this was trying to decide between multiple great sessions (but all talks were recorded and will be available online soon for everyone to view). There was a wide breadth of topics ranging from the future of Node.js, frameworks, performance, security, and more. The NodeSummit staff was extremely friendly and did an outstanding job organizaing everything. The conference was also a great networking opportunity allowing attendees to connect with maintainers of Node.js, various frameworks and learn from them. I enjoyed chatting with a wide variety of people about Node.js, LoopBack, and IBM. The conference also gave me a chance to connect with a lot of other IBMers working on various Node.js initiatives such as the [CloudNativeJS.io initative](https://www.cloudnativejs.io/) announced at NodeSummit which LoopBack is a part of.
+The conference was very well organized with multiple tracks running at certain times allowing attendees to select a session of their choice. The downside of this was trying to decide between multiple great sessions - though the upside is that all talks were recorded and will be available online soon for everyone to view. There was a wide breadth of topics ranging from the future of Node.js, frameworks, performance, security, and more. The NodeSummit staff was extremely friendly and did an outstanding job organizaing everything. The conference was also a great networking opportunity allowing attendees to connect with maintainers of Node.js, various frameworks and learn from them. I enjoyed chatting with a wide variety of people about Node.js, LoopBack, and IBM. The conference also gave me a chance to connect with a lot of other IBMers working on various Node.js initiatives such as the [CloudNativeJS.io initative](https://www.cloudnativejs.io/) announced at NodeSummit which LoopBack is a part of.
 
 <img src="/blog-assets/2018/08/nodesummit-ibm.jpg" alt="IBM Booth at NodeSummit 2018" style="width: 50%; transform: rotate(90deg); margin: 60px auto; float: left;"/>
 <img src="/blog-assets/2018/08/nodesummit-join-node.jpg" alt="Node.js: Join us in creating the future of Node.js!" style="width: 50%; transform: rotate(90deg); margin: 60px auto; float: left;"/>
@@ -80,7 +87,7 @@ Its important for me to always keep learning and NodeSummit presented a great op
 - React with Node.js
 > React on the frontend and Node.js on the backend.
 
-I took away something from each session and am super glad NodeSummit introduced these Training Days!
+I am very glad NodeSummit introduced these Training Days - I took something away from each session!
 
 ## Call for Action
 
