@@ -28,7 +28,7 @@ Chris Phillips, SWAT Integration Architect, has two sessions. When asked about h
 
 The "Go Full Throttle" session, Chris says, "is aimed at helping with how to ensure that when you scale out a component, you also scale its dependencies enough."
 
-A couple of other sessions for IBM include: 
+A couple of other sessions from our IBM teammates include: 
 
 * [GraphQL for the Enterprise: Exploiting Your REST API Inventory to Create Better User Experiences](http://sched.co/FTQo) - Jim Laredo & Erik Wittern, IBM Research
  
