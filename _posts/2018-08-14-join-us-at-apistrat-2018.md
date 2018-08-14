@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Join IBM and StrongLoop at APIStrat
-date: 2018-08-20T01:40:15+00:00
+date: 2018-08-14T01:40:15+00:00
 author: Dave Whiteley
 permalink: /strongblog/join-us-at-apistrat-2018
 categories:
@@ -9,7 +9,7 @@ categories:
   - Events
   
 ---
-[APIStrat](http://apistrat.com/) takes place September 24 - 26 in Nashville, Tennessee. Hosted by the Open API Initiative and The Linux Foundation, this event provides opportunities to learn and discuss the API economy and all related things.
+[APIStrat](http://apistrat.com/) takes place September 24 - 26 in Nashville, Tennessee - just a month away! Hosted by the Open API Initiative and The Linux Foundation, this event provides opportunities to learn and discuss the API economy and all related things.
  
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2017/09/apistrat-logo.jpg" alt="APIStrat logo" style="width: 450px"/>
@@ -26,7 +26,7 @@ Chris Phillips, SWAT Integration Architect, has two sessions. When asked about h
 
 * [Go Full Throttle: The Essentials of Throttling in Your API or MicroService Architecture](http://sched.co/FTQP) 
 
-The "Go Full Throttle" session is aimed at helping with how to ensure that when you scale out a component, you also scale its dependencies enough."
+The "Go Full Throttle" session, Chris says, "is aimed at helping with how to ensure that when you scale out a component, you also scale its dependencies enough."
 
 A couple of other sessions for IBM include: 
 
