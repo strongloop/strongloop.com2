@@ -14,11 +14,11 @@ categories:
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2017/09/apistrat-logo.jpg" alt="APIStrat logo" style="width: 450px"/>
 
-Now in its ninth year, the API Strategy & Practice Conference has a specific goal, as summarized on its web site:
+Now in its ninth year, the API Strategy & Practice Conference continues towards a specific goal, as summarized on its web site:
 
 *"APIStrat brings together experts, leaders, and members of the community to discuss what we each see on the ground every day. This event is not just for developers and IT teams, it is also for business users, executives, and anyone who seeks to better understand how APIs are impacting the world around us."*
 
-As always, there will be many informative sessions and opportunities to learn. New sessions are still being announced, and here are some highlights from StrongLoop and the IBM team
+As always, there will be many informative sessions and opportunities to learn. New sessions are still being announced, and here are some highlights from StrongLoop and the IBM team.
 
 Chris Phillips, SWAT Integration Architect, has two sessions. When asked about his sessions, he stated, "attendees can learn how to protect their businesses from expensive mistakes. Come and learn the mysteries of scaling and how it causes unexpected issues." 
 
