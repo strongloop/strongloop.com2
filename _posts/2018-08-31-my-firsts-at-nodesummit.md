@@ -1,6 +1,6 @@
 ---
-title: My Firsts at NodeSummit 2018
 layout: post
+title: My Firsts at NodeSummit 2018
 date: 2018-08-31T00:00:13+00:00
 author: Taranveer Virk
 permalink: /strongblog/my-firsts-at-nodesummit-2018/
@@ -14,11 +14,10 @@ During the week of July 23-27, I experienced several **firsts** at [NodeSummit](
 It was my **first** ever [NodeSummit](http://www.nodesummit.com/) as both an attendee and a speaker (I delivered a talk on [The Art of Composability and Extensibility: Crafting a Foundation for Node.js Frameworks / Applications in TypeScript](https://github.com/virkt25/nodesummit-2018)). This was also my **first** opportunity to meet [Miroslav Bajtos (@bajtos on GitHub)](https://github.com/bajtos) in person since having joined the team over a year ago. NodeSummit ran their **first** ever [Training Days](http://www.nodesummit.com/training-days/) (which I was able to attend). 
 
 Keep reading to learn more about my talk, NodeSummit experience and other firsts.
-<p>
-  <!-- more -->
+<!-- more -->
 <img src="https://strongloop.com/blog-assets/2018/08/nodesummit-welcome.png" alt="Welcome to NodeSummit Sign" style="width: 300px;"/>
 
-### Meeting Miroslav
+Meeting Miroslav
 
 The Sunday before the conference started I finally had a chance to meet Miroslav in person after having worked with him for well over a year on [Loopback](https://loopback.io/). Despite being used to remote collaboration, it's always a fun experience to meet a co-worker you've been working with remotely for the first time and this time was no exception. Miroslav is a kind, smart and amazing person (just like he is on GitHub). We met for lunch and then went on a hike from Land's End to the Golden Gate Bridge, a trail with amazing views and stops along the way. We got to know each other well, connecting as we talked about our experiences, LoopBack, life, family and more. Here are some pictures from the hike for you to enjoy.
 
