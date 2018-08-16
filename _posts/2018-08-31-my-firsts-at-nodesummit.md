@@ -1,5 +1,5 @@
 ---
-title: 'My Firsts at NodeSummit 2018'
+title: My Firsts at NodeSummit 2018
 layout: post
 date: 2018-08-31T00:00:13+00:00
 author: Taranveer Virk
