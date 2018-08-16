@@ -189,6 +189,8 @@ Add the `max-width` parameter to adjust the size of the image:
 
 {% include image.html file='2017/03/1m8q3b.jpg' alt='Release the API Gateway' max-width='300' %}
 
+PLEASE reduce image file size.
+
 PLEASE keep image formatting simple. Upload files to correct orientation and set width and height by pixels.
 
 # What's Next, or Call to Action
