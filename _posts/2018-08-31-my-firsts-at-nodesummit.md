@@ -18,7 +18,7 @@ Keep reading to learn more about my talk, NodeSummit experience and other firsts
   <!-- more -->
 <img src="https://strongloop.com/blog-assets/2018/08/nodesummit-welcome.png" alt="Welcome to NodeSummit Sign" style="width: 300px;"/>
 
-## Meeting Miroslav
+### Meeting Miroslav
 
 The Sunday before the conference started I finally had a chance to meet Miroslav in person after having worked with him for well over a year on [Loopback](https://loopback.io/). Despite being used to remote collaboration, it's always a fun experience to meet a co-worker you've been working with remotely for the first time and this time was no exception. Miroslav is a kind, smart and amazing person (just like he is on GitHub). We met for lunch and then went on a hike from Land's End to the Golden Gate Bridge, a trail with amazing views and stops along the way. We got to know each other well, connecting as we talked about our experiences, LoopBack, life, family and more. Here are some pictures from the hike for you to enjoy.
 
@@ -28,9 +28,9 @@ The Sunday before the conference started I finally had a chance to meet Miroslav
 
 Miroslav was also a presenter at NodeSummit on Day 0, delivering a talk on [Async Functions In Practice: Tips, Tricks And Caveats You Want To Know Before Migrating From Callbacks](https://bajtos.net/2018-AsyncAwait) which covered tips, tricks, benefits and how to make the switch. Check out the slides to learn more.
 
-## NodeSummit Experience
+### NodeSummit Experience
 
-### As a Speaker
+#### As a Speaker
 
 I was feeling nervous, excited, and anxious along with other varying emotions to be presenting at NodeSummit. I had been practicing for days with co-workers and improving the talk and slides based on their feedback. Ten minutes before my presentation, I was mic'ed up and ready. My only fear was a tech malfunction with the laptop, projector, mic, or something unimagined, even with the NodeSummit team ready for everything. I got on stage in front of an almost packed room, took a deep breath, and as the clock struck 4:20 I began to deliver my talk. As I saw the audience listening to my presentation with an enthusiastic and engaged look, my nervousness quickly disappeared. 
 
@@ -62,7 +62,7 @@ It's already out! LoopBack 4 is available as a Developer Preview #3 and can be u
 
 IBM is a founding partner for [Call for Code](https://callforcode.org/), an initiative by David Clark Cause. Call for Code, a multi-year global initiative, is a rallying cry to developers to use their skills and mastery of the latest technologies, and to create new ones, to drive positive and long-lasting change across the world with their code. The inaugural Call for Code Challenge theme is Natural Disaster Preparedness and Relief. Grand Prize is $200,000 USD!! There's still time to answer the call.
 
-### As an Attendee
+#### As an Attendee
 
 The conference was very well organized with multiple tracks running at certain times allowing attendees to select a session of their choice. The downside of this was trying to decide between multiple great sessions - though the upside is that all talks were recorded and will be available online soon for everyone to view. There was a wide breadth of topics ranging from the future of Node.js, frameworks, performance, security, and more. The NodeSummit staff was extremely friendly and did an outstanding job organizaing everything. The conference was also a great networking opportunity allowing attendees to connect with maintainers of Node.js, various frameworks and learn from them. I enjoyed chatting with a wide variety of people about Node.js, LoopBack, and IBM. The conference also gave me a chance to connect with a lot of other IBMers working on various Node.js initiatives such as the [CloudNativeJS.io initative](https://www.cloudnativejs.io/) announced at NodeSummit which LoopBack is a part of.
 
@@ -72,7 +72,7 @@ The conference was very well organized with multiple tracks running at certain t
 
 One of the biggest take away for me from the conference as an attendee was a desire to get more involved with the Node.js community by joining a working group or making my first PR to the Node.js project. My goal is to make a contribution in some way before the end of this year! :D
 
-## Training Days
+### Training Days
 
 Its important for me to always keep learning and NodeSummit presented a great opportunity by offering their first ever Training Days! The two training days following the conference were run by experts and offered a wide variety of topics. These were half-day sessions held in small groups so you could easily interact with the instructor. I attended 4 sessions and I learned something different from each one. In particular, the sessions I attended were:
 
@@ -90,7 +90,7 @@ Its important for me to always keep learning and NodeSummit presented a great op
 
 I am very glad NodeSummit introduced these Training Days - I took something away from each session!
 
-## Call for Action
+### Call for Action
 
 LoopBack's future success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
 
