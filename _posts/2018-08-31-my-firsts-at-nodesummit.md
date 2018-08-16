@@ -17,7 +17,7 @@ Keep reading to learn more about my talk, NodeSummit experience and other firsts
 <!-- more -->
 <img src="https://strongloop.com/blog-assets/2018/08/nodesummit-welcome.png" alt="Welcome to NodeSummit Sign" style="width: 300px;"/>
 
-Meeting Miroslav
+### Meeting Miroslav
 
 The Sunday before the conference started I finally had a chance to meet Miroslav in person after having worked with him for well over a year on [Loopback](https://loopback.io/). Despite being used to remote collaboration, it's always a fun experience to meet a co-worker you've been working with remotely for the first time and this time was no exception. Miroslav is a kind, smart and amazing person (just like he is on GitHub). We met for lunch and then went on a hike from Land's End to the Golden Gate Bridge, a trail with amazing views and stops along the way. We got to know each other well, connecting as we talked about our experiences, LoopBack, life, family and more. Here are some pictures from the hike for you to enjoy.
 
