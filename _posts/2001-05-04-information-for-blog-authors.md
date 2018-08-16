@@ -167,31 +167,17 @@ Example of local link: See [StrongLoop Projects](/projects/).
 
 ## Images
 
-Add blog images (and other media files such as audio and video files) in the `/blog-assets` directory.  Images that were imported from WordPress are in sub-folders according to the date when they were uploaded, but just put your images in the top-level.
+Upload blog images (and other media files such as audio and video files) in the appropriate `/blog-assets` directory. You will see sub-folders for year and month.
 
-Use the image include template to insert an image in your post.
+Include images in a post by linking directly to the blog assets file:
 
 For example:
 
-```
-{% raw %}{% include image.html file='2017/03/1m8q3b.jpg' alt='Release the API Gateway' %}{% endraw %}
-```
+<img src="https://strongloop.com/blog-assets/2017/loopback-2017.png" alt="LoopBack 2017 Year in Review"/>
 
-Results in this:
+Reduce image file size.
 
-{% include image.html file='2017/03/1m8q3b.jpg' alt='Release the API Gateway' %}
-
-Add the `max-width` parameter to adjust the size of the image:
-
-```
-{% raw %}{% include image.html file='2017/03/1m8q3b.jpg' alt='Release the API Gateway' max-width='300' %}{% endraw %}
-```
-
-{% include image.html file='2017/03/1m8q3b.jpg' alt='Release the API Gateway' max-width='300' %}
-
-PLEASE reduce image file size.
-
-PLEASE keep image formatting simple. Upload files to correct orientation and set width and height by pixels.
+Keep image formatting simple. Upload files to correct orientation and set width and height by pixels.
 
 # What's Next, or Call to Action
 
