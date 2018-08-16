@@ -15,16 +15,16 @@ It was my **first** ever [NodeSummit](http://www.nodesummit.com/) as both an att
 
 Keep reading to learn more about my talk, NodeSummit experience and other firsts.
 <p>
-<img src="https://strongloop.com/blog-assets/2018/08/nodesummit-welcome.png" alt="Welcome to NodeSummit Sign" style="width: 400px;"/>
-
-<!-- more -->
+  <!-- more -->
+<img src="https://strongloop.com/blog-assets/2018/08/nodesummit-welcome.png" alt="Welcome to NodeSummit Sign" style="width: 300px;"/>
 
 ## Meeting Miroslav
 
 The Sunday before the conference started I finally had a chance to meet Miroslav in person after having worked with him for well over a year on [Loopback](https://loopback.io/). Despite being used to remote collaboration, it's always a fun experience to meet a co-worker you've been working with remotely for the first time and this time was no exception. Miroslav is a kind, smart and amazing person (just like he is on GitHub). We met for lunch and then went on a hike from **Land's End** to the **Golden Gate Bridge**, a trail with amazing views and stops along the way. We got to know each other well, connecting as we talked about our experiences, LoopBack, life, family and more. Here are some pictures from the hike for you to enjoy.
 
-<img src="https://strongloop.com/blog-assets/2018/08/nodesummit-hike-pano.JPG" alt="Hiking Trail Panorama" style="width: 400px; "/>
-<img src="https://strongloop.com/blog-assets/2018/08/nodesummit-hike.JPG" alt="Hiking: Golden Gate Bridge" style="width: 400px; "/>
+<img src="https://strongloop.com/blog-assets/2018/08/nodesummit-hike-pano.JPG" alt="Hiking Trail Panorama" style="width: 400px;"/>
+
+<img src="https://strongloop.com/blog-assets/2018/08/nodesummit-hike.JPG" alt="Hiking: Golden Gate Bridge" style="width: 400px;"/>
 
 Miroslav was also a presenter at NodeSummit on Day 0, delivering a talk on [Async Functions In Practice: Tips, Tricks And Caveats You Want To Know Before Migrating From Callbacks](https://bajtos.net/2018-AsyncAwait) which covered tips, tricks, benefits and how to make the switch. Check out the slides to learn more.
 
@@ -66,8 +66,9 @@ IBM is a founding partner for [Call for Code](https://callforcode.org/), an init
 
 The conference was very well organized with multiple tracks running at certain times allowing attendees to select a session of their choice. The downside of this was trying to decide between multiple great sessions - though the upside is that all talks were recorded and will be available online soon for everyone to view. There was a wide breadth of topics ranging from the future of Node.js, frameworks, performance, security, and more. The NodeSummit staff was extremely friendly and did an outstanding job organizaing everything. The conference was also a great networking opportunity allowing attendees to connect with maintainers of Node.js, various frameworks and learn from them. I enjoyed chatting with a wide variety of people about Node.js, LoopBack, and IBM. The conference also gave me a chance to connect with a lot of other IBMers working on various Node.js initiatives such as the [CloudNativeJS.io initative](https://www.cloudnativejs.io/) announced at NodeSummit which LoopBack is a part of.
 
-<img src="https://strongloop.com/blog-assets/2018/08/nodesummit-ibm.JPG" alt="IBM Booth at NodeSummit 2018" style="width: 50%; "/>
-<img src="https://strongloop.com/blog-assets/2018/08/nodesummit-join-node.JPG" alt="Node.js: Join us in creating the future of Node.js!" style="width: 50%; "/>
+<img src="https://strongloop.com/blog-assets/2018/08/nodesummit-ibm.png" alt="IBM Booth at NodeSummit 2018" style="width: 300px;"/>
+<img src="https://strongloop.com/blog-assets/2018/08/nodesummit-join-node.png" alt="Node.js: Join us in creating the future of Node.js!" style="width: 300px;"/>
+
 
 One of the biggest take away for me from the conference as an attendee was a desire to get more involved with the Node.js community by joining a working group or making my first PR to the Node.js project. My goal is to make a contribution in some way before the end of this year! :D
 
