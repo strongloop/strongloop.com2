@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My Firsts at NodeSummit 2018
-date: 2018-08-31T00:00:13+00:00
+date: 2018-08-16
 author: Taranveer Virk
 permalink: /strongblog/my-firsts-at-nodesummit-2018/
 categories:
