@@ -15,7 +15,7 @@ It was my **first** ever [NodeSummit](http://www.nodesummit.com/) as both an att
 
 Keep reading to learn more about my talk, NodeSummit experience and other firsts.
 
-<!-- more -->
+<!--more-->
 
 <img src="https://strongloop.com/blog-assets/2018/08/nodesummit-welcome.png" alt="Welcome to NodeSummit Sign" style="width: 300px;"/>
 
