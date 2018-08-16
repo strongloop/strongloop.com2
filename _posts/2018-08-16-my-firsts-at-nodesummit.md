@@ -14,7 +14,9 @@ During the week of July 23-27, I experienced several **firsts** at [NodeSummit](
 It was my **first** ever [NodeSummit](http://www.nodesummit.com/) as both an attendee and a speaker (I delivered a talk on [The Art of Composability and Extensibility: Crafting a Foundation for Node.js Frameworks / Applications in TypeScript](https://github.com/virkt25/nodesummit-2018)). This was also my **first** opportunity to meet [Miroslav Bajtos (@bajtos on GitHub)](https://github.com/bajtos) in person since having joined the team over a year ago. NodeSummit ran their **first** ever [Training Days](http://www.nodesummit.com/training-days/) (which I was able to attend). 
 
 Keep reading to learn more about my talk, NodeSummit experience and other firsts.
+
 <!-- more -->
+
 <img src="https://strongloop.com/blog-assets/2018/08/nodesummit-welcome.png" alt="Welcome to NodeSummit Sign" style="width: 300px;"/>
 
 ### Meeting Miroslav
