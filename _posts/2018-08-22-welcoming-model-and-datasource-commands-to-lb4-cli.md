@@ -1,5 +1,5 @@
 ---
-title: 'Welcoming Model and Datasource Commands to LB4 CLI'
+title: Welcoming Model and Datasource Commands to LB4 CLI
 layout: post
 date: 2018-08-22T00:00:13+00:00
 author: Taranveer Virk
