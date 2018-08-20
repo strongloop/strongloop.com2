@@ -1,7 +1,7 @@
 ---
 title: 'Welcoming Model and Datasource Commands to LB4 CLI'
 layout: post
-date: 2018-08-20T00:00:13+00:00
+date: 2018-08-22T00:00:13+00:00
 author: Taranveer Virk
 permalink: /strongblog/welcoming-model-and-datasource-commands-to-lb4-cli/
 categories:
@@ -11,7 +11,7 @@ categories:
 
 [LoopBack 4](http://v4.loopback.io/) is the biggest change to the framework since it was first created. Along with it comes a brand new CLI tool `@loopback/cli`, which makes it easy for developers to scaffold applications and create artifacts such as controllers for LoopBack 4. This CLI tool is now able to generate [Model](https://loopback.io/doc/en/lb4/Model.html) and [DataSource](https://loopback.io/doc/en/lb4/DataSources.html) artifacts using the `lb4 model` and `lb4 datasource` command respectively. Continue reading to learn more about these commands.
 
-<!-- more -->
+<!--more-->
 
 ## lb4 Model
 
