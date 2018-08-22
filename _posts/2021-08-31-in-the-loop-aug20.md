@@ -9,8 +9,15 @@ categories:
   - News
   
 ---
-"In the Loop" provides a weekly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expresses in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
+"In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expresses in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
+
+
+### More Than A Billion Downloads of Node.js
+
+The application platform known as Node.js surpassed one billion downloads and is now officially a part of the three comma club.
+
+[READ MORE >>>](https://medium.com/@nodejs/more-than-a-billion-downloads-of-node-js-952a8a98eb42)
 
 ### NODE.JS FOUNDATION FIELD GUIDE: Building APIs
 
