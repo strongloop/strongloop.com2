@@ -1,15 +1,15 @@
 ---
 layout: post
-title: In the Loop - August 2018
-date: 2021-08-31T01:40:15+00:00
-author: Dave Whiteley
-permalink: /strongblog/in-the-loop-august/
+title: In the Loop - September 2018
+date: 2021-09-05author: Dave Whiteley
+permalink: /strongblog/in-the-loop-september/
 categories:
   - Community
   - News
   
 ---
-"In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expresses in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
+
+"In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
 ### More Than A Billion Downloads of Node.js
