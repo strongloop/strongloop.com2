@@ -1,6 +1,6 @@
 ---
 layout: post
-title: In the Loop - August 20
+title: In the Loop - August 2018
 date: 2021-08-31T01:40:15+00:00
 author: Dave Whiteley
 permalink: /strongblog/in-the-loop-august/
@@ -12,14 +12,13 @@ categories:
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expresses in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
-
 ### More Than A Billion Downloads of Node.js
 
 The application platform known as Node.js surpassed one billion downloads and is now officially a part of the three comma club.
 
 [READ MORE >>>](https://medium.com/@nodejs/more-than-a-billion-downloads-of-node-js-952a8a98eb42)
 
-### NODE.JS FOUNDATION FIELD GUIDE: Building APIs
+### Node.js Foundation Field Guide: Building APIs
 
 Learn the dos and don’ts in using Node.js to build APIs in this downloadable field guide.
 
@@ -30,6 +29,12 @@ Learn the dos and don’ts in using Node.js to build APIs in this downloadable f
 The OpenAPI Initiative published  the first batch of keynote speakers for APIStrat 2018 in Nashville, TN. 
 
 [READ MORE >>>](https://www.openapis.org/blog/2018/08/02/APIStrat-2018-Nashville-Keynotes)
+
+### JS Interactive is Now Node+JS Interactive - Updates and Lineup
+
+The line up for Node+JS Interactive (previously called JSInteractive) covers progressive web apps, AI, community and developers, serverless, and much more. Find the current lineup here: 
+
+[READ MORE >>>](https://events.linuxfoundation.org/events/node-js-interactive-2018/)
 
 ### How to Hire a Node.js Developer
 
