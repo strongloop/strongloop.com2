@@ -3,7 +3,7 @@ layout: post
 title: In the Loop - August 20
 date: 2021-08-31T01:40:15+00:00
 author: Dave Whiteley
-permalink: /strongblog/in-the-loop-aug-20/
+permalink: /strongblog/in-the-loop-august/
 categories:
   - Community
   - News
