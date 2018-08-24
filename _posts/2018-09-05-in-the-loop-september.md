@@ -1,7 +1,8 @@
 ---
 layout: post
 title: In the Loop - September 2018
-date: 2021-09-05author: Dave Whiteley
+date: 2018-09-05
+author: Dave Whiteley
 permalink: /strongblog/in-the-loop-september/
 categories:
   - Community
