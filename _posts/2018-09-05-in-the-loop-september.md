@@ -13,6 +13,12 @@ categories:
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### eBay Provides OpenAPI Specification (OAS) for All its RESTful Public APIs
+
+eBay recently announced that they are leveraging the OpenAPI Specification (OAS) for all of its RESTful public APIs.
+
+[READ MORE >>>](https://www.openapis.org/blog/2018/08/14/ebay-provides-openapi-specification-oas-for-all-its-restful-public-apis)
+
 ### More Than A Billion Downloads of Node.js
 
 The application platform known as Node.js surpassed one billion downloads and is now officially a part of the three comma club.
