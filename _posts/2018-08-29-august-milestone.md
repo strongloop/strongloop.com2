@@ -9,7 +9,7 @@ categories:
   - LoopBack
 ---
 
-As the last full month of summer, August, comes to an end so does our [August milestone](https://github.com/strongloop/loopback-next/issues/1581). August was a busy month where the general focus was on addressing feedback from early adopters of LoopBack 4 and features considered essential for General Availability (GA) later this year. There were also two security advisories (with fixes) issued for LoopBack 2/3 in August. Lastly, end of August means back to school -- meaning we need to bid farewell to [Kyu Shim (@shimks on GitHub)](https://github.com/shimks) LoopBack maintainer. It's not all farewells as we welcome [Mario Estrada (@marioestradarosa on GitHub)](https://github.com/marioestradarosa) as a LoopBack 4 maintainer.
+As August, the last full month of summer, comes to an end so does our [August milestone](https://github.com/strongloop/loopback-next/issues/1581). This was a busy month in which the general focus was on addressing feedback from early adopters of LoopBack 4 and features considered essential for General Availability (GA) later this year. There were also two security advisories (with fixes) issued for LoopBack 2/3 in August. Lastly, end of August means back to school - meaning we need to bid farewell to LoopBack maintainer [Kyu Shim (@shimks on GitHub)](https://github.com/shimks). It's not all farewells, though - we're happy to welcome [Mario Estrada (@marioestradarosa on GitHub)](https://github.com/marioestradarosa) as a LoopBack 4 maintainer.
 
 Continue reading to learn more about our accomplishments and the growing community of LoopBack 4.
 
@@ -18,6 +18,7 @@ Continue reading to learn more about our accomplishments and the growing communi
 ## August Milestone Goals
 
 ### Relations
+
 `belongsTo` relation is (almost) here! This new relation exposed a fundamental issue with our new relation engine (and circular dependencies between related models using multiple relations). Because of this challenge this work might not finish within August but should be done no later than the first week of September. Once completed, you'll be able to use the relation as follows:
 
 ```ts
@@ -57,9 +58,13 @@ Stay tuned for a blog post dedicated to this new relation once the feature has l
 As the team is working towards making LoopBack 4 ready production use, it's important we test out the framework in a production scenario. A number of initiatives in August are helping ensure we're production ready. 
 
 - We're testing the framework by creating [an e-commerce store](https://github.com/strongloop/loopback-next/issues/1476). In August, we setup this new example repository [(loopback4-example-shopping)](https://github.com/strongloop/loopback4-example-shopping) and added the first component (a user profile componment). This led to a [variety of tweaks](https://github.com/strongloop/loopback-next/pull/1622) and follow up issues to improve the framework.
+
 - We tried deploying our `@loopback/example-todo` example app to [IBM Cloud](https://www.ibm.com/cloud/) to see how much effort it would take. It didn't require a whole lot of effort! You can see the changes necessary to deploy to IBM Cloud [here](https://github.com/strongloop/loopback-next/pull/1574). A full deployment guide will be availble shortly in our documentation.
+
 - In production, performance matters. LoopBack 4 now has a new [`@loopback/benchmarks`](https://github.com/strongloop/loopback-next/tree/master/benchmark) package that we use to benchmark the framework. This package has already helped to identify [an issue](https://github.com/strongloop/loopback-next/issues/1590) causing `POST` requests to be 10x slower than `GET` requests. This is something that will be fixed before GA.
+
 - Full [OpenAPI 3.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md) compliance. LoopBack 4 is powered by OpenAPI but a few missing elements meant we weren't fully compliant with the spec. As per the spec, all path parameters are now required, more options are being added to control the `servers` URL and a `@responses` decorator is in the works (may extend into September) to set the response metadata.
+
 - The new LoopBack 4 [website](http://v4.loopback.io/) has received a new addition to it in the form of the [Getting Started](http://v4.loopback.io/getting-started.html) page. Stay tuned for more pages to come in the refreshed LoopBack 4 style.
 
 ### ServiceMixin and Booter
@@ -89,11 +94,14 @@ A common use case in modern production applications is to rely on a key-value st
 
 ### LoopBack 3
 
-While LoopBack 4 might be the team's focus for the most part, we're still commited to supporting LoopBack 3. In August there were a number of efforts around LoopBack 3. 
+While LoopBack 4 might be the team's focus for the most part, we're still committed to supporting LoopBack 3. In August there were a number of efforts around LoopBack 3. 
 
 - Migrate [`loopback-generator`](https://github.com/strongloop/generator-loopback/issues/355) from Yeoman version 0.24 to 3.x. That's right, 3 major versions! This has been a ginormous effort but will allow for better maintainability once LoopBack 3 enters LTS (when LoopBack 4 is released).
+
 - We've fixed our DB2 and DashDB test instances so we can validate changes before they are merged.
+
 - The following connectors are now offered under the more permissive MIT license:
+
   - [loopback-connector-mssql](https://github.com/strongloop/loopback-connector-mssql)
   - [loopback-connector-oracle](https://github.com/strongloop/loopback-connector-oracle)
   - [loopback-connector-soap](https://github.com/strongloop/loopback-connector-soap)
