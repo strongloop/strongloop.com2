@@ -1,6 +1,6 @@
 ---
 title: Turning OpenAPI Specifications into Action with LoopBack 4
-date: 2018-09-28T12:20:33+00:00
+date: 2018-09-12
 author: Raymond Feng
 permalink: /strongblog/loopback4-openapi-cli/
 categories:
@@ -9,7 +9,7 @@ categories:
   - News
 ---
 
-LoopBack - both the team and the framework - has been a longtime advocate and adopter of open API standards. For 3.x versions of teh OpenAPI Specification, the framework uses [Swagger 2.0] to power the API explorer since its first release. The CLI also provides [lb swagger] command to automatically generate LoopBack artifacts from Swagger documents as the starting point of fully functional API implementations.
+LoopBack - both the team and the framework - has been a longtime advocate and adopter of open API standards. For 3.x versions of the OpenAPI Specification, the framework uses [Swagger 2.0] to power the API explorer since its first release. The CLI also provides [lb swagger] command to automatically generate LoopBack artifacts from Swagger documents as the starting point of fully functional API implementations.
 
 The [OpenAPI Specification 3.0.0] was released in July 2017. We have [embraced it for our API creation experience] with LoopBack 4 so that developers can simply create APIs as TypeScript classes and methods and decorate them with OpenAPI 3.0.x compatible metadata. It's so called code-first or bottom-up approach. What about starting with an API design specification? API consumers and providers often want to discuss, understand, and agree on the APIs as a contract first, before building code for either the client or server. To support that, we’re excited to announce the availability of the `lb4 openapi` command which can generate LoopBack 4 controllers and models that expose APIs conforming to the OpenAPI specification.
 
