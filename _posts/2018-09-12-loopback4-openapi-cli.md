@@ -428,7 +428,7 @@ How about adding your implementation? Let's update `openapi-demo/src/controllers
 
 Now you can restart the server and try again.
 
-<img class="aligncenter" src="../blog-assets/2018/08/openapi-cli-uspto.png" alt="API Explorer" style="width: 600px; margin:auto;"/>
+<img class="aligncenter" src="{{site.url}}blog-assets/2018/08/openapi-cli-uspto.png" alt="API Explorer" style="width: 600px; margin:auto;"/>
 
 ## Supported OpenAPI Versions
 
