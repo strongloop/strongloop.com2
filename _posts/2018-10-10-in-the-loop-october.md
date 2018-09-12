@@ -19,6 +19,19 @@ Steve Drucker recently announced that they are leveraging the OpenAPI Specificat
 
 [READ MORE >>>](https://druckit.wordpress.com/2018/09/12/defining-roles-based-security-acls-and-supporting-multitenancy-in-the-node-js-strongloop-loopback-framework/)
 
+### Node.js vs PHP: Which is the Best Server Side Environment
+
+Shrikant Srivastava looks at how the two environments stack up against each other.
+
+[READ MORE >>>](https://appinventiv.com/blog/node-js-vs-php)
+
+### Big Companies Are Using Node.js For Their Apps, Why Aren't You? 
+
+Akash Singh Chauhan lists A-type companies and leaders of the markets using the Node.js for their money-making apps.
+
+[READ MORE >>>](https://www.mobileappdaily.com/2018/09/8/companies-using-nodejs-applications)
+
+
 
 ## What Next?
 
