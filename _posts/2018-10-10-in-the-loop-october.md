@@ -1,7 +1,7 @@
 ---
 layout: post
 title: In the Loop - October 2018
-date: 2018-09-05
+date: 2018-10-05
 author: Dave Whiteley
 permalink: /strongblog/in-the-loop-october-2018/
 categories:
