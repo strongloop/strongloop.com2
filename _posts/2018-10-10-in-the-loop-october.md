@@ -13,6 +13,13 @@ categories:
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### RESTful API Design - The Basics
+
+In this article, Tamas Piros takes a look at some of the basics of API design, in the context of Node.js and Express.
+
+[READ MORE >>>](https://fullstack-developer.academy/restful-api-design-the-basics/)
+
+
 ### Defining Roles-based Security ACLs and Supporting Multitenancy in the Node.js Strongloop Loopback Framework
 
 Steve Drucker recently announced that they are leveraging the OpenAPI Specification (OAS) for all of its RESTful public APIs.
