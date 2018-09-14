@@ -38,6 +38,12 @@ Akash Singh Chauhan lists A-type companies and leaders of the markets using the 
 
 [READ MORE >>>](https://www.mobileappdaily.com/2018/09/8/companies-using-nodejs-applications)
 
+### NODE.JS FOUNDATION FIELD GUIDE: The dos and don’ts in using Node.js to build APIs
+
+This guide explains how to use Node.js to build APIs, and why and where it is appropriate to do so. Several short case studies are also included to further illustrate real-world use.
+
+[READ MORE >>>](https://foundation.nodejs.org/wp-content/uploads/sites/50/2018/07/NodeJS_FieldGuide_Building_APIs_FINAL717.pdf)
+
 
 
 ## What Next?
