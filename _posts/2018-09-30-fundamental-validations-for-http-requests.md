@@ -5,17 +5,18 @@ date: 2018-09-30
 author: Janny Hou
 permalink: /strongblog/fundamental-validations-for-http-requests/
 categories:
-  - Community
+  - How-To
   - LoopBack
+  - OpenAPI Spec
 ---
 
-A Controller usually expects to get valid data from the HTTP request so it can focus on executing the business logic but there is never a guarantee that the client side sends valid data. For example, endpoint `GET Users/find` expects to get a number from the request query's property `limit`, but the request is sent as `GET Users/find?limit="astring"`, of which `limit` is a string instead of a number. In this case, people would like to see the invalid data being caught before it gets passed into the Controller function. 
+A Controller usually expects to get valid data from the HTTP request so it can focus on executing the business logic. However, there is never a guarantee that the client side sends valid data. For example, endpoint `GET Users/find` expects to get a number from the request query's property `limit`, but the request is sent as `GET Users/find?limit="astring"`, of which `limit` is a string instead of a number. In this case, people would like to see the invalid data being caught before it gets passed into the Controller function. 
 
 Now in [Loopback 4](http://v4.loopback.io/), such validations are automatically handled by the framework, and a machine-readable error object is generated for each request to help people localize the invalid fields along with their details.
 
 <!--more-->
 
-As the first step of building a powerful HTTP request validation system, we have added fundamental validations for the raw data parsed from requests. The validations are embedded as part of the default sequence of the REST server, and are performed according to the endpoint's OpenAPI (OAI) operation specification. The data will be validated before the corresponding controller method gets invoked to make sure the method is executed with valid inputs.
+In this example, we are working with LoopBack 4 and the [OpenAPI Specification](https://www.openapis.org/). As the first step of building a powerful HTTP request validation system, we have added fundamental validations for the raw data parsed from requests. The validations are embedded as part of the default sequence of the REST server, and are performed according to the endpoint's OpenAPI (OAI) operation specification. The data will be validated before the corresponding controller method gets invoked to make sure the method is executed with valid inputs.
 
 The following code snippet defines an endpoint `PUT /todos/{id}` by decorating it with the [REST decorators](https://loopback.io/doc/en/lb4/Decorators.html#route-decorators). This blog will use it as a typical example to explain what validations are performed to the incoming request.
 
@@ -145,7 +146,7 @@ If you're using API first development approach, you can also provide the operati
 
 ## Coming Features
 
-Next, more features will be added to improve the robustness of the validation system. For the parameters in type object, we will support serialization/deserialization of them in [issue#100](https://github.com/strongloop/loopback-next/issues/100). And a content type based validation for the request body will be implemented in [issue#1494](https://github.com/strongloop/loopback-next/issues/1494).
+The LoopBack team will be adding more features to improve the robustness of the validation system. For the parameters in type object, we will support serialization/deserialization of them in [issue#100](https://github.com/strongloop/loopback-next/issues/100). And a content type based validation for the request body will be implemented in [issue#1494](https://github.com/strongloop/loopback-next/issues/1494).
 
 ## Call for Action
 
