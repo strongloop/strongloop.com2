@@ -4,7 +4,7 @@ date: 2018-09-12
 author: Raymond Feng
 permalink: /strongblog/loopback4-openapi-cli/
 categories:
-  - Community
+  - OpenAPI Spec
   - LoopBack
   - News
 ---
