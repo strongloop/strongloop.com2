@@ -75,6 +75,7 @@ author:
   - 'ES2015 ES6'
   - Events
   - Express
+  - GraphQL
   - How-To
   - 'JavaScript Language'
   - LoopBack
