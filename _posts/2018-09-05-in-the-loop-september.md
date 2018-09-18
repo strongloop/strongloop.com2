@@ -7,6 +7,7 @@ permalink: /strongblog/in-the-loop-september/
 categories:
   - Community
   - News
+  - GraphQL
   
 ---
 
