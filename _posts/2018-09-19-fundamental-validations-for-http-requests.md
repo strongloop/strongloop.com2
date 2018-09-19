@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Fundamental Validations for HTTP Requests
-date: 2018-09-30
+title: Fundamental Validations for HTTP Requests with LoopBack 4 and OpenAPI Spec
+date: 2018-09-19
 author: Janny Hou
 permalink: /strongblog/fundamental-validations-for-http-requests/
 categories:
