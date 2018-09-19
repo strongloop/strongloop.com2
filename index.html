@@ -9,7 +9,7 @@ permalink: /
     <!-- <h1 class="c-heading -h2 x=center"></h1> -->
     <div class="c-grid">
       <div class="_col -col-1-1">
-        <p>StrongLoop began in 2013 offering an open-source enterprise version of Node.js. Acquired by IBM in 2015, the StrongLoop team continues to build LoopBack, the open-source Node.js API Framework. IBM continues to contribute and support the StrongLoop community through these Open-source solutions for the API developer community:</p>
+        <p>StrongLoop began in 2013 offering an open-source enterprise version of Node.js. Acquired by IBM in 2015, the StrongLoop team continues to build LoopBack, the open-source Node.js API Framework. IBM continues to contribute and support the StrongLoop community through these projects that provide key technologies for the API economy:</p>
       </div>
 
     {% include tile.html
@@ -21,25 +21,6 @@ permalink: /
       link ="mg" image="MicroGatewayArchitecture.png" image-width="200px"
       blurb="Developer-focused, extensible Node.js gateway framework." %}
 
-  </div>
-  </div>
-  <!-- <div style="height: 50px;"> -->
-</section>
-
-<section class="c-section x-white">
-<div class="c-container -padded">
-
- <!-- <h1 class="c-heading -h2 x=center"></h1> -->
-    <div class="c-grid">
-      <div class="_col -col-1-1">
-        <p>We also support these key technologies for API development:</p>
-      </div>
-
-    {% include tile.html
-      link ="nodejs" image="nodejs-new-pantone-black.png" image-width="200px"
-      blurb="Node is for getting projects done quickly, to leverage the broad knowledge of JavaScript and to 
-scale to the massive concurrency needed for mobile, IoT and next-generation web APIs." %}
-
     {% include tile.html
       link ="openapi"
       image="OpenAPI_Pantone.png" image-width="200px"
@@ -49,6 +30,7 @@ scale to the massive concurrency needed for mobile, IoT and next-generation web 
   </div>
   <!-- <div style="height: 50px;"> -->
 </section>
+
 
 {% assign featured_post = site.posts | where_exp:"post", "post.date <= site.time" %}
 {% assign featured_post = featured_post | where: "featured","true" %}
@@ -140,3 +122,4 @@ scale to the massive concurrency needed for mobile, IoT and next-generation web 
    </div>
   </div>
 </section>
+   
