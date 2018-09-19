@@ -25,6 +25,28 @@ permalink: /test2/
   <!-- <div style="height: 50px;"> -->
 </section>
 
+<section class="c-section x-white">
+  <div class="c-container -padded">
+
+    <!-- <h1 class="c-heading -h2 x=center"></h1> -->
+    <div class="c-grid">
+      <div class="_col -col-1-2">
+        <p>We also support these Open Source technologies for API development:</p>
+      </div>
+
+    {% include tile.html
+      link ="loopback"
+      image="loopback-logo-sm.png" image-width="100px"
+      blurb="Highly-extensible, open-source Node.js framework ideal for APIs." %}
+
+    {% include tile.html
+      link ="mg" image="MicroGatewayArchitecture.png" image-width="200px"
+      blurb="Developer-focused, extensible Node.js gateway framework." %}
+       </div>
+  </div>
+  <!-- <div style="height: 50px;"> -->
+</section>
+
 
 {% assign featured_post = site.posts | where_exp:"post", "post.date <= site.time" %}
 {% assign featured_post = featured_post | where: "featured","true" %}
