@@ -22,10 +22,15 @@ redirect_from:
 {% include section.html content='
 <div class="c-grid">
   <div class="_col -col-4-5">
-    <p>These projects provide key technologies for the API economy:</p>
+    <p>IBM builds and maintains these Open-source solutions for the API developer community:   
+      </p>
     <ul>
       <li><a href="#loopback">LoopBack</a> - Implement your REST API.</li>
-      <li><a href="#mg">API Microgateway</a> - Protect, enrich, and control access to API services.</li>
+      <li><a href="#mg">API Microgateway</a> - Protect, enrich, and control access to API services.</li>  </ul>
+      
+  <p>We also support these key technologies for API development:</p>
+    <ul>    
+       <li><a href="#nodejs">Node.js</a> - Node is for getting projects done quickly, to leverage the broad knowledge of JavaScript and to scale to the massive concurrency needed for mobile, IoT and next-generation web APIs.</li>
       <li><a href="#openapi">Open API</a> - Open standard for defining and describing your API.</li>
     </ul>
   </div>
@@ -41,5 +46,9 @@ redirect_from:
 </section>
 
 <section class="c-section x-lightgrey">
+  {% include_relative projects/nodejs.html %}
+</section>
+
+<section class="c-section x-white">
   {% include_relative projects/openapi.html %}
 </section>

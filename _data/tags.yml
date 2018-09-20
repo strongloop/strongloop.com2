@@ -7,10 +7,12 @@ allowed-tags:
   - ES2015 ES6
   - Events
   - Express
+  - GraphQL
   - How-To
   - JavaScript Language
   - LoopBack
   - Mobile
+  - News
   - Node core
   - Node DevOps
   - OpenAPI Spec

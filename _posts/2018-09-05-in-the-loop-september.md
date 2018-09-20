@@ -7,7 +7,6 @@ permalink: /strongblog/in-the-loop-september/
 categories:
   - Community
   - News
-  
 ---
 
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
