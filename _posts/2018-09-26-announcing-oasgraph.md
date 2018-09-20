@@ -1,7 +1,6 @@
 ---
-layout: post
-title: Announcing OASGraph, a GraphQL wrapper for REST APIs
-date: 2018-09-26T08:00:00+00:00
+title: Announcing OASGraph - a GraphQL Wrapper for REST APIs
+date: 2018-09-26
 author: 
   - Jim A. Laredo 
   - Erik Wittern
@@ -11,6 +10,7 @@ categories:
   - OpenAPI Spec
   - GraphQL
 ---
+
 IBM Research and the Loopback team are happy to announce the release of _OASGraph_ ([_git_](https://github.com/strongloop/oasgraph),[_npm_](https://www.npmjs.com/package/oasgraph)) to the Open Source community. OASGraph is a software package, written in TypeScript, that creates a fully functional GraphQL wrapper for existing REST(-like) APIs, described by an Open API Specification (OAS) or Swagger.
  
 <!--more-->
@@ -24,3 +24,14 @@ At the same time, many enterprises and the community at large have invested in R
 Although other libraries to wrap REST APIs with GraphQL exist, we are confident that we have advanced the field: OASGraph supports various authentication mechanisms, sanitizes and de-sanitizes data to fulfill GraphQL requirements, and can create deeply nested GraphQL interfaces relying on [links](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#linkObject) as defined in the latest OpenAPI Specification 3. OASGraph is able to perform successfully against every well formed OAS we have tried, as long as the enumeration types don't use GraphQL reserved words. Using the [API Gurus directory](https://apis.guru/openapi-directory), working with a body of 959 APIs, we found 260 well formed OAS which were all successfully processed. OASGraph can also wrap an additional 670 APIs by disregarding those endpoints that were not fully defined in the OAS, as they were missing response fields, had multiple responses, or invalid schema types. In these cases, where the created GraphQL wrapper cannot be 100% complete, OASGraph creates a "report", informing developers on performed workarounds and made assumptions. For the remaining few APIs, whose OAS is either ill-formatted, missing a reference document, or had hard conflicts with the GraphQL reserved words, OASGraph once again informs the developer, allowing him/her to address those issues by revising the OAS.
 
 We are excited to release this technology to Open Source and look forward to hearing about its use. We welcome the reporting of any issues and contributions to the code base, of course. To learn more, follow a tutorial, or see a video demonstration of OASGraph visit us at [http://v4.loopback.io/oasgraph.html](http://v4.loopback.io/oasgraph.html).
+
+## Call for Action
+
+LoopBack's future success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
+
+- [Open a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue)
+- [Casting your vote for extensions](https://github.com/strongloop/loopback-next/issues/512)
+- [Reporting issues](https://github.com/strongloop/loopback-next/issues)
+- [Building more extensions](https://github.com/strongloop/loopback-next/issues/647)
+- [Helping each other in the community](https://groups.google.com/forum/#!forum/loopbackjs)
+
