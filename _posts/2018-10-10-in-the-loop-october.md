@@ -44,7 +44,11 @@ This guide explains how to use Node.js to build APIs, and why and where it is ap
 
 [READ MORE >>>](https://foundation.nodejs.org/wp-content/uploads/sites/50/2018/07/NodeJS_FieldGuide_Building_APIs_FINAL717.pdf)
 
+### Video: How to Create an API in 20 Minutes with LoopBack
 
+in this Youtube video, Faisal Noor demonstrates how to build an API using LoopBack. 
+
+[WATCH VIDEO >>>](https://www.youtube.com/watch?v=43fXZU77n8Q&feature=youtu.be)
 
 ## What Next?
 
