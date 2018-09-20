@@ -11,13 +11,13 @@ categories:
   - GraphQL
 ---
 
-IBM Research and the Loopback team are happy to announce the release of _OASGraph_ ([_git_](https://github.com/strongloop/oasgraph),[_npm_](https://www.npmjs.com/package/oasgraph)) to the Open Source community. OASGraph is a software package, written in TypeScript, that creates a fully functional GraphQL wrapper for existing REST(-like) APIs, described by an Open API Specification (OAS) or Swagger.
+IBM Research and the LoopBack team are happy to announce the release of _OASGraph_ ([_git_](https://github.com/strongloop/oasgraph),[_npm_](https://www.npmjs.com/package/oasgraph)) to the Open Source community. OASGraph is a software package, written in TypeScript, that creates a fully functional GraphQL wrapper for existing REST(-like) APIs, described by an Open API Specification (OAS) or Swagger.
  
 <!--more-->
 
-Interest in GraphQL has skyrocketed in the last few years. Just in the last year alone, the number of downloads from npm of the core GraphQL library, [GraphQL.js](https://www.npmjs.com/package/graphql),  has gone up more than 300% to more than 700,000 times per week.  
+Interest in GraphQL has skyrocketed in the last few years. Just in the last year alone, the number of downloads from npm of the core GraphQL library, [GraphQL.js](https://www.npmjs.com/package/graphql), has gone up more than 300% to more than 700,000 times per week.  
 
-At IBM, we have been supporting our customers' journeys into the API Economy through offerings like API Connect and frameworks like Loopback. One challenge of doing so is keeping abreast of new API designs that help our community members as well as their clients to build better, more efficient applications. We see GraphQL as one such tool, as it provides a more data-centric approach to building APIs with a great developer experience, facilitating for example the retrieval of multiple interrelated resources in a single "query".
+At IBM, we have been supporting our customers' journeys into the API Economy through offerings like API Connect and frameworks like [LoopBack](https://loopback.io/). One challenge of doing so is keeping abreast of new API designs that help our community members as well as their clients to build better, more efficient applications. We see GraphQL as one such tool, as it provides a more data-centric approach to building APIs with a great developer experience, facilitating for example the retrieval of multiple interrelated resources in a single "query".
 
 At the same time, many enterprises and the community at large have invested in REST APIs and have a portfolio of APIs, which manage and provide access to many resources stored in variety of services, old and new alike. We believe that REST APIs will continue to coexist with GraphQL APIs, and in many cases act as backend to new GraphQL APIs. To that effect we created OASGraph. With only a REST API Specification, be it in OAS or Swagger format, a GraphQL schema is automatically derived. It maintains a mapping to the REST API request and response models, and creates "resolvers" that know how to assemble and invoke the actual REST APIs and later populate the GraphQL responses.
 
