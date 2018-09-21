@@ -44,6 +44,14 @@ This guide explains how to use Node.js to build APIs, and why and where it is ap
 
 [READ MORE >>>](https://foundation.nodejs.org/wp-content/uploads/sites/50/2018/07/NodeJS_FieldGuide_Building_APIs_FINAL717.pdf)
 
+### The Definitive Node.js Handbook
+
+Developer and freeCodeCamp camper Flavio Copes has published his entire Node.js Handbook online for free - both on freeCodeCamp's Medium publication and as a .pdf file.
+
+[READ MORE >>>](https://www.freecodecamp.org/news/quincylarson/node-js-handbook--rSaL0lP34)
+
+
+
 ### Video: How to Create an API in 20 Minutes with LoopBack
 
 in this Youtube video, Faisal Noor demonstrates how to build an API using LoopBack. 
