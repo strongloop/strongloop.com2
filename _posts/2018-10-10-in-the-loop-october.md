@@ -50,13 +50,17 @@ Developer and freeCodeCamp camper Flavio Copes has published his entire Node.js 
 
 [READ MORE >>>](https://www.freecodecamp.org/news/quincylarson/node-js-handbook--rSaL0lP34)
 
-
-
 ### Video: How to Create an API in 20 Minutes with LoopBack
 
-in this Youtube video, Faisal Noor demonstrates how to build an API using LoopBack. 
+In this Youtube video, Faisal Noor demonstrates how to build an API using LoopBack. 
 
 [WATCH VIDEO >>>](https://www.youtube.com/watch?v=43fXZU77n8Q&feature=youtu.be)
+
+### Video: React, LoopBack & MongoDB
+
+Lintang Wisesa presents a simple full stack web development project using React (Front-end), Loopback (Back-end) & MongoDB (Database). Just a simple flow: on React, user can post & get the data from MongoDB. 
+
+[WATCH VIDEO >>>](https://www.youtube.com/watch?v=7EZfWC9WsGI)
 
 ## What Next?
 
