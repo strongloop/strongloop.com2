@@ -1,6 +1,6 @@
 ---
 title: Announcing OASGraph - a GraphQL Wrapper for REST APIs
-date: 2018-09-26
+date: 2018-09-24
 author: 
   - Jim A. Laredo 
   - Erik Wittern
