@@ -10,7 +10,7 @@ categories:
   - Node core
   - Node DevOps 
 ---
-[Node+JS Interactive North America](https://events.linuxfoundation.org/events/node-js-interactive-2018/) is coming to vancouver, BC, Canada from October 10-12, 2018. The StrongLoop team and IBM will be there, and IBM is proud to be a Platinum Sponsor.
+[Node+JS Interactive North America](https://events.linuxfoundation.org/events/node-js-interactive-2018/) is coming to Vancouver, BC, Canada from October 10-12, 2018. The StrongLoop team and IBM will be there, and IBM is proud to be a Platinum Sponsor.
 
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2018/09/node+js-interactive.png" alt="Node+JS Interactive 2018" style="width: 400px"/>
@@ -23,8 +23,11 @@ We invite you to join us at this event. It is a three-day technical deep dive in
 
 Speakers from the IBM team include:
 
-- Joe Sepi, Developer Advocate, IBM - ["My 20-Year Journey as a JS Engineer, Front to Back"](https://nina17.sched.com/event/AtiN)
+- Nick O’Leary, Node-RED Project Lead, IBM Watson IoT Developer Advocate, IBM - [“Wiring the Internet of Things with Node-RED”](https://events.linuxfoundation.org/events/node-js-interactive-2018/)
 
+- Teri Chadbourne, Developer Advocate, IBM - [“Offline First: Making Your App Awesome When the Network Isn’t”](https://events.linuxfoundation.org/events/node-js-interactive-2018/)
+
+- Gireesh Punathil, IBM India - [“Optimize Your JSON Payload Efficiency x10 Times”](https://jsi2018.sched.com/event/F75x)
 
 You can register for the event [here](http://events.linuxfoundation.org/events/node-interactive/attend/registration)!
 
