@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IBM and StrongLoop Are Going to Node Interactive North America 2017
+title: IBM and StrongLoop Are Going to Node+JS Interactive North America 2018
 date: 2018-09-27
 author: Dave Whiteley
 permalink: /strongblog/ibm-and-strongloop-are-going-to-node-js-interactive-north-america-2018
