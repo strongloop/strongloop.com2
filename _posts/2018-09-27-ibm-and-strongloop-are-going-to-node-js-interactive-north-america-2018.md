@@ -10,7 +10,7 @@ categories:
   - Node core
   - Node DevOps 
 ---
-[Node+JS Interactive North America](https://events.linuxfoundation.org/events/node-js-interactive-2018/) is coming to Vancouver, BC, Canada from October 10-12, 2018. The StrongLoop team and IBM will be there, and IBM is proud to be a Platinum Sponsor.
+[Node+JS Interactive North America](https://events.linuxfoundation.org/events/node-js-interactive-2018/) is coming to Vancouver, BC, Canada from October 10-12, 2018. The StrongLoop team and IBM will be there, and IBM is proud to be a sponsor.
 
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2018/09/node+js-interactive.png" alt="Node+JS Interactive 2018" style="width: 400px"/>
