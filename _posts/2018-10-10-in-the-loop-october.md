@@ -62,9 +62,18 @@ Lintang Wisesa presents a simple full stack web development project using React 
 
 [WATCH VIDEO >>>](https://www.youtube.com/watch?v=7EZfWC9WsGI)
 
+### Video: OASGraph and Loopback 4 Integration
+
+Mario Estrada provides an unofficial guide to integrate the OASGraph library inside a LoopBack 4 application. This extends it to speak GraphQL without touching any business logic in the Controllers, Models, Repositories or Datasources. 
+
+[WATCH VIDEO >>>](https://www.youtube.com/watch?v=s2hScucNmaA)
+
+
+
+
 ## What Next?
 
-* Learn about [three projects](https://strongloop.com/projects/) that provide key technologies for the API economy: LoopBack; API Microgateway, and; OpenAPI Spec. 
+* Learn about [open source projects](https://strongloop.com/projects/) that provide key technologies for the API economy: LoopBack; API Microgateway, and; OpenAPI Spec. 
 
 * Check out [events](https://strongloop.com/events/) that the StrongLoop and IBM team will be attending!
 
