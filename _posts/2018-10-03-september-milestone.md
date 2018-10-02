@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 September 2018 Milestone Update
-date: 2018-10-02
+date: 2018-10-03
 author: Janny Hou
 permalink: /strongblog/september-2018-milestone/
 categories:
