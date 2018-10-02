@@ -97,11 +97,11 @@ We've added the support for built-in LoopBack type `Date`, now you can define a 
 
 #### Redirection
 
-We fixed the explorer redirection problem when app is behind a proxy, now it skips setting the port when host is set and the port is the default for http and https. The explorer of the IBM Cloud app now redirects to the correct url https://loopback.io/api-explorer/?url=https://lb4app.eu-gb.bluemix.net/openapi.json
+We fixed the explorer redirection problem when app is behind a proxy, now it skips setting the port when host is set and the port is the default for http and https. The explorer of the IBM Cloud app now redirects to the [correct url]( https://loopback.io/api-explorer/?url=https://lb4app.eu-gb.bluemix.net/openapi.json)
 
 #### New Explorer Server
 
-We switched from swagger UI to our LoopBack server that hosts the API explore: http://explorer.loopback.io, which also has a fresh UI design. Take the app running locally as an example, now you can open the explorer on the url http://localhost:3000/explorer, same as loopback 3.
+We switched from swagger UI to our LoopBack server that hosts the API explore: [http://explorer.loopback.io](http://explorer.loopback.io), which also has a fresh UI design. Take the app running locally as an example, now you can open the explorer on the url [http://localhost:3000/explorer](http://localhost:3000/explore), same as LoopBack 3.
 
 Also several options are allowed for a more flexible configuration of the explorer. Check [configure the api explorer](https://loopback.io/doc/en/lb4/Server.html#configure-the-api-explorer) and [customize how openapi spec is served](https://loopback.io/doc/en/lb4/Server.html#customize-how-openapi-spec-is-served) to learn more.
 
