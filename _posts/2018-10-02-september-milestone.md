@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 September 2018 Milestone Update
-date: 2018-10-03
+date: 2018-10-02
 author: Janny Hou
 permalink: /strongblog/september-2018-milestone/
 categories:
@@ -9,7 +9,7 @@ categories:
   - LoopBack
 ---
 
-General Availability (GA) is approaching! During the last full month before LoopBack 4 GA release, the team focused on finishing the remaining GA stories and fixing known issues discovered internally and from the community to improve the framework's stability and extensibility. It's also a time to prepare and plan for our post GA era. Read more to know the progress of each functional area.
+General Availability (GA) is approaching! During the last full month before [LoopBack 4](http://v4.loopback.io/) GA release, the team focused on finishing the remaining GA stories and fixing known issues discovered internally and from the community to improve the framework's stability and extensibility. It's also a time to prepare and plan for our post-GA era. Read more to know the progress of each functional area.
 
 <!--more-->
 
@@ -17,9 +17,9 @@ General Availability (GA) is approaching! During the last full month before Loop
 
 ### CLI
 
-#### Repository And Service Generator
+#### Repository and Service Generator
 
-First I would like to say many thanks to our community contributor [Mario Estrada](https://github.com/marioestradarosa), who implemented the repository generator (and the service generator too)! Now running `lb4 repository`, you can create a repository that encapsulates a model and a datasource being selected by answering prompts or being provided in the CLI options(the generator validates the existence for you). We support two repository types: `KV` and `CRUD`. The repository type is inferred from the selected datasource and id property name is inferred from from the selected model. Check documentation [Repository Generator](https://loopback.io/doc/en/lb4/Repository-generator.html) to learn more details about it.
+First I would like to say many thanks to our community contributor [Mario Estrada](https://github.com/marioestradarosa), who implemented the repository generator (and the service generator too)! By running `lb4 repository`, you can create a repository that encapsulates a model and a datasource being selected by answering prompts or being provided in the CLI options(the generator validates the existence for you). We support two repository types: `KV` and `CRUD`. The repository type is inferred from the selected datasource and id property name is inferred from from the selected model. Check documentation [Repository Generator](https://loopback.io/doc/en/lb4/Repository-generator.html) to learn more details about it.
 
 Mario also added the generator for creating services(REST/GRPC/SOAP) with existing datasources. A service supports a config file. You can read documentation [Service Generator](https://loopback.io/doc/en/lb4/Service-generator.html) to know more about the prompts and various ways to provide the config file.
 
@@ -29,11 +29,11 @@ A community module `update-notifier` is added to remind users of newer CLI versi
 
 ### IBM Cloud
 
-A deployment guide is added in our documentation to show how to deploy a LoopBack 4 application to IBM Cloud. The steps include scaffolding the app by cli, configuring local setup, enabling retrieving credentials from cloud environment, testing on local and deploying the app. You can check [Deploying to IBM Cloud](https://loopback.io/doc/en/lb4/Deploying-to-IBM-Cloud.html) for the details.
+We've added a deployment guide to our documentation to show how to deploy a LoopBack 4 application to IBM Cloud. The steps include scaffolding the app by cli, configuring local setup, enabling retrieving credentials from cloud environment, testing on local and deploying the app. You can check [Deploying to IBM Cloud](https://loopback.io/doc/en/lb4/Deploying-to-IBM-Cloud.html) for the details.
 
 ### Validation and Coercion
 
-After supporting the coercion/validation for request body and primitive type parameters, now we are also able to coerce/validate the object parameter described with a complex OpenAPI schema.
+After supporting the coercion/validation for request body and primitive type parameters, we are now also able to coerce/validate the object parameter described with a complex OpenAPI schema.
 
 We allow an API defined in controller to accept parameters of complex types as objects and have the runtime to convert string inputs to such complex types. A new decorator `@param.query.object()` is introduced to describe a parameter as an object and optionally provide the schema for the accepted values. You can check the [API documentation](https://github.com/strongloop/loopback-next/blob/master/packages/openapi-v3/src/decorators/parameter.decorator.ts#L208-L215) for the decorator's usage.
 
@@ -121,7 +121,7 @@ method `findById` throws a 404 code and the rest ones (`replaceById`, `updateByI
 
 #### Write HTTP Response
 
-Previously the returned HTTP response is serialized on the REST layer, not flexible enough for users to customize properties like status code, body and content type. Now we allow bypassing http response writing and custom response properties in the controller functions. You can override the default behaviour like returning 201 instead of 200 for POST methods, or like changing the content type from `text/plain` to `html`.
+Previously the returned HTTP response was serialized on the REST layer, which is not flexible enough for users to customize properties like status code, body and content type. Now we allow bypassing http response writing and custom response properties in the controller functions. You can override the default behaviour like returning 201 instead of 200 for POST methods, or like changing the content type from `text/plain` to `html`.
 
 ### TestLab
 
