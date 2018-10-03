@@ -12,15 +12,18 @@ categories:
   - LoopBack
 ---
 
-We've come a long way since the first Developer Preview release of LoopBack 4 was out last November. We are pleased to announce the GA release of LoopBack is now available! As some of our users have done it already, you can now build a LoopBack 4 application that is ready for production. Users can now also [expose GraphQL APIs](http://v4.loopback.io/oasgraph.html) as well as REST APIs in the same LoopBack application.
+We've come a long way since the first Developer Preview release of LoopBack 4 was out last November. LoopBack 4 continues to be the Node.js API creation framework that empowers developers to create APIs quickly and interact with backend resources. With better extensibility and flexibility, this latest version is simpler to use and easier to extend. 
+
+We are pleased to announce the GA release of LoopBack is now available! As some of our users have done it already, you can now build a LoopBack 4 application that is ready for production. Users can now also [expose GraphQL APIs](http://v4.loopback.io/oasgraph.html) as well as REST APIs in the same LoopBack application.
 
 In this release, We focus on the following epics:
-- Model Relations
-- Integration with REST / SOAP services
-- Validation and Coercion
-- Deployment to IBM Cloud
-- Performance Benchmarking and Enhancement
-- KeyValue Repository
+- [Real-life eCommerce Application](#real-life-ecommerce-application)
+- [Model Relations](#model-relations)
+- [Integration with REST / SOAP services](#integration-with-rest--soap-services)
+- [Validation and Coercion](#validation-and-coercion)
+- [Deployment to IBM Cloud](#deployment-to-ibm-cloud)
+- [Performance Benchmarking and Enhancement](#performance-benchmarking-and-enhancement)
+- [KeyValue Repository](#keyvalue-repository)
 
 Let’s take a closer look at each epic!
 
@@ -60,7 +63,7 @@ Now that LoopBack 4 is the current version, LoopBack 3 becomes the active LTS re
 
 Framework | Status | Published | EOL 
 -- | -- | -- | -- 
-LoopBack 4 | Current | Oct 2018 | Apr 2021<br/>_(minimum)_
+LoopBack 4 | Current | Oct 2018 | Apr 2021 _(minimum)_
 Loopback 3 | Active LTS | Dec 2016 | Dec 2019 
 Loopback 2 | Maintenance LTS | Jul 2014 | Apr 2019 
 
