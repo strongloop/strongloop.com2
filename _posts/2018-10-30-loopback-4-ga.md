@@ -14,9 +14,13 @@ categories:
 
 We've come a long way since the first Developer Preview release of LoopBack 4 was out last November. LoopBack 4 continues to be the Node.js API creation framework that empowers developers to create APIs quickly and interact with backend resources. With better extensibility and flexibility, this latest version is simpler to use and easier to extend. 
 
-We are pleased to announce the GA release of LoopBack is now available! As some of our users have done it already, you can now build a LoopBack 4 application that is ready for production. Users can now also [expose GraphQL APIs](http://v4.loopback.io/oasgraph.html) as well as REST APIs in the same LoopBack application.
+We are pleased to announce that LoopBack 4 has matured into GA (general availability) and we consider the framework ready for production use. Some of our users have already built LoopBack 4 applications and now you can do the same too.
 
-In this release, We focus on the following epics:
+In addition to our new version LoopBack 4, we would like to point your attention to our other recently announced project [oasgraph](http://v4.loopback.io/oasgraph.html) which makes it very easy to add GraphQL API to your application's REST API.
+
+<!--more-->
+
+In this release, we focus on the following epics:
 - [Real-life eCommerce Application](#real-life-ecommerce-application)
 - [Model Relations](#model-relations)
 - [Integration with REST / SOAP services](#integration-with-rest--soap-services)
@@ -27,13 +31,11 @@ In this release, We focus on the following epics:
 
 Let’s take a closer look at each epic!
 
-<!--more-->
-
 ### Real-life eCommerce Application
 In this release, we have created an [eCommerce application](https://github.com/strongloop/loopback4-example-shopping) to help us identify gaps when creating a real-world application. So far, the eCommerce store application contains the following components:
 - **user profile**, where data is stored in a database
 - **shopping cart**, where the data is stored in a distributed in-memory cache, e.g. Redis
-- **product recommendation**, which fetches from a SOAP/REST service connected to AI
+- **product recommendation**, which fetches from a SOAP/REST service
 - **order history**, which ties to the user profile and also stored in a database
 
 ### Model Relations
@@ -43,7 +45,7 @@ To add on the existing relation `hasMany`, we have added `belongsTo` in this rel
 Previously, we added basic support for integrating with 3rd party services, e.g. SOAP and REST services. In this release, we've built on top of this foundation to improve developer experience. It includes adding sugar API for registering services and automated registration via boot. We also introduced [`lb4 service`](https://loopback.io/doc/en/lb4/Service-generator.html) command to create a Service class for a selected datasource.
 
 ### Validation and Coercion
-At the HTTP layer, we offered validation and coercion for request body and parameters. It is also applicable to object parameters with a complete OpenAPI schema, as explained in our recent [blog post](https://strongloop.com/strongblog/fundamental-validations-for-http-requests/).
+At the HTTP layer, we offered validation and coercion for request body and parameters. It is also applicable to object parameters with a complex OpenAPI schema, as explained in our recent [blog post](https://strongloop.com/strongblog/fundamental-validations-for-http-requests/).
 
 Check out the [documentation](https://loopback.io/doc/en/lb4/Parsing-requests.html) for more details. 
 
@@ -69,7 +71,7 @@ Loopback 2 | Maintenance LTS | Jul 2014 | Apr 2019
 
 Check out our [LTS policy](https://loopback.io/doc/en/contrib/Long-term-support.html).
 
-All LoopBack 3 related packages, from [strong-remoting](https://github.com/strongloop/strong-remoting) and [loopback-boot](https://github.com/strongloop/loopback-boot) to [loopback-sdk-angular](https://github.com/strongloop/loopback-sdk-angular)  are entering Active LTS mode too, see [issue #1744](https://github.com/strongloop/loopback-next/issues/1744) for the full list of affected packages. Please note that there will be no Current release line for these legacy packages and therefore no new features will be added (or accepted).
+All LoopBack 3 related packages, from [strong-remoting](https://github.com/strongloop/strong-remoting) and [loopback-boot](https://github.com/strongloop/loopback-boot) to [loopback-sdk-angular](https://github.com/strongloop/loopback-sdk-angular) are entering Active LTS mode too, see [issue #1744](https://github.com/strongloop/loopback-next/issues/1744) for the full list of affected packages. Please note that there will be no Current release line for these legacy packages and therefore no new features will be added (or accepted).
  
 The package [loopback-datasource-juggler](https://github.com/strongloop/loopback-datasource-juggler) is used by LoopBack 4 and has the following release lines going forward:
 - A newly released version line 4.x is used by LoopBack 4.0 and considered as Current.
@@ -80,7 +82,7 @@ LoopBack 4 is fully compatible with existing connectors for LoopBack 3, there ar
 
 ## What's Next?
 
-Going forward, we'll maintain our keen focus on helping our early adopters to use the framework and to encourage contributions from the community. If you find anything we need to enhance or fix, don't shy away from letting us know through [opening GitHub issues](https://github.com/strongloop/loopback-next/issues). Better yet, submit a pull request and we will help when necessary. 
+Going forward, we'll maintain our keen focus on helping our early adopters to use the framework and to encourage contributions from the community. If you find anything we need to enhance or fix, don't shy away from letting us know through [opening GitHub issues](https://github.com/strongloop/loopback-next/issues). Better yet, submit a pull request and we will help when necessary.
 
 In addition, we will continue to use the scenario-driven approach to drive the requirements through the [e-commerce LoopBack application](https://github.com/strongloop/loopback4-example-shopping). Stay tuned for our progress in our monthly milestone blog posts.
 
