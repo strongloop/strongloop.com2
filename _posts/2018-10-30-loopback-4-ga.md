@@ -69,16 +69,9 @@ Loopback 2 | Maintenance LTS | Jul 2014 | Apr 2019
 
 Check out our [LTS policy](https://loopback.io/doc/en/contrib/Long-term-support.html).
 
-All LoopBack 3 related packages, 
-from [strong-remoting](https://github.com/strongloop/strong-remoting) 
-and [loopback-boot](https://github.com/strongloop/loopback-boot) to 
-[loopback-sdk-angular](https://github.com/strongloop/loopback-sdk-angular) 
-are entering Active LTS mode too, 
-see [issue #1744](https://github.com/strongloop/loopback-next/issues/1744) 
-for the full list of affected packages. Please note that there will be no Current release line for these legacy packages and therefore no new features will be added (or accepted).
+All LoopBack 3 related packages, from [strong-remoting](https://github.com/strongloop/strong-remoting) and [loopback-boot](https://github.com/strongloop/loopback-boot) to [loopback-sdk-angular](https://github.com/strongloop/loopback-sdk-angular)  are entering Active LTS mode too, see [issue #1744](https://github.com/strongloop/loopback-next/issues/1744) for the full list of affected packages. Please note that there will be no Current release line for these legacy packages and therefore no new features will be added (or accepted).
  
-The package [loopback-datasource-juggler](https://github.com/strongloop/loopback-datasource-juggler)
-is used by LoopBack 4 and has the following release lines going forward:
+The package [loopback-datasource-juggler](https://github.com/strongloop/loopback-datasource-juggler) is used by LoopBack 4 and has the following release lines going forward:
 - A newly released version line 4.x is used by LoopBack 4.0 and considered as Current.
 - 3.x (used by LoopBack 3) is moving to Active LTS.
 - 2.x (used by LoopBack 2) is moving to Maintenance LTS.
