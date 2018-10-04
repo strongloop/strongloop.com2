@@ -1,7 +1,7 @@
 ---
 layout: post
 title: In the Loop - October 2018
-date: 2018-10-05
+date: 2018-10-04
 author: Dave Whiteley
 permalink: /strongblog/in-the-loop-october-2018/
 categories:
@@ -13,6 +13,12 @@ categories:
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### The Node.js Foundation and JS Foundation Announce an Intent to Merge 
+
+Check out this message from the Board of Directors for both the Node.js and JS Foundations and a FAQ around the announcement.
+
+[READ MORE >>>](https://medium.com/@nodejs/the-node-js-foundation-and-js-foundation-announce-an-intent-to-merge-a-message-from-the-boards-8a2e4a5cbd2b)
+
 ### RESTful API Design - The Basics
 
 In this article, Tamas Piros takes a look at some of the basics of API design, in the context of Node.js and Express.
@@ -20,7 +26,7 @@ In this article, Tamas Piros takes a look at some of the basics of API design, i
 [READ MORE >>>](https://fullstack-developer.academy/restful-api-design-the-basics/)
 
 
-### Defining Roles-based Security ACLs and Supporting Multitenancy in the Node.js Strongloop Loopback Framework
+### Defining Roles-based Security ACLs and Supporting Multitenancy in the Node.js LoopBack Framework
 
 Steve Drucker recently announced that they are leveraging the OpenAPI Specification (OAS) for all of its RESTful public APIs.
 
@@ -38,7 +44,7 @@ Akash Singh Chauhan lists A-type companies and leaders of the markets using the 
 
 [READ MORE >>>](https://www.mobileappdaily.com/2018/09/8/companies-using-nodejs-applications)
 
-### NODE.JS FOUNDATION FIELD GUIDE: The dos and don’ts in using Node.js to build APIs
+### NODE.JS FOUNDATION FIELD GUIDE: The Dos and Don’ts in Using Node.js to Build APIs
 
 This guide explains how to use Node.js to build APIs, and why and where it is appropriate to do so. Several short case studies are also included to further illustrate real-world use.
 
@@ -62,18 +68,16 @@ Lintang Wisesa presents a simple full stack web development project using React 
 
 [WATCH VIDEO >>>](https://www.youtube.com/watch?v=7EZfWC9WsGI)
 
-### Video: OASGraph and Loopback 4 Integration
+### Video: OASGraph and LoopBack 4 Integration
 
 Mario Estrada provides an unofficial guide to integrate the OASGraph library inside a LoopBack 4 application. This extends it to speak GraphQL without touching any business logic in the Controllers, Models, Repositories or Datasources. 
 
 [WATCH VIDEO >>>](https://www.youtube.com/watch?v=s2hScucNmaA)
 
 
-
-
 ## What Next?
 
-* Learn about [open source projects](https://strongloop.com/projects/) that provide key technologies for the API economy: LoopBack; API Microgateway, and; OpenAPI Spec. 
+* Learn about [open source projects](https://strongloop.com/projects/) that provide key technologies for the API economy: LoopBack; API Microgateway, and; OASGraph - as well as Node.js and OpenAPI Spec. 
 
 * Check out [events](https://strongloop.com/events/) that the StrongLoop and IBM team will be attending!
 
