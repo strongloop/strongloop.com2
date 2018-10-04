@@ -76,7 +76,7 @@ The package [loopback-datasource-juggler](https://github.com/strongloop/loopback
 - 3.x (used by LoopBack 3) is moving to Active LTS.
 - 2.x (used by LoopBack 2) is moving to Maintenance LTS.
 
-
+LoopBack 4 is fully compatible with existing connectors for LoopBack 3, there are no immediate changes in the LTS version lines of connectors maintained by our team.
 
 ## What's Next?
 
