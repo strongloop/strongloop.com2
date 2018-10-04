@@ -3,7 +3,7 @@ layout: post
 title: In the Loop - October 2018
 date: 2018-12-05
 author: Dave Whiteley
-permalink: /strongblog/in-the-loop-october-2018/
+permalink: /strongblog/in-the-loop-november-2018/
 categories:
   - Community
   - News
