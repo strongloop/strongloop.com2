@@ -14,29 +14,18 @@ categories:
 
 We've come a long way since the first Developer Preview release of LoopBack 4 was out last November. LoopBack 4 continues to be the Node.js API creation framework that empowers developers to create APIs quickly and interact with backend resources. With better extensibility and flexibility, this latest version is simpler to use and easier to extend. 
 
-We are pleased to announce that LoopBack 4 has matured into GA (general availability) and the framework is ready for production use. Some of our users have already built LoopBack 4 applications and now you can do the same too.
+We are excited to announce that LoopBack 4 is GA (general availability) and ready for production use. Some of our users have already built LoopBack 4 applications and now you can do the same too.
 
 In addition to our new version LoopBack 4, we would like to point your attention to our other recently announced project [oasgraph](http://v4.loopback.io/oasgraph.html) which makes it very easy to add GraphQL API to your application's REST API.
 
 <!--more-->
 
-In this release, we focus on the following epics:
-- [Real-life eCommerce Application](#real-life-ecommerce-application)
+In this release, we focus on the following core features:
 - [REST API Creation with Controllers and Decorators](#rest-api-creation-with-controllers-and-decorators)
 - [Data Integration Capabilities](#data-integration-capabilities)
 - [Service Integration Capabilities](#service-integration-capabilities)
 
 Let’s take a closer look at each epic!
-
-### Real-life eCommerce Application
-We have been using scenario-driven approach to help us identify gaps when creating a close-to-real-world application.  As a start, we have created the [todo example](https://loopback.io/doc/en/lb4/todo-tutorial.html) for basic database CRUD operations.  Then [todo-list example](https://loopback.io/doc/en/lb4/todo-list-tutorial.html) and the [SOAP calculator](https://loopback.io/doc/en/lb4/soap-calculator-tutorial.html) were added to demonstrate the model relation and service integration capabitility, respectively. 
-
-We now have an [eCommerce store application](https://github.com/strongloop/loopback4-example-shopping) with the following components:
-- **user profile**, where data is stored in a database
-- **shopping cart**, where the data is stored in a distributed in-memory cache, e.g. Redis
-- **product recommendation**, which fetches from a SOAP/REST service
-- **order history**, which ties to the user profile and also stored in a database
-
 
 ### REST API Creation with Controllers and Decorators
 You now can create REST APIs using bottom-up and top-down approach with greater visibility. 
@@ -63,6 +52,16 @@ We have implemented a few command-line interfaces, namely `lb4 model`, `lb4 repo
 ### Service Integration Capabilities
 We added basic support for integrating with 3rd party services, e.g. SOAP and REST services. We also have gRPC support with the help of the communitys. To build on top of this foundation, we've improved the developer experience by adding sugar API for registering services and automated registration via boot, and introduced [`lb4 service`](https://loopback.io/doc/en/lb4/Service-generator.html) command to create a Service class for a selected datasource.
 FIXME: Raymond, need help on decorators.
+
+
+## Scenario-Driven Approach
+We have been using scenario-driven approach to help us identify gaps when creating a close-to-real-world application.  As a start, we have created the [todo example](https://loopback.io/doc/en/lb4/todo-tutorial.html) for basic database CRUD operations.  Then [todo-list example](https://loopback.io/doc/en/lb4/todo-list-tutorial.html) and the [SOAP calculator](https://loopback.io/doc/en/lb4/soap-calculator-tutorial.html) were added to demonstrate the model relation and service integration capabitility, respectively. 
+
+We now have an [eCommerce store application](https://github.com/strongloop/loopback4-example-shopping) with the following components:
+- **user profile**, where data is stored in a database
+- **shopping cart**, where the data is stored in a distributed in-memory cache, e.g. Redis
+- **product recommendation**, which fetches from a SOAP/REST service
+- **order history**, which ties to the user profile and also stored in a database
 
 
 ## LTS Policy
