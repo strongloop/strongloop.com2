@@ -14,7 +14,7 @@ categories:
 
 We've come a long way since the first Developer Preview release of LoopBack 4 was out last November. LoopBack 4 continues to be the Node.js API creation framework that empowers developers to create APIs quickly and interact with backend resources. With better extensibility and flexibility, this latest version is simpler to use and easier to extend. 
 
-We are pleased to announce that LoopBack 4 has matured into GA (general availability) and we consider the framework ready for production use. Some of our users have already built LoopBack 4 applications and now you can do the same too.
+We are pleased to announce that LoopBack 4 has matured into GA (general availability) and the framework is ready for production use. Some of our users have already built LoopBack 4 applications and now you can do the same too.
 
 In addition to our new version LoopBack 4, we would like to point your attention to our other recently announced project [oasgraph](http://v4.loopback.io/oasgraph.html) which makes it very easy to add GraphQL API to your application's REST API.
 
@@ -26,18 +26,10 @@ In this release, we focus on the following epics:
 - [Data Integration Capabilities](#data-integration-capabilities)
 - [Service Integration Capabilities](#service-integration-capabilities)
 
-
-- [Model Relations](#model-relations)
-- [Integration with REST / SOAP services](#integration-with-rest--soap-services)
-- [Validation and Coercion](#validation-and-coercion)
-- [Deployment to IBM Cloud](#deployment-to-ibm-cloud)
-- [Performance Benchmarking and Enhancement](#performance-benchmarking-and-enhancement)
-- [KeyValue Repository](#keyvalue-repository)
-
 Let’s take a closer look at each epic!
 
 ### Real-life eCommerce Application
-In this release, we have been using scenario-driven approach to help us identify gaps when creating a close-to-real-world application.  As a start, we have created the [todo example](https://loopback.io/doc/en/lb4/todo-tutorial.html) for basic database CRUD operations.  Then [todo-list example](https://loopback.io/doc/en/lb4/todo-list-tutorial.html) and the [SOAP calculator](https://loopback.io/doc/en/lb4/soap-calculator-tutorial.html) were added to demonstrate the model relation and service integration capabitility, respectively. 
+We have been using scenario-driven approach to help us identify gaps when creating a close-to-real-world application.  As a start, we have created the [todo example](https://loopback.io/doc/en/lb4/todo-tutorial.html) for basic database CRUD operations.  Then [todo-list example](https://loopback.io/doc/en/lb4/todo-list-tutorial.html) and the [SOAP calculator](https://loopback.io/doc/en/lb4/soap-calculator-tutorial.html) were added to demonstrate the model relation and service integration capabitility, respectively. 
 
 We now have an [eCommerce store application](https://github.com/strongloop/loopback4-example-shopping) with the following components:
 - **user profile**, where data is stored in a database
