@@ -12,7 +12,7 @@ categories:
   - LoopBack
 ---
 
-We've come a long way since the first Developer Preview release of LoopBack 4 was out last November. LoopBack 4 continues to be the Node.js API creation framework that empowers developers to create APIs quickly and interact with backend resources. With better extensibility and flexibility, this latest version is simpler to use and easier to extend. 
+We've come a long way since the first Developer Preview release of LoopBack 4 was out last November. LoopBack 4 continues to be the Node.js API creation framework that empowers developers to create APIs quickly and interact with backend resources. With the brand new core rewritten in TypeScript, it enables better extensbility and flexiblity, this latest version is simpler to use and easier to extend. 
 
 We are excited to announce that LoopBack 4 is GA (general availability) and ready for production use. Some of our users have already built LoopBack 4 applications and now you can do the same too.
 
@@ -21,27 +21,18 @@ In addition to our new version LoopBack 4, we would like to point your attention
 <!--more-->
 
 In this release, we focus on the following core features:
-- [REST API Creation with Controllers and Decorators](#rest-api-creation-with-controllers-and-decorators)
+- [Bottom-up and Top-down REST API Experience Driven by OpenAPI Spec](#bottom-up-and-top-down-rest-api-experience-driven-by-openapi-spec)
 - [Data Integration Capabilities](#data-integration-capabilities)
 - [Service Integration Capabilities](#service-integration-capabilities)
 
-Let’s take a closer look at each epic!
+Let’s take a closer look!
 
-### REST API Creation with Controllers and Decorators
-You now can create REST APIs using bottom-up and top-down approach with greater visibility. 
+### Bottom-up and Top-down REST API Experience Driven by OpenAPI Spec
+With the bottom-up approach, you can simply create REST APIs as TypeScript classes and methods, and then decorate them with OpenAPI compatible metadata.  Our [command-line interfaces](https://loopback.io/doc/en/lb4/Command-line-interface.html) `lb4 model` and `lb4 controller` help you to make this artifact generation process easy. For the top-down approach, we introduced the `lb4 openapi` command which generates LoopBack 4 controllers and models that expose APIs conforming to the OpenAPI specification. [This blog post](https://strongloop.com/strongblog/loopback4-openapi-cli/) covered more in details.
 
 At the HTTP layer, we offered validation and coercion for request body and parameters. It is also applicable to object parameters with a complex OpenAPI schema, as explained in our recent [blog post](https://strongloop.com/strongblog/fundamental-validations-for-http-requests/). Check out the [documentation](https://loopback.io/doc/en/lb4/Parsing-requests.html) for more details. 
 
-We have done some initial high-level performance benchmarking using the [Todo application](https://loopback.io/doc/en/lb4/todo-tutorial.html) with in-memory storage against LoopBack 3 and LoopBack 4. In addition, the schema validation performance has been improved by caching the pre-compiled AJV validators.
-
-
-FIXME: Raymond, need your help here.
-    * controllers/openapi decorators
-    * validation and coercion   ——optimize the validation and routing
-    * routing
-    * openapi spec/json schema generation -lb4 openapi
-    * API explorer user experience
-    * artifact generation: lb4 controller, lb4 openapi
+We have done some high-level performance benchmarking using the [Todo application](https://loopback.io/doc/en/lb4/todo-tutorial.html) with in-memory storage against LoopBack 3 and LoopBack 4. In addition, the schema validation performance has been improved by caching the pre-compiled AJV validators.
 
 ### Data Integration Capabilities
 With the data integration capabilities, you can now access databases and key value stores with strongly typed APIs. You can continue to use the existing database connectors for connecting with databases.  We also added `Repository` implementations for KeyValue API through `KVRepository`. See the [KeyValue store documentation](https://loopback.io/doc/en/lb4/Repositories.html) and the [Shopping Cart component of our eCommerce app](https://github.com/strongloop/loopback4-example-shopping) for more details and example.
@@ -50,9 +41,7 @@ We have implemented a few command-line interfaces, namely `lb4 model`, `lb4 repo
 
 
 ### Service Integration Capabilities
-We added basic support for integrating with 3rd party services, e.g. SOAP and REST services. We also have gRPC support with the help of the communitys. To build on top of this foundation, we've improved the developer experience by adding sugar API for registering services and automated registration via boot, and introduced [`lb4 service`](https://loopback.io/doc/en/lb4/Service-generator.html) command to create a Service class for a selected datasource.
-FIXME: Raymond, need help on decorators.
-
+We added basic support for integrating with 3rd party services, e.g. SOAP and REST services. We also have gRPC support with the help of the community. To build on top of this foundation, we've improved the developer experience by adding sugar APIs for registering services and automated registration via boot, and introduced [`lb4 service`](https://loopback.io/doc/en/lb4/Service-generator.html) command to create a Service class for a selected datasource.
 
 ## Scenario-Driven Approach
 We have been using scenario-driven approach to help us identify gaps when creating a close-to-real-world application.  As a start, we have created the [todo example](https://loopback.io/doc/en/lb4/todo-tutorial.html) for basic database CRUD operations.  Then [todo-list example](https://loopback.io/doc/en/lb4/todo-list-tutorial.html) and the [SOAP calculator](https://loopback.io/doc/en/lb4/soap-calculator-tutorial.html) were added to demonstrate the model relation and service integration capabitility, respectively. 
@@ -63,10 +52,8 @@ We now have an [eCommerce store application](https://github.com/strongloop/loopb
 - **product recommendation**, which fetches from a SOAP/REST service
 - **order history**, which ties to the user profile and also stored in a database
 
-
 ## LTS Policy
 Now that LoopBack 4 is the current version, LoopBack 3 becomes the active LTS release and LoopBack 2 as maintancence LTS release. Aligning with [Module LTS Policy](https://developer.ibm.com/node/2018/07/24/module-lts/), here is our LTS schedule: 
-
 
 Framework | Status | Published | EOL 
 -- | -- | -- | -- 
