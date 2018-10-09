@@ -13,11 +13,19 @@ categories:
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
-### RESTful API Design - The Basics
+### OpenAPI Generator Contribution Quickstart - RingCentral Go SDK
 
-In this article, Tamas Piros takes a look at some of the basics of API design, in the context of Node.js and Express.
+John Wang covers his approach to making changes and contributing them back to the OpenAPI Generator project used to generate the Go SDK for RingCentral.
 
-[READ MORE >>>](https://fullstack-developer.academy/restful-api-design-the-basics/)
+[READ MORE >>>](https://medium.com/ringcentral-developers/openapi-generator-for-go-contribution-quickstart-8cc72bf37b53)
+
+### OpenAPI Generator Contribution Quickstart - RingCentral Go SDK
+
+John Wang covers his approach to making changes and contributing them back to the OpenAPI Generator project used to generate the Go SDK for RingCentral.
+
+[READ MORE >>>](https://medium.com/ringcentral-developers/openapi-generator-for-go-contribution-quickstart-8cc72bf37b53)
+
+
 
 
 
