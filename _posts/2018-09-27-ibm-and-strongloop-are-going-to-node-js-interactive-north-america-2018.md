@@ -23,14 +23,11 @@ We invite you to join us at this event. It is a three-day technical deep dive in
 
 Speakers from the IBM team include:
 
-- Nick O’Leary, Node-RED Project Lead, IBM Watson IoT Developer Advocate, IBM - [“Wiring the Internet of Things with Node-RED”](https://events.linuxfoundation.org/events/node-js-interactive-2018/)
-
-- Teri Chadbourne, Developer Advocate, IBM - [“Offline First: Making Your App Awesome When the Network Isn’t”](https://events.linuxfoundation.org/events/node-js-interactive-2018/)
-
-- Gireesh Punathil, IBM India - [“Optimize Your JSON Payload Efficiency x10 Times”](https://jsi2018.sched.com/event/F75x)
-
 - Raymond Feng, IBM - [The Art of Building Node.js Projects at Scale](https://jsi2018.sched.com/event/HYVB)
 
+- Nick O’Leary, Node-RED Project Lead, IBM Watson IoT Developer Advocate, IBM - [“Wiring the Internet of Things with Node-RED”](https://sched.co/F769)
+
+- Gireesh Punathil, IBM India - [“Optimize Your JSON Payload Efficiency x10 Times”](https://jsi2018.sched.com/event/F75x)
 
 You can register for the event [here](http://events.linuxfoundation.org/events/node-interactive/attend/registration)!
 
