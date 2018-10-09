@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LoopBack 4 GA is now available!
+title: LoopBack 4 GA is Now Available!
 date: 2018-10-30T00:00:01+00:00
 author:
   - Diana Lau
@@ -12,18 +12,15 @@ categories:
   - LoopBack
 ---
 
-We've come a long way since [LoopBack 4 was announced] in April 2017 and the [first Developer Preview release] was out last November. The open source framework continues to a leading Node.js API creation platform that empowers developers to create APIs quickly on top of existing backend resources. With a brand new core rewritten from ground-up in TypeScript to provide even better extensibility and flexibility, this latest version is simpler to use and easier to extend.
-
 We are excited to announce that LoopBack 4 is GA (general availability) and ready for production use. Some of our users have already built applications with LoopBack 4 and now you can do the same too.
 
-In addition to LoopBack 4, we would like to point you to our other recently announced project [oasgraph](http://v4.loopback.io/oasgraph.html) which can expose GraphQL endpoints from your application's REST APIs without coding.
+We've come a long way since [LoopBack 4 was announced](https://strongloop.com/strongblog/announcing-loopback-next/) in April 2017 and the November release of the [first Developer Preview release](https://strongloop.com/strongblog/loopback-4-developer-preview-release). The open source framework continues to be a leading Node.js API creation platform that empowers developers to create APIs quickly on top of existing backend resources. The LoopBack team rewrote a brand new core  from the ground up in TypeScript, providing even better extensibility and flexibility. This latest version is simpler to use and easier to extend.
 
-[Loopback 4 was announced]: https://strongloop.com/strongblog/announcing-loopback-next/
-[first Developer Preview release]: https://strongloop.com/strongblog/loopback-4-developer-preview-release
+In addition to LoopBack 4, we would like to point you to another one of our recently announced projects: [OASGraph](http://v4.loopback.io/oasgraph.html). You can use this tool to expose GraphQL endpoints from your application's REST APIs without coding.
 
 <!--more-->
 
-## What's in the first GA version of LoopBack 4
+## What's in the First GA Version of LoopBack 4
 
 In the first GA version of LoopBack 4, we focus on the following core features:
 
@@ -34,20 +31,18 @@ In the first GA version of LoopBack 4, we focus on the following core features:
 
 Let’s take a closer look!
 
-### Brand new core written in TypeScript and ES2017
+### Brand New Core Written in TypeScript and ES2017
 
-As articulated in [Crafting LoopBack 4], the team have put great efforts to build a brand new core in TypeScript and ES2017 as the foundation to further grow the ecosystem and scale the project.
+As articulated in [Crafting LoopBack 4](https://loopback.io/doc/en/lb4/Crafting-LoopBack-4.html), the team has put great efforts to build a brand new core. We used TypeScript and ES2017 as the foundation to further grow the ecosystem and scale the project. 
 
-- Adopt TypeScript to offer strongly-typed APIs for much better code maintainability and development productivity
-- Embrace 100% Promise based APIs and async/await to greatly simplify asynchronous programming
-- Introduce an Inversion of Control (IoC) container and asynchronous Dependency Injection (DI) to manage artifacts and their dependencies
-- Leverage TypeScript decorators for metadata and dependency declarations
+- Adopting TypeScript offers strongly-typed APIs for much better code maintainability and development productivity.
+- Embracing 100% Promise-based APIs and async/await greatly simplifies asynchronous programming.
+- Introducing an Inversion of Control (IoC) container and asynchronous Dependency Injection (DI) to manage artifacts and their dependencies.
+- Leverage TypeScript decorators for metadata and dependency declarations.
 
-Now we have a small but extensible core for LoopBack 4, everything else are extensions, including the packages we ship and other ones from the community. These core modules can be used as Node.js libraries independent of LoopBack to build your own frameworks/platforms.  
+Now we have a small but extensible core for LoopBack 4. Everything else is extensions, including both the packages we ship and others from the community. These core modules can be used as Node.js libraries independent of LoopBack to build your own frameworks/platforms.  
 
 The improved architecture positions LoopBack 4 to scale up for larger code bases, more developers, better maintainability, as well as greater extensibility and composability.
-
-[Crafting LoopBack 4]: https://loopback.io/doc/en/lb4/Crafting-LoopBack-4.html
 
 ### Bottom-up and Top-down REST API Experience Driven by OpenAPI Spec
 
@@ -69,7 +64,7 @@ We added basic support for integrating with 3rd party services, e.g. SOAP and RE
 
 ## More Details From Past Preview Releases
 
-As we march toward the GA status, we have posted great content for each of the Developer Preview releases. To see more details of LoopBack 4 features, please check out the following blogs.
+As we announce the GA status, we remind you of past posts providing great content for each of the Developer Preview releases. To see more details of LoopBack 4 features, please check out the following blogs.
 
 - [Developer Preview 1](https://strongloop.com/strongblog/loopback-4-developer-preview-release)
 - [Developer Preview 2](https://strongloop.com/strongblog/loopback-4-developer-preview-2/)
