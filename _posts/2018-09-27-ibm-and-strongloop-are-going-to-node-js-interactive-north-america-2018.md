@@ -29,6 +29,9 @@ Speakers from the IBM team include:
 
 - Gireesh Punathil, IBM India - [“Optimize Your JSON Payload Efficiency x10 Times”](https://jsi2018.sched.com/event/F75x)
 
+- Raymond Feng, IBM - [The Art of Building Node.js Projects at Scale](https://jsi2018.sched.com/event/HYVB)
+
+
 You can register for the event [here](http://events.linuxfoundation.org/events/node-interactive/attend/registration)!
 
 ## What's Next?
