@@ -1,7 +1,7 @@
 ---
 layout: post
-title: LoopBack 4 GA is Now Available!
-date: 2018-10-30T00:00:01+00:00
+title: Announcing LoopBack 4 GA is Now Ready for Production Use!
+date: 2018-10-10
 author:
   - Diana Lau
   - Raymond Feng
