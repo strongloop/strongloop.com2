@@ -18,10 +18,10 @@ The Center rests in Vancouver’s idyllic waterfront, with water, forest and mou
 <img src="https://strongloop.com/blog-assets/2018/09/node+js-interactive.png" alt="Node+JS Interactive 2018" style="width: 400px"/>
 
 
-
-
 Effectively Leverage nodejs/help Repo - Gireesh Punathil, IBM - held in the Community Corner, a look at how to best utilzie the nodejs/help repo with best practices. Look at what your expected outcome is and how problems may emerge with your code snippet.
 
+
+Booth Crawl
 
 ## What's Next?
 
