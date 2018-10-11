@@ -1,6 +1,6 @@
 ---
 title: Node+JS Interactive 2018 Wrap-Up
-date: 2018-11-17T01:00:13+00:00
+date: 2018-12-17T01:00:13+00:00
 author: Dave Whiteley
 permalink: /strongblog/node-js-interactive-2018-wrap-up/
 categories:
