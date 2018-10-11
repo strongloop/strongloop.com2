@@ -19,13 +19,11 @@ John Wang covers his approach to making changes and contributing them back to th
 
 [READ MORE >>>](https://medium.com/ringcentral-developers/openapi-generator-for-go-contribution-quickstart-8cc72bf37b53)
 
-### OpenAPI Generator Contribution Quickstart - RingCentral Go SDK
+### Node v10.12.0 (Current)
 
-John Wang covers his approach to making changes and contributing them back to the OpenAPI Generator project used to generate the Go SDK for RingCentral.
+Michaël Zasso provides the details on the current version of Node.js. 
 
-[READ MORE >>>](https://medium.com/ringcentral-developers/openapi-generator-for-go-contribution-quickstart-8cc72bf37b53)
-
-
+[READ MORE >>>](https://nodejs.org/en/blog/release/v10.12.0/)
 
 
 
