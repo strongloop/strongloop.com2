@@ -26,6 +26,12 @@ Michaël Zasso provides the details on the current version of Node.js.
 [READ MORE >>>](https://nodejs.org/en/blog/release/v10.12.0/)
 
 
+### TypeScript Documentation
+
+LoopBack 4 has a brand new LoopBack core written in TypeScript/ES2017 for great extensibility and flexibility.. Check out TypeScript's documentation to learn more about this open-source programming language. 
+
+[READ MORE >>>](https://www.typescriptlang.org/docs/home.html)
+
 
 ## What Next?
 
