@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Productivity with lb4 repository
+title: Productivity with LB4 Repository
 date: 2018-11-01
 author: Mario Estrada
 permalink: /strongblog/productivity-with-lb4-repository/
@@ -9,7 +9,7 @@ categories:
   - Community
 ---
 
-One of the framework features that attracts application developers is **Productivity**. In **_Loopback_ 4** the command line interface plays an important role to achieve it. If you are building a _Loopback 4_ application that interacts with a database and exposes **CRUD** operations, your flow might be as follows:
+One of the framework features that attracts application developers is **productivity**. In **_Loopback_ 4** the command line interface plays an important role to achieve it. If you are building a _Loopback 4_ application that interacts with a database and exposes **CRUD** operations, your flow might be as follows:
 
 - Create an Application
 - Add a Datasource
@@ -23,13 +23,13 @@ One of the framework features that attracts application developers is **Producti
 
 Usually, after defining your `datasource(s)` you start defining your `model(s)` based on your design and then create the repositories that will serve as the _glue_ between `datasources` and `models` to finally create the `controllers` that will be interacting with client applications, executing business logic and invoking repository methods.
 
-To support this flow completely and start achieving **Productivity**, we **_welcome_** the recently addition to the **CLI** options, `lb4 repository`. This option is **_very powerful_** and can accept multiple models, infer their `ID` property and generate a repository for each of them in one _single command_.
+To support this flow completely and start achieving productivity, we welcome the recently addition to the **CLI** options, `lb4 repository`. This option is very powerful and can accept multiple models, infer their `ID` property and generate a repository for each of them in one _single command_.
 
-The **Team** is working very hard in the underlying code to support these options and make the framework more _stable_ on each release, knowing in advance that also **Reliability** is a priority for any real world project.
+The team is working very hard in the underlying code to support these options and make the framework more _stable_ on each release, knowing in advance that reliability is **also** a priority for any real world project.
 
 > **NOTE**: We usually create the models first and then we move toward the rest of the components such as repositories, thus, having the option to accept multiple models can really save us a lot of time.
 
-## Command line arguments
+## Command Line Arguments
 
 For now, let's assume we already have a **Datasource** named `ds` which is coming from the property `name` located in the `src/datasources/ds.datasource.json` and a **Model** named `MyModel` declared in the `src/repositories/my-model.repository.ts` file.
 
@@ -77,7 +77,7 @@ You also have the option to specify the `ID`property name from the command line 
 lb4 repository myrepo --datasource ds --model myModel --id mykey
 ```
 
-## Interactive prompts
+## Interactive Prompts
 
 If you specify an invalid **Datasource** or **Model** or simply you don't specify any from the command line, **CLI** will prompt and guide you through interactive prompts. Let's run the following command:
 
