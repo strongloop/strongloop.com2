@@ -79,13 +79,13 @@ lb4 repository myrepo --datasource ds --model myModel --id mykey
 
 ## Interactive prompts
 
-If you specify an invalid **Datasource** or **Model** or simply you don't specify any from the command line, **CLI** will prompt will guide you through interactive prompts. Let's run the following command:
+If you specify an invalid **Datasource** or **Model** or simply you don't specify any from the command line, **CLI** will prompt and guide you through interactive prompts. Let's run the following command:
 
 ```sh
 lb4 repository
 ```
 
-**CLI** will read the `src/models` and `src/datasources` directories, and then will present you the option to select the Datasource and then the model(s) that you want a repository to be generated.
+**CLI** will read the `src/models` and `src/datasources` directories, and then will present you the option to select the Datasource and then the model(s) that you want a repository to be generated for.
 
 ### Select a DataSource
 
@@ -94,7 +94,7 @@ lb4 repository
 > DsDatasource
 ```
 
->**Note:**  As you can see, in the interactive prompt above, the  full data source class name is showed in the list.
+>**Note:**  As you can see, in the interactive prompt above, the full data source class name is showed in the list.
 
 ### Select Model(s)
 
