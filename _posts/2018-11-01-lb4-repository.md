@@ -120,3 +120,15 @@ Repositories Customer,MyModel were created in src/repositories/
 ```
 
 I hope you find in `lb4 repository` and the rest of the **CLI** options a useful tool to achieve **productivity** in your next project.
+
+## Call for Action
+
+LoopBack's future success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
+
+- [Open a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue)
+- [Casting your vote for extensions](https://github.com/strongloop/loopback-next/issues/512)
+- [Reporting issues](https://github.com/strongloop/loopback-next/issues)
+- [Building more extensions](https://github.com/strongloop/loopback-next/issues/647)
+- [Helping each other in the community](https://groups.google.com/forum/#!forum/loopbackjs)
+
+
