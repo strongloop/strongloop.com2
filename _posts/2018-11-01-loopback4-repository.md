@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Productivity with LB4 Repository
+title: Achieving Productivity with LoopBack 4 Repository
 date: 2018-11-01
 author: Mario Estrada
-permalink: /strongblog/productivity-with-lb4-repository/
+permalink: /strongblog/productivity-with-loopback4-repository/
 categories:
   - LoopBack
   - Community
