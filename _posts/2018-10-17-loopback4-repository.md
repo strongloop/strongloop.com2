@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Achieving Productivity with lb4 Repository Command
-date: 2018-11-01
+date: 2018-10-17
 author: Mario Estrada
 permalink: /strongblog/productivity-with-loopback4-repository/
 categories:
