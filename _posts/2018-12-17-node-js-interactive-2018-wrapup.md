@@ -8,11 +8,11 @@ categories:
   - Events
 ---
 
-The initial Node+JS Interactive has wrapped up and the event went quite nicely. Mind you, the event was at the same location as 2017's [Node Interactive](https://strongloop.com/strongblog/node-interactive-2017-wrap-up/), and the result of merging Node Interactive and JS Interactive, so we were confident it was going to be a hit.
+The initial Node+JS Interactive has wrapped up and the event went quite nicely. Since the event was held at the same location as last year's [Node Interactive](https://strongloop.com/strongblog/node-interactive-2017-wrap-up/) we were confident it was going to be a success. 
 
 The event, hosted at the Vancouver Convention Centre in British Columbia, Canada, ran from October 10-12. IBM had served as was Platinum Sponsor for prior Node Interactives, and was proud to act as one of the Platinum Sponsors for Node+JS Interactive as well.
 
-The Center rests in Vancouver’s idyllic waterfront, with water, forest and mountain providing beautiful scenery to engage visitors. And while the majestic beauty was a nice distraction, it was node.js and JavaScript that the attendees came to experience. And there was a bounty, so we will only be providing an overview below. 
+The venue rests in Vancouver’s idyllic waterfront, with water, forest and mountain providing beautiful scenery to engage visitors. And while the majestic beauty was a nice distraction, it was node.js and JavaScript that the attendees came to experience. And there was a bounty! While we wait for event videos to be posted, we will cover some highlights below. 
 
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2018/09/node+js-interactive.png" alt="Node+JS Interactive 2018" style="width: 400px"/>
