@@ -9,7 +9,7 @@ categories:
   - JavaScript Language
 ---
 
-**Note:** This blog post is also available at[IBM DeveloperWorks](https://developer.ibm.com/node/2016/11/15/systematic-function-design-in-javascript/).  
+**Note:** This blog post is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2016/11/15/systematic-function-design-in-javascript/).  
 
 <p class="graf graf--p">
   Habits can be damning or liberating. Perhaps you are like me. I know having tests, examples, and documentation are good things for any program but why do they always seem to be an afterthought? Wouldn’t it be great to have a coding methodology that propels me to write well-documented and tested programs that are easy to change? Thankfully, a team of professors/researchers have tackled this very problem and distilled their insights in what is called <a class="markup--anchor markup--p-anchor" href="https://www.edx.org/xseries/how-code-systematic-program-design" target="blank">systematic program design </a>or the <a class="markup--anchor markup--p-anchor" href="http://www.ccs.neu.edu/home/matthias/HtDP2e/" target="blank">HtDP </a>methodology (How to Design Programs).
