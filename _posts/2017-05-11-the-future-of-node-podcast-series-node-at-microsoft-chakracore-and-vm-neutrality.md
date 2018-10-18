@@ -15,11 +15,9 @@ categories:
 - node core
 - node.js
 - VM neutrality
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2017/05/11/the-future-of-node-podcast-series-node-at-microsoft-chakracore-and-vm-neutrality/
+
 ---
-This blog post has been moved to IBM DeveloperWorks....
----
+**Note:** This blog post is also available on [IBM DeveloperWorks](https://developer.ibm.com/node/2017/05/11/the-future-of-node-podcast-series-node-at-microsoft-chakracore-and-vm-neutrality/) 
 
 <p>We're sharing another episode of The Future of Node series from Changelog. IBM and StrongLoop sponsored Changelog’s The Future of Node Spotlight series at Node Interactive 2016. Adam spoke with event attendees about Node.js and the Node community. In this podcast, Adam discusses Node at Microsoft, ChakraCore, and VM Neutrality with Gaurav Seth and Arunesh Chandra.</p>
 
