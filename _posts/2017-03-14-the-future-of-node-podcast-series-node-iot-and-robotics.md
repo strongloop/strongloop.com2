@@ -8,11 +8,10 @@ permalink: /strongblog/the-future-of-node-podcast-series-node-iot-and-robotics/
 categories:
   - Community
   - Node core
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2017/03/14/the-future-of-node-podcast-series-node-iot-and-robotics/
 ---
-This blog post has been moved to IBM DeveloperWorks....  
----
+
+**Note:** This blog post is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2017/03/14/the-future-of-node-podcast-series-node-iot-and-robotics/).  
+
 IBM and StrongLoop sponsored Changelog’s _The Future of Node_ Spotlight series at Node Interactive 2016. Adam spoke with event attendees about Node.js and the Node community. In this podcast, Adam discussed Node, IoT and robotics.
 
 Changelog is a podcast and digital media company focused on telling developer-centric stories. They’re hacker to the heart. You may know them best from their popular podcast “The Changelog” &#8211; a weekly podcast that covers the technology and people of open source. It&#8217;s about the code, the people, and the community.
