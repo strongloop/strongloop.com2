@@ -7,11 +7,10 @@ guid: https://strongloop.com/?p=28395
 permalink: /strongblog/lets-code-it-static-site-generator-with-rx-js/
 categories:
   - How-To
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2017/01/19/lets-code-it-static-site-generator-with-rx-js/
 ---
-This blog post has been moved to IBM DeveloperWorks....  
----
+
+**Note:** This blog post is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2017/01/19/lets-code-it-static-site-generator-with-rx-js/).  
+
 [Last post](https://strongloop.com/strongblog/lets-code-it-static-site-generator/), we went over building a Static Site Generator (SSG) in Node.js. We used [Promises](http://bluebirdjs.com/docs/why-promises.html) for flow control, and that worked for reading each Markdown input file, transforming it into HTML, and writing that to disk, once per file. What if instead of running this build process once per input file, we want it to run once per input file _every time that input file is created or changed?_
 
 If our goal is to map a sequence of events over time (file creation or modification) to one or more operations (building Markdown to HTML and writing to disk), it&#8217;s very likely [**Observables**](http://reactivex.io/rxjs/manual/overview.html#observable) are a good fit! In this blog post, we&#8217;ll look at how to use Observables and [RX.js](http://reactivex.io/rxjs/manual/overview.html#introduction) to create a SSG with **built-in, incremental watch rebuilds**, and with **with multiple output streams** (individual posts and blog index page).
