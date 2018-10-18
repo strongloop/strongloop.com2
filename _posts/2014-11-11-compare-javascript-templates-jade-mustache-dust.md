@@ -3,14 +3,15 @@ id: 20789
 title: 'Comparing JavaScript Templating Engines: Jade, Mustache, Dust and More'
 date: 2014-11-11T16:43:02+00:00
 author: Alex Gorbatchev
-guid: http://strongloop.com/?p=20789
+
 permalink: /strongblog/compare-javascript-templates-jade-mustache-dust/
 categories:
   - Community
   - Express
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2014/11/11/compare-javascript-templates-jade-mustache-dust/
+
 ---
+**Note:** This post is also available on [Node.js @ IBM](https://developer.ibm.com/node/2014/11/11/compare-javascript-templates-jade-mustache-dust/)
+
 <div style="width: 100%; max-height: 400px; background: url('{{site.url}}/blog-assets/2014/11/javascript-templates-2014.png') 50% 50% no-repeat; background-size: cover;">
   <img style="opacity: 0;" src="{{site.url}}/blog-assets/2014/11/javascript-templates-2014.png" alt="javascript-templates-2014" width="100%" />
 </div>
