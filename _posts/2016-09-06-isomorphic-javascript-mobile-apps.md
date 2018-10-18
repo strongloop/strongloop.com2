@@ -10,11 +10,10 @@ categories:
   - LoopBack
   - Mobile
   - Node core
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2016/09/06/isomorphic-javascript-mobile-apps/
 ---
-This blog post has been moved to IBM DeveloperWorks....  
----
+
+**Note:** This blog post is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2016/09/06/isomorphic-javascript-mobile-apps/).  
+
 The method of delivering content to a browser has continued to evolve over the years. In the early days, every page was a full payload. If you clicked a link, you got a new page. If you hit the back button, you were delivered a new full page.
 
 With the advent of AJAX (Asynchronous JavaScript and XML), web pages started to become more interactive without full page loads. Form submissions are the perfect example: a user fills out a form, hits the submit button, a spinner shows that something is happening, and finally the page displays a success/fail message. Previously, a user would click **Submit** on the form, that would perform an HTTP POST of the form data to the server, which would return a new page showing success or fail. This new AJAX method felt slicker and more “app-like”. This was only the beginning&#8230;
