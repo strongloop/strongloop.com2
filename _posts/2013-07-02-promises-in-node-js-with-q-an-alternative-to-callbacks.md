@@ -8,12 +8,11 @@ permalink: /strongblog/promises-in-node-js-with-q-an-alternative-to-callbacks/
 categories:
   - Community
   - How-To
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2013/07/02/promises-in-node-js-with-q-an-alternative-to-callbacks/
+
 ---
-This blog post has been moved to IBM DeveloperWorks....  
----
-**Note:** The author has provided an updated version of this article, which you can read [here](https://strongloop.com/strongblog/promises-in-node-js-an-alternative-to-callbacks-revisited/).
+**Note:**  This blog post is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2013/07/02/promises-in-node-js-with-q-an-alternative-to-callbacks/).
+
+The author has provided an updated version of this article, which you can read [here](https://strongloop.com/strongblog/promises-in-node-js-an-alternative-to-callbacks-revisited/).
 
 Promises provide a compelling alternative to raw callbacks when dealing with asynchronous code. Unfortunately, promises can be confusing and perhaps you&#8217;ve written them off. However, significant work has been done to bring out the essential beauty of promises in a way that is interoperable and verifiable. The result is [Promises/A+](http://promises-aplus.github.io/promises-spec/), a specification that is making its way into promise libraries and even the [DOM](http://dom.spec.whatwg.org/#futures).
 
