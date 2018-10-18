@@ -8,14 +8,13 @@ permalink: /strongblog/lets-code-it-the-debug-module/
 categories:
   - How-To
   - Performance Tip
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2016/09/15/lets-code-it-the-debug-module/
 ---
-This blog post has been moved to IBM DeveloperWorks....
----
+
+**Note:** This blog post is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2016/09/15/lets-code-it-the-debug-module/).
+
 I did some fun stuff with the `debug` module recently for a web map project. I needed to understand the interactions between events in [Leaflet.js](http://leafletjs.com/) to figure out what events to attach to&#8230; but that&#8217;s the next post. Before I get to that, I want to go over the `debug` module itself.<!--more-->
 
-## A trip down memory lane&#8230; 
+## A Trip Down Memory Lane 
 
 `console.log`: the JavaScript programmer&#8217;s oldest[*](#window-dot-alert) friend. `console.log` was probably one of the first things you used to debug JavaScript, and while there are [plenty](https://code.visualstudio.com/docs/runtimes/nodejs#_debugging-your-express-application) of [more powerful tools](https://developer.mozilla.org/en-US/docs/Tools/Debugger), `console.log` is still useful to say &#8220;event fired&#8221;, &#8220;sending the following query to the database&#8230;&#8221;, etc..
 
@@ -43,7 +42,7 @@ fs.readFile(usersJson, 'utf-8', function (err, contents){
 });
 ```
 
-## &#8220;There&#8217;s got to be a better way!&#8221;
+## There's Got To Be a Better Way!
 
 What if, instead of commenting out or deleting our useful log statements when we&#8217;re not using them, we could turn them on when we need them and off when we don&#8217;t? This is a pretty simple fix:
 
@@ -183,7 +182,7 @@ dbDebug('Results recieved');           // runs if "database" is enabled
 http(`Request took ${requestTime}ms`); // runs if "http" is enabled
 ```
 
-## That&#8217;s it! 
+## That's It! 
 
 That gets us just about all the way to the [`debug` module](https://github.com/visionmedia/debug)! It has a couple more features than what we created here, but this covers the main bits. I use the `debug` module in basically all projects and typically start using it from day one: if you _never_ put `console.log` statements in your code you have nothing to &#8220;clean up,&#8221; and those debug log statements you make during active development can be useful later, so why not keep them?
 
