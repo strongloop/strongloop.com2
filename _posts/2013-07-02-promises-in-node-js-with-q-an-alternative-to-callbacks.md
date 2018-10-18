@@ -3,7 +3,6 @@ id: 1051
 title: 'Promises in Node.js with Q &#8211; An Alternative to Callbacks'
 date: 2013-07-02T19:04:54+00:00
 author: Marc Harter
-guid: http://blog.strongloop.com/?p=1051
 permalink: /strongblog/promises-in-node-js-with-q-an-alternative-to-callbacks/
 categories:
   - Community
