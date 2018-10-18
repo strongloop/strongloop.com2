@@ -10,11 +10,10 @@ inline_featured_image:
 categories:
   - How-To
   - JavaScript Language
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2017/04/18/systematic-data-design-in-javascript/
 ---
-This blog post has been moved to IBM DeveloperWorks....  
----
+
+**Note:** This blog post is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2017/04/18/systematic-data-design-in-javascript/)
+
 In the previous article, we discussed [systematic function design](http://wavded.com/post/htdp-functions/): a test, example, and documentation-driven approach to designing functions using the [HtDP methodology](http://www.ccs.neu.edu/home/matthias/HtDP2e). In this post, we are exploring systematic data design in JavaScript.
 
 In this three-part series, we are covering systematic design as it applies to:
