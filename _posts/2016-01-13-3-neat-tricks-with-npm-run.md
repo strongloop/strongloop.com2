@@ -7,11 +7,10 @@ guid: https://strongloop.com/?p=26502
 permalink: /strongblog/3-neat-tricks-with-npm-run/
 categories:
   - How-To
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2016/01/13/3-neat-tricks-with-npm-run/
 ---
-This blog post has been moved to IBM DeveloperWorks....
----
+
+**Note:** This blog post is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2016/01/13/3-neat-tricks-with-npm-run/).
+
 Most Node.js developers use npm as a package manager. However, npm is also a powerful task runner that can serve as a replacement for gulp. The \`npm run\` command lets you define custom scripts in your `package.json`, so you can reduce complex node-related shell scripts into simple one-liners. In this article, you&#8217;ll learn about common `npm` run use cases, including using `npm run` to pipe ES6 browser code through Babel and Browserify.
   
 <!--more-->
