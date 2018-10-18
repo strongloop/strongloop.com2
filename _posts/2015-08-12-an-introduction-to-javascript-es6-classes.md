@@ -8,11 +8,10 @@ permalink: /strongblog/an-introduction-to-javascript-es6-classes/
 categories:
   - How-To
   - JavaScript Language
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2015/08/12/an-introduction-to-javascript-es6-classes/
+
 ---
-This blog post has been moved to IBM DeveloperWorks....  
----
+**Note:** This blog post is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2015/08/12/an-introduction-to-javascript-es6-classes/).
+
 ECMAScript 2015, formerly known as ECMAScript 6 (ES6) makes classes a first class citizen by introducing a few new keywords. At this time, however there are no new features when compared to the the good old JavaScript prototypes. The new keywords are simply a syntax sugar on top of the well established prototype system. This does make the code more readable and lays the path forward for new Object Oriented (OO) features in the upcoming spec releases.
 
 The reason for this is to ensure backwards compatibility with existing code written using the ES6 and ES5 spec. In other words, older code should be able to be run side by side without any workarounds or hacks.
