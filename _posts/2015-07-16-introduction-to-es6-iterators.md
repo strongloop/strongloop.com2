@@ -8,11 +8,11 @@ permalink: /strongblog/introduction-to-es6-iterators/
 categories:
   - How-To
   - JavaScript Language
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2015/07/16/introduction-to-es6-iterators/
+
+
 ---
-This blog post has been moved to IBM DeveloperWorks....  
----
+This blog post is also available on [IBM DeveloperWorks](https://developer.ibm.com/node/2015/07/16/introduction-to-es6-iterators/).
+
 EcmaScript 2015 (formerly known as ES6) introduces a brand new concept of iterators which allows us to define sequences (limited and otherwise) at the language level.
 
 Let us break it down a bit. We are all very well familiar with the basic `for` loop and most of us know its less popular cousin `for-in`. The latter could be used to help us explain the basics of iterators.
