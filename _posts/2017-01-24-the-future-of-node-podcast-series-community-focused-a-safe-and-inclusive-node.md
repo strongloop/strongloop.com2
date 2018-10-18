@@ -8,11 +8,10 @@ permalink: /strongblog/the-future-of-node-podcast-series-community-focused-a-saf
 categories:
   - Community
   - Node core
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2017/01/24/the-future-of-node-podcast-series-community-focused-a-safe-and-inclusive-node/
 ---
-This blog post has been moved to IBM DeveloperWorks....  
----
+
+**Note:** This blog post is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2017/01/24/the-future-of-node-podcast-series-community-focused-a-safe-and-inclusive-node/).
+
 IBM and StrongLoop partnered with [Changelog](https://changelog.com/) to sponsor &#8220;The Future of Node&#8221; Spotlight series, recorded at Node Interactive 2016 in Austin, Texas.
 
 Changelog is a podcast and digital media company focused on telling developer-centric stories. They’re hacker to the heart. You may know them best from their popular podcast “The Changelog” &#8211; a weekly podcast that covers the technology and people of open source. It&#8217;s about the code, the people, and the community.
