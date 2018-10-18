@@ -3,7 +3,6 @@ id: 20789
 title: 'Comparing JavaScript Templating Engines: Jade, Mustache, Dust and More'
 date: 2014-11-11T16:43:02+00:00
 author: Alex Gorbatchev
-
 permalink: /strongblog/compare-javascript-templates-jade-mustache-dust/
 categories:
   - Community
