@@ -8,9 +8,10 @@ permalink: /strongblog/an-introduction-to-javascript-es6-modules/
 categories:
   - ES2015 ES6
   - JavaScript Language
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2015/12/01/an-introduction-to-javascript-es6-modules/
----
+---  
+  
+**Note:** This blog post is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2015/12/01/an-introduction-to-javascript-es6-modules/).
+
 ECMAScript 2015 (formerly known as ES6) introduces a completely new feature and concept to the front-end JavaScript world that strangely has been around for a very long time – modules. ES2015 formalizes what [CommonJS](http://www.commonjs.org/) (the basis for modules in Node.js) and [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md) have tried to address in an attempt to take all the strengths and leave out the weaknesses:
 
   * Compact syntax
