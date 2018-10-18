@@ -8,22 +8,20 @@ permalink: /strongblog/tips-optimizing-slow-code-in-nodejs/
 categories:
   - How-To
   - Performance Tip
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2016/01/06/tips-optimizing-slow-code-in-nodejs/
 ---
-This blog post has been moved to IBM DeveloperWorks....  
----
+**Note:** This blog post is also available on [IBM DeveloperWorks](https://developer.ibm.com/node/2016/01/06/tips-optimizing-slow-code-in-nodejs/). 
+
 Node.js programs can be slow due to CPU or IO bound operations. On the CPU side, typically there is a “hot path” (a code that is visited often) that is not optimized. On the IO side, limits imposed by either the underlying OS or Node itself may be at fault. Or, a slow application may have nothing to do with Node; instead, an outside resource, like database queries or a slow API call, may not be optimized.
 
 In this article, we will focus on identifying and optimizing CPU heavy operations in our codebase. We will explore taking profiles of our production application in order to analyze them and make changes to improve efficiency.<!--more-->
 
 Avoiding heavy CPU usage is especially important for servers[[1]](1 "see footnote") due to Node&#8217;s single-threaded nature. Time spent on the CPU takes away time for servicing other requests. If you notice your application is responding slowly and the CPU is consistently higher for the process, profiling your application helps find bottlenecks and bring your program back to a speedy state.
 
-## Profiling applications 
+## Profiling Applications 
 
 Duplicating sluggish application issues that occur in production is hard and time consuming. Thankfully, you don&#8217;t have to do that. You can gather profile data on the production servers themselves to analyze offline. Let&#8217;s look at a few ways to do that.
 
-### Using kernel level tools 
+### Using Kernel Level Tools 
 
 First, you can use kernel level tools, such as DTrace (Solaris, BSD), perf (Linux), and XPerf (Windows), to gather stack traces from running processes and then generate [flame graphs](http://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html). Kernel level profiling has minimal impact on a running process. Flame graphs are generated as SVG with the ability to zoom in and out of the call stacks. Yunong Xiao from Netflix has an excellent [talk](https://www.youtube.com/watch?v=O1YP8QP9gLA) and [post](http://yunong.io/2015/11/23/generating-node-js-flame-graphs/) for Linux perf to learn more about this technique. If you need to maintain high throughput in your production application, use this method.
 
@@ -35,7 +33,7 @@ First, you can use kernel level tools, such as DTrace (Solaris, BSD), perf (Linu
   </p>
 </div>
 
-### Using the V8 profiler 
+### Using the V8 Profiler 
 
 Another option is tapping into the [V8 profiler](https://github.com/node-inspector/v8-profiler) directly. This method shares the same process with your application, so it could impact performance. For that reason, only run the profiler when you experience the problem in order to capture the relevant output. The perk of this method: you can use all of Chrome&#8217;s profiling tools with the generated output (including flame graphs) to investigate.
 
@@ -83,7 +81,7 @@ Once you&#8217;ve collected your profile data, [load it up](https://docs.strongl
 
 [<img class="aligncenter size-full wp-image-26636" src="{{site.url}}/blog-assets/2015/12/Screen-Shot-2016-01-03-at-10.28.02-AM.png" alt="" width="1968" height="788"  />]({{site.url}}/blog-assets/2015/12/Screen-Shot-2016-01-03-at-10.28.02-AM.png)
 
-### Using a process manager 
+### Using a Process Manager 
 
 Although utilizing the V8 profiler directly is powerful and customizable, it does invade your code base and adds another dependency to your project which may not be desirable. An alternative is to use a process manager that can wrap your application with tools when you need them. One option is the `slc` command-line tool from StrongLoop.
 
@@ -136,7 +134,7 @@ CPU profile written to `node.1.1.61023.cpuprofile`, load into Chrome Dev Tools
 
 And that&#8217;s it. You can load it into Chrome just like the V8 profiler.
 
-## Making the right choice 
+## Making the Right Choice 
 
 In this article, I presented three options for capturing production CPU usage in Node. So which one should you use? Here are some thoughts to help narrow down that decision:
 
