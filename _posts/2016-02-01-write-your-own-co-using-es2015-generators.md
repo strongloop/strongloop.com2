@@ -9,16 +9,15 @@ categories:
   - ES2015 ES6
   - How-To
   - JavaScript Language
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2016/02/01/write-your-own-co-using-es2015-generators/
 ---
-This blog post has been moved to IBM DeveloperWorks....  
----
+
+**Note:** This blog post is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2016/02/01/write-your-own-co-using-es2015-generators/).
+
 ES2015 is now officially the new JavaScript language standard, and it is packed with sweet new features. One feature that I&#8217;m particularly excited about is [​generators​](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*). At a high level, generators are functions that can pause and then pick up where they left off later. Generators enable you to break up CPU­-intensive calculations like computing the millionth Fibonacci number so you don&#8217;t block the event loop and write ​[web servers using middleware that can post-­process your HTTP response](https://www.npmjs.com/package/koa)​. The most exciting application of generators, though, is asynchronous coroutines, better known as callback-­free asynchronous code. In this article, you&#8217;ll learn about how to write your own ​co​, a library for asynchronous coroutines using generators.
 
 <!--more-->
 
-### **A Brief Overview of Co**
+### A Brief Overview of Co
 
 In this article, I&#8217;ll assume that you&#8217;ve seen generators in action before. If you&#8217;re looking for a more comprehensive guide, I released an ​[ebook about generators](http://es2015generators.com/)​ that explores generators in more detail and shows you how to write your own simple implementations of co, koa, and regenerator. Here&#8217;s how you would use co and [​superagent​](https://www.npmjs.com/package/superagent) to load the HTML for Google&#8217;s home page.
 
@@ -46,7 +45,7 @@ superagent.get(​'http://google.com'​, ​function​(error, res) {
 
 In ES2015, you can use a library like co to automatically handle asynchronous requests for you, as long as you pass it a generator function. You can even use try/catch to handle asynchronous errors! Before you learn how co works, first you need to understand the difference between generators and generator functions.
 
-### **Generators and Generator Functions**
+### Generators and Generator Functions
 
 To create a ​generator function​, you use `function*`:
 
@@ -101,7 +100,7 @@ generator.throw(​new​ ​Error​(​'Oops!'​));
 
 Together, `next()` and `throw()` provide everything you need to write your own take on co.
 
-### **Writing Your Own Co**
+### Writing Your Own Co
 
 The general idea of how co works is simple.
 
@@ -136,6 +135,6 @@ co(​function​*() {
 });
 ```
 
-### **Moving On**
+### Moving On
 
 The above implementation is just a sketch of co. The real module has numerous powerful features, like sophisticated exception handling, the ability to yield non-­promises, and the ability to execute two async operations in parallel. Check out ​[co on GitHub​](https://github.com/tj/co) for documentation and the real implementation. If you&#8217;re interested in learning more about generators, taking a deeper dive into how co is implemented, or learning about how [​koa​](https://www.npmjs.com/package/koa) (the co-­based take on [​express​](https://www.npmjs.com/package/express)) is implemented, check out ​The [80/20 Guide to ES2015 Generators](http://es2015generators.com/)​.
