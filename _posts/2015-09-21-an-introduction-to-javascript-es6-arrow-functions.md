@@ -8,9 +8,10 @@ permalink: /strongblog/an-introduction-to-javascript-es6-arrow-functions/
 categories:
   - ES2015 ES6
   - JavaScript Language
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2015/09/21/an-introduction-to-javascript-es6-arrow-functions/  
 ---
+
+**Note:** This blog post is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2015/09/21/an-introduction-to-javascript-es6-arrow-functions/)  
+
 Fat arrow functions, also known as just arrow functions are a brand new feature in ECMAScript 2015 (formerly ES6). Rumor has it that the `=>` syntax was adopted over `->` due to <a href="http://coffeescript.org/" target="_blank">CoffeeScript</a> influence and the similarity of sharing `this` context.
 
 Arrow functions serve two main purposes: more concise syntax and sharing lexical `this` with the parent scope. Let&#8217;s examine each in detail.
@@ -177,8 +178,6 @@ Fat arrow functions are one of my favorite additions to JavaScript. It might be 
 
   * Single statement functions that immediately return (lambdas)
   * Functions that need to work with parent scope `this`
-
-
 
 ## ES6 Today
 
