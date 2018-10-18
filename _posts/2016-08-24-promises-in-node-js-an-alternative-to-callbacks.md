@@ -7,11 +7,10 @@ guid: https://strongloop.com/?p=27848
 permalink: /strongblog/promises-in-node-js-an-alternative-to-callbacks/
 categories:
   - How-To
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2016/08/24/promises-in-node-js-an-alternative-to-callbacks/
 ---
-This blog post has been moved to IBM DeveloperWorks....  
----
+
+**Note:** This blog post is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2016/08/24/promises-in-node-js-an-alternative-to-callbacks/).  
+
 Promises are a compelling alternative to callbacks when dealing with asynchronous code. Unfortunately, promises can be confusing and perhaps you&#8217;ve written them off. However, significant work has been done to bring out the essential beauty of promises in a way that is interoperable and verifiable. The result is [Promises/A+](http://promises-aplus.github.io/promises-spec/), a specification that has made its way into ES6 JavaScript as well as multiple third-party libraries.
 
 So what are promises and what do they offer Node developers?
@@ -271,7 +270,7 @@ The best way to really understand promises is to use them. Here are some ideas t
   * Write something recursively using promises (a directory tree would be a good start).
   * Write a passing [Promise A+ implementation](https://github.com/promises-aplus/promises-tests). Here is my [crude one](https://gist.github.com/wavded/5692344).
 
-## Further resources
+## Further Resources
 
   * [ES6 Promise Specification](http://www.ecma-international.org/ecma-262/6.0/#sec-promise-objects)
   * [NodeUp &#8211; fortysix &#8211; a promises by promisers show](http://nodeup.com/fortysix)
