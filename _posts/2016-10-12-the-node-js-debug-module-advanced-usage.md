@@ -8,14 +8,13 @@ permalink: /strongblog/the-node-js-debug-module-advanced-usage/
 categories:
   - How-To
   - Performance Tip
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2016/10/12/the-node-js-debug-module-advanced-usage/
 ---
-This blog post has been moved to IBM DeveloperWorks....  
----
+
+**Note:** This blog post has is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2016/10/12/the-node-js-debug-module-advanced-usage/).  
+
 In [a previous post](https://strongloop.com/strongblog/lets-code-it-the-debug-module/), I explained the [`debug`](https://www.npmjs.com/package/debug) module and how to use it for basic debugging.  I recently used it to help me understand complex interactions between events in [Leaflet](http://leafletjs.com/) and [Leaflet.Editable](https://github.com/Leaflet/Leaflet.Editable). Before going over that, however, I&#8217;m going to lay the groundwork with a couple organizational tips that makes `debug` easier to use. This post assumes you have either used [`debug`](https://www.npmjs.com/package/debug) or read the [previous post](https://strongloop.com/strongblog/lets-code-it-the-debug-module/)&#8230;.<!--more-->
 
-## Namespacing debug functions 
+## Namespacing Debug Functions 
 
 The `debug` module has a great namespace feature that allows you to enable or disable debug functions in groups. It is very simple&#8211;you separate namespaces by colons, like this:
 
@@ -52,7 +51,7 @@ debug('myapp:thirdparty:twitter:auth')('success!');
 
 &#8230;but don&#8217;t overdo it. Personally, I try not to go deeper than two or sometimes three levels.
 
-### More namespace tricks 
+### More Namespace Tricks 
 
 The asterisk wildcard &#8220;`*"`matches a namespace at any level when enabling a debug function. Given the two debug functions above above, you can enable both by running your program with this command:
 
@@ -79,7 +78,7 @@ You can turn them all on with `HTTP:*`, but it turns out that `200` comes up wa
 $ DEBUG='HTTP:*,-HTTP:200' node app.js
 ```
 
-## Externalizing debug functions 
+## Externalizing Debug Functions 
 
 `debug()` is factory function, and thus it returns another function, that you can call to write to the console (more specifically, `STDERR` in Node.js):
 
@@ -300,7 +299,7 @@ Conveniently, the [Leaflet.Editable events](https://github.com/Leaflet/Leaflet.E
 > localStorage.debug = 'event:editable:drawing:*'  //just editable:drawing events
 ```
 
-### Fine-tuning the output
+### Fine-tuning the Output
 
 Let&#8217;s enable all event debuggers and see what some interactions look like&#8230;
 
