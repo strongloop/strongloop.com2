@@ -7,11 +7,10 @@ guid: https://strongloop.com/?p=28297
 permalink: /strongblog/systematic-function-design-in-javascript/
 categories:
   - JavaScript Language
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2016/11/15/systematic-function-design-in-javascript/
 ---
-This blog post has been moved to IBM DeveloperWorks....  
----
+
+**Note:** This blog post is also available at[IBM DeveloperWorks](https://developer.ibm.com/node/2016/11/15/systematic-function-design-in-javascript/).  
+
 <p class="graf graf--p">
   Habits can be damning or liberating. Perhaps you are like me. I know having tests, examples, and documentation are good things for any program but why do they always seem to be an afterthought? Wouldn’t it be great to have a coding methodology that propels me to write well-documented and tested programs that are easy to change? Thankfully, a team of professors/researchers have tackled this very problem and distilled their insights in what is called <a class="markup--anchor markup--p-anchor" href="https://www.edx.org/xseries/how-code-systematic-program-design" target="blank">systematic program design </a>or the <a class="markup--anchor markup--p-anchor" href="http://www.ccs.neu.edu/home/matthias/HtDP2e/" target="blank">HtDP </a>methodology (How to Design Programs).
 </p>
@@ -36,7 +35,7 @@ This blog post has been moved to IBM DeveloperWorks....
   This first part is on functions. Let’s get started.<!--more-->
 </p>
 
-### Designing functions
+### Designing Functions
 
 <p class="graf graf--p">
   Let’s define a function that takes a number and produces a number that is double the number provided. I’m sure you’ve already done this function in your head and have seen it used in countless examples prior. However, we are going to take a step back and take a systematic approach that will land us with a well-documented and tested function in the end.
