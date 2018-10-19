@@ -1,8 +1,9 @@
 ---
 title: Announcing OASGraph - a GraphQL Wrapper for REST APIs
 date: 2018-09-24
-author: 
-  - Jim A. Laredo 
+author:
+  - Alan Cha
+  - Jim A. Laredo
   - Erik Wittern
 permalink: /strongblog/announcing-oasgraph/
 categories:
@@ -12,7 +13,7 @@ categories:
 ---
 
 IBM Research and the LoopBack team are happy to announce the release of _OASGraph_ ([_git_](https://github.com/strongloop/oasgraph),[_npm_](https://www.npmjs.com/package/oasgraph)) to the Open Source community. OASGraph is a software package that is written in TypeScript. It creates a fully functional GraphQL wrapper for existing REST(-like) APIs, described by an [Open API Specification (OAS)](https://github.com/OAI/OpenAPI-Specification) or [Swagger](https://swagger.io/).
- 
+
 <!--more-->
 
 Interest in GraphQL has skyrocketed in the last few years. Just in the last year alone, the number of downloads from npm of the core GraphQL library, [GraphQL.js](https://www.npmjs.com/package/graphql), has gone up more than 300% to more than 700,000 times per week.  
