@@ -10,6 +10,7 @@ categories:
   - Community
   - OpenAPI Spec
   - GraphQL
+visible: 0
 ---
 
 [OASGraph](http://v4.loopback.io/oasgraph.html) ([_git_](https://github.com/strongloop/oasgraph), [_npm_](https://www.npmjs.com/package/oasgraph)) began as a simple idea. In response to the quickly growing popularity of [GraphQL](https://graphql.org/), we wondered: "How can we make GraphQL more accessible?" Now, that dream is a reality with the release of OASGraph, a tool that can wrap RESTful APIs defined with [Open API Specification (OAS)](https://github.com/OAI/OpenAPI-Specification) with GraphQL.
