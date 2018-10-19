@@ -5,7 +5,7 @@ date: 2018-10-10
 author:
   - Diana Lau
   - Raymond Feng
-  - Miroslav Bajtos
+  - Miroslav Bajtoš
 permalink: /strongblog/loopback-4-ga
 categories:
   - Community

@@ -5,7 +5,7 @@ date: 2018-07-20T00:00:01+00:00
 author: 
   - Diana Lau
   - Raymond Feng
-  - Miroslav Bajtos
+  - Miroslav Bajtoš
 permalink: /strongblog/loopback-4-developer-preview-3
 categories:
   - Community
