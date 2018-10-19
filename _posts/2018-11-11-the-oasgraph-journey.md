@@ -1,6 +1,6 @@
 ---
 title: The OASGraph Journey
-date: 2018-10-1
+date: 2018-11-11
 author:
   - Alan Cha
   - Jim A. Laredo
