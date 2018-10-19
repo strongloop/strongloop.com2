@@ -6,6 +6,7 @@ permalink: /strongblog/node-js-interactive-2018-wrap-up/
 categories:
   - Community
   - Events
+visible: 0
 ---
 
 The initial Node+JS Interactive has wrapped up and the event went quite nicely. Since the event was held at the same location as last year's [Node Interactive](https://strongloop.com/strongblog/node-interactive-2017-wrap-up/) we were confident it was going to be a success. 
