@@ -52,6 +52,7 @@ author: C. Rand McKinney
 permalink: /strongblog/information-for-blog-authors/
 categories:
   - How-To
+published: false  
 ---
 ```
 
@@ -85,6 +86,7 @@ author:
   - 'Node DevOps'
   - Product
   - Resources
+published: false: will ensure the post doesn't go live until fully edited and approved  
 
 ## Excerpt
 
