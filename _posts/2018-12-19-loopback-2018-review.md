@@ -6,7 +6,7 @@ permalink: /strongblog/loopback-2018-review/
 categories:
   - Community
   - LoopBack
-
+visible: 0
 ---
 
 As 2018 draws to a close, we’re reflecting on the evolution of StrongLoop and [LoopBack](http://loopback.io/) in the past twelve months. It's been a big year for our open-source Node.js framework. It started with the introduction of the LoopBack CLI and ended with the LoopBack 4 developer preview release and a request for feedback on a new LoopBack logo - and there was a lot of activity in between! We invite you to join us as we take a look at how things progressed for LoopBack in 2017. There's a lot to take in, so we invite you to top up your beverage of choice before you begin!
