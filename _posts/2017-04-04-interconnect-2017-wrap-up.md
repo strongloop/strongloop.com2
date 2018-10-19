@@ -10,9 +10,9 @@ inline_featured_image:
 categories:
   - Community
   - Events
-layout: redirected
-redirect_to: https://developer.ibm.com/node/2017/04/04/interconnect-2017-wrap-up/
----
+
+**Note:** This blog post is also available at [IBM DeveloperWorks](https://developer.ibm.com/node/2017/04/04/interconnect-2017-wrap-up/).
+
 _Well, that was amazing._
 
 [IBM InterConnect 2017](https://www.ibm.com/cloud-computing/us/en/interconnect/) wrapped up about a week ago. I am still trying to parse all the knowledge and insights I gathered, as well as all the connections made. This was my first InterConnect event and its size and depth continuously blew me away. My domain is typically smaller, developer-focused community events that, on average, host an audience in the hundreds. Events this size, with attendance in the thousands, are a new thing for me. That being said, it was easy to find many, many informative and insightful sessions. I&#8217;ve come away from the event invigorated and flush with inspiration.<!--more-->
@@ -30,8 +30,6 @@ My fellow StrongLoop evangelist, [David Okun](https://twitter.com/dokun24), conc
 > &#8220;The operative question no longer seems to be, &#8216;How can I build an API?&#8217; but rather, &#8216;How can I manage it well?'&#8221;
 
 Pulling the integration story together into a very compelling presentation was our own [Juan Carlos Soto](https://www.ibm.com/blogs/cloud-computing/author/jcsoto/), Head of Hybrid Integration. He brought a number of people on stage to share their stories: [Nicola Palmarini](http://researcher.ibm.com/researcher/view.php?person=us-npalmar) (IBM), Srinivas Tummala (Citi/Banamex), and [Adam Seligman](https://www.linkedin.com/in/adamseligman) (Salesforce). Each of their stories and conversations were insightful and aptly highlighted tomorrow&#8217;s integration trends. But for our team, the big splash was our colleague [Ram Vennam](https://twitter.com/ramvennam)&#8216;s demo. A number of us worked on this project and it was thrilling to see it in action on the big stage. It showed a freight company intelligently re-routing deliveries of critical shipments around developing storms, using not only cognitive integrations but a number of other emerging technologies, including IoT and (of course) API management. You can see the demo in the video below.
-
-
 
 Personally, I am fueled by the social connections and interpersonal relationships. While I learned a ton and explored many facets of IBM, its technologies and the space it operates within, my biggest takeaway is all the people I was able to engage with in such a short time: so many interesting people doing impactful work. I look forward to nurturing these relationships, seeing how I can help and generally cheering on all my friends, new and old. Salut!
 
