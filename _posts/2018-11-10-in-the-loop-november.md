@@ -37,6 +37,11 @@ Gail Frederick leads Portland eBay office and API focus.
 
 [READ MORE >>>](https://www.geekwire.com/2018/gail-frederick/)
 
+### Node+JS Interactive 2018 Video Playlist
+
+The event videos for Node+JS Interatcive are online and ready for viewing.
+
+[SEE MORE >>>](https://www.geekwire.com/2018/gail-frederick/)Node+JS Interactive 2018
 
 ## What Next?
 
