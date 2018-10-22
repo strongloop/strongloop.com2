@@ -8,6 +8,7 @@ permalink: /strongblog/loopback-4-ga
 categories:
   - Community
   - LoopBack
+published: false  
 ---
 
 The LoopBack framework is a powerful and flexible tool that can be used in many different ways. Some of these ways lead to better results while other can create headaches later in the project lifecycle. To make it easy for LoopBack users to do the right thing in their projects, we have created several Best Practice guides.
