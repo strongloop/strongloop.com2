@@ -1,4 +1,4 @@
----
+(VIEO---
 layout: post
 title: In the Loop - November 2018
 date: 2018-11-30
@@ -13,9 +13,15 @@ published: false
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Loopback + Ionic/Angular — Web Application Development Setup
+
+Ever thought of having a solid initial code set up for your personal projects? Kishore says that if the answer is yes, using LoopBack for your projects will be a very good starting point making your development timelines reduce drastically.
+
+[READ MORE >>>](https://medium.com/@saikishoret99/loopback-ionic-angular-web-application-development-setup-830809cfc42?_branch_match_id=524992665964006092)
+
 ### TypeScript Documentation
 
-LoopBack 4 has a brand new LoopBack core written in TypeScript/ES2017 for great extensibility and flexibility.. Check out TypeScript's documentation to learn more about this open-source programming language. 
+LoopBack 4 has a brand new LoopBack core written in TypeScript/ES2017 for great extensibility and flexibility. Check out TypeScript's documentation to learn more about this open-source programming language. 
 
 [READ MORE >>>](https://www.typescriptlang.org/docs/home.html)
 
@@ -37,7 +43,7 @@ Gail Frederick leads Portland eBay office and API focus.
 
 [READ MORE >>>](https://www.geekwire.com/2018/gail-frederick/)
 
-### Node+JS Interactive 2018 Video Playlist
+### (VIDEOS) Node+JS Interactive 2018 Video Playlist
 
 The event videos for Node+JS Interatcive are online and ready for viewing.
 
