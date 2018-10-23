@@ -9,7 +9,7 @@ categories:
 published: false
 ---
 
-Node+JS Interactive is a wrap! The event was once again held at the same location as last year's [Node Interactive](https://strongloop.com/strongblog/node-interactive-2017-wrap-up/) so the event was set up to be a success. And a success it was, with xx talks, xx workshops, the new "Community Corner" and the add-on Collaborator's Summit which included the wildly successful Code+Learn (xx number of new commits to Node.js core!)
+Node+JS Interactive is a wrap! The event was once again held at the same location as last year's [Node Interactive](https://strongloop.com/strongblog/node-interactive-2017-wrap-up/) so the event was set up to be a success. And a success it was, with almost 80 talks and workshops, the new "Community Corner" and the add-on Collaborator's Summit which included the wildly successful Code+Learn ([153 new commits](https://twitter.com/nodejs/status/1051850295578435587)to Node.js core!)
 
 The event, hosted at the Vancouver Convention Centre in British Columbia, Canada, ran from October 10-12. IBM served as Platinum Sponsor for prior Node Interactives, and was proud to act as one of the Platinum Sponsors for Node+JS Interactive as well.
 
@@ -26,11 +26,11 @@ Speaking of community, another interesting session was at the "Community Corner,
 
 We were excited to have LoopBack 4 officially announced by Chris Bailey, IBM's Chief Architect of Cloud Native Runtimes. He mentioned it was live in his ["Create, Deploy and Scale: Building Enterprise Grade Cloud Native Node.js APIs"](https://www.youtube.com/watch?v=btSWOBf8-Hs&list=PLfMzBWSH11xaZvhv1X5Fq1H-oMdnAtG6k&t=0s&index=52) keynote. Then, LoopBack developer (and one of StrongLoop's founders) Raymond Feng provided a walkthrough of LoopBack 4 in his session ["The Art of Building Node.js Projects at Scale."](https://www.youtube.com/watch?v=_H6td2GaW3I&list=PLfMzBWSH11xaZvhv1X5Fq1H-oMdnAtG6k&t=0s&index=35)
 
-[CloudNativeJS](https://www.cloudnativejs.io) was also a hot topic, including the corresponding [CloudNativeJS workshop](https://github.com/CloudNativeJS/Tutorial) which was a big hit with attendees.
+[CloudNativeJS](https://www.cloudnativejs.io) was also a hot topic, including the corresponding [CloudNativeJS workshop](https://github.com/CloudNativeJS/Tutorial) which was a big hit with attendees. Chris Bailey shared his "Node+JS Interactive Keynote: Create, deploy, and scale enterprise-grade cloud native APIs" source materials on [IBM's DevWorks](https://developer.ibm.com/blogs/2018/10/22/nodejs-interactive-keynote-create-deploy-scale-cloud-native-apis/).
 
 The Booth Crawl is always a great opportunity to see what other people - and businesses - are doing with Node and JavaScript. Plenty of people visited the IBM booth with questions, and appetizers and drinks made the conversation go a little more smoothly.
 
-The event officially wrapped up Thursday evening at the event afterparty, hosted by Telus at Vancouver's Telus Garden.
+The event officially wrapped up Thursday evening at the event afterparty, hosted by Telus at Vancouver's Telus Garden. It was a great way to celebrate after a couple of solid days of learning and connecting!
 
 ## What's Next?
 
