@@ -2,8 +2,8 @@ Some commonly asked questions at the IBM booth regarding LoopBack.
 
 **Q: What is LoopBack?**
 
-A: LoopBack is a leading open source Node.js API framework. Continued to be the leading API creation framework with out-of-box integration with 20+ databases and services, LoopBack 4:
-- Has a brand new core rewritten in TypeScript which makes this framework simpler to use and easier to extend than ever
+A: LoopBack is a an open source Node.js API framework. Continued to be the leading API creation framework with out-of-box integration with 20+ databases and services, LoopBack 4 is a rewrite in TypeScript from ground up based on LoopBack 3.  It:
+- Has a brand new core which makes this framework simpler to use and easier to extend than ever
 - Supports OpenAPI for comprehensive bottom-up and top-down REST API experience
 - Enables instant GraphQL endpoints from REST APIs
 
@@ -22,4 +22,4 @@ A: We recently released a node module called [oasgraph](http://v4.loopback.io/oa
 
 **Q: What if I missed the talk on building large scale Node.js application?**
 
-A: Don't worry.  The recording has been posted [here](https://www.youtube.com/watch?v=_H6td2GaW3I&index=35&list=PLfMzBWSH11xaZvhv1X5Fq1H-oMdnAtG6k&t=0s).  Other presentation recordings can be found [this playlist](https://www.youtube.com/playlist?list=PLfMzBWSH11xaZvhv1X5Fq1H-oMdnAtG6k) as well.
+A: Don't worry.  The recording has been posted [here](https://www.youtube.com/watch?v=_H6td2GaW3I&index=35&list=PLfMzBWSH11xaZvhv1X5Fq1H-oMdnAtG6k&t=0s).  Other presentation recordings can be found in [this playlist](https://www.youtube.com/playlist?list=PLfMzBWSH11xaZvhv1X5Fq1H-oMdnAtG6k) as well.
