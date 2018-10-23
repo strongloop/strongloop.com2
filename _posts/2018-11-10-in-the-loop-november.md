@@ -19,6 +19,13 @@ Ever thought of having a solid initial code set up for your personal projects? K
 
 [READ MORE >>>](https://medium.com/@saikishoret99/loopback-ionic-angular-web-application-development-setup-830809cfc42?_branch_match_id=524992665964006092)
 
+### The OpenAPI Initiative’s Technical Steering Committee Releases OASv3.0.2
+
+The members of the OpenAPI Initiative Technical Steering Committee have announced the latest release of OpenAPI Specification 3.0.2. Note: This release is a patch release and none of these modifications change the behavior of the spec.
+
+[READ MORE >>>](https://www.openapis.org/blog/2018/10/08/the-openapi-initiatives-technical-steering-committee-releases-oasv3-0-2)
+
+
 ### TypeScript Documentation
 
 LoopBack 4 has a brand new LoopBack core written in TypeScript/ES2017 for great extensibility and flexibility. Check out TypeScript's documentation to learn more about this open-source programming language. 
