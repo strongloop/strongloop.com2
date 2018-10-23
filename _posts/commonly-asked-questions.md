@@ -19,3 +19,7 @@ A: Yes, you can connect to external services, such as REST and SOAP services, in
 **Q: I heard that LoopBack has GraphQL support.  Can you tell me more about it?**
 
 A: We recently released a node module called [oasgraph](http://v4.loopback.io/oasgraph.html). It takes any REST API with an OpenAPI definition and give it a GraphQL gateway. [Our tutorial](https://developer.ibm.com/tutorials/create-rest-apis-minutes-with-loopback-4/) shows you how.
+
+**Q: What if I missed the talk on building large scale Node.js application?**
+
+A: Don't worry.  The recording has been posted [here](https://www.youtube.com/watch?v=_H6td2GaW3I&index=35&list=PLfMzBWSH11xaZvhv1X5Fq1H-oMdnAtG6k&t=0s).  Other presentation recordings can be found [this playlist](https://www.youtube.com/playlist?list=PLfMzBWSH11xaZvhv1X5Fq1H-oMdnAtG6k) as well.
