@@ -1,6 +1,6 @@
 ---
 title: Node+JS Interactive 2018 Wrap-Up
-date: 2018-11-23
+date: 2018-10-23
 author: 
   - Dave Whiteley
   - Joe Sepi
