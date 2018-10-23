@@ -8,7 +8,7 @@ permalink: /strongblog/node-js-interactive-2018-wrap-up/
 categories:
   - Community
   - Events
-published: false
+published: true
 ---
 
 Node+JS Interactive is a wrap! The event was once again held at the same location as last year's [Node Interactive](https://strongloop.com/strongblog/node-interactive-2017-wrap-up/) so the event was set up to be a success. And a success it was, with almost 80 talks and workshops, the new "Community Corner" and the add-on Collaborator's Summit which included the wildly successful Code+Learn ([153 new commits](https://twitter.com/nodejs/status/1051850295578435587)to Node.js core!)
