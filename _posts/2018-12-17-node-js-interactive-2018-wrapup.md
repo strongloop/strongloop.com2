@@ -28,9 +28,11 @@ We were excited to have LoopBack 4 officially announced by Chris Bailey, IBM's C
 
 [CloudNativeJS](https://www.cloudnativejs.io) was also a hot topic, including the corresponding [CloudNativeJS workshop](https://github.com/CloudNativeJS/Tutorial) which was a big hit with attendees. Chris Bailey shared his "Node+JS Interactive Keynote: Create, deploy, and scale enterprise-grade cloud native APIs" source materials on [IBM's DevWorks](https://developer.ibm.com/blogs/2018/10/22/nodejs-interactive-keynote-create-deploy-scale-cloud-native-apis/).
 
-The Booth Crawl is always a great opportunity to see what other people - and businesses - are doing with Node and JavaScript. Plenty of people visited the IBM booth with questions, and appetizers and drinks made the conversation go a little more smoothly.
+The IBM team was able to chat with many of the attendees at our booth. It is always encouraging to have a chance to see how people are developing with the tools we support and what suggetsions and quetsions they may have. The Loopback team received a few questions, and we will share some answers to these LoopBack-specific questions later this week.
 
-The event officially wrapped up Thursday evening at the event afterparty, hosted by Telus at Vancouver's Telus Garden. It was a great way to celebrate after a couple of solid days of learning and connecting!
+Speaking of seeing how people develop, Wednesday's Booth Crawl was a great opportunity to see what other people - and businesses - are doing with Node and JavaScript. Plenty of people visited the IBM booth with questions, and appetizers and drinks made the conversation go a little more smoothly.
+
+The event officially wrapped up Thursday evening at an afterparty hosted by Telus at Vancouver's Telus Garden. It was a great way to celebrate after a couple of solid days of learning and connecting!
 
 ## What's Next?
 
