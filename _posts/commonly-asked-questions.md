@@ -14,7 +14,7 @@ A: Of course! You can find the tutorial here: https://developer.ibm.com/tutorial
 
 **Q: Can I use LoopBack to talk to other third-party services?**
 
-A: Yes, you can connect to external services, such as REST and SOAP services, in your LoopBack application.  See [this tutorial](https://loopback.io/doc/en/lb4/soap-calculator-tutorial.html) for more details.
+A: Yes, you can connect to external services, such as REST and SOAP services, in your LoopBack application.  See [the documentation page](https://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html) and [the SOAP calculator tutorial](https://loopback.io/doc/en/lb4/soap-calculator-tutorial.html) for more details.
 
 **Q: I heard that LoopBack has GraphQL support.  Can you tell me more about it?**
 
