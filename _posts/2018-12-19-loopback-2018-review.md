@@ -11,14 +11,14 @@ published: false
 
 The past twelve months have been huge for the LoopBack team. As 2018 wraps up, we want to take a look at the various developments throughout the year for StrongLoop and [LoopBack](http://loopback.io/). The year began as we revealed the community-chosen logo for LoopBack 4 and wrapped up with the latest version of our framework GA and ready for production! In between, there were a lot of interesting moments. Join us as we take a look back!
 
-<img src="https://strongloop.com/blog-assets/2018/Loopback-2018-wrap-up.png" alt="LoopBack 2018 Year in Review"/>
+<img src="https://strongloop.com/blog-assets/2018/Loopback-2018-wrap-up.png" alt="LoopBack 2018 Year in Review" style="width: 250px; margin:auto;"/>
 
 <!--more-->
 ## The LoopBack 4 Logo
 
 As 2017 was drawing to a close, we asked the StrongLoop community for their help in selecting a logo for LoopBack 4. After reviewing five logo options and three color alternatives, over 200 folks determined the winning logo. 
 
-<img src="https://strongloop.com/blog-assets/2018/01/loopback-4-logo-sample.png" alt="LoopBack 4 logo"/>
+<img src="https://strongloop.com/blog-assets/2018/01/loopback-4-logo-sample.png" alt="LoopBack 4 logo" style="width: 250px; margin:auto;"/>
 
 We provided more details on a dedicated blog post, which you can read [here](https://strongloop.com/strongblog/thanks-loopback-4-logo/).
 
