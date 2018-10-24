@@ -9,7 +9,7 @@ categories:
 published: false
 ---
 
-The past twelve months have been huge for the LoopBack team. As 2018 wraps up, take a look at the various developments throughout the year for StrongLoop and [LoopBack](http://loopback.io/). 2018 began as we revelaed the community-chosen logo for LoopBack 4 and wrapped up with the latest version of our framework GA and ready for production! In between, there were a lot of interesting moments. Join us as we take a look back!
+The past twelve months have been huge for the LoopBack team. As 2018 wraps up, we want to take a look at the various developments throughout the year for StrongLoop and [LoopBack](http://loopback.io/). The year began as we revealed the community-chosen logo for LoopBack 4 and wrapped up with the latest version of our framework GA and ready for production! In between, there were a lot of interesting moments. Join us as we take a look back!
 
 <img src="https://strongloop.com/blog-assets/2017/loopback-2017.png" alt="LoopBack 2017 Year in Review"/>
 
@@ -35,11 +35,23 @@ She looks at the logo, website design decisions etc
 
 ## LoopBack 4
 
+
+Announcing LoopBack 4 Developer Preview 3 https://strongloop.com/strongblog/loopback-4-developer-preview-3
+
+
+---
+
+
+
 LoopBack 4 Dropping Support for Node.js 6 https://strongloop.com/strongblog/loopback-4-dropping-node6
 
 by Biniam Admikew 
 
 Our goal with the next version of LoopBack is to use cutting-edge features and tooling from the Node.js ecosystem. Node.js 6.x will be entering maintenance mode this April, and requires us to provide hacks and polyfills to maintain compatibility, which actively works against this goal. As a result, we are dropping Node.js 6.x support for LoopBack 4. We will continue to support Node.js 8.x, and will be adding support for Node.js 10.x shortly after it is released. 
+
+LoopBack 4 Model Relations Preview https://strongloop.com/strongblog/loopback4-model-relations
+
+LoopBack 4 now has the infrastructure in place to understand relations between models and supports the hasMany relationship
 
 
 ---
@@ -69,10 +81,38 @@ https://strongloop.com/strongblog/loopback-4-json-schema-generation/
 
 --
 
+Welcoming Model and Datasource Commands  to LB4 CLI  https://strongloop.com/strongblog/welcoming-model-and-datasource-commands-to-lb4-cli/
+ 
+by Taranveer Virk This CLI tool is now able to generate Model and DataSource artifacts using the lb4 model and lb4 datasource command respectively.
+
+---
+
+
+
 Raymond Feng
+
 Track Down Dependency Injections with LoopBack 4
 https://strongloop.com/strongblog/loopback-4-track-down-dependency-injections/
 examples and features
+
+LoopBack 4 Introduces Express Mode for CLI - As you have seen, LoopBack 4 CLI can help developers scaffold projects and provision artifacts in a few different ways.
+
+https://strongloop.com/strongblog/loopback4-cli-express-mode
+
+
+
+---
+
+OAI / OAS
+
+Turning OpenAPI Specifications into Action with LoopBack 4 https://strongloop.com/strongblog/loopback4-openapi-cli/
+
+by Raymond Feng we’ll illustrate how easy it is to create REST APIs in Node.js from an OpenAPI specification using LoopBack 4. Let’s start the journey by first creating an empty LoopBack 4 application.
+
+Fundamental Validations for HTTP Requests with LoopBack 4 and OpenAPI Spec https://strongloop.com/strongblog/fundamental-validations-for-http-requests/
+
+by Janny Hou 
+
 
 --
 Miroslav Bajtoš
@@ -96,12 +136,18 @@ Diana Lau LoopBack 4 GitHub Example Application: Create REST APIs
 In this series, we will work through creating a basic LoopBack 4 application that exposes REST APIs; calls out to GitHub APIs through octokat.js (a GitHub API client) to get the number of stargazers on a user-specified GitHub organization and repository; and persists the data into a Cloudant database.
 
 
-
 Part 1: Scaffolding a LoopBack 4 application and creating REST API https://strongloop.com/strongblog/loopback4-github-example-app-part1/
 
 Part 2: Adding logic to a controller to talk to GitHub API https://strongloop.com/strongblog/loopback4-github-example-app-part2/
 
 Part 3: Persisting data to Cloudant database using DataSource and Repository https://strongloop.com/strongblog/loopback4-github-example-app-part3/
+
+
+--
+Achieving Productivity with lb4 Repository Command
+https://strongloop.com/strongblog/productivity-with-lb4-repository/
+
+ Mario Estrada To support this flow completely and start achieving productivity, we welcome the recently addition to the CLI options, lb4 repository. This option is very powerful and can accept multiple models, infer their ID property and generate a repository for each of them in one single command.
 
 
 --
@@ -112,7 +158,22 @@ Part 3: Persisting data to Cloudant database using DataSource and Repository htt
 
 While we were looking to the future as we built LoopBack 4, we were still watching out for existing versions of LoopBack. 
 
---
+LoopBack is joining the recently announced Module LTS initiative and aligns the long-term support terms with Node.js LTS versions.
+
+With the new LTS policy in place:
+
+    We stay committed to keep fixing all bugs for at least the first 6 months after a LoopBack major version enters Active LTS mode. (No changes here.)
+
+    When a LoopBack version enters Maintenance LTS mode, we are committed to keep fixing critical and security issues for as long as the related Node.js LTS version stays supported by the Node.js project. This will typically offer much longer support than the previous minimum of 6 months.
+
+
+
+https://strongloop.com/strongblog/loopback-adopts-module-lts-policy
+
+
+
+
+-
 
 LoopBack Doc Search Powered by Watson
 
