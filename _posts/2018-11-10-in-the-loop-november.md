@@ -50,6 +50,12 @@ Gail Frederick leads Portland eBay office and API focus.
 
 [READ MORE >>>](https://www.geekwire.com/2018/gail-frederick/)
 
+### Our Perspective on the Node.js and JavaScript Foundations Merge Discussions
+
+IBM's Michael Dawson and Joe Sepi, both of whom are actively involved in the community and the project, share their perspectives on this announcement.
+
+[READ MORE >>>](https://developer.ibm.com/blogs/2018/10/23/nodejs-foundation-and-js-foundation-merger/)
+
 ### (VIDEOS) Node+JS Interactive 2018 Video Playlist
 
 The event videos for Node+JS Interatcive are online and ready for viewing.
