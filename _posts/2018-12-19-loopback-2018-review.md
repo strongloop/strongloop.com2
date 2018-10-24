@@ -77,22 +77,6 @@ https://strongloop.com/strongblog/productivity-with-lb4-repository/
 
 Mario Estrada To support this flow completely and start achieving productivity, we welcome the recently addition to the CLI options, lb4 repository. This option is very powerful and can accept multiple models, infer their ID property and generate a repository for each of them in one single command.
 
-
-## Playing Well with OpenAPI Spec
-
-
-Janny Hou 
-LoopBack 4 Upgrades from Swagger to OpenAPI 3.0.0  https://strongloop.com/strongblog/upgrade-from-swagger-to-openapi-3/
-
-Given the community feedback we have received in the last few months, we decided to adopt the OpenAPI 3.0.0 specification to describe the exposed RESTful APIs of a LoopBack application. LoopBack 4 users can now build their OpenAPI 3.0.0 endpoints with upgraded packages.
-
-Turning OpenAPI Specifications into Action with LoopBack 4 https://strongloop.com/strongblog/loopback4-openapi-cli/
-
-by Raymond Feng we’ll illustrate how easy it is to create REST APIs in Node.js from an OpenAPI specification using LoopBack 4. Let’s start the journey by first creating an empty LoopBack 4 application.
-
-Fundamental Validations for HTTP Requests with LoopBack 4 and OpenAPI Spec https://strongloop.com/strongblog/fundamental-validations-for-http-requests/ by Janny Hou 
-
-
 ## More LoopBack Improvements and How-To Content
 
 While we were looking to the future as we built LoopBack 4, we were still watching out for existing versions of LoopBack. 
@@ -128,7 +112,15 @@ With the new LTS policy in place:
 
 https://strongloop.com/strongblog/loopback-adopts-module-lts-policy
 
--
+## Playing Well with OpenAPI Spec
+
+WIth IBM supporting the [OpenAPI Initiative](https://www.openapis.org/), it shouldn't surprise anyone that the LoopBack team uses the spec they offer. 
+
+Janny Hou described how LoopBack 4 upgraded from Swagger to [OpenAPI Spec 3.0.0](https://strongloop.com/strongblog/upgrade-from-swagger-to-openapi-3/), based on community feedback. "LoopBack 4 users," she stated, "can now build their OpenAPI 3.0.0 endpoints with upgraded packages". Janny also looked at LoopBack 4, OpenAPI Spec, and fundamental validations for HTTP requests in [another post](https://strongloop.com/strongblog/fundamental-validations-for-http-requests/).
+
+Raymond Feng demonstarted how to simply create REST APIs in Node.js from an OpenAPI Specification using LoopBack 4 in [this post](https://strongloop.com/strongblog/loopback4-openapi-cli/).
+
+We look forward to continuing to see how we can work with OpenAPI Spec!
 
 ## LoopBack at Events
 
