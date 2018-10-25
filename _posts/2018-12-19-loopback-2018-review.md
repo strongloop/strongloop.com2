@@ -24,15 +24,17 @@ We provided more details on a dedicated blog post, which you can read [here](htt
 
 ## The LoopBack 4 Website
 
-While we had previously announced the new LB 4 site on a milestone update, on June 11th Diana Lau provided a look at the site's genesis. She explained, "Back when we started to develop LoopBack 4, the team knew that a new codebase should be accompanied by a new logo and branding dedicated to this new version. We put these ideas aside while we focused on delivering the code." You can read more about the evolution of the logo, website design decisions and more [here](https://strongloop.com/strongblog/lb4-website/).
+While we had previously announced the new LB 4 site on a milestone update, on June 11th Diana Lau provided a look at the site's genesis. She explained, "Back when we started to develop LoopBack 4, the team knew that a new codebase should be accompanied by a new logo and branding dedicated to this new version. We put these ideas aside while we focused on delivering the code." 
+
+You can read more about the evolution of the logo, website design decisions and more [here](https://strongloop.com/strongblog/lb4-website/).
 
 ## LoopBack 4
 
-We've provided some information on the LoopBack 4's logo and dedicated site, now let's review the many posts and updates we provided about the framework itself. For simplicity, we're running through in rough chronological order.
+We've provided some information on the LoopBack 4's logo and dedicated site, now let's review the many posts and updates we provided about the framework itself. While we provided a [second](https://strongloop.com/strongblog/loopback-4-developer-preview-2) and [third LoopBack 4 Developer Preview 3](https://strongloop.com/strongblog/loopback-4-developer-preview-3) to let the community take a look at what we were cooking, we'll run through our LoopBack updates in rough chronological order.
 
 Early in the year Kevin Delisle announced that we added the new controller generation command to the lb4 CLI toolkit. Learn how you can can install with [npm i -g @loopback/cli](https://strongloop.com/strongblog/generate-controllers-loopback-4-cli/).
 
-Kyu Shim explained another new feature in his post "Automatically Generate JSON Schema for your LoopBack 4 Models." if you want to leanr how to more effetcively deal with models and metadata in LoopBack 4, click [here](https://strongloop.com/strongblog/loopback-4-json-schema-generation/).
+Kyu Shim explained another new feature in his post "Automatically Generate JSON Schema for your LoopBack 4 Models." if you want to learn how to more effetcively deal with models and metadata in LoopBack 4, click [here](https://strongloop.com/strongblog/loopback-4-json-schema-generation/).
 
 Speaking of new features, and so much of LoopBack 4 deals with new features, Raymond Feng demonstrates how you can use LoopBack 4 to track down dependency injections. Get examples and learn more about the options [here](https://strongloop.com/strongblog/loopback-4-track-down-dependency-injections/).
 
@@ -45,32 +47,18 @@ Taranveer Virk introduced [@loopback/boot for LoopBack 4](https://strongloop.com
 
 Curious about creating REST APIs? Diana Lau provided a three-part "LoopBack 4 GitHub Example Application" series. She  demonstrated how to build a basic LoopBack 4 application that [exposes REST APIs](https://strongloop.com/strongblog/loopback4-github-example-app-part1/); [calls out to GitHub APIs](https://strongloop.com/strongblog/loopback4-github-example-app-part2/) through octokat.js (a GitHub API client) to get the number of stargazers on a user-specified GitHub organization and repository; and [persists the data into a Cloudant database](https://strongloop.com/strongblog/loopback4-github-example-app-part3/). 
 
-
-ncing LoopBack 4 Developer Preview 3 https://strongloop.com/strongblog/loopback-4-developer-preview-3
-
-
-
-
-LoopBack 4 Model Relations Preview https://strongloop.com/strongblog/loopback4-model-relations
-
-LoopBack 4 now has the infrastructure in place to understand relations between models and supports the hasMany relationship
-
-
----
-
-
-Welcoming Model and Datasource Commands  to LB4 CLI  https://strongloop.com/strongblog/welcoming-model-and-datasource-commands-to-lb4-cli/
- 
-by Taranveer Virk This CLI tool is now able to generate Model and DataSource artifacts using the lb4 model and lb4 datasource command respectively.
-
----
-
-
-LoopBack 4 Introduces Express Mode for CLI - As you have seen, LoopBack 4 CLI can help developers scaffold projects and provision artifacts in a few different ways.
-
-https://strongloop.com/strongblog/loopback4-cli-express-mode
+------------------RESUME WORK HERE------------
 
 LoopBack 4 Improves Inbound HTTP Processing https://strongloop.com/strongblog/loopback4-improves-inbound-http-processing
+
+Biniam Admikew looked into LoopBack 4's powerful ability to link its models with Model Relations in his [LoopBack 4 Model Relations Preview](https://strongloop.com/strongblog/loopback4-model-relations) post. He also pointed people towards documentation about defining and adding a hasMany relation to LoopBack 4 applications and an example tutorial for hands-on practice.
+
+In July, Raymond Feng shared new ways for developers to build, zeroing in on the LoopBack 4 CLI. "As you have seen, LoopBack 4 CLI can help developers scaffold projects and provision artifacts in a few different ways." LoopBack 4's [Express Mode for CLI](https://strongloop.com/strongblog/loopback4-cli-express-mode) allows developers to scaffold projects and provision artifacts in multiple ways, with more details in the post.
+
+Taranveer Virk told us about more LoopBack 4's CLI tool in August. As he explained, "it is now able to generate Model and DataSource artifacts using the lb4 model and lb4 datasource command respectively." Read about it in [Welcoming Model and Datasource Commands to LB4 CLI](https://strongloop.com/strongblog/welcoming-model-and-datasource-commands-to-lb4-cli/).
+
+
+
 
 Achieving Productivity with lb4 Repository Command
 https://strongloop.com/strongblog/productivity-with-lb4-repository/
