@@ -1,24 +1,28 @@
 ---
 layout: post
-title: Commonly Asked Questions on LoopBack at Node+JS Interactive
-date: 2018-11-30
+title: Frequently Asked Questions About LoopBack at Node+JS Interactive
+date: 2018-10-25
 author: Diana Lau
-permalink: /strongblog/nodejs-interactive-2018-lb/
+permalink: /strongblog/nodejs-interactive-2018-lb-questions/
 categories:
   - Community
   - LoopBack
 published: false
 ---
 
-The LoopBack team was delighted at [Node+JS Interactive conference](https://events.linuxfoundation.org/events/node-js-interactive-2018/) which happened from October 10-12 in Vancouver.  During the conference, we had:
-- Announced the release of LoopBack 4 GA during the [keynote](https://developer.ibm.com/blogs/2018/10/22/nodejs-interactive-keynote-create-deploy-scale-cloud-native-apis/) from Chris Bailey
-- Presentation session on [The Art of Building Node.js Projects at Scale](https://www.youtube.com/watch?v=_H6td2GaW3I&index=35&list=PLfMzBWSH11xaZvhv1X5Fq1H-oMdnAtG6k&t=0s) from [Raymond Feng](https://strongloop.com/authors/Raymond_Feng/)
-- Hands-on workshop on "Create REST APIs in minutes with LoopBack 4" from [Diana Lau](https://strongloop.com/authors/Diana_Lau/) and [Biniam Admikew](https://strongloop.com/authors/Biniam_Admikew/)
-- numerous great discussions at the IBM Booth
+The LoopBack team was delighted to be part of the [Node+JS Interactive conference](https://events.linuxfoundation.org/events/node-js-interactive-2018/), which happened from October 10-12 in Vancouver. We were busy at the conference, during which we:
+
+- Announced the release of LoopBack 4 GA during the [keynote](https://developer.ibm.com/blogs/2018/10/22/nodejs-interactive-keynote-create-deploy-scale-cloud-native-apis/) from Chris Bailey.
+
+- Presented a session on [The Art of Building Node.js Projects at Scale](https://www.youtube.com/watch?v=_H6td2GaW3I&index=35&list=PLfMzBWSH11xaZvhv1X5Fq1H-oMdnAtG6k&t=0s) from [Raymond Feng](https://strongloop.com/authors/Raymond_Feng/).
+
+- Hosted a hands-on workshop on "Create REST APIs in minutes with LoopBack 4" from [Diana Lau](https://strongloop.com/authors/Diana_Lau/) and [Biniam Admikew](https://strongloop.com/authors/Biniam_Admikew/).
+
+- Connected with people during numerous great discussions at the IBM Booth.
 
 <!--more-->
 
-Let us share some commonly asked questions during the conference.
+There were a few questions about LoopBack that we heard from multiple attendess. Let us share some commonly asked questions we received during the conference.
 
 **Q: What is LoopBack?**
 
