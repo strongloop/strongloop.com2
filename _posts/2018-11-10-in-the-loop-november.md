@@ -25,7 +25,6 @@ The members of the OpenAPI Initiative Technical Steering Committee have announce
 
 [READ MORE >>>](https://www.openapis.org/blog/2018/10/08/the-openapi-initiatives-technical-steering-committee-releases-oasv3-0-2)
 
-
 ### TypeScript Documentation
 
 LoopBack 4 has a brand new LoopBack core written in TypeScript/ES2017 for great extensibility and flexibility. Check out TypeScript's documentation to learn more about this open-source programming language. 
@@ -36,7 +35,13 @@ LoopBack 4 has a brand new LoopBack core written in TypeScript/ES2017 for great 
 
 John Wang covers his approach to making changes and contributing them back to the OpenAPI Generator project used to generate the Go SDK for RingCentral.
 
-[READ MORE >>>](https://medium.com/ringcentral-developers/openapi-generator-for-go-contribution-quickstart-8cc72bf37b53)
+[READ MORE >>>](https://medium.com/ringcentral-developers/openapi-generator-for-go-contribution-quickstart-8cc72bf37b53
+
+### LoopBack 4 Database Configuration
+
+Mikael von Ketelhodt outlines some ways of configuring a LoopBack 4 application against a database across multiple development environments (dev, test and production).
+
+[READ MORE >>>](https://itnext.io/loopback-4-database-configuration-8f085399268)
 
 ### Node v10.12.0 (Current)
 
