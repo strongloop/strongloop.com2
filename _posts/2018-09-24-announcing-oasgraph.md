@@ -10,6 +10,7 @@ categories:
   - Community
   - OpenAPI Spec
   - GraphQL
+  - OASGraph
 ---
 
 IBM Research and the LoopBack team are happy to announce the release of _OASGraph_ ([_git_](https://github.com/strongloop/oasgraph),[_npm_](https://www.npmjs.com/package/oasgraph)) to the Open Source community. OASGraph is a software package that is written in TypeScript. It creates a fully functional GraphQL wrapper for existing REST(-like) APIs, described by an [Open API Specification (OAS)](https://github.com/OAI/OpenAPI-Specification) or [Swagger](https://swagger.io/).
