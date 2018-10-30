@@ -1,5 +1,5 @@
 ---
-title: The OASGraph Journey: "How Can We Make GraphQL More Accessible?"
+title: The OASGraph Journey - "How Can We Make GraphQL More Accessible?"
 date: 2018-10-30
 author:
   - Alan Cha
