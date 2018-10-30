@@ -106,13 +106,9 @@ We look forward to continuing to see how we can work with OpenAPI Spec!
 
 Throughout 2017 our Evangelist team continued to share their knowledge of LoopBack. We sponsored 33 events (meet-ups, conferences, workshops, and hackathons), sharing LoopBack content at 28 of them. We appeared at 5 events we did not sponsor, and held 3 webinars. Throughout each of these events, we were and are amazed at the enthusiasm LoopBack users share, and the intriguing questions and scenarios they can come up with. It’s this enthusiasm that has also helped shaped LoopBack’s growth and future.  
 
-## A GitHub Milestone and Towards the Future
+## GitHub Activity and Looking Towards the Future
 
-With all of this activity, a GitHub achievement almost went by unnoticed! [LoopBack hit 10k+](https://github.com/strongloop/loopback) stars in November. We are humbled by the support of our community, and invite you to "star" [strongloop/loopback-next](https://github.com/strongloop/loopback-next) as well!
-
-With LoopBack 4 just about ready for prime time, we are looking forward to seeing how the community uses it and helps it grow.
-
+With all of this activity, LoopBack's GitHub status continued to grow. LoopBack is currently at [11,877](https://github.com/strongloop/loopback) stars as of publication time, while [LoopBack 4](https://github.com/strongloop/loopback-next) is at 1058!
 
 
 ## What's Next? 
-
