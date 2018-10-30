@@ -7,7 +7,6 @@ author:
   - Erik Wittern
 permalink: /strongblog/announcing-oasgraph/
 categories:
-  - Community
   - OpenAPI Spec
   - GraphQL
   - OASGraph
