@@ -43,11 +43,11 @@ Mikael von Ketelhodt outlines some ways of configuring a LoopBack 4 application 
 
 [READ MORE >>>](https://itnext.io/loopback-4-database-configuration-8f085399268)
 
-### Node v10.12.0 (Current)
+### October Brings Node.js 10.x to LTS and Node.js 11 to Current!
 
-Michaël Zasso provides the details on the current version of Node.js. 
+October is always a busy month for the Node.js Project. The Node Foundation gives you teh details on what they achieved.
 
-[READ MORE >>>](https://nodejs.org/en/blog/release/v10.12.0/)
+[READ MORE >>>](https://medium.com/@nodejs/october-brings-node-js-10-x-to-lts-and-node-js-11-to-current-ae19f8f12b51)
 
 ### Geek of the Week: A ‘Nerd Through and Through,’ 
 
