@@ -7,6 +7,8 @@ permalink: /strongblog/march-2018-milestone/
 categories:
   - Community
   - LoopBack
+redirect_from:
+  - /strongblog/loopback-4-march-2018-milestone/
 ---
 
 With spring in the air, we've been hard at work gearing up for a new major release of LoopBack 4, which we've dubbed the "Developer Preview 2". The team has been focusing on the items needed for this release in the [March Milestone](https://github.com/strongloop/loopback-next/issues/937). You can also see the [April Milestone](https://github.com/strongloop/loopback-next/issues/1044) to see the work we have planned for the month of April.
