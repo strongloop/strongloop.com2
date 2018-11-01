@@ -1,13 +1,12 @@
 ---
 layout: post
 title: In the Loop - November 2018
-date: 2018-11-30
+date: 2018-11-01
 author: Dave Whiteley
 permalink: /strongblog/in-the-loop-november-2018/
 categories:
   - Community
   - News
-published: false
 ---
 
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
@@ -35,7 +34,7 @@ LoopBack 4 has a brand new LoopBack core written in TypeScript/ES2017 for great 
 
 John Wang covers his approach to making changes and contributing them back to the OpenAPI Generator project used to generate the Go SDK for RingCentral.
 
-[READ MORE >>>](https://medium.com/ringcentral-developers/openapi-generator-for-go-contribution-quickstart-8cc72bf37b53
+[READ MORE >>>](https://medium.com/ringcentral-developers/openapi-generator-for-go-contribution-quickstart-8cc72bf37b53)
 
 ### LoopBack 4 Database Configuration
 
@@ -45,7 +44,7 @@ Mikael von Ketelhodt outlines some ways of configuring a LoopBack 4 application 
 
 ### October Brings Node.js 10.x to LTS and Node.js 11 to Current!
 
-October is always a busy month for the Node.js Project. The Node Foundation gives you teh details on what they achieved.
+October is always a busy month for the Node.js Project. The Node Foundation gives you the details on what they achieved.
 
 [READ MORE >>>](https://medium.com/@nodejs/october-brings-node-js-10-x-to-lts-and-node-js-11-to-current-ae19f8f12b51)
 
@@ -63,9 +62,9 @@ IBM's Michael Dawson and Joe Sepi, both of whom are actively involved in the com
 
 ### (VIDEOS) Node+JS Interactive 2018 Video Playlist
 
-The event videos for Node+JS Interatcive are online and ready for viewing.
+The event videos for Node+JS Interactive are online and ready for viewing.
 
-[SEE MORE >>>](https://www.geekwire.com/2018/gail-frederick/)Node+JS Interactive 2018
+[SEE MORE >>>](https://www.youtube.com/playlist?list=PLfMzBWSH11xaZvhv1X5Fq1H-oMdnAtG6k)
 
 ## What Next?
 
