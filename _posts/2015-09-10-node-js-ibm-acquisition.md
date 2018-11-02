@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Announcing StrongNode 1.0 GA – an Enterprise Ready Node.js Distribution 
-date: 2013-09-20
+title: Major Milestone for Enterprise Node.js 
+date: 2015-09-10
 author: Juan Carlos Soto
 permalink: /strongblog/node-js-ibm-acquisition/
 categories:
@@ -27,6 +27,6 @@ Existing business relationships and support infrastructure will remain unchanged
 
 ## Further reading
 
-- In depth: What does the acquisition mean for the Node community? Read StrongLoop CPO, Issac Roth’s blog
-- In depth: What does the acquisition mean for the Express and LoopBack communities? Read StrongLoop CTO, Al Tsang’s blog
+- In depth: What does the acquisition mean for the Node community? Read StrongLoop CPO, [Issac Roth’s blog](https://strongloop.com/strongblog/node-js-community-ibm-acquisition/)
+- In depth: What does the acquisition mean for the Express and LoopBack communities? Read StrongLoop CTO, [Al Tsang’s blog]()
 - Still have questions? Check out the acquisition FAQ
