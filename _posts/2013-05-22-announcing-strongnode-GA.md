@@ -9,6 +9,7 @@ categories:
   - News
 redirect_from:
   - /strongblog/announcing-strongloop-node-1-0-ga-an-enterprise-ready-node-js-distribution/
+  - https://strongloop.com/strongblog/announcing-strongloop-node-1-0-ga-an-enterprise-ready-node-js-distribution/
 ---
 
 **NOTE:** StrongNode is no longer available. We recommend [API Connect](https://developer.ibm.com/apiconnect/getting-started/) for building APIs.
