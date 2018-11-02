@@ -28,5 +28,5 @@ Existing business relationships and support infrastructure will remain unchanged
 ## Further reading
 
 - In depth: What does the acquisition mean for the Node community? Read StrongLoop CPO, [Issac Roth’s blog](https://strongloop.com/strongblog/node-js-community-ibm-acquisition/)
-- In depth: What does the acquisition mean for the Express and LoopBack communities? Read StrongLoop CTO, [Al Tsang’s blog]()
+- In depth: What does the acquisition mean for the Express and LoopBack communities? Read StrongLoop CTO, [Al Tsang’s blog](https://strongloop.com/strongblog/ibm-express-loopback-node-js/)
 - Still have questions? Check out the acquisition FAQ
