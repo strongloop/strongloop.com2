@@ -24,6 +24,6 @@ Janny Hou also demonstrated how to achieve fundamental validations for HTTP requ
 
 Finally, we were proud to announce [OASGraph](https://strongloop.com/strongblog/announcing-oasgraph/), which is a GraphQL Wrapper for REST APIs. Written in TypeScript, OASGraph creates a fully functional GraphQL wrapper for existing REST(-like) APIs, described by an Open API Specification (OAS) or Swagger.
 
-To stay current with what the OpenAPI Initiative is doing, or to get information on joining and contributing, visit their [homepage}(https://www.openapis.org/). You can find the full OpenAPI Specification [here](https://github.com/OAI/OpenAPI-Specification). 
+To stay current with what the OpenAPI Initiative is doing, or to get information on joining and contributing, visit their [homepage](https://www.openapis.org/). You can find the full OpenAPI Specification [here](https://github.com/OAI/OpenAPI-Specification). 
 
 We look forward to seeing continued evolution of both the Initiative and the Spec!  
