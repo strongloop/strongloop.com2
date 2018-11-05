@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Happy Third Birthday to the OpenAPI Initiative
-date: 2018-11-05
+date: 2018-11-06
 author: Dave Whiteley
 permalink: /strongblog/happy-third-birthday-oai/
 categories:
@@ -10,7 +10,7 @@ categories:
   published: false
 ---
 
-Today is an important day day for the OpenAPI Initiative! We want to congratulate the Initiative for their third birthday and   that of OpenAPI Spec, its open source and vendor neutral REST API description format! 
+This is an important week for the OpenAPI Initiative! We want to congratulate the Initiative for their third birthday and that of OpenAPI Spec, its open source and vendor neutral REST API description format! Officially the birthday was Monday, November 5th, but as far as we are concerned, they deserve a week to celebrate! 
 
 At IBM, the LoopBack team and framework has been a longtime advocate and adopter of open API standards, so we embraced OpenAPI Spec for our API creation experience. LoopBack4 supports a complete OpenAPI V3 experience - bottom up (code first) and top down (spec first).
 
