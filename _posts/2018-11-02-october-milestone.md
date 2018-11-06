@@ -49,7 +49,7 @@ After many months in progress, the implementation of "belongsTo" relation was fi
 
 Most importantly, we discovered a problem of cyclic references between models. When a Customer has many Order instances, and an Order belongs to a Customer, then a cyclic reference is created in the source code. For example, to create a Customer repository instance, we need an Order repository instance to allow us to access related orders. At the same time, to create the required Order repository instance, we need a Customer repository instance first, to access the customer each order belongs to.
 
-To solve this problem, we reworked the way how relations are configured and replaced direct model reference (e.g. `@hasMany(Order)`) with a type resolver (e.g. `@hasMany(() => Order))`. Similarly, repositories are accepting a Getter for obtaining instances of relate repositories.
+To solve this problem, we reworked the way how relations are configured and replaced direct model reference (e.g. `@hasMany(Order)`) with a type resolver (e.g. `@hasMany(() => Order))`. Similarly, repositories are accepting a Getter for obtaining instances of related repositories.
 
 You can find more details about these changes in the following pull requests:
  - [Type resolver for property decorators](https://github.com/strongloop/loopback-next/pull/1751)
