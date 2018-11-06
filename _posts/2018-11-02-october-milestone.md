@@ -42,7 +42,27 @@ this major milestone.
 
 
 #### Relations
-[comment]: <> (belongsTo, Miroslav to add in details)
+
+After many months in progress, the implementation of "belongsTo" relation was finally finished. Before we could add "belongsTo" relation, preparatory work was needed.
+
+Most importantly, we discovered a problem of cyclic references between models. When a Customer has many Order instances, and an Order belongs to a Customer, then a cyclic reference is created in the source code. For example, to create a Customer repository instance, we need an Order repository instance to allow us to access related orders. At the same time, to create the required Order repository instance, we need a Customer repository instance first, to access the customer each order belongs to.
+
+To solve this problem, we reworked the way how relations are configured and replaced direct model reference (e.g. `@hasMany(Order)`) with a type resolver (e.g. `@hasMany(() => Order))`. Similarly, repositories are accepting a Getter for obtaining instances of relate repositories.
+
+You can find more details about these changes in the following pull requests:
+ - [Type resolver for property decorators](https://github.com/strongloop/loopback-next/pull/1751)
+ - [Break cyclic dependencies in relations](https://github.com/strongloop/loopback-next/pull/1787)
+
+With the foundation changes in place, adding "belongsTo" implementation became relatively straightforward. See the [pull request #1794](https://github.com/strongloop/loopback-next/pull/1794) for details.
+
+With two relations in place, our codebase become a bit convoluted. Most of the relations-related code lived in two files `relation.decorator.ts` and `relation.factory.ts` that were huge in size and difficult to navigate around. Adding a new relation required updates of these two files, causing a high risk of merge conflicts.
+
+To address this issue, we have refactored this part of our codebase as follows:
+ - Two top-level files `relation.types.ts` and `relation.decorator.ts` define interfaces, types and functions shared by all relations.
+ - There is one directory for each relation type, this directory contain all implementation bits.
+ - Inside each per-relation directory, there are three relevant files (besides the index): a decorator, a repository and a repository/accessor factory.
+
+The test files were not reorganized yet to avoid merge conflicts with the ongoing work on the [hasOne relation](https://github.com/strongloop/loopback-next/pull/1879), it's a task we would like to work on in the near future.
 
 #### REST
 
