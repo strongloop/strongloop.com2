@@ -39,7 +39,7 @@ releasing all packages at the new semver-major version of `1.0.0`. You can read
 more about the release in our [announcement
 blog](https://strongloop.com/strongblog/loopback-4-ga), including our journey to
 this major milestone.
-  
+
 
 #### Relations
 [comment]: <> (belongsTo, Miroslav to add in details)
@@ -53,8 +53,22 @@ value. On top of that, we updated paths like `PATCH /my-models` and `GET
 /my-model/count` to give back JSON wrapped responses instead of number of
 updated instances and count of instances, respectively.
 
-#### IBM Cloud Deployment Blog
+The much needed API for serving static assets was finally added to the framework.
+The initial implementation had two major limitations: a. Static assets could not
+be served from '/', b. The static assets api overrode LoopBack's own underlying
+router. Both the issues were resolved in subsequent updates.
 
+A major performance improvement (close to 15x improvement in `POST` requests)
+was made by caching schema validators in incoming requests.
+
+#### IBM Cloud Deployment
+
+LoopBack 4 is IBM Cloud capable now and a guide was published showing how to
+create a Cloudant-based LoopBack app locally and deploying it to IBM Cloud
+using Cloud Foundry.
+
+The team has planned to focus efforts on Kubernetes deployment in future which
+would provide much more advanced capabilities.
 
 
 ### Stretch Goals
