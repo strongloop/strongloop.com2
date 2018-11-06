@@ -7,7 +7,6 @@ permalink: /strongblog/happy-third-birthday-oai/
 categories:
   - OpenAPI Spec
   - News
-  published: false
 ---
 
 This is an important week for the OpenAPI Initiative! We want to congratulate the Initiative for their third birthday and that of OpenAPI Spec, its open source and vendor neutral REST API description format! Officially the birthday was Monday, November 5th, but as far as we are concerned, they deserve a week to celebrate! 
