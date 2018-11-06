@@ -3,17 +3,20 @@ layout: post
 title: LoopBack 4 October 2018 Milestone Update
 date: 2018-11-02
 author: Biniam Admikew
-permalink: /strongblog/october-2018-milestone/
+permalink: /strongblog/loopback-4-october-2018-milestone/
 categories:
   - Community
   - LoopBack
+published: false
 ---
 
 As the fall season was in full gear, the LoopBack team was busy wrapping up
-items planned for our General Availability (GA) release and releasing LoopBack 4
-v1.0.0 on Wednesday, October 10th! On top of that, the team was able to complete
-a number of stretch goals for the month and focused on helping our users with
-pressing bugs and feature requests. Read more to find out how it all unfolded.
+items planned for our General Availability (GA) release and publishing the
+release on Wednesday, October 10th! On top of that, the team was able to
+complete a number of stretch goals for the month and focused on helping our
+users with questions, bugs and feature requests. Moreover, the team
+also took part in two different conferences to spread the word on LoopBack 4.
+Read more to find out how it all unfolded.
 
 <!--more-->
 
@@ -23,7 +26,7 @@ pressing bugs and feature requests. Read more to find out how it all unfolded.
 
 To wrap up our LoopBack 4 GA release, we had to finish all the remainder of the
 priority 1 items planned which included:
-- Implementation of belongsTo relation consisting of:
+- Implementation of "belongsTo" relation consisting of:
   - Breaking cyclic dependency in two-way relations
   - Introduction of type resolvers for property decorators
   - Refactoring of relation based source files
@@ -87,12 +90,13 @@ was made by caching schema validators in incoming requests as well in [PR#1829](
 
 #### IBM Cloud Deployment
 
-LoopBack 4 is IBM Cloud capable now and a guide has been written and will be
-published showing how to create a Cloudant-based LoopBack app locally and
-deploying it to IBM Cloud using Cloud Foundry.
 
-The team has planned to focus efforts on Kubernetes deployment in the future
-which would provide much more advanced capabilities.
+We have written a [deployment guide](https://loopback.io/doc/en/lb4/Deploying-to-IBM-Cloud.html) to show how to create a Cloudant-based LoopBack app locally and
+deploy it to IBM Cloud using Cloud Foundry. It also shows how to use the
+Cloudant service provisioned on IBM Cloud in the application.
+
+The team plans to look into deploying LoopBack 4 application to vendor-neutral
+deployment targets, such as Kubernetes.
 
 ### Build infrastructure
 
@@ -119,12 +123,20 @@ might find handy such as LoopBack's API Explorer and the OpenAPI specification
 of the app. This also arised as we developed the E-Commerice example application
 and have some sort of front end as the home page for it. 
 
-We used a controller which renders a self-contained HTML at the base
-path of LoopBack 4 applications and added a template into our CLI package to
-include it for newly scaffoled applications. Take a look at [PR
-#1763](https://github.com/strongloop/loopback-next/pull/1763) to see how it was
-done. We also modified our existing examples `todo`, `todo-list`, and
-`soap-calculator` to include it in [PR #1814](https://github.com/strongloop/loopback-next/pull/1814).
+We used a controller which renders a self-contained HTML at the base path of
+LoopBack 4 applications and added a template into our CLI package to include it
+for newly scaffold applications. Take a look at
+[PR#1763](https://github.com/strongloop/loopback-next/pull/1763) to see how it
+was done. In order to enable this feature, two enhancements were done. First, we
+had to improve our REST layer to allow controllers to have a full control of the
+response sent back to the client in
+[PR#1760](https://github.com/strongloop/loopback-next/pull/1760). Second, we
+created a new booter which exported `package.json` contents to an application's
+metadata, so it can be retrieved later from the application context. For more
+details, see [PR#1764](https://github.com/strongloop/loopback-next/pull/1764).
+We also modified our existing examples `todo`, `todo-list`, and
+`soap-calculator` to include it in
+[PR#1814](https://github.com/strongloop/loopback-next/pull/1814).
 
 ### Community Support
 
@@ -179,12 +191,27 @@ We've also gone through certain LoopBack 3 packages to mark them as being in
 Active LTS such as `loopback-boot`, `strong-remoting`, `loopback-workspace`,
 `loopback-swagger`.
 
+### Events
+
+While all of the above was in progress, our team had a chance to participate in
+two conferences - Node+JS Interactive held in Vancouver, BC, and CASCON held in
+Markham, Ontario. In Node+JS Interactive, we held a talk about building NodeJS
+projects at scale, and a hands-on workshop for getting started with LoopBack 4.
+Check out our
+[blog](https://strongloop.com/strongblog/node-js-interactive-2018-wrap-up/) on
+our involvement with Node+JS Interactive for more details. 
+
+The toronto team also held a talk and poster session at CASCON (Annual
+International Conference on Computer Science and Software Engineering) 2018 for
+LoopBack 4 and received People's Choice Exhibit for our poster.
+
 ## Call to Action
 
-LoopBack's future success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
+LoopBack's future success depends on you. We appreciate your continuous support
+and engagement to make LoopBack even better and meaningful for your API creation
+experience. Please join us and help the project by:
 
-- [Opening a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue)
-- [Casting your vote for extensions](https://github.com/strongloop/loopback-next/issues/512)
 - [Reporting issues](https://github.com/strongloop/loopback-next/issues)
-- [Building more extensions](https://github.com/strongloop/loopback-next/issues/647)
-- [Helping each other in the community](https://groups.google.com/forum/#!forum/loopbackjs)
+- [Contribute](https://github.com/strongloop/loopback-next/blob/master/docs/CONTRIBUTING.md) code and documentation
+- [Opening a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue)
+- [Join](https://github.com/strongloop/loopback-next/issues/110) our user group
