@@ -23,7 +23,10 @@ pressing bugs and feature requests. Read more to find out how it all unfolded.
 
 To wrap up our LoopBack 4 GA release, we had to finish all the remainder of the
 priority 1 items planned which included:
-- belongsTo relation
+- Implementation of belongsTo relation consisting of:
+  - Breaking cyclic dependency in two-way relations
+  - Introduction of type resolvers for property decorators
+  - Refactoring of relation based source files
 - REST layer improvements such as:
   - using pre-compiled AJV validators to boost performance on resource creation
 requests
@@ -33,11 +36,10 @@ requests
   applications
 
 Once those items were completed, the team went on to finish the checklist for
-LoopBack 4 GA release which included updating the status of the framework in all the `README` files in
-loopback-next monorepo and `loopback.io` docs, updating LTS statuses, and
-releasing all packages at the new semver-major version of `1.0.0`. You can read
-more about the release in our [announcement
-blog](https://strongloop.com/strongblog/loopback-4-ga), including our journey to
+LoopBack 4 GA release which included updating the status of the framework in all
+the `README` files in loopback-next monorepo and `loopback.io` docs, updating
+LTS statuses, and releasing all packages at the new semver-major version of
+`1.0.0`. You can read more about the GA release in our [announcement blog](https://strongloop.com/strongblog/loopback-4-ga), including our journey to
 this major milestone.
 
 
@@ -71,24 +73,26 @@ to your endpoints in LoopBack, we decided to convert the boolean response we
 send back for `PATCH` and `PUT` requests to JSON response with the
 value. On top of that, we updated paths like `PATCH /my-models` and `GET
 /my-model/count` to give back JSON wrapped responses instead of number of
-updated instances and count of instances, respectively.
+updated instances and count of instances, respectively. Check out [Pull Request #1170](https://github.com/strongloop/loopback-next/pull/1770) for more details.
 
-The much needed API for serving static assets was finally added to the framework.
-The initial implementation had two major limitations: a. Static assets could not
-be served from '/', b. The static assets api overrode LoopBack's own underlying
-router. Both the issues were resolved in subsequent updates.
+Moreover, the much needed API for serving static assets was finally added to the
+framework. The initial implementation had two major limitations:
+ - Static assets could not be served from '/'
+ - The static assets api overrode LoopBack's own underlying router. 
+
+Both the issues were resolved in subsequent updates. For more details, see [PR#1848](https://github.com/strongloop/loopback-next/pull/1848).
 
 A major performance improvement (close to 15x improvement in `POST` requests)
-was made by caching schema validators in incoming requests.
+was made by caching schema validators in incoming requests as well in [PR#1829](https://github.com/strongloop/loopback-next/pull/1829).
 
 #### IBM Cloud Deployment
 
-LoopBack 4 is IBM Cloud capable now and a guide was published showing how to
-create a Cloudant-based LoopBack app locally and deploying it to IBM Cloud
-using Cloud Foundry.
+LoopBack 4 is IBM Cloud capable now and a guide has been written and will be
+published showing how to create a Cloudant-based LoopBack app locally and
+deploying it to IBM Cloud using Cloud Foundry.
 
-The team has planned to focus efforts on Kubernetes deployment in future which
-would provide much more advanced capabilities.
+The team has planned to focus efforts on Kubernetes deployment in the future
+which would provide much more advanced capabilities.
 
 ### Build infrastructure
 
@@ -107,10 +111,73 @@ If your project was created with a pre-1.0 version of our CLI tooling, then plea
 
 #### Home page for LB4 Apps
 
+When users first run a LoopBack 4 application and go to its root `/` page, they
+expect to see some sort of home page for it instead of a `404` not found.
+Therefore, we decided it is neccessary to have a default home page which shows
+basic information about the application, and links to resources that developers
+might find handy such as LoopBack's API Explorer and the OpenAPI specification
+of the app. This also arised as we developed the E-Commerice example application
+and have some sort of front end as the home page for it. 
+
+We used a controller which renders a self-contained HTML at the base
+path of LoopBack 4 applications and added a template into our CLI package to
+include it for newly scaffoled applications. Take a look at [PR
+#1763](https://github.com/strongloop/loopback-next/pull/1763) to see how it was
+done. We also modified our existing examples `todo`, `todo-list`, and
+`soap-calculator` to include it in [PR #1814](https://github.com/strongloop/loopback-next/pull/1814).
+
 ### Community Support
+
+During the month of October, we saw lots of user engagement with LoopBack 4 in
+terms of incoming issues and pull requests. We'd like to thank our users and
+maintainers for their continued interest and contributions! Our team has also
+worked on performance improvements, refactoring, and neat features that had
+pressing needs for our users. Here is a non-exhaustive list of some PRs in this
+regard:
+
+- Improving path validation and routing engine with trie
+  [PR#1765(https://github.com/strongloop/loopback-next/pull/1765)
+- Avoiding multiple array allocation in `FilterBuilder` in
+  [PR#1865](https://github.com/strongloop/loopback-next/pull/1865)
+- Adding type saftey for query filter and where objects for intelliSense support
+  in [PR#1816](https://github.com/strongloop/loopback-next/pull/1816)
+- Simplifying the code dealing with validation of relation definitions with
+  `InvalidRelationError` class in
+  [PR#1840](https://github.com/strongloop/loopback-next/pull/1840)
+- Generating schemas for `x-ts-type` extension in
+  [PR#1907](https://github.com/strongloop/loopback-next/pull/1907)
+- Cleaning up our Todo tutorial in
+  [PR#1846](https://github.com/strongloop/loopback-next/pull/1846)
+- Fixing glob options in CLI module to support Windows paths in
+  [PR#1958](https://github.com/strongloop/loopback-next/pull/1958)
+- Not relying on transitive dependencies from Express in
+  [PR#1918](https://github.com/strongloop/loopback-next/pull/1918)
+- Failing fast in our CLI prompts for invalid values in
+  [PR#1856](https://github.com/strongloop/loopback-next/pull/1856)
 
 ### LoopBack 3
 
+We had continued focus on MongoDB connector in October for LoopBack 3. We added
+support for `decimal128` type in
+[PR#475](https://github.com/strongloop/loopback-connector-mongodb/pull/475)
+which needed it to support `mongodb@3.4` or above. Meanwhile, we had two
+community PRs, one adding support for insensitive indexes in
+[PR#417](https://github.com/strongloop/loopback-connector-mongodb/pull/417), and
+another changing the url parser used by the connector in
+[PR#462](https://github.com/strongloop/loopback-connector-mongodb/pull/462),
+that introduced breaking changes and also required the connector to drop support
+for `mongodb@3.2` which was reached End of Life in September 2018. We made the
+neccessary changes in our CI infrastructure to accomodate those changes and were
+able to land all 3 PRs and release a minor and patch update versions for the
+connector. We continue to work on the connector and will be releasing a major
+release that includes those breaking changes shortly. Check
+out
+[Issue#476](https://github.com/strongloop/loopback-connector-mongodb/issues/476)
+for more details.
+
+We've also gone through certain LoopBack 3 packages to mark them as being in
+Active LTS such as `loopback-boot`, `strong-remoting`, `loopback-workspace`,
+`loopback-swagger`.
 
 ## Call to Action
 
