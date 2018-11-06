@@ -90,6 +90,18 @@ using Cloud Foundry.
 The team has planned to focus efforts on Kubernetes deployment in future which
 would provide much more advanced capabilities.
 
+### Build infrastructure
+
+We are actively investigating how to leverage Project References introduced by TypeScript 3.0 in LoopBack monorepository to speed up the build and enable watching mode for the TypeScript compiler.
+
+The spike in [pull request #1636](https://github.com/strongloop/loopback-next/pull/1636) shown that it's not possible to have multiple compilation targets (`dist8` for Node.js 8.x, `dist10` for Node.js 10.x) while using Project References. Considering how few language features are added by Node.js 10.x, we decided to switch back to single compilation target (distribution directory).
+
+- In [PR#1803](https://github.com/strongloop/loopback-next/pull/1636), we reworked our build and runtime loaders to always use a single compilation target `es2017` and a single output directory `dist`. With this change in place, we also simplified the build scripts defined in `package.json` and reworked package-level `index.js` files to always load code from `dist`. The project templates used by `lb4` were updated accordingly too.
+- In [PR#1809](https://github.com/strongloop/loopback-next/pull/1809), we reworked few more places in our project templates to stop using `@loopback/dist-util` package.
+- In [PR#1810](https://github.com/strongloop/loopback-next/pull/1810), we have deprecated `@loopback/dist-util` package and removed any remaining references to it in our code base.
+- Finally, [PR#1823](https://github.com/strongloop/loopback-next/pull/1823) removed `@loopback/dist-util` from our monorepo.
+
+If your project was created with a pre-1.0 version of our CLI tooling, then please upgrade it to follow the new project layout as scaffolded by the recent versions of our `lb4` CLI command.
 
 ### Stretch Goals
 
