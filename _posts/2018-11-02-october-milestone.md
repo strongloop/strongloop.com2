@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 October 2018 Milestone Update
-date: 2018-11-02
+date: 2018-11-06
 author: Biniam Admikew
 permalink: /strongblog/loopback-4-october-2018-milestone/
 categories:
@@ -12,8 +12,7 @@ published: false
 
 As the fall season was in full gear, the LoopBack team was busy wrapping up
 items planned for our General Availability (GA) release and publishing the
-release on Wednesday, October 10th! On top of that, the team was able to
-complete a number of stretch goals for the month and focused on helping our
+release on Wednesday, October 10th! On top of that, the team completed a number of stretch goals for the month and focused on helping our
 users with questions, bugs and feature requests. Moreover, the team also took
 part in two different conferences to spread the word on LoopBack 4. Read more to find out how it all unfolded.
 
@@ -33,20 +32,20 @@ To wrap up our LoopBack 4 GA release, we had to finish all the remainder of the 
   - making sure `patch` and `put` requests return JSON responses like other verbs
 - Adding CLI template to render a default home page when scaffolding new applications
 
-Once those items were completed, the team went on to finish the checklist for
+The team went on to finish the checklist for
 LoopBack 4 GA release which included updating the status of the framework in all
 the `README` files in loopback-next monorepo and `loopback.io` docs, updating
 LTS statuses, and releasing all packages at the new semver-major version of
-`1.0.0`. You can read more about the GA release in our [announcement
+`1.0.0` once those items were completed. You can read more about the GA release in our [announcement
 blog](https://strongloop.com/strongblog/loopback-4-ga), including our journey to
 this major milestone.
 
 
 #### Relations
 
-The "belongsTo" relation proved some complexities in our relations design and
-its implementation was finished in October. Before we could add "belongsTo"
-relation, preparatory work was needed.
+Adding the "belongsTo" relation proved some complexities in our relations design, so
+we addressed those complexities first to finish its implementation. Before we
+could actually add "belongsTo" relation, we had to do some preparatory work.
 
 Most importantly, we discovered a problem of cyclic references between models.
 When a Customer has many Order instances, and an Order belongs to a Customer,
@@ -56,7 +55,7 @@ to access related orders. At the same time, to create the required Order
 repository instance, we need a Customer repository instance first, to access the
 customer each order belongs to.
 
-To solve this problem, we reworked the way how relations are configured and
+To solve this problem, we reworked the way relations are configured and
 replaced direct model reference (e.g. `@hasMany(Order)`) with a type resolver
 (e.g. `@hasMany(() => Order))`. Similarly, repositories are accepting a Getter
 for obtaining instances of related repositories.
@@ -68,49 +67,47 @@ You can find more details about these changes in the following pull requests:
 With the foundation changes in place, adding "belongsTo" implementation became
 relatively straightforward. See the [pull request #1794](https://github.com/strongloop/loopback-next/pull/1794) for details.
 
-With two relations in place, our codebase become a bit convoluted. Most of the
+With two relations in place, our codebase became a bit convoluted. Most of the
 relations-related code lived in two files `relation.decorator.ts` and
 `relation.factory.ts` that were huge in size and difficult to navigate around.
-Adding a new relation required updates of these two files, causing a high risk of merge conflicts.
+Adding a new relation had a high risk of merge conflicts because it required updates of these two files.
 
 To address this issue, we have refactored this part of our codebase as follows:
  - Two top-level files `relation.types.ts` and `relation.decorator.ts` define
    interfaces, types and functions shared by all relations.
- - There is one directory for each relation type, this directory contain all implementation bits.
+ - There is one directory for each relation type, this directory contains all implementation bits.
  - Inside each per-relation directory, there are three relevant files (besides
    the index): a decorator, a repository and a repository/accessor factory.
 
 The test files were not reorganized yet to avoid merge conflicts with the
 ongoing work on the [hasOne
-relation](https://github.com/strongloop/loopback-next/pull/1879), it's a task we
+relation](https://github.com/strongloop/loopback-next/pull/1879), but it's a task we
 would like to work on in the near future.
 
 #### REST
 
 In order to provide consistent and smooth user experience when sending requests
-to your endpoints in LoopBack, we decided to convert the boolean response we
+to your endpoints in LoopBack, we converted the boolean response we
 send back for `PATCH` and `PUT` requests to JSON response with the value. On top
 of that, we updated paths like `PATCH /my-models` and `GET /my-model/count` to
 give back JSON wrapped responses instead of number of updated instances and
 count of instances, respectively. Check out [Pull Request#1170](https://github.com/strongloop/loopback-next/pull/1770) for more details.
 
-Moreover, the much needed API for serving static assets was finally added to the
+Moreover, we added the much needed API for serving static assets to the
 framework. The initial implementation had two major limitations:
  - Static assets could not be served from '/'
  - The static assets api overrode LoopBack's own underlying router. 
 
 Both the issues were resolved in subsequent updates. For more details, see [PR#1848](https://github.com/strongloop/loopback-next/pull/1848).
 
-A major performance improvement (close to 15x improvement in `POST` requests)
-was made by caching schema validators in incoming requests as well in [PR#1829](https://github.com/strongloop/loopback-next/pull/1829).
+We also made a major performance improvement (close to 15x improvement in `POST`
+requests) by caching schema validators in incoming requests as well in
+[PR#1829](https://github.com/strongloop/loopback-next/pull/1829).
 
 #### IBM Cloud Deployment
 
 
-We have written a [deployment
-guide](https://loopback.io/doc/en/lb4/Deploying-to-IBM-Cloud.html) to show how
-to create a Cloudant-based LoopBack app locally and deploy it to IBM Cloud using
-Cloud Foundry. It also shows how to use the Cloudant service provisioned on IBM
+We have written a [deployment guide](https://loopback.io/doc/en/lb4/Deploying-to-IBM-Cloud.html) to show how to create a Cloudant-based LoopBack app locally and deploy it to IBM Cloud using Cloud Foundry. It also shows how to use the Cloudant service provisioned on IBM
 Cloud in the application.
 
 The team plans to look into deploying LoopBack 4 application to vendor-neutral
@@ -122,7 +119,7 @@ We are actively investigating how to leverage Project References introduced by
 TypeScript 3.0 in LoopBack monorepository to speed up the build and enable watching mode for the TypeScript compiler.
 
 The spike in [pull request
-#1636](https://github.com/strongloop/loopback-next/pull/1636) shown that it's
+#1636](https://github.com/strongloop/loopback-next/pull/1636) has shown that it's
 not possible to have multiple compilation targets (`dist8` for Node.js 8.x,
 `dist10` for Node.js 10.x) while using Project References. Considering how few
 language features are added by Node.js 10.x, we decided to switch back to single
@@ -151,27 +148,25 @@ please upgrade it to follow the new project layout as scaffolded by the recent v
 #### Home page for LB4 Apps
 
 When users first run a LoopBack 4 application and go to its root `/` page, they
-expect to see some sort of home page for it instead of a `404` not found.
+expect to see some sort of home page for it instead of a `404` not found page.
 Therefore, we decided it is neccessary to have a default home page which shows
 basic information about the application, and links to resources that developers
-might find handy such as LoopBack's API Explorer and the OpenAPI specification
-of the app. This also arised as we developed the E-Commerice example application
-and have some sort of front end as the home page for it. 
+find handy such as LoopBack's API Explorer and the OpenAPI specification of the
+app. This also arised as we developed the E-Commerice example application and have some sort of front end as the home page for it. 
 
-We used a controller which renders a self-contained HTML at the base path of
+We created a controller which renders a self-contained HTML at the base path of
 LoopBack 4 applications and added a template into our CLI package to include it
 for newly scaffold applications. Take a look at
 [PR#1763](https://github.com/strongloop/loopback-next/pull/1763) to see how it
-was done. In order to enable this feature, two enhancements were done. First, we
-had to improve our REST layer to allow controllers to have a full control of the
+was done. In order to enable this feature, we made two enhancements. First, we
+improved our REST layer to allow controllers to have full control of the
 response sent back to the client in
 [PR#1760](https://github.com/strongloop/loopback-next/pull/1760). Second, we
 created a new booter which exported `package.json` contents to an application's
 metadata, so it can be retrieved later from the application context. For more
 details, see [PR#1764](https://github.com/strongloop/loopback-next/pull/1764).
 We also modified our existing examples `todo`, `todo-list`, and
-`soap-calculator` to include it in
-[PR#1814](https://github.com/strongloop/loopback-next/pull/1814).
+`soap-calculator` to include it in [PR#1814](https://github.com/strongloop/loopback-next/pull/1814.
 
 ### Community Support
 
@@ -205,7 +200,7 @@ community PRs, one adding support for insensitive indexes in
 another changing the url parser used by the connector in
 [PR#462](https://github.com/strongloop/loopback-connector-mongodb/pull/462),
 that introduced breaking changes and also required the connector to drop support
-for `mongodb@3.2` which was reached End of Life in September 2018. We made the
+for `mongodb@3.2` which reached End of Life in September 2018. We made the
 neccessary changes in our CI infrastructure to accomodate those changes and were
 able to land all 3 PRs and release a minor and patch update versions for the
 connector. We continue to work on the connector and will be releasing a major
@@ -214,7 +209,8 @@ release that includes those breaking changes shortly. Check out
 for more details.
 
 We've also gone through certain LoopBack 3 packages to mark them as being in
-Active LTS such as `loopback-boot`, `strong-remoting`, `loopback-workspace`, `loopback-swagger`.
+Active LTS such as `loopback-boot`, `strong-remoting`, `loopback-workspace`, and
+`loopback-swagger`.
 
 ### Events
 
@@ -231,7 +227,7 @@ answering some
 
 The toronto team also held a talk and poster session at CASCON (Annual
 International Conference on Computer Science and Software Engineering) 2018 for
-LoopBack 4 and received People's Choice Exhibit for our poster.
+LoopBack 4 and received People's Choice Exhibit award for our poster.
 
 ## Call to Action
 
