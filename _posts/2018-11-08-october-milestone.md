@@ -13,6 +13,7 @@ published: false
 As the fall season kicked into full gear, the LoopBack team was busy! We wrapped up items planned for our General Availability (GA) release and published the release on Wednesday, October 10th! On top of that, the team completed a number of stretch goals for the month and focused on helping our users with questions, bugs and feature requests. Moreover, the team also took part in two different conferences to spread the word on LoopBack 4. Read more to find out how it all unfolded.
 
 <!--more-->
+
 <img src="https://strongloop.com/blog-assets/2018/11/Loopback-4-october-milestone-update.png" alt="LoopBack 4 October 2018 Milestone Update" style="width: 300px"/>
 
 ## Accomplishments
