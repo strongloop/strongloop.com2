@@ -26,6 +26,11 @@ Emily Olin reports that Airbnb, Apollo, Coursera, Elementl, Facebook, GitHub, Ha
 
 [READ MORE >>>](https://www.linuxfoundation.org/press-release/2018/11/intent_to_form_graphql/)
 
+### Node.js Everywhere with Environment Variables!
+
+John Papa walks you through creating and using environment variables, leading to a Node.js app you can run anywhere.
+
+[READ MORE >>>](https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786)
 
 ## What Next?
 
