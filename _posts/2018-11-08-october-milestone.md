@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LoopBack October 2018 Milestone Update
+title: LoopBack 4 October 2018 Milestone Update
 date: 2018-11-08
 author: Biniam Admikew
 permalink: /strongblog/loopback-4-october-2018-milestone/
