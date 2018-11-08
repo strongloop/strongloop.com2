@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Best Practices for LoopBack 4
-date: 2018-10-30T00:00:01+00:00
+date: 2018-11-21
 author:
   - Miroslav Bajtoš
-permalink: /strongblog/loopback-4-ga
+permalink: /strongblog/loopback-4-best-practices
 categories:
   - Community
   - LoopBack
@@ -44,7 +44,7 @@ Extensibility is a core principle driving LoopBack 4 design. Our guide for exten
 - [How to implement a custom Server](https://loopback.io/doc/en/lb4/Creating-servers.html)
 - [How to test your extension](https://loopback.io/doc/en/lb4/Testing-your-extension.html)
 
-## What's next
+## What's Next
 
 The Best Practice guides are living documents that will evolve together with the framework as the needs of our users grow.
 
