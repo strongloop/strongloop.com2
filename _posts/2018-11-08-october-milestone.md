@@ -126,7 +126,7 @@ We've also gone through certain LoopBack 3 packages to mark them as being in Act
 
 While all of the above was in progress, our team had a chance to participate in two conferences - Node+JS Interactive held in Vancouver, BC, and CASCON held in Markham, Ontario. In Node+JS Interactive, we held a talk about building NodeJS projects at scale, and a hands-on workshop for getting started with LoopBack 4. Check out our [blog](https://strongloop.com/strongblog/node-js-interactive-2018-wrap-up/) on our involvement with Node+JS Interactive for more details and another one answering some [FAQs](https://strongloop.com/strongblog/nodejs-interactive-2018-lb-questions/).
 
-The Toronto team also held a talk and poster session at CASCON (Annual International Conference on Computer Science and Software Engineering) 2018 for LoopBack 4 and received People's Choice Exhibit award for our poster.
+The Toronto team also held a talk and poster session at CASCON (Annual International Conference on Computer Science and Software Engineering) 2018 for LoopBack 4 and received People's Choice Exhibit award for our poster. Check out details [here](https://www-01.ibm.com/ibm/cas/cascon/awards/2018/best_expo_pc.jsp).
 
 ## Call to Action
 
