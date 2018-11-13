@@ -326,42 +326,11 @@ bluemix-sandbox-dal-9-portal.8.dblayer.com:25643> HGETALL Account:007
 
 This confirms that different OpenWhisk actions can be created for different applications using the same common LoopBack application code and the specific connector and exposed at different base URLs as shown in the table below.
 
-<table >
-  <tbody>
-    <tr>
-      <td>
-        <b>OpenWhisk Web Action</b>
-      </td>
-      <td>
-        <b>Base URL</b>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        createCloudantModelInstance
-      </td>
-      <td style="font-size: 80%;">
-https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj@in.ibm.com_dev/demo/createCloudantModelInstance.http
-      </td>
-    </tr>
-    <tr>
-      <td>
-        createRedisModelInstance
-      </td>
-      <td style="font-size: 80%;">
-        https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj@in.ibm.com_dev/demo/createRedisModelInstance.http
-      </td>
-    </tr>
-    <tr>
-      <td>
-        ...
-      </td>
-      <td>
-        ...
-      </td>
-    </tr>
-  </tbody>
-</table>
+| OpenWhisk Web Action | Base URL | 
+|-------|-------|-------|-------|
+| createCloudantModelInstance | https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj@in.ibm.com_dev/demo/createCloudantModelInstance.http | 
+| /datasources |  https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj@in.ibm.com_dev/demo/createRedisModelInstance.http | 
+| ...  / ... | 
 
 
 With a little tweak to the createModel action, we can return the base URL corresponding to the application for which the model is created (Cloudant/Redis/any other). This gives a neat and simple way of scaling the service to support multiple applications.
