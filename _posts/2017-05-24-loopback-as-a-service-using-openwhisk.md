@@ -1,11 +1,9 @@
 ---
-id: 29289
 title: LoopBack As A Service Using OpenWhisk
-date: 2017-05-24T05:55:00+00:00
+date: 2017-05-24
 author:  
 - Subramanian Krishnan
 - Nagarjuna Surabathina
-guid: https://strongloop.com/?p=29289
 permalink: /strongblog/loopback-as-a-service-using-openwhisk/
 categories:
   - How-To
@@ -20,7 +18,9 @@ In our [previous blog](https://strongloop.com/strongblog/creating-a-multi-tenant
 3. Use the http path property of models to create models in the namespace of the tenant and generate unique URLs for each model (even if the resources they expose have the same name).
 4. How to workaround challenges introduced because there are no LoopBack NodeJS APIs for deleting and updating datasources and models.
 
-Following the steps in the blog would let's stand-up a single instance of the LoopBack application which is great for demos. It is not yet ready for deploying at scale on the cloud. The previous blog ends with open questions on:<!--more-->
+Following the steps in the blog would let's stand-up a single instance of the LoopBack application which is great for demos. It is not yet ready for deploying at scale on the cloud. The previous blog ends with open questions on:
+
+<!--more-->
 
 1. How to scale the application horizontally - Multiple instances of the application running and able to process simultaneous requests for the same API. This will also be needed to avoid single points of failure (min-3 deployments). Introducing multiple instances brings in challenges of deploying models/datasources to all the instances and keeping them in sync.
 
