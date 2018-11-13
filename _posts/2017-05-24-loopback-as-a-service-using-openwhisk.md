@@ -61,7 +61,7 @@ From OpenWhisk documentation:
 
 Let's take a look at how we can architect the multi-tenant LoopBack micro-service using OpenWhisk actions.
 
-<img class="aligncenter wp-image-29404" src="{{site.url}}/blog-assets/2017/04/OpenWhisk.png" alt="LoopBack As A Service Using OpenWhisk" width="600" height="331" />
+<img class="aligncenter wp-image-29404" src="{{site.url}}/blog-assets/2017/04/OpenWhisk.png" alt="LoopBack As A Service Using OpenWhisk" width="550" />
 
 The table below summarizes the different actions and their purpose.
 
@@ -162,7 +162,7 @@ curl https://openwhisk.ng.bluemix.net/api/v1/web/sukrishj_dev/demo/createModel.h
 
 We can see that the model doc got created in Cloudant models collection.
 
-<img class="alignnone wp-image-29294 size-large" src="{{site.url}}/blog-assets/2017/04/Screen-Shot-2017-04-13-at-10.59.53-PM-904x1030.png" alt="Screen Shot 2017-04-13 at 10.59.53 PM" width="600" height="683" />
+<img class="alignnone wp-image-29294 size-large" src="{{site.url}}/blog-assets/2017/04/Screen-Shot-2017-04-13-at-10.59.53-PM-904x1030.png" alt="Screen Shot 2017-04-13 at 10.59.53 PM" width="550" />
 
 **5. createModelInstance**
 
