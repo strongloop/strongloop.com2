@@ -1,22 +1,14 @@
 ---
-id: 29127
 title: Creating a Multi-Tenant Connector Microservice Using LoopBack
 Date: 2017-04-25T08:10:00+00:00
-author: Nagarjuna Surabathina
-guid: http://strongloop.com/?p=29127
+author: 
+  - Nagarjuna Surabathina
+  - Nagarjuna Surabathina
 permalink: /strongblog/creating-a-multi-tenant-connector-microservice-using-loopback/
 categories: 
-- connector
-- How-To
-- ibm
-- LoopBack
-- microservice
-- multi-tenant connector microservice
-- strongloop
+  - How-To
+  - LoopBack
 ---
-
-**Note:**
- This article was co-written by Subramanian Krishnan and Nagarjuna Surabathina.
 
 <h3>Background</h3>
 
