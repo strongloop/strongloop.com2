@@ -13,12 +13,17 @@ published: false
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### What is the MEAN stack? 
+
+Serdar Yegulalp from InfoWorld describes the web application stack powered by MongoDB, Express, Angular, and Node.js leverages JavaScript from top to bottom.
+
+[READ MORE >>>](https://www.arnnet.com.au/article/649657/what-mean-stack-javascript-web-applications/)
+
 ### LoopBack 4 Database Configuration
 
 Mikael von Ketelhodt compares the differences between configuring a database datasource against a LoopBack 3 and LoopBack 4 application and how to set up configuration against various environments.
 
 [READ MORE >>>](https://itnext.io/loopback-4-database-configuration-8f085399268)
-
 
 ### The Linux Foundation Announces Intent to Form New Foundation to Support GraphQL
 
