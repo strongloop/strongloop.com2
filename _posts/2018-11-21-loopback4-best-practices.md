@@ -21,7 +21,7 @@ For example, automated testing is a topic that LoopBack users frequently raise. 
 
 When we started working on LoopBack 4, one of our design priorities was to enable application developers to follow industry best practices, from test-driven development to user-centric/design-first approach to building APIs. As part of this effort, we wrote several documents to educate LoopBack developers about our recommended best practices.
 
-At the moment, there are two guides: 
+At the moment, we offer two guides: 
 
 - [Best Practices](https://loopback.io/doc/en/lb4/Best-practices.html) aiming at application developers. 
 - [Extending LoopBack](https://loopback.io/doc/en/lb4/Extending-LoopBack-4.html) aiming at extension developers.
