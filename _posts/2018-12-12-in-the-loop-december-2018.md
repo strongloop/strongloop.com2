@@ -19,6 +19,12 @@ Serdar Yegulalp from InfoWorld describes the web application stack powered by Mo
 
 [READ MORE >>>](https://www.arnnet.com.au/article/649657/what-mean-stack-javascript-web-applications/)
 
+### Facebook’s GraphQL Gets Its Own Open-Source Foundation
+
+Frederic Lardinois gives details about GraphQL, the Facebook -incubated data query language, moving into its own open-source foundation.
+
+[READ MORE >>>](https://techcrunch.com/2018/11/06/facebooks-graphql-gets-its-own-open-source-foundation/)
+
 ### LoopBack 4 Database Configuration
 
 Mikael von Ketelhodt compares the differences between configuring a database datasource against a LoopBack 3 and LoopBack 4 application and how to set up configuration against various environments.
