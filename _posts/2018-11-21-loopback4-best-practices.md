@@ -11,9 +11,11 @@ categories:
 published: false  
 ---
 
-The LoopBack framework is a powerful and flexible tool that can be used in many different ways. Some of these ways lead to better results while other can create headaches later in the project lifecycle. To make it easy for LoopBack users to do the right thing in their projects, we have created several Best Practice guides.
+The LoopBack framework is a powerful and flexible tool that can be used in many different ways. Some of these ways lead to better results while others can create headaches later in the project lifecycle. To make it easy for LoopBack users to do the right thing in their projects, we have created several Best Practice guides.
 
 <!--more-->
+
+<img src="https://strongloop.com/blog-assets/2018/11/Loopback-4-Guidelines.png" alt="LoopBack 4 Guidelines" style="width: 300px"/>
 
 For example, automated testing is a topic that has been frequently raised by LoopBack users. Unfortunately testing was not considered in the design of pre-v4 versions and as a result, writing tests was cumbersome. The lack of official guidance and documentation was not helping either.
 
