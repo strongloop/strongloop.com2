@@ -15,7 +15,7 @@ The LoopBack framework is a powerful and flexible tool that can be used in many 
 
 <!--more-->
 
-<img src="https://strongloop.com/blog-assets/2018/11/Loopback-4-Guidelines.png" alt="LoopBack 4 Guidelines" style="width: 300px"/>
+<img src="https://strongloop.com/blog-assets/2018/11/LoopBack-4-Guidelines.png" alt="LoopBack 4 Guidelines" style="width: 300px"/>
 
 For example, automated testing is a topic that LoopBack users frequently raise. Unfortunately, testing was not considered in the design of pre-v4 versions. As a result, writing tests was cumbersome. The lack of official guidance and documentation was not helping either.
 
