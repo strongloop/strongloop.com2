@@ -13,6 +13,12 @@ published: false
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Node.js Everywhere with Environment Variables!
+
+Both John Papa and you know it’s important that apps also work everywhere they need to run. This could be on your colleagues’ computers, internal company servers, cloud servers, or inside of a container (maybe using Docker). Enter environment variables.
+
+[READ MORE >>>](https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786)
+
 ### What is the MEAN stack? 
 
 Serdar Yegulalp from InfoWorld describes the web application stack powered by MongoDB, Express, Angular, and Node.js leverages JavaScript from top to bottom.
