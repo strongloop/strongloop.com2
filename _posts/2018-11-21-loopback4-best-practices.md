@@ -2,8 +2,7 @@
 layout: post
 title: Best Practices for LoopBack 4
 date: 2018-11-21
-author:
-  - Miroslav Bajtoš
+author: Miroslav Bajtoš
 permalink: /strongblog/loopback-4-best-practices/
 categories:
   - Community
