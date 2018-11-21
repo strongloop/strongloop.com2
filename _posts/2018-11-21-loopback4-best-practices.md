@@ -8,7 +8,6 @@ permalink: /strongblog/loopback-4-best-practices
 categories:
   - Community
   - LoopBack
-published: false  
 ---
 
 The LoopBack framework is a powerful and flexible tool that can be used in many different ways. Some of these ways lead to better results while others can create headaches later in the project lifecycle. To make it easy for LoopBack users to do the right thing in their projects, we have created Best Practice guides.
