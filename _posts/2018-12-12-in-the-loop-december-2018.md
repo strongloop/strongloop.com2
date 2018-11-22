@@ -13,6 +13,12 @@ published: false
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Will GraphQL Become a Standard for the New Data Economy?
+
+Alex Woodie looks at GraphQL, the new language that could radically simplify how developers use APIs to get data into applications, and potentially provide a graph-like alternative to procedural REST.
+
+[READ MORE >>>](https://www.datanami.com/2018/11/07/will-graphql-become-a-standard-for-the-new-data-economy/)
+
 ### Node.js Everywhere with Environment Variables!
 
 Both John Papa and you know it’s important that apps also work everywhere they need to run. This could be on your colleagues’ computers, internal company servers, cloud servers, or inside of a container (maybe using Docker). Enter environment variables.
