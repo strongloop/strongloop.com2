@@ -1,44 +1,44 @@
 ---
 layout: post
 title: How We Built a Self-hosted REST API Explorer in LoopBack 4
-date: 2018-11-22T00:00:00+00:00
+date: 2018-11-28
 author: Miroslav Bajtoš
-permalink: /strongblog/how-we-built-a-self-hosted-rest-api-explorer
+permalink: /strongblog/how-we-built-a-self-hosted-rest-api-explorer/
 categories:
   - LoopBack
   - OpenAPI Spec
 published: false
 ---
 
-The LoopBack team has always believed it's important to provide great user experience not only to REST API creators, but also to developers consuming those APIs.  API Explorer is one of tools making a big difference, as it can render a live documentation for the REST API provided by any LoopBack application and even provides UI controls for executing individual endpoints straight from the docs.
+The LoopBack team has always believed it's important to provide great user experience not only to REST API creators, but also to developers consuming those APIs. API Explorer is one of tools making a big difference, as it can render a live documentation for the REST API provided by any LoopBack application and even provides UI controls for executing individual endpoints straight from the docs.
 
-LoopBack 4.0 GA was initially relying on an instance hosted externally at [explorer.loopback.io](https://explorer.loopback.io/). With the recent improvements in our REST layer, we were able to introduce a self-hosted version that works fully offline.
+LoopBack 4.0 GA initially relied on an instance hosted externally at [explorer.loopback.io](https://explorer.loopback.io/). With the recent improvements in our REST layer, we were able to introduce a self-hosted version that works fully offline.
 
 <!-- more -->
 
 Under the hood, our API Explorer is leveraging the open-source component [swagger-ui](https://swagger.io/tools/swagger-ui/), which is an HTML5 single-page application (SPA) that accepts a link to a Swagger or OpenAPI Spec document and does all the heavy lifting.
 
-Originally, LoopBack 4 was focused on API creation experience and did not provide features for serving website assets. For the last few weeks, we were looking into ways how to add support for single-page applications. With the new building blocks in place, we implemented a self-hosted API Explorer as a new extension called [`@loopback/rest-explorer`](https://www.npmjs.com/package/@loopback/rest-explorer)
+Originally, LoopBack 4 was focused on API creation experience and did not provide features for serving website assets. For the last few weeks, we looked into ways to add support for single-page applications. With the new building blocks in place, we implemented a self-hosted API Explorer as a new extension called [`@loopback/rest-explorer`](https://www.npmjs.com/package/@loopback/rest-explorer)
 
 ## Using Self-hosted REST API Explorer
 
 New applications scaffolded by our CLI tool [`lb4`](https://www.npmjs.com/package/@loopback/cli) come with the self-hosted API Explorer preconfigured. To view the API Explorer:
 
-1. Start your application
+1. Start your application.
 
     ```
     $ npm start
     ```
 
-2. Open the the same old address in your browser:
+2. Open the same old address in your browser:
 
     ```text
     http://localhost:3000/explorer
     ```
 
-Existing projects are easy to upgrade too, follow the steps below to use the new extension.
+You can easily upgrade existing projects too. Follow the steps below to use the new extension.
 
-1. Install the package from npm
+1. Install the package from npm.
 
     ```shell
     $ npm install --save @loopback/rest-explorer
@@ -68,7 +68,7 @@ Existing projects are easy to upgrade too, follow the steps below to use the new
 
 We started to experiment with different implementation of a self-hosted API Explorer back in September. The first attempt proposed in [PR#1644](https://github.com/strongloop/loopback-next/pull/1664) was based on the idea of allowing arbitrary Express middleware to be mounted on a RestServer/RestApplication and then implementing the API Explorer as a new middleware handler.
 
-Middleware registration is a complex problem and we didn't want to rush its implementation just to enable a self-hosted explorer. Eventually, we settled on a different solution based on two building blocks that are useful outside of API Explorer context too.
+Middleware registration is a complex problem and we didn't want to rush its implementation just to enable a self-hosted explorer. Eventually, we settled on a different solution based on two building blocks that are useful outside of API Explorer context as well.
 
 1. LoopBack applications can expose static assets. This allows the API Explorer component to serve assets like CSS & client-side JavaScript files, images, etc.
 
@@ -95,9 +95,9 @@ The initial implementation in [PR#1611](https://github.com/strongloop/loopback-n
 
 - The route executes the express Router where static assets were mounted; i.e.  the sequence action `invoke` runs express routing to handle static assets.
 
-- When no static asset matched the requested URL, then the route throws `HttpError.NotFound`, i.e. the sequence action `invoke` throws the 404 error
+- When no static asset matched the requested URL, then the route throws `HttpError.NotFound`, i.e. the sequence action `invoke` throws the 404 error.
 
-Both problems of the initial implementation were solved ✅
+Both problems of the initial implementation were solved. ✅
 
 ### Serving a Dynamic HTML File
 
@@ -105,12 +105,11 @@ The second missing piece is how to serve the single-page application's main HTML
 
 As a short-term workaround, we decided to allow controller methods to return `undefined` or the actual Express `response` object to indicate that the response has been already handled, see [PR#1760](https://github.com/strongloop/loopback-next/pull/1760).
 
-This workaround is far from ideal though. So far, the framework was offering pretty strong guarantees to LoopBack users: every HTTP response was produced either by `send` or `reject`. An application or an extension could intercept or modify _all_ responses by registering custom `send` & `reject` actions, and be assured that such solution is covering all cases.
+This workaround is far from ideal. So far, the framework was offering pretty strong guarantees to LoopBack users: every HTTP response was produced either by `send` or `reject`. An application or an extension could intercept or modify _all_ responses by registering custom `send` & `reject` actions, and be assured that such solution is covering all cases.
 
-Now that controller methods are allowed to take over response serialization, such guarantee can be no longer offered and users have to rely on other mechanism to intercept or modify responses (typically by observing or replacing WritableStream bits in the Express `response` object).
+Now that controller methods are allowed to take over response serialization, such guarantees can be no longer offered. Users have to rely on other mechanism to intercept or modify responses (typically by observing or replacing WritableStream bits in the Express `response` object).
 
-Based on that, we decided to keep this new feature undocumented to prevent wider adoption.  For longer term, we would like to implement a contract allowing Controller methods to return a result describing all aspects of the HTTP response to be generated, e.g. status code and headers.  See [issue #436](https://github.com/strongloop/loopback-next/issues/436).
-
+Based on that, we decided to keep this new feature undocumented to prevent wider adoption. For longer term, we would like to implement a contract allowing Controller methods to return a result that describes all aspects of the HTTP response to be generated (e.g. status code and headers).  See [issue #436](https://github.com/strongloop/loopback-next/issues/436).
 
 ### Hiding Endpoints from the API Spec
 
