@@ -57,6 +57,20 @@ Taranveer Virk told us about more LoopBack 4's CLI tool in August. As he explain
 
 Guest blogger and LoopBack contributor Mario Estrada shared information on the lb4 repository CLI option. "This option," he shared, "is very powerful and can accept multiple models, infer their ID property and generate a repository for each of them in one single command." read about it in ["Achieving Productivity with lb4 Repository Command"](https://strongloop.com/strongblog/productivity-with-lb4-repository/).
 
+
+Best Practices for LoopBack 4 https://strongloop.com/strongblog/loopback-4-best-practices/
+
+by Miroslav Bajtoš The LoopBack framework is a powerful and flexible tool that can be used in many different ways. Some of these ways lead to better results while others can create headaches later in the project lifecycle. To make it easy for LoopBack users to do the right thing in their projects, we have created Best Practice guides.
+
+We announced that LoopBack 4 GA is Now Ready for Production Use at Node+JS Interactive in Vancouver in October.
+
+by Diana Lau , Raymond Feng , Miroslav Bajtoš gave details We’ve come a long way since LoopBack 4 was announced in April 2017 and the November release of the first Developer Preview release. The open source framework continues to be a leading Node.js API creation platform that empowers developers to create APIs quickly on top of existing backend resources. The LoopBack team rewrote a brand new core from the ground up in TypeScript, providing even better extensibility and flexibility. This latest version is simpler to use and easier to extend. https://strongloop.com/strongblog/loopback-4-ga
+
+We followed up with some quesries baout LB 4 asked at the event: https://strongloop.com/strongblog/nodejs-interactive-2018-lb-questions/
+
+Deploying LoopBack 4 applications to IBM Cloud by Hage Yaapa https://strongloop.com/strongblog/deploying-to-ibm-cloud/
+
+
 ## More LoopBack Improvements and How-To Content
 
 While we were looking to the future as we built LoopBack 4, we were still watching out for existing versions of LoopBack. 
@@ -91,6 +105,8 @@ With the new LTS policy in place:
     When a LoopBack version enters Maintenance LTS mode, we are committed to keep fixing critical and security issues for as long as the related Node.js LTS version stays supported by the Node.js project. This will typically offer much longer support than the previous minimum of 6 months.
 
 https://strongloop.com/strongblog/loopback-adopts-module-lts-policy
+
+
 
 ## Playing Well with OpenAPI Spec
 
