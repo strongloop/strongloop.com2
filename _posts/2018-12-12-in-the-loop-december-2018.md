@@ -13,6 +13,12 @@ published: false
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### VIDEO: You Should Be Using Loopback 4
+
+Code Jam Ninja provides several reasons why you should be using LoopBack 4.
+
+[WATCH THE VIDEO >>>](https://youtu.be/QDGcFWv9IPA)
+
 ### Will GraphQL Become a Standard for the New Data Economy?
 
 Alex Woodie looks at GraphQL, the new language that could radically simplify how developers use APIs to get data into applications, and potentially provide a graph-like alternative to procedural REST.
