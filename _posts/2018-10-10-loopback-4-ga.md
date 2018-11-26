@@ -81,9 +81,18 @@ We now have an [eCommerce store application](https://github.com/strongloop/loopb
 - **product recommendation**, which fetches from a SOAP/REST service
 - **order history**, which ties to the user profile and also stored in a database
 
+## New module names
+
+In LoopBack 4, we renamed the packages and put them in `@loopback` scope. As part of this rename, we have also reset version numbers. The framework version LoopBack 4 GA consists of `1.0.0` versions of these new packages.
+
+- `@loopback/core@1.0.0` is the new runtime, it supersedes `loopback@3`
+- `@loopback/rest@1.0.0` provides REST API layer
+- `@loopback/repository@1.0.0` provides Models and data access layer
+- and so on
+
 ## LTS Policy
 
-Now that LoopBack 4 is the current version, LoopBack 3 becomes the active LTS release and LoopBack 2 as maintancence LTS release. Aligning with [Module LTS Policy](https://developer.ibm.com/node/2018/07/24/module-lts/), here is our LTS schedule:
+Now that LoopBack 4 is the current version, LoopBack 3 becomes the active LTS release and LoopBack 2 a maintancence LTS release. Aligning with [Module LTS Policy](https://developer.ibm.com/node/2018/07/24/module-lts/), here is our LTS schedule:
 
 | Framework  | Status          | Published | EOL                  |
 | ---------- | --------------- | --------- | -------------------- |
