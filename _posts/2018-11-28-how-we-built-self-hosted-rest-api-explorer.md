@@ -16,7 +16,7 @@ LoopBack 4.0 GA initially relied on an instance hosted externally at [explorer.l
 
 <!-- more -->
 
-<img src="https://strongloop.com/blog-assets/2018/self-hosted-REST-API.png" alt="How We Built a Self-hosted REST API Explorer in LoopBack 4" style="width: 250px; margin:auto;"/>
+<img src="https://strongloop.com/blog-assets/2018/11/self-hosted-REST-API.png" alt="How We Built a Self-hosted REST API Explorer in LoopBack 4" style="width: 250px; margin:auto;"/>
 
 Under the hood, our API Explorer is leveraging the open-source component [swagger-ui](https://swagger.io/tools/swagger-ui/), which is an HTML5 single-page application (SPA) that accepts a link to a Swagger or OpenAPI Spec document and does all the heavy lifting.
 
