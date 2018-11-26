@@ -92,7 +92,7 @@ In LoopBack 4, we renamed the packages and put them in `@loopback` scope. As par
 
 ## LTS Policy
 
-Now that LoopBack 4 is the current version, LoopBack 3 becomes the active LTS release and LoopBack 2 a maintancence LTS release. Aligning with [Module LTS Policy](https://developer.ibm.com/node/2018/07/24/module-lts/), here is our LTS schedule:
+Now that LoopBack 4 is the current version, LoopBack 3 becomes the active LTS release and LoopBack 2 a maintenance LTS release. Aligning with [Module LTS Policy](https://developer.ibm.com/node/2018/07/24/module-lts/), here is our LTS schedule:
 
 | Framework  | Status          | Published | EOL                  |
 | ---------- | --------------- | --------- | -------------------- |
