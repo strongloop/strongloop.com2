@@ -13,12 +13,6 @@ published: false
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
-### VIDEO: You Should Be Using Loopback 4
-
-Code Jam Ninja provides several reasons why you should be using LoopBack 4.
-
-[WATCH THE VIDEO >>>](https://youtu.be/QDGcFWv9IPA)
-
 ### Node.js Foundation and JS Foundation Intent to Merge Update — November 2018
 
 Get the latest information regadring the intent to merge both foundations.
@@ -66,6 +60,12 @@ Emily Olin reports that Airbnb, Apollo, Coursera, Elementl, Facebook, GitHub, Ha
 John Papa walks you through creating and using environment variables, leading to a Node.js app you can run anywhere.
 
 [READ MORE >>>](https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786)
+
+### VIDEO: You Should Be Using Loopback 4
+
+Code Jam Ninja provides several reasons why you should be using LoopBack 4.
+
+[WATCH THE VIDEO >>>](https://youtu.be/QDGcFWv9IPA)
 
 ## What Next?
 
