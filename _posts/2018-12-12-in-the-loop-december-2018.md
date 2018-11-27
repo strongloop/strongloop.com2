@@ -19,6 +19,12 @@ Code Jam Ninja provides several reasons why you should be using LoopBack 4.
 
 [WATCH THE VIDEO >>>](https://youtu.be/QDGcFWv9IPA)
 
+### Node.js Foundation and JS Foundation Intent to Merge Update — November 2018
+
+Get the latest information regadring the intent to merge both foundations.
+
+[READ MORE >>>](https://medium.com/@nodejs/node-js-foundation-and-js-foundation-intent-to-merge-update-november-2018-5551a72412bc)
+
 ### Will GraphQL Become a Standard for the New Data Economy?
 
 Alex Woodie looks at GraphQL, the new language that could radically simplify how developers use APIs to get data into applications, and potentially provide a graph-like alternative to procedural REST.
