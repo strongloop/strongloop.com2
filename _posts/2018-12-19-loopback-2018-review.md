@@ -1,6 +1,6 @@
 ---
 title: LoopBack 2018 Year in Review
-date: 2018-12-19T01:00:13+00:00
+date: 2018-12-19
 author: Dave Whiteley
 permalink: /strongblog/loopback-2018-review/
 categories:
@@ -68,37 +68,28 @@ We followed up with some queries about LoopBack 4 that people asked us as the ev
 
 ## More LoopBack How-To Content
 
-While we were looking to the future as we built LoopBack 4, we were still providing tutorials and "how to" content" for LooPabck as a whole.  
+While we were looking to the future as we built LoopBack 4, we continued to provide tutorials and "how to" content" for LoopBack as well.  
 
 Miroslav Bajtoš provided valuable input for maintenance and updating a Loopback back-end. While [his post](https://strongloop.com/strongblog/advice-for-loopback-backend-maintenance/) provides specifics aimed at a single-person project powered by LoopBack 2.x, Miroslav's information provides insight for a larger audience as well.
 
 Bradley Holt gave us the information needed to serve a progressive web app from LoopBack which you can check out [here](https://strongloop.com/strongblog/serving-a-progressive-web-app-from-loopback/).
  
+Looking at the current improvements to Cloudant connector, Janny Hou discussed the support of LoopBack model indexes to optimize query performance. Learn more about index support for Cloudant Model in [this post](https://strongloop.com/strongblog/loopback-index-support-cloudant-model/).
 
-
-- LoopBack Offers Index Support for Cloudant Model by Janny Hou 
-https://strongloop.com/strongblog/loopback-index-support-cloudant-model/
-
-Cloudant connector hit its 2.x major release with several improvements. The most significant change is the support of LoopBack model indexes to optimize query performance.
-
-In loopback-connector-cloudant@1.x, all properties are treated indexable. It could cause a slow response time when called with larger data set. In version 2.x we allow users to specify indexable properties and multiple properties in a composed index. The connector then creates proper indexes based on the model definition.
-
-- Embedding Frontend Frameworks into LoopBack
-
-by Ivan Dovgan  There are pros and cons to embedding a frontend framework into LoopBack. This post shows you how to do it. If you just want a working example, look at my loopback-vue-starter.
-https://strongloop.com/strongblog/embeddding-frontend-frameworks-into-loopback
-
+Ivan Dovgan studied the pros and cons to embedding a frontend framework into LoopBack, providing tips on the best way to do so [here](https://strongloop.com/strongblog/embeddding-frontend-frameworks-into-loopback).
 
 Curious about creating REST APIs? Diana Lau provided a three-part "LoopBack 4 GitHub Example Application" series. She  demonstrated how to build a basic LoopBack 4 application that [exposes REST APIs](https://strongloop.com/strongblog/loopback4-github-example-app-part1/); [calls out to GitHub APIs](https://strongloop.com/strongblog/loopback4-github-example-app-part2/) through octokat.js (a GitHub API client) to get the number of stargazers on a user-specified GitHub organization and repository; and [persists the data into a Cloudant database](https://strongloop.com/strongblog/loopback4-github-example-app-part3/). 
 
-Best Practices for LoopBack 4 https://strongloop.com/strongblog/loopback-4-best-practices/
+Hage Yaapa demonstrated how to [deploy LoopBack 4 applications to IBM Cloud](https://strongloop.com/strongblog/deploying-to-ibm-cloud/), via a tutorial to get you going.
 
-by Miroslav Bajtoš The LoopBack framework is a powerful and flexible tool that can be used in many different ways. Some of these ways lead to better results while others can create headaches later in the project lifecycle. To make it easy for LoopBack users to do the right thing in their projects, we have created Best Practice guides.
+The LoopBack team took notice of API Explorer for its ability to render a live documentation for the REST API provided by any LoopBack application. With the recent improvements in LoopBack 4's REST layer, the team was able to introduce a self-hosted version of that works fully offline. Leanr more [here](https://strongloop.com/strongblog/how-we-built-a-self-hosted-rest-api-explorer/).
 
-Deploying LoopBack 4 applications to IBM Cloud by Hage Yaapa https://strongloop.com/strongblog/deploying-to-ibm-cloud/
+"The LoopBack framework is a powerful and flexible tool that can be used in many different ways," explained Miroslav at the beginning of another one of his posts. With this in mind, he provided some [best practices for LoopBack 4](https://strongloop.com/strongblog/loopback-4-best-practices/) by pointing us to Best Practice guides.
+
+Of course, even with these articles and guides, there are still times when you just need to do your search for how to do something with LoopBack through documentation. While this can be a daunting task, Taranveer Virk announced mid-year that LoopBack Doc Search is now powered by Watson. As he explained, "when you have over a 1000 pages of documentation, it becomes a necessity to be able to search the documentation effectively to find relevant content. With this in mind, we’ve recently changed to powering LoopBack documentation search with IBM Watson Discovery instead of Google Custom Search." Read [the full post](https://strongloop.com/strongblog/loopback-doc-search-powered-by-watson/)to learn more.  
 
 
-Of course, even with these articles, there are still times when you just need to do your search for how to do something with LoopBack through documentation. While this can be a daunting task, Taranveer Virk announced mid-year that LoopBack Doc Search is now powered by Watson. As he explained, "when you have over a 1000 pages of documentation, it becomes a necessity to be able to search the documentation effectively to find relevant content. With this in mind, we’ve recently changed to powering LoopBack documentation search with IBM Watson Discovery instead of Google Custom Search." Read [the full post](https://strongloop.com/strongblog/loopback-doc-search-powered-by-watson/)to learn more.  
+
 
 
 ## Playing Well with OpenAPI Spec
