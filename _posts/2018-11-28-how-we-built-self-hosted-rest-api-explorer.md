@@ -13,7 +13,7 @@ The LoopBack team has always believed it's important to provide great user exper
 
 LoopBack 4.0 GA initially relied on an instance hosted externally at [explorer.loopback.io](https://explorer.loopback.io/). With the recent improvements in our REST layer, we were able to introduce a self-hosted version that works fully offline.
 
-<!-- more -->
+<!--more-->
 
 <img src="https://strongloop.com/blog-assets/2018/11/self-hosted-REST-API.png" alt="How We Built a Self-hosted REST API Explorer in LoopBack 4" style="width: 250px; margin:auto;"/>
 
