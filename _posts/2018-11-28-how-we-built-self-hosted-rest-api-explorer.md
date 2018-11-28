@@ -7,7 +7,6 @@ permalink: /strongblog/how-we-built-a-self-hosted-rest-api-explorer/
 categories:
   - LoopBack
   - OpenAPI Spec
-published: false
 ---
 
 The LoopBack team has always believed it's important to provide great user experience not only to REST API creators, but also to developers consuming those APIs. API Explorer is one of tools making a big difference, as it can render a live documentation for the REST API provided by any LoopBack application and even provides UI controls for executing individual endpoints straight from the docs.
