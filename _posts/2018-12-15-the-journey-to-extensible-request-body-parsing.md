@@ -7,23 +7,16 @@ permalink: /strongblog/the-journey-to-extensible-request-body-parsing/
 categories:
   - Community
   - LoopBack
-  - OpenAPI Spec
 published: false
 ---
 
-LoopBack 4 makes it easy for developers to implement business logic behind REST APIs as controller classes in TypeScript and expose them as HTTP endpoints by decorating such classes and their members including methods and parameters. The framework leverages OpenAPI specification compliant metadata to abstract away how to route incoming HTTP requests to corresponding controller methods and make sure the parameters are extracted, parsed, coerced, and validated for method invocations. You can find more details at [routing] and [parsing].
+LoopBack 4 makes it easy for developers to implement business logic behind REST APIs as controller classes in TypeScript and expose them as HTTP endpoints by decorating such classes and their members including methods and parameters. The framework leverages OpenAPI specification compliant metadata to abstract away how to route incoming HTTP requests to corresponding controller methods and make sure the parameters are extracted, parsed, coerced, and validated for method invocations. You can find more details at [routing](https://loopback.io/doc/en/lb4/Routing-requests.html) and [parsing](https://loopback.io/doc/en/lb4/Parsing-requests.html).
 
-[routing]: https://loopback.io/doc/en/lb4/Routing-requests.html
-[parsing]: https://loopback.io/doc/en/lb4/Parsing-requests.html
-
-<!-- more -->
+<!--more-->
 
 ## Understand Request Body Parsing
 
-LoopBack 4 provides the request parsing capability as an action of the sequence. The parsing action is responsible for processing the HTTP payload to prepare parameter values to invoke a controller method.
-The parameters are extracted from various parts of the HTTP request, such as path, query, headers, or body.
-Path, query, header parameters are usually for simple types while the body often contains business objects.
-Parsing request body is much more complex when it comes to allow content negotiations. There are two sides involved:
+LoopBack 4 provides the request parsing capability as an action of the sequence. The parsing action is responsible for processing the HTTP payload to prepare parameter values to invoke a controller method. The parameters are extracted from various parts of the HTTP request, such as path, query, headers, or body. Path, query, header parameters are usually for simple types while the body often contains business objects. Parsing request body is much more complex when it comes to allow content negotiations. There are two sides involved:
 
 1. The API client sends an HTTP request with `Content-Type` header to indicate the media type of the request body. For example, the header can be `application/json`, `application/x-www-form-urlencoded`, `application/xml` or other ones. Respective HTTP payloads are shown below.
 
@@ -88,7 +81,8 @@ The combination of media types sent by a client and accepted by a controller met
 
 ## Add More Body Parsers
 
-I took the [first slab](https://github.com/strongloop/loopback-next/pull/1838) to support `urlencoded` based on the [body](https://github.com/Raynos/body) module. We discovered the usage of `body` over [Express body parser middleware](https://github.com/expressjs/body-parser) was a technical debt as LoopBack 4 started without Express. As [we have embraced Express again](https://strongloop.com/strongblog/loopback4-improves-inbound-http-processing), it makes sense for us to switch to `body-parser` as it's much more aligned with Express and actively maintained.  
+I took the [first stab](https://github.com/strongloop/loopback-next/pull/1838) to support `urlencoded` based on the [body](https://github.com/Raynos/body) module. We discovered the usage of `body` over [Express body parser middleware](https://github.com/expressjs/body-parser) was a technical debt as LoopBack 4 started without Express. As [we have embraced Express again](https://strongloop.com/strongblog/loopback4-improves-inbound-http-processing), it makes sense for us to switch to `body-parser` as it's much more aligned with Express and actively maintained.  
+
 After switching to `body-parser`, I continued to add `text` and `raw` media types conditionally using `if...else` statements. The size and complexity of the code is growing and readability is deteriorating as we add more and more flavors of body parsing. It's time to refactor the code to make them clean again.
 
 ## Refactor Body Parsing
@@ -136,7 +130,7 @@ The `RequestBodyParser` in `body-parser.ts` is the main entry point to handle re
 
 Up to this point, we are happy again with the code base and the number of built-in body parsers that can handle majority of API needs. But it's still impossible to support a new media type without changing the `@loopback/rest` module. As a strong believer and advocate of extensibility, I was motivated to make body parsing extensible so that the parsing capability can be further extended seamlessly.
 
-## Introduce the extensibility
+## Introduce the Extensibility
 
 The case of body parsing extensibility is not uncommon and it's well fit into [the extension point/extension design pattern](https://wiki.eclipse.org/FAQ_What_are_extensions_and_extension_points%3F).
 
@@ -189,17 +183,17 @@ We utilize `@loopback/context` module to enable the extensibility and pluggabili
    }
    ```
 
-   Optionally, the body parser can be injected with `RequestBodyParserOptions` to configure the extension itself.
+Optionally, the body parser can be injected with `RequestBodyParserOptions` to configure the extension itself.
 
 3. Register a body parser by binding it to the context with `rest.RequestBodyParser` tag.
 
-   A body parser can be added at REST application or component level using APIs or bindings. For example:
+A body parser can be added at REST application or component level using APIs or bindings. For example:
 
    ```ts
    app.bodyParser(XmlBodyParser);
    ```
 
-   Or
+Or
 
    ```ts
    export class RestComponent implements Component {
@@ -225,15 +219,15 @@ We utilize `@loopback/context` module to enable the extensibility and pluggabili
    }
    ```
 
-   Please note that built-in body parsers shipped in `@loopback/rest` are also registered in the same way by `RestComponent`. They are invoked after other parsers by default.
+Please note that built-in body parsers shipped in `@loopback/rest` are also registered in the same way by `RestComponent`. They are invoked after other parsers by default.
 
 ## Customize Request Body Parsers
 
 As we use `Context` to glue `RequestBodyParser` extension point with its extensions, it's easy to achieve the following tasks.
 
-- Add a new body parser
-- Replace an existing body parser
-- Disable/remove an existing body parser
+- Add a new body parser.
+- Replace an existing body parser.
+- Disable/remove an existing body parser.
 
 See [Extending request body parsing](https://loopback.io/doc/en/lb4/Extending-request-body-parsing.html) for more details and examples.
 
@@ -249,8 +243,7 @@ Moving forward, we are exploring the possibility to [generalize the extension po
 
 ## Acknowledgement
 
-I want to specially thank my co-worker [Miroslav Bajtoš](https://github.com/bajtos) for thoroughly reviewing the code and providing great feedbacks and suggestions to help shape the design and implementation. It has been a fantastic and constructive collaboration in the open. As always, we would like to invite all of you to chime in
-any time in the future!
+I want to specially thank my co-worker [Miroslav Bajtoš](https://github.com/bajtos) for thoroughly reviewing the code and providing great feedbacks and suggestions to help shape the design and implementation. It has been a fantastic and constructive collaboration in the open. As always, we would like to invite all of you to chime in any time in the future!
 
 ## Call to Action
 
