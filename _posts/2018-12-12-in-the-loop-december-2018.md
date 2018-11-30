@@ -15,7 +15,7 @@ published: false
 
 ### Node.js Foundation and JS Foundation Intent to Merge Update — November 2018
 
-Get the latest information regadring the intent to merge both foundations.
+Get the latest information regarding the intent to merge both foundations.
 
 [READ MORE >>>](https://medium.com/@nodejs/node-js-foundation-and-js-foundation-intent-to-merge-update-november-2018-5551a72412bc)
 
