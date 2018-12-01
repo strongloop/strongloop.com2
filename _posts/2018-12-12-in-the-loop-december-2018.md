@@ -13,6 +13,12 @@ published: false
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### The ABCs of APIs: Developers Are Migrating to API-Based Workflows
+
+Nadine Krefetz explains how APIs make it easier to use best-of-breed tools that connect disparate software applications and platforms. They've also changed the way video developers create new products.
+
+[READ MORE >>>](http://www.streamingmedia.com/Articles/Editorial/Featured-Articles/The-ABCs-of-APIs-Developers-Are-Migrating-to-API-Based-Workflows-128799.aspx)
+
 ### Node.js Foundation and JS Foundation Intent to Merge Update — November 2018
 
 Get the latest information regarding the intent to merge both foundations.
