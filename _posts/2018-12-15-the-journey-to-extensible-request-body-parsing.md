@@ -237,7 +237,7 @@ Check out [Parsing requests](https://loopback.io/doc/en/lb4/Parsing-requests.htm
 
 ## Summary
 
-This blog is basically a recap of [Pull Request 1936](https://github.com/strongloop/loopback-next/pull/1936). We would like to share what we have learned to achieve full extensibility of request body parsing.
+This blog is basically a recap of [Pull Request 1936](https://github.com/strongloop/loopback-next/pull/1936). We shared what we have learned to achieve full extensibility of request body parsing.
 
 Moving forward, we are exploring the possibility to [generalize the extension point/extension pattern](https://github.com/strongloop/loopback-next/compare/extension-point) on top of `@loopback/context` and further simplify how to apply it to build other types of extensions. A near term task is to introduce [extensibility for response body serialization](https://github.com/strongloop/loopback-next/issues/436) so that we can write responses into HTTP based on the response spec and `Accept` header of API requests. Your feedback and contribution are welcome!
 
