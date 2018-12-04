@@ -99,8 +99,12 @@ Raymond Feng demonstarted how to simply create REST APIs in Node.js from an Open
 
 We look forward to continuing to see how we can work with OpenAPI Spec!
 
-## GitHub Activity and Looking Towards the Future
+## Downloads, GitHub Activity and Looking Towards the Future
 
-With all of this activity, LoopBack's GitHub status continued to grow. LoopBack passed the [12,000 star count]((https://github.com/strongloop/loopback)) near the end of November and sits at 12,877 stars as of publication time, while [LoopBack 4](https://github.com/strongloop/loopback-next) is at 1168!
+With all of this activity, we weren't surprised to see LoopBack downloads and GitHub status continue to grow. 
+
+There were  approximately 1.5 millions downloads for LoopBack 2 and lb3 throughout 2018. We also saw a big increase for lb4 - 27 times more than last year. 
+
+LoopBack passed the [12,000 star count]((https://github.com/strongloop/loopback)) near the end of November and sits at 12,877 stars as of publication time, while [LoopBack 4](https://github.com/strongloop/loopback-next) is at 1168!
 
 ## What's Next? 
