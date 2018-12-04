@@ -1,13 +1,12 @@
 ---
 layout: post
 title: The Journey to Extensible Request Body Parsing for LoopBack 4
-date: 2018-12-15
+date: 2018-12-04
 author: Raymond Feng
 permalink: /strongblog/the-journey-to-extensible-request-body-parsing/
 categories:
   - Community
   - LoopBack
-published: false
 ---
 
 LoopBack 4 makes it easy for developers to implement business logic behind REST APIs as controller classes in TypeScript and expose them as HTTP endpoints by decorating such classes and their members including methods and parameters. The framework leverages OpenAPI specification compliant metadata to abstract away how to route incoming HTTP requests to corresponding controller methods and make sure the parameters are extracted, parsed, coerced, and validated for method invocations. You can find more details at [routing](https://loopback.io/doc/en/lb4/Routing-requests.html) and [parsing](https://loopback.io/doc/en/lb4/Parsing-requests.html).
