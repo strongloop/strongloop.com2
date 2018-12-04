@@ -89,9 +89,6 @@ The LoopBack team took notice of API Explorer for its ability to render a live d
 Of course, even with these articles and guides, there are still times when you just need to do your search for how to do something with LoopBack through documentation. While this can be a daunting task, Taranveer Virk announced mid-year that LoopBack Doc Search is now powered by Watson. As he explained, "when you have over a 1000 pages of documentation, it becomes a necessity to be able to search the documentation effectively to find relevant content. With this in mind, we’ve recently changed to powering LoopBack documentation search with IBM Watson Discovery instead of Google Custom Search." Read [the full post](https://strongloop.com/strongblog/loopback-doc-search-powered-by-watson/)to learn more.  
 
 
-
-
-
 ## Playing Well with OpenAPI Spec
 
 WIth IBM supporting the [OpenAPI Initiative](https://www.openapis.org/), it shouldn't surprise anyone that the LoopBack team uses the spec they offer. 
