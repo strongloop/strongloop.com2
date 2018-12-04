@@ -230,7 +230,7 @@ As we use `Context` to glue `RequestBodyParser` extension point with its extensi
 
 See [Extending request body parsing](https://loopback.io/doc/en/lb4/Extending-request-body-parsing.html) for more details and examples.
 
-In the [discussion](https://github.com/strongloop/loopback-next/issues/1873) of adding `multipart/form-data` media type, we realize that there is a need to give full control to controller methods, which might want to use a custom body parser or skip the body parsing. For example, a controller should be able to implement file upload using a npm module such as [`multer`](https://www.npmjs.com/package/multer) off the request stream. To allow such override, we introduced an `x-parser` extension to the OpenAPI spec for a given operation request body.
+In the [discussion](https://github.com/strongloop/loopback-next/issues/1873) of adding `multipart/form-data` media type, we realize that there is a need to give full control to controller methods, which might want to use a custom body parser or skip the body parsing. For example, a controller should be able to implement file upload using a npm module such as  [`multer`](https://www.npmjs.com/package/multer) off the request stream. To allow such override, we introduced an `x-parser` extension to the OpenAPI spec for a given operation request body.
 
 Check out [Parsing requests](https://loopback.io/doc/en/lb4/Parsing-requests.html#specify-custom-parser-by-controller-methods) and [File upload acceptance test](https://github.com/strongloop/loopback-next/tree/master/packages/rest/test/acceptance/file-upload) for more information.
 
