@@ -11,9 +11,9 @@ published: false
 
 As applications evolve and developers are adding new features, so is evolving the structure of the backing database. In LoopBack 3, we provided JavaScript API for automatic migration of database schemas. Recently, we have improved LoopBack 4 to leverage these APIs and provide an easy-to-use database migration tool avaible from the command-line.
 
-<!--more-->
-
 For example, when the developer adds a new property to a model, they also need to define a new column in their SQL database schema. NoSQL databases like Cloudant and MongoDB don't require schema, but still require developers to define indices to speed up frequent queries.
+
+<!--more-->
 
 Projects scaffolded with a recent version of our CLI tool `lb4` come with a new package script that automates the database migration process.
 
