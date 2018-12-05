@@ -7,7 +7,6 @@ permalink: /strongblog/november-2018-milestone/
 categories:
   - Community
   - LoopBack
-published: false
 ---
 
 With winter approaching, daylight hours have been decreasing, but the LoopBack team's productivity has not. After we published the General Availability (GA) release, the team started to focus on user adoption and fixing up documentation to accomodate for the increase in users. You can check out the November Milestone [here](https://github.com/strongloop/loopback-next/issues/1961) and our December Milestone [here](https://github.com/strongloop/loopback-next/issues/2084).
