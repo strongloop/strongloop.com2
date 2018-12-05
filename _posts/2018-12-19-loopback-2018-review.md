@@ -103,8 +103,8 @@ We look forward to continuing to see how we can work with OpenAPI Spec!
 
 With all of this activity, we weren't surprised to see LoopBack downloads and GitHub status continue to grow. 
 
-There were  approximately 1.5 millions downloads for LoopBack 2 and lb3 throughout 2018. We also saw a big increase for lb4 - 27 times more than last year. 
+There were  approximately 1.5 millions downloads for LoopBack 2 and lb3 throughout 2018 - a 21% increase from 2017. We also saw a big increase for LoopBack 4 at 115,000 downlaods - 13 times more than last year. 
 
-LoopBack passed the [12,000 star count]((https://github.com/strongloop/loopback)) near the end of November and sits at 12,877 stars as of publication time, while [LoopBack 4](https://github.com/strongloop/loopback-next) is at 1168!
+LoopBack passed the [12,000 star count]((https://github.com/strongloop/loopback)) near the end of November and sits at 12,077 stars as of publication time, while [LoopBack 4](https://github.com/strongloop/loopback-next) is at 1200+!
 
 ## What's Next? 
