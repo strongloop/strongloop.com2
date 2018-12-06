@@ -11,7 +11,7 @@ categories:
 
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
-<img src="https://strongloop.com/blog-assets/2018/11/in-the-loop-december-2018.png.png" alt="in the Loop December 2018 Milestone Update" style="width: 300px"/>
+<img src="https://strongloop.com/blog-assets/2018/11/in-the-loop-december-2018.png" alt="in the Loop December 2018" style="width: 300px"/>
 
 ### The ABCs of APIs: Developers Are Migrating to API-Based Workflows
 
