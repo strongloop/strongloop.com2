@@ -1,13 +1,12 @@
 ---
 layout: post
 title: In the Loop - December 2018
-date: 2018-12-30
+date: 2018-12-06
 author: Dave Whiteley
 permalink: /strongblog/in-the-loop-december-2018/
 categories:
   - Community
   - News
-published: false
 ---
 
 "In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
@@ -61,12 +60,6 @@ Mikael von Ketelhodt compares the differences between configuring a database dat
 Emily Olin reports that Airbnb, Apollo, Coursera, Elementl, Facebook, GitHub, Hasura, Prisma, Shopify, and Twitter are working together to accelerate GraphQL adoption and invite others to join this new initiative.
 
 [READ MORE >>>](https://www.linuxfoundation.org/press-release/2018/11/intent_to_form_graphql/)
-
-### Node.js Everywhere with Environment Variables!
-
-John Papa walks you through creating and using environment variables, leading to a Node.js app you can run anywhere.
-
-[READ MORE >>>](https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786)
 
 ### VIDEO: You Should Be Using Loopback 4
 
