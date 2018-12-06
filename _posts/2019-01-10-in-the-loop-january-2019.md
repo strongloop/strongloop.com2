@@ -20,7 +20,11 @@ Ziran Sun helps you build a simple end-to-end IoT system, from constrained devic
 
 [READ MORE >>>](https://js.foundation/js-devs-zone/2018/11/26/building-your-own-internet-of-things-using-javascript)
 
+### npm Announces 2019 Predictions for JavaScript
 
+npm, Inc., which runs the world’s largest software registry and maintains the ‘npm’ software development tool, today announced JavaScript predictions for 2019 and beyond.
+
+[READ MORE >>>](https://www.apnews.com/e1d723ccf7944b25b9a4b899ce3c29a8)
 
 ## What Next?
 
