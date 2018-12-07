@@ -30,21 +30,21 @@ You can read more about the evolution of the logo, website design decisions and 
 
 ## LoopBack 4 Features, Previews and GA Announcement
 
-With updates about LoopBack 4's logo and dedicated site covered, let's review the numerous updates we provided about the framework itself. 
+With updates about LoopBack 4's logo and dedicated site covered, let's review the numerous updates we provided about the framework itself. Strap yourself in - our team did a lot!
 
 We provided a [second](https://strongloop.com/strongblog/loopback-4-developer-preview-2) and [third LoopBack 4 Developer Preview 3](https://strongloop.com/strongblog/loopback-4-developer-preview-3) to let the community take a look at what we were cooking with the updated framework. 
 
 Early in the year Kevin Delisle announced that we added the new controller generation command to the lb4 CLI toolkit. Learn how you can can install with [npm i -g @loopback/cli](https://strongloop.com/strongblog/generate-controllers-loopback-4-cli/).
 
-Kyu Shim explained another new feature in his post "Automatically Generate JSON Schema for your LoopBack 4 Models." Learn how to deal with models and metadata more effectively in LoopBack 4 [here](https://strongloop.com/strongblog/loopback-4-json-schema-generation/).
+Kyu Shim explained another new feature in his post "[Automatically Generate JSON Schema for your LoopBack 4 Models](https://strongloop.com/strongblog/loopback-4-json-schema-generation/)." Give it a read to learn how to deal with models and metadata more effectively in LoopBack 4.
 
-Raymond Feng demonstrated how to use LoopBack 4 to track down dependency injections in another post. Examples and and information about options can be found [here](https://strongloop.com/strongblog/loopback-4-track-down-dependency-injections/).
+Raymond Feng demonstrated how to use LoopBack 4 to track down dependency injections. He provided examples and information about options [here](https://strongloop.com/strongblog/loopback-4-track-down-dependency-injections/).
 
-Later in the year, Raymond shared new ways for developers to build, zeroing in on the LoopBack 4 CLI. "As you have seen, LoopBack 4 CLI can help developers scaffold projects and provision artifacts in a few different ways." LoopBack 4's [Express Mode for CLI](https://strongloop.com/strongblog/loopback4-cli-express-mode) allows developers to scaffold projects and provision artifacts in multiple ways, with more details in the post.
+Later in the year, Raymond shared new ways for developers to build, zeroing in on the LoopBack 4 CLI. "As you have seen, LoopBack 4 CLI can help developers scaffold projects and provision artifacts in a few different ways." Check out LoopBack 4's [Express Mode for CLI](https://strongloop.com/strongblog/loopback4-cli-express-mode) for details about how developers can scaffold projects and provision artifacts in multiple ways.
 
-Loopback developer Miroslav Bajtoš Miroslav Bajtoš continued his work on LoopBack 4, both under the hood and in spreading the word of upcoming enhancements. He also examined the dilemma that can surround example projects. Specifically, he looked at how useful learning resources can become a maintenance burden. He provides insight and options taken for LoopBack 4 in ["Moving LoopBack 4 Example Project to the Monorepo"](https://strongloop.com/strongblog/moving-examples-to-monorepo/).
+LoopBack developer Miroslav Bajtoš Miroslav Bajtoš continued his work on LoopBack 4, both under the hood and in spreading the word of upcoming enhancements. He also examined the dilemma that can surround example projects. Specifically, he looked at how useful learning resources can become a maintenance burden. He provides insight and options taken for LoopBack 4 in ["Moving LoopBack 4 Example Project to the Monorepo"](https://strongloop.com/strongblog/moving-examples-to-monorepo/).
 
-In June, Miroslav outlined some HTTP changes in ["LoopBack 4 Improves Inbound HTTP Processing"](https://strongloop.com/strongblog/loopback4-improves-inbound-http-processing).
+In June, Miroslav outlined some HTTP changes in ["LoopBack 4 Improves Inbound HTTP Processing"](https://strongloop.com/strongblog/loopback4-improves-inbound-http-processing). As he mentions, "We expect the initial implementation to evolve over time and get support for additional features, from HTTPS to WebSockets and HTTP/2. Contributions are welcome!"
 
 With the LoopBack team working hard to make LoopBack 4 cutting edge, we made difficult decisions to simpify and move forward. Biniam Admikew revealed one of these decisions at the end of February: LoopBack 4 was [dropping support for Node.js 6](https://strongloop.com/strongblog/loopback-4-dropping-node6). As he explained, "Node.js 6.x will be entering maintenance mode this April, and requires us to provide hacks and polyfills to maintain compatibility, which actively works against this goal".
 
