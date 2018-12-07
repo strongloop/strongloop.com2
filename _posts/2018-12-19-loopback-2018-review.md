@@ -9,28 +9,28 @@ categories:
 published: false
 ---
 
-For the past twelve months the LoopBack team has been working hard on the future of [LoopBack](http://loopback.io/) and LoopBack 4. As 2018 wraps up, we're looking back at the various developments throughout the year. The year began as we revealed the community-chosen logo for LoopBack 4 and wrapped up with the latest version of our framework GA and ready for production! In between, there were a lot of interesting moments. Join us as we take a look back!
+For the past twelve months the LoopBack team has been working hard on the future of [LoopBack](http://loopback.io/) and LoopBack 4. As 2018 wraps up, we're looking back at the many developments throughout the year. We began the year by revealing the community-chosen logo for LoopBack 4 and wrapped it up providing additional features and How Tos with the latest version of our framework! In between, there were a lot of interesting moments that demonstrated the growth, development, and thought processes or the LoopBack team. Join us as we take a look back!
 
 <img src="https://strongloop.com/blog-assets/2018/Loopback-2018-wrap-up.png" alt="LoopBack 2018 Year in Review" style="width: 250px; margin:auto;"/>
 
 <!--more-->
 ## The LoopBack 4 Logo
 
-As 2017 drew to a close, we asked the StrongLoop community for their help in selecting a logo for LoopBack 4. After reviewing five logo options and three color alternatives, over 200 folks determined the winning logo, shown below. 
+As 2017 drew to a close, we asked the StrongLoop community for help selecting a logo for LoopBack 4. After reviewing five logo options and three color alternatives, over 200 folks determined the winning logo (shown below). 
 
 <img src="https://strongloop.com/blog-assets/2018/01/loopback-4-logo-sample.png" alt="LoopBack 4 logo" style="width: 250px; margin:auto;"/>
 
-Want to see the other options and read more about the process? We provided more details on a dedicated blog post, which you can read [here](https://strongloop.com/strongblog/thanks-loopback-4-logo/).
+If you want to see the other options and read more about the process, we provided more details in this [blog post](https://strongloop.com/strongblog/thanks-loopback-4-logo/).
 
 ## The LoopBack 4 Website
 
-With a new logo in place, we also updated the LoopBack website with a section dedicated to [LoopBack 4](http://v4.loopback.io/). While we previously announced the new LB 4 site on a milestone update, on June 11th Diana Lau provided a more in-depth look at its genesis. She explained, "Back when we started to develop LoopBack 4, the team knew that a new codebase should be accompanied by a new logo and branding dedicated to this new version. We put these ideas aside while we focused on delivering the code." 
+With our new logo in place, we also updated the LoopBack website with a section dedicated to [LoopBack 4](http://v4.loopback.io/). While we previously announced the new LB 4 site on a milestone update, on June 11th Diana Lau provided a more in-depth look at its genesis. She explained, "Back when we started to develop LoopBack 4, the team knew that a new codebase should be accompanied by a new logo and branding dedicated to this new version. We put these ideas aside while we focused on delivering the code." 
 
 You can read more about the evolution of the logo, website design decisions and more [here](https://strongloop.com/strongblog/lb4-website/).
 
 ## LoopBack 4 Features, Previews and GA Announcement
 
-With updates about LoopBack 4's logo and dedicated site covered, let's review the many updates we provided about the framework itself. 
+With updates about LoopBack 4's logo and dedicated site covered, let's review the numerous updates we provided about the framework itself. 
 
 We provided a [second](https://strongloop.com/strongblog/loopback-4-developer-preview-2) and [third LoopBack 4 Developer Preview 3](https://strongloop.com/strongblog/loopback-4-developer-preview-3) to let the community take a look at what we were cooking with the updated framework. 
 
