@@ -26,6 +26,12 @@ npm, Inc., which runs the world’s largest software registry and maintains the 
 
 [READ MORE >>>](https://www.apnews.com/e1d723ccf7944b25b9a4b899ce3c29a8)
 
+## Adding Kubernetes Deployment and Scaling to a Dockerized Loopback App
+
+Remko de Knikker shows how to deploy a FDIC API application to a Kubernetes cluster using a deployment with autoscaling.
+
+[READ MORE >>>](https://medium.com/nycdev/adding-kubernetes-deployment-and-scaling-to-a-dockerized-loopback-app-a48a305bd59b)
+
 ## What Next?
 
 * Learn about [open source projects](https://strongloop.com/projects/) that provide key technologies for the API economy: LoopBack; API Microgateway, and; OpenAPI Spec. 
