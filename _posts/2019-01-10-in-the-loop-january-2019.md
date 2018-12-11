@@ -14,6 +14,13 @@ published: false
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2018/11/in-the-loop-december-2018.png.png" alt="in the Loop December 2018 Milestone Update" style="width: 300px"/>
 
+
+### How to use NodeJS without frameworks and external libraries
+
+Aditya Sridhar shows how to build Simple REST API’s with NodeJS using only those functionalities that are provided with NodeJS itself.
+
+[READ MORE >>>](https://hackernoon.com/how-to-use-nodejs-without-frameworks-and-external-libraries-97eb6acac9e3)
+
 ### Building Your Own Internet of Things Using JavaScript
 
 Ziran Sun helps you build a simple end-to-end IoT system, from constrained devices to a secure gateway.
