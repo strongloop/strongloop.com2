@@ -108,3 +108,5 @@ There were  approximately 1.5 millions downloads for LoopBack 2 and lb3 througho
 LoopBack passed the [12,000 star count]((https://github.com/strongloop/loopback)) near the end of November and sits at 12,077 stars as of publication time, while [LoopBack 4](https://github.com/strongloop/loopback-next) is at 1200+!
 
 ## What's Next? 
+
+We've just provided a very thoroughsummary of all LoopBack developements this year, so we recommend you started with [LoopBack 4](http://v4.loopback.io/getting-started.html) if you haven't already! 
