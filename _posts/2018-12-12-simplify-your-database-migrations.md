@@ -6,7 +6,6 @@ author: Miroslav Bajtoš
 permalink: /strongblog/simplify-your-database-migrations
 categories:
   - LoopBack
-published: false
 ---
 
 As applications evolve and developers add new features, the structure of the backing database evolves as well. In LoopBack 3, we provided JavaScript API for automatic migration of database schemas. Recently, we improved LoopBack 4 to leverage these APIs and provide an easy-to-use database migration tool available from the command-line.
