@@ -14,6 +14,11 @@ published: false
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2018/11/in-the-loop-december-2018.png.png" alt="in the Loop December 2018 Milestone Update" style="width: 300px"/>
 
+### The world's most popular programming language is JavaScript, but why?
+
+Nick Heath shares how code repository service GitHub has shed light on what's fuelling the continued interest in JavaScript.
+
+[READ MORE >>>](https://www.techrepublic.com/article/the-worlds-most-popular-programming-language-is-javascript-but-why/)
 
 ### How to use NodeJS without frameworks and external libraries
 
