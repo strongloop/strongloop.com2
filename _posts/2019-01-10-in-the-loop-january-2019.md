@@ -14,6 +14,12 @@ published: false
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2018/11/in-the-loop-december-2018.png.png" alt="in the Loop December 2018 Milestone Update" style="width: 300px"/>
 
+### The State of the Octoverse: new open source projects in 2018 
+
+The GitHub blog pulled the top projects open sourced in 2018 by the number of stars the project received in its first 28 days being public and by the number of unique contributors to the project in the first 28 days being public.
+
+[READ MORE >>>](https://blog.github.com/2018-12-13-new-open-source-projects/)
+
 ### The world's most popular programming language is JavaScript, but why?
 
 Nick Heath shares how code repository service GitHub has shed light on what's fuelling the continued interest in JavaScript.
