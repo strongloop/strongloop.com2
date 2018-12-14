@@ -109,4 +109,6 @@ LoopBack passed the [12,000 star count]((https://github.com/strongloop/loopback)
 
 ## What's Next? 
 
-We've just provided a very thoroughsummary of all LoopBack developements this year, so we recommend you started with [LoopBack 4](http://v4.loopback.io/getting-started.html) if you haven't already! 
+The LoopBack team is continuing to work on new features and ways to demonstrate what LoopBack 4 can do. Just as importantly, the LoopBack community is continuing to provide feedback, report issues, and contribute code. While we were excited for LoopBack 4 GA, we are more excited to see where things go in 2019! 
+
+We've just provided a very thorough summary of all LoopBack developments this year, so we recommend you started with [LoopBack 4](http://v4.loopback.io/getting-started.html) if you haven't already! 
