@@ -9,11 +9,14 @@ categories:
 published: false
 ---
 
-For the past twelve months the LoopBack team has been working hard on the future of [LoopBack](http://loopback.io/) and LoopBack 4. As 2018 wraps up, we're taking a look back at the many developments throughout the year. We began the year by revealing the community-chosen logo for LoopBack 4 and wrapped it up providing additional features and How Tos with the latest version of our framework! In between, there were a lot of interesting moments that demonstrated the growth, development, and thought processes or the LoopBack team. Join us as we take a look back!
+For the past twelve months the LoopBack team has been working hard on the future of [LoopBack](http://loopback.io/) and LoopBack 4. As 2018 wraps up and we prepare for 2019, we invite you to join us as we take a look back at the many developments throughout the year.  
 
 <img src="https://strongloop.com/blog-assets/2018/Loopback-2018-wrap-up.png" alt="LoopBack 2018 Year in Review" style="width: 250px; margin:auto;"/>
 
 <!--more-->
+
+We began the year by revealing the community-chosen logo for LoopBack 4 and wrapped it up providing additional features and How Tos with the latest version of our framework! In between, there were a lot of interesting moments that demonstrated the growth, development, and thought processes or the LoopBack team.
+
 ## The LoopBack 4 Logo
 
 As 2017 drew to a close, we asked the StrongLoop community to help select a logo for LoopBack 4. Over 200 people reviewed five logo options and three color alternatives to determine the winning logo (shown below). 
@@ -109,6 +112,6 @@ LoopBack passed the [12,000 star count]((https://github.com/strongloop/loopback)
 
 ## What's Next? 
 
-The LoopBack team is continuing to work on new features and ways to demonstrate what LoopBack 4 can do. Just as importantly, the LoopBack community is continuing to provide feedback, report issues, and contribute code. While we were excited for LoopBack 4 GA, we are more excited to see where things go in 2019! 
+The LoopBack team is continuing to work on new features and ways to demonstrate what LoopBack 4 can do. Just as importantly, we have been encouraged as the LoopBack community continued providing feedback, reporting issues, and contributing code. We were proud and excited for LoopBack 4 GA, and now we are more excited to see where things go in 2019! 
 
 We've just provided a very thorough summary of all LoopBack developments this year, so we recommend you started with [LoopBack 4](http://v4.loopback.io/getting-started.html) if you haven't already! 
