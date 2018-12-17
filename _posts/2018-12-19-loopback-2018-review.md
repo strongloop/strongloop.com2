@@ -9,7 +9,7 @@ categories:
 published: false
 ---
 
-For the past twelve months the LoopBack team has been working hard on the future of [LoopBack](http://loopback.io/) and LoopBack 4. As 2018 wraps up and we prepare for 2019, we invite you to join us as we take a look back at the many developments throughout the year.  
+For the past twelve months the LoopBack team has been working hard on the future of [LoopBack](http://loopback.io/) and LoopBack 4. As we wrap up 2018 with this last post of the year, we invite you to join us as we take a look back at the many developments throughout the year.  
 
 <img src="https://strongloop.com/blog-assets/2018/Loopback-2018-wrap-up.png" alt="LoopBack 2018 Year in Review" style="width: 250px; margin:auto;"/>
 
@@ -112,6 +112,6 @@ LoopBack passed the [12,000 star count]((https://github.com/strongloop/loopback)
 
 ## What's Next? 
 
-The LoopBack team is continuing to work on new features and ways to demonstrate what LoopBack 4 can do. Just as importantly, we have been encouraged as the LoopBack community continued providing feedback, reporting issues, and contributing code. We were proud and excited for LoopBack 4 GA, and now we are more excited to see where things go in 2019! 
+The LoopBack team is continuing to work on new features and ways to demonstrate what LoopBack 4 can do for 2019. Just as importantly, we have been encouraged as the LoopBack community continued providing feedback, reporting issues, and contributing code. We were proud and excited for LoopBack 4 GA, and now we are more excited to see where things go in 2019! 
 
 We've just provided a very thorough summary of all LoopBack developments this year, so we recommend you started with [LoopBack 4](http://v4.loopback.io/getting-started.html) if you haven't already! 
