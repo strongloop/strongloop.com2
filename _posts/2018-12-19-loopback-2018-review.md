@@ -11,7 +11,7 @@ published: false
 
 For the past twelve months the LoopBack team has been working hard on the future of [LoopBack](http://loopback.io/) and LoopBack 4. As we wrap up 2018 with this last post of the year, we invite you to join us as we take a look back at the many developments throughout the year.  
 
-<img src="https://strongloop.com/blog-assets/2018/Loopback-2018-wrap-up.png" alt="LoopBack 2018 Year in Review" style="width: 250px; margin:auto;"/>
+<img src="https://strongloop.com/blog-assets/2018/12/loopback-2018-wrap-up.png" alt="LoopBack 2018 Year in Review" style="width: 400px; margin:auto;"/>
 
 <!--more-->
 
