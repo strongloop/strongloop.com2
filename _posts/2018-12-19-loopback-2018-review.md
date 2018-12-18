@@ -21,7 +21,7 @@ We began the year by revealing the community-chosen logo for LoopBack 4 and wrap
 
 As 2017 drew to a close, we asked the StrongLoop community to help select a logo for LoopBack 4. Over 200 people reviewed five logo options and three color alternatives to determine the winning logo (shown below). 
 
-<img src="https://strongloop.com/blog-assets/2018/01/loopback-4-logo-sample.png" alt="LoopBack 4 logo" style="width: 250px; margin:auto;"/>
+<img src="https://strongloop.com/blog-assets/2018/01/loopback-4-logo-sample.png" alt="LoopBack 4 logo" style="width: 150px; margin:auto;"/>
 
 If you want to see the other options and read more about the process, we provided more details in this [blog post](https://strongloop.com/strongblog/thanks-loopback-4-logo/).
 
