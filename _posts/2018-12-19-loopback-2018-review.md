@@ -107,7 +107,7 @@ With all of this activity, we weren't surprised to see LoopBack downloads and Gi
 
 There were  approximately 1.5 millions downloads for LoopBack 2 and lb3 throughout 2018 - a 21% increase from 2017. We also saw a big increase for LoopBack 4 at 115,000 downlaods - 13 times more than last year. 
 
-LoopBack passed the [12,000 star count]((https://github.com/strongloop/loopback)) near the end of November and sits at 12,077 stars as of publication time, while [LoopBack 4](https://github.com/strongloop/loopback-next) is at 1200+!
+LoopBack passed the [12,000 star count](https://github.com/strongloop/loopback) near the end of November and sits at 12,117 stars as of publication time, while [LoopBack 4](https://github.com/strongloop/loopback-next) is at 1200+!
 
 ## What's Next? 
 
