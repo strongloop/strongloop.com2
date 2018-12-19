@@ -6,7 +6,6 @@ permalink: /strongblog/loopback-2018-review/
 categories:
   - Community
   - LoopBack
-published: false
 ---
 
 For the past twelve months the LoopBack team has been working hard on the future of [LoopBack](http://loopback.io/) and LoopBack 4. As we wrap up 2018 with this last post of the year, we invite you to join us as we take a look back at the many developments throughout the year.  
