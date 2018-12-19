@@ -101,7 +101,7 @@ Raymond Feng demonstrated how to simply create REST APIs in Node.js from an Open
 
 The IBM Research team of Erik Wittern, Alan Cha, and Jim Laredo introduced us to GraphQL when we announced [OASGraph](https://strongloop.com/strongblog/announcing-oasgraph/), a library that takes an Open API Specification and auto generates a ready to run GraphQL interface.
 
-We look forward to continuing to see how we can work with OpenAPI Spec!
+We look forward to continuing to see how we can work with OpenAPI Spec - and encourage you all to do the same!
 
 ## Downloads, GitHub Activity and Looking Towards the Future
 
