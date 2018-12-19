@@ -90,7 +90,6 @@ The LoopBack team took notice of API Explorer for its ability to render a live d
 
 Of course, even with these articles and guides, there are still times when you just need to do your search for how to do something with LoopBack through documentation. While this can be a daunting task, Taranveer announced mid-year that LoopBack Doc Search is now powered by Watson. As he explained, "when you have over a 1000 pages of documentation, it becomes a necessity to be able to search the documentation effectively to find relevant content. With this in mind, we’ve recently changed to powering LoopBack documentation search with IBM Watson Discovery instead of Google Custom Search." Read [the full post](https://strongloop.com/strongblog/loopback-doc-search-powered-by-watson/)to learn more.  
 
-
 ## Playing Well with OpenAPI Spec
 
 With IBM supporting the [OpenAPI Initiative](https://www.openapis.org/), it shouldn't surprise anyone that the LoopBack team uses the spec they offer. 
@@ -99,7 +98,7 @@ Janny Hou described how LoopBack 4 upgraded from Swagger to [OpenAPI Spec 3.0.0]
 
 Raymond Feng demonstrated how to simply create REST APIs in Node.js from an OpenAPI Specification using LoopBack 4 in [this post](https://strongloop.com/strongblog/loopback4-openapi-cli/).
 
-The IBM Research team of Erik Wittern, Alan Cha, and Jim Laredo introduced us to GraphQL when we announced [OASGraph](https://strongloop.com/strongblog/announcing-oasgraph/), a library that takes an Open API Specification and auto generates a ready to run GraphQL interface.
+The IBM Research team of Erik Wittern, Alan Cha, and Jim Laredo also demonstarted how to play well with OAS when they introduced us to GraphQL via [OASGraph](https://strongloop.com/strongblog/announcing-oasgraph/). Written in TypeScript, OASGraph is a library that takes an Open API Specification and auto generates a ready to run GraphQL interface.
 
 We look forward to continuing to see how we can work with OpenAPI Spec - and encourage you all to do the same!
 
