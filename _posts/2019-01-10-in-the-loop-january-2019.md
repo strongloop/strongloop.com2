@@ -10,7 +10,7 @@ categories:
 published: false
 ---
 
-"In the Loop" provides a monthly rundown of some interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
+Happy 2019! We hope you all had a wonderful holiday season. We're happy to welcome you back with "In the Loop"! Here's a rundown of the past month's interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2018/11/in-the-loop-december-2018.png.png" alt="In the Loop January 2019" style="width: 300px"/>
 
