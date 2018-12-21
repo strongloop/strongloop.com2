@@ -14,6 +14,12 @@ Happy 2019! We hope you all had a wonderful holiday season. We're happy to welco
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2018/11/in-the-loop-december-2018.png.png" alt="In the Loop January 2019" style="width: 300px"/>
 
+### It's Time For Every API to Have an OpenAPI Spec
+
+OpenAPI has largely become the de facto description format in REST API development. In this post, Abhinav Asthana explains how API definitions are being used and some ways they can improve your organization when you fully build upon them.
+
+[READ MORE >>>](https://www.programmableweb.com/news/its-time-every-api-to-have-openapi-spec/sponsored-content/2018/12/19)
+
 ### The State of the Octoverse: new open source projects in 2018 
 
 The GitHub blog pulled the top projects open sourced in 2018 by the number of stars the project received in its first 28 days being public and by the number of unique contributors to the project in the first 28 days being public.
