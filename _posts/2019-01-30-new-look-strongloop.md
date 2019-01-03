@@ -10,11 +10,13 @@ categories:
 published: false
 ---
 
-One of the things we knew would happen with the launch of LoopBack 4 was an eventual redesign of the StrongLoop logo and site to match its branding colors. Since its inception, StrongLoop utilized the greens incorporated in its original logo, and that of LoopBack. When we officially launched the current version of LoopBack this past Fall, it was a completely redesigned modular framework along with an entirely [new logo](https://strongloop.com/strongblog/thanks-loopback-4-logo/). While we talk about OASGraph, API Microgateway, OpenAPI Spec and Node.js on this site as well, we've been linked with LoopBack primarily and wanted to mirror its colors. We think the current look, familiar in terms of content, has a new spark with the incorporated shades of blue. 
+One of the things we knew would happen with the launch of [LoopBack 4](http://v4.loopback.io/) was an eventual redesign of the StrongLoop logo and site to match its branding colors.  We think the current look has a spark with the newly-incorporated shades of blue, while still maintaining enough familiarity in terms of content to connect to its roots. 
 
 
 <!--more-->
 <show original strongloop logo and loopback logo>
+
+Since its inception, StrongLoop utilized the greens incorporated in its original logo, and that of LoopBack. When we officially launched the current version of LoopBack this past Fall, it was a completely redesigned modular framework along with an entirely [new logo](https://strongloop.com/strongblog/thanks-loopback-4-logo/). While we talk about options on this site as well, we've been primarily linked with LoopBack since the start and wanted to mirror its current color scheme.
 
 Besides updating the color scheme, long-time visitors may noticed we've updated the Projects listed as well as Frequently Asked Questions. With certain projects and products inactive or relocated to relevant IBM sites for over a year now, we've minimized references to them on this site for clarity. We've also ensured that we have a dynamic section on our home page prominently reflecting our latest blog content.
 
