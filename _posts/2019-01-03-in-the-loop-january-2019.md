@@ -1,13 +1,12 @@
 ---
 layout: post
 title: In the Loop - January 2019
-date: 2019-01-30
+date: 2019-01-03
 author: Dave Whiteley
 permalink: /strongblog/in-the-loop-january-2019/
 categories:
   - Community
   - News
-published: false
 ---
 
 Happy 2019! We hope you all had a wonderful holiday season. We're happy to welcome you back with "In the Loop"! Here's a rundown of the past month's interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
