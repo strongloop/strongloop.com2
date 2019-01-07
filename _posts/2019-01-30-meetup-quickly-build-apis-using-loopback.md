@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Meetup: Quickly Build APIs with Existing Services and Data Using LoopBack!
+title: Meetup - Quickly Build APIs with Existing Services and Data Using LoopBack!
 date: 2019-01-30
 author: Dave Whiteley
 permalink: /strongblog/meetup-quickly-build-apis-using-loopback/
