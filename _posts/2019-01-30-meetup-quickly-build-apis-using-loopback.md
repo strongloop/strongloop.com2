@@ -8,7 +8,7 @@ categories:
   - Community
   - Events
   - LoopBack
-published: False
+published: false
 ---
 
 The Toronto Cloud Integration Meetup is planning an event for Tuesday, February 5, 2019. The topic is near and dear to our hearts: "Quickly Build APIs with Existing Services and Data Using LoopBack!"
