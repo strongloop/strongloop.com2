@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 December 2018 Milestone Update
-date: 2018-01-05
+date: 2019-01-09
 author: Janny Hou
 permalink: /strongblog/december-2018-milestone/
 categories:
@@ -10,15 +10,15 @@ categories:
 published: false
 ---
 
-Happy new year! Hope everyone had a wonderful holiday and be ready to welcome 2019. The past December has been a short month due to the vacation days, but we were still able to complete several fixes and to take off in our next focused epics like authentication and building JavaScript LoopBack 4 application. You can read more to know about our progress.
+Happy New Year! We hope everyone had a wonderful holiday and is ready to welcome 2019. This past December has been a short month due to the vacation days, but we were still able to complete several fixes and to take off in our next focused epics like authentication and building JavaScript LoopBack 4 application. You can read more about our progress below.
 
 <!--more-->
 
-## Community contribution
+## Community Contribution
 
 In December we received a bunch of document updates and code refactor PRs to improve our code base and user experience. LoopBack team appreciates all the contributions that community members have been made through the past year. Thank you for participating in the new era of LoopBack. We are looking forward to bring more success to LoopBack 4 with you and happy new year!
 
-## Authentication and authorization
+## Authentication and Authorization
 
 As the first refactoring task of the authentication component, we started with implementing a JWT strategy in the shopping example to discover the common abstractions among different authentication strategies, and to explore ways of defining the default LoopBack 4 User model integrated with authorization methods like login and logout.
 
@@ -33,58 +33,18 @@ We were able to write a PoC PR with the following elements:
 
 The PR is still in progress, we will summarize the required elements and the steps to create them in the document when it's done. Our next focus would be extracting the pieces in the PoC PR into proper modules, including our existing `@loopback/authentication` package or a new created extension package. You can check story [#1997](https://github.com/strongloop/loopback-next/issues/1997) to track the discussions.
 
-
-## Relation epic
+## Relation Epic
 
 ### Support hasOne relation
 
-With the `hasMany` relation feature in place and with a lot of request from our community, `hasOne` relation logically made
-sense to implement next. The first
-iteration [1879](https://github.com/strongloop/loopback-next/pull/1879) involved
-an acceptance test to drive the feature with tests for `create` and `get` or `find`
-methods. However, it was using a race-condition prone approach in order to
-guarantee that a single related model instance was created for a source instance.
-The code called the `find()` and `create()` methods on the target repository
-which can lead to multiple target instances based on the asynchronous nature of those
-methods (see [this
-comment](https://github.com/strongloop/loopback-next/pull/1879#discussion_r227363386)
-for a clear example). In order to address this issue,
-[Miroslav](https://github.com/bajtos) proposed to
-use the target model's Primary Key as the Foreign Key from the source model and
-let the underlying database enforce uniqueness. With it came
-`belongsToUniquely()` decorator which is used as part of the target model
-definition to mark a property as a non-generated `id` field for use with
-`hasOne` relation. After making sure it works with
-in-memory and MySQL databases, we concluded that it was universal enough and
-made sense to delegate uniqueness enforcement at the database level and landed
-the PR. However,
-[Raymond](https://github.com/raymondfeng) pointed out that this approach does
-not indeed enforce uniqueness across all supported connectors. Instead, he
-proposed to mark the foreign key as a unique index. While
-[Biniam](https://github.com/b-admike) started the implementation in
-[2126](https://github.com/strongloop/loopback-next/pull/2126), he discovered
-that some connectors like `in-memory` and `cloudant` do not have support for
-`unique indexes`. Raymond, Miroslav, and Biniam discussed about HasOne's unique
-constraint for the foreign key and discovered a new way of looking at relations
-and constraints:
+With the `hasMany` relation feature in place and with a lot of request from our community, `hasOne` relation logically made sense to implement next. The first iteration [1879](https://github.com/strongloop/loopback-next/pull/1879) involved an acceptance test to drive the feature with tests for `create` and `get` or `find` methods. However, it was using a race-condition prone approach in order to guarantee that a single related model instance was created for a source instance. The code called the `find()` and `create()` methods on the target repository which can lead to multiple target instances based on the asynchronous nature of those methods (see [this comment](https://github.com/strongloop/loopback-next/pull/1879#discussion_r227363386) for a clear example). In order to address this issue, [Miroslav](https://github.com/bajtos) proposed to use the target model's Primary Key as the Foreign Key from the source model and let the underlying database enforce uniqueness. With it came `belongsToUniquely()` decorator which is used as part of the target model definition to mark a property as a non-generated `id` field for use with `hasOne` relation. After making sure it works with in-memory and MySQL databases, we concluded that it was universal enough and made sense to delegate uniqueness enforcement at the database level and landed the PR. However, [Raymond](https://github.com/raymondfeng) pointed out that this approach does not indeed enforce uniqueness across all supported connectors. Instead, he proposed to mark the foreign key as a unique index. While [Biniam](https://github.com/b-admike) started the implementation in [2126](https://github.com/strongloop/loopback-next/pull/2126), he discovered that some connectors like `in-memory` and `cloudant` do not have support for `unique indexes`. Raymond, Miroslav, and Biniam discussed about HasOne's unique constraint for the foreign key and discovered a new way of looking at relations and constraints:
 
- - Weak relations, where the developer primarily wants to navigate related
-   models (think of GraphQL) and referential integrity is either not important
-   or already enforced by the (SQL) database.
- - Strong relations, where the referential integrity is guaranteed by the
-   framework together with the database.
+ - Weak relations, where the developer primarily wants to navigate related models (think of GraphQL) and referential integrity is either not important or already enforced by the (SQL) database.
+ - Strong relations, where the referential integrity is guaranteed by the framework together with the database.
  
-Given this and the fact that we don't have a concerete way to enforce
-referential integrity in LoopBack from the approaches we took thus far, [#2126](https://github.com/strongloop/loopback-next/pull/2126) was put on hold and
-[2147](https://github.com/strongloop/loopback-next/pull/2147) aimed to remove
-the implementation which used target model's PK as the FK for a `hasOne`
-relation. The onus is now on users to make sure that referential integrity is
-enforced by the database they're using by defining a unique index as shown in
-our
-[docs](https://loopback.io/doc/en/lb4/hasOne-relation.html#setting-up-your-database-for-hasone-relation---mysql).
-For more discussion, see [2127](https://github.com/strongloop/loopback-next/issues/2127) and [1718](https://github.com/strongloop/loopback-next/issues/1718).
+Given this and the fact that we don't have a concerete way to enforce referential integrity in LoopBack from the approaches we took thus far, [#2126](https://github.com/strongloop/loopback-next/pull/2126) was put on hold and [2147](https://github.com/strongloop/loopback-next/pull/2147) aimed to remove the implementation which used target model's PK as the FK for a `hasOne` relation. The onus is now on users to make sure that referential integrity is enforced by the database they're using by defining a unique index as shown in our [docs](https://loopback.io/doc/en/lb4/hasOne-relation.html#setting-up-your-database-for-hasone-relation---mysql). For more discussion, see [2127](https://github.com/strongloop/loopback-next/issues/2127) and [1718](https://github.com/strongloop/loopback-next/issues/1718).
 
-### Inclusion spike
+### Inclusion Spike
 
 To explore a good approach for doing the inclusion traverse, we did a spike that implemented an inclusion handler as a function to fetch the included items. When a one to many relation established, the repository of the source model registers the inclusion handler, which takes in the target model's repository getter, applies constraints and invoke the target repository's `find` method with the inclusion filter.
 
@@ -100,7 +60,7 @@ The discussion is tracked in [story 2152](https://github.com/strongloop/loopback
 
 ## Documents
 
-### Contribution guide
+### Contribution Guide
 
 To make users more easier to contribute the code, we cleaned up the [Reporting issues](https://loopback.io/doc/en/contrib/Reporting-issues.html) page with a more detailed guide of reporting in appropriate channels, and updated the instructions of filing Loopback 2/3 and Loopback 4 bugs separately.
 
@@ -134,11 +94,11 @@ We enabled adding the base path of the REST server by calling the app method `ap
  });
  ```
 
-### Models for anonymous schema
+### Models for Anonymous Schema
 
 Previously when creating LoopBack 4 artifacts by `lb4 openapi`, the controller class used inline TypeScript type literals to describe the object/array parameters for anonymous schemas. Therefore we introduced a flag called `--promote-anonymous-schemas` to generated separate model classes/types for them. A good use case for turning on the flag would be generating models for the anonymous objects that describe a POST/PATCH operation's responses. For a more detailed usage of the flag and the conventions of the created LoopBack 4 model, please check [the documentation of OpenAPI generator](https://loopback.io/doc/en/lb4/OpenAPI-generator.html)
 
-## Context improvement
+## Context Improvement
 
 To avoid duplicating the binding configuration every time the users are applying the same attributes such as tags and scope, we allow applying a template function to a binding in the following way:
 
@@ -153,12 +113,11 @@ serverBinding.apply(serverTemplate);
 
 We also polished the binding related documentation and extracted them into a standalone page [Binding](https://loopback.io/doc/en/lb4/Binding.html)
 
-## Tslint configurations
+## Tslint Configurations
 
-The built-in `no-unused-variable` rule raised many issues like conflicts with other rules and it's also been deprecated. As a solution, we are replacing it with another configuration property `no-unused`. This causes a possible breaking change and therefore
-a new standalone package `@loopback/tslint-config` is created to separate the major version bump for changing the tslint configurations from `@loopback/build`, you could check [PR#2159](https://github.com/strongloop/loopback-next/pull/2159) for details.
+The built-in `no-unused-variable` rule raised many issues like conflicts with other rules and it's also been deprecated. As a solution, we are replacing it with another configuration property `no-unused`. This causes a possible breaking change and therefore a new standalone package `@loopback/tslint-config` is created to separate the major version bump for changing the tslint configurations from `@loopback/build`, you could check [PR#2159](https://github.com/strongloop/loopback-next/pull/2159) for details.
 
-## LoopBack 3 support
+## LoopBack 3 Support
 
 Since LB2 will reach its end of line by April 2019, we're searching through the modules in the StrongLoop organization and updating LoopBack dependencies from version to 2 to version 3. We updated `loopback-workspace` from a LoopBack 2 application to LoopBack 3 application without changing any behaviours of its APIs. As part of the update, the `WorkspaceEntity` and `Definition` models were removed from the model configuration file, as they are not meant to be accessed directly and they are not attached to a datasource. Finally, the application has been updated to use Node 6+ and the application's dependencies have also been updated to their latest versions.
 
@@ -171,8 +130,3 @@ LoopBack's future success depends on you. We appreciate your continuous support 
   code and documentation.
 - [Opening a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue).
 - [Joining](https://github.com/strongloop/loopback-next/issues/110) our user group.
-
-
-
-
-
