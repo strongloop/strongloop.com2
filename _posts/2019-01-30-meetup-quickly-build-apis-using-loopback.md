@@ -8,7 +8,9 @@ categories:
   - Community
   - Events
   - LoopBack
-  ---
+published: False
+---
+
 The Toronto Cloud Integration Meetup is planning an event for Tuesday, February 5, 2019. The topic is near and dear to our hearts: "Quickly Build APIs with Existing Services and Data Using LoopBack!"
 
 <!--more-->
@@ -21,6 +23,8 @@ Details
 In this MeetUp, the developers of LoopBack 4 walk you through how to create and test your APIs on top of databases and services in a few steps, and reveal the magic behind it. We will also have other professionals in the field discuss how you can integrate LoopBack with the latest technologies, such as Blockchain, Kafka, and more!
 
 Speakers from the IBM team include:
+
+Janny and Biniam will do the presentation and demo, respectively.  _i think_ Jamil is going to do demos on blockchain & loopback
 
 - Raymond Feng, IBM - [The Art of Building Node.js Projects at Scale](https://jsi2018.sched.com/event/HYVB)
 
