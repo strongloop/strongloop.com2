@@ -10,14 +10,14 @@ categories:
 published: false
 ---
 
-Happy New Year! We hope everyone had a wonderful holiday and is ready to welcome 2019. This past December was a short month due to the vacation days, but we were still able to complete several fixes and to take off in our next focused epics like authentication and building a JavaScript LoopBack 4 application. You can read more about our progress below.
+Happy New Year! We hope everyone had a wonderful holiday and warmly welcomed 2019. This past December was a short month due to the vacation days, but we were still able to complete several fixes and take off in our next focused epics like authentication and building a JavaScript LoopBack 4 application. You can read more about our progress below.
 
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2019/01/LoopBack-4-December-2018-Milestone-Update.png" alt="LoopBack 4 December 2018 Milestone Update" style="width: 450px"/>
 
 ## Community Contribution
 
-In December we received a bunch of document updates and code refactor PRs to improve our code base and user experience. Our LoopBack team appreciates all the contributions that community members have made through the past year. Thank you for participating in the new era of LoopBack. We look forward to continually improving LoopBack 4 with you in the new year!
+In December we received several document updates and code refactor PRs to improve our code base and user experience. Our LoopBack team appreciates all the contributions that community members have made through the past year. We look forward to continually improving LoopBack 4 with you in the new year! Thank you for participating in the new era of LoopBack.
 
 ## Authentication and Authorization
 
