@@ -62,7 +62,7 @@ Here is a summary of the things we could re-design and improve:
 * The relation(inclusion) property shouldn't be part of the model class
 * We need a new design to resolve and describe the inclusion property
 
-The discussion is tracked in [story 2152](https://github.com/strongloop/loopback-next/issues/2152)
+The discussion is tracked in [story 2152](https://github.com/strongloop/loopback-next/issues/2152).
 
 ## Documents
 
