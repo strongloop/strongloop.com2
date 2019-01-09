@@ -127,6 +127,8 @@ The built-in `no-unused-variable` rule raised many issues like conflicts with ot
 
 Since LB2 will reach its end of line by April 2019, we're searching through the modules in the StrongLoop organization and updating LoopBack dependencies from version to 2 to version 3. We updated `loopback-workspace` from a LoopBack 2 application to LoopBack 3 application without changing any behaviours of its APIs. As part of the update, the `WorkspaceEntity` and `Definition` models were removed from the model configuration file, as they are not meant to be accessed directly and they are not attached to a datasource. Finally, the application has been updated to use Node 6+ and the application's dependencies have also been updated to their latest versions.
 
+You can find out more in our [LTS schedule](https://loopback.io/doc/en/contrib/Long-term-support.html).
+
 ## Call to Action
 
 LoopBack's future success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
