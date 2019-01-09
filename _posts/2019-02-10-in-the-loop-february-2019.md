@@ -14,6 +14,12 @@ Welcome back to "In the Loop"! Here's a rundown of the past month's interesting 
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2019/01/in-the-loop-january-2019.png" alt="In the Loop January 2019" style="width: 300px"/>
 
+### GitHub Announces Free Unlimited Private Repositories
+
+GitHub starts 2019 by announcing a couple of major changes to its free and enterprise offerings.
+
+[READ MORE >>>](https://news.softpedia.com/news/github-announces-free-unlimited-private-repositories-524462.shtml)
+
 ### State of the API Economy – January 2019
 
 With the turn of the year Alan Glickenhouse thought it might be an appropriate time to take stock of where we are in the API Economy journey. This is intended to be a point in time macro view.
