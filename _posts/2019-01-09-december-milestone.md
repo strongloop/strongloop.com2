@@ -7,7 +7,6 @@ permalink: /strongblog/december-2018-milestone/
 categories:
   - Community
   - LoopBack
-published: false
 ---
 
 Happy New Year! We hope everyone had a wonderful holiday and warmly welcomed 2019. This past December was a short month due to the vacation days, but we were still able to complete several fixes and take off in our next focused epics like authentication and building a JavaScript LoopBack 4 application. You can read more about our progress below.
