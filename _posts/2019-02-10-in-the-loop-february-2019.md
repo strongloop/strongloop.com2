@@ -20,12 +20,11 @@ With the turn of the year Alan Glickenhouse thought it might be an appropriate t
 
 [READ MORE >>>](https://developer.ibm.com/apiconnect/2019/01/03/state-of-the-api-economy-january-2019/)
 
-### The State of the Octoverse: new open source projects in 2018 
+### IBM Just Unveiled a 'Quantum Computing System' for Commercial Use
 
-The GitHub blog pulled the top projects open sourced in 2018 by the number of stars the project received in its first 28 days being public and by the number of unique contributors to the project in the first 28 days being public.
+A year after IBM showed off a 50-qubit quantum computer prototype at CES, the company has returned to the annual electronics show in Las Vegas, Nevada, with a grand announcement.
 
-[READ MORE >>>](https://blog.github.com/2018-12-13-new-open-source-projects/)
-
+[READ MORE >>>](https://mashable.com/article/ibm-quantum-computing-system-ces-2019/)
 
 ## What Next?
 
