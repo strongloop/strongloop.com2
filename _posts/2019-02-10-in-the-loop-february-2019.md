@@ -14,6 +14,12 @@ Welcome back to "In the Loop"! Here's a rundown of the past month's interesting 
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2019/01/in-the-loop-january-2019.png" alt="In the Loop January 2019" style="width: 300px"/>
 
+### What is API Management?
+
+Alan Glickenhouse drills down on what it means to manage APIs.
+
+[READ MORE >>>](https://developer.ibm.com/apiconnect/2019/01/10/what-is-api-management/)
+
 ### GitHub Announces Free Unlimited Private Repositories
 
 GitHub starts 2019 by announcing a couple of major changes to its free and enterprise offerings.
