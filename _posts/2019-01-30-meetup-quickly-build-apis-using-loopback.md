@@ -26,11 +26,7 @@ Speakers from the LoopBack and IBM team include:
 
 - Jamil Spain demos on blockchain & loopback
 
-
-and Biniam will do the presentation and demo, respectively.  _i think_ Jamil is going to do 
-
-- Raymond Feng, IBM - [The Art of Building Node.js Projects at Scale](https://jsi2018.sched.com/event/HYVB)
-
+- Raymond Feng 
 You can register for the event [here](https://www.meetup.com/Toronto-Cloud-Integration-Meetup/events/257171001/)!
 
 ## What's Next?
