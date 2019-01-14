@@ -11,20 +11,23 @@ categories:
 published: false
 ---
 
-The Toronto Cloud Integration Meetup is planning an event for Tuesday, February 5, 2019. The topic is near and dear to our hearts: "Quickly Build APIs with Existing Services and Data Using LoopBack!"
+The Toronto Cloud Integration Meetup is planning an event for Tuesday, February 5, 2019. The subject is near and dear to our hearts: "Quickly Build APIs with Existing Services and Data Using LoopBack!" If you are in town, we'd love to meet you as we cover this topic.
 
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2018/09/node+js-interactive.png" alt="Node+JS Interactive 2018" style="width: 400px"/>
 
-APIs are critical to modern applications and websites! Do you want to know how to quickly build APIs off of existing services and data?
+We interact with APIs regularly through our mobile and desktop devices! Modern apps and websites integrate them, and we want to help you build APIs off of existing services and data quickly and easily. To do so, some of our LoopBack 4 developers will demonstrate creating an API on top of databases and services in just a few steps, as well as show you how to test it. We will also have developers discuss integrating LoopBack with the latest technologies - Blockchain, Kafka, and more!
 
-Details
+Speakers from the LoopBack and IBM team include:
 
-In this MeetUp, the developers of LoopBack 4 walk you through how to create and test your APIs on top of databases and services in a few steps, and reveal the magic behind it. We will also have other professionals in the field discuss how you can integrate LoopBack with the latest technologies, such as Blockchain, Kafka, and more!
+- Janny Hou
 
-Speakers from the IBM team include:
+- Biniam Admikew
 
-Janny and Biniam will do the presentation and demo, respectively.  _i think_ Jamil is going to do demos on blockchain & loopback
+- Jamil Spain demos on blockchain & loopback
+
+
+and Biniam will do the presentation and demo, respectively.  _i think_ Jamil is going to do 
 
 - Raymond Feng, IBM - [The Art of Building Node.js Projects at Scale](https://jsi2018.sched.com/event/HYVB)
 
