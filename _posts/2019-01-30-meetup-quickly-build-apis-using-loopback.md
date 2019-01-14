@@ -26,7 +26,6 @@ Speakers from the LoopBack and IBM team include:
 
 - Jamil Spain demos on blockchain & loopback
 
-- Raymond Feng 
 You can register for the event [here](https://www.meetup.com/Toronto-Cloud-Integration-Meetup/events/257171001/)!
 
 ## What's Next?
