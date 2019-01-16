@@ -33,6 +33,8 @@ You can register for the event [here](https://www.meetup.com/Toronto-Cloud-Integ
 
 ## What's Next?
 
-- Learn how to [simplify your database migrations](https://strongloop.com/strongblog/simplify-your-database-migrations) using LoopBack 4.
+- Visit the [LoopBack 4](http://v4.loopback.io/) homepage to learn more.. 
+
+- Do a deeper dive to learn how to [simplify your database migrations](https://strongloop.com/strongblog/simplify-your-database-migrations) using LoopBack 4.
 
 - See how you can [deploy LoopBack 4 applications to IBM Cloud](https://strongloop.com/strongblog/deploying-to-ibm-cloud/).
