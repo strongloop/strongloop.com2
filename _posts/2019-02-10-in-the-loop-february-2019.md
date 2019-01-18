@@ -14,6 +14,19 @@ Welcome back to "In the Loop"! Here's a rundown of the past month's interesting 
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2019/01/in-the-loop-january-2019.png" alt="In the Loop January 2019" style="width: 300px"/>
 
+### VIDEO: Full Stack React & LoopBack [2] – React, Routing and UI
+
+In this video Brad Traversy sets up a client/React app and implement routing with the react router dom. He also creates the basic UI with Materialize CSS.
+
+[READ MORE >>>](https://codingvideos.net/full-stack-react-loopback-2-react-routing-and-ui/)
+
+
+### How to build an REST API with SQL Database using Loopback v4
+
+Daniel Szasz writes an API with LoopBack 4, complete with code and commentary.
+
+[READ MORE >>>](https://medium.com/@danysz/how-to-build-an-rest-api-with-sql-database-using-loopback-v4-cd9653f6431b)
+
 ### What is API Management?
 
 Alan Glickenhouse drills down on what it means to manage APIs.
