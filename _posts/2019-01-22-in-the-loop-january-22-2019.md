@@ -3,7 +3,7 @@ layout: post
 title: In the Loop - January 22 2019
 date: 2019-01-22
 author: Dave Whiteley
-permalink: /strongblog/in-the-loop-february-2019/
+permalink: /strongblog/in-the-loop-january-22-2019/
 categories:
   - Community
   - News
@@ -25,7 +25,6 @@ In this video Brad Traversy sets up a client/React app and implement routing wit
 In this video Brad Traversy sets up a client/React app and implement routing with the react router dom. He also creates the basic UI with Materialize CSS.
 
 [READ MORE >>>](https://codingvideos.net/full-stack-react-loopback-2-react-routing-and-ui/)
-
 
 ### How to build an REST API with SQL Database using Loopback v4
 
