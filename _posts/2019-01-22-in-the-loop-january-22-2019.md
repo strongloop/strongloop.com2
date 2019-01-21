@@ -20,7 +20,7 @@ In this video Brad Traversy sets up a client/React app and implement routing wit
 
 [READ MORE >>>](https://codingvideos.net/full-stack-react-loopback-2-react-routing-and-ui/)
 
-### VIDEO: Full Stack React & LoopBack [2] – React, Routing and UI
+### VIDEO: Full Stack React & LoopBack – React, Routing and UI
 
 In this video Brad Traversy sets up a client/React app and implement routing with the react router dom. He also creates the basic UI with Materialize CSS.
 
