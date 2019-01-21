@@ -14,11 +14,11 @@ Welcome back to "In the Loop", in which we list recent news, updates or opinions
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2019/01/in-the-loop-january-2019.png" alt="In the Loop January 2019" style="width: 300px"/>
 
-### VIDEO: Full Stack React & LoopBack [2] – React, Routing and UI
+### Open Source Software At A Crossroads
 
-In this video Brad Traversy sets up a client/React app and implement routing with the react router dom. He also creates the basic UI with Materialize CSS.
+2018 has been a landmark year for Open Source — but Udi Nachmany asks if it also included the seeds for a slowing down of VC investment?
 
-[READ MORE >>>](https://codingvideos.net/full-stack-react-loopback-2-react-routing-and-ui/)
+[READ MORE >>>](https://www.forbes.com/sites/udinachmany/2019/01/16/thoughts-about-2018-the-year-of-open-source-teenagedom/#303f0f28393b)
 
 ### IBM Just Unveiled a 'Quantum Computing System' for Commercial Use
 
