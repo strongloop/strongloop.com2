@@ -14,6 +14,12 @@ Welcome back to "In the Loop", in which we list recent news, updates or opinions
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2019/01/in-the-loop-january-2019.png" alt="In the Loop January 2019" style="width: 300px"/>
 
+### MEETUP: Quickly Build APIs with Existing Services and Data Using LoopBack!
+
+In this MeetUp, the developers of LoopBack 4 walk you through how to create and test your APIs on top of databases and services in a few steps, and reveal the magic behind it. 
+
+[READ MORE >>>](https://www.meetup.com/Toronto-Cloud-Integration-Meetup/events/257171001/)
+
 ### VIDEO: Full Stack React & LoopBack [2] – React, Routing and UI
 
 In this video Brad Traversy sets up a client/React app and implement routing with the react router dom. He also creates the basic UI with Materialize CSS.
