@@ -1,9 +1,9 @@
 ---
 layout: post
-title: In the Loop - January 22 2019
+title: In the Loop - January 23 2019
 date: 2019-01-22
 author: Dave Whiteley
-permalink: /strongblog/in-the-loop-january-22-2019/
+permalink: /strongblog/in-the-loop-january-23-2019/
 categories:
   - Community
   - News
@@ -20,12 +20,6 @@ In this MeetUp, the developers of LoopBack 4 walk you through how to create and 
 
 [READ MORE >>>](https://www.meetup.com/Toronto-Cloud-Integration-Meetup/events/257171001/)
 
-### VIDEO: Full Stack React & LoopBack [2] – React, Routing and UI
-
-In this video Brad Traversy sets up a client/React app and implement routing with the react router dom. He also creates the basic UI with Materialize CSS.
-
-[READ MORE >>>](https://codingvideos.net/full-stack-react-loopback-2-react-routing-and-ui/)
-
 ### VIDEO: Full Stack React & LoopBack – React, Routing and UI
 
 In this video Brad Traversy sets up a client/React app and implement routing with the react router dom. He also creates the basic UI with Materialize CSS.
@@ -37,12 +31,6 @@ In this video Brad Traversy sets up a client/React app and implement routing wit
 Daniel Szasz writes an API with LoopBack 4, complete with code and commentary.
 
 [READ MORE >>>](https://medium.com/@danysz/how-to-build-an-rest-api-with-sql-database-using-loopback-v4-cd9653f6431b)
-
-### What is API Management?
-
-Alan Glickenhouse drills down on what it means to manage APIs.
-
-[READ MORE >>>](https://developer.ibm.com/apiconnect/2019/01/10/what-is-api-management/)
 
 ### GitHub Announces Free Unlimited Private Repositories
 
