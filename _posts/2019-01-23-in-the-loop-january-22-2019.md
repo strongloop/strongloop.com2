@@ -7,7 +7,6 @@ permalink: /strongblog/in-the-loop-january-23-2019/
 categories:
   - Community
   - News
-published: false
 ---
 
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
@@ -19,6 +18,12 @@ Welcome back to "In the Loop", in which we list recent news, updates or opinions
 In this MeetUp, the developers of LoopBack 4 walk you through how to create and test your APIs on top of databases and services in a few steps, and reveal the magic behind it. 
 
 [READ MORE >>>](https://www.meetup.com/Toronto-Cloud-Integration-Meetup/events/257171001/)
+
+### Open Source Software At A Crossroads
+
+2018 has been a landmark year for Open Source — but Udi Nachmany asks if it also included the seeds for a slowing down of VC investment?
+
+[READ MORE >>>](https://www.forbes.com/sites/udinachmany/2019/01/16/thoughts-about-2018-the-year-of-open-source-teenagedom/#303f0f28393b)
 
 ### VIDEO: Full Stack React & LoopBack – React, Routing and UI
 
