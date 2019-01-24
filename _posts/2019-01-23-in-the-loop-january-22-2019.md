@@ -56,6 +56,8 @@ A year after IBM showed off a 50-qubit quantum computer prototype at CES, the co
 
 ## What Next?
 
+* Check out the previous "[In the Loop - January 3, 2019](https://strongloop.com/strongblog/in-the-loop-january-2019/)".
+
 * Learn about [open source projects](https://strongloop.com/projects/) that provide key technologies for the API economy: LoopBack; API Microgateway, and; OpenAPI Spec. 
 
 * Check out [events](https://strongloop.com/events/) that the StrongLoop and IBM team will be attending!
