@@ -12,7 +12,6 @@ published: false
 
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
-<img src="https://strongloop.com/blog-assets/2019/01/in-the-loop-january-2019.png" alt="In the Loop January 2019" style="width: 300px"/>
 
 ### Open Source Software At A Crossroads
 
@@ -27,6 +26,8 @@ A year after IBM showed off a 50-qubit quantum computer prototype at CES, the co
 [READ MORE >>>](https://mashable.com/article/ibm-quantum-computing-system-ces-2019/)
 
 ## What Next?
+
+* Check out the previous "[In the Loop - January 23, 2019](https://strongloop.com/strongblog/in-the-loop-january-23-2019/)".
 
 * Learn about [open source projects](https://strongloop.com/projects/) that provide key technologies for the API economy: LoopBack; API Microgateway, and; OpenAPI Spec. 
 
