@@ -19,12 +19,6 @@ Welcome back to "In the Loop", in which we list recent news, updates or opinions
 
 [READ MORE >>>](https://www.forbes.com/sites/udinachmany/2019/01/16/thoughts-about-2018-the-year-of-open-source-teenagedom/#303f0f28393b)
 
-### IBM Just Unveiled a 'Quantum Computing System' for Commercial Use
-
-A year after IBM showed off a 50-qubit quantum computer prototype at CES, the company has returned to the annual electronics show in Las Vegas, Nevada, with a grand announcement.
-
-[READ MORE >>>](https://mashable.com/article/ibm-quantum-computing-system-ces-2019/)
-
 ## What Next?
 
 * Check out the previous "[In the Loop - January 23, 2019](https://strongloop.com/strongblog/in-the-loop-january-23-2019/)".
