@@ -13,11 +13,11 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
-### Open Source Software At A Crossroads
+### Top programming languages to learn in 2019? Developers name their favorites
 
-2018 has been a landmark year for Open Source — but Udi Nachmany asks if it also included the seeds for a slowing down of VC investment?
+Liam Tung shares which languages are Software developers' top priorities for 2019.
 
-[READ MORE >>>](https://www.forbes.com/sites/udinachmany/2019/01/16/thoughts-about-2018-the-year-of-open-source-teenagedom/#303f0f28393b)
+[READ MORE >>>](https://www.zdnet.com/article/top-programming-languages-to-learn-in-2019-developers-name-their-favorites/)
 
 ## What Next?
 
