@@ -13,6 +13,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### (VIDEO) Node.js Build WG meeting - January 29 2019
+ 
+This video shares the Node.js Build WG meeting. 
+
+[WATCH VIDEO >>>](https://www.youtube.com/watch?v=ARwP_S6WhPU)
+
 ### Open source technology will influence the future of cloud
 
 Steve Robinson explains how open technology is set to have an enormous impact on the future of cloud as companies continue to integrate public and private cloud capabilities.
