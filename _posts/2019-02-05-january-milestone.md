@@ -105,13 +105,13 @@ While waiting for more feedback from our users, Miroslav reviewed early input an
 
 ### Toronto LoopBack Meetup
 
-The LoopBack team hosted a meetup in downtown Toronto on February 5th, 2019. They taught users all about LoopBack 4 and demonstrated the capabilities and integrations of the framework. We worked hard to prepare presentations and demos for the meetup during this month. If you are in the Toronto area and are interested in future meetups, check out the [Toronto Cloud Integration Meetup Group](https://www.meetup.com/Toronto-Cloud-Integration-Meetup/) and make sure to sign up!
+The LoopBack team hosted a meetup in downtown Toronto on February 5th, 2019. We taught users all about LoopBack 4 and demonstrated the capabilities and integrations of the framework. We worked hard to prepare presentations and demos for the meetup during this month. If you are in the Toronto area and are interested in future meetups, check out the [Toronto Cloud Integration Meetup Group](https://www.meetup.com/Toronto-Cloud-Integration-Meetup/) and make sure to sign up!
 
 February is an event-filled month. Besides the meetup in Toronto, there will be LoopBack coverage at [Code @ Think](https://www.ibm.com/events/think/code/) in Node.js Master Class and as one of the Quick Labs. [Raymond](https://strongloop.com/authors/Raymond_Feng/) will be presenting at DeveloperWeek on Feb 21 on the topic -- [Speed and Scale: Building APIs with Node.js, TypeScript and LoopBack](https://sched.co/JXDc). 
 
 Twitter is a great way to stay in the loop with StrongLoop and LoopBack news. The best way to learn about events we are part of is generally https://strongloop.com/events/.
 
-## Welcome new core maintainer
+## Welcome New Core Maintainer
 
 We'd like to introduce our new LoopBack development team member [Dominique](https://github.com/emonddr) at our Markham lab. Dominique brings lots of experience and knowledge from working in Message Broker and App Connect development team in the past. He has already given us a step-by-step tutorial on how to deploy a LoopBack 4 application to Kubernetes in IBM Cloud [here](https://loopback.io/doc/en/lb4/deploying_to_ibm_cloud_kubernetes.html). Welcome, Dominique!
 
