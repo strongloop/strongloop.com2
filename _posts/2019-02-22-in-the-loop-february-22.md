@@ -13,6 +13,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### 10 Node.js Frameworks Worth Checking Out: Express, LoopBack, Hapi, and Beyond
+
+Sanjay Ratnottar has a look at the top Node.js frameworks that will shine in 2019 and the upcoming years.
+
+[READ MORE >>>](https://medium.freecodecamp.org/10-node-js-frameworks-worth-checking-out-express-loopback-hapi-and-beyond-7b537b590f89)
+
 ### GraphQL API Management 
 
 Erik Wittern looks at the challenges that GraphQL API providers face when managing their APIs. 
