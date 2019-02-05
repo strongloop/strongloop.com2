@@ -13,6 +13,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### GraphQL API Management 
+
+Erik Wittern looks at the challenges that GraphQL API providers face when managing their APIs. 
+
+[READ MORE >>>](https://www.ibm.com/blogs/research/2019/02/graphql-api-management/)
+
 ### (VIDEO) Node.js Build WG meeting - January 29 2019
  
 This video shares the Node.js Build WG meeting. 
