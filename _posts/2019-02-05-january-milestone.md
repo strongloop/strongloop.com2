@@ -7,13 +7,11 @@ permalink: /strongblog/january-2019-milestone/
 categories:
   - Community
   - LoopBack
-published: false
 ---
 
-Happy New Year from the LoopBack team! We hope everyone had a nice break during the holidays, just as we did. While the team had some time off extending into January, we still managed to work and spike on authentication, migration from LB3, user adoption, extensibility, and documentation. Read more to find out how it all unfolded.
+We're one month into the new year! While the team had some time off extending into January, we still managed to work and spike on authentication, migration from LB3, user adoption, extensibility, and documentation. Read more to find out how it all unfolded.
 
 <!--more-->
-
 
 ## Authentication Epic
 
@@ -28,15 +26,15 @@ The following picture describes how the authentication mechanism works:
 
 This month our discussion focused on dividing the responsibilities among controller, repository and services/utilities. 
 
-The login related logic should be extracted into a service which could be shared among different clients, like REST, gRPC and WebSocket. Those logic include taking in credentials, verifying users, generating and decoding access token. The login service receives User's repository via DI. As the first implementation, We simply keep them as utils. They will be refactored into service in story [Refactor authentication util functions into a service](https://github.com/strongloop/loopback4-example-shopping/issues/40)
+The login related logic should be extracted into a service which could be shared among different clients, like REST, gRPC and WebSocket. Those logic include taking in credentials, verifying users, generating and decoding access token. The login service receives User's repository via DI. As the first implementation, we simply keep them as utils. They will be refactored into service in story [Refactor authentication util functions into a service](https://github.com/strongloop/loopback4-example-shopping/issues/40)
 
 The controller function should extract credentials like email, username and password from the request. And calls the service to perform login. The service is injected via DI. 
 
-We also discovered there are three extension points that are needed in order to make LoopBack's authentication system more flexible. We need extension points that allow users to:
+We also discovered there are three extension points that are needed in order to make LoopBack's authentication system more flexible. We need extension points such as:
 
-- plugin Passport based strategies leveraging the existing auth action in [`@loopback/authentication`](https://github.com/strongloop/loopback-next/blob/master/packages/authentication/src/providers/authentication.provider.ts)
-- plugin non-passport based strategies like the JWT strategy created by us
-- a more flexible user profile type that allow people return custom properties
+- plugin Passport based strategies leveraging the existing auth action in [`@loopback/authentication`](https://github.com/strongloop/loopback-next/blob/master/packages/authentication/src/providers/authentication.provider.ts).
+- plugin non-passport based strategies like the JWT strategy created by us.
+- a more flexible user profile type that allow people return custom properties.
 
 PR https://github.com/strongloop/loopback-next/pull/2249 illustrates extension point/extension pattern is in progress. It provides a standard to make extension point that the 3 above stories could follow.
 
@@ -77,7 +75,7 @@ To make it easy to implement the extension point/extension pattern, we're buildi
   - Propose new APIs for `Context` to configure bindings
   - Add `@inject.config` to simplify injection of configuration
 
-You are welcome to join our discussions in these pull requests. Please be warned that such PRs can be changed or abandoned during the review process.
+You are welcome to join our discussions in these pull requests. Please be aware that such PRs can be changed or abandoned during the review process.
 
 ## Documentation updates
 
@@ -124,8 +122,3 @@ LoopBack's future success depends on you. We appreciate your continuous support 
   code and documentation.
 - [Opening a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue).
 - [Joining](https://github.com/strongloop/loopback-next/issues/110) our user group.
-
-
-
-
-
