@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 January 2019 Milestone Update
-date: 2019-02-05
+date: 2019-02-06
 author: Biniam Admikew
 permalink: /strongblog/january-2019-milestone/
 categories:
