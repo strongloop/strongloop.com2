@@ -22,7 +22,7 @@ Last month we implemented the strategy resolver, JWT strategy class and authenti
 
 The following picture describes how the authentication mechanism works:
 
-<img src="https://strongloop.com/blog-assets/2019/01/auth-endpoints.png" alt="authentication endpoints in the example" style="width: 800px"/>
+<img src="https://strongloop.com/blog-assets/2019/01/auth_endpoints.png" alt="authentication endpoints in the example" style="width: 800px"/>
 
 This month our discussion focused on dividing the responsibilities among controller, repository and services/utilities. 
 
