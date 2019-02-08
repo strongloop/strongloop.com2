@@ -13,6 +13,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### New LoopBack Page on IBM Developer
+
+The IBM team has created a new page on their Developer sites for those who want to use LoopBack to create dynamic end-to-end REST APIs and connect to backend systems.
+
+[READ MORE >>>](https://developer.ibm.com/open/projects/loopback/)
+
 ### 10 Node.js Frameworks Worth Checking Out: Express, LoopBack, Hapi, and Beyond
 
 Sanjay Ratnottar has a look at the top Node.js frameworks that will shine in 2019 and the upcoming years.
