@@ -33,7 +33,7 @@ You can register for the event [here](https://www.meetup.com/Toronto-Cloud-Integ
 
 ## What's Next?
 
-- Visit the [LoopBack 4](http://v4.loopback.io/) homepage to learn more.. 
+- Visit the [LoopBack 4](http://v4.loopback.io/) homepage to learn more. 
 
 - Do a deeper dive to learn how to [simplify your database migrations](https://strongloop.com/strongblog/simplify-your-database-migrations) using LoopBack 4.
 
