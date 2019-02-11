@@ -13,6 +13,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Call to Action - Accelerating Node.js Growth
+
+Michael Dawson invites you to join the new package maintenance team at https://github.com/nodejs/package-maintenance either to help out or to share your experience.
+
+[READ MORE >>>](https://medium.com/@nodejs/call-to-action-accelerating-node-js-growth-e4862bee2919)
+
 ### New LoopBack Page on IBM Developer
 
 The IBM team has created a new page on their Developer sites for those who want to use LoopBack to create dynamic end-to-end REST APIs and connect to backend systems.
