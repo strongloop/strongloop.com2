@@ -1,0 +1,35 @@
+---
+layout: post
+title: Watch Video from our Meetup - Quickly Build APIs with Existing Services and Data Using LoopBack!
+date: 2019-01-16
+author: Dave Whiteley
+permalink: /strongblog/watch-meetup-quickly-build-apis-with-loopback/
+categories:
+  - Community
+  - Events
+  - LoopBack
+published: false  
+---
+
+The Toronto Cloud Integration Meetup hosted an event on Tuesday, February 5, 2019: "Quickly Build APIs with Existing Services and Data Using LoopBack!" Since not everyone is local, we filmed the meetup so we could share it with our community.
+
+<!--more-->
+<img src="https://strongloop.com/blog-assets/2018/01/loopback-4-logo-sample.png" alt="Meetup - Quickly Build APIs with Existing Services and Data Using LoopBack!" style="width: 200px"/>
+
+Our goal was to bring awareness of LoopBack to the Node.js community in Toronto. We also brought snacks and swag to share. Here's a snapshot of what was covered.
+
+- Janny Hou explained what LoopBack is, what you can do with it, and the rationale behind the rewrite of the framework.
+
+- Biniam Admikew demonstrated how how easy it is to expose REST API from your database with just a few steps.  
+
+- Jamil Spain provided an additional demo.
+
+Watch the video on our YouTube channel [here]().
+
+## What's Next?
+
+- Visit the [LoopBack 4](http://v4.loopback.io/) homepage to learn more. 
+
+- Do a deeper dive to learn how to [simplify your database migrations](https://strongloop.com/strongblog/simplify-your-database-migrations) using LoopBack 4.
+
+- See how you can [deploy LoopBack 4 applications to IBM Cloud](https://strongloop.com/strongblog/deploying-to-ibm-cloud/).
