@@ -1,9 +1,9 @@
 ---
 layout: post
-title: In the Loop - February 22 2019
-date: 2019-02-22
+title: In the Loop - February 13 2019
+date: 2019-02-13
 author: Dave Whiteley
-permalink: /strongblog/in-the-loop-february-22-2019/
+permalink: /strongblog/in-the-loop-february-13-2019/
 categories:
   - Community
   - News
