@@ -1,6 +1,6 @@
 ---
 layout: post
-title: In the Loop - February 13 2019
+title: In the Loop - February 13, 2019
 date: 2019-02-13
 author: Dave Whiteley
 permalink: /strongblog/in-the-loop-february-13-2019/
