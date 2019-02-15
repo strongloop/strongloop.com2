@@ -13,11 +13,11 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
-### Call to Action - Accelerating Node.js Growth
+### IBM Takes Watson AI to AWS, Google, Azure
 
-Michael Dawson invites you to join the new package maintenance team at https://github.com/nodejs/package-maintenance either to help out or to share your experience.
+Jessica Davis explains how IBM is leveraging Kubernetes to enable its Watson AI to run on public clouds AWS, Google, and Microsoft Azure. 
 
-[READ MORE >>>](https://medium.com/@nodejs/call-to-action-accelerating-node-js-growth-e4862bee2919)
+[READ MORE >>>](https://www.informationweek.com/big-data/ai-machine-learning/ibm-takes-watson-ai-to-aws-google-azure/d/d-id/1333895)
 
 
 ## What Next?
