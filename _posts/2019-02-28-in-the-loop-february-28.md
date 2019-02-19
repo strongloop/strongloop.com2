@@ -13,6 +13,13 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Node.js Foundation and JS Foundation Town Hall
+
+You can see the February 19th Joint Merger Town Hall video here.
+
+[WATCH VIDEO >>>](https://www.youtube.com/watch?time_continue=2648&v=TH1YeED3EYM)
+
+
 ### IBM Takes Watson AI to AWS, Google, Azure
 
 Jessica Davis explains how IBM is leveraging Kubernetes to enable its Watson AI to run on public clouds AWS, Google, and Microsoft Azure. 
