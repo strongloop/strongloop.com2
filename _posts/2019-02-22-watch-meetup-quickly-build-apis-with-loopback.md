@@ -18,11 +18,11 @@ The Toronto Cloud Integration Meetup hosted an event on Tuesday, February 5, 201
 
 Our goal was to bring awareness of LoopBack to the Node.js community in Toronto. We also brought snacks and swag to share. Here's a snapshot of what was covered.
 
-- Janny Hou explained what LoopBack is, what you can do with it, and the rationale behind the rewrite of the framework.
+- [Janny Hou](https://twitter.com/houjanny) explained what LoopBack is, what you can do with it, and the rationale behind the rewrite of the framework. You can find teh link to relevant LB$ docs [here](https://loopback.io/doc/en/lb4/).
 
-- Biniam Admikew demonstrated how how easy it is to expose REST API from your database with just a few steps.  
+- [Biniam Admikew](https://twitter.com/badmikew) demonstrated how how easy it is to expose REST API from your database with just a few steps.  
 
-- Jamil Spain provided an additional demo.
+- [Jamil Spain](https://twitter.com/iamjamilspain) provided an additional demo.
 
 Watch the video on our YouTube channel [here]().
 
