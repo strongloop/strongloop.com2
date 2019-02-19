@@ -10,7 +10,7 @@ categories:
 published: false
 ---
 
-If you've visited the StrongLoop site before, you may be thinking that things look a little bit different today. While its not radically different, you're probaby noticing that shades of blue have replaced the prior various shades of green. We've planned this visual revision for a while now, and with a new version of LoopBack successfully launched and a new year well started, the time was right for the change.
+If you've visited the StrongLoop site before, you may be thinking that things look a little bit different today. While its not radically different, you're probaby noticing that shades of blue have replaced the prior various shades of green. We've planned this visual revision for a while now. With a new version of LoopBack successfully launched and a new year well started, the time was right for the change - six years after we announced StrongLoop back in February 2013.
 
 One of the things we knew would follow after the launch of [LoopBack 4](http://v4.loopback.io/) was an eventual redesign of the StrongLoop logo and site to match LoopBack's new branding colors. We think this new look brings a fresh approach with the newly-incorporated shades of blue, while still maintaining enough familiarity in terms of content and the revised StrongLoop hex motif to connect to its roots. 
 
