@@ -7,7 +7,7 @@ permalink: /strongblog/create-dynamic-end-to-end-REST-APIs-with-loopback4/
 categories:
   - Community
   - News
-published: false
+published: true
 ---
 
 We've provided news, tutorials, and updates on LoopBack for almost as long as the StrongLoop site existed, and continued to do so after IBM acquired StrongLoop in 2015. Recently, IBM created another resource for LoopBack! In addition to accessing news of the open-source Node.js API Framework on this site, you can now also find news, code and more on the official [IBM Developer LoopBack page](https://developer.ibm.com/open/projects/loopback/). 
@@ -23,12 +23,12 @@ The site clearly explains what LoopBack is, what you can use it for, and what it
 
 > - A new core to deliver great extensibility and flexibility written in TypeScript/ES2017.
 > - Creation experience for defining REST APIs and handling API requests and responses.
-> - Programming model with dependency injection and concepts like components, mixins, and repositories to make LoopBack extensible
-> - GraphQL support through OASGraph"
+> - Programming model with dependency injection and concepts like components, mixins, and repositories to make LoopBack extensible.
+> - GraphQL support through OASGraph.
 
 In addition, the site provides a diagram displaying how LoopBack interacts with incoming requests and outgoing integrations as well as LoopBack's various capabilities. It also outlines the benefits of contributing to the project and how LoopBack addresses certain business problems. 
 
-Check it all out on the official [IBM Developer page](https://developer.ibm.com/open/projects/loopback/)!
+Check it all out on the official [IBM Developer page](https://developer.ibm.com/open/projects/loopback/)! 
 
 ## What Next?
 
