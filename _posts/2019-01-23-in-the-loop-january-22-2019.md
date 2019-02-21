@@ -1,6 +1,6 @@
 ---
 layout: post
-title: In the Loop - January 23, 2019
+title: In the Loop - January 22, 2019
 date: 2019-01-22
 author: Dave Whiteley
 permalink: /strongblog/in-the-loop-january-23-2019/
