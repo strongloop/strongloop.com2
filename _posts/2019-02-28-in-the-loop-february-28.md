@@ -13,6 +13,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Build a MERN web app in an hour
+
+Use IBM Cloud to generate, build, and deploy a Mongo, Express, React, and Node web application.
+
+[WATCH VIDEO >>>](https://developer.ibm.com/videos/build-a-mern-web-app-in-an-hour/)
+
 ### Node.js Foundation and JS Foundation Town Hall
 
 You can see the February 19th Joint Merger Town Hall video here.
