@@ -21,10 +21,10 @@ The site clearly explains what LoopBack is, what you can use it for, and what it
 
 > LoopBack 4 is the latest release from the LoopBack team and includes:
 
-- A new core to deliver great extensibility and flexibility written in TypeScript/ES2017.
-- Creation experience for defining REST APIs and handling API requests and responses.
-- Programming model with dependency injection and concepts like components, mixins, and repositories to make LoopBack extensible
-- GraphQL support through OASGraph"
+> - A new core to deliver great extensibility and flexibility written in TypeScript/ES2017.
+> - Creation experience for defining REST APIs and handling API requests and responses.
+> - Programming model with dependency injection and concepts like components, mixins, and repositories to make LoopBack extensible
+> - GraphQL support through OASGraph"
 
 In addition, the site provides a diagram displaying how LoopBack interacts with incoming requests and outgoing integrations as well as LoopBack's various capabilities. It also outlines the benefits of contributing to the project and how LoopBack addresses certain business problems. 
 
@@ -32,9 +32,7 @@ Check it all out on the official [IBM Developer page](https://developer.ibm.com/
 
 ## What Next?
 
-* Check out the previous "[In the Loop - January 23, 2019](https://strongloop.com/strongblog/in-the-loop-january-23-2019/)".
-
-* Learn about [open source projects](https://strongloop.com/projects/) that provide key technologies for the API economy: LoopBack; API Microgateway, and; OpenAPI Spec. 
+* Learn about other [open source projects](https://strongloop.com/projects/) that provide key technologies for the API economy: API Microgateway; OpenAPI Spec; and of course LoopBack. 
 
 * Check out [events](https://strongloop.com/events/) that the StrongLoop and IBM team will be attending!
 
