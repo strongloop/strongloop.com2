@@ -13,6 +13,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### An introduction to TypeScript types for ASP.NET core (Tutorial)
+
+This article is an excerpt from a book written by Tamir Dresher, Amir Zuker, and Shay Friedman titled "Hands-On Full-Stack Web Development with ASP.NET Core". 
+
+[READ MORE >>>](https://hub.packtpub.com/an-introduction-to-typescript-types-for-asp-net-core-tutorial/)
+
 ### Build a MERN web app in an hour
 
 Use IBM Cloud to generate, build, and deploy a Mongo, Express, React, and Node web application.
