@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Watch Video from our Meetup - Quickly Build APIs with Existing Services and Data Using LoopBack!
-date: 2019-01-16
+date: 2019-02-27
 author: Dave Whiteley
 permalink: /strongblog/watch-meetup-quickly-build-apis-with-loopback/
 categories:
@@ -24,7 +24,7 @@ Our goal was to bring awareness of LoopBack to the Node.js community in Toronto.
 
 - [Jamil Spain](https://twitter.com/iamjamilspain) provided an additional demo.
 
-Watch the video on our YouTube channel [here]().
+Catch the videos on our YouTube channel playlist [here](https://www.youtube.com/playlist?list=PL2I5I38o2kSCPCIxd8IjzYAMZnxcy3BYo).
 
 ## What's Next?
 
