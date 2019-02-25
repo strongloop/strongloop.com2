@@ -13,6 +13,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### 5 reasons you should learn Node.js
+
+Richard Gall helps you decide if it’s time to learn the JavaScript library with a list of the biggest reasons why you should start learning Node.js.
+
+[READ MORE >>>](https://hub.packtpub.com/5-reasons-you-should-learn-node-js/)
+
 ### An introduction to TypeScript types for ASP.NET core (Tutorial)
 
 This article is an excerpt from a book written by Tamir Dresher, Amir Zuker, and Shay Friedman titled "Hands-On Full-Stack Web Development with ASP.NET Core". 
@@ -30,7 +36,6 @@ Use IBM Cloud to generate, build, and deploy a Mongo, Express, React, and Node w
 You can see the February 19th Joint Merger Town Hall video here.
 
 [WATCH VIDEO >>>](https://www.youtube.com/watch?time_continue=2648&v=TH1YeED3EYM)
-
 
 ### IBM Takes Watson AI to AWS, Google, Azure
 
