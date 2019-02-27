@@ -13,6 +13,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### 12 Concepts That Will Level Up Your JavaScript Skills
+
+Nick Scialli tackles 12 concepts that are critical for any JS developer to understand (but in no way represents the full breadth of what a JS developer should know).
+
+[READ MORE >>>](https://hackernoon.com/12-javascript-concepts-that-will-level-up-your-development-skills-b37d16ad7104)
+
 ### 5 reasons you should learn Node.js
 
 Richard Gall helps you decide if it’s time to learn the JavaScript library with a list of the biggest reasons why you should start learning Node.js.
@@ -48,7 +54,7 @@ Jessica Davis explains how IBM is leveraging Kubernetes to enable its Watson AI 
 
 * Check out the previous "[In the Loop - February 13, 2019](https://strongloop.com/strongblog/in-the-loop-february-13-2019/)".
 
-* * Check out [events](https://strongloop.com/events/) that the StrongLoop and IBM team will be attending!
+* Check out [events](https://strongloop.com/events/) that the StrongLoop and IBM team will be attending!
 
 * Be sure to follow StrongLoop on [Facebook](https://www.facebook.com/strongloop/) and [Twitter](https://twitter.com/StrongLoop)!
 
