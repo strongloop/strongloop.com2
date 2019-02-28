@@ -43,6 +43,20 @@ We introduced a detailed list of steps to follow if you want to submit a pull re
 
 We added a new tutorial on mounting LoopBack 4's REST API on an Express application. Users can now mix both the Express and LoopBack 4 frameworks in order to best match their own use cases. In this tutorial, we mounted a `Note` application created by the LoopBack 4 CLI on top of a simple Express server and served a static file. You can follow the [tutorial](link-TBD) or see the completed by using the command `lb4 example express-composition` (if `lb4` isn't installed, run `npm i -g @loopback/cli`).
 
+## New layout for test files
+
+In a series of incremental pull requests, we reworked our project layout, moved all test files from `test` to `src/__tests__` directory and updated TypeScript build configuration to place files directly to `dist` folder, instead of `dist/src` and `dist/test`. This change simplifies the build setup and unifies file references between TypeScript sources and JavaScript runtime. It allows us to further improve our project infrastructure, for example start using TypeScript [Project References](https://www.typescriptlang.org/docs/handbook/project-references.html).
+
+LoopBack 4 projects scaffolded with recent versions of `lb4` tool will use the new layout too. 
+
+Existing projects can be updated with a bit of manual work:
+- Move your test files from `test` to `src/__tests__`.
+- Edit script in `package.json` to use the new test location.
+- Change `tsconfig.json`: set `rootDir` to `"src"`, remove `"index.ts"` and `"test"` entries from the `include` field.
+- Fix any broken `import` statements.
+
+The [pull request #2316](https://github.com/strongloop/loopback-next/pull/2316/files) shows how we updated our example applications, you can use it as a reference guide. 
+
 ## Events
 
 This month, the team went to downtown Toronto for a meetup. This included an overview of LoopBack 4, along with demonstrations of what LoopBack 4 can do. Check out the [blog post](https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/) about it. There was also a [Quick Lab](https://developer.ibm.com/tutorials/create-rest-apis-minutes-with-loopback-4/) for LoopBack 4 in IBM's Code@Think in mid-February. And finally, [Raymond](https://strongloop.com/authors/Raymond_Feng/) presented at DeveloperWeek 2019 where he talked about [Building APIs with Node.js, TypeScript, and LoopBack](https://developerweek2019.sched.com/event/JXDc/pro-talk-speed-and-scale-building-apis-with-nodejs-typescript-and-loopback).
