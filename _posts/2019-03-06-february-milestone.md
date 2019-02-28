@@ -26,9 +26,14 @@ We are working on our [Authentication and Authorization epic](https://github.com
 
 LoopBack has a guide on [migrating](https://loopback.io/doc/en/lb3/Migrating-to-3.0.html) applications from LoopBack 2 to LoopBack 3, and it's only fitting that we include a guide on migrating applications from LoopBack 3 to LoopBack 4 as they reach feature parity. However, the latter's transition is more complicated than the former's transition. We have an [epic](https://github.com/strongloop/loopback-next/issues/1849), if you would like to see more details. 
 
-This month, we did two spikes to work on this transition. The first [spike](https://github.com/strongloop/loopback-next/issues/2224) was on dropping LoopBack 3 models files into LoopBack 4.
+This month, we did two spikes to work on this transition. We started with a proof of concept demonstrating how to take LoopBack 3 model definition files (e.g. `common/models/product.json` and `common/models/product.js`) and drop them without any modifications into a LoopBack 4 project. You can find the original idea in [issue #2224](https://github.com/strongloop/loopback-next/issues/2224) and the working code in [pull request 2274]( https://github.com/strongloop/loopback-next/pull/2274).
 
-The other [spike](https://github.com/strongloop/loopback-next/issues/2301) was on mounting LoopBack 3 applications and including its REST API in OpenAPI spec.
+Unfortunately, this approach turned out to be too expensive to implement and maintain, and we decided to abandon it.
+
+Not all is lost though! While discussing the proof of concept, we realized there is a simpler way how to build a bridge between LoopBack 3 and LoopBack 4: mount the entire LoopBack 3 application as a REST component of the LoopBack 4 project.
+The [pull request #2318](https://github.com/strongloop/loopback-next/pull/2318) presents a proof of concept that we will use to drive the actual implementation tracked by [Epic #2479](https://github.com/strongloop/loopback-next/issues/2479).
+
+We have also identified few new stories to bridge the gap preventing LoopBack 3 applications to be migrated to LoopBack 4, see the following [GitHub comment](https://github.com/strongloop/loopback-next/issues/1849#issuecomment-467471409).
 
 ## Documentation on Submitting a Pull Request
 
