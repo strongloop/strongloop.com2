@@ -1,17 +1,23 @@
 ---
 layout: post
-title: In the Loop - February 28 2019
+title: In the Loop - February 28, 2019
 date: 2019-02-28
 author: Dave Whiteley
 permalink: /strongblog/in-the-loop-february-28-2019/
 categories:
   - Community
   - News
-published: false
+published: true
 ---
 
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
+
+### The 10 most in-demand programming languages across the globe
+
+Alison DeNisco Rayome looks at a Hired report that shows which coding languages developers should know for companies that are looking to hire.  
+
+[READ MORE >>>](https://www.techrepublic.com/article/the-10-most-in-demand-programming-languages-across-the-globe/)
 
 ### 12 Concepts That Will Level Up Your JavaScript Skills
 
@@ -48,7 +54,6 @@ You can see the February 19th Joint Merger Town Hall video here.
 Jessica Davis explains how IBM is leveraging Kubernetes to enable its Watson AI to run on public clouds AWS, Google, and Microsoft Azure. 
 
 [READ MORE >>>](https://www.informationweek.com/big-data/ai-machine-learning/ibm-takes-watson-ai-to-aws-google-azure/d/d-id/1333895)
-
 
 ## What Next?
 
