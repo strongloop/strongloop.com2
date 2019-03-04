@@ -16,9 +16,9 @@ It feels like 2019 just started, but we are somehow already in March. February j
 
 ## Authentication and Authorization
 
-<!-- Janny, can you fill this part out, please? Feel free to replace what's here -->
+In March we refactored the JWT authentication strategy in `loopback4-example-shopping` to be more modular and leveraged functions from `jsonwebtoken` to perform a more robust password hashing and comparison. The token based utilities are refactored into a token service, so that it can be injected into the controller and strategy classes using DI. And the bcrypt password hasher service is created similarly.
 
-We are working on our [Authentication and Authorization epic](https://github.com/strongloop/loopback-next/issues/1035). As part of this epic, we worked on [storing the hashed password in the login function](https://github.com/strongloop/loopback4-example-shopping/issues/35) and [refactoring authentication util functions into a service](https://github.com/strongloop/loopback4-example-shopping/issues/40).
+Our next step is writing guide for plugging in different auth strategies and depicting the API flow of authenticating the endpoints. In the meantime, we will be adding more abstractions to shape the authentication system as the groundwork before opening the extension points for the authentication system. You could check the subsequent stories in [issue#1035](https://github.com/strongloop/loopback-next/issues/1035) and track our progress there.
 
 ## Migration from LoopBack 3 to LoopBack 4
 
