@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 3 Receives Extended Long Term Support
-date: 2019-02-28
+date: 2019-03-15
 author:
   - Diana Lau
   - Miroslav Bajtoš
