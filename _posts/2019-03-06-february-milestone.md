@@ -1,22 +1,22 @@
 ---
 layout: post
 title: LoopBack 4 February 2019 Milestone Update
-date: 2019-03-13
+date: 2019-03-06
 author: Nora Abdelgadir
 permalink: /strongblog/february-2019-milestone/
 categories:
   - Community
   - LoopBack
-published: false
+published: true
 ---
 
-It feels like 2019 just started, but we are somehow already in March. February just flew by, but while February was short, the list of things the LoopBack team accomplished in the month was the opposite. In February, we tackled authentication and authorization, spikes on migration from LoopBack 3 to LoopBack 4, preparation for events, and others. You can see the [February milestone](https://github.com/strongloop/loopback-next/issues/2313) and see the [March milestone](https://github.com/strongloop/loopback-next/issues/2516) to see what we are working on next. Read more to see the details of our progress in February.
+It feels like 2019 just started, but we are somehow already in March. February flew by, but while the month was short, the list of things the LoopBack team accomplished in the month was the opposite. In February, we tackled authentication and authorization, spikes on migration from LoopBack 3 to LoopBack 4, preparation for events, and others. You can see the [February milestone](https://github.com/strongloop/loopback-next/issues/2313) and see the [March milestone](https://github.com/strongloop/loopback-next/issues/2516) to see what we are working on next. Read more to see the details of our progress in February.
 
 <!--more-->
 
 ## Authentication and Authorization
 
-In February, we refactored the JWT authentication strategy in `loopback4-example-shopping` to be more modular and leveraged functions from `jsonwebtoken` to perform a more robust password hashing and comparison. The token based utilities are refactored into a token service, so that it can be injected into the controller and strategy classes using Dependency Injection. And the `bcrypt` password hasher service is created similarly.
+We refactored the JWT authentication strategy in `loopback4-example-shopping` to be more modular and leveraged functions from `jsonwebtoken` to perform a more robust password hashing and comparison. The token based utilities are refactored into a token service, so that it can be injected into the controller and strategy classes using Dependency Injection. The `bcrypt` password hasher service is created similarly.
 
 Our next step is to write a guide for plugging in different authentication strategies and depicting the API flow of authenticating the endpoints. In the meantime, we will be adding more abstractions to shape the authentication system as the groundwork before opening the extension points for the authentication system. You could check the subsequent stories in [issue #1035](https://github.com/strongloop/loopback-next/issues/1035) and track our progress there.
 
@@ -36,7 +36,7 @@ We have also identified few new stories to bridge the gap preventing LoopBack 3 
 
 ## Generate Docker Files through the CLI
 
-A new feature we added to the CLI is the [`--docker`](https://www.docker.com/) option when generating a LoopBack application. This option generates `Dockerfile`, `.dockerignore`, and two Docker scripts: `docker:build` and `docker:run`. See [Application generator](https://loopback.io/doc/en/lb4/Application-generator.html) to see how to generate an application with the `--docker` option. 
+We added a new feature to the CLI: the [`--docker`](https://www.docker.com/) option when generating a LoopBack application. This option generates `Dockerfile`, `.dockerignore`, and two Docker scripts: `docker:build` and `docker:run`. See [Application generator](https://loopback.io/doc/en/lb4/Application-generator.html) to see how to generate an application with `--docker`. 
 
 Following this feature, we added a [fix](https://github.com/strongloop/loopback-next/pull/2433) that forces the test host to be `HOST` environment variable or IPv4 interface, which makes it easier to run LoopBack 4 application tests inside a Docker container.
 
@@ -46,7 +46,7 @@ We introduced a detailed list of steps to follow if you want to submit a pull re
 
 ## Tutorial on Mounting LoopBack REST API on an Express Application
 
-We added a new tutorial on mounting LoopBack 4's REST API on an Express application. Users can now mix both the Express and LoopBack 4 frameworks in order to best match their own use cases. In this tutorial, we mounted a `Note` application created by the LoopBack 4 CLI on top of a simple Express server and served a static file. You can follow the [tutorial](https://loopback.io/doc/en/lb4/express-with-lb4-rest-tutorial.html) or see the completed example by using the command `lb4 example express-composition`.
+We added a new tutorial demonstrating how to mount LoopBack 4's REST API on an Express application. Users can now mix both the Express and LoopBack 4 frameworks in order to best match their own use cases. In this tutorial, we mounted a `Note` application created by the LoopBack 4 CLI on top of a simple Express server and served a static file. You can follow the [tutorial](https://loopback.io/doc/en/lb4/express-with-lb4-rest-tutorial.html) or see the completed example by using the command `lb4 example express-composition`.
 
 ## New Layout for Test Files
 
@@ -55,6 +55,7 @@ In a series of incremental pull requests, we reworked our project layout, moved 
 LoopBack 4 projects scaffolded with recent versions of `lb4` tool will use the new layout too. 
 
 Existing projects can be updated with a bit of manual work:
+
 - Move your test files from `test` to `src/__tests__`.
 - Edit script in `package.json` to use the new test location.
 - Change `tsconfig.json`: set `rootDir` to `"src"`, remove `"index.ts"` and `"test"` entries from the `include` field.
@@ -65,9 +66,13 @@ The [pull request #2316](https://github.com/strongloop/loopback-next/pull/2316/f
 ## Other Updates
 
 - You can now disable the OpenAPI spec endpoints (e.g. `/openapi.json`) which will also disable the `/explorer` endpoint by setting your rest's `openApiSpec.disabled` option to true. See [Customize How OpenAPI Spec is Served](https://loopback.io/doc/en/lb4/Server.html#customize-how-openapi-spec-is-served) for more `rest.openApiSpec` options. [PR #2470](https://github.com/strongloop/loopback-next/pull/2470).
+
 - Another `rest` option introduced is `requestBodyParser`, so you can now [configure the request body parser](https://loopback.io/doc/en/lb4/Server.html#configure-the-request-body-parser-options). [PR #2432](https://github.com/strongloop/loopback-next/pull/2432).
+
 - LoopBack cares a lot about your security. A security issue related to `JSON.parse()` was [discovered](https://github.com/hapijs/bourne#introduction) and this PR added a sanitizer for JSON. [PR #2348](https://github.com/strongloop/loopback-next/pull/2348).
+
 - Now you can override the default [Express settings](https://loopback.io/doc/en/lb4/Server.html#express-settings) and also add your own. [PR #2423](https://github.com/strongloop/loopback-next/pull/2423).
+
 - You can now use a custom repository base class in your LoopBack application. [PR #2235](https://github.com/strongloop/loopback-next/pull/2235).
 
 ## Events
@@ -78,7 +83,7 @@ If you want to come to our future events, keep an eye out on our [events page](h
 
 ## Community Contributions
 
-As the number of contributions from our community is rising, we are spending an increasing part of our time on reviewing these pull requests and helping our volunteers to get their changes landed. In fact, every fifth pull request opened this month were contributed by you! Check out the [community-contribution label](https://github.com/strongloop/loopback-next/pulls?q=is%3Apr+is%3Aopen+label%3Acommunity-contribution) to see pull requests by the community.
+As the number of contributions from our community rises, we are spending an increasing part of our time on reviewing these pull requests and helping our volunteers to get their changes landed. In fact, every fifth pull request opened this month was contributed by you! Check out the [community-contribution label](https://github.com/strongloop/loopback-next/pulls?q=is%3Apr+is%3Aopen+label%3Acommunity-contribution) to see pull requests by the community.
 
 We would like to take a moment to thank everyone who has submitted a pull request; the team really appreciates your contributions.
 
