@@ -21,7 +21,7 @@ body {
 
 body {
     line-height: 1;
-    background: #7dbd33;
+    background: #3f5dff; /* #7dbd33   */
     color: #000;
     margin: 0;
     padding: 0;
@@ -80,7 +80,7 @@ img {
 }
 
 .x-green {
-  background: #7dbd33;
+  background: #3f5dff; /* #7dbd33   */
 }
 
 .x-lightgrey {
@@ -226,19 +226,29 @@ html {
 
 .c-heading.-h1,
 .c-heading.-h3 {
-    color: #000;
+    color: #3f5dff; /* #000 old color */
     font-weight: 500;
 }
 
 .c-heading.-h1 {
     font-size: 2.5rem;
+    color: #fff;
 }
 
 .c-heading.-h2 {
     font-weight: 500;
     font-size: 2rem;
     padding-top: 2rem;
-    color: #283c10;
+    /**  color: #283c10; */
+    color: #ffffff;
+}
+
+.c-heading.-h2blue {
+    font-weight: 500;
+    font-size: 2rem;
+    padding-top: 2rem;
+    /**  color: #283c10; */
+    color: #3f5dff;
 }
 
 .c-heading.-h3 {
@@ -252,6 +262,7 @@ html {
 }
 
 .c-heading.-h4 {
+    color: #3f5dff;
     font-size: 1.2rem;
     font-weight: 400;
 }
@@ -285,7 +296,7 @@ blockquote {
 }
 
 a {
-    color: #548b27; /* #6cb333; */
+    color: #3f5dff; /* #548b27  #6cb333;   */
     font-weight: 400;
     text-decoration: none;
     -webkit-transition-property: normalize('transition-property',color,webkit);
@@ -311,14 +322,16 @@ li a:hover, li a:focus,
 /* .author a:hover, .author a:focus, */
 .c-heading a:hover, .c-heading a:focus,
 x-white a:hover, x-white a:focus {
-    color: #305016;
+    /**   #305016  */
+    color: #3f5dff;
 }
 
 .x-white a:hover,
 .x-white a:focus,
 c-heading.-h3 a:hover,
 c-heading.-h3 a:focus {
-  color: #7dbd33;
+    /*  color: #7dbd33; */
+  color: #3f5dff;
 }
 
 ul,ol,dl {
@@ -998,7 +1011,7 @@ li > dl {
 }
 
 .c-masthead ._nav ._nav-list ._nav-item a {
-    color: #487722; /* #2e2e2e;*/
+    color: #3f5dff; /* #2e2e2e;*/
     font-weight: 300;
 }
 /* fix for the moving menu */
@@ -1015,7 +1028,7 @@ li > dl {
 .c-masthead ._nav ._nav-list ._nav-item:hover a,
 .c-masthead ._nav ._nav-list ._nav-item:focus a,
 .c-masthead ._nav ._nav-list ._nav-item.-active a {
-  color: #3c631c;
+  color: #3f5dff; /*   #3c631c */
   font-weight: 500;
 }
 
@@ -1093,7 +1106,7 @@ li > dl {
 .c-nav ._nav-list ._nav-item a {
     display: block;
     padding: 1rem;
-    color: #d8f2c2;
+    color: #3f5dff; /*   #d8f2c2 */
     font-weight: 300;
 }
 

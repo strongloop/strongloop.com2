@@ -231,7 +231,9 @@ caption, th, td {
 }
 
 table thead tr {
-    background: #808080; /* rgba(0,0,0,0.2); */
+  /** grey bkgrd background: #808080; **/
+    background: #3f5dff; 
+    /* rgba(0,0,0,0.2); */
 }
 
 table thead tr th {
@@ -896,12 +898,13 @@ div.post-content h4 {
 /* Breadcrumbs */
 
 .breadcrumb {
+  color: #ffffff;
   padding: 20px 0 0 3rem;
   font-size: 85%;
 }
 
 .breadcrumb a, .x-green a, .post-meta a {
-  color: #444;
+  color: #ffffff;
 }
 
 .breadcrumb a:hover, .breadcrumb a:focus,
