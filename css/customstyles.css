@@ -118,6 +118,10 @@ p.author {
   color: #fff;
 }
 
+p.author2 {
+  color: #3f5dff;
+}
+
 li.dropdownActive a {
     font-weight: bold;
 }
