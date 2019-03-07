@@ -1,18 +1,22 @@
 ---
 layout: post
-title: In the Loop - January 2019
-date: 2019-01-30
+title: In the Loop - January 3, 2019
+date: 2019-01-03
 author: Dave Whiteley
 permalink: /strongblog/in-the-loop-january-2019/
 categories:
   - Community
   - News
-published: false
 ---
 
 Happy 2019! We hope you all had a wonderful holiday season. We're happy to welcome you back with "In the Loop"! Here's a rundown of the past month's interesting news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
-<img src="https://strongloop.com/blog-assets/2018/11/in-the-loop-december-2018.png.png" alt="In the Loop January 2019" style="width: 300px"/>
+
+### It's Time For Every API to Have an OpenAPI Spec
+
+OpenAPI has largely become the de facto description format in REST API development. In this post, Abhinav Asthana explains how API definitions are being used and some ways they can improve your organization when you fully build upon them.
+
+[READ MORE >>>](https://www.programmableweb.com/news/its-time-every-api-to-have-openapi-spec/sponsored-content/2018/12/19)
 
 ### The State of the Octoverse: new open source projects in 2018 
 
@@ -44,7 +48,7 @@ npm, Inc., which runs the world’s largest software registry and maintains the 
 
 [READ MORE >>>](https://www.apnews.com/e1d723ccf7944b25b9a4b899ce3c29a8)
 
-## Adding Kubernetes Deployment and Scaling to a Dockerized Loopback App
+## Adding Kubernetes Deployment and Scaling to a Dockerized LoopBack App
 
 Remko de Knikker shows how to deploy a FDIC API application to a Kubernetes cluster using a deployment with autoscaling.
 
