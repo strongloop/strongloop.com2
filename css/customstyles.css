@@ -112,8 +112,11 @@ body h1 {margin-top:40px;}
     margin-bottom:12px;
 }
 
-p.post-meta {font-size: 80%; color: #444;}
+p.post-meta {font-size: 80%; color: #fff;}
 
+p.author {
+  color: #fff;
+}
 
 li.dropdownActive a {
     font-weight: bold;
@@ -231,7 +234,9 @@ caption, th, td {
 }
 
 table thead tr {
-    background: #808080; /* rgba(0,0,0,0.2); */
+  /** grey bkgrd background: #808080; **/
+    background: #3f5dff; 
+    /* rgba(0,0,0,0.2); */
 }
 
 table thead tr th {
@@ -826,7 +831,7 @@ For printing
   font-size: 80%;
 }
 .x-green .author a{
-  color: #000
+  color: #fff
 }
 
 .project-tile {
@@ -896,12 +901,13 @@ div.post-content h4 {
 /* Breadcrumbs */
 
 .breadcrumb {
+  color: #ffffff;
   padding: 20px 0 0 3rem;
   font-size: 85%;
 }
 
 .breadcrumb a, .x-green a, .post-meta a {
-  color: #444;
+  color: #ffffff;
 }
 
 .breadcrumb a:hover, .breadcrumb a:focus,
