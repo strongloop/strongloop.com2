@@ -1010,6 +1010,13 @@ li > dl {
     margin-left: 0;
 }
 
+.post-content h2 {
+    color: #3f5dff;
+}
+.post-content h3 {
+    color: #3f5dff;
+}
+
 .c-masthead ._nav ._nav-list ._nav-item a {
     color: #3f5dff; /* #2e2e2e;*/
     font-weight: 300;

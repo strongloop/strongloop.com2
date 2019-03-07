@@ -112,8 +112,11 @@ body h1 {margin-top:40px;}
     margin-bottom:12px;
 }
 
-p.post-meta {font-size: 80%; color: #444;}
+p.post-meta {font-size: 80%; color: #fff;}
 
+p.author {
+  color: #fff;
+}
 
 li.dropdownActive a {
     font-weight: bold;
@@ -828,7 +831,7 @@ For printing
   font-size: 80%;
 }
 .x-green .author a{
-  color: #000
+  color: #fff
 }
 
 .project-tile {

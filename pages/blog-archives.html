@@ -23,7 +23,7 @@ redirect_from:
           {% assign posters = posters | where_exp:"post", "post.visible != 0" %}
           {% for post in posters %}
             {% if post.visible != 0  %}
-              {% assign post_year = post.date | date: "%Y"% %}
+              {% assign post_year = post.date | date: "%Y" %}
               {% capture sYear %}{{year}}{% endcapture %}
 
               {% if sYear == post_year %}
