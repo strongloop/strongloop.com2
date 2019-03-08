@@ -59,6 +59,4 @@ Jessica Davis explains how IBM is leveraging Kubernetes to enable its Watson AI 
 
 * Check out the previous "[In the Loop - February 13, 2019](https://strongloop.com/strongblog/in-the-loop-february-13-2019/)".
 
-* Check out [events](https://strongloop.com/events/) that the StrongLoop and IBM team will be attending!
-
 * Be sure to follow StrongLoop on [Facebook](https://www.facebook.com/strongloop/) and [Twitter](https://twitter.com/StrongLoop)!
