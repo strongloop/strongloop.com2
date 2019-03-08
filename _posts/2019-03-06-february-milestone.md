@@ -79,7 +79,7 @@ The [pull request #2316](https://github.com/strongloop/loopback-next/pull/2316/f
 
 This month, the team went to downtown Toronto for a [meetup](https://www.meetup.com/Toronto-Cloud-Integration-Meetup/events/257171001/). This included an overview of LoopBack 4, along with demonstrations of what LoopBack 4 can do. Check out the [blog post](https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/) about it. There was also a [Quick Lab](https://developer.ibm.com/tutorials/create-rest-apis-minutes-with-loopback-4/) and [Master Class session](https://myibm.ibm.com/events/think/all-sessions/session/7764A) for LoopBack 4 in IBM's Code@Think in mid-February. And finally, [Raymond](https://strongloop.com/authors/Raymond_Feng/) presented at DeveloperWeek 2019 where he talked about [Building APIs with Node.js, TypeScript, and LoopBack](https://developerweek2019.sched.com/event/JXDc/pro-talk-speed-and-scale-building-apis-with-nodejs-typescript-and-loopback).
 
-If you want to come to our future events, keep an eye out on our [events page](https://strongloop.com/events/).
+If you want to come to our future events, keep an eye out on the [Strongblog](https://strongloop.com/strongblog/) for announcements.
 
 ## Community Contributions
 
