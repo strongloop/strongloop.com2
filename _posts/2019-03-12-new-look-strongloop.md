@@ -21,7 +21,7 @@ Since its inception, StrongLoop utilized the greens incorporated in the original
 
 Besides updating the color scheme, long-time visitors may notice that we've updated the Projects listed as well as Frequently Asked Questions. With certain projects and products inactive or relocated to relevant IBM sites for over a year now, we've minimized references to them on this site for clarity. We've also ensured that we have a dynamic section on our home page prominently reflecting our latest blog content.
 
-We anticipate that the site will continue to evolve in coming months, just as it has since we launched. We will continue listing the various events that the LoopBack team attends, as well as opportunities to learn more about developing with LoopBack. We'll also keep sharing news about API Microgateway and OASGraph, in addition to Node.js and OpenAPISpec. Open-source solutions for the API developer community is what we offer and feel strongly about!
+We anticipate that the site will continue to evolve in coming months, just as it has since we launched. For example, we will focus on promoting events through our StrongBlog and social media rather than having a separate page. This way we can ensure that we put proper focus on events that the LoopBack team attends, as well as opportunities to learn more about developing with LoopBack. We'll also keep sharing news about API Microgateway and OASGraph, in addition to Node.js and OpenAPISpec. Open-source solutions for the API developer community is what we offer and feel strongly about!
 
 We hope you like our new look, as well as how it still connects to our past while we look to the future!
 
