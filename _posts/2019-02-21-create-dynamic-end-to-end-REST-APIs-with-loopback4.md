@@ -34,6 +34,4 @@ Check it all out on the official [IBM Developer page](https://developer.ibm.com/
 
 * Learn about other [open source projects](https://strongloop.com/projects/) that provide key technologies for the API economy: API Microgateway; OpenAPI Spec; and of course LoopBack. 
 
-* Check out [events](https://strongloop.com/events/) that the StrongLoop and IBM team will be attending!
-
 * Be sure to follow StrongLoop on [Facebook](https://www.facebook.com/strongloop/) and [Twitter](https://twitter.com/StrongLoop)!

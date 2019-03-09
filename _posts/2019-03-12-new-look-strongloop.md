@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A New Look for StrongLoop
-date: 2019-02-30
+date: 2019-03-12
 author: Dave Whiteley
 permalink: /strongblog/new-look-strongloop/
 categories:
@@ -19,9 +19,9 @@ One of the things we knew would follow after the launch of [LoopBack 4](http://v
 
 Since its inception, StrongLoop utilized the greens incorporated in the original logos for both StrongLoop and LoopBack in its site look. When we officially launched the current version of LoopBack this past Fall, it was a completely redesigned modular framework along with an entirely [new logo](https://strongloop.com/strongblog/thanks-loopback-4-logo/). While we talk about other great Open Source options on this site, we've been primarily linked with LoopBack since our launch. As such, it made sense to use to mirror LoopBack's current color scheme.
 
-Besides updating the color scheme, long-time visitors may notice that we've updated the Projects listed as well as Frequently Asked Questions. With certain projects and products inactive or relocated to relevant IBM sites for over a year now, we've minimized references to them on this site for clarity. We've also ensured that we have a dynamic section on our home page prominently reflecting our latest blog content.
+Besides updating the color scheme, long-time visitors may notice that we've updated the [Projects](https://strongloop.com/projects/) listed as well as [Frequently Asked Questions](https://strongloop.com/faq/). With certain projects and products inactive or relocated to relevant IBM sites for over a year now, we've minimized references to them on this site for clarity. We've also ensured that we have a dynamic section on our home page prominently reflecting our latest blog content.
 
-We anticipate that the site will continue to evolve in coming months, just as it has since we launched. We will continue listing the various events that the LoopBack team attends, as well as opportunities to learn more about developing with LoopBack. We'll also keep sharing news about API Microgateway and OASGraph, in addition to Node.js and OpenAPISpec. Open-source solutions for the API developer community is what we offer and feel strongly about!
+We anticipate that the site will continue to evolve in coming months, just as it has since we launched. For example, we will continue promoting that the LoopBack team attends, as well as opportunities to learn more about developing with LoopBack. However, we will provide fuller focus with details on our StrongBlog and social media rather than simply listing them on a separate page. We'll also keep sharing news about API Microgateway and OASGraph, in addition to Node.js and OpenAPISpec. Open-source solutions for the API developer community is what we offer and feel strongly about!
 
 We hope you like our new look, as well as how it still connects to our past while we look to the future!
 
