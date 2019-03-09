@@ -559,10 +559,7 @@ li > dl {
     margin: .5rem 0 0 0;
     color: #fff;
 }
-.c-footer ._copyright:hover {
-    margin: .5rem 0 0 0;
-    color: #3f5dff;
-}
+ 
 
 @media (max-width:568px) {
     .c-footer ._copyright {
