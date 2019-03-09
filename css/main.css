@@ -524,7 +524,7 @@ li > dl {
 }
 
 .c-footer ._nav ._nav-list ._nav-item a {
-    color: #3f5dff;
+    color: #fff;
     font-weight: 300;
 }
 
@@ -533,7 +533,7 @@ li > dl {
 .legal a:hover,
 .legal a:active
 {
-    color: #fff;
+    color: #3f5dff;
 }
 
 .c-footer ._nav ._nav-list ._nav-item.-active a {
@@ -546,11 +546,20 @@ li > dl {
 }
 
 .c-footer .legal a {
+    color: #fff;
+    font-weight: 300;
+}
+
+.c-footer .legal a:hover {
     color: #3f5dff;
     font-weight: 300;
 }
 
 .c-footer ._copyright {
+    margin: .5rem 0 0 0;
+    color: #fff;
+}
+.c-footer ._copyright:hover {
     margin: .5rem 0 0 0;
     color: #3f5dff;
 }
