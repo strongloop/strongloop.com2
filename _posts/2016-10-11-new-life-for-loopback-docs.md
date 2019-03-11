@@ -5,7 +5,7 @@ author: C. Rand McKinney
 permalink: /strongblog/new-life-for-loopback-docs/
 categories:
   - LoopBack
-layout: redirected
+layout: post
 published: true
 
 ---
