@@ -9,7 +9,7 @@ permalink: /strongblog/lb3-extended-lts/
 categories:
 - Community
 - LoopBack
-published: false
+published: true
 ---
 
 This past October, we announced LoopBack 4 GA is ready for production use and updated the Long Term Support (LTS) schedule in our [LTS page](https://loopback.io/doc/en/contrib/Long-term-support.html). Due to popular requests, LoopBack 3 now receives an extended long term support with updated timeline as shown in the table below.
