@@ -7,7 +7,7 @@ permalink: /strongblog/new-look-strongloop/
 categories:
   - Community
   - News
-published: false
+published: true
 ---
 
 If you've visited the StrongLoop site before, you may be thinking that things look a little bit different. While its not radically different, you're probaby noticing that shades of blue have replaced shades of green. Rest assured, we've planned this visual revision for a while now. With a new version of LoopBack successfully launched and a new year well started, the time was right for the change - six years after we announced StrongLoop back in February 2013.
