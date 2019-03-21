@@ -13,11 +13,11 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
-### IBM joins the GraphQL Foundation to push for open source adoption
+### Easily identify problems in Node.js applications with Diagnostic Report
 
-Erik Wittern explains why IBM is excited to be a founding member of the GraphQL Foundation, which is hosted by the Linux Foundation. 
+Gireesh Punathil describes why this tool is important, how to interpret the report data, and walks you through some example use cases.
 
-[READ MORE >>>](https://developer.ibm.com/blogs/ibm-joins-the-graphql-foundation-to-push-for-open-source-adoption/)
+[READ MORE >>>](https://developer.ibm.com/articles/easily-identify-problems-in-your-nodejs-apps-with-diagnostic-report/)
 
 ## What Next?
 
