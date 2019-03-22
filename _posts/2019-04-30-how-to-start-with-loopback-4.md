@@ -24,7 +24,7 @@ LoopBack 3. "If you already have LoopBack 3 applications running in production, 
 
 ## Before You Get Started, Part Two
 
-Let's assume you've considered the above and are ready to move to LB4. Or perhaps you are starting fresh, with no prior LoopBack experience or project. Before you install LoopBack 4, ensure that you have Node.js (version 8.9 or higher) installed on your machine. You can download it [here](https://nodejs.org/en/download/), and the install process should take a minute or so.
+Let's assume you've considered the above and are ready to move to LB4. Or perhaps you are starting fresh, with no prior LoopBack experience or project. Before you install LoopBack 4, ensure that you have Node.js (version 8.9 or higher) installed on your machine. You can download it [here](https://nodejs.org/en/download/), and the install process should take less than a minute.
 
 ## Next: Install LoopBack 4 CLI
 
@@ -38,6 +38,7 @@ npm i -g @loopback/cli
 
 lb4 -v should show @loopback/cli version: 0.17.0 (or newer).
 
+(permisisons issue on mac?)
 
 ### Creating a new project
 
