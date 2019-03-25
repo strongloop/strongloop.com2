@@ -13,6 +13,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### "npm start" permission denied error: how to solve it?
+
+Gabriel Guerra shares "quick antidote for [the] curse of weird, strange or annoying errors. 
+
+[READ MORE >>>](https://medium.com/@heygabriel/npm-start-permission-denied-error-how-to-solve-it-2387c7472319)
+
 ### Easily identify problems in Node.js applications with Diagnostic Report
 
 Gireesh Punathil describes why this tool is important, how to interpret the report data, and walks you through some example use cases.
