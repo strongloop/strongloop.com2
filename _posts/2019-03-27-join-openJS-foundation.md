@@ -10,7 +10,7 @@ categories:
 published: false
 ---
 
-We wanted to share a great article by IBM's Todd Moore and Joe Sepi, entitled "Join the OpenJS Foundation, JavaScript’s new home". In addition to the invitation, they provide background on the creation of the Foundation, benefits of it, and a look ahead at the future of Javascript.
+We wanted to share a great article by IBM's [Todd Moore](https://twitter.com/tmmoore_1) and [Joe Sepi](https://twitter.com/joe_sepi), entitled "Join the OpenJS Foundation, JavaScript’s new home". In addition to the invitation, they provide background on the creation of the Foundation, benefits of it, and a look ahead at the future of Javascript.
 <!--more-->
 
 Here are some excerpts from their post.
