@@ -10,7 +10,7 @@ categories:
 published: true
 ---
 
-Earlier this month, there was an announcement regarding the merger of the Node Foundation and JS Foundation to form the [OpenJS Foundation](https://medium.com/@nodejs/introducing-the-openjs-foundation-the-next-phase-of-javascript-ecosystem-growth-d4911b42664f ). We wanted to share a great article reacting to that announcement, written by IBM's [Todd Moore](https://twitter.com/tmmoore_1) and [Joe Sepi](https://twitter.com/joe_sepi) and entitled "Join the OpenJS Foundation, JavaScript’s new home". In addition to the invitation, they provide background on the creation of the Foundation, benefits of it, and a look ahead at the future of Javascript.
+Earlier this month, the Node Foundation and JS Foundation announced that they were merging to form the [OpenJS Foundation](https://medium.com/@nodejs/introducing-the-openjs-foundation-the-next-phase-of-javascript-ecosystem-growth-d4911b42664f). We wanted to share a great article reacting to that announcement, written by IBM's [Todd Moore](https://twitter.com/tmmoore_1) and [Joe Sepi](https://twitter.com/joe_sepi) and entitled "Join the OpenJS Foundation, JavaScript’s new home". In addition to the invitation, they provide background on the creation of the Foundation, benefits of it, and a look ahead at the future of Javascript.
 <!--more-->
 
 Here are some excerpts from their post.
