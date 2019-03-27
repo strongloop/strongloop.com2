@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Experiment plain JavaScript programming with LoopBack 4
+title: Experimenting with Plain JavaScript Programming in LoopBack 4
 date: 2019-03-28
 author: Hage Yaapa
 permalink: /strongblog/loopback4-javascript-experience/
