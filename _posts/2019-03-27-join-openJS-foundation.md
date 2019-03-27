@@ -7,10 +7,10 @@ permalink: /strongblog/join-openjs-foundation/
 categories:
   - Community
   - News
-published: false
+published: true
 ---
 
-We wanted to share a great article by IBM's [Todd Moore](https://twitter.com/tmmoore_1) and [Joe Sepi](https://twitter.com/joe_sepi), entitled "Join the OpenJS Foundation, JavaScript’s new home". In addition to the invitation, they provide background on the creation of the Foundation, benefits of it, and a look ahead at the future of Javascript.
+Earlier this month, there was an announcement regarding the merger of the Node Foundation and JS Foundation to form the [OpenJS Foundation](https://medium.com/@nodejs/introducing-the-openjs-foundation-the-next-phase-of-javascript-ecosystem-growth-d4911b42664f ). We wanted to share a great article reacting to that announcement, written by IBM's [Todd Moore](https://twitter.com/tmmoore_1) and [Joe Sepi](https://twitter.com/joe_sepi) and entitled "Join the OpenJS Foundation, JavaScript’s new home". In addition to the invitation, they provide background on the creation of the Foundation, benefits of it, and a look ahead at the future of Javascript.
 <!--more-->
 
 Here are some excerpts from their post.
@@ -31,4 +31,7 @@ We recommend that you check out the [full article](https://developer.ibm.com/blo
 
 ## What Next?
 
+* Lean more about the OpenJS Foundation via its [FAQ](https://openjsf.org/).
+
 * Be sure to follow StrongLoop on [Facebook](https://www.facebook.com/strongloop/) and [Twitter](https://twitter.com/StrongLoop)!
+
