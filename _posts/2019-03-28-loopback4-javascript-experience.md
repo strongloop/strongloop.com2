@@ -12,7 +12,7 @@ published: false
 
 LoopBack is a popular open source Node.js framework. Its latest version (4) is written in TypeScript, while the older version were written in JavaScript. We chose to write LoopBack 4 to make it [more extensible, scalable, and sustainable](https://loopback.io/doc/en/lb4/FAQ.html#why-typescript). TypeScript features made it easy for us to build dependency injection in the framework and leverage it for controllers, models, and other constructs using TypeScript decorators.
 
-We believe that TypeScript is the right move and it will help you and us in the long run. However, some developers are constrained to use plain JavaScript at the moment for various reasons. We didnt't want to leave our JavaScript users behind and decided to explore the possibilities of creating a JavaScript interface to LoopBack 4. This blog post is about what we did in that regard and what we will be doing next.
+We believe that TypeScript is the right move and it will help you and us in the long run. However, some developers are constrained to use plain JavaScript at the moment for various reasons. We didn't want to leave our JavaScript users behind and decided to explore the possibilities of creating a JavaScript interface to LoopBack 4. This blog post is about what we did in that regard and what we will be doing next.
 
 <!--more-->
 
