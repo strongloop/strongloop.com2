@@ -7,7 +7,7 @@ permalink: /strongblog/loopback4-javascript-experience/
 categories:
   - loopback
   - javascript
-published: false
+published: true
 ---
 
 LoopBack is a popular open source Node.js framework. Its latest version (4) is written in TypeScript, while the older version were written in JavaScript. We chose to write LoopBack 4 to make it [more extensible, scalable, and sustainable](https://loopback.io/doc/en/lb4/FAQ.html#why-typescript). TypeScript features made it easy for us to build dependency injection in the framework and leverage it for controllers, models, and other constructs using TypeScript decorators.
@@ -22,18 +22,18 @@ We worked on a spike to enable [LoopBack 4 development using JavaScript](https:/
 
 A typical LoopBack 4 app is composed of several elements: 
 
-- a controller to define the endpoints
-- a sequence to customize and contain the request-response process
-- models for defining the data
-- a datasource to connect to database
-- a repository to link the model to the datasource
-- the application class which brings all of these together
+- A controller to define the endpoints.
+- A sequence to customize and contain the request-response process.
+- Models for defining the data.
+- A datasource to connect to database.
+- A repository to link the model to the datasource.
+- The application class which brings all of these together.
 
 The application also supports the ability to create custom routes to define non-REST enpoints.
 
 The proof of concept listed above demonstrates how writing LoopBack 4 applications in JavaScript would enable all the above features.
 
-**What was achieved**
+**What was Achieved**
 
 1. Ability to create [application class](https://github.com/strongloop/loopback4-example-javascript/blob/class-factory/server/application.js) in JavaScript.
 
