@@ -5,8 +5,8 @@ date: 2019-03-28
 author: Hage Yaapa
 permalink: /strongblog/loopback4-javascript-experience/
 categories:
-  - loopback
-  - javascript
+  - LoopBack
+  - JavaScript Language
 published: true
 ---
 
