@@ -33,5 +33,3 @@ You can register for the event and see the schedule [here](https://www.meetup.co
 ## What's Next?
 
 - Visit the [LoopBack 4](http://v4.loopback.io/) homepage to learn more about the framework. 
-
-
