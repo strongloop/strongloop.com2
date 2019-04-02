@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Join Us at the HackerJS Meetup @ HackerDojo
+title: Join Us at the HackerJS Meetup at Hacker Dojo
 date: 2019-04-30
 author: Dave Whiteley
 permalink: /strongblog/hackerjs-meetup-may-8/
@@ -24,7 +24,7 @@ Speakers include:
 
 - insert info here, ideally with twitter handle
 
-There will be open mic time give attendees 2-3 minutes of time to talk to the entire group. This is the time to debut a new project, announce upcoming events or let people know they're hiring.
+There will also be open mic time give attendees 2-3 minutes of time to talk to the entire group. This is the time to debut a new project, announce upcoming events or let people know they're hiring.
 
 The meetup will be held at the Hacker Dojo, 3350 Thomas Rd #150 in Santa Clara, CA. There will also be some snacks and swag on hand, as well as a great chance to network with like-minded folks. 
 
