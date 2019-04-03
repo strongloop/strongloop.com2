@@ -13,6 +13,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### TypeScript programming language: Microsoft updates its JavaScript spinoff to make it more efficient
+
+Nick Heath disucsses TypeScript 3.4, which reduces the time it takes to build software and adds a swathe of other new features. 
+
+[READ MORE >>>](https://www.techrepublic.com/article/typescript-programming-language-microsoft-updates-its-javascript-spinoff-to-make-it-more-efficient/)
+
 ### What's up in the Node.js community? Joe Sepi talks OpenJS Foundation and collaboration
 
 In this video, Michael Dawson talks with Joe Sepi about the new OpenJS Foundation, what it means for the JavaScript and Node.js communities and projects, and more.
