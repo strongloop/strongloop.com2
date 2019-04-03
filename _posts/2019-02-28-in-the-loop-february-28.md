@@ -7,6 +7,7 @@ permalink: /strongblog/in-the-loop-february-28-2019/
 categories:
   - Community
   - News
+  - In the Loop
 published: true
 ---
 
