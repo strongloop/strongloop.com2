@@ -60,7 +60,12 @@ TBD
 
 ## Community Contributions
 
-TBD
+Here is a summary of the contributions from community in March. We appreciate all your attention and help!
+
+* Added the `PATCH` and `DELETE` method for the `HasOne` relation. [Link](https://github.com/strongloop/loopback-next/commit/5936fb9c7224a024f7d406e8f05894cce460a4d4)
+* Support specifying the type of nested properties as a model. [Link](https://github.com/strongloop/loopback-next/commit/d298ec898f3c52224a1844c5e41f0d52cd7ff569)
+* Allow the model's id property to be a number for supporting the composed key. [Link](https://github.com/strongloop/loopback-next/commit/71292e9ac1b3d89ebfe284a659264cbb83dbe814)
+* Update the mocha configuration in `@loopback/build`. [Link](https://github.com/strongloop/loopback-next/commit/c3d800700b253e97316fd0871641ea80fcb457f3)
 
 ## Call to Action
 
