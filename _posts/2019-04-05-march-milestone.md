@@ -10,21 +10,26 @@ categories:
 published: false
 ---
 
-In March we have a pretty outstanding number of code contributions: 63 PRs merged in total, and 10 out of them are from the community. Cheers! The team has been able to make good progress of the epics we are focusing on, like LB3 to LB4 migration, adding `@loopback/context` features, JavaScript experience, the authentication system, and describing model properties to be more flexible. Read more to see the details of our achievements in March.
+March is a very productive month as we landed an outstanding number of code contributions: 63 PRs merged in total, and 10 out of them are from the community. Cheers! The team has been able to make good progress of the epics we are focusing on, like LB3 to LB4 migration, adding `@loopback/context` features, JavaScript experience, the authentication system, and describing model properties to be more flexible. Read more to see the details of our achievements in March.
 
 <!--more-->
 
 ## Migration from LoopBack 3 to LoopBack 4
 
-We started to incrementally work on the migration stories created from the PoC [PR](https://github.com/strongloop/loopback-next/pull/2318). This month we implemented the Express router to allow LoopBack 4 app developers to add arbitrary set of Express routes and provide OpenAPI specifications. You could call `mountExpressRouter` on either the app level or the rest server level to mount external routes. For details please check the [router's documentation](https://loopback.io/doc/en/lb4/Routes.html#mounting-an-express-router).
+We started to incrementally work on the migration stories created from the PoC [PR](https://github.com/strongloop/loopback-next/pull/2318). This month we implemented the Express router to allow LoopBack 4 app developers to add arbitrary set of Express routes and provide OpenAPI specifications. You can call `mountExpressRouter` on either the app level or the rest server level to mount external routes. For details please check the [router's documentation](https://loopback.io/doc/en/lb4/Routes.html#mounting-an-express-router).
 
 ## Extension pattern example
 
-As a framework built on top of the IoC(Inversion of Control) and DI(Dependency Injection), the [extension point](https://wiki.eclipse.org/FAQ_What_are_extensions_and_extension_points%3F) is commonly used in LoopBack 4 to declare contracts for extension contributors to plug-in components. The existing usages of extension point include the request body parser and the boot strapper. It is also needed for supporting multiple authentication strategies. You could check the [greeter extension point](https://github.com/strongloop/loopback-next/tree/master/examples/greeter-extension) to learn the best practice of registering an extension point along with its extensions. 
+As a framework built on top of the IoC(Inversion of Control) and DI(Dependency Injection), the [extension point](https://wiki.eclipse.org/FAQ_What_are_extensions_and_extension_points%3F) is commonly used in LoopBack 4 to declare contracts for extension contributors to plug-in components. The existing usages of extension point include the request body parser and the boot strapper. It is also needed for supporting multiple authentication strategies. Check out the [greeter extension point](https://github.com/strongloop/loopback-next/tree/master/examples/greeter-extension) to learn the best practice of registering an extension point along with its extensions. 
 
 ## Context improvement
 
-The discussion and review of a series of context enhancement PRs keeps moving. This month we landed the PR that implemented the context view feature. A context view is created to track artifacts and is able to watch the come and go bindings. More details could be found in the [Context document](https://loopback.io/doc/en/lb4/Context.html#context-view)
+The discussion and review of a series of context enhancement PRs keeps moving. This month we landed the PR that implemented the context view feature. A context view is created to track artifacts and is able to watch the come and go bindings. More details could be found in the [Context document](https://loopback.io/doc/en/lb4/Context.html#context-view).
+
+We have also enforced the dependency injection for bindings with the `SINGLETON` scope to make sure their dependencies can only be resolved from the owner context and its ancestors, but **NOT** from any of the child contexts. This is required as the value for a singleton binding is shared in the subtree rooted at the context where the binding is contained. Dependencies for a singleton cannot be resolved from a child context which is not visible and it may be recycled. See [the Dependency Injection documentations](https://loopback.io/doc/en/lb4/Dependency-injection.html#dependency-injection-for-bindings-with-different-scopes) for more details.
+
+Now users could specify the scope in the `@bind` decorator when annotating an artifact class with `@bind`.
+The application level bindings are improved by honoring more configurations in the `@bind` decorator. Now users could specify the binding scope and the namespace of tags as the inputs of `@bind`. Details could be found in [the binding document](https://loopback.io/doc/en/lb4/Binding.html#configure-binding-attributes-for-a-class).
 
 ## Relations
 
@@ -104,17 +109,17 @@ You can find more details in [PR 2646](https://github.com/strongloop/loopback-ne
 
 After a thorough exploration and discussion of writing the LoopBack 4 application in Javascript, this month we summarized our findings and achievements in blog [loopback4-javascript-experience](https://strongloop.com/strongblog/loopback4-javascript-experience/). It talks about the LoopBack 4 artifacts that we are able to create in JavaScript and also the limitations. A plan of subsequent stories is included in the blog.
 
-## Documents
-
-We added the steps to call SOAP services by running `lb4 service`, see the [document for calling other APIs](https://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html). There have been several conference and meet-up events happened over the last year, a new section [Presentations] is added in the [resources page](https://v4.loopback.io/resources.html) to display the videos.
-
-## LoopBack 3
-
-Now we allow people to define a model property called `type` instead of having `type` as a preserved word.
-
 ## Other Updates
 
-TBD
+* LoopBack 3 improvement: Now we allow people to define a model property called `type` instead of having `type` as a preserved word. [Link](https://github.com/strongloop/loopback/issues/4131)
+
+* We added the steps to call SOAP services by running `lb4 service`, see the [document for calling other APIs](https://loopback.io/doc/en/lb4/Calling-other-APIs-and-web-services.html). 
+
+* There have been several conference and meet-up events happened over the last year, so we added a new section "Presentations" in the [resources page](https://v4.loopback.io/resources.html) to display the videos.
+
+* Add operationId based on the controller and method names. [Link](https://github.com/strongloop/loopback-next/pull/2533)
+
+* Make sure the `basePath` is included in the url of `RestServer`. [Link](https://github.com/strongloop/loopback-next/pull/2560)
 
 ## Community Contributions
 
