@@ -10,28 +10,27 @@ categories:
 published: false
 ---
 
-March was a very productive month as we landed an outstanding number of code contributions: 63 PRs merged in total, and 10 out of them are from the community. The team was able to make good progress of the epics we are focusing on, like LB3 to LB4 migration, adding `@loopback/context` features, JavaScript experience, the authentication system, and describing model properties to be more flexible. Read more to see the details of our achievements in March.
+We landed an outstanding number of code contributions in March, making for a very productive month! We merged 63 PRs in total, and 10 out of them are from the community. Cheers!
 
-Cheers!
+The team was able to make good progress of the epics we are focusing on, like LB3 to LB4 migration, adding `@loopback/context` features, JavaScript experience, the authentication system, and describing model properties to be more flexible. Read more to see the details of our achievements in March.
 
 <!--more-->
 
 ## Migration from LoopBack 3 to LoopBack 4
 
-We started to incrementally work on the migration stories created from the PoC [PR](https://github.com/strongloop/loopback-next/pull/2318). This month we implemented the Express router to allow LoopBack 4 app developers to add arbitrary set of Express routes and provide OpenAPI specifications. You can call `mountExpressRouter` on either the app level or the rest server level to mount external routes. For details please check the [router's documentation](https://loopback.io/doc/en/lb4/Routes.html#mounting-an-express-router).
+We started to incrementally work on the migration stories created from the [PoC PR](https://github.com/strongloop/loopback-next/pull/2318). This month we implemented the Express router to allow LoopBack 4 app developers to add arbitrary set of Express routes and provide OpenAPI specifications. You can call `mountExpressRouter` on either the app level or the rest server level to mount external routes. For details please check the [router's documentation](https://loopback.io/doc/en/lb4/Routes.html#mounting-an-express-router).
 
-## Extension pattern example
+## Extension Pattern Example
 
 As a framework built on top of the IoC(Inversion of Control) and DI(Dependency Injection), the [extension point](https://wiki.eclipse.org/FAQ_What_are_extensions_and_extension_points%3F) is commonly used in LoopBack 4 to declare contracts for extension contributors to plug-in components. The existing usages of extension point include the request body parser and the boot strapper. It is also needed for supporting multiple authentication strategies. Check out the [greeter extension point](https://github.com/strongloop/loopback-next/tree/master/examples/greeter-extension) to learn the best practice of registering an extension point along with its extensions. 
 
-## Context improvement
+## Context Improvement
 
 The discussion and review of a series of context enhancement PRs keeps moving. This month we landed the PR that implemented the context view feature. A context view is created to track artifacts and is able to watch the come and go bindings. More details can be found in the [Context document](https://loopback.io/doc/en/lb4/Context.html#context-view).
 
 We have also enforced the dependency injection for bindings with the `SINGLETON` scope to make sure their dependencies can only be resolved from the owner context and its ancestors, but **NOT** from any of the child contexts. This is required as the value for a singleton binding is shared in the subtree rooted at the context where the binding is contained. Dependencies for a singleton cannot be resolved from a child context which is not visible and it may be recycled. See [the Dependency Injection documentations](https://loopback.io/doc/en/lb4/Dependency-injection.html#dependency-injection-for-bindings-with-different-scopes) for more details.
 
-Now users can specify the scope in the `@bind` decorator when annotating an artifact class with `@bind`.
-The application level bindings are improved by honoring more configurations in the `@bind` decorator. Now users could specify the binding scope and the namespace of tags as the inputs of `@bind`. Details can be found in [the binding document](https://loopback.io/doc/en/lb4/Binding.html#configure-binding-attributes-for-a-class).
+Now users can specify the scope in the `@bind` decorator when annotating an artifact class with `@bind`. The application level bindings are improved by honoring more configurations in the `@bind` decorator. Now users could specify the binding scope and the namespace of tags as the inputs of `@bind`. Details can be found in [the binding document](https://loopback.io/doc/en/lb4/Binding.html#configure-binding-attributes-for-a-class).
 
 ## Relations
 
@@ -39,9 +38,9 @@ We solved the self relation issue and created corresponding test cases as the re
 
 ## Authentication and Authorization
 
-Before writing the extension point for plugging in different authentication strategies, we decided to do some investigation of the popular authentication mechanisms and adopted the user scenario driven development. This is to make sure the abstractions for services are common enough. The design documents for our authentication system could be found [here](https://github.com/strongloop/loopback-next/blob/master/packages/authentication/docs/authentication-system.md). The document begins with illustrating a LoopBack 4 application that supports multiple authentication approaches and finally divides the responsibilities among different artifacts. The abstractions we created in March are two interfaces for the user service and the token service in `@loopback/authentication`.
+Before writing the extension point for plugging in different authentication strategies, we decided to do some investigation of the popular authentication mechanisms and adopted the user scenario driven development. This is to make sure the abstractions for services are common enough. The design documents for our authentication system can be found [here](https://github.com/strongloop/loopback-next/blob/master/packages/authentication/docs/authentication-system.md). The document begins with illustrating a LoopBack 4 application that supports multiple authentication approaches and finally divides the responsibilities among different artifacts. The abstractions we created in March are two interfaces for the user service and the token service in `@loopback/authentication`.
 
-## Inclusion of related models
+## Inclusion of Related Models
 
 The initial inclusion spike left us a question: how to distinguish the navigational property from the normal model properties? This month we had a PoC to demonstrate describing the navigational model properties with a new interface along with how to generate the corresponding OpenAPI schema.
 
@@ -74,7 +73,7 @@ Under the hood, `getModelSchemaRef` will create a new OpenAPI Schema describing 
     
 Please check [PR 2592](https://github.com/strongloop/loopback-next/pull/2592) for more details and the discussions we had. And the [follow-up stories](https://github.com/strongloop/loopback-next/issues/2152#issuecomment-475575548) are created as our next target.
 
-## Partial update
+## Partial Update
 
 While researching options for describing navigational model properties, Miroslav realized that the proposed solution is easy to extend to support other kinds of schema generated from model.
 
@@ -104,12 +103,12 @@ While researching options for describing navigational model properties, Miroslav
 
 Once these two new flags are implemented, we will be able to fix validation of request bodies to correctly enforce required properties for operations like `POST` & `PUT`, and treat all properties as optional for `PATCH` operations.
 
-You can find more details in [PR 2646](https://github.com/strongloop/loopback-next/pull/2646), the follow-up stories are outlined [here](https://github.com/strongloop/loopback-next/pull/2646#issuecomment-477503186).
+You can find more details in [PR 2646](https://github.com/strongloop/loopback-next/pull/2646), and the follow-up stories are outlined [here](https://github.com/strongloop/loopback-next/pull/2646#issuecomment-477503186).
 
 
 ## JavaScript Experience
 
-After a thorough exploration and discussion of writing the LoopBack 4 application in Javascript, this month we summarized our findings and achievements in our ["Experimenting with Plain JavaScript Programming in LoopBack 4"](https://strongloop.com/strongblog/loopback4-javascript-experience/) blog post. It talks about the LoopBack 4 artifacts that we are able to create in JavaScript and also the limitations. A plan of subsequent stories is included in the blog.
+After a thorough exploration and discussion of writing the LoopBack 4 application in Javascript this month, we summarized our findings and achievements in our ["Experimenting with Plain JavaScript Programming in LoopBack 4"](https://strongloop.com/strongblog/loopback4-javascript-experience/) blog post. It talks about the LoopBack 4 artifacts that we are able to create in JavaScript and also the limitations. A plan of subsequent stories is included in the blog.
 
 ## Other Updates
 
