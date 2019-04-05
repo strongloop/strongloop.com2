@@ -10,7 +10,9 @@ categories:
 published: false
 ---
 
-March is a very productive month as we landed an outstanding number of code contributions: 63 PRs merged in total, and 10 out of them are from the community. Cheers! The team has been able to make good progress of the epics we are focusing on, like LB3 to LB4 migration, adding `@loopback/context` features, JavaScript experience, the authentication system, and describing model properties to be more flexible. Read more to see the details of our achievements in March.
+March was a very productive month as we landed an outstanding number of code contributions: 63 PRs merged in total, and 10 out of them are from the community. The team was able to make good progress of the epics we are focusing on, like LB3 to LB4 migration, adding `@loopback/context` features, JavaScript experience, the authentication system, and describing model properties to be more flexible. Read more to see the details of our achievements in March.
+
+Cheers!
 
 <!--more-->
 
@@ -24,12 +26,12 @@ As a framework built on top of the IoC(Inversion of Control) and DI(Dependency I
 
 ## Context improvement
 
-The discussion and review of a series of context enhancement PRs keeps moving. This month we landed the PR that implemented the context view feature. A context view is created to track artifacts and is able to watch the come and go bindings. More details could be found in the [Context document](https://loopback.io/doc/en/lb4/Context.html#context-view).
+The discussion and review of a series of context enhancement PRs keeps moving. This month we landed the PR that implemented the context view feature. A context view is created to track artifacts and is able to watch the come and go bindings. More details can be found in the [Context document](https://loopback.io/doc/en/lb4/Context.html#context-view).
 
 We have also enforced the dependency injection for bindings with the `SINGLETON` scope to make sure their dependencies can only be resolved from the owner context and its ancestors, but **NOT** from any of the child contexts. This is required as the value for a singleton binding is shared in the subtree rooted at the context where the binding is contained. Dependencies for a singleton cannot be resolved from a child context which is not visible and it may be recycled. See [the Dependency Injection documentations](https://loopback.io/doc/en/lb4/Dependency-injection.html#dependency-injection-for-bindings-with-different-scopes) for more details.
 
-Now users could specify the scope in the `@bind` decorator when annotating an artifact class with `@bind`.
-The application level bindings are improved by honoring more configurations in the `@bind` decorator. Now users could specify the binding scope and the namespace of tags as the inputs of `@bind`. Details could be found in [the binding document](https://loopback.io/doc/en/lb4/Binding.html#configure-binding-attributes-for-a-class).
+Now users can specify the scope in the `@bind` decorator when annotating an artifact class with `@bind`.
+The application level bindings are improved by honoring more configurations in the `@bind` decorator. Now users could specify the binding scope and the namespace of tags as the inputs of `@bind`. Details can be found in [the binding document](https://loopback.io/doc/en/lb4/Binding.html#configure-binding-attributes-for-a-class).
 
 ## Relations
 
@@ -68,7 +70,7 @@ The proposed solution has two major parts:
      }
     ```
 
-   Under the hood, `getModelSchemaRef` will create a new OpenAPI Schema describing both own and navigational properties of the given model and give the schema a unique title so that we can reference it from multiple places.
+Under the hood, `getModelSchemaRef` will create a new OpenAPI Schema describing both own and navigational properties of the given model and give the schema a unique title so that we can reference it from multiple places.
     
 Please check [PR 2592](https://github.com/strongloop/loopback-next/pull/2592) for more details and the discussions we had. And the [follow-up stories](https://github.com/strongloop/loopback-next/issues/2152#issuecomment-475575548) are created as our next target.
 
@@ -107,7 +109,7 @@ You can find more details in [PR 2646](https://github.com/strongloop/loopback-ne
 
 ## JavaScript Experience
 
-After a thorough exploration and discussion of writing the LoopBack 4 application in Javascript, this month we summarized our findings and achievements in blog [loopback4-javascript-experience](https://strongloop.com/strongblog/loopback4-javascript-experience/). It talks about the LoopBack 4 artifacts that we are able to create in JavaScript and also the limitations. A plan of subsequent stories is included in the blog.
+After a thorough exploration and discussion of writing the LoopBack 4 application in Javascript, this month we summarized our findings and achievements in our ["Experimenting with Plain JavaScript Programming in LoopBack 4"](https://strongloop.com/strongblog/loopback4-javascript-experience/) blog post. It talks about the LoopBack 4 artifacts that we are able to create in JavaScript and also the limitations. A plan of subsequent stories is included in the blog.
 
 ## Other Updates
 
