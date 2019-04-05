@@ -33,7 +33,7 @@ The application level bindings are improved by honoring more configurations in t
 
 ## Relations
 
-We solved the self relation issue and created corresponding test cases as the reference usage. You can check [this PR](https://github.com/strongloop/loopback-next/pull/2595) to learn how to create a `hasMany` and `belongsTo` relation to the same entity.
+We solved the self relation issue and created corresponding test cases as the reference usage. You can check [the documentation for handling recursive relations](https://loopback.io/doc/en/lb4/BelongsTo-relation.html#handling-recursive-relations) to learn how to create a `hasMany` and `belongsTo` relation to the same entity.
 
 ## Authentication and Authorization
 
