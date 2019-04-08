@@ -22,7 +22,7 @@ We started to incrementally work on the migration stories created from the [PoC 
 
 ## Extension Pattern Example
 
-As a framework built on top of the IoC(Inversion of Control) and DI(Dependency Injection), the [extension point](https://wiki.eclipse.org/FAQ_What_are_extensions_and_extension_points%3F) is commonly used in LoopBack 4 to declare contracts for extension contributors to plug-in components. The existing usages of extension point include the request body parser and the boot strapper. It is also needed for supporting multiple authentication strategies. Check out the [greeter extension point](https://github.com/strongloop/loopback-next/tree/master/examples/greeter-extension) to learn the best practice of registering an extension point along with its extensions. 
+As a framework built on top of the IoC (Inversion of Control) and DI (Dependency Injection), the [extension point](https://wiki.eclipse.org/FAQ_What_are_extensions_and_extension_points%3F) is commonly used in LoopBack 4 to declare contracts for extension contributors to plug-in components. The existing usages of extension point include the request body parser and the boot strapper. It is also needed for supporting multiple authentication strategies. Check out the [greeter extension point](https://github.com/strongloop/loopback-next/tree/master/examples/greeter-extension) to learn the best practice of registering an extension point along with its extensions. 
 
 ## Context Improvement
 
