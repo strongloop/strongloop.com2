@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 March 2019 Milestone Update
-date: 2019-04-05
+date: 2019-04-09
 author: Janny Hou
 permalink: /strongblog/march-2019-milestone/
 categories:
@@ -124,7 +124,7 @@ After a thorough exploration and discussion of writing the LoopBack 4 applicatio
 
 ## Community Contributions
 
-Here is a summary of the contributions from community in March. We appreciate all your attention and help!
+Here is a summary of the contributions from our community in March. We appreciate all your attention and help!
 
 * Added the `PATCH` and `DELETE` method for the `HasOne` relation. [Link](https://github.com/strongloop/loopback-next/commit/5936fb9c7224a024f7d406e8f05894cce460a4d4)
 
