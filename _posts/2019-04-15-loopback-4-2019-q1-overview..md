@@ -1,9 +1,9 @@
 ---
 layout: post
-title: LoopBack 4 2019 Q1 Summaries
+title: LoopBack 4 2019 Q1 Overview
 date: 2019-04-30
 author: Diana Lau
-permalink: /strongblog/loopback-4-2019-q1-summaries/
+permalink: /strongblog/loopback-4-2019-q1-overview/
 categories:
   - LoopBack
   - Community
