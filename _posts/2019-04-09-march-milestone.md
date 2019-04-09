@@ -7,7 +7,7 @@ permalink: /strongblog/march-2019-milestone/
 categories:
   - Community
   - LoopBack
-published: false
+published: true
 ---
 
 We landed an outstanding number of code contributions in March, making for a very productive month! We merged 63 PRs in total, and 10 out of them are from the community. Cheers!
