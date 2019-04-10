@@ -22,7 +22,7 @@ Our goal was to bring awareness of LoopBack to the Node.js community in Toronto.
 
 - [Biniam Admikew](https://twitter.com/badmikew) demonstrated how how easy it is to expose REST API from your database with just a few steps.  
 
-- [Jamil Spain](https://twitter.com/iamjamilspain) provided an additional demo while also taking care of capturing the meetup on video. (Note: The demo video is not yet available).
+- [Jamil Spain](https://twitter.com/iamjamilspain) provided an additional demo while also taking care of capturing the meetup on video. 
 
 You can view each videos on our YouTube channel playlist [here](https://www.youtube.com/playlist?list=PL2I5I38o2kSCPCIxd8IjzYAMZnxcy3BYo).
 
