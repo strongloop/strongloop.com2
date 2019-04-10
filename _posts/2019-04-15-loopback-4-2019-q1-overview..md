@@ -10,7 +10,7 @@ categories:
 published: false
 ---
 
-After the release of [LoopBack 4 GA version](https://strongloop.com/strongblog/loopback-4-ga) last October, the train didn't stop. The team has been busy enhancing the framework, closing feature parity gaps, and helping community onboard with LoopBack4.
+After the LoopBack team released [LoopBack 4 GA version](https://strongloop.com/strongblog/loopback-4-ga) last October, they didn't stop to rest on their laurels. The team has been busy enhancing the framework, closing feature parity gaps, and helping community onboard with LoopBack 4.
 
 Since GA, we have been focusing on implementing/enhancing the following major areas:
 
