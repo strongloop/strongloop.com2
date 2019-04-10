@@ -10,7 +10,7 @@ categories:
 published: false
 ---
 
-After the LoopBack team released [LoopBack 4 GA version](https://strongloop.com/strongblog/loopback-4-ga) last October, they didn't stop to rest on their laurels. The team has been busy enhancing the framework, closing feature parity gaps, and helping community onboard with LoopBack 4.
+When the LoopBack team released [LoopBack 4 GA version](https://strongloop.com/strongblog/loopback-4-ga) last October, they didn't stop to rest on their laurels. The team has been busy enhancing the framework, closing feature parity gaps, and helping community onboard with LoopBack 4.
 
 Since GA, we have been focusing on implementing/enhancing the following major areas:
 
@@ -19,14 +19,14 @@ Since GA, we have been focusing on implementing/enhancing the following major ar
 - [Migration](#migration)
 - [Extensibility](#extensibility)
 
-Many thanks to your support and contributions! We are seeing more than double in our monthly download numbers in [npmjs.com](https://www.npmjs.com/) since GA. We are also seeing an increase in activities from the community, in terms of answering others' questions and submitting pull requests. For the last 3 months, more than 15% of the merged pull requests are coming from the community. New to open source contribution? Don't worry, this [step by step guide](https://loopback.io/doc/en/lb4/submitting_a_pr.html) will guide you through the contribution process.
+Many thanks to your support and contributions! We are seeing more than double in our monthly download numbers in [npmjs.com](https://www.npmjs.com/) since GA. We are also seeing an increase in activities from the community, in terms of answering others' questions and submitting pull requests. For the last 3 months, more than 15% of the merged pull requests are coming from the community. Want to help but new to open source contribution? Don't worry, this [step by step guide](https://loopback.io/doc/en/lb4/submitting_a_pr.html) will guide you through the contribution process.
 
 <!--more-->
 Let's take a closer look at each epic.
 
 ### Authentication
 
-As part of the scenario driven approach, we have added a reference implementation using JWT authentication in the [shopping example](https://github.com/strongloop/loopback4-example-shopping). We have also worked on a more [detailed design](https://github.com/strongloop/loopback-next/tree/master/packages/authentication/docs) and started the implementation to enable extension points for plugging in different authentication strategies.
+As part of the scenario-driven approach, we have added a reference implementation using JWT authentication in the [shopping example](https://github.com/strongloop/loopback4-example-shopping). We have also worked on a more [detailed design](https://github.com/strongloop/loopback-next/tree/master/packages/authentication/docs) and started the implementation to enable extension points for plugging in different authentication strategies.
 
 ### Model Relations
 
