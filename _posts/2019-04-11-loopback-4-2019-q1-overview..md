@@ -19,6 +19,7 @@ Since GA, we have been focusing on implementing/enhancing the following major ar
 - [Migration](#migration)
 - [Extensibility](#extensibility)
 <!--more-->
+
 Many thanks to your support and contributions! We are seeing more than double in our monthly download numbers in [npmjs.com](https://www.npmjs.com/) since GA. We are also seeing an increase in activities from the community, in terms of answering others' questions and submitting pull requests. For the last 3 months, more than 15% of the merged pull requests are coming from the community. Want to help but new to open source contribution? Don't worry, this [step by step guide](https://loopback.io/doc/en/lb4/submitting_a_pr.html) will guide you through the contribution process.
 
 Let's take a closer look at each epic.
