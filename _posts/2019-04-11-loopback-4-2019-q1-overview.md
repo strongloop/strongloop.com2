@@ -44,7 +44,7 @@ In the coming weeks and months, we are going to implement stories identified by 
 
 ### Extensibility
 
-One of our goals for LoopBack 4 is to build a minimal core while enabling everything else to be implemented via extensions. We continued to enhance the extensibility of the framework. We have introduced `context.view` and related events and added a `greeter-extension` [example](https://github.com/strongloop/loopback-next/tree/master/examples/greeter-extension).  Lifecycle support and binding configuration/injection are coming soon.
+One of our goals for LoopBack 4 is to build a minimal core while enabling everything else to be implemented via extensions. We continued to enhance the extensibility of the framework. We have introduced `context.view` and related events and added a `greeter-extension` [example](https://github.com/strongloop/loopback-next/tree/master/examples/greeter-extension). Lifecycle support and binding configuration/injection are coming soon.
 
 ### User Adoption
 
