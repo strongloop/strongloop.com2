@@ -1,13 +1,13 @@
 ---
 layout: post
 title: LoopBack 4 2019 Q1 Overview
-date: 2019-04-30
+date: 2019-04-11
 author: Diana Lau
 permalink: /strongblog/loopback-4-2019-q1-overview/
 categories:
   - LoopBack
   - Community
-published: false
+published: true
 ---
 
 When the LoopBack team released [LoopBack 4 GA version](https://strongloop.com/strongblog/loopback-4-ga) last October, they didn't stop to rest on their laurels. The team has been busy enhancing the framework, closing feature parity gaps, and helping community onboard with LoopBack 4.
