@@ -30,7 +30,7 @@ As part of the scenario-driven approach, we have added a reference implementatio
 
 ### Model Relations
 
-Besides `hasMany` and `belongsTo`, we have added one more relation type [`hasOne`](https://loopback.io/doc/en/lb4/hasOne-relation.html). We received lots of interests around other relation types, such as `hasManyThrough`.  Some of you are implementing the command line interface for creating model relations (`lb4 relation`). It's on the way!
+Besides `hasMany` and `belongsTo`, we have added one more relation type  [`hasOne`](https://loopback.io/doc/en/lb4/hasOne-relation.html). We received lots of interests around other relation types, such as `hasManyThrough`. Some of you are implementing the command line interface for creating model relations (`lb4 relation`). It's on the way!
 
 Inclusion of related model when querying data is a popular feature that is not available in LoopBack 4 yet. The initial research was concluded with a need to better investigate how to represent navigational properties used to include data of related models. We have explored multiple alternatives and came up with a solution that not only nicely addresses both TypeScript types and OpenAPI schema, but is also flexible enough to support other use cases like partial updates and exclusion of auto-generated properties when creating new model instances. You can learn more in our [March milestone blog post](https://strongloop.com/strongblog/march-2019-milestone/).
 
