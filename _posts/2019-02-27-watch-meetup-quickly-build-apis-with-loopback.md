@@ -20,15 +20,15 @@ Our goal was to bring awareness of LoopBack to the Node.js community in Toronto.
 
 - [Janny Hou](https://twitter.com/houjanny) explained what LoopBack is, what you can do with it, and the rationale behind the rewrite of the framework. You can find the link to relevant LB4 docs [here](https://loopback.io/doc/en/lb4/).
 
-{% include youtubePlayer.html id=i3UW5PhDoQg& %}
+{% include youtubePlayer.html id=page.i3UW5PhDoQg& %}
 
 - [Biniam Admikew](https://twitter.com/badmikew) demonstrated how how easy it is to expose REST API from your database with just a few steps.  
 
-{% include youtubePlayer.html id=W5u_YF96q6o&t %}
+{% include youtubePlayer.html id=page.W5u_YF96q6o&t %}
 
 - [Jamil Spain](https://twitter.com/iamjamilspain) provided an additional demo while also taking care of capturing the meetup on video. 
 
-{% include youtubePlayer.html id=W3Z1jx6iDd8&t %}
+{% include youtubePlayer.html id=page.W3Z1jx6iDd8&t %}
 
 You can view each videos on our YouTube channel playlist [here](https://www.youtube.com/playlist?list=PL2I5I38o2kSCPCIxd8IjzYAMZnxcy3BYo).
 
