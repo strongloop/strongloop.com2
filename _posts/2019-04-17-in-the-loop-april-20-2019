@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Implementing an API-First Design Methodology 
+
+David Brown teaches you how to implement an API-First design methodology. 
+
+[READ MORE >>>](https://dzone.com/articles/implementing-an-api-first-design-methodology)
+
 ### New Features Bring Native Add-ons Close To Being On Par With JS Modules
 
 Gabriel Schulhof looks at how and why native add-ons are on par with JS modules.
