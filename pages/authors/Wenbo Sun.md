@@ -5,5 +5,5 @@ github_id: gobackhuoxing
 permalink: /authors/Wenbo_Sun/
 redirect_from:
   - /authors/Wenbo_Sun
-  - /authors/Wenbo_Sun
+  - /authors/wenbo_sun
 ---
