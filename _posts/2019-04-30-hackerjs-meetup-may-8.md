@@ -11,6 +11,8 @@ categories:
 published: false
 ---
 
+## Come join us and other developers to discuss NodeJS & JavaScript!
+
 Near Santa Clara, California? Want to brush up on your Node and JS skills? Free on the evening of Wednesday, May 8? Then we have an event we'd like to tell you about!
 
 The HackerJS NodeJS & JavaScript Meetup is hosting an event on May 8, 2019 at Santa Clara's Hacker Dojo. It's the first of a new, ongoing meetup and we'd love to see you there! If you can't make it, we hope to share the video, and we will alsolet you know about upcoming meetups.
@@ -20,7 +22,7 @@ The HackerJS NodeJS & JavaScript Meetup is hosting an event on May 8, 2019 at Sa
 
 HackerJS is a NodeJS & JavaScript community meetup group that connects on the second Wednesday of each month. Whether you are a newbie or expert, the group strives to have a mix of beginner and advanced talks.
 
-When: Wednesday, May 8, 2019 6:30pm - 9pm
+Save the date for Wednesday, May 8, 2019 6:30pm - 9pm!
 
 Speakers include:
 
@@ -29,6 +31,8 @@ Speakers include:
 There will also be open mic time give attendees a couple of minutes to talk to the entire group. This is the time to debut a new project, announce upcoming events or let people know they're hiring.
 
 The meetup will be held at the Hacker Dojo, 3350 Thomas Rd #150 in Santa Clara, CA. There will also be some snacks and swag on hand, as well as a great chance to network with like-minded folks. 
+
+## Reserve your spot!
 
 You can register for the event and see the schedule [here](https://www.meetup.com/HackerJS/events/260257127/?rv=ea2_v2)!
 
