@@ -11,12 +11,14 @@ categories:
 published: false
 ---
 
-Near Santa Clara, California? Want to brush up on your Node and JS skills? The HackerJS NodeJS & JavaScript Meetup is hosting an event on Wednesday, May 8, 2019. It's the first of an ongoing bi-weekly meetup and we'd love to see you there! if you can't make it, we hopeto share the video, and will let you know about upcoming meetups.
+Near Santa Clara, California? Want to brush up on your Node and JS skills? Free on the evening of Wednesday, May 8? Then we have an event we'd like to tell you about!
+
+The HackerJS NodeJS & JavaScript Meetup is hosting an event on May 8, 2019 at Sanata Clara's Hacker Dojo. It's the first of a new, ongoing meetup and we'd love to see you there! if you can't make it, we hope to share the video, and will let you know about upcoming meetups.
 
 <!--more-->
 <img src="https://strongloop.com/blog-assets/2019/04/Meetup-may-8-hackerdojo.png" alt="Meetup - May 8 at Hoacker Dojo!" style="width: 200px"/>
 
-HackerJS is a NodeJS & JavaScript community meetup. It meets on the second Wednesday of the month and they try to have a mix of beginner and advanced talks.
+HackerJS is a NodeJS & JavaScript community meetup. It is held on the second Wednesday of each month, and strives to have a mix of beginner and advanced talks.
 
 When: Wednesday, May 8, 2019 6:30pm - 9pm
 
@@ -24,7 +26,7 @@ Speakers include:
 
 - insert info here, ideally with twitter handle
 
-There will also be open mic time give attendees 2-3 minutes of time to talk to the entire group. This is the time to debut a new project, announce upcoming events or let people know they're hiring.
+There will also be open mic time give attendees a couple of minutes to talk to the entire group. This is the time to debut a new project, announce upcoming events or let people know they're hiring.
 
 The meetup will be held at the Hacker Dojo, 3350 Thomas Rd #150 in Santa Clara, CA. There will also be some snacks and swag on hand, as well as a great chance to network with like-minded folks. 
 
