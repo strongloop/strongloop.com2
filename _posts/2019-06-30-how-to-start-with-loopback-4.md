@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Start with LoopBack 4
-date: 2019-04-30
+date: 2019-06-30
 author: Dave Whiteley
 permalink: /strongblog/how-to-start-with-loopback-4/
 categories:
@@ -16,7 +16,7 @@ It's been a few months since we launched LoopBack 4, a completely redesigned ite
 
 ## Before You Get Started, Part One
 
-You may be wondering if you want to utilize LoopBack 4. Perhaps you are already using LoopBack 2 or 3 and youaren't cretain you wantto change. Luckily, Diana Lau and Miroslav Bajtoš addressed this in their recent post, ["LoopBack 3 Receives Extended Long Term Support"](https://strongloop.com/strongblog/lb3-extended-lts/). We'll quote them below.
+You may be wondering if you want to utilize LoopBack 4. Perhaps you are already using LoopBack 2 or 3 and you aren't certain you want to change. Luckily, Diana Lau and Miroslav Bajtoš addressed this in their recent post, ["LoopBack 3 Receives Extended Long Term Support"](https://strongloop.com/strongblog/lb3-extended-lts/). We'll quote them below.
 
 LoopBack 2. "If you’re a LoopBack 2 user, you should at least migrate your LoopBack 2 applications to LoopBack 3. The effort should be minimal and the process should be smooth. You can read more details in the [3.0 migration guide](https://loopback.io/doc/en/lb3/Migrating-to-3.0.html)." Note, howvere, that LB2 goes end of life (EOL) April, 2019.
 
