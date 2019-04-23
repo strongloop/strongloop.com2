@@ -24,9 +24,11 @@ HackerJS is a NodeJS & JavaScript community meetup group that connects on the se
 
 Save the date for Wednesday, May 8, 2019 6:30pm - 9pm!
 
-Speakers include:
+Our main speaker is Liz Parody, Developer Relations Manager at NodeSource.
 
-- insert info here, ideally with twitter handle
+Liz is a self-taught Software Engineer focused on JavaScript, and Developer Relations Manager at NodeSource. She organizes different community events such as JSConf Colombia, Pioneras Developers, Startup Weekend and has been a speaker at EmpireJS, MedellinJS, PionerasDev, and GDG.
+
+She loves sharing knowledge, promoting JavaScript and Node.js ecosystem and participating in key tech events and conferences to enhance her knowledge and network.
 
 There will also be open mic time give attendees a couple of minutes to talk to the entire group. This is the time to debut a new project, announce upcoming events or let people know they're hiring.
 
