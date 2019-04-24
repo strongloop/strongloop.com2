@@ -18,7 +18,7 @@ Near Santa Clara, California? Want to brush up on your Node and JS skills? Free 
 The HackerJS NodeJS & JavaScript Meetup is hosting an event on May 8, 2019 at Santa Clara's Hacker Dojo. It's the first of a new, ongoing meetup and we'd love to see you there! If you can't make it, we hope to share the video, and we will alsolet you know about upcoming meetups.
 
 <!--more-->
-<img src="https://strongloop.com/blog-assets/2019/05/Meetup-may-8-hackerdojo.png" alt="Meetup - May 8 at Hacker Dojo!" style="width: 200px"/>
+<img align="center" src="https://strongloop.com/blog-assets/2019/05/Meetup-may-8-hackerdojo.png" alt="Meetup - May 8 at Hacker Dojo!" style="width: 200px"/>
 
 HackerJS is a NodeJS & JavaScript community meetup group that connects on the second Wednesday of each month. Whether you are a newbie or expert, the group strives to have a mix of beginner and advanced talks.
 
@@ -46,5 +46,5 @@ You can register for the event and see the schedule [here](https://www.meetup.co
 
 ## What's Next?
 
-- Check out upcoming HackerJS NodeJS & JavaScript Meetup [dates](https://www.meetup.com/HackerJS/)
+- Check out upcoming HackerJS NodeJS & JavaScript Meetup [dates](https://www.meetup.com/HackerJS/).
 - Visit the [LoopBack 4](http://v4.loopback.io/) homepage to learn more about the framework. 
