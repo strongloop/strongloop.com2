@@ -22,7 +22,7 @@ The HackerJS NodeJS & JavaScript Meetup is hosting an event on May 8, 2019 at Sa
 
 HackerJS is a NodeJS & JavaScript community meetup group that connects on the second Wednesday of each month. Whether you are a newbie or expert, the group strives to have a mix of beginner and advanced talks.
 
-Save the date for Wednesday, May 8, 2019 6:30pm - 9pm!
+Save the date for Wednesday, May 8, 2019 from 6:30pm - 9pm!
 
 Our main speaker is **Liz Parody**, Developer Relations Manager at NodeSource.
 
