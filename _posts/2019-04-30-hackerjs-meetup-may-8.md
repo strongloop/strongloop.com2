@@ -24,11 +24,17 @@ HackerJS is a NodeJS & JavaScript community meetup group that connects on the se
 
 Save the date for Wednesday, May 8, 2019 from 6:30pm - 9pm!
 
-Our main speaker is **Liz Parody**, Developer Relations Manager at NodeSource.
+Our speakers isinclude:
 
-Liz is a self-taught Software Engineer focused on JavaScript, and Developer Relations Manager at NodeSource. She organizes different community events such as JSConf Colombia, Pioneras Developers, Startup Weekend and has been a speaker at EmpireJS, MedellinJS, PionerasDev, and GDG.
+- **Liz Parody**, Developer Relations Manager at NodeSource.
 
-She loves sharing knowledge, promoting JavaScript and Node.js ecosystem and participating in key tech events and conferences to enhance her knowledge and network.
+Liz is a self-taught Software Engineer focused on JavaScript, and Developer Relations Manager at NodeSource. She organizes different community events such as JSConf Colombia, Pioneras Developers, Startup Weekend and has been a speaker at EmpireJS, MedellinJS, PionerasDev, and GDG. She loves sharing knowledge, promoting JavaScript and Node.js ecosystem and participating in key tech events and conferences to enhance her knowledge and network.
+
+- **Raymond Feng**, Architect for LoopBack and API Connect at IBM.
+
+"Building APIs at Warp Speed with LoopBack" - It’s easy to start developing in Node.js, but you will face challenges as your API grows with more modules, components, developers, teams, and releases. Raymond will share experiences in building LoopBack 4 with TypeScript and illustrate techniques, tools, and patterns proven to facilitate developing Node.js projects. He will demonstrate how LoopBack 4 builds an extensible and composable foundation to help you create open APIs or applications that are positioned to scale in various perspectives - all at warp speed!
+
+Raymond is a co-founder from StrongLoop and works on LoopBack, the open source mobile API platform. He's developedg Enterprise Java integration platforms, including IBM WebSphere Process Server, Apache Tuscany, and a Mobile Backend for Shutterfly. He also co-authored Tuscany SCA in Action. He quickly fell in love with Node.js technology and the great community around it. He appreciates Node.js for its flexibility and productivity to mash up various backend systems and expose APIs in a much simpler way. 
 
 There will also be open mic time give attendees a couple of minutes to talk to the entire group. This is the time to debut a new project, announce upcoming events or let people know they're hiring.
 
