@@ -46,4 +46,5 @@ You can register for the event and see the schedule [here](https://www.meetup.co
 
 ## What's Next?
 
+- Check out upcoming HackerJS NodeJS & JavaScript Meetup [dates](https://www.meetup.com/HackerJS/)
 - Visit the [LoopBack 4](http://v4.loopback.io/) homepage to learn more about the framework. 
