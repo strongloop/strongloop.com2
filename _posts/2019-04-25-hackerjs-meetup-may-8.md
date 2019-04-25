@@ -26,7 +26,7 @@ HackerJS is a NodeJS & JavaScript community meetup group that connects on the se
 
 Save the date for Wednesday, May 8, 2019 from 6:30pm - 9pm!
 
-Our speakers include folsk from NodeSource and IBM:
+Our speakers include folks from NodeSource and IBM:
 
 - **Liz Parody**, Developer Relations Manager at NodeSource.
 
