@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Join Us at the Hacker Dojo for the HackerJS Meetup!
-date: 2019-04-30
+date: 2019-04-25
 author: Dave Whiteley
 permalink: /strongblog/hackerjs-meetup-may-8/
 categories:
