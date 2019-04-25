@@ -8,7 +8,7 @@ categories:
   - Community
   - Events
   - LoopBack
-published: false
+published: true
 ---
 
 ## Come join us and other developers to discuss NodeJS & JavaScript!
