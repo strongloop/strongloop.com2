@@ -26,13 +26,25 @@ HackerJS is a NodeJS & JavaScript community meetup group that connects on the se
 
 Save the date for Wednesday, May 8, 2019 from 6:30pm - 9pm!
 
-Our speakers include:
+Our speakers include folsk from NodeSource and IBM:
 
 - **Liz Parody**, Developer Relations Manager at NodeSource.
+
+<p align="center"> 
+<img src="https://strongloop.com/blog-assets/2019/05/liz.png" alt="Liz Parody" style="width: 100px"/>
+</p>
+
+https://slack-imgs.com/?c=1&url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FC4E03AQHJJKdRQepHZA%2Fprofile-displayphoto-shrink_800_800%2F0%3Fe%3D1561593600%26v%3Dbeta%26t%3Dzio7TL_3W5DntDjTgaSMPPIIWfCQ_MS6-my4sdgKDAI
+
+Topic TBD.
 
 Liz is a self-taught Software Engineer focused on JavaScript, and Developer Relations Manager at NodeSource. She organizes different community events such as JSConf Colombia, Pioneras Developers, Startup Weekend and has been a speaker at EmpireJS, MedellinJS, PionerasDev, and GDG. She loves sharing knowledge, promoting JavaScript and Node.js ecosystem and participating in key tech events and conferences to enhance her knowledge and network.
 
 - **Raymond Feng**, Architect for LoopBack and API Connect at IBM.
+
+<p align="center"> 
+<img src="https://strongloop.com/blog-assets/2019/05/raymond.png" alt="Raymond Feng" style="width: 100px"/>
+</p>
 
 "Building APIs at Warp Speed with LoopBack" - It’s easy to start developing in Node.js, but you will face challenges as your API grows with more modules, components, developers, teams, and releases. Raymond will share experiences in building LoopBack 4 with TypeScript and illustrate techniques, tools, and patterns proven to facilitate developing Node.js projects. He will demonstrate how LoopBack 4 builds an extensible and composable foundation to help you create open APIs or applications that are positioned to scale in various perspectives - all at warp speed!
 
