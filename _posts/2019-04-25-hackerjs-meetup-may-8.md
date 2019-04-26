@@ -34,7 +34,7 @@ Our speakers include folks from NodeSource and IBM:
 <img src="https://strongloop.com/blog-assets/2019/04/liz.png" alt="Liz Parody" style="width: 200px"/>
 </p>
 
-Topic TBD.
+"New and Exciting Features to Land In Node.js 12 " - In the last few weeks, Node.js had big changes: Node.js 6 “Boron” moved to End-of-Life on April 30th and Node.js 12, scheduled to begin Long-Term Stable (LTS) phase in October, was released. The current latest LTS release line, Node.js 10 “Dubnium,” will remain in LTS maintenance mode until April, 2020. In this meetup, we will cover the new features included in the latest release, as well as reviewing the reasons why you should plan to upgrade and best practices for updating to a newer version of Node.js. 
 
 Liz is a self-taught Software Engineer focused on JavaScript, and Developer Relations Manager at NodeSource. She organizes different community events such as JSConf Colombia, Pioneras Developers, Startup Weekend and has been a speaker at EmpireJS, MedellinJS, PionerasDev, and GDG. She loves sharing knowledge, promoting JavaScript and Node.js ecosystem and participating in key tech events and conferences to enhance her knowledge and network.
 
