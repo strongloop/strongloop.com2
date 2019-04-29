@@ -277,7 +277,7 @@ Then we can try to get information for the character. Open `get /character/{id}`
 
 In this episode, we covered the how to create simple APIs. You can do the same to create a start point for your own project, for example, a student registration system which has a `student` model with properties like `studentId`, `name`, `major`, and `course`.
 
-On the other hand, you have the freedom to choose any database you want. LB4 supports most databases very well. [Here](https://loopback.io/doc/en/lb4/soap-calculator-tutorial-add-datasource.html) is a example that uses SOAP webservices as datasource.
+On the other hand, you have the freedom to choose any database you want. LB4 supports most databases very well. [Here](https://loopback.io/doc/en/lb4/soap-calculator-tutorial-add-datasource.html) is an example that uses SOAP webservices as datasource.
 
 ### What's Next?
 
