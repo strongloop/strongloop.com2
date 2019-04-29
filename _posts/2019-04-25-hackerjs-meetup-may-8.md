@@ -11,7 +11,7 @@ categories:
 published: true
 ---
 
-## Come join us and other developers to discuss NodeJS & JavaScript!
+### Come join us and other developers to discuss NodeJS & JavaScript!
 
 Near Santa Clara, California? Want to brush up on your Node and JS skills? Free on the evening of Wednesday, May 8? Then we have an event we'd like to tell you about!
 
@@ -52,11 +52,11 @@ There will also be open mic time give attendees a couple of minutes to talk to t
 
 The meetup will be held at the Hacker Dojo, 3350 Thomas Rd #150 in Santa Clara, CA. There will also be some snacks and swag on hand, as well as a great chance to network with like-minded folks. 
 
-## Reserve your spot!
+### Reserve your spot!
 
 You can register for the event and see the schedule [here](https://www.meetup.com/HackerJS/events/260257127/?rv=ea2_v2)!
 
-## What's Next?
+### What's Next?
 
 - Check out upcoming HackerJS NodeJS & JavaScript Meetup [dates](https://www.meetup.com/HackerJS/).
 - Visit the [LoopBack 4](http://v4.loopback.io/) homepage to learn more about the framework. 
