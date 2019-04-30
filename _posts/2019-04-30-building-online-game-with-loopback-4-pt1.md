@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Building Online Game With LoopBack 4 (Part 1)
-date: 2019-05-01
+title: Building and Online Game With LoopBack 4 (Part 1)
+date: 2019-04-30
 author: Wenbo Sun
 permalink: /strongblog/building-online-game-with-loopback-4-pt1/
 categories:
   - How-To
   - LoopBack
-published: false  
+published: true  
 ---
 
 ## Part 1: Building a Simple LoopBack Project With MongoDB  
@@ -22,7 +22,7 @@ In this series, I'm going to do exactly that! Join me as I create an API web gam
 
 <!--more-->
 
-The main purpose of this series is to help you learn LoopBack 4 and how to use it to easily build your own API and web project. We'll do so by creating a new project I'm working on: an online web text-based adventure game. In it, users can create their own accounts to build characters, fight monsters and find treasures. Users will be able to control their characters to take a variety of actions: attacking enemies, casting spells, and getting loot. This game should also allow multiple players login and play with their friends.
+The main purpose of this series is to help you learn LoopBack 4 and how to use it to easily build your own API and web project. We'll do so by creating a new project I'm working on: an online web text-based adventure game. In this game, you can create your own account to build characters, fight monsters and find treasures. You will be able to control your character to take a variety of actions: attacking enemies, casting spells, and getting loot. This game should also allow multiple players to log in and play with their friends.
 
 Some brief background on myself, first. I graduated from college last year. I don't have any background on web or game development. I am sure most of you have better understanding than me on those fields. If I can do this, you can do it too - perhaps even better!
 
@@ -38,7 +38,7 @@ In this series, my goals are to build the following functionality into the game:
 
 * The ability for users to create their own character and customize their character.
 * The ability for users to equip their character with weapon, armor, and skill.
-* Establish basic functionality for the game: attack, defence, and cast spell.
+* Establish basic functionality for the game: attack, defend, and cast spells.
 * User authorization and role-based access control.
 * The ability for multiple users login and play at the same time.
 * User Interface (UI).
@@ -48,7 +48,7 @@ This is a diagram for the relationships between `character`, `weapon`, `armor`, 
 
 ![relations](/blog-assets/2019/05/my-first-api-p1-models.png)
 
-We will only cover `character` model in this episode.
+In this first part of the series, we will cover `character` model.
 
 You can check my code [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part1) for this episode.
 
@@ -92,7 +92,7 @@ There are four important components in a LB4 project: Model, Datasource, Reposit
 
 ### Model
 
-Model is like the class in Java or a table in relational database. It is an entity with one or more properties. A model may also have relationships with other models. For example, a `student` model could have properties like `studentID`, `name`, and `GPA`. It may also have one or more entity of `course` model and belong to a `school` model.
+A model is like the class in Java or a table in relational database. It is an entity with one or more properties. A model may also have relationships with other models. For example, a `student` model could have properties like `studentID`, `name`, and `GPA`. It may also have one or more entity of `course` model and belong to a `school` model.
 
 We will delve more deeply into the model relationship in next blog. In this episode let's simply create a `character` model first. The `character` model has following properties:
 
@@ -263,6 +263,7 @@ Try http://[::1]:3000/ping
 Go to [http://[::1]:3000](http://[::1]:3000) and open explorer. You will see this:
 
 ![explorer](/blog-assets/2019/05/my-first-api-p1-api-explorer.png)
+
 This shows the basic APIs we just created.
 
 Now let's try to create a character. Open `post /character` and click "try it out". You only need to input a name for character, so you can leave the others blank.
