@@ -10,11 +10,24 @@ categories:
 published: false
 ---
 
-April was a very productive month for the team! We now support Node.js 12.0.0, we had a spike on unique and foreign key constraints, documented some limitations concerning HasMany/BelongsTo/HasOne relations for NoSQL databases, introduced a new command for discovering models, added a new decorator to resolve/configure a binding, add basic life cycle support for artifacts, added decorators and helper functions for the extension point/extensions pattern, added some documentation on how to work with Express middleware, implemented a booter component for booting LoopBack 3 applications on a LoopBack 4 project, and added an authentication strategy interface and extension point to which contributed authentication strategies must register themselves as an extension. We also had time to fix bugs and make improvements to some product features, connectors, and our CI build process. Read more to see the details of our achievements in April.
+April was a very productive month for the team!
+
+Here are the main items we delivered:
+
+* architectural improvements: lifecycle, extension/extension points, authentication architecture
+* model relation referential integrity: spike + documentation updates
+* model discovery
+* laying down the groundwork to support migration (from LB3 to LB4)
+* documentation on how to work with Express middleware
+* CI build process enhancements including Node.js 12.0
+
+ Read more to see the details of our achievements in April.
+
+<!--more-->
 
 ## LoopBack 2.x reached end of life
 
-After almost 5 years since the initial release, LoopBack version 2 has reached end of life and will not receive any new bug fixes. Specifically, no security vulnerabilities will be fixed in this version going forward. If you haven't do so yet, then you should migrate all projects running on LoopBack 2 to a newer framework version as soon as possible.
+After almost 5 years since the initial release, LoopBack version 2 has reached end of life and will not receive any new bug fixes. Specifically, no security vulnerabilities will be fixed in this version going forward. If you haven't do so yet, then you should migrate all projects running on LoopBack 2 to a newer framework version as soon as possible. See [LoopBack 3 Receives Extended Long Term Support](https://strongloop.com/strongblog/lb3-extended-lts/).
 
 ## Spike on UNIQUE and FOREIGN KEY Constraints
 
@@ -22,9 +35,9 @@ Relations like HasMany, HasOne and BelongsTo depend on the underlying database t
 
 Ideally, we want developers to include any additional constraints in the definition of models and properties, and have our connectors translate these constraints to database-specific setup instruction as part of schema migration.
 
-Historically, LoopBack did provide some level of support for indexes and foreign keys. Unfortunately, this was implemented at connector level and each connector provided a slighly different flavor.
+Historically, LoopBack did provide some level of support for indexes and foreign keys. Unfortunately, this was implemented at connector level and each connector provided a slightly different flavor.
 
-To improve this situation, we started with a small research on the current status of support in different connectors and proposed a new definition syntax that will become a new standard for LoopBack models.
+To improve this situation, we started with some research on the current status of support in different connectors and proposed a new definition syntax that will become a new standard for LoopBack models.
 
 For example, a HasOne relation needs to define a UNIQUE index and a FOREIGN KEY constraint for the property storing relational link. The proposed syntax makes this very easy to express directly in your TypeScript source code:
 
@@ -101,10 +114,6 @@ We added a new section [Working with Express middleware](https://loopback.io/doc
 
 - To allow the TypeScript compiler to catch even more bugs for us, we have enabled the following additional checks: `noImplicitThis`, `alwaysStrict` and `strictFunctionTypes`, see [PR#2704](https://github.com/strongloop/loopback-next/pull/2704). This exercise discovered few problems in our current codebase, the non-trivial ones were fixed by standalone pull requests [PR#2733](https://github.com/strongloop/loopback-next/pull/2733), [PR#2711](https://github.com/strongloop/loopback-next/pull/2711) and [PR#2728](https://github.com/strongloop/loopback-next/pull/2728).
 
-  Please note that projects scaffolded by our `lb4` tool are using `@loopback/build` and our shared `tsconfig.json` by default. As a result, these projects may start failing to compile if they are violating any of the newly enabled checks.
-
-  We don't consider this as a change that would require semver-major release, because new compilation errors are regularly introduced by new semver-minor releases of TypeScript too.
-
 - Fixed CI for loopback-connector-mongodb. See [#503](https://github.com/strongloop/loopback-connector-mongodb/issues/503)
 
 - Fixed CI for loopback-connector-couchdb2. See [#60](https://github.com/strongloop/loopback-connector-couchdb2/issues/60) 
@@ -117,7 +126,7 @@ The component offers two modes to mount your LoopBack 3 application: the full ap
 
 To see how to use the component, see [Boot and Mount a LoopBack 3 application](https://loopback.io/doc/en/lb4/Boot-and-Mount-a-LoopBack-3-application.html).
 
-## Authentication and Authorization
+## Authentication
 
 To support multiple authentication strategies in the revised [authentication system](https://github.com/strongloop/loopback-next/blob/master/packages/authentication/docs/authentication-system.md) in `@loopback/authentication` that we started last month, we introduced:
 
@@ -168,7 +177,7 @@ To support multiple authentication strategies in the revised [authentication sys
 - We fixed our CI failing tests in Cloudant and MongoDB connectors to have green
 builds on master. The Cloudant fixes required changes in [Juggler](https://github.com/strongloop/loopback-datasource-juggler/pull/1720) and [Cloudant](https://github.com/strongloop/loopback-connector-couchdb2/pull/59) for Cloudant/CouchDB connectors. See [PR#505](https://github.com/strongloop/loopback-connector-mongodb/pull/505) for the MongoDB fix. We aim to remove unneccessary MongoDB downstream builds in [Issue#509](https://github.com/strongloop/loopback-connector-mongodb/issues/509).
 
-- In order to address coercion of deeply nested primitive datatypes (Number, Date etc.) as well as `Decimal128` MongoDB type, we've made some fixes in both Juggler and MongoDB connector. These changes address coercion of the nested properties on Create and Update operations. See [PR#501](https://github.com/strongloop/loopback-connector-mongodb/pull/501) and [PR#1702](https://github.com/strongloop/loopback-datasource-juggler/pull/1702) for the details. Unfortunately, a regression was introduced with Juggler PR#1702, and [PR#1726](https://github.com/strongloop/loopback-datasource-juggler/pull/1726) aims to fix it.
+- In order to address coercion of deeply nested primitive datatypes (Number, Date etc.) as well as `Decimal128` MongoDB type, we've made some fixes in both Juggler and MongoDB connector. These changes address coercion of the nested properties on Create and Update operations. See [PR#501](https://github.com/strongloop/loopback-connector-mongodb/pull/501) and [PR#1702](https://github.com/strongloop/loopback-datasource-juggler/pull/1702) for the details. Unfortunately, a regression was introduced with Juggler [PR#1702](https://github.com/strongloop/loopback-datasource-juggler/pull/1702), and [PR#1726](https://github.com/strongloop/loopback-datasource-juggler/pull/1726) aims to fix it.
 
 ## Node.js 12
 
