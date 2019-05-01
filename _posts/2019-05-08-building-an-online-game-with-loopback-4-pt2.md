@@ -301,7 +301,7 @@ Then add following code after those auto-generated properties.
 
 ```ts
   @belongsTo(() => Character)
-    characterId: number;
+    characterId: string;
 ```
 This give `weapon` another property `characterId` means which character does this weapon belong to. It's similar to the foreign key in relational database.
 
