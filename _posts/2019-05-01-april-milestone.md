@@ -12,12 +12,13 @@ published: false
 
 April was a very productive month for the team, we were focused on the following areas:
 
-* Authentication
-* Basic Life Cycle Support
 * Strong referential integrity for relations
-* Exposing LoopBack 3 applications in LoopBack 4 projects
-* Adding more architectural patterns to support extensions
 * Model discovery
+* Basic Life Cycle Support
+* Adding more architectural patterns to support extensions
+* Authentication
+* Node 12 is now officially supported by LoopBack 4
+* Exposing LoopBack 3 applications in LoopBack 4 projects
 
 Besides the items above, we landed several additional improvements. Keep reading to learn more details.
 
@@ -100,15 +101,27 @@ To add a feature to the framework and allow it to be extended, we divide the res
 
 See [Extension point and extensions](https://loopback.io/doc/en/lb4/Extension-point-and-extensions.html).
 
+## Authentication
+
+To support multiple authentication strategies in the revised [authentication system](https://github.com/strongloop/loopback-next/blob/master/packages/authentication/docs/authentication-system.md) in `@loopback/authentication` that we started last month, we introduced:
+
+- an authentication strategy interface that contributed authentication strategies must implement
+- an authentication strategy extension point to which contributed authentication strategies must register themselves as an extension
+- documentation demonstrating how a contributed authentication strategy implements the authentication strategy interface and registers itself as an extension of the extension point, how a custom sequence is defined to introduce the authentication action, how the authentication action calls the authentication strategy provider to resolve a strategy by name, and how a controller method is decorated with the `@authenticate('strategy_name')` decorator to define an endpoint the requires authentication.
+
+## Node.js 12
+
+With Node.js 12.0.0 officially released (see [Introducing Node.js 12](https://medium.com/@nodejs/introducing-node-js-12-76c41a1b3f3f)), we are investigating effort required to support this new Node.js version.
+
+LoopBack 4 has been already updated for Node.js 12.0.0, we had to tweak few places in `loopback-datasource-juggler` to make our test suite pass on the new runtime version - see [PR#1728](https://github.com/strongloop/loopback-datasource-juggler/pull/1728).
+
+LoopBack 3 core packages `loopback` and `strong-remoting` work on Node.js 12.0.0 out of the box, `loopback-datasource-juggler` version 3 was fixed [PR#1729](https://github.com/strongloop/loopback-datasource-juggler/pull/1729).
+
+In the next weeks and months, we are going to check our connectors and other LoopBack 3 packages like `loopback-cli`. If all goes well, then all LoopBack components and connectors will support Node.js 12 by the time it enters LTS mode in October this year.
+
 ## Working with Express Middleware
 
 We added a new section [Working with Express middleware](https://loopback.io/doc/en/lb4/Sequence.html#working-with-express-middleware) to describe the differences between LoopBack REST layer and Express middleware and explain how to map different kinds of Express middleware to LoopBack concepts and APIs.
-
-## Build Tools
-
-- To allow the TypeScript compiler to catch even more bugs for us, we have enabled the following additional checks: `noImplicitThis`, `alwaysStrict` and `strictFunctionTypes`, see [PR#2704](https://github.com/strongloop/loopback-next/pull/2704). This exercise discovered few problems in our current codebase, the non-trivial ones were fixed by standalone pull requests [PR#2733](https://github.com/strongloop/loopback-next/pull/2733), [PR#2711](https://github.com/strongloop/loopback-next/pull/2711) and [PR#2728](https://github.com/strongloop/loopback-next/pull/2728).
-
-  Please note that projects scaffolded by our `lb4` tool are using `@loopback/build` and our shared `tsconfig.json` by default. As a result, these projects may start failing to compile if they are violating any of the newly enabled checks.
 
 ## Migration from LoopBack 3 to LoopBack 4
 
@@ -118,13 +131,11 @@ The component offers two modes to mount your LoopBack 3 application: the full ap
 
 To see how to use the component, see [Boot and Mount a LoopBack 3 application](https://loopback.io/doc/en/lb4/Boot-and-Mount-a-LoopBack-3-application.html).
 
-## Authentication
+## Build Tools
 
-To support multiple authentication strategies in the revised [authentication system](https://github.com/strongloop/loopback-next/blob/master/packages/authentication/docs/authentication-system.md) in `@loopback/authentication` that we started last month, we introduced:
+- To allow the TypeScript compiler to catch even more bugs for us, we have enabled the following additional checks: `noImplicitThis`, `alwaysStrict` and `strictFunctionTypes`, see [PR#2704](https://github.com/strongloop/loopback-next/pull/2704). This exercise discovered few problems in our current codebase, the non-trivial ones were fixed by standalone pull requests [PR#2733](https://github.com/strongloop/loopback-next/pull/2733), [PR#2711](https://github.com/strongloop/loopback-next/pull/2711) and [PR#2728](https://github.com/strongloop/loopback-next/pull/2728).
 
-- an authentication strategy interface that contributed authentication strategies must implement
-- an authentication strategy extension point to which contributed authentication strategies must register themselves as an extension
-- documentation demonstrating how a contributed authentication strategy implements the authentication strategy interface and registers itself as an extension of the extension point, how a custom sequence is defined to introduce the authentication action, how the authentication action calls the authentication strategy provider to resolve a strategy by name, and how a controller method is decorated with the `@authenticate('strategy_name')` decorator to define an endpoint the requires authentication.
+  Please note that projects scaffolded by our `lb4` tool are using `@loopback/build` and our shared `tsconfig.json` by default. As a result, these projects may start failing to compile if they are violating any of the newly enabled checks.
 
 ## Bug Fixes / Improvements
 
@@ -170,16 +181,6 @@ To support multiple authentication strategies in the revised [authentication sys
 builds on master. The Cloudant fixes required changes in [Juggler](https://github.com/strongloop/loopback-datasource-juggler/pull/1720) and [Cloudant](https://github.com/strongloop/loopback-connector-couchdb2/pull/59) for Cloudant/CouchDB connectors. See [PR#505](https://github.com/strongloop/loopback-connector-mongodb/pull/505) for the MongoDB fix. We aim to remove unneccessary MongoDB downstream builds in [Issue#509](https://github.com/strongloop/loopback-connector-mongodb/issues/509).
 
 - In order to address coercion of deeply nested primitive datatypes (Number, Date etc.) as well as `Decimal128` MongoDB type, we've made some fixes in both Juggler and MongoDB connector. These changes address coercion of the nested properties on Create and Update operations. See [PR#501](https://github.com/strongloop/loopback-connector-mongodb/pull/501) and [PR#1702](https://github.com/strongloop/loopback-datasource-juggler/pull/1702) for the details. Unfortunately, a regression was introduced with Juggler [PR#1702](https://github.com/strongloop/loopback-datasource-juggler/pull/1702), and [PR#1726](https://github.com/strongloop/loopback-datasource-juggler/pull/1726) aims to fix it.
-
-## Node.js 12
-
-With Node.js 12.0.0 officially released (see [Introducing Node.js 12](https://medium.com/@nodejs/introducing-node-js-12-76c41a1b3f3f)), we are investigating effort required to support this new Node.js version.
-
-LoopBack 4 has been already updated for Node.js 12.0.0, we had to tweak few places in `loopback-datasource-juggler` to make our test suite pass on the new runtime version - see [PR#1728](https://github.com/strongloop/loopback-datasource-juggler/pull/1728).
-
-LoopBack 3 core packages `loopback` and `strong-remoting` work on Node.js 12.0.0 out of the box, `loopback-datasource-juggler` version 3 was fixed [PR#1729](https://github.com/strongloop/loopback-datasource-juggler/pull/1729).
-
-In the next weeks and months, we are going to check our connectors and other LoopBack 3 packages like `loopback-cli`. If all goes well, then all LoopBack components and connectors will support Node.js 12 by the time it enters LTS mode in October this year.
 
 ## LoopBack 2.x reached end of life
 
