@@ -73,8 +73,8 @@ Models can now be discovered from a supported datasource by running the `lb4 dis
 
 It's often desirable for various types of artifacts to participate in certain life cycles events and perform some related processing. Basic life cycle support introduces these capabilities:
 
-- registration of life cycle observers and actions using context bindings.
-- an `lb4 observer` command to generate life cycle scripts.
+- Registration of life cycle observers and actions using context bindings.
+- An `lb4 observer` command to generate life cycle scripts.
 - Discover and boot life cycle scripts.
 
 See [Life cycle events and observers](https://loopback.io/doc/en/lb4/Life-cycle.html).
@@ -105,12 +105,12 @@ See [Extension point and extensions](https://loopback.io/doc/en/lb4/Extension-po
 
 To support multiple authentication strategies in the revised [authentication system](https://github.com/strongloop/loopback-next/blob/master/packages/authentication/docs/authentication-system.md) in `@loopback/authentication` that we started last month, we introduced:
 
-- an authentication strategy interface that contributed authentication strategies must implement.
-- an authentication strategy extension point to which contributed authentication strategies must register themselves as an extension.
-- documentation demonstrating how a contributed authentication strategy implements the authentication strategy interface and registers itself as an extension of the extension point.
-- documentation demonstrating how a custom sequence is defined to introduce the authentication action,.
-- documentation demonstrating how the authentication action calls the authentication strategy provider to resolve a strategy by name.
-- documentation demonstrating how a controller method is decorated with the `@authenticate('strategy_name')` decorator to define an endpoint the requires authentication.
+- An authentication strategy interface that contributed authentication strategies must implement.
+- An authentication strategy extension point to which contributed authentication strategies must register themselves as an extension.
+- Documentation demonstrating how a contributed authentication strategy implements the authentication strategy interface and registers itself as an extension of the extension point.
+- Documentation demonstrating how a custom sequence is defined to introduce the authentication action,.
+- Documentation demonstrating how the authentication action calls the authentication strategy provider to resolve a strategy by name.
+- Documentation demonstrating how a controller method is decorated with the `@authenticate('strategy_name')` decorator to define an endpoint the requires authentication.
 
 ## Node.js 12
 
