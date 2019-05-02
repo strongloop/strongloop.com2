@@ -14,20 +14,22 @@ April was a very productive month for the team!
 
 Here are the main items we delivered:
 
-* architectural improvements: lifecycle, extension/extension points, authentication architecture
-* model relation referential integrity: spike + documentation updates
-* model discovery
-* laying down the groundwork to support migration (from LB3 to LB4)
-* documentation on how to work with Express middleware
-* CI build process enhancements including Node.js 12.0
+* Spike on UNIQUE and FOREIGN KEY Constraints
+* Documentation on HasMany/BelongsTo/HasOne Relation Limitations for NoSQL Databases
+* Model Discovery
+* Basic Life Cycle Support
+* @inject.binding and Improved @inject.setter Decorators
+* Decorator/Helper Functions for Extension Point/Extensions
+* Documentation on Working with Express Middleware
+* Build Tools improvements
+* Documentation on Migration from LoopBack 3 to LoopBack 4
+* Authentication improvements
+* Node.js 12 support
+* Bug Fixes/Improvement to product features, connectors, and CI  
 
  Read more to see the details of our achievements in April.
 
 <!--more-->
-
-## LoopBack 2.x reached end of life
-
-After almost 5 years since the initial release, LoopBack version 2 has reached end of life and will not receive any new bug fixes. Specifically, no security vulnerabilities will be fixed in this version going forward. If you haven't do so yet, then you should migrate all projects running on LoopBack 2 to a newer framework version as soon as possible. See [LoopBack 3 Receives Extended Long Term Support](https://strongloop.com/strongblog/lb3-extended-lts/).
 
 ## Spike on UNIQUE and FOREIGN KEY Constraints
 
@@ -68,11 +70,11 @@ Please refer to [PR#2712](https://github.com/strongloop/loopback-next/pull/2712)
 
 ## HasMany/BelongsTo/HasOne Relation Limitations for NoSQL Databases
 
-These relations work best with relational databases that support foreign key and unique constraints and attempting to use them with NoSQL databases will lead to unexpected behaviour. Our relation documentation has been updated to reflect these limitations. See [HasMany Relation](https://loopback.io/doc/en/lb4/HasMany-relation.html), [BelongsTo Relation](https://loopback.io/doc/en/lb4/BelongsTo-relation.html), and [HasOne Relation](https://loopback.io/doc/en/lb4/hasOne-relation.html).
+These relations work best with relational databases that support foreign key and unique constraints and attempting to use them with NoSQL databases will lead to unexpected behaviour. Our model relation documentation has been updated to reflect these limitations. See [HasMany Relation](https://loopback.io/doc/en/lb4/HasMany-relation.html), [BelongsTo Relation](https://loopback.io/doc/en/lb4/BelongsTo-relation.html), and [HasOne Relation](https://loopback.io/doc/en/lb4/hasOne-relation.html).
 
 ## Model Discovery
    
-Models can now be discovered from a supported datasource by running the `lb4 discover` command. See [PR#2245](https://github.com/strongloop/loopback-next/pull/2245). This new feature was contributed by the community.
+Models can now be discovered from a supported datasource by running the `lb4 discover` command. See [Discovering models from relational databases](https://loopback.io/doc/en/lb4/Discovering-models.html). This new feature was contributed by the community.
 
 ## Basic Life Cycle Support
 
@@ -113,10 +115,6 @@ We added a new section [Working with Express middleware](https://loopback.io/doc
 ## Build Tools
 
 - To allow the TypeScript compiler to catch even more bugs for us, we have enabled the following additional checks: `noImplicitThis`, `alwaysStrict` and `strictFunctionTypes`, see [PR#2704](https://github.com/strongloop/loopback-next/pull/2704). This exercise discovered few problems in our current codebase, the non-trivial ones were fixed by standalone pull requests [PR#2733](https://github.com/strongloop/loopback-next/pull/2733), [PR#2711](https://github.com/strongloop/loopback-next/pull/2711) and [PR#2728](https://github.com/strongloop/loopback-next/pull/2728).
-
-- Fixed CI for loopback-connector-mongodb. See [#503](https://github.com/strongloop/loopback-connector-mongodb/issues/503)
-
-- Fixed CI for loopback-connector-couchdb2. See [#60](https://github.com/strongloop/loopback-connector-couchdb2/issues/60) 
 
 ## Migration from LoopBack 3 to LoopBack 4
 
@@ -188,6 +186,10 @@ LoopBack 4 has been already updated for Node.js 12.0.0, we had to tweak few plac
 LoopBack 3 core packages `loopback` and `strong-remoting` work on Node.js 12.0.0 out of the box, `loopback-datasource-juggler` version 3 was fixed [PR#1729](https://github.com/strongloop/loopback-datasource-juggler/pull/1729).
 
 In the next weeks and months, we are going to check our connectors and other LoopBack 3 packages like `loopback-cli`. If all goes well, then all LoopBack components and connectors will support Node.js 12 by the time it enters LTS mode in October this year.
+
+## LoopBack 2.x reached end of life
+
+After almost 5 years since the initial release, LoopBack version 2 has reached end of life and will not receive any new bug fixes. Specifically, no security vulnerabilities will be fixed in this version going forward. If you haven't do so yet, then you should migrate all projects running on LoopBack 2 to a newer framework version as soon as possible. See [LoopBack 3 Receives Extended Long Term Support](https://strongloop.com/strongblog/lb3-extended-lts/).
 
 ## Call to Action
 
