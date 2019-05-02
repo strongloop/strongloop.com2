@@ -10,24 +10,16 @@ categories:
 published: false
 ---
 
-April was a very productive month for the team!
+April was a very productive month for the team, we were focused on the following areas:
 
-Here are the main items we delivered:
-
-* Spike on UNIQUE and FOREIGN KEY Constraints
-* Documentation on HasMany/BelongsTo/HasOne Relation Limitations for NoSQL Databases
-* Model Discovery
+* Authentication
 * Basic Life Cycle Support
-* @inject.binding and Improved @inject.setter Decorators
-* Decorator/Helper Functions for Extension Point/Extensions
-* Documentation on Working with Express Middleware
-* Build Tools improvements
-* Documentation on Migration from LoopBack 3 to LoopBack 4
-* Authentication improvements
-* Node.js 12 support
-* Bug Fixes/Improvement to product features, connectors, and CI  
+* Strong referential integrity for relations
+* Exposing LoopBack 3 applications in LoopBack 4 projects
+* Adding more architectural patterns to support extensions
+* Model discovery
 
- Read more to see the details of our achievements in April.
+Besides the items above, we landed several additional improvements. Keep reading to learn more details.
 
 <!--more-->
 
@@ -189,7 +181,7 @@ In the next weeks and months, we are going to check our connectors and other Loo
 
 ## LoopBack 2.x reached end of life
 
-After almost 5 years since the initial release, LoopBack version 2 has reached end of life and will not receive any new bug fixes. Specifically, no security vulnerabilities will be fixed in this version going forward. If you haven't do so yet, then you should migrate all projects running on LoopBack 2 to a newer framework version as soon as possible. See [LoopBack 3 Receives Extended Long Term Support](https://strongloop.com/strongblog/lb3-extended-lts/).
+After almost 5 years since the initial release, LoopBack version 2 has reached end of life and will not receive any new bug fixes. Specifically, no security vulnerabilities will be fixed in this version going forward. If you haven't done so yet, then you should migrate all projects running on LoopBack 2 to a newer framework version as soon as possible. See [LoopBack 3 Receives Extended Long Term Support](https://strongloop.com/strongblog/lb3-extended-lts/).
 
 ## Call to Action
 
