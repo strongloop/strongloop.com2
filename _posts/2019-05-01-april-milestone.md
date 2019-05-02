@@ -108,6 +108,8 @@ We added a new section [Working with Express middleware](https://loopback.io/doc
 
 - To allow the TypeScript compiler to catch even more bugs for us, we have enabled the following additional checks: `noImplicitThis`, `alwaysStrict` and `strictFunctionTypes`, see [PR#2704](https://github.com/strongloop/loopback-next/pull/2704). This exercise discovered few problems in our current codebase, the non-trivial ones were fixed by standalone pull requests [PR#2733](https://github.com/strongloop/loopback-next/pull/2733), [PR#2711](https://github.com/strongloop/loopback-next/pull/2711) and [PR#2728](https://github.com/strongloop/loopback-next/pull/2728).
 
+  Please note that projects scaffolded by our `lb4` tool are using `@loopback/build` and our shared `tsconfig.json` by default. As a result, these projects may start failing to compile if they are violating any of the newly enabled checks.
+
 ## Migration from LoopBack 3 to LoopBack 4
 
 After we implemented [`mountExpressRouter`](https://loopback.io/doc/en/lb4/Routes.html#mounting-an-express-router), we continued on the [Migration epic](https://github.com/strongloop/loopback-next/issues/2479) and implemented a booter component for booting LoopBack 3 applications on a LoopBack 4 project. `Lb3AppBooterComponent` can be used to boot the LoopBack 3 application, convert its Swagger spec into OpenAPI version 3, and mount the LoopBack 3 application on the LoopBack 4 project. 
