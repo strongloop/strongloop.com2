@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 April 2019 Milestone Update
-date: 2019-05-01
+date: 2019-05-03
 author: Dominique Emond
 permalink: /strongblog/april-2019-milestone/
 categories:
@@ -10,7 +10,7 @@ categories:
 published: false
 ---
 
-April was a very productive month for the team, we were focused on the following areas:
+April was a very productive month for the LoopBack team! We focused on the following areas:
 
 * Strong referential integrity for relations
 * Model discovery
@@ -26,7 +26,7 @@ Besides the items above, we landed several additional improvements. Keep reading
 
 ## Spike on UNIQUE and FOREIGN KEY Constraints
 
-Relations like HasMany, HasOne and BelongsTo depend on the underlying database to enforce integrity and referential constraints. At the moment, LoopBack assumes those constraints are either already defined (when working with existing database schema) or created manually by the user (when creating schema from LoopBack models). This manual step is very cumbersome. Secondly, the database migration provided by LoopBack does not provide any information about such step and thus it's easy for inexperienced users to unknowingly create database schema allowing race conditions and creating room for inconsistency in the stored data.
+Relations like HasMany, HasOne and BelongsTo depend on the underlying database to enforce integrity and referential constraints. At the moment, LoopBack assumes those constraints are either already defined (when working with existing database schema) or created manually by the user (when creating schema from LoopBack models). This manual step is very cumbersome. Secondly, the database migration provided by LoopBack does not provide any information about such steps and thus it's easy for inexperienced users to unknowingly create database schema allowing race conditions and creating room for inconsistency in the stored data.
 
 Ideally, we want developers to include any additional constraints in the definition of models and properties, and have our connectors translate these constraints to database-specific setup instruction as part of schema migration.
 
@@ -73,9 +73,9 @@ Models can now be discovered from a supported datasource by running the `lb4 dis
 
 It's often desirable for various types of artifacts to participate in certain life cycles events and perform some related processing. Basic life cycle support introduces these capabilities:
 
-- registration of life cycle observers and actions using context bindings
-- an `lb4 observer` command to generate life cycle scripts
-- Discover and boot life cycle scripts
+- registration of life cycle observers and actions using context bindings.
+- an `lb4 observer` command to generate life cycle scripts.
+- Discover and boot life cycle scripts.
 
 See [Life cycle events and observers](https://loopback.io/doc/en/lb4/Life-cycle.html).
 
@@ -89,13 +89,13 @@ See [@inject.setter](https://loopback.io/doc/en/lb4/Decorators_inject.html#injec
 
 [Extension Point/extension](https://wiki.eclipse.org/FAQ_What_are_extensions_and_extension_points%3F) is a very powerful design pattern that promotes loose coupling and offers great extensibility. There are many use cases in LoopBack 4 that fit into design pattern. For example:
 
-- `@loopback/boot` uses `BootStrapper` that delegates to `Booters` to handle different types of artifacts
-- `@loopback/rest` uses `RequestBodyParser` that finds the corresponding `BodyParsers` to parse request body encoded in different media types
+- `@loopback/boot` uses `BootStrapper` that delegates to `Booters` to handle different types of artifacts.
+- `@loopback/rest` uses `RequestBodyParser` that finds the corresponding `BodyParsers` to parse request body encoded in different media types.
 - `@loopback/core` uses `LifeCycleObserver` to observe `start` and `stop` events of the application life cycles.
 
 To add a feature to the framework and allow it to be extended, we divide the responsibility into two roles:
 
-- Extension point: it represents a **common** functionality that the framework depends on and interacts with, such as, booting the application, parsing http request bodies, and handling life cycle events. Meanwhile, the extension point also defines contracts for its extensions to follow so that it can discover corresponding extensions and delegate control to them without having to hard code such dependencies.
+- Extension point: it represents a **common** functionality that the framework depends on and interacts with. Examples include booting the application, parsing http request bodies, and handling life cycle events. Meanwhile, the extension point also defines contracts for its extensions to follow so that it can discover corresponding extensions and delegate control to them without having to hard code such dependencies.
 
 - Extensions: they are implementations of **specific** logic for an extension point, such as, a booter for controllers, a body parser for xml, and a life cycle observer to load some data when the application is started. Extensions must conform to the contracts defined by the extension point.
 
@@ -105,15 +105,18 @@ See [Extension point and extensions](https://loopback.io/doc/en/lb4/Extension-po
 
 To support multiple authentication strategies in the revised [authentication system](https://github.com/strongloop/loopback-next/blob/master/packages/authentication/docs/authentication-system.md) in `@loopback/authentication` that we started last month, we introduced:
 
-- an authentication strategy interface that contributed authentication strategies must implement
-- an authentication strategy extension point to which contributed authentication strategies must register themselves as an extension
-- documentation demonstrating how a contributed authentication strategy implements the authentication strategy interface and registers itself as an extension of the extension point, how a custom sequence is defined to introduce the authentication action, how the authentication action calls the authentication strategy provider to resolve a strategy by name, and how a controller method is decorated with the `@authenticate('strategy_name')` decorator to define an endpoint the requires authentication.
+- an authentication strategy interface that contributed authentication strategies must implement.
+- an authentication strategy extension point to which contributed authentication strategies must register themselves as an extension.
+- documentation demonstrating how a contributed authentication strategy implements the authentication strategy interface and registers itself as an extension of the extension point.
+- documentation demonstrating how a custom sequence is defined to introduce the authentication action,.
+- documentation demonstrating how the authentication action calls the authentication strategy provider to resolve a strategy by name.
+- documentation demonstrating how a controller method is decorated with the `@authenticate('strategy_name')` decorator to define an endpoint the requires authentication.
 
 ## Node.js 12
 
 With Node.js 12.0.0 officially released (see [Introducing Node.js 12](https://medium.com/@nodejs/introducing-node-js-12-76c41a1b3f3f)), we are investigating effort required to support this new Node.js version.
 
-LoopBack 4 has been already updated for Node.js 12.0.0, we had to tweak few places in `loopback-datasource-juggler` to make our test suite pass on the new runtime version - see [PR#1728](https://github.com/strongloop/loopback-datasource-juggler/pull/1728).
+LoopBack 4 has been already updated for Node.js 12.0.0. We had to tweak few places in `loopback-datasource-juggler` to make our test suite pass on the new runtime version, which you can learn more about in [PR#1728](https://github.com/strongloop/loopback-datasource-juggler/pull/1728).
 
 LoopBack 3 core packages `loopback` and `strong-remoting` work on Node.js 12.0.0 out of the box, `loopback-datasource-juggler` version 3 was fixed [PR#1729](https://github.com/strongloop/loopback-datasource-juggler/pull/1729).
 
@@ -121,7 +124,7 @@ In the next weeks and months, we are going to check our connectors and other Loo
 
 ## Working with Express Middleware
 
-We added a new section [Working with Express middleware](https://loopback.io/doc/en/lb4/Sequence.html#working-with-express-middleware) to describe the differences between LoopBack REST layer and Express middleware and explain how to map different kinds of Express middleware to LoopBack concepts and APIs.
+We added a new section called [Working with Express middleware](https://loopback.io/doc/en/lb4/Sequence.html#working-with-express-middleware). This describes the differences between LoopBack REST layer and Express middleware and explains how to map different kinds of Express middleware to LoopBack concepts and APIs.
 
 ## Migration from LoopBack 3 to LoopBack 4
 
@@ -135,7 +138,7 @@ To see how to use the component, see [Boot and Mount a LoopBack 3 application](h
 
 - To allow the TypeScript compiler to catch even more bugs for us, we have enabled the following additional checks: `noImplicitThis`, `alwaysStrict` and `strictFunctionTypes`, see [PR#2704](https://github.com/strongloop/loopback-next/pull/2704). This exercise discovered few problems in our current codebase, the non-trivial ones were fixed by standalone pull requests [PR#2733](https://github.com/strongloop/loopback-next/pull/2733), [PR#2711](https://github.com/strongloop/loopback-next/pull/2711) and [PR#2728](https://github.com/strongloop/loopback-next/pull/2728).
 
-  Please note that projects scaffolded by our `lb4` tool are using `@loopback/build` and our shared `tsconfig.json` by default. As a result, these projects may start failing to compile if they are violating any of the newly enabled checks.
+Please note that projects scaffolded by our `lb4` tool are using `@loopback/build` and our shared `tsconfig.json` by default. As a result, these projects may start failing to compile if they are violating any of the newly enabled checks.
 
 ## Bug Fixes / Improvements
 
@@ -143,11 +146,11 @@ To see how to use the component, see [Boot and Mount a LoopBack 3 application](h
 
 - In the spike of the inclusion filter, we realized the importance of supporting cyclic references. 
 
-  For example: 
+For example: 
   
-  Model `CategoryWithRelations` has a property `products` containing an array of model `ProductWithRelations`. `ProductWithRelations` has a property `category` containing `CategoryWithRelations`.
+Model `CategoryWithRelations` has a property `products` containing an array of model `ProductWithRelations`. `ProductWithRelations` has a property `category` containing `CategoryWithRelations`.
 
-  In April we have fixed generating the JSON schema for models with circular dependencies as the pre-work of the inclusion filter. Given the following model definitions:
+In April we fixed generating the JSON schema for models with circular dependencies as the pre-work of the inclusion filter. Given the following model definitions:
   
   ```ts
     @model()
@@ -163,9 +166,9 @@ To see how to use the component, see [Boot and Mount a LoopBack 3 application](h
   }
   ```
   
-  Now you can call `getJsonSchema(Category)` and `getJsonSchema(Product)` to get the JSON schemas without running into an infinite reference error.
+Now you can call `getJsonSchema(Category)` and `getJsonSchema(Product)` to get the JSON schemas without running into an infinite reference error.
 
-- OpenAPI code generation for naming and typing was improved. See [PR#2722](https://github.com/strongloop/loopback-next/pull/2722)
+- OpenAPI code generation for naming and typing was improved. See [PR#2722](https://github.com/strongloop/loopback-next/pull/2722).
 
 - Allow '-' to be used in in path template variable names. See [PR#2724](https://github.com/strongloop/loopback-next/pull/2724).
 
@@ -177,10 +180,9 @@ To see how to use the component, see [Boot and Mount a LoopBack 3 application](h
 
 - Add possibility to configure the foreign key constraint with 2 optional triggers for mysql : onUpdate and onDelete. See [PR#370](https://github.com/strongloop/loopback-connector-mysql/pull/370) provided by the community.
 
-- We fixed our CI failing tests in Cloudant and MongoDB connectors to have green
-builds on master. The Cloudant fixes required changes in [Juggler](https://github.com/strongloop/loopback-datasource-juggler/pull/1720) and [Cloudant](https://github.com/strongloop/loopback-connector-couchdb2/pull/59) for Cloudant/CouchDB connectors. See [PR#505](https://github.com/strongloop/loopback-connector-mongodb/pull/505) for the MongoDB fix. We aim to remove unneccessary MongoDB downstream builds in [Issue#509](https://github.com/strongloop/loopback-connector-mongodb/issues/509).
+- We fixed our CI failing tests in Cloudant and MongoDB connectors to have green builds on master. The Cloudant fixes required changes in [Juggler](https://github.com/strongloop/loopback-datasource-juggler/pull/1720) and [Cloudant](https://github.com/strongloop/loopback-connector-couchdb2/pull/59) for Cloudant/CouchDB connectors. See [PR#505](https://github.com/strongloop/loopback-connector-mongodb/pull/505) for the MongoDB fix. We aim to remove unneccessary MongoDB downstream builds in [Issue#509](https://github.com/strongloop/loopback-connector-mongodb/issues/509).
 
-- In order to address coercion of deeply nested primitive datatypes (Number, Date etc.) as well as `Decimal128` MongoDB type, we've made some fixes in both Juggler and MongoDB connector. These changes address coercion of the nested properties on Create and Update operations. See [PR#501](https://github.com/strongloop/loopback-connector-mongodb/pull/501) and [PR#1702](https://github.com/strongloop/loopback-datasource-juggler/pull/1702) for the details. Unfortunately, a regression was introduced with Juggler [PR#1702](https://github.com/strongloop/loopback-datasource-juggler/pull/1702), and [PR#1726](https://github.com/strongloop/loopback-datasource-juggler/pull/1726) aims to fix it.
+- We've made some fixes in both Juggler and MongoDB connector to address coercion of deeply nested primitive datatypes (Number, Date etc.) as well as `Decimal128` MongoDB type, These changes address coercion of the nested properties on Create and Update operations. See [PR#501](https://github.com/strongloop/loopback-connector-mongodb/pull/501) and [PR#1702](https://github.com/strongloop/loopback-datasource-juggler/pull/1702) for the details. Unfortunately, a regression was introduced with Juggler [PR#1702](https://github.com/strongloop/loopback-datasource-juggler/pull/1702), and [PR#1726](https://github.com/strongloop/loopback-datasource-juggler/pull/1726) aims to fix it.
 
 ## LoopBack 2.x reached end of life
 
