@@ -209,7 +209,7 @@ Don't forget to remove ID from the in-memory database when we call `delete /char
     @param.path.string('id') id: string
   ): Promise<void> {
     //add this line to remove id from in-memory database
-    this.idSetRepository.deleteById(id);
+    await this.idSetRepository.deleteById(id);
     await this.characterRepository.deleteById(id);
   }
 ```
