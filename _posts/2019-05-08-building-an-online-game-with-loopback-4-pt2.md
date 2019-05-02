@@ -83,84 +83,11 @@ Go to `src/controllers/character.controller.ts`. In the `get /characters/{id}` A
 ```
 Then do the same thing for `patch /characters/{id}`, `put /characters/{id}`, and `del /characters/{id}` APIs.
 
-The [uuid](https://www.npmjs.com/package/uuid) can generate 36 digits IDs. But we still need to check if that ID already exists. We will keep all existed IDs in memory so that we don't need to fetch them from database.
+The [uuid](https://www.npmjs.com/package/uuid) can generate 36 digits string IDs. The implementation of uuid library is using some high distinction values (like DNS, local time, IP address etc) as the seed to randomly generate strings to reduce the chance of duplication. We can simply call the function `uuid()` to use this library.
 
-LoopBack4 support in-memory database. There are two advantages to store our IDs in in-memory database:
+Remember how did we generate character ID in last episode? We can do it in a very elegant way by using `default` keyword in `model`.
 
-* It's in memory. So it's fast to fetch data.
-* We can specify a json file to hold data. So when we reboot the application, we can recover the in-memory database from the json file.
-
-The only drawback of this is it will need more time to start the application. This application is like a game server and we don't reboot a server very often, so this drawback is acceptable.
-
-Let's create a model to hold IDs. Run `lb4 model` in your project root.
-
-```
-wenbo:firstgame wenbo$ lb4 model
-? Model class name: idSet
-? Please select the model base class Entity (A persisted model with an ID)
-? Allow additional (free-form) properties? No
-Let's add a property to IdSet
-Enter an empty property name when done
-
-? Enter the property name: id
-? Property type: string
-? Is id the ID property? Yes
-? Is it required?: Yes
-? Default value [leave blank for none]:
-```
-
-Then create another datasource. We will choose `In-memory db` and specify `./src/data/idSet.json` as the file to hold data.
-
-```
-wenbo:firstgame wenbo$ lb4 datasource
-? Datasource name: idSet
-? Select the connector for idSet: In-memory db (supported by StrongLoop)
-? window.localStorage key to use for persistence (browser only):
-? Full path to file for persistence (server only): ./src/data/idSet.json
-   create src/datasources/id-set.datasource.json
-   create src/datasources/id-set.datasource.ts
-   update src/datasources/index.ts
-
-Datasource idSet was created in src/datasources/
-```
-We need to create an empty json file called `idSet.json` in `src/data` manually.
-
-Then create a repository for `idSet` model. We will choose `IdSetDatasource` as datasource.
-
-```
-wenbo:firstgame wenbo$ lb4 repository
-? Please select the datasource IdSetDatasource
-? Select the model(s) you want to generate a repository IdSet
-? Please select the repository base class DefaultCrudRepository (Legacy juggler bridge)
-   create src/repositories/id-set.repository.ts
-   update src/repositories/index.ts
-```
-
-Now we have an in-memory database for IDs. Let's make some changes to controller.
-
-Open `src/controllers/character.controller.ts` and add following imports:
-
-```ts
-import {IdSet} from '../models';
-import {IdSetRepository} from '../repositories';
-import {v4 as uuid} from 'uuid';
-```
-
-The first two lines will import the `idSet` model and repository, so that `characterController` can find them. The third line will import `uuid` so we can use it in our code.
-
-Add following two lines into constructor to indicate this controller is associated with `IdSetRepository` as well:
-
-```ts
-constructor(
-  @repository(CharacterRepository)
-  public characterRepository : CharacterRepository,
-  //add following two lines
-  @repository(IdSetRepository)
-  public idSetRepository : IdSetRepository,
-) {}
-```
-
-Then in the `post /characters' API:
+Open `src/controllers/character.controller.ts` and remove following code from `post /characters` API:
 
 ```ts
 @post('/characters', {
@@ -172,49 +99,36 @@ Then in the `post /characters' API:
   },
 })
 async create(@requestBody() character: Character): Promise<Character> {
-  /**The old way we used in last episode
-    let characterId = 1;
-    while(await this.characterRepository.exists(characterId)){
-      characterId ++;
-    }
+  /**remove this
+  let characterId = 1;
+  while(await this.characterRepository.exists(characterId)){
+    characterId ++;
+  }
+  character.id = characterId;
   */
-
-    //The new way
-    //generate unique characterId with in-memory database
-    let characterId: string = uuid();
-    while(await this.idSetRepository.exists(characterId)){
-      characterId = uuid();
-    }
-    character.id = characterId;
-    let uId : Partial<IdSet> = {};
-    uId.id = characterId;
-    await this.idSetRepository.create(uId);
     return await this.characterRepository.create(character);
 }
 ```
 
-We create a character ID by calling `uuid()`. Then we will check the in-memory database to make sure this ID is unique. If it's unique, we store it into the in-memory database.
-
-Don't forget to remove ID from the in-memory database when we call `delete /characters/{id}`.
+Open `src/models/character.model.ts`, and add follow import. This will import `uuid` so we can use it in our code.
 
 ```ts
-@del('/characters/{id}', {
-    responses: {
-      '204': {
-        description: 'Character DELETE success',
-      },
-    },
-  })
-  async deleteById(
-    @param.path.string('id') id: string
-  ): Promise<void> {
-    //add this line to remove id from in-memory database
-    await this.idSetRepository.deleteById(id);
-    await this.characterRepository.deleteById(id);
-  }
+import {v4 as uuid} from 'uuid';
 ```
 
-That is how we generate UUID for `character`. In following episode, we will generate UUID for other models in the same way.
+Add following line to generate character ID as `default`:
+
+```ts
+  @property({
+    type: 'string',
+    id: true,
+    //add this line
+    default: () => uuid(),
+  })
+  id?: string;
+```
+
+That is how we generate UUID for `character`. We will use the same way to generate UUID for other models later.
 
 ### Model Relations
 
@@ -291,10 +205,11 @@ Then add following code into `character.model.ts` after those auto-generated pro
   skill?: Skill;
 ```
 
-Next, we need to add relationship for `weapon.model.ts` as well. Add this import to the head.
+Next, we need to add relationship for `weapon.model.ts` as well. Add following imports to the head.
 
 ```ts
 import {Character} from './character.model';
+import {v4 as uuid} from 'uuid';
 ```
 
 Then add following code after those auto-generated properties.
@@ -303,7 +218,20 @@ Then add following code after those auto-generated properties.
   @belongsTo(() => Character)
     characterId: string;
 ```
+
 This give `weapon` another property `characterId` means which character does this weapon belong to. It's similar to the foreign key in relational database.
+
+Don't forget to generate UUID for `weapon`:
+
+```ts
+@property({
+  type: 'string',
+  id: true,
+  //add this line
+  default: () => uuid(),
+})
+id?: string;
+```
 
 Do the same thing for `armor.model.ts` and `skill.model.ts`. And our models are all set.
 
@@ -419,7 +347,7 @@ We are not going to cover controller today. Because there is a lot of work to do
 
 ### Applying This to Your Own Project
 
-In this episode, we used a third-party library to generate UUID. You can easily use any external library in you LoopBack 4 project. We also used two different databases. You can always choose different databases based on your project need.
+In this episode, we used a third-party library to generate UUID. You can easily use any external library in you LoopBack 4 project.
 
 On the other hand, we built relations between `character`, `weapon`, `aromr`, and `skill`. In a real world application, most of entities have relationship between each other. You can use LoopBack 4 to easily manage that in your project.
 
