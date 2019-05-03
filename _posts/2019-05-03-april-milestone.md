@@ -7,7 +7,7 @@ permalink: /strongblog/april-2019-milestone/
 categories:
   - Community
   - LoopBack
-published: false
+published: true
 ---
 
 April was a very productive month for the LoopBack team! We focused on the following areas:
@@ -184,7 +184,7 @@ Now you can call `getJsonSchema(Category)` and `getJsonSchema(Product)` to get t
 
 - We've made some fixes in both Juggler and MongoDB connector to address coercion of deeply nested primitive datatypes (Number, Date etc.) as well as `Decimal128` MongoDB type, These changes address coercion of the nested properties on Create and Update operations. See [PR#501](https://github.com/strongloop/loopback-connector-mongodb/pull/501) and [PR#1702](https://github.com/strongloop/loopback-datasource-juggler/pull/1702) for the details. Unfortunately, a regression was introduced with Juggler [PR#1702](https://github.com/strongloop/loopback-datasource-juggler/pull/1702), and [PR#1726](https://github.com/strongloop/loopback-datasource-juggler/pull/1726) aims to fix it.
 
-## LoopBack 2.x reached end of life
+## LoopBack 2.x Reached End of Life
 
 After almost 5 years since the initial release, LoopBack version 2 has reached end of life and will not receive any new bug fixes. Specifically, no security vulnerabilities will be fixed in this version going forward. If you haven't done so yet, then you should migrate all projects running on LoopBack 2 to a newer framework version as soon as possible. See [LoopBack 3 Receives Extended Long Term Support](https://strongloop.com/strongblog/lb3-extended-lts/).
 
