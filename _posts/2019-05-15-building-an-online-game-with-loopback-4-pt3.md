@@ -24,7 +24,7 @@ The main purpose of this series is to help you learn LoopBack 4 and how to use i
 
 ### Previously on Building an Online Game With LoopBack 4
 
-In the last episode, we used a third-party library to generate UUID and built relations between `character`, `weapon`, `aromr`, and `skill`.
+In the last episode, we used a third-party library to generate UUID and built relations between `character`, `weapon`, `armor`, and `skill`.
 
 Here are the previous episodes:
 
@@ -191,7 +191,7 @@ async updateSkill(
 }
 ```
 
-Don't forget when we delete a character, we also need to delete it's `weapon`, `armor`, and `skill`. Open `/src/controllers/character.controller.ts`, add following lines in `del '/characters/{id}` API.
+When we delete a character, we also need to delete it's `weapon`, `armor`, and `skill`. Open `/src/controllers/character.controller.ts`, add following lines in `del '/characters/{id}` API.
 
 ```ts
 @del('/characters/{id}', {
@@ -305,7 +305,7 @@ while(char.currentExp! >= char.nextLevelExp!){
 }
 ```
 
-Then we can update everyting accordingly.
+Then we can update everything accordingly.
 
 ```ts
 char.level! += levels;
