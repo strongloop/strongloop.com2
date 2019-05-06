@@ -11,7 +11,7 @@ categories:
 published: false
 ---
 
-### CJoin us and other developers to discuss NodeJS & JavaScript on June 12!
+### Join us and other developers to discuss NodeJS & JavaScript on June 12!
 
 We're happy to announce the next HackerJS Meetup on June 12, 2019 at Santa Clara's Hacker Dojo. If you are near Santa Clara, California and want to brush up on your Node and JS skills then this ia a great event for you!
 
