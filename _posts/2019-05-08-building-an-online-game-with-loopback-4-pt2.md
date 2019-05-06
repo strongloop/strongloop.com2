@@ -51,7 +51,7 @@ In the last episode, we used a while loop to generate continuous character IDs. 
 
 MongoDB can generate unique IDs for us. You can check more details at [here](https://github.com/strongloop/loopback-next/issues/1875) for how to do that. However, this approach may result in changing a lot of code.
 
-So, We are going to use a third-party library called [uuid](https://www.npmjs.com/package/uuid). It's very easy to use and I think it's a good idea to show you how to use a third-party library in LoopBack 4 project. Run `npm install --save @types/uuid` at your project root to install it.
+So, we are going to use a third-party library called [uuid](https://www.npmjs.com/package/uuid). It's very easy to use and I think it's a good idea to show you how to use a third-party library in LoopBack 4 project. Run `npm install --save @types/uuid` at your project root to install it.
 
 Then go back to `src/models/character.model.ts` and change the type of `id` to string. Because [uuid](https://www.npmjs.com/package/uuid) can only generate string IDs.
 
