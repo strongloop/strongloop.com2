@@ -11,7 +11,7 @@ categories:
 published: false
 ---
 
-### Come join us and other developers to discuss NodeJS & JavaScript!
+### CJoin us and other developers to discuss NodeJS & JavaScript on June 12!
 
 We're happy to announce the next HackerJS Meetup on June 12, 2019 at Santa Clara's Hacker Dojo. If you are near Santa Clara, California and want to brush up on your Node and JS skills then this ia a great event for you!
 
@@ -37,6 +37,13 @@ Amir Jafarian (IBM) & Jacob (https://www.meetup.com/members/115831422/)
 </p>
 
 "Talk 1" and description
+
+'Mashr', a data pipeline framework for Google Cloud Platform 
+
+Mashr:
+Mashr is an easy to use data pipeline framework that orchestrates moving data from external sources into BigQuery. It's meant for small software applications using Google Cloud Platform (GCP) who have their data spread out in a variety of external sources which they want to be able to aggregate and perform analysis on. 
+
+Mashr works by launching a data pipeline with the command 'mashr deploy'. It uses Google Cloud Storage for backup and failover, Google Cloud Functions for loading data into BigQuery, and GCE instances hosting Embulk for plugin based bulk data loading. Mashr provides an easy to use CLI, is built with Node.js and uses Docker to host Embulk on the GCE instances.
 
 bio.
 
