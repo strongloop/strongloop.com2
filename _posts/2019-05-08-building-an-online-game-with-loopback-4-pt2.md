@@ -24,7 +24,7 @@ The main purpose of this series is to help you learn LoopBack 4 and how to use i
 
 ### Previously on Building an Online Game With LoopBack 4
 
-In the previous episode, we have created a foundation for our project. Now we have some basic APIs to create, edit, and delete character.
+In the previous episode, we have created a foundation for our project. Now we have some basic APIs to create, edit, and delete a character.
 
 Here is the previous episode:
 * [Part 1: Building a Simple LoopBack Project With MongoDB](https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/)
@@ -35,7 +35,7 @@ Here is the previous episode:
 
 First, we will use a third-party library in our LoopBack 4 project to generate unique character IDs. Then we will create `weapon`, `armor`, and `skill` models and build relationships between those models.
 
-Loopback 4 support three relations for now:
+Loopback 4 supports three relations for now:
 
 * [HasMany](https://loopback.io/doc/en/lb4/HasMany-relation.html)
 * [BelongsTo](https://loopback.io/doc/en/lb4/BelongsTo-relation.html)
@@ -49,7 +49,7 @@ You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/pa
 
 In the last episode, we used a while loop to generate continuous character IDs. However, that could be disaster in a real world application. Because fetching data from database is expensive. We don't want to do that hundreds times to just find a unique character ID. On the other hand, we don't really need continuous IDs, we only need unique IDs to distinguish characters. So we will use a better approach to generate universally unique IDs (UUID).
 
-We are going to use a third-party library called [uuid](https://www.npmjs.com/package/uuid). Run `npm install --save @types/uuid` in your project root to install it.
+We are going to use a third-party library called [uuid](https://www.npmjs.com/package/uuid). Run `npm install --save @types/uuid` at your project root to install it.
 
 Then go back to `src/models/character.model.ts` and change the type of `id` to string. Because [uuid](https://www.npmjs.com/package/uuid) can only generate string IDs.
 
@@ -85,7 +85,7 @@ Then do the same thing for `patch /characters/{id}`, `put /characters/{id}`, and
 
 The [uuid](https://www.npmjs.com/package/uuid) can generate 36 digits string IDs. The implementation of uuid library is using some high distinction values (like DNS, local time, IP address etc) as the seed to randomly generate strings to reduce the chance of duplication. We can simply call the function `uuid()` to use this library.
 
-Remember how did we generate character ID in last episode? We can do it in a very elegant way by using `default` keyword in `model`.
+Remember how we generated a character ID in the last episode? We can do it in a very elegant way by using `default` keyword in `model`.
 
 Open `src/controllers/character.controller.ts` and remove following code from `post /characters` API:
 
@@ -132,15 +132,15 @@ That is how we generate UUID for `character`. We will use the same way to genera
 
 ### Model Relations
 
-We will create `weapon`, `armor`, and `skill` models. One `character` may have one `weapon`, one `armor`, and one `skill`. It is [HasOne](https://loopback.io/doc/en/lb4/hasOne-relation.html) relationship.
+We will create `weapon`, `armor`, and `skill` models. One `character` may have one `weapon`, one `armor`, and one `skill`. It is a [HasOne](https://loopback.io/doc/en/lb4/hasOne-relation.html) relationship.
 
 ![Models](/blog-assets/2019/05/my-first-api-p2-models.png)
 
-In last episode, we built APIs for `character` in the order of model, datasource, repository, and controller. Now we will do it in the same way.
+In last episode, we built APIs for `character` in the order of model, datasource, repository, and controller. Now we will do it in the same way for the new models.
 
 #### Model
 
-First, we need to create `weapon` model. Is's very similar to what we did in last episode. Run `lb4 model` in project root.
+First, we need to create `weapon` model. It's very similar to what we did in last episode. Run `lb4 model` at project root.
 
 ```
 wenbo:firstgame wenbo$ lb4 model
@@ -219,7 +219,7 @@ Then add following code after those auto-generated properties.
     characterId: string;
 ```
 
-This give `weapon` another property `characterId` means which character does this weapon belong to. It's similar to the foreign key in relational database.
+This gives `weapon` another property `characterId` means which character does this weapon belong to. It's similar to the foreign key in a relational database.
 
 Don't forget to generate UUID for `weapon`:
 
@@ -243,7 +243,7 @@ No need to create new datasource. We can use the MongoDB we created in last epis
 
 #### Repository
 
-Run `lb4 repository` in your project root.
+Run `lb4 repository` at your project root.
 
 ```
 ? Please select the datasource MongoDatasource
@@ -266,7 +266,7 @@ import {WeaponRepository} from './weapon.repository';
 import {SkillRepository} from './skill.repository';
 ```
 
-Add follow code before ther constructor:
+Add follow code before the constructor:
 ```ts
   public armor: HasOneRepositoryFactory<
     Armor,
