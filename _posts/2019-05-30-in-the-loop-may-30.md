@@ -14,13 +14,26 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### New topic
+
+TBA
+
+[READ MORE >>>]()
+
+### Top 10 Open Source Projects To Follow On GitHub
+
+
+### Introducing ASC, the API Specifications Conference
+
+The OpenAPI Initiative announced ASC (the API Specifications Conference) — a new event that embodies its evolution to ensure longevity. 
+
+[READ MORE >>>](https://www.openapis.org/blog/2019/05/08/introducing-asc-the-api-specifications-conference)
+
 ### Top 10 Open Source Projects To Follow On GitHub
 
 Ambika Choudhury looks at the the top open source projects in the GitHub community by the contributor count. 
 
 [READ MORE >>>](https://www.analyticsindiamag.com/top-10-open-source-projects-to-follow-on-github/)
-
-
 
 ## What Next?
 
