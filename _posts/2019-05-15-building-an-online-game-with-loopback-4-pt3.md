@@ -42,7 +42,7 @@ We already have some simple APIs in our project. They are all default CRUD(Creat
 
 * The ability for users to equip their character with weapon, armor, and skill. This function should also be able to allow users to change weapon, armor, and skill for their character. In any cases, we should update `defence` and `attack` accordingly.
 * The ability for users to unequip their character. We also need to update `defence` and `attack`.
-* The ability to levelup a character when it gets enough experience. We should update `currentExp`, `nextLevelExp`, `level`, `maxHealth`, `currentHealth`, `maxMana`, `currentMana`, `attack`, and `defence`.
+* The ability to level up a character when it gets enough experience. We should update `currentExp`, `nextLevelExp`, `level`, `maxHealth`, `currentHealth`, `maxMana`, `currentMana`, `attack`, and `defence`.
 * The ability to check character's `weapon`, `armor`, and `skill` information.
 
 ### Create controller
@@ -260,8 +260,8 @@ async deleteSkill(
 }
 ```
 
-### Levelup Character
-When a character has enough experience, we need to levelup it. In `/src/controllers/update-character.controller.ts`:
+### Level up Character
+When a character has enough experience, we need to level up it. In `/src/controllers/update-character.controller.ts`:
 
 ```ts
 @patch('/updatecharacter/{id}/levelup', {
@@ -294,7 +294,7 @@ async levelUp(@param.path.string('id') id: string): Promise<Character> {
 
 Let's go over this line by line.
 
-If a character just beat a very strong enemy and got a lot of experience, it could levelup more than one time. So the first thing we need to do is figuring out how many times we need to levelup.
+If a character just beat a very strong enemy and got a lot of experience, it could level up more than one time. So the first thing we need to do is figuring out how many times we need to level up.
 
 ```ts
 let levels: number = 0;
