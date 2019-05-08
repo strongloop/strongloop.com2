@@ -14,13 +14,7 @@ published: false
 
 ### Introduction
 
-"Ready to build amazing things?" asks the LoopBack 4 homepage before encouraging you to try the open source framework.
-
-"Try LoopBack 4 now."
-
-In this series, I'm going to do exactly that! Join me as I create an API web game using LoopBack 4.
-
-The main purpose of this series is to help you learn LoopBack 4 and how to use it to easily build your own API and web project. We'll do so by creating a new project I'm working on: an online web text-based adventure game. In this game, you can create your own account to build characters, fight monsters and find treasures. You will be able to control your character to take a variety of actions: attacking enemies, casting spells, and getting loot. This game should also allow multiple players to log in and play with their friends.
+In this series, I'm going to help you learn LoopBack 4 and how to use it to easily build your own API and web project. We'll do so by creating a new project I'm working on: an online web text-based adventure game. In this game, you can create your own account to build characters, fight monsters and find treasures. You will be able to control your character to take a variety of actions: attacking enemies, casting spells, and getting loot. This game should also allow multiple players to log in and play with their friends.
 
 ### Previously on Building an Online Game With LoopBack 4
 
