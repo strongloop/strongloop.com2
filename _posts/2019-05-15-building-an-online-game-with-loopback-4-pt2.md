@@ -18,7 +18,7 @@ In this series, I'm going to help you learn LoopBack 4 and how to use it to easi
 
 ### Previously on Building an Online Game With LoopBack 4
 
-In the previous episode, we have created a foundation for our project. Now we have some basic APIs to create, edit, and delete a character.
+In the previous episode, we created a foundation for our project. Now we have some basic APIs to create, edit, and delete a character.
 
 Here is the previous episode:
 
@@ -42,9 +42,9 @@ You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/pa
 
 ### Universally Unique ID (UUID)
 
-In the last episode, we used a while loop to generate continuous character IDs. However, that could be disaster in a real world application. Because fetching data from database is expensive. We don't want to do that hundreds times to just find a unique character ID. On the other hand, we don't really need continuous IDs, we only need unique IDs to distinguish characters. So we will use a better approach to generate universally unique IDs (UUID).
+In the last episode, we used a while loop to generate continuous character IDs. However, that could be disaster in a real world application. Because fetching data from database is expensive. We don't want to do that hundreds times to just find a unique character ID. On the other hand, we don't really need continuous IDs, just unique IDs to distinguish characters. So we will use a better approach to generate universally unique IDs (UUID).
 
-MongoDB can generate unique IDs for us. You can check more details at [here](https://github.com/strongloop/loopback-next/issues/1875) for how to do that. However, this approach may result in changing a lot of code.
+MongoDB can generate unique IDs for us. You can check more details [here](https://github.com/strongloop/loopback-next/issues/1875) for how to do that. However, this approach may result in changing a lot of code.
 
 So, we are going to use a third-party library called [uuid](https://www.npmjs.com/package/uuid). It's very easy to use and I think it's a good idea to show you how to use a third-party library in LoopBack 4 project. Run `npm install --save @types/uuid` at your project root to install it.
 
@@ -113,7 +113,7 @@ Open `src/models/character.model.ts`, and add follow import. This will import `u
 import {v4 as uuid} from 'uuid';
 ```
 
-Add following line to generate character ID as `default`:
+Add the following line to generate character ID as `default`:
 
 ```ts
   @property({
@@ -129,11 +129,11 @@ That is how we generate UUID for `character`. We will use the same way to genera
 
 ### Model Relations
 
-We will create `weapon`, `armor`, and `skill` models. One `character` may have one `weapon`, one `armor`, and one `skill`. It is a [HasOne](https://loopback.io/doc/en/lb4/hasOne-relation.html) relationship.
+We will create `weapon`, `armor`, and `skill` models. Each `character` may have one `weapon`, one `armor`, and one `skill`. It is a [HasOne](https://loopback.io/doc/en/lb4/hasOne-relation.html) relationship.
 
 ![Models](/blog-assets/2019/05/my-first-api-p2-models.png)
 
-In last episode, we built APIs for `character` in the order of model, datasource, repository, and controller. Now we will do it in the same way for the new models.
+Last episode, we built APIs for `character` in the order of model, datasource, repository, and controller. Now we will do it in the same way for the new models.
 
 #### Model
 
@@ -177,13 +177,13 @@ Enter an empty property name when done
 ? Is it required?: Yes
 ? Default value [leave blank for none]:
 ```
-Do the same thing for `aromor` and `skill`.
+Do the same thing for `armor` and `skill`.
 
 #### Defining `hasOne` Model Relation in Model
 
-Now let's add relationships to `character` model to indicate that a `character` may has one `weapon`, `armor`, and `skill`. You can check [here](https://loopback.io/doc/en/lb4/Relations.html) for more details on model relationship. You can also take a look at the [TodoList tutorial](https://loopback.io/doc/en/lb4/todo-list-tutorial-model.html) to see how did it handle relationship.
+Now let's add relationships to `character` model to indicate that a `character` has one `weapon`, `armor`, and `skill`. You can check [here](https://loopback.io/doc/en/lb4/Relations.html) for more details on model relationship. You can also take a look at the [TodoList tutorial](https://loopback.io/doc/en/lb4/todo-list-tutorial-model.html) to see how it handles a relationship.
 
-Add following imports to the head of `character.model.ts`.
+Add the following imports to the head of `character.model.ts`.
 
 ```ts
 import {Armor} from './armor.model';
@@ -191,7 +191,7 @@ import {Weapon} from './weapon.model';
 import {Skill} from './skill.model';
 ```
 
-Then add following code into `character.model.ts` after those auto-generated properties. That means each `character` may have one `weapon`, `armor`, and `skill`.
+Then add the following code into `character.model.ts` after those auto-generated properties. That means each `character` may have one `weapon`, `armor`, and `skill`.
 
 ```ts
   @hasOne(() => Armor)
@@ -204,21 +204,21 @@ Then add following code into `character.model.ts` after those auto-generated pro
   skill?: Skill;
 ```
 
-Next, we need to add relationship for `weapon.model.ts` as well. Add following imports to the head.
+Next, we need to add a relationship for `weapon.model.ts` as well. Add the following imports to the head.
 
 ```ts
 import {Character} from './character.model';
 import {v4 as uuid} from 'uuid';
 ```
 
-Then add following code after those auto-generated properties.
+Then add this code after those auto-generated properties.
 
 ```ts
   @belongsTo(() => Character)
     characterId: string;
 ```
 
-This gives `weapon` another property `characterId` means which character does this weapon belong to. It's similar to the foreign key in a relational database.
+This gives `weapon` another property `characterId` means identifies the character this weapon belongs to. It's similar to the foreign key in a relational database.
 
 Don't forget to generate UUID for `weapon`:
 
@@ -232,13 +232,13 @@ Don't forget to generate UUID for `weapon`:
 id?: string;
 ```
 
-Do the same thing for `armor.model.ts` and `skill.model.ts`. And our models are all set.
+Do the same thing for `armor.model.ts` and `skill.model.ts`. Now our models are all set.
 
 You can check my code for all models at [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part2/firstgame/src/models).
 
 #### Datasource
 
-No need to create new datasource. We can use the MongoDB we created in last episode.
+There is no need to create new datasource. We can use the MongoDB we created in last episode.
 
 #### Repository
 
@@ -268,6 +268,7 @@ import {SkillRepository} from './skill.repository';
 ```
 
 Add follow code before the constructor:
+
 ```ts
   public armor: HasOneRepositoryFactory<
     Armor,
@@ -285,7 +286,7 @@ Add follow code before the constructor:
   >;
 ```
 
-This means `character` may has one `weapon`, `armor`, and `skill` ID. Then we are able to find the correct entity by that ID.
+This means `character` may have one `weapon`, `armor`, and `skill` ID. Then we are able to find the correct entity by that ID.
 
 Then change the constructor to this:
 
@@ -344,16 +345,16 @@ You can check my code for all repositories at [here](https://github.com/gobackhu
 
 #### Controller
 
-We mentioned the controller earlier. We are not going to cover controller today. Because there is a lot of work to do in controller and I will have a whole episode for that.
+We mentioned the controller earlier. We are not going to cover controller today, because I will have a whole episode focused on the work required (and there is a lot!).
 
 ### Applying This to Your Own Project
 
 In this episode, we used a third-party library to generate UUID. You can easily use any external library in you LoopBack 4 project.
 
-On the other hand, we built relations between `character`, `weapon`, `aromr`, and `skill`. In a real world application, most of entities have relationship between each other. You can use LoopBack 4 to easily manage that in your project.
+We also built relations between `character`, `weapon`, `aromr`, and `skill`. In a real world application, most of entities have relationships between each other. You can use LoopBack 4 to easily manage that in your project.
 
 ### What's Next?
 
-In next episode, we will do a lot of coding in `controller` to create `weapon`, `armor`, `skill` and equip a character with them. Controller is where you achieve most of your project functions and business logic. I am sure we will have a lot of fun in next episode.
+In our next episode, we will do a lot of coding in `controller` to create `weapon`, `armor`, `skill` and equip a character with them. Controller is where you achieve most of your project functions and business logic. I am sure we will have a lot of fun in next episode.
 
 In the meantime, you can learn more about LoopBack in [past blogs](https://strongloop.com/strongblog/tag_LoopBack.html).
