@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building an Online Game With LoopBack 4 (Part 2)
-date: 2019-05-08
+date: 2019-05-15
 author: Wenbo Sun
 permalink: /strongblog/building-an-online-game-with-loopback-4-pt2/
 categories:
@@ -14,24 +14,19 @@ published: false
 
 ### Introduction
 
-"Ready to build amazing things?" asks the LoopBack 4 homepage before encouraging you to try the open source framework.
-
-"Try LoopBack 4 now."
-
-In this series, I'm going to do exactly that! Join me as I create an API web game using LoopBack 4.
-
-The main purpose of this series is to help you learn LoopBack 4 and how to use it to easily build your own API and web project. We'll do so by creating a new project I'm working on: an online web text-based adventure game. In this game, you can create your own account to build characters, fight monsters and find treasures. You will be able to control your character to take a variety of actions: attacking enemies, casting spells, and getting loot. This game should also allow multiple players to log in and play with their friends.
+In this series, I'm going to help you learn LoopBack 4 and how to use it to easily build your own API and web project. We'll do so by creating a new project I'm working on: an online web text-based adventure game. In this game, you can create your own account to build characters, fight monsters and find treasures. You will be able to control your character to take a variety of actions: attacking enemies, casting spells, and getting loot. This game should also allow multiple players to log in and play with their friends.
 
 ### Previously on Building an Online Game With LoopBack 4
 
 In the previous episode, we have created a foundation for our project. Now we have some basic APIs to create, edit, and delete a character.
 
 Here is the previous episode:
+
 * [Part 1: Building a Simple LoopBack Project With MongoDB](https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/)
 
 <!--more-->
 
-### In this episode
+### In This Episode
 
 First, we will use a third-party library in our LoopBack 4 project to generate unique character IDs. Then we will create `weapon`, `armor`, and `skill` models and build relationships between those models.
 
@@ -349,7 +344,7 @@ You can check my code for all repositories at [here](https://github.com/gobackhu
 
 #### Controller
 
-We are not going to cover controller today. Because there is a lot of work to do in controller and I will have a whole episode for that.
+We mentioned the controller earlier. We are not going to cover controller today. Because there is a lot of work to do in controller and I will have a whole episode for that.
 
 ### Applying This to Your Own Project
 
