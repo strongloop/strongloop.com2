@@ -1,3 +1,7 @@
+// Copyright IBM Corp. 2017. All Rights Reserved.
+// This file is licensed under the MIT License.
+// License text available at https://opensource.org/licenses/MIT
+
 $( document ).ready(function() {
 
     // activate tooltips. although this is a bootstrap js function, it must be activated this way in your theme.
