@@ -1,3 +1,7 @@
+// Copyright IBM Corp. 2017. All Rights Reserved.
+// This file is licensed under the MIT License.
+// License text available at https://opensource.org/licenses/MIT
+
 $(document).ready(function() {
   $(".js-body").prepend('<nav class="c-nav js-nav"></nav>');
   $(".js-wrapper").append('<div class="_cover js-cover"></div>');
