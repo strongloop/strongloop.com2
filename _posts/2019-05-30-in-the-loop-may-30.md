@@ -14,11 +14,11 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
-### New topic
+### Programming languages: Why JavaScript developers are choosing TypeScript
 
-TBA
+Liam Tung looks at why TypeScript is exploding.
 
-[READ MORE >>>]()
+[READ MORE >>>](https://www.zdnet.com/article/programming-languages-why-javascript-developers-are-choosing-typescript/)
 
 ### Interceptors Documentation for LoopBack 4 
 
