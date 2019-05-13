@@ -20,8 +20,11 @@ TBA
 
 [READ MORE >>>]()
 
-### Top 10 Open Source Projects To Follow On GitHub
+### Interceptors Documentation for LoopBack 4 
 
+Interceptors documentation is now available on the LoopBack 4 site.
+
+[READ MORE >>>](https://loopback.io/doc/en/lb4/Interceptors.html)
 
 ### Introducing ASC, the API Specifications Conference
 
