@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building an Online Game With LoopBack 4 (Part 2)
+title: Building an Online Game With LoopBack 4 - Generating Universally Unique ID and Managing Models Relationships (Part 2)
 date: 2019-05-15
 author: Wenbo Sun
 permalink: /strongblog/building-an-online-game-with-loopback-4-pt2/
@@ -10,7 +10,7 @@ categories:
 published: false  
 ---
 
-## Part 2: Generating Universally Unique ID and Managing Models Relationships
+## Part 2: Generating Universally Unique IDs and Managing Models Relationships
 
 ### Introduction
 
