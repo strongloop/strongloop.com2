@@ -14,7 +14,7 @@ published: false
 
 ### Introduction
 
-In this series, I'm going to help you learn LoopBack 4 and how to use it to easily build your own API and web project. We'll do so by creating a new project I'm working on: an online web text-based adventure game. In this game, you can create your own account to build characters, fight monsters and find treasures. You will be able to control your character to take a variety of actions: attacking enemies, casting spells, and getting loot. This game should also allow multiple players to log in and play with their friends.
+In this series, I'm going to help you learn how to use LoopBack 4 to easily build your own API and web project. We'll do so by creating a new project I'm working on: an online web text-based adventure game. In this game, you can create your own account to build characters, fight monsters and find treasures. You will be able to control your character to take a variety of actions: attacking enemies, casting spells, and getting loot. This game should also allow multiple players to log in and play with their friends.
 
 ### Previously on Building an Online Game With LoopBack 4
 
@@ -133,7 +133,7 @@ We will create `weapon`, `armor`, and `skill` models. Each `character` may have 
 
 ![Models](/blog-assets/2019/05/my-first-api-p2-models.png)
 
-Last episode, we built APIs for `character` in the order of model, datasource, repository, and controller. Now we will do it in the same way for the new models.
+Last episode, we built APIs for `character` in the order of model, datasource, repository, and controller. Now we will do it in the same way for `weapon`, `armor`, and `skill`. Note that we are not going to cover controller today, because I will have a whole episode focused on the work required (and there is a lot!).
 
 #### Model
 
@@ -342,10 +342,6 @@ import {CharacterRepository} from './character.repository';
 Then do the same thing for `armor.repository.ts` and `skill.repository.ts`. And our repositories are all set.
 
 You can check my code for all repositories at [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part2/firstgame/src/repositories).
-
-#### Controller
-
-We mentioned the controller earlier. We are not going to cover controller today, because I will have a whole episode focused on the work required (and there is a lot!).
 
 ### Applying This to Your Own Project
 
