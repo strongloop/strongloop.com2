@@ -21,9 +21,9 @@ Last month we implemented the strategy resolver, JWT strategy class and authenti
 * `GET /Users/me` display the logged in user of the application
 
 The following picture describes how the authentication mechanism works:
-
+<p align="center"> 
 <img src="https://strongloop.com/blog-assets/2019/01/auth_endpoints.png" alt="authentication endpoints in the example" style="width: 800px"/>
-
+</p>
 This month our discussion focused on dividing the responsibilities among controller, repository and services/utilities. 
 
 The login related logic should be extracted into a service which could be shared among different clients, like REST, gRPC and WebSocket. Those logic include taking in credentials, verifying users, generating and decoding access token. The login service receives User's repository via DI. As the first implementation, we simply keep them as utils. They will be refactored into service in story [Refactor authentication util functions into a service](https://github.com/strongloop/loopback4-example-shopping/issues/40)
