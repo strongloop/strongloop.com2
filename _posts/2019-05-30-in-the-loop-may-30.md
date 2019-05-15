@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Building the next generation of the Twitter API
+
+Ian Cairns shares the first stage of the plan to build the next generation of the Twitter API.  
+
+[READ MORE >>>](https://blog.twitter.com/developer/en_us/topics/tools/2019/building-the-next-generation-of-the-twitter-api.html)
+
 ### Programming languages: Why JavaScript developers are choosing TypeScript
 
 Liam Tung looks at why TypeScript is exploding.
