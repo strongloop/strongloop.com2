@@ -10,7 +10,7 @@ categories:
   - LoopBack
   - Node DevOps
 ---
-**Note:** Updated with curreny link for badges.
+**Note:** Updated with current link for badges.
 
 You may have heard about the IBM Open Badge Program. You probably know that it is a new and innovative way to display your skills, achievements and contributions online, so you can share them on Linkedin, Facebook and Twitter. But did you know that the program also has badges to represent your skills with StrongLoop&#8217;s LoopBack framework and Node.js?
 
