@@ -12,9 +12,9 @@ categories:
 The LoopBack framework is a powerful and flexible tool that can be used in many different ways. Some of these ways lead to better results while others can create headaches later in the project lifecycle. To make it easy for LoopBack users to do the right thing in their projects, we have created Best Practice guides.
 
 <!--more-->
-
+<p align="center"> 
 <img src="https://strongloop.com/blog-assets/2018/11/LoopBack-4-Guidelines.png" alt="LoopBack 4 Guidelines" style="width: 300px"/>
-
+</p>
 For example, LoopBack users frequently raise the topic of automated testing. Unfortunately, testing was not considered in the design of pre-v4 versions. As a result, writing tests was cumbersome. The lack of official guidance and documentation did not help either.
 
 When we started working on LoopBack 4, one of our design priorities was enabling application developers to follow industry best practices, from test-driven development to user-centric/design-first approach to building APIs. As part of this effort, we wrote several documents to educate LoopBack developers about our recommended best practices.
