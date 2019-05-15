@@ -7,7 +7,7 @@ permalink: /strongblog/building-an-online-game-with-loopback-4-pt2/
 categories:
   - How-To
   - LoopBack
-published: false  
+published: true  
 ---
 
 ## Part 2: Generating Universally Unique IDs and Managing Models Relationships
