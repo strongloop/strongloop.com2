@@ -14,7 +14,9 @@ published: true
 The Toronto Cloud Integration Meetup hosted an event on Tuesday, February 5, 2019: "Quickly Build APIs with Existing Services and Data Using LoopBack!" Since not everyone is local, we filmed the meetup so we could share it with our community.
 
 <!--more-->
+<p align="center"> 
 <img src="https://strongloop.com/blog-assets/2019/02/meetup-feb-5-video-still.png" alt="Meetup - Quickly Build APIs with Existing Services and Data Using LoopBack!" style="width: 350px"/>
+</p>  
 
 Our goal was to bring awareness of LoopBack to the Node.js community in Toronto. We also brought snacks and swag to share. Here's a snapshot of what was covered.
 
