@@ -17,7 +17,9 @@ The event, hosted at the Vancouver Convention Centre in British Columbia, Canada
 The venue rests in Vancouver’s idyllic waterfront, with water, forest and mountain providing beautiful scenery to engage visitors. And while the majestic beauty was a nice distraction, it was Node.js and JavaScript that the attendees came to experience. And there was a bounty!
 
 <!--more-->
+<p align="center"> 
 <img src="https://strongloop.com/blog-assets/2018/09/node+js-interactive.png" alt="Node+JS Interactive 2018" style="width: 400px"/>
+</p>  
 
 While you can see all the event videos [here](https://www.youtube.com/playlist?list=PLfMzBWSH11xaZvhv1X5Fq1H-oMdnAtG6k), we'd like to share some sessions that really stood out to us.
 
