@@ -18,8 +18,6 @@ You may have heard about the IBM Open Badge Program. You probably know that it i
 
 <p align="center"> 
 <img src="https://strongloop.com/blog-assets/2016/06/IBM-badges.png" alt="IBM DIgital Badges" style="width: 300px"/>
-  <p class="wp-caption-text">
-    Some of the badges you can earn and show off.
 </p>
 
 There are currently six badges that focus on LoopBack and Node.js, with three levels of experience with each badge. Read on for descriptions of the badges, straight from IBM&#8217;s badge homepage:
