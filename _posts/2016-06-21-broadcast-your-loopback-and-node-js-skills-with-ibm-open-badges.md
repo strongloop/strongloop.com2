@@ -10,17 +10,17 @@ categories:
   - LoopBack
   - Node DevOps
 ---
+**Note:** Updated with curreny link for badges.
+
 You may have heard about the IBM Open Badge Program. You probably know that it is a new and innovative way to display your skills, achievements and contributions online, so you can share them on Linkedin, Facebook and Twitter. But did you know that the program also has badges to represent your skills with StrongLoop&#8217;s LoopBack framework and Node.js?
 
 <!--more-->
 
-<div id="attachment_27600" style="width: 310px" class="wp-caption aligncenter">
-  <a href="{{site.url}}/blog-assets/2016/06/IBM-badges.png"><img class="size-medium wp-image-27600" src="{{site.url}}/blog-assets/2016/06/IBM-badges-300x294.png" alt="Some of the badges you can earn and show off." width="300" height="294"  /></a>
-  
+<p align="center"> 
+<img src="https://strongloop.com/blog-assets/2016/06/IBM-badges.png" alt="IBM DIgital Badges" style="width: 300px"/>
   <p class="wp-caption-text">
     Some of the badges you can earn and show off.
-  </p>
-</div>
+</p>
 
 There are currently six badges that focus on LoopBack and Node.js, with three levels of experience with each badge. Read on for descriptions of the badges, straight from IBM&#8217;s badge homepage:
 
@@ -48,4 +48,4 @@ _This badge holder has demonstrated a commitment to the success of Node.js and L
 
 _This badge holder is an active member of the LoopBack and Node.js communities, as demonstrated through active knowledge sharing, presentation skills, and the initiative and skill to create and deliver technical content._
 
-Would you like to start showing off your experience with Node.js and LoopBack? Be sure to visit [this page](http://www.ibm.com/developerworks/middleware/services/badges/) for more information about all of the badges, how to earn them, and how to broadcast your skills to the world!
+Would you like to start showing off your experience with Node.js and LoopBack? Be sure to visit [this page](https://www.ibm.com/training/badges/) for more information about all of the badges, how to earn them, and how to broadcast your skills to the world!
