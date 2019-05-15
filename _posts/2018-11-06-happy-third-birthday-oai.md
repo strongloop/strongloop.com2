@@ -14,8 +14,8 @@ This is an important week for the OpenAPI Initiative! We want to congratulate th
 At IBM, the LoopBack team and framework has been a longtime advocate and adopter of open API standards, so we embraced OpenAPI Spec for our API creation experience. LoopBack4 supports a complete OpenAPI V3 experience - bottom up (code first) and top down (spec first).
 
 <!--more-->
-
-<img src="https://strongloop.com/blog-assets/2017/08/OpenAPISpecLogo.png" alt="Open API Spec / Open API Initiative" style="width: 300px"/>
+<p align="center"> 
+<img src="https://strongloop.com/blog-assets/2017/08/OpenAPISpecLogo.png" alt="Open API Spec / Open API Initiative" style="width: 300px"/></p>
 
 With LoopBack 4, developers can create APIs and decorate them with OpenAPI 3.0.x compatible metadata. We’ve also introduced the lb4 openapi command which can generate LoopBack 4 controllers and models that expose APIs conforming to the OpenAPI specification. You can find out more about how easy it is to create REST APIs in Node.js from an OpenAPI specification using LoopBack 4 [here](https://strongloop.com/strongblog/loopback4-openapi-cli/).
 
