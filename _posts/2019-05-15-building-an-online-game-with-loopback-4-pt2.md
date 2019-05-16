@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building an Online Game With LoopBack 4, Part 2 - Generating Universally Unique ID and Managing Models Relationships 
+title: Building an Online Game With LoopBack 4, Part 2 - Generating Universally Unique ID and Managing Models Relationships
 date: 2019-05-15
 author: Wenbo Sun
 permalink: /strongblog/building-an-online-game-with-loopback-4-pt2/
@@ -106,7 +106,7 @@ async create(@requestBody() character: Character): Promise<Character> {
 }
 ```
 
-Open `src/models/character.model.ts`, and add follow import. This will import `uuid` so we can use it in our code.
+Open `src/models/character.model.ts`, and add the following import. This will import `uuid` so we can use it in our code.
 
 ```ts
 import {v4 as uuid} from 'uuid';
