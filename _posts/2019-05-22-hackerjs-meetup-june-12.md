@@ -28,12 +28,12 @@ Save the date for Wednesday, June 12, 2019 from 6:30pm - 9pm!
 
 Our speakers include folks from ----- and IBM:
 
-Amir Jafarian (IBM) & Jacob (https://www.meetup.com/members/115831422/)
+Amir Jafarian (IBM) & Jacob Coker-Dukowitz (https://www.meetup.com/members/115831422/)
 
 - **Jacob Coker-Dukowitz**, Software Engineer San Francisco, CA
 
 <p align="center"> 
-<img src="https://strongloop.com/blog-assets/2019/04/liz.png" alt="Jacob" style="width: 200px"/>
+<img src="https://strongloop.com/blog-assets/2019/05/liz.png" alt="Jacob" style="width: 200px"/>
 </p>
 
 "Building a Data Pipeline for the Cloud" - We'll talk about the challenges of building a cloud native application, the principles of building a good data pipeline for the cloud, and the design questions that came up while building Mashr.
@@ -47,7 +47,7 @@ Jake is a software engineer with experience in web application development, Reac
 - **Amir Jafarian**, IBM.
 
 <p align="center"> 
-<img src="https://strongloop.com/blog-assets/2019/04/raymond.png" alt="Amir Jafarian" style="width: 200px"/>
+<img src="https://strongloop.com/blog-assets/2019/05/amir.png" alt="Amir Jafarian" style="width: 200px"/>
 </p>
 
 "e2e UI testing using Puppeteer" - Puppeteer is a Node library which provides a high-level API to control headless Chrome or Chromium over the DevTools Protocol. It can also be configured to use full (non-headless) Chrome or Chromium. Let's get together and utilize this library to write some tests for UI.
