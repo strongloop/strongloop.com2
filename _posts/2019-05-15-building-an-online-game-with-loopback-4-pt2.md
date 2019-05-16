@@ -266,7 +266,7 @@ import {WeaponRepository} from './weapon.repository';
 import {SkillRepository} from './skill.repository';
 ```
 
-Add follow code before the constructor:
+Add the following code before the constructor:
 
 ```ts
   public armor: HasOneRepositoryFactory<
