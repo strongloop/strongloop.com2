@@ -11,7 +11,7 @@ categories:
 published: false
 ---
 
-### Learn More About NodeJS & JavaScript on June 12!
+### Learn About Mashr and Puppeteer on June 12!
 
 As promised, we're announcing the next HackerJS Meetup on June 12, 2019 at Santa Clara's Hacker Dojo. If you are near Santa Clara, California and want to brush up on your Node and JS skills then this ia a great event for you!
 
