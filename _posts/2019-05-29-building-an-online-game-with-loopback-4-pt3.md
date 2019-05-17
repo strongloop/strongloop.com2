@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building an Online Game With LoopBack 4 (Part 3)
-date: 2019-05-03
+date: 2019-05-29
 author: Wenbo Sun
 permalink: /strongblog/building-an-online-game-with-loopback-4-pt3/
 categories:
