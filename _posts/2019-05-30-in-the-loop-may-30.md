@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Node + JS Interactive 2019 CFP Now Open
+
+The CFP will be open until Friday, June 14.
+
+[READ MORE >>>](https://events.linuxfoundation.org/events/nodejs-interactive-2019/)
+
 ### Building the next generation of the Twitter API
 
 Ian Cairns shares the first stage of the plan to build the next generation of the Twitter API.  
