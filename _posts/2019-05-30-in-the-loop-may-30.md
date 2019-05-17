@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Get started with Node.js and LoopBack 4
+
+Diana Lau shares four helpful resources to help you get started with LoopBack.
+
+[READ MORE >>>](https://developer.ibm.com/articles/get-started-with-nodejs-and-loopback-4/)
+
 ### Node + JS Interactive 2019 CFP Now Open
 
 The CFP will be open until Friday, June 14.
