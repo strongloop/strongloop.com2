@@ -9,7 +9,7 @@ categories:
   - LoopBack
 published: true  
 ---
-## Part 1: Generating Universally Unique ID and Managing Models Relationships  
+## Part 2: Generating Universally Unique ID and Managing Models Relationships  
 
 ### Introduction
 
