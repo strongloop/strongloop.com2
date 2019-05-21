@@ -26,11 +26,9 @@ HackerJS is a NodeJS & JavaScript community meetup group that connects on the se
 
 Save the date for Wednesday, June 12, 2019 from 6:30pm - 9pm!
 
-Our speakers include folks from ----- and IBM:
+Our speakers include folks from Mashr and IBM:
 
-Amir Jafarian (IBM) & Jacob Coker-Dukowitz (https://www.meetup.com/members/115831422/)
-
-- **Jacob Coker-Dukowitz**, Software Engineer San Francisco, CA
+**Jacob Coker-Dukowitz**, Software Engineer at Mashr.
 
 <p align="center"> 
 <img src="https://strongloop.com/blog-assets/2019/05/liz.png" alt="Jacob" style="width: 200px"/>
@@ -44,7 +42,7 @@ Mashr works by launching a data pipeline in the cloud. With the command mashr de
 
 Jake is a software engineer with experience in web application development, React JS, Node JS, Ruby on Rails, facilitation and project management.
 
-- **Amir Jafarian**, IBM.
+**Amir Jafarian**, IBM.
 
 <p align="center"> 
 <img src="https://strongloop.com/blog-assets/2019/05/amir.png" alt="Amir Jafarian" style="width: 200px"/>
@@ -52,7 +50,7 @@ Jake is a software engineer with experience in web application development, Reac
 
 "e2e UI testing using Puppeteer" - Puppeteer is a Node library which provides a high-level API to control headless Chrome or Chromium over the DevTools Protocol. It can also be configured to use full (non-headless) Chrome or Chromium. Let's get together and utilize this library to write some tests for UI.
 
-Amirali Jafarian, software engineer for API Connect at IBM.
+Amirali Jafarian, Software Engineer for API Connect at IBM.
 
 Amir is a software engineer at IBM working on API Connect, a comprehensive API management solution for an entire API lifecycle from creation to management. Amir's skills include Node.js, react-redux development and angular. He joined API Connect v5 in January 2017, focusing on bluemixification of whole API Connect v5, maintenance, and adding features requested by enterprise customers in Angular. He started working on API Connect v2018 in October 2017, helping the re-write in React.js, which had been kicked off earlier in 2018. Prior to joining API Connect team, in August 2015, Amir joined IBM as a software engineer for LoopBack, the popular open source Node.js API creation framework. He is now excited to share some e2e UI testing using Puppeteer.
 
