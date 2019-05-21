@@ -23,7 +23,7 @@ In the last episode, we used a third-party library to generate UUID and built re
 Here are the previous episodes:
 
 * [Part 1: Building a Simple LoopBack Project With MongoDB](https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/)
-* [Part 2: Generating Universally Unique ID and Managing Models Relationships](https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt2/)
+* [Part 2: Generating Universally Unique ID and Managing Models Relationships](https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt2/)
 
 
 <!--more-->
