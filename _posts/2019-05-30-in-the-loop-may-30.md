@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Documenting a NodeJS REST API with OpenApi 3/Swagger
+
+Rodrigo Aparicio demonstrates how to take your project to the next level.
+
+[READ MORE >>>](https://medium.com/wolox-driving-innovation/documenting-a-nodejs-rest-api-with-openapi-3-swagger-5deee9f50420)
+
 ### Get started with Node.js and LoopBack 4
 
 Diana Lau shares four helpful resources to help you get started with LoopBack.
