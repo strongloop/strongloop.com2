@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HackerJS Meetup on June 12 at the Hacker Dojo!
+title: Learn About Mashr and Puppeteer at the next HackerJS Meetup (June 12 at the Hacker Dojo)
 date: 2019-05-22
 author: Dave Whiteley
 permalink: /strongblog/hackerjs-meetup-june-12/
@@ -11,22 +11,18 @@ categories:
 published: false
 ---
 
-### Learn About Mashr and Puppeteer on June 12!
-
-As promised, we're announcing the next HackerJS Meetup on June 12, 2019 at Santa Clara's Hacker Dojo. If you are near Santa Clara, California and want to brush up on your Node and JS skills then this ia a great event for you!
+As promised, we're announcing the next HackerJS Meetup will be held June 12, 2019 at Santa Clara's Hacker Dojo. If you are near Santa Clara, California and want to brush up on your Node and JS skills then this ia a great event for you!
 
 Don't worry, if you can't make it, we will continue to announce upcoming meetups.
 
 <!--more-->
 <p align="center"> 
-<img src="https://strongloop.com/blog-assets/2019/05/Meetup-june-12-hackerdojo.png" alt="Meetup - May 8 at Hacker Dojo!" style="width: 300px"/>
+<img src="https://strongloop.com/blog-assets/2019/05/Meetup-june-12-hackerdojo.png" alt="Meetup - June 12 at Hacker Dojo!" style="width: 300px"/>
 </p>
 
 HackerJS is a NodeJS & JavaScript community meetup group that connects on the second Wednesday of each month. Whether you are a newbie or expert, the group strives to have a mix of beginner and advanced talks.
 
-Save the date for Wednesday, June 12, 2019 from 6:30pm - 9pm!
-
-Our speakers include folks from Mashr and IBM:
+Speakers this time include folks from Mashr and IBM:
 
 **Jacob Coker-Dukowitz**, Software Engineer at Mashr.
 
