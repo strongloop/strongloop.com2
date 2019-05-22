@@ -49,7 +49,7 @@ npm, Inc., which runs the world’s largest software registry and maintains the 
 
 [READ MORE >>>](https://www.apnews.com/e1d723ccf7944b25b9a4b899ce3c29a8)
 
-## Adding Kubernetes Deployment and Scaling to a Dockerized LoopBack App
+### Adding Kubernetes Deployment and Scaling to a Dockerized LoopBack App
 
 Remko de Knikker shows how to deploy a FDIC API application to a Kubernetes cluster using a deployment with autoscaling.
 
