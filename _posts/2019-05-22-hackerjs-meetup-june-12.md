@@ -24,13 +24,14 @@ HackerJS is a NodeJS & JavaScript community meetup group that connects on the se
 
 Speakers this time include folks from Mashr and IBM:
 
+### "Building a Data Pipeline for the Cloud" 
 **Jacob Coker-Dukowitz**, Software Engineer at Mashr.
 
 <p align="center"> 
 <img src="https://strongloop.com/blog-assets/2019/05/Jacob.png" alt="Jacob" style="width: 200px"/>
 </p>
 
-"Building a Data Pipeline for the Cloud" - We'll talk about the challenges of building a cloud native application, the principles of building a good data pipeline for the cloud, and the design questions that came up while building Mashr.
+We'll talk about the challenges of building a cloud native application, the principles of building a good data pipeline for the cloud, and the design questions that came up while building Mashr.
 
 Mashr is an easy to use open source data pipeline framework that orchestrates moving data from external sources into a single destination database. It's meant for small software applications who have their data spread out in a variety of external sources which they want to be able to aggregate and perform analysis on.
 
@@ -38,13 +39,14 @@ Mashr works by launching a data pipeline in the cloud. With the command mashr de
 
 Jake is a software engineer with experience in web application development, React JS, Node JS, Ruby on Rails, facilitation and project management.
 
+### "e2e UI testing using Puppeteer" 
 **Amir Jafarian**, Software Engineer for API Connect at IBM.
 
 <p align="center"> 
 <img src="https://strongloop.com/blog-assets/2019/05/amir.png" alt="Amir Jafarian" style="width: 200px"/>
 </p>
 
-"e2e UI testing using Puppeteer" - Puppeteer is a Node library which provides a high-level API to control headless Chrome or Chromium over the DevTools Protocol. It can also be configured to use full (non-headless) Chrome or Chromium. Let's get together and utilize this library to write some tests for UI.
+Puppeteer is a Node library which provides a high-level API to control headless Chrome or Chromium over the DevTools Protocol. It can also be configured to use full (non-headless) Chrome or Chromium. Let's get together and utilize this library to write some tests for UI.
 
 Amir is a software engineer at IBM working on API Connect, a comprehensive API management solution for an entire API lifecycle from creation to management. Amir's skills include Node.js, react-redux development and angular. He joined API Connect v5 in January 2017, focusing on bluemixification of whole API Connect v5, maintenance, and adding features requested by enterprise customers in Angular. He started working on API Connect v2018 in October 2017, helping the re-write in React.js, which had been kicked off earlier in 2018. Prior to joining API Connect team, in August 2015, Amir joined IBM as a software engineer for LoopBack, the popular open source Node.js API creation framework. He is now excited to share some e2e UI testing using Puppeteer.
 
