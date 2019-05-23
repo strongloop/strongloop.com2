@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Learn About Mashr and Puppeteer at the Next HackerJS Meetup (June 12 at the Hacker Dojo)
-date: 2019-05-22
+date: 2019-05-23
 author: Dave Whiteley
 permalink: /strongblog/hackerjs-meetup-june-12/
 categories:
