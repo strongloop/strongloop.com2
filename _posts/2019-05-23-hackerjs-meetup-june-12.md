@@ -22,7 +22,7 @@ Don't worry, if you can't make it, we will continue to announce upcoming meetups
 
 HackerJS is a NodeJS & JavaScript community meetup group that connects on the second Wednesday of each month. Whether you are a newbie or expert, the group strives to have a mix of beginner and advanced talks.
 
-Speakers this time include folks from Mashr and IBM:
+Speakers this time include folks from Mashr and IBM.
 
 ### "Building a Data Pipeline for the Cloud" 
 **Jacob Coker-Dukowitz**, Software Engineer at Mashr.
