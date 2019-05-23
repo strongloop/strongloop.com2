@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Node.js memory management in container environments
+
+Ravali Yatham shares best practices for managing memory in container-based Node.js apps.
+
+[READ MORE >>>](https://developer.ibm.com/articles/nodejs-memory-management-in-container-environments/)
+
 ### 12 Amazing Node.js Frameworks For Developers In 2019
 
 Ambika Choudhury lists down 12 amazing Node.js frameworks for developers.
