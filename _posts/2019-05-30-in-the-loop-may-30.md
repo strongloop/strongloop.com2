@@ -1,9 +1,9 @@
 ---
 layout: post
-title: In the Loop - May 30, 2019
-date: 2019-05-08
+title: In the Loop - May 28, 2019
+date: 2019-05-28
 author: Dave Whiteley
-permalink: /strongblog/in-the-loop-may-30-2019/
+permalink: /strongblog/in-the-loop-may-28-2019/
 categories:
   - Community
   - News
@@ -13,6 +13,18 @@ published: false
 
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
+
+### Authentication in LoopBack 4
+
+Quico Llinares Llorens helps you with Authentication in LoopBack 4.
+
+[READ MORE >>>](https://medium.com/@quicoll14/authentication-in-loopback-4-cb4c6b1adc1f)
+
+### Four strategies to version APIs
+
+Chris Phillips highlights four strategies to help you manage API and service interfaces and implementations. 
+
+[READ MORE >>>](https://chrisphillips-cminion.github.io/apiconnect/2019/05/24/apiversioning.html)
 
 ### Node.js memory management in container environments
 
