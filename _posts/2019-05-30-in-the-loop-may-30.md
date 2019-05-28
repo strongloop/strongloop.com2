@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Top Node.js frameworks in 2019
+
+Mahipal Nehra looks at the pros and cons of various frameworks.
+
+[READ MORE >>>](https://www.whatech.com/development/blog/597726-top-node-js-frameworks-in-2019)
+
 ### Authentication in LoopBack 4
 
 Quico Llinares Llorens helps you with Authentication in LoopBack 4.
