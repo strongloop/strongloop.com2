@@ -1,9 +1,9 @@
 ---
 layout: post
-title: In the Loop - May 28, 2019
-date: 2019-05-28
+title: In the Loop - May 30, 2019
+date: 2019-05-30
 author: Dave Whiteley
-permalink: /strongblog/in-the-loop-may-28-2019/
+permalink: /strongblog/in-the-loop-may-30-2019/
 categories:
   - Community
   - News
