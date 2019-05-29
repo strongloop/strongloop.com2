@@ -97,5 +97,3 @@ Ambika Choudhury looks at the the top open source projects in the GitHub communi
 * Check out the previous "[In the Loop - May 8, 2019](https://strongloop.com/strongblog/in-the-loop-may-08-2019/)".
 
 * Be sure to follow StrongLoop on [Facebook](https://www.facebook.com/strongloop/) and [Twitter](https://twitter.com/StrongLoop)!
-
-* Do you have a blog post or other content on LoopBack? Send us a link and we’ll promote your work and send you some swag!
