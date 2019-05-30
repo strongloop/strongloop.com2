@@ -8,11 +8,17 @@ categories:
   - Community
   - News
   - In the Loop
-published: false
+published: true
 ---
 
-Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
+Welcome to the May 30th edition of "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
+
+### Announcing TypeScript 3.5
+
+Daniel Rosenwasser announces the availability of TypeScript 3.5.
+
+[READ MORE >>>](https://devblogs.microsoft.com/typescript/announcing-typescript-3-5/)
 
 ### Top Node.js frameworks in 2019
 
@@ -95,5 +101,7 @@ Ambika Choudhury looks at the the top open source projects in the GitHub communi
 ## What Next?
 
 * Check out the previous "[In the Loop - May 8, 2019](https://strongloop.com/strongblog/in-the-loop-may-08-2019/)".
+
+* Join the StrongLoop Developer Community on [LinkedIn](https://www.linkedin.com/groups/5046525/)
 
 * Be sure to follow StrongLoop on [Facebook](https://www.facebook.com/strongloop/) and [Twitter](https://twitter.com/StrongLoop)!
