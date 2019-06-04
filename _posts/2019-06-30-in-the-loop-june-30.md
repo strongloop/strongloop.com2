@@ -14,11 +14,29 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
-### Top Node.js frameworks in 2019
+### Top Five Uses of Node.js Javascript Runtime Environment 
 
-Mahipal Nehra looks at the pros and cons of various frameworks.
+Subham Kapiswe shares the top five uses of Node.js so that you can decide whether it’s worthy to learn or not.
 
-[READ MORE >>>](https://www.whatech.com/development/blog/597726-top-node-js-frameworks-in-2019)
+[READ MORE >>>](https://www.technotification.com/2019/05/top-five-uses-of-node-js-javascript-runtime-environment.html)
+
+### TypeScript 3.5 now available with speed improvements
+
+Jakub Lewkowicz gives details on the latest release of Microsoft’s typed superset of JavaScript programming language.
+
+[READ MORE >>>](https://sdtimes.com/msft/typescript-3-5-now-available-with-speed-improvements/)
+
+### ASC 2019 - the API Specifications Conference
+
+Register, become a sponsor or submit a proposal for the API Specifications Conference.
+
+[READ MORE >>>](https://events.linuxfoundation.org/events/asc-2019/)
+
+### Contributing to LoopBack documentation
+
+Learn how LoopBack documentation works and how to contribute a change.
+
+[READ MORE >>>](https://loopback.io/doc/en/contrib/doc-contrib.html)
 
 ## What Next?
 
