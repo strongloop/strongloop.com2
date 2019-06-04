@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Start with LoopBack 4
-date: 2019-06-30
+date: 2019-12-30
 author: Dave Whiteley
 permalink: /strongblog/how-to-start-with-loopback-4/
 categories:
