@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Learn from Two LoopBack Tutorials
-date: 2019-06-28
+date: 2019-12-28
 author: Dave Whiteley
 permalink: /strongblog/learn-from-loopback-tutorials/
 categories:
