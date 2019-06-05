@@ -7,10 +7,10 @@ permalink: /strongblog/may-2019-milestone/
 categories:
   - Community
   - LoopBack
-published: false
+published: true
 ---
 
-As the weather starts to warm up for the summer season, the LoopBack team has turned up the heat on the milestone tasks we planned for the month of May and more. We worked on areas such as:
+As the weather starts to warm up for summer, the LoopBack team has turned up the heat on the milestone tasks we planned for the month of May and beyond. We worked on areas such as:
 
 * Improving our documentation pages and API documentation.
 * Giving users unified website experience on `loopback.io`.
@@ -145,7 +145,7 @@ In the near future, we would like to leverage this new mechanism to emit differe
 - Response schema of `create` endpoint should exclude `id` and any other database-generated properties (e.g. `_rev` in CouchDB/Cloudant).
 - Response schema of `updateById` and `updateAll` endpoints should mark all model properties as optional.
 
-## Better formatting of model settings object in scaffolded files
+## Better Formatting of Model Settings Object in Scaffolded Files
 
 [PR#2843](https://github.com/strongloop/loopback-next/pull/2843) improved the way how our CLI tool serialized model settings to TypeScript code.
 
@@ -195,11 +195,11 @@ This month we implemented [a PoC PR](https://github.com/strongloop/loopback-next
 
 The initial proposal for the new adapter is wrapping each configured strategy instance so that it fits the `AuthenticationStrategy` interface. Raymond suggested exploring another approach which applies a wrapper to the `passport` module itself. And since the team is discussing the work flow of incrementally adding a new feature, Miroslav suggested moving the new passport adapter to a standalone experimental module along with the comparison between two proposals. Eventually the adapter will be a component that can be plugged into `@loopback/authentication`.
 
-## Experimental feature development
+## Experimental Feature Development
 
-To achieve a balance between the high code quality and the development speed, we decided to introduce experimental features.
+We've introduced experimental features to achieve a balance between the high code quality and the development speed.
 
-At first we tried keeping the lab packages in a mirror repository `loopback-labs` for the purpose of isolation, then graduate the features into `loopback-next` when they are production ready. While during the spike, we realized that a better way to isolate each feature is creating and releasing each feature from its own branch, so that features are independent from each other and have their own life cycle. The releasing process is also simpler since it only targets on one package. Having that been said, and considering the synchronization effort between two repositories, we decided to keep lab packages stay in `loopback-next`.
+At first we tried keeping the lab packages in a mirror repository `loopback-labs` for the purpose of isolation, then graduate the features into `loopback-next` when they are production ready. During the spike, we realized a better way to isolate each feature: create and release each feature from its own branch, so that features are independent from each other and have their own life cycle. The releasing process is also simpler since it only targets on one package. With this in mind, and considering the synchronization effort between two repositories, we decided to keep lab packages stay in `loopback-next`.
 
 The work flow of adding an experimental package is documented in https://github.com/strongloop/loopback-next/blob/labs/base/LABS.md. It explains how to create your experimental feature branch, incrementally improve the code and graduate the package.
 
@@ -214,7 +214,7 @@ out [PR#2702](https://github.com/strongloop/loopback-next/pull/2702) and [PR#236
 
 In [PR#2834](https://github.com/strongloop/loopback-next/pull/2834), we introduced [`@loopback/tsdocs`](https://github.com/strongloop/loopback-next/tree/master/packages/tsdocs) package which provides API Docs for the rest of the LB4 packages in our `loopback-next` monorepo using Microsoft's `api-extractor` and `api-documenter` tools. It also integrates the generated API Docs for consumption in `loopback.io`. You can see them live [here](https://loopback.io/doc/en/lb4/apidocs.index.html).
 
-## Examples for new LoopBack 4 artifacts/concepts
+## Examples for New LoopBack 4 Artifacts/ Concepts
 
 We added a new [greeting-app](https://github.com/strongloop/loopback-next/tree/master/examples/greeting-app) that shows how to compose an application from component and controllers, interceptors, and observers. The application is built on top of [example-greeter-extension](https://github.com/strongloop/loopback-next/tree/master/examples/greeter-extension) and can greet users in different languages. It has a caching interceptor to handle multiple requests for the same payload (name and language) within a specific time. See [PR#2941](https://github.com/strongloop/loopback-next/pull/2941) for more details.
 
@@ -222,11 +222,11 @@ On the same note, we added [standalone examples](https://github.com/strongloop/l
 
 ## Unified Web Site Experience on loopback.io
 
-We have created the dedicated [web site for LoopBack 4](v4.loopback.io) last year. Now that LoopBack 4 becomes the active release, we are moving the LoopBack 4 pages back to loopback.io web site.
+We created the dedicated [web site for LoopBack 4](v4.loopback.io) last year. Now that LoopBack 4 has become the active release, we are moving the LoopBack 4 pages back to loopback.io web site.
 
 In the meantime, we're actively attempting to rebuild the “Who’s using LoopBack” section to showcase our users and the use cases. If you would like to be a part of it, please sign up [here](https://github.com/strongloop/loopback-next/issues/3047)! 
 
-## Other changes
+## Other Changes
 
 - [PR#2856](https://github.com/strongloop/loopback-next/pull/2856) fixed REST API Explorer to correctly handle both `basePath` configuration specified at LoopBack application/server level and `mountPath` provided by Express when the LB app is mounted on an Express application.
 
@@ -235,7 +235,7 @@ In the meantime, we're actively attempting to rebuild the “Who’s using LoopB
 - Keeping dependencies up-to-date is time consuming, especially in monorepos. Originally, we were used [GreenKeeper](https://greenkeeper.io) to automate the task. Unfortunately, GreenKeeper does not support the combination of lerna
   monorepos with package-locks enabled (see [greenkeeper#1080](https://github.com/greenkeeperio/greenkeeper/issues/1080)).
 
-In May, we migrated our [Shopping example app](https://github.com/strongloop/loopback4-example-shopping) to [RenovateBot](https://renovatebot.com). The experience was great so far, we are now migrating the main [loopback-next](https://github.com/strongloop/loopback-next) monorepo too.
+- In May, we migrated our [Shopping example app](https://github.com/strongloop/loopback4-example-shopping) to [RenovateBot](https://renovatebot.com). The migration went well, and we are now migrating the main [loopback-next](https://github.com/strongloop/loopback-next) monorepo too.
 
 - [PR#3013](https://github.com/strongloop/loopback-next/pull/3013) removed implicit dependency of `@loopback/testlab` on `@types/mocha`. This dependency was preventing LoopBack projects to use Jest test framework instead of Mocha. Now that the fix was landed and published to npm registry, `@loopback/testlab` should work with any test framework that provides `it` and `it.skip` APIs.
 
