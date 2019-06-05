@@ -84,7 +84,7 @@ You can check [this tutorial](https://github.com/strongloop/loopback-next/blob/m
 
 ### Install `@loopback/authentication`
 
-Simply run `npm install --save @loopback/authentication@` in your project root.
+Simply run `npm install --save @loopback/authentication@latest` in your project root.
 
 Reminder: We are using `@loopback/authentication@2.1.0` in this project. If you want to use other version, you may need to change you code accordingly. You may also need to run `npm outdate` in your project root to see if other LoopBack packages need update.
 
