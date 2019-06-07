@@ -55,7 +55,7 @@ You don't have to fully understand those concepts before we start. I will show y
 
 ### Adding Docker Feature
 
-In [the Episode 1](https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/), we disabled Docker when created our project. Now we need to manually add Docker feature.
+In [Episode 1](https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/), we disabled Docker when created our project. Now we need to manually add the Docker feature.
 
 In your project root, create a file called `Dockerfile`.
 
@@ -98,7 +98,7 @@ npm-debug.log
 /dist
 ```
 
-`Dockerfile` and`.dockerignore` are two Docker-related files that provided by LoopBack 4. We will use them to create Docker image.
+`Dockerfile` and`.dockerignore` are two Docker-related files that are provided by LoopBack 4. We will use them to create a Docker image.
 
 Open `package.json`, add two lines under `scripts`. Those are the commands to build and run Docker image.
 
@@ -117,7 +117,7 @@ Run this command to create Docker image.
 npm run docker:build
 ```
 
-If it success, you will see:
+If it succeeds, you will see:
 
 ```
 Successfully built 0b2c1ff52a2e
@@ -217,7 +217,7 @@ Login to IBM Cloud Container Registry. This is where we store our Docker image.
 ibmcloud cr login
 ```
 
-If success, you will see something like:
+If succeeds, you will see something like:
 
 ```
 Logging in to 'us.icr.io'...
@@ -226,7 +226,7 @@ Logged in to 'us.icr.io'.
 
 This is the container registry region you logged into.
 
-After logged in, let's create a new namespace for our project.
+After logging in, let's create a new namespace for our project.
 
 ```
 ibmcloud cr namespace-add my-lb4-namespace
@@ -240,7 +240,7 @@ Run this command to tag the local docker image with the IBM Cloud container regi
 docker tag <image_name>:<tag> <container_registry_region>/<my_namespace>/<new_image_repo>:<new_tag>
 ```
 
-In my case, this command will looks like this:
+In my case, this command will look like this:
 
 ```
 docker tag firstgame:latest us.icr.io/my-lb4-namespace/firstgame-repo:1.0
@@ -375,14 +375,14 @@ Run this command to verify our pod is running.
 kubectl get pods
 ```
 
-If success, you will see this. The `2/2` means there are two containers running in this pod.
+If succeeds, you will see this. The `2/2` means there are two containers running in this pod.
 
 ```
 NAME                         READY     STATUS    RESTARTS   AGE
 firstgame-85ccbd5496-6nmvt   2/2       Running   0          1m
 ```
 
-Now our application is running on Kubernetes. Next step is to expose it to public.
+Now our application is running on Kubernetes. Next step is to expose it to the public.
 
 ```
 kubectl expose deployment firstgame --type=NodePort --port=3000 --name=firstgame-service --target-port=3000
