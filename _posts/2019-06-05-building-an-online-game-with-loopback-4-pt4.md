@@ -503,10 +503,12 @@ You can also create your own authentication services, like Hash Password service
 Open `src/application.ts`, and add the following imports.
 
 ```ts
+import {asGlobalInterceptor} from '@loopback/context';
 import {MyAuthBindings,
         JWTService,
         JWTStrategy,
         UserPermissionsProvider,
+        AuthorizationInterceptor,
 } from './authorization';
 import {AuthenticationComponent,
        registerAuthenticationStrategy,
