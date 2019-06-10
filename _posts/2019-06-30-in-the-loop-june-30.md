@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### From APIStrat to ASC: A New Chapter in API Community Building
+
+Read about how a vendor neutral API Conference morphs and changes.
+
+[READ MORE >>>](https://area67.org/2019/06/07/from-apistrat-to-asc-a-new-chapter-in-api-community-building/)
+
 ### Top Five Uses of Node.js Javascript Runtime Environment 
 
 Subham Kapiswe shares the top five uses of Node.js so that you can decide whether it’s worthy to learn or not.
@@ -25,12 +31,6 @@ Subham Kapiswe shares the top five uses of Node.js so that you can decide whethe
 Jakub Lewkowicz gives details on the latest release of Microsoft’s typed superset of JavaScript programming language.
 
 [READ MORE >>>](https://sdtimes.com/msft/typescript-3-5-now-available-with-speed-improvements/)
-
-### ASC 2019 - the API Specifications Conference
-
-Register, become a sponsor or submit a proposal for the API Specifications Conference.
-
-[READ MORE >>>](https://events.linuxfoundation.org/events/asc-2019/)
 
 ### Contributing to LoopBack documentation
 
