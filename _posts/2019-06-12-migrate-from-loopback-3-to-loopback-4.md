@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Migrate from LoopBack 3 to LoopBack 4
+title: Migrating from LoopBack 3 to LoopBack 4
 date: 2019-06-12
 author: Nora Abdelgadir
 permalink: /strongblog/migrate-from-loopback-3-to-loopback-4/
