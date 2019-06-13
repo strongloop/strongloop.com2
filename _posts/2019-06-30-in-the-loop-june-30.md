@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### LoopBack 4 | Fast and robust way to build an API
+
+In this video we explore a node.js framework LoopBack, one of the easiest frameworks for API creation. 
+
+[WATCH THE VIDEO >>>](https://www.youtube.com/watch?v=jQ6abvNmQiA)
+
 ### From APIStrat to ASC: A New Chapter in API Community Building
 
 Read about how a vendor neutral API Conference morphs and changes.
