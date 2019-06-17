@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Embracing open source could be a big competitive advantage for businesses
+
+Bob Lord explains the underpinning of many of the most exciting, cutting-edge innovations today, including AI, cloud, blockchain, and quantum computing: open source software.
+
+[READ MORE >>>](https://www.fastcompany.com/90364152/embracing-open-source-could-be-a-big-competitive-advantage-for-businesses)
+
 ### How to Automate an API Security Program Without Adding Staff
 
 Doug Dooley looks at security and the exchange of information via APIs.
