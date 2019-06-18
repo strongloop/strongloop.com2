@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### How to secure your LoopBack 4 application with JWT authentication
+
+This tutorial showcases how authentication was added to the loopback4-example-shopping application by creating and registering a custom authentication strategy based on the JSON Web Token (JWT) approach.
+
+[READ MORE >>>](https://loopback.io/doc/en/lb4/Authentication-Tutorial.html)
+
 ### Embracing open source could be a big competitive advantage for businesses
 
 Bob Lord explains the underpinning of many of the most exciting, cutting-edge innovations today, including AI, cloud, blockchain, and quantum computing: open source software.
