@@ -40,7 +40,7 @@ Sagar Sharma compares the two most popular JavaScripts – Node.js & Angular.js 
 
 ### LoopBack 4 | Fast and robust way to build an API
 
-In this video we explore a node.js framework LoopBack, one of the easiest frameworks for API creation. 
+This 25-minute video explores node.js framework LoopBack, one of the easiest frameworks for API creation. 
 
 [WATCH THE VIDEO >>>](https://www.youtube.com/watch?v=jQ6abvNmQiA)
 
@@ -73,5 +73,3 @@ Learn how LoopBack documentation works and how to contribute a change.
 * Check out the previous "[In the Loop - May 30, 2019](https://strongloop.com/strongblog/in-the-loop-may-30-2019/)".
 
 * Be sure to follow StrongLoop on [Facebook](https://www.facebook.com/strongloop/) and [Twitter](https://twitter.com/StrongLoop)!
-
-* Do you have a blog post or other content on LoopBack? Send us a link and we’ll promote your work and send you some swag!
