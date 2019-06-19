@@ -20,6 +20,12 @@ This tutorial showcases how authentication was added to the loopback4-example-sh
 
 [READ MORE >>>](https://loopback.io/doc/en/lb4/Authentication-Tutorial.html)
 
+### Node.js memory management in container environments
+
+Ravali Yatham offers recommendations and best practices you can follow when you work with Node.js applications in container environments.
+
+[READ MORE >>>](https://medium.com/the-node-js-collection/node-js-memory-management-in-container-environments-7eb8409a74e8)
+
 ### Embracing open source could be a big competitive advantage for businesses
 
 Bob Lord explains the underpinning of many of the most exciting, cutting-edge innovations today, including AI, cloud, blockchain, and quantum computing: open source software.
