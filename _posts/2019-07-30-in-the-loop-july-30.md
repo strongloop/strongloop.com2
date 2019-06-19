@@ -23,7 +23,7 @@ Sagar Sharma compares the two most popular JavaScripts – Node.js & Angular.js 
 
 ## What Next?
 
-* Check out the previous "[In the Loop - May 30, 2019](https://strongloop.com/strongblog/in-the-loop-may-30-2019/)".
+* Check out the previous "[In the Loop - June 19, 2019](https://strongloop.com/strongblog/in-the-loop-june-19-2019/)".
 
 * Be sure to follow StrongLoop on [Facebook](https://www.facebook.com/strongloop/) and [Twitter](https://twitter.com/StrongLoop)!
 
