@@ -73,7 +73,7 @@ The one in the bottom left is our self-defined authorization. It has three compo
   * JWTService: a service associate with JWTStrategy to generate and verify JWT.
 
 * Interceptors:
-  * AuthorizationInterceptor: a middle layer between API request and authentication that use UserPermissionsProvider to verify user's permission. You can find more information about LoopBack 4 Interceptor at [here](https://loopback.io/doc/en/lb4/Interceptors.html#order-of-invocation-for-interceptors).
+  * AuthorizationInterceptor: a middle layer comes after authentication that use UserPermissionsProvider to verify user's permission. You can find more information about LoopBack 4 Interceptor at [here](https://loopback.io/doc/en/lb4/Interceptors.html#order-of-invocation-for-interceptors).
 
 Here is a diagram to show you what will happen after an API call.
 
@@ -380,7 +380,7 @@ You can even use multiple strategies in one project; if needed.
 
 #### Interceptor
 
-Interceptor is a middle layer between API request and authentication. After the authentication strategy verified user's access token, interceptor will verify use's permission.
+Interceptor is a middle layer comes after authentication. After the authentication strategy verified user's access token, interceptor will verify use's permission.
 
 Run `lb4 interceptor` in your project root.
 
