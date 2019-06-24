@@ -12,6 +12,14 @@ published: false
 
 ## Part 4: User Authentication and Role-Based Access Control
 
+### In This Episode
+
+We already have some APIs that allow users to customize their characters. Since a user should not get access to characters that belong to other users. In this episode, we will add user authentication and role-based access control to this project.
+
+You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part4/firstgame) for the code of this episode.
+
+<!--more-->
+
 ### Introduction
 
 In this series, I'm going to help you learn LoopBack 4 and how to easily build your own API and web project with it. We'll do so by creating a new project I'm working on: an online web text-based adventure game. In this game, you can create your own account to build characters, fight monsters and find treasures. You will be able to control your character to take a variety of actions: attacking enemies, casting spells, and getting loot. This game also allows multiple players to log in and play with their friends.
@@ -20,19 +28,11 @@ In this series, I'm going to help you learn LoopBack 4 and how to easily build y
 
 In the last episode, we created customized APIs to manage `weapon`, `armor`, and `skill` for `character`.
 
-<!--more-->
-
 Here are the previous episodes:
 
 * [Part 1: Building a Simple LoopBack Project With MongoDB](https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/)
 * [Part 2: Generating Universally Unique ID and Managing Models Relationships](https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt2/)
 * [Part 3: Customizing APIs in Controller](https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt3/)
-
-### In This Episode
-
-We already have some APIs that allow users to customize their characters. Since a user should not get access to characters that belong to other users. In this episode, we will add user authentication and role-based access control to this project.
-
-You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part4/firstgame) for the code of this episode.
 
 ### Basic Structure
 
@@ -79,10 +79,10 @@ Here is a diagram to show you what will happen after an API call.
 
 #### `application.ts`, `sequence.ts` and `controller`
 
-In order to use the all of above in our project, we have three more steps to do:   
+In order to use the all of above in our project, we have three more steps to complete:   
 
- * Binding everything in `application.ts`. `application.ts` is like the main function of LoopBack project.
- * Adding authenticate action into `sequence.ts`. A sequence contains a list of actions that is performed for each request.
+ * Bind everything in `application.ts`. `application.ts` is like the main function of LoopBack project.
+ * Add authenticate action into `sequence.ts`. A sequence contains a list of actions that is performed for each request.
  * Put `@authenticate` decorator above your APIs.
 
 You can check [this tutorial](https://github.com/strongloop/loopback-next/blob/master/packages/authentication/docs/authentication-system.md) or [this shopping example](https://github.com/strongloop/loopback4-example-shopping) for more information of LoopBack 4 Authentication package.
@@ -131,7 +131,7 @@ permissions: PermissionKey[];
 
 ### Self-Defined Authorization Component
 
-Let's first create a folder 'authorization' in `src` to hold everything in this episode. This will be our self-defined authorization package.
+First, let's create a folder 'authorization' in `src` to hold everything in this episode. This will be our self-defined authorization package.
 
 I will show you how to create everything step by step. You can also check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part4/firstgame/src/authorization) for my `authorization` folder.
 
@@ -164,6 +164,7 @@ export const enum PermissionKey {
 This file holds all permissions. `ViewOwnUser`, `CreateUser`, `UpdateOwnUser`, `DeleteOwnUser` are for regular users. `UpdateAnyUser`, `ViewAnyUser`, `DeleteAnyUser` are for admins only.
 
 #### Interfaces and Types
+
 To make it easier to import, we will put all of useful interfaces, types, and schemas together.
 
 Create `types.ts` in `src/authorization`.
@@ -373,8 +374,7 @@ export class JWTStrategy implements AuthenticationStrategy{
 }
 ```
 
-
-You can even use multiple strategies in one project; if needed.
+You can even use multiple strategies in one project, if needed.
 
 #### Interceptor
 
