@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building an Online Game With LoopBack 4 - User Authentication and Role-Based Access Control (Part 4)
-date: 2019-06-05
+date: 2019-06-26
 author: Wenbo Sun
 permalink: /strongblog/building-an-online-game-with-loopback-4-pt4/
 categories:
@@ -20,15 +20,13 @@ In this series, I'm going to help you learn LoopBack 4 and how to easily build y
 
 In the last episode, we created customized APIs to manage `weapon`, `armor`, and `skill` for `character`.
 
+<!--more-->
+
 Here are the previous episodes:
 
 * [Part 1: Building a Simple LoopBack Project With MongoDB](https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/)
 * [Part 2: Generating Universally Unique ID and Managing Models Relationships](https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt2/)
 * [Part 3: Customizing APIs in Controller](https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt3/)
-
-
-
-<!--more-->
 
 ### In This Episode
 
