@@ -14,7 +14,7 @@ published: false
 
 ### In This Episode
 
-We already have some APIs that allow users to customize their characters. Since a user should not get access to characters that belong to other users. In this episode, we will add user authentication and role-based access control to this project.
+We already have some APIs that allow users to customize their characters. However, a user should not get access to characters that belong to other users. With that in mind, we will add user authentication and role-based access control to this project in this episode.
 
 You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part4/firstgame) for the code of this episode.
 
@@ -91,7 +91,7 @@ You can check [this tutorial](https://github.com/strongloop/loopback-next/blob/m
 
 Simply run `npm install --save @loopback/authentication@latest` in your project root.
 
-Reminder: We are using `@loopback/authentication@2.1.0` in this project. If you want to use other version, you may need to change you code accordingly. You may also need to run `npm outdated` in your project root to see if other LoopBack packages need update.
+Reminder: We are using `@loopback/authentication@2.1.0` in this project. If you want to use other versions, you may need to change you code accordingly. You may also need to run `npm outdated` in your project root to see if other LoopBack packages need update.
 
 ### Refactor Model
 
@@ -808,6 +808,4 @@ You can always design your own strategies and services based on your project nee
 
 ### What's Next?
 
-In next episode, we will deploy this project to cloud.
-
-In the meantime, you can learn more about LoopBack in [past blogs](https://strongloop.com/strongblog/tag_LoopBack.html).
+In next episode, we will deploy this project to cloud. In the meantime, you can learn more about LoopBack in [past blogs](https://strongloop.com/strongblog/tag_LoopBack.html).
