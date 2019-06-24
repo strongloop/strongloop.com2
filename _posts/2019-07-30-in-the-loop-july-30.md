@@ -14,18 +14,17 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Obscuring Complexity 
+
+Glenn Engstrand looks at managing the complexity of systems in order to mitigate release disruption while maintaining sufficient feature velocity.
+
+[READ MORE >>>](https://www.infoq.com/articles/obscuring-complexity/)
+
 ### 101 Rules for Deploying with Dev Ops
 
 Check out some ground rules that must be considered to start any DevOps journey, coutesy of Chris Phillips.
 
 [READ MORE >>>](https://chrisphillips-cminion.github.io/misc/2019/06/20/DevOpsRules.html)
-
-### Node.js Vs Angular – An in-depth comparison
-
-Sagar Sharma compares the two most popular JavaScripts – Node.js & Angular.js – to discover the main differences between them.
-
-[READ MORE >>>](https://jaxenter.com/node-js-vs-angular-depth-comparison-159129.html)
-
 
 ## What Next?
 
