@@ -73,11 +73,11 @@ constructor(
 
   //add following lines
   @repository(WeaponRepository)
-  public weaponRepository : CharacterRepository,
+  public weaponRepository : WeaponRepository,
   @repository(ArmorRepository)
-  public armorRepository : CharacterRepository,
+  public armorRepository : ArmorRepository,
   @repository(SkillRepository)
-  public skillRepository : CharacterRepository,
+  public skillRepository : SkillRepository,
 ) {}
 
 ```
@@ -86,7 +86,7 @@ This will connect this controller with `Armor`, `Weapon`, and `skill`. You can n
 
 ### Equip Character
 
-The first API we need is `@patch '/updatecharacter/{id}/weapon'`. In this game, a character can only have one weapon. With that in mind, this API's job is to equip characters with a weapon and unequip the old weapon if there is one. 
+The first API we need is `@patch '/updatecharacter/{id}/weapon'`. In this game, a character can only have one weapon. With that in mind, this API's job is to equip characters with a weapon and unequip the old weapon if there is one.
 
 Here is code for this API:
 
