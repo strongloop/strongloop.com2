@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Update Appmetrics to run on Node 12
+
+Richard Waller shares the steps he took to get code to run error-free and how you can get your own C++ Node.js-addons running on Node.js 12.
+
+READ MORE >>>](https://developer.ibm.com/blogs/upgrade-appmetrics-to-run-on-nodejs-12/)
+
 ### Obscuring Complexity 
 
 Glenn Engstrand looks at managing the complexity of systems in order to mitigate release disruption while maintaining sufficient feature velocity.
