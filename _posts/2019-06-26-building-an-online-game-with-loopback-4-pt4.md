@@ -14,15 +14,15 @@ published: false
 
 ### In This Episode
 
-We already have some APIs that allow users to customize their characters. However, a user should not get access to characters that belong to other users. With that in mind, we will add user authentication and role-based access control to this project in this episode.
+We already have some APIs that allow users to customize their characters. However, a user should not get access to characters that belong to other users. With that in mind, we will add user authentication and role-based access control to this project.
 
-You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part4/firstgame) for the code of this episode.
+You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part4/firstgame) for this episode's code.
 
 <!--more-->
 
 ### Introduction
 
-In this series, I'm going to help you learn LoopBack 4 and how to easily build your own API and web project with it. We'll do so by creating a new project I'm working on: an online web text-based adventure game. In this game, you can create your own account to build characters, fight monsters and find treasures. You will be able to control your character to take a variety of actions: attacking enemies, casting spells, and getting loot. This game also allows multiple players to log in and play with their friends.
+In this series, I'm going to help you learn LoopBack 4 and how to use it to easily build your own API and web project! We'll do so by creating a my new project: an online web text-based adventure game. In this game, you create your own account to build characters, fight monsters and find treasures. You'll be able to control your character to take a variety of actions: attacking enemies, casting spells, and getting loot. This game also allows multiple players to log in and play with their friends.
 
 ### Previously on Building an Online Game With LoopBack 4
 
@@ -36,9 +36,9 @@ Here are the previous episodes:
 
 ### Basic Structure
 
-LoopBack 4 provides us with a built-in authentication package. This package provides an authentication system as the skeleton to verify the identity of a request. It invokes an authentication strategy provided by the developer to process the authentication information in the request and returns the corresponding user profile.
+LoopBack 4 provides us a built-in authentication package. This package includes an authentication system as the skeleton to verify the identity of a request. It invokes an authentication strategy provided by the developer to process the authentication information in the request and to then return the corresponding user profile.
 
-In this episode, I will combine LoopBack authentication package with my self-defined authorization. Here is a diagram for the basic structure:
+In this episode, I will combine LoopBack authentication package with my self-defined authorization. This diagram shows the basic structure:
 
 ![structure](/blog-assets/2019/06/building-online-game-pt4-auth-structure.png)
 
@@ -309,9 +309,7 @@ It will compare a user's permissions and required permissions, and allow the use
 
 #### Strategies
 
-The `AuthenticationStrategyProvider` can find a registered strategy by its name. We will create our own custom authentication strategy and then specify its name in the `@authenticate` decorator.
-
-In this episode, we will create a custom authentication strategy based on the [JSON Web Token](https://jwt.io/).
+The `AuthenticationStrategyProvider` can find a registered strategy by its name. We will create our own custom authentication strategy and then specify its name in the `@authenticate` decorator. It will based on the [JSON Web Token](https://jwt.io/).
 
 First, run `npm install jsonwebtoken --save` in your project root to install the JWT package.
 
@@ -698,9 +696,9 @@ async login(
 }
 ```
 
-This API will use `JWTService` to verify user email and password, and then generate a JWT based on necessary credential information ,like email, password and permissions.
+This API will use `JWTService` to verify user email and password, and then generate a JWT based on necessary credential information, like email, password and permissions.
 
-The next API we need is `@get /characters/me`. It will show current logged-in user.
+The next API we need is `@get /characters/me`. It will show the user current logged in.
 
 ```ts
 @get('/characters/me', {
@@ -722,7 +720,7 @@ async printCurrentUser(
 }
 ```
 
-`@authenticate('jwt', {"required": [PermissionKey.ViewOwnUser]})` is how we authenticate this API. The first parameter `jwt` specify which authentication strategy you want to use for this API. If you have more than one strategy, make you choice here. The second parameter is an object which has one field `required` (array of `PermissionKey`). It specify what permissions are required to access this API. In this case, the only required permission is `ViewOwnUser`. Because this API only show current logged-in user information. You can customize permissions based on your APIs.
+We will authenticate this API with `@authenticate('jwt', {"required": [PermissionKey.ViewOwnUser]})`. The first parameter `jwt` specify which authentication strategy you want to use for this API. If you have more than one strategy, make your choice here. The second parameter is an object which has one field `required` (array of `PermissionKey`). It specifies which permissions are required to access this API. In this case, the only required permission is `ViewOwnUser`. Because this API only shows current logged-in user information. You can customize permissions based on your APIs.
 
 To get current logged-in user information, simply call `this.getCurrentUser()`.
 
