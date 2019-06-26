@@ -7,7 +7,7 @@ permalink: /strongblog/building-an-online-game-with-loopback-4-pt4/
 categories:
   - How-To
   - LoopBack
-published: false  
+published: true  
 ---
 
 ## Part 4: User Authentication and Role-Based Access Control
