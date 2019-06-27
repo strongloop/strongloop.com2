@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building an Online Game With LoopBack 4 - Deploying our Application to Kubernetes on IBM Cloud (Part 5)
-date: 2019-06-19
+date: 2019-07-10
 author: Wenbo Sun
 permalink: /strongblog/building-an-online-game-with-loopback-4-pt5/
 categories:
@@ -11,6 +11,18 @@ published: false
 ---
 
 ## Part 5: Deploying our Application to Kubernetes on IBM Cloud
+
+### In This Episode
+
+Now, this project has some basic features that allow us to create our own characters and login. It is time to deploy it to cloud!
+
+In this episode we will first run our project in Docker. Then we will push it to Kubernetes cluster on IBM Cloud.
+
+Docker image is lightweight, portable, and self-sufficient. Once you create a Docker image, you can run it almost everywhere. On the other hand, Kubernetes will handle those high level concepts such as storage, network and scale-up.
+
+You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part5/firstgame) for the code of this episode.
+
+<!--more-->
 
 ### Introduction
 
@@ -27,19 +39,6 @@ Here are the previous episodes:
 * [Part 3: Customizing APIs in Controller](https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt3/)
 * [Part 4: User Authentication and Role-Based Access Control](https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/)
 
-
-
-<!--more-->
-
-### In This Episode
-
-Now, this project has some basic features that allow us to create our own characters and login. It is time to deploy it to cloud!
-
-In this episode we will first run our project in Docker. Then we will push it to Kubernetes cluster on IBM Cloud.
-
-Docker image is lightweight, portable, and self-sufficient. Once you create a Docker image, you can run it almost everywhere. On the other hand, Kubernetes will handle those high level concepts such as storage, network and scale-up.
-
-You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part5/firstgame) for the code of this episode.
 
 ### Prerequisites
 
