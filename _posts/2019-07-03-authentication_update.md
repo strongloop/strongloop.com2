@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What's New in LoopBack 4 Authentication 2.0
-date: 2019-06-12
+date: 2019-07-03
 author: Dominique Emond
 permalink: /strongblog/authentication_updates/
 categories:
@@ -16,9 +16,9 @@ Now you can secure your endpoints with both [passport-based](http://www.passport
 
 The new design greatly simplifies the effort of application developers and extension developers since they now only need to focus on binding strategies to the application without having to understand/modify the strategy resolver or the action provider.
 
-The core of the authentication component is available in [@loopback/authentication](https://www.npmjs.com/package/@loopback/authentication) version `2.x`, and the passport-based capabilities are now available in [@loopback/authentication-passport](https://www.npmjs.com/package/@loopback/authentication-passport).
-
 <!--more-->
+
+The core of the authentication component is available in [@loopback/authentication](https://www.npmjs.com/package/@loopback/authentication) version `2.x`, and the passport-based capabilities are now available in [@loopback/authentication-passport](https://www.npmjs.com/package/@loopback/authentication-passport).
 
 Here is a **high level** overview of the authentication component.
 
@@ -27,24 +27,23 @@ Here is a **high level** overview of the authentication component.
 - A decorator to express an authentication requirement on controller methods
 - A provider to access method-level authentication metadata
 - An action in the REST sequence to enforce authentication
-- An extension point to discover all authentication strategies and handle the
-  delegation
+- An extension point to discover all authentication strategies and handle the delegation
 
 Detailed documentation about the design and usage of `@loopback/authentication@2.x` can be found [here](https://loopback.io/doc/en/lb4/Loopback-component-authentication.html).
 
 As an **application developer**, you only need 3 steps to secure your endpoints:
 
-- decorate the endpoints of a controller with the `@authenticate(strategyName, options?)` decorator
-- insert the authentication action in a custom sequence 
-- register the authentication strategy
+- Decorate the endpoints of a controller with the `@authenticate(strategyName, options?)` decorator
+- Insert the authentication action in a custom sequence 
+- Register the authentication strategy
 
 As an **extension developer**, you can **contribute** a `LoopBack native` authentication strategy by following the steps in [Creating a Custom Authentication Strategy](https://loopback.io/doc/en/lb4/Loopback-component-authentication.html#creating-a-custom-authentication-strategy), or a `passport-based` authentication strategy by following the steps in [Wrapping a Passport-based Strategy with the Passport Strategy Adapter](https://www.npmjs.com/package/@loopback/authentication-passport).
 
-A tutorial and reference implementation on how to add JWT authentication to a LoopBack 4 application using `@loopback/authentication@2.x`, can be found [here](https://loopback.io/doc/en/lb4/Authentication-Tutorial.html). It involves an updated version of the [example shopping cart application](https://github.com/strongloop/loopback4-example-shopping).
+A tutorial and reference implementation on how to add JWT authentication to a LoopBack 4 application using `@loopback/authentication@2.x` can be found [here](https://loopback.io/doc/en/lb4/Authentication-Tutorial.html). It involves an updated version of the [example shopping cart application](https://github.com/strongloop/loopback4-example-shopping).
 
 ## Looking for User References
 
-As you might be aware, our [loopback.io](https://loopback.io/) web site has a brand new look. We'd like to rebuild the `"Who's using LoopBack"` section and showcase our users and the use cases. If you would like to be a part of it, see the details in [this GitHub issue](https://github.com/strongloop/loopback-next/issues/3047).
+As you might be aware, our [loopback.io](https://loopback.io/) web site has a brand new look. We're rebuilding the `"Who's using LoopBack"` section to showcase our users and the use cases. If you would like to be a part of it, see the details in [this GitHub issue](https://github.com/strongloop/loopback-next/issues/3047).
 
 ## Call to Action
 
