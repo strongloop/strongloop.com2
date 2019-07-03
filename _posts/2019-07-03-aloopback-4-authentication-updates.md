@@ -3,11 +3,11 @@ layout: post
 title: What's New in LoopBack 4 Authentication 2.0
 date: 2019-07-03
 author: Dominique Emond
-permalink: /strongblog/authentication_updates/
+permalink: /strongblog/loopback-4-authentication-updates/
 categories:
   - Community
   - LoopBack
-published: false
+published: true
 ---
 
 We've refactored the authentication component to be more extensible and easier to use.
@@ -50,7 +50,6 @@ As you might be aware, our [loopback.io](https://loopback.io/) web site has a br
 LoopBack's future success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
 
 - [Reporting issues](https://github.com/strongloop/loopback-next/issues).
-- [Contributing](https://github.com/strongloop/loopback-next/blob/master/docs/CONTRIBUTING.md)
-  code and documentation.
-- [Opening a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue).
-- [Joining](https://github.com/strongloop/loopback-next/issues/110) our user group.
+- [Contributing](https://github.com/strongloop/loopback-next/blob/master/docs/CONTRIBUTING.md) code and documentation.
+- Opening a pull request on one of our ["good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue).
+- Joining our [user group](https://github.com/strongloop/loopback-next/issues/110).
