@@ -14,19 +14,17 @@ published: false
 
 ### In This Episode
 
-Now, this project has some basic features that allow us to create our own characters and login. It is time to deploy it to cloud!
-
-In this episode we will first run our project in Docker. Then we will push it to Kubernetes cluster on IBM Cloud.
+Now that this project has some basic features that allow us to create our own characters and login, it's time to deploy it to cloud! So, in this episode we will first run our project in Docker and then push it to Kubernetes cluster on IBM Cloud.
 
 Docker image is lightweight, portable, and self-sufficient. Once you create a Docker image, you can run it almost everywhere. On the other hand, Kubernetes will handle those high level concepts such as storage, network and scale-up.
 
-You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part5/firstgame) for the code of this episode.
+You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part5/firstgame) for the code from this episode.
 
 <!--more-->
 
 ### Introduction
 
-In this series, I'm going to help you learn LoopBack 4 and how to easily build your own API and web project with it. We'll do so by creating a new project I'm working on: an online web text-based adventure game. In this game, you can create your own account to build characters, fight monsters and find treasures. You will be able to control your character to take a variety of actions: attacking enemies, casting spells, and getting loot. This game also allows multiple players to log in and play with their friends.
+In this series, I'm going to help you learn LoopBack 4 and how to use it to easily build your own API and web project. We'll create a new project: an online web text-based adventure game. In this game, you can create your own account to build characters, fight monsters and find treasures. You will be able to control your character to take a variety of actions: attacking enemies, casting spells, and getting loot. This game also allows multiple players to log in and play with their friends.
 
 ### Previously on Building an Online Game With LoopBack 4
 
@@ -321,7 +319,7 @@ NAME          STATUS    ROLES     AGE       VERSION
 10.47.84.60   Ready     <none>    5d        v1.13.6+IKS
 ```
 
-Now you cluster is ready to use.
+Now your cluster is ready to use.
 
 ### Setting up MongoDB and Deploying our Project to Kubernetes
 
@@ -352,9 +350,9 @@ spec:
             - containerPort: 27017
 ```
 
-As you can see, we have two containers. `fg` is for our project. `db` is for MongoDB. They will be running in the same pod. So that they can share network and talk to each other.
+As you can see, we have two containers. `fg` is for our project. `db` is for MongoDB. They will be running in the same pod so they can share network and talk to each other.
 
-Run this command to use the `yaml` file to create containers and pod.
+Run this command to use the `yaml` file to create containers and pod:
 
 ```
 kubectl create -f first-game.yaml
@@ -368,7 +366,7 @@ wenbo:firstgame wenbo$ kubectl create -f first-game.yaml
 deployment.extensions "firstgame" created
 ```
 
-Run this command to verify our pod is running.
+Run this command to verify our pod is running:
 
 ```
 kubectl get pods
@@ -381,7 +379,7 @@ NAME                         READY     STATUS    RESTARTS   AGE
 firstgame-85ccbd5496-6nmvt   2/2       Running   0          1m
 ```
 
-Now our application is running on Kubernetes. Next step is to expose it to the public.
+Now our application is running on Kubernetes. The next step is to expose it to the public.
 
 ```
 kubectl expose deployment firstgame --type=NodePort --port=3000 --name=firstgame-service --target-port=3000
