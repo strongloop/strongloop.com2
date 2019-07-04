@@ -24,7 +24,7 @@ You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/pa
 
 ### Introduction
 
-In this series, I'm going to help you learn LoopBack 4 and how to use it to easily build your own API and web project. We'll create a new project: an online web text-based adventure game. In this game, you can create your own account to build characters, fight monsters and find treasures. You will be able to control your character to take a variety of actions: attacking enemies, casting spells, and getting loot. This game also allows multiple players to log in and play with their friends.
+In this series, I’m going to help you learn LoopBack 4 and how to use it to easily build your own API and web project. We’ll create a new project I’ve been thinking about: an online web text-based adventure game. In this game, you can create your own account to build characters, fight monsters and find treasures. You will be able to control your character to take a variety of actions: attacking enemies, casting spells, and getting loot. This game also allows multiple players to log in and play with their friends.
 
 ### Previously on Building an Online Game With LoopBack 4
 
