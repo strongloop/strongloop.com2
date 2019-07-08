@@ -3,14 +3,14 @@ layout: post
 title: LoopBack 4 June 2019 Milestone Update
 date: 2019-07-10
 author: Nora Abdelgadir
-permalink: /strongblog/june-2019-milestone/
+permalink: /strongblog/loopback-june-2019-milestone/
 categories:
   - Community
   - LoopBack
 published: false
 ---
 
-As the temperature gets warmer and our daylight hours get longer, the LoopBack team is spending this summer releasing hot deliverables. This month we focused on various enhancements such as releasing version 2.0.0 of `@loopback/build`, replacing `strong-docs`, and improving `@loopback/testlab`. We also focused on authentication, inclusion of related models, and other improvements. You can see the [June milestone](https://github.com/strongloop/loopback-next/issues/3035) for an overview of what we have worked on. If you're interested in what we're working on next, you can check out the [July milestone](https://github.com/strongloop/loopback-next/issues/3241). Read more for the details of what we worked on in June.
+As the temperature gets warmer the LoopBack team is spending this summer releasing hot deliverables. In June we focused on various enhancements such as releasing version 2.0.0 of `@loopback/build`, replacing `strong-docs`, and improving `@loopback/testlab`. We also focused on authentication, inclusion of related models, and other improvements. You can see the [June milestone](https://github.com/strongloop/loopback-next/issues/3035) for an overview of what we have worked on. If you're interested in what we're working on next, you can check out the [July milestone](https://github.com/strongloop/loopback-next/issues/3241). Read more for the details of what we worked on in June.
 
 <!--more-->
 
@@ -59,7 +59,7 @@ We improved our testing helpers to support Jest testing framework.
     });
     ```
 
-We are also looking into ways to migrate our test suite from Mocha to Jest. Stay tuned for updates.
+We are also looking into ways to migrate our test suite from Mocha to Jest. Stay tuned for updates!
 
 ## Authentication 
 
@@ -144,7 +144,7 @@ In [PR#3202](https://github.com/strongloop/loopback-next/pull/3202), we updated 
 
 ## CLI Improvement
 
-In [PR#2989](https://github.com/strongloop/loopback-next/pull/2989), we made some changes to improve the CLI:
+In [PR#2989](https://github.com/strongloop/loopback-next/pull/2989), we made some improvements to the CLI:
 
 - Changed/unified the naming convention to eliminate bugs causing by the input. See the [naming conventions](https://loopback.io/doc/en/lb4/Command-line-interface.html#naming-convention) we follow in LoopBack 4.
 - Added a prompt message to warn/notify users the change to their inputs and file names in advance. For example:
@@ -162,7 +162,7 @@ We also made some fixes to our `lb4 discover` command:
 
 ## New Team Member
 
-We have a new addition to our LoopBack team; Agnes ([@agnes512 on GitHub](https://github.com/agnes512)) has joined the team as our intern for the next year. She has already contributed improvements to our documentation, our [`cloudant` connector](https://github.com/strongloop/loopback-connector-cloudant/), our CLI, and other improvements. We're happy to have her on our team and look forward to see what she accomplishes in the future.
+We have a new addition to our LoopBack team: Agnes ([@agnes512 on GitHub](https://github.com/agnes512)) has joined the team as our intern for the next year. She has already contributed improvements to our documentation, our [`cloudant` connector](https://github.com/strongloop/loopback-connector-cloudant/), our CLI, and other more. We're happy to have her on our team and look forward to see what she accomplishes in the future.
 
 ## Other Changes
 
