@@ -10,7 +10,7 @@ categories:
 published: false
 ---
 
-As the temperature gets warmer the LoopBack team is spending this summer releasing hot deliverables. In June we focused on various enhancements such as releasing version 2.0.0 of `@loopback/build`, replacing `strong-docs`, and improving `@loopback/testlab`. We also focused on authentication, inclusion of related models, and other improvements. You can see the [June milestone](https://github.com/strongloop/loopback-next/issues/3035) for an overview of what we have worked on. If you're interested in what we're working on next, you can check out the [July milestone](https://github.com/strongloop/loopback-next/issues/3241). Read more for the details of what we worked on in June.
+As the temperature gets warmer the LoopBack team is spending this summer releasing hot deliverables. In June we focused on various enhancements such as releasing version 2.0.0 of `@loopback/build`, replacing `strong-docs`, and improving `@loopback/testlab`. We also focused on authentication, inclusion of related models, and other improvements. You can see the [June milestone](https://github.com/strongloop/loopback-next/issues/3035) for an overview of what we have worked on, and read on for more details.
 
 <!--more-->
 
@@ -183,6 +183,10 @@ We have upgraded our eslint-related infrastructure to eslint version 6 and added
 ## Looking for User References
 
 As you might be aware, the [loopback.io](https://loopback.io/) website has a brand new look. We'd like to rebuild the "Who's using LoopBack" section and showcase our users and their use cases. If you would like to be a part of it, see the details in this [GitHub issue](https://github.com/strongloop/loopback-next/issues/3047).
+
+## What's Next?
+
+If you're interested in what we're working on next, you can check out the [July milestone](https://github.com/strongloop/loopback-next/issues/3241).
 
 ## Call to Action
 
