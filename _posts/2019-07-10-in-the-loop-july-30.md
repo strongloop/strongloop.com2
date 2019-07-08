@@ -1,9 +1,9 @@
 ---
 layout: post
-title: In the Loop - July 19, 2019
-date: 2019-07-28
+title: In the Loop - July 10, 2019
+date: 2019-07-10
 author: Dave Whiteley
-permalink: /strongblog/in-the-loop-july-30-2019/
+permalink: /strongblog/in-the-loop-july-10-2019/
 categories:
   - Community
   - News
