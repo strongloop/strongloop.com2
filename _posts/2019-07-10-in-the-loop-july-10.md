@@ -55,5 +55,3 @@ Check out some ground rules that must be considered to start any DevOps journey,
 * Check out the previous "[In the Loop - June 19, 2019](https://strongloop.com/strongblog/in-the-loop-june-19-2019/)".
 
 * Be sure to follow StrongLoop on [Facebook](https://www.facebook.com/strongloop/) and [Twitter](https://twitter.com/StrongLoop)!
-
-* Do you have a blog post or other content on LoopBack? Send us a link and we’ll promote your work and send you some swag!
