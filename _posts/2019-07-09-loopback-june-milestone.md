@@ -162,7 +162,7 @@ We also made some fixes to our `lb4 discover` command:
 
 ## New Team Member
 
-We have a new addition to our LoopBack team: Agnes ([@agnes512 on GitHub](https://github.com/agnes512)) has joined the team as our intern for the next year. She has already contributed improvements to our documentation, our [`cloudant` connector](https://github.com/strongloop/loopback-connector-cloudant/), our CLI, and other more. We're happy to have her on our team and look forward to see what she accomplishes in the future.
+We have a new addition to our LoopBack team: Agnes ([@agnes512 on GitHub](https://github.com/agnes512)) has joined the team as our intern for the next year. She has already contributed improvements to our documentation, our [`cloudant` connector](https://github.com/strongloop/loopback-connector-cloudant/), our CLI, and more. We're happy to have her on our team and look forward to see what she accomplishes in the future.
 
 ## Other Changes
 
