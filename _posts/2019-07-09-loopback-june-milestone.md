@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 June 2019 Milestone Update
-date: 2019-07-10
+date: 2019-07-09
 author: Nora Abdelgadir
 permalink: /strongblog/loopback-june-2019-milestone/
 categories:
