@@ -7,7 +7,7 @@ permalink: /strongblog/loopback-june-2019-milestone/
 categories:
   - Community
   - LoopBack
-published: false
+published: true
 ---
 
 As the temperature gets warmer the LoopBack team is spending this summer releasing hot deliverables. In June we focused on various enhancements such as releasing version 2.0.0 of `@loopback/build`, replacing `strong-docs`, and improving `@loopback/testlab`. We also focused on authentication, inclusion of related models, and other improvements. You can see the [June milestone](https://github.com/strongloop/loopback-next/issues/3035) for an overview of what we have worked on, and read on for more details.
