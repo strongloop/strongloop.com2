@@ -10,7 +10,7 @@ categories:
 published: false
 ---
 
-Wonder what is interceptor in LoopBack 4? 
+Wonder what an interceptor is in LoopBack 4? 
 > Interceptors are reusable functions to provide aspect-oriented logic around method invocations. 
 
 Seems pretty useful, right? There are 3 levels of interceptors: global, class level and method level. In this article, we are going to look into what global interceptor is and how to use it. 
@@ -19,7 +19,7 @@ Seems pretty useful, right? There are 3 levels of interceptors: global, class le
 
 You can insert additional logic before and after method invocation through [interceptors](https://loopback.io/doc/en/lb4/Interceptors.html). For global interceptors, they are applicable across the LoopBack application. There are many usages on interceptors.  
 
-In this article, we'll use global interceptors for logging purposes. The scaffolded LoopBack 4 application comes with a default `/ping` endpoint. We're going to use this as illustration purpose. 
+In this article, we'll use global interceptors for logging purposes. The scaffolded LoopBack 4 application comes with a default `/ping` endpoint. We're going to use this for illustration purpose. 
 
 ## Creating a Global Interceptor
 
