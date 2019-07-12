@@ -49,17 +49,18 @@ Go to `src/interceptors/logging.interceptor.ts`. You'll see 2 comments in the tr
 try {
   // Add pre-invocation logic here
   // ----- ADDED THIS LINE ----
-  console.log('log: before-' + invocationCtx.methodName);
+  console.log('log: before-' + invocationCtx.targetName);
   
   const result = await next();
 
   // Add post-invocation logic here
   // ----- ADDED THIS LINE -----
-  console.log('log: after-' + invocationCtx.methodName);
+  console.log('log: after-' + invocationCtx.targetName);
 
   return result;
 } catch (err) {
   // Add error handling logic here
+  console.error(err);
   throw err;
 }
 ```
@@ -73,15 +74,15 @@ Start the application with `npm start` command. Then go to the API Explorer: htt
 You'll now see the following printed to the console:
 
 ```
-log: before-index
-log: after-index
+log: before-ExplorerController.prototype.index
+log: after-ExplorerController.prototype.index
 ```
 
 Next, call the `/ping` endpoint by clicking "Try it Out" > "Execute". You'll see two more lines got printed:
 
 ```
-log: before-ping
-log: after-ping
+log: before-PingController.prototype.ping
+log: after-PingController.prototype.ping
 ```
 
 The interceptor method got called because it is at the global level. 
@@ -106,12 +107,12 @@ if (httpReq) {
 Restart the application, go to API Explorer and call the `/ping` endpoint again. You'll see the following printed to the console log:
 
 ```
-log: before-index
+log: before-ExplorerController.prototype.index
 Endpoint being called: /explorer/
-log: after-index
-log: before-ping
+log: after-ExplorerController.prototype.index
+log: before-PingController.prototype.ping
 Endpoint being called: /ping
-log: after-ping
+log: after-PingController.prototype.ping
 ```
 
 ## Other Resources
