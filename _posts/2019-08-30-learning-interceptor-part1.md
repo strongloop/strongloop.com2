@@ -17,64 +17,118 @@ Seems pretty useful, right? There are 3 levels of interceptors: global, class le
 
 <!--more-->
 
-You can insert additional logic before and after method invocation through [interceptors](https://loopback.io/doc/en/lb4/Interceptors.html). 
-By the name, global interceptors are applicable across the LoopBack application. One use case could be logging. To illustrate that, I'm going to scaffold a LoopBack 4 application which comes with the /ping endpoint and create a global interceptor.
-$ lb4 app global-interceptor --yes
-$ cd global-interceptor
+You can insert additional logic before and after method invocation through [interceptors](https://loopback.io/doc/en/lb4/Interceptors.html). For global interceptors, they are applicable across the LoopBack application. There are many usages on interceptors.  
+
+In this article, we'll use global interceptors for logging purposes. The scaffolded LoopBack 4 application comes with a default `/ping` endpoint. We're going to use this as illustration purpose. 
+
+## Creating a Global Interceptor
+
+After you've scaffolded the application, run `lb4 interceptor` command to create an interceptor. Since we are going to have one global interceptor, leave the `group name for the global interceptor` as an empty string which is the default value.
+
+```
 $ lb4 interceptor
 ? Interceptor name: logging
 ? Is it a global interceptor? Yes
 ? Global interceptors are sorted by the order of an array of group names bound to ContextBindings.GLOBAL_INTERCEPTOR_ORDERED_GROUPS. See https://loopback.io/doc/en/lb4/Interceptors.html#order-of-invocation-for-interceptors.
+
 Group name for the global interceptor: ('')
+
 create src/interceptors/logging.interceptor.ts
 update src/interceptors/index.ts
+
 Interceptor Logging was created in src/interceptors/
-Let's go to src/interceptors/logging.interceptor.ts and take a look at the intercept method. There are 2 comments in the try-catch block where you can add your logic: pre-invocation and post-invocation. 
-As shown in the docs page, the pre- and post-invocation logic is simply to print out the method name of the invocationContext.  
+```
+
+## Adding Logic to the Logging Interceptor
+
+Let's take a look at the generated interceptor. 
+
+Go to `src/interceptors/logging.interceptor.ts`. You'll see 2 comments in the try-catch block where you can add your logic: pre-invocation and post-invocation. We are going to simply print out the method name of the invocationContext before and after the method is being invoked.
+
+```
 try {
   // Add pre-invocation logic here
   // ----- ADDED THIS LINE ----
   console.log('log: before-' + invocationCtx.methodName);
   
   const result = await next();
+
   // Add post-invocation logic here
   // ----- ADDED THIS LINE -----
   console.log('log: after-' + invocationCtx.methodName);
+
   return result;
 } catch (err) {
   // Add error handling logic here
   throw err;
 }
-That's it! 
-Global Interceptor in Action
-Let's see the global interceptor in action. Start the application:
-$ npm start
-Nothing happened yet. Then go to the API Explorer: http://localhost:3000/explorer
-You'll see the following was printed to the console:
+```
+
+## Global Interceptor in Action
+
+That's it! The global interceptor is ready for action. 
+
+Start the application with `npm start` command. Then go to the API Explorer: http://localhost:3000/explorer.
+
+You'll now see the following printed to the console:
+
+```
 log: before-index
 log: after-index
-Go to the /ping endpoint, and click "Try it Out" > "Execute". You'll see two more lines got printed:
+```
+
+Next, call the `/ping` endpoint by clicking "Try it Out" > "Execute". You'll see two more lines got printed:
+
+```
 log: before-ping
 log: after-ping
-The interceptor method got called automatically because it is at the global level. 
-Getting HttpRequest from InvocationContext
-For the pre- or post-invocation logic, you might want to get more information about the HTTP request. To do that, add this import in the interceptor class:
+```
+
+The interceptor method got called because it is at the global level. 
+
+## Getting HttpRequest from InvocationContext
+
+For more meaningful log messages, you might want to get more information about the HTTP request. To do that, add this import in the interceptor class:
+
+```
 import {RestBindings} from '@loopback/rest';
-I'm going to print out the endpoint being called. Add the snippet below as the pre-invocation logic:
+```
+
+We're going to print out the endpoint being called. To do that, add the snippet below as the pre-invocation logic:
+
+```
 const httpReq = await invocationCtx.get(RestBindings.Http.REQUEST, {optional: true,});
 if (httpReq) {
   console.log('Endpoint being called:', httpReq.path);
 }
-Restarting the application, go to API Explorer > /ping, I got the following output:
+```
+
+Restart the application, go to API Explorer and call the `/ping` endpoint again. You'll see the following printed to the console log:
+
+```
 log: before-index
 Endpoint being called: /explorer/
 log: after-index
 log: before-ping
 Endpoint being called: /ping
 log: after-ping
-Other Examples?
-See https://loopback.io/doc/en/lb4/Interceptors.html#example-interceptors
-Resources
-Interceptor docs page, https://loopback.io/doc/en/lb4/Interceptors.html
-Caching enabled via interceptors in Greeter application, https://github.com/strongloop/loopback-next/tree/master/examples/greeting-app
-Authorization added using interceptors in this tutorial, https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/
+```
+
+## Other Resources
+
+For other interceptor examples, check out: https://loopback.io/doc/en/lb4/Interceptors.html#example-interceptors
+
+If you're looking for interceptors in a running application, see:
+- Caching enabled via interceptors in Greeter application, https://github.com/strongloop/loopback-next/tree/master/examples/greeting-app
+- Authorization added using interceptors in this tutorial, https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/
+
+
+## Call to Action
+
+LoopBack's future success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
+
+- [Reporting issues](https://github.com/strongloop/loopback-next/issues).
+- [Contributing](https://github.com/strongloop/loopback-next/blob/master/docs/CONTRIBUTING.md)
+  code and documentation.
+- [Opening a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue).
+- [Joining](https://github.com/strongloop/loopback-next/issues/110) our user group.
