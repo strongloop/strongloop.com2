@@ -19,7 +19,7 @@ Seems pretty useful, right? There are 3 levels of interceptors: global, class le
 
 You can insert additional logic before and after method invocation through [interceptors](https://loopback.io/doc/en/lb4/Interceptors.html). For global interceptors, they are applicable across the LoopBack application. There are many usages on interceptors.  
 
-In this article, we'll use global interceptors for logging purposes. The scaffolded LoopBack 4 application comes with a default `/ping` endpoint. We're going to use this for illustration purpose. 
+In this article, we'll use global interceptors for logging purposes. The scaffolded LoopBack 4 application comes with a default `/ping` endpoint. We're going to use this for illustration purposes. 
 
 ## Creating a Global Interceptor
 
