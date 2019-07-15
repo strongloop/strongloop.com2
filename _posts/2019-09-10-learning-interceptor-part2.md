@@ -96,7 +96,7 @@ In `src/controllers/order.controller.ts`, 
     const order: Order = new Order();
     Object.assign(order, invocationCtx.args[0]);
     if (order.orderNum.length !== 6) {
-        throw new Error('Invalid order number');
+        throw new HttpErrors.InternalServerError('Invalid order number');
     }
     const result = await next();
     return result;
@@ -160,7 +160,7 @@ Now try another order with `orderNum` is `11`.
   "total": 1000
 }
 ```
-You should expect a HTTP 500 error saying "Error: Invalid order number".
+You should expect a HTTP 500 error with message saying "Internal Server Error".
 
 ## Resources 
 
