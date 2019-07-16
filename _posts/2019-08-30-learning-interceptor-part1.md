@@ -17,9 +17,11 @@ Seems pretty useful, right? There are 3 levels of interceptors: global, class le
 
 <!--more-->
 
-You can insert additional logic before and after method invocation through [interceptors](https://loopback.io/doc/en/lb4/Interceptors.html). For global interceptors, they are applicable across the LoopBack application. There are many usages on interceptors.  
+Global interceptors are automatically called for all controller methods. They are being called first, before interceptors specified at class and method level. You can insert additional logic before and after method invocation through [interceptors](https://loopback.io/doc/en/lb4/Interceptors.html). 
 
-In this article, we'll use global interceptors for logging purposes. The scaffolded LoopBack 4 application comes with a default `/ping` endpoint. We're going to use this for illustration purposes. 
+Examples of using global interceptors are caching and authorization. See how caching can be enabled via interceptors in this greeter application: https://github.com/strongloop/loopback-next/tree/master/examples/greeting-app, and how authorization can be added using interceptors in this tutorial, https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/. 
+
+In this article, we'll use global interceptors for logging purposes using the default `/ping` endpoint that comes with all scaffolded LB4 application. Note that using extensions is a better solution for logging, see the [log extension example](https://github.com/strongloop/loopback-next/tree/master/examples/log-extension). 
 
 ## Creating a Global Interceptor
 
