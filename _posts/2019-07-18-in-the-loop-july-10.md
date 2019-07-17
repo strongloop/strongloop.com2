@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Node.js’ magical tips every developer should remember
+
+Tarun Gupta provides tips for using Node.js more cleanly.
+
+[READ MORE >>>](https://medium.com/swlh/node-js-magical-tips-every-developer-should-remember-4c27b4dc6e2b)
+
 ### Soft Delete with LoopBack 4
 
 Samarpan Bhattacharya implements soft-delete feature in a standard multi-tenant architecture API application. 
