@@ -21,7 +21,7 @@ Global interceptors are automatically called for all controller methods. They ar
 
 Examples of using global interceptors are caching and authorization. See how caching can be enabled via interceptors in this greeter application: https://github.com/strongloop/loopback-next/tree/master/examples/greeting-app, and how authorization can be added using interceptors in this tutorial, https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/. 
 
-In this article, we'll use global interceptors for logging purposes using the default `/ping` endpoint that comes with all scaffolded LB4 application. Note that using extensions is a better solution for logging, see the [log extension example](https://github.com/strongloop/loopback-next/tree/master/examples/log-extension). 
+For the sake of illustration, we'll use global interceptors for logging purposes using the default `/ping` endpoint that comes with all scaffolded LB4 application. Note that using extensions is a better solution for logging, see the [log extension example](https://github.com/strongloop/loopback-next/tree/master/examples/log-extension). 
 
 ## Creating a Global Interceptor
 
@@ -31,9 +31,10 @@ After you've scaffolded the application, run `lb4 interceptor` command to create
 $ lb4 interceptor
 ? Interceptor name: logging
 ? Is it a global interceptor? Yes
-? Global interceptors are sorted by the order of an array of group names bound to ContextBindings.GLOBAL_INTERCEPTOR_ORDERED_GROUPS. See https://loopback.io/doc/en/lb4/Interceptors.html#order-of-invocation-for-interceptors.
 
-Group name for the global interceptor: ('')
+Global interceptors are sorted by the order of an array of group names bound to ContextBindings.GLOBAL_INTERCEPTOR_ORDERED_GROUPS. See https://loopback.io/doc/en/lb4/Interceptors.html#order-of-invocation-for-interceptors.
+
+? Group name for the global interceptor: ('')
 
 create src/interceptors/logging.interceptor.ts
 update src/interceptors/index.ts
@@ -121,7 +122,7 @@ log: after-PingController.prototype.ping
 
 For other interceptor examples, check out: https://loopback.io/doc/en/lb4/Interceptors.html#example-interceptors
 
-If you're looking for interceptors in a running application, see:
+For running applications that use interceptors, see:
 - Caching enabled via interceptors in Greeter application, https://github.com/strongloop/loopback-next/tree/master/examples/greeting-app
 - Authorization added using interceptors in this tutorial, https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/
 
