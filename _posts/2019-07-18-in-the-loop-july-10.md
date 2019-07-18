@@ -8,7 +8,7 @@ categories:
   - Community
   - News
   - In the Loop
-published: false
+published: true
 ---
 
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
@@ -31,12 +31,6 @@ Samarpan Bhattacharya implements soft-delete feature in a standard multi-tenant 
 Alan Cha discusses the evolution of OASGraph to OpenAPI-to-GraphQL. 
 
 [READ MORE >>>](https://www.ibm.com/blogs/research/2019/07/openapi-graphql/)
-
-### LoopBack Monthly Milestone - July 2019
-
-Check out the July Milestone for LoopBack on Github.
-
-[READ MORE >>>](https://github.com/strongloop/loopback-next/issues/3241)
 
 ### Update Appmetrics to run on Node 12
 
