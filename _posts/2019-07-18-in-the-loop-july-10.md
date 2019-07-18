@@ -1,7 +1,7 @@
 ---
 layout: post
 title: In the Loop - July 18, 2019
-date: 2019-07-17
+date: 2019-07-18
 author: Dave Whiteley
 permalink: /strongblog/in-the-loop-july-18-2019/
 categories:
