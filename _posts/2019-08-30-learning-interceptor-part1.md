@@ -17,11 +17,15 @@ Seems pretty useful, right? There are 3 levels of interceptors: global, class le
 
 <!--more-->
 
-Global interceptors are automatically called for all controller methods. They are being called first, before interceptors specified at class and method level. You can insert additional logic before and after method invocation through [interceptors](https://loopback.io/doc/en/lb4/Interceptors.html). 
+Global interceptors are automatically called for all controller methods.
+They are being called first, before interceptors specified at class and 
+method level. You can insert additional logic before and after method
+invocation through [interceptors](https://loopback.io/doc/en/lb4/Interceptors.html). Examples of using global interceptors are [caching](https://github.com/strongloop/loopback-next/tree/master/examples/greeting-app) and [authorization](https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/).
 
-Examples of using global interceptors are caching and authorization. See how caching can be enabled via interceptors in this greeter application: https://github.com/strongloop/loopback-next/tree/master/examples/greeting-app, and how authorization can be added using interceptors in this tutorial, https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/. 
-
-For the sake of illustration, we'll use global interceptors for logging purposes using the default `/ping` endpoint that comes with all scaffolded LB4 application. Note that using extensions is a better solution for logging, see the [log extension example](https://github.com/strongloop/loopback-next/tree/master/examples/log-extension). 
+For the sake of illustration, we'll use global interceptors for logging purposes using the default `/ping` endpoint that comes with all scaffolded LB4 application. Note that interceptors are not the best tool for logging.
+It's usually better to implement logging as a new sequence action, 
+as we are demonstrating in our
+[log extension example](https://github.com/strongloop/loopback-next/tree/master/examples/log-extension).
 
 ## Creating a Global Interceptor
 
@@ -32,7 +36,9 @@ $ lb4 interceptor
 ? Interceptor name: logging
 ? Is it a global interceptor? Yes
 
-Global interceptors are sorted by the order of an array of group names bound to ContextBindings.GLOBAL_INTERCEPTOR_ORDERED_GROUPS. See https://loopback.io/doc/en/lb4/Interceptors.html#order-of-invocation-for-interceptors.
+Global interceptors are sorted by the order of an array of group names bound
+to ContextBindings.GLOBAL_INTERCEPTOR_ORDERED_GROUPS. See 
+https://loopback.io/doc/en/lb4/Interceptors.html#order-of-invocation-for-interceptors.
 
 ? Group name for the global interceptor: ('')
 
