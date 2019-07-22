@@ -14,7 +14,7 @@ published: false
 
 ### In This Episode
 
-Now that this project has some basic features that allow us to create our own characters and login, it's time to deploy it to cloud! So, in this episode we will first run our project in Docker and then push it to Kubernetes cluster on IBM Cloud.
+Now that our project has some basic features that allow us to create our own characters and login, it's time to deploy it to cloud! So, in this episode we will first run our project in Docker and then push it to Kubernetes cluster on IBM Cloud.
 
 Docker image is lightweight, portable, and self-sufficient. Once you create a Docker image, you can run it almost everywhere. On the other hand, Kubernetes will handle those high level concepts such as storage, network and scale-up.
 
@@ -37,7 +37,6 @@ Here are the previous episodes:
 * [Part 3: Customizing APIs in Controller](https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt3/)
 * [Part 4: User Authentication and Role-Based Access Control](https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/)
 
-
 ### Prerequisites
 
 * [Docker](https://www.docker.com/)
@@ -48,7 +47,7 @@ You don't have to fully understand those concepts before we start. I will show y
 
 [The Illustrated Children's Guide to Kubernetes](https://www.youtube.com/watch?v=4ht22ReBjno) is a wonderful video on YouTube that can give you a clear idea of what is Kubernetes.
 
-[Deploying to Kubernetes on IBM Cloud](https://loopback.io/doc/en/lb4/deploying_to_ibm_cloud_kubernetes.html#prerequisite) is a tutorial on LoopBack 4 official website. What we are going to do is a little different from it. Because our project is using MongoDB, we need to setup MongoDB on cloud and connect our project to it.
+[Deploying to Kubernetes on IBM Cloud](https://loopback.io/doc/en/lb4/deploying_to_ibm_cloud_kubernetes.html#prerequisite) is a tutorial on the official LoopBack 4 website. Because our project is a bit different and uses MongoDB, we need to set up MongoDB on cloud and connect our project to it.
 
 ### Adding Docker Feature
 
@@ -106,7 +105,7 @@ Open `package.json`, add two lines under `scripts`. Those are the commands to bu
 
 ### Building Docker Image
 
-Install [Docker](https://www.docker.com/get-started) if you haven't.
+Install [Docker](https://www.docker.com/get-started) if you haven't already.
 
 Run this command to create Docker image.
 
@@ -177,7 +176,7 @@ If everything is fine, run this command to stop the image.
 docker stop <container id>
 ```
 
-We are ready to push our Docker image to cloud.
+We are now ready to push our Docker image to cloud.
 
 ### Pushing Docker image to IBM Cloud.
 
@@ -189,13 +188,13 @@ Run this command to login IBM Cloud.
 ibmcloud login
 ```
 
-Use this command instead, if you are using a federated IBM ID.
+If you are using a federated IBM ID, use this command instead: 
 
 ```
 ibmcloud login -sso
 ```
 
-If logged in successfully, you will see something like:
+If you logged in successfully, you will see something like:
 
 ```
 API endpoint:      https://cloud.ibm.com
@@ -208,13 +207,13 @@ Org:
 Space:
 ```
 
-Login to IBM Cloud Container Registry. This is where we store our Docker image.
+Log in to IBM Cloud Container Registry. This is where we store our Docker image.
 
 ```
 ibmcloud cr login
 ```
 
-If succeeds, you will see something like:
+If this succeeds, you will see something like:
 
 ```
 Logging in to 'us.icr.io'...
@@ -223,7 +222,7 @@ Logged in to 'us.icr.io'.
 
 This is the container registry region you logged into.
 
-After logging in, let's create a new namespace for our project.
+After we log in, let's create a new namespace for our project.
 
 ```
 ibmcloud cr namespace-add my-lb4-namespace
