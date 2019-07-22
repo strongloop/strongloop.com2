@@ -443,4 +443,4 @@ In this episode, we covered how to deploy our project with Docker and Kubernetes
 
 Next time, we will create a simply front-end UI for our project and do a quick demo.
 
-In the meantime, you can learn more about LoopBack in [past blogs](https://strongloop.com/strongblog/tag_LoopBack.html).
+In the meantime, learn more about LoopBack in [past blogs](https://strongloop.com/strongblog/tag_LoopBack.html).
