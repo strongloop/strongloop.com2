@@ -90,7 +90,7 @@ In `src/controllers/order.controller.ts`, 
     ```
 
 2. Add the following function to validate order.  
-    ```
+    ```ts
     const validateOrder: Interceptor = async (invocationCtx, next) => {
     console.log('log: before-', invocationCtx.methodName);
     const order: Order = new Order();
