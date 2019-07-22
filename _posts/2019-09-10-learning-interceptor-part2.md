@@ -85,7 +85,7 @@ We're going to define the interceptor function in the `OrderController` class j
 
 In `src/controllers/order.controller.ts`, 
 1. Add this statement:
-    ```
+    ```ts
     import {intercept, Interceptor} from '@loopback/core';
     ```
 
