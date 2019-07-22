@@ -26,7 +26,7 @@ If you want to follow along, follow these steps.
 
 2. In the newly created project, create a file called `order.json` with the following content:
 
-    ```
+    ```json
     {
     "name": "Order",
     "base": "Entity",
