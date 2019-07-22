@@ -14,9 +14,9 @@ published: false
 
 ### In This Episode
 
-Now that our project has some basic features that allow us to create our own characters and login, it's time to deploy it to cloud! So, in this episode we will first run our project in Docker and then push it to Kubernetes cluster on IBM Cloud.
+Now that our project has basic features that allow us to create our own characters and log in, it's time to deploy it to cloud! So, we will first run our project in Docker and then push it to Kubernetes cluster on IBM Cloud.
 
-Docker image is lightweight, portable, and self-sufficient. Once you create a Docker image, you can run it almost everywhere. On the other hand, Kubernetes will handle those high level concepts such as storage, network and scale-up.
+Docker images are lightweight, portable, and self-sufficient. Once you create a Docker image, you can run it almost everywhere. On the other hand, Kubernetes will handle those high level concepts such as storage, network and scale-up.
 
 You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part5/firstgame) for the code from this episode.
 
@@ -51,7 +51,7 @@ You don't have to fully understand those concepts before we start. I will show y
 
 ### Adding Docker Feature
 
-In [Episode 1](https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/), we disabled Docker when created our project. Now we need to manually add the Docker feature.
+In [Episode 1](https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/), we disabled Docker when we created our project. Now we need to manually add the Docker feature.
 
 In your project root, create a file called `Dockerfile`.
 
