@@ -10,22 +10,17 @@ categories:
 published: false
 ---
 
-Wonder what an interceptor is in LoopBack 4? 
+Wondering what an interceptor is in LoopBack 4? 
+
 > Interceptors are reusable functions to provide aspect-oriented logic around method invocations. 
 
-Seems pretty useful, right? There are 3 levels of interceptors: global, class level and method level. In this article, we are going to look into what global interceptor is and how to use it. 
+Seems pretty useful, right? There are 3 levels of interceptors: global, class level and method level. In this article, we are going to look into what a global interceptor is and how to use it. 
 
 <!--more-->
 
-Global interceptors are automatically called for all controller methods.
-They are being called first, before interceptors specified at class and 
-method level. You can insert additional logic before and after method
-invocation through [interceptors](https://loopback.io/doc/en/lb4/Interceptors.html). Examples of using global interceptors are [caching](https://github.com/strongloop/loopback-next/tree/master/examples/greeting-app) and [authorization](https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/).
+Global interceptors are automatically called for all controller methods. They are called first, before interceptors specified at class and method level. You can insert additional logic before and after method invocation through [interceptors](https://loopback.io/doc/en/lb4/Interceptors.html). Examples of using global interceptors are [caching](https://github.com/strongloop/loopback-next/tree/master/examples/greeting-app) and [authorization](https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/).
 
-For the sake of illustration, we'll use global interceptors for logging purposes using the default `/ping` endpoint that comes with all scaffolded LB4 application. Note that interceptors are not the best tool for logging.
-It's usually better to implement logging as a new sequence action, 
-as we are demonstrating in our
-[log extension example](https://github.com/strongloop/loopback-next/tree/master/examples/log-extension).
+For the sake of illustration, we'll use global interceptors for logging purposes using the default `/ping` endpoint that comes with all scaffolded LB4 application. Note that interceptors are not the best tool for logging. It's usually better to implement logging as a new sequence action, as we demonstrate in our [log extension example](https://github.com/strongloop/loopback-next/tree/master/examples/log-extension).
 
 ## Creating a Global Interceptor
 
@@ -52,7 +47,7 @@ Interceptor Logging was created in src/interceptors/
 
 Let's take a look at the generated interceptor. 
 
-Go to `src/interceptors/logging.interceptor.ts`. You'll see 2 comments in the try-catch block where you can add your logic: pre-invocation and post-invocation. We are going to simply print out the method name of the invocationContext before and after the method is being invoked.
+Go to `src/interceptors/logging.interceptor.ts`. You'll see two comments in the try-catch block where you can add your logic: pre-invocation and post-invocation. We are going to simply print out the method name of the invocationContext before and after the method is being invoked.
 
 ```
 try {
@@ -94,7 +89,7 @@ log: before-PingController.prototype.ping
 log: after-PingController.prototype.ping
 ```
 
-The interceptor method got called because it is at the global level. 
+The interceptor method was called because it is at the global level. 
 
 ## Getting HttpRequest from InvocationContext
 
@@ -129,6 +124,7 @@ log: after-PingController.prototype.ping
 For other interceptor examples, check out: https://loopback.io/doc/en/lb4/Interceptors.html#example-interceptors
 
 For running applications that use interceptors, see:
+
 - Caching enabled via interceptors in Greeter application, https://github.com/strongloop/loopback-next/tree/master/examples/greeting-app
 - Authorization added using interceptors in this tutorial, https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/
 
