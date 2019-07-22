@@ -14,46 +14,32 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
-### Soft Delete with LoopBack 4
+### Using OpenAPI to Build Smart APIs for Dumb Machines
 
-Samarpan Bhattacharya implements soft-delete feature in a standard multi-tenant architecture API application. 
+Adam Leventhal demonstrates how to use OpenAPI 3.0 for additional expressivity that can let machines do even more useful work for us.
 
-[READ MORE >>>](https://medium.com/@this.is.samy/soft-delete-with-loopback-4-39eb0356657a)
+[READ MORE >>>](https://www.infoq.com/articles/openapi/)
 
-### Hello, OpenAPI-to-GraphQL 1.0.0
+### Blockchains Done Right Are the Next Evolution in Open Source
 
-Alan Cha discusses the evolution of OASGraph to OpenAPI-to-GraphQL. 
+Tal Kol looks at the next evolution of the Open Source movement: blockchain technology.
 
-[READ MORE >>>](https://www.ibm.com/blogs/research/2019/07/openapi-graphql/)
+[READ MORE >>>](https://devops.com/blockchains-done-right-are-the-next-evolution-in-open-source/)
 
-### LoopBack Monthly Milestone - July 2019
+### The place of Node.JS in web development 
 
-Check out the July Milestone for LoopBack on Github.
+John Saunders looks at building a web site or mobile app with Node.js, a popular environment that is used by giants of the IT world such as PayPal, Walmart, and Netflix among others.
 
-[READ MORE >>>](https://github.com/strongloop/loopback-next/issues/3241)
+[READ MORE >>>](https://londonlovesbusiness.com/the-place-of-node-js-in-web-development/)
 
-### Update Appmetrics to run on Node 12
+### TypeScript is now a 'top 10' language – just in time for the 'feature complete' 3.6 beta
 
-Richard Waller shares the steps he took to get code to run error-free and how you can get your own C++ Node.js-addons running on Node.js 12.
+Tim Anderson shares his thoughts on Microsoft's TypeScript 3.6 beta.
 
-[READ MORE >>>](https://developer.ibm.com/blogs/upgrade-appmetrics-to-run-on-nodejs-12/)
-
-### Obscuring Complexity 
-
-Glenn Engstrand looks at managing the complexity of systems in order to mitigate release disruption while maintaining sufficient feature velocity.
-
-[READ MORE >>>](https://www.infoq.com/articles/obscuring-complexity/)
-
-### 101 Rules for Deploying with Dev Ops
-
-Check out some ground rules that must be considered to start any DevOps journey, coutesy of Chris Phillips.
-
-[READ MORE >>>](https://chrisphillips-cminion.github.io/misc/2019/06/20/DevOpsRules.html)
+[READ MORE >>>](https://www.theregister.co.uk/2019/07/22/typescript_36_hits_beta_as_language_ascends_popularity_rankings/)
 
 ## What Next?
 
 * Check out the previous "[In the Loop - July 10, 2019](https://strongloop.com/strongblog/in-the-loop-july-10-2019/)".
 
 * Be sure to follow StrongLoop on [Facebook](https://www.facebook.com/strongloop/) and [Twitter](https://twitter.com/StrongLoop)!
-
-* Do you have a blog post or other content on LoopBack? Send us a link and we’ll promote your work and send you some swag!
