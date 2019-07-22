@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Discover at the Next HackerJS Meetup (August 14 at the Hacker Dojo)
-date: 2019-07-30
+date: 2019-07-26
 author: Dave Whiteley
 permalink: /strongblog/hackerjs-meetup-aug-14/
 categories:
