@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### IBM CTO: ‘Open Tech Is Our Cloud Strategy’
+
+Jessica Lyons Hardcastle chats with Chris Ferris, CTO for open technology at IBM.
+
+[READ MORE >>>](https://www.sdxcentral.com/articles/news/ibm-cto-open-tech-is-our-cloud-strategy/2019/07/?)
+
 ### Using OpenAPI to Build Smart APIs for Dumb Machines
 
 Adam Leventhal demonstrates how to use OpenAPI 3.0 for additional expressivity that can let machines do even more useful work for us.
