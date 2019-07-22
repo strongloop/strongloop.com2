@@ -1,7 +1,7 @@
 ---
 layout: post
 title: In the Loop - August 30, 2019
-date: 2019-08-10
+date: 2019-08-30
 author: Dave Whiteley
 permalink: /strongblog/in-the-loop-august-30-2019/
 categories:
