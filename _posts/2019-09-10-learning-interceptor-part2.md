@@ -79,9 +79,11 @@ You now have a LoopBack application ready to run.
 
 ## Creating Interceptor Function for Validation
 
+What we're doing here is to validate user inputs at the REST layer. Note that in real world, you should also consider validate data at the Repository level to ensure the validation is applied even when modifying data from places outside of controllers, e.g. tests or services running in background.
+
 For the `POST /order` endpoint, we are going to validate the order before actually creating the order. The length of `orderNum` has to be 6, otherwise the order is not valid. 
 
-We're going to define the interceptor function in the `OrderController` class just before the class is defined. 
+Let's define the interceptor function in the `OrderController` class just before the class is defined. 
 
 In `src/controllers/order.controller.ts`, 
 1. Add this statement:
@@ -92,22 +94,27 @@ In `src/controllers/order.controller.ts`, 
 2. Add the following function to validate order.  
     ```ts
     const validateOrder: Interceptor = async (invocationCtx, next) => {
-    console.log('log: before-', invocationCtx.methodName);
-    const order: Order = new Order();
-    Object.assign(order, invocationCtx.args[0]);
-    if (order.orderNum.length !== 6) {
-        throw new HttpErrors.InternalServerError('Invalid order number');
-    }
-    const result = await next();
-    return result;
+        console.log('log: before-', invocationCtx.methodName);
+        const order: Order = new Order();
+        if (invocationCtx.methodName == 'create')
+            Object.assign(order, invocationCtx.args[0]);
+        else if (invocationCtx.methodName == 'updateById')
+            Object.assign(order, invocationCtx.args[1]);
+
+        if (order.orderNum.length !== 6) {
+            throw new HttpErrors.InternalServerError('Invalid order number');
+        }
+       
+        const result = await next();
+        return result;
     };
     ```
 
-## Apply `@intercept` decorator
+## Apply `@intercept` Decorator at the Method Level
 
 After defining the interceptor function, you can now use this as a method-level or class-level decorator. For class-level interceptor, you just apply it on the class, i.e.
 
-```
+```ts
 @intercept(validateOrder)
 export class OrderController {
     //...
@@ -116,7 +123,7 @@ export class OrderController {
 
 However, we want the validation to run only when the order is being created, so the `@intercept` decorator will be applied at the method level. To do this, add the `@intercept` decorator on the method I want to intercept, i.e. the `POST` method:
 
-    ```
+    ```ts
     @intercept(validateOrder) // <--- add here
     @post('/orders', {
         responses: {
