@@ -44,6 +44,12 @@ Tim Anderson shares his thoughts on Microsoft's TypeScript 3.6 beta.
 
 [READ MORE >>>](https://www.theregister.co.uk/2019/07/22/typescript_36_hits_beta_as_language_ascends_popularity_rankings/)
 
+### What’s the point: OpenAPI-to-GraphQL, TensorRT, Jenkins, GNU Rush
+
+Julia Schmidt looks at the recent renaming of OASGraph to OpenAPI-to-GraphQL and other topics. 
+
+[READ MORE >>>](https://devclass.com/2019/07/03/whats-the-point-openapi-to-graphql-tensorrt-jenkins-gnu-rush/)
+
 ## What Next?
 
 * Check out the previous "[In the Loop - July 10, 2019](https://strongloop.com/strongblog/in-the-loop-july-10-2019/)".
