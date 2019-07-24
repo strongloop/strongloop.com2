@@ -7,7 +7,7 @@ permalink: /strongblog/building-an-online-game-with-loopback-4-pt5/
 categories:
   - How-To
   - LoopBack
-published: false  
+published: true  
 ---
 
 ## Part 5: Deploying our Application to Kubernetes on IBM Cloud
