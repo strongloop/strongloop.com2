@@ -405,17 +405,17 @@ Labels:                   run=firstgame
 Annotations:              <none>
 Selector:                 run=firstgame
 Type:                     NodePort
-IP:                       172.21.16.4
+IP:                       172.21.59.175
 Port:                     <unset>  3000/TCP
 TargetPort:               3000/TCP
-NodePort:                 <unset>  30604/TCP
-Endpoints:                172.30.246.14:3000
+NodePort:                 <unset>  30776/TCP
+Endpoints:                172.30.234.135:3000
 Session Affinity:         None
 External Traffic Policy:  Cluster
 Events:                   <none>
 ```
 
-In my case, the NodePort is `30604`.
+In my case, the NodePort is `30776`.
 
 The last thing we need is the IP address of our cluster.
 
@@ -426,14 +426,13 @@ ibmcloud ks workers firstgame-cluster
 You will get something like this:
 
 ```
-ID                                                 Public IP         Private IP    Machine Type   State    Status   Zone    Version
-kube-hou02-pa572a9bc002c7487989c712a80af241cc-w1   184.172.229.128   10.47.84.60   free           normal   Ready    hou02   1.13.6_1522*
-
+ID                                                     Public IP         Private IP      Machine Type   State    Status   Zone    Version
+kube-bkrq1svd0l5j9p3147ng-mycluster-default-000000e0   173.193.106.101   10.76.216.103   free           normal   Ready    hou02   1.13.8_1529
 ```
 
-My cluster IP address is `184.172.229.128`.
+My cluster IP address is `173.193.106.101`.
 
-Now we should be able to access to our application via http://184.172.229.128:30604
+Now we should be able to access to our application via http://173.193.106.101:30776
 
 ### Applying This to Your Own Project
 
