@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Learning LoopBack4 Interceptors (Part 1) - Global Interceptors
-date: 2019-08-30
+date: 2019-07-31
 author: Diana Lau
 permalink: /strongblog/loopback4-interceptors-part1/
 categories:
