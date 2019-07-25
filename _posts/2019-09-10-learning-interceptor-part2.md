@@ -20,7 +20,7 @@ For the complete application, you can go to this repo: https://github.com/dhmlau
 
 If you want to skip this part, you can check out the `orginal-app` branch of this github repo: https://github.com/dhmlau/loopback4-interceptors/tree/original-app.
 
-If you want to follow along, follow these steps.
+If you want to follow along, take these steps.
 
 1. Scaffold the app by calling `lb4 app loopback4-interceptors --yes`
 
@@ -59,6 +59,7 @@ If you want to follow along, follow these steps.
 5. Create a Repository and accept all defaults by running `lb4 repository` command.
 
 6. Finally, create a controller. Follow the prompts as below:
+
 ```
 $ lb4 controller
 ? Controller class name: Order
@@ -79,7 +80,7 @@ You now have a LoopBack application ready to run.
 
 ## Creating Interceptor Function for Validation
 
-What we're doing here is to validate user inputs at the REST layer. Note that in real world, you should also consider validate data at the Repository level to ensure the validation is applied even when modifying data from places outside of controllers, e.g. tests or services running in background.
+What we're doing here is validating user inputs at the REST layer. Note that in real world, you should also consider validating data at the Repository level to ensure the validation is applied even when modifying data from places outside of controllers, e.g. tests or services running in background.
 
 For the `POST /order` endpoint, we are going to validate the order before actually creating the order. The length of `orderNum` has to be 6, otherwise the order is not valid. 
 
@@ -136,7 +137,7 @@ However, we want the validation to run only when the order is being created, so 
     async create(@requestBody() order: Order): Promise<Order> {
     ```
 
-## Let's Do Some Experiment! 
+## Let's Experiment! 
 
 Now that the application is ready to go, start the app by running `npm start` command and go to the API Explorer: http://localhost:3000/explorer.
 
@@ -148,6 +149,7 @@ Since this method doesn't have the interceptor, when this endpoint is being call
 ### Calling `POST /orders`
 
 This is the method where the interceptor is applied to validate the order. Let's give it a try with a valid order.
+
 ``` 
 {
   "orderNum": "111111",
@@ -156,9 +158,11 @@ This is the method where the interceptor is applied to validate the order. Let's
   "total": 100
 }
 ```
+
 You should expect to get the HTTP 200 response code that the order has been created successfully.
 
 Now try another order with `orderNum` is `11`. 
+
 ``` 
 {
   "orderNum": "11",
@@ -171,9 +175,9 @@ You should expect a HTTP 500 error with message saying "Internal Server Error".
 
 ## Resources 
 
-- Interceptor docs page, https://loopback.io/doc/en/lb4/Interceptors.html
-- Caching enabled via interceptors in Greeter application, https://github.com/strongloop/loopback-next/tree/master/examples/greeting-app
-- Authorization added using interceptors in this tutorial, https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/
+- Interceptor docs page: https://loopback.io/doc/en/lb4/Interceptors.html
+- Caching enabled via interceptors in Greeter application: https://github.com/strongloop/loopback-next/tree/master/examples/greeting-app
+- Authorization added using interceptors in this tutorial: https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/
 
 ## Call to Action
 
