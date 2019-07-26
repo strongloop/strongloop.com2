@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### LoopBack Quick Tip: Running LB4 Application in Docker
+
+Do you know that LoopBack 4 CLI generates aDockerfile when scaffolding a LB4 application so that you can run it in a Docker container right away? Diana Lau shares a quick tip!
+
+[READ MORE >>>](https://medium.com/@MobileDiana/loopback-quick-tip-running-lb4-application-in-docker-c029e3a71000)
+
 ### IBM CTO: ‘Open Tech Is Our Cloud Strategy’
 
 Jessica Lyons Hardcastle chats with Chris Ferris, CTO for open technology at IBM.
