@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Rapidly extend a Fastify app with automated API generation from LoopBack
+
+Anton Whalley walks you through a project that required extending with 5 new REST endpoints.
+
+[READ MORE >>>](https://venshare.com/rapidly-extend-a-fastify-app-with-crud-apis-from-loopback/)
+
 ### LoopBack Quick Tip: Running LB4 Application in Docker
 
 Do you know that LoopBack 4 CLI generates aDockerfile when scaffolding a LB4 application so that you can run it in a Docker container right away? Diana Lau shares a quick tip!
