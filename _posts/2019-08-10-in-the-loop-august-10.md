@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Staying ahead of security vulnerabilities with security patches
+
+Liran Tal explains how surgical security patches are a crucial tool to help you stay ahead of un-remediated security vulnerabilities. 
+
+[READ MORE >>>](https://snyk.io/blog/staying-ahead-of-security-vulnerabilities-with-security-patches/)
+
 ### Rapidly extend a Fastify app with automated API generation from LoopBack
 
 Anton Whalley walks you through a project that required extending with 5 new REST endpoints.
