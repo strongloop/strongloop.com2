@@ -7,7 +7,7 @@ permalink: /strongblog/loopback4-interceptors-part1/
 categories:
   - LoopBack
   - Community
-published: false
+published: true
 ---
 
 Wondering what an interceptor is in LoopBack 4? 
