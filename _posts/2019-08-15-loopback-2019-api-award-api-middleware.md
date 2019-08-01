@@ -17,7 +17,7 @@ The 2019 API Awards celebrate the technical innovation, adoption and reception i
 
 <!--more-->
 <p align="center"> 
-<img src="https://strongloop.com/blog-assets/2019/08/API-Middleware.jpg" alt="2019 API Awards" style="width: 300px"/>
+<img src="https://strongloop.com/blog-assets/2019/08/API-Middleware.jpg" alt="2019 API Awards - Middleware" style="width: 300px"/>
 </p>
 
 The 2019 API Awards received hundreds of nominations, and the Advisory Board to the API Awards selected LoopBack based on three criteria: (1) attracting notable attention and awareness in the API industry; (2) general regard and use by the developer & engineering community; and (3) being a leader in its sector for innovation. 
