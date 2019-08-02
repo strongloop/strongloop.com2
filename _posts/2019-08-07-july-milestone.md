@@ -16,18 +16,6 @@ We finished up 85 story points this month. See the [July milestone](https://gith
 
 <!--more-->
 
-## New Feature On The Way - Inclusion of Related Models
-
-After many weeks in making, Miroslav finally finished the research on how to resolve included models when querying datasources and concluded the spike [issue #2634](https://github.com/strongloop/loopback-next/issues/2634).
-
-The essence:
-- We will introduce a concept of `InclusionResolver` functions. These functions implement the logic for fetching related models.
-- Base repository classes (e.g. `DefaultCrudRepository`) will handle inclusions by calling resolvers registered for individual relations.
-- Model-specific repositories (e.g. `TodoRepository` scaffolded in your project) will register inclusion resolvers for relations that are allowed to be traversed.
-- LoopBack will provide built-in inclusion resolvers for each relation type we implement (`hasMany`, `belongsTo`, `hasOne` at the time of writing).
-
-The [spike PR #3387](https://github.com/strongloop/loopback-next/pull/3387) shows a proof-of-concept implementation and includes high-level description of the proposed design in the [SPIKE document](https://github.com/strongloop/loopback-next/blob/spike/resolve-included-models/_SPIKE_.md), where you can find more details.
-
 ## Improvements of Developer Experience 
 
 ### Improvement of @loopback/cli
@@ -129,6 +117,17 @@ If this option is set and is not empty, it will override the `partial` option. S
 
 The current `@requestBody()` only takes in an entire request body (with very nested content object) or infers the schema from the parameter type. To simplify the signature so that users can describe the schema with concise configure options, we explored a new signature in a [spike story](https://github.com/strongloop/loopback-next/issues/2654): `@requestBody(spec, model, schemaOptions)`. Most of the discussions are tracked in [PR #3398](https://github.com/strongloop/loopback-next/pull/3398), opinions and feedback are welcomed before we start implementing the simplified decorator.
 
+### Adding Cloud Native Features
+
+To provide observability for LoopBack 4 applications deployed to a cloud environment, we start to add more integrations to expose health, metrics, and distributed tracing data. These packages are positioned as extensions to the framework.
+
+The [Health extension](https://github.com/strongloop/loopback-next/tree/master/extensions/health) has been released as an experimental feature. Two more PRs are up for review:
+
+- Metrics extension for [Prometheus](https://prometheus.io/)
+  - [strongloop/loopback-next#3339](https://github.com/strongloop/loopback-next/pull/3339)
+- OpenTracing extension based on [Jaeger](https://www.jaegertracing.io/)
+  - [strongloop/loopback-next#3389](https://github.com/strongloop/loopback-next/pull/3389)
+
 ## Documentation Improvements
 
 ### More Detailed Content for `@model` and `@property` Decorators
@@ -186,6 +185,18 @@ This month we continued refactoring the tests for `mysql`, `mssql`, and `oracle`
 - We fixed REST API to better handle the case where a custom `basePath` is configured via `app.basePath()` API. As a result, the `server` entry in OpenAPI spec correctly includes the configured base path again now. Check [PR #3266](https://github.com/strongloop/loopback-next/pull/3266) for more details.
 
 - A bug was fixed in the MongoDB connector, which caused the id from the input data object to be deleted. See [issue #3267](https://github.com/strongloop/loopback-next/issues/3267) for more details.
+
+## New Feature On The Way - Inclusion of Related Models
+
+After many weeks in making, Miroslav finally finished the research on how to resolve included models when querying datasources and concluded the spike [issue #2634](https://github.com/strongloop/loopback-next/issues/2634).
+
+The essence:
+- We will introduce a concept of `InclusionResolver` functions. These functions implement the logic for fetching related models.
+- Base repository classes (e.g. `DefaultCrudRepository`) will handle inclusions by calling resolvers registered for individual relations.
+- Model-specific repositories (e.g. `TodoRepository` scaffolded in your project) will register inclusion resolvers for relations that are allowed to be traversed.
+- LoopBack will provide built-in inclusion resolvers for each relation type we implement (`hasMany`, `belongsTo`, `hasOne` at the time of writing).
+
+The [spike PR #3387](https://github.com/strongloop/loopback-next/pull/3387) shows a proof-of-concept implementation and includes high-level description of the proposed design in the [SPIKE document](https://github.com/strongloop/loopback-next/blob/spike/resolve-included-models/_SPIKE_.md), where you can find more details.
 
 ## Team changes
 
