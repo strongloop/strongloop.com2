@@ -22,7 +22,7 @@ We finished up 85 story points this month. See the [July milestone](https://gith
 
 - The original CLI version is now stored in the ` .yo.rc.json` file. This allows users to check the version of CLI when upgrading their dependencies. See [PR #3338](https://github.com/strongloop/loopback-next/pull/3338) for details.
 
-- We refactored the way how the property generator is invoked in the model generator. Now when generating a new model, the loop prompts for adding properties is more robust. See [PR #412](https://github.com/strongloop/generator-loopback/pull/412) for more information. 
+- We refactored the way that the property generator is invoked in the model generator. Now when generating a new model, the loop prompts for adding properties are more robust. See [PR #412](https://github.com/strongloop/generator-loopback/pull/412) for more information. 
 
 - For the CLI `lb4 app` can now handle a hyphened path and will generate default names properly. See [PR #2092](https://github.com/strongloop/loopback-next/issues/2092) for more details.
 
@@ -57,7 +57,7 @@ export class MyRestServer {
 
 #### Parameter Injection
 
-The module `Context` didn't use the invocation context to resolve parameter injection. This might limit some use cases such as `@inceptors` which couldn't rebind new values. With this implementation, users can use `options.skipParameterInjection` to resolve parameter injection.
+The module `Context` didn't use the invocation context to resolve parameter injection. This might limit some use cases such as `@inceptors` which couldn't rebind new values. With this implementation, you can use `options.skipParameterInjection` to resolve parameter injection.
 
 ### New Options for JSON Schema Generation
 
@@ -117,7 +117,7 @@ If this option is set and is not empty, it will override the `partial` option. S
 
 ### Simplifying @requestBody
 
-The current `@requestBody()` only takes in an entire request body (with very nested content object) or infers the schema from the parameter type. To simplify the signature so that users can describe the schema with concise configure options, we explored a new signature in a [spike story](https://github.com/strongloop/loopback-next/issues/2654): `@requestBody(spec, model, schemaOptions)`. Most of the discussions are tracked in [PR #3398](https://github.com/strongloop/loopback-next/pull/3398), opinions and feedback are welcomed before we start implementing the simplified decorator.
+The current `@requestBody()` only takes in an entire request body (with very nested content object) or infers the schema from the parameter type. To simplify the signature so that users can describe the schema with concise configure options, we explored a new signature in a [spike story](https://github.com/strongloop/loopback-next/issues/2654): `@requestBody(spec, model, schemaOptions)`. Most of the discussions are tracked in [PR #3398](https://github.com/strongloop/loopback-next/pull/3398), and additional opinions and feedback are welcomed before we start implementing the simplified decorator.
 
 ### Adding Cloud Native Features
 
@@ -139,12 +139,11 @@ As we always try to beef up the documentation for LB4, this month we improved do
 ### Supporting and Documenting Transactions
 
 We also worked on bridging the gap between LoopBack 3 and 4 in terms of exposing transactions from repositories in [PR #3397](https://github.com/strongloop/loopback-next/pull/3397). We've introduced sugar API `beginTransaction()`
-at the repository level, which delegates work to the data source that belongs to
-it to start a transaction. 
+at the repository level, which delegates work to the data source that belongs to it to start a transaction. 
 
 With it, we've created `TransactionalRepository` interface that is meant to be used with connectors that support transactions and `DefaultTransactionalRepository` which can be used for CRUD repositories that support transactions. Once a transaction object is obtained from `beginTransaction()`, it can be passed into any CRUD calls made for the models attached to the backing datasource. The user can then either call `commit()` or `rollback()` actions for the transaction object to persist or revert the changes made. 
 
-Note that only select SQL connectors support transactions to use this feature. For more information, check out the documentation [here](https://loopback.io/doc/en/lb4/Using-database-transactions.html).
+Note that only select SQL connectors support transactions to use this feature. For more information, check out the [documentation](https://loopback.io/doc/en/lb4/Using-database-transactions.html).
 
 ### Connector Reference
 
@@ -155,6 +154,7 @@ Note that only select SQL connectors support transactions to use this feature. F
 ### Running Shared Tests in Connectors
 
 This month we continued refactoring the tests for `mysql`, `mssql`, and `oracle` connectors in LoopBack 3 so that they can run the imported juggler tests in both 3.x and 4.x versions. Now our `mongodb`, `postgresql`, `kv-redis`, `cloudant`, `mysql`, `mssql`, and `oracle` connectors run shared tests. 
+
 - For `mysql`, see [PR #390](https://github.com/strongloop/loopback-connector-mysql/pull/390).
 - For `mssql`, see [PR #205](https://github.com/strongloop/loopback-connector-mssql/pull/205).
 - For `oracle`, see [PR #180](https://github.com/strongloop/loopback-connector-oracle/pull/180).
@@ -177,22 +177,22 @@ This month we continued refactoring the tests for `mysql`, `mssql`, and `oracle`
 
 - We fixed an edge case where `replaceById` was not working for MongoDB database when the data came from the REST API layer. Check [issue #3431](https://github.com/strongloop/loopback-next/pull/3431) and [issue #1759](https://github.com/strongloop/loopback-datasource-juggler/pull/1759) for more details.
 
-- We have removed the source code of `@loopback/openapi-v3-types` package from our monorepo. This package has been deprecated last month in favor of [`openapi3-ts`](https://www.npmjs.com/package/openapi3-ts) and
-[`@loopback/openapi-v3`](https://www.npmjs.com/package/@loopback/openapi-v3). Check [PR #3385](https://github.com/strongloop/loopback-next/pull/3385) for more details.
+- We removed the source code of `@loopback/openapi-v3-types` package from our monorepo. This package was deprecated last month in favor of [`openapi3-ts`](https://www.npmjs.com/package/openapi3-ts) and [`@loopback/openapi-v3`](https://www.npmjs.com/package/@loopback/openapi-v3). Check [PR #3385](https://github.com/strongloop/loopback-next/pull/3385) for more details.
 
-- We fixed automigrate & autoupdate to wait until the datasource is connected to the database. This has addressed a bug in the npm script `migrate` (scaffolded by `lb4 app`), where errors thrown by the database migration were not caught correctly and thus the script did not indicate the failure via a non-zero exit code. Check [issue #1756](https://github.com/strongloop/loopback-datasource-juggler/pull/1756) for more details.
+- We fixed automigrate & autoupdate to wait until the datasource is connected to the database. This addressed a bug in the npm script `migrate` (scaffolded by `lb4 app`), where errors thrown by the database migration were not caught correctly and thus the script did not indicate the failure via a non-zero exit code. Check [issue #1756](https://github.com/strongloop/loopback-datasource-juggler/pull/1756) for more details.
 
 - We improved the type definition of `toJSON` helper from `@loopback/testlab` to better support union types like `MyModel | null` (e.g. as returned by Repository `findOne` method). Check [PR #3823](https://github.com/strongloop/loopback-next/pull/3283) for more details.
 
-- We fixed REST API to better handle the case where a custom `basePath` is configured via `app.basePath()` API. As a result, the `server` entry in OpenAPI spec correctly includes the configured base path again now. Check [PR #3266](https://github.com/strongloop/loopback-next/pull/3266) for more details.
+- We fixed REST API to better handle the case where a custom `basePath` is configured via `app.basePath()` API. As a result, the `server` entry in OpenAPI spec now correctly includes the configured base path again. Check [PR #3266](https://github.com/strongloop/loopback-next/pull/3266) for more details.
 
-- A bug was fixed in the MongoDB connector, which caused the id from the input data object to be deleted. See [issue #3267](https://github.com/strongloop/loopback-next/issues/3267) for more details.
+- We fixed a MongoDB connector bug which caused the id from the input data object to be deleted. See [issue #3267](https://github.com/strongloop/loopback-next/issues/3267) for more details.
 
 ## New Feature On The Way - Inclusion of Related Models
 
-After many weeks in making, Miroslav finally finished the research on how to resolve included models when querying datasources and concluded the spike [issue #2634](https://github.com/strongloop/loopback-next/issues/2634).
+After many weeks in making, Miroslav finally finished researching how to resolve included models when querying datasources. This concluded the spike [issue #2634](https://github.com/strongloop/loopback-next/issues/2634).
 
 The essence:
+
 - We will introduce a concept of `InclusionResolver` functions. These functions implement the logic for fetching related models.
 - Base repository classes (e.g. `DefaultCrudRepository`) will handle inclusions by calling resolvers registered for individual relations.
 - Model-specific repositories (e.g. `TodoRepository` scaffolded in your project) will register inclusion resolvers for relations that are allowed to be traversed.
@@ -200,7 +200,7 @@ The essence:
 
 The [spike PR #3387](https://github.com/strongloop/loopback-next/pull/3387) shows a proof-of-concept implementation and includes high-level description of the proposed design in the [SPIKE document](https://github.com/strongloop/loopback-next/blob/spike/resolve-included-models/_SPIKE_.md), where you can find more details.
 
-## Team changes
+## Team Changes
 
 Our LoopBack core maintainer [Biniam](https://github.com/b-admike) is leaving to join the [API Connect](https://www.ibm.com/ca-en/marketplace/api-management) team. His hard work and dedication were an important part of our team. We appreciate the inspiration he gave us and all the contributions he's made. We believe that he will do an outstanding job in the next phase of his career! 
 
