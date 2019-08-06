@@ -10,7 +10,7 @@ categories:
 published: false
 ---
 
-This July 20th was the 50th anniversary of The Moon Landing where we heard the famous quote, "That's one small step for man, one giant leap for mankind." This great, memorable event reminds me that every task the LoopBack team finishes will end up enhancing our project. From starting to build new features such as `inclusion`, to enriching the documentation, we believe that we are making LoopBack better by taking all these small steps!
+This July 20th was the 50th anniversary of The Moon Landing and the famous quote, "That's one small step for man, one giant leap for mankind." This great, memorable event reminds me that every task the LoopBack team finishes will end up enhancing our project. From starting to build new features such as `inclusion`, to enriching the documentation, we believe that we are making LoopBack better by taking all these small steps!
 
 We finished up 85 story points this month. See the [July milestone](https://github.com/strongloop/loopback-next/issues/3241) for an overview of what we have worked on, and read on for more details.
 
@@ -21,7 +21,9 @@ We finished up 85 story points this month. See the [July milestone](https://gith
 ### Improvement of @loopback/cli
 
 - The original CLI version is now stored in the ` .yo.rc.json` file. This allows users to check the version of CLI when upgrading their dependencies. See [PR #3338](https://github.com/strongloop/loopback-next/pull/3338) for details.
+
 - We refactored the way how the property generator is invoked in the model generator. Now when generating a new model, the loop prompts for adding properties is more robust. See [PR #412](https://github.com/strongloop/generator-loopback/pull/412) for more information. 
+
 - For the CLI `lb4 app` can now handle a hyphened path and will generate default names properly. See [PR #2092](https://github.com/strongloop/loopback-next/issues/2092) for more details.
 
 ### New Features in @loopback/context
@@ -200,7 +202,7 @@ The [spike PR #3387](https://github.com/strongloop/loopback-next/pull/3387) show
 
 ## Team changes
 
-Our LoopBack core maintainer [Biniam](https://github.com/b-admike) will be leaving to the [API Connect](https://www.ibm.com/ca-en/marketplace/api-management) team. His hard work and dedication were an important part of our team. We appreciate the inspiration he gave us and all the contributions he's made. We believe that he will do an outstanding job in the next phase of his career! 
+Our LoopBack core maintainer [Biniam](https://github.com/b-admike) is leaving to join the [API Connect](https://www.ibm.com/ca-en/marketplace/api-management) team. His hard work and dedication were an important part of our team. We appreciate the inspiration he gave us and all the contributions he's made. We believe that he will do an outstanding job in the next phase of his career! 
 
 ## Looking for User References
 
