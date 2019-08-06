@@ -13,7 +13,7 @@ published: false
 
 We're inviting you to join us in congratulating IBM and the LoopBack team for a recent achievement they have earned. The open-source Node.js framework LoopBack has won a 2019 API Award in the "Best in API Middleware" category!
 
-The 2019 API Awards celebrate the technical innovation, adoption and reception in the API & Microservices industries and use by a global developer community. The 2019 API Awards will be presented at the 2019 API Awards Ceremony during the first day of API World 2019 (Oct 8-10, 2019, San Jose Convention Center), the world’s largest API & Microservices conference & expo -- the largest event for the API economy -- in its 8th year, with over 3,500 attendees. 
+The 2019 API Awards celebrate the technical innovation, adoption and reception in the API & Microservices industries and use by a global developer community. The 2019 API Awards will be presented at the 2019 API Awards Ceremony during the first day of [API World 2019](https://apiworld.co/) (Oct 8-10, 2019, San Jose Convention Center), the world’s largest API & Microservices conference & expo -- the largest event for the API economy -- in its 8th year, with over 3,500 attendees. 
 
 <!--more-->
 <p align="center"> 
