@@ -7,7 +7,7 @@ permalink: /strongblog/july-2019-milestone/
 categories:
   - Community
   - LoopBack
-published: false
+published: true
 ---
 
 This July 20th was the 50th anniversary of The Moon Landing and the famous quote, "That's one small step for man, one giant leap for mankind." This great, memorable event reminds me that every task the LoopBack team finishes will end up enhancing our project. From starting to build new features such as `inclusion`, to enriching the documentation, we believe that we are making LoopBack better by taking all these small steps!
