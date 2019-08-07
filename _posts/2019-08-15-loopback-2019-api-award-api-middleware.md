@@ -30,6 +30,8 @@ He continued:
 
 "Six and half years ago, we created LoopBack at StrongLoop aiming to help fellow developers kick off their API journey with the ideal Node.js platform. Thanks to the fantastic Node.js ecosystem, we were able to build on top of open source modules such as Express and make it dead-simple to create REST APIs out of existing datasources and services. Our bet on open APIs and Node.js was right. The project and community have grown significantly. We joined the IBM API Connect family in 2015 to continue our push for best as a strategic open source project by IBM. LoopBack 4 is the second generation of the framework. Leveraging what we have learned as well as new standards and technologies such as TypeScript, OpenAPI, GraphQL, and Cloud Native microservices, the new version sets a new foundation for even greater flexibility, extensibility, composablity, and scalability. More and more features are shipped and being built by us and the community. The LoopBack team strive to bring best practices and tools. We love Github stars. It's simply rewarding to create something valuable for the open source community!"
 
+See the official announcement and read about other winners [here](https://apiworld.co/2019-api-award-winners-announced/].
+
 ## Call to Action
 
 You can help shape the future of LoopBack with your support and engagement! You can help make LoopBack even better and meaningful for your API creation experience by:
