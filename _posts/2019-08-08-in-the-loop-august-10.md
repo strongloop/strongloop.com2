@@ -14,11 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
-### What is Node.js and 10 Reasons Why You Should Do it
 
-DroidMen looks at why you should be using Node.js.
+### 9 Tips to Ace Your Coding Interview
 
-[READ MORE >>>](https://www.droidmen.com/what-is-node-js-and-10-reasons-why-you-should-do-it/)
+Interviewers are definitely looking for ability to write correct algorithms, but they’re also evaluating candidates based on other skills such as communication and verification.  
+
+[READ MORE >>>](https://www.dailycodingproblem.com/blog/tips-to-ace-your-coding-interview/)
 
 ### Why Use IBM Cloud?
 
