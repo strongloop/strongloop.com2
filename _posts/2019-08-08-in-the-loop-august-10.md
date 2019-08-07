@@ -1,7 +1,7 @@
 ---
 layout: post
-title: In the Loop - August 10, 2019
-date: 2019-08-10
+title: In the Loop - August 8, 2019
+date: 2019-08-08
 author: Dave Whiteley
 permalink: /strongblog/in-the-loop-august-10-2019/
 categories:
@@ -13,6 +13,12 @@ published: false
 
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
+
+### What is Node.js and 10 Reasons Why You Should Do it
+
+DroidMen looks at why you should be using Node.js.
+
+[READ MORE >>>](https://www.droidmen.com/what-is-node-js-and-10-reasons-why-you-should-do-it/)
 
 ### Why Use IBM Cloud?
 
