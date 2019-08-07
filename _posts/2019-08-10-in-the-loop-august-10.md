@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Why Use IBM Cloud?
+
+Join Niklas Heidloff, IBM Developer Advocate, as he shares his top 3 reasons for using the IBM Cloud. Then try it yourselves.
+
+[WATCH THE VIDEO >>>](https://www.youtube.com/watch?v=afJzaFmd1GQ&feature=youtu.be)
+
 ### Staying ahead of security vulnerabilities with security patches
 
 Liran Tal explains how surgical security patches are a crucial tool to help you stay ahead of un-remediated security vulnerabilities. 
