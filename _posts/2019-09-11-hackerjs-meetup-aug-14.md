@@ -1,18 +1,16 @@
 ---
 layout: post
-title: Discover at the Next HackerJS Meetup (August 14 at the Hacker Dojo)
+title: Discover at the Next HackerJS Meetup (September 11 at the Hacker Dojo)
 date: 2019-08-31
 author: Dave Whiteley
-permalink: /strongblog/hackerjs-meetup-aug-14/
+permalink: /strongblog/hackerjs-meetup-sept-11/
 categories:
   - Community
   - Events
 published: false
 ---
 
-As promised, we're announcing the next HackerJS Meetup for August 14, 2019 at Santa Clara's Hacker Dojo. If you are near Santa Clara, California and want to brush up on your Node and JS skills then this ia a great event for you!
-
-Don't worry, if you can't make it, we will continue to announce upcoming meetups.
+As promised, we're announcing the next HackerJS Meetup for Wednesday, September 11, 2019 at Santa Clara's Hacker Dojo. If you are near Santa Clara, California and want to brush up on your Node and JS skills then this ia a great event for you!
 
 <!--more-->
 <p align="center"> 
@@ -45,7 +43,7 @@ Speaker bio
 
 ### Reserve your spot!
 
-You can register for the event and see the schedule [here](https://www.meetup.com/HackerJS/events/kjhnvqyzjbqb/)!
+You can register for the event and see the schedule [here](https://www.meetup.com/HackerJS/events/kjhnvqyzmbpb/)!
 
 ### What's Next?
 
