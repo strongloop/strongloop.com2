@@ -1,21 +1,19 @@
 ---
 layout: post
 title: Congratulations to LoopBack, Winners of 2019 API Award for API Middleware
-date: 2019-08-15
+date: 2019-08-08
 author: Dave Whiteley
 permalink: /strongblog/loopback-2019-api-award-api-middleware/
 categories:
   - LoopBack
   - Community
   - Events
-published: false
+published: true
 ---
 
 We're excited to congratulate the LoopBack team for earning the 2019 API Award for the "Best in API Middleware" category. [LoopBack](https://loopback.io/) is a highly extensible, open source Node.js framework based on Express that enables you to quickly create dynamic end-to-end REST APIs and connect to backend systems such as databases and SOAP or REST services.
- 
 
 The 2019 API Awards celebrate the technical innovation, adoption, and reception in the API & Microservices industries and use by a global developer community. The 2019 API Awards will be presented at the 2019 API Awards Ceremony during the first day of [API World 2019](https://apiworld.co/) (Oct 8-10, 2019, San Jose Convention Center), the world’s largest API & Microservices conference & expo -- the largest event for the API economy -- in its 8th year, with over 3,500 attendees.
-
 <!--more-->
 <p align="center"> 
 <img src="https://strongloop.com/blog-assets/2019/08/API-Middleware.jpg" alt="2019 API Awards - Middleware" style="width: 300px"/>
@@ -39,7 +37,7 @@ Feng continued, "Six and half years ago, the team created LoopBack at StrongLoop
 
 "The StrongLoop team joined with IBM API Connect team in 2015 to better position LoopBack as a strategic open source project. LoopBack 4 is the second generation of the framework. Version 4 incorporates what the team has learned with new standards and technologies such as TypeScript, OpenAPI, GraphQL, and cloud-native microservices to build a foundation for even greater flexibility, extensibility, composablity, and scalability."
  
-"More and more features are shipped and being built by us and the community. The LoopBack team strive to bring best practices and tools. We love Github stars. It's simply rewarding to create something valuable for the open source community!" says Feng.
+"More and more features are shipped and being built by us and the community. The LoopBack team strive to bring best practices and tools. We love Github stars. It's simply rewarding to create something valuable for the open source community!" concluded Feng.
 
 See the official announcement and read about other winners [here](https://apiworld.co/2019-api-award-winners-announced/).
 
