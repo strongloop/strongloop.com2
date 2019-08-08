@@ -41,7 +41,7 @@ Feng continued, "Six and half years ago, the team created LoopBack at StrongLoop
  
 "More and more features are shipped and being built by us and the community. The LoopBack team strive to bring best practices and tools. We love Github stars. It's simply rewarding to create something valuable for the open source community!" says Feng.
 
-See the official announcement and read about other winners [here](https://apiworld.co/2019-api-award-winners-announced/].
+See the official announcement and read about other winners [here](https://apiworld.co/2019-api-award-winners-announced/).
 
 ## Call to Action
 
