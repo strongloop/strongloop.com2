@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Congratulations to LoopBack, Winners of 2019 API Award for API Middleware
+title: Congratulations to LoopBack, Winner of 2019 API Award for API Middleware
 date: 2019-08-08
 author: Dave Whiteley
 permalink: /strongblog/loopback-2019-api-award-api-middleware/
