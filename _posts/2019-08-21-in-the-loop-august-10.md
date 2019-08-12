@@ -1,9 +1,9 @@
 ---
 layout: post
-title: In the Loop - August 8, 2019
+title: In the Loop - August 21, 2019
 date: 2019-08-08
 author: Dave Whiteley
-permalink: /strongblog/in-the-loop-august-10-2019/
+permalink: /strongblog/in-the-loop-august-21-2019/
 categories:
   - Community
   - News
@@ -19,8 +19,6 @@ Welcome back to "In the Loop", in which we list recent news, updates or opinions
 The OpenJS Foundation is excited to share the initial schedule for Node+JS Interactive. 
 
 [READ MORE >>>](https://openjsf.org/blog/2019/08/08/a-first-look-at-the-nodejs-interactive-schedule/)
-
-
 
 ### 9 Tips to Ace Your Coding Interview
 
