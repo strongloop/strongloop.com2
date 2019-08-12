@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Learning LoopBack4 Interceptors (Part 2) - Method Level and Class Level Interceptors
-date: 2019-08-13
+date: 2019-08-14
 author: Diana Lau
 permalink: /strongblog/loopback4-interceptors-part2/
 categories:
@@ -86,13 +86,16 @@ For the `POST /order` endpoint, we are going to validate the order before actual
 
 Let's define the interceptor function in the `OrderController` class just before the class is defined. 
 
-In `src/controllers/order.controller.ts`, 
+In `src/controllers/order.controller.ts`: 
+
 1. Add this statement:
+    
     ```ts
     import {intercept, Interceptor} from '@loopback/core';
     ```
 
 2. Add the following function to validate order.  
+    
     ```ts
     const validateOrder: Interceptor = async (invocationCtx, next) => {
         console.log('log: before-', invocationCtx.methodName);
@@ -140,7 +143,6 @@ However, we want the validation to run only when the order is being created, so 
 ## Let's Experiment! 
 
 Now that the application is ready to go, start the app by running `npm start` command and go to the API Explorer: http://localhost:3000/explorer.
-
 
 ### Calling `GET /orders/count`
 
