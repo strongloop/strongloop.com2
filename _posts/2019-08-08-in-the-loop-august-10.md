@@ -14,6 +14,13 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### A First Look at the Node+JS Interactive Schedule
+
+The OpenJS Foundation is excited to share the initial schedule for Node+JS Interactive. 
+
+[READ MORE >>>](https://openjsf.org/blog/2019/08/08/a-first-look-at-the-nodejs-interactive-schedule/)
+
+
 
 ### 9 Tips to Ace Your Coding Interview
 
