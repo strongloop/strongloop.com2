@@ -116,7 +116,7 @@ In `src/controllers/order.controller.ts`: 
 
 ## Apply `@intercept` Decorator at the Method Level
 
-After defining the interceptor function, you can now use this as a method-level or class-level decorator. For class-level interceptor, you just apply it on the class, i.e.
+After defining the interceptor function, you can now use this as a method-level or class-level decorator. For class-level interceptor, you just apply it on the class, like this.
 
 ```ts
 @intercept(validateOrder)
