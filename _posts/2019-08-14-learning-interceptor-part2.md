@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Learning LoopBack4 Interceptors (Part 2) - Method Level and Class Level Interceptors
+title: Learning LoopBack 4 Interceptors (Part 2) - Method Level and Class Level Interceptors
 date: 2019-08-14
 author: Diana Lau
 permalink: /strongblog/loopback4-interceptors-part2/
 categories:
   - LoopBack
-  - Community
+  - How-To
 published: true
 ---
 
