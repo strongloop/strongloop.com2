@@ -7,7 +7,7 @@ permalink: /strongblog/loopback4-interceptors-part2/
 categories:
   - LoopBack
   - Community
-published: false
+published: true
 ---
 
 [Previously](https://strongloop.com/strongblog/loopback4-interceptors-part1/), we looked at how to add a global interceptor. In this article, we are going to build an application that validates the incoming request using class level and method level interceptors 
