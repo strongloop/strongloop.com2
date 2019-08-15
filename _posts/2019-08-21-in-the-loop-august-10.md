@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Explain like I'm 5: Microservices in Node.js
+
+Liz Parody tells about using Microservices, an architectural approach based on building an application as a collection of small services, in Node.js. 
+
+[READ MORE >>>](https://nodesource.com/blog/microservices-in-nodejs)
+
 ### A First Look at the Node+JS Interactive Schedule
 
 The OpenJS Foundation is excited to share the initial schedule for Node+JS Interactive. 
