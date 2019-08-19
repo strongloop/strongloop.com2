@@ -14,6 +14,13 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### 10 Best Node.js Frameworks of 2019 Developers Should Be Aware Of
+
+Harikrishna Kundariya guides you through the sea of Node.js frameworks available today. 
+
+[READ MORE >>>](http://customerthink.com/10-best-node-js-frameworks-of-2019-developers-should-be-aware-of/)
+
+
 ### Explain like I'm 5: Microservices in Node.js
 
 Liz Parody tells about using Microservices, an architectural approach based on building an application as a collection of small services, in Node.js. 
