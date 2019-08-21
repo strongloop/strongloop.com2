@@ -1,14 +1,14 @@
 ---
 layout: post
 title: In the Loop - August 21, 2019
-date: 2019-08-08
+date: 2019-08-21
 author: Dave Whiteley
 permalink: /strongblog/in-the-loop-august-21-2019/
 categories:
   - Community
   - News
   - In the Loop
-published: false
+published: true
 ---
 
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
