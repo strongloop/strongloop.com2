@@ -1,9 +1,9 @@
 ---
 layout: post
-title: In the Loop - August 30, 2019
-date: 2019-08-30
+title: In the Loop - September 30, 2019
+date: 2019-09-30
 author: Dave Whiteley
-permalink: /strongblog/in-the-loop-august-30-2019/
+permalink: /strongblog/in-the-loop-september-30-2019/
 categories:
   - Community
   - News
@@ -22,7 +22,7 @@ Check out some ground rules that must be considered to start any DevOps journey,
 
 ## What Next?
 
-* Check out the previous "[In the Loop - July 10, 2019](https://strongloop.com/strongblog/in-the-loop-july-10-2019/)".
+* Check out the previous "[In the Loop - August 21, 2019](https://strongloop.com/strongblog/in-the-loop-august-21-2019/)".
 
 * Be sure to follow StrongLoop on [Facebook](https://www.facebook.com/strongloop/) and [Twitter](https://twitter.com/StrongLoop)!
 
