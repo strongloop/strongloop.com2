@@ -23,7 +23,7 @@ Harikrishna Kundariya guides you through the sea of Node.js frameworks available
 
 ### Explain like I'm 5: Microservices in Node.js
 
-Liz Parody tells about using Microservices, an architectural approach based on building an application as a collection of small services, in Node.js. 
+Liz Parody discusses using Microservices, an architectural approach based on building an application as a collection of small services, in Node.js. 
 
 [READ MORE >>>](https://nodesource.com/blog/microservices-in-nodejs)
 
