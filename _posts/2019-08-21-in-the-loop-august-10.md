@@ -51,12 +51,6 @@ Liran Tal explains how surgical security patches are a crucial tool to help you 
 
 [READ MORE >>>](https://snyk.io/blog/staying-ahead-of-security-vulnerabilities-with-security-patches/)
 
-### Rapidly extend a Fastify app with automated API generation from LoopBack
-
-Anton Whalley walks you through a project that required extending with 5 new REST endpoints.
-
-[READ MORE >>>](https://venshare.com/rapidly-extend-a-fastify-app-with-crud-apis-from-loopback/)
-
 ### LoopBack Quick Tip: Running LB4 Application in Docker
 
 Do you know that LoopBack 4 CLI generates aDockerfile when scaffolding a LB4 application so that you can run it in a Docker container right away? Diana Lau shares a quick tip!
