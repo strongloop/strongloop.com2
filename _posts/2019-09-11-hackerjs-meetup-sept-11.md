@@ -10,7 +10,7 @@ categories:
 published: false
 ---
 
-As promised, we're announcing the next HackerJS Meetup for Wednesday, September 11, 2019 at Santa Clara's Hacker Dojo. If you are near Santa Clara, California and want to brush up on your Node and JS skills then this ia a great event for you!
+After a break for summer holidays, the HackerJS Meetup announced its next meeting for Wednesday, September 11, 2019 at Santa Clara's Hacker Dojo. If you are near Santa Clara, California and want to brush up on your Node and JS skills then we'd love to see you there!
 
 <!--more-->
 <p align="center"> 
