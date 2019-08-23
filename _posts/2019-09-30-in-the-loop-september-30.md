@@ -14,11 +14,11 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
-### 101 Rules for Deploying with Dev Ops
+### A Multi-tenant application with LoopBack 4
 
-Check out some ground rules that must be considered to start any DevOps journey, coutesy of Chris Phillips.
+Samarpan Bhattacharya looks at what modern day Enterprise Applications need and why or how LoopBack 4 is preferable to solve all such requirements.
 
-[READ MORE >>>](https://chrisphillips-cminion.github.io/misc/2019/06/20/DevOpsRules.html)
+[READ MORE >>>](https://medium.com/@this.is.samy/https-medium-com-a-multi-tenant-application-with-loopback-4-b28d68dd0dd6)
 
 ## What Next?
 
