@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Boutique Footwear Company Finds A Great Fit With Node.js
+
+Alex Woodie looks at Kamik, a one of the premier providers of winter footwear in North America and Europe, and how Node.js helped improve its production systems, application integration and developer productivity.
+
+[READ MORE >>>](https://www.itjungle.com/2019/08/19/boutique-footwear-company-finds-a-great-fit-with-node-js/)
+
 ### A Multi-tenant application with LoopBack 4
 
 Samarpan Bhattacharya looks at what modern day Enterprise Applications need and why or how LoopBack 4 is preferable to solve all such requirements.
