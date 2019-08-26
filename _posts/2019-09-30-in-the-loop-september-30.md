@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### IBM Open-Sources Power ISA, Shares CPU, OpenCAPI Reference Designs
+
+Joel Hruska looks at the steps IBM has taken to open the Power architecture further and expand access to its capabilities.
+
+[READ MORE >>>](https://www.extremetech.com/computing/297162-ibm-open-sources-power-isa-shares-cpu-opencapi-reference-designs)
+
 ### Boutique Footwear Company Finds A Great Fit With Node.js
 
 Alex Woodie looks at Kamik, a one of the premier providers of winter footwear in North America and Europe, and how Node.js helped improve its production systems, application integration and developer productivity.
