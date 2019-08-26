@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Discover at the Next HackerJS Meetup (September 11 at the Hacker Dojo)
+title: Learn at the Next HackerJS Meetup (September 11 at the Hacker Dojo)
 date: 2019-08-31
 author: Dave Whiteley
 permalink: /strongblog/hackerjs-meetup-sept-11/
@@ -19,10 +19,8 @@ After a break for summer holidays, the HackerJS Meetup announced its next meetin
 
 HackerJS is a NodeJS & JavaScript community meetup group that connects on the second Wednesday of each month. Whether you are a newbie or expert, the group strives to have a mix of beginner and advanced talks.
 
-Speakers this time include folks from Mashr and IBM.
-
 ### "Building a Centralized Log Management Framework" 
-**Faazil Shaikh**, Software Engineer at Mashr.
+**Faazil Shaikh**
 
 <p align="center"> 
 <img src="https://strongloop.com/blog-assets/2019/05/Jacob.png" alt="Jacob" style="width: 200px"/>
