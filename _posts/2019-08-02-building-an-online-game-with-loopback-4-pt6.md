@@ -18,7 +18,7 @@ Now our project is on IBM Cloud. But you may notice there is not anything that w
 
 In this episode, I will build signup, login, and home pages with [React](https://reactjs.org/).
 
-You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part6/firstgame) for the code from this episode.
+You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part6/firstgame-frontend) for the code from this episode.
 
 <!--more-->
 
@@ -1001,6 +1001,15 @@ function changeSkill(currentUser, gear, self) {
 ```
 
 You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part6/firstgame-frontend/src/services) for the code of `Services`.
+
+### Try This App
+
+You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part6/firstgame-frontend) for the code from this episode.
+
+To run this App, simply run `npm i` and `npm start` in the project folder.
+
+In order to use the login feature, you will also need the back-end LoopBack 4 App running. You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part6/firstgame) for the back-end.
+
 
 ### Applying This to Your Own Project
 
