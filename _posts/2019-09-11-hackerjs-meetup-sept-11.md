@@ -14,7 +14,7 @@ After a break for summer holidays, the HackerJS Meetup is ready for its next mee
 
 <!--more-->
 <p align="center"> 
-<img src="https://strongloop.com/blog-assets/2019/09/hackerJS Meetup september 11.png" alt="Meetup - September 11 at Hacker Dojo!" style="width: 300px"/>
+<img src="https://strongloop.com/blog-assets/2019/09/hackerJS-meetup-september-11.png" alt="Meetup - September 11 at Hacker Dojo!" style="width: 300px"/>
 </p>
 
 HackerJS is a NodeJS & JavaScript community meetup group that connects on the second Wednesday of each month. Whether you are a newbie or expert, the group strives to have a mix of beginner and advanced talks. We're excited for the first talk and still finalizing the second one.
