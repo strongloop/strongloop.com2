@@ -10,14 +10,14 @@ categories:
 published: false
 ---
 
-After a break for summer holidays, the HackerJS Meetup is ready for its next meeting! If you are near Santa Clara, California and want to brush up on your Node and JS skills then we'd love to see you there! Join us Wednesday, September 11,  at Santa Clara's Hacker Dojo.
+After a break for summer holidays, the HackerJS Meetup is gearing up for its next meeting! If you are near Santa Clara, California and want to brush up on your Node and JS skills then we'd love to see you there! Join us Wednesday, September 11,  at Santa Clara's Hacker Dojo.
 
 <!--more-->
 <p align="center"> 
 <img src="https://strongloop.com/blog-assets/2019/09/hackerJS-meetup-september-11.png" alt="Meetup - September 11 at Hacker Dojo!" style="width: 250px"/>
 </p>
 
-HackerJS is a NodeJS & JavaScript community meetup group that connects on the second Wednesday of each month. Whether you are a newbie or expert, the group strives to have a mix of beginner and advanced talks. We're excited for the first talk and still finalizing the second one.
+HackerJS is a NodeJS & JavaScript community meetup group that connects on the second Wednesday of each month. Whether you are a newbie or expert, the group strives to have a mix of beginner and advanced talks. We're excited for the first talk and still finalizing the second one. (It's worth mentioning that if you are local to Santa Clara and want to present a session, please contact the meetup crew via [their page](https://www.meetup.com/HackerJS/).
 
 ### "Building a Centralized Log Management Framework" 
 **Faazil Shaikh**
