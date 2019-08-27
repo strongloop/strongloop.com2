@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building an Online Game With LoopBack 4 - Front-end with React (Part 6)
-date: 2019-08-02
+date: 2019-08-27
 author: Wenbo Sun
 permalink: /strongblog/building-an-online-game-with-loopback-4-pt6/
 categories:
@@ -14,7 +14,7 @@ published: false
 
 ### In This Episode
 
-Now our project is on IBM Cloud. But you may notice there is not anything that we can actually play with. It's just some APIs. How can we call it a game without front-end UI?
+Now our project is on IBM Cloud. But you may notice there isn't anything that we can actually play with yet. It's just some APIs. How can we call it a game without front-end UI?
 
 In this episode, I will build signup, login, and home pages with [React](https://reactjs.org/).
 
@@ -40,13 +40,12 @@ Here are the previous episodes:
 
 ### Prerequisites
 
-I am completely new to the front-end world. So I took some online courses.
-If you don't have any front-end experience like me, you should spend some time on the basic knowledge before moving on.
+I am completely new to the front-end world. So I took some online courses. If you don't have any front-end experience, you should spend some time on the basic knowledge before moving on.
 
 - [Javascript 30 days](https://javascript30.com/)
 - [Learn React - React Crash Course](https://www.youtube.com/watch?v=Ke90Tje7VS0)
 
-You don't need to finish them all. Watching online courses is boring. You can start to write code whenever you think you are ready.
+Watching online courses is boring, so you don't need to finish them all. You can start to write code whenever you think you are ready.
 
 I will also use some other libraries.
 
