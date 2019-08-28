@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Building an Online Game With LoopBack 4 - Front-end with React (Part 6)
-date: 2019-08-27
+date: 2019-08-28
 author: Wenbo Sun
 permalink: /strongblog/building-an-online-game-with-loopback-4-pt6/
 categories:
   - How-To
   - LoopBack
-published: false
+published: true
 ---
 
 ## Part 6: Front-end with React
