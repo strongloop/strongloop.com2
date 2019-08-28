@@ -119,7 +119,8 @@ class App extends Component {
 
   handelLogout() {
     authenticationService.logout();
-    this.setState({ currentUser: "", data: {}, gear: {} });
+    this.setState({ currentUser: "", data: {}, gear: {}
+    });
   }
 
   handelUserData() {
@@ -154,10 +155,12 @@ class App extends Component {
                       />
                     ) : (
                       <Redirect
-                        to={{
+                        to={
+                        {
                           pathname: "/login",
                           state: { from: props.location }
-                        }}
+                        }
+                        }
                       />
                     )
                   }
@@ -216,7 +219,8 @@ Then we have three functions:
 
   handelLogout() {
     authenticationService.logout();
-    this.setState({ currentUser: "", data: {}, gear: {} });
+    this.setState({ currentUser: "", data: {}, gear: {}
+    });
   }
 
   handelUserData() {
@@ -260,7 +264,8 @@ We use `react-router-dom` for redirecting. I have three pages in my route:
         to={{
           pathname: "/login",
           state: { from: props.location }
-        }}
+        }
+        }
       />
     )
   }
