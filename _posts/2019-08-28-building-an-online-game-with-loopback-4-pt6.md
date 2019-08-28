@@ -1,24 +1,24 @@
 ---
 layout: post
 title: Building an Online Game With LoopBack 4 - Front-end with React (Part 6)
-date: 2019-08-28
+date: 2019-08-02
 author: Wenbo Sun
 permalink: /strongblog/building-an-online-game-with-loopback-4-pt6/
 categories:
   - How-To
   - LoopBack
-published: true
+published: false
 ---
 
 ## Part 6: Front-end with React
 
 ### In This Episode
 
-Now our project is on IBM Cloud. But you may notice there isn't anything that we can actually play with yet. It's just some APIs. How can we call it a game without front-end UI?
+Now our project is on IBM Cloud. But you may notice there is not anything that we can actually play with. It's just some APIs. How can we call it a game without front-end UI?
 
 In this episode, I will build signup, login, and home pages with [React](https://reactjs.org/).
 
-You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part6/firstgame-frontend) for the code from this episode.
+You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part6/firstgame) for the code from this episode.
 
 <!--more-->
 
@@ -40,12 +40,13 @@ Here are the previous episodes:
 
 ### Prerequisites
 
-I am completely new to the front-end world. So I took some online courses. If you don't have any front-end experience, you should spend some time on the basic knowledge before moving on.
+I am completely new to the front-end world. So I took some online courses.
+If you don't have any front-end experience like me, you should spend some time on the basic knowledge before moving on.
 
 - [Javascript 30 days](https://javascript30.com/)
 - [Learn React - React Crash Course](https://www.youtube.com/watch?v=Ke90Tje7VS0)
 
-Watching online courses is boring, so you don't need to finish them all. You can start to write code whenever you think you are ready.
+You don't need to finish them all. Watching online courses is boring. You can start to write code whenever you think you are ready.
 
 I will also use some other libraries.
 
@@ -67,18 +68,18 @@ npm i create-react-app
 Then run this to create a new react project:
 
 ```
-npx create-react-app <your_project_name>
+create-react-app <your_project_name>
 ```
 
 If you go to the project you just created and run `npm start`, you will see a page like this:
 
 ![default_page](/blog-assets/2019/08/building-online-game-pt6-react-default.jpg)
 
-### Project Structure
+### structure Designing
 
 Before we start, we need to spend some time on the project structure.
 
-In a React project, everything is a [component](https://reactjs.org/docs/react-component.html). Your pages, navigation bar, input form, or even a button, all of them could be components. All of those components are organized in a tree structure. Here is my project structure.
+In a React project, everything is [component](https://reactjs.org/docs/react-component.html). Your pages, navigation bar, input form, or even a button, all of them could be components. All of those components are organized in a tree structure. Here is my project structure.
 
 ![structure](/blog-assets/2019/08/building-online-game-pt6-structure.jpg)
 
@@ -119,8 +120,7 @@ class App extends Component {
 
   handelLogout() {
     authenticationService.logout();
-    this.setState({ currentUser: "", data: {}, gear: {}
-    });
+    this.setState({ currentUser: "", data: {}, gear: {} });
   }
 
   handelUserData() {
@@ -155,12 +155,12 @@ class App extends Component {
                       />
                     ) : (
                       <Redirect
-                        to={
+                      to={
                         {
                           pathname: "/login",
                           state: { from: props.location }
                         }
-                        }
+                      }
                       />
                     )
                   }
@@ -219,8 +219,7 @@ Then we have three functions:
 
   handelLogout() {
     authenticationService.logout();
-    this.setState({ currentUser: "", data: {}, gear: {}
-    });
+    this.setState({ currentUser: "", data: {}, gear: {} });
   }
 
   handelUserData() {
@@ -261,11 +260,12 @@ We use `react-router-dom` for redirecting. I have three pages in my route:
       />
     ) : (
       <Redirect
-        to={{
+      to={
+        {
           pathname: "/login",
           state: { from: props.location }
         }
-        }
+      }
       />
     )
   }
@@ -1005,15 +1005,6 @@ function changeSkill(currentUser, gear, self) {
 ```
 
 You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part6/firstgame-frontend/src/services) for the code of `Services`.
-
-### Try This App
-
-You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part6/firstgame-frontend) for the code from this episode.
-
-To run this App, simply run `npm i` and `npm start` in the project folder.
-
-In order to use the login feature, you will also need the back-end LoopBack 4 App running. You can check [here](https://github.com/gobackhuoxing/first-web-game-lb4/tree/part6/firstgame) for the back-end.
-
 
 ### Applying This to Your Own Project
 
