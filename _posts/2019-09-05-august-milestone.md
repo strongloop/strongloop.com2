@@ -13,12 +13,15 @@ published: false
 <!-- This is the template for august milestone, feel free to add your achievement when finish a task, thank you! -->
 
 ## Inclusion Resolver
-We started implementing inclusion resolver this month. More details for the feature please check the epic [Inclusion of related models](https://github.com/strongloop/loopback-next/issues/1352) and the spike [Resolver for inclusion of related models ](https://github.com/strongloop/loopback-next/pull/3387).
-- We introduced the concept of `InclusionResolver`, and also implemented `findByForeignkey` and `includeRelatedModels` functions, which help build `resolvers` for relations and improve querying for include filed. More details [findByForeignKeys](https://github.com/strongloop/loopback-next/issues/3443), [InclusionResolver](https://github.com/strongloop/loopback-next/issues/3445).
-- We improved `DefaultCrudRepository` to leverage `InclusionResolvers` in [Include related models in `DefaultCrudRepository`](https://github.com/strongloop/loopback-next/issues/3446): 
-  - `findById`, `find`, and `findOne` methods have been modified to to call `includeRelatedModels`.
+
+From the [Inclusion of related models](https://github.com/strongloop/loopback-next/issues/1352) epic, we started to implement tasks related to the inclusion resolver. 
+
+- We introduced the type `InclusionResolver` which users can use to fetch related models in [PR #3517](https://github.com/strongloop/loopback-next/pull/3517).
+- We implemented `findByForeignKeys` and `includeRelatedModels` functions, which help build `resolvers` for relations and improve querying for the include filter. The `findByForeignKeys` method finds model instances that contain any of the provided foreign key values. You can see more details for `findByForeignKeys` in [PR #3473](https://github.com/strongloop/loopback-next/pull/3473). The `includeRelatedModels` function returns model instances that include related models that have a registered resolver. You can see more about this function in [PR #3517](https://github.com/strongloop/loopback-next/pull/3517).
+- We improved `DefaultCrudRepository` to leverage `InclusionResolver` in [PR #3583](https://github.com/strongloop/loopback-next/pull/3583).
+  - The `findById`, `find`, and `findOne` methods have been modified to to call `includeRelatedModels`.
   - `registerInclusionResolver` method has been added to register resolvers.
-- Tests in repository package for relations have been refactored so that they can be tested against MySQL and MongoDB. This ensures our test suites work against real databases along with memory. More details please check [Test relations against databases](https://github.com/strongloop/loopback-next/issues/3442).
+- Tests in repository package for relations have been refactored so that they can be tested against MySQL and MongoDB. This ensures our relations test suites work against real databases, along with the memory. Check [PR #3538](https://github.com/strongloop/loopback-next/pull/3538) for more details.
 
 ## Max Listeners
 
