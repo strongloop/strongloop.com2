@@ -10,8 +10,6 @@ categories:
 published: false
 ---
 
-<!-- This is the template for august milestone, feel free to add your achievement when finish a task, thank you! -->
-
 ## Inclusion Resolver
 
 From the [Inclusion of related models](https://github.com/strongloop/loopback-next/issues/1352) epic, we started to implement tasks related to the inclusion resolver. 
@@ -26,6 +24,22 @@ From the [Inclusion of related models](https://github.com/strongloop/loopback-ne
 ## Max Listeners
 
 If multiple operations are executed by a connector before a connection is established with the database, these operation are queued up. If the number of queued operations exceeds [Node.js' default max listeners amount](https://nodejs.org/api/events.html#events_eventemitter_defaultmaxlisteners), it throws the following warning: `MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 connected listeners added. Use emitter.setMaxListeners() to increase limit`. We introduced a default value for the maximum number of emitters and now allow users to customize the number. In a LoopBack 3 application's `datasources.json`, you can change the number by setting the `maxOfflineRequests` property to your desired number. See [PR #1767](https://github.com/strongloop/loopback-datasource-juggler/pull/1767) and [PR #149](https://github.com/strongloop/loopback-connector/pull/149) for details.
+
+## Authorization
+
+This month the experimental version of `@loopback/authorization` is released by landing Raymond's [authorization feature PR](https://github.com/strongloop/loopback-next/pull/1205).
+
+Before releasing the module, the authorization system is verified and tested by a [PoC PR](https://github.com/strongloop/loopback4-example-shopping/pull/231) in the shopping example. Developers can decorate their endpoints with `@authorize()`, and provide the authorization metadata like `scope`, `resource`, `voter` in the decorator. Then define or plugin their own authorizers which determine whether a user has access to the resource. This is similar to how the authentication strategies are provided in the authentication system.
+
+`@loopback/authentication` and `@loopback/authorization` are combined in a way that the `authentication` module restores the user identity from a request, passes it as the current user to the `authorization` module which decides is the resource accessible by that user.
+
+Since the two modules share the identity abstracts to describe the user(or application, device in the future), we extracted the user related binding keys and types into a separate module `@loopback/security`.
+
+## Security
+
+As mentioned in the previous section, the interface `UserProfile` and `AuthenticationBindings.CURRENT_USER` are moved into `@loopback/security`. This module contains the common types/interfaces for LoopBack 4 security including authentication and authorization.
+
+In this package we defined interface `Principle` as the base type of all the identity models, like `UserProfile`, `Organization`, `Application`(the later two are still in build), it has a symbol field called `securityId`, which is used as the identity of a user/application/device.
 
 ## Call to Action
 
