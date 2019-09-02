@@ -41,6 +41,24 @@ As mentioned in the previous section, the interface `UserProfile` and `Authentic
 
 In this package we defined interface `Principle` as the base type of all the identity models, like `UserProfile`, `Organization`, `Application`(the later two are still in build), it has a symbol field called `securityId`, which is used as the identity of a user/application/device.
 
+## From model definition to REST API with no custom classes
+
+This month we started to work on the Epic that will simplify building REST APIs in LoopBack 4.
+
+Quoting from https://github.com/strongloop/loopback-next/issues/2036:
+
+> In LoopBack 3, it was very easy to get a fully-featured CRUD REST API with very little code: a model definition describing model properties + a model configuration specifying which datasource to use.
+> 
+> Let's provide the same simplicity to LB4 users too.
+> 
+> - User creates a model class and uses decorators to define model properties. (No change here.)
+> - User declaratively defines what kind of data-access patterns to provide (CRUD, KeyValue, etc.) and what datasource to use under the hood.
+> - `@loopback/boot` processes this configuration and registers appropriate repositories & controllers with the app.
+
+The first step was to build a new component that will provide the default CRUD REST operations. The [PR#3582](https://github.com/strongloop/loopback-next/pull/3582) introduces a new package `@loopback/rest-crud` that can be already used today as an alternative solution to `lb4 controller`.
+
+In the next step, we needed to research the best design for model configuration and booter implementation. The [PR#3617](https://github.com/strongloop/loopback-next/pull/3617) offers a proof-of-concept prototype demonstrating the proposed design. We are excited about the extensibility of the proposed approach, as it will make it very easy for 3rd-party developers (including application developers) to implement their own flavor of Repository and Controller classes to be used with the new Model API booter.
+
 ## Call to Action
 
 LoopBack's future success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Here's how you can join us and help the project:
