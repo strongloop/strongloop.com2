@@ -27,6 +27,8 @@ If multiple operations are executed by a connector before a connection is establ
 
 ## Authorization
 
+### Experimental release
+
 This month the experimental version of `@loopback/authorization` is released by landing Raymond's [authorization feature PR](https://github.com/strongloop/loopback-next/pull/1205).
 
 Before releasing the module, the authorization system is verified and tested by a [PoC PR](https://github.com/strongloop/loopback4-example-shopping/pull/231) in the shopping example. Developers can decorate their endpoints with `@authorize()`, and provide the authorization metadata like `scope`, `resource`, `voter` in the decorator. Then define or plugin their own authorizers which determine whether a user has access to the resource. This is similar to how the authentication strategies are provided in the authentication system.
@@ -34,6 +36,16 @@ Before releasing the module, the authorization system is verified and tested by 
 `@loopback/authentication` and `@loopback/authorization` are combined in a way that the `authentication` module restores the user identity from a request, passes it as the current user to the `authorization` module which decides is the resource accessible by that user.
 
 Since the two modules share the identity abstracts to describe the user(or application, device in the future), we extracted the user related binding keys and types into a separate module `@loopback/security`.
+
+### Configure the Decision logic for Voters
+
+After the initial release of `@loopback/authorization`, we received community feedback regarding more flexible decision logic for the voters/authorizers. Raymond introduced two options to configure the decision maker:
+
+- `precedency`: Controls if Allow/Deny vote takes precedence and override other votes. If not set, default to `AuthorizationDecision.DENY`. Once a vote matches the `precedence`, it becomes the final decision. The rest of votes will be skipped.
+
+- `defaultDecision`: Default decision if all authorizers vote for `ABSTAIN`. If not set, default to `AuthorizationDecision.DENY`.
+
+For details of how the final decision is made, you can check the [Decision matrix](https://github.com/strongloop/loopback-next/blob/master/packages/authorization/README.md#decision-matrix).
 
 ## Security
 
@@ -64,6 +76,47 @@ In the next step, we needed to research the best design for model configuration 
 As the summer ends, [Nora](https://strongloop.com/authors/Nora_Abdelgadir/) has completed her 12-month internship in the LoopBack team. Thank you for her dedication and hard work! She has been making good progress in the [inclusion of related models story](https://github.com/strongloop/loopback-next/issues/1352) in this month! We wish her best wishes at school. While she has returned to school, Nora will still be maintaining LoopBack on a part-time basis.
 
 On the other hand, we're excited to have [Deepak](https://github.com/deepakrkris) back to the team. Bringing his knowledge and experience in cloud and container related technologies, it would be a great addition to us. Welcome Deepak!
+## LoopBack Stack for Appsody
+
+Appsody makes creating cloud native applications simple. It provides application stacks for open source runtimes and frameworks, which are pre-configured with cloud native capabilities for Kubernetes and Knative deployments. 
+
+This month We published a Node.js LoopBack stack that extends the [Node.js](https://github.com/appsody/stacks/tree/master/incubator/nodejs) stack and provides a powerful solution to build open APIs and Microservices in TypeScript. You can try its image in [stack Node.js-LoopBack](https://github.com/appsody/stacks/tree/master/incubator/nodejs-loopback)
+
+## AJV Keywords Support
+
+In [PR#3539](https://github.com/strongloop/loopback-next/pull/3539) we added validator [`ajv-keywords`](https://github.com/epoberezkin/ajv-keywords) to validate the incoming request data according to its corresponding OpenAPI schema. Now you can specify `ajvKeywords` as `true` or an array of AJV validation keywords in the validation options. 
+
+```ts
+app = new RestApplication({rest: givenHttpServerConfig()});
+app
+  .bind(RestBindings.REQUEST_BODY_PARSER_OPTIONS)
+  .to({validation: {ajvKeywords: true}});
+```
+
+or
+
+```ts
+app = new RestApplication({rest: givenHttpServerConfig()});
+app
+  .bind(RestBindings.REQUEST_BODY_PARSER_OPTIONS)
+  .to({validation: {ajvKeywords: ['range']}});
+```
+
+## Binding Improvement
+
+In [PR#3618](https://github.com/strongloop/loopback-next/pull/3618) we added support for applying multiple `@bind()` decorators on the same class. Now you can decorator your class like:
+
+```ts
+@bind({scope: BindingScope.TRANSIENT})
+@bind({tags: {name: 'my-controller'}})
+export class MyController {
+  // Your controller members
+}
+```
+
+## Documentation Improvements
+
+The architecture diagrams are added for concepts [Binding](), [Component](), [Context](), [IoC Container](), and [Context Hierarchy]().
 
 ## Call to Action
 
