@@ -10,6 +10,12 @@ categories:
 published: false
 ---
 
+## Farewell and Welcome
+
+As the summer ends, [Nora](https://strongloop.com/authors/Nora_Abdelgadir/) has completed her 12-month internship in the LoopBack team. Thank you for her dedication and hard work! She has been making good progress in the [inclusion of related models story](https://github.com/strongloop/loopback-next/issues/1352) in this month! We wish her best wishes at school. While she has returned to school, Nora will still be maintaining LoopBack on a part-time basis.
+
+On the other hand, we're excited to have [Deepak](https://github.com/deepakrkris) back to the team. Bringing his knowledge and experience in cloud and container related technologies, it would be a great addition to us. Welcome Deepak!
+
 ## Inclusion Resolver
 
 From the [Inclusion of related models](https://github.com/strongloop/loopback-next/issues/1352) epic, we started to implement tasks related to the inclusion resolver. 
@@ -20,10 +26,6 @@ From the [Inclusion of related models](https://github.com/strongloop/loopback-ne
   - The `findById`, `find`, and `findOne` methods have been modified to to call `includeRelatedModels`.
   - `registerInclusionResolver` method has been added to register resolvers.
 - Tests in repository package for relations have been refactored so that they can be tested against MySQL and MongoDB. This ensures our relations test suites work against real databases, along with the memory. Check [PR #3538](https://github.com/strongloop/loopback-next/pull/3538) for more details.
-
-## Max Listeners
-
-If multiple operations are executed by a connector before a connection is established with the database, these operation are queued up. If the number of queued operations exceeds [Node.js' default max listeners amount](https://nodejs.org/api/events.html#events_eventemitter_defaultmaxlisteners), it throws the following warning: `MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 connected listeners added. Use emitter.setMaxListeners() to increase limit`. We introduced a default value for the maximum number of emitters and now allow users to customize the number. In a LoopBack 3 application's `datasources.json`, you can change the number by setting the `maxOfflineRequests` property to your desired number. See [PR #1767](https://github.com/strongloop/loopback-datasource-juggler/pull/1767) and [PR #149](https://github.com/strongloop/loopback-connector/pull/149) for details.
 
 ## Authorization
 
@@ -47,9 +49,9 @@ After the initial release of `@loopback/authorization`, we received community fe
 
 For details of how the final decision is made, you can check the [Decision matrix](https://github.com/strongloop/loopback-next/blob/master/packages/authorization/README.md#decision-matrix).
 
-## Security
+## New Common Layer for Authorization and Authentication
 
-As mentioned in the previous section, the interface `UserProfile` and `AuthenticationBindings.CURRENT_USER` are moved into `@loopback/security`. This module contains the common types/interfaces for LoopBack 4 security including authentication and authorization.
+As mentioned in the previous section, the interface `UserProfile` and `AuthenticationBindings.CURRENT_USER` are moved into a new module called `@loopback/security`. This module contains the common types/interfaces for LoopBack 4 security including authentication and authorization.
 
 In this package we defined interface `Principle` as the base type of all the identity models, like `UserProfile`, `Organization`, `Application`(the later two are still in build), it has a symbol field called `securityId`, which is used as the identity of a user/application/device.
 
@@ -71,11 +73,6 @@ The first step was to build a new component that will provide the default CRUD R
 
 In the next step, we needed to research the best design for model configuration and booter implementation. The [PR#3617](https://github.com/strongloop/loopback-next/pull/3617) offers a proof-of-concept prototype demonstrating the proposed design. We are excited about the extensibility of the proposed approach, as it will make it very easy for 3rd-party developers (including application developers) to implement their own flavor of Repository and Controller classes to be used with the new Model API booter.
 
-## Farewell and Welcome
-
-As the summer ends, [Nora](https://strongloop.com/authors/Nora_Abdelgadir/) has completed her 12-month internship in the LoopBack team. Thank you for her dedication and hard work! She has been making good progress in the [inclusion of related models story](https://github.com/strongloop/loopback-next/issues/1352) in this month! We wish her best wishes at school. While she has returned to school, Nora will still be maintaining LoopBack on a part-time basis.
-
-On the other hand, we're excited to have [Deepak](https://github.com/deepakrkris) back to the team. Bringing his knowledge and experience in cloud and container related technologies, it would be a great addition to us. Welcome Deepak!
 ## LoopBack Stack for Appsody
 
 Appsody makes creating cloud native applications simple. It provides application stacks for open source runtimes and frameworks, which are pre-configured with cloud native capabilities for Kubernetes and Knative deployments. 
@@ -102,6 +99,10 @@ app
   .to({validation: {ajvKeywords: ['range']}});
 ```
 
+## Max Listeners
+
+If multiple operations are executed by a connector before a connection is established with the database, these operation are queued up. If the number of queued operations exceeds [Node.js' default max listeners amount](https://nodejs.org/api/events.html#events_eventemitter_defaultmaxlisteners), it throws the following warning: `MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 connected listeners added. Use emitter.setMaxListeners() to increase limit`. We introduced a default value for the maximum number of emitters and now allow users to customize the number. In a LoopBack 3 application's `datasources.json`, you can change the number by setting the `maxOfflineRequests` property to your desired number. See [PR #1767](https://github.com/strongloop/loopback-datasource-juggler/pull/1767) and [PR #149](https://github.com/strongloop/loopback-connector/pull/149) for details.
+
 ## Binding Improvement
 
 In [PR#3618](https://github.com/strongloop/loopback-next/pull/3618) we added support for applying multiple `@bind()` decorators on the same class. Now you can decorator your class like:
@@ -117,6 +118,11 @@ export class MyController {
 ## Documentation Improvements
 
 The architecture diagrams are added for concepts [Binding](), [Component](), [Context](), [IoC Container](), and [Context Hierarchy]().
+
+We also reorganized the documentation so that it's easier for users to understand, including:
+
+* Adding diagram on how each key concepts relate to each other.
+* Reordering the sidebar items under the key concepts section.
 
 ## Call to Action
 
