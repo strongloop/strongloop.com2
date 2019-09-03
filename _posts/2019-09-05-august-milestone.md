@@ -59,6 +59,12 @@ The first step was to build a new component that will provide the default CRUD R
 
 In the next step, we needed to research the best design for model configuration and booter implementation. The [PR#3617](https://github.com/strongloop/loopback-next/pull/3617) offers a proof-of-concept prototype demonstrating the proposed design. We are excited about the extensibility of the proposed approach, as it will make it very easy for 3rd-party developers (including application developers) to implement their own flavor of Repository and Controller classes to be used with the new Model API booter.
 
+## Farewell and Welcome
+
+As the summer ends, [Nora](https://strongloop.com/authors/Nora_Abdelgadir/) has completed her 12-month internship in the LoopBack team. Thank you for her dedication and hard work! She has been making good progress in the [inclusion of related models story](https://github.com/strongloop/loopback-next/issues/1352) in this month! We wish her best wishes at school. While she has returned to school, Nora will still be maintaining LoopBack on a part-time basis.
+
+On the other hand, we're excited to have [Deepak](https://github.com/deepakrkris) back to the team. Bringing his knowledge and experience in cloud and container related technologies, it would be a great addition to us. Welcome Deepak!
+
 ## Call to Action
 
 LoopBack's future success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Here's how you can join us and help the project:
