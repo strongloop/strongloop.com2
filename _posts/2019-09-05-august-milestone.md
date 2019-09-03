@@ -75,13 +75,13 @@ In the next step, we needed to research the best design for model configuration 
 
 ## LoopBack Stack for Appsody
 
-Appsody makes creating cloud native applications simple. It provides application stacks for open source runtimes and frameworks, which are pre-configured with cloud native capabilities for Kubernetes and Knative deployments. 
+[Appsody](https://appsody.dev/) is an open source project that makes creating cloud native applications simple. It provides application stacks for open source runtimes and frameworks, which are pre-configured with cloud native capabilities for Kubernetes and Knative deployments. 
 
-This month We published a Node.js LoopBack stack that extends the [Node.js](https://github.com/appsody/stacks/tree/master/incubator/nodejs) stack and provides a powerful solution to build open APIs and Microservices in TypeScript. You can try its image in [stack Node.js-LoopBack](https://github.com/appsody/stacks/tree/master/incubator/nodejs-loopback)
+This month we published an Appsody stack of Node.js LoopBack that extends the [Node.js](https://github.com/appsody/stacks/tree/master/incubator/nodejs) stack and provides a powerful solution to build open APIs and Microservices in TypeScript. You can try its image in [stack Node.js-LoopBack](https://github.com/appsody/stacks/tree/master/incubator/nodejs-loopback)
 
 ## AJV Keywords Support
 
-In [PR#3539](https://github.com/strongloop/loopback-next/pull/3539) we added validator [`ajv-keywords`](https://github.com/epoberezkin/ajv-keywords) to validate the incoming request data according to its corresponding OpenAPI schema. Now you can specify `ajvKeywords` as `true` or an array of AJV validation keywords in the validation options. 
+In [PR#3539](https://github.com/strongloop/loopback-next/pull/3539) we added validator [`ajv-keywords`](https://github.com/epoberezkin/ajv-keywords) to validate the incoming request data according to its corresponding OpenAPI schema. Now you can specify `ajvKeywords` as `true` or an array of AJV validation keywords in the validation options. See examples:
 
 ```ts
 app = new RestApplication({rest: givenHttpServerConfig()});
