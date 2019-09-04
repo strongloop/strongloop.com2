@@ -10,11 +10,11 @@ categories:
 published: false
 ---
 
-## Farewell and Welcome
+The last month in summer started with an exiting news that [LoopBack won the "Best in API Middleware award"](https://strongloop.com/strongblog/loopback-2019-api-award-api-middleware/)🎉 Which is a great recognition of our team's achievement and effort. A highlight of what's beed done in August: The implementation of  `InclusionResolver` made a significant progress in the Inclusion epic. A new epic to simplify building REST APIs is started with some pre-work and spike. A new LoopBack stack was published on Appsody to improve users' cloud native experience. The first version of `@loopback/authorization` was released for users to try. 
 
-As the summer ends, [Nora](https://strongloop.com/authors/Nora_Abdelgadir/) has completed her 12-month internship in the LoopBack team. Thank you for her dedication and hard work! She has been making good progress in the [inclusion of related models story](https://github.com/strongloop/loopback-next/issues/1352) in this month! We wish her best wishes at school. While she has returned to school, Nora will still be maintaining LoopBack on a part-time basis.
+You can read more to learn the new features and details.
 
-On the other hand, we're excited to have [Deepak](https://github.com/deepakrkris) back to the team. Bringing his knowledge and experience in cloud and container related technologies, it would be a great addition to us. Welcome Deepak!
+<!--more-->
 
 ## Inclusion Resolver
 
@@ -77,7 +77,7 @@ In the next step, we needed to research the best design for model configuration 
 
 [Appsody](https://appsody.dev/) is an open source project that makes creating cloud native applications simple. It provides application stacks for open source runtimes and frameworks, which are pre-configured with cloud native capabilities for Kubernetes and Knative deployments. 
 
-This month we published an Appsody stack of Node.js LoopBack that extends the [Node.js](https://github.com/appsody/stacks/tree/master/incubator/nodejs) stack and provides a powerful solution to build open APIs and Microservices in TypeScript. You can try its image in [stack Node.js-LoopBack](https://github.com/appsody/stacks/tree/master/incubator/nodejs-loopback)
+This month, LoopBack has been added as one of the application stacks in Appsody to provide a powerful solution to build open APIs and Microservices in TypeScript. You can try its image in [stack Node.js-LoopBack](https://github.com/appsody/stacks/tree/master/incubator/nodejs-loopback)
 
 ## AJV Keywords Support
 
@@ -123,6 +123,12 @@ We also reorganized the documentation so that it's easier for users to understan
 
 * Adding diagram on how each key concepts relate to each other.
 * Reordering the sidebar items under the key concepts section.
+
+## Farewell and Welcome
+
+As the summer ends, [Nora](https://strongloop.com/authors/Nora_Abdelgadir/) has completed her 12-month internship in the LoopBack team. Thank you for her dedication and hard work! She has been making good progress in the [inclusion of related models story](https://github.com/strongloop/loopback-next/issues/1352) in this month! We wish her best wishes at school. While she has returned to school, Nora will still be maintaining LoopBack on a part-time basis.
+
+On the other hand, we're excited to have [Deepak](https://github.com/deepakrkris) back to the team. Bringing his knowledge and experience in cloud and container related technologies, it would be a great addition to us. Welcome Deepak!
 
 ## Call to Action
 
