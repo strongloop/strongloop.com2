@@ -18,7 +18,7 @@ You can read more to learn the new features in details.
 
 ## Inclusion Resolver
 
-From the [Inclusion of related models](https://github.com/strongloop/loopback-next/issues/1352) epic, we started to implement tasks related to the inclusion resolver. 
+To deliver [Inclusion of related models](https://github.com/strongloop/loopback-next/issues/1352) epic, we started to implement tasks related to the inclusion resolver. 
 
 - We introduced the type `InclusionResolver` which users can use to fetch related models in [PR #3517](https://github.com/strongloop/loopback-next/pull/3517).
 - We implemented `findByForeignKeys` and `includeRelatedModels` functions, which help build `resolvers` for relations and improve querying for the include filter. The `findByForeignKeys` method finds model instances that contain any of the provided foreign key values. You can see more details for `findByForeignKeys` in [PR #3473](https://github.com/strongloop/loopback-next/pull/3473). The `includeRelatedModels` function returns model instances that include related models that have a registered resolver. You can see more about this function in [PR #3517](https://github.com/strongloop/loopback-next/pull/3517).
@@ -35,7 +35,7 @@ This month the experimental version of [`@loopback/authorization`](https://githu
 
 The authorization system is verified and tested by a [PoC PR](https://github.com/strongloop/loopback4-example-shopping/pull/231) in the shopping example. Developers can decorate their endpoints with `@authorize()`, and provide the authorization metadata like `scope`, `resource`, `voter` in the decorator. Then define or plugin their own authorizers which determine whether a user has access to the resource. This is similar to how the authentication strategies are provided in the authentication system.
 
-`@loopback/authentication` and `@loopback/authorization` are combined in a way that the `authentication` module restores the user identity from a request, passes it as the current user to the `authorization` module which decides is the resource accessible by that user.
+`@loopback/authentication` and `@loopback/authorization` are combined in a way that the `authentication` module establishes the user identity from a request, passes it as the current user to the `authorization` module which decides is the resource accessible by that user.
 
 Since the two modules share the identity abstracts to describe the user(or application, device in the future), we extracted the user related binding keys and types into a separate module `@loopback/security`.
 
