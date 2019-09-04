@@ -117,7 +117,7 @@ export class MyController {
 
 ## Documentation Improvements
 
-The architecture diagrams are added for concepts [Binding](), [Component](), [Context](), [IoC Container](), and [Context Hierarchy]().
+The architecture diagrams are added for concepts [Binding](https://loopback.io/doc/en/lb4/Binding.html), [Component](https://loopback.io/doc/en/lb4/Components.html), [Context](https://loopback.io/doc/en/lb4/Context.html), [IoC Container](https://loopback.io/doc/en/lb4/Context.html#why-is-it-important), and [Context Hierarchy](https://loopback.io/doc/en/lb4/Context.html#request-level-context-request).
 
 We also reorganized the documentation so that it's easier for users to understand, including:
 
