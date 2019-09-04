@@ -10,9 +10,9 @@ categories:
 published: false
 ---
 
-The last month in summer started with an exiting news that [LoopBack won the "Best in API Middleware award"](https://strongloop.com/strongblog/loopback-2019-api-award-api-middleware/)🎉 Which is a great recognition of our team's achievement and effort. A highlight of what's beed done in August: The implementation of  `InclusionResolver` made a significant progress in the Inclusion epic. A new epic to simplify building REST APIs is started with some pre-work and spike. A new LoopBack stack was published on Appsody to improve users' cloud native experience. The first version of `@loopback/authorization` was released for users to try. 
+The last month in summer started with an exiting news that [LoopBack won the "Best in API Middleware award"](https://strongloop.com/strongblog/loopback-2019-api-award-api-middleware/)🎉, which is a great recognition of our team's achievement and effort. A highlight of what's been done in August: The implementation of  `InclusionResolver` has made a significant progress in the Inclusion epic. A new epic to simplify building REST APIs is started with some pre-work and spike. We contributed a LoopBack stack for Kabanero/Appsody to enable cloud native development experience. The first version of `@loopback/authorization` was released for users to try.
 
-You can read more to learn the new features and details.
+You can read more to learn the new features in details.
 
 <!--more-->
 
@@ -31,9 +31,9 @@ From the [Inclusion of related models](https://github.com/strongloop/loopback-ne
 
 ### Experimental release
 
-This month the experimental version of `@loopback/authorization` is released by landing Raymond's [authorization feature PR](https://github.com/strongloop/loopback-next/pull/1205).
+This month the experimental version of [`@loopback/authorization`](https://github.com/strongloop/loopback-next/tree/master/packages/authorization) is released by landing Raymond's [authorization feature PR](https://github.com/strongloop/loopback-next/pull/1205).
 
-Before releasing the module, the authorization system is verified and tested by a [PoC PR](https://github.com/strongloop/loopback4-example-shopping/pull/231) in the shopping example. Developers can decorate their endpoints with `@authorize()`, and provide the authorization metadata like `scope`, `resource`, `voter` in the decorator. Then define or plugin their own authorizers which determine whether a user has access to the resource. This is similar to how the authentication strategies are provided in the authentication system.
+The authorization system is verified and tested by a [PoC PR](https://github.com/strongloop/loopback4-example-shopping/pull/231) in the shopping example. Developers can decorate their endpoints with `@authorize()`, and provide the authorization metadata like `scope`, `resource`, `voter` in the decorator. Then define or plugin their own authorizers which determine whether a user has access to the resource. This is similar to how the authentication strategies are provided in the authentication system.
 
 `@loopback/authentication` and `@loopback/authorization` are combined in a way that the `authentication` module restores the user identity from a request, passes it as the current user to the `authorization` module which decides is the resource accessible by that user.
 
@@ -43,7 +43,7 @@ Since the two modules share the identity abstracts to describe the user(or appli
 
 After the initial release of `@loopback/authorization`, we received community feedback regarding more flexible decision logic for the voters/authorizers. Raymond introduced two options to configure the decision maker:
 
-- `precedency`: Controls if Allow/Deny vote takes precedence and override other votes. If not set, default to `AuthorizationDecision.DENY`. Once a vote matches the `precedence`, it becomes the final decision. The rest of votes will be skipped.
+- `precedence`: Controls if Allow/Deny vote takes precedence and override other votes. If not set, default to `AuthorizationDecision.DENY`. Once a vote matches the `precedence`, it becomes the final decision. The rest of votes will be skipped.
 
 - `defaultDecision`: Default decision if all authorizers vote for `ABSTAIN`. If not set, default to `AuthorizationDecision.DENY`.
 
@@ -51,7 +51,7 @@ For details of how the final decision is made, you can check the [Decision matri
 
 ## New Common Layer for Authorization and Authentication
 
-As mentioned in the previous section, the interface `UserProfile` and `AuthenticationBindings.CURRENT_USER` are moved into a new module called `@loopback/security`. This module contains the common types/interfaces for LoopBack 4 security including authentication and authorization.
+As mentioned in the previous section, the interface `UserProfile` and `AuthenticationBindings.CURRENT_USER` are moved into a new module called [`@loopback/security`](https://github.com/strongloop/loopback-next/tree/master/packages/security). This module contains the common types/interfaces for LoopBack 4 security including authentication and authorization.
 
 In this package we defined interface `Principle` as the base type of all the identity models, like `UserProfile`, `Organization`, `Application`(the later two are still in build), it has a symbol field called `securityId`, which is used as the identity of a user/application/device.
 
