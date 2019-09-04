@@ -10,7 +10,12 @@ categories:
 published: false
 ---
 
-The last month in summer started with an exiting news that [LoopBack won the "Best in API Middleware award"](https://strongloop.com/strongblog/loopback-2019-api-award-api-middleware/)🎉, which is a great recognition of our team's achievement and effort. A highlight of what's been done in August: The implementation of  `InclusionResolver` has made a significant progress in the Inclusion epic. A new epic to simplify building REST APIs is started with some pre-work and spike. We contributed a LoopBack stack for Kabanero/Appsody to enable cloud native development experience. The first version of `@loopback/authorization` was released for users to try.
+The last month in summer started with an exiting news that [LoopBack won the "Best in API Middleware award"](https://strongloop.com/strongblog/loopback-2019-api-award-api-middleware/)🎉, which is a great recognition of our team's achievement and effort. A highlight of what's been done in August: 
+
+- The implementation of InclusionResolver has made significant progress in the Inclusion epic.
+- A new epic to simplify building REST APIs is started with some pre-work and spike.
+- We contributed a LoopBack stack for Kabanero/Appsody to enable cloud native development experience.
+- The first version of @loopback/authorization was released for users to try.
 
 You can read more to learn the new features in details.
 
