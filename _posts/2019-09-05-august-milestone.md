@@ -1,16 +1,16 @@
 ---
 layout: post
 title: LoopBack 4 August 2019 Milestone Update
-date: 2019-08-07
+date: 2019-09-05
 author: Janny Hou
 permalink: /strongblog/august-2019-milestone/
 categories:
   - Community
   - LoopBack
-published: false
+published: true
 ---
 
-The last month in summer started with an exiting news that [LoopBack won the "Best in API Middleware award"](https://strongloop.com/strongblog/loopback-2019-api-award-api-middleware/)🎉, which is a great recognition of our team's achievement and effort. A highlight of what's been done in August: 
+The last month of summer started with exiting news that [LoopBack won the "Best in API Middleware award"](https://strongloop.com/strongblog/loopback-2019-api-award-api-middleware/)🎉, which is a great recognition of our team's achievement and effort. With those efforts in mind, here's the highlights of what we worked on in August: 
 
 - The implementation of InclusionResolver has made significant progress in the Inclusion epic.
 - A new epic to simplify building REST APIs is started with some pre-work and spike.
@@ -25,18 +25,21 @@ You can read more to learn the new features in details.
 
 To deliver [Inclusion of related models](https://github.com/strongloop/loopback-next/issues/1352) epic, we started to implement tasks related to the inclusion resolver. 
 
-- We introduced the type `InclusionResolver` which users can use to fetch related models in [PR #3517](https://github.com/strongloop/loopback-next/pull/3517).
+- We introduced the type `InclusionResolver` which you can use to fetch related models in [PR #3517](https://github.com/strongloop/loopback-next/pull/3517).
+
 - We implemented `findByForeignKeys` and `includeRelatedModels` functions, which help build `resolvers` for relations and improve querying for the include filter. The `findByForeignKeys` method finds model instances that contain any of the provided foreign key values. You can see more details for `findByForeignKeys` in [PR #3473](https://github.com/strongloop/loopback-next/pull/3473). The `includeRelatedModels` function returns model instances that include related models that have a registered resolver. You can see more about this function in [PR #3517](https://github.com/strongloop/loopback-next/pull/3517).
+
 - We improved `DefaultCrudRepository` to leverage `InclusionResolver` in [PR #3583](https://github.com/strongloop/loopback-next/pull/3583).
   - The `findById`, `find`, and `findOne` methods have been modified to to call `includeRelatedModels`.
   - `registerInclusionResolver` method has been added to register resolvers.
+
 - Tests in repository package for relations have been refactored so that they can be tested against MySQL and MongoDB. This ensures our relations test suites work against real databases, along with the memory. Check [PR #3538](https://github.com/strongloop/loopback-next/pull/3538) for more details.
 
 ## Authorization
 
 ### Experimental release
 
-This month the experimental version of [`@loopback/authorization`](https://github.com/strongloop/loopback-next/tree/master/packages/authorization) is released by landing Raymond's [authorization feature PR](https://github.com/strongloop/loopback-next/pull/1205).
+This month we released the experimental version of [`@loopback/authorization`](https://github.com/strongloop/loopback-next/tree/master/packages/authorization) by landing Raymond's [authorization feature PR](https://github.com/strongloop/loopback-next/pull/1205).
 
 The authorization system is verified and tested by a [PoC PR](https://github.com/strongloop/loopback4-example-shopping/pull/231) in the shopping example. Developers can decorate their endpoints with `@authorize()`, and provide the authorization metadata like `scope`, `resource`, `voter` in the decorator. Then define or plugin their own authorizers which determine whether a user has access to the resource. This is similar to how the authentication strategies are provided in the authentication system.
 
@@ -56,7 +59,7 @@ For details of how the final decision is made, you can check the [Decision matri
 
 ## New Common Layer for Authorization and Authentication
 
-As mentioned in the previous section, the interface `UserProfile` and `AuthenticationBindings.CURRENT_USER` are moved into a new module called [`@loopback/security`](https://github.com/strongloop/loopback-next/tree/master/packages/security). This module contains the common types/interfaces for LoopBack 4 security including authentication and authorization.
+As mentioned in the previous section, the interface `UserProfile` and `AuthenticationBindings.CURRENT_USER` have been moved into a new module called [`@loopback/security`](https://github.com/strongloop/loopback-next/tree/master/packages/security). This module contains the common types/interfaces for LoopBack 4 security including authentication and authorization.
 
 In this package we defined interface `Principle` as the base type of all the identity models, like `UserProfile`, `Organization`, `Application`(the later two are still in build), it has a symbol field called `securityId`, which is used as the identity of a user/application/device.
 
@@ -74,7 +77,7 @@ Quoting from https://github.com/strongloop/loopback-next/issues/2036:
 > - User declaratively defines what kind of data-access patterns to provide (CRUD, KeyValue, etc.) and what datasource to use under the hood.
 > - `@loopback/boot` processes this configuration and registers appropriate repositories & controllers with the app.
 
-The first step was to build a new component that will provide the default CRUD REST operations. The [PR#3582](https://github.com/strongloop/loopback-next/pull/3582) introduces a new package `@loopback/rest-crud` that can be already used today as an alternative solution to `lb4 controller`.
+The first step was building a new component that will provide the default CRUD REST operations. The [PR#3582](https://github.com/strongloop/loopback-next/pull/3582) introduces a new package `@loopback/rest-crud` that can be already used today as an alternative solution to `lb4 controller`.
 
 In the next step, we needed to research the best design for model configuration and booter implementation. The [PR#3617](https://github.com/strongloop/loopback-next/pull/3617) offers a proof-of-concept prototype demonstrating the proposed design. We are excited about the extensibility of the proposed approach, as it will make it very easy for 3rd-party developers (including application developers) to implement their own flavor of Repository and Controller classes to be used with the new Model API booter.
 
@@ -126,12 +129,12 @@ The architecture diagrams are added for concepts [Binding](https://loopback.io/d
 
 We also reorganized the documentation so that it's easier for users to understand, including:
 
-* Adding diagram on how each key concepts relate to each other.
+* Adding diagrams displaying how each key concepts relate to each other.
 * Reordering the sidebar items under the key concepts section.
 
 ## Farewell and Welcome
 
-As the summer ends, [Nora](https://strongloop.com/authors/Nora_Abdelgadir/) has completed her 12-month internship in the LoopBack team. Thank you for her dedication and hard work! She has been making good progress in the [inclusion of related models story](https://github.com/strongloop/loopback-next/issues/1352) in this month! We wish her best wishes at school. While she has returned to school, Nora will still be maintaining LoopBack on a part-time basis.
+As the summer ends, [Nora](https://strongloop.com/authors/Nora_Abdelgadir/) wraps up her 12-month internship in the LoopBack team. She has made good progress in the [inclusion of related models story](https://github.com/strongloop/loopback-next/issues/1352) this month! While she has returned to school, Nora will still be maintaining LoopBack on a part-time basis. We send her best wishes at school, and sincere thank yous for her dedication and hard work! 
 
 On the other hand, we're excited to have [Deepak](https://github.com/deepakrkris) back to the team. Bringing his knowledge and experience in cloud and container related technologies, it would be a great addition to us. Welcome Deepak!
 
