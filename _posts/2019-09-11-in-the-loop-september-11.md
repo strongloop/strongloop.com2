@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Recursive Directory Removal in Node.js 
+
+Christopher Hillier gives us details regarding recursive directory removal in Node.js v12.10.0.
+
+[READ MORE >>>](https://dev.to/boneskull/recursive-directory-removal-in-node-js-239f)
+
 ### 4 Skills a Modern Developer Needs 
 
 Tom Petrocelli, industry analyst, responds to developers wondering what new skills they should learning.
