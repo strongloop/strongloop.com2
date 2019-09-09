@@ -40,7 +40,7 @@ Joel Hruska looks at the steps IBM has taken to open the Power architecture furt
 
 ### Boutique Footwear Company Finds A Great Fit With Node.js
 
-Alex Woodie looks at Kamik, a one of the premier providers of winter footwear in North America and Europe, and how Node.js helped improve its production systems, application integration and developer productivity.
+Alex Woodie looks at Kamik, one of the premier providers of winter footwear in North America and Europe, and how Node.js helped improve its production systems, application integration and developer productivity.
 
 [READ MORE >>>](https://www.itjungle.com/2019/08/19/boutique-footwear-company-finds-a-great-fit-with-node-js/)
 
