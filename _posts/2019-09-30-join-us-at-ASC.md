@@ -11,7 +11,7 @@ categories:
 published: false
 ---
 
-(Originally written by Darrel Miller)
+(Note: this is an updated post, originally written by Darrel Miller)
  
 Over two years ago, the OpenAPI Initiative took over the reins of APIStrat, the API Strategy Conference that the 3Scale team ran the previous seven years. They hosted APIStrat in Portland in 2017 and Nashville the next year, and attendees of both events raved about what they learned, the conversations they had, and the connections they made in the delightfully friendly API community.
 
