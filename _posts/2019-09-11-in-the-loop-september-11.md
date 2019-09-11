@@ -3,7 +3,7 @@ layout: post
 title: In the Loop - September 11, 2019
 date: 2019-09-11
 author: Dave Whiteley
-permalink: /strongblog/in-the-loop-september-20-2019/
+permalink: /strongblog/in-the-loop-september-11-2019/
 categories:
   - Community
   - News
