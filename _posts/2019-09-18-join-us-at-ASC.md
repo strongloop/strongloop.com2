@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Join Us at ASC, the API Specifications Conference
-date: 2019-09-30
+date: 2019-09-18
 author: Dave Whiteley
-permalink: /strongblog/in-the-loop-september-30-2019/
+permalink: /strongblog/join-us-at-ASC/
 categories:
   - Community
   - News
@@ -11,7 +11,7 @@ categories:
 published: false
 ---
 
-(Note: this is an updated post, originally written by Darrel Miller. As a member of the OpenAPI Initiative, IBM - and StrongLoop - are proud to see this evolution.)
+(Note: this is an updated post, originally written by Darrel Miller. As a member of the OpenAPI Initiative through IBM, the StrongLoop team is proud to see this evolution.)
  
 Over two years ago, the OpenAPI Initiative took over the reins of APIStrat, the API Strategy Conference that the 3Scale team ran the previous seven years. They hosted APIStrat in Portland in 2017 and Nashville the next year, and attendees of both events raved about what they learned, the conversations they had, and the connections they made in the delightfully friendly API community.
 
