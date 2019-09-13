@@ -11,7 +11,7 @@ categories:
 published: false
 ---
 
-(Note: this is an updated post, originally written by Darrel Miller. As a member of the OpenAPI Initiative through IBM, the StrongLoop team is proud to see this evolution.)
+(Note: this is an updated post based on content [originally written by Darrel Miller](https://www.openapis.org/blog/2019/05/08/introducing-asc-the-api-specifications-conference). As a member of the OpenAPI Initiative through IBM, the StrongLoop team is proud to see this evolution.)
  
 Over two years ago, the OpenAPI Initiative took over the reins of APIStrat, the API Strategy Conference that the 3Scale team ran the previous seven years. They hosted APIStrat in Portland in 2017 and Nashville the next year, and attendees of both events raved about what they learned, the conversations they had, and the connections they made in the delightfully friendly API community.
 
