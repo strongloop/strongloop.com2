@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Join Us at ASC, the API Specifications Conference
+title: APIStrat Evolves into ASC, the API Specifications Conference
 date: 2019-09-18
 author: Dave Whiteley
 permalink: /strongblog/join-us-at-ASC/
