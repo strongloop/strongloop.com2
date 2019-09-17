@@ -14,7 +14,11 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### AsyncAPI vs OpenAPI: What’s The Difference?
 
+Kristopher Sandoval looks at documentation solutions for two very broad types of APIs: OpenAPI and AsyncAPI. 
+
+[READ MORE >>>](https://nordicapis.com/asyncapi-vs-openapi-whats-the-difference/)
 
 ### 9 tips for developers to improve JavaScript performance significantly
 
