@@ -14,6 +14,14 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+
+
+### Dependency Injection & Inversion Explained | Node.js w/ TypeScript
+
+Khalil Stemmler explores Dependency Injection and Depedency Inversion and how you can use them to write testable code.
+
+[READ MORE >>>](https://khalilstemmler.com/articles/tutorials/dependency-injection-inversion-explained/)
+
 ### AsyncAPI vs OpenAPI: What’s The Difference?
 
 Kristopher Sandoval looks at documentation solutions for two very broad types of APIs: OpenAPI and AsyncAPI. 
