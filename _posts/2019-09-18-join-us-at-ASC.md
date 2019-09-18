@@ -1,6 +1,6 @@
 ---
 layout: post
-title: APIStrat Evolves into ASC, the API Specifications Conference
+title: Join Us at ASC, the API Specifications Conference (the Evolution of APIStrat)
 date: 2019-09-18
 author: Dave Whiteley
 permalink: /strongblog/join-us-at-ASC/
@@ -8,7 +8,7 @@ categories:
   - Community
   - News
   - Events
-published: false
+published: true
 ---
 
 (Note: this is an updated post based on content [originally written by Darrel Miller](https://www.openapis.org/blog/2019/05/08/introducing-asc-the-api-specifications-conference). As a member of the OpenAPI Initiative through IBM, the StrongLoop team is proud to see this evolution.)
