@@ -26,6 +26,12 @@ Former Microsoft executive to take the helm of recently merged foundation to acc
 
 [READ MORE >>>](https://openjsf.org/blog/2019/09/25/press-release-openjs-foundation-names-robin-ginn-as-executive-director/)
 
+### Introducing OpenJS Foundation “Ask Me Anythings”
+
+Learn about OpenJS Foundation and a brand new “Ask Me Anything” series where community members, developers, and other curious parties can get burning questions answered regarding specific projects and topics.
+
+[READ MORE >>>](https://openjsf.org/blog/2019/09/26/introducing-openjs-foundation-ask-me-anythings/)
+
 ### Dependency Injection & Inversion Explained | Node.js w/ TypeScript
 
 Khalil Stemmler explores Dependency Injection and Depedency Inversion and how you can use them to write testable code.
