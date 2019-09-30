@@ -23,7 +23,7 @@ lb4 import-lb3-models
 
 Let me show you the new command in practice, using our [`lb3-application`](https://github.com/strongloop/loopback-next/tree/master/examples/lb3-application) example, which is based on [Getting started with LoopBack 3](https://loopback.io/doc/en/lb3/Getting-started-with-LoopBack.html).
 
-First of all, upgrade your global installation of `@loopback/cli` to get the new feature!
+First of all, upgrade your global installation of LoopBack 4 CLI to get the new feature!
 
 ```
 $ npm install -g "@loopback/cli"
@@ -35,7 +35,7 @@ Now we can run the following command to start the migration process:
 $ lb4 import-lb3-models lb3app/server/server.js
 ```
 
-Our example app does not have its own `package.json` file, therefore we must provide a full path to the server file. Otherwise it would be enough to use `lb3app` as the argument.
+_A side note: in our example project, the LoopBack 3 application is a part of the root LoopBack 4 project, therefore it does not have its own `package.json` file and LoopBack 3 dependencies are included in the top-level `package.json` file along LoopBack 4 dependencies. The directory of the LoopBack 3 application cannot be loaded directly via `require` as a result, and we have to provide a full path to the server file to the CLI tool. On the other hand, if you are importing from a standalone LoopBack 3 project which has `main` entry in `package.json` configured to point to `server/server.js` (as is the case with projects scaffolded by our LoopBack 3 CLI tool), then it's enough to use the path to your LoopBack 3 project directory as the argument, e.g. `lb3app`)._
 
 The generator will greet you with a warning about the experimental status and then load the LoopBack 3 application at the provided path. Once the application is loaded, the generator shows a list of models available for import.
 
@@ -53,7 +53,7 @@ The generator will greet you with a warning about the experimental status and th
 
 The initial version includes built-in LoopBack 3 models too, because they don't have any direct counter-part in LoopBack 4. We would like to investigate different options for importing models based on LoopBack 3 built-in models. Depending on the findings, the behavior of this prompt may change in the future.
 
-Using arrows and space-bar, we select the `CoffeeShop` model to import and confirm the selection.
+Using arrows and the space-bar, we select the `CoffeeShop` model to import and confirm the selection.
 
 ```
 ? Select models to import:
@@ -67,7 +67,7 @@ Using arrows and space-bar, we select the `CoffeeShop` model to import and confi
 (Move up and down to reveal more choices)
 ```
 
-Now the generator migrates the model definition to LoopBack 4 style, creates a TypeScript model file and also updates the relevant index file.
+Now the generator migrates the model definition to the LoopBack 4 style, creates a TypeScript model file, and also updates the relevant index file.
 
 ```
 ? Select models to import: CoffeeShop
@@ -80,13 +80,13 @@ Ignoring the following unsupported settings: acls
 
 The definition of `CoffeeShop` model includes access-control configuration, which is not supported by LoopBack 4. The tool will warn about other unsupported fields besides `acls`, for example `relations` and `methods`.
 
-The initial release has few more limitations beyond missing support for `acls`, please refer to our documentation at [Importing models from LoopBack 3 projects](https://loopback.io/doc/en/lb4/Importing-LB3-models.html).
+The initial release has a few more limitations beyond missing support for `acls`. Please refer to our documentation at [Importing models from LoopBack 3 projects](https://loopback.io/doc/en/lb4/Importing-LB3-models.html).
 
 ## What's next
 
-We are releasing this early preview version to get feedback from you, our users! Please give the new command a try and let us know which features you are missing. Start by checking the known limitations described in the documentation and up-vote the linked GitHub issues. If there is no GitHub issue describing your feature yet then please open a new one.
+We are releasing this early preview version to get feedback from you, our users! Please give the new command a try and let us know which parts of the migration experience should we improve next. Start by checking the known limitations described in the documentation and up-vote the linked GitHub issues. If there is no GitHub issue describing your feature yet then please open a new one.
 
-Besides importing model definitions, we are also working on a declarative way of exposing models via REST APIs. This will allow LoopBack 4 applications to be written in a style that's closer to LoopBack 3, where REST API is built from a model definition file (e.g. `common/models/product.json`) and model configuration file (`server/model-config.json`). Once this feature is implemented, it will be possible to migrate both model definition and REST API from LoopBack 3. You can track our progress in GitHub issues [loopback-next#2036](https://github.com/strongloop/loopback-next/issues/2036) and [loopback-next#3822](https://github.com/strongloop/loopback-next/issues/3822).
+Besides importing model definitions, we are also working on a declarative way of exposing models via REST APIs. This will allow LoopBack 4 applications to be written in a style that's closer to LoopBack 3, where REST API are built from a model definition file (e.g. `common/models/product.json`) and model configuration file (`server/model-config.json`). Once this feature is implemented, it will be possible to migrate both model definition and REST API from LoopBack 3. You can track our progress in GitHub issues [loopback-next#2036](https://github.com/strongloop/loopback-next/issues/2036) and [loopback-next#3822](https://github.com/strongloop/loopback-next/issues/3822).
 
 ## Call to Action
 
