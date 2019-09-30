@@ -53,7 +53,7 @@ The generator will greet you with a warning about the experimental status and th
 
 The initial version includes built-in LoopBack 3 models too, because they don't have any direct counter-part in LoopBack 4. We would like to investigate different options for importing models based on LoopBack 3 built-in models. Depending on the findings, the behavior of this prompt may change in the future.
 
-Using arrows and the space-bar, we select the `CoffeeShop` model to import and confirm the selection.
+Using arrows and the spacebar, we select the `CoffeeShop` model to import and confirm the selection.
 
 ```
 ? Select models to import:
@@ -84,7 +84,7 @@ The initial release has a few more limitations beyond missing support for `acls`
 
 ## What's next
 
-We are releasing this early preview version to get feedback from you, our users! Please give the new command a try and let us know which parts of the migration experience should we improve next. Start by checking the known limitations described in the documentation and up-vote the linked GitHub issues. If there is no GitHub issue describing your feature yet then please open a new one.
+We are releasing this early preview version to get feedback from you, our users! Please give the new command a try and let us know which parts of the migration experience we should improve next. Start by checking the known limitations described in the documentation and up-vote the linked GitHub issues. If there is no GitHub issue describing your feature yet then please open a new one.
 
 Besides importing model definitions, we are also working on a declarative way of exposing models via REST APIs. This will allow LoopBack 4 applications to be written in a style that's closer to LoopBack 3, where REST API are built from a model definition file (e.g. `common/models/product.json`) and model configuration file (`server/model-config.json`). Once this feature is implemented, it will be possible to migrate both model definition and REST API from LoopBack 3. You can track our progress in GitHub issues [loopback-next#2036](https://github.com/strongloop/loopback-next/issues/2036) and [loopback-next#3822](https://github.com/strongloop/loopback-next/issues/3822).
 
