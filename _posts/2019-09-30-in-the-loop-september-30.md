@@ -8,13 +8,29 @@ categories:
   - Community
   - News
   - In the Loop
-published: false
+published: true
 ---
 
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Appsody in Autumn: project update
 
+Appsody has newly-available Stacks, including LoopBack 4.
+
+[READ MORE >>>](https://medium.com/appsody/appsody-in-autumn-project-update-2f89bdca7d96)
+
+### OpenJS Foundation Names Robin Ginn as Executive Director
+
+Former Microsoft executive to take the helm of recently merged foundation to accelerate the next phase of JavaScript ecosystem growth.
+
+[READ MORE >>>](https://openjsf.org/blog/2019/09/25/press-release-openjs-foundation-names-robin-ginn-as-executive-director/)
+
+### Introducing OpenJS Foundation “Ask Me Anythings”
+
+Learn about OpenJS Foundation and a brand new “Ask Me Anything” series where community members, developers, and other curious parties can get burning questions answered regarding specific projects and topics.
+
+[READ MORE >>>](https://openjsf.org/blog/2019/09/26/introducing-openjs-foundation-ask-me-anythings/)
 
 ### Dependency Injection & Inversion Explained | Node.js w/ TypeScript
 
@@ -48,8 +64,6 @@ Ryan Dawes sheds light on the average JavaScript developer and their favourite t
 
 ## What Next?
 
-* Check out the previous "[In the Loop - October 11, 2019](https://strongloop.com/strongblog/in-the-loop-september-11-2019/)".
+* Check out the previous "[In the Loop - September 11, 2019](https://strongloop.com/strongblog/in-the-loop-september-11-2019/)".
 
 * Be sure to follow StrongLoop on [Facebook](https://www.facebook.com/strongloop/) and [Twitter](https://twitter.com/StrongLoop)!
-
-* Do you have a blog post or other content on LoopBack? Send us a link and we’ll promote your work and send you some swag!
