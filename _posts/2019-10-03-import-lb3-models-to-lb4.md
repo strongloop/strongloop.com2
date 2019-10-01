@@ -9,9 +9,9 @@ categories:
 published: false
 ---
 
-It has been almost a year since [LoopBack 4.0 GA was announced](https://strongloop.com/strongblog/loopback-4-ga). In the meantime, we have been working hard on closing the feature gap between the new and the old versions and looking for ways to simplify migration of projects built on LoopBack 3.
+It has been almost a year since [LoopBack 4.0 GA was announced](https://strongloop.com/strongblog/loopback-4-ga). Since then, we have been working hard on closing the feature gap between the new and the old versions and looking for ways to simplify migration of projects built on LoopBack 3.
 
-In June, we announced a new feature that allows LoopBack 3 applications to be mounted in LoopBack 4 projects ([the blog post](https://strongloop.com/strongblog/migrate-from-loopback-3-to-loopback-4/)), allowing developers to start writing new features using LoopBack 4 while keeping existing APIs powered by LoopBack 3.
+In June, we announced a new feature that allows LoopBack 3 applications to be mounted in LoopBack 4 projects, allowing developers to start writing new features using LoopBack 4 while keeping existing APIs powered by LoopBack 3 (Read more about it in this [blog post](https://strongloop.com/strongblog/migrate-from-loopback-3-to-loopback-4/)).
 
 Today, we are happy to announce a preview version of a tool automating migration of models from LoopBack 3 to LoopBack 4:
 
@@ -35,7 +35,7 @@ Now we can run the following command to start the migration process:
 $ lb4 import-lb3-models lb3app/server/server.js
 ```
 
-_A side note: in our example project, the LoopBack 3 application is a part of the root LoopBack 4 project, therefore it does not have its own `package.json` file and LoopBack 3 dependencies are included in the top-level `package.json` file along LoopBack 4 dependencies. The directory of the LoopBack 3 application cannot be loaded directly via `require` as a result, and we have to provide a full path to the server file to the CLI tool. On the other hand, if you are importing from a standalone LoopBack 3 project which has `main` entry in `package.json` configured to point to `server/server.js` (as is the case with projects scaffolded by our LoopBack 3 CLI tool), then it's enough to use the path to your LoopBack 3 project directory as the argument, e.g. `lb3app`)._
+_A side note: in our example project, the LoopBack 3 application is a part of the root LoopBack 4 project. Therefore it does not have its own `package.json` file and LoopBack 3 dependencies are included in the top-level `package.json` file along LoopBack 4 dependencies. The directory of the LoopBack 3 application cannot be loaded directly via `require` as a result, and we have to provide a full path to the server file to the CLI tool. On the other hand, if you are importing from a standalone LoopBack 3 project which has `main` entry in `package.json` configured to point to `server/server.js` (as is the case with projects scaffolded by our LoopBack 3 CLI tool), then it's enough to use the path to your LoopBack 3 project directory as the argument, e.g. `lb3app`)._
 
 The generator will greet you with a warning about the experimental status and then load the LoopBack 3 application at the provided path. Once the application is loaded, the generator shows a list of models available for import.
 
@@ -51,7 +51,7 @@ The generator will greet you with a warning about the experimental status and th
 (Move up and down to reveal more choices)
 ```
 
-The initial version includes built-in LoopBack 3 models too, because they don't have any direct counter-part in LoopBack 4. We would like to investigate different options for importing models based on LoopBack 3 built-in models. Depending on the findings, the behavior of this prompt may change in the future.
+The initial version includes built-in LoopBack 3 models too, because they don't have any direct counterparts in LoopBack 4. We would like to investigate different options for importing models based on LoopBack 3 built-in models. Depending on the findings, the behavior of this prompt may change in the future.
 
 Using arrows and the spacebar, we select the `CoffeeShop` model to import and confirm the selection.
 
