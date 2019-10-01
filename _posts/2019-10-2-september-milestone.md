@@ -43,10 +43,11 @@ When merging the security schemas into the OpenAPI specification, we also realiz
 
 Interface `UserProfile` describes a minimum set of properties that represents an identity of a user. It is also a contract shared between the authentication and authorization modules. To make up the difference between a custom `User` model and `UserProfile`, we introduced a `UserService` interface with a converter function as a choice for users who want to organize the utilities for the `User` model into a service class.
 
-In this spike, we worked on a more general solution that unifies the behavior across all modules. We picked the `@loopback/authentication-passport` to start the spike because that compared with custom authentication strategies, users have less control over the returned user when applying the passport adapter. The solution is, we define an interface `UserProfileFactory` which takes in an instance of the custom user and returns a user profile. And a corresponding key will also be created in `@loopback/authentication` for the sake of injection.
+In this spike, we worked on a more general solution that unifies the behavior across all modules. We started the spike with the `@loopback/authentication-passport` because compared with custom authentication strategies, users have less control over the returned user when applying the passport adapter. The solution is to define an interface `UserProfileFactory` which takes in an instance of the custom user and returns a user profile. A corresponding key will also be created in `@loopback/authentication` for the sake of injection.
+
 In the meantime, we also discovered that some user profile related refactor in `@loopback/authorization` is needed. You can find more details in the [PoC PR](https://github.com/strongloop/loopback-next/pull/3771)
 
-Two follow-up stories are created: [Add user profile factory](https://github.com/strongloop/loopback-next/issues/3846) and [Refactor the authorization component](https://github.com/strongloop/loopback-next/issues/3845)
+Two follow-up stories were created: [Add user profile factory](https://github.com/strongloop/loopback-next/issues/3846) and [Refactor the authorization component](https://github.com/strongloop/loopback-next/issues/3845)
 
 ## Declarative Building of REST APIs
 
@@ -172,15 +173,15 @@ In another work in progress [PR #3339](https://github.com/strongloop/loopback-ne
 
 ## Community Contribution
 
-We have many community users contributing to LoopBack. In September, 14% of the merged PRs was coming from community contribution! From refactoring functionality to enhancing documentation, we really appreciate all these contributions. Here are some highlights of community contributions from this month:
+We have many community users contributing to LoopBack. In September, 14% of the merged PRs was coming from community contribution! From refactoring functionality to enhancing documentation, we really appreciate all these contributions. Here are some highlights of this month's community contributions:
 
 ### Allowing `rest-explorer` to Use a Relative URL for the OpenAPI Specification
 
-The community user [@mgabeler-lee-6rs](https://github.com/mgabeler-lee-6rs) implemented a new feature that allows API Explorer to self-host the OpenAPI spec document and thus use a relative path in `swagger-ui` configuration. Before this change, the LoopBack configured UI component with an absolute path that did not work well when the application was running behind a reverse proxy link `nginx`. The API Explorer now works more reliably. Check [PR #3133](https://github.com/strongloop/loopback-next/pull/3133) for more implementation details and discussions over the feature.
+Community user [@mgabeler-lee-6rs](https://github.com/mgabeler-lee-6rs) implemented a new feature that allows API Explorer to self-host the OpenAPI spec document and thus use a relative path in `swagger-ui` configuration. Before this change, the LoopBack configured UI component with an absolute path that did not work well when the application was running behind a reverse proxy link `nginx`. The API Explorer now works more reliably. Check [PR #3133](https://github.com/strongloop/loopback-next/pull/3133) for more implementation details and discussions over the feature.
 
 ### Updating OpenAPI Schemas for Azure Validation
 
-In [PR #3504](https://github.com/strongloop/loopback-next/pull/3504) from community user [@ericzon](https://github.com/ericzon), they changed the formatting of the OpenAPI Schema, which allows it to now pass Azure API Manager validation. We can now deploy an API as "App Service" and connect it with the API Manager as OpenAPI. It enables LB4 to work out-of-the-box on Microsoft Azure.
+In [PR #3504](https://github.com/strongloop/loopback-next/pull/3504), community user [@ericzon](https://github.com/ericzon) changed the formatting of the OpenAPI Schema, which allows it to now pass Azure API Manager validation. We can now deploy an API as "App Service" and connect it with the API Manager as OpenAPI. It enables LB4 to work out-of-the-box on Microsoft Azure.
 
 ### Contributions from Community User [@derdeka](https://github.com/derdeka)
 
@@ -193,7 +194,7 @@ If you would like to contribute to LoopBack, please check the [Call to Action](#
 
 ## Looking for User References
 
-As a LoopBack user, do you want your company to be highlighted on our [web site](https://loopback.io/)? If your answer is yes, see the details in this [GitHub issue](https://github.com/strongloop/loopback-next/issues/3047).
+As a LoopBack user, do you want your company highlighted on our [web site](https://loopback.io/)? If your answer is yes, see the details in this [GitHub issue](https://github.com/strongloop/loopback-next/issues/3047).
 
 ## What's Next?
 
