@@ -10,7 +10,7 @@ categories:
 published: false  
   
 ---
-[ASC](https://events.linuxfoundation.org/events/asc-2019/), the API Specifications Conference, takes place October 15 - 17 in Vancouver, British Columbia, Canada, in less than a month. ASC promises to provide opportunities for API practitioners to come together and discuss the evolution of API technology.
+[ASC](https://events.linuxfoundation.org/events/asc-2019/), the API Specifications Conference, takes place October 15 - 17 in Vancouver, British Columbia, Canada this month. ASC promises to provide opportunities for API practitioners to come together and discuss the evolution of API technology.
  
 <!--more-->
 
