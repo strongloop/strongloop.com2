@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What to Expect at ASC, the API Specifications Conference
-date: 2019-09-30
+date: 2019-10-08
 author: Dave Whiteley
 permalink: /strongblog/what-to-expect-at-asc/
 categories:
@@ -27,9 +27,7 @@ Chris Phillips, Integration Architect and Master Inventor, IBM
 Michael Kistler, Senior Technical Staff Member, IBM
 * [No One Wants to Call your API](https://sched.co/T6uX)
 
-
-
-You can register for the event [here](https://events.linuxfoundation.org/events/asc-2019/).
+See what other sessions you can check out, and register for the event [here](https://events.linuxfoundation.org/events/asc-2019/).
 
 ## What Next?
 
