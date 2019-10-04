@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Master your code's open source or it will bite you in the app sec
+
+Stan Wisseman tells us that the threat landscape is continuing to shift and, if you don't watch your apps, they will use your open-source components against you.
+
+[READ MORE >>>](https://techbeacon.com/security/master-your-codes-open-source-or-it-will-bite-you-app-sec)
+
 ### Node Version Manager For Node.js Released 
 
 The OpenJS Foundation has announced that Node Version Manager (nvm), has been taken in as a project by the foundation.
