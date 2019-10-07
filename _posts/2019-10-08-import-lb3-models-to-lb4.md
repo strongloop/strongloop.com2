@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Import LoopBack 3 models into a LoopBack 4 project
-date: 2019-10-03
+title: Import LoopBack 3 Models into a LoopBack 4 Project
+date: 2019-10-08
 author: Miroslav Bajtoš
 permalink: /strongblog/import-loopback-3-models-to-loopback-4
 categories:
