@@ -82,7 +82,7 @@ The definition of `CoffeeShop` model includes access-control configuration, whic
 
 The initial release has a few more limitations beyond missing support for `acls`. Please refer to our documentation at [Importing models from LoopBack 3 projects](https://loopback.io/doc/en/lb4/Importing-LB3-models.html).
 
-## What's next
+## What's Next?
 
 We are releasing this early preview version to get feedback from you, our users! Please give the new command a try and let us know which parts of the migration experience we should improve next. Start by checking the known limitations described in the documentation and up-vote the linked GitHub issues. If there is no GitHub issue describing your feature yet then please open a new one.
 
