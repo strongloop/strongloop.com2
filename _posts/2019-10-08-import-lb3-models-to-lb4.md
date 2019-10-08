@@ -19,7 +19,7 @@ Today, we are happy to announce a preview version of a tool automating migration
 lb4 import-lb3-models
 ```
 
-<!-- more -->
+<!--more-->
 
 Let me show you the new command in practice, using our [`lb3-application`](https://github.com/strongloop/loopback-next/tree/master/examples/lb3-application) example, which is based on [Getting started with LoopBack 3](https://loopback.io/doc/en/lb3/Getting-started-with-LoopBack.html).
 
