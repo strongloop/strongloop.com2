@@ -6,7 +6,7 @@ author: Miroslav Bajtoš
 permalink: /strongblog/import-loopback-3-models-to-loopback-4/
 categories:
   - LoopBack
-published: false
+published: true
 ---
 
 It has been almost a year since [LoopBack 4.0 GA was announced](https://strongloop.com/strongblog/loopback-4-ga). Since then, we have been working hard on closing the feature gap between the new and the old versions and looking for ways to simplify migration of projects built on LoopBack 3.
