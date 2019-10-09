@@ -14,6 +14,13 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+
+### List of top Node.js frameworks widely used by the node.js developers that you opt for your next project
+
+Tarun Nagar looks at the high proliferation of Node.js frameworks accelerating web development in the last few years.
+
+[READ MORE >>>](https://www.whatech.com/mobile-apps/blog/620339-list-of-top-node-js-frameworks-widely-used-by-the-node-js-developers-that-you-opt-for-your-next-project)
+
 ### Master your code's open source or it will bite you in the app sec
 
 Stan Wisseman tells us that the threat landscape is continuing to shift and, if you don't watch your apps, they will use your open-source components against you.
