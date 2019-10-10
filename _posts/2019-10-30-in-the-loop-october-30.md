@@ -15,6 +15,12 @@ Welcome back to "In the Loop", in which we list recent news, updates or opinions
 <!--more-->
 
 
+### OpenJS Foundation welcomes AMP project to help improve user experience on the web
+
+The OpenJS Foundation announced that the open source web component framework AMP will be joining the Foundation’s incubation program.
+
+[READ MORE >>>](https://openjsf.org/blog/2019/10/10/openjs-foundation-welcomes-amp-project-to-help-improve-user-experience-on-the-web/)
+
 ### List of top Node.js frameworks widely used by the node.js developers that you opt for your next project
 
 Tarun Nagar looks at the high proliferation of Node.js frameworks accelerating web development in the last few years.
