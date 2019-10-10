@@ -21,7 +21,7 @@ While this is the inaugural year for ASC, the event and its producers have a his
 There will be many sessions to learn from at the event. We've listed some highlights below from the IBM team, though there are many great sessions being offered in addition to these.
 
 <p align="center"> 
-<img src="https://strongloop.com/blog-assets/2019/10/Phillips, Chris ASC_SpeakerCards-06.png" alt="Chris Phillips ASC" style="width: 500px"/>
+<img src="https://strongloop.com/blog-assets/2019/10/Chris-Phillips-ASC.png" alt="Chris Phillips ASC" style="width: 500px"/>
 </p>
 
 Chris Phillips, Integration Architect and Master Inventor, IBM 
