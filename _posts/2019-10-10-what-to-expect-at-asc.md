@@ -7,7 +7,7 @@ permalink: /strongblog/what-to-expect-at-asc/
 categories:
   - Community
   - Events
-published: false  
+published: true  
   
 ---
 [ASC](https://events.linuxfoundation.org/events/asc-2019/), the API Specifications Conference, takes place next week! More specifically, October 15 - 17 in Vancouver, British Columbia, Canada. The event promises opportunities for API practitioners to come together and discuss the evolution of API technology.
@@ -21,7 +21,7 @@ While this is the inaugural year for ASC, the event and its producers have a his
 There will be many sessions to learn from at the event. We've listed some highlights below from the IBM team, though there are many great sessions being offered in addition to these.
 
 <p align="center"> 
-<img src="https://strongloop.com/blog-assets/2019/10/Chris-Phillips-ASC.png" alt="Chris Phillips ASC" style="width: 500px"/>
+<img src="https://strongloop.com/blog-assets/2019/10/Chris-Phillips-ASC.png" alt="Chris Phillips ASC" style="width: 400px"/>
 </p>
 
 Chris Phillips, Integration Architect and Master Inventor, IBM 
