@@ -20,10 +20,6 @@ While this is the inaugural year for ASC, the event and its producers have a his
 
 There will be many sessions to learn from at the event. We've listed some highlights below from the IBM team, though there are many great sessions being offered in addition to these.
 
-<p align="center"> 
-<img src="https://strongloop.com/blog-assets/2019/10/Chris-Phillips-ASC.png" alt="Chris Phillips ASC" style="width: 400px"/>
-</p>
-
 Chris Phillips, Integration Architect and Master Inventor, IBM 
 * [Turning External Services to Internal APIs](https://sched.co/T6tr) 
 * [API Shop Window - Providing the Best Experience for your API Consumers](https://sched.co/T6tx)
