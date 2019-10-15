@@ -28,6 +28,8 @@ Chris Phillips, Integration Architect and Master Inventor, IBM
 * [Turning External Services to Internal APIs](https://sched.co/T6tr) 
 * [API Shop Window - Providing the Best Experience for your API Consumers](https://sched.co/T6tx)
 
+(Update: We have received notice that Chris will be unable to attend the conference. He apologizes for his absence and the short notice.)
+
 Michael Kistler, Senior Technical Staff Member, IBM
 * [No One Wants to Call your API](https://sched.co/T6uX)
 
