@@ -14,6 +14,11 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### (Open) source of anxiety
+
+A maintainer of Babel navigates the boundaries of open source and self.
+
+[READ MORE >>>](https://increment.com/open-source/open-source-of-anxiety/)
 
 ### OpenJS Foundation welcomes AMP project to help improve user experience on the web
 
