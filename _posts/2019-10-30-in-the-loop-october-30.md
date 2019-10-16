@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### 10 years of Node with Gireesh Punathil of IBM
+
+James Snell speaks with Gireesh Punathil, Node.js TSC member, collaborator, Node.js customer support engineer and Architect, to hear his views on the importance of the Node.js community and timely support in its future as a performance driver.
+
+[READ MORE >>>](https://www.nearform.com/blog/10-years-of-node-with-gireesh-punathil-of-ibm/)
+
 ### Girls Who Code receives IBM Open-Source Community Grant
 
 Jenna Sargent shares how Girls Who Code would be the first recipient of IBM's $50,000 community grant “dedicated to education, inclusiveness, and skill-building for women, underrepresented minorities, and underserved communities.” 
