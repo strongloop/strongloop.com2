@@ -9,7 +9,7 @@ permalink: /strongblog/loopback-4-2019-q3-overview/
 categories:
   - LoopBack
   - Community
-published: false
+published: true
 ---
 
 For the past few months, the LoopBack team has been busy improving the framework. Aside from implementation, we also did some investigation to plan out road map for the incoming new features. Here are our main focuses in last quarter:
