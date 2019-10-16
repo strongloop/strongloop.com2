@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Girls Who Code receives IBM Open-Source Community Grant
+
+Jenna Sargent shares how Girls Who Code would be the first recipient of IBM's $50,000 community grant “dedicated to education, inclusiveness, and skill-building for women, underrepresented minorities, and underserved communities.” 
+
+[READ MORE >>>](https://sdtimes.com/diversity/girls-who-code-receive-ibm-open-source-community-grant/)
+
 ### (Open) source of anxiety
 
 A maintainer of Babel navigates the boundaries of open source and self.
