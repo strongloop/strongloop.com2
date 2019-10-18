@@ -9,7 +9,7 @@ categories:
 published: false
 ---
 
-In October, a new feature, inclusion of related models, is up for LoopBack 4! We have similar features in LoopBack 3. This new feature not only simplifies the way querying data in LoopBack 4, it also closes one feature gap between LoopBack 3 as well. The idea is to use the `inclusion resolver`, which is a function that helps to query data over different relations, to achieve such simplifications for us.
+In October LoopBack 4 offers a new feature: inclusion of related models! This new feature not only simplifies the way querying data in LoopBack 4, but since we have similar features in LoopBack 3 it also closes one feature gap between LoopBack 3 as well. The idea is to use the `inclusion resolver`, which is a function that helps to query data over different relations, to achieve such simplifications for us.
 
 Here is a simple use case of inclusion: a customer has many orders.
 
@@ -189,7 +189,7 @@ export class OrderRepository extends DefaultCrudRepository {
 }
 ```
 
-_Notice: I use default values in this example, we also recommend to follow the naming convention. If you'd like to custom property names or relation names, check our site [Relations](https://loopback.io/doc/en/lb4/Relations.html) for more details._
+_Notice: I use default values in this example. We also recommend to follow the naming convention. If you'd like to custom property names or relation names, check our site [Relations](https://loopback.io/doc/en/lb4/Relations.html) for more details._
 
 ## 3. Try it out!
 
