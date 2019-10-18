@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Inclusion of Related Models
-date: 2019-11-01
+date: 2019-10-23
 author: Agnes Lin
 permalink: /strongblog/inclusion-of-related-models/
 categories:
