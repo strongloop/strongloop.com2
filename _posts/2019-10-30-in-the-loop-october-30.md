@@ -14,11 +14,23 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### 4 Enterprise Use Cases That Define The Popularity Of Node.JS
+
+Manoj Rupareliya provides examples of how Node.js has generated curiosity among the enterprises to develop applications and useful software based on node.js environment.
+
+[READ MORE >>>](https://www.promotionworld.com/articles/web-design/191021-4-enterprise-use-cases-define-popularity-nodejs)
+
 ### 10 years of Node with Gireesh Punathil of IBM
 
 James Snell speaks with Gireesh Punathil, Node.js TSC member, collaborator, Node.js customer support engineer and Architect, to hear his views on the importance of the Node.js community and timely support in its future as a performance driver.
 
 [READ MORE >>>](https://www.nearform.com/blog/10-years-of-node-with-gireesh-punathil-of-ibm/)
+
+### The Paradox of Today’s Networks & Why It’s Time to Commodify Network Interfaces Featured 
+
+Karan Munalingal looks at network automation inefficiencies, evolution and innovation - and how OpenAPI Spec can help.
+
+[READ MORE >>>](https://www.thefastmode.com/expert-opinion/15592-the-paradox-of-today-s-networks-why-it-s-time-to-commodify-network-interfaces)
 
 ### Girls Who Code receives IBM Open-Source Community Grant
 
