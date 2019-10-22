@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### OpenJS Foundation launches new professional certification program to support the future of Node.js development
+
+The certifications focus on critical skills that Node.js developers need to build Node.js applications and services in professional environments.
+
+[READ MORE >>>](https://openjsf.org/blog/2019/10/22/openjs-foundation-launches-new-professional-certification-program-to-support-the-future-of-node-js-development/)
+
 ### 4 Enterprise Use Cases That Define The Popularity Of Node.JS
 
 Manoj Rupareliya provides examples of how Node.js has generated curiosity among the enterprises to develop applications and useful software based on node.js environment.
