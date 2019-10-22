@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inclusion of Related Models
+title: LoopBack 4 Offers Inclusion of Related Models
 date: 2019-10-23
 author: Agnes Lin
 permalink: /strongblog/inclusion-of-related-models/
@@ -9,7 +9,7 @@ categories:
 published: false
 ---
 
-LoopBack 4 offers a new feature: inclusion of related models! This addition not only simplifies the way querying data in LoopBack 4, but since we have similar features in LoopBack 3 it also closes one feature gap between LoopBack 3 as well. The idea is to use the `inclusion resolver`, which is a function that helps to query data over different relations, to achieve such simplifications for us.
+LoopBack 4 now offers a new feature: inclusion of related models! This addition not only simplifies querying data in LoopBack 4, but since we have similar features in LoopBack 3 it also closes one feature gap between LoopBack 3 as well. The idea is to use the `inclusion resolver`, which is a function that helps to query data over different relations, to achieve such simplifications for us.
 
 Here is a simple use case of inclusion: a customer has many orders.
 
@@ -20,8 +20,10 @@ If we'd like to get a customer's instance with all their orders instances, we ca
 <!--more-->
 
 LoopBack 4 creates a different inclusion resolver for each relation type. Each relation has its own inclusion resolver `inclusionResolver`. And each repository has a built-in property `inclusionResolvers` as a registry for its `inclusionResolver`s.
+
 ![inclusionResolvers](/blog-assets/2019/10/inclusion-of-related-models-resolvers.png)
-To enable querying related models for a certain relation, the corresponding `inclusionResolver` of that relation has to be registered to the `inclusionResolvers` -- I promise the set up is not as complicated as what you just read through.
+
+To enable querying related models for a certain relation, the corresponding `inclusionResolver` of that relation has to be registered to the `inclusionResolvers`. I promise the set up is not as complicated as what you just read through.
 Let me show you the steps to enable this feature in few steps!
 
 ## 0. Before you get started
@@ -34,7 +36,7 @@ $ npm install -g "@loopback/cli"
 
 ## 1. Set up models and datasource
 
-You can set up models and datasource by the CLI `lb4 model` and `lb4 datasouce`
+You can set up models and datasource by the CLI `lb4 model` and `lb4 datasouce`. 
 
 I use `MySQL` as my database in this case. And here are my models `Customer` and `Order`:
 
@@ -101,14 +103,14 @@ $ lb4 relation
 Relation BelongsTo was created in src/
 ```
 
-This prompt
+This prompt registers the `inclusionResolver` for this `belongsTo` relation for you.
 
 ```
 ? Allow Order queries to include data from related Customer instances? (Y/n)
 
 ```
 
-registers the `inclusionResolver` for this `belongsTo` relation for you. It defaults to `Yes`. Make sure to choose 'yes' if you'd like to use inclusion and your model is traversable.
+It defaults to `Yes`. Make sure to choose 'yes' if you'd like to use inclusion and your model is traversable.
 
 Here is the code snippet for models after setting up two relations and enabling both inclusion resolvers:
 
@@ -258,6 +260,7 @@ Result:
 ```
 
 Here is a diagram to make this more intuitive:
+
 ![inclusion](/blog-assets/2019/10/inclusion-of-related-models-includes.png)
 
 For belongsTo relation `customer`, these queries return the `Order` that has `id = 1` and includes the `Customer` it belongs to.
@@ -287,7 +290,9 @@ Result:
 ]
 ```
 
-Besides the example I've shown above, our [TodoList Tutorial](https://loopback.io/doc/en/lb4/todo-list-tutorial.html) example also uses inclusion. Check on the site for more detailed steps. Hope this new feature is helpful for you!
+Besides the example I've shown above, our [TodoList Tutorial](https://loopback.io/doc/en/lb4/todo-list-tutorial.html) example also uses inclusion. Check on the site for more detailed steps. 
+
+Hope this new feature is helpful for you!
 
 ## Limitations
 
@@ -298,11 +303,13 @@ Though we've finished the implementation of this new feature and test it against
 - It doesn't split numbers of queries. Related GH issue: [Support `inq` splitting](https://github.com/strongloop/loopback-next/issues/3444).
 - It might not work well with `ObjectId` of MongoDB. Related GH issue: [Spike: robust handling of ObjectID type for MongoDB](https://github.com/strongloop/loopback-next/issues/3456)
 
-We have some discussions on these issues. Please check out the [Post MVP Enhancement](https://github.com/strongloop/loopback-next/issues/3585) story if you're interested. We'd love to hear your input and feel free to contribute. Thanks for choosing LoopBack!
+We have some discussions on these issues. Please check out the [Post MVP Enhancement](https://github.com/strongloop/loopback-next/issues/3585) story if you're interested. We'd love to hear your input and feel free to contribute. 
+
+Thanks for choosing LoopBack!
 
 ## Call to Action
 
-LoopBack's future success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Here's how you can join us and help the project:
+LoopBack's success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Here's how you can join us and help the project:
 
 - [Report issues](https://github.com/strongloop/loopback-next/issues).
 - [Contribute](https://github.com/strongloop/loopback-next/blob/master/docs/CONTRIBUTING.md) code and documentation.
