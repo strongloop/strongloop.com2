@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Node.js 12 to LTS and Node.js 13 is here!
+
+Michael Dawson announces Node.js 12 promotion to Long Term Support(LTS) and Node.js 13 release.
+
+[READ MORE >>>](https://medium.com/@nodejs/node-js-12-to-lts-and-node-js-13-is-here-e28d6a4a2bd)
+
 ### OpenJS Foundation launches new professional certification program to support the future of Node.js development
 
 The certifications focus on critical skills that Node.js developers need to build Node.js applications and services in professional environments.
