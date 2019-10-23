@@ -202,7 +202,7 @@ If you're interested in what we're working on next, you can check out the [Octob
 
 ## Call to Action
 
-LoopBack's future success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Here's how you can join us and help the project:
+LoopBack's success depends on you! We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Here's how you can join us and help the project:
 
 - [Report issues](https://github.com/strongloop/loopback-next/issues).
 - [Contribute](https://github.com/strongloop/loopback-next/blob/master/docs/CONTRIBUTING.md) code and documentation.
