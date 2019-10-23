@@ -6,7 +6,7 @@ author: Agnes Lin
 permalink: /strongblog/inclusion-of-related-models/
 categories:
   - LoopBack
-published: false
+published: true
 ---
 
 LoopBack 4 now offers a new feature: inclusion of related models! This addition not only simplifies querying data in LoopBack 4, but since we have similar features in LoopBack 3 it also closes one feature gap between LoopBack 3 as well. The idea is to use the `inclusion resolver`, which is a function that helps to query data over different relations, to achieve such simplifications for us.
@@ -309,7 +309,7 @@ Thanks for choosing LoopBack!
 
 ## Call to Action
 
-LoopBack's success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Here's how you can join us and help the project:
+LoopBack's success depends on you! We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Here's how you can join us and help the project:
 
 - [Report issues](https://github.com/strongloop/loopback-next/issues).
 - [Contribute](https://github.com/strongloop/loopback-next/blob/master/docs/CONTRIBUTING.md) code and documentation.
