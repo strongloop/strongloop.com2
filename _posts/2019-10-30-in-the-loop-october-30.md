@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### What Can Be Done to Strengthen the Node.js Package Ecosystem? 
+
+Jesse Casman chats with Michael Dawson, IBM Node.js Community Lead, about what Node.js can do better. 
+
+[READ MORE >>>](https://dzone.com/articles/what-can-be-done-to-strengthen-the-nodejs-package)
+
 ### Node.js 12 to LTS and Node.js 13 is here!
 
 Michael Dawson announces Node.js 12 promotion to Long Term Support(LTS) and Node.js 13 release.
