@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### OpenJS Node.js Developer Certification: What to Expect
+
+David Clements discusses the launch of two certifications: the OpenJS Node Services Developer (JSNSD) and the OpenJS Node Application Developer (JSNAD).
+
+[READ MORE >>>](https://www.nearform.com/blog/node-js-developer-certification-what-to-expect/)
+
 ### What Can Be Done to Strengthen the Node.js Package Ecosystem? 
 
 Jesse Casman chats with Michael Dawson, IBM Node.js Community Lead, about what Node.js can do better. 
