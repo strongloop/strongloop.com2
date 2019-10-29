@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Choosing the Node.js versions for your CI tests (hint: use LTS)
+
+Dominykas Blyžė encourages package authors to make sure their Continuous Integration (CI) setup includes all supported Node.js “long-term support” (LTS) versions, as well as the Current stable release.
+
+[READ MORE >>>](https://medium.com/@nodejs/choosing-the-node-js-versions-for-your-ci-tests-hint-use-lts-89b67f68d7ca)
+
 ### OpenJS Node.js Developer Certification: What to Expect
 
 David Clements discusses the launch of two certifications: the OpenJS Node Services Developer (JSNSD) and the OpenJS Node Application Developer (JSNAD).
