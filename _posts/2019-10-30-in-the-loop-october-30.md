@@ -115,5 +115,3 @@ The open-source low-code programming tool Node-RED reached a milestone this week
 * Check out the previous "[In the Loop - September 30, 2019](https://strongloop.com/strongblog/in-the-loop-september-30-2019/)".
 
 * Be sure to follow StrongLoop on [Facebook](https://www.facebook.com/strongloop/) and [Twitter](https://twitter.com/StrongLoop)!
-
-* Do you have a blog post or other content on LoopBack? Send us a link and we’ll promote your work and send you some swag!
