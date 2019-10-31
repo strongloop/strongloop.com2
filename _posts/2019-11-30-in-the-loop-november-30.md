@@ -16,9 +16,17 @@ Welcome back to "In the Loop", in which we list recent news, updates or opinions
 
 ### Node.js Released With Diagnostic Reporting 
 
+
+
 Ian Elliot examines the Node.js 13 release with upgrades to V8 and new features including diagnostic reporting. 
 
 [READ MORE >>>](https://i-programmer.info/news/167-javascript/13206-nodejs-released-with-diagnostic-reporting.html)
+
+### JavaScript becomes most in-demand developer technology
+
+Jakub Lewkowicz looks at Pluralsight Technologies' Technology Index release, which found JavaScript to be at the top.
+
+[READ MORE >>>](https://sdtimes.com/softwaredev/report-javascript-becomes-most-in-demand-developer-technology/)
 
 ## What Next?
 
