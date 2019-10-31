@@ -58,6 +58,12 @@ Check out the timeline and some frequently asked questions [here](https://strong
 
 While we were looking to the future as we built LoopBack 4, we continued to provide tutorials and "how to" content for LoopBack as well.  
 
+### Events
+
+The Toronto Cloud Integration Meetup hosted an event in February with the overall topic "Quickly Build APIs with Existing Services and Data Using LoopBack!” Janny Hou explained what LoopBack is, what you can do with it, and the rationale behind the rewrite of the framework. Biniam Admikew demonstrated how how easy it is to expose REST API from your database with just a few steps. Jamil Spain provided an additional demo while also taking care of capturing the meetup on video.
+
+Check out the details and video [here](https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/).
+
 ### Playing Well with OpenAPI Spec
 
 With IBM supporting the [OpenAPI Initiative](https://www.openapis.org/), it shouldn't surprise anyone that the LoopBack team uses the spec they offer. 
