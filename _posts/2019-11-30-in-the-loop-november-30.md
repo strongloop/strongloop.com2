@@ -20,6 +20,18 @@ Ian Elliot examines the Node.js 13 release with upgrades to V8 and new features 
 
 [READ MORE >>>](https://i-programmer.info/news/167-javascript/13206-nodejs-released-with-diagnostic-reporting.html)
 
+### AWS APIs and Extending Style in OpenAPI
+
+Morad Ankri begins a multi part series on his talk from the API Specifications Conference.
+
+[READ MORE >>>](https://www.transposit.com/blog/2019.10.30-aws-apis-and-extending-style-in-openapi/)
+
+### Highlights from the API Spec Conference 2019 in Vancouver
+
+Caio Bianchi looks at one of the most sought after conferences in the API space: ASC 2019 in Vancouver, which is hosted by the OpenAPI initiative and organized by the Linux Foundation.
+
+[READ MORE >>>](https://medium.com/decathlondevelopers/highlights-from-the-api-spec-conference-2019-in-vancouver-e700cbe091cb)
+
 ### JavaScript becomes most in-demand developer technology
 
 Jakub Lewkowicz looks at Pluralsight Technologies' Technology Index release, which found JavaScript to be at the top.
