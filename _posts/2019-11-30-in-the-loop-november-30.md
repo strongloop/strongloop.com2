@@ -16,8 +16,6 @@ Welcome back to "In the Loop", in which we list recent news, updates or opinions
 
 ### Node.js Released With Diagnostic Reporting 
 
-
-
 Ian Elliot examines the Node.js 13 release with upgrades to V8 and new features including diagnostic reporting. 
 
 [READ MORE >>>](https://i-programmer.info/news/167-javascript/13206-nodejs-released-with-diagnostic-reporting.html)
@@ -27,6 +25,12 @@ Ian Elliot examines the Node.js 13 release with upgrades to V8 and new features 
 Jakub Lewkowicz looks at Pluralsight Technologies' Technology Index release, which found JavaScript to be at the top.
 
 [READ MORE >>>](https://sdtimes.com/softwaredev/report-javascript-becomes-most-in-demand-developer-technology/)
+
+### Is GraphQL Still Relevant in an HTTP2 World?
+
+Marc-André Giroux looks at what GraphQL brings to the table.
+
+[READ MORE >>>](https://medium.com/@__xuorig__/is-graphql-still-relevant-in-an-http2-world-64964f207b8)
 
 ## What Next?
 
