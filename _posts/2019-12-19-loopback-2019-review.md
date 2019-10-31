@@ -6,6 +6,7 @@ permalink: /strongblog/loopback-2019-review/
 categories:
   - Community
   - LoopBack
+published: false
 ---
 
 As 2019 draws to a close, we wat to follow our annual tradition of looking at the hard work that the [LoopBack](http://loopback.io/) team has achieved in the past year. LoopBack 4 was the main focus, and it is safe to say that this focus has resulted in a lot of improvements and features for the framework.  
@@ -20,26 +21,49 @@ First and foremost, it was wonderful to congratulate LoopBack for earning the 20
 
 - new quote from Raymond reflecting on the award and event?
 
-## The LoopBack 4 Website
+### The LoopBack 4 Website
 
 - updates to site code
 - udpates to docs
 - other streamlining
 
-## LoopBack 4 Features, Previews and GA Announcement
+### Milestone Updates
+
+The LoopBack team continued to outline their progress with monthly milestone updates. Check them out below:
+
+- [January 2019 Milestone Update](https://strongloop.com/strongblog/january-2019-milestone/)
+- [February 2019 Milestone Update](https://strongloop.com/strongblog/february-2019-milestone/)
+- [March 2019 Milestone Update](https://strongloop.com/strongblog/march-2019-milestone/)
+- [April 2019 Milestone Update](https://strongloop.com/strongblog/april-2019-milestone/)
+- [May 2019 Milestone Update](https://strongloop.com/strongblog/may-2019-milestone/)
+- [June 2019 Milestone Update](https://strongloop.com/strongblog/june-2019-milestone/)
+- [July 2019 Milestone Update](https://strongloop.com/strongblog/july-2019-milestone/)
+- [August 2019 Milestone Update](https://strongloop.com/strongblog/august-2019-milestone/)
+- [September 2019 Milestone Update](https://strongloop.com/strongblog/september-2019-milestone/)
+- [October 2019 Milestone Update](https://strongloop.com/strongblog/october-2019-milestone/)
+- [November 2019 Milestone Update](https://strongloop.com/strongblog/november-2019-milestone/)
+- December 2019 Milestone Update - coming soon!
+
+### LoopBack 3 LTS Support
+
+In March, the LoopBack team announced LoopBack 3 was receiving an extended long term support to provide more time for users to move to the new version which is a different programming model and language. The revised LTS start is December 2019 and the revised end of life is December 2020.
+
+Check out the timeline and some frequently asked questions [here](https://strongloop.com/strongblog/lb3-extended-lts/).
+
+### LoopBack 4 Features, Previews and GA Announcement
 
 - review lb archievs for 2019
 
-## More LoopBack How-To Content
+### More LoopBack How-To Content
 
 While we were looking to the future as we built LoopBack 4, we continued to provide tutorials and "how to" content for LoopBack as well.  
 
-## Playing Well with OpenAPI Spec
+### Playing Well with OpenAPI Spec
 
 With IBM supporting the [OpenAPI Initiative](https://www.openapis.org/), it shouldn't surprise anyone that the LoopBack team uses the spec they offer. 
 - updates
 
-## Downloads 
+### Downloads 
 
 With all of this activity, we weren't surprised to see LoopBack downloads continue to grow. 
 
@@ -55,7 +79,7 @@ There were  approximately 1.5 millions downloads for LoopBack 2 and lb3 througho
 
 2019 began with LoopBack past the [12,000 star count](https://github.com/strongloop/loopback) and [LoopBack 4](https://github.com/strongloop/loopback-next) at more than 1260. As we draw to a close, the numbers are at ----- , an increase of !
 
-## 2020 Vision
+### 2020 Vision
 
 The LoopBack team is continuing to work on new features and ways to demonstrate what LoopBack 4 can do for 2019. Just as importantly, we have been encouraged as the LoopBack community continued providing feedback, reporting issues, and contributing code. We were proud and excited for LoopBack 4 GA, and now we are more excited to see where things go in 2019! 
 
