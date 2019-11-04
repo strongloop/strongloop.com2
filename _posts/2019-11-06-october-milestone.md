@@ -73,7 +73,7 @@ The [shopping cart application](https://github.com/strongloop/loopback4-example-
 
 ## CASCON x Evoke 2019 Workshop Preparation
 
-The LoopBack 4 team is preparing material for a booth and workshop at [CASCON x Evoke 2019](http://www-01.ibm.com/ibm/cas/cascon/) in Toronto, Canada. Our booth is named [REST APIs with LoopBack 4 and OpenAPI 3](https://pheedloop.com/cascon/site/sessions/?id=DugCzZ) and will be open on November 4th, 2019 from 9am-6pm. Our workshop is named [Write scalable and extensible Node.js applications using LoopBack 4](https://pheedloop.com/cascon/site/sessions/?id=OhNsKW) and is taking place on November 5th, 2019 from 1pm-2:45pm. Come drop by to see us!
+The LoopBack 4 team has prepared material for a booth and workshop at [CASCON x Evoke 2019](http://www-01.ibm.com/ibm/cas/cascon/) in Toronto, Canada. Our booth is named [REST APIs with LoopBack 4 and OpenAPI 3](https://pheedloop.com/cascon/site/sessions/?id=DugCzZ) and will be open on November 4th, 2019 from 9am-6pm. Our workshop is named [Write scalable and extensible Node.js applications using LoopBack 4](https://pheedloop.com/cascon/site/sessions/?id=OhNsKW) and is taking place on November 5th, 2019 from 1pm-2:45pm. Come drop by to see us!
 
 ## Repository Tests for PostgreSQL
 
