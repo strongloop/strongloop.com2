@@ -30,15 +30,15 @@ Also, we were honored this month when [API World](https://apiworld.co/) awarded 
 
 <!--more-->
 
-## Inclusion of related models
+## Inclusion of Related Models
 
 We've been working on inclusion resolvers for relations for the past several months. Besides the basic functionality, we also added a prompt for activating the inclusion resolver for the `lb4 relation` command in [PR #3856](https://github.com/strongloop/loopback-next/pull/3856). This allows users to easily set up the inclusion resolver through the CLI just like all others artifacts.
+
 The `lb4 relation` command now [prompts to confirm](https://loopback.io/doc/en/lb4/Relation-generator.html#arguments) if an inclusion resolver should be registered for the given relation.
 
 Also, we posted [a blog](https://strongloop.com/strongblog/inclusion-of-related-models/) to illustrate the idea and usage of the inclusion resolver. We have a full example from setting up the models and relations through CLI, to querying data with the inclusion resolver. Read the blog to try out the feature!
 
 We've gotten feedback from the community since this feature was published. As a result, we've improved the documentation. Diagrams were added to each relation to make the concept more intuitive. We also added URLs as examples to query related models in case users want to process data at the controller level instead of the repository level. See [PR #4007](https://github.com/strongloop/loopback-next/pull/4007) for more details.
-
 
 ## Adding Partitioned Database Support for Cloudant and CouchDB connector
 
@@ -93,7 +93,7 @@ We're always seeking to improve our documentation. We've added a new section [In
 
 After triaging some issues from the community, we realized that the documentation for customizing key names needs to be enhanced. We added explanations and examples to illustrate the default value of relations, how to customize key names, and how to use different names for models and database columns. You can find more details in [HasMany - Relation Metadata](https://loopback.io/doc/en/lb4/HasMany-relation.html#relation-metadata), [HasOne - Relation Metadata](https://loopback.io/doc/en/lb4/hasOne-relation.html#relation-metadata), and [Defining a belongsTo Relation](https://loopback.io/doc/en/lb4/BelongsTo-relation.html#defining-a-belongsto-relation).
 
-## Bug fixes / CI fixes
+## Bug Fixes / CI Fixes
 
 - Fixed [Issue #4252 - Fix CI builds (Karma + PhantomJS)](https://github.com/strongloop/loopback/issues/4252) by reworking browser tests to run in Headless Chrome instead of PhantomJS, because the latter is no longer maintained. See [PR #4262](https://github.com/strongloop/loopback/pull/4262) for details.
 
