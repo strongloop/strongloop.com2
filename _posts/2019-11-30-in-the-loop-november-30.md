@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### TypeScript, Seeing Past the Hype - Matthew Gerstman at ReactiveConf 2019 
+
+Matthew Gerstman, senior software engineer at Dropbox, recently described the good, the bad and the ugly parts of TypeScript, and how TypeScript helped Dropbox to tackle programming at scale.
+
+[READ MORE >>>](https://www.infoq.com/news/2019/10/typescript-hype-reactiveconf/)
+
 ### Node.js Released With Diagnostic Reporting 
 
 Ian Elliot examines the Node.js 13 release with upgrades to V8 and new features including diagnostic reporting. 
