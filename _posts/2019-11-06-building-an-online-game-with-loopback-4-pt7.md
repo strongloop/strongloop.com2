@@ -14,7 +14,7 @@ published: true
 
 ### In This Episode
 
-For some personal reason, I will no longer contribute to this series. Thank you so much for all of the following and support. The series may end, but your journey with LoopBack is just started.
+This is the final episode of this series. Thank you so much for all of the following and support. The series may end, but your journey with LoopBack is just started.
 In this episode, I am going to summarize what we have achieved by using LoopBack so far, and how can you apply all of this to your own project.
 
 <!--more-->
