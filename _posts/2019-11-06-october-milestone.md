@@ -7,7 +7,7 @@ permalink: /strongblog/october-2019-milestone/
 categories:
   - Community
   - LoopBack
-published: false
+published: true
 ---
 
 As the cold autumn winds and frost nipped at our heels, the LoopBack team kept warm with generous portions of hot tea and coffee and accomplished their planned October milestone goals.
