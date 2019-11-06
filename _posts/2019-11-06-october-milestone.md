@@ -25,10 +25,8 @@ We focused on the following areas:
 - Bug fixes / CI fixes
 
 See the [October milestone](https://github.com/strongloop/loopback-next/issues/3801) for an overview of what we have worked on, and read on for more details.
-
-Also, we were honored this month when [API World](https://apiworld.co/) awarded LoopBack with the `2019 Best of API Middleware Award`. Raymond Feng was there to [accept the award](https://twitter.com/cyberfeng/status/1181943111531909120) on behalf of the team. Yay, team!
-
 <!--more-->
+Also, we were honored this month when [API World](https://apiworld.co/) awarded LoopBack with the `2019 Best of API Middleware Award`. Raymond Feng was there to [accept the award](https://twitter.com/cyberfeng/status/1181943111531909120) on behalf of the team. Yay, team!
 
 ## Inclusion of Related Models
 
