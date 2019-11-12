@@ -10,7 +10,7 @@ categories:
 published: false
 ---
 
-[CASCONxEVOKE](https://www-01.ibm.com/ibm/cas/cascon/) is one of Canada’s largest combined academic, research and developer conferences, welcoming 1,500+ attendees and 150+ speakers. This year, the LoopBack team has been busy collaborating with other attendees at the LoopBack booth and delivering a workshop at the conference between November 4th and 6th in Markham Ontario.
+[CASCONxEVOKE](https://www-01.ibm.com/ibm/cas/cascon/) is one of Canada’s largest combined academic, research and developer conferences, welcoming 1,500+ attendees and 150+ speakers. This year, the LoopBack team kept busy collaborating with other attendees at the LoopBack booth and delivering a workshop at the conference between November 4th and 6th in Markham Ontario.
 
 <!--more-->
 
@@ -50,3 +50,14 @@ Some attendees had asked about cloud deployment story for LoopBack. We have been
 <p style='text-align:center'>
   <img src='../blog-assets/2019/11/loopback-ibmdeveloperbooth.jpg' alt='IBM Developer booth picture' width=400>
 </p>
+
+### What's Next? 
+
+## Call for Action
+
+LoopBack's future success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
+
+- [Reporting issues](https://github.com/strongloop/loopback-next/issues).
+- [Contributing](https://github.com/strongloop/loopback-next/blob/master/docs/CONTRIBUTING.md)
+  code and documentation.
+- [Opening a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue).
