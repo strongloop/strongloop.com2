@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Build an end-to-end application with LoopBack, Cloudant, and React.js
+
+Aly Hegazy and Diana Lau how to build an end-to-end React.js application that serves as a dashboard to display sales data that is stored in a Cloudant database.
+
+[READ MORE >>>](https://developer.ibm.com/tutorials/end-to-end-nodejs-application-with-loopback-4-cloudant-and-angular/)
+
 ### TypeScript 3.7 adds long-awaited optional chaining feature
 
 TypeScript is on the up and up, according to the spring Technology Radar report, when it moseyed on up to the ‘adopt’ sector. Sarah Schlothauer shares what’s new in the open source programming language.
