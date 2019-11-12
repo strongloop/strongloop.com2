@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CASCONxEVOKE Conference Recap for LoopBack
-date: 2019-11-20
+date: 2019-11-13
 author: Diana Lau
 permalink: /strongblog/cascon-evoke-2019/
 categories:
