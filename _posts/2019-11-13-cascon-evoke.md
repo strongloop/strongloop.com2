@@ -10,7 +10,7 @@ categories:
 published: false
 ---
 
-[CASCONxEVOKE](https://www-01.ibm.com/ibm/cas/cascon/) is one of Canada’s largest combined academic, research and developer conferences, welcoming 1,500+ attendees and 150+ speakers. This year, the LoopBack team has been busy collaborating with other attendees at the LoopBack booth and delivering a workshop at the conference betwee November 4th and 6th in Markham Ontario.
+[CASCONxEVOKE](https://www-01.ibm.com/ibm/cas/cascon/) is one of Canada’s largest combined academic, research and developer conferences, welcoming 1,500+ attendees and 150+ speakers. This year, the LoopBack team has been busy collaborating with other attendees at the LoopBack booth and delivering a workshop at the conference between November 4th and 6th in Markham Ontario.
 
 <!--more-->
 
