@@ -7,7 +7,7 @@ permalink: /strongblog/cascon-evoke-2019/
 categories:
   - Community
   - LoopBack
-published: false
+published: true
 ---
 
 [CASCONxEVOKE](https://www-01.ibm.com/ibm/cas/cascon/) is one of Canada’s largest combined academic, research and developer conferences, welcoming 1,500+ attendees and 150+ speakers. This year, the LoopBack team attended and kept busy collaborating with other attendees at the LoopBack booth and delivering a workshop at the conference between November 4th and 6th in Markham Ontario.
@@ -32,10 +32,9 @@ We also got a few questions about exposing GraphQL in LoopBack. If you're intere
   <img src='../blog-assets/2019/11/loopback-poster-casconevoke1.jpg' alt='event photo for booth' width=200>
 </p>
 
-
 ### Day 2: Workshop on Writing Scalable Node.js Applications Using LoopBack
 
-On Day 2, we had a [workshop](https://pheedloop.com/cascon/site/sessions/?id=OhNsKW) about writing scalable and extensible Node.js applications using LoopBack 4. We presented the challenges we faced for LoopBack as a large scale Node.js framework and showed how we are addressing those challenges in LoopBack 4. While we were introducing the concepts that make scalability and extensibility possible (such as Dependency Injection, extension/extension-point framework and Inversion of Control), the attendees also had a chance to build an extensible and scalable Node.js application step-by-step using those features. 
+On Day 2, we held a [workshop](https://pheedloop.com/cascon/site/sessions/?id=OhNsKW) about writing scalable and extensible Node.js applications using LoopBack 4. We presented the challenges we faced for LoopBack as a large scale Node.js framework and showed how we are addressing those challenges in LoopBack 4. While we introduced the concepts that make scalability and extensibility possible (such as Dependency Injection, extension/extension-point framework and Inversion of Control), the attendees also had a chance to build an extensible and scalable Node.js application step-by-step using those features. 
 <p align="center"> 
 ![workshop photo](../blog-assets/2019/11/loopback-workshop-casconxevoke.png)
 </p>
@@ -45,7 +44,7 @@ We won't be able to relive the workshop, but you can check out our workshop [han
 
 Throughout the conference, the IBM Developer booth was showcasing different developer-focused technologies, such as Appsody and LoopBack. We were delighted to be there on Day 3 to reach out more existing and potential users!
 
-Some attendees had asked about cloud deployment story for LoopBack. We have been focusing on a vendor agnostic approach. For instance, we recently completed a PoC and added a [tutorial](https://github.com/strongloop/loopback4-example-shopping/tree/master/kubernetes) on how to deploy a LoopBack application as microservices using Kubernetes. While we recommend to [deploy your applications to IBM Cloud](https://github.com/strongloop/loopback4-example-shopping/blob/master/kubernetes/docs/deploy-to-ibmcloud.md), you can also deploy to other vendor of your choice.
+Some attendees asked about cloud deployment story for LoopBack. We have been focusing on a vendor agnostic approach. For instance, we recently completed a PoC and added a [tutorial](https://github.com/strongloop/loopback4-example-shopping/tree/master/kubernetes) on how to deploy a LoopBack application as microservices using Kubernetes. While we recommend to [deploy your applications to IBM Cloud](https://github.com/strongloop/loopback4-example-shopping/blob/master/kubernetes/docs/deploy-to-ibmcloud.md), you can also deploy to another vendor of your choice.
 <p align="center"> 
 <p style='text-align:center'>
   <img src='../blog-assets/2019/11/loopback-ibmdeveloperbooth.jpg' alt='IBM Developer booth picture' width=400>
