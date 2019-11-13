@@ -14,7 +14,7 @@ published: true
 
 <!--more-->
 <p align="center"> 
-<img src="https://strongloop.com/blog-assets/2019/11/casconxevoke_logo.png" alt='CASCONxEVOKE logo' style="width: 200px"/>
+<img src="https://strongloop.com/blog-assets/2019/11/casconxevoke_logo.png" alt='CASCONxEVOKE logo' style="width: 300px"/>
 </p>                                                                                                                  
 
 ### Day 1: Booth Showcasing Fast and Easy API Creation with LoopBack 
