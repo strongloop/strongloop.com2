@@ -1,9 +1,9 @@
 ---
 layout: post
-title: In the Loop - November 30, 2019
-date: 2019-11-30
+title: In the Loop - November 27, 2019
+date: 2019-11-27
 author: Dave Whiteley
-permalink: /strongblog/in-the-loop-november-30-2019/
+permalink: /strongblog/in-the-loop-november-27-2019/
 categories:
   - Community
   - News
@@ -13,6 +13,12 @@ published: false
 
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
+
+### Red Hat Introduces open source Project Quay container registry 
+
+Joey Schorr introduces the open sourcing of Project Quay, the upstream project representing the code that powers Red Hat Quay and Quay.io. 
+
+[READ MORE >>>](https://www.redhat.com/en/blog/red-hat-introduces-open-source-project-quay-container-registry)
 
 ### Build an end-to-end application with LoopBack, Cloudant, and React.js
 
