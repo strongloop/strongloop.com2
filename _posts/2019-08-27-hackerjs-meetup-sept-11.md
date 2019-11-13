@@ -7,7 +7,7 @@ permalink: /strongblog/hackerjs-meetup-sept-11/
 categories:
   - Community
   - Events
-published: true
+published: false
 ---
 
 After taking a break for summer holidays, the HackerJS Meetup is gearing up for its next meeting! If you are near Santa Clara, California and want to share or brush up on your Node and JS skills then we'd love to see you there! Join us Wednesday, September 11 at Santa Clara's Hacker Dojo.
