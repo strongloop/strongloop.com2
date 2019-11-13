@@ -27,7 +27,6 @@ At our [booth](https://pheedloop.com/cascon/site/sessions/?id=DugCzZ) we had a g
 </p>
 
 We also got a few questions about exposing GraphQL in LoopBack. If you're interested in it too, see [our tutorial](https://loopback.io/doc/en/lb4/exposing-graphql-apis.html) which uses the [OpenAPI-to-GraphQL module](https://loopback.io/openapi-to-graphql.html). 
-<p align="center"> 
 
 <p align="center"> 
 <img src="https://strongloop.com/blog-assets/2019/11/loopback-poster-casconevoke1.jpg" alt='event photo for booth' style="width: 200px"/>
