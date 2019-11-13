@@ -7,15 +7,15 @@ permalink: /strongblog/cascon-evoke-2019/
 categories:
   - Community
   - LoopBack
-published: false
+published: true
 ---
 
 [CASCONxEVOKE](https://www-01.ibm.com/ibm/cas/cascon/) is one of Canada’s largest combined academic, research and developer conferences, welcoming 1,500+ attendees and 150+ speakers. This year, the LoopBack team attended and kept busy collaborating with other attendees at the LoopBack booth and delivering a workshop at the conference between November 4th and 6th in Markham Ontario.
 
 <!--more-->
 <p align="center"> 
-<img src="https://strongloop.com/blog-assets/2019/11/casconxevoke_logo.png' alt='CASCONxEVOKE logo' style="width: 200px"/>
-</p>
+<img src="https://strongloop.com/blog-assets/2019/11/casconxevoke_logo.png" alt='CASCONxEVOKE logo' style="width: 200px"/>
+</p>                                                                                                                  
 
 ### Day 1: Booth Showcasing Fast and Easy API Creation with LoopBack 
 
@@ -23,14 +23,14 @@ At our [booth](https://pheedloop.com/cascon/site/sessions/?id=DugCzZ) we had a g
 
 <!--more-->
 <p align="center"> 
-<img src="https://strongloop.com/blog-assets/2019/11/shopping-app-usecase.png' alt='shopping app example' style="width: 400px"/>
+<img src="https://strongloop.com/blog-assets/2019/11/shopping-app-usecase.png" alt='shopping app example' style="width: 400px"/>
 </p>
 
 We also got a few questions about exposing GraphQL in LoopBack. If you're interested in it too, see [our tutorial](https://loopback.io/doc/en/lb4/exposing-graphql-apis.html) which uses the [OpenAPI-to-GraphQL module](https://loopback.io/openapi-to-graphql.html). 
 <p align="center"> 
 
 <p align="center"> 
-<img src="https://strongloop.com/blog-assets/2019/11/loopback-poster-casconevoke1.jpg' alt='event photo for booth' style="width: 200px"/>
+<img src="https://strongloop.com/blog-assets/2019/11/loopback-poster-casconevoke1.jpg" alt='event photo for booth' style="width: 200px"/>
 </p>
 
 ### Day 2: Workshop on Writing Scalable Node.js Applications Using LoopBack
@@ -38,7 +38,7 @@ We also got a few questions about exposing GraphQL in LoopBack. If you're intere
 On Day 2, we held a [workshop](https://pheedloop.com/cascon/site/sessions/?id=OhNsKW) about writing scalable and extensible Node.js applications using LoopBack 4. We presented the challenges we faced for LoopBack as a large scale Node.js framework and showed how we are addressing those challenges in LoopBack 4. While we introduced the concepts that make scalability and extensibility possible (such as Dependency Injection, extension/extension-point framework and Inversion of Control), the attendees also had a chance to build an extensible and scalable Node.js application step-by-step using those features. 
 
 <p align="center"> 
-<img src="https://strongloop.com/blog-assets/2019/11/loopback-workshop-casconxevoke.png' alt='event photo for booth' style="width: 200px"/>
+<img src="https://strongloop.com/blog-assets/2019/11/loopback-workshop-casconxevoke.png" alt='event photo for booth' style="width: 200px"/>
 </p>
 
 We won't be able to relive the workshop, but you can check out our workshop [hands-on exercise instructions](https://github.com/strongloop/cascon2019) and [presentation slides](https://github.com/strongloop/cascon2019/blob/master/2019cascon-workshop-presentation-pdf.pdf).
@@ -50,7 +50,7 @@ Throughout the conference, the IBM Developer booth was showcasing different deve
 Some attendees asked about cloud deployment story for LoopBack. We have been focusing on a vendor agnostic approach. For instance, we recently completed a PoC and added a [tutorial](https://github.com/strongloop/loopback4-example-shopping/tree/master/kubernetes) on how to deploy a LoopBack application as microservices using Kubernetes. While we recommend to [deploy your applications to IBM Cloud](https://github.com/strongloop/loopback4-example-shopping/blob/master/kubernetes/docs/deploy-to-ibmcloud.md), you can also deploy to another vendor of your choice.
 
 <p align="center"> 
-<img src="https://strongloop.com/blog-assets/2019/11/loopback-ibmdeveloperbooth.jpg' alt='IBM Developer booth picture' style="width: 400px"/>
+<img src="https://strongloop.com/blog-assets/2019/11/loopback-ibmdeveloperbooth.jpg" alt='IBM Developer booth picture' style="width: 400px"/>
 </p>
 
 ## What's Next? 
