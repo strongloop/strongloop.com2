@@ -37,7 +37,7 @@ We also got a few questions about exposing GraphQL in LoopBack. If you're intere
 On Day 2, we held a [workshop](https://pheedloop.com/cascon/site/sessions/?id=OhNsKW) about writing scalable and extensible Node.js applications using LoopBack 4. We presented the challenges we faced for LoopBack as a large scale Node.js framework and showed how we are addressing those challenges in LoopBack 4. While we introduced the concepts that make scalability and extensibility possible (such as Dependency Injection, extension/extension-point framework and Inversion of Control), the attendees also had a chance to build an extensible and scalable Node.js application step-by-step using those features. 
 
 <p align="center"> 
-<img src="https://strongloop.com/blog-assets/2019/11/loopback-workshop-casconxevoke.png" alt='event photo for booth' style="width: 200px"/>
+<img src="https://strongloop.com/blog-assets/2019/11/loopback-workshop-casconxevoke.png" alt='event photo for booth' style="width: 400px"/>
 </p>
 
 We won't be able to relive the workshop, but you can check out our workshop [hands-on exercise instructions](https://github.com/strongloop/cascon2019) and [presentation slides](https://github.com/strongloop/cascon2019/blob/master/2019cascon-workshop-presentation-pdf.pdf).
