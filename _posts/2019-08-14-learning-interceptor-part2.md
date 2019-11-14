@@ -177,13 +177,13 @@ You should expect a HTTP 500 error with message saying "Internal Server Error".
 
 ## Resources 
 
-- Interceptor docs page: https://loopback.io/doc/en/lb4/Interceptors.html
-- Caching enabled via interceptors in Greeter application: https://github.com/strongloop/loopback-next/tree/master/examples/greeting-app
-- Authorization added using interceptors in this tutorial: https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/
+- [Interceptor docs page](https://loopback.io/doc/en/lb4/Interceptors.html)
+- [Caching enabled via interceptors in Greeter application](https://github.com/strongloop/loopback-next/tree/master/examples/greeting-app)
+- [Authorization added using interceptors in this tutorial](https://strongloop.com/strongblog/building-an-online-game-with-loopback-4-pt4/)
 
 ## Call to Action
 
-LoopBack's future success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
+LoopBack's success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Please join us and help the project by:
 
 - [Reporting issues](https://github.com/strongloop/loopback-next/issues).
 - [Contributing](https://github.com/strongloop/loopback-next/blob/master/docs/CONTRIBUTING.md)
