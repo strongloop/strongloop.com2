@@ -42,6 +42,8 @@ The LoopBack team continued to outline their progress with monthly milestone upd
 - [November 2019 Milestone Update](https://strongloop.com/strongblog/november-2019-milestone/)
 - December 2019 Milestone Update - coming soon!
 
+You can also follow LoopBack's progress throughout the year in the [LoopBack 4 2019 Q1 Overview](https://strongloop.com/strongblog/loopback-4-2019-q1-overview/), [LoopBack 4 2019 Q2 Overview](https://strongloop.com/strongblog/loopback-4-2019-q2-overview/), and [LoopBack 4 2019 Q3 Overview](https://strongloop.com/strongblog/loopback-4-2019-q3-overview/).
+
 ### LoopBack 3 LTS Support
 
 In March, the LoopBack team announced LoopBack 3 was receiving an extended long term support to provide more time for users to move to the new version which is a different programming model and language. The revised LTS start is December 2019 and the revised end of life is December 2020.
@@ -50,13 +52,53 @@ Check out the timeline and some frequently asked questions [here](https://strong
 
 In "Migrating from LoopBack 3 to LoopBack 4", by Nora Abdelgadir shared a way to mount your LoopBack 3 applications in a LoopBack 4 project. You can read about it [here](https://strongloop.com/strongblog/migrate-from-loopback-3-to-loopback-4/).
 
-### LoopBack 4 Features, Previews and GA Announcement
+### LoopBack 4 Features and Previews
 
-- review lb archievs for 2019
+Experimenting with Plain JavaScript Programming in LoopBack 4 by Hage Yaapa  
+https://strongloop.com/strongblog/loopback4-javascript-experience/
+We believe that TypeScript is the right move and it will help you and us in the long run. However, some developers are constrained to use plain JavaScript at the moment for various reasons. We didn’t want to leave our JavaScript users behind and decided to explore the possibilities of creating a JavaScript interface to LoopBack 4. This blog post is about what we did in that regard and what we will be doing next.
+
+--
+
+What's New in LoopBack 4 Authentication 2.0 by Dominique Emond 
+https://strongloop.com/strongblog/loopback-4-authentication-updates/
+We’ve refactored the authentication component to be more extensible and easier to use.
+
+Now you can secure your endpoints with both passport-based and LoopBack native authentication strategies that implement the interface AuthenticationStrategy.
+
+The new design greatly simplifies the effort of application developers and extension developers since they now only need to focus on binding strategies to the application without having to understand/modify the strategy resolver or the action provider.
+
+--
+
+LoopBack 4 Offers Inclusion of Related Models by Agnes Lin 
+LoopBack 4 now offers a new feature: inclusion of related models! This addition not only simplifies querying data in LoopBack 4, but since we have similar features in LoopBack 3 it also closes one feature gap between LoopBack 3 as well. 
+https://strongloop.com/strongblog/inclusion-of-related-models/
+
 
 ### More LoopBack How-To Content
 
-While we were looking to the future as we built LoopBack 4, we continued to provide tutorials and "how to" content for LoopBack as well.  
+Wenbo Sun provided a 7-part series called "Building an Online Game With LoopBack 4"
+The main purpose of this series is to help you learn LoopBack 4 and how to use it to easily build your own API and web project. We’ll do so by creating a new project I’m working on: an online web text-based adventure game.
+https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/
+
+--
+
+Diana Lau Learning LoopBack 4 Interceptors (Part 1) - Global Interceptors
+Interceptors are reusable functions to provide aspect-oriented logic around method invocations. 
+Seems pretty useful, right? There are 3 levels of interceptors: global, class level and method level. In this article, we are going to look into what a global interceptor is and how to use it.
+https://strongloop.com/strongblog/loopback4-interceptors-part1/
+
+Learning LoopBack 4 Interceptors (Part 2) - Method Level and Class Level Interceptors
+we are going to build an application that validates the incoming request using class level and method level interceptors 
+plus resources
+https://strongloop.com/strongblog/loopback4-interceptors-part2/
+
+
+Import LoopBack 3 Models into a LoopBack 4 Project by Miroslav Bajtoš announce a preview version of a tool automating migration of models from LoopBack 3 to LoopBack 4:
+lb4 import-lb3-models
+he demos it
+https://strongloop.com/strongblog/import-loopback-3-models-to-loopback-4/
+
 
 ### Events
 
@@ -64,9 +106,9 @@ While the LoopBack team is generally quite usy working on the framework, they al
 
 The Toronto Cloud Integration Meetup hosted an event in February with the overall topic "Quickly Build APIs with Existing Services and Data Using LoopBack!” Janny Hou explained what LoopBack is, what you can do with it, and the rationale behind the rewrite of the framework. Biniam Admikew demonstrated how how easy it is to expose REST API from your database with just a few steps. Jamil Spain provided an additional demo while also taking care of capturing the meetup on video. Check out the details and video [here](https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/).
 
+As mentioned earlier, Raymond Feng attended the 2019 API Awards Ceremony during API World 2019, in October to accept the 2019 API Award for the “Best in API Middleware” category.  
 
-
-Later in the year, the LoopBack team attended CASCONxEVOKE. One of Canada’s largest combined academic, research and developer conferences, the November event offered over 150 speakers to over 1,500 attendees. Diana Lau provided an overview of the LoopBack booth and a workshop. Learn more [here](https://strongloop.com/strongblog/cascon-evoke-2019/).
+In November, the LoopBack team attended CASCONxEVOKE. As one of Canada’s largest combined academic, research and developer conferences, it offered over 150 speakers to over 1,500 attendees. Diana Lau provided an overview of the LoopBack booth and a workshop. Learn more [here](https://strongloop.com/strongblog/cascon-evoke-2019/).
 
 ### Playing Well with OpenAPI Spec
 
@@ -91,6 +133,4 @@ There were  approximately 1.5 millions downloads for LoopBack 2 and lb3 througho
 
 ### 2020 Vision
 
-The LoopBack team is continuing to work on new features and ways to demonstrate what LoopBack 4 can do for 2019. Just as importantly, we have been encouraged as the LoopBack community continued providing feedback, reporting issues, and contributing code. We were proud and excited for LoopBack 4 GA, and now we are more excited to see where things go in 2019! 
-
-We've just provided a very thorough summary of all LoopBack developments this year, so we recommend you started with [LoopBack 4](http://v4.loopback.io/getting-started.html) if you haven't already! 
+With all of this LoopBack news and updates, you can see 2019 was another busy year for the team. If you haven't already, we recommend you started with [LoopBack 4](http://v4.loopback.io/getting-started.html)! 
