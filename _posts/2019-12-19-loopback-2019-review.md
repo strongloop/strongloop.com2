@@ -9,9 +9,7 @@ categories:
 published: false
 ---
 
-As 2019 draws to a close, we wat to follow our annual tradition of looking at the hard work that the [LoopBack](http://loopback.io/) team has achieved in the past year. LoopBack 4 was the main focus, and it is safe to say that this focus has resulted in a lot of improvements and features for the framework.  
-
-<img src="https://strongloop.com/blog-assets/2018/12/loopback-2018-wrap-up.png" alt="LoopBack 2018 Year in Review" style="width: 400px; margin:auto;"/>
+As 2019 draws to a close, we wat to follow our annual tradition of looking at the hard work that the [LoopBack](http://loopback.io/) team has achieved in the past year. LoopBack 4 was the main focus, and that focus has resulted in a lot of improvements and features for the framework.  
 
 <!--more-->
 
@@ -50,6 +48,8 @@ In March, the LoopBack team announced LoopBack 3 was receiving an extended long 
 
 Check out the timeline and some frequently asked questions [here](https://strongloop.com/strongblog/lb3-extended-lts/).
 
+In "Migrating from LoopBack 3 to LoopBack 4", by Nora Abdelgadir shared a way to mount your LoopBack 3 applications in a LoopBack 4 project. You can read about it [here](https://strongloop.com/strongblog/migrate-from-loopback-3-to-loopback-4/).
+
 ### LoopBack 4 Features, Previews and GA Announcement
 
 - review lb archievs for 2019
@@ -60,9 +60,13 @@ While we were looking to the future as we built LoopBack 4, we continued to prov
 
 ### Events
 
-The Toronto Cloud Integration Meetup hosted an event in February with the overall topic "Quickly Build APIs with Existing Services and Data Using LoopBack!” Janny Hou explained what LoopBack is, what you can do with it, and the rationale behind the rewrite of the framework. Biniam Admikew demonstrated how how easy it is to expose REST API from your database with just a few steps. Jamil Spain provided an additional demo while also taking care of capturing the meetup on video.
+While the LoopBack team is generally quite usy working on the framework, they also managed to join some events throughout the year!
 
-Check out the details and video [here](https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/).
+The Toronto Cloud Integration Meetup hosted an event in February with the overall topic "Quickly Build APIs with Existing Services and Data Using LoopBack!” Janny Hou explained what LoopBack is, what you can do with it, and the rationale behind the rewrite of the framework. Biniam Admikew demonstrated how how easy it is to expose REST API from your database with just a few steps. Jamil Spain provided an additional demo while also taking care of capturing the meetup on video. Check out the details and video [here](https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/).
+
+
+
+Later in the year, the LoopBack team attended CASCONxEVOKE. One of Canada’s largest combined academic, research and developer conferences, the November event offered over 150 speakers to over 1,500 attendees. Diana Lau provided an overview of the LoopBack booth and a workshop. Learn more [here](https://strongloop.com/strongblog/cascon-evoke-2019/).
 
 ### Playing Well with OpenAPI Spec
 
