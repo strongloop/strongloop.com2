@@ -9,25 +9,36 @@ categories:
 published: false
 ---
 
-As 2019 draws to a close, we wat to follow our annual tradition of looking at the hard work that the [LoopBack](http://loopback.io/) team has achieved in the past year. LoopBack 4 was the main focus, and that focus has resulted in a lot of improvements and features for the framework.  
+As 2019 draws to a close, we're following our annual tradition of looking at the hard work that the [LoopBack](http://loopback.io/) team has achieved in the past year. As you might expect, working on LoopBack 4 was the main focus, with some events, updates and "how to" content adding flavour. That focus has resulted in a lot of improvements and features for the framework, while the rest allows interatcion with the LoopBack community. 
+
+Read on for the overview!  
 
 <!--more-->
 
 ### LoopBack, Winner of 2019 API Award for API Middleware
 
-First and foremost, it was wonderful to congratulate LoopBack for earning the 2019 API Award for the “[Best in API Middleware](https://strongloop.com/strongblog/loopback-2019-api-award-api-middleware/)” category. Celebrating the technical innovation, adoption, and reception in the API & Microservices industries and use by a global developer community, the 2019 API Awards were presented at the 2019 API Awards Ceremony during API World 2019. Raymond Feng, co-creator and architect for LoopBack, received the award.
+First and foremost, congratulations again to LoopBack for earning the 2019 API Award for the “[Best in API Middleware](https://strongloop.com/strongblog/loopback-2019-api-award-api-middleware/)” category. These awards were presented at the 2019 API Awards Ceremony during API World 2019, celebrating the technical innovation, adoption, and reception in the API & Microservices industries and use by a global developer community. Raymond Feng, co-creator and architect for LoopBack, received the award.
 
 - new quote from Raymond reflecting on the award and event?
 
 ### The LoopBack 4 Website
 
+User Reference
+Company logo + their testimonials
 - updates to site code
 - udpates to docs
 - other streamlining
 
-### Milestone Updates
+### Increased Transparency with Milestone Updates
 
-The LoopBack team continued to outline their progress with monthly milestone updates. Check them out below:
+Increased transparency to our users
+So that they have more ideas on what we’re doing.
+- Monthly milestones to show what changes/enhancements we’ve added to the framework
+- Milestone tickets - to show our plans for the month. https://github.com/strongloop/loopback-next/issues?q=is%3Aissue+is%3Aopen+milestone+label%3A%22Monthly+Milestone%22. (With “monthly milestone” label in GitHub
+- Quarterly update
+- Roadmap. Begin with a PR and visible in https://github.com/strongloop/loopback-next/blob/master/docs/ROADMAP.md
+
+For a truly open and detailed runthrough of work on LoopBack, the best resource is the monthly milestone updates. The LoopBack team outlined their progress with these updates, often explaining hurdles or rationale for changes and tweaks. Check them out below:
 
 - [January 2019 Milestone Update](https://strongloop.com/strongblog/january-2019-milestone/)
 - [February 2019 Milestone Update](https://strongloop.com/strongblog/february-2019-milestone/)
@@ -100,7 +111,15 @@ he demos it
 https://strongloop.com/strongblog/import-loopback-3-models-to-loopback-4/
 
 
-### Events
+### Events and Community Outreach
+- developerWeek in Feb - Raymond https://developerweek2019.sched.com/speaker/raymond_feng.1yyfcnn4
+- Meetup in Toronto
+- LoopBack QuickLab - Code@THINK. https://www.ibm.com/events/think/code/, NodeConf.eu (better check with Joe Sepi if it did happened)
+- CASCONxEVOKE
+   - Workshop: https://pheedloop.com/cascon/site/sessions/?id=OhNsKW
+    - CASCON Expo: https://pheedloop.com/cascon/site/sessions/?id=DugCzZ
+- Meetup in California - Raymond’s talk https://strongloop.com/strongblog/hackerjs-meetup-may-8/
+- TechConnect (internal IBM event at the Canada Lab in Markham) - May 2019
 
 While the LoopBack team is generally quite usy working on the framework, they also managed to join some events throughout the year!
 
@@ -116,6 +135,8 @@ With IBM supporting the [OpenAPI Initiative](https://www.openapis.org/), it shou
 - updates
 
 ### Downloads 
+Metrics:
+- Download numbers on npmjs.com https://npm-stat.com/charts.html?package=@loopback/core
 
 With all of this activity, we weren't surprised to see LoopBack downloads continue to grow. 
 
@@ -130,6 +151,14 @@ There were  approximately 1.5 millions downloads for LoopBack 2 and lb3 througho
 ### GitHub Activity 
 
 2019 began with LoopBack past the [12,000 star count](https://github.com/strongloop/loopback) and [LoopBack 4](https://github.com/strongloop/loopback-next) at more than 1260. As we draw to a close, the numbers are at ----- , an increase of !
+
+### Other
+
+Innovation outside the framework
+- Improve build time in loopback-next
+- Use RenovateBot to update the dependencies for us
+- Continue to use ZenHub for project and release management, better capture and predict team velocity
+- Number of blogs we’ve produced
 
 ### 2020 Vision
 
