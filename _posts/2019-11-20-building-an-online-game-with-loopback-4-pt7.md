@@ -14,7 +14,7 @@ published: false
 
 ### In This Episode
 
-This is the final episode of this series. In this episode, I am going to summarize what we have achieved by using LoopBack so far, and how can you apply all of this to your own project.
+This is the final episode of this series. I am going to summarize what we have achieved by using LoopBack so far, and how can you apply all of this to your own project.
 
 Thank you so much for all of the following and support. The series may be ending, but your journey with LoopBack is just starting.
 
@@ -42,6 +42,6 @@ In [episode 6](https://strongloop.com/strongblog/building-an-online-game-with-lo
 
 Congratulations! You have built your own web application with LoopBack!
 
-What we built in this series doesn't matter. It doesn't have to be an online game! You can use these concepts for online shopping or food delivery APIs. What important is design thinking, the methodology and tools we were using, and the way to think as a developer. Now, you've established stronger skills to build! 
+What we built in this series doesn't matter. It doesn't have to be an online game! You can use these concepts for online shopping or food delivery APIs. What *is* important is improving your design thinking, what methodology and tools we were using, and adding to the ways you think as a developer. Now, you've established stronger skills to build! 
 
-Hope you enjoyed this series. Happy coding!
+I hope you enjoyed this series. Happy coding!
