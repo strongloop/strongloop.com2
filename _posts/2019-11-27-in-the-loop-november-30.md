@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### The State of the Octoverse
+
+GitHub's annual report shows the most popular languages and projects on the site, as well as the communities that support them. 
+
+[READ MORE >>>](https://octoverse.github.com/#home)
+
 ### Red Hat Introduces open source Project Quay container registry 
 
 Joey Schorr introduces the open sourcing of Project Quay, the upstream project representing the code that powers Red Hat Quay and Quay.io. 
