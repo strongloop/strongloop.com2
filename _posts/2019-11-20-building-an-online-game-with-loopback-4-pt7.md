@@ -7,7 +7,7 @@ permalink: /strongblog/building-an-online-game-with-loopback-4-pt7/
 categories:
   - How-To
   - LoopBack
-published: false
+published: true
 ---
 
 ## Part 7: Wrap-Up
