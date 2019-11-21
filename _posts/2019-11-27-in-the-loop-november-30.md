@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Announcing core Node.js support for ECMAScript modules
+
+The Node.js Module Team announces new support for ECMAScript modules, bringing Node.js closer to JavaScript standards and increasing opportunities for ecosystem-wide compatibility.
+
+[READ MORE >>>](https://medium.com/@nodejs/announcing-core-node-js-support-for-ecmascript-modules-c5d6dc29b663)
+
 ### The State of the Octoverse
 
 GitHub's annual report shows the most popular languages and projects on the site, as well as the communities that support them. 
