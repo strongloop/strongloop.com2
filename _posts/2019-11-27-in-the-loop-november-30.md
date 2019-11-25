@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### The OpenJS Foundation aims to be the home of all JavaScript development
+
+Mayank Sharma looks at the new initiative, which is already home to 30 JavaScript projects including some of the most popular ones.
+
+[READ MORE >>>](https://www.techradar.com/in/news/the-openjs-foundation-aims-to-be-the-home-of-all-javascript-development)
+
 ### Announcing core Node.js support for ECMAScript modules
 
 The Node.js Module Team announces new support for ECMAScript modules, bringing Node.js closer to JavaScript standards and increasing opportunities for ecosystem-wide compatibility.
