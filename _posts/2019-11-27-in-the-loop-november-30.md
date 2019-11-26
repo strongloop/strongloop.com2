@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Loopback 4: Modern ways to Build APIs in Typescript & NodeJs
+
+This paid course shows how you can build Amazing APIs with Typescript, NodeJs, MongoDB, and Mysql! 
+
+[READ MORE >>>](https://www.udemy.com/course/loopback-4-the-complete-developers-guide/)
+
 ### Publishing npm Packages
 
 This post was written by Joel Chen with help from other members of the Node.js package maintenance team.
