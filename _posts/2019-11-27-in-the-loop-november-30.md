@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Publishing npm Packages
+
+This post was written by Joel Chen with help from other members of the Node.js package maintenance team.
+
+[READ MORE >>>](https://medium.com/@nodejs/publishing-npm-packages-c4c615a0fc6b)
+
 ### The OpenJS Foundation aims to be the home of all JavaScript development
 
 Mayank Sharma looks at the new initiative, which is already home to 30 JavaScript projects including some of the most popular ones.
