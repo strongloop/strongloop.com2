@@ -17,7 +17,7 @@ Read on for the overview!
 
 ### LoopBack, Winner of 2019 API Award for API Middleware
 <!--INPUT?-->
-First and foremost, congratulations again to LoopBack for earning the 2019 API Award for the “[Best in API Middleware](https://strongloop.com/strongblog/loopback-2019-api-award-api-middleware/)” category. These awards were presented at the 2019 API Awards Ceremony during API World 2019, celebrating the technical innovation, adoption, and reception in the API & Microservices industries and use by a global developer community. Raymond Feng, co-creator and architect for LoopBack, received the award.
+First and foremost, congratulations again to LoopBack for earning the 2019 API Award for the “[Best in API Middleware](https://strongloop.com/strongblog/loopback-2019-api-award-api-middleware/)” category. These awards were presented at the 2019 API Awards Ceremony during API World 2019, celebrating the technical innovation, adoption, and reception in the API & Microservices industries and use by a global developer community. Raymond Feng, co-creator and architect for LoopBack, presented the team to receive the award?.
 
 - new quote from Raymond reflecting on the award and event?
 
