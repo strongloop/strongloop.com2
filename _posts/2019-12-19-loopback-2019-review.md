@@ -23,14 +23,27 @@ First and foremost, congratulations again to LoopBack for earning the 2019 API A
 
 ### The LoopBack 4 Website
 <!--INPUT?-->
-User Reference
-Company logo + their testimonials?
+
 - updates to site code?
-- udpates to docs?
 - other streamlining?
+
+From Diana: 
+- new look in the web site (loopback.io). It was changed from the LB3 look&feel to the new LB4 theme.
+- refreshed section of the "Who's using LoopBack" and added more testimonial from the users.
+Personally, I'd consider the docs updates are development accomplishments.
+
 
 ### Increased Transparency with Milestone Updates
 <!--INPUT?-->
+
+We would like to provide more visibility to you (our users) on what we have accomplished and our plans, so we started to create blog posts to keep everyone up-to-date. We always welcome feedback!
+
+- milestone github issues to show our plan for the month (github ticket with "Monthly Milestone" label: https://github.com/strongloop/loopback-next/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22Monthly+Milestone%22+
+    Monthly milestone and quarter summaries on what we have accomplished (strongloop.com/strongblog)
+    to go even further, we start our planning on milestone and quarterly roadmap in pull requests. Look for pull requests with "Monthly Milestone" and "Roadmap" labels.
+
+
+--
 Increased transparency to our users (I beleive Diana and I chatted about this?)
 So that they have more ideas on what we’re doing.
 - Monthly milestones to show what changes/enhancements we’ve added to the framework
