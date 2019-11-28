@@ -128,7 +128,7 @@ https://strongloop.com/strongblog/import-loopback-3-models-to-loopback-4/
 
 <!--INPUT?-->
 - developerWeek in Feb - Raymond https://developerweek2019.sched.com/speaker/raymond_feng.1yyfcnn4
-- Meetup in Toronto
+- Meetup in Toronto - https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/
 - LoopBack QuickLab - Code@THINK. https://www.ibm.com/events/think/code/, NodeConf.eu (better check with Joe Sepi if it did happened)
 - CASCONxEVOKE
    - Workshop: https://pheedloop.com/cascon/site/sessions/?id=OhNsKW
@@ -140,9 +140,13 @@ While the LoopBack team is generally quite usy working on the framework, they al
 
 The Toronto Cloud Integration Meetup hosted an event in February with the overall topic "Quickly Build APIs with Existing Services and Data Using LoopBack!” Janny Hou explained what LoopBack is, what you can do with it, and the rationale behind the rewrite of the framework. Biniam Admikew demonstrated how how easy it is to expose REST API from your database with just a few steps. Jamil Spain provided an additional demo while also taking care of capturing the meetup on video. Check out the details and video [here](https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/).
 
+Diana. Raymond also presented at a meetup in Santa Clara in May. "Building APIs at Warp Speed with LoopBack "
+
 As mentioned earlier, Raymond Feng attended the 2019 API Awards Ceremony during API World 2019, in October to accept the 2019 API Award for the “Best in API Middleware” category.  
 
 In November, the LoopBack team attended CASCONxEVOKE. As one of Canada’s largest combined academic, research and developer conferences, it offered over 150 speakers to over 1,500 attendees. Diana Lau provided an overview of the LoopBack booth and a workshop. Learn more [here](https://strongloop.com/strongblog/cascon-evoke-2019/).
+
+diana - Confirmed with Joe Sepi. We have QuickLab in Code@THINK, NodeConf.eu and will be at Node+JSInteractive.
 
 ### Downloads 
 <!--INPUT?-->
