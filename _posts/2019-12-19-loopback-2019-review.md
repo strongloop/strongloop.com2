@@ -177,4 +177,4 @@ Innovation outside the framework
 
 ### 2020 Vision
 <!--INPUT?-->
-With all of this LoopBack news and updates, you can see 2019 was another busy year for the team. If you haven't already, we recommend you started with [LoopBack 4](http://v4.loopback.io/getting-started.html)! 
+With all of this LoopBack news and updates, you can see 2019 was another busy year for the team. If you haven't already, we recommend you started with [LoopBack 4](https://loopback.io/getting-started.html)! 
