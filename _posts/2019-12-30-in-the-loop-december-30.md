@@ -16,7 +16,7 @@ Welcome back to "In the Loop", in which we list recent news, updates or opinions
 
 ### The Future of APIs and API Monetization
 
-Jesse Casman explores the future of APIs and API monetization. 
+Jesse Casman explores the future of APIs and API monetization, the OpenAPI Initiative and ASC 2019. 
 
 [READ MORE >>>](https://dzone.com/articles/the-future-of-apis-and-api-monetization)
 
