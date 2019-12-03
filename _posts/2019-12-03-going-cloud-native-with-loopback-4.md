@@ -43,7 +43,7 @@ Developers are often disconnected from the cloud environment during the developm
 
 To learn how Kabanero works, head [here](https://kabanero.io/docs/ref/general/architecture-overview.html).
 
-To bring the LoopBack offering to the Kabanero experience, we have introduced a [Appsody Stack for LoopBack 4](https://github.com/appsody/stacks/tree/master/incubator/nodejs-loopback).
+To bring the LoopBack offering to the Kabanero experience, we have introduced an [Appsody Stack for LoopBack 4](https://github.com/appsody/stacks/tree/master/incubator/nodejs-loopback).
 
 The Node.js LoopBack stack extends the [Node.js stack](https://github.com/appsody/stacks/tree/master/incubator/nodejs) and provides a powerful solution to build open APIs and microservices in TypeScript with [LoopBack](https://loopback.io/), an open source Node.js API framework. It is based on [LoopBack 4](https://github.com/strongloop/loopback-next).
 
