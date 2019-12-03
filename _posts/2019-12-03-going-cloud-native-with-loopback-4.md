@@ -22,9 +22,7 @@ We have looked into the following areas to understand how to make a LoopBack app
 
 The [shopping example](https://github.com/strongloop/loopback4-example-shopping) started as a monolithic application in early versions. It has been refactored and improved over time to make the application modular.
 
-We did some experiments to decompose `loopback4-example-shopping` into microservices, package them as Docker containers, and deploy them into a Kubernetes cluster. The whole story can be read at:
-
-- https://github.com/strongloop/loopback4-example-shopping/tree/master/kubernetes
+We did some experiments to decompose `loopback4-example-shopping` into microservices, package them as Docker containers, and deploy them into a Kubernetes cluster. The whole story can be read [here](https://github.com/strongloop/loopback4-example-shopping/tree/master/kubernetes).
 
 Key takeaways:
 
@@ -43,13 +41,13 @@ Developers are often disconnected from the cloud environment during the developm
 
 > Kabanero is an open source project focused on bringing together foundational open source technologies into a modern microservices-based framework. Developing apps for container platforms requires harmony between developers, architects, and operations. Today’s developers need to be efficient at much more than writing code. Architects and operations get overloaded with choices, standards, and compliance. Kabanero speeds development of applications built for Kubernetes while meeting the technology standards and policies your company defines. Design, develop, deploy, and manage with speed and control!
 
-To learn how Kabanero works, check out https://kabanero.io/docs/ref/general/architecture-overview.html.
+To learn how Kabanero works, head [here](https://kabanero.io/docs/ref/general/architecture-overview.html).
 
 To bring the LoopBack offering to the Kabanero experience, we have introduced a [Appsody Stack for LoopBack 4](https://github.com/appsody/stacks/tree/master/incubator/nodejs-loopback).
 
 The Node.js LoopBack stack extends the [Node.js stack](https://github.com/appsody/stacks/tree/master/incubator/nodejs) and provides a powerful solution to build open APIs and microservices in TypeScript with [LoopBack](https://loopback.io/), an open source Node.js API framework. It is based on [LoopBack 4](https://github.com/strongloop/loopback-next).
 
-For more details, see https://github.com/appsody/stacks/tree/master/incubator/nodejs-loopback.
+Go [here](https://github.com/appsody/stacks/tree/master/incubator/nodejs-loopback) for more details.
 
 ### Provide observability - health/metrics/tracing/logging
 
@@ -57,23 +55,23 @@ Observability is critical to the success of cloud native microservices. To make 
 
 - Released experimental features
 
-  - Health readiness/liveness check endpoints: https://github.com/strongloop/loopback-next/tree/master/extensions/health
-  - Metrics instrumentation and [Prometheus](https://prometheus.io/) reporting: https://github.com/strongloop/loopback-next/tree/master/extensions/metrics
+  - Health readiness/liveness check endpoints [https://github.com/strongloop/loopback-next/tree/master/extensions/health](https://github.com/strongloop/loopback-next/tree/master/extensions/health)
+  - Metrics instrumentation and [Prometheus](https://prometheus.io/) reporting: [https://github.com/strongloop/loopback-next/tree/master/extensions/metrics](https://github.com/strongloop/loopback-next/tree/master/extensions/metrics)
 
 - New features proposed
 
-  - Distributed tracing with [Jaeger](https://www.jaegertracing.io/) - https://github.com/strongloop/loopback-next/tree/tracing/extensions/tracing
-  - Distributed logging with [Fluentd](https://www.fluentd.org/) - https://github.com/strongloop/loopback-next/tree/logging/extensions/logging
+  - Distributed tracing with [Jaeger](https://www.jaegertracing.io/) - [https://github.com/strongloop/loopback-next/tree/tracing/extensions/tracing](https://github.com/strongloop/loopback-next/tree/tracing/extensions/tracing)
+  - Distributed logging with [Fluentd](https://www.fluentd.org/) - [https://github.com/strongloop/loopback-next/tree/logging/extensions/logging](https://github.com/strongloop/loopback-next/tree/logging/extensions/logging)
 
 ### Allow graceful shutdown of Kubernetes Pods
 
-LoopBack 4 applications hosted by Kubernetes Pods can be requested to shutdown per provisioning needs by the cluster. The life-cycle and hand-share are described in https://cloud.google.com/blog/products/gcp/kubernetes-best-practices-terminating-with-grace.
+LoopBack 4 applications hosted by Kubernetes Pods can be requested to shutdown per provisioning needs by the cluster. The life-cycle and hand-share are described [here](https://cloud.google.com/blog/products/gcp/kubernetes-best-practices-terminating-with-grace).
 
 - Proposed features
   - Handle http keep-alive connections and allow graceful shutdown upon application.stop()
-    - https://github.com/strongloop/loopback-next/pull/4146
+    - [https://github.com/strongloop/loopback-next/pull/4146](https://github.com/strongloop/loopback-next/pull/4146)
   - Improve state transitions and allow shutdown hooks for applications
-    - https://github.com/strongloop/loopback-next/pull/4145
+    - [https://github.com/strongloop/loopback-next/pull/4145](https://github.com/strongloop/loopback-next/pull/4145)
 
 ### Summary
 
