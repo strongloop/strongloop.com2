@@ -14,11 +14,11 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
-### Node.js Released With Diagnostic Reporting 
+### The Future of APIs and API Monetization
 
-Ian Elliot examines the Node.js 13 release with upgrades to V8 and new features including diagnostic reporting. 
+Jesse Casman explores the future of APIs and API monetization. 
 
-[READ MORE >>>](https://i-programmer.info/news/167-javascript/13206-nodejs-released-with-diagnostic-reporting.html)
+[READ MORE >>>](https://dzone.com/articles/the-future-of-apis-and-api-monetization)
 
 ## What Next?
 
