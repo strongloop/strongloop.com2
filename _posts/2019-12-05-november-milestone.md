@@ -7,10 +7,10 @@ permalink: /strongblog/november-2019-milestone/
 categories:
   - Community
   - LoopBack
-published: false
+published: true
 ---
 
-The LoopBack team greeted November with the CASCONxEVOKE conference held in Toronto. CASCONxEVOKE is one of Canada's largest combined academic, research and developer conferences. As its speakers and attendees, we had a booth with posters to advocate LoopBack, and also delivered a workshop about developing extensible LoopBack applications. You can check this [blog](https://strongloop.com/strongblog/cascon-evoke-2019/) for more details. 
+The LoopBack team greeted November with the CASCONxEVOKE conference in Toronto. CASCONxEVOKE is one of Canada's largest combined academic, research and developer conferences. As its speakers and attendees, we had a booth with posters to advocate LoopBack, and also delivered a workshop about developing extensible LoopBack applications. You can check this [blog](https://strongloop.com/strongblog/cascon-evoke-2019/) for more details. 
 
 For Q4 achievements, we finished 3 epics this month: [Inclusion of related models](https://github.com/strongloop/loopback-next/issues/1352), [Deployment guide in a cloud native environment](https://github.com/strongloop/loopback-next/issues/1054) and [Support partitioned database in Cloudant connector](https://github.com/strongloop/loopback-connector-cloudant/issues/219), and significantly progressed in the Migration, Authentication & Authorization epics.
 
@@ -26,7 +26,7 @@ To ensure our relations test suites work against real databases, we've been addi
 
 ### Verifying Relation Type in Metadata
 
-Besides supporting inclusion in queries, now we also set constraints to CRUD operations with navigational properties to avoid unexpected errors. For example, if you try to create an instance of TodoList with all Todos it has through the hasMany relation such as:
+Besides supporting inclusion in queries, we now also set constraints to CRUD operations with navigational properties to avoid unexpected errors. For example, if you try to create an instance of TodoList with all Todos it has through the hasMany relation such as:
 
 ```ts
 todoListRepository.create(
@@ -57,7 +57,7 @@ In `loopback4-example-shopping`, the `/users/{userId}/orders` endpoints are now 
 
 ### Refactoring Customer Credentials
 
-In LoopBack 3.x, we are storing user's password together with user data in the same model (table), which opens a lot of security vulnerabilities to deal with. For example, when returning user data in HTTP response, the password property must be filtered out and when searching for users, the password must be excluded from the query.
+In LoopBack 3.x, we store users' passwords together with user data in the same model (table), which opens a lot of security vulnerabilities to deal with. For example, when returning user data in HTTP response, the password property must be filtered out and when searching for users, the password must be excluded from the query.
 
 Our example [Shopping App](https://github.com/strongloop/loopback4-example-shopping) used to store user credentials together with other profile information too. In November, we refactored the domain model of our example app and extracted the password property into a new model `UserCredentials`. Beside the immediate benefits in increased security, this new domain model makes it easier to implement additional features in the future. For example: 2-factor authentication, and the password validation rule forbiding repeated use of the same password.
 
@@ -65,7 +65,7 @@ Our example [Shopping App](https://github.com/strongloop/loopback4-example-shopp
 
 ### Inspect 
 
-In [PR#4193](https://github.com/strongloop/loopback-next/pull/4193) we've improved the context/binding with an `inspect()` method for metadata dumping. `ctx.inspect()` can be now used to print out the context hierarchy in JSON. This is useful for troubleshooting and rendering in UI. An example snippet of calling the new function:
+In [PR#4193](https://github.com/strongloop/loopback-next/pull/4193) we've improved the context/binding with an `inspect()` method for metadata dumping. `ctx.inspect()` can now be used to print out the context hierarchy in JSON. This is useful for troubleshooting and rendering in UI. An example snippet of calling the new function:
 
 ```ts
 const ctx = new Context();
@@ -149,7 +149,7 @@ Product = db.define('Product', {
   });
 ```
 
-You can learn more about its signature and usage in [Adding Partitioned Index](https://github.com/strongloop/loopback-connector-cloudant/blob/master/doc/partitioned-db.md#adding-partitioned-index)
+Learn more about its signature and usage in [Adding Partitioned Index](https://github.com/strongloop/loopback-connector-cloudant/blob/master/doc/partitioned-db.md#adding-partitioned-index)
 
 ### Partitioned Find
 
@@ -204,7 +204,7 @@ Now, in the new generated application, the json configuration files are renamed 
 
 ## Miscellaneous
 
-- We have added the [OpenAPI](https://loopback.io/doc/en/lb3/OpenAPI-connector.html) and [gRPC](https://loopback.io/doc/en/lb3/gRPC-connector.html) connectors to be a part of our available connectors in [PR#558](https://github.com/strongloop/loopback-workspace/pull/558) and [PR#906](https://github.com/strongloop/loopback.io/pull/906). Now, when a user calls `lb4 datasource`, they will have OpenAPI and gRPC as options for the connector.
+- We added the [OpenAPI](https://loopback.io/doc/en/lb3/OpenAPI-connector.html) and [gRPC](https://loopback.io/doc/en/lb3/gRPC-connector.html) connectors to be a part of our available connectors in [PR#558](https://github.com/strongloop/loopback-workspace/pull/558) and [PR#906](https://github.com/strongloop/loopback.io/pull/906). Now, when a user calls `lb4 datasource`, they will have OpenAPI and gRPC as options for the connector.
 
 - The `lb4 update` command runs against a LoopBack 4 project and checks dependencies against the installed `@loopback/cli`. Optionally, it updates the dependencies in `package.json`. Details can be found on page [Update generator](https://loopback.io/doc/en/lb4/Update-generator.html).
 
