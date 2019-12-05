@@ -14,6 +14,24 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### IBM VP of ‘opentech’ on the open road ahead
+
+The Computer Weekly Open Source Insider team speaks to Todd M Moore in his role as IBM VP ‘opentech’ & developer advocacy (and) CTO for developer ecosystems following the Open Source Summit Europe in Lyon.
+
+[READ MORE >>>](https://www.computerweekly.com/blog/Open-Source-Insider/IBM-VP-of-opentech-on-the-open-road-ahead)
+
+### Why front-end development may be the new frontier
+
+VCs have gone wild for back-end developer-oriented technologies, but front-end technologies like Next.js are heating up. 
+
+[READ MORE >>>](https://www.techrepublic.com/article/why-front-end-development-may-be-the-new-frontier/)
+
+### 11 top open-source test automation frameworks: How to choose
+
+Joe Colantonio reviews some of the available open-source test automation framework options.
+
+[READ MORE >>>](https://techbeacon.com/app-dev-testing/top-11-open-source-testing-automation-frameworks-how-choose)
+
 ### The Future of APIs and API Monetization
 
 Jesse Casman explores the future of APIs and API monetization, the OpenAPI Initiative and ASC 2019. 
