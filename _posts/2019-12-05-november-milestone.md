@@ -10,7 +10,7 @@ categories:
 published: false
 ---
 
-The LoopBack team greeted November with the CASCONxEVOKE conference held in Toronto. CASCON is one of Canada's largest combined academic, research and developer conferences. As its speakers and attendees, we had a booth with posters to advocate LoopBack, and also delivered a workshop about developing extensible LoopBack applications. You can check this [blog](https://strongloop.com/strongblog/cascon-evoke-2019/) for more details. 
+The LoopBack team greeted November with the CASCONxEVOKE conference held in Toronto. CASCONxEVOKE is one of Canada's largest combined academic, research and developer conferences. As its speakers and attendees, we had a booth with posters to advocate LoopBack, and also delivered a workshop about developing extensible LoopBack applications. You can check this [blog](https://strongloop.com/strongblog/cascon-evoke-2019/) for more details. 
 
 For Q4 achievements, we finished 3 epics this month: [Inclusion of related models](https://github.com/strongloop/loopback-next/issues/1352), [Deployment guide in a cloud native environment](https://github.com/strongloop/loopback-next/issues/1054) and [Support partitioned database in Cloudant connector](https://github.com/strongloop/loopback-connector-cloudant/issues/219), and significantly progressed in the Migration, Authentication & Authorization epics.
 
@@ -188,17 +188,15 @@ Now, in the new generated application, the json configuration files are renamed 
 
 ## Bug Fixes
 
-- `lb4 discover` should generate correct type for property definition. Fixed by [PR#4143](https://github.com/strongloop/loopback-next/pull/4143).
+- `lb4 discover` should generate the correct type for property definition. Fixed by [PR#4143](https://github.com/strongloop/loopback-next/pull/4143).
 
 - `@param.path.<primitive_type>` generated with `lb4 relation` considers Wrapper datatypes. Also fixed by [PR#4143](https://github.com/strongloop/loopback-next/pull/4143).
 
 ## Documentation Improvements
 
-- We have added the [OpenAPI](https://loopback.io/doc/en/lb3/OpenAPI-connector.html) and [gRPC](https://loopback.io/doc/en/lb3/gRPC-connector.html) connectors to be a part of our available connectors in [PR#558](https://github.com/strongloop/loopback-workspace/pull/558) and [PR#906](https://github.com/strongloop/loopback.io/pull/906). Now, when a user calls `lb4 datasource`, they will have OpenAPI and gRPC as options for the connector.
-
 - We've added a series of tutorials to illustrate how LoopBack can be used as an enabler to build large-scale Node.js applications. If you want to have a deeper understanding of LoopBack and/or to build an application with great flexibility and extensibility, don't miss [this tutorial series](https://loopback.io/doc/en/lb4/core-tutorial.html)!
 
-- Regarding the security vulnerabilities in `swagger-ui`, one of the dependencies in `loopback-component-explorer`, we added a note in the [README file]( https://github.com/strongloop/loopback-component-explorer#a-note-on-swagger-ui-vulnerabilities) to explain why the LoopBack module is not affected by them.  
+- In `loopback-component-explorer`, we added a note in the [README file]( https://github.com/strongloop/loopback-component-explorer#a-note-on-swagger-ui-vulnerabilities) to explain why the module is not affected by the security vulnerabilities in `swagger-ui`.
 
 - We've added "Boot" and "Advanced Topics" to the core tutorial in [Advanced Recipes](https://loopback.io/doc/en/lb4/core-tutorial-part10.html) and [Discover and load artifacts by convention](https://loopback.io/doc/en/lb4/core-tutorial-part9.html).
 
@@ -206,11 +204,17 @@ Now, in the new generated application, the json configuration files are renamed 
 
 ## Miscellaneous
 
-- The `lb4 update` command runs against a LoopBack 4 project and checks dependencies against the installed `@loopback/cli`, by answering yes. This also updates the dependencies in `package.json`. Details can be found on page [Update generator](https://loopback.io/doc/en/lb4/Update-generator.html).
+- We have added the [OpenAPI](https://loopback.io/doc/en/lb3/OpenAPI-connector.html) and [gRPC](https://loopback.io/doc/en/lb3/gRPC-connector.html) connectors to be a part of our available connectors in [PR#558](https://github.com/strongloop/loopback-workspace/pull/558) and [PR#906](https://github.com/strongloop/loopback.io/pull/906). Now, when a user calls `lb4 datasource`, they will have OpenAPI and gRPC as options for the connector.
+
+- The `lb4 update` command runs against a LoopBack 4 project and checks dependencies against the installed `@loopback/cli`. Optionally, it updates the dependencies in `package.json`. Details can be found on page [Update generator](https://loopback.io/doc/en/lb4/Update-generator.html).
 
 - In [spike story#3770](https://github.com/strongloop/loopback-next/issues/3770) we came up with a plan to support querying with nested filter in the API Explorer by re-designing the `@param.query.object()` decorator. The follow-up implementation story is tracked in [#2208](https://github.com/strongloop/loopback-next/issues/2208).
 
 - We fixed a bug in `loopback-datasource-juggler` where `applyDefaultOnWrites` was not being applied in nested objects and arrays. You can find the details in [PR#1797](https://github.com/strongloop/loopback-datasource-juggler/pull/1797).
+
+## Community Contributions
+
+Here are some of the highlighted contributions from the community: 
 
 - For the model definition created by running `lb4 openapi`, we fixed the JavaScript type mapping of `date` from `Date` to `string`. Details see [PR#142](https://github.com/strongloop/loopback-next/pull/4142).
 
