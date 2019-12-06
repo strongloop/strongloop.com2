@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Spring REST TypeScript Generator 
+
+Tomasz Wozniak discusses a Spring REST TypeScript generator that creates models and services that reflect backend models and REST services. 
+
+[READ MORE >>>](https://dzone.com/articles/spring-rest-typescript-generator)
+
 ### IBM VP of ‘opentech’ on the open road ahead
 
 The Computer Weekly Open Source Insider team speaks to Todd M Moore in his role as IBM VP ‘opentech’ & developer advocacy (and) CTO for developer ecosystems following the Open Source Summit Europe in Lyon.
