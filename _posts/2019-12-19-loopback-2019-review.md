@@ -126,30 +126,9 @@ Miroslav Bajtoš announced and demonstrated preview version of a tool automating
 
 Wenbo Sun provided a 7-part series called "Building an Online Game With LoopBack 4". The aim of the series is to help you learn LoopBack 4 and how to use it to easily build your own API and web project. Wenbo did so by highlighting a new project he was working on: an online web text-based adventure game. Check teh series out [here](https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/).
 
-### 2020 Vision
-***
-
-Migration from LoopBack 3.x 
-https://github.com/strongloop/loopback-next/issues/1849
-Migration: strongloop/loopback-next#1849
-
-We have started the migration guide work this year and will continue to be the focus. We'd also like to add some tooling around migration to make the migration process from LB3 to LB4 easier. If you have existing LoopBack 3 application, take a look at our migration guide and gives us feedback!
-
-Work on feature parity that is needed for LB3 to LB4 migration
-
-Developer experience to make our users' life easier
-
-We would like to take some time in each milestone to address some of the pain points that users mentioned.
-
-Documentation: add docs that users usually ask questions, make sure the docs are up-to-date given the code base is changing fast.
-
-The team is also looking at innovating cloud native deployment, database integration, as well as messaging/event driven style APIs.
-
-Keep an eye out to see the developments in the new year!
-
 ### Anything Else?
 
-For a truly open and detailed runthrough of work on LoopBack, the best resource is the monthly milestone updates. The LoopBack team outlined their progress with these updates, often explaining hurdles or rationale for changes and tweaks. Check them out below:
+For more details about work on LoopBack, the best resource is the monthly milestone updates. The LoopBack team outlined their progress with these updates, often explaining hurdles or rationale for changes and tweaks. Check them out below:
 
 - [January 2019 Milestone Update](https://strongloop.com/strongblog/january-2019-milestone/)
 - [February 2019 Milestone Update](https://strongloop.com/strongblog/february-2019-milestone/)
@@ -166,6 +145,13 @@ For a truly open and detailed runthrough of work on LoopBack, the best resource 
 
 You can also follow LoopBack's progress throughout the year in the [LoopBack 4 2019 Q1 Overview](https://strongloop.com/strongblog/loopback-4-2019-q1-overview/), [LoopBack 4 2019 Q2 Overview](https://strongloop.com/strongblog/loopback-4-2019-q2-overview/), and [LoopBack 4 2019 Q3 Overview](https://strongloop.com/strongblog/loopback-4-2019-q3-overview/).
 
-### What's Next?
+### What's Next? 2020 Vision
 
-With all of this LoopBack news and updates, you can see 2019 was another busy year for the team. If you haven't already, we recommend you started with [LoopBack 4](https://loopback.io/getting-started.html)! 
+[Migration guide work](https://github.com/strongloop/loopback-next/issues/1849) began this year and it will continue to be the focus. The goal is to add some tooling around migration to make the migration process from LB3 to LB4 easier. If you have an existing LoopBack 3 application, take a look at the migration guide and gives us feedback!
+
+The LB team will also work on feature parity that is needed for LB3 to LB4 migration, and the developer experience to make users' lives easier. They would like to take some time in each milestone to address some of the pain points that users mentioned. The team is also looking at innovating cloud native deployment, database integration, as well as messaging/event driven style APIs.
+
+Finally, look for improved documentation that address user questions, and more up-to-date docs that better reflect the quickly-changing code base.
+
+Keep an eye out to see the developments in the new year!
+
