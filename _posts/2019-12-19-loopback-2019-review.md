@@ -16,7 +16,7 @@ Read on for a very thorough trip down 2019 memory lane!
 <!--more-->
 
 ### GitHub Activity and Downloads 
-
+***
 2019 began with LoopBack having just moved past the [12,000 star count](https://github.com/strongloop/loopback) and [LoopBack 4](https://github.com/strongloop/loopback-next) at more than 1260. A year later, the numbers are at ----- , an increase of !
 
 - Download numbers on npmjs.com https://npm-stat.com/charts.html?package=@loopback/core
@@ -89,26 +89,17 @@ The team also refreshed the "Who's using LoopBack" section and added more testim
 ---- Personally, I'd consider the docs updates are development accomplishments.
 
 ### Increased Transparency with Milestone Updates
-<!--INPUT?-->
 
 We would like to provide more visibility to you (our users) on what we have accomplished and our plans, so we started to create blog posts to keep everyone up-to-date. We always welcome feedback!
 
-- milestone github issues to show our plan for the month (github ticket with "Monthly Milestone" label: https://github.com/strongloop/loopback-next/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22Monthly+Milestone%22+
+- Milestone github issues to show our plan for the month (github ticket with ["Monthly Milestone" label](https://github.com/strongloop/loopback-next/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22Monthly+Milestone%22+).
     
-- Monthly milestone and quarter summaries on what we have accomplished (strongloop.com/strongblog)
-to go even further, we start our planning on milestone and quarterly roadmap in pull requests. Look for pull requests with "Monthly Milestone" and "Roadmap" labels.
+- Monthly milestone and quarter summaries on what we have accomplished (you can see a summary of what we posted in 2019 further into this post).
 
-
---
-Increased transparency to our users (I beleive Diana and I chatted about this?)
-So that they have more ideas on what we’re doing.
-- Monthly milestones to show what changes/enhancements we’ve added to the framework
-- Milestone tickets - to show our plans for the month. https://github.com/strongloop/loopback-next/issues?q=is%3Aissue+is%3Aopen+milestone+label%3A%22Monthly+Milestone%22. (With “monthly milestone” label in GitHub
-- Quarterly update
-- Roadmap. Begin with a PR and visible in https://github.com/strongloop/loopback-next/blob/master/docs/ROADMAP.md
+- To go even further, we start our planning on milestone and a quarterly [roadmap](https://github.com/strongloop/loopback-next/blob/master/docs/ROADMAP.md) in pull requests. Look for pull requests with "Monthly Milestone" and "Roadmap" labels.
 
 ### Events and Community Outreach
-
+***
 While the LoopBack team is generally quite usy working on the framework, they also managed to join some events throughout the year!
 
 - developerWeek in Feb - Raymond https://developerweek2019.sched.com/speaker/raymond_feng.1yyfcnn4
@@ -143,7 +134,7 @@ In March, the LoopBack team announced LoopBack 3 was receiving an extended long 
 Check out the timeline and some frequently asked questions [here](https://strongloop.com/strongblog/lb3-extended-lts/).
 
 ### More LoopBack How-To Content
-
+***
 Diana Lau Learning LoopBack 4 Interceptors (Part 1) - Global Interceptors
 Interceptors are reusable functions to provide aspect-oriented logic around method invocations. 
 Seems pretty useful, right? There are 3 levels of interceptors: global, class level and method level. In this article, we are going to look into what a global interceptor is and how to use it.
@@ -166,7 +157,7 @@ The main purpose of this series is to help you learn LoopBack 4 and how to use i
 https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/
 
 ### 2020 Vision
-
+***
 Migration: strongloop/loopback-next#1849
 
 We have started the migration guide work this year and will continue to be the focus. We'd also like to add some tooling around migration to make the migration process from LB3 to LB4 easier. If you have existing LoopBack 3 application, take a look at our migration guide and gives us feedback!
