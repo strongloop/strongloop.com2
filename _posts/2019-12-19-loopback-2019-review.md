@@ -15,8 +15,8 @@ Read on for a very thorough trip down 2019 memory lane!
 
 <!--more-->
 
-### GitHub Activity and Downloads 
-***
+### TO UPDATE: GitHub Activity and Downloads 
+
 2019 began with LoopBack having just moved past the [12,000 star count](https://github.com/strongloop/loopback) and [LoopBack 4](https://github.com/strongloop/loopback-next) at more than 1260. A year later, the numbers are at ----- , an increase of !
 
 - Download numbers on npmjs.com https://npm-stat.com/charts.html?package=@loopback/core
