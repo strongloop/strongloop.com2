@@ -1,9 +1,9 @@
 ---
 layout: post
-title: In the Loop - December 30, 2019
-date: 2019-12-30
+title: In the Loop - December 11, 2019
+date: 2019-12-11
 author: Dave Whiteley
-permalink: /strongblog/in-the-loop-december-30-2019/
+permalink: /strongblog/in-the-loop-december-11-2019/
 categories:
   - Community
   - News
