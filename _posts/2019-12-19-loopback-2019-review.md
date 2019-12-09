@@ -103,14 +103,13 @@ https://strongloop.com/strongblog/inclusion-of-related-models/
 
 
 
-
 ### The LoopBack 4 Web Site Updates
 
-Diana: 
-- new look in the web site (loopback.io). It was changed from the LB3 look&feel to the new LB4 theme.
-- refreshed section of the "Who's using LoopBack" and added more testimonial from the users.
-Personally, I'd consider the docs updates are development accomplishments.
-If your company wants to be highlighted as the LoopBack user on our web site, please see strongloop/loopback-next#3047 for details.
+The [LoopBack](https://loopback.io/) web site was changed from the LoopBack 3 look feel to the LB4 theme that was launched previously.
+
+The team also refreshed the "Who's using LoopBack" section and added more testimonial from the users. If your company wants to be highlighted as the LoopBack user on our web site, please see [strongloop/loopback-next#3047](https://github.com/strongloop/loopback-next/issues/3047) for details.
+
+---- Personally, I'd consider the docs updates are development accomplishments.
 
 ### Increased Transparency with Milestone Updates
 <!--INPUT?-->
