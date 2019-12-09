@@ -16,22 +16,35 @@ Read on for the overview!
 <!--more-->
 
 ### LoopBack, Winner of 2019 API Award for API Middleware
-
-First and foremost, congratulations again to LoopBack for earning the 2019 API Award for the “[Best in API Middleware](https://strongloop.com/strongblog/loopback-2019-api-award-api-middleware/)” category. These awards were presented at the 2019 API Awards Ceremony during API World 2019, celebrating the technical innovation, adoption, and reception in the API & Microservices industries and use by a global developer community. Raymond Feng, co-creator and architect for LoopBack, received the award.
+<!--INPUT?-->
+First and foremost, congratulations again to LoopBack for earning the 2019 API Award for the “[Best in API Middleware](https://strongloop.com/strongblog/loopback-2019-api-award-api-middleware/)” category. These awards were presented at the 2019 API Awards Ceremony during API World 2019, celebrating the technical innovation, adoption, and reception in the API & Microservices industries and use by a global developer community. Raymond Feng, co-creator and architect for LoopBack, presented the team to receive the award?.
 
 - new quote from Raymond reflecting on the award and event?
 
 ### The LoopBack 4 Website
+<!--INPUT?-->
 
-User Reference
-Company logo + their testimonials
-- updates to site code
-- udpates to docs
-- other streamlining
+- updates to site code?
+- other streamlining?
+
+From Diana: 
+- new look in the web site (loopback.io). It was changed from the LB3 look&feel to the new LB4 theme.
+- refreshed section of the "Who's using LoopBack" and added more testimonial from the users.
+Personally, I'd consider the docs updates are development accomplishments.
+
 
 ### Increased Transparency with Milestone Updates
+<!--INPUT?-->
 
-Increased transparency to our users
+We would like to provide more visibility to you (our users) on what we have accomplished and our plans, so we started to create blog posts to keep everyone up-to-date. We always welcome feedback!
+
+- milestone github issues to show our plan for the month (github ticket with "Monthly Milestone" label: https://github.com/strongloop/loopback-next/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22Monthly+Milestone%22+
+    Monthly milestone and quarter summaries on what we have accomplished (strongloop.com/strongblog)
+    to go even further, we start our planning on milestone and quarterly roadmap in pull requests. Look for pull requests with "Monthly Milestone" and "Roadmap" labels.
+
+
+--
+Increased transparency to our users (I beleive Diana and I chatted about this?)
 So that they have more ideas on what we’re doing.
 - Monthly milestones to show what changes/enhancements we’ve added to the framework
 - Milestone tickets - to show our plans for the month. https://github.com/strongloop/loopback-next/issues?q=is%3Aissue+is%3Aopen+milestone+label%3A%22Monthly+Milestone%22. (With “monthly milestone” label in GitHub
@@ -112,8 +125,10 @@ https://strongloop.com/strongblog/import-loopback-3-models-to-loopback-4/
 
 
 ### Events and Community Outreach
+
+<!--INPUT?-->
 - developerWeek in Feb - Raymond https://developerweek2019.sched.com/speaker/raymond_feng.1yyfcnn4
-- Meetup in Toronto
+- Meetup in Toronto - https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/
 - LoopBack QuickLab - Code@THINK. https://www.ibm.com/events/think/code/, NodeConf.eu (better check with Joe Sepi if it did happened)
 - CASCONxEVOKE
    - Workshop: https://pheedloop.com/cascon/site/sessions/?id=OhNsKW
@@ -125,16 +140,16 @@ While the LoopBack team is generally quite usy working on the framework, they al
 
 The Toronto Cloud Integration Meetup hosted an event in February with the overall topic "Quickly Build APIs with Existing Services and Data Using LoopBack!” Janny Hou explained what LoopBack is, what you can do with it, and the rationale behind the rewrite of the framework. Biniam Admikew demonstrated how how easy it is to expose REST API from your database with just a few steps. Jamil Spain provided an additional demo while also taking care of capturing the meetup on video. Check out the details and video [here](https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/).
 
+Diana. Raymond also presented at a meetup in Santa Clara in May. "Building APIs at Warp Speed with LoopBack "
+
 As mentioned earlier, Raymond Feng attended the 2019 API Awards Ceremony during API World 2019, in October to accept the 2019 API Award for the “Best in API Middleware” category.  
 
 In November, the LoopBack team attended CASCONxEVOKE. As one of Canada’s largest combined academic, research and developer conferences, it offered over 150 speakers to over 1,500 attendees. Diana Lau provided an overview of the LoopBack booth and a workshop. Learn more [here](https://strongloop.com/strongblog/cascon-evoke-2019/).
 
-### Playing Well with OpenAPI Spec
-
-With IBM supporting the [OpenAPI Initiative](https://www.openapis.org/), it shouldn't surprise anyone that the LoopBack team uses the spec they offer. 
-- updates
+diana - Confirmed with Joe Sepi. We have QuickLab in Code@THINK, NodeConf.eu and will be at Node+JSInteractive.
 
 ### Downloads 
+<!--INPUT?-->
 Metrics:
 - Download numbers on npmjs.com https://npm-stat.com/charts.html?package=@loopback/core
 
@@ -149,11 +164,11 @@ There were  approximately 1.5 millions downloads for LoopBack 2 and lb3 througho
 - LoopBack 4 
 
 ### GitHub Activity 
-
+<!--INPUT?-->
 2019 began with LoopBack past the [12,000 star count](https://github.com/strongloop/loopback) and [LoopBack 4](https://github.com/strongloop/loopback-next) at more than 1260. As we draw to a close, the numbers are at ----- , an increase of !
 
 ### Other
-
+<!--INPUT?-->
 Innovation outside the framework
 - Improve build time in loopback-next
 - Use RenovateBot to update the dependencies for us
@@ -161,5 +176,5 @@ Innovation outside the framework
 - Number of blogs we’ve produced
 
 ### 2020 Vision
-
-With all of this LoopBack news and updates, you can see 2019 was another busy year for the team. If you haven't already, we recommend you started with [LoopBack 4](http://v4.loopback.io/getting-started.html)! 
+<!--INPUT?-->
+With all of this LoopBack news and updates, you can see 2019 was another busy year for the team. If you haven't already, we recommend you started with [LoopBack 4](https://loopback.io/getting-started.html)! 
