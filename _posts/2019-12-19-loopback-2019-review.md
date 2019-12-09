@@ -26,7 +26,6 @@ With all of this activity, we weren't surprised to see LoopBack downloads contin
 2018 
 There were  approximately 1.5 millions downloads for LoopBack 2 and lb3 throughout 2018 - a 21% increase from 2017. We also saw a big increase for LoopBack 4 at 115,000 downlaods - 13 times more than last year. 
 
-
 - update numbers on 2019 downloads 
 - LoopBack 2 and lb3 
 - LoopBack 4 
@@ -79,29 +78,7 @@ With the team focusing so much on enhancing and imporving LoopBack 4, there were
 
 - Enabled Node.js 12 support, Added latest TypeScript 3.7 support, switch to ESLint, etc.
 
---
-
-Experimenting with Plain JavaScript Programming in LoopBack 4 by Hage Yaapa  
-https://strongloop.com/strongblog/loopback4-javascript-experience/
-We believe that TypeScript is the right move and it will help you and us in the long run. However, some developers are constrained to use plain JavaScript at the moment for various reasons. We didn’t want to leave our JavaScript users behind and decided to explore the possibilities of creating a JavaScript interface to LoopBack 4. This blog post is about what we did in that regard and what we will be doing next.
-
---
-
-What's New in LoopBack 4 Authentication 2.0 by Dominique Emond 
-https://strongloop.com/strongblog/loopback-4-authentication-updates/
-We’ve refactored the authentication component to be more extensible and easier to use.
-
-Now you can secure your endpoints with both passport-based and LoopBack native authentication strategies that implement the interface AuthenticationStrategy.
-
-The new design greatly simplifies the effort of application developers and extension developers since they now only need to focus on binding strategies to the application without having to understand/modify the strategy resolver or the action provider.
-
---
-
-LoopBack 4 Offers Inclusion of Related Models by Agnes Lin 
-LoopBack 4 now offers a new feature: inclusion of related models! This addition not only simplifies querying data in LoopBack 4, but since we have similar features in LoopBack 3 it also closes one feature gap between LoopBack 3 as well. 
-https://strongloop.com/strongblog/inclusion-of-related-models/
-
-
+Want a bit more detail on some updates? Check out "[Experimenting with Plain JavaScript Programming in LoopBack 4](https://strongloop.com/strongblog/loopback4-javascript-experience/)" by Hage Yaapa, "[What's New in LoopBack 4 Authentication 2.0](https://strongloop.com/strongblog/loopback-4-authentication-updates/) by Dominique Emond, and "[LoopBack 4 Offers Inclusion of Related Models](https://strongloop.com/strongblog/inclusion-of-related-models/)" by Agnes Lin. 
 
 ### The LoopBack 4 Web Site Updates
 
