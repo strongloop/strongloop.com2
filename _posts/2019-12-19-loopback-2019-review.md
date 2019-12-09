@@ -165,15 +165,7 @@ In March, the LoopBack team announced LoopBack 3 was receiving an extended long 
 
 Check out the timeline and some frequently asked questions [here](https://strongloop.com/strongblog/lb3-extended-lts/).
 
-In "Migrating from LoopBack 3 to LoopBack 4", by Nora Abdelgadir shared a way to mount your LoopBack 3 applications in a LoopBack 4 project. You can read about it [here](https://strongloop.com/strongblog/migrate-from-loopback-3-to-loopback-4/).
-
 ### More LoopBack How-To Content
-
-Wenbo Sun provided a 7-part series called "Building an Online Game With LoopBack 4"
-The main purpose of this series is to help you learn LoopBack 4 and how to use it to easily build your own API and web project. We’ll do so by creating a new project I’m working on: an online web text-based adventure game.
-https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/
-
---
 
 Diana Lau Learning LoopBack 4 Interceptors (Part 1) - Global Interceptors
 Interceptors are reusable functions to provide aspect-oriented logic around method invocations. 
@@ -185,14 +177,16 @@ we are going to build an application that validates the incoming request using c
 plus resources
 https://strongloop.com/strongblog/loopback4-interceptors-part2/
 
-
 Import LoopBack 3 Models into a LoopBack 4 Project by Miroslav Bajtoš announce a preview version of a tool automating migration of models from LoopBack 3 to LoopBack 4:
 lb4 import-lb3-models
 he demos it
 https://strongloop.com/strongblog/import-loopback-3-models-to-loopback-4/
 
+In "Migrating from LoopBack 3 to LoopBack 4", by Nora Abdelgadir shared a way to mount your LoopBack 3 applications in a LoopBack 4 project. You can read about it [here](https://strongloop.com/strongblog/migrate-from-loopback-3-to-loopback-4/).
 
-
+Wenbo Sun provided a 7-part series called "Building an Online Game With LoopBack 4"
+The main purpose of this series is to help you learn LoopBack 4 and how to use it to easily build your own API and web project. We’ll do so by creating a new project I’m working on: an online web text-based adventure game.
+https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/
 
 ### 2020 Vision
 
