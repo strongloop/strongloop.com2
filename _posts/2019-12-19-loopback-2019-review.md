@@ -158,22 +158,24 @@ https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/
 
 ### 2020 Vision
 ***
+
+Migration from LoopBack 3.x 
+https://github.com/strongloop/loopback-next/issues/1849
 Migration: strongloop/loopback-next#1849
 
 We have started the migration guide work this year and will continue to be the focus. We'd also like to add some tooling around migration to make the migration process from LB3 to LB4 easier. If you have existing LoopBack 3 application, take a look at our migration guide and gives us feedback!
 
-work on feature parity that is needed for LB3 to LB4 migration
+Work on feature parity that is needed for LB3 to LB4 migration
 
 Developer experience to make our users' life easier
 
-we would like to take some time in each milestone to address some of the pain points that users mentioned.
+We would like to take some time in each milestone to address some of the pain points that users mentioned.
 
-documentation: add docs that users usually ask questions, make sure the docs are up-to-date given the code base is changing fast.
+Documentation: add docs that users usually ask questions, make sure the docs are up-to-date given the code base is changing fast.
 
-Innovation around:
-cloud native deployment
-database integration
-messaging/event driven style APIs
+The team is also looking at innovating cloud native deployment, database integration, as well as messaging/event driven style APIs.
+
+Keep an eye out to see the developments in the new year!
 
 ### Anything Else?
 
