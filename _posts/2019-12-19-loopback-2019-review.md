@@ -23,13 +23,6 @@ Read on for a very thorough trip down 2019 memory lane!
 
 With all of this activity, we weren't surprised to see LoopBack downloads continue to grow. 
 
-2018 
-There were  approximately 1.5 millions downloads for LoopBack 2 and lb3 throughout 2018 - a 21% increase from 2017. We also saw a big increase for LoopBack 4 at 115,000 downlaods - 13 times more than last year. 
-
-- update numbers on 2019 downloads 
-- LoopBack 2 and lb3 
-- LoopBack 4 
-
 ### LoopBack, Winner of 2019 API Award for API Middleware
 
 Congratulations again to LoopBack for earning the 2019 API Award for the “[Best in API Middleware](https://strongloop.com/strongblog/loopback-2019-api-award-api-middleware/)” category. These awards were presented at the 2019 API Awards Ceremony during API World 2019, celebrating the technical innovation, adoption, and reception in the API & Microservices industries and use by a global developer community. Raymond Feng, co-creator and architect for LoopBack, presented the team to receive the award.
@@ -78,15 +71,13 @@ With the team focusing so much on enhancing and imporving LoopBack 4, there were
 
 - Enabled Node.js 12 support, Added latest TypeScript 3.7 support, switch to ESLint, etc.
 
-Want a bit more detail on some updates? Check out "[Experimenting with Plain JavaScript Programming in LoopBack 4](https://strongloop.com/strongblog/loopback4-javascript-experience/)" by Hage Yaapa, "[What's New in LoopBack 4 Authentication 2.0](https://strongloop.com/strongblog/loopback-4-authentication-updates/) by Dominique Emond, and "[LoopBack 4 Offers Inclusion of Related Models](https://strongloop.com/strongblog/inclusion-of-related-models/)" by Agnes Lin. 
+Want a bit more detail on some updates? Check out "[Experimenting with Plain JavaScript Programming in LoopBack 4](https://strongloop.com/strongblog/loopback4-javascript-experience/)" by Hage Yaapa (which looks at functionality following a spike to enable LoopBack 4 development using JavaScript), "[What's New in LoopBack 4 Authentication 2.0](https://strongloop.com/strongblog/loopback-4-authentication-updates/) by Dominique Emond, and "[LoopBack 4 Offers Inclusion of Related Models](https://strongloop.com/strongblog/inclusion-of-related-models/)" by Agnes Lin. 
 
 ### The LoopBack 4 Web Site Updates
 
 The [LoopBack](https://loopback.io/) web site was changed from the LoopBack 3 look feel to the LB4 theme that was launched previously.
 
 The team also refreshed the "Who's using LoopBack" section and added more testimonial from the users. If your company wants to be highlighted as the LoopBack user on our web site, please see [strongloop/loopback-next#3047](https://github.com/strongloop/loopback-next/issues/3047) for details.
-
----- Personally, I'd consider the docs updates are development accomplishments.
 
 ### Increased Transparency with Milestone Updates
 
@@ -134,27 +125,15 @@ In March, the LoopBack team announced LoopBack 3 was receiving an extended long 
 Check out the timeline and some frequently asked questions [here](https://strongloop.com/strongblog/lb3-extended-lts/).
 
 ### More LoopBack How-To Content
-***
-Diana Lau Learning LoopBack 4 Interceptors (Part 1) - Global Interceptors
-Interceptors are reusable functions to provide aspect-oriented logic around method invocations. 
-Seems pretty useful, right? There are 3 levels of interceptors: global, class level and method level. In this article, we are going to look into what a global interceptor is and how to use it.
-https://strongloop.com/strongblog/loopback4-interceptors-part1/
 
-Learning LoopBack 4 Interceptors (Part 2) - Method Level and Class Level Interceptors
-we are going to build an application that validates the incoming request using class level and method level interceptors 
-plus resources
-https://strongloop.com/strongblog/loopback4-interceptors-part2/
+While much of their focus was on improving LoopBack 4, the team also shared insight into using the framework as well. Here's a look back!
 
-Import LoopBack 3 Models into a LoopBack 4 Project by Miroslav Bajtoš announce a preview version of a tool automating migration of models from LoopBack 3 to LoopBack 4:
-lb4 import-lb3-models
-he demos it
-https://strongloop.com/strongblog/import-loopback-3-models-to-loopback-4/
+Diana Lau shared a two part series about learning LoopBack 4 Interceptors. In the first part she looked at [Global Interceptors](https://strongloop.com/strongblog/loopback4-interceptors-part1/), what they are and how to use them. In Part 2 she looked at [Method Level and Class Level Interceptors](https://strongloop.com/strongblog/loopback4-interceptors-part2/),
+building an application that validates the incoming request using class level and method level interceptors. 
 
-In "Migrating from LoopBack 3 to LoopBack 4", by Nora Abdelgadir shared a way to mount your LoopBack 3 applications in a LoopBack 4 project. You can read about it [here](https://strongloop.com/strongblog/migrate-from-loopback-3-to-loopback-4/).
+Miroslav Bajtoš announced and demonstrated preview version of a tool automating migration of models from LoopBack 3 to LoopBack 4. Check it out [here](https://strongloop.com/strongblog/import-loopback-3-models-to-loopback-4/). In a simialr vein, Nora Abdelgadir shared a way to mount your LoopBack 3 applications in a LoopBack 4 project in ["Migrating from LoopBack 3 to LoopBack 4"](https://strongloop.com/strongblog/migrate-from-loopback-3-to-loopback-4/).
 
-Wenbo Sun provided a 7-part series called "Building an Online Game With LoopBack 4"
-The main purpose of this series is to help you learn LoopBack 4 and how to use it to easily build your own API and web project. We’ll do so by creating a new project I’m working on: an online web text-based adventure game.
-https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/
+Wenbo Sun provided a 7-part series called "Building an Online Game With LoopBack 4". The aim of the series is to help you learn LoopBack 4 and how to use it to easily build your own API and web project. Wenbo did so by highlighting a new project he was working on: an online web text-based adventure game. Check teh series out [here](https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/).
 
 ### 2020 Vision
 ***
