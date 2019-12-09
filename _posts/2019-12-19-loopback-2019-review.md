@@ -41,51 +41,43 @@ Well done, LoopBack team!
 
 With the team focusing so much on enhancing and imporving LoopBack 4, there were a lot of updates. In terms of the features, here are the highlights:
 
-## Authentication & Authorization
-        
-- Basic support for authentication and authorization. The team released a new major version of @loopback/authentication, and a new @loopback/security layer.
-- [Authentication docs](https://loopback.io/doc/en/lb4/Loopback-component-authentication.html).
-- [Authorization docs](https://loopback.io/doc/en/lb4/Loopback-component-authorization.html).
+- Authentication & Authorization
+  - Basic support for authentication and authorization. The team released a new major version of @loopback/authentication, and a new @loopback/security layer.
+  - [Authentication docs](https://loopback.io/doc/en/lb4/Loopback-component-authentication.html).
+  - [Authorization docs](https://loopback.io/doc/en/lb4/Loopback-component-authorization.html).
 
-## Model relations
-        
-- The team added [hasOne relation https](https://loopback.io/doc/en/lb4/hasOne-relation.html).
-- The tema completed the MVP for the "[inclusion of related models](https://strongloop.com/strongblog/inclusion-of-related-models/)" story. 
+- Model relations      
+  - The team added [hasOne relation https](https://loopback.io/doc/en/lb4/hasOne-relation.html).
+  - The tema completed the MVP for the "[inclusion of related models](https://strongloop.com/strongblog/inclusion-of-related-models/)" story. 
 
-## Architectural improvements
-        
-- [Interceptors](https://loopback.io/doc/en/lb4/Interceptors.html).
-- [lifecycle events](https://loopback.io/doc/en/lb4/Life-cycle.html).
-- Enhancement in extension/extension points.
+- Architectural improvements
+  - [Interceptors](https://loopback.io/doc/en/lb4/Interceptors.html).
+  - [lifecycle events](https://loopback.io/doc/en/lb4/Life-cycle.html).
+  - Enhancement in extension/extension points.
 
-## Going Cloud Native https://strongloop.com/strongblog/going-cloud-native-with-loopback-4/
-        
-- Added to Appsody/Kabanero application stack.
-- Deployment guide to Kubernetes clusters.
-- Adding observability in microservices, e.g. added health/metrics/tracing features.
+- Going Cloud Native https://strongloop.com/strongblog/going-cloud-native-with-loopback-4/
+  - Added to Appsody/Kabanero application stack.
+  - Deployment guide to Kubernetes clusters.
+  - Adding observability in microservices, e.g. added health/metrics/tracing features.
 
-## Migration / Migration guide
-  
-- [Migration guide](https://loopback.io/doc/en/lb4/migration-overview.html).
-- [Added tooling to import LB3 models](https://strongloop.com/strongblog/import-loopback-3-models-to-loopback-4/).
+- Migration / Migration guide
+  - [Migration guide](https://loopback.io/doc/en/lb4/migration-overview.html).
+  - [Added tooling to import LB3 models](https://strongloop.com/strongblog/import-loopback-3-models-to-loopback-4/).
 
-## Strengthen the core modules as a platform for building large-scale Node.js projects
+- Strengthen the core modules as a platform for building large-scale Node.js projects
+  - Get the details in the [tutorial series](https://loopback.io/doc/en/lb4/core-tutorial.html).
 
-- Get the details in the [tutorial series](https://loopback.io/doc/en/lb4/core-tutorial.html).
+- Enhancements in connectors
+  - Support partitioned database in [cloudant connector](https://github.com/strongloop/loopback-connector-cloudant/blob/master/doc/partitioned-db.md).
+  - Support decimal128 type in mongodb connector.
 
-## Enhancements in connectors
-        
-- Support partitioned database in [cloudant connector](https://github.com/strongloop/loopback-connector-cloudant/blob/master/doc/partitioned-db.md).
-- Support decimal128 type in mongodb connector.
+- Update Example Shopping app to showcase the features we’ve added
 
-## Update Example Shopping app to showcase the features we’ve added
+- Experimenting with Plain javascript programming in LoopBack 4: https://strongloop.com/strongblog/loopback4-javascript-experience/
 
-## Experimenting with Plain javascript programming in LoopBack 4: https://strongloop.com/strongblog/loopback4-javascript-experience/
+- Improvement in documentation
 
-## Improvement in documentation
-
-## Enabled Node.js 12 support, Added latest TypeScript 3.7 support, switch to ESLint, etc.
-
+- Enabled Node.js 12 support, Added latest TypeScript 3.7 support, switch to ESLint, etc.
 
 --
 
