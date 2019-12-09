@@ -90,33 +90,24 @@ We would like to provide more visibility to you (our users) on what we have acco
 - To go even further, we start our planning on milestone and a quarterly [roadmap](https://github.com/strongloop/loopback-next/blob/master/docs/ROADMAP.md) in pull requests. Look for pull requests with "Monthly Milestone" and "Roadmap" labels.
 
 ### Events and Community Outreach
-***
-While the LoopBack team is generally quite usy working on the framework, they also managed to join some events throughout the year!
 
-- developerWeek in Feb - Raymond https://developerweek2019.sched.com/speaker/raymond_feng.1yyfcnn4
+The LoopBack team managed to join some events throughout the year!
 
-- Meetup in Toronto - https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/
-The Toronto Cloud Integration Meetup hosted an event in February with the overall topic "Quickly Build APIs with Existing Services and Data Using LoopBack!” Janny Hou explained what LoopBack is, what you can do with it, and the rationale behind the rewrite of the framework. Biniam Admikew demonstrated how how easy it is to expose REST API from your database with just a few steps. Jamil Spain provided an additional demo while also taking care of capturing the meetup on video. Check out the details and video [here](https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/).
+DEVELOPERWEEK 2019 ran from February 20-24, and LoopBack architect [Raymond Feng](https://developerweek2019.sched.com/speaker/raymond_feng.1yyfcnn4) covered "Speed and Scale: Building APIs with Node.js, TypeScript and LoopBack."
 
+The Toronto Cloud Integration Meetup group held a [Meetup in Toronto](https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/) in February with the topic "Quickly Build APIs with Existing Services and Data Using LoopBack!” Janny Hou explained what LoopBack is, what you can do with it, and the rationale behind the rewrite of the framework. Biniam Admikew demonstrated how how easy it is to expose REST API from your database with just a few steps. Jamil Spain provided an additional demo while also taking care of capturing the meetup on video. Check out the details and video [here](https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/).
 
 - LoopBack QuickLab - Code@THINK. https://www.ibm.com/events/think/code/, NodeConf.eu and will be at Node+JSInteractive.
 
-- Meetup in California - Raymond’s talk https://strongloop.com/strongblog/hackerjs-meetup-may-8/
+- [HackerJS Meetup](https://strongloop.com/strongblog/hackerjs-meetup-may-8/) in California. Raymond Feng shared his cotent from DEVELOPER WEEK 2019 with this meetup group.
 
 - TechConnect (internal IBM event at the Canada Lab in Markham) - May 2019
-
 
 Raymond also presented at a meetup in Santa Clara in May. "Building APIs at Warp Speed with LoopBack "
 
 As mentioned earlier, Raymond Feng attended the 2019 API Awards Ceremony during API World 2019, in October to accept the 2019 API Award for the “Best in API Middleware” category.  
 
 In November, the LoopBack team attended CASCONxEVOKE. As one of Canada’s largest combined academic, research and developer conferences, it offered over 150 speakers to over 1,500 attendees. Diana Lau provided an overview of the LoopBack booth and a workshop. Learn more [here](https://strongloop.com/strongblog/cascon-evoke-2019/).
-- CASCONxEVOKE  https://strongloop.com/strongblog/cascon-evoke-2019/ 
-   - Workshop: https://pheedloop.com/cascon/site/sessions/?id=OhNsKW
-    - CASCON Expo: https://pheedloop.com/cascon/site/sessions/?id=DugCzZ
-
-
-
 
 ### LoopBack 3 LTS Support
 
