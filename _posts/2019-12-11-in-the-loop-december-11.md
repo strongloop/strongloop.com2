@@ -70,8 +70,6 @@ Jesse Casman explores the future of APIs and API monetization, the OpenAPI Initi
 
 ## What Next?
 
-* Check out the previous "[In the Loop - September 30, 2019](https://strongloop.com/strongblog/in-the-loop-september-30-2019/)".
+* Check out the previous "[In the Loop - November 27, 2019](https://strongloop.com/strongblog/in-the-loop-november-27-2019/)".
 
 * Be sure to follow StrongLoop on [Facebook](https://www.facebook.com/strongloop/) and [Twitter](https://twitter.com/StrongLoop)!
-
-* Do you have a blog post or other content on LoopBack? Send us a link and we’ll promote your work and send you some swag!
