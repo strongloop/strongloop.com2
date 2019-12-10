@@ -14,6 +14,14 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### 
+
+### What's New for Node.js in 2020 
+
+David Neal says every year the Node.js community has gained momentum, and 2020 shows no signs of slowing down.
+
+[READ MORE >>>](https://developer.okta.com/blog/2019/12/04/whats-new-nodejs-2020)
+
 ### Spring REST TypeScript Generator 
 
 Tomasz Wozniak discusses a Spring REST TypeScript generator that creates models and services that reflect backend models and REST services. 
