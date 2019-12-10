@@ -14,7 +14,11 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
-### 
+### Developing and Deploying LoopBack Applications with Appsody
+
+Learn how to build and deploy a LoopBack 4 application with Appsody in this tutorial.
+
+[READ MORE >>>](https://loopback.io/doc/en/lb4/Appsody-LoopBack.html)
 
 ### What's New for Node.js in 2020 
 
