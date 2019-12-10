@@ -16,7 +16,7 @@ Welcome back to "In the Loop", in which we list recent news, updates or opinions
 
 ### Using extensions to support pagination in OpenAPI
 
-Morad Ankri continuestrhis multi part series based on his talk from the API Specifications Conference.
+Morad Ankri continues this multi part series based on his talk from the API Specifications Conference.
 
 [READ MORE >>>](https://www.transposit.com/blog/2019.12.10-using-extensions-to-support-pagination-in-openapi/)
 
