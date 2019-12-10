@@ -11,15 +11,20 @@ published: false
 
 As 2019 draws to a close, we're following our annual tradition of looking at the hard work that the [LoopBack](http://loopback.io/) team has achieved in the past year. As you might expect, working on LoopBack 4 was the main focus, with some events, updates and "how to" content adding flavour to the mix. That focus has resulted in a lot of improvements and features for the framework, as well as quality interaction with the LoopBack community. 
 
-Read on for a very thorough trip down 2019 memory lane!  
+Grab yourself your seasonal beverage of choice, whether hot or cold, and read on for a down 2019 memory lane!  
 
 <!--more-->
 
 ### TO UPDATE: GitHub Activity and Downloads 
 
+2019 began with LoopBack having just moved past the [12,000 star count](https://github.com/strongloop/loopback) and wrapped up the year at more than 13k. [LoopBack 4](https://github.com/strongloop/loopback-next) began the year at more than 1260 and ended 2019 at more than 2400. A year later, the numbers are at ----- , an increase of !
+
+
 2019 began with LoopBack having just moved past the [12,000 star count](https://github.com/strongloop/loopback) and [LoopBack 4](https://github.com/strongloop/loopback-next) at more than 1260. A year later, the numbers are at ----- , an increase of !
 
 - Download numbers on npmjs.com https://npm-stat.com/charts.html?package=@loopback/core
+Total number of downloads between 2019-01-01 and 2019-12-10:
+@loopback/core	425,016
 
 With all of this activity, we weren't surprised to see LoopBack downloads continue to grow. 
 
