@@ -14,6 +14,12 @@ published: false
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Using extensions to support pagination in OpenAPI
+
+Morad Ankri continuestrhis multi part series based on his talk from the API Specifications Conference.
+
+[READ MORE >>>](https://www.transposit.com/blog/2019.12.10-using-extensions-to-support-pagination-in-openapi/)
+
 ### Java and JavaScript dominated software development in the 2010s
 
 Veronica Combs tells us Ruby and PHP had short-term popularity but long-term impact, and Python is on the rise again. 
