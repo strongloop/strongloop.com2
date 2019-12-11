@@ -8,17 +8,11 @@ categories:
   - Community
   - News
   - In the Loop
-published: false
+published: true
 ---
 
 Welcome back to "In the Loop", in which we list recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
-
-### The future of open source: 3 discoveries
-
-Macy Bayern shares DigitalOcean findings: that participation in the open source community is high, but users worry about inclusivity and the role of big tech in the future open source landscape. 
-
-[READ MORE >>>](https://www.techrepublic.com/article/the-future-of-open-source-3-discoveries/)
 
 ### Devs: Open Source Is Growing Despite Challenges
 
