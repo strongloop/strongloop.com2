@@ -14,12 +14,11 @@ published: false
 Welcome to the first "In the Loop" of 2020 Join us as we review recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
-### Devs: Open Source Is Growing Despite Challenges
+### 10 insights I wish I had known as a junior full-stack developer 
 
-Jack M.Germain explains that optimism about the future of open source is high among software developers worldwide, a growing number of devs worry that a lack of funding and corporate support threatens its sustainability.
+Aleksandr Skobeltcyn shares the top 10 hacks and tools that he uses every day. 
 
-[READ MORE >>>](https://www.linuxinsider.com/story/86406.html)
-
+[READ MORE >>>](https://dev.to/skobak/10-insights-i-wish-i-had-known-as-a-junior-full-stack-developer-11kc)
 
 ## What Next?
 
