@@ -19,7 +19,12 @@ Grab yourself your seasonal beverage of choice, whether hot or cold, and read on
 
 2019 began with LoopBack having just moved past the 12,000 star count and wrapped up the year at more than [13k](https://github.com/strongloop/loopback). LoopBack 4 began the year at more than 1260 and pratcically doubled it by year's end at more than [2400](https://github.com/strongloop/loopback-next). Meanwhile, [npmjs.com](https://npm-stat.com/charts.html?package=@loopback/core) shows there were 441,619 downloads in the last year. We're excited to see all of this activity as LoopBack downloads continue to grow. 
 
+
+2018: 141,948
+2019: 432,860
+
 2018 downloads =	425,016
+@loopback/core	574,808
 
 ### LoopBack, Winner of 2019 API Award for API Middleware
 
