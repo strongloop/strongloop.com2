@@ -17,9 +17,7 @@ Grab yourself your seasonal beverage of choice, whether hot or cold, and read on
 
 ### TO UPDATE: GitHub Activity and Downloads 
 
-2019 began with LoopBack having just moved past the [12,000 star count](https://github.com/strongloop/loopback) and wrapped up the year at more than 13k. [LoopBack 4](https://github.com/strongloop/loopback-next) began the year at more than 1260 and ended 2019 at more than 2400. A year later, the numbers are at ----- , an increase of !
-
-Meanwhile, [npmjs.com](https://npm-stat.com/charts.html?package=@loopback/core) shows there were <----number----> downloads in the last year. We're excited to see all of this activity as LoopBack downloads continue to grow. 
+2019 began with LoopBack having just moved past the 12,000 star count and wrapped up the year at more than [13k](https://github.com/strongloop/loopback). LoopBack 4 began the year at more than 1260 and pratcically doubled it by year's end at more than [2400](https://github.com/strongloop/loopback-next). Meanwhile, [npmjs.com](https://npm-stat.com/charts.html?package=@loopback/core) shows there were 441,619 downloads in the last year. We're excited to see all of this activity as LoopBack downloads continue to grow. 
 
 2018 downloads =	425,016
 
@@ -154,4 +152,3 @@ The LB team will also work on feature parity that is needed for LB3 to LB4 migra
 Finally, look for improved documentation that address user questions, and more up-to-date docs that better reflect the quickly-changing code base.
 
 Keep an eye out to see the developments in the new year!
-
