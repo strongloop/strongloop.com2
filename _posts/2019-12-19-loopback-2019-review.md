@@ -9,9 +9,9 @@ categories:
 published: false
 ---
 
-As 2019 draws to a close, we're following our annual tradition of looking at the hard work that the [LoopBack](http://loopback.io/) team has achieved in the past year. As you might expect, working on LoopBack 4 was the main focus, with some events, updates and "how to" content adding flavour to the mix. That focus has resulted in a lot of improvements and features for the framework, as well as quality interaction with the LoopBack community. 
+As 2019 draws to a close, we're continuing our annual tradition of celebrating the hard work that the [LoopBack](http://loopback.io/) team achieved in the past year. As you might expect, developing LoopBack 4 was the main focus, with  events, updates and "how to" content adding flavour to the mix. That focus has resulted in a lot of improvements and features for the framework, as well as quality interaction with the LoopBack community. 
 
-Grab yourself your seasonal beverage of choice, whether hot or cold, and read on for a down 2019 memory lane!  
+Grab yourself your seasonal beverage of choice, whether hot or cold, and read on for a trip down 2019 memory lane!  
 
 <!--more-->
 
