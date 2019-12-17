@@ -15,16 +15,9 @@ Grab yourself your seasonal beverage of choice, whether hot or cold, and read on
 
 <!--more-->
 
-### TO UPDATE: GitHub Activity and Downloads 
+### GitHub Activity and Downloads 
 
-2019 began with LoopBack having just moved past the 12,000 star count and wrapped up the year at more than [13k](https://github.com/strongloop/loopback). LoopBack 4 began the year at more than 1260 and pratcically doubled it by year's end at more than [2400](https://github.com/strongloop/loopback-next). Meanwhile, [npmjs.com](https://npm-stat.com/charts.html?package=@loopback/core) shows there were 441,619 downloads in the last year. We're excited to see all of this activity as LoopBack downloads continue to grow. 
-
-
-2018: 141,948
-2019: 432,860
-
-2018 downloads =	425,016
-@loopback/core	574,808
+2019 began with LoopBack having just moved past the 12,000 star count and wrapped up the year at more than [13k](https://github.com/strongloop/loopback). LoopBack 4 began the year at more than 1260 and pratcically doubled it by year's end at more than [2400](https://github.com/strongloop/loopback-next). Meanwhile, [npmjs.com](https://npm-stat.com/charts.html?package=@loopback/core) shows there were 432,860 downloads of LB4 since January 1 - quite a jump from teh prior year's 141,948. We're excited to see all of this activity as LoopBack downloads continue to grow. 
 
 ### LoopBack, Winner of 2019 API Award for API Middleware
 
@@ -148,7 +141,7 @@ For more details about work on LoopBack, the best resource is the monthly milest
 
 You can also follow LoopBack's progress throughout the year in the [LoopBack 4 2019 Q1 Overview](https://strongloop.com/strongblog/loopback-4-2019-q1-overview/), [LoopBack 4 2019 Q2 Overview](https://strongloop.com/strongblog/loopback-4-2019-q2-overview/), and [LoopBack 4 2019 Q3 Overview](https://strongloop.com/strongblog/loopback-4-2019-q3-overview/).
 
-### What's Next? 2020 Vision
+### What's Next? 
 
 [Migration guide work](https://github.com/strongloop/loopback-next/issues/1849) began this year and it will continue to be the focus. The goal is to add some tooling around migration to make the migration process from LB3 to LB4 easier. If you have an existing LoopBack 3 application, take a look at the migration guide and gives us feedback!
 
