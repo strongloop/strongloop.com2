@@ -36,7 +36,7 @@ With the team focusing so much on enhancing and imporving LoopBack 4, there were
 
 - Model relations      
   - The team added [hasOne relation https](https://loopback.io/doc/en/lb4/hasOne-relation.html).
-  - The tema completed the MVP for the "[inclusion of related models](https://strongloop.com/strongblog/inclusion-of-related-models/)" story. 
+  - The team completed the MVP for the "[inclusion of related models](https://strongloop.com/strongblog/inclusion-of-related-models/)" story. 
 
 - Architectural improvements
   - [Interceptors](https://loopback.io/doc/en/lb4/Interceptors.html).
