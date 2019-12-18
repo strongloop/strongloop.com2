@@ -43,7 +43,7 @@ With the team focusing so much on enhancing and imporving LoopBack 4, there were
   - [lifecycle events](https://loopback.io/doc/en/lb4/Life-cycle.html).
   - Enhancement in extension/extension points.
 
-- Going Cloud Native https://strongloop.com/strongblog/going-cloud-native-with-loopback-4/
+- [Going Cloud Native](https://strongloop.com/strongblog/going-cloud-native-with-loopback-4/)
   - Added to Appsody/Kabanero application stack.
   - Deployment guide to Kubernetes clusters.
   - Adding observability in microservices, e.g. added health/metrics/tracing features.
