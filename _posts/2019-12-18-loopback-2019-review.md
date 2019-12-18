@@ -1,6 +1,6 @@
 ---
 title: LoopBack 2019 Year in Review
-date: 2019-12-19
+date: 2019-12-18
 author: Dave Whiteley
 permalink: /strongblog/loopback-2019-review/
 categories:
