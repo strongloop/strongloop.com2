@@ -11,9 +11,11 @@ published: true
 
 As 2019 draws to a close, we're continuing our annual tradition of celebrating the hard work that the [LoopBack](http://loopback.io/) team achieved in the past year. As you might expect, developing LoopBack 4 was the main focus, with  events, updates and "how to" content adding flavour to the mix. That focus has resulted in a lot of improvements and features for the framework, as well as quality interaction with the LoopBack community. 
 
-Grab yourself your seasonal beverage of choice, whether hot or cold, and read on for a trip down 2019 memory lane!  
+Grab your seasonal beverage of choice, whether hot or cold, and read on for a trip down 2019 memory lane!  
 
 <!--more-->
+
+looking at innovation around cloud native deployment
 
 ### GitHub Activity and Downloads 
 
@@ -93,7 +95,7 @@ DEVELOPERWEEK 2019 ran from February 20-24, and LoopBack architect [Raymond Feng
 
 The Toronto Cloud Integration Meetup group held a [Meetup in Toronto](https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/) in February with the topic "Quickly Build APIs with Existing Services and Data Using LoopBack!” Janny Hou explained what LoopBack is, what you can do with it, and the rationale behind the rewrite of the framework. Biniam Admikew demonstrated how how easy it is to expose REST API from your database with just a few steps. Jamil Spain provided an additional demo while also taking care of capturing the meetup on video. Check out the details and video [here](https://strongloop.com/strongblog/watch-meetup-quickly-build-apis-with-loopback/).
 
-- LoopBack QuickLab - Code@THINK. https://www.ibm.com/events/think/code/, NodeConf.eu and will be at Node+JSInteractive.
+- LoopBack QuickLab - [Code@THINK](https://www.ibm.com/events/think/code/), NodeConf.eu and Node+JSInteractive.
 
 - [HackerJS Meetup](https://strongloop.com/strongblog/hackerjs-meetup-may-8/) in California. Raymond Feng shared his cotent from DEVELOPER WEEK 2019 with this meetup group.
 
@@ -118,9 +120,9 @@ While much of their focus was on improving LoopBack 4, the team also shared insi
 Diana Lau shared a two part series about learning LoopBack 4 Interceptors. In the first part she looked at [Global Interceptors](https://strongloop.com/strongblog/loopback4-interceptors-part1/), what they are and how to use them. In Part 2 she looked at [Method Level and Class Level Interceptors](https://strongloop.com/strongblog/loopback4-interceptors-part2/),
 building an application that validates the incoming request using class level and method level interceptors. 
 
-Miroslav Bajtoš announced and demonstrated preview version of a tool automating migration of models from LoopBack 3 to LoopBack 4. Check it out [here](https://strongloop.com/strongblog/import-loopback-3-models-to-loopback-4/). In a simialr vein, Nora Abdelgadir shared a way to mount your LoopBack 3 applications in a LoopBack 4 project in ["Migrating from LoopBack 3 to LoopBack 4"](https://strongloop.com/strongblog/migrate-from-loopback-3-to-loopback-4/).
+Miroslav Bajtoš announced and demonstrated preview version of a tool automating migration of models from LoopBack 3 to LoopBack 4. Check it out [here](https://strongloop.com/strongblog/import-loopback-3-models-to-loopback-4/). In a similar vein, Nora Abdelgadir shared a way to mount your LoopBack 3 applications in a LoopBack 4 project in ["Migrating from LoopBack 3 to LoopBack 4"](https://strongloop.com/strongblog/migrate-from-loopback-3-to-loopback-4/).
 
-Wenbo Sun provided a 7-part series called "Building an Online Game With LoopBack 4". The aim of the series is to help you learn LoopBack 4 and how to use it to easily build your own API and web project. Wenbo did so by highlighting a new project he was working on: an online web text-based adventure game. Check teh series out [here](https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/).
+Wenbo Sun provided a 7-part series called "Building an Online Game With LoopBack 4". The aim of the series is to help you learn LoopBack 4 and how to use it to easily build your own API and web project. Wenbo did so by highlighting a new project he was working on: an online web text-based adventure game. Check the series out [here](https://strongloop.com/strongblog/building-online-game-with-loopback-4-pt1/).
 
 ### Anything Else?
 
@@ -145,7 +147,7 @@ You can also follow LoopBack's progress throughout the year in the [LoopBack 4 2
 
 [Migration guide work](https://github.com/strongloop/loopback-next/issues/1849) began this year and it will continue to be the focus. The goal is to add some tooling around migration to make the migration process from LB3 to LB4 easier. If you have an existing LoopBack 3 application, take a look at the migration guide and gives us feedback!
 
-The LB team will also work on feature parity that is needed for LB3 to LB4 migration, and the developer experience to make users' lives easier. They would like to take some time in each milestone to address some of the pain points that users mentioned. The team is also looking at innovating cloud native deployment, database integration, as well as messaging/event driven style APIs.
+The LB team will also work on feature parity that is needed for LB3 to LB4 migration, and the developer experience to make users' lives easier. They would like to take some time in each milestone to address some of the pain points that users mentioned. The team is also looking at innovation around cloud native deployment, database integration, as well as messaging/event driven style APIs. 
 
 Finally, look for improved documentation that address user questions, and more up-to-date docs that better reflect the quickly-changing code base.
 
