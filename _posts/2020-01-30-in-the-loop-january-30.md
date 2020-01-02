@@ -14,6 +14,12 @@ published: false
 Welcome to the first "In the Loop" of 2020 Join us as we review recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### OpenJS Foundation Year in Review
+
+While only 10 months old, The OpenJS Foundation has had quite an exciting year, from merging two legacy foundations to bringing on new leadership, to accepting some fantastic new incubating projects, exciting doesn’t begin to describe it.
+
+[READ MORE >>>](https://openjsf.org/blog/2019/12/26/openjs-foundation-year-in-review/)
+
 ### 10 insights I wish I had known as a junior full-stack developer 
 
 Aleksandr Skobeltcyn shares the top 10 hacks and tools that he uses every day. 
