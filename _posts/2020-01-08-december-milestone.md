@@ -10,7 +10,7 @@ categories:
 published: false
 ---
 
-Happy New Year 2️⃣0️⃣2️⃣0️⃣! Is the snow dancing outside of your window or is the sunshine bringing warmth and glow to the grass around you? No matter where you are, the LoopBack team is thankful for you being with us through 2019! It means a lot to us that you chose LoopBack for your applications and projects.
+Happy New Year 2️⃣0️⃣2️⃣0️⃣! Is the snow dancing outside of your window or is the sunshine bringing warmth and glow to the grass around you? No matter where you are, the LoopBack team is thankful for you being with us through 2019! It means a lot to us that you choose LoopBack for your applications and projects.
 
 We're also excited to have [Denny](https://github.com/derdeka), [Douglas](https://github.com/dougal83), and [Rifa](https://github.com/achrinza) as LoopBack maintainers! They've been actively helpful in our community. We appreciate all the contributions and great work. Welcome to the team!
 
@@ -48,7 +48,7 @@ To make this scenario possible, we needed to make few improvements:
 - [loopback-datasource-juggler #1807](https://github.com/strongloop/loopback-datasource-juggler/pull/1807) fixes TypeScript typings in `loopback-datasource-juggler` to make DataSource APIs like `discoverSchema` easier to consume using `await` keyword.
 - [loopback-next #4266](https://github.com/strongloop/loopback-next/pull/4266) adds a new API `defineModelClass` that builds a Model class constructor using the given base model (e.g. `Entity`) and the given `ModelDefinition`.
 
-As part of the experiment, we have again encountered the limitation of our REST layer where controllers registered after startup are not picked up. This feature is discussed in [loopback-next #433](https://github.com/strongloop/loopback-next/issues/433). Feel free to chime in and perhaps contribute a pull request if this use case is important for your projects.
+As part of the experiment, we have again encountered the limitation of our REST layer when controllers registered after startup are not picked up. This feature is discussed in [loopback-next #433](https://github.com/strongloop/loopback-next/issues/433). Feel free to chime in and perhaps contribute a pull request if this use case is important for your projects.
 
 ### Model API Builder Package
 
@@ -137,8 +137,7 @@ It’s often desirable for various types of artifacts to participate in the life
 
 We've added a new extension point `OASEnhancerService` to allow the OpenAPI specification (short for OAS) contributions to a rest application. The feature originated from the need to add security schemes and policies to a LoopBack application's OAS. Now you can modify your application's OAS by creating and registering OAS enhancers.
 
-A typical OAS enhancer implements interface `OASEnhancer` which has a string type `name` field and a function `modifySpec()`. For example, to modify the `info` field of an OAS, you can create an
-`InfoSpecEnhancer` as follows:
+A typical OAS enhancer implements interface `OASEnhancer` which has a string type `name` field and a function `modifySpec()`. For example, to modify the `info` field of an OAS, you can create an `InfoSpecEnhancer` as follows:
 
 ```ts
 import {bind} from '@loopback/core';
@@ -232,12 +231,10 @@ As part of this effort, we migrated our code base to use [nullish coalescing](ht
 
 In August, LoopBack was added as one of the application stacks in Appsody to provide a powerful solution to build open APIs and Microservices in TypeScript. The name of the stack is [nodejs-loopback](https://github.com/appsody/stacks/tree/master/incubator/nodejs-loopback).
 
-For a detailed instructions on how to use the Appsody CLI to:
+Please refer to our tutorial [Developing and Deploying LoopBack Applications with Appsody](https://loopback.io/doc/en/lb4/Appsody-LoopBack.html) for detailed instructions on how to use the Appsody CLI to:
 
 - scaffold, run, stop, debug, and test a LoopBack 4 application locally
 - build and deploy the application to Kubernetes on the IBM Cloud
-
-Please refer to our tutorial [Developing and Deploying LoopBack Applications with Appsody](https://loopback.io/doc/en/lb4/Appsody-LoopBack.html).
 
 ### Migrating Middleware from LB3 to LB4
 
@@ -254,6 +251,7 @@ Typically, the primary key is used as the source key in relations (i.e joining t
 ### Other
 
 - We've added some links and refactored the [Using Components](https://loopback.io/doc/en/lb4/Using-components.html) page to make the site better navigation.
+
 - We've updated the [Authorization Component](https://loopback.io/doc/en/lb4/Loopback-component-authorization.html) page detailedly to match the latest code base.
 
 ## User Feedback Sessions
