@@ -12,7 +12,9 @@ published: false
 
 Happy New Year 2️⃣0️⃣2️⃣0️⃣! Is the snow dancing outside of your window or is the sunshine bringing warmth and glow to the grass around you? No matter where you are, the LoopBack team is thankful for you being with us through 2019! It means a lot to us that you chose LoopBack for your applications and projects.
 
-Even though this past December was a short (and cold) month, the list of the accomplished tasks is not short! Check out the sections below for the progress we made in each area:
+We're also excited to have [Denny](https://github.com/derdeka), [Douglas](https://github.com/dougal83), and [Rifa](https://github.com/achrinza) as LoopBack maintainers! They've been actively helpful in our community. We appreciate all the contributions and great work. Welcome to the team!
+
+Even though this past December was a short month due to the holidays, the list of the accomplished tasks is not short! Check out the sections below for the progress we made in each area:
 
 - [From Model Definition to REST API](#from-model-definition-to-rest-api): build a LB4 app with just models!
 - [Inclusion of Related Models](#inclusion-of-related-models): enable custom scope for inclusion.
@@ -50,13 +52,13 @@ As part of the experiment, we have again encountered the limitation of our REST 
 
 ### Model API Builder Package
 
-We introduced a new package `@loopback/model-api-builder` for building APIs from models. This package allows users to build repositories and controllers based on their models through their defined extensions. We also added `ModelApiBooter` that leverages Model API builders contributed via `ExtensionPoint`/`Extension` to implement the actual API building. See [PR #4298](https://github.com/strongloop/loopback-next/pull/4298/) for details.
+We introduced a new package `@loopback/model-api-builder` for building APIs from models. This package allows users to build repositories and controllers based on their models through their defined extensions. We also added `ModelApiBooter` that leverages Model API builders contributed via `ExtensionPoint`/`Extension` to implement the actual API building. See [README](https://github.com/strongloop/loopback-next/tree/master/packages/model-api-builder) file for details.
 
 ## Inclusion of Related Models
 
 We managed to finish the Inclusion of Related Models [MVP](https://github.com/strongloop/loopback-next/issues/1352) in 2019! Check out the [Post MVP](https://github.com/strongloop/loopback-next/issues/3585) if you'd like to contribute.
 
-### Enable inclusion with custom scope
+### Enabling inclusion with custom scope
 
 Traversing data through different relations is a common use case in real world. Take a nested relation as an example, a `Customer` might be interested in the `Shipment` status of their `Order`:
 
@@ -97,7 +99,7 @@ customerRepo.find({
 
 More use cases and examples are added to the page [Query Multiple Relations](https://loopback.io/doc/en/lb4/HasMany-relation.html#query-multiple-relations).
 
-### Handle navigational properties with CRUD operations
+### Handling navigational properties with CRUD operations
 
 It's convenient to traverse related models with relations. However, when it comes to operations such as creation and updating, navigational properties might cause some unexpected problems. In [PR #4148](https://github.com/strongloop/loopback-next/pull/4148), we decided to reject CRUD operations that contain any navigational properties. For example, the request to create a `Customer` with its `Address` will be rejected:
 
@@ -121,7 +123,7 @@ We've added a _convenience_ function interface named [`UserProfileFactory<U>`](h
 
 ### StrategyAdapter Improvements
 
-The `StrategyAdapter` in `@loopback/authentication-passport` now takes in an additional argument `userProfileFactory` in its constructor. This argument is initialized with a default implementation of the `UserProfileFactory<U>` interface, mentioned above, and simply returns your specific user model as a user profile model. It is recommended that you implement your own user profile factory function to map a specific/minimal set of properties from your custom user model to the user profile model. Please see the [updated documentation](https://www.npmjs.com/package/@loopback/authentication-passport) for more details.
+The `StrategyAdapter` in `@loopback/authentication-passport` now takes in an additional argument `userProfileFactory` in its constructor. This argument is initialized with a default implementation of the `UserProfileFactory<U>` interface, mentioned above, and simply returns your specific user model as a user profile model. It is recommended that you implement your own user profile factory function to map a specific/minimal set of properties from your custom user model to the user profile model. Please see the [updated documentation](https://github.com/strongloop/loopback-next/tree/master/extensions/authentication-passport) for more details.
 
 ## Allowing Interceptor to Be Invoked Based on the Source
 
@@ -165,6 +167,8 @@ export class InfoSpecEnhancer implements OASEnhancer {
 Then bind it to your application by `this.add(createBindingFromClass(InfoSpecEnhancer))`.
 
 The OAS enhancer service organizes all the registered enhancers, and is able to apply one or all of them. You can check ["Extending OpenAPI specification"](https://loopback.io/doc/en/lb4/Extending-OpenAPI-specification.html) documentation to learn more about creating and registering OAS enhancers, adding OAS enhancer service and applying its enhancers.
+
+We will allow users to have token-based authentication in API Explorer in the near future. Please check our future milestone blogs.
 
 ## Improving Juggler and Connectors
 
@@ -220,7 +224,7 @@ List of new checks:
 
 As part of this effort, we migrated our code base to use [nullish coalescing](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html#nullish-coalescing) and [optional chaining](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html#optional-chaining) operators.
 
-## Documentation Improvement
+## Documentation Improvements
 
 ### Appsody / LoopBack 4 Tutorial
 
@@ -235,11 +239,11 @@ For a detailed instructions on how to use the Appsody CLI to:
 
 Please refer to our tutorial [Developing and Deploying LoopBack Applications with Appsody](https://loopback.io/doc/en/lb4/Appsody-LoopBack.html).
 
-### Migrate Middleware from LB3 to LB4
+### Migrating Middleware from LB3 to LB4
 
-We enhanced the documentation and updated the tutorial of migrating LB3 application on a new LB4 app. By mounting the LB3 middleware with a base Express application, the middleware can be shared by both LB3 and LB4 apps. For example, you can use REST APIs in your LB3 app with a new LB4 application, which will be helpful if you are a LB3 user and ready to move to LoopBack 4. Check out [Migrating Express middleware](https://loopback.io/doc/en/lb4/migration-express-middleware.html) for the steps and examples once it's up.
+We enhanced the documentation and updated the tutorial of migrating LB3 application on a new LB4 app. By mounting the LB3 middleware with a base Express application, the middleware can be shared by both LB3 and LB4 apps. For example, you can use REST APIs in your LB3 app with a new LB4 application, which will be helpful if you are a LB3 user and ready to move to LoopBack 4. Check out [Migrating Express middleware](https://loopback.io/doc/en/lb4/migration-express-middleware.html) for the steps and examples.
 
-### Migrate DataSources from LB3 to LB4
+### Migrating DataSources from LB3 to LB4
 
 To improve the documentation for migration from LB3 to LB4, we also added steps for migrating LB3 datasources into a LB4 project. LB3 datasources are compatible with LB4, so the datasource configuration remains the same between both. See [Migrating Datasources](https://loopback.io/doc/en/lb4/migration-datasources.html) for steps on how to migrate your datasources.
 
@@ -256,13 +260,9 @@ Typically, the primary key is used as the source key in relations (i.e joining t
 
 Interested in joining a user feedback session? We love to hear your input and how you are using LoopBack. If you'd like to take part or have suggestions, please join our discussion in the [GitHub issue](https://github.com/strongloop/loopback-next/issues/4264).
 
-## Welcome!
-
-We're excited to have [Denny](https://github.com/derdeka), [Douglas](https://github.com/dougal83), and [Rifa](https://github.com/achrinza) as LoopBack maintainers! They've been actively helpful in our community. We appreciate all the contributions and great work. Welcome to the team!
-
 ## What's Next?
 
-If you're interested in what we're working on next, you can check out the [January Milestone](https://github.com/strongloop/loopback-next/pull/4186).
+If you're interested in what we're working on next, you can check out the [January Milestone](https://github.com/strongloop/loopback-next/pull/4376).
 
 ## Call to Action
 
