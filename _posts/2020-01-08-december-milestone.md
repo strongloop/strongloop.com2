@@ -9,7 +9,9 @@ categories:
   - LoopBack
 published: true
 ---
-It's 2️⃣0️⃣2️⃣0️⃣!Happy New Year! Is the snow dancing outside of your window or is the sunshine bringing warmth and glow to the grass around you? No matter where you are, the LoopBack team is thankful for you being with us through 2019! It means a lot to us that you choose LoopBack for your applications and projects.
+It's 2️⃣0️⃣2️⃣0️⃣!
+
+Happy New Year! Is the snow dancing outside of your window or is the sunshine bringing warmth and glow to the grass around you? No matter where you are, the LoopBack team is thankful for you being with us through 2019! It means a lot to us that you choose LoopBack for your applications and projects.
 
 We're also excited to have [Denny](https://github.com/derdeka), [Douglas](https://github.com/dougal83), and [Rifa](https://github.com/achrinza) as LoopBack maintainers! They've been actively helpful in our community. We appreciate all the contributions and great work. Welcome to the team!
 
