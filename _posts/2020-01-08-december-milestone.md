@@ -25,7 +25,7 @@ Even though this past December was a short month due to the holidays, the list o
 - [OpenAPI Enhancer Service](#openapi-enhancer-service): contribute OpenAPI spec pieces from extensions.
 - [Improving Juggler and Connectors](#improving-juggler-and-connectors): new property settings.
 - [New ESLint Rules](#new-eslint-rules): applied new `@typescript-eslint` rules.
-- [Documentation Improvement](#documentation-improvement)
+- [Documentation Improvements](#documentation-improvements)
 
 <!--more-->
 
