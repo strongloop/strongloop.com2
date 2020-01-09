@@ -14,6 +14,12 @@ published: false
 Welcome to the first "In the Loop" of 2020 Join us as we review recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### 11 top open-source API testing tools: What your team needs to know
+
+Joe Colantonio provides insight on yoru API testing.
+
+[READ MORE >>>](https://techbeacon.com/app-dev-testing/11-top-open-source-api-testing-tools-what-your-team-needs-know)
+
 ### Building a Real-Time App: 13 Open Source Projects You Should Be Tracking Right Now
 
 Chris Sachs shares the top 13 open source projects by category.
