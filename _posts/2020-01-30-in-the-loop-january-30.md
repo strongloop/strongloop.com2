@@ -14,6 +14,18 @@ published: false
 Welcome to the first "In the Loop" of 2020 Join us as we review recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### Building a Real-Time App: 13 Open Source Projects You Should Be Tracking Right Now
+
+Chris Sachs shares the top 13 open source projects by category.
+
+[READ MORE >>>](https://devops.com/building-a-real-time-app-13-open-source-projects-you-should-be-tracking-right-now/)
+
+### How Node.js Is Best For Real-time Application Development?
+
+Puneet Singh Raghav looks at the benefits of developing Real-time apps with Node.js.
+
+[READ MORE >>>](https://www.whatech.com/mobile-apps/blog/629680-how-node-js-is-best-for-real-time-application-development)
+
 ### OpenShift 4.X - Overview & Architecture
 
 Dewan I Ahmed provides a product and architecture overview of OpenShift 4.X. 
