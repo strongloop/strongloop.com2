@@ -1,9 +1,9 @@
 ---
 layout: post
-title: In the Loop - January 30, 2020
-date: 2020-01-30
+title: In the Loop - January 15, 2020
+date: 2020-01-15
 author: Dave Whiteley
-permalink: /strongblog/in-the-loop-january-30-2020/
+permalink: /strongblog/in-the-loop-january-15-2020/
 categories:
   - Community
   - News
@@ -14,9 +14,15 @@ published: false
 Welcome to the first "In the Loop" of 2020 Join us as we review recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### How To Build A Command-Line Tool With NodeJS - A step-by-step guide 
+
+Ibrahim Adeniyi shows developers how to build CLI tools with node.js and publish the tool to NPM. 
+
+[READ MORE >>>](https://dev.to/dendekky/how-to-build-a-command-line-tool-with-nodejs-a-step-by-step-guide-386k)
+
 ### 11 top open-source API testing tools: What your team needs to know
 
-Joe Colantonio provides insight on yoru API testing.
+Joe Colantonio provides insight on your API testing.
 
 [READ MORE >>>](https://techbeacon.com/app-dev-testing/11-top-open-source-api-testing-tools-what-your-team-needs-know)
 
