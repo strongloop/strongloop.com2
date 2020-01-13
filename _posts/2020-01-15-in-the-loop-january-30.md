@@ -38,6 +38,12 @@ Puneet Singh Raghav looks at the benefits of developing Real-time apps with Node
 
 [READ MORE >>>](https://www.whatech.com/mobile-apps/blog/629680-how-node-js-is-best-for-real-time-application-development)
 
+### Everything You Need to Know About Streams in Node.js
+
+Bharat Patel helps you to understand streams, the latest trends in Node.js and how to work with it.
+
+[READ MORE >>>](https://www.newsanyway.com/2019/12/26/everything-you-need-to-know-about-streams-in-node-js/)
+
 ### OpenShift 4.X - Overview & Architecture
 
 Dewan I Ahmed provides a product and architecture overview of OpenShift 4.X. 
