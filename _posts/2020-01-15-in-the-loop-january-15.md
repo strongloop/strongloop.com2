@@ -14,6 +14,12 @@ published: false
 Welcome to the first "In the Loop" of 2020! Join us as we review recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
 <!--more-->
 
+### State of the API Economy 2020
+
+Alan Glickenhouse did not intend to write another State of the API Economy blog after last year's entry, but there were a few new observations that extended last year’s content that he wanted to share.
+
+[READ MORE >>>](https://developer.ibm.com/apiconnect/2020/01/14/state-of-the-api-economy-2020/)
+
 ### How To Build A Command-Line Tool With NodeJS - A step-by-step guide 
 
 Ibrahim Adeniyi shows developers how to build CLI tools with node.js and publish the tool to NPM. 
