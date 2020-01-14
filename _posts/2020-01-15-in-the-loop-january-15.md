@@ -26,6 +26,12 @@ Joe Colantonio provides insight on your API testing.
 
 [READ MORE >>>](https://techbeacon.com/app-dev-testing/11-top-open-source-api-testing-tools-what-your-team-needs-know)
 
+### Node.js 12: A Decade of Node.js
+
+Beth Griggs looks at Node.js, which is now a decade old and version 12 has just entered into long-term support. Take a look at the new features, breaking changes, and what's next.
+
+[WATCH NOW >>>](https://youtu.be/HP4N0u_dEgI)
+
 ### Building a Real-Time App: 13 Open Source Projects You Should Be Tracking Right Now
 
 Chris Sachs shares the top 13 open source projects by category.
