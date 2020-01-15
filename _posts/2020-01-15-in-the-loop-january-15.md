@@ -8,7 +8,7 @@ categories:
   - Community
   - News
   - In the Loop
-published: false
+published: true
 ---
 
 Welcome to the first "In the Loop" of 2020! Join us as we review recent news, updates or opinions for Node.js, OpenAPI Spec, Microgateway, LoopBack and other open source solutions. We list them in no particular order, and any opinions expressed in the linked posts do not necessarily reflect those of the StrongLoop or IBM team.
@@ -83,5 +83,3 @@ Aleksandr Skobeltcyn shares the top 10 hacks and tools that he uses every day.
 ## What Next?
 
 * Check out the previous "[In the Loop - December 11, 2019](https://strongloop.com/strongblog/in-the-loop-december-11-2019/)".
-
-* Be sure to follow StrongLoop on [Facebook](https://www.facebook.com/strongloop/) and [Twitter](https://twitter.com/StrongLoop)!
