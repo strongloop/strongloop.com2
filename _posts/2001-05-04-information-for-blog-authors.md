@@ -241,7 +241,7 @@ Please keep formatting simple! It makes it easier to troubleshoot if something g
 
 ## Publication
 
-A blog is ready to be sent for publication when all content has been reviewed, edited and approved by manager or subject matter expert (eg, Raymond Feng or Diana Lau for LoopBack). Please advise Dave W ASAP in advance about scheduling if the blog should be set up for a particular date.
+A blog is ready to be sent for publication when all content has been reviewed, edited and approved by manager or subject matter expert (eg, Raymond Feng or Diana Lau for LoopBack). 
 
 When ready to be published, a PR *and* a separate email should be sent to Dave Whiteley. Please cc the above approver and Dennis Ashby. Please do *not* rely on Slack to communicate a blog is ready.
 
