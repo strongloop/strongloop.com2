@@ -243,7 +243,7 @@ Please keep formatting simple! It makes it easier to troubleshoot if something g
 
 A blog is ready to be sent for publication when all content has been reviewed, edited and approved by manager or subject matter expert (eg, Raymond Feng or Diana Lau for LoopBack). 
 
-When ready to be published, a PR *and* a separate email should be sent to Dave Whiteley. Please cc the above approver and Dennis Ashby. Please do *not* rely on Slack to communicate a blog is ready.
+To update: When ready to be published, a PR *and* a separate email should be sent to (new owner). Please do *not* rely on Slack to communicate a blog is ready.
 
 Even if approved and PR is sent, expect up to a 24 business hour turnaround time for publication.
 
