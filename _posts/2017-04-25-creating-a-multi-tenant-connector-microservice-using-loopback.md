@@ -1,9 +1,7 @@
 ---
 title: Creating a Multi-Tenant Connector Microservice Using LoopBack
 Date: 2017-04-25T08:10:00+00:00
-author: 
-  - Nagarjuna Surabathina
-  - Nagarjuna Surabathina
+author: Nagarjuna Surabathina
 permalink: /strongblog/creating-a-multi-tenant-connector-microservice-using-loopback/
 categories: 
   - How-To
