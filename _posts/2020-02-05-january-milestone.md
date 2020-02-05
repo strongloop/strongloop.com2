@@ -20,7 +20,7 @@ Check out the sections below for the progress we made in each area:
 - [Migration Guide](#migration-guide)
 - [Improved Developer Experience](#improved-developer-experience)
 - [Improved Performance Of Context](#improved-performance-of-context)
-- [APIC / LoopBack Integration](#apic-/-loopback-integration)
+- [APIC and LoopBack Integration](#apic-and-loopback-integration)
 - [Community Contributions](#community-contributions)
 - [Miscellaneous](#miscellaneous)
 
@@ -32,7 +32,7 @@ The LoopBack 4 example app now has a website - Shoppy.
 
 ![](../images/shoppy.png)
 
-Check out https://github.com/strongloop/loopback4-example-shopping/ and start the app; Shoppy is available at http://localhost:3000/shoppy.html.
+Check out [https://github.com/strongloop/loopback4-example-shopping/](https://github.com/strongloop/loopback4-example-shopping/) and start the app; Shoppy is available at [http://localhost:3000/shoppy.html](http://localhost:3000/shoppy.html).
 
 This website serves as an example for integrating LoopBack 4 APIs to a front-end and as a basis for you to experiment with various LoopBack 4 features.
 
@@ -108,7 +108,7 @@ Performance was improved by:
 - changing interceptor to find matching global interceptors by tag
 - simple benchmark testing shows over 15% gain for hello-world
 
-## APIC / LoopBack Integration
+## APIC and LoopBack Integration
 
 We started to investigate the steps required, if needed, on importing OpenAPI specs generated from a LoopBack 4 application into IBM API Connect v2018. There are additional extended configurations and APIC product files that are needed in order to import the API successfully. As the next step, we will be testing all endpoints of our example shopping application with API Connect, and documenting the steps. For details on the spike, see https://github.com/strongloop/loopback-next/issues/4115.
 
