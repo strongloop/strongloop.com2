@@ -3,14 +3,13 @@ layout: post
 title: LoopBack 3 has entered Maintenance LTS
 date: 2020-02-19
 author: Miroslav Bajtoš
-permalink: /strongblog/lb3-entered-maintenance-mode
+permalink: /strongblog/lb3-entered-maintenance-mode/
 categories:
   - LoopBack
 published: true
 ---
 
 Almost a year ago, we announced [Extended Long Term Support for LoopBack 3](https://strongloop.com/strongblog/lb3-extended-lts/), extending Active LTS to the end of November 2019. As the saying goes, all good things must come to an end, and so LoopBack version 3 has entered Maintenance LTS in December 2019.
-
 <!--more-->
 
 What does this change means for LoopBack 3 users? Quoting from our [Long Term Support policy](https://loopback.io/doc/en/contrib/Long-term-support.html):
