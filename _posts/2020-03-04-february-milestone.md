@@ -10,7 +10,7 @@ categories:
 published: false
 ---
 
-The February in a leap year is quite special and we hope everyone has some memorable stories from that extra day! In the past month, LoopBack team continued to focus on the migration guide epic. In the meantime, we were able to contribute significant PRs across all the functional areas. We are really glad to see the increasing engagement from community members, we appreciate all your code reviews and contributions. Last but not least, we published a semver-major release for the monorepo [`loopback-next`](https://github.com/strongloop/loopback-next) as Node.js 8 entered the end of life. 
+The February in a leap year is quite special and we hope everyone has some memorable stories from that extra day! In the past month, LoopBack team continued to focus on the migration guide epic. In the meantime, we were able to contribute significant PRs across all the functional areas. We are really glad to see the increasing engagement from community members, we appreciate all your code reviews and contributions. Last but not least, we published new major releases for [`@loopback/*`](https://github.com/strongloop/loopback-next) modules as as we dropped Node.js 8 support and introduced a few other breaking changes.
 
 Keep reading to learn about what happened in February!
 
@@ -162,6 +162,8 @@ More test cases can be found in PR https://github.com/strongloop/loopback-next/p
 - inspect: Fetches a JSON document for the context hierarchy.
 - graph: Renders the LoopBack application as a SVG diagram.
 - graph-d3: Displays the graph using [d3-graphviz](https://github.com/magjac/d3-graphviz).
+
+This example is turning into an extension `@loopback/context-explorer` in PR [#4666](https://github.com/strongloop/loopback-next/pull/4666). The core code is packed as a component.
 
 ### Dynamic Binding and Rebinding of Controllers
 
