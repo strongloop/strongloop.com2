@@ -1,13 +1,13 @@
 ---
 layout: post
 title: LoopBack 4 February 2020 Milestone Update
-date: 2020-03-04
+date: 2020-03-05
 author: Janny Hou
 permalink: /strongblog/february-2020-milestone/
 categories:
   - Community
   - LoopBack
-published: false
+published: true
 ---
 
 The February in a leap year is quite special and we hope everyone has some memorable stories from that extra day! In the past month, LoopBack team continued to focus on the migration guide epic. In the meantime, we were able to contribute significant PRs across all the functional areas. We are really glad to see the increasing engagement from community members, we appreciate all your code reviews and contributions. Last but not least, we published new major releases for [`@loopback/*`](https://github.com/strongloop/loopback-next) modules as as we dropped Node.js 8 support and introduced a few other breaking changes.
