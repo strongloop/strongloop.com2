@@ -1,0 +1,101 @@
+---
+layout: post
+title: LoopBack 4 2020 Q1 Overview
+date: 2020-03-18
+author:
+  - Diana Lau
+permalink: /strongblog/loopback-4-2020-q1-overview/
+categories:
+  - LoopBack
+  - Community
+published: false
+---
+
+https://strongloop.com/strongblog/2020-goals/
+https://strongloop.com/strongblog/lb3-entered-maintenance-mode/
+
+- [Migration](#migration): added documentation and examples on general runtime and authentication/authorization areas.
+- [From Model Definitions to REST APIs](#from_model_definitions_to_rest_apis)
+- [Newly added examples](#newly_added_examples)
+- [Newly added Extensions](#newly_added_extensions)
+- [Rework of shopping example](#rework_of_shopping_example)
+- [Refreshed look for LoopBack documentation](#refreshed_look_for_loopback_documentation)
+
+Let's take a closer look.
+<!--more-->
+
+## Migration
+
+Building the migration guide is one of the key focus for us this year. We made good progress in completing the migration guide. Please check out our migration guide: [https://loopback.io/doc/en/lb4/migration-overview.html](https://loopback.io/doc/en/lb4/migration-overview.html). 
+
+Besides documentation, we migrated the [LoopBack 3 access control example to LoopBack 4](https://github.com/strongloop/loopback-next/tree/master/examples/access-control-migration). In the [lb3-application example](https://github.com/strongloop/loopback-next/tree/master/examples/lb3-application), we added instructions on how to move the middleware from the LoopBack 3 application to a common location where both the LB3 and LB4 applications can use.
+
+For tooling that helps your migration process easier, the `lb4 import-lb3-models` command now supports migrating models inheriting from all other models, including LoopBack 3 built-in models.
+
+## From Model Definitions to REST APIs
+
+One of the frequent inputs we got from users is that they would like to see fewer steps from creating the models to having runnable endpoints.
+[`lb4 rest-crud` command](https://loopback.io/doc/en/lb4/Rest-Crud-generator.html) allows you to create APIs by only providing the DataSource and the Models. This is possible because of the groundworks we've done earlier on the CrudRestApi builder and booter.
+
+## Newly Added Examples
+
+We continue to add examples which demonstrate commonly used scenarios. With the growing number of examples, we also categorized the [Example list](https://loopback.io/doc/en/lb4/Examples.html). Here are the newly added examples:
+
+- [access control migration example](https://github.com/strongloop/loopback-next/blob/master/examples/access-control-migration) to show how to migrate a LoopBack 3 application with access control to LoopBack 4.
+
+- [file transfer example](https://github.com/strongloop/loopback-next/tree/master/examples/file-transfer) for exposing APIs to upload and download files using Express Multer.
+
+- [validation example](https://github.com/strongloop/loopback-next/tree/master/examples/validation-app) for adding different kinds of validations in a LoopBack 4 application.
+
+- [rest-crud example](https://github.com/strongloop/loopback-next/tree/master/examples/rest-crud) for using `CrudRestComponent` to define repository and controller classes for a model without creating those classes
+
+## Newly Added Extensions
+
+LoopBack 4 is designed to be extensible. We added three extensions in this quarter for various usages: 
+
+- [@loopback/extension-logging](https://github.com/strongloop/loopback-next/blob/master/extensions/logging) provides logging facilities based on Winston and Fluentd.
+
+- [@loopback/apiconnect](https://github.com/strongloop/loopback-next/tree/master/extensions/apiconnect) is the IBM API Connect OpenAPI enhancer  extension extends LoopBack with the ability to integrate with [IBM API Connect](https://www.ibm.com/cloud/api-connect). 
+
+- [@loopback/cron](https://github.com/strongloop/loopback-next/tree/master/extensions/cron) provides integration with [Cron](https://github.com/kelektiv/node-cron) so that applications can schedule jobs using `cron` based schedule.
+
+## IBM Db2 for i Connector
+
+The [IBM Db2 for i connector](https://github.com/strongloop/loopback-connector-ibmi) was added to the connector list. You can now conveniently create a IBM Db2 for i datasource using our CLI. If you are starting a new project that connects to IBM Db2 for i, we recommend you to use this connector instead of `loopback-connector-db2iseries` connector.  You can find more details in the [Db2 for i connector page](https://loopback.io/doc/en/lb4/DB2-for-i-connector.html).
+
+## Rework of Shopping Example
+
+The most noticeable changes for [our shopping example](https://github.com/strongloop/loopback4-example-shopping) is the newly added frontend. There was some rework on the authentication and authorization side to make the app working from end to end.
+
+![Shopping example web site](https://raw.githubusercontent.com/strongloop/loopback4-example-shopping/master/shoppy.png)
+
+## Refreshed Look for LoopBack Documentation
+
+Last but not least, if you haven't noticed already, [our documentation site](https://loopback.io/doc/en/lb4/) has a refreshed look. Don't forget to check it out!
+
+![LoopBack documentation site](../blog-assets/2020/03/new-docs-site.png)
+
+## Previous Milestone Blogs
+
+There are many more accomplishments that cannot be captured in this blog, make sure you check out our previously published monthly milestone blog posts in Q1 for more details:
+- [Janurary 2020](https://strongloop.com/strongblog/january-2020-milestone/)
+- [February 2020](https://strongloop.com/strongblog/february-2020-milestone/)
+- [March 2020](https://strongloop.com/strongblog/march-2020-milestone/)
+
+
+## What's Next?
+
+We have published a blog [LoopBack - 2020 Goals and Focus](https://strongloop.com/strongblog/2020-goals/) about our plans this year. Here is a summary of the [Q2 2020 roadmap](https://github.com/strongloop/loopback-next/blob/master/docs/ROADMAP.md#q2-2020-roadmap): 
+- finish migration guide for both general runtime and authentication & authorization
+- continue with API Connect and LoopBack integration
+- look into feature parity gaps that are highly requested by users
+
+
+## Call to Action
+
+In 2020, we look forward to helping you and seeing you around! LoopBack's success depends on you. We appreciate your continuous support and engagement to make LoopBack even better and meaningful for your API creation experience. Here's how you can join us and help the project:
+
+- [Report issues](https://github.com/strongloop/loopback-next/issues).
+- [Contribute](https://github.com/strongloop/loopback-next/blob/master/docs/CONTRIBUTING.md) code and documentation.
+- [Open a pull request on one of our "good first issues"](https://github.com/strongloop/loopback-next/labels/good%20first%20issue).
+- [Join](https://github.com/strongloop/loopback-next/issues/110) our user group.
