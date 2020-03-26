@@ -12,14 +12,15 @@ published: false
 ---
 
 https://strongloop.com/strongblog/2020-goals/
+
 https://strongloop.com/strongblog/lb3-entered-maintenance-mode/
 
 - [Migration](#migration): added documentation and examples on general runtime and authentication/authorization areas.
-- [From Model Definitions to REST APIs](#from_model_definitions_to_rest_apis)
-- [Newly added examples](#newly_added_examples)
-- [Newly added Extensions](#newly_added_extensions)
-- [Rework of shopping example](#rework_of_shopping_example)
-- [Refreshed look for LoopBack documentation](#refreshed_look_for_loopback_documentation)
+- [From Model Definitions to REST APIs](#from-model-definitions-to-rest-apis)
+- [Newly added examples](#newly-added-examples)
+- [Newly added extensions](#newly-added-extensions)
+- [Rework of shopping example](#rework-of-shopping-example)
+- [Refreshed look for LoopBack documentation](#refreshed-look-for-loopback-documentation)
 
 Let's take a closer look.
 <!--more-->
@@ -81,7 +82,6 @@ There are many more accomplishments that cannot be captured in this blog, make s
 - [Janurary 2020](https://strongloop.com/strongblog/january-2020-milestone/)
 - [February 2020](https://strongloop.com/strongblog/february-2020-milestone/)
 - [March 2020](https://strongloop.com/strongblog/march-2020-milestone/)
-
 
 ## What's Next?
 
