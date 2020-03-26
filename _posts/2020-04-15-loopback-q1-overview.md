@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoopBack 4 2020 Q1 Overview
-date: 2020-03-18
+date: 2020-04-15
 author:
   - Diana Lau
 permalink: /strongblog/loopback-4-2020-q1-overview/
