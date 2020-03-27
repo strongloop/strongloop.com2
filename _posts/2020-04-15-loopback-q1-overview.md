@@ -11,7 +11,8 @@ categories:
 published: false
 ---
 
-- [Migration](#migration): added documentation and examples on general runtime and authentication/authorization areas.
+- [Migration guide](#migration-guide): added migration guide for mixins, operation hooks and authentication/authorization areas.
+- [Migration Tooling and Examples](#migration-tooling-and-examples)
 - [From Model Definitions to REST APIs](#from-model-definitions-to-rest-apis)
 - [Newly added examples](#newly-added-examples)
 - [Newly added extensions](#newly-added-extensions)
@@ -22,20 +23,27 @@ published: false
 Let's take a closer look.
 <!--more-->
 
-## Migration
+## Migration Guide
 
-Building the migration guide is one of the key focus for us this year. We made good progress in completing the migration guide. Please check out our migration guide: [https://loopback.io/doc/en/lb4/migration-overview.html](https://loopback.io/doc/en/lb4/migration-overview.html). 
+Building the migration guide is one of the key focus for us this year. We made good progress in completing the migration guide. Please check out our migration guide: [https://loopback.io/doc/en/lb4/migration-overview.html](https://loopback.io/doc/en/lb4/migration-overview.html). LoopBack 3 is currently in maintainence LTS. Read [this blog](https://strongloop.com/strongblog/lb3-entered-maintenance-mode/) to find out what it means and how it affects you.
+
+LB3 model classes provided Schema definition, Persistence behavior and Public API, which are three different layers in LB4. To help users to understand these concept and how they map to LB4, we added a [Migrating model mixins](https://loopback.io/doc/en/lb4/migration-models-mixins.html) page to show how these different parts of LB3 models map and can be converted to LB4.
+
+In LB3, Operation hooks are useful tools that are triggered by all methods that execute a particular high-level CRUD operation. However, LB4 hasn't supported this feature yet. To help LB3 users to continue using the feature, we provide a workaround and explain how they can migrate LB3 operation hooks to LB4 repositories in page [Migrating operation hooks](https://loopback.io/doc/en/lb4/migration-models-operation-hooks.html).
+
+LB3 has the built-in User/AccessToken model based authentication. In LB4, we provide a more flexible authentication system. We explain how LB3 users can migrate it to LB4 with handy LB4 CLI tools. The content can be found in page [Migrating built-in authentication](https://loopback.io/doc/en/lb4/migration-authentication.html).
+
+## Migration Tooling and Examples
 
 Besides documentation, we migrated the [LoopBack 3 access control example to LoopBack 4](https://github.com/strongloop/loopback-next/tree/master/examples/access-control-migration). In the [lb3-application example](https://github.com/strongloop/loopback-next/tree/master/examples/lb3-application), we added instructions on how to move the middleware from the LoopBack 3 application to a common location where both the LB3 and LB4 applications can use.
 
 For tooling that helps your migration process easier, the `lb4 import-lb3-models` command now supports migrating models inheriting from all other models, including LoopBack 3 built-in models.
 
-LoopBack 3 is currently in maintainence LTS. Read [this blog](https://strongloop.com/strongblog/lb3-entered-maintenance-mode/) to find out what it means and how it affects you.
-
 ## From Model Definitions to REST APIs
 
-One of the frequent inputs we got from users is that they would like to see fewer steps from creating the models to having runnable endpoints.
-[`lb4 rest-crud` command](https://loopback.io/doc/en/lb4/Rest-Crud-generator.html) allows you to create APIs by only providing the DataSource and the Models. This is possible because of the groundworks we've done earlier on the CrudRestApi builder and booter.
+One of the frequent inputs we got from users is that they would like to see fewer steps from creating the models to having runnable endpoints. We now have the [`crud-rest`](https://github.com/strongloop/loopback-next/tree/master/packages/rest-crud) package, the app booter, and the CLI command. You can see how to create a simple LoopBack 4 app with the [`lb4 rest-crud` CLI command]((https://loopback.io/doc/en/lb4/Rest-Crud-generator.html)).
+
+To glue these pieces together and helper users to understand the feature, we added a page [Creating CRUD REST APIs](https://loopback.io/doc/en/lb4/Creating-crud-rest-apis.html). You can also run this [CRUD REST example](https://github.com/strongloop/loopback-next/tree/master/examples/rest-crud).
 
 ## Integrate with IBM API Connect
 
