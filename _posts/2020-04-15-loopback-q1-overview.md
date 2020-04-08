@@ -11,7 +11,11 @@ categories:
 published: false
 ---
 
-- [Migration guide](#migration-guide): added migration guide for mixins, operation hooks and authentication/authorization areas.
+The past few weeks have been challenging for many of us. While this pandemic situation affected our lives in different ways, hope you all stay safe.
+
+In Q1, we continue to make good progress in the following areas:
+
+- [Migration guide](#migration-guide)
 - [Migration Tooling and Examples](#migration-tooling-and-examples)
 - [From Model Definitions to REST APIs](#from-model-definitions-to-rest-apis)
 - [Newly added examples](#newly-added-examples)
@@ -32,6 +36,8 @@ LB3 model classes provided Schema definition, Persistence behavior and Public AP
 In LB3, Operation hooks are useful tools that are triggered by all methods that execute a particular high-level CRUD operation. However, LB4 hasn't supported this feature yet. To help LB3 users to continue using the feature, we provide a workaround and explain how they can migrate LB3 operation hooks to LB4 repositories in page [Migrating operation hooks](https://loopback.io/doc/en/lb4/migration-models-operation-hooks.html).
 
 LB3 has the built-in User/AccessToken model based authentication. In LB4, we provide a more flexible authentication system. We explain how LB3 users can migrate it to LB4 with handy LB4 CLI tools. The content can be found in page [Migrating built-in authentication](https://loopback.io/doc/en/lb4/migration-authentication.html).
+
+In addition, we added the [LB3 features not in-plan documentation page](https://loopback.io/doc/en/lb4/migration-not-planned.html) to clarify which LB3 features are not supported in LB4 or the workarounds for those features if users would like to continue using them in LB4. 
 
 ## Migration Tooling and Examples
 
@@ -91,12 +97,13 @@ The most noticeable changes for [our shopping example](https://github.com/strong
 
 ![Shopping example web site](https://raw.githubusercontent.com/strongloop/loopback4-example-shopping/master/shoppy.png)
 
-## Refreshed Look for LoopBack Documentation
+## Refreshed Look for LoopBack Web Site
 
 Last but not least, if you haven't noticed already, [our documentation site](https://loopback.io/doc/en/lb4/) has a refreshed look. Don't forget to check it out!
 
 ![LoopBack documentation site](../blog-assets/2020/03/new-docs-site.png)
 
+With increasing number of user testimonials, we created a [separate page]((https://loopback.io/what-our-users-say.html)) for it. [Let us know](https://github.com/strongloop/loopback-next/issues/3047) if you would like to tell us about your LoopBack usage!
 
 ## Previous Milestone Blogs
 
