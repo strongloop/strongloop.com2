@@ -101,7 +101,7 @@ The most noticeable changes for [our shopping example](https://github.com/strong
 
 Last but not least, if you haven't noticed already, [our documentation site](https://loopback.io/doc/en/lb4/) has a refreshed look. Don't forget to check it out!
 
-![LoopBack documentation site](../blog-assets/2020/03/new-docs-site.png)
+![LoopBack documentation site](/blog-assets/2020/03/new-docs-site.png)
 
 With increasing number of user testimonials, we created a [separate page](https://loopback.io/what-our-users-say.html) for it. [Let us know](https://github.com/strongloop/loopback-next/issues/3047) if you would like to tell us about your LoopBack usage!
 
