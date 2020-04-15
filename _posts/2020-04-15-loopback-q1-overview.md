@@ -31,7 +31,8 @@ Let's take a closer look.
 
 Building the migration guide is one of the key focuses for us this year. We made good progress in completing the migration guide. Please check out our [migration guide](https://loopback.io/doc/en/lb4/migration-overview.html). LoopBack 3 is currently in maintenance LTS. Read [this blog](https://strongloop.com/strongblog/lb3-entered-maintenance-mode/) to find out what it means and how it affects you.
 
-LB3 model classes provided schema definition, persistence behavior and REST endpoints, which are three different layers in LB4. To help users to understand these concepts and how they map to LB4, we added a [Migrating model mixins](https://loopback.io/doc/en/lb4/migration-models-mixins.html) page to show how these different parts of LB3 models map and can be converted to LB4.
+In LB3, it was possible to use mixins to enhance a model with a new property, a custom method, or a custom remote method. In LB4, this can be accomplished by using a mixin class factory function against model, repository, or controller classes.
+We added a [Migrating model mixins](https://loopback.io/doc/en/lb4/migration-models-mixins.html) page to demonstrate how to accomplish this.
 
 In LB3, Operation hooks are useful tools that are triggered by all methods that execute a particular high-level CRUD operation. However, LB4 hasn't supported this feature yet. To help LB3 users to continue using the feature, we provide a workaround and explain how they can migrate LB3 operation hooks to LB4 repositories in page [Migrating operation hooks](https://loopback.io/doc/en/lb4/migration-models-operation-hooks.html).
 
