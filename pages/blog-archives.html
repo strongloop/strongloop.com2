@@ -6,7 +6,7 @@ redirect_from:
   - /blog-archivers
   - /blog-archives
 ---
-{% for year in (2013..2019) reversed %}
+{% for year in (2013..2020) reversed %}
   {% assign y = year | modulo: 2 %}
   {% if y == 0 %}
     {% assign color = 'x-lightgrey'%}
