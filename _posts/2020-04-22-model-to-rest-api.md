@@ -30,9 +30,7 @@ The command can also take in multiple models at the same time. You can find more
 
 What the command does is the following:
 
-1) Creates a configuration file describing properties of the REST API:
-
-    `/src/model-endpoints/product.rest-config.ts`
+1) Creates a configuration file describing properties of the REST API (e.g. `/src/model-endpoints/product.rest-config.ts`):
 
     ```ts
     import {ModelCrudRestApiConfig} from '@loopback/rest-crud';
@@ -46,9 +44,7 @@ What the command does is the following:
     };
     ```
 
-2) Adds `CrudRestComponent` from `@loopback/rest-crud` to the application:
-
-    `src/application.ts`
+2) Adds `CrudRestComponent` from `@loopback/rest-crud` to the application (in `src/application.ts`):
 
     ```ts
     import {CrudRestComponent} from '@loopback/rest-crud';
