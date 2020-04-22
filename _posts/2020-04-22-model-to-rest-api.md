@@ -28,31 +28,33 @@ lb4 rest-crud --model Product --datasource db
 
 The command can also take in multiple models at the same time. You can find more information on how to use the command in the [REST CRUD generator documentation](https://loopback.io/doc/en/lb4/Rest-Crud-generator.html).
 
-What the command does is the following:
+What the command does is it creates a configuration file describing properties of the REST API:
 
-1) Creates a configuration file describing properties of the REST API (e.g. `/src/model-endpoints/product.rest-config.ts`):
+`/src/model-endpoints/product.rest-config.ts`
 
-    ```ts
-    import {ModelCrudRestApiConfig} from '@loopback/rest-crud';
-    import {Product} from '../models';
+```ts
+import {ModelCrudRestApiConfig} from '@loopback/rest-crud';
+import {Product} from '../models';
 
-    module.exports = <ModelCrudRestApiConfig>{
-        model: Product, // name of the model
-        pattern: 'CrudRest', // make sure to use this pattern
-        dataSource: 'db', // name of the datasource
-        basePath: '/products',
-    };
-    ```
+module.exports = <ModelCrudRestApiConfig>{
+    model: Product, // name of the model
+    pattern: 'CrudRest', // make sure to use this pattern
+    dataSource: 'db', // name of the datasource
+    basePath: '/products',
+};
+```
 
-2) Adds `CrudRestComponent` from `@loopback/rest-crud` to the application (in `src/application.ts`):
+Then it adds `CrudRestComponent` from `@loopback/rest-crud` to the application:
 
-    ```ts
-    import {CrudRestComponent} from '@loopback/rest-crud';
-    ```
+`src/application.ts`
 
-    ```ts
-    this.component(CrudRestComponent);
-    ```
+```ts
+import {CrudRestComponent} from '@loopback/rest-crud';
+```
+
+```ts
+this.component(CrudRestComponent);
+```
 
 Documentation for this feature can be found in [Creating CRUD REST APIs from a model](https://loopback.io/doc/en/lb4/Creating-crud-rest-apis.html). 
 
