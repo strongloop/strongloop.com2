@@ -11,9 +11,7 @@ categories:
 published: false
 ---
 
-The LoopBack team always looks for ways to adopt new technologies to improve our framework. At the same time, we also take the time to investigate other toolings to enhance the development experience for ourselves and the community. 
-
-Back in early April, we were pleased to announce that the LoopBack Slack workspace, http://loopbackio.slack.com/, is available for our users to join. Since Slack is quite commonly used, we thought it would be a good time for us to modernize our tooling for the LoopBack community helping out each other out. Also, the LoopBack core team uses Slack on a daily basis; it is helpful because it allows us to get notifications and communicate efficiently.
+In the past, we've explored a few options on providing a forum for our users to help each other: [Google group](https://groups.google.com/forum/#!forum/loopbackjs), [Gitter](https://gitter.im/strongloop/loopback) and GitHub. We are pleased to announce that the LoopBack Slack workspace, http://loopbackio.slack.com/, is available for our users to join. Since Slack is quite commonly used, we thought it would be a good time for us to modernize our tooling for the LoopBack community helping out each other out. Also, the LoopBack core team uses Slack on a daily basis; it is helpful because it allows us to get notifications and communicate efficiently.
 
 There have been lots of great questions and answers. We thought it would be helpful to curate some of the discussions here. Thanks again for submitting the questions and answers! 
 
