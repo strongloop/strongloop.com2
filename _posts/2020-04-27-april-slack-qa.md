@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Community Q&A Monthly Digest - April 2020
-date: 2020-04-17
+date: 2020-04-29
 author:
   - Diana Lau
 permalink: /strongblog/2020-april-slack-qa/
