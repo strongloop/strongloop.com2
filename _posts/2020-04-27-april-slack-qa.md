@@ -8,7 +8,7 @@ permalink: /strongblog/2020-april-slack-qa/
 categories:
   - LoopBack
   - Community
-published: false
+published: true
 ---
 
 In the past, we've explored a few options on providing a forum for our users to help each other: [Google group](https://groups.google.com/forum/#!forum/loopbackjs), [Gitter](https://gitter.im/strongloop/loopback) and GitHub. We are pleased to announce that the LoopBack Slack workspace, http://loopbackio.slack.com/, is available for our users to join. Since Slack is quite commonly used, we thought it would be a good time for us to modernize our tooling for the LoopBack community helping out each other out. Also, the LoopBack core team uses Slack on a daily basis; it is helpful because it allows us to get notifications and communicate efficiently.
