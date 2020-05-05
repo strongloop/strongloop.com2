@@ -11,7 +11,7 @@ categories:
 published: true
 ---
 
-In the past, we've explored a few options on providing a forum for our users to help each other: [Google group](https://groups.google.com/forum/#!forum/loopbackjs), [Gitter](https://gitter.im/strongloop/loopback) and GitHub. We are pleased to announce that the LoopBack Slack workspace, http://loopbackio.slack.com/, is available for our users to join. Since Slack is quite commonly used, we thought it would be a good time for us to modernize our tooling for the LoopBack community helping out each other out. Also, the LoopBack core team uses Slack on a daily basis; it is helpful because it allows us to get notifications and communicate efficiently.
+In the past, we've explored a few options on providing a forum for our users to help each other: [Google group](https://groups.google.com/forum/#!forum/loopbackjs), [Gitter](https://gitter.im/strongloop/loopback) and GitHub. We are pleased to announce that the LoopBack Slack workspace, [https://loopbackio.slack.com/](https://loopbackio.slack.com/), is available for our users to join. Since Slack is quite commonly used, we thought it would be a good time for us to modernize our tooling for the LoopBack community helping out each other out. Also, the LoopBack core team uses Slack on a daily basis; it is helpful because it allows us to get notifications and communicate efficiently.
 
 There have been lots of great questions and answers. We thought it would be helpful to curate some of the discussions here. Thanks again for submitting the questions and answers! 
 
@@ -75,15 +75,15 @@ This is a standard interface that the @loopback/authentiation package understand
 ---
 **Question: I have experience with other ActiveRecord implementations. If I was able to utilize TypeORM, this would be more straightforward. You mentioned TypeORM is coming soon as an option for LoopBack 4?**
 
-**Answer:** You can track progress of a proof of concept here: https://github.com/strongloop/loopback-next/pull/4794
+**Answer:** You can track progress of a proof of concept here: [https://github.com/strongloop/loopback-next/pull/4794](https://github.com/strongloop/loopback-next/pull/4794)
 Loopback 4 has been designed to allow flexibility so you can for example use TypeORM if you prefer.
 
-**Question: I am using mysql connector,  I have generated models using LB4 model, But when I migrate the models from loopback to database using `npm run migrate`. The foreign key constraints were missing in database. I have <many>.model.ts files. How to have foreign key in database with npm run migrate.**
+**Question: I am using mysql connector,  I have generated models using LB4 model, But when I migrate the models from loopback to database using `npm run migrate`. The foreign key constraints were missing in database. I have many.model.ts files. How to have foreign key in database with npm run migrate.**
 
 **Answer:** AFAIK, you’ll need to add some settings in the `@model` decorator on the FK configuration so that npm run migrate can pick up.
 I’ve tried that for postgresql using [this snippet](https://github.com/dhmlau/loopback4-coffeeshop/blob/master/src/models/review.model.ts#L4-L15).  Hope it works for you for mysql as well.
 
-There is an GitHub issue tracking the work to add constraints in db migration: https://github.com/strongloop/loopback-next/issues/2332.
+There is an GitHub issue tracking the work to add constraints in db migration: [https://github.com/strongloop/loopback-next/issues/2332](https://github.com/strongloop/loopback-next/issues/2332).
 
 ---
 **Question: Can anyone point me in the right direction on how to do loggig in LB4?**
@@ -138,14 +138,14 @@ export class HelloWorldController {
 ```
 
 With binding and injection, you can do some pretty cool stuff, like this extension that gives you a `@log(LOG_LEVEL.INFO)` decorator that can be used to time a request:
-https://github.com/strongloop/loopback-next/tree/master/examples/log-extension
+[https://github.com/strongloop/loopback-next/tree/master/examples/log-extension](https://github.com/strongloop/loopback-next/tree/master/examples/log-extension)
 
 There's also the old school nodejs way of just importing a file that exports a log utility, all set up in the global scope. I believe most tutorials for utilities like winston start with that :)
 
 --- 
 **Question: Are there any solution to see the errors of model in the response of the request?**
 
-**Answer:** See https://loopback.io/doc/en/lb4/Sequence.html#handling-errors for reference.
+**Answer:** See [https://loopback.io/doc/en/lb4/Sequence.html#handling-errors](https://loopback.io/doc/en/lb4/Sequence.html#handling-errors) for reference.
 
 --- 
 
