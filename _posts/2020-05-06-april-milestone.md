@@ -46,7 +46,7 @@ Because of the architectural differences, the booting process is very different 
 
 ### Custom Validation
 
-The [Data coercion and validation](https://loopback.io/doc/en/lb4/LB3-vs-LB4-request-response-cycle.html#data-coercion-and-validation) and [Access to data before writing to the databases](https://loopback.io/doc/en/lb4/LB3-vs-LB4-request-response-cycle.html#access-to-data-before-writing-to-the-databases) sections of the [LB3 to LB4 request-response migration guide](https://loopback.io/doc/en/lb4/LB3-vs-LB4-request-response-cycle.html) deals with the topic of access and application of custom validation to data in Loopback 4.
+The [data coercion and validation](https://loopback.io/doc/en/lb4/LB3-vs-LB4-request-response-cycle.html#data-coercion-and-validation) and [access to data before writing to the databases](https://loopback.io/doc/en/lb4/LB3-vs-LB4-request-response-cycle.html#access-to-data-before-writing-to-the-databases) sections of the [LB3 to LB4 request-response migration guide](https://loopback.io/doc/en/lb4/LB3-vs-LB4-request-response-cycle.html) deals with the topic of access and application of custom validation to data in Loopback 4.
 
 ### Differences between LB3 and LB 4 CLI Commands
 
@@ -82,7 +82,7 @@ The [LoopBack APIConnect extension](https://github.com/strongloop/loopback-next/
 
 We took the shopping example for a close-to-real-life scenario. This would help IBM APIConnect customers to develop their applications with LoopBack and manage them with IBM APIConnect.
 
-Once LoopBack developers have their REST APIs created they could use the LoopBack APIConnect extension](https://github.com/strongloop/loopback-next/tree/master/extensions/apiconnect) to enhance their OpenAPI spec with `x-ibm-` OpenAPI metadata. For the shopping example, we followed the [steps in the example repository](https://github.com/strongloop/loopback4-example-shopping/blob/master/kubernetes/docs/deploy-to-ibmcloud.md) to deploy to IBM Cloud and then imported the OpenAPI specification to APIConnect with [steps explained in the IBM developer portal](https://developer.ibm.com/apiconnect/2019/10/30/manage-and-enforce-openapi-v3-oai-v3/).
+Once LoopBack developers have their REST APIs created they could use the [LoopBack APIConnect extension](https://github.com/strongloop/loopback-next/tree/master/extensions/apiconnect) to enhance their OpenAPI spec with `x-ibm-` OpenAPI metadata. For the shopping example, we followed the [steps in the example repository](https://github.com/strongloop/loopback4-example-shopping/blob/master/kubernetes/docs/deploy-to-ibmcloud.md) to deploy to IBM Cloud and then imported the OpenAPI specification to APIConnect with [steps explained in the IBM developer portal](https://developer.ibm.com/apiconnect/2019/10/30/manage-and-enforce-openapi-v3-oai-v3/).
 
 ## Miscellaneous
 
@@ -94,8 +94,7 @@ Last month, we created the extension as [authentication-jwt](https://github.com/
 
 ### Strong-Soap Features and Support
 
-Strong-Soap now supports validation of [anonymous simple types](https://github.com/strongloop/strong-soap/pull/275)
-and [RPC suffixes](https://github.com/strongloop/strong-soap/pull/271).
+Strong-Soap now supports validation of [anonymous simple types](https://github.com/strongloop/strong-soap/pull/275) and [RPC suffixes](https://github.com/strongloop/strong-soap/pull/271).
 
 ### Customizing Explorer Theme
 
@@ -109,7 +108,7 @@ this.configure(RestExplorerBindings.COMPONENT).to({
 });
 ```
 
-You can check the complete guide in section [customizing swagger ui theme](https://github.com/strongloop/loopback-next/blob/956a6aa574995c6cdd5066f6af7b92a93382eefc/packages/rest-explorer/README.md#customizing-swagger-ui-theme).
+You can check the complete guide in section [customizing Swagger UI theme](https://github.com/strongloop/loopback-next/blob/956a6aa574995c6cdd5066f6af7b92a93382eefc/packages/rest-explorer/README.md#customizing-swagger-ui-theme).
 
 ### Move Datasource Configurations from .json to .ts File
 
@@ -117,7 +116,7 @@ To align with existing typescript files and dynamic configuration of datasources
 
 ### Build with TS Project-References
 
-LoopBack monorepo was configured in a hacky way to allow TypeScript to build individual packages. We have made [changes to leverage TypeScript's Project-References](https://github.com/strongloop/loopback-next/pull/5155). Project references are a new feature in TypeScript 3.0 that allow to structure typeScript projects into smaller pieces.
+LoopBack monorepo was configured in a hacky way to allow TypeScript to build individual packages. We have made [changes to leverage TypeScript's Project-References](https://github.com/strongloop/loopback-next/pull/5155). Project references are a new feature in TypeScript 3.0 that allow to structure TypeScript projects into smaller pieces.
 
 ### Other Build Features
 
