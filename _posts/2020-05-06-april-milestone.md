@@ -60,7 +60,7 @@ The new [Express Package](https://github.com/strongloop/loopback-next/tree/maste
 
 The default sequence now has a Middleware step. It creates an invocation chain to call registered middleware handlers with the extension pattern. The sequence can be customized to have more than one Middleware step. Express middleware can also be wrapped as LB4 interceptors, which can in turn be added to global/class/method level. Move built-in cors and openapi endpoints as express middleware functions.
 
-You can check the [express middleware page in loopback docs](https://loopback.io/doc/en/lb4/express-middleware.html).
+You can check the [express middleware page in loopback docs](https://loopback.io/doc/en/lb4/Express-middleware.html).
 
 ### Spike - Migrating OAuth2 Component
 
