@@ -79,14 +79,18 @@ h4[id],
 h5[id],
 h6[id],
 dt[id]{
-padding-top: 60px;
-margin-top: -40px
+  padding-top: 33px;
+  margin-top: -25px;
 }
 
 body h1 {margin-top:40px;}
 
 .post {
   margin: 10px 20px;
+}
+
+.post-content > p:first-of-type {
+  padding-top: 1em;
 }
 
 .post-content img {
@@ -98,7 +102,7 @@ body h1 {margin-top:40px;}
 }
 
 .post-content ol li, .post-content ul li {
-    margin: 10px 0px;
+    margin: 6px 0px;
 }
 
 .pageSummary {
@@ -112,14 +116,20 @@ body h1 {margin-top:40px;}
     margin-bottom:12px;
 }
 
-p.post-meta {font-size: 80%; color: #fff;}
+p.post-meta {
+  font-size: 80%;
+}
 
-p.author {
-  color: #fff;
+p.author, p.post-meta, p.author2 {
+  margin: 0;
 }
 
 p.author2 {
-  color: #3f5dff;
+  color: #747784;
+}
+
+p.post-meta, p.author, p.post-meta a, p.author a {
+  color: #bfc9ff;
 }
 
 li.dropdownActive a {
@@ -308,6 +318,10 @@ a.dropdown-toggle, .navbar-inverse .navbar-nav > li > a  {
     margin-left: 10px;
 }
 
+.partition {
+  height: 3em;
+}
+
 hr.faded {
     border: 0;
     height: 1px;
@@ -377,9 +391,7 @@ div.tags {padding: 10px 5px;}
 hr {
     border: 0;
     border-bottom: 1px dashed #ccc;
-    background: #999;
     margin: 30px 0px;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -595,7 +607,9 @@ a[href^="http://"]:after,  a[href^="https://"]:after {
     display: inline-block;
     text-decoration: none;
     padding-left: 3px;
-    font-size: 120%;
+    font-size: 70%;
+    position: relative;
+    top: -6px;
 }
 
 /* Strip the outbound icon when this class is present */
@@ -701,7 +715,6 @@ pre.highlight {
   padding: 10px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   border-radius: 3px;
-  border: 1px solid #8c8c8c;
   font-size: 11pt;
 }
 
@@ -834,9 +847,6 @@ For printing
 .date {
   font-size: 80%;
 }
-.x-green .author a{
-  color: #fff
-}
 
 .project-tile {
   border-radius: 3px;
@@ -872,14 +882,6 @@ For printing
 }
 
 /* Blogs */
-.excerpt {
-  font-size: 85%;
-}
-
-.blog-archive {
-  font-size: 90%;
-}
-
 .date {
   font-style: italic;
   color: #444;
@@ -888,18 +890,18 @@ For printing
 
 div.post-content h2 {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 div.post-content h3 {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 div.post-content h4 {
-  color: #808080;
+  color: #424242;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.05rem;
 }
 
 /* Breadcrumbs */
