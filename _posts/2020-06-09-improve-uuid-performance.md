@@ -1,6 +1,6 @@
 ---
 layout: post
-title: title: How We Improved LoopBack REST Performance by 45%
+title: How We Improved LoopBack REST Performance by 45%
 date: 2020-06-09
 author: Miroslav Bajtoš
 permalink: /strongblog/2020-improve-looopback-performance-uuid/
