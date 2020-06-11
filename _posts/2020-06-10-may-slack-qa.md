@@ -55,7 +55,8 @@ export class Item extends Entity {
   price?: number;
 ....
 ```
-Then run npm run build, npm run migrate, the table should have columns:
+
+Then run `npm run build` and then `npm run migrate` commands, the table should have columns:
 ```
 price       |                | double precision
 ```
@@ -70,4 +71,4 @@ Besides the data type, LB4 also allows you to describe tables via the model defi
 ---
 
 ## Interested to Join our Slack Workspace?
-Simply click [this invitation link](https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw) to join. You can also find more channel details here: https://github.com/strongloop/loopback-next/issues/5048.
+Simply click [this invitation link](https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw) to join. You can also find more channel details here: [https://github.com/strongloop/loopback-next/issues/5048](https://github.com/strongloop/loopback-next/issues/5048).
