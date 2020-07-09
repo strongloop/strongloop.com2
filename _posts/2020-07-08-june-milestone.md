@@ -16,11 +16,10 @@ Documentation restructuring, TypeORM support, and HasManyThrough were the three 
 
 Here is what we did in the month June:
 
-- [Documentation Improvementse](#documentation-improvements)
+- [Documentation Improvements](#documentation-improvements)
 - [HasManyThrough](#hasmanythrough)
 - [TypeORM Support](#typeormsupport)
 - [Miscellaneous](#miscellaneous)
-- [Welcome and Goodbyes](#welcomeandgoodbyes)
 
 <!--more-->
 
