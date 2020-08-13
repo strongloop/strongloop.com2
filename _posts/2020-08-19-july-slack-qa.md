@@ -2,8 +2,7 @@
 layout: post
 title: Community Q&A Monthly Digest - July 2020
 date: 2020-08-13
-author:
-  - Diana Lau
+author: Diana Lau
 permalink: /strongblog/2020-july-slack-qa/
 categories:
   - LoopBack
