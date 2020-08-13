@@ -1,17 +1,16 @@
 ---
 layout: post
 title: Community Q&A Monthly Digest - July 2020
-date: 2020-08-12
-author:
-  - Diana Lau
-permalink: /strongblog/2020-july-slack-qa/
+date: 2020-08-19
+author: Diana Lau
+permalink: /strongblog/2020-jul-slack-qa/
 categories:
   - LoopBack
   - Community
 published: true
 ---
 
-Welcome to the July edition of the "Community Q&A Monthly Digest", curating some of the Q&A that we think it might be helpful to you. Let's take a look!
+Welcome to the July edition of the "Community Q&A Monthly Digest", curating some of the Q&A that we think it might be helpful to you. Let's take a look.
 
 <!--more-->
 
