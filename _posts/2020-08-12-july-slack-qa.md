@@ -11,7 +11,7 @@ categories:
 published: true
 ---
 
-Welcome to the July edition of the "Community Q&A Monthly Digest", curating some of the Q&A that we think it might be helpful to you. Let's take a look.
+Welcome to the July edition of the "Community Q&A Monthly Digest", curating some of the Q&A that we think it might be helpful to you. Let's take a look!
 
 <!--more-->
 
