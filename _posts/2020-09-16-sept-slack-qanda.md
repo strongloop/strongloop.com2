@@ -18,9 +18,9 @@ Let's take a look at some of the questions and answers from the community.
 
 <!--more-->
 
-**Question:** Is it possible to use autogenerate timestamp property in a model?
+**Question:** Is it possible to use auto-generate timestamp property in a model?
 
-**Answer:** To set the property to the current datetime upon Model Create:
+**Answer:** To set the property to the current datetime upon Model Create, you can:
 ```ts
 @property({
 type: 'date',
@@ -31,7 +31,7 @@ timestamp?: string;
 
 ---
 
-**Question:** Does LoopBack has any build-in cache? Or should we implement that to make response even faster?
+**Question:** Does LoopBack has any built-in cache? Or should we implement that to make response even faster?
 
 **Answer:**
 We currently don’t but there are some example implementations for your reference:
@@ -40,7 +40,7 @@ We currently don’t but there are some example implementations for your referen
 
 --- 
 
-**Question:** I want to perfoming schema migration but order of tables is important beacause there are some relation and foreign key between them. How can I set migration table order?
+**Question:** I want to perform schema migration but the order of tables is important beacause there are some relation and foreign key between them. How can I set the order of tables to be migrated?
 
 **Answer:** Within `migrate.ts`, `app.migrateSchema` accepts a `model` array. So it can be updated as such:
 ```ts
@@ -52,15 +52,15 @@ Like with any auto-migration, please do take a backup of the database before run
 
 ---
 
-**Question:** Hello everyone, I wanted to implement an API like the trasfer-files example on the docs but with more endpoints with different storage directories. how is that possible?
+**Question:** I wanted to implement an API like the `file-transfer` example on the docs but with more endpoints with different storage directories. How is that possible?
 
-**Answer:** Yes, you have different endpoints backed by different methods using `post /<url>` decoration as you see at [https://github.com/strongloop/loopback-next/blob/master/examples/file-transfer/src/controllers/file-upload.controller.ts#L28](https://github.com/strongloop/loopback-next/blob/master/examples/file-transfer/src/controllers/file-upload.controller.ts#L28). If you want to calculate the file path per request, you can instantiate a new upload service instance instead of using the injected one.
+**Answer:** You can have different endpoints backed by different methods using `post /<url>` decoration as you see at [https://github.com/strongloop/loopback-next/blob/master/examples/file-transfer/src/controllers/file-upload.controller.ts#L28](https://github.com/strongloop/loopback-next/blob/master/examples/file-transfer/src/controllers/file-upload.controller.ts#L28). If you want to calculate the file path per request, you can instantiate a new upload service instance instead of using the injected one.
 
 ---
 
 **Questions:** I work with LoopBack in a k8 cluster, when i try to implement JWT authentication, all users get the same token, and the data in that token is not equal to that user. Is there any way to fix it besides saving the token in a database? 
 
-**Answer:** Typically JWT tokens are generated using a combination of a secret and some sort of UUID of the user. When they successfully authenticate, a token is generated and returned, then when you need to verify the token you decode it using the secret, giving you the UUID of the user. This means that you don’t actually have to save a token at all. Here’s how we are generating tokens for our users.
+**Answer:** Typically JWT tokens are generated using a combination of a secret and some sort of UUID of the user. When they successfully authenticate, a token is generated and returned. When you need to verify the token, you decode it using the secret, giving you the UUID of the user. This means that you don’t actually have to save a token at all. Here’s how we are generating tokens for our users.
 
 ```ts
 const userInfoForToken = {
