@@ -7,7 +7,7 @@ permalink: /strongblog/2020-sept-slack-qa/
 categories:
 - LoopBack
 - Community
-published: false
+published: true
 ---
 
 Welcome back to the September edition of the "Community Q&A Monthly Digest", in which we are curating some of the Q&A that we think it might be helpful to you. Thank you for posting your questions and helping your fellow LoopBack users. 
