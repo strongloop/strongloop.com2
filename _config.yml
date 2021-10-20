@@ -100,3 +100,5 @@ defaults:
 url: https://strongloop.com
 
 future: false
+
+theme: jekyll-theme-architect
