@@ -44,6 +44,7 @@ exclude:
   - node_modules
   - Jenkinsfile
   - _posts/problems
+  - vendor
 
 # these are the files and directories that jekyll will exclude from the build
 

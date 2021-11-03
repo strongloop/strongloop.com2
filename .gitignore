@@ -18,3 +18,4 @@ dist
 .jekyll-metadata
 vendor
 .bundle
+.sass-cache
